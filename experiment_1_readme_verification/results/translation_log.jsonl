@@ -74,3 +74,4 @@
 {"file": "batch_048_opus", "model": "opus", "brief_version": "0.5", "batch": "batch_048", "claims": 103, "accepted": 103, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T11:45:52", "check_seconds": 0.2}
 {"file": "batch_050_opus", "model": "opus", "brief_version": "0.5", "batch": "batch_050", "claims": 50, "accepted": 50, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T11:46:06", "check_seconds": 0.2}
 {"file": "batch_049_opus", "model": "opus", "brief_version": "0.5", "batch": "batch_049", "claims": 52, "accepted": 52, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T11:46:12", "check_seconds": 0.1}
+{"file": "batch_046_opus", "model": "opus", "brief_version": "0.5", "batch": "batch_046", "claims": 129, "accepted": 129, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T11:47:29", "check_seconds": 0.3}
