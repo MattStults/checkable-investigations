@@ -2,12 +2,11 @@
  "header": {
   "batch": "batch_153",
   "source_class": "git_log",
-  "brief_version": "0.7",
-  "glossary_version": "frozen aa3da29 +G-06",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
   "spans": 15,
   "first_span": "S02483",
-  "last_span": "S02497",
-  "note": "header refreshed for brief v0.7 (D-09) before translation"
+  "last_span": "S02497"
  },
  "spans": [
   {
@@ -15,7 +14,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9704-9711",
-   "text": "commit e3aa05606d6276a1079d0a38581b95af72381fa7\nordinal 595\ndate 2026-08-24 21:39:45 -0700\nauthor Matt Stults\nsubject UA PARITY GATE: NOT CERTIFIED (19/24, not-side 0.74) \u2014 divergence is real and one-directional (Opus permissive on this brief; both tripwire nodes confirmed); measured conditional reliability Opus-not 14/14 vs Opus-relevant 5/10 (asymmetric-certificate candidate). F5 rescoring executed once: attempt-1 corrected 0.45/0.80 -> prediction clause (c) FAILED low, clause (a) directionally supported. 24 Fable-panel rulings memoized. HALTED per plan-v2 branch 3; venue options to Matt. Notes 0022.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit e3aa05606d6276a1079d0a38581b95af72381fa7\nordinal 595\ndate 2026-08-24 21:39:45 -0700\nauthor Matt Stults\nsubject UA PARITY GATE: NOT CERTIFIED (19/24, not-side 0.74) — divergence is real and one-directional (Opus permissive on this brief; both tripwire nodes confirmed); measured conditional reliability Opus-not 14/14 vs Opus-relevant 5/10 (asymmetric-certificate candidate). F5 rescoring executed once: attempt-1 corrected 0.45/0.80 -> prediction clause (c) FAILED low, clause (a) directionally supported. 24 Fable-panel rulings memoized. HALTED per plan-v2 branch 3; venue options to Matt. Notes 0022.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -23,7 +22,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9712-9719",
-   "text": "commit 21919fc4c3d05b89818b897255ac1f054d38da43\nordinal 596\ndate 2026-08-24 21:40:40 -0700\nauthor Matt Stults\nsubject ARB marks FINAL r3: the 43 quarantined disputes resolved at the trusted tier (fresh unbundled Fable seat, 9 yes / 34 no \u2014 the Opus boundary-class permissiveness gap measured a second time, same direction as the UA gate). Marks 260 -> 269; quarantine closed; last tradeoffs suspension item discharged.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 21919fc4c3d05b89818b897255ac1f054d38da43\nordinal 596\ndate 2026-08-24 21:40:40 -0700\nauthor Matt Stults\nsubject ARB marks FINAL r3: the 43 quarantined disputes resolved at the trusted tier (fresh unbundled Fable seat, 9 yes / 34 no — the Opus boundary-class permissiveness gap measured a second time, same direction as the UA gate). Marks 260 -> 269; quarantine closed; last tradeoffs suspension item discharged.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -39,7 +38,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9728-9735",
-   "text": "commit ff6171a05d429d25a7268c4f7f337bb31981749e\nordinal 598\ndate 2026-08-24 22:47:50 -0700\nauthor Matt Stults\nsubject OPTION (a) registrations committed pre-ruling: the ASYMMETRIC CERTIFICATE (first per-verdict-class form \u2014 Opus negatives trusted at measured 14/14, Opus relevants escalate to Fable panels; 10-node negative spot-check seed 20260851 with >=2/10 void-tripwire) + the 25% SEAL partition (seed 20260850, loader-excluded until the registered confirmation) + the 151-node purchase packets (shuffle 20260852, 2 chunks x 3 Opus seats).\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit ff6171a05d429d25a7268c4f7f337bb31981749e\nordinal 598\ndate 2026-08-24 22:47:50 -0700\nauthor Matt Stults\nsubject OPTION (a) registrations committed pre-ruling: the ASYMMETRIC CERTIFICATE (first per-verdict-class form — Opus negatives trusted at measured 14/14, Opus relevants escalate to Fable panels; 10-node negative spot-check seed 20260851 with >=2/10 void-tripwire) + the 25% SEAL partition (seed 20260850, loader-excluded until the registered confirmation) + the 151-node purchase packets (shuffle 20260852, 2 chunks x 3 Opus seats).\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -55,7 +54,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9744-9751",
-   "text": "commit 2bebf6906aee4b77d9df1e40379fd2b3aaa399a7\nordinal 600\ndate 2026-08-24 22:53:28 -0700\nauthor Matt Stults\nsubject UA TRUTH LEDGER v1: certified Opus negatives (74; spot-check 10/10, tripwire clear) + Fable key (24) + escalation batch 1 (24 \u2014 Fable downgrades a third of Opus-relevants, the permissiveness measured a third time). Visible/sealed split enforced by file separation; 53 escalations pending next bar; every analysis states its ruled/unruled split.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 2bebf6906aee4b77d9df1e40379fd2b3aaa399a7\nordinal 600\ndate 2026-08-24 22:53:28 -0700\nauthor Matt Stults\nsubject UA TRUTH LEDGER v1: certified Opus negatives (74; spot-check 10/10, tripwire clear) + Fable key (24) + escalation batch 1 (24 — Fable downgrades a third of Opus-relevants, the permissiveness measured a third time). Visible/sealed split enforced by file separation; 53 escalations pending next bar; every analysis states its ruled/unruled split.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -63,7 +62,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9752-9759",
-   "text": "commit de82312613014d0c0aed33a9ddb4bfed28b206dc\nordinal 601\ndate 2026-08-24 22:54:07 -0700\nauthor Matt Stults\nsubject Block close: notes 0024 (asymmetric certificate validated in use; UA engaged precision projecting ~0.25-0.30 \u2014 the exhaustive ledger revealing what no n=20 sample could; 0.4pt budget overshoot disclosed) + HANDOFF entry point for the next-bar queue (53 escalations -> exact precision -> repair arc -> seal confirmation -> prediction final scoring).\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit de82312613014d0c0aed33a9ddb4bfed28b206dc\nordinal 601\ndate 2026-08-24 22:54:07 -0700\nauthor Matt Stults\nsubject Block close: notes 0024 (asymmetric certificate validated in use; UA engaged precision projecting ~0.25-0.30 — the exhaustive ledger revealing what no n=20 sample could; 0.4pt budget overshoot disclosed) + HANDOFF entry point for the next-bar queue (53 escalations -> exact precision -> repair arc -> seal confirmation -> prediction final scoring).\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -71,7 +70,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9760-9767",
-   "text": "commit 39df57dea1175aa3cc4116fc47ab93e5fb922d98\nordinal 602\ndate 2026-08-24 22:57:10 -0700\nauthor Matt Stults\nsubject Erratum #16 (stale reset belief \u2014 dates not anchors) + Matt's continue ruling (~2pt, est ~38.5%); expectations recalibration recorded (repair-not-transfer is the value claim). Batch-2 escalation packet (53, shuffle 20260855) committed pre-dispatch.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 39df57dea1175aa3cc4116fc47ab93e5fb922d98\nordinal 602\ndate 2026-08-24 22:57:10 -0700\nauthor Matt Stults\nsubject Erratum #16 (stale reset belief — dates not anchors) + Matt's continue ruling (~2pt, est ~38.5%); expectations recalibration recorded (repair-not-transfer is the value claim). Batch-2 escalation packet (53, shuffle 20260855) committed pre-dispatch.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -79,7 +78,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9768-9775",
-   "text": "commit cc2e150928692147b6a804cc6bb60711cf027d74\nordinal 603\ndate 2026-08-24 23:00:48 -0700\nauthor Matt Stults\nsubject UA ENGAGED-SET TRUTH COMPLETE: exact visible precision 32/122 = 0.262 (sample series 0.60 -> 0.45 -> 0.262 \u2014 no sample was close); 36/77 Opus-relevants downgraded at Fable tier; seal (38) untouched; declined side stays sampled (3/15 relevant). The repair arc now has a fully-enumerated 90-node FP population, routable at $0. Cost-model erratum #17 (per-seat overhead needs the node-count term; ~1.9pt overshoot vs estimate disclosed). Notes 0026.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit cc2e150928692147b6a804cc6bb60711cf027d74\nordinal 603\ndate 2026-08-24 23:00:48 -0700\nauthor Matt Stults\nsubject UA ENGAGED-SET TRUTH COMPLETE: exact visible precision 32/122 = 0.262 (sample series 0.60 -> 0.45 -> 0.262 — no sample was close); 36/77 Opus-relevants downgraded at Fable tier; seal (38) untouched; declined side stays sampled (3/15 relevant). The repair arc now has a fully-enumerated 90-node FP population, routable at $0. Cost-model erratum #17 (per-seat overhead needs the node-count term; ~1.9pt overshoot vs estimate disclosed). Notes 0026.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -87,7 +86,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9776-9783",
-   "text": "commit 24a88eccce625a0e2d32b1b3f1130541f3beec6a\nordinal 604\ndate 2026-08-24 23:04:54 -0700\nauthor Matt Stults\nsubject V5-as-truth measured ($0): node-level agreement 0.50-0.75 (anchor smearing) \u2014 unusable as a truth tier; the prereg closure is measured-correct and the Fable truth spend bought something no shelf source held. Erratum #18: measure shelf sources before the dominant spend. Notes 0027.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 24a88eccce625a0e2d32b1b3f1130541f3beec6a\nordinal 604\ndate 2026-08-24 23:04:54 -0700\nauthor Matt Stults\nsubject V5-as-truth measured ($0): node-level agreement 0.50-0.75 (anchor smearing) — unusable as a truth tier; the prereg closure is measured-correct and the Fable truth spend bought something no shelf source held. Erratum #18: measure shelf sources before the dominant spend. Notes 0027.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -95,7 +94,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9784-9791",
-   "text": "commit 2cc08b45cfd0a125ea72f675a80f5f6687e67663\nordinal 605\ndate 2026-08-24 23:09:41 -0700\nauthor Matt Stults\nsubject Recurrence analysis ($0): sections not statements \u2014 zero retranslations; 7/138 statement-recurrers (contested + suspended-by-design); mass in style/formatting + objectivity + authority-machinery sections; SAME nodes FP across both measured behaviours -> the UA mint should be the GENERAL prescription-vs-norm layer so one mint amortizes (the convergence-bending design requirement). Notes 0028.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 2cc08b45cfd0a125ea72f675a80f5f6687e67663\nordinal 605\ndate 2026-08-24 23:09:41 -0700\nauthor Matt Stults\nsubject Recurrence analysis ($0): sections not statements — zero retranslations; 7/138 statement-recurrers (contested + suspended-by-design); mass in style/formatting + objectivity + authority-machinery sections; SAME nodes FP across both measured behaviours -> the UA mint should be the GENERAL prescription-vs-norm layer so one mint amortizes (the convergence-bending design requirement). Notes 0028.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -111,7 +110,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9800-9807",
-   "text": "commit 7dbccc4cb6a11674027f1565875b45aef69f83f7\nordinal 607\ndate 2026-08-24 23:28:00 -0700\nauthor Matt Stults\nsubject NORM_FRAME_THEORY_MAP (design tier, Matt's directive): the minted slots mapped onto von Wright / Hohfeld / Searle / defeasible deontic logic \u2014 the empirical dimensions are the canonical ones, Searle predicted the machinery finding, and the theory hands us four a-priori gaps no miss has forced yet. Next document's schema to derive from the completed frame; kill-criterion upgraded. Marked draft-from-model-knowledge pending literature verification. Notes 0030.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 7dbccc4cb6a11674027f1565875b45aef69f83f7\nordinal 607\ndate 2026-08-24 23:28:00 -0700\nauthor Matt Stults\nsubject NORM_FRAME_THEORY_MAP (design tier, Matt's directive): the minted slots mapped onto von Wright / Hohfeld / Searle / defeasible deontic logic — the empirical dimensions are the canonical ones, Searle predicted the machinery finding, and the theory hands us four a-priori gaps no miss has forced yet. Next document's schema to derive from the completed frame; kill-criterion upgraded. Marked draft-from-model-knowledge pending literature verification. Notes 0030.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -127,7 +126,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9816-9823",
-   "text": "commit 9d443bea515251b26ae58b2dcf58f250e4457461\nordinal 609\ndate 2026-08-24 23:36:27 -0700\nauthor Matt Stults\nsubject Blind canonical schema NORM_ELEMENTS_v1 committed (theory-blind Opus author; 8 fields: von Wright character/subject/condition/authority, Hohfeld position, Searle rule-type, modality, defeasibility \u2014 independently reproducing the contested slots plus distinctions we never minted) + the 39-claim annotation packet.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 9d443bea515251b26ae58b2dcf58f250e4457461\nordinal 609\ndate 2026-08-24 23:36:27 -0700\nauthor Matt Stults\nsubject Blind canonical schema NORM_ELEMENTS_v1 committed (theory-blind Opus author; 8 fields: von Wright character/subject/condition/authority, Hohfeld position, Searle rule-type, modality, defeasibility — independently reproducing the contested slots plus distinctions we never minted) + the 39-claim annotation packet.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   }
  ]

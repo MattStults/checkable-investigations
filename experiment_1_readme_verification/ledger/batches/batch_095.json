@@ -2,12 +2,11 @@
  "header": {
   "batch": "batch_095",
   "source_class": "git_log",
-  "brief_version": "0.7",
-  "glossary_version": "frozen aa3da29 +G-06",
+  "brief_version": "0.5",
+  "glossary_version": "frozen d887fb9",
   "spans": 15,
   "first_span": "S01616",
-  "last_span": "S01630",
-  "note": "header refreshed for brief v0.7 (D-09) before translation"
+  "last_span": "S01630"
  },
  "spans": [
   {
@@ -15,7 +14,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9584-9591",
-   "text": "commit 26da2453cc72cce0389d5f7c45c6b88c4f6679c2\nordinal 580\ndate 2026-08-24 19:33:09 -0700\nauthor Matt Stults\nsubject ITERATION 3 REALIZATION + TRIPWIRE: attempt-4 engaged precision 0.85 / decline 0.70 (P1, P3 10/14, P4 PASS; P2 outside band HIGH) \u2014 arbitrates_channel adoption REALIZED and kept. Wave spot-check 1/8 ok; dispute spot-check tripwire FIRED (4/9) -> all 43 dispute-panel resolutions quarantined per the assembly rule (marks 283->260; engagement 393->384; only measured affected node was a fresh FP -> quarantine-adjusted precision 0.895, P3 10/12). Disputes SUSPENDED for Fable-tier resolution. Scorer + all rulings committed.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 26da2453cc72cce0389d5f7c45c6b88c4f6679c2\nordinal 580\ndate 2026-08-24 19:33:09 -0700\nauthor Matt Stults\nsubject ITERATION 3 REALIZATION + TRIPWIRE: attempt-4 engaged precision 0.85 / decline 0.70 (P1, P3 10/14, P4 PASS; P2 outside band HIGH) — arbitrates_channel adoption REALIZED and kept. Wave spot-check 1/8 ok; dispute spot-check tripwire FIRED (4/9) -> all 43 dispute-panel resolutions quarantined per the assembly rule (marks 283->260; engagement 393->384; only measured affected node was a fresh FP -> quarantine-adjusted precision 0.895, P3 10/12). Disputes SUSPENDED for Fable-tier resolution. Scorer + all rulings committed.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -33,7 +32,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9600-9607",
-   "text": "commit ff582b0f9452d21dd24eedc333b1076a902cdb71\nordinal 582\ndate 2026-08-24 19:41:17 -0700\nauthor Matt Stults\nsubject STEP-1 triage of attempt-4 misses ($0): 9/9 classify into standing states (1 already resolved by the tripwire quarantine, 1 single-consideration FP, 1 channel accepted-cost FP, 6 example/reach FNs incl. a repeat member) \u2014 no new mechanism; the tradeoffs loop is at its QUIESCENT FIXED POINT at this inventory. Escalations deferred per A5 (no move to pay for); required before any future fix.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit ff582b0f9452d21dd24eedc333b1076a902cdb71\nordinal 582\ndate 2026-08-24 19:41:17 -0700\nauthor Matt Stults\nsubject STEP-1 triage of attempt-4 misses ($0): 9/9 classify into standing states (1 already resolved by the tripwire quarantine, 1 single-consideration FP, 1 channel accepted-cost FP, 6 example/reach FNs incl. a repeat member) — no new mechanism; the tradeoffs loop is at its QUIESCENT FIXED POINT at this inventory. Escalations deferred per A5 (no move to pay for); required before any future fix.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -42,7 +41,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9608-9615",
-   "text": "commit 46dccd78dd126d1e02a5762b92f9a2c020abaf4e\nordinal 583\ndate 2026-08-24 19:42:28 -0700\nauthor Matt Stults\nsubject CALCULUS_RUNBOOK v1 \u2014 execution-derived rewrite from notes 0001-0014 after three live iterations (docs-tests 5/5): the twelve learned rules folded in (coverage-binding V5, escalate-before-choosing, task-class-local certificates, measured-criteria-before-signature, individually-validated consumption moves, same-samples re-measurement, defensible-by-contradiction, quiescent-fixed-point terminal, constraint-structure surfacing, tripwire discipline, gen-venue injection, refilter-before-routing). Notes 0015: quiescence recorded; remaining maintenance named.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 46dccd78dd126d1e02a5762b92f9a2c020abaf4e\nordinal 583\ndate 2026-08-24 19:42:28 -0700\nauthor Matt Stults\nsubject CALCULUS_RUNBOOK v1 — execution-derived rewrite from notes 0001-0014 after three live iterations (docs-tests 5/5): the twelve learned rules folded in (coverage-binding V5, escalate-before-choosing, task-class-local certificates, measured-criteria-before-signature, individually-validated consumption moves, same-samples re-measurement, defensible-by-contradiction, quiescent-fixed-point terminal, constraint-structure surfacing, tripwire discipline, gen-venue injection, refilter-before-routing). Notes 0015: quiescence recorded; remaining maintenance named.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -51,7 +50,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9616-9623",
-   "text": "commit f5fc6b1cf6784dc2f400bfbe12d53cc83e0d16a0\nordinal 584\ndate 2026-08-24 19:43:32 -0700\nauthor Matt Stults\nsubject Path audit extended over iterations 2-3 ($0): iter-2 machinery trio (R1->R2->R4 I1-build->resolved_d) and iter-3 channel fixes (R1->R2->R5 mint->post-mint SEP->resolved_d) replayed with recorded port outcomes and clingo-certified against the same machine \u2014 11/11 legal. Findings F-a3 (wall kill = in-machine failed-delta step) and F-a4 (void/re-measure needs a MEASUREMENT-INVALID transition in the v2 model, queued with F-a1's SUSPENDED_OPEN encoding).\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit f5fc6b1cf6784dc2f400bfbe12d53cc83e0d16a0\nordinal 584\ndate 2026-08-24 19:43:32 -0700\nauthor Matt Stults\nsubject Path audit extended over iterations 2-3 ($0): iter-2 machinery trio (R1->R2->R4 I1-build->resolved_d) and iter-3 channel fixes (R1->R2->R5 mint->post-mint SEP->resolved_d) replayed with recorded port outcomes and clingo-certified against the same machine — 11/11 legal. Findings F-a3 (wall kill = in-machine failed-delta step) and F-a4 (void/re-measure needs a MEASUREMENT-INVALID transition in the v2 model, queued with F-a1's SUSPENDED_OPEN encoding).\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -60,7 +59,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9624-9631",
-   "text": "commit 94942a3e9770ad2e6605e8a7d269fbbcb0adb744\nordinal 585\ndate 2026-08-24 19:56:59 -0700\nauthor Matt Stults\nsubject Arc1-e MAINTENANCE BUILD (item 1, $0 Fable): vector() gains four append-only slots \u2014 gc_pairs (per-assert quality-context pairing: the exact governs_conditional feature), arb (ARBITRATES mark), mach (structural-exclusion act heads), party_pairs \u2014 indices 0-7 untouched; current_mask consumes all DECLARABLE_MOVES; the party_concern/governs_conditional census guards LIFTED with reasons discharged; SLOT_INVENTORY + DEAD_SLOTS_PINNED updated same commit per the registration fence; the guard test rewritten to the structural form (every registry channel maps to a live-when-declared slot). 43 tests green. LIVE: first census over a contract declaring the new channels (r4) runs \u2014 35 mismatches, 32 SEP/SEP, 2 UNSAT-current, 1 UNSAT-both (future R5 datum).\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 94942a3e9770ad2e6605e8a7d269fbbcb0adb744\nordinal 585\ndate 2026-08-24 19:56:59 -0700\nauthor Matt Stults\nsubject Arc1-e MAINTENANCE BUILD (item 1, $0 Fable): vector() gains four append-only slots — gc_pairs (per-assert quality-context pairing: the exact governs_conditional feature), arb (ARBITRATES mark), mach (structural-exclusion act heads), party_pairs — indices 0-7 untouched; current_mask consumes all DECLARABLE_MOVES; the party_concern/governs_conditional census guards LIFTED with reasons discharged; SLOT_INVENTORY + DEAD_SLOTS_PINNED updated same commit per the registration fence; the guard test rewritten to the structural form (every registry channel maps to a live-when-declared slot). 43 tests green. LIVE: first census over a contract declaring the new channels (r4) runs — 35 mismatches, 32 SEP/SEP, 2 UNSAT-current, 1 UNSAT-both (future R5 datum).\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -69,7 +68,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9632-9639",
-   "text": "commit 352ef0d8da9334456b449759a05692c18ddd1ff6\nordinal 586\ndate 2026-08-24 19:58:19 -0700\nauthor Matt Stults\nsubject Item 2: BLOCK-2 TRANSFER PREDICTIONS FROZEN pre-ruling \u2014 user-autonomy (existing channels, 0 mints, 0.55-0.75), proportionate-risk (headline: the ARB mint transfers as a zero-annotation channel declaration), general-welfare (C-V: the F1 ASP-literal does defect, contract-checkable, measure-after-repair). Per-clause scoring rule frozen alongside. Notes 0016.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 352ef0d8da9334456b449759a05692c18ddd1ff6\nordinal 586\ndate 2026-08-24 19:58:19 -0700\nauthor Matt Stults\nsubject Item 2: BLOCK-2 TRANSFER PREDICTIONS FROZEN pre-ruling — user-autonomy (existing channels, 0 mints, 0.55-0.75), proportionate-risk (headline: the ARB mint transfers as a zero-annotation channel declaration), general-welfare (C-V: the F1 ASP-literal does defect, contract-checkable, measure-after-repair). Per-clause scoring rule frozen alongside. Notes 0016.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -78,7 +77,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9640-9647",
-   "text": "commit eec44881be16ee9a5362bdd25b16edbd11656edc\nordinal 587\ndate 2026-08-24 21:02:34 -0700\nauthor Matt Stults\nsubject PREREG ADDENDUM 5 (Matt-signed): block-2 reopened for MEASUREMENT under scoped repair-arc reporting (transfer claim unchanged) \u2014 user-autonomy first, certified-Opus venue with registered seeds, 2-pt envelope, general-welfare gated on its C-V repair.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit eec44881be16ee9a5362bdd25b16edbd11656edc\nordinal 587\ndate 2026-08-24 21:02:34 -0700\nauthor Matt Stults\nsubject PREREG ADDENDUM 5 (Matt-signed): block-2 reopened for MEASUREMENT under scoped repair-arc reporting (transfer claim unchanged) — user-autonomy first, certified-Opus venue with registered seeds, 2-pt envelope, general-welfare gated on its C-V repair.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -87,7 +86,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9648-9655",
-   "text": "commit 2deacf488d0d4d65e4f541665e6eef0b9ef54ea6\nordinal 588\ndate 2026-08-24 21:03:40 -0700\nauthor Matt Stults\nsubject PREDICTION FALSIFIED AT $0 (recorded per the frozen per-clause rule): general-welfare's C-V clause is wrong \u2014 behavior_acts() parses ASP-literal heads and all five are canonical; act lane live; D5' repair NOT NEEDED; ADDENDUM-5 gate discharged vacuously; modest v2 re-prediction appended; runbook erratum #13 (engine-verify contract predictions before freezing). Notes 0017.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 2deacf488d0d4d65e4f541665e6eef0b9ef54ea6\nordinal 588\ndate 2026-08-24 21:03:40 -0700\nauthor Matt Stults\nsubject PREDICTION FALSIFIED AT $0 (recorded per the frozen per-clause rule): general-welfare's C-V clause is wrong — behavior_acts() parses ASP-literal heads and all five are canonical; act lane live; D5' repair NOT NEEDED; ADDENDUM-5 gate discharged vacuously; modest v2 re-prediction appended; runbook erratum #13 (engine-verify contract predictions before freezing). Notes 0017.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -105,7 +104,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9664-9671",
-   "text": "commit e6c0c66767a5174f819a55a461ab2526914ca38c\nordinal 590\ndate 2026-08-24 21:07:33 -0700\nauthor Matt Stults\nsubject USER-AUTONOMY attempt-1 PROVISIONAL: engaged precision 0.60 (WITHIN the frozen 0.55-0.75 band), decline 0.55, splits 3/10 \u2014 but the spot-check tripwire FIRED (3/8) and is RIGHT: the Opus certificate is behaviour-brief-local and was scope-stretched to a new brief (erratum #14; the spot-check architecture caught it for one seat's cost). Scoring provisional pending post-reset Fable verification (brief-local parity vs the free panel-row key + 3 disputed rulings + the deferred 43 disputes, ~1-1.5pt next bar). Notes 0018.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit e6c0c66767a5174f819a55a461ab2526914ca38c\nordinal 590\ndate 2026-08-24 21:07:33 -0700\nauthor Matt Stults\nsubject USER-AUTONOMY attempt-1 PROVISIONAL: engaged precision 0.60 (WITHIN the frozen 0.55-0.75 band), decline 0.55, splits 3/10 — but the spot-check tripwire FIRED (3/8) and is RIGHT: the Opus certificate is behaviour-brief-local and was scope-stretched to a new brief (erratum #14; the spot-check architecture caught it for one seat's cost). Scoring provisional pending post-reset Fable verification (brief-local parity vs the free panel-row key + 3 disputed rulings + the deferred 43 disputes, ~1-1.5pt next bar). Notes 0018.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -123,7 +122,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9680-9687",
-   "text": "commit 10c5544c946f796df0d9bf13123b3aa2e8131b33\nordinal 592\ndate 2026-08-24 21:24:09 -0700\nauthor Matt Stults\nsubject TRUTH ECONOMICS ruling (Matt): memoize-at-panel-tier, dispatch-only-unruled, engaged-set-first \u2014 runbook amended (fresh-rulings-per-attempt retired as inertia, erratum #15; overlap waste ~30-40 rulings + the buy-single-then-upgrade pattern named). Post-reset plan: brief-local parity FIRST (erratum-#14 lesson), then the ~150-node UA engaged-set purchase on certified Opus, exact precision, repair arc on lookups. Notes 0019.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 10c5544c946f796df0d9bf13123b3aa2e8131b33\nordinal 592\ndate 2026-08-24 21:24:09 -0700\nauthor Matt Stults\nsubject TRUTH ECONOMICS ruling (Matt): memoize-at-panel-tier, dispatch-only-unruled, engaged-set-first — runbook amended (fresh-rulings-per-attempt retired as inertia, erratum #15; overlap waste ~30-40 rulings + the buy-single-then-upgrade pattern named). Post-reset plan: brief-local parity FIRST (erratum-#14 lesson), then the ~150-node UA engaged-set purchase on certified Opus, exact precision, repair arc on lookups. Notes 0019.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -132,7 +131,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9688-9695",
-   "text": "commit 5e6ae279a04614c4cefa214c51dbd4189c4b412b\nordinal 593\ndate 2026-08-24 21:30:59 -0700\nauthor Matt Stults\nsubject ADVERSARIAL REVIEW (Opus, clean-context): BLOCKING \u2014 CoVe-verified and largely UPHELD (5 accept / 2 partial / 1 rejected-with-mechanism-cited). Plan v2: Fable-PANEL parity key (24 nodes incl. the 3 tripwire-disputed), held-out 25% SEAL on every exhaustive purchase, rate-normalized clause-(a) scoring + clause-(c) single-shot rule registered pre-ruling, module-version-scoped coverage, unbundled dispute seat, ~2.5-3pt \u2014 BLOCKED pending Matt's fresh envelope (the 32.6 cap is crossed at 33%). Notes 0020.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 5e6ae279a04614c4cefa214c51dbd4189c4b412b\nordinal 593\ndate 2026-08-24 21:30:59 -0700\nauthor Matt Stults\nsubject ADVERSARIAL REVIEW (Opus, clean-context): BLOCKING — CoVe-verified and largely UPHELD (5 accept / 2 partial / 1 rejected-with-mechanism-cited). Plan v2: Fable-PANEL parity key (24 nodes incl. the 3 tripwire-disputed), held-out 25% SEAL on every exhaustive purchase, rate-normalized clause-(a) scoring + clause-(c) single-shot rule registered pre-ruling, module-version-scoped coverage, unbundled dispute seat, ~2.5-3pt — BLOCKED pending Matt's fresh envelope (the 32.6 cap is crossed at 33%). Notes 0020.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log",
    "context": null
   },

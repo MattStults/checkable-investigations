@@ -2,12 +2,11 @@
  "header": {
   "batch": "batch_035",
   "source_class": "arc1_cycles",
-  "brief_version": "0.7",
-  "glossary_version": "frozen aa3da29 +G-06",
+  "brief_version": "0.5",
+  "glossary_version": "frozen d887fb9",
   "spans": 15,
   "first_span": "S00487",
-  "last_span": "S00501",
-  "note": "header refreshed for brief v0.7 (D-09) before translation"
+  "last_span": "S00501"
  },
  "spans": [
   {

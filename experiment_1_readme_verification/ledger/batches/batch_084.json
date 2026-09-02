@@ -2,12 +2,11 @@
  "header": {
   "batch": "batch_084",
   "source_class": "git_log",
-  "brief_version": "0.7",
-  "glossary_version": "frozen aa3da29 +G-06",
+  "brief_version": "0.5",
+  "glossary_version": "frozen d887fb9",
   "spans": 15,
   "first_span": "S01451",
-  "last_span": "S01465",
-  "note": "header refreshed for brief v0.7 (D-09) before translation"
+  "last_span": "S01465"
  },
  "spans": [
   {
@@ -24,7 +23,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8167-8175",
-   "text": "commit 52adec32de00896610ad7f13b3a2ecefeed325d9\nordinal 416\ndate 2026-08-19 17:13:06 -0700\nauthor Matt Stults\nsubject caution-accuracy ablation follow-through (Matt): 5 coupled TPs diagnosed \u2014 n017 + 3147_n003 are UNDER-LABELED (governs breadth), routed to class-C panels; l2821 trio is the genuine same-section coupled core with n025/n010; contract 9f BINDING: label-breadth review required before any terminal coupling claim (ablation analyses consume label breadth)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 52adec32de00896610ad7f13b3a2ecefeed325d9\nordinal 416\ndate 2026-08-19 17:13:06 -0700\nauthor Matt Stults\nsubject caution-accuracy ablation follow-through (Matt): 5 coupled TPs diagnosed — n017 + 3147_n003 are UNDER-LABELED (governs breadth), routed to class-C panels; l2821 trio is the genuine same-section coupled core with n025/n010; contract 9f BINDING: label-breadth review required before any terminal coupling claim (ablation analyses consume label breadth)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -33,7 +32,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8176-8184",
-   "text": "commit 21b8937572a108531c60e590a29eee51520c8c75\nordinal 417\ndate 2026-08-19 17:22:46 -0700\nauthor Matt Stults\nsubject satisfiability_census.py (Matt's design): deterministic UNSAT flagging \u2014 a mismatch vector-identical to a correct opposite-verdict node is PROVABLY unfixable at current granularity; run over all 154 mismatches: 35 UNSAT (incl. the degenerate actless near-empty-vector class, now proven indistinguishable) / 119 separable-in-principle; SEPARABLE != practically-fixable (gerrymander caveat recorded) \u2014 census is the sound lower bound, A-class adds the principledness test\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 21b8937572a108531c60e590a29eee51520c8c75\nordinal 417\ndate 2026-08-19 17:22:46 -0700\nauthor Matt Stults\nsubject satisfiability_census.py (Matt's design): deterministic UNSAT flagging — a mismatch vector-identical to a correct opposite-verdict node is PROVABLY unfixable at current granularity; run over all 154 mismatches: 35 UNSAT (incl. the degenerate actless near-empty-vector class, now proven indistinguishable) / 119 separable-in-principle; SEPARABLE != practically-fixable (gerrymander caveat recorded) — census is the sound lower bound, A-class adds the principledness test\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -51,7 +50,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8194-8202",
-   "text": "commit 7bb5267575bf2f447db2585bef71493c99f39299\nordinal 419\ndate 2026-08-19 17:34:44 -0700\nauthor Matt Stults\nsubject terminal proofs delivered (Opus, PREMISE GAP discipline caught real over-claims: 9/10 D and 4/6 A were under-evidenced) + the demanded receipts run: harm+user floods (36 FPs \u2014 family 1 incl. the permit now terminal WITH proof-grade receipt); caution/help +objectivity are net-positive/neutral CANDIDATE AMENDMENTS (families 2-3 NOT terminal; 9 new FPs pend adjudication); class-C panels folded (12 keys updated, 29 panel-locked): harm 189/234=0.81 best-ever, 4 C-nodes resolved; ADMISSIBLE CONFIGURATION formally defined in charter; tests pass\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 7bb5267575bf2f447db2585bef71493c99f39299\nordinal 419\ndate 2026-08-19 17:34:44 -0700\nauthor Matt Stults\nsubject terminal proofs delivered (Opus, PREMISE GAP discipline caught real over-claims: 9/10 D and 4/6 A were under-evidenced) + the demanded receipts run: harm+user floods (36 FPs — family 1 incl. the permit now terminal WITH proof-grade receipt); caution/help +objectivity are net-positive/neutral CANDIDATE AMENDMENTS (families 2-3 NOT terminal; 9 new FPs pend adjudication); class-C panels folded (12 keys updated, 29 panel-locked): harm 189/234=0.81 best-ever, 4 C-nodes resolved; ADMISSIBLE CONFIGURATION formally defined in charter; tests pass\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -60,7 +59,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8203-8211",
-   "text": "commit ab354f856f094e523994cdbf683a72d38890981a\nordinal 420\ndate 2026-08-19 18:29:53 -0700\nauthor Matt Stults\nsubject verify_terminal.py: mechanical terminality verification \u2014 FIXABLE (auto-found moves w/ charter arithmetic; independently rediscovered caution+objectivity net+1) / TERMINAL-DECL (proof by exhaustion of finite declaration space, inline receipts) / TERMINAL-STRUCT (fenced to bridge/vocab space); contract 9g binds it into the standard battery \u2014 no terminal claim without a verifier verdict\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit ab354f856f094e523994cdbf683a72d38890981a\nordinal 420\ndate 2026-08-19 18:29:53 -0700\nauthor Matt Stults\nsubject verify_terminal.py: mechanical terminality verification — FIXABLE (auto-found moves w/ charter arithmetic; independently rediscovered caution+objectivity net+1) / TERMINAL-DECL (proof by exhaustion of finite declaration space, inline receipts) / TERMINAL-STRUCT (fenced to bridge/vocab space); contract 9g binds it into the standard battery — no terminal claim without a verifier verdict\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -69,7 +68,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8212-8220",
-   "text": "commit 696cf7b3615a0b16666c1ebc422dc54c9a683cfd\nordinal 421\ndate 2026-08-20 09:45:44 -0700\nauthor Matt Stults\nsubject DEFINITIONAL LANE (Matt's directive: fix the census-UNSAT definitional class): formal concept channel proven DEAD (2351 concepts, 8 cross-module uses \u2014 clause-local namespaces), two blind link rules inadmissible with receipts; claims-signature annotation lane built instead (Opus parity-passed lane, behavior-blind, sibling of example-act lifting) \u2014 calibration Set B PERFECT 0/15 incl. cross-behavior control, Set A 10/27 FAILS the pre-registered 80% bar; +10 TP / +1 held-FP on all-truth; 3 mechanical assembly fixes recorded (empty-governs fail-open, contexts-only ditto, minor->third_party role purity); layers PARKED as candidates per prereg discipline \u2014 adoption/seat-2/broadening are Matt's ruling; split-mining packets for the 8 non-empty-vector UNSAT pairs staged\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 696cf7b3615a0b16666c1ebc422dc54c9a683cfd\nordinal 421\ndate 2026-08-20 09:45:44 -0700\nauthor Matt Stults\nsubject DEFINITIONAL LANE (Matt's directive: fix the census-UNSAT definitional class): formal concept channel proven DEAD (2351 concepts, 8 cross-module uses — clause-local namespaces), two blind link rules inadmissible with receipts; claims-signature annotation lane built instead (Opus parity-passed lane, behavior-blind, sibling of example-act lifting) — calibration Set B PERFECT 0/15 incl. cross-behavior control, Set A 10/27 FAILS the pre-registered 80% bar; +10 TP / +1 held-FP on all-truth; 3 mechanical assembly fixes recorded (empty-governs fail-open, contexts-only ditto, minor->third_party role purity); layers PARKED as candidates per prereg discipline — adoption/seat-2/broadening are Matt's ruling; split-mining packets for the 8 non-empty-vector UNSAT pairs staged\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -78,7 +77,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8221-8229",
-   "text": "commit 98b3204a88b02664154a81132f6f118811bcdf70\nordinal 422\ndate 2026-08-20 09:48:36 -0700\nauthor Matt Stults\nsubject split-mining seat (Opus, blind): 8/8 non-empty-vector UNSAT pairs have a LOCAL distinguishing feature with a proposed atom \u2014 6 low / 2 medium gerrymander risk; requester_purpose_conditioned proposed independently by two packets (generality signal); no atom minted \u2014 adoption requires blind re-annotation + full regression per contract, Matt's ruling\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 98b3204a88b02664154a81132f6f118811bcdf70\nordinal 422\ndate 2026-08-20 09:48:36 -0700\nauthor Matt Stults\nsubject split-mining seat (Opus, blind): 8/8 non-empty-vector UNSAT pairs have a LOCAL distinguishing feature with a proposed atom — 6 low / 2 medium gerrymander risk; requester_purpose_conditioned proposed independently by two packets (generality signal); no atom minted — adoption requires blind re-annotation + full regression per contract, Matt's ruling\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -105,7 +104,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8248-8256",
-   "text": "commit 1b150ca0b9b47f135906d42844ced5ec8d9296d3\nordinal 425\ndate 2026-08-20 09:58:11 -0700\nauthor Matt Stults\nsubject TWO-SEAT BROADENING (Matt: proceed + ok): seat-2 all 179 + seat-1 remainder; blind agreement actor .95/acts .92/governs .88/protects .87/purpose .81; consensus=intersection, 268 disagreements queued for Fable; example-narration scope rule (deterministic claim-text predicate \u2014 example acts are example_acts.json's jurisdiction) removed 3/6 lane FP instances; net +8 TP / +4 FP-instances on 3 two-seat-agreed nodes -> priority Fable escalation decides final arithmetic; layers re-parked as consensus candidates\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 1b150ca0b9b47f135906d42844ced5ec8d9296d3\nordinal 425\ndate 2026-08-20 09:58:11 -0700\nauthor Matt Stults\nsubject TWO-SEAT BROADENING (Matt: proceed + ok): seat-2 all 179 + seat-1 remainder; blind agreement actor .95/acts .92/governs .88/protects .87/purpose .81; consensus=intersection, 268 disagreements queued for Fable; example-narration scope rule (deterministic claim-text predicate — example acts are example_acts.json's jurisdiction) removed 3/6 lane FP instances; net +8 TP / +4 FP-instances on 3 two-seat-agreed nodes -> priority Fable escalation decides final arithmetic; layers re-parked as consensus candidates\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -114,7 +113,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8257-8265",
-   "text": "commit f9b1745535ba9e19566a866b4060f5018d1350f2\nordinal 426\ndate 2026-08-20 09:58:52 -0700\nauthor Matt Stults\nsubject contract 8-addendum-3 (Matt: generalize the reification TODO): no normative modulation lives only in prose \u2014 a priori modulator classes (trigger/scope/defeater/manner-form/end) reified as atoms at translation time, document-agnostic phrasing; census->mine->mint->two-seat->regression pipeline bound as the standing repair loop, missed modulators declared normal-and-repairable\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit f9b1745535ba9e19566a866b4060f5018d1350f2\nordinal 426\ndate 2026-08-20 09:58:52 -0700\nauthor Matt Stults\nsubject contract 8-addendum-3 (Matt: generalize the reification TODO): no normative modulation lives only in prose — a priori modulator classes (trigger/scope/defeater/manner-form/end) reified as atoms at translation time, document-agnostic phrasing; census->mine->mint->two-seat->regression pipeline bound as the standing repair loop, missed modulators declared normal-and-repairable\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -141,7 +140,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8284-8292",
-   "text": "commit a5067778dc3041a9b14e6a9d84ec20c77bdf199f\nordinal 429\ndate 2026-08-20 10:09:22 -0700\nauthor Matt Stults\nsubject CONTEXT-ATOM LAYER (8-A3 repair loop, round 1): 4 atoms annotated across all 583 assert-bearing nodes by two independent Opus seats; consensus 81 credits / 20 disputes (queued); gerrymander recall checks PASS (aggregate_effect_at_scale 4 independent credits incl. 'political messaging at scale'); 4/5 UNSAT targets carry their atom, 5th separated by collider-side credits per the miner's vice-versa design; declaration design (which behavior consumes which context) deliberately left to design tier per 9b \u2014 layer alone changes no engagement\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit a5067778dc3041a9b14e6a9d84ec20c77bdf199f\nordinal 429\ndate 2026-08-20 10:09:22 -0700\nauthor Matt Stults\nsubject CONTEXT-ATOM LAYER (8-A3 repair loop, round 1): 4 atoms annotated across all 583 assert-bearing nodes by two independent Opus seats; consensus 81 credits / 20 disputes (queued); gerrymander recall checks PASS (aggregate_effect_at_scale 4 independent credits incl. 'political messaging at scale'); 4/5 UNSAT targets carry their atom, 5th separated by collider-side credits per the miner's vice-versa design; declaration design (which behavior consumes which context) deliberately left to design tier per 9b — layer alone changes no engagement\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   }

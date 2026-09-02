@@ -2,12 +2,11 @@
  "header": {
   "batch": "batch_137",
   "source_class": "git_log",
-  "brief_version": "0.7",
-  "glossary_version": "frozen aa3da29 +G-06",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
   "spans": 15,
   "first_span": "S02243",
-  "last_span": "S02257",
-  "note": "header refreshed for brief v0.7 (D-09) before translation"
+  "last_span": "S02257"
  },
  "spans": [
   {
@@ -15,7 +14,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7618-7626",
-   "text": "commit f3cc16099cc3121957c87e0738bffb28099c4b14\nordinal 355\ndate 2026-08-18 20:25:29 -0700\nauthor Matt Stults\nsubject ARM 3 REGISTERED RESULT: symbolic relevance 0.77/0.77/0.72 \u2014 EQUIVALENCE CLAIM PASSES (>= tuned seat on 2/3 + harm within one node of 0.78), above cold-start everywhere, $0/query, reasons printable. Harm prediction wrong in the good direction (declines 0.83 defensible). FIRED falsifier reported: mutation stage dead weight in current form (b 0.75 < a 0.77 on help) \u2014 coverage, not design; future work registered\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit f3cc16099cc3121957c87e0738bffb28099c4b14\nordinal 355\ndate 2026-08-18 20:25:29 -0700\nauthor Matt Stults\nsubject ARM 3 REGISTERED RESULT: symbolic relevance 0.77/0.77/0.72 — EQUIVALENCE CLAIM PASSES (>= tuned seat on 2/3 + harm within one node of 0.78), above cold-start everywhere, $0/query, reasons printable. Harm prediction wrong in the good direction (declines 0.83 defensible). FIRED falsifier reported: mutation stage dead weight in current form (b 0.75 < a 0.77 on help) — coverage, not design; future work registered\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -31,7 +30,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7636-7644",
-   "text": "commit 0b8a5aeb9192f3fc41de2da9878621b38f468ea2\nordinal 357\ndate 2026-08-18 20:27:10 -0700\nauthor Matt Stults\nsubject fix-backlog items 3+4: per-behavior argument declarations (v8, tuning-neutral, H1-targeted) and specificity-weighted input channel (seam/shared-provider excluded, multi-thread dependence required \u2014 tuning: harm +0.02 clean, caution neutral, help -0.02; stays a reported column)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 0b8a5aeb9192f3fc41de2da9878621b38f468ea2\nordinal 357\ndate 2026-08-18 20:27:10 -0700\nauthor Matt Stults\nsubject fix-backlog items 3+4: per-behavior argument declarations (v8, tuning-neutral, H1-targeted) and specificity-weighted input channel (seam/shared-provider excluded, multi-thread dependence required — tuning: harm +0.02 clean, caution neutral, help -0.02; stays a reported column)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -39,7 +38,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7645-7653",
-   "text": "commit 1e8041bdc2311c94f74e270dc4defd9e7efc039e\nordinal 358\ndate 2026-08-18 20:31:05 -0700\nauthor Matt Stults\nsubject census round 2: v9 scaffold adds STATIC document facts (authority hierarchy, rule constants) + standard n-ary situation facts; residue is now CORRECTLY-missing conditionals (developer_instruction, scope_of_autonomy) \u2014 scaffold complete; full mutation tuning run launched\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 1e8041bdc2311c94f74e270dc4defd9e7efc039e\nordinal 358\ndate 2026-08-18 20:31:05 -0700\nauthor Matt Stults\nsubject census round 2: v9 scaffold adds STATIC document facts (authority hierarchy, rule constants) + standard n-ary situation facts; residue is now CORRECTLY-missing conditionals (developer_instruction, scope_of_autonomy) — scaffold complete; full mutation tuning run launched\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -47,7 +46,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7654-7662",
-   "text": "commit 793ca28793c197e08339dd82792e95a85848a31f\nordinal 359\ndate 2026-08-18 20:35:18 -0700\nauthor Matt Stults\nsubject T2 blind verification: 33 APPROVE, 2 REVISE (missing acts-list edit; declaration/use arity contradiction) \u2014 revisions merged into drafts; application agent dispatched with per-module schema-validate loop\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 793ca28793c197e08339dd82792e95a85848a31f\nordinal 359\ndate 2026-08-18 20:35:18 -0700\nauthor Matt Stults\nsubject T2 blind verification: 33 APPROVE, 2 REVISE (missing acts-list edit; declaration/use arity contradiction) — revisions merged into drafts; application agent dispatched with per-module schema-validate loop\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -55,7 +54,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7663-7671",
-   "text": "commit cd5cce14a11c3303e014f08b8b8cc8c09aedaf04\nordinal 360\ndate 2026-08-18 20:36:42 -0700\nauthor Matt Stults\nsubject r9 tuning: mutation stage EARNS ITS KEEP with completed scaffold \u2014 (b) 0.77 > (a) 0.75 on helpfulness declining only wrong engagements (prec .79->.82, recall intact); undetermined mass reinterpreted: residue waits on correctly-absent conditional facts (census) \u2014 silence is honest, not broken\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit cd5cce14a11c3303e014f08b8b8cc8c09aedaf04\nordinal 360\ndate 2026-08-18 20:36:42 -0700\nauthor Matt Stults\nsubject r9 tuning: mutation stage EARNS ITS KEEP with completed scaffold — (b) 0.77 > (a) 0.75 on helpfulness declining only wrong engagements (prec .79->.82, recall intact); undetermined mass reinterpreted: residue waits on correctly-absent conditional facts (census) — silence is honest, not broken\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -71,7 +70,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7681-7689",
-   "text": "commit a2cc6dee6cc4273cb548783dec4c16281cb2f440\nordinal 362\ndate 2026-08-18 20:41:51 -0700\nauthor Matt Stults\nsubject FRONTIER REPAIR 8 applied: all 35 T2 arity repairs (34 nodes) schema-valid, gate seam_contract 0 / arity_disagreement 0 (were 35/26); applier's documented deviation (assumed+inference gloss per M24, repair-7 precedent) accepted; tests 26 passed. Last hard class: 17 section-local glosses \u2014 harmonization ceremony launched\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit a2cc6dee6cc4273cb548783dec4c16281cb2f440\nordinal 362\ndate 2026-08-18 20:41:51 -0700\nauthor Matt Stults\nsubject FRONTIER REPAIR 8 applied: all 35 T2 arity repairs (34 nodes) schema-valid, gate seam_contract 0 / arity_disagreement 0 (were 35/26); applier's documented deviation (assumed+inference gloss per M24, repair-7 precedent) accepted; tests 26 passed. Last hard class: 17 section-local glosses — harmonization ceremony launched\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -87,7 +86,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7699-7707",
-   "text": "commit 53e34cbcdd1d268df2753e603a038f0ac55220fb\nordinal 364\ndate 2026-08-18 20:51:51 -0700\nauthor Matt Stults\nsubject gloss verification: 14 APPROVE / 2 REVISE / 1 REJECT \u2014 the REJECT is FM9 working (applies_to is polymorphic: rule->content/situation/output, principle->user; harmonized ON the polymorphism, local sort glosses kept); user_authority impostor use renamed not merged; application HELD behind the adversarial code review\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 53e34cbcdd1d268df2753e603a038f0ac55220fb\nordinal 364\ndate 2026-08-18 20:51:51 -0700\nauthor Matt Stults\nsubject gloss verification: 14 APPROVE / 2 REVISE / 1 REJECT — the REJECT is FM9 working (applies_to is polymorphic: rule->content/situation/output, principle->user; harmonized ON the polymorphism, local sort glosses kept); user_authority impostor use renamed not merged; application HELD behind the adversarial code review\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -95,7 +94,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7708-7716",
-   "text": "commit 0a58bfb3c8aa8d1d628a5493eb27407cfe180032\nordinal 365\ndate 2026-08-18 20:53:21 -0700\nauthor Matt Stults\nsubject two stale-test fixes from full-suite run: budget test synced to the LIVE $25 authorization (D6, named); chars_per_token fingerprint sharpened to reply-size AND model \u2014 81 DeepSeek ontology-classification calls were polluting the readback calibration band (ratio 6.89 -> in-band)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 0a58bfb3c8aa8d1d628a5493eb27407cfe180032\nordinal 365\ndate 2026-08-18 20:53:21 -0700\nauthor Matt Stults\nsubject two stale-test fixes from full-suite run: budget test synced to the LIVE $25 authorization (D6, named); chars_per_token fingerprint sharpened to reply-size AND model — 81 DeepSeek ontology-classification calls were polluting the readback calibration band (ratio 6.89 -> in-band)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -103,7 +102,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7717-7725",
-   "text": "commit c3a20f2cae8147c7d48b08d26c1e96e2956c641c\nordinal 366\ndate 2026-08-18 20:58:43 -0700\nauthor Matt Stults\nsubject ADVERSARIAL REVIEW FIRED (MATERIAL) and is FIXED: registered-result seat columns were arm-2 held-out numbers under a 'same test slice' header \u2014 errata appended with true same-slice comparison (arm (a) >= tuned on ALL THREE, +0.10/+0.08/+0.04; cold-harm within margin, explained as mass-decline artifact on a negative-heavy slice); arm-3 numbers reviewer-reproduced bit-for-bit; 2 latent hazards hardened (deterministic truth merge + conflict guard; exact-module firing check), post-fix numbers identical\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit c3a20f2cae8147c7d48b08d26c1e96e2956c641c\nordinal 366\ndate 2026-08-18 20:58:43 -0700\nauthor Matt Stults\nsubject ADVERSARIAL REVIEW FIRED (MATERIAL) and is FIXED: registered-result seat columns were arm-2 held-out numbers under a 'same test slice' header — errata appended with true same-slice comparison (arm (a) >= tuned on ALL THREE, +0.10/+0.08/+0.04; cold-harm within margin, explained as mass-decline artifact on a negative-heavy slice); arm-3 numbers reviewer-reproduced bit-for-bit; 2 latent hazards hardened (deterministic truth merge + conflict guard; exact-module firing check), post-fix numbers identical\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -111,7 +110,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7726-7734",
-   "text": "commit 6231ad2e299869cbb5c0a919b10bf95585457ac2\nordinal 367\ndate 2026-08-18 21:09:14 -0700\nauthor Matt Stults\nsubject FRONTIER REPAIR 9 applied: 133 nodes gloss-harmonized (user_authority impostor renamed; FM9-amended applies_to untouched by design); seam layer CLEAN: seam_contract 0, arity_disagreement 0, section_local_gloss 17->1 (the recorded polymorphic pair); l796_1000_n034 skipped \u2014 pre-existing schema failure beyond draft scope, own mini-ceremony queued\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 6231ad2e299869cbb5c0a919b10bf95585457ac2\nordinal 367\ndate 2026-08-18 21:09:14 -0700\nauthor Matt Stults\nsubject FRONTIER REPAIR 9 applied: 133 nodes gloss-harmonized (user_authority impostor renamed; FM9-amended applies_to untouched by design); seam layer CLEAN: seam_contract 0, arity_disagreement 0, section_local_gloss 17->1 (the recorded polymorphic pair); l796_1000_n034 skipped — pre-existing schema failure beyond draft scope, own mini-ceremony queued\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -119,7 +118,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7735-7743",
-   "text": "commit d9ec1dcc6a54f054a9792d3ac53c83017431286e\nordinal 368\ndate 2026-08-18 21:10:01 -0700\nauthor Matt Stults\nsubject seam layer 0/0/0 (polymorphic ruling gate-encoded, tests 23 green); FIX_GATE_ASSESSMENT: arm-3 backlog DONE with verifications named; remaining: 1 mini-ceremony node + the OPEN QUESTION \u2014 does Matt's gate include the pre-existing module-level detector queue (204+133+... standing hits from the bulk campaign)?\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit d9ec1dcc6a54f054a9792d3ac53c83017431286e\nordinal 368\ndate 2026-08-18 21:10:01 -0700\nauthor Matt Stults\nsubject seam layer 0/0/0 (polymorphic ruling gate-encoded, tests 23 green); FIX_GATE_ASSESSMENT: arm-3 backlog DONE with verifications named; remaining: 1 mini-ceremony node + the OPEN QUESTION — does Matt's gate include the pre-existing module-level detector queue (204+133+... standing hits from the bulk campaign)?\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -127,7 +126,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7744-7752",
-   "text": "commit fe570908c55d5596972c2d8b1a3276fc98560497\nordinal 369\ndate 2026-08-18 21:28:50 -0700\nauthor Matt Stults\nsubject deviation-ledger fix batch, ablation-disciplined: 125/125 deviations EXPLAINED (0 unexplained); bridges/arg-sorts/actor fixes applied; protective family split (counter_harm/safe_manner) kept for the ontology but REVERTED from harm's acts (net -10: corpus protective acts mostly protect the USER \u2014 party-typed args recorded as the E1 family limit); THREE plumbing bugs found and fixed with guards (V6 does-desync check, declared+transitive act hierarchy, genus-governs-species matching direction restored). Final: help 80% / harm 66% / caution 72% (318/436 = 72%, +7 net)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit fe570908c55d5596972c2d8b1a3276fc98560497\nordinal 369\ndate 2026-08-18 21:28:50 -0700\nauthor Matt Stults\nsubject deviation-ledger fix batch, ablation-disciplined: 125/125 deviations EXPLAINED (0 unexplained); bridges/arg-sorts/actor fixes applied; protective family split (counter_harm/safe_manner) kept for the ontology but REVERTED from harm's acts (net -10: corpus protective acts mostly protect the USER — party-typed args recorded as the E1 family limit); THREE plumbing bugs found and fixed with guards (V6 does-desync check, declared+transitive act hierarchy, genus-governs-species matching direction restored). Final: help 80% / harm 66% / caution 72% (318/436 = 72%, +7 net)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   }
  ]

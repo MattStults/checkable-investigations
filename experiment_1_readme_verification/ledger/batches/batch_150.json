@@ -2,12 +2,11 @@
  "header": {
   "batch": "batch_150",
   "source_class": "git_log",
-  "brief_version": "0.7",
-  "glossary_version": "frozen aa3da29 +G-06",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
   "spans": 15,
   "first_span": "S02438",
-  "last_span": "S02452",
-  "note": "header refreshed for brief v0.7 (D-09) before translation"
+  "last_span": "S02452"
  },
  "spans": [
   {
@@ -15,7 +14,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9344-9351",
-   "text": "commit 988297082542ce8635d6718ddf7768a4ddab1460\nordinal 550\ndate 2026-08-24 17:03:41 -0700\nauthor Matt Stults\nsubject ITERATION 1 STEP 4: attempt-2 confirmation WAVE rulings landed (fresh Fable seat, lineage brief verbatim, ~55k raw) \u2014 machine-checked 40/40 nodes, 24 relevant / 16 not_relevant. NOT yet scored: scoring waits for the venue decision (3 registered panel seats vs budget) so that decision stays untainted by the result.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 988297082542ce8635d6718ddf7768a4ddab1460\nordinal 550\ndate 2026-08-24 17:03:41 -0700\nauthor Matt Stults\nsubject ITERATION 1 STEP 4: attempt-2 confirmation WAVE rulings landed (fresh Fable seat, lineage brief verbatim, ~55k raw) — machine-checked 40/40 nodes, 24 relevant / 16 not_relevant. NOT yet scored: scoring waits for the venue decision (3 registered panel seats vs budget) so that decision stays untainted by the result.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -23,7 +22,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9352-9359",
-   "text": "commit ba186702b82dcbb3b86d0b359995db670e192c91\nordinal 551\ndate 2026-08-24 17:06:37 -0700\nauthor Matt Stults\nsubject ITERATION 1 CLOSE (steps 4-5): attempt-2 realization at the full registered venue \u2014 engaged precision 0.75 vs attempt-1's 0.40, P1 PASS (revert line 0.55), P2 within band, P3 PASS (fixed class did not recur), panel split 1/8; candidate B KEPT. P4 FAILED (decline 0.60 vs 0.80) and is demonstrably a prediction-calibration error, not a repair defect: all 8 fresh FNs pre-date the repair (act-channel reach misses), 0/48 walled nodes ruled relevant, and the one sampled walled node was freshly re-ruled not_relevant. New 13-mismatch queue seeded for iteration 2 (5 FP + 8 FN; the FN class is C-I-shaped). Notes entry 0005. ~430k raw across 10 seats; 26% halt line respected by paste-before-dispatch.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit ba186702b82dcbb3b86d0b359995db670e192c91\nordinal 551\ndate 2026-08-24 17:06:37 -0700\nauthor Matt Stults\nsubject ITERATION 1 CLOSE (steps 4-5): attempt-2 realization at the full registered venue — engaged precision 0.75 vs attempt-1's 0.40, P1 PASS (revert line 0.55), P2 within band, P3 PASS (fixed class did not recur), panel split 1/8; candidate B KEPT. P4 FAILED (decline 0.60 vs 0.80) and is demonstrably a prediction-calibration error, not a repair defect: all 8 fresh FNs pre-date the repair (act-channel reach misses), 0/48 walled nodes ruled relevant, and the one sampled walled node was freshly re-ruled not_relevant. New 13-mismatch queue seeded for iteration 2 (5 FP + 8 FN; the FN class is C-I-shaped). Notes entry 0005. ~430k raw across 10 seats; 26% halt line respected by paste-before-dispatch.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -47,7 +46,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9376-9383",
-   "text": "commit 1c3ee2ac3648d203452aaa005778ef2c0e410f50\nordinal 554\ndate 2026-08-24 17:40:13 -0700\nauthor Matt Stults\nsubject ITERATION 1 path audit (/bin/bash): all 12 mismatch traces replayed from recorded artifacts and clingo-certified legal (12/12, 0 violations) against the same machine that verified the calculus; Theorem-2 port census included (at most one P1 per resolution); findings F-a1 (SUSPENDED_OPEN missing from the v1 .lp encoding \u2014 suspension is ledger state, not machine terminal, until encoded) and F-a2 (validated deltas do not consume R3 budget) recorded rather than smoothed over.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 1c3ee2ac3648d203452aaa005778ef2c0e410f50\nordinal 554\ndate 2026-08-24 17:40:13 -0700\nauthor Matt Stults\nsubject ITERATION 1 path audit (/bin/bash): all 12 mismatch traces replayed from recorded artifacts and clingo-certified legal (12/12, 0 violations) against the same machine that verified the calculus; Theorem-2 port census included (at most one P1 per resolution); findings F-a1 (SUSPENDED_OPEN missing from the v1 .lp encoding — suspension is ledger state, not machine terminal, until encoded) and F-a2 (validated deltas do not consume R3 budget) recorded rather than smoothed over.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -55,7 +54,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9384-9391",
-   "text": "commit a7e9a40b503fc34f9632c72d8af200e22c015a53\nordinal 555\ndate 2026-08-24 17:41:14 -0700\nauthor Matt Stults\nsubject OPUS PARITY CERTIFICATE GRANTED (zero Fable): 3 blind Opus seats vs the 23-node panel-tier key \u2014 majority 0.913 (gate 0.90), mean single-seat 0.884 (gate 0.80; above Fable's own 0.846 baseline), per-class 8/9 + 13/14. Scope: lineage ruling seat, this brief, tradeoffs venue; deployment = Opus waves + seeded 20% Fable spot-checks + tripwire; final iteration all-Fable (Matt's ruling). Notes entry 0006. Revised iterations-2-3 Fable estimate: ~1-1.5 points.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit a7e9a40b503fc34f9632c72d8af200e22c015a53\nordinal 555\ndate 2026-08-24 17:41:14 -0700\nauthor Matt Stults\nsubject OPUS PARITY CERTIFICATE GRANTED (zero Fable): 3 blind Opus seats vs the 23-node panel-tier key — majority 0.913 (gate 0.90), mean single-seat 0.884 (gate 0.80; above Fable's own 0.846 baseline), per-class 8/9 + 13/14. Scope: lineage ruling seat, this brief, tradeoffs venue; deployment = Opus waves + seeded 20% Fable spot-checks + tripwire; final iteration all-Fable (Matt's ruling). Notes entry 0006. Revised iterations-2-3 Fable estimate: ~1-1.5 points.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -63,7 +62,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9392-9399",
-   "text": "commit 347f85de7b256902a7fffa572c6dfbbeca75da5f\nordinal 556\ndate 2026-08-24 17:46:58 -0700\nauthor Matt Stults\nsubject ITERATION 2 STEP 1 (triage, $0): 13-miss batch routed \u2014 11 wave-single nodes to R1 escalation (OPEN(P1), A5 premises-first), n038 standing SUSPENDED-OPEN re-confirmed, n046 panel-tier FN queued for the batch move. Truth overlap verified conflict-free. Escalation packet (shuffle seed 20260831) + seeded Fable spot-check sample (seed 20260830, 3/11) committed pre-dispatch; venue = certified Opus per ITER1_OPUS_PARITY_CERTIFICATE.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 347f85de7b256902a7fffa572c6dfbbeca75da5f\nordinal 556\ndate 2026-08-24 17:46:58 -0700\nauthor Matt Stults\nsubject ITERATION 2 STEP 1 (triage, $0): 13-miss batch routed — 11 wave-single nodes to R1 escalation (OPEN(P1), A5 premises-first), n038 standing SUSPENDED-OPEN re-confirmed, n046 panel-tier FN queued for the batch move. Truth overlap verified conflict-free. Escalation packet (shuffle seed 20260831) + seeded Fable spot-check sample (seed 20260830, 3/11) committed pre-dispatch; venue = certified Opus per ITER1_OPUS_PARITY_CERTIFICATE.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -79,7 +78,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9408-9415",
-   "text": "commit 15aec62d2a2e25a48aa1d82c1ccdb37263594462\nordinal 558\ndate 2026-08-24 17:49:07 -0700\nauthor Matt Stults\nsubject ITERATION 2 STEP 2a: R1 escalation executed on the CERTIFIED OPUS venue (3 seats, ~97k Opus raw, zero Fable) \u2014 0/11 overturns: all attempt-2 misses confirmed at panel tier (1 split, l699_796_n010 2-1 relevant). Contrast with attempt-1's 3/9 single-wave overturn rate recorded. Fable spot-check (seeded 3/11) pending /usage checkpoint; tripwire voids the wave on >1 disagreement.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 15aec62d2a2e25a48aa1d82c1ccdb37263594462\nordinal 558\ndate 2026-08-24 17:49:07 -0700\nauthor Matt Stults\nsubject ITERATION 2 STEP 2a: R1 escalation executed on the CERTIFIED OPUS venue (3 seats, ~97k Opus raw, zero Fable) — 0/11 overturns: all attempt-2 misses confirmed at panel tier (1 split, l699_796_n010 2-1 relevant). Contrast with attempt-1's 3/9 single-wave overturn rate recorded. Fable spot-check (seeded 3/11) pending /usage checkpoint; tripwire voids the wave on >1 disagreement.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -87,7 +86,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9416-9423",
-   "text": "commit ce3290895fe64e7275ce352152ae5e55fb01f4db\nordinal 559\ndate 2026-08-24 17:55:03 -0700\nauthor Matt Stults\nsubject ITERATION 2 STEPS 2b-3: batch move ADOPTED pending V5 \u2014 does+=override (C-D) + machinery_concern:[override], a NEW TYPED GATE letting a behaviour declare the document's arbitration machinery as subject matter (I1 build; engine+registry+handshake test same commit; 43 tests green; inert unless declared). V1 3 fixes/0 breaks on the 75-node ledger, V2 0-degraded, V3 card (13/13 gains in-family), V4 0 ruled flips. Rejected by name: does+=provide (+139 blast), identity_meta widening, broad machinery. 10 mismatches SUSPENDED-OPEN with grounds. V5 prediction registered pre-realization; FINAL-iteration confirmation venue = all-Fable per Matt.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit ce3290895fe64e7275ce352152ae5e55fb01f4db\nordinal 559\ndate 2026-08-24 17:55:03 -0700\nauthor Matt Stults\nsubject ITERATION 2 STEPS 2b-3: batch move ADOPTED pending V5 — does+=override (C-D) + machinery_concern:[override], a NEW TYPED GATE letting a behaviour declare the document's arbitration machinery as subject matter (I1 build; engine+registry+handshake test same commit; 43 tests green; inert unless declared). V1 3 fixes/0 breaks on the 75-node ledger, V2 0-degraded, V3 card (13/13 gains in-family), V4 0 ruled flips. Rejected by name: does+=provide (+139 blast), identity_meta widening, broad machinery. 10 mismatches SUSPENDED-OPEN with grounds. V5 prediction registered pre-realization; FINAL-iteration confirmation venue = all-Fable per Matt.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -103,7 +102,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9432-9439",
-   "text": "commit f44cb8f5ae98b4006edd88922f740c9fc462d559\nordinal 561\ndate 2026-08-24 17:55:57 -0700\nauthor Matt Stults\nsubject ITERATION 2 pre-ruling venue addendum: the draw sampled 0/16 gained nodes (P3 would be vacuous) \u2014 registered a seeded 5-node machinery probe (seed 20260834, Fable seat) BEFORE any ruling exists; P3 scores on the probe, precision/decline on the draw only.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit f44cb8f5ae98b4006edd88922f740c9fc462d559\nordinal 561\ndate 2026-08-24 17:55:57 -0700\nauthor Matt Stults\nsubject ITERATION 2 pre-ruling venue addendum: the draw sampled 0/16 gained nodes (P3 would be vacuous) — registered a seeded 5-node machinery probe (seed 20260834, Fable seat) BEFORE any ruling exists; P3 scores on the probe, precision/decline on the draw only.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -119,7 +118,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9448-9455",
-   "text": "commit bdd4640e363a492da7e195bd2255de8d29469cdc\nordinal 563\ndate 2026-08-24 17:58:08 -0700\nauthor Matt Stults\nsubject Notes 0008: final-block checkpoint \u2014 27% pasted, Matt authorized the all-Fable closing block (~2 pts, expected ~29%).\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit bdd4640e363a492da7e195bd2255de8d29469cdc\nordinal 563\ndate 2026-08-24 17:58:08 -0700\nauthor Matt Stults\nsubject Notes 0008: final-block checkpoint — 27% pasted, Matt authorized the all-Fable closing block (~2 pts, expected ~29%).\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -127,7 +126,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9456-9463",
-   "text": "commit 278d55ccfb074c7ae9e31d7972eff6f935f488b4\nordinal 564\ndate 2026-08-24 18:02:11 -0700\nauthor Matt Stults\nsubject ITERATION 2 STEP 4: attempt-3 realization landed and scored FAITHFULLY \u2014 engaged precision 0.40 (P1 <0.60 FAIL), decline 0.50 (P4 FAIL); P3 machinery probe 5/5 relevant PASS; spot-check 3/3, Opus tripwire not fired; panel splits 0/8. Diagnostics recorded IN the artifact: the draw sampled 0/16 of the move's gains (zero move-coverage in the P1 estimator \u2014 my registration error, the addendum fixed only P3), the wave seat scores 4/7 vs standing ledger truth incl. TWO panel-tier contradictions, corrected estimator 0.50. HALT-AND-SURFACE: registered rule says revert, move-level evidence says the estimator failed \u2014 Matt's ruling required; nothing executed either way.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 278d55ccfb074c7ae9e31d7972eff6f935f488b4\nordinal 564\ndate 2026-08-24 18:02:11 -0700\nauthor Matt Stults\nsubject ITERATION 2 STEP 4: attempt-3 realization landed and scored FAITHFULLY — engaged precision 0.40 (P1 <0.60 FAIL), decline 0.50 (P4 FAIL); P3 machinery probe 5/5 relevant PASS; spot-check 3/3, Opus tripwire not fired; panel splits 0/8. Diagnostics recorded IN the artifact: the draw sampled 0/16 of the move's gains (zero move-coverage in the P1 estimator — my registration error, the addendum fixed only P3), the wave seat scores 4/7 vs standing ledger truth incl. TWO panel-tier contradictions, corrected estimator 0.50. HALT-AND-SURFACE: registered rule says revert, move-level evidence says the estimator failed — Matt's ruling required; nothing executed either way.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   }
  ]

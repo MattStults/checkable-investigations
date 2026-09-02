@@ -2,12 +2,11 @@
  "header": {
   "batch": "batch_140",
   "source_class": "git_log",
-  "brief_version": "0.7",
-  "glossary_version": "frozen aa3da29 +G-06",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
   "spans": 15,
   "first_span": "S02288",
-  "last_span": "S02302",
-  "note": "header refreshed for brief v0.7 (D-09) before translation"
+  "last_span": "S02302"
  },
  "spans": [
   {
@@ -23,7 +22,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8032-8040",
-   "text": "commit 5b79f26733fcfd1a68314526ab0f9f83c9db2948\nordinal 401\ndate 2026-08-19 14:45:30 -0700\nauthor Matt Stults\nsubject convergence iteration 1 COMPLETE: 84 FPs adjudicated -> bucket 2 (both-defensible reading difference, turns_on recorded) 29, bucket 0 (instrument wrong, iter-2 fix targets) 54, panel-wrong (re-panel queue) 1; FN side 115 all in census classes (bucket 3), FN bucket 0 = 0; H-R7 ends-graph closure measured and REJECTED all variants (recovers the predicted FN class but imports more FP mass \u2014 wrong direction under charter); ends-graph committed quote-gated with 12 rejected edges named; ledger at panel_run1/convergence/LEDGER_iter1.json\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 5b79f26733fcfd1a68314526ab0f9f83c9db2948\nordinal 401\ndate 2026-08-19 14:45:30 -0700\nauthor Matt Stults\nsubject convergence iteration 1 COMPLETE: 84 FPs adjudicated -> bucket 2 (both-defensible reading difference, turns_on recorded) 29, bucket 0 (instrument wrong, iter-2 fix targets) 54, panel-wrong (re-panel queue) 1; FN side 115 all in census classes (bucket 3), FN bucket 0 = 0; H-R7 ends-graph closure measured and REJECTED all variants (recovers the predicted FN class but imports more FP mass — wrong direction under charter); ends-graph committed quote-gated with 12 rejected edges named; ledger at panel_run1/convergence/LEDGER_iter1.json\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -47,7 +46,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8059-8067",
-   "text": "commit 9052f391ef69253df610d36994cde7b95a3f415d\nordinal 404\ndate 2026-08-19 15:00:26 -0700\nauthor Matt Stults\nsubject convergence iteration 2 (instrument v15): Opus bridge-subtype audit (48 retargets, contract-verified) + helpfulness does-narrowing -> bucket-0 FPs 54->17 with ZERO brand-new FPs, caution 0.82 (best ever, FP 13), help FP 41->17 accuracy up, FN 115->132 into act_no_bridge_or_verb per charter; V1-V6 0 breaches, 22 tests pass; iter-2 Fable cost ~0 (Opus+deterministic); remaining bucket-0 dominated by the uncertainty section (l2821_3040 x7) \u2014 the accuracy/honesty relational cluster\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 9052f391ef69253df610d36994cde7b95a3f415d\nordinal 404\ndate 2026-08-19 15:00:26 -0700\nauthor Matt Stults\nsubject convergence iteration 2 (instrument v15): Opus bridge-subtype audit (48 retargets, contract-verified) + helpfulness does-narrowing -> bucket-0 FPs 54->17 with ZERO brand-new FPs, caution 0.82 (best ever, FP 13), help FP 41->17 accuracy up, FN 115->132 into act_no_bridge_or_verb per charter; V1-V6 0 breaches, 22 tests pass; iter-2 Fable cost ~0 (Opus+deterministic); remaining bucket-0 dominated by the uncertainty section (l2821_3040 x7) — the accuracy/honesty relational cluster\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -79,7 +78,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8095-8103",
-   "text": "commit 14495c3b18636d8ba9938b0574e4ade10ff6e4ea\nordinal 408\ndate 2026-08-19 15:55:40 -0700\nauthor Matt Stults\nsubject phase-2 iteration 2 COMPLETE (v17 amended): Opus fix-proposals applied with charter arithmetic \u2014 19 bridge fixes (5 invalid non-canonical targets REVERTED), 17 annotation corrections (3 locked skipped), act_in_world does-addition REVERTED (5 IW FPs vs 1 fix), 5 on-face act_party corrections (assistant acts mislabeled with object party); help 324/397=0.82 FP12, harm 185/234=0.79, caution 166/205=0.81; GLOBAL bucket-0 63->36 (FP 14 + FN 22), bucket-4 mechanisms 15, zero unadjudicated; tests+validators green\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 14495c3b18636d8ba9938b0574e4ade10ff6e4ea\nordinal 408\ndate 2026-08-19 15:55:40 -0700\nauthor Matt Stults\nsubject phase-2 iteration 2 COMPLETE (v17 amended): Opus fix-proposals applied with charter arithmetic — 19 bridge fixes (5 invalid non-canonical targets REVERTED), 17 annotation corrections (3 locked skipped), act_in_world does-addition REVERTED (5 IW FPs vs 1 fix), 5 on-face act_party corrections (assistant acts mislabeled with object party); help 324/397=0.82 FP12, harm 185/234=0.79, caution 166/205=0.81; GLOBAL bucket-0 63->36 (FP 14 + FN 22), bucket-4 mechanisms 15, zero unadjudicated; tests+validators green\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -87,7 +86,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8104-8112",
-   "text": "commit eb9fad6bac4f6f9e116837ec0c6cc2a76030befd\nordinal 409\ndate 2026-08-19 16:33:16 -0700\nauthor Matt Stults\nsubject convergence panels: protects panels (2 fresh + layer) CONFIRM original beneficiary labels on all 9 wall-conflict nodes \u2014 Opus relabel proposals REJECTED and nodes panel-locked; the wall-blocked FN class is STRUCTURAL (relevance without matching beneficiary \u2014 the permit class writ large), not annotation error; relevance re-panels: caution n011 flips relevant (FP dissolves), harm l1_170_n005 flips not-relevant (org-license FN dissolves), two stand with splits recorded via panel_rerulings; Opus building example-acts layer + deterministic reason renderer\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit eb9fad6bac4f6f9e116837ec0c6cc2a76030befd\nordinal 409\ndate 2026-08-19 16:33:16 -0700\nauthor Matt Stults\nsubject convergence panels: protects panels (2 fresh + layer) CONFIRM original beneficiary labels on all 9 wall-conflict nodes — Opus relabel proposals REJECTED and nodes panel-locked; the wall-blocked FN class is STRUCTURAL (relevance without matching beneficiary — the permit class writ large), not annotation error; relevance re-panels: caution n011 flips relevant (FP dissolves), harm l1_170_n005 flips not-relevant (org-license FN dissolves), two stand with splits recorded via panel_rerulings; Opus building example-acts layer + deterministic reason renderer\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -95,7 +94,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8113-8121",
-   "text": "commit e58abe96e2f419b61b2b4aa0f8c69fe055e59938\nordinal 410\ndate 2026-08-19 16:36:51 -0700\nauthor Matt Stults\nsubject phase-2 iteration 3 COMPLETE: example-act lifting wired (6 bucket-4 FNs fixed; help 329/397=0.83 best-ever; 1 new FP adjudicated both-defensible); identity bridges for canonical acts; deterministic reason renderer delivered (explain_relevance.py \u2014 query-time LLM-free accounts, all decline gates); protects panels locked 9 nodes (wall-blocked FN class ruled STRUCTURAL); GLOBAL bucket-0 36, bucket-4 9; tests pass\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit e58abe96e2f419b61b2b4aa0f8c69fe055e59938\nordinal 410\ndate 2026-08-19 16:36:51 -0700\nauthor Matt Stults\nsubject phase-2 iteration 3 COMPLETE: example-act lifting wired (6 bucket-4 FNs fixed; help 329/397=0.83 best-ever; 1 new FP adjudicated both-defensible); identity bridges for canonical acts; deterministic reason renderer delivered (explain_relevance.py — query-time LLM-free accounts, all decline gates); protects panels locked 9 nodes (wall-blocked FN class ruled STRUCTURAL); GLOBAL bucket-0 36, bucket-4 9; tests pass\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -111,7 +110,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8131-8139",
-   "text": "commit 8c78070bb24a14d37b999728e71d9c2e765c6f3e\nordinal 412\ndate 2026-08-19 16:49:59 -0700\nauthor Matt Stults\nsubject review doc rev 2: per-node dual accounts \u2014 the instrument's own mechanical reason (explain_relevance.py output: engaging functor/bridge/wall facts, or first failing gate) beside the strict judge's turns_on, for all 45 terminal-candidate nodes\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 8c78070bb24a14d37b999728e71d9c2e765c6f3e\nordinal 412\ndate 2026-08-19 16:49:59 -0700\nauthor Matt Stults\nsubject review doc rev 2: per-node dual accounts — the instrument's own mechanical reason (explain_relevance.py output: engaging functor/bridge/wall facts, or first failing gate) beside the strict judge's turns_on, for all 45 terminal-candidate nodes\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {

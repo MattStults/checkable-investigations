@@ -2,8 +2,8 @@
  "header": {
   "batch": "batch_029",
   "source_class": "arc1_docs",
-  "brief_version": "0.7",
-  "glossary_version": "frozen aa3da29 +G-06",
+  "brief_version": "0.5",
+  "glossary_version": "frozen d887fb9",
   "spans": 15,
   "first_span": "S00400",
   "last_span": "S00414",
@@ -23,8 +23,7 @@
      "engine_failure requires kind refusal|wrong_answer|unstated"
     ]
    }
-  ],
-  "note": "header refreshed for brief v0.7 (D-09) before translation"
+  ]
  },
  "spans": [
   {
@@ -32,7 +31,7 @@
    "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
    "lines": "1470-1495",
-   "text": "## Things that will bite you\n\n- **`incompat` is the only channel for indirect conflicts** and the cheap model produced\n  zero. If a frontier model also under-produces it, `|C_tool|` collapses regardless of\n  coverage. B added a pairwise-pass requirement and an `incompat_declined` record; verify it\n  actually fires.\n- **Coverage is gameable by decomposition** \u2014 the extractor split one provision into 8 rules\n  differing only in condition, inflating coverage without adding conflict surface.\n- **`jaccard({},{}) == 1.0`** meant all-empty runs reported *perfect* self-agreement. Fixed\n  (`None` when every run empty) but the class of bug \u2014 a metric that reads best when the\n  system fails worst \u2014 is worth re-checking elsewhere.\n- **The join normalizer needs all four transforms**: whitespace runs, `[^xxxx]` footnote\n  markers (25 mid-sentence), markdown emphasis, and *both* renderings of a markdown link.\n  Emphasis stripping alone is worth 313 passages \u2014 every example caption is `**Example**:`\n  in source and `Example:` in the panel, so no example block can match without it. Dropping\n  any one transform silently lowers every downstream metric. `test_inventory.py` guards this.\n- **Relevance must not be scoped to conditional clauses.** Example blocks carry 39.1% of\n  high-consensus panel hits vs 38.2% for conditionals; conditional-only caps recall at 38%.\n  Re-derive with `measure_kinds.py` if you doubt it.\n- **`atom_provenance.py` keys on `clause_id`** and defaults to the constitution pilot; it\n  will `KeyError` on a Model Spec `extraction.json` (`focus_id` naming split). Unfixed.\n- **`gpt-5.6-*` models reject `max_tokens`**, require `max_completion_tokens`. Handled by\n  auto-adaptation in `providers.py`, but don't reintroduce it elsewhere.\n- Reasoning is billed as completion tokens and **scales with the budget you give it** \u2014\n  `gpt-oss-20b` produced 71,964 chars of reasoning and zero content at 16k max_tokens.\n",
+   "text": "## Things that will bite you\n\n- **`incompat` is the only channel for indirect conflicts** and the cheap model produced\n  zero. If a frontier model also under-produces it, `|C_tool|` collapses regardless of\n  coverage. B added a pairwise-pass requirement and an `incompat_declined` record; verify it\n  actually fires.\n- **Coverage is gameable by decomposition** — the extractor split one provision into 8 rules\n  differing only in condition, inflating coverage without adding conflict surface.\n- **`jaccard({},{}) == 1.0`** meant all-empty runs reported *perfect* self-agreement. Fixed\n  (`None` when every run empty) but the class of bug — a metric that reads best when the\n  system fails worst — is worth re-checking elsewhere.\n- **The join normalizer needs all four transforms**: whitespace runs, `[^xxxx]` footnote\n  markers (25 mid-sentence), markdown emphasis, and *both* renderings of a markdown link.\n  Emphasis stripping alone is worth 313 passages — every example caption is `**Example**:`\n  in source and `Example:` in the panel, so no example block can match without it. Dropping\n  any one transform silently lowers every downstream metric. `test_inventory.py` guards this.\n- **Relevance must not be scoped to conditional clauses.** Example blocks carry 39.1% of\n  high-consensus panel hits vs 38.2% for conditionals; conditional-only caps recall at 38%.\n  Re-derive with `measure_kinds.py` if you doubt it.\n- **`atom_provenance.py` keys on `clause_id`** and defaults to the constitution pilot; it\n  will `KeyError` on a Model Spec `extraction.json` (`focus_id` naming split). Unfixed.\n- **`gpt-5.6-*` models reject `max_tokens`**, require `max_completion_tokens`. Handled by\n  auto-adaptation in `providers.py`, but don't reintroduce it elsewhere.\n- Reasoning is billed as completion tokens and **scales with the budget you give it** —\n  `gpt-oss-20b` produced 71,964 chars of reasoning and zero content at 16k max_tokens.\n",
    "source_class": "arc1_docs",
    "context": null
   },
@@ -41,7 +40,7 @@
    "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
    "lines": "1496-1503",
-   "text": "## Instrument findings that shape the design\n\nBlind two-rater experiment (`audit_*.json`): the **directed** span question (\"which span\nlicenses this gloss, does it assert more?\") has precision 1.00 and found 3 uncatalogued\ndefects. The **global** question (\"does the document draw this distinction?\") failed on a\nknown coined atom *with full document access*. **Always show the full clause, never a\ntruncated span.** Dominant defect class is provenance \u2014 real distinction, wrong citation.\n",
+   "text": "## Instrument findings that shape the design\n\nBlind two-rater experiment (`audit_*.json`): the **directed** span question (\"which span\nlicenses this gloss, does it assert more?\") has precision 1.00 and found 3 uncatalogued\ndefects. The **global** question (\"does the document draw this distinction?\") failed on a\nknown coined atom *with full document access*. **Always show the full clause, never a\ntruncated span.** Dominant defect class is provenance — real distinction, wrong citation.\n",
    "source_class": "arc1_docs",
    "context": null
   }

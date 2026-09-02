@@ -2,12 +2,11 @@
  "header": {
   "batch": "batch_132",
   "source_class": "git_log",
-  "brief_version": "0.7",
-  "glossary_version": "frozen aa3da29 +G-06",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
   "spans": 15,
   "first_span": "S02168",
-  "last_span": "S02182",
-  "note": "header refreshed for brief v0.7 (D-09) before translation"
+  "last_span": "S02182"
  },
  "spans": [
   {
@@ -31,7 +30,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "6901-6909",
-   "text": "commit 1a8c3e5e4b03683929ef5b63d343eb1d1b1a4a2a\nordinal 282\ndate 2026-08-17 10:02:54 -0700\nauthor Matt Stults\nsubject retire bulk chunk files 1-6 (.done) \u2014 campaign complete\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 1a8c3e5e4b03683929ef5b63d343eb1d1b1a4a2a\nordinal 282\ndate 2026-08-17 10:02:54 -0700\nauthor Matt Stults\nsubject retire bulk chunk files 1-6 (.done) — campaign complete\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -79,7 +78,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "6966-6974",
-   "text": "commit f851a190c086ee9a60940fe16acad2145113bf7d\nordinal 288\ndate 2026-08-17 10:58:26 -0700\nauthor Matt Stults\nsubject three-way report: aggregates table on top, glyph columns (\u2713/~/\u2717/\u00b7, * = probe), legend, action column\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit f851a190c086ee9a60940fe16acad2145113bf7d\nordinal 288\ndate 2026-08-17 10:58:26 -0700\nauthor Matt Stults\nsubject three-way report: aggregates table on top, glyph columns (✓/~/✗/·, * = probe), legend, action column\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -95,7 +94,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "6993-7001",
-   "text": "commit 55755d8c63eaa6c704cfc97870696c020caae152\nordinal 290\ndate 2026-08-18 11:25:22 -0700\nauthor Matt Stults\nsubject prereg: Q3 ruled \u2014 cold-start layer scored as blind-decomposed; base-tool pre-fix rejected by name\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 55755d8c63eaa6c704cfc97870696c020caae152\nordinal 290\ndate 2026-08-18 11:25:22 -0700\nauthor Matt Stults\nsubject prereg: Q3 ruled — cold-start layer scored as blind-decomposed; base-tool pre-fix rejected by name\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -103,7 +102,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7002-7010",
-   "text": "commit 9b6be0a49ac3c2f4ea141cd993be0ba6f15c01aa\nordinal 291\ndate 2026-08-18 12:26:07 -0700\nauthor Matt Stults\nsubject spot-check set: full ESTABLISHES + full source text per row (same 22 rows) \u2014 a calibration exercise must show what the adjudicator saw\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 9b6be0a49ac3c2f4ea141cd993be0ba6f15c01aa\nordinal 291\ndate 2026-08-18 12:26:07 -0700\nauthor Matt Stults\nsubject spot-check set: full ESTABLISHES + full source text per row (same 22 rows) — a calibration exercise must show what the adjudicator saw\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {

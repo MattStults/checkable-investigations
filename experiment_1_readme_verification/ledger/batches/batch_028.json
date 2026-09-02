@@ -2,12 +2,11 @@
  "header": {
   "batch": "batch_028",
   "source_class": "arc1_docs",
-  "brief_version": "0.7",
-  "glossary_version": "frozen aa3da29 +G-06",
+  "brief_version": "0.5",
+  "glossary_version": "frozen d887fb9",
   "spans": 15,
   "first_span": "S00385",
-  "last_span": "S00399",
-  "note": "header refreshed for brief v0.7 (D-09) before translation"
+  "last_span": "S00399"
  },
  "spans": [
   {
@@ -15,7 +14,7 @@
    "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
    "lines": "1193-1208",
-   "text": "### 1. The headline traced to ONE fitted parameter we already knew not to trust\nOperator sweep, 7 operators x 3 module families. `any_atom` \u2014 the declared NO-CHOICE default \u2014\nranks **1/7 on the held-out 6 behaviours for all three families**. `act_match` ranks 3/7.\n\n| contrast (behaviour-level, n=9) | delta | p | sign |\n|---|---:|---:|---:|\n| `structural@act_match \u2212 bag` | \u22120.038 | **0.121** | 3/9 |\n| `core@any_atom \u2212 bag` | \u22120.011 | 0.49 | \u2014 |\n| **`section@any_atom \u2212 bag`** | **+0.023** | 0.061 | 7/9 |\n| **`section@any_atom \u2212 control`** | **+0.122** | **0.0005** | **9/9** |\n\n**At the no-choice operator the compliant modules are level with or AHEAD of the bag scorer.**\n`section.py`'s own docstring warning \"THIS LOSES, measured \u22120.143\" is an artifact of the\noperator it inherited. The project applied the `act_match` lesson to `structural.py`'s headline\nand **not** to `section.py`'s, `combined.py`'s primary, or the invariant-10 conclusion.\n",
+   "text": "### 1. The headline traced to ONE fitted parameter we already knew not to trust\nOperator sweep, 7 operators x 3 module families. `any_atom` — the declared NO-CHOICE default —\nranks **1/7 on the held-out 6 behaviours for all three families**. `act_match` ranks 3/7.\n\n| contrast (behaviour-level, n=9) | delta | p | sign |\n|---|---:|---:|---:|\n| `structural@act_match − bag` | −0.038 | **0.121** | 3/9 |\n| `core@any_atom − bag` | −0.011 | 0.49 | — |\n| **`section@any_atom − bag`** | **+0.023** | 0.061 | 7/9 |\n| **`section@any_atom − control`** | **+0.122** | **0.0005** | **9/9** |\n\n**At the no-choice operator the compliant modules are level with or AHEAD of the bag scorer.**\n`section.py`'s own docstring warning \"THIS LOSES, measured −0.143\" is an artifact of the\noperator it inherited. The project applied the `act_match` lesson to `structural.py`'s headline\nand **not** to `section.py`'s, `combined.py`'s primary, or the invariant-10 conclusion.\n",
    "source_class": "arc1_docs",
    "context": null
   },
@@ -24,7 +23,7 @@
    "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
    "lines": "1209-1215",
-   "text": "### 2. The noise floor is MIS-SPECIFIED \u2014 delete it\n`benchmark.noise_floor` scores ONE predictor on TWO INDEPENDENT passage resamples. Its\nhalf-width is exactly `1.96*sqrt(2)*SE` \u2014 an **unpaired** null. Every contrast it gates is\n**paired** (same resample, clauses, golds, joins). Measured: the floor is **2.1x to 6.5x the\npaired SE**. It would reject a true, perfectly-measured effect of 0.03 forever, at any sample\nsize. Not conservatism \u2014 a mis-specified test.\n",
+   "text": "### 2. The noise floor is MIS-SPECIFIED — delete it\n`benchmark.noise_floor` scores ONE predictor on TWO INDEPENDENT passage resamples. Its\nhalf-width is exactly `1.96*sqrt(2)*SE` — an **unpaired** null. Every contrast it gates is\n**paired** (same resample, clauses, golds, joins). Measured: the floor is **2.1x to 6.5x the\npaired SE**. It would reject a true, perfectly-measured effect of 0.03 forever, at any sample\nsize. Not conservatism — a mis-specified test.\n",
    "source_class": "arc1_docs",
    "context": null
   },
@@ -33,7 +32,7 @@
    "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
    "lines": "1216-1221",
-   "text": "### 3. The resampling unit is the BEHAVIOUR, not the passage\nBetween-behaviour SD of the `structural \u2212 bag` delta is **0.0596**; between-draw SD **0.0172**.\nBehaviour variance dominates ~12x in variance and the passage-unit CIs ignore it entirely.\n**\"Sign consistent in 5/5 draws\" is worthless evidence** \u2014 the draws are correlated re-queries\nof the same 9 behaviours. Report behaviour-clustered CIs, a paired t, and a sign test.\n",
+   "text": "### 3. The resampling unit is the BEHAVIOUR, not the passage\nBetween-behaviour SD of the `structural − bag` delta is **0.0596**; between-draw SD **0.0172**.\nBehaviour variance dominates ~12x in variance and the passage-unit CIs ignore it entirely.\n**\"Sign consistent in 5/5 draws\" is worthless evidence** — the draws are correlated re-queries\nof the same 9 behaviours. Report behaviour-clustered CIs, a paired t, and a sign test.\n",
    "source_class": "arc1_docs",
    "context": null
   },
@@ -42,7 +41,7 @@
    "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
    "lines": "1222-1228",
-   "text": "### 4. `combined` does NOT beat the bag at n=9, and the typed core adds nothing\n`combined \u2212 bag` = +0.032, **t=2.02, p=0.078, 7/9** \u2014 fails at the behaviour level. Fragile:\n`harm-avoidance` alone contributes +0.144 while the other eight average +0.018; **drop it and\nthe delta halves to +0.018.**\n`combined \u2212 section@any` = **+0.0084, p=0.60** \u2014 the typed core adds nothing measurable on top\nof the section module at its no-choice operator.\n",
+   "text": "### 4. `combined` does NOT beat the bag at n=9, and the typed core adds nothing\n`combined − bag` = +0.032, **t=2.02, p=0.078, 7/9** — fails at the behaviour level. Fragile:\n`harm-avoidance` alone contributes +0.144 while the other eight average +0.018; **drop it and\nthe delta halves to +0.018.**\n`combined − section@any` = **+0.0084, p=0.60** — the typed core adds nothing measurable on top\nof the section module at its no-choice operator.\n",
    "source_class": "arc1_docs",
    "context": null
   },
@@ -51,7 +50,7 @@
    "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
    "lines": "1229-1236",
-   "text": "### 5. RETRACTED: \"the gain is the partition, not the extra prediction mass\"\nThe size-matched control reproduces exactly (+0.2431) but **cannot come out any other way** \u2014\nsd across 200 randomisations is 0.0021, P(random >= core) = 0.000. The decisive control was\nnever run: random **whole sections**, size-matched, score **+0.2406** \u2014 no better than random\nclauses. **The partition is INERT.** The gain is the *election ranking*, computed from the same\ntyped atoms already in the core. That is a claim about aggregation, not ontological structure,\nand it materially changes what the thesis rests on.\n",
+   "text": "### 5. RETRACTED: \"the gain is the partition, not the extra prediction mass\"\nThe size-matched control reproduces exactly (+0.2431) but **cannot come out any other way** —\nsd across 200 randomisations is 0.0021, P(random >= core) = 0.000. The decisive control was\nnever run: random **whole sections**, size-matched, score **+0.2406** — no better than random\nclauses. **The partition is INERT.** The gain is the *election ranking*, computed from the same\ntyped atoms already in the core. That is a claim about aggregation, not ontological structure,\nand it materially changes what the thesis rests on.\n",
    "source_class": "arc1_docs",
    "context": null
   },
@@ -60,7 +59,7 @@
    "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
    "lines": "1237-1240",
-   "text": "### 6. `act_match`'s selection cost, isolated by difference-in-differences\ngap on the 3 selection behaviours \u22120.0025; on the 6 held-out +0.0424; **DiD = +0.0449, cluster\nCI [+0.0172, +0.0717], excludes zero \u2014 2.8x the declared 0.016 bound.**\n",
+   "text": "### 6. `act_match`'s selection cost, isolated by difference-in-differences\ngap on the 3 selection behaviours −0.0025; on the 6 held-out +0.0424; **DiD = +0.0449, cluster\nCI [+0.0172, +0.0717], excludes zero — 2.8x the declared 0.016 bound.**\n",
    "source_class": "arc1_docs",
    "context": null
   },
@@ -69,7 +68,7 @@
    "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
    "lines": "1241-1248",
-   "text": "### 7. \u26a0\ufe0f `combined.MEASURED` and `section.MEASURED` ARE HAND-TRANSCRIBED CONSTANTS\nNo generator exists in the repo. Every variant mean, all 11 bootstrap contrasts, the size\ncontrol and the AUCs live in a literal dict, and the test suite checks only **internal\nconsistency of the literals** (e.g. asserting one hardcoded number is smaller than another).\n**A green suite is not evidence that any of them is what the pipeline computes.** They were all\nindependently verified correct \u2014 but \"two agents agree to three decimals\" is weak if both read\nthe same dict, and nothing would catch drift.\n",
+   "text": "### 7. ⚠️ `combined.MEASURED` and `section.MEASURED` ARE HAND-TRANSCRIBED CONSTANTS\nNo generator exists in the repo. Every variant mean, all 11 bootstrap contrasts, the size\ncontrol and the AUCs live in a literal dict, and the test suite checks only **internal\nconsistency of the literals** (e.g. asserting one hardcoded number is smaller than another).\n**A green suite is not evidence that any of them is what the pipeline computes.** They were all\nindependently verified correct — but \"two agents agree to three decimals\" is weak if both read\nthe same dict, and nothing would catch drift.\n",
    "source_class": "arc1_docs",
    "context": null
   },
@@ -78,7 +77,7 @@
    "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
    "lines": "1249-1268",
-   "text": "### THE HONEST HEADLINE IS A NULL, AND IT IS STILL INTERESTING\nNo compliant configuration separates from the bag scorer at n=9 (best p=0.061). The defensible\nclaim is:\n\n> **A zero-parameter structural query reaches PARITY with a fitted bag scorer and beats\n> bag-of-words by +0.12 (p=0.0005, 9/9 behaviours).**\n\n**Ship `section@any_atom`, not `combined`** \u2014 it is the most transfer-stable predictor measured\n(frontier-3 +0.3085 vs held-out-6 +0.3066, a shift of 0.002, against `act_match`'s 0.088).\n\n> **\u26a0\ufe0f FLAGGED UNRECONCILED (2026-08-04).** The iteration loop as built does NOT run\n> this recommendation: `snapshot.py` (and therefore every cycle, dossier and the\n> 294-case census) scores through `relevance.RelevanceIndex`, optionally through\n> `containment.ContainmentIndex` \u2014 the bag-scorer path \u2014 not `section.py`. No recorded\n> decision reverses this paragraph; the two simply have not been reconciled. If you are\n> choosing a query module, surface this to the project owner rather than resolving it silently.\n\n**n=9 is the binding constraint on every remaining question.** More passages buy nothing; more\nbehaviours buy everything.\n",
+   "text": "### THE HONEST HEADLINE IS A NULL, AND IT IS STILL INTERESTING\nNo compliant configuration separates from the bag scorer at n=9 (best p=0.061). The defensible\nclaim is:\n\n> **A zero-parameter structural query reaches PARITY with a fitted bag scorer and beats\n> bag-of-words by +0.12 (p=0.0005, 9/9 behaviours).**\n\n**Ship `section@any_atom`, not `combined`** — it is the most transfer-stable predictor measured\n(frontier-3 +0.3085 vs held-out-6 +0.3066, a shift of 0.002, against `act_match`'s 0.088).\n\n> **⚠️ FLAGGED UNRECONCILED (2026-08-04).** The iteration loop as built does NOT run\n> this recommendation: `snapshot.py` (and therefore every cycle, dossier and the\n> 294-case census) scores through `relevance.RelevanceIndex`, optionally through\n> `containment.ContainmentIndex` — the bag-scorer path — not `section.py`. No recorded\n> decision reverses this paragraph; the two simply have not been reconciled. If you are\n> choosing a query module, surface this to the project owner rather than resolving it silently.\n\n**n=9 is the binding constraint on every remaining question.** More passages buy nothing; more\nbehaviours buy everything.\n",
    "source_class": "arc1_docs",
    "context": null
   },
@@ -87,7 +86,7 @@
    "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
    "lines": "1269-1277",
-   "text": "## The loop being tested\n\nTool vs. a frontier LLM answering the **same question**. Adjudicate deltas only; each\ndelta \u2192 named artifact \u2192 fix \u2192 full recompute \u2192 regression check. **The document is ground\ntruth; the LLM is a lead generator, never an oracle.** For relevance the reference already\nexists on disk (`behaviours.json`); the bar is the **best single judge**\non the TRUE universe (see banner). The published-universe bar 0.764/0.780/0.500 is\nsuperseded and must not be quoted.\n",
+   "text": "## The loop being tested\n\nTool vs. a frontier LLM answering the **same question**. Adjudicate deltas only; each\ndelta → named artifact → fix → full recompute → regression check. **The document is ground\ntruth; the LLM is a lead generator, never an oracle.** For relevance the reference already\nexists on disk (`behaviours.json`); the bar is the **best single judge**\non the TRUE universe (see banner). The published-universe bar 0.764/0.780/0.500 is\nsuperseded and must not be quoted.\n",
    "source_class": "arc1_docs",
    "context": null
   },
@@ -96,7 +95,7 @@
    "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
    "lines": "1278-1299",
-   "text": "## Module state \u2014 all green, 1113 tests (2026-08-02)\n\n> \u26a0\ufe0f Count superseded 2026-08-04: the suite is now ~1,960 tests (README figure; 1,919\n> collect under a bare interpreter without the venv). The table below predates the\n> iteration-loop modules \u2014 see MODULE_MAP.md \u00a71b for those.\n\n| module | owner | state |\n|---|---|---|\n| `modelspec_clauses.json` | \u2014 | **593 clauses**, 97.35% char coverage, 100% verbatim, 0 duplicate locators, 259/259 focus markers preserved as a privileged subset |\n| `measure_join.py` | me | the recall ceiling: 849/863 overall, 110/112 at score \u22655, 313/313 example blocks. **Gates every benchmark number** |\n| `measure_kinds.py` | me | relevance signal by clause kind; source of the 38% ceiling finding above |\n| `annotate.py` | agent | done \u2014 1,629 atoms, 99% coverage, reuse 0.78 (`annotations_b8.json`) |\n| `relevance.py`, `benchmark.py` | agent | done \u2014 offline scorer + MCC-primary benchmark; CLI runs the tool, `explain()` wired |\n| `behavior_atoms.py` | agent | done \u2014 70 query atoms, 100% selected from the clause vocabulary |\n| `conflict_output.py` | agent | instrument done (blinded + negatives + rubric + validator); **no tool adapter** |\n| `inventory.py` | A | unique locators `... > L200 [fa_la9s]`; `match_passage()` quote-containment join now normalizes whitespace, `[^xxxx]` footnotes, markdown emphasis, **and both link renderings** \u2014 all four required, dropping any one silently lowers every metric. `SPEC_MD` points at the shared `../specs/openai-model-spec/` tree |\n| `emit_asp.py` | A | `--skip-invalid` with cascade + `provenance` block; provenance facts proven inert |\n| `extract_section.py` | B | batched (default 14), span-id selection, act-enum closed across batches, `conflict_capable` diagnostic, truncation as its own failure class |\n| `baseline_conflicts.py`, `delta.py`, `adjudicate.py` | C / chain agent | k=3 baseline, 3-bucket delta, worksheet with encoding-status block |\n| `providers.py` | me | `complete_envelope()` \u2192 `{text, finish_reason, reasoning, usage, truncated}`; usage logging; auto-adapts unsupported params |\n| `calibrate.py` | me | measures cost per batch per model from real usage |\n",
+   "text": "## Module state — all green, 1113 tests (2026-08-02)\n\n> ⚠️ Count superseded 2026-08-04: the suite is now ~1,960 tests (README figure; 1,919\n> collect under a bare interpreter without the venv). The table below predates the\n> iteration-loop modules — see MODULE_MAP.md §1b for those.\n\n| module | owner | state |\n|---|---|---|\n| `modelspec_clauses.json` | — | **593 clauses**, 97.35% char coverage, 100% verbatim, 0 duplicate locators, 259/259 focus markers preserved as a privileged subset |\n| `measure_join.py` | me | the recall ceiling: 849/863 overall, 110/112 at score ≥5, 313/313 example blocks. **Gates every benchmark number** |\n| `measure_kinds.py` | me | relevance signal by clause kind; source of the 38% ceiling finding above |\n| `annotate.py` | agent | done — 1,629 atoms, 99% coverage, reuse 0.78 (`annotations_b8.json`) |\n| `relevance.py`, `benchmark.py` | agent | done — offline scorer + MCC-primary benchmark; CLI runs the tool, `explain()` wired |\n| `behavior_atoms.py` | agent | done — 70 query atoms, 100% selected from the clause vocabulary |\n| `conflict_output.py` | agent | instrument done (blinded + negatives + rubric + validator); **no tool adapter** |\n| `inventory.py` | A | unique locators `... > L200 [fa_la9s]`; `match_passage()` quote-containment join now normalizes whitespace, `[^xxxx]` footnotes, markdown emphasis, **and both link renderings** — all four required, dropping any one silently lowers every metric. `SPEC_MD` points at the shared `../specs/openai-model-spec/` tree |\n| `emit_asp.py` | A | `--skip-invalid` with cascade + `provenance` block; provenance facts proven inert |\n| `extract_section.py` | B | batched (default 14), span-id selection, act-enum closed across batches, `conflict_capable` diagnostic, truncation as its own failure class |\n| `baseline_conflicts.py`, `delta.py`, `adjudicate.py` | C / chain agent | k=3 baseline, 3-bucket delta, worksheet with encoding-status block |\n| `providers.py` | me | `complete_envelope()` → `{text, finish_reason, reasoning, usage, truncated}`; usage logging; auto-adapts unsupported params |\n| `calibrate.py` | me | measures cost per batch per model from real usage |\n",
    "source_class": "arc1_docs",
    "context": null
   },
@@ -105,7 +104,7 @@
    "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
    "lines": "1300-1338",
-   "text": "## Key numbers (all measured, not estimated)\n\n**Cost \u2014 measured tokens \u00d7 looked-up rates. Use `luna` for everything until a final\nmeasurement run.**\n\n| model | $/Mtok in\u2013out | $/batch | whole doc (13 batches) | k=2 |\n|---|---|---|---|---|\n| **luna** (gpt-5.6-luna) | 0.20 / 1.20 | **$0.0088** | **$0.11** | **$0.23** |\n| terra (gpt-5.6-terra) | 2 / 12 | $0.068 | $0.88 | $1.76 |\n| kimi (Kimi-K3) | 3 / 15 | $0.223 | $2.89 | $5.79 |\n| sol (gpt-5.6-sol) | 5 / 30 | $0.241 | $3.14 | $6.28 |\n\n**`luna` is 27\u00d7 cheaper than sol, had the LOWEST reasoning overhead of the four (39%),\nparsed cleanly, and was fastest (35s vs sol's 82s).** It is gpt-5.6-family, so its failure\nmodes should resemble sol's \u2014 a much better iteration tier than a different-family\nmid-tier model. Prices are in `providers.json` and `calibrate.py` reads them.\n\n**First comparison table** (both sides `gpt-oss-20b`, chain-of-command only):\n`|C_tool|`=0, `|C_baseline|`=6, coverage 0.524 effective / 0.571 claimed,\n`baseline_self_agreement`=0.244 over k=3. **Degenerate** \u2014 tool's zero is structural\n(0 `incompat`, no act both obliged and forbidden), settled before the solver runs.\n\n**Panel join \u2014 SOLVED.** Against focus areas it was **70.3% zero-match** (example blocks\n100% zero, core judgments 40.6% zero). Against `modelspec_clauses.json` with the fixed\nnormalizer, via `measure_join.py`:\n\n| stratum | matched | total | |\n|---|---|---|---|\n| all | 849 | 863 | 98.4% |\n| score \u22655 | 110 | 112 | 98.2% |\n| score ==6 | 58 | 60 | 96.7% |\n| example blocks | 313 | 313 | 100% |\n\nThe 14 remaining misses are **not paraphrase and not version skew** \u2014 our spec copy is\nbyte-identical to `../specs/openai-model-spec/model_spec.md` (sha256 `8c95f020\u2026`). The\npanel's own renderer rewrote `[text](url)` inconsistently, sometimes *within a single\npassage*, so no one normalization variant matches. A real but small ~1.6% reference-side\nceiling.\n",
+   "text": "## Key numbers (all measured, not estimated)\n\n**Cost — measured tokens × looked-up rates. Use `luna` for everything until a final\nmeasurement run.**\n\n| model | $/Mtok in–out | $/batch | whole doc (13 batches) | k=2 |\n|---|---|---|---|---|\n| **luna** (gpt-5.6-luna) | 0.20 / 1.20 | **$0.0088** | **$0.11** | **$0.23** |\n| terra (gpt-5.6-terra) | 2 / 12 | $0.068 | $0.88 | $1.76 |\n| kimi (Kimi-K3) | 3 / 15 | $0.223 | $2.89 | $5.79 |\n| sol (gpt-5.6-sol) | 5 / 30 | $0.241 | $3.14 | $6.28 |\n\n**`luna` is 27× cheaper than sol, had the LOWEST reasoning overhead of the four (39%),\nparsed cleanly, and was fastest (35s vs sol's 82s).** It is gpt-5.6-family, so its failure\nmodes should resemble sol's — a much better iteration tier than a different-family\nmid-tier model. Prices are in `providers.json` and `calibrate.py` reads them.\n\n**First comparison table** (both sides `gpt-oss-20b`, chain-of-command only):\n`|C_tool|`=0, `|C_baseline|`=6, coverage 0.524 effective / 0.571 claimed,\n`baseline_self_agreement`=0.244 over k=3. **Degenerate** — tool's zero is structural\n(0 `incompat`, no act both obliged and forbidden), settled before the solver runs.\n\n**Panel join — SOLVED.** Against focus areas it was **70.3% zero-match** (example blocks\n100% zero, core judgments 40.6% zero). Against `modelspec_clauses.json` with the fixed\nnormalizer, via `measure_join.py`:\n\n| stratum | matched | total | |\n|---|---|---|---|\n| all | 849 | 863 | 98.4% |\n| score ≥5 | 110 | 112 | 98.2% |\n| score ==6 | 58 | 60 | 96.7% |\n| example blocks | 313 | 313 | 100% |\n\nThe 14 remaining misses are **not paraphrase and not version skew** — our spec copy is\nbyte-identical to `../specs/openai-model-spec/model_spec.md` (sha256 `8c95f020…`). The\npanel's own renderer rewrote `[text](url)` inconsistently, sometimes *within a single\npassage*, so no one normalization variant matches. A real but small ~1.6% reference-side\nceiling.\n",
    "source_class": "arc1_docs",
    "context": null
   },
@@ -114,7 +113,7 @@
    "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
    "lines": "1339-1351",
-   "text": "## THE OPEN PROBLEM \u2014 SOLVED, kept for the reasoning\n\nOpenAI's focus areas are a **test index, not a document index**: 225 of 259 carry rubric\nprompts. They covered **50,855 of 271,474 chars (~19%)**, contained **zero markers inside\nthe 183 example blocks**, and skipped whole sections including `levels_of_authority` (which\n*defines the authority lattice we use*).\n\nSo focus areas are the right unit for the **rule layer** and the wrong unit for the\n**coverage/lookup layer**. Fixed by our own full segmentation \u2192 `modelspec_clauses.json`\n(593 clauses, 97.35%), with focus areas retained as a privileged subset carrying authority\n+ rubric joins. `measure_kinds.py` then showed the split has to go further than expected:\nrules on the 188 conditionals, **annotations over all 593 including examples**.\n",
+   "text": "## THE OPEN PROBLEM — SOLVED, kept for the reasoning\n\nOpenAI's focus areas are a **test index, not a document index**: 225 of 259 carry rubric\nprompts. They covered **50,855 of 271,474 chars (~19%)**, contained **zero markers inside\nthe 183 example blocks**, and skipped whole sections including `levels_of_authority` (which\n*defines the authority lattice we use*).\n\nSo focus areas are the right unit for the **rule layer** and the wrong unit for the\n**coverage/lookup layer**. Fixed by our own full segmentation → `modelspec_clauses.json`\n(593 clauses, 97.35%), with focus areas retained as a privileged subset carrying authority\n+ rubric joins. `measure_kinds.py` then showed the split has to go further than expected:\nrules on the 188 conditionals, **annotations over all 593 including examples**.\n",
    "source_class": "arc1_docs",
    "context": null
   },
@@ -123,7 +122,7 @@
    "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
    "lines": "1352-1360",
-   "text": "## ~~THE RESULT (2026-08-01, first version)~~ \u2014 DELETED, IT WAS ALL BUG ARTIFACT\n\nThis section held an F1 table, a \"MCC near chance\" claim, and a channel ablation ending in an instruction to delete a channel. **Every number in it came from the broken loader and was ranked on F1.** The numbers and the instruction have been REMOVED rather than quoted-and-annotated, because a reviewer found the annotated version still being followed and `grep` still returned the instruction. Under the repaired loader and MCC ranking that ablation row is *vacuous* anyway \u2014 it is bit-identical to `full`.\n\nTwo general lessons, both earned the expensive way:\n- **A superseded number left in a doc is an instruction, not a footnote.** Delete it.\n- Do not rank channels on F1 here: the all-relevant point is inside the sweep, so F1 rewards\n  rescaling the score distribution rather than discrimination.\n",
+   "text": "## ~~THE RESULT (2026-08-01, first version)~~ — DELETED, IT WAS ALL BUG ARTIFACT\n\nThis section held an F1 table, a \"MCC near chance\" claim, and a channel ablation ending in an instruction to delete a channel. **Every number in it came from the broken loader and was ranked on F1.** The numbers and the instruction have been REMOVED rather than quoted-and-annotated, because a reviewer found the annotated version still being followed and `grep` still returned the instruction. Under the repaired loader and MCC ranking that ablation row is *vacuous* anyway — it is bit-identical to `full`.\n\nTwo general lessons, both earned the expensive way:\n- **A superseded number left in a doc is an instruction, not a footnote.** Delete it.\n- Do not rank channels on F1 here: the all-relevant point is inside the sweep, so F1 rewards\n  rescaling the score distribution rather than discrimination.\n",
    "source_class": "arc1_docs",
    "context": null
   },
@@ -132,7 +131,7 @@
    "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
    "lines": "1361-1373",
-   "text": "## Update \u2014 full-coverage artifact ~~(use these, not the originals)~~\n\n> \u26a0\ufe0f SUPERSEDED AGAIN 2026-08-04: b8 superseded the originals; the ext_v1 line has now\n> superseded b8. The preferred configuration is `annotations_ext_v1_merged.json` +\n> `behavior_atoms_audit_v1.json` + `thresholds_frozen.json` (see the top section). b8\n> stays on disk as the comparison config in JOIN_INTEGRITY_DESIGN's re-measurement\n> protocol.\n\n`annotations_b8.json` (batch-size 8): **1,629 atoms, 99% coverage, 183/183 example blocks,\n0 truncated, 0 call failures**, reuse 0.78. Paired with `behavior_atoms_b8.json` (70 atoms,\n100% in-vocabulary). Example blocks carry 39% of the relevance signal and were the biggest\nhole \u2014 the original run lost 24 of them.\n",
+   "text": "## Update — full-coverage artifact ~~(use these, not the originals)~~\n\n> ⚠️ SUPERSEDED AGAIN 2026-08-04: b8 superseded the originals; the ext_v1 line has now\n> superseded b8. The preferred configuration is `annotations_ext_v1_merged.json` +\n> `behavior_atoms_audit_v1.json` + `thresholds_frozen.json` (see the top section). b8\n> stays on disk as the comparison config in JOIN_INTEGRITY_DESIGN's re-measurement\n> protocol.\n\n`annotations_b8.json` (batch-size 8): **1,629 atoms, 99% coverage, 183/183 example blocks,\n0 truncated, 0 call failures**, reuse 0.78. Paired with `behavior_atoms_b8.json` (70 atoms,\n100% in-vocabulary). Example blocks carry 39% of the relevance signal and were the biggest\nhole — the original run lost 24 of them.\n",
    "source_class": "arc1_docs",
    "context": null
   },
@@ -141,7 +140,7 @@
    "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
    "lines": "1374-1379",
-   "text": "### \u26a0\ufe0f Every ablation number recorded before 2026-08-01 12:18 is void\n\n`benchmark._clause_rows` dropped `section_path`, collapsing all 593 clauses into one section\nand turning the section channel (0.45 of the weight) into a constant. **The blast radius is\nevery prior ablation and every prior threshold derivation.** Do not compare across that fix.\n",
+   "text": "### ⚠️ Every ablation number recorded before 2026-08-01 12:18 is void\n\n`benchmark._clause_rows` dropped `section_path`, collapsing all 593 clauses into one section\nand turning the section channel (0.45 of the weight) into a constant. **The blast radius is\nevery prior ablation and every prior threshold derivation.** Do not compare across that fix.\n",
    "source_class": "arc1_docs",
    "context": null
   }

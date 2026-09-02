@@ -2,12 +2,11 @@
  "header": {
   "batch": "batch_079",
   "source_class": "git_log",
-  "brief_version": "0.7",
-  "glossary_version": "frozen aa3da29 +G-06",
+  "brief_version": "0.5",
+  "glossary_version": "frozen d887fb9",
   "spans": 15,
   "first_span": "S01376",
-  "last_span": "S01390",
-  "note": "header refreshed for brief v0.7 (D-09) before translation"
+  "last_span": "S01390"
  },
  "spans": [
   {
@@ -24,7 +23,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7492-7500",
-   "text": "commit 65e3150515049d294bf0745b8ea20c31830f0b49\nordinal 341\ndate 2026-08-18 17:45:28 -0700\nauthor Matt Stults\nsubject M30 sweep adjudicated: 2 DROPPED-NORM (web-page trust -> forbid trust_web_page + cepa; know-it-all -> forbid + cnpa), 3 SIBLING-OWNED, 2 DEFINITIONAL \u2014 the 24%-blind worry resolves to 2 real dropped norms; blind re-verification dispatched before any module edit\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 65e3150515049d294bf0745b8ea20c31830f0b49\nordinal 341\ndate 2026-08-18 17:45:28 -0700\nauthor Matt Stults\nsubject M30 sweep adjudicated: 2 DROPPED-NORM (web-page trust -> forbid trust_web_page + cepa; know-it-all -> forbid + cnpa), 3 SIBLING-OWNED, 2 DEFINITIONAL — the 24%-blind worry resolves to 2 real dropped norms; blind re-verification dispatched before any module edit\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -33,7 +32,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7501-7509",
-   "text": "commit ddc4578683269ed4b4e3c99dedb14ea8229edb58\nordinal 342\ndate 2026-08-18 17:45:49 -0700\nauthor Matt Stults\nsubject H5 CLOSED: actor tagging (701 assistant / 19 non-assistant, $0.004); bridges and relevance actor-gated \u2014 developer/user/system acts no longer engage assistant behaviors\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit ddc4578683269ed4b4e3c99dedb14ea8229edb58\nordinal 342\ndate 2026-08-18 17:45:49 -0700\nauthor Matt Stults\nsubject H5 CLOSED: actor tagging (701 assistant / 19 non-assistant, $0.004); bridges and relevance actor-gated — developer/user/system acts no longer engage assistant behaviors\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -60,7 +59,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7528-7536",
-   "text": "commit fbf762526c0dac107ad6544178dcaaccbdc540c3\nordinal 345\ndate 2026-08-18 17:48:42 -0700\nauthor Matt Stults\nsubject closing proof: the web-injection behavior instance now CONFLICTS with l699_796_n015 (forbidden trust_web_page fired) \u2014 the norm Matt's walk-through identified as really-conflicting-but-unable-to went detector -> adjudication -> blind verify -> repair -> firing conflict in one cycle\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit fbf762526c0dac107ad6544178dcaaccbdc540c3\nordinal 345\ndate 2026-08-18 17:48:42 -0700\nauthor Matt Stults\nsubject closing proof: the web-injection behavior instance now CONFLICTS with l699_796_n015 (forbidden trust_web_page fired) — the norm Matt's walk-through identified as really-conflicting-but-unable-to went detector -> adjudication -> blind verify -> repair -> firing conflict in one cycle\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -69,7 +68,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7537-7545",
-   "text": "commit 9715b1e76f2fca91eb7272273583e004c122c0f0\nordinal 346\ndate 2026-08-18 17:53:01 -0700\nauthor Matt Stults\nsubject ARM 3 FROZEN at r6: validation help 0.79 (b: 0.81) / harm 0.56 (H1 ceiling, explained) / caution 0.68 (bug-fix recovery, recall 0.96). Prereg SIGN-READY, sha256 72845031701d037c9fd2ace4160e7018961919dd1c9f788befbca1659d49fad8 \u2014 test slice scored ONCE after Matt signs; frozen instruments named in the registration\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 9715b1e76f2fca91eb7272273583e004c122c0f0\nordinal 346\ndate 2026-08-18 17:53:01 -0700\nauthor Matt Stults\nsubject ARM 3 FROZEN at r6: validation help 0.79 (b: 0.81) / harm 0.56 (H1 ceiling, explained) / caution 0.68 (bug-fix recovery, recall 0.96). Prereg SIGN-READY, sha256 72845031701d037c9fd2ace4160e7018961919dd1c9f788befbca1659d49fad8 — test slice scored ONCE after Matt signs; frozen instruments named in the registration\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -78,7 +77,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7546-7554",
-   "text": "commit 72449fa20dfcca7eebe944fbc45859b2c3bf5e88\nordinal 347\ndate 2026-08-18 17:53:27 -0700\nauthor Matt Stults\nsubject freeze-condition check: act validator A7/A5 PASS (S4 1/0 reproduced; bridge accuracy 0.95); A4 hits were contract staleness \u2014 two-level subtype layer now declared in behavior_vocab; atoms T4 PASS, T2 corpus collisions remain the (pre-existing) repair queue\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 72449fa20dfcca7eebe944fbc45859b2c3bf5e88\nordinal 347\ndate 2026-08-18 17:53:27 -0700\nauthor Matt Stults\nsubject freeze-condition check: act validator A7/A5 PASS (S4 1/0 reproduced; bridge accuracy 0.95); A4 hits were contract staleness — two-level subtype layer now declared in behavior_vocab; atoms T4 PASS, T2 corpus collisions remain the (pre-existing) repair queue\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -96,7 +95,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7564-7572",
-   "text": "commit b0c95af6c26f267b2541dd28e46bccd6cc67d62a\nordinal 349\ndate 2026-08-18 19:45:35 -0700\nauthor Matt Stults\nsubject silence census (clingo AST, Matt's explanation-loop design): top blockers were SCAFFOLD facts no instance asserted (assistant_definition 26, answers_question 15) -> v7 standard scaffold; residue is module-specific long tail. r7 FINAL round launched \u2014 last before hashing, committed stopping point\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit b0c95af6c26f267b2541dd28e46bccd6cc67d62a\nordinal 349\ndate 2026-08-18 19:45:35 -0700\nauthor Matt Stults\nsubject silence census (clingo AST, Matt's explanation-loop design): top blockers were SCAFFOLD facts no instance asserted (assistant_definition 26, answers_question 15) -> v7 standard scaffold; residue is module-specific long tail. r7 FINAL round launched — last before hashing, committed stopping point\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -105,7 +104,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7573-7581",
-   "text": "commit afc185329efa05497731b7a22e70b9be1d58e007\nordinal 350\ndate 2026-08-18 19:48:35 -0700\nauthor Matt Stults\nsubject HANDOFF \u2b50 top block: TRANSLATION_CONTRACT_V2 is the second-document gate artifact \u2014 future sessions must implement + test it before any new translation; arm-3 prereg pointer included\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit afc185329efa05497731b7a22e70b9be1d58e007\nordinal 350\ndate 2026-08-18 19:48:35 -0700\nauthor Matt Stults\nsubject HANDOFF ⭐ top block: TRANSLATION_CONTRACT_V2 is the second-document gate artifact — future sessions must implement + test it before any new translation; arm-3 prereg pointer included\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -123,7 +122,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7591-7599",
-   "text": "commit 6b19539d60d816b0698023bf86ffbd7a60bed63d\nordinal 352\ndate 2026-08-18 20:16:51 -0700\nauthor Matt Stults\nsubject prereg: Known Defects at Registration section (9 items, disclosed pre-signature) \u2014 re-hashed\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 6b19539d60d816b0698023bf86ffbd7a60bed63d\nordinal 352\ndate 2026-08-18 20:16:51 -0700\nauthor Matt Stults\nsubject prereg: Known Defects at Registration section (9 items, disclosed pre-signature) — re-hashed\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -132,7 +131,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7600-7608",
-   "text": "commit 639af8713fa28d771cb670c918b93fbd90e44da8\nordinal 353\ndate 2026-08-18 20:17:48 -0700\nauthor Matt Stults\nsubject prereg predictions made per-behavior and consistent with the disclosed defects (Matt's catch: a falsifier validation already expects to fire is a scheduled indictment, not a falsifier) \u2014 (b)'s falsifier scoped to helpfulness; final hash\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 639af8713fa28d771cb670c918b93fbd90e44da8\nordinal 353\ndate 2026-08-18 20:17:48 -0700\nauthor Matt Stults\nsubject prereg predictions made per-behavior and consistent with the disclosed defects (Matt's catch: a falsifier validation already expects to fire is a scheduled indictment, not a falsifier) — (b)'s falsifier scoped to helpfulness; final hash\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -141,7 +140,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7609-7617",
-   "text": "commit 65a68ba1bfa8b84389d4a870066270196abf6fcd\nordinal 354\ndate 2026-08-18 20:18:18 -0700\nauthor Matt Stults\nsubject ARM 3 PREREG SIGNED (Matt, 2026-08-18) at a05adfcc... \u2014 registration FROZEN; test slice scoring authorized\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ac/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 65a68ba1bfa8b84389d4a870066270196abf6fcd\nordinal 354\ndate 2026-08-18 20:18:18 -0700\nauthor Matt Stults\nsubject ARM 3 PREREG SIGNED (Matt, 2026-08-18) at a05adfcc... — registration FROZEN; test slice scoring authorized\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ac/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   }

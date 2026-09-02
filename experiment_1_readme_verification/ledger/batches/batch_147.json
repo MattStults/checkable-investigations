@@ -2,12 +2,11 @@
  "header": {
   "batch": "batch_147",
   "source_class": "git_log",
-  "brief_version": "0.7",
-  "glossary_version": "frozen aa3da29 +G-06",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
   "spans": 15,
   "first_span": "S02393",
-  "last_span": "S02407",
-  "note": "header refreshed for brief v0.7 (D-09) before translation"
+  "last_span": "S02407"
  },
  "spans": [
   {
@@ -31,7 +30,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8967-8975",
-   "text": "commit 38987777763f0ed92a2cc023f50e97b7a726b8ed\nordinal 507\ndate 2026-08-24 12:57:01 -0700\nauthor Matt Stults\nsubject diagnostic tests EXECUTED: governs-narrowing REJECTED on charter arithmetic (all deltas negative \u2014 module breadth is ledger-supported); census separability: 9/11 FPs CURRENT-SEPARABLE (configuration debt, not vocabulary), 1 addressable-by-declaration, 2 terminal; canary rulings REGISTERED in the ledger (fresh_draw4/HELP_R4_RESULT.json via truth_all fmap, pin carve-out split allowed/required; 15 tests green)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 38987777763f0ed92a2cc023f50e97b7a726b8ed\nordinal 507\ndate 2026-08-24 12:57:01 -0700\nauthor Matt Stults\nsubject diagnostic tests EXECUTED: governs-narrowing REJECTED on charter arithmetic (all deltas negative — module breadth is ledger-supported); census separability: 9/11 FPs CURRENT-SEPARABLE (configuration debt, not vocabulary), 1 addressable-by-declaration, 2 terminal; canary rulings REGISTERED in the ledger (fresh_draw4/HELP_R4_RESULT.json via truth_all fmap, pin carve-out split allowed/required; 15 tests green)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -39,7 +38,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8976-8984",
-   "text": "commit 096345b82e27d3b47784ab2926c0781d777b5d54\nordinal 508\ndate 2026-08-24 13:02:09 -0700\nauthor Matt Stults\nsubject version curve vs fixed fresh truth: monotone v10 0.637 -> v19 0.750 accuracy (NOT overfit \u2014 every adopted family generalized), saturation v15->v19 flat, pool hardening quantified (~26pts: v12 scores 0.78 on r2 pool vs 0.519 on r4 residue), 9/11 remaining FPs = identified cheap headroom; per-behavior curve prediction: shared gap families -> amortizing cost, measured by attempt-1\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 096345b82e27d3b47784ab2926c0781d777b5d54\nordinal 508\ndate 2026-08-24 13:02:09 -0700\nauthor Matt Stults\nsubject version curve vs fixed fresh truth: monotone v10 0.637 -> v19 0.750 accuracy (NOT overfit — every adopted family generalized), saturation v15->v19 flat, pool hardening quantified (~26pts: v12 scores 0.78 on r2 pool vs 0.519 on r4 residue), 9/11 remaining FPs = identified cheap headroom; per-behavior curve prediction: shared gap families -> amortizing cost, measured by attempt-1\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -63,7 +62,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9003-9011",
-   "text": "commit d6ab9e6ea22cbf3032dbdb4266fda9f45e24a9d5\nordinal 511\ndate 2026-08-24 13:45:58 -0700\nauthor Matt Stults\nsubject ROUND-4 DEV TABLE COMPLETE: harm raw 0.824 IN BAND (population figure, closed n=17) / caution F1 by ONE node (0.675 vs 0.69) / help F1 (0.625); headline match-or-defensible ALL SIX CELLS in/above band (0.725/0.882/0.750 prec, 0.975/1.000/0.950 decl); decline above band everywhere with leak check recorded (pool composition, not contamination); prediction scorecard: 3 of 4 pre-registered calls correct, harm FN-dominance WRONG as predicted-FP (party-wall under-engagement \u2014 matches the harmlessness builder's facet-b finding); harm+caution truth REGISTERED (fresh_draw4 fmap), E1 pin carve-out for one legitimate R4 collision (caution::l611_698_n009, reachable-separable); 37 tests green\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit d6ab9e6ea22cbf3032dbdb4266fda9f45e24a9d5\nordinal 511\ndate 2026-08-24 13:45:58 -0700\nauthor Matt Stults\nsubject ROUND-4 DEV TABLE COMPLETE: harm raw 0.824 IN BAND (population figure, closed n=17) / caution F1 by ONE node (0.675 vs 0.69) / help F1 (0.625); headline match-or-defensible ALL SIX CELLS in/above band (0.725/0.882/0.750 prec, 0.975/1.000/0.950 decl); decline above band everywhere with leak check recorded (pool composition, not contamination); prediction scorecard: 3 of 4 pre-registered calls correct, harm FN-dominance WRONG as predicted-FP (party-wall under-engagement — matches the harmlessness builder's facet-b finding); harm+caution truth REGISTERED (fresh_draw4 fmap), E1 pin carve-out for one legitimate R4 collision (caution::l611_698_n009, reachable-separable); 37 tests green\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -71,7 +70,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9012-9020",
-   "text": "commit 7960516d1309eb5153d23c19f5f811c78663e829\nordinal 512\ndate 2026-08-24 13:49:46 -0700\nauthor Matt Stults\nsubject block-1 generalization wave/panel files committed pre-dispatch (registered shuffle order, sha-sampled panels, v5 query definitions \u2014 same source as the reviewed packets)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 7960516d1309eb5153d23c19f5f811c78663e829\nordinal 512\ndate 2026-08-24 13:49:46 -0700\nauthor Matt Stults\nsubject block-1 generalization wave/panel files committed pre-dispatch (registered shuffle order, sha-sampled panels, v5 query definitions — same source as the reviewed packets)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -79,7 +78,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9021-9029",
-   "text": "commit c169d2635880da0a347e61c5ebf4c4ec6ee36679\nordinal 513\ndate 2026-08-24 13:54:25 -0700\nauthor Matt Stults\nsubject BLOCK-1 ATTEMPT-1 TRANSFER SCORED (zero adaptation, lineage venue): harmlessness 0.800 S1 PASS, objectivity 0.800 S1 PASS, tradeoffs 0.400 F2 FIRES -> block-1 STOP RULE per signed prereg (no further draws). Pre-registered prediction CONFIRMED EXACTLY: the predictions file named tradeoffs as the likeliest failure, at S1, as F2-not-FATAL, via the meta/procedural no-walls mechanism \u2014 failure predicted from definitions alone before any ruling existed. Panel splits 1/12, 2/6, 0/9\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit c169d2635880da0a347e61c5ebf4c4ec6ee36679\nordinal 513\ndate 2026-08-24 13:54:25 -0700\nauthor Matt Stults\nsubject BLOCK-1 ATTEMPT-1 TRANSFER SCORED (zero adaptation, lineage venue): harmlessness 0.800 S1 PASS, objectivity 0.800 S1 PASS, tradeoffs 0.400 F2 FIRES -> block-1 STOP RULE per signed prereg (no further draws). Pre-registered prediction CONFIRMED EXACTLY: the predictions file named tradeoffs as the likeliest failure, at S1, as F2-not-FATAL, via the meta/procedural no-walls mechanism — failure predicted from definitions alone before any ruling existed. Panel splits 1/12, 2/6, 0/9\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -87,7 +86,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9030-9038",
-   "text": "commit d52c2e754ce68d3f3bd682fd28ef8e65970de11f\nordinal 514\ndate 2026-08-24 14:00:41 -0700\nauthor Matt Stults\nsubject arg-sort delta arithmetic artifact (the measured dead end: 0 fixes / 1 break \u2014 belongs with the diagnostic record)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit d52c2e754ce68d3f3bd682fd28ef8e65970de11f\nordinal 514\ndate 2026-08-24 14:00:41 -0700\nauthor Matt Stults\nsubject arg-sort delta arithmetic artifact (the measured dead end: 0 fixes / 1 break — belongs with the diagnostic record)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -103,7 +102,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9048-9056",
-   "text": "commit 48c97d341d36470133263c377e0c9a4f429773e8\nordinal 516\ndate 2026-08-24 14:06:43 -0700\nauthor Matt Stults\nsubject cheap-tier certificates MEASURED (Fable 1.00 / Haiku 0.85-0.80 / DeepSeek-Flash 0.75 / Sonnet 0.70 \u2014 none certifies for ruling; biases decorrelate across tiers) + design v2: SUPERSESSION architecture (provenance-tiered append-only truth, total recomputability \u2014 disagreeing with a cheap decision costs one frontier wave seat + a rerun; cheap tiers direct attention never truth) + REASON-PRESERVING validation (Matt: per-node reason-signature diff on every delta \u2014 substituted/degraded paths flagged/broken even when the verdict bit holds; grounds quote-checks on every ruling batch)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 48c97d341d36470133263c377e0c9a4f429773e8\nordinal 516\ndate 2026-08-24 14:06:43 -0700\nauthor Matt Stults\nsubject cheap-tier certificates MEASURED (Fable 1.00 / Haiku 0.85-0.80 / DeepSeek-Flash 0.75 / Sonnet 0.70 — none certifies for ruling; biases decorrelate across tiers) + design v2: SUPERSESSION architecture (provenance-tiered append-only truth, total recomputability — disagreeing with a cheap decision costs one frontier wave seat + a rerun; cheap tiers direct attention never truth) + REASON-PRESERVING validation (Matt: per-node reason-signature diff on every delta — substituted/degraded paths flagged/broken even when the verdict bit holds; grounds quote-checks on every ruling batch)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -119,7 +118,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9066-9074",
-   "text": "commit 78e7b7814456eefa72188f5228adb44196a8c360\nordinal 518\ndate 2026-08-24 14:13:55 -0700\nauthor Matt Stults\nsubject design v3 addenda D+E: CLASS-GENERALIZATION rule (every fix carries a class card \u2014 family, general form grounded in document/schema, predicted non-motivating members; held-out class test at L2 kills gerrymanders-by-measurement) + reason-criticality census dispatched (30 nodes, per-component ESSENTIAL/INCIDENTAL, Haiku + seeded Fable spot-check)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 78e7b7814456eefa72188f5228adb44196a8c360\nordinal 518\ndate 2026-08-24 14:13:55 -0700\nauthor Matt Stults\nsubject design v3 addenda D+E: CLASS-GENERALIZATION rule (every fix carries a class card — family, general form grounded in document/schema, predicted non-motivating members; held-out class test at L2 kills gerrymanders-by-measurement) + reason-criticality census dispatched (30 nodes, per-component ESSENTIAL/INCIDENTAL, Haiku + seeded Fable spot-check)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -127,7 +126,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9075-9083",
-   "text": "commit 68b3fac32a08c13d920a604e5597b1dfe7c3ccb7\nordinal 519\ndate 2026-08-24 14:17:19 -0700\nauthor Matt Stults\nsubject reason-criticality census COMPLETE: Haiku REJECTED by spot-check tripwire (constant all-ESSENTIAL output, 4/8 node disagreements \u2014 the S-B guard catching plausible garbage); Fable full census: quality 29/30 essential, acts 22/30, protects 5/30 (pass-through for 25/30 helpfulness engagements); both global-necessity invariants pass; criticality rules adopted for the reason-diff (quality drift essential-by-default, protects drift incidental-by-default, acts drift per-node)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 68b3fac32a08c13d920a604e5597b1dfe7c3ccb7\nordinal 519\ndate 2026-08-24 14:17:19 -0700\nauthor Matt Stults\nsubject reason-criticality census COMPLETE: Haiku REJECTED by spot-check tripwire (constant all-ESSENTIAL output, 4/8 node disagreements — the S-B guard catching plausible garbage); Fable full census: quality 29/30 essential, acts 22/30, protects 5/30 (pass-through for 25/30 helpfulness engagements); both global-necessity invariants pass; criticality rules adopted for the reason-diff (quality drift essential-by-default, protects drift incidental-by-default, acts drift per-node)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   }
  ]

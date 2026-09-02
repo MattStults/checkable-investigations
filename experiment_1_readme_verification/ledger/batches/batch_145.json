@@ -2,12 +2,11 @@
  "header": {
   "batch": "batch_145",
   "source_class": "git_log",
-  "brief_version": "0.7",
-  "glossary_version": "frozen aa3da29 +G-06",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
   "spans": 15,
   "first_span": "S02363",
-  "last_span": "S02377",
-  "note": "header refreshed for brief v0.7 (D-09) before translation"
+  "last_span": "S02377"
  },
  "spans": [
   {
@@ -15,7 +14,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8650-8657",
-   "text": "commit df6432d14fccfca4a9bc69db75c1b933e7dfe6d1\nordinal 475\ndate 2026-08-22 00:54:44 -0700\nauthor Matt Stults\nsubject draw machinery corrected (protocol event, logged per contract rule): strata re-keyed from mismatched graph.json id space to corpus ids via packet L-markers (762/762 coverage); all six draws recomputed at seed 20260822 \u2014 now 20+20 each with true pools (objectivity 26-engaged pool was 0 pre-fix); pre-correction artifacts preserved in history\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "text": "commit df6432d14fccfca4a9bc69db75c1b933e7dfe6d1\nordinal 475\ndate 2026-08-22 00:54:44 -0700\nauthor Matt Stults\nsubject draw machinery corrected (protocol event, logged per contract rule): strata re-keyed from mismatched graph.json id space to corpus ids via packet L-markers (762/762 coverage); all six draws recomputed at seed 20260822 — now 20+20 each with true pools (objectivity 26-engaged pool was 0 pre-fix); pre-correction artifacts preserved in history\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -23,7 +22,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8658-8665",
-   "text": "commit 644e631459ca1b0cbc8323f21344f99edd54a266\nordinal 476\ndate 2026-08-22 00:55:33 -0700\nauthor Matt Stults\nsubject blind ruling packets generated for Matt's Fable venue: six generalization packets (40 nodes each, span + definition + ruling question ONLY \u2014 no instrument prediction, no draw side, no truth) + defensibility batch (29 rows, delta-keyed); generator committed for regeneration\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "text": "commit 644e631459ca1b0cbc8323f21344f99edd54a266\nordinal 476\ndate 2026-08-22 00:55:33 -0700\nauthor Matt Stults\nsubject blind ruling packets generated for Matt's Fable venue: six generalization packets (40 nodes each, span + definition + ruling question ONLY — no instrument prediction, no draw side, no truth) + defensibility batch (29 rows, delta-keyed); generator committed for regeneration\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -55,7 +54,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8690-8697",
-   "text": "commit aedcd9a4919bd5d3663d48749c424131a113c706\nordinal 480\ndate 2026-08-22 01:10:29 -0700\nauthor Matt Stults\nsubject entry 13 relocated to graph_v2/EXPERIMENTS.md (was misfiled to a stray phase_1/EXPERIMENTS.md by a wrong relative path; stray deleted) with honest provenance of the misfile; the earlier commit message overstated \u2014 recorded here\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "text": "commit aedcd9a4919bd5d3663d48749c424131a113c706\nordinal 480\ndate 2026-08-22 01:10:29 -0700\nauthor Matt Stults\nsubject entry 13 relocated to graph_v2/EXPERIMENTS.md (was misfiled to a stray phase_1/EXPERIMENTS.md by a wrong relative path; stray deleted) with honest provenance of the misfile; the earlier commit message overstated — recorded here\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -95,7 +94,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8729-8736",
-   "text": "commit f571bca47d58ab2880d307a270ebfa9ea2521e5b\nordinal 485\ndate 2026-08-22 17:24:56 -0700\nauthor Matt Stults\nsubject packets review resolution (BLOCKED findings fixed): H1 draw-side leak via packet order closed \u2014 registered shuffle seed 20260823 recorded in every header, no file order-aligned with draw sides; H2 defensibility header neutralized (no prediction/truth/purpose language in seat material; pre-declaration stays in the protocol doc); M1 reconciled (module-level ruling operationalization, delta as post-ruling routing metadata only); L1 cross-referenced-clauses trailer trimmed; L3 translation-debris hazard caveat added to the protocol; all packets regenerated and leak-checked\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "text": "commit f571bca47d58ab2880d307a270ebfa9ea2521e5b\nordinal 485\ndate 2026-08-22 17:24:56 -0700\nauthor Matt Stults\nsubject packets review resolution (BLOCKED findings fixed): H1 draw-side leak via packet order closed — registered shuffle seed 20260823 recorded in every header, no file order-aligned with draw sides; H2 defensibility header neutralized (no prediction/truth/purpose language in seat material; pre-declaration stays in the protocol doc); M1 reconciled (module-level ruling operationalization, delta as post-ruling routing metadata only); L1 cross-referenced-clauses trailer trimmed; L3 translation-debris hazard caveat added to the protocol; all packets regenerated and leak-checked\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -111,7 +110,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8744-8751",
-   "text": "commit 95d4e59b961ace56e67b28eb1680a1cd6402b6df\nordinal 487\ndate 2026-08-22 17:29:10 -0700\nauthor Matt Stults\nsubject draw review resolution (BLOCKED findings fixed): A1 trailing-tag locator form parsed (51 rows/behaviour x 6 recovered, prioritize_teen_safety anchor live); A2 per-segment anchor attribution replaces envelope geometry (2 scattered-quote nodes); all six draws recomputed at registered seed 20260822 with divergences matching reviewer quantification (objectivity 19, autonomy 14+13, welfare 2+17 nodes swapped; harmlessness/tradeoffs unchanged) and determinism PASS; addendum 3 appended; input shas recorded (N1); arithmetic metric definitions inlined (N2); harmlessness indent normalized + contract regenerated (N4); N3 stale (fixed earlier in b81afbfa), N5 refuted (all five general-welfare acts consumed \u2014 parser strips Prolog suffixes)\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "text": "commit 95d4e59b961ace56e67b28eb1680a1cd6402b6df\nordinal 487\ndate 2026-08-22 17:29:10 -0700\nauthor Matt Stults\nsubject draw review resolution (BLOCKED findings fixed): A1 trailing-tag locator form parsed (51 rows/behaviour x 6 recovered, prioritize_teen_safety anchor live); A2 per-segment anchor attribution replaces envelope geometry (2 scattered-quote nodes); all six draws recomputed at registered seed 20260822 with divergences matching reviewer quantification (objectivity 19, autonomy 14+13, welfare 2+17 nodes swapped; harmlessness/tradeoffs unchanged) and determinism PASS; addendum 3 appended; input shas recorded (N1); arithmetic metric definitions inlined (N2); harmlessness indent normalized + contract regenerated (N4); N3 stale (fixed earlier in b81afbfa), N5 refuted (all five general-welfare acts consumed — parser strips Prolog suffixes)\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
    "source_class": "git_log"
   },
   {

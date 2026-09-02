@@ -2,12 +2,11 @@
  "header": {
   "batch": "batch_172",
   "source_class": "arc1_docs_preredaction",
-  "brief_version": "0.7",
-  "glossary_version": "frozen aa3da29 +G-06",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
   "spans": 15,
   "first_span": "S01796",
-  "last_span": "S01810",
-  "note": "header refreshed for brief v0.7 (D-09) before translation"
+  "last_span": "S01810"
  },
  "spans": [
   {
@@ -15,7 +14,7 @@
    "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "365d68b3f550379153b13b89c571672a92e5e396",
    "lines": "566-585",
-   "text": "## The bar, pinned (do not re-derive \u2014 it cost real effort)\n\nReproduced to three decimals from `behaviours.json`, so this is the definition:\n\n- `role` free text gives three levels per judge: **core=2, related=1, not relevant=0**;\n  the published `score` is their sum. Verified 377/377, 333/333, 153/153. A parser that\n  doesn't reproduce `score` exactly is wrong.\n- A judge predicts relevant at **core OR related (\u22651)**, not core-only.\n- **Gold for judge *j* = both other judges relevant.** Not \"either\" \u2014 that variant gives\n  0.544/0.689/0.640 and matches nothing.\n- **The judge panels differ per behaviour**: helpfulness = Sol/Kimi-K3/Fable 5;\n  harm-avoidance = Sol/Kimi-K3/**Opus 4.8**; over/under-caution = Sol/Fable 5/**Kimi-K2.6**.\n  Hardcoding one panel yields 0.000 for the other two and looks like a modelling failure.\n\nReference implementation: `scratchpad/pin_the_bar.py`.\n\nDo **not** use consensus `score \u22655` as gold: it implies every judge rated \u22651, so gold is a\nsubset of every judge's positive set and **every judge scores recall 1.0 by construction** \u2014\nthere is no bar at all on that basis.\n",
+   "text": "## The bar, pinned (do not re-derive — it cost real effort)\n\nReproduced to three decimals from `behaviours.json`, so this is the definition:\n\n- `role` free text gives three levels per judge: **core=2, related=1, not relevant=0**;\n  the published `score` is their sum. Verified 377/377, 333/333, 153/153. A parser that\n  doesn't reproduce `score` exactly is wrong.\n- A judge predicts relevant at **core OR related (≥1)**, not core-only.\n- **Gold for judge *j* = both other judges relevant.** Not \"either\" — that variant gives\n  0.544/0.689/0.640 and matches nothing.\n- **The judge panels differ per behaviour**: helpfulness = Sol/Kimi-K3/Fable 5;\n  harm-avoidance = Sol/Kimi-K3/**Opus 4.8**; over/under-caution = Sol/Fable 5/**Kimi-K2.6**.\n  Hardcoding one panel yields 0.000 for the other two and looks like a modelling failure.\n\nReference implementation: `scratchpad/pin_the_bar.py`.\n\nDo **not** use consensus `score ≥5` as gold: it implies every judge rated ≥1, so gold is a\nsubset of every judge's positive set and **every judge scores recall 1.0 by construction** —\nthere is no bar at all on that basis.\n",
    "source_class": "arc1_docs_preredaction"
   },
   {
@@ -23,7 +22,7 @@
    "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "365d68b3f550379153b13b89c571672a92e5e396",
    "lines": "586-591",
-   "text": "## The floors \u2014 see the banner; the table that was here is superseded\n\nIt was published-universe. Use `panel_universe.py`. Floor A = 0.000 (chance, MCC's\ndefinitional zero); floor B = \u22120.059 (chance minus the coverage gap), per behaviour\n+0.029 over/under / \u22120.161 harm-avoidance / \u22120.043 helpfulness.\n",
+   "text": "## The floors — see the banner; the table that was here is superseded\n\nIt was published-universe. Use `panel_universe.py`. Floor A = 0.000 (chance, MCC's\ndefinitional zero); floor B = −0.059 (chance minus the coverage gap), per behaviour\n+0.029 over/under / −0.161 harm-avoidance / −0.043 helpfulness.\n",
    "source_class": "arc1_docs_preredaction"
   },
   {
@@ -31,7 +30,7 @@
    "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "365d68b3f550379153b13b89c571672a92e5e396",
    "lines": "592-596",
-   "text": "### Use MCC as the primary metric\nF1 is what makes the floor unquotable (all-positive scores 0.44\u20130.64). **MCC is 0 by\nconstruction** for that predictor, and judge ranking is unchanged under it (helpfulness: kimi\n0.659, fable 0.648, **sol \u22120.027** = chance, which F1's 0.240 precision hides).\n",
+   "text": "### Use MCC as the primary metric\nF1 is what makes the floor unquotable (all-positive scores 0.44–0.64). **MCC is 0 by\nconstruction** for that predictor, and judge ranking is unchanged under it (helpfulness: kimi\n0.659, fable 0.648, **sol −0.027** = chance, which F1's 0.240 precision hides).\n",
    "source_class": "arc1_docs_preredaction"
   },
   {
@@ -47,7 +46,7 @@
    "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "365d68b3f550379153b13b89c571672a92e5e396",
    "lines": "609-620",
-   "text": "## Settled \u2014 do not re-open\n\n- **Judges saw full example blocks, not captions.** `cite.py:147-148` attaches the fenced\n  dialogue to its `**Example**:` caption *before* judging; `build_site_data.py:50-57` stores\n  only the caption as `quote` because fenced content \"renders as code the matcher cannot\n  see\". The caption is a display anchor. Label unit and prediction unit agree.\n- **The clause\u2192passage lift buys no free recall**: clauses-per-passage is `{0:14, 1:847,\n  2:2}`, mean 1.002, max 2.\n- **Short-quote false joins don't fire**: only 9 of 851 joins rest on a quote under 40 chars.\n- **`role` \u2194 `verdicts` agree exactly**: 4008 verdict lines, 1336 passages, zero mismatches.\n\n",
+   "text": "## Settled — do not re-open\n\n- **Judges saw full example blocks, not captions.** `cite.py:147-148` attaches the fenced\n  dialogue to its `**Example**:` caption *before* judging; `build_site_data.py:50-57` stores\n  only the caption as `quote` because fenced content \"renders as code the matcher cannot\n  see\". The caption is a display anchor. Label unit and prediction unit agree.\n- **The clause→passage lift buys no free recall**: clauses-per-passage is `{0:14, 1:847,\n  2:2}`, mean 1.002, max 2.\n- **Short-quote false joins don't fire**: only 9 of 851 joins rest on a quote under 40 chars.\n- **`role` ↔ `verdicts` agree exactly**: 4008 verdict lines, 1336 passages, zero mismatches.\n\n",
    "source_class": "arc1_docs_preredaction"
   },
   {
@@ -55,7 +54,7 @@
    "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "365d68b3f550379153b13b89c571672a92e5e396",
    "lines": "621-626",
-   "text": "## THE STRUCTURAL RESULT \u2014 the earlier NULL WAS WRONG. Retracted.\n\nAn earlier version of this section said \"typing contributes nothing measurable on this data\"\nand called the operator \"a coarse topic filter, not concept-level ontological work.\"\n**Both statements are retracted.** Three independent errors, each sufficient on its own:\n",
+   "text": "## THE STRUCTURAL RESULT — the earlier NULL WAS WRONG. Retracted.\n\nAn earlier version of this section said \"typing contributes nothing measurable on this data\"\nand called the operator \"a coarse topic filter, not concept-level ontological work.\"\n**Both statements are retracted.** Three independent errors, each sufficient on its own:\n",
    "source_class": "arc1_docs_preredaction"
   },
   {
@@ -63,7 +62,7 @@
    "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "365d68b3f550379153b13b89c571672a92e5e396",
    "lines": "627-641",
-   "text": "### 1. The noise floor was an expired constant\n`NOISE = 0.06` was an **interim guardrail explicitly conditional on n=1** \u2014 its own source\nsays *\"until the re-draws land, no difference under about \u00b10.06 should be read as real.\"*\nThe re-draws landed; the constant was used anyway. The precondition that justified it was the\nthing that had been removed.\n\n| noise floor for this contrast | value |\n|---|---|\n| asserted | \u00b10.060 \u2014 from `act_match` vs **bag@LOBO**, a different and far noisier contrast |\n| passage bootstrap (act vs any) | \u00b10.034 |\n| **draw-level SE of the design as run** | **\u00b10.0041** |\n\n`act_match \u2286 any_atom` by construction, so the pair is nested and correlated; its true band is\nmuch tighter. **0.060 / 0.0041 \u2248 15 SE applied to a 4.1 SE effect.**\n",
+   "text": "### 1. The noise floor was an expired constant\n`NOISE = 0.06` was an **interim guardrail explicitly conditional on n=1** — its own source\nsays *\"until the re-draws land, no difference under about ±0.06 should be read as real.\"*\nThe re-draws landed; the constant was used anyway. The precondition that justified it was the\nthing that had been removed.\n\n| noise floor for this contrast | value |\n|---|---|\n| asserted | ±0.060 — from `act_match` vs **bag@LOBO**, a different and far noisier contrast |\n| passage bootstrap (act vs any) | ±0.034 |\n| **draw-level SE of the design as run** | **±0.0041** |\n\n`act_match ⊆ any_atom` by construction, so the pair is nested and correlated; its true band is\nmuch tighter. **0.060 / 0.0041 ≈ 15 SE applied to a 4.1 SE effect.**\n",
    "source_class": "arc1_docs_preredaction"
   },
   {
@@ -71,7 +70,7 @@
    "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "365d68b3f550379153b13b89c571672a92e5e396",
    "lines": "642-647",
-   "text": "### 2. By the project's own unit of replication, the effect is SIGNIFICANT\nDraw as unit, n=5: **mean +0.0168, sd 0.0091, se 0.0041, t(4) = +4.13, p \u2248 0.014,\n95% CI [+0.0055, +0.0281] \u2014 excludes zero.** MDE at 80% power = 0.0151; the observed effect\nexceeds it. The design was never underpowered for the mean \u2014 **a significant result was\noverridden by an obsolete constant.**\n",
+   "text": "### 2. By the project's own unit of replication, the effect is SIGNIFICANT\nDraw as unit, n=5: **mean +0.0168, sd 0.0091, se 0.0041, t(4) = +4.13, p ≈ 0.014,\n95% CI [+0.0055, +0.0281] — excludes zero.** MDE at 80% power = 0.0151; the observed effect\nexceeds it. The design was never underpowered for the mean — **a significant result was\noverridden by an obsolete constant.**\n",
    "source_class": "arc1_docs_preredaction"
   },
   {
@@ -79,7 +78,7 @@
    "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "365d68b3f550379153b13b89c571672a92e5e396",
    "lines": "648-664",
-   "text": "### 3. The published test never tested typing \u2014 it confounded typing with SET SIZE\nKind is a strict function of name (361 names, 0 with more than one kind), so `act_match` is\nexactly a name-subset filter \u2014 verified: it yields the **identical** prediction set to\n`any_atom` on the act-only subquery in all 15 cells. So `act_match` vs `any_atom` compares\n**prune vs no-prune**, never controlling for set size.\n\nThe missing control \u2014 replace the act subset with a **random same-sized subset of the query's\nown atoms**, 500 draws per cell:\n\n| control | act wins | mean \u0394 |\n|---|---|---|\n| size-matched random subset | **15 / 15 cells** | **+0.091** (sign test p = 3e-5) |\n| df-matched subset | 14 / 15 cells | +0.066 |\n\n**Typing survives every control.** Including on harm-avoidance, where its published \"loss\" is\na set-size artifact.\n",
+   "text": "### 3. The published test never tested typing — it confounded typing with SET SIZE\nKind is a strict function of name (361 names, 0 with more than one kind), so `act_match` is\nexactly a name-subset filter — verified: it yields the **identical** prediction set to\n`any_atom` on the act-only subquery in all 15 cells. So `act_match` vs `any_atom` compares\n**prune vs no-prune**, never controlling for set size.\n\nThe missing control — replace the act subset with a **random same-sized subset of the query's\nown atoms**, 500 draws per cell:\n\n| control | act wins | mean Δ |\n|---|---|---|\n| size-matched random subset | **15 / 15 cells** | **+0.091** (sign test p = 3e-5) |\n| df-matched subset | 14 / 15 cells | +0.066 |\n\n**Typing survives every control.** Including on harm-avoidance, where its published \"loss\" is\na set-size artifact.\n",
    "source_class": "arc1_docs_preredaction"
   },
   {
@@ -87,7 +86,7 @@
    "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "365d68b3f550379153b13b89c571672a92e5e396",
    "lines": "665-686",
-   "text": "### MEASURED: typing's sign differs by behaviour. HYPOTHESISED: base rate explains it.\n\nKeep these apart. What is **measured** is the per-behaviour sign, reproducible 5/5 across\nindependent draws, plus the size-matched control (act wins 15/15, mean +0.091). What is a\n**hypothesis** is that *base rate* is the explanatory variable: with n=3 behaviours, base rate\nis perfectly confounded with behaviour identity, and atom count, topic breadth or clause\ndensity would fit those three points equally well. The F-test below shows behaviours DIFFER \u2014\nit does not show base rate is why. \"Crosses zero near ~0.15\" is an interpolation between three\npoints, not a fitted threshold.\n\n| behaviour | mean \u0394 | t(4) | 95% CI | gold prevalence |\n|---|---:|---:|---|---:|\n| over/under-caution | **+0.087** | +6.57 | [+0.050, +0.124] | 0.068 |\n| helpfulness | +0.011 | +1.50 | [\u22120.009, +0.030] | 0.182 |\n| harm-avoidance | **\u22120.047** | \u221210.35 | [\u22120.060, \u22120.035] | 0.236 |\n\n**Behaviour explains 90.3% of the variance, F(2,12) = 55.6.** `act_match` roughly halves the\nprediction set: it buys precision by pruning recall, which pays when the target is rare and\nloses when it is common. The three prevalences order perfectly against the three deltas. This\nis falsifiable on a fourth behaviour \u2014 \u0394 should decline with base rate and cross zero near\n~0.15.\n",
+   "text": "### MEASURED: typing's sign differs by behaviour. HYPOTHESISED: base rate explains it.\n\nKeep these apart. What is **measured** is the per-behaviour sign, reproducible 5/5 across\nindependent draws, plus the size-matched control (act wins 15/15, mean +0.091). What is a\n**hypothesis** is that *base rate* is the explanatory variable: with n=3 behaviours, base rate\nis perfectly confounded with behaviour identity, and atom count, topic breadth or clause\ndensity would fit those three points equally well. The F-test below shows behaviours DIFFER —\nit does not show base rate is why. \"Crosses zero near ~0.15\" is an interpolation between three\npoints, not a fitted threshold.\n\n| behaviour | mean Δ | t(4) | 95% CI | gold prevalence |\n|---|---:|---:|---|---:|\n| over/under-caution | **+0.087** | +6.57 | [+0.050, +0.124] | 0.068 |\n| helpfulness | +0.011 | +1.50 | [−0.009, +0.030] | 0.182 |\n| harm-avoidance | **−0.047** | −10.35 | [−0.060, −0.035] | 0.236 |\n\n**Behaviour explains 90.3% of the variance, F(2,12) = 55.6.** `act_match` roughly halves the\nprediction set: it buys precision by pruning recall, which pays when the target is rare and\nloses when it is common. The three prevalences order perfectly against the three deltas. This\nis falsifiable on a fourth behaviour — Δ should decline with base rate and cross zero near\n~0.15.\n",
    "source_class": "arc1_docs_preredaction"
   },
   {
@@ -95,7 +94,7 @@
    "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "365d68b3f550379153b13b89c571672a92e5e396",
    "lines": "687-694",
-   "text": "### The \"coarse topic filter\" claim is also refuted\nThe 12\u201316 atom common core is the **more common** atoms (median df 9.5/7.0/10.5 vs remainder\n7.0/6.0/8.0) \u2014 the opposite of IDF weighting. A same-sized highest-information subset\n**collapses** (+0.042 / +0.186 / +0.004 vs the core's +0.342 / +0.368 / +0.231). Random\nsame-sized subsets span sd 0.048\u20130.091; the five draws span sd 0.024\u20130.032. **Draws agree\nbecause independent samples keep selecting the same semantically central atoms** \u2014 that is\nevidence of a *stable extraction*, and it was read as evidence of a *vacuous operator*.\n",
+   "text": "### The \"coarse topic filter\" claim is also refuted\nThe 12–16 atom common core is the **more common** atoms (median df 9.5/7.0/10.5 vs remainder\n7.0/6.0/8.0) — the opposite of IDF weighting. A same-sized highest-information subset\n**collapses** (+0.042 / +0.186 / +0.004 vs the core's +0.342 / +0.368 / +0.231). Random\nsame-sized subsets span sd 0.048–0.091; the five draws span sd 0.024–0.032. **Draws agree\nbecause independent samples keep selecting the same semantically central atoms** — that is\nevidence of a *stable extraction*, and it was read as evidence of a *vacuous operator*.\n",
    "source_class": "arc1_docs_preredaction"
   },
   {
@@ -103,7 +102,7 @@
    "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "365d68b3f550379153b13b89c571672a92e5e396",
    "lines": "695-704",
-   "text": "### What is genuinely unresolved\n**Which** behaviours typing pays for. n=3 behaviours; the behaviour-level MDE is 0.206 \u2014 no\npower at all. Adding 3\u20135 behaviours spanning prevalence 0.05\u20130.30 is a few cents and would\nconfirm or destroy the prevalence model.\n\n**The ontology-pass gate at +0.310 \u00b1 0.021 is suspended** \u2014 it was defending a null that does\nnot exist.\n\n\n",
+   "text": "### What is genuinely unresolved\n**Which** behaviours typing pays for. n=3 behaviours; the behaviour-level MDE is 0.206 — no\npower at all. Adding 3–5 behaviours spanning prevalence 0.05–0.30 is a few cents and would\nconfirm or destroy the prevalence model.\n\n**The ontology-pass gate at +0.310 ± 0.021 is suspended** — it was defending a null that does\nnot exist.\n\n\n",
    "source_class": "arc1_docs_preredaction"
   },
   {
@@ -111,7 +110,7 @@
    "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "365d68b3f550379153b13b89c571672a92e5e396",
    "lines": "705-710",
-   "text": "## \u26d4 THE DIAGNOSIS WAS WRONG. IT IS THE QUERY MECHANISM. DO NOT BUY ANNOTATION.\n\nAn earlier reading said the ceiling was **representation capacity** \u2014 \"~2.75 atoms per clause\ncannot carry what relevance depends on\" \u2014 and a frontier re-annotation was scoped to test it.\n**Refuted, twice, from data already on disk.**\n",
+   "text": "## ⛔ THE DIAGNOSIS WAS WRONG. IT IS THE QUERY MECHANISM. DO NOT BUY ANNOTATION.\n\nAn earlier reading said the ceiling was **representation capacity** — \"~2.75 atoms per clause\ncannot carry what relevance depends on\" — and a frontier re-annotation was scoped to test it.\n**Refuted, twice, from data already on disk.**\n",
    "source_class": "arc1_docs_preredaction"
   },
   {
@@ -119,7 +118,7 @@
    "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "365d68b3f550379153b13b89c571672a92e5e396",
    "lines": "711-725",
-   "text": "### The supervised ceiling is ABOVE the judge bar\nTrue 589 universe, 9 cells, 5-fold OOF, threshold chosen on training folds only:\n\n| features (all already on disk) | ceiling | 95% CI |\n|---|---:|---|\n| text (passage tf-idf) | +0.398 | [+0.321, +0.442] |\n| atoms | +0.435 | [+0.419, +0.525] |\n| **section identity ALONE** | **+0.536** | [+0.478, +0.578] |\n| **atoms + section** | **+0.591** | [+0.534, +0.630] |\n| text + atoms + section | +0.606 | [+0.535, +0.637] |\n| judges (mean) | +0.555 | [+0.516, +0.593] |\n| judges (best per behaviour) | +0.654 | \u2014 |\n\nPermutation control: \u22120.0015 \u00b1 0.011. No leakage.\n",
+   "text": "### The supervised ceiling is ABOVE the judge bar\nTrue 589 universe, 9 cells, 5-fold OOF, threshold chosen on training folds only:\n\n| features (all already on disk) | ceiling | 95% CI |\n|---|---:|---|\n| text (passage tf-idf) | +0.398 | [+0.321, +0.442] |\n| atoms | +0.435 | [+0.419, +0.525] |\n| **section identity ALONE** | **+0.536** | [+0.478, +0.578] |\n| **atoms + section** | **+0.591** | [+0.534, +0.630] |\n| text + atoms + section | +0.606 | [+0.535, +0.637] |\n| judges (mean) | +0.555 | [+0.516, +0.593] |\n| judges (best per behaviour) | +0.654 | — |\n\nPermutation control: −0.0015 ± 0.011. No leakage.\n",
    "source_class": "arc1_docs_preredaction"
   },
   {
@@ -127,7 +126,7 @@
    "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "365d68b3f550379153b13b89c571672a92e5e396",
    "lines": "726-732",
-   "text": "### Where the retracted +0.258 came from\nThree compounding faults, all mine: a **fixed 0.5 cut** on a 4\u201327% base rate (two of nine\ncells scored exactly +0.000 \u2014 the classifier predicted nothing, which is calibration, not\ncapacity); a hand-rolled full-batch GD that underfits by +0.11 against liblinear on identical\nfeatures; and **`section_path` absent from the feature matrix entirely**. Also: numpy and\nsklearn ARE available under system `python3` \u2014 the \"no sklearn\" premise was false.\n",
+   "text": "### Where the retracted +0.258 came from\nThree compounding faults, all mine: a **fixed 0.5 cut** on a 4–27% base rate (two of nine\ncells scored exactly +0.000 — the classifier predicted nothing, which is calibration, not\ncapacity); a hand-rolled full-batch GD that underfits by +0.11 against liblinear on identical\nfeatures; and **`section_path` absent from the feature matrix entirely**. Also: numpy and\nsklearn ARE available under system `python3` — the \"no sklearn\" premise was false.\n",
    "source_class": "arc1_docs_preredaction"
   }
  ]
