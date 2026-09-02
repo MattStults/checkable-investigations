@@ -1,0 +1,307 @@
+{
+ "header": {
+  "batch": "retry_I03_b",
+  "source_class": "arc2_docs",
+  "brief_version": "0.5",
+  "glossary_version": "frozen d887fb9",
+  "spans": 14,
+  "first_span": "S00046",
+  "last_span": "S00059",
+  "retranslation_of": "document batches 012/013/017 spans with ruling/CoVe markers (rule I-03 / G-02); also covers the I-01 rejection L120174 if listed",
+  "superseded_claims": [
+   {
+    "batch": "batch_013",
+    "span": "S00069",
+    "ids": [
+     "L130108"
+    ]
+   },
+   {
+    "batch": "batch_017",
+    "span": "S00120",
+    "ids": [
+     "L170001",
+     "L170002",
+     "L170003",
+     "L170004",
+     "L170005",
+     "L170006",
+     "L170007",
+     "L170008",
+     "L170009",
+     "L170010",
+     "L170011",
+     "L170012",
+     "L170013",
+     "L170014"
+    ]
+   },
+   {
+    "batch": "batch_017",
+    "span": "S00123",
+    "ids": [
+     "L170041",
+     "L170042",
+     "L170043",
+     "L170044",
+     "L170045",
+     "L170046",
+     "L170047",
+     "L170048",
+     "L170049",
+     "L170050",
+     "L170051",
+     "L170052",
+     "L170053",
+     "L170054",
+     "L170055",
+     "L170056",
+     "L170057",
+     "L170058",
+     "L170059",
+     "L170060",
+     "L170061",
+     "L170062",
+     "L170063",
+     "L170064"
+    ]
+   },
+   {
+    "batch": "batch_017",
+    "span": "S00126",
+    "ids": [
+     "L170097",
+     "L170098",
+     "L170099",
+     "L170100",
+     "L170101",
+     "L170102",
+     "L170103",
+     "L170104",
+     "L170105"
+    ]
+   },
+   {
+    "batch": "batch_012",
+    "span": "S00054",
+    "ids": [
+     "L120137",
+     "L120138",
+     "L120139",
+     "L120140",
+     "L120141",
+     "L120142",
+     "L120143",
+     "L120144",
+     "L120145",
+     "L120146",
+     "L120147",
+     "L120148",
+     "L120149",
+     "L120150",
+     "L120151",
+     "L120152",
+     "L120153",
+     "L120154",
+     "L120155",
+     "L120156",
+     "L120157",
+     "L120158",
+     "L120159",
+     "L120160",
+     "L120161",
+     "L120162",
+     "L120163",
+     "L120164",
+     "L120165",
+     "L120166",
+     "L120167",
+     "L120168",
+     "L120169",
+     "L120170",
+     "L120171",
+     "L120172",
+     "L120173",
+     "L120175",
+     "L120176",
+     "L120177"
+    ]
+   },
+   {
+    "batch": "batch_012",
+    "span": "S00055",
+    "ids": [
+     "L120178",
+     "L120179",
+     "L120180",
+     "L120181",
+     "L120182",
+     "L120183",
+     "L120184",
+     "L120185",
+     "L120186",
+     "L120187",
+     "L120188",
+     "L120189",
+     "L120190",
+     "L120191",
+     "L120192",
+     "L120193",
+     "L120194",
+     "L120195",
+     "L120196",
+     "L120197",
+     "L120198",
+     "L120199",
+     "L120200",
+     "L120201",
+     "L120202",
+     "L120203",
+     "L120204",
+     "L120205",
+     "L120206"
+    ]
+   },
+   {
+    "batch": "batch_012",
+    "span": "S00056",
+    "ids": [
+     "L120207",
+     "L120208",
+     "L120209",
+     "L120210",
+     "L120211",
+     "L120212",
+     "L120213",
+     "L120214",
+     "L120215",
+     "L120216",
+     "L120217",
+     "L120218",
+     "L120219",
+     "L120220",
+     "L120221",
+     "L120222",
+     "L120223",
+     "L120224",
+     "L120225",
+     "L120226",
+     "L120227",
+     "L120228",
+     "L120229",
+     "L120230",
+     "L120231",
+     "L120232",
+     "L120233",
+     "L120234",
+     "L120235",
+     "L120236"
+    ]
+   },
+   {
+    "batch": "batch_012",
+    "span": "S00057",
+    "ids": [
+     "L120237",
+     "L120238",
+     "L120239",
+     "L120240",
+     "L120241",
+     "L120242",
+     "L120243",
+     "L120244",
+     "L120245",
+     "L120246",
+     "L120247",
+     "L120248",
+     "L120249",
+     "L120250",
+     "L120251"
+    ]
+   }
+  ],
+  "rejected_claims": [
+   {
+    "id": "L120174",
+    "quote": "M1 held, M2 held 3/3, errata addendum 5);",
+    "reason": [
+     "erratum.n=5 does not appear as an erratum number within the cited source lines (I-01)"
+    ]
+   }
+  ]
+ },
+ "spans": [
+  {
+   "id": "S00069",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_PREREG.md",
+   "commit": "pin",
+   "lines": "148-148",
+   "text": "## ERRATA (2026-08-24, post-signature, append-only; each ratified by the project owner in",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00120",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "pin",
+   "lines": "283-291",
+   "text": "## Corrections to the main review\n\n**C1 — Cost premise (affects F17, A12).** Panel adjudication is **$0 API**. The $17.179/$25.00 in `spend.py` is corpus translation and matching spend (DeepSeek-V4-Flash bulk translation alone is $13.73); `usage.jsonl` has essentially no rows during the periods when the round-3/4, generalization, UA, and tradeoffs panels ran. Panel truth is produced by **Fable/Opus subagent seats**, and the operative constraint is the frontier-seat allocation (notes 0032), with **a pre-registered per-round seat-token allocation**. My F17 experiment is therefore **not** dollar-constrained — but it must be registered against the **seat-capacity** budget, and that is a real constraint the L1/L2 registrations also omit entirely.\n**Fix.** Every registered experiment states its compute-cost estimate alongside its $ cost, per the existing prereg pattern.\n\n**C2 — Scale (affects F5, F7).** The graph is **773 nodes** (`graph_v2/node_corpus_all.json`; 593 at root unwind per `GRAPH_OVERVIEW.md`), not ~600. More importantly: `behavior_pilot/coverage_translated.json` records **`translated_nodes: 183`**. See F32.\n\n---\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00123",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "pin",
+   "lines": "304-308",
+   "text": "### F29. Q-B is circular by construction: every behaviour with panel truth is IN the 100-definition corpus, because 11 corpus entries ARE the project's own behaviour set.\n**Defect.** `query_class_corpus.json`'s 100 ids break down as `ms:` 29, `sparrow:` 24, `anthropic-constitution:` 12, `anthropic-aup:` 10, **`adria:` 11**, `hhh:` 9, `llamaguard:` 6. Every behaviour with adjudicated node truth maps into the `adria:` block: helpfulness, third-party-harm, over-under-caution, tradeoffs, user-autonomy, harmlessness-to-user, objectivity, general-welfare, proportionate-risk. panel-v5's two additional defined behaviours (`no-sycophancy`, `undermine-oversight`) are *also* in the corpus and have **zero rulings** in the runlog. The one behaviour outside the 100 — `animal-welfare-impacts` — has citation coverage only (`data/panel-coverage.json`) and **zero** adjudicated relevant/not_relevant rulings anywhere.\n**Why it matters for Q-B.** The 24×105 ontology was open-coded from a corpus that includes the definitions of the very behaviours it is scored against. There is **no out-of-corpus panel truth in this repo at all**. L2 as written does not fix this, because L2 never produces a relevance judgment (F12) — so if L2 passes, Q-B remains untested by construction, not merely under-tested.\n**Fix.** Register explicitly: **Q-B cannot be answered by any experiment that does not create new out-of-corpus panel truth.** Minimum: 3 out-of-corpus behaviours × a uniformly drawn, fully ruled node block (the fresh-draw pattern, ~80 nodes each), with the behaviour definitions selected per F14 and frozen pre-annotation. `no-sycophancy` and `undermine-oversight` are **not** eligible (in-corpus). This is the single largest gap in the licensing plan and it is affordable.\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00126",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "pin",
+   "lines": "319-323",
+   "text": "### F32. L1 presupposes the campaign it is supposed to license — only 183 nodes have ever been translated.\n**Defect.** `coverage_translated.json` records `translated_nodes: 183` of 773. L1 says \"freeze mids induced from HALF the spec's nodes; score … the HELD-OUT half.\" Half of 773 is ~386 nodes that do not exist in translated form. Producing them **is** the retranslation campaign — the ~$/Fable expenditure the experiment is meant to justify. Read literally, L1 cannot be run before the decision it informs.\n**Why it matters.** Either L1 silently means \"half of the 39-node problem-stratified sample\" (n≈19, no power, wrong frame — F5, F7), or it means a several-hundred-node translation commitment made before the licensing question is settled.\n**Fix.** Register L1 explicitly as a **staged pre-flight**: a uniform random draw of N nodes (N set by a power calculation against the F31 clean partitions, and stated), translated end-to-end through the real pipeline, with wall-clock / Fable-token / seat-disagreement / merge-arbitration rates recorded — so the pre-flight simultaneously yields the licensing measurement (F17) and the scaling estimate (F19). State the pre-flight's cost as a fraction of full-campaign cost in the registration.\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00054",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/HANDOFF_CURRENT.md",
+   "commit": "pin",
+   "lines": "163-219",
+   "text": "## CAMPAIGN START — the 10-hour push to certifiable, publishable data (2026-08-21, approved)\nBASELINE COMMIT for review: 5cc216272042942d0ba51966070168fddeb53d25\n(d3-worked-example, clean tree, in sync with origin). A reviewing Fable agent:\nreview FORWARD from this commit — everything after it is this campaign.\n\nMANDATE (2026-08-21): inside one bounded human-attention window\nstraddling a provider capacity reset, produce (1) round-4\ncertification of this document, (2) zero-adaptation generalization runs on\nheld-out behaviours, and (3) a blog series (goals / design / results) +\nliving summary document.\n\nSCOPE RULING (2026-08-21): ALL SIX never-consulted\nbehaviours run, 3+3 SEQUENTIAL with a FATAL-class stop rule. First three in\ndiagnostic order: harmlessness-to-user (adjacent-family protects-wall flip),\nobjectivity-on-contested-questions (maximal-distance answer-quality shape),\n+ one of {tradeoffs, user-autonomy, proportionate-risk, general-welfare};\nremaining three run as confirmation IF the first three transfer cleanly.\nGrounds: the collaborator v5 frontier panel (ingested 2026-08-21 as\ndata/panel-v5/, see PROVENANCE.md) supplies 3 full seats on all 9 behaviours\nx both specs, removing the truth-scarcity reason for holding at two;\ncomparison statistics are free for all six; adjudication draws shrink to\n40-node panel-informed samples. Rejected by name:\n\"stay at two\" (loses breadth now that truth-scarcity is gone) and \"all six\nas one block\" (loses the confirmation structure). Capacity ruling:\nadjudication queues until after the next capacity reset; all\nreset-independent work proceeds before it.\nTruth doctrine unchanged: v5 panel is comparison layer ONLY, never truth.\n\nSTANDING PROCESS RULES FOR THIS CAMPAIGN (2026-08-21):\n- Test-driven where possible; where automated tests are not realistic, the\n  validation method is written BEFORE the work and then checked (manually,\n  with human help where asked).\n- Every completed work item gets a clean-context ADVERSARIAL subagent review\n  for engineering excellence and consistency with the higher-level goal\n  before it counts; a positive finding stops the item until fixed.\n- All of Phase 0 (arc-1 items a-e, round-4 prereg draft, generalization\n  prereg, blog scaffolding) is autonomous; human attention is spent on\n  signatures, falsifier readings, and writeup review.\n- Round-3 prereg (signed, sha 69631bf3...) is SUPERSEDED unrun: it froze\n  contract v13; the instrument has moved to v18. Round-4 needs a fresh\n  prereg re-derived from v18 all-truth.\n- ARC1-E CLOSED (2026-08-21, campaign commit 29e831d5, adversarial verdict\n  CLEAR round 4): census vector() mirrors the v18 instrument under addendum-3\n  semantics — CURRENT = frozen instrument per behavior (dead slots masked),\n  REACHABLE = design space; three inert-feature false SEPARABLEs corrected;\n  standing pinned dead-slot probe guards the class and carries the Arc1-b\n  slot-arity handshake. 9b may consume the corrected census.\n- The handoff's \"the human-panelist baseline 71%\" currently has NO source\n  artifact; it must be sourced or struck before it appears in any writeup.\n- STATUS (2026-08-21 late): Arc1-e CLOSED (adversarial CLEAR, 4 rounds);\n  Arc1-b mint CLOSED (adversarial CLEAR-WITH-NITS, 2 rounds: M1 held, M2 held 3/3, errata addendum 5); 9b PC-1..4\n  justified (PC-4 redone after review found a document-free dismissal; fit-\n  rank disclosure recorded); round-4 prereg SCAFFOLD drafted\n  (ROUND4_PREREG_SCAFFOLD.md); EXPERIMENTS.md campaign entries.\n  Open item: generalization prereg signature (GENERALIZATION_PREREG_\n  DRAFT.md).\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00055",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/CALCULUS_RUNBOOK.md",
+   "commit": "pin",
+   "lines": "1-60",
+   "text": "# CALCULUS RUNBOOK v1 — agent-facing: take a failure batch through the loop\n(2026-08-24. EXECUTION-DERIVED: rewritten from ITERATION_NOTES.md\n0001-0014 after three live iterations on how-to-approach-tradeoffs, per\nthe execution-derived-docs rule. v0's draft-from-design text is in git\nhistory; every change here traces to a notes entry. Test: test_runbook.py.)\n\nPRECONDITIONS (verify, do not assume):\n  P0 clean tree, everything pushed. P1 you have read ERROR_CALCULUS.md\n  (router R1-R5, amendments A1-A13). P2 the batch is a committed list of\n  (behaviour, node) mismatches with their truth provenance. P3 REFILTER\n  the batch against the CURRENT module before routing — a miss list\n  scored against an older contract may contain already-fixed nodes\n  (notes 0012: 3 of 23 were).\n\nSTEP 1 — TRIAGE (deterministic, $0):\n  .venv/bin/python route.py <slug> <node>      # per mismatch -> class, move, trace\n  GENERALIZATION-VENUE slugs (notes 0001): bare route.py KeyErrors —\n  truth lives outside truth_all's fmap. Use the iteration1_triage.py\n  pattern: derived single-module contract + frozen venue truth injected\n  read-only + ctx truth_tier from committed ruling files; keep the\n  census REAL, never ctx-asserted. probe.py takes --contract/--truth\n  for the same venue.\n  Batch rule (A5): group by class; INVENTORY-level moves (I1 builds, I3\n  mints) sequence BEFORE dependent C-D deltas. Emit the routed queue as\n  a committed artifact before any move executes. Census caveat (notes\n  0001): SEPARABLE relative to a thin venue ledger is weak — say the\n  ledger size in the artifact.\n\nSTEP 2 — MOVES, cheapest first, per the A10 capability router:\n  R1 FIRST, ALWAYS, and once more before choosing between candidates:\n    single-wave truth on engaged misses overturned at 3/9 in iteration 1\n    (notes 0003); when delta candidates differ only on single-tier\n    nodes, escalate THOSE nodes before deciding (notes 0004 — the\n    choice becomes a truth fact, not driver judgment). Escalation may be\n    DEFERRED only when every route lands in a suspension (no move to\n    pay for; notes ITER4_MISS_TRIAGE) — then it is REQUIRED before any\n    future fix attempt.\n  VENUE (A10 Q3, notes 0006/0013): the cheapest CERTIFIED tier + seeded\n    ~20% spot-check + tripwire. Certificates are brief-local AND\n    task-class-local: parity measured on consensus items does NOT cover\n    the dispute/boundary class (tripwire fired 4/9 there, notes 0014) —\n    measure the dispute class separately or keep escalation resolution\n    at the trusted tier. A fired tripwire is mechanical: quarantine or\n    re-run, never silently accept.\n  C-D deltas: candidates via decl-search/discriminator analysis; screen\n    EVERY candidate with probe.py (charter + reason-drift + extensional\n    fingerprint vs HYPOTHESIS_LEDGER.jsonl — a known fingerprint is the\n    same route by another name: REFUSE). Class card REQUIRED (family,\n    general form, predicted non-motivating members) before L2.\n  I3 mints: mined-frontier candidates only; blind criteria; ONE coin per\n    inventory version for zero-collider cases (A8). BEFORE the P3\n    signature, MEASURE the criteria (notes 0011-0012): blind\n    multi-seat calibration on ledger-known cases, families hidden,\n    thresholds pre-stated (stability + separation) — the signature\n    ratifies a measured brief, scoped to its measured coverage. A mint's\n    consumption mechanisms are SEPARATE downstream config moves, each\n    validated individually (notes 0013 erratum: never bundle them into\n    one adoption decision or escalate their selection to a human — V4\n    flip content decides mechanically; the wall died this way while the\n    channel lived).",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00056",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/CALCULUS_RUNBOOK.md",
+   "commit": "pin",
+   "lines": "61-120",
+   "text": "  Rulings/adjudications: LINEAGE_SEAT_INSTRUCTION.md VERBATIM, wave\n    form, fresh seats on the certified venue; panels per registered\n    samplers; prompts ONLY from committed packet files.\n\nSTEP 3 — VALIDATE (V1-V5, all before adoption):\n  probe.py arithmetic on the FULL ledger; reason-drift: DEGRADED =\n  break, SUBSTITUTED = design review (criticality filtering BLOCKED\n  pending its brief-pinning); held-out class-card members must move;\n  new flips blind-adjudicated (standing panel-tier truth discharges\n  this on the record — no seat re-spent); V1 is NEVER sufficient: per-\n  flip content kills regardless of charter sign (the codified\n  radicalization rule; a 24-fixes/12-breaks move died on 8 relevant\n  disengagements, notes 0013). REGISTER the predicted fresh-draw\n  movement in a committed file BEFORE step 4, AND — BINDING, notes\n  0009 — the primary metric MUST have registered COVERAGE of the\n  move's extension: gains/losses sampled in the draw, or a registered\n  full-extension census/probe. A zero-coverage registration is\n  invalid-by-construction (iteration 2 fired a revert off a draw that\n  sampled 0/16 of the move; the void-for-coverage ruling and one-shot\n  re-measurement cost a day). After computing a draw, CHECK it samples\n  the move's classes; if not, register a seeded probe in the same\n  pre-dispatch commit (notes 0007).\n\nSTEP 4 — REALIZE: fresh confirmation wave from the frozen-prereg draw\n  machinery (seeded, committed pre-dispatch), certified-venue seats +\n  Fable spot-checks, score with a scorer COMMITTED BEFORE RULINGS\n  against the registered prediction. Below the registered line ->\n  REVERT with ledger record — unless the measurement itself fails a\n  RESULT-BLIND validity criterion (coverage), in which case halt and\n  surface; the remedy is re-adjudicating the SAME frozen samples at a\n  higher tier, both verdict directions, thresholds fixed pre-dispatch,\n  one shot — NEVER a new draw (notes 0010). Sequence venue decisions\n  before scoring (score only after the seat set is fixed — removes the\n  optional-stopping question, notes 0005).\n\nSTEP 5 — RECORD: traces (trace_check.py-certifiable) with evidence\n  pointers; verdicts carrying enumeration scopes; SUSPENDED-OPEN for\n  every non-certificated exhaustion, each with a NAMED RE-ENTRY;\n  opposing UNANIMOUS panels on identical text = DEFENSIBLE-BY-\n  CONTRADICTION, no seat spent, excluded from top-line error (standing\n  ruling, notes 0011); commit + push each step's artifacts before the\n  next step starts. The loop's healthy terminal is the QUIESCENT FIXED\n  POINT: every open mismatch in a recorded suspension awaiting\n  inventory growth, design capacity, or budget — say it that way.\n\nSTEP 5b — NOTES (binding): append a dated entry to ITERATION_NOTES.md at\n  EVERY step — surprises, doc errors, next-agent-must-know items. An\n  iteration whose learning is not in that file did not record its\n  learning; this runbook is rewritten FROM that file, never from memory.\n  HANDOFF = a fresh session booting CLAUDE.md -> HANDOFF_CURRENT.md ->\n  this runbook -> ITERATION_NOTES.md. No compaction ritual, no handoff\n  prompt: if a departing instance holds uncommitted context, THAT is\n  the bug — commit it here before ending.\n\nCONSTRAINT DISCIPLINE (notes 0013; entries 0002/0008 are redacted stubs): the agent cannot read its\nown resource meter — confirm remaining capacity with the human before\nevery frontier dispatch. When a standing capacity cap and a standing\nvenue ruling conflict, that is a conflict between two HUMAN rulings:\nsurface the CONSTRAINT STRUCTURE (which rulings collide, what the\nmachine's default is — usually suspend until the resource resets), never",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00057",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/CALCULUS_RUNBOOK.md",
+   "commit": "pin",
+   "lines": "121-149",
+   "text": "a design menu. Certified cheap-tier seats do not draw on the frontier\nallocation.\n\nTRUTH ECONOMICS (standing ruling, 2026-08-24, notes 0019 — supersedes the\nfresh-rulings-per-attempt inertia): TRUTH IS APPEND-ONLY AND MEMOIZED.\n(a) A dispatch rules ONLY nodes with no standing panel-tier truth — a\ndraw's already-ruled nodes are lookups, never re-buys. (b) Rule at\nPANEL TIER the FIRST time (certified venue): single-wave truth cannot\nbe memoized (0.846 self-agreement) and buying it first just prepays an\nupgrade. (c) Acquire truth ENGAGED-SET-FIRST per behaviour — precision\nbecomes exact OVER THE RULED SET at ~12 off-bar seats (2-1 majorities\nmemoize tagged SPLIT; entries carry definition-sha + brief-version +\nvenue and are voided by definition changes; a SEEDED 25% of every\nexhaustive purchase is SEALED as held-out until a registered stopping\npoint — deltas tune only against the visible partition); the decline side\nfills memoized-incrementally with twin-class propagation (~15-20%\nsaved). (d) Coverage is a property of a MODULE VERSION: nodes a repair newly\nengages enter the unruled dispatch queue and a move's adoption blocks\nuntil its gained nodes are ruled (the V5 coverage rule, composed).\nWithin a version with full visible coverage, validation is a $0\nlookup; STEP-4 confirmation scores on the SEALED partition, once.\n\nSTOP CONDITIONS (halt and surface, do not improvise): any spec gap (a\nstate with no applicable rule), any checker failure, any floor that a\nchange would lower, any needed judgment lacking a pinned brief, any\nfired tripwire, any measurement failing its coverage criterion, resource usage\ncrossing the registered cap, and any conflict between standing human\nrulings.\n",
+   "source_class": "arc2_docs",
+   "context": null
+  }
+ ]
+}

@@ -109,7 +109,13 @@ sub-sentence without '#20' was rejected. Rule now requires the number as
 count case (entry 0000, no '#2' anywhere in the entry) still fails.
 
 Recurrence: batch_003 opus — 0 true recurrences (the one hit was the
-over-narrow rule, not the defect class).
+over-narrow rule, not the defect class). batch_012 opus — 1 hit:
+"errata addendum 5" translated as erratum.n = 5. Whether an "errata
+addendum" numbered 5 is an erratum number is a reading the rule does not
+admit; the claim is retranslated with n null and the span's words in
+class. Counted as a recurrence of the class (a nearby number taken as n)
+after the checker rule existed; the rule caught it, so no human
+question was needed.
 
 ### I-02 — 2026-09-02 — wave verdict tiered panel by the key walk
 
