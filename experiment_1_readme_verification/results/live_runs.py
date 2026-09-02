@@ -86,8 +86,11 @@ on = re.search(r"^on:\s*\n((?:\s+.*\n)+?)(?=\S)", ci, re.M)
 rec("Q34", "contradicted" if "branches" in (on.group(1) if on else ci) else "verified", f"on-block: {(on.group(1) if on else '?').strip()[:120]!r}; README says 'every push'", "read ci.yml", 0, ci[:600])
 # Q35 licenses
 lic = open(os.path.join(T, "LICENSE")).read()[:200]; pv5 = [exists("data/panel-v5/LICENSE"), exists("data/panel-v5/NOTICE")]
-sp = [exists("specs/openai-model-spec/LICENSE") or exists("specs/openai-model-spec/LICENSE.md") or any(f.upper().startswith("LICENSE") for f in os.listdir(os.path.join(T, "specs/openai-model-spec"))), any(f.upper().startswith("LICENSE") for f in os.listdir(os.path.join(T, "specs/claude-constitution")))]
-rec("Q35", "verified" if "MIT" in lic and all(pv5) and all(sp) else "contradicted", f"root LICENSE MIT: {'MIT' in lic}; panel-v5 LICENSE/NOTICE: {pv5}; specs licence files present: {sp}", "read LICENSE files", 0, lic)
+def lic_stmt(d, pat):
+    fs = [f for f in os.listdir(os.path.join(T, d)) if f.upper().startswith(("LICENSE", "README", "NOTICE"))]
+    return [f for f in fs if re.search(pat, open(os.path.join(T, d, f), errors="replace").read(), re.I)]
+sp = {"openai-model-spec CC0": lic_stmt("specs/openai-model-spec", r"CC0|public domain"), "claude-constitution CC BY": lic_stmt("specs/claude-constitution", r"CC[- ]BY|Creative Commons")}
+rec("Q35", "verified" if "MIT" in lic and all(pv5) and all(sp.values()) else "contradicted", f"root LICENSE MIT: {'MIT' in lic}; panel-v5 LICENSE/NOTICE: {pv5}; upstream licence statements found in: {sp} (README says 'upstream licence statements and README files intact', so a statement inside README.md counts)", "read LICENSE/README/NOTICE files", 0, lic)
 # Q42 relative links in README resolve
 rd = subprocess.check_output(["git", "-C", T, "show", f"{PIN}:README.md"], text=True)
 links = re.findall(r"\]\(([^)#]+)\)", rd)
@@ -109,7 +112,9 @@ rec("Q49", "verified" if all(exists(p) for p in lay) else "contradicted", f"{[(p
 # H15 ARTIFACTS.md paths exist
 art = open(os.path.join(T, "ARTIFACTS.md")).read()
 paths = sorted(set(re.findall(r"`([A-Za-z0-9_./-]+\.(?:md|json|py|jsonl|lp|yml|txt))`", art)))
-miss = [p for p in paths if not exists(p)]
+bp = re.search(r"`BP/` abbreviates\s*`([^`]+)`", art)
+expand = lambda q: (bp.group(1).rstrip("/") + "/" + q[3:]) if bp and q.startswith("BP/") else q
+miss = [p for p in paths if not exists(expand(p))]
 rec("H15", "verified" if not miss else "contradicted", f"{len(paths)} backticked paths in ARTIFACTS.md; missing at pin: {miss[:10]}", "parse ARTIFACTS.md", 0, "")
 # Q32 absence-by-search (D-09): PRUNED.md exists; signature presence decided by the
 # inventory's own definition (detached signature, signer-attested checksum of the

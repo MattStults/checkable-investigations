@@ -2,12 +2,12 @@
  "header": {
   "batch": "batch_103",
   "source_class": "arc2_docs_preredaction",
-  "brief_version": "0.5",
-  "glossary_version": "frozen d887fb9",
+  "brief_version": "0.7",
+  "glossary_version": "frozen aa3da29 +G-06",
   "spans": 12,
   "first_span": "S00776",
   "last_span": "S00800",
-  "note": "D-08: pre-redaction spans whose text differs from every current-file span of the same path"
+  "note": "D-08: pre-redaction spans whose text differs from every current-file span of the same path | header refreshed for brief v0.7 (D-09) before translation"
  },
  "spans": [
   {

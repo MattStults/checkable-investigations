@@ -10,7 +10,7 @@
    "stated"
   ],
   "tier_ok": false,
-  "derivation": "3 matching claim(s) standing; none at the required dimensions {'tier': {'adjudicated', 'panel'}} \u2014 matched at ['stated']"
+  "derivation": "3 matching claim(s) standing; none at the required dimensions {'tier': {'panel', 'adjudicated'}} \u2014 matched at ['stated']"
  },
  "Q02": {
   "state": "contradicted",
@@ -116,7 +116,7 @@
   "derivation": "4 PASS lines, exit 0",
   "claims": [],
   "command": "machine/check_model.py",
-  "wall_s": 1.8,
+  "wall_s": 3.7,
   "output": "PASS (a) SOURCE CHECK\nPASS (b) DIFFERENTIAL CHECK vs cycle.py (282 comparisons)\nPASS (c) KNOWN-ANSWER SET\nPASS (*) ACCEPTANCE TEST\n\n60 contradiction(s) reported by rules.lp (run `python3 machine/query.py contradictions`)\n"
  },
  "Q08": {
@@ -419,8 +419,8 @@
   "derivation": "pytest: 2267 passed, 4 skipped (README: 2,270 passed, 1 skipped)",
   "claims": [],
   "command": "pytest -q (semi-formal-experiment)",
-  "wall_s": 197.2,
-  "output": "2267 passed, 4 skipped, 14 warnings in 196.95s (0:03:16)"
+  "wall_s": 261.5,
+  "output": "2267 passed, 4 skipped, 14 warnings in 261.12s (0:04:21)"
  },
  "Q25": {
   "state": "verified",
@@ -460,23 +460,16 @@
   "derivation": "4 matching claim(s) standing; 0 struck/superseded, 1 contested; NOTE other values for the same metric/scope: [('L10166', 2), ('L120034', 102), ('L120035', 12), ('L120045', 4), ('L120055', 268)]"
  },
  "Q27": {
-  "state": "verified",
+  "state": "contested",
+  "derivation": "46 matching claim(s) at the value, none over the required population (\\b100\\b|definition); populations found: [\"0/16 of the batch move's gained nodes\", '10/10 successes', '11 clauses of 593', '16 gained nodes of the move', '16 of the move', '183 example blocks', '39', '39/39', '5/5', '5/5 probe nodes', '589/593', '7/9', '762 node lines', 'covered nodes', 'n/a', 'unstated'] \u2014 the README binds coverage to the 100 definitions; a 1.0 whose population is a 39-node sample does not satisfy the binding",
   "claims": [
    "L10805",
    "L120015",
-   "L590189",
-   "L600021",
-   "L90073",
-   "L9950069",
-   "L9950098",
-   "L9970239"
-  ],
-  "tiers": [
-   "adjudicated",
-   "stated"
-  ],
-  "tier_ok": true,
-  "derivation": "7 matching claim(s) standing; 1 struck/superseded, 0 contested; NOTE other values for the same metric/scope: [('L170114', 0.67), ('L520037', 0.9933), ('L560002', '45%'), ('L560003', '55%'), ('L580209', 0.7778)]"
+   "L170114",
+   "L170115",
+   "L520026",
+   "L520037"
+  ]
  },
  "Q28": {
   "state": "contested",
@@ -577,10 +570,10 @@
   ]
  },
  "Q35": {
-  "state": "contradicted",
-  "derivation": "root LICENSE MIT: True; panel-v5 LICENSE/NOTICE: [True, True]; specs licence files present: [False, True]",
+  "state": "verified",
+  "derivation": "root LICENSE MIT: True; panel-v5 LICENSE/NOTICE: [True, True]; upstream licence statements found in: {'openai-model-spec CC0': ['README.md'], 'claude-constitution CC BY': ['LICENSE']} (README says 'upstream licence statements and README files intact', so a statement inside README.md counts)",
   "claims": [],
-  "command": "read LICENSE files",
+  "command": "read LICENSE/README/NOTICE files",
   "wall_s": 0,
   "output": "MIT License\n\nCopyright (c) 2026 Matt Stults\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\n"
  },
@@ -589,7 +582,7 @@
   "derivation": "outline exit 0 (81 lines); resolve exit 0 \u2192 'For objective questions, the factual aspects of the assistant\u2019s response should '",
   "claims": [],
   "command": "cite.py outline; cite.py resolve",
-  "wall_s": 0.0,
+  "wall_s": 0.2,
   "output": "model-spec@2025-12-18\nOverview  {#overview}\n  Structure of the document  {#structure}\n  Red-line principles  {#red_line_principles}\n  General principles  {#general_principles}\n  Specific risks  {#risk_taxonomy}\n  Instructions and levels of authority  {#levels_of_authority}\nDefinitions  {#definitions\n---\nFor objective questions, the factual aspects of the assistant\u2019s response should not differ based on how the user\u2019s question is phrased.\n"
  },
  "Q37": {
@@ -597,7 +590,7 @@
   "derivation": "'*** NO VALIDATOR ***' x1; '(none recorded)' x1 (distinct state, reported separately)",
   "claims": [],
   "command": "machine/query.py seats",
-  "wall_s": 0.2,
+  "wall_s": 0.4,
   "output": "            haiku            per_corpus         prep_hole_corpus.py                  -> check_taxonomy.py / taxonomy_agreement.py\n  change_reviewer        frontier/human   per_cycle          cycle.py writes assignments/review   -> cycle.py _implement: verdict in {proceed,blocked} and non-empty 'by'\n  decision_signer        frontier/human   per_cycle          cycle.py drafts decision.draft.jso   -> cycle.py _decide: closed decision vocabulary, non-empty signed_by, forced justification\n  density_editor         haiku            per_document       -                                    -> check_rewrite.py <before> <after>\n  disagreement_autopsy   haiku            per_dossier        audit_disagreements.py dossiers      -> audit_disagreements.py validate --verdicts <file> --dossier-dir <dir>\n  drift_standing         haiku            per_dossier        drift_dossiers.py dossiers           -> drift_dossiers.py validate --verdicts <file> --dossier-dir <dir>\n  flip_adjudicator       haiku            per_flip           dossier.py dossiers                  -> dossier.py validate --dir <dir> --verdict-file <file>\n  golden_author          haiku            per_document       -                                    -> golden.load sha-freeze + test_golden.py\n  golden_review          frontier/human   per_document       the golden_author seat's golden_tr   -> (none recorded)\n  select_audit           haiku            per_behaviour      select_audit.py                      -> select_audit.py validate\n"
  },
  "Q38": {
@@ -638,10 +631,10 @@
  },
  "Q40": {
   "state": "verified",
-  "derivation": "exit 0, wall 1.8s (README says ~3 s; verified as order of magnitude only)",
+  "derivation": "exit 0, wall 3.4s (README says ~3 s; verified as order of magnitude only)",
   "claims": [],
   "command": "bash setup_env.sh --check",
-  "wall_s": 1.8,
+  "wall_s": 3.4,
   "output": "--- imports ---\n  ok      pytest       9.1.1      the test suite\n  ok      clingo       5.8.0      the solver; absent = ASP tests show as collection errors\n  ok      pydantic     2.13.4     phase_1 schema and format forcing\n--- self-tests that need no network and cost nothing ---\n  ok      phase_1/translate.py \u2014 52 passed, 0 failed\n  ok      walkthrough/link.py \u2014 21/21 self-test checks passed\n\nenvironment OK.\n\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python -m pytest -q                 # from semi-formal-experiment/, ~4 min\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python walkthrough/paper_pipeline/phase_1/translate.py --clause m0255\n                                   # DRY RUN, sends nothing\n"
  },
  "Q41": {
@@ -672,7 +665,7 @@
   "derivation": "sequence exit 0; first failing output: ALL-OK",
   "claims": [],
   "command": "Start-here steps 0-5 in order",
-  "wall_s": 23.2,
+  "wall_s": 39.0,
   "output": "--- imports ---\n  ok      pytest       9.1.1      the test suite\n  ok      clingo       5.8.0      the solver; absent = ASP tests show as collection errors\n  ok      pydantic     2.13.4     phase_1 schema and format forcing\n--- self-tests that need no network and cost nothing ---\n  ok      phase_1/translate.py \u2014 52 passed, 0 failed\n  ok      walkthrough/link.py \u2014 21/21 self-test checks passed\n\nenvironment OK.\n\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python -m pytest -q                 # from semi-formal-experiment/, ~4 min\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python walkthrough/paper_pipeline/phase_1/translate.py --clause m0255\n                                   # DRY RUN, sends nothing\nALL-OK\n"
  },
  "Q44": {
@@ -751,7 +744,7 @@
   "derivation": "cite resolve identical on rerun: True; graph_check identical on rerun: True",
   "claims": [],
   "command": "cite.py resolve x2; graph_check.py x2",
-  "wall_s": 0.2,
+  "wall_s": 0.5,
   "output": "nodes: 773   uncovered entries: 733\nbad line ranges: 0 / 846 spans  []\nbad quotes: 0 / 602  []\nspan sizes (lines covered): min 1  median 1  max 44\n  nodes covering 0 lines: 0;  >100 lines: 0 of 773\noverlapping node pairs: 266 (of 298378); nested pairs: 266\nprovided names: 115 (6 provided by >1 node)\nneeds: 1085; dangling (no provider): 25\n   dangling: L699-796_n021 needs ask_clarifying_questions_s"
  },
  "H01": {
@@ -919,13 +912,9 @@
   "claims": []
  },
  "H10": {
-  "state": "verified",
-  "derivation": "306 PRUNED.md claims; claims mentioning a signature: 3",
-  "claims": [
-   "L220115",
-   "L220116",
-   "L220117"
-  ]
+  "state": "contradicted",
+  "derivation": "306 PRUNED.md claims (prune manifest exists); signed(manifest): PRUNED.md exists (135 lines); signature-pattern hits: none; detached signature files: none; 93 hash-like tokens, 85 resolve in git \u2014 'signed' per the inventory ",
+  "claims": []
  },
  "H11": {
   "state": "unverifiable",
@@ -974,16 +963,16 @@
   ]
  },
  "H15": {
-  "state": "contradicted",
-  "derivation": "25 backticked paths in ARTIFACTS.md; missing at pin: ['BP/CALCULUS_RUNBOOK.md', 'BP/ERROR_CALCULUS.md', 'BP/HANDOFF_CURRENT.md', 'BP/ITERATION_NOTES.md', 'BP/L1L2_ADVERSARIAL_REVIEW.md', 'BP/L1L2_REVIEW_DISPOSITION.md', 'BP/README.md', 'BP/RETRANS_REVIEW_DISPOSITION.md', 'BP/relevance_by_act.py', 'BP/satisfiability_census.py']",
+  "state": "verified",
+  "derivation": "25 backticked paths in ARTIFACTS.md; missing at pin: []",
   "claims": [],
   "command": "parse ARTIFACTS.md",
   "wall_s": 0,
   "output": ""
  },
  "V01": {
-  "state": "verified",
-  "derivation": "providers ['Q01', 'Q41', 'R07'] \u2192 ['verified', 'verified']",
+  "state": "contested",
+  "derivation": "providers ['Q01', 'Q41', 'R07'] \u2192 ['verified', 'verified']; unevaluated providers (dangling need): ['R07']",
   "claims": []
  },
  "V02": {
@@ -1003,7 +992,7 @@
  },
  "V05": {
   "state": "contested",
-  "derivation": "providers ['Q26', 'Q27', 'Q28', 'Q19', 'Q20'] \u2192 ['verified', 'verified', 'contested', 'verified', 'verified']",
+  "derivation": "providers ['Q26', 'Q27', 'Q28', 'Q19', 'Q20'] \u2192 ['verified', 'contested', 'contested', 'verified', 'verified']",
   "claims": []
  },
  "V06": {

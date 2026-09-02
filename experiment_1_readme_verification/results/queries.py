@@ -59,7 +59,7 @@ Q = {
  "Q24": {"live_run": "pytest"},
  "Q25": {"metric": r"entry|ledger", "quote": r"0000.{0,3}0043", "value": None, "present_ok": True},
  "Q26": {"metric": r"definition", "quote": r"100 def|100 behavio", "value": 100, "tol": 0, "loose": True},
- "Q27": {"metric": r"coverage", "value": 1.0, "tol": 0.001, "rate_any": True},
+ "Q27": {"metric": r"coverage", "value": 1.0, "tol": 0.001, "rate_any": True, "require_pop": r"\b100\b|definition", "pop_note": "the README binds coverage to the 100 definitions; a 1.0 whose population is a 39-node sample does not satisfy the binding"},
  "Q28": {"metric": r"separability", "value": None, "every_test": True},
  "Q29": {"metric": r"withdraw", "event_type": "withdrawal", "value": None, "count_headline": True},
  "Q30": {"live_run": "files"},
@@ -121,6 +121,11 @@ def decide_q(qid, spec, claims):
     if spec.get("live_run"):
         return {"state": "live_run_pending", "derivation": f"decided by running {spec['live_run']}; filled from results/live_runs.json", "claims": []}
     cands = candidates(spec, claims)
+    if cands and spec.get("require_pop"):
+        popok = [c for c in cands if re.search(spec["require_pop"], str(c.get("population") or c.get("denominator") or ""), re.I)]
+        if not popok:
+            return {"state": "contested", "derivation": f"{len(cands)} matching claim(s) at the value, none over the required population ({spec['require_pop']}); populations found: {sorted({str(c.get('population') or c.get('denominator')) for c in cands})} — {spec.get('pop_note','')}", "claims": [c["id"] for c in cands][:6]}
+        cands = popok
     if not cands:
         return {"state": "unverifiable", "derivation": "no ledger claim matches the metric/scope pattern. Two readings: a translation-coverage gap, or the record holds no such artifact — a ledger of positive claims cannot distinguish these unless a translator recorded an explicit absence (existence claim with value false); this is reported as a coverage finding", "claims": []}
     if spec.get("band_check"):
@@ -253,8 +258,10 @@ def H09(claims):
     return ("verified" if max(tool) <= min(judges) or max(tool) <= 0.555 else "contested"), f"tool max {max(tool):.3f} (incl. oracle/ceiling variants), judge min {min(judges):.3f}, judge mean-of-3 0.555 present: {0.555 in [round(j,3) for j in judges]}", []
 def H10(claims):
     p = [c for c in claims if re.search(r"PRUNED", c["source"]["path"])]
-    sig = [c for c in p if re.search(r"sign", c["metric"] + c["quote"], re.I)]
-    return ("unverifiable" if not p else ("contradicted" if not sig else "verified")), f"{len(p)} PRUNED.md claims; claims mentioning a signature: {len(sig)}", [c["id"] for c in sig][:5]
+    lr = json.load(open(os.path.join(HERE, "live_runs.json"))).get("Q32") if os.path.exists(os.path.join(HERE, "live_runs.json")) else None
+    if lr:  # signed(manifest) decided by the Q32 absence-by-search (D-09); prune/restore conjuncts from the ledger
+        return ("contradicted" if lr["state"] == "contradicted" else ("verified" if p else "unverifiable")), f"{len(p)} PRUNED.md claims (prune manifest exists); signed(manifest): {lr['derivation'][:160]}", []
+    return ("unverifiable"), f"{len(p)} PRUNED.md claims; signature presence not decidable from span claims", []
 def H11(claims):
     red = events(claims, "redaction"); hunks = events(claims, "hunk")
     return ("unverifiable" if not hunks else "contested"), f"redaction events {len(red)}; hunk events {len(hunks)} (second conjunct needs hunk claims — pending pre-redaction/git batches)", [c["id"] for c in red][:6]
@@ -295,13 +302,15 @@ def main():
     for v in inv["verdict_nodes"]:
         provs = [p.split(" ")[0].split("/")[0] for p in v["providers"]]
         states = [res.get(p, {}).get("state") for p in provs if p in res]
+        missing = [p for p in provs if p not in res]  # e.g. residue items (R..) that no query evaluates: a dangling need
         if not provs: st = "dangling"
+        elif missing and all(s == "verified" for s in states): st = "contested"
         elif all(s == "verified" for s in states): st = "verified"
         elif any(s == "contradicted" for s in states): st = "contradicted"
         elif any(s in ("contested",) for s in states): st = "contested"
         elif any(s == "live_run_pending" for s in states): st = "live_run_pending"
         else: st = "unverifiable"
-        res[v["id"]] = {"state": st, "derivation": f"providers {provs} → {states}", "claims": []}
+        res[v["id"]] = {"state": st, "derivation": f"providers {provs} → {states}" + (f"; unevaluated providers (dangling need): {missing}" if missing else ""), "claims": []}
     json.dump(res, open(a.out, "w"), indent=1)
     from collections import Counter
     for grp, ids in (("Q", [c["id"] for c in inv["claims"]]), ("H", [h["id"] for h in inv["hypotheses"]]), ("V", [v["id"] for v in inv["verdict_nodes"]])):

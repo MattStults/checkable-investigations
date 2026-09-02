@@ -2,11 +2,12 @@
  "header": {
   "batch": "batch_092",
   "source_class": "git_log",
-  "brief_version": "0.5",
-  "glossary_version": "frozen d887fb9",
+  "brief_version": "0.7",
+  "glossary_version": "frozen aa3da29 +G-06",
   "spans": 15,
   "first_span": "S01571",
-  "last_span": "S01585"
+  "last_span": "S01585",
+  "note": "header refreshed for brief v0.7 (D-09) before translation"
  },
  "spans": [
   {
