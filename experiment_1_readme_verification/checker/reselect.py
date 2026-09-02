@@ -17,7 +17,7 @@ def current_claims():
         for l in open(f):
             if l.strip():
                 c = json.loads(l)
-                if c["id"] not in superseded and not (c["translator"]["batch"] == "batch_001" and c["translator"]["model"] == "sonnet"):
+                if c["id"] not in superseded and (c["translator"]["batch"], c["translator"]["model"]) not in {("batch_001", "sonnet"), ("batch_052", "sonnet")}:
                     claims[c["id"]] = c
     return claims
 SELECTORS = {

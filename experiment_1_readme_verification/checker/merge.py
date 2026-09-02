@@ -27,7 +27,8 @@ def main():
                     continue
                 claims[c["id"]] = c  # later file (retry) overwrites same id
     # the sonnet probe of batch_001 is a tier probe, not ledger content: keep opus for batch_001
-    claims = {k: v for k, v in claims.items() if not (v["translator"]["batch"] == "batch_001" and v["translator"]["model"] == "sonnet")}
+    PROBES = {("batch_001", "sonnet"), ("batch_052", "sonnet")}  # tier probes: reported, never merged
+    claims = {k: v for k, v in claims.items() if (v["translator"]["batch"], v["translator"]["model"]) not in PROBES}
     path = os.path.join(X, "ledger/claims.jsonl")
     with open(path, "w") as f:
         for k in sorted(claims):
