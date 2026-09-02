@@ -26,3 +26,5 @@
 {"file": "retry_I02_opus", "model": "opus", "brief_version": "0.5", "batch": "batch_008", "claims": 3, "accepted": 3, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T11:13:34", "check_seconds": 0.2}
 {"file": "batch_016_opus", "model": "opus", "brief_version": "0.5", "batch": "batch_016", "claims": 137, "accepted": 137, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T11:13:34", "check_seconds": 0.1}
 {"file": "batch_014_opus", "model": "opus", "brief_version": "0.5", "batch": "batch_014", "claims": 123, "accepted": 123, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T11:14:11", "check_seconds": 0.2}
+{"file": "batch_013_opus", "model": "opus", "brief_version": "0.5", "batch": "batch_013", "claims": 188, "accepted": 188, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T11:15:26", "check_seconds": 0.2}
+{"file": "batch_017_opus", "model": "opus", "brief_version": "0.5", "batch": "batch_017", "claims": 192, "accepted": 192, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T11:16:09", "check_seconds": 0.2}
