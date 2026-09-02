@@ -101,6 +101,15 @@ if "forensic" in d:
     for q in f["preregistered_queries"]:
         w(f"- **{q['id']}** — {q['question']}  \n  needs: {', '.join(q['needs'])}")
     w("")
+if "coverage" in d:
+    c = d["coverage"]
+    w("## Coverage and additional query classes (second addendum)\n")
+    w("**Span assignment:** " + c["span_assignment"] + "\n")
+    w("**README provenance:** " + c["readme_provenance"] + "\n")
+    w("**Additional query classes:**")
+    for q in c["additional_query_classes"]:
+        w(f"- **{q['id']}** — {q['question']}  \n  needs: {', '.join(q['needs'])}")
+    w("\n**Out of scope, noted:** " + c["out_of_scope_noted"] + "\n")
 w("## Verbatim check\n")
 if readme_text is None:
     w("Pinned README not available at render time; quotes not checked.")

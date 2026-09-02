@@ -618,6 +618,38 @@ Generated from `inventory.json` by `render.py`; the JSON is the source of truth.
 
 *Note:* Also stated as hypothesis H07 for the event-shaped part ('reliably').
 
+### Q42
+
+> [`ITERATION_NOTES.md`](walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md)
+
+**Values:** `{"all_relative_links_resolve": true, "external_urls": "flagged, not checked (no network)"}`
+
+**Dimensions:**
+- metric: every relative markdown link target exists at the pin
+- tier: filesystem
+- snapshot: pin
+- denominator: count of relative links in README (derived)
+- scope: whole README
+- supersession: n/a
+
+*Note:* Representative sentence; the claim covers every relative link in the README.
+
+### Q43
+
+> Everything below is deterministic re-analysis of committed data: no API keys, no network, no model calls.
+
+**Values:** `{"start_here_sequence_runs_as_written": true}`
+
+**Dimensions:**
+- metric: the five 'Start here' commands run in the order and working directories written, all exit 0
+- tier: live_run
+- snapshot: pin, this machine
+- denominator: 5 commands
+- scope: README 'Start here' block including the cd in step 3 carrying into steps 4 and 5
+- supersession: n/a
+
+*Note:* Q06/Q07/Q36/Q37 check outputs; this checks the sequence as a reader would type it. The 'no network' half of the sentence stays commitment C03.
+
 ## Prose-claim hypotheses (round-trip for owner confirmation)
 
 Each hypothesis has: the README words; my English reading (in); the rule; the rule rendered back to English (out). Owner confirms in == out.
@@ -885,6 +917,28 @@ Declared before freeze as a pre-registered addendum. NOT README-derived; not par
 - **F05** — Was any certificate or validated seat used outside the brief it was scoped to?  
   needs: actor, model_tier, linkage to brief/certificate, erratum class scope_stretched_certificate
 
+## Coverage and additional query classes (second addendum)
+
+**Span assignment:** Translation is EXHAUSTIVE over the primary sources named in the orchestration (arc-2 ledger entries 0000-0043, the round4_*_scored_raw.json and ITER*_SCORED.json files, semantic_audit.json / SEMANTIC_AUDIT.md, graph_check.py and benchmark.py outputs, the git log), not targeted at spans that look relevant to README claims. Reason: targeting would have to come from the orchestrator, who has seen the README, and it would make omission questions unanswerable.
+
+**README provenance:** readme_blame.json records, for every README line at the pin, the commit, date, author and commit summary that introduced it. Produced by git blame; the pinned README is 193 lines, 165 of them from the 2026-08-31 publication-prep commit 6d01415b, with two correction commits on 2026-09-01 (6b9849f9 'scope the headline verdict', 3f87fd40 'certification claim corrected').
+
+**Additional query classes:**
+- **X01** — For each README metric, list every value of that metric in the record (all behaviours, attempts, tiers) and locate the README's pick among them: best, latest, representative, or unstated basis.  
+  needs: exhaustive coverage, metric, scope, snapshot, tier
+- **X02** — For each contradicted claim: was the README value ever true in the record (true-then-superseded) or never true? Uses the README line's blame date against the record's supersession dates.  
+  needs: readme_blame.json, supersession, timestamp
+- **X03** — For each withdrawn or bounded claim, was the README sentence about it written before or after the withdrawal commit, and by which actor?  
+  needs: readme_blame.json, withdrawal events, actor
+- **X04** — Direction of every discrepancy: README overstates or understates relative to the record.  
+  needs: contradicted claims with both values
+- **X05** — Evidence grade per verified claim: re-run, scored file, or stated-only. Fraction of dated claims reaching a definite state, reported against commitment C02.  
+  needs: tier field on ledger claims
+- **X06** — Internal consistency: README claims that constrain the same quantity (e.g. Q29 vs the withdrawn list; Q05 vs Q11) and whether they agree.  
+  needs: inventory only
+
+**Out of scope, noted:** Sibling documents (AGENTS.md, ARTIFACTS.md, handoffs, blog posts) make overlapping claims (e.g. AGENTS.md '~2,270 pass, ~8 min' vs README '2,270 passed, 1 skipped, 4-10 min'). Not inventoried; noted as a future target set.
+
 ## Verbatim check
 
-All 83 quoted sentences are verbatim substrings of the pinned README.
+All 85 quoted sentences are verbatim substrings of the pinned README.

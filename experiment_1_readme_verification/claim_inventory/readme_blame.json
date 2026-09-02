@@ -1,0 +1,1549 @@
+{
+ "pin": "48e66ce04a4d9f06771c42f89cb37b075583c5f6",
+ "lines": [
+  {
+   "hash": "5740a2a6",
+   "author": "Matt Stults",
+   "summary": "Import semi-formal ontology experiment from ai_character_index",
+   "text": "# Semi-formal document analysis",
+   "line": 1,
+   "date": "2026-08-02 12:45"
+  },
+  {
+   "hash": "5740a2a6",
+   "author": "Matt Stults",
+   "summary": "Import semi-formal ontology experiment from ai_character_index",
+   "text": "",
+   "line": 2,
+   "date": "2026-08-02 12:45"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "A label-free tool that answers *which clauses of a model spec bear on a given",
+   "line": 3,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "behavior?* mechanically: read the document once into a symbolic representation,",
+   "line": 4,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "then answer deterministically, with a citable span and a stated reason for every",
+   "line": 5,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "hit. Frontier-model panels were the calibration instrument — the tool should",
+   "line": 6,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "match the panel, or give an answer a frontier model would accept as justifiable.",
+   "line": 7,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "",
+   "line": 8,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "3f87fd40",
+   "author": "Matt Stults",
+   "summary": "README: certification claim corrected (raw ran to completion, defensible pass never ran); drop the 'six weeks' figure that read against the repo's post-import git history",
+   "text": "It did not reach that bar on the axis that mattered — generalization.",
+   "line": 9,
+   "date": "2026-09-01 17:14"
+  },
+  {
+   "hash": "6b9849f9",
+   "author": "Matt Stults",
+   "summary": "README: scope the headline verdict — bar unmet on generalization; arc-2 tuned in-sample rates stated with their measurement caveat; frontier-judge result scoped to the arc-1 benchmark",
+   "text": "On the behaviors tuned during the arc-2 campaign, in-sample match-or-defensible",
+   "line": 10,
+   "date": "2026-09-01 16:59"
+  },
+  {
+   "hash": "6b9849f9",
+   "author": "Matt Stults",
+   "summary": "README: scope the headline verdict — bar unmet on generalization; arc-2 tuned in-sample rates stated with their measurement caveat; frontier-judge result scoped to the arc-1 benchmark",
+   "text": "rates against the panel reached 0.94–0.96, comparable to the panel's own internal",
+   "line": 11,
+   "date": "2026-09-01 16:59"
+  },
+  {
+   "hash": "3f87fd40",
+   "author": "Matt Stults",
+   "summary": "README: certification claim corrected (raw ran to completion, defensible pass never ran); drop the 'six weeks' figure that read against the repo's post-import git history",
+   "text": "agreement (measured on truth the loop iterated against; raw-match certification ran",
+   "line": 12,
+   "date": "2026-09-01 17:14"
+  },
+  {
+   "hash": "3f87fd40",
+   "author": "Matt Stults",
+   "summary": "README: certification claim corrected (raw ran to completion, defensible pass never ran); drop the 'six weeks' figure that read against the repo's post-import git history",
+   "text": "to completion on the three tuned behaviors, and the registered",
+   "line": 13,
+   "date": "2026-09-01 17:14"
+  },
+  {
+   "hash": "3f87fd40",
+   "author": "Matt Stults",
+   "summary": "README: certification claim corrected (raw ran to completion, defensible pass never ran); drop the 'six weeks' figure that read against the repo's post-import git history",
+   "text": "match-or-defensible pass never ran). Untuned behaviors never reliably reached that level. This repo is the",
+   "line": 14,
+   "date": "2026-09-01 17:14"
+  },
+  {
+   "hash": "6b9849f9",
+   "author": "Matt Stults",
+   "summary": "README: scope the headline verdict — bar unmet on generalization; arc-2 tuned in-sample rates stated with their measurement caveat; frontier-judge result scoped to the arc-1 benchmark",
+   "text": "complete record of the attempt: the machinery, the measurements, and the discipline that kept the",
+   "line": 15,
+   "date": "2026-09-01 16:59"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "measurements honest — including the results that were withdrawn when adversarial",
+   "line": 16,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "review showed they were noise. The full commit history is published unrewritten",
+   "line": 17,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "so that every dated claim, pin, and withdrawal is externally checkable;",
+   "line": 18,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "operational details (usage plumbing, working notes) were redacted in the",
+   "line": 19,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "current files and remain in history by choice. The write-up is in two blog posts:",
+   "line": 20,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "48e66ce0",
+   "author": "Matt Stults",
+   "summary": "README: publication links and CI badge filled",
+   "text": "[the retrospective](https://mattstults.github.io/2026/08/30/spec-retrospective.html) and [where the work goes next](https://mattstults.github.io/2026/08/30/checkable-investigations.html).",
+   "line": 21,
+   "date": "2026-09-01 17:44"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "",
+   "line": 22,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "What held up and what didn't, in one paragraph: the symbolic engine (ASP/clingo",
+   "line": 23,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "evaluation, conflict enumeration with witness scenarios, satisfiability checks)",
+   "line": 24,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "worked — its failures were refusals, not wrong answers. Segmentation of both",
+   "line": 25,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "specs into typed clause inventories worked after repair. Matching behaviors to",
+   "line": 26,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6b9849f9",
+   "author": "Matt Stults",
+   "summary": "README: scope the headline verdict — bar unmet on generalization; arc-2 tuned in-sample rates stated with their measurement caveat; frontier-judge result scoped to the arc-1 benchmark",
+   "text": "passages did not beat a single frontier judge on the arc-1 benchmark; an",
+   "line": 27,
+   "date": "2026-09-01 16:59"
+  },
+  {
+   "hash": "6b9849f9",
+   "author": "Matt Stults",
+   "summary": "README: scope the headline verdict — bar unmet on generalization; arc-2 tuned in-sample rates stated with their measurement caveat; frontier-judge result scoped to the arc-1 benchmark",
+   "text": "ontology open-coded from 100",
+   "line": 28,
+   "date": "2026-09-01 16:59"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "behavior definitions covered every sampled span but failed every separability",
+   "line": 29,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "test once a matched random-partition null was run against it. The measurement",
+   "line": 30,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "discipline — pre-registered predictions, blind adjudication seats, adversarial",
+   "line": 31,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "review before every close, an append-only ledger with an erratum list — is the",
+   "line": 32,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "part that transferred: it caught and withdrew three headline claims, and it is",
+   "line": 33,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "the reason the numbers in this repo can be read at face value.",
+   "line": 34,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "",
+   "line": 35,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "## Start here (5 minutes)",
+   "line": 36,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "",
+   "line": 37,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "Everything below is deterministic re-analysis of committed data: no API keys, no",
+   "line": 38,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "network, no model calls.",
+   "line": 39,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "5740a2a6",
+   "author": "Matt Stults",
+   "summary": "Import semi-formal ontology experiment from ai_character_index",
+   "text": "",
+   "line": 40,
+   "date": "2026-08-02 12:45"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "```bash",
+   "line": 41,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "# 0. environment check (~3 s; full setup: bash setup_env.sh)",
+   "line": 42,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "bash setup_env.sh --check",
+   "line": 43,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "5740a2a6",
+   "author": "Matt Stults",
+   "summary": "Import semi-formal ontology experiment from ai_character_index",
+   "text": "",
+   "line": 44,
+   "date": "2026-08-02 12:45"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "# 1. every claim about a spec resolves to verbatim text",
+   "line": 45,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "python3 engine/spec-cite/cite.py outline model-spec",
+   "line": 46,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "python3 engine/spec-cite/cite.py resolve \"model-spec@2025-12-18 > #avoid_sycophancy > ¶2 s1\"",
+   "line": 47,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "",
+   "line": 48,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "# 2. the 773-node document graph, every span checked against the source",
+   "line": 49,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "python3 walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/graph_check.py \\",
+   "line": 50,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "  walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/runs/ds7/root_graph.production.json",
+   "line": 51,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "",
+   "line": 52,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "# 3. the measurement instrument, and its recall ceiling (98.4% join, misses printed by name)",
+   "line": 53,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "cd semi-formal-experiment && .venv/bin/python measure_join.py",
+   "line": 54,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "",
+   "line": 55,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "# 4. the arc-1 headline result, reproduced from disk (MCC by threshold, true vs published universe)",
+   "line": 56,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": ".venv/bin/python benchmark.py --tool --annotations annotations_b8.json --behaviour-atoms behavior_atoms_b8.json",
+   "line": 57,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "",
+   "line": 58,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "# 5. the governance model as a queryable logic program (note the seat it reports as unvalidated)",
+   "line": 59,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": ".venv/bin/python machine/query.py seats",
+   "line": 60,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "5740a2a6",
+   "author": "Matt Stults",
+   "summary": "Import semi-formal ontology experiment from ai_character_index",
+   "text": "```",
+   "line": 61,
+   "date": "2026-08-02 12:45"
+  },
+  {
+   "hash": "5740a2a6",
+   "author": "Matt Stults",
+   "summary": "Import semi-formal ontology experiment from ai_character_index",
+   "text": "",
+   "line": 62,
+   "date": "2026-08-02 12:45"
+  },
+  {
+   "hash": "d94a83e5",
+   "author": "Matt Stults",
+   "summary": "Final-review fixes: README self-report (check_model now passes), CI scope wording, LICENSE name spacing",
+   "text": "(`machine/check_model.py`, the companion source-check for step 5, also runs",
+   "line": 63,
+   "date": "2026-08-31 08:32"
+  },
+  {
+   "hash": "d94a83e5",
+   "author": "Matt Stults",
+   "summary": "Final-review fixes: README self-report (check_model now passes), CI scope wording, LICENSE name spacing",
+   "text": "clean — all four checks pass.)",
+   "line": 64,
+   "date": "2026-08-31 08:32"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "",
+   "line": 65,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "## Two arcs",
+   "line": 66,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "",
+   "line": 67,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "| Arc | Where | What |",
+   "line": 68,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "|---|---|---|",
+   "line": 69,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "| 1 (July–early Aug) | `semi-formal-experiment/` | Constitution pilot (616 clauses, 16-rule ASP fragment, conflict enumeration, expressibility triage) and the Model Spec relevance benchmark against a frontier-judge panel on the full 589-passage universe. |",
+   "line": 70,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "| 2 (mid–late Aug) | `walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/` | Document-graph translation (773 nodes), panel-adjudicated repair iterations, minted-dimension experiments, the query-class ontology study, and the adversarial reviews that ended the headline claims. |",
+   "line": 71,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "",
+   "line": 72,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "The two share a corpus and nothing else. Different representation, different",
+   "line": 73,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "failure modes, different evidence.",
+   "line": 74,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "",
+   "line": 75,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "## Reading order",
+   "line": 76,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "",
+   "line": 77,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "48e66ce0",
+   "author": "Matt Stults",
+   "summary": "README: publication links and CI badge filled",
+   "text": "1. [The blog retrospective](https://mattstults.github.io/2026/08/30/spec-retrospective.html) — the narrative.",
+   "line": 78,
+   "date": "2026-09-01 17:44"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "2. [`ITERATION_NOTES.md`](walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md)",
+   "line": 79,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "   (also linked as `LEDGER.md` at root) — the append-only ledger, entries",
+   "line": 80,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "   0000–0043: every step, every erratum, every withdrawal, written at the time.",
+   "line": 81,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "   This is the primary artifact.",
+   "line": 82,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "3. [`L1L2_ADVERSARIAL_REVIEW.md`](walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md)",
+   "line": 83,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "   and [its disposition](walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_REVIEW_DISPOSITION.md)",
+   "line": 84,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "   — what a withdrawal looks like here: the review, the independent",
+   "line": 85,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "   re-derivation of each decisive finding, the corrected verdicts.",
+   "line": 86,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "4. [`semi-formal-experiment/REPRODUCIBILITY.md`](semi-formal-experiment/REPRODUCIBILITY.md)",
+   "line": 87,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "   — the sandwich rule, constant governance, determinism requirements.",
+   "line": 88,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "",
+   "line": 89,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "For depth after those: `semi-formal-experiment/MODULE_MAP.md` (§0 how to run",
+   "line": 90,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "anything, §1b what each module is, §11 anti-rules — read before \"fixing\"",
+   "line": 91,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "anything that looks wrong), `semi-formal-experiment/CYCLE_DESIGN.md` (how a",
+   "line": 92,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "change cycle runs), and the two handoffs — `ARC2_HANDOFF.md` (root link) and",
+   "line": 93,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "`semi-formal-experiment/HANDOFF.md`. **Read only the top starred block of each",
+   "line": 94,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "handoff**: everything below is stacked historical state, self-marked and partly",
+   "line": 95,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "superseded — an archive, not a read.",
+   "line": 96,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "",
+   "line": 97,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "`ARTIFACTS.md` at root is the full routing table.",
+   "line": 98,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "",
+   "line": 99,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "## Results, and what was withdrawn",
+   "line": 100,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "",
+   "line": 101,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "Arc-1 benchmark (Model Spec, 589-passage universe, MCC): the tool reached",
+   "line": 102,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "+0.32 in-sample (+0.278 label-free); the frontier judges' leave-one-out mean was",
+   "line": 103,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "+0.555, and the judges beat the tool in all nine behavior-gold cells at the",
+   "line": 104,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "judge's own false-positive rate. Arc-2 repair loop (engaged precision, one",
+   "line": 105,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "behavior): 0.40 → 0.70 → 0.55 → 0.85 across four adjudicated attempts — with",
+   "line": 106,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "the ledger's own honest headline being recall, not precision (23 of 40 declined",
+   "line": 107,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "passages were panel-relevant).",
+   "line": 108,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "",
+   "line": 109,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "**Withdrawn, by its own review process:**",
+   "line": 110,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "",
+   "line": 111,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "- The separability census (\"integration test passed\") — withdrawn in",
+   "line": 112,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "  `bf0d4978`: its pass condition was satisfiable by noise (random partition",
+   "line": 113,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "  passed 299/300 trials); relevance prediction over the representation ran at",
+   "line": 114,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "  base rate.",
+   "line": 115,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "- The L1/L2 licensing experiments — withdrawn in `365d68b3`: DOES-NOT-LICENSE;",
+   "line": 116,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "  one bar was already met by numbers indistinguishable from noise, the other",
+   "line": 117,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "  had no null.",
+   "line": 118,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "- The query-class saturation claim — bounded in `1143a921` (erratum #20): the",
+   "line": 119,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "  \"no new places\" result was relative to the designer's own vocabulary, not the",
+   "line": 120,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "  question space.",
+   "line": 121,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "",
+   "line": 122,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "The binding rule that came out of these: a separability claim is only as strong",
+   "line": 123,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "as its margin over a matched-granularity random-partition null, and a pass",
+   "line": 124,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "condition that cannot fail is void.",
+   "line": 125,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "5740a2a6",
+   "author": "Matt Stults",
+   "summary": "Import semi-formal ontology experiment from ai_character_index",
+   "text": "",
+   "line": 126,
+   "date": "2026-08-02 12:45"
+  },
+  {
+   "hash": "5740a2a6",
+   "author": "Matt Stults",
+   "summary": "Import semi-formal ontology experiment from ai_character_index",
+   "text": "## Running it",
+   "line": 127,
+   "date": "2026-08-02 12:45"
+  },
+  {
+   "hash": "5740a2a6",
+   "author": "Matt Stults",
+   "summary": "Import semi-formal ontology experiment from ai_character_index",
+   "text": "",
+   "line": 128,
+   "date": "2026-08-02 12:45"
+  },
+  {
+   "hash": "5740a2a6",
+   "author": "Matt Stults",
+   "summary": "Import semi-formal ontology experiment from ai_character_index",
+   "text": "```bash",
+   "line": 129,
+   "date": "2026-08-02 12:45"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "bash setup_env.sh            # creates semi-formal-experiment/.venv from requirements.txt",
+   "line": 130,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "bash setup_env.sh --check    # verifies, ~3 s",
+   "line": 131,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "",
+   "line": 132,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "cd semi-formal-experiment && .venv/bin/python -m pytest -q",
+   "line": 133,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "# 2,270 passed, 1 skipped (4-10 min depending on machine; measured 2026-08-30)",
+   "line": 134,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "",
+   "line": 135,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "cd ../walkthrough && ../semi-formal-experiment/.venv/bin/python -m pytest -q",
+   "line": 136,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "# arc-2 suite; see CI for current counts",
+   "line": 137,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "```",
+   "line": 138,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "",
+   "line": 139,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "d94a83e5",
+   "author": "Matt Stults",
+   "summary": "Final-review fixes: README self-report (check_model now passes), CI scope wording, LICENSE name spacing",
+   "text": "CI runs both suites plus the citation and graph checks from the demo path on",
+   "line": 140,
+   "date": "2026-08-31 08:32"
+  },
+  {
+   "hash": "48e66ce0",
+   "author": "Matt Stults",
+   "summary": "README: publication links and CI badge filled",
+   "text": "every push:",
+   "line": 141,
+   "date": "2026-09-01 17:44"
+  },
+  {
+   "hash": "48e66ce0",
+   "author": "Matt Stults",
+   "summary": "README: publication links and CI badge filled",
+   "text": "[![CI](https://github.com/MattStults/semi-formal-document-analysis/actions/workflows/ci.yml/badge.svg)](https://github.com/MattStults/semi-formal-document-analysis/actions/workflows/ci.yml)",
+   "line": 142,
+   "date": "2026-09-01 17:44"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "",
+   "line": 143,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "⚠️ **Two different files are named `behaviours.json` and they are NOT",
+   "line": 144,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "interchangeable** — `data/behaviours.json` (the panel roster) and",
+   "line": 145,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "`engine/panel/behaviours.json` (the vendored harness's own copy); the",
+   "line": 146,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "experiment's query-side definitions are a differently named third file:",
+   "line": 147,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "`semi-formal-experiment/behaviours_query.json`. Loading the wrong one produces",
+   "line": 148,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "a silently de-behaviourised score.",
+   "line": 149,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "",
+   "line": 150,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "## Layout",
+   "line": 151,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "",
+   "line": 152,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "```",
+   "line": 153,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "engine/            spec-cite (locator → verbatim text) and the vendored panel harness",
+   "line": 154,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "specs/             the analyzed source documents, with their upstream licenses",
+   "line": 155,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "data/              panel verdicts (roster + panel-v5) and coverage artifacts",
+   "line": 156,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "semi-formal-experiment/   arc 1: DSL, checker, translator, benchmark, cycles, machine/",
+   "line": 157,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "walkthrough/       arc 2: graph pipeline, runs, behavior_pilot/ (see its README)",
+   "line": 158,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "ARTIFACTS.md       routing table for every star artifact",
+   "line": 159,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "LEDGER.md          → the arc-2 append-only ledger (symlink)",
+   "line": 160,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "ARC2_HANDOFF.md    → the arc-2 handoff (symlink)",
+   "line": 161,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "5740a2a6",
+   "author": "Matt Stults",
+   "summary": "Import semi-formal ontology experiment from ai_character_index",
+   "text": "```",
+   "line": 162,
+   "date": "2026-08-02 12:45"
+  },
+  {
+   "hash": "5740a2a6",
+   "author": "Matt Stults",
+   "summary": "Import semi-formal ontology experiment from ai_character_index",
+   "text": "",
+   "line": 163,
+   "date": "2026-08-02 12:45"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "Large superseded run artifacts were pruned for publication with a signed",
+   "line": 164,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "manifest — see",
+   "line": 165,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "[`PRUNED.md`](walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/PRUNED.md)",
+   "line": 166,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "for what was removed and how to restore any of it from history.",
+   "line": 167,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "",
+   "line": 168,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "## Third-party content",
+   "line": 169,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "",
+   "line": 170,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "- `specs/openai-model-spec/` and `specs/claude-constitution/` are CC0 1.0",
+   "line": 171,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "  public-domain documents, redistributed with their upstream licence statements and README",
+   "line": 172,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "  files intact, for reproducibility of the clause inventories.",
+   "line": 173,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "- `data/panel-v5/` redistributes data from",
+   "line": 174,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "  [ai-character-index](https://github.com/AndresCotton/ai-character-index)",
+   "line": 175,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "  (Andres Cotton), Apache-2.0 — see the LICENSE and NOTICE files in that",
+   "line": 176,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "  directory.",
+   "line": 177,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "",
+   "line": 178,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "Everything else: MIT (see `LICENSE`).",
+   "line": 179,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "",
+   "line": 180,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "## For agents",
+   "line": 181,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "",
+   "line": 182,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "`AGENTS.md` (symlinked as `CLAUDE.md`) is the canonical brief: read it before",
+   "line": 183,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "acting in this repo.",
+   "line": 184,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "",
+   "line": 185,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "## What this repo does not establish",
+   "line": 186,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "",
+   "line": 187,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "That the approach is impossible. The withdrawn results are defects in",
+   "line": 188,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "measurements, not proofs about the ontology. It establishes that the specific",
+   "line": 189,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "demonstrations attempted here did not survive their own review process, and it",
+   "line": 190,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "documents that process well enough to be reused. Claims are scoped throughout:",
+   "line": 191,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "every separability claim requires its null; every \"unresolved conflict\" is a",
+   "line": 192,
+   "date": "2026-08-31 08:23"
+  },
+  {
+   "hash": "6d01415b",
+   "author": "Matt Stults",
+   "summary": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer",
+   "text": "claim about an encoding and a fragment, not about the document.",
+   "line": 193,
+   "date": "2026-08-31 08:23"
+  }
+ ]
+}

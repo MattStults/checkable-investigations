@@ -60,3 +60,18 @@ These are **not README-derived and not part of the registered expectations**
 unverifiable count, are reported in a separate results table. Translators
 carry the forensic attributes on every event-shaped span; the blog post is
 unchanged.
+
+## Second addendum (2026-09-02, before freeze): coverage, provenance, sequence
+
+- **Exhaustive translation.** Spans are assigned exhaustively over the named
+  primary sources, never targeted at README-relevant spans, so omission and
+  selection questions (X01) are answerable and no README knowledge leaks into
+  span choice.
+- **`readme_blame.json`** — per-line commit, date, author and summary for the
+  pinned README, so each claim can be dated and attributed (X02, X03).
+- **Q42, Q43** — relative links resolve; the "Start here" sequence runs as
+  written.
+- **Query classes X01–X06** — selection, true-then-superseded vs never-true,
+  sentence-before-or-after-withdrawal, discrepancy direction, evidence grade
+  against commitment C02, internal consistency. All derivable at query time
+  given the above.
