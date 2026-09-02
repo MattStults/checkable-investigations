@@ -18,15 +18,16 @@ Path prefixes: `SFE` = `semi-formal-experiment/`; `BP` = `walkthrough/paper_pipe
 
 ### Tier decision procedure (apply per value, in order, stop at first match)
 
-1. Assign a tier to EACH NUMERIC VALUE separately, never to a span. The key is the nearest enclosing JSON field name, or in prose the label immediately governing that value (the word or phrase attached to it by '=', ':', '/', parentheses, or the table row header). Never use any other word in the span.
-2. GATE: if the value sits in prose or a table in a handoff, ledger entry, review, or disposition, and the span does not name the scored artifact the value came from, the tier is `stated`; set provenance_region (starred_block / archive_block / body). Stop. If the span names the scored artifact, continue with the label the span attaches to the value.
-3. Label or field name contains `_raw`, `raw`, `single-wave`, `wave seat` → `raw`. Record which sense in venue (round-4 'raw = strict panel-majority truth', BP/ROUND4_DEV_TABLE.json:2; repair-loop 'raw single-wave', BP/ITERATION_NOTES.md:272).
-4. Label or field name contains `panel_tier`, `panel`, `3-instance panel`, `majority`, `uniform panel tier`, `judges`, `mean of 3`, `per-judge`, `leave-one-out` → `panel`.
-5. Label or field name contains `addendum`, `defensib`, `headline`, `quarantine_adjusted`, `match-or-defensible`, `match-or-adjudicated-defensible` → `adjudicated`.
-6. The value is inside a block headed `MATT RULING`, `RULING:`, `COUNTERSIGNED`, `the project owner`, `project owner's decision`, or a decision.json signed_by → `human`.
-7. The span itself says `CoVe`, `re-derived`, `re-derivation` of this value → `cove`; record the actor verbatim.
-8. A value you produced by running a script → `live_run` (record command and wall clock); commit metadata → `git`; file existence or shape → `filesystem`.
-9. A value with two labels on one line ('0.75 raw / 0.70 panel') is two claims, one per label. A value with no label at all → `stated`.
+1. Assign a tier to EACH NUMERIC VALUE separately, never to a span. A line carrying two labels on one value pair ('0.75 raw / 0.70 panel') is two claims, one per label, whatever tier each ends up with.
+2. Find the value's LABEL: in prose or a table, the word or phrase attached to the value by '=', ':', 'is', '/', parentheses, or the table row header; in JSON, the value's own key, then each enclosing object key outward, using the first key that matches a step below. Never use any other word in the span.
+3. GATE A (live run): if you produced this value by running a script now → `live_run`; record the command and wall clock; the column heading goes in venue. Commit metadata → `git`. File existence or shape → `filesystem`. Stop.
+4. GATE B (prose): if the value sits in prose or a table in ANY record document (handoffs, ledger entries, reviews, dispositions, preregs, runbooks, build specs, routing tables, manifests are examples) and the span does not name the scored artifact the value came from → `stated`; set provenance_region (starred_block / archive_block / body). Stop. If the span names the scored artifact, continue with the label.
+5. Label contains `_raw`, `raw`, `single-wave`, `wave seat` → `raw`. Record which sense in venue (round-4 'raw = strict panel-majority truth', BP/ROUND4_DEV_TABLE.json:2; repair-loop 'raw single-wave', BP/ITERATION_NOTES.md:272).
+6. Label contains `panel_tier`, `panel`, `3-instance panel`, `majority`, `uniform panel tier`, `judges`, `mean of 3`, `per-judge`, `leave-one-out` → `panel`.
+7. Label contains `addendum`, `defensib`, `headline`, `quarantine_adjusted`, `match-or-defensible`, `match-or-adjudicated-defensible` → `adjudicated`.
+8. The value is inside a block headed `MATT RULING`, `RULING:`, `COUNTERSIGNED`, `the project owner`, `project owner's decision`, or a decision.json signed_by → `human`.
+9. The span itself says `CoVe`, `re-derived`, `re-derivation` of this value → `cove`; record the actor verbatim.
+10. Any value not matched by steps 3-9 → `stated`.
 
 ## Entries
 
@@ -82,9 +83,9 @@ Path prefixes: `SFE` = `semi-formal-experiment/`; `BP` = `walkthrough/paper_pipe
 **Definition.** raw = strict panel-majority truth or a single seat's (single-wave) verdict; panel tier = 3-instance panel majority; uniform panel tier = every node in the frozen draws re-adjudicated at panel tier; re-measurement = re-adjudicating the SAME frozen samples at a higher tier, never a new draw
 
 **Hazards for translators.**
-- single-wave self-agreement is 0.846 (BP/CALCULUS_RUNBOOK.md:130-132): a single-wave figure is not a panel figure even for the same draw
+- single-wave self-agreement is 0.846 (BP/CALCULUS_RUNBOOK.md:128-129): a single-wave figure is not a panel figure even for the same draw
 
-**Cites.** `BP/ROUND4_DEV_TABLE.json:2`; `BP/ITERATION_NOTES.md:272-275`; `BP/CALCULUS_RUNBOOK.md:89-92`; `BP/CALCULUS_RUNBOOK.md:130-132`
+**Cites.** `BP/ROUND4_DEV_TABLE.json:2`; `BP/ITERATION_NOTES.md:272-275`; `BP/CALCULUS_RUNBOOK.md:89-92`; `BP/CALCULUS_RUNBOOK.md:128-129`
 
 ### match-or-defensible / match-or-adjudicated-defensible / headline  (arc 2)
 
@@ -104,14 +105,16 @@ Path prefixes: `SFE` = `semi-formal-experiment/`; `BP` = `walkthrough/paper_pipe
 
 **Authoritative artifact.** BP/HANDOFF_CURRENT.md (the line that states it); certification cells in BP/ROUND4_DEV_TABLE.json are the out-of-sample counterpart
 
+**Denominator / population.** per-behaviour engaged set sizes for all-truth figures appear as 'basis n=' in BP/ROUND4_PREREG.md:70-74 and as TP/FP counts in BP/HANDOFF_CURRENT.md:33-39; copy the n the span gives; if the span gives none, population = 'unstated'
+
 **Conflicts in the record (unresolved).**
-- all-truth is called composition-biased and 'never' to be scored on (BP/L1L2_ADVERSARIAL_REVIEW.md:314-316; BP/L1L2_REVIEW_DISPOSITION.md:66-68) while HANDOFF_CURRENT.md:33-39 uses it as the baseline
+- all-truth is called composition-biased and 'never' to be scored on (BP/L1L2_ADVERSARIAL_REVIEW.md:314-316; BP/L1L2_REVIEW_DISPOSITION.md:66-68) while BP/HANDOFF_CURRENT.md:33-39 uses it as the baseline
 
 **Hazards for translators.**
 - provenance region: this figure lives below the starred block of BP/HANDOFF_CURRENT.md; record provenance_region
 - the same line carries 'the human-panelist baseline 71%'. The record's status for it CONFLICTS: BP/HANDOFF_CURRENT.md:210-211 says it 'has NO source artifact; it must be sourced or struck'; BP/GENERALIZATION_PREREG_DRAFT.md:81-84 says it 'is STRUCK 2026-08-21: no artifact establishes it'. Translate the value with supersession.status=contested, by = the claim translating whichever of those two spans is in the batch, and quote the flag verbatim in notes.
 
-**Cites.** `BP/HANDOFF_CURRENT.md:106-108`; `BP/ROUND4_PREREG.md:12-17`; `BP/ROUND4_PREREG.md:202-206`
+**Cites.** `BP/HANDOFF_CURRENT.md:106-108`; `BP/ROUND4_PREREG.md:12-17`; `BP/ROUND4_PREREG.md:202-206`; `BP/ROUND4_PREREG.md:70-74`
 
 ### certification / round 4 / falsifiers F1-F5 / band / floor  (arc 2)
 
@@ -121,12 +124,12 @@ Path prefixes: `SFE` = `semi-formal-experiment/`; `BP` = `walkthrough/paper_pipe
 
 **Conflicts in the record (unresolved).**
 - two registered band sets: all-truth-derived (BP/ROUND4_PREREG.md:70-74, kept as a recorded erratum) vs lineage-derived superseding bands (BP/ROUND4_PREREG.md:214-220)
-- helpfulness has three scored files with three different raw cells: BP/round4_helpfulness_scored.json (0.625/0.625; BP/ROUND4_PREREG.md:150-161 marks canary attempt 1 VOID), BP/round4_helpfulness_scored_v2.json (0.575/0.85, header 'canary RE-RUN scored'), BP/round4_helpfulness_scored_final_raw.json:2 (0.625/0.875, 'FINAL raw cells after F5 full-panel escalation'; the cells BP/ROUND4_DEV_TABLE.json:5-7 carries). Only the first is marked void in the record.
+- helpfulness has three scored files with three different raw cells: BP/round4_helpfulness_scored.json (0.625/0.625; BP/ROUND4_PREREG.md:150-161 marks canary attempt 1 VOID), BP/round4_helpfulness_scored_v2.json (0.575/0.85, header 'canary RE-RUN scored'), BP/round4_helpfulness_scored_final_raw.json:2 (0.625/0.875, 'FINAL raw cells after F5 full-panel escalation'; the cells BP/ROUND4_DEV_TABLE.json:5-7 carries). BP/ROUND4_PREREG.md:150-161 marks the first VOID; translate each file's own header text.
 
 **Hazards for translators.**
 - file naming asymmetry: caution and harm are round4_<slug>_scored_raw.json; helpfulness is round4_helpfulness_scored_final_raw.json; the helpfulness file names differ from the other two; copy file names exactly as they appear in git ls-tree
 - repair-loop predictions use P1-P4, not F1-F5
-- record the raw_verdict / headline_verdict string verbatim with every round-4 cell (e.g. BP/ROUND4_DEV_TABLE.json:17 'F1 (prec below floor); decl above band'); do not paraphrase a verdict string
+- record the raw_verdict / headline_verdict string verbatim with every round-4 cell (a verdict string sits at BP/ROUND4_DEV_TABLE.json:17, for example); do not paraphrase a verdict string
 
 **Cites.** `BP/ROUND4_PREREG.md:12-17`; `BP/ROUND4_PREREG.md:37-45`; `BP/ROUND4_PREREG.md:114-116`; `BP/ROUND4_PREREG.md:47-51`
 
@@ -170,7 +173,7 @@ Path prefixes: `SFE` = `semi-formal-experiment/`; `BP` = `walkthrough/paper_pipe
 **Hazards for translators.**
 - do not translate seat self-agreement, mint stability (0.98), split rates, or the owner's 21/22 spot-check as 'panel-internal agreement'; each is its own metric name
 
-**Cites.** `BP/L1L2_ADVERSARIAL_REVIEW.md:215-217`; `BP/CALCULUS_RUNBOOK.md:130-132`; `BP/HANDOFF_CURRENT.md:108`; `BP/HANDOFF_CURRENT.md:210-211`; `BP/PREREG_panel_equivalence.md:68-75`
+**Cites.** `BP/L1L2_ADVERSARIAL_REVIEW.md:215-217`; `BP/CALCULUS_RUNBOOK.md:128-129`; `BP/HANDOFF_CURRENT.md:108`; `BP/HANDOFF_CURRENT.md:210-211`; `BP/PREREG_panel_equivalence.md:68-75`
 
 ### node / passage / span / definition  (arc both)
 
@@ -255,7 +258,7 @@ Path prefixes: `SFE` = `semi-formal-experiment/`; `BP` = `walkthrough/paper_pipe
 
 **Hazards for translators.**
 - anti_rule: any translation of 849/863 or 98.4% carries the SFE/MODULE_MAP.md:54 prohibition verbatim
-- SFE/measure_join.py:85-87 prints 'unmatched (N):' followed by the first 10 unmatched passages with the quote truncated to 100 characters; 14 are unmatched at the pin
+- SFE/measure_join.py:85-87 prints 'unmatched (N):' followed by the first 10 unmatched passages with the quote truncated to 100 characters; obtain N from the live run
 
 **Cites.** `SFE/measure_join.py:1-9`; `SFE/measure_join.py:33-47`; `SFE/measure_join.py:74`; `SFE/measure_join.py:85-87`; `SFE/MODULE_MAP.md:54`
 
@@ -302,23 +305,23 @@ Path prefixes: `SFE` = `semi-formal-experiment/`; `BP` = `walkthrough/paper_pipe
 
 ### check_model.py checks  (arc 1)
 
-**Definition.** the validator's checks are named in SFE/machine/README.md as (a) SOURCE CHECK, (b) DIFFERENTIAL CHECK vs cycle.py, (c) KNOWN-ANSWER SET, and an ACCEPTANCE TEST (:190); the checker step records the run's PASS lines, contradiction count, and wall clock — the translator does not assert the count
+**Definition.** the validator's checks are named in SFE/machine/README.md:100-125 as (a) SOURCE CHECK, (b) DIFFERENTIAL CHECK vs cycle.py, (c) KNOWN-ANSWER SET, plus the acceptance test (:100); SFE/machine/README.md:160-163 shows a sample run's PASS lines; the checker step records what the run at the pin prints — the translator does not assert the count
 
 **Conflicts in the record (unresolved).**
-- SFE/machine/README.md:98 heading says 'three independent checks'; SFE/machine/README.md:16 says 'the validator: 4 checks'; the run prints four PASS lines
+- SFE/machine/README.md:98 heading says 'three independent checks'; SFE/machine/README.md:16 says 'the validator: 4 checks'
 
-**Cites.** `SFE/machine/README.md:16`; `SFE/machine/README.md:98`; `SFE/machine/README.md:190`
+**Cites.** `SFE/machine/README.md:16`; `SFE/machine/README.md:98`; `SFE/machine/README.md:100`; `SFE/machine/README.md:160-163`
 
 ### graph_check.py output  (arc 2)
 
-**Definition.** G2/graph_check.py:55-75 prints these fields for a graph file: nodes; uncovered entries; bad line ranges / total spans; bad quotes / quoted spans; span sizes; overlapping pairs; provided names; needs and dangling (no provider); nodes with zero needs; spans with quotes / total spans; authority-tagged headings captured; lines covered. Values come from a live run recorded by the checker step. ARTIFACTS.md:19 is the record's own summary of the run.
+**Definition.** G2/graph_check.py:39-140 prints, among others: nodes and uncovered entries; duplicate ids; bad line ranges / total spans; bad quotes / quoted spans; span sizes; overlapping pairs; provided names; needs and dangling (no provider); K1 grounding; nodes with zero needs; spans with quotes / total spans; authority-tagged headings captured; lines covered. Values come from a live run recorded by the checker step. ARTIFACTS.md:19 is the record's own summary of the run.
 
-**Authoritative artifact.** live run (wall 0.14 s); CI runs the same command (.github/workflows/ci.yml:35)
+**Authoritative artifact.** live run recorded by the checker step (record command and wall clock); CI runs the same command (.github/workflows/ci.yml:35)
 
 **Hazards for translators.**
 - 'bad spans' in ARTIFACTS.md:19 refers to the line-range field; the quote field is printed over the quoted subset only
 
-**Cites.** `G2/graph_check.py:55-75`; `ARTIFACTS.md:19`; `.github/workflows/ci.yml:35`
+**Cites.** `G2/graph_check.py:39-140`; `ARTIFACTS.md:19`; `.github/workflows/ci.yml:35`
 
 ### the three behaviours files  (arc 1)
 
@@ -332,7 +335,7 @@ Path prefixes: `SFE` = `semi-formal-experiment/`; `BP` = `walkthrough/paper_pipe
 
 ### PRUNED.md  (arc 2)
 
-**Definition.** evidence-prune manifest dated 2026-08-30: a four-column table (path, git object id, files, bytes) of 87 entries pinned by git tree/blob sha plus a TOTAL row; two entries carry the literal 'untracked-or-file' with 0 files; the restore instruction reads 'git checkout <pre-prune-commit> -- <path>' with <pre-prune-commit> unfilled; a 'Restored post-prune' section dated 2026-08-30 lists files restored after the first pass over-pruned. Translate the file's shape and text; do not summarise what it lacks.
+**Definition.** evidence-prune manifest dated 2026-08-30: a four-column table (path, git object id, files, bytes) of 87 entries pinned by git tree/blob sha, a TOTAL row (:100) and a 'Net after the post-prune restore' row (:101); two entries carry the literal 'untracked-or-file' with 0 files; the restore instruction at :6 reads, verbatim, 'git checkout <pre-prune-commit> -- <path>'; a 'Restored post-prune' section dated 2026-08-30 lists files restored after the first pass over-pruned. Translate the file's shape and text as written.
 
 **Cites.** `G2/PRUNED.md:1-12`; `G2/PRUNED.md:73`; `G2/PRUNED.md:99`; `G2/PRUNED.md:110-121`
 
@@ -360,7 +363,7 @@ Path prefixes: `SFE` = `semi-formal-experiment/`; `BP` = `walkthrough/paper_pipe
 
 **Hazards for translators.**
 - the record states explicit 'never report one as the other' rules, e.g. BP/PREREG_panel_equivalence.md:134-138 ('Reporting the tuned number alone is forbidden'), BP/GENERALIZATION_PREREG_DRAFT.md:109-110 ('Attempt-N verdicts measure THE REPAIR, never transfer'), BP/BLOCK2_TRANSFER_PREDICTIONS.md:107-111 (exhaustive precision 'never substitutes'), BP/ROUND4_PREREG.md:75-78 ('a population figure, not a sample'); every value carries its mode, attempt index, pool, and band basis
-- no glossary in the record defines 'in-sample' or 'fresh draw'; both are defined only by what a pool excludes
+- the record defines 'in-sample' and 'fresh draw' operationally, by what a pool excludes (BP/ROUND4_PREREG.md:20-23) and by 'on the ledger' vs 'a fresh unscored confirmation draw' (BP/CHEAP_TIER_DRIVER_DESIGN.md:31-33); copy the span's own words
 - 'F1' names both an adversarial-review finding and a falsifier (BP/GENERALIZATION_BUILD_SPEC.md:53-61); record which
 
 **Cites.** `BP/CHEAP_TIER_DRIVER_DESIGN.md:31-33`; `BP/ROUND4_PREREG.md:20-23`; `BP/UA_PLAN_REVIEW_DISPOSITION.md:11-17`; `BP/GENERALIZATION_PREREG_DRAFT.md:109-110`; `BP/ROSETTA.md:36-40`; `BP/TRANSLATION_CONTRACT_V2.md:188-192`
@@ -408,7 +411,7 @@ Path prefixes: `SFE` = `semi-formal-experiment/`; `BP` = `walkthrough/paper_pipe
 
 ### relevance-query output: hit / span locator / reason  (arc both)
 
-**Definition.** arc 2: BP/panel_run1/relevance_by_act.json maps node_id → a list of act:polarity reason strings; the node id resolves to the graph node's spans (which may or may not carry a quote). arc 1: SFE/relevance.py Scorer.explain() returns matched_atoms with the spans licensing them; the record holds no committed per-hit explanation artifact for arc 1, so hits there come from a live run
+**Definition.** arc 2: BP/panel_run1/relevance_by_act.json maps node_id → a list of act:polarity reason strings; the node id resolves to the graph node's spans (which may or may not carry a quote). arc 1: SFE/relevance.py Scorer.explain() returns matched_atoms with the spans licensing them; hits there come from a live run of that path
 
 **Hazards for translators.**
 - a span's quote is checkable only when the span carries one and that quote is a substring of the source document; G2/graph_check.py prints the counts of spans with and without quotes — obtain them from a live run
@@ -439,7 +442,7 @@ Path prefixes: `SFE` = `semi-formal-experiment/`; `BP` = `walkthrough/paper_pipe
 
 - **ledger_entry_format** — '## NNNN — TITLE, YYYY-MM-DD'; entry 0000 embeds its date in the title; the three redacted stubs carry the date in parentheses. No entry carries a time. Entries 0000-0031 are all dated 2026-08-24 (32 entries); 0032-0043 are dated 2026-08-25. Sort by entry number, never by date. (BP/ITERATION_NOTES.md:7, :41, :71, :832)
 - **ordering** — entry numbers are strictly monotone with the introducing commit's date for all 44 entries (checked); the order relation for ledger events is (date, entry number); for commits, (commit date, first-parent ordinal). Introducing commit of an entry: git log -S '## NNNN — ' --reverse (prefix only: six headings were rewritten on 2026-08-31, so searching the full current title finds the wrong commit).
-- **append_only** — 45 commits touch ITERATION_NOTES.md; 44 are pure appends; exactly one deletes lines: 6d01415b (2026-08-31, +89/−121, 'Publication prep ... redact operational plumbing'). It replaced three entries by stubs marked '— [operational; redacted]' (0002, 0008, 0021), stripped quantitative operational data (usage %, points, token counts) from retained entries, replaced named owner attributions and verbatim quoted speech with role language ('Matt: ...' → 'RULING:' / 'the project owner'), and renamed the headings of 0032-0034. 29 retained entries were edited without a marker. (git log --stat -- BP/ITERATION_NOTES.md; git show 6d01415b)
+- **append_only** — 45 commits touch ITERATION_NOTES.md; 44 are pure appends; exactly one deletes lines: 6d01415b (2026-08-31, +89/−121, subject 'Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer'). It replaced three entries by stubs marked '— [operational; redacted]' (0002, 0008, 0021) and changed text in 29 other retained entries and the headings of 0032-0034 without a marker. Translate each hunk as its own claim (kind event, type hunk) quoting removed and added text; classify what the hunk removed from the hunk's own words, never from this note. Pre-redaction content: git show 6d01415b^:<path>. (git log --stat -- BP/ITERATION_NOTES.md; git show 6d01415b)
 - **redaction_marker** — the only in-place marker form is '— [operational; redacted]', three instances, all in ITERATION_NOTES.md. The commit says it redacted 'across ~60 docs' and modified 53 .md files; only the ledger received markers. Examples of unmarked edits with deletions: HANDOFF_CURRENT.md (removed a pre-existing ⚠️ correction line), ROUND4_PREREG.md, EXPERIMENTS.md, GENERALIZATION_PREREG_DRAFT.md. Pre-redaction content: git show 6d01415b^:<path>.
 - **prereg_integrity** — all eight prereg documents plus PREREG_panel_equivalence.md were edited by 6d01415b. PREREG_panel_equivalence.md's own text says 'Editing this file after approval voids the registration' and carries a sha sidecar (PREREG_panel_equivalence.sha256) that matched immediately before 6d01415b and does not match after. The record nowhere adjudicates this; translators record the mechanical facts (file, hunk, sha before/after) and nothing more.
 - **marking_systems** — three coexisting systems that do not agree: (a) ledger: append-only, superseded entries are withdrawn by a later numbered entry (0042 withdraws 0041); (b) handoffs: star count = recency of a state block, ⛔ = do not act on, ⚠️ = caveat, ~~strike~~ = retracted-but-retained; (c) delete-don't-annotate: 'A superseded number left in a doc is an instruction, not a footnote. Delete it' (SFE/HANDOFF.md:1357), applied in some sections and contradicted by 'nothing was silently deleted' (SFE/HANDOFF.md:292-294). (BP/ITERATION_NOTES.md:1-5; SFE/HANDOFF.md:292-294, :1352-1357; AGENTS.md:16-18)

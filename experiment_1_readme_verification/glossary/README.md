@@ -75,3 +75,18 @@ two miscitations are fixed; the review pointer is gone from the rendered file.
 with the README that occur nowhere else in the record, tokenising across line
 breaks; the glossary and brief pass with zero candidates, and a probe file
 containing the three removed phrases fails.
+
+## Revision after third closure pass (2026-09-02)
+
+`review_3.md` (committed untouched): every review-2 blocker closed; the
+procedure returned no wrong tier on seven spans but was not total. Applied:
+claim-splitting moved to step 1; label attachment includes 'is' and the JSON
+key walk; live-run/git/filesystem gate runs first; the prose gate covers any
+record document; a terminal step tiers any unmatched value `stated`. Three
+surviving pre-answers (14 unmatched, four PASS lines, wall 0.14 s) and the
+quoted verdict string made attributive; the append-only convention no longer
+pre-classifies what the redaction hunks removed; cites corrected
+(machine/README.md:100 and :160-163, graph_check.py:39-140,
+CALCULUS_RUNBOOK.md:128-129); a denominator route added for the criterion
+standing entry. The PRUNED.md restore sentence is now quoted verbatim rather
+than characterised.
