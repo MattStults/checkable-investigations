@@ -86,6 +86,21 @@ for r in d["residue"]:
         line += f"  \n  *{r['note']}*"
     w(line)
 w("")
+if "forensic" in d:
+    f = d["forensic"]
+    w("## Forensic layer (pre-registered addendum; not README-derived)\n")
+    w(f["status"] + "\n")
+    w("**Why:** " + f["why"] + "\n")
+    w("**Required on event spans:** " + "; ".join(f["required_on_event_spans"]) + "\n")
+    w("**Derived at query time, not translated:** " + "; ".join(f["derived_at_query_time_not_translated"]) + "\n")
+    w("**Defect classes:**")
+    for k, v in f["defect_classes"].items():
+        w(f"- `{k}` — {v}")
+    w("\n**Glossary hazard:** " + f["glossary_hazard"] + "\n")
+    w("**Pre-registered forensic queries:**")
+    for q in f["preregistered_queries"]:
+        w(f"- **{q['id']}** — {q['question']}  \n  needs: {', '.join(q['needs'])}")
+    w("")
 w("## Verbatim check\n")
 if readme_text is None:
     w("Pinned README not available at render time; quotes not checked.")

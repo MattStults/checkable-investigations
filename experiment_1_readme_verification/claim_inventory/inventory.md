@@ -22,6 +22,14 @@ Generated from `inventory.json` by `render.py`; the JSON is the source of truth.
 - `finding(r)` — For a review, the recorded top-line finding (e.g. noise, unsupported, does_not_license, upheld).
 - `kind(f)` — For an engine_failure, refusal or wrong_answer.
 - `status(b)` — For a behaviour, tuned or untuned in the arc-2 campaign, as the record states.
+- `actor(e)` — Who the record says performed the event: owner, driver, seat, panel, reviewer, script, unstated. Copied from the span, never inferred.
+- `model_tier(e)` — Model tier the record names for the actor (e.g. Opus, Fable, Sonnet, Haiku), or unstated.
+- `session(e)` — The working session the record places the event in: the ledger entry number or block name, plus date. Coarse by design.
+- `context_origin(e)` — How the acting agent's context began, when the span states it: fresh, continued, compacted, seeded_by(<artifact>), unstated. A seed is an authored handoff (readable, checkable); a compaction is lossy and visible only by symptoms.
+- `asserted_transfer(e, fact)` — A 'next agent must know' style line: event e hands fact forward to a successor.
+- `erratum(e, n, class)` — Event e records erratum number n of defect class class (see forensic.defect_classes).
+- `recurrence(e, e_prior)` — Event e says the same defect recurred from an earlier event or erratum e_prior.
+- `caught_by(e)` — Who or what surfaced the misstep: owner, adversarial_review, tripwire, cove (chain-of-verification re-derivation), self, script, unstated.
 
 ## Quantitative / checkable claims
 
@@ -841,6 +849,41 @@ A verdict verifies exactly when all its needs resolve to providers that verify. 
   *Descriptive framing; not a measurable claim.*
 - **R11** — > the ledger's own honest headline
 - **R12** — > ## What this repo does not establish ... That the approach is impossible.
+
+## Forensic layer (pre-registered addendum; not README-derived)
+
+Declared before freeze as a pre-registered addendum. NOT README-derived; not part of the registered expectations, which are scored over Q/H/V claims only. Forensic query outcomes are reported in a separate results table with their own unverifiable count.
+
+**Why:** The record must support tracing what agent did what when the work went wrong, not only verifying the README. The ledger already carries this vocabulary natively (entry 0000 'SEED: tacit operational knowledge', erratum #16 'stale reset belief', erratum #21 'FOURTH recurrence', 'next agent must know' lines, errata series '4,4,4,2*,1'), so the dimensions are recoverable from spans without inference.
+
+**Required on event spans:** actor; session; context_origin (unstated allowed); erratum number and class where the span records an erratum; recurrence link where the span says a defect recurred; caught_by where the span says who caught it; asserted_transfer where the span hands a fact forward
+
+**Derived at query time, not translated:** fix_artifact(e): what an erratum produced; fired_after_fix(e): whether the class recurred after its fix; belief state of an agent at a time (only its proxy, asserted_transfer plus later contradiction, is translated)
+
+**Defect classes:**
+- `stale_belief` — acting on a remembered fact that had changed (erratum #16's class: 'dates not anchors')
+- `scope_stretched_certificate` — using a validation certificate outside the brief it was earned on (erratum #14's class)
+- `underspecified_vocabulary` — a coding or judgment vocabulary too loose to be applied consistently (erratum #19's class)
+- `unfalsifiable_pass` — a pass condition satisfiable by noise or that cannot fail (the census withdrawal's class)
+- `missing_null` — a claim with no null or baseline (L2's class)
+- `wrong_artifact` — loading or citing the wrong file or tier (the behaviours.json trap; raw vs panel)
+- `transcript_only_procedure` — a ruling or procedure that lived in a transcript instead of the repo
+- `mixed_snapshots` — pooling or comparing values across attempts, tiers, or superseded entries
+- `other` — record the span's own words for the class
+
+**Glossary hazard:** 'reset' in the ledger means a provider usage-window reset, not a context reset. The glossary must define both and translators must not map one to the other.
+
+**Pre-registered forensic queries:**
+- **F01** — Does any defect class recur after a session boundary or seeding event more often than within a session?  
+  needs: session, context_origin, erratum class, recurrence
+- **F02** — Did the errata series converge by class, not just by count? List classes with a recurrence after their first fix.  
+  needs: erratum number and class, recurrence, session
+- **F03** — Which catch mechanism surfaced which defect class? Did self-catching ever surface a continuity (stale_belief) failure?  
+  needs: caught_by, erratum class
+- **F04** — For every asserted transfer, does a later span contradict or violate it, and by which actor?  
+  needs: asserted_transfer, actor, session, linkage
+- **F05** — Was any certificate or validated seat used outside the brief it was scoped to?  
+  needs: actor, model_tier, linkage to brief/certificate, erratum class scope_stretched_certificate
 
 ## Verbatim check
 

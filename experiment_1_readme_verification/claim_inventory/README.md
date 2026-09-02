@@ -44,3 +44,19 @@ Freeze: this directory is frozen on owner sign-off. Later steps may reference
 claim ids but never edit this file set. If a defect is found in the inventory
 after freeze it is logged in `results/intervention_log.md` and the claim is
 marked, not silently fixed.
+
+## Pre-registered addendum: forensic layer (added 2026-09-02, before freeze)
+
+The README is not the only source of questions. If the agents in the record
+lost their way, the ledger must let us trace what agent did what, with what
+context, and whether the same mistake recurred after a handoff or compaction.
+`inventory.json` therefore declares a `forensic` section: actor, session,
+context-origin, erratum-class, recurrence, caught-by and asserted-transfer
+predicates; a defect-class vocabulary drawn from the record's own errata; and
+five pre-registered forensic queries F01–F05.
+
+These are **not README-derived and not part of the registered expectations**
+(which are scored over Q/H/V claims only). Their outcomes, including their own
+unverifiable count, are reported in a separate results table. Translators
+carry the forensic attributes on every event-shaped span; the blog post is
+unchanged.
