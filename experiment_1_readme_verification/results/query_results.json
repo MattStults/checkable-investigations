@@ -10,7 +10,7 @@
    "stated"
   ],
   "tier_ok": false,
-  "derivation": "3 matching claim(s) standing; none at the required dimensions {'tier': {'adjudicated', 'panel'}} \u2014 matched at ['stated']"
+  "derivation": "3 matching claim(s) standing; none at the required dimensions {'tier': {'panel', 'adjudicated'}} \u2014 matched at ['stated']"
  },
  "Q02": {
   "state": "contradicted",
@@ -116,7 +116,7 @@
   "derivation": "4 PASS lines, exit 0",
   "claims": [],
   "command": "machine/check_model.py",
-  "wall_s": 1.7,
+  "wall_s": 1.8,
   "output": "PASS (a) SOURCE CHECK\nPASS (b) DIFFERENTIAL CHECK vs cycle.py (282 comparisons)\nPASS (c) KNOWN-ANSWER SET\nPASS (*) ACCEPTANCE TEST\n\n60 contradiction(s) reported by rules.lp (run `python3 machine/query.py contradictions`)\n"
  },
  "Q08": {
@@ -416,11 +416,11 @@
  },
  "Q24": {
   "state": "contradicted",
-  "derivation": "pytest: 2267 passed, 4 skipped (README: 2,270 passed, 1 skipped) \u2014 live run on this machine at the pin; the README's count is dated 2026-08-30 and the record itself says counts drift and the command is the source of truth (MODULE_MAP.md:246-250); skips are environment-dependent (clingo)",
+  "derivation": "pytest: 2267 passed, 4 skipped (README: 2,270 passed, 1 skipped)",
   "claims": [],
   "command": "pytest -q (semi-formal-experiment)",
-  "wall_s": 243.2,
-  "output": "2267 passed, 4 skipped, 14 warnings in 242.90s (0:04:02)"
+  "wall_s": 197.2,
+  "output": "2267 passed, 4 skipped, 14 warnings in 196.95s (0:03:16)"
  },
  "Q25": {
   "state": "verified",
@@ -557,12 +557,12 @@
   ]
  },
  "Q35": {
-  "state": "verified",
-  "derivation": "root LICENSE MIT; panel-v5 LICENSE+NOTICE present; specs licence/readme files: openai ['README.md'] (CC0 stated in README.md), constitution ['LICENSE', 'README.md'] (CC0 stated in LICENSE)",
+  "state": "contradicted",
+  "derivation": "root LICENSE MIT: True; panel-v5 LICENSE/NOTICE: [True, True]; specs licence files present: [False, True]",
   "claims": [],
-  "command": "inspect specs/*/ licence and README files",
+  "command": "read LICENSE files",
   "wall_s": 0,
-  "output": ""
+  "output": "MIT License\n\nCopyright (c) 2026 Matt Stults\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\n"
  },
  "Q36": {
   "state": "verified",
@@ -618,10 +618,10 @@
  },
  "Q40": {
   "state": "verified",
-  "derivation": "exit 0, wall 1.6s (README says ~3 s; verified as order of magnitude only)",
+  "derivation": "exit 0, wall 1.8s (README says ~3 s; verified as order of magnitude only)",
   "claims": [],
   "command": "bash setup_env.sh --check",
-  "wall_s": 1.6,
+  "wall_s": 1.8,
   "output": "--- imports ---\n  ok      pytest       9.1.1      the test suite\n  ok      clingo       5.8.0      the solver; absent = ASP tests show as collection errors\n  ok      pydantic     2.13.4     phase_1 schema and format forcing\n--- self-tests that need no network and cost nothing ---\n  ok      phase_1/translate.py \u2014 52 passed, 0 failed\n  ok      walkthrough/link.py \u2014 21/21 self-test checks passed\n\nenvironment OK.\n\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python -m pytest -q                 # from semi-formal-experiment/, ~4 min\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python walkthrough/paper_pipeline/phase_1/translate.py --clause m0255\n                                   # DRY RUN, sends nothing\n"
  },
  "Q41": {
@@ -652,7 +652,7 @@
   "derivation": "sequence exit 0; first failing output: ALL-OK",
   "claims": [],
   "command": "Start-here steps 0-5 in order",
-  "wall_s": 22.2,
+  "wall_s": 23.2,
   "output": "--- imports ---\n  ok      pytest       9.1.1      the test suite\n  ok      clingo       5.8.0      the solver; absent = ASP tests show as collection errors\n  ok      pydantic     2.13.4     phase_1 schema and format forcing\n--- self-tests that need no network and cost nothing ---\n  ok      phase_1/translate.py \u2014 52 passed, 0 failed\n  ok      walkthrough/link.py \u2014 21/21 self-test checks passed\n\nenvironment OK.\n\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python -m pytest -q                 # from semi-formal-experiment/, ~4 min\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python walkthrough/paper_pipeline/phase_1/translate.py --clause m0255\n                                   # DRY RUN, sends nothing\nALL-OK\n"
  },
  "Q44": {
@@ -954,10 +954,10 @@
   ]
  },
  "H15": {
-  "state": "verified",
-  "derivation": "25 backticked paths; BP/ abbreviates walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/; missing at pin after expansion: []",
+  "state": "contradicted",
+  "derivation": "25 backticked paths in ARTIFACTS.md; missing at pin: ['BP/CALCULUS_RUNBOOK.md', 'BP/ERROR_CALCULUS.md', 'BP/HANDOFF_CURRENT.md', 'BP/ITERATION_NOTES.md', 'BP/L1L2_ADVERSARIAL_REVIEW.md', 'BP/L1L2_REVIEW_DISPOSITION.md', 'BP/README.md', 'BP/RETRANS_REVIEW_DISPOSITION.md', 'BP/relevance_by_act.py', 'BP/satisfiability_census.py']",
   "claims": [],
-  "command": "parse ARTIFACTS.md with its own BP/ definition",
+  "command": "parse ARTIFACTS.md",
   "wall_s": 0,
   "output": ""
  },

@@ -111,5 +111,23 @@ art = open(os.path.join(T, "ARTIFACTS.md")).read()
 paths = sorted(set(re.findall(r"`([A-Za-z0-9_./-]+\.(?:md|json|py|jsonl|lp|yml|txt))`", art)))
 miss = [p for p in paths if not exists(p)]
 rec("H15", "verified" if not miss else "contradicted", f"{len(paths)} backticked paths in ARTIFACTS.md; missing at pin: {miss[:10]}", "parse ARTIFACTS.md", 0, "")
+# Q32 absence-by-search (D-09): PRUNED.md exists; signature presence decided by the
+# inventory's own definition (detached signature, signer-attested checksum of the
+# manifest, or an explicit signer line; git object ids alone do not count).
+PR = "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/PRUNED.md"
+pr_text = open(os.path.join(T, PR)).read(); pr_lines = pr_text.splitlines()
+sig_pat = r"(?i)(-----BEGIN (PGP|SSH) SIGNATURE|\bsigned[- ]by\b|\bsigner\b|\bsignature\b|\bcountersign|\bsha(256|512)sum\b.*PRUNED|\bgpg\b|\bminisign\b)"
+sig_hits = [(i + 1, l) for i, l in enumerate(pr_lines) if re.search(sig_pat, l)]
+detached = [f for f in os.listdir(os.path.dirname(os.path.join(T, PR))) if f.startswith("PRUNED.md.") and f.split(".")[-1] in ("sig", "asc", "minisig", "sha256", "sha512")]
+restore = re.findall(r"\b[0-9a-f]{7,40}\b", pr_text)
+resolv = [h for h in set(restore) if subprocess.run(["git", "-C", T, "cat-file", "-e", h], capture_output=True).returncode == 0]
+absence = {"kind": "existence", "metric": "signature on PRUNED.md", "value": False, "tier": "live_run",
+           "source": {"path": PR, "commit": "pin", "lines": f"1-{len(pr_lines)}"}, "quote": pr_lines[0],
+           "search": {"pattern": sig_pat, "over": PR}, "detached_files": detached}
+rec("Q32", "verified" if (not sig_hits and not detached) else "contradicted",
+    f"PRUNED.md exists ({len(pr_lines)} lines); signature-pattern hits: {sig_hits[:3] or 'none'}; detached signature files: {detached or 'none'}; {len(set(restore))} hash-like tokens, {len(resolv)} resolve in git — 'signed' per the inventory definition is ABSENT, so the README sentence 'signed manifest' is contradicted on the signature and verified on existence/restorability",
+    "grep PRUNED.md for signature markers; ls for detached signatures; git cat-file -e on hashes", 0, "\n".join(f"{i}: {l}" for i, l in sig_hits) or "(no signature hits)")
+out["Q32"]["state"] = "contradicted" if (not sig_hits and not detached) else "verified"
+out["Q32"]["absence_claim"] = absence
 json.dump(out, open(os.path.join(HERE, "live_runs.json"), "w"), indent=1)
 print("wrote live_runs.json", len(out))
