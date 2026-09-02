@@ -1,0 +1,67 @@
+{
+ "header": {
+  "batch": "retry_small_b",
+  "source_class": "git_log",
+  "brief_version": "0.6",
+  "glossary_version": "frozen d887fb9",
+  "spans": 10,
+  "first_span": "S01118",
+  "last_span": "S01127",
+  "retranslation_of": "single-claim rejections from batch_058 and the batch_059 retry",
+  "rejected_claims": [
+   {
+    "id": "L590142",
+    "batch": "batch_059",
+    "quote": "It is a null result on a weak instrument, explicitly not a\nblocklist.",
+    "reason": [
+     "quote: verbatim in file but not within cited lines"
+    ]
+   },
+   {
+    "id": "L590203",
+    "batch": "batch_059",
+    "quote": "Suite: 467 passed (walkthrough/).",
+    "reason": [
+     "quote: verbatim in file but not within cited lines"
+    ]
+   },
+   {
+    "id": "L580042",
+    "batch": "batch_058",
+    "quote": "the third instance in this repo of pinning a\nlive value in a test",
+    "reason": [
+     "erratum.n=3 does not appear as an erratum number within the cited source lines (I-01)"
+    ]
+   }
+  ]
+ },
+ "spans": [
+  {
+   "id": "S01121",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "2438-2470",
+   "text": "commit 6be3a4a0fe117a16eb01f5bb676be824f7bae57a\nordinal 85\ndate 2026-08-07 22:53:53 -0700\nauthor Matt Stults\nsubject Remove bad worked example #6 -- a null result, explicitly not a blocklist\nAdded, measured twice, removed. On a control that demonstrably produces empty\nglosses (13.7% of concepts) adding #6 did not reduce them in either run, and the\npoint estimate moved the wrong way both times. Its own pre-registered falsifier\nsaid revert, so it is reverted.\n\nWHAT THIS IS NOT. Every delta was inside the noise band, so nothing was shown to\nbe harmful; n is 6 clauses on one model at one temperature; and the metric is a\nproxy that scores legitimate primitives like system_message as empty. This is a\nnull result on a weak instrument. The failure mode itself is real and unchanged\n-- 10 of 133 concepts, corroborated independently by STEP_stage4.md finding (5).\n\nMatt's condition on the removal, recorded in the decision file: this must not\nblocklist the idea. Four named routes back, any one sufficient -- a better\ninstrument (a seat 4r verdict outranks this null entirely), adequate power (12\nrule-positive clauses x 6 repeats, about $0.21), a different form (only one was\ntried; the prose-only arm was also inside the band, so neither form was shown to\nwork NOR ruled out), or a different model. The one thing barred is re-adding it\nwithout a fresh pre-registration because it reads well.\n\nThe section 2.2 ruling is untouched: failure mode #4 remains restored as a\ndocumented failure mode, and stage 4 seat 4r remains where detection lives.\n\n352 tests pass; translate.py --self-test 52 passed / 1 failed, the pre-existing\nstale dryrun.txt.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
+  },
+  {
+   "id": "S01125",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "2565-2607",
+   "text": "commit 491cadbad8c04e9b64a833a19d2f4b7cfba5a317\nordinal 89\ndate 2026-08-07 23:22:32 -0700\nauthor Matt Stults\nsubject stage 4: the read-back renderer — total layer 1, fluent layer 2, RB1-RB5\nA validated schema.Module into English, deterministically, before any seat\nruns. Two layers, and which one produced a rendering is recorded and printed.\n\nLayer 1 is TOTAL and that is the point (STEP_stage4 section 2, Matt's ruling):\nno ASP construct may be inadmissible. It walks the rule with clingo.ast, takes\nstr(node), and substitutes glosses — no node-type introspection, so there is no\nnode type it can refuse. Choice aggregates, pooling, #false and bodies clingo\ncannot even parse all render. Restricting the ASP to suit the renderer would\nmove the problem out of view.\n\nLayer 2 templates: symbolic atoms, negation, comparisons, #count/#sum/#min/#max,\nconditional literals, and the five item shapes of 2.3. Polarity comes from\nLiteral.sign, never from prose — 2.2's recorded killer.\n\nA MISSING GLOSS IS NOT A MISSING TEMPLATE. An earlier draft let an unglossed\natom fall back to layer 1, which reported 10 of 106 real items as unsupported\nASP when every one was an ordinary unary atom nobody had written a meaning for.\nUnglossed names now render as a marked hole at layer 2 and raise\nreadback-ungloss, which blocks the clause from every seat — it fires on m0053's\ninteractable_entity today, as 2.3 predicted.\n\nRB1-RB5 as specified. RB4 is reported and stamps non-evidential; it never fails\na clause, because a threshold on an echo score is the scoring instrument open\nquestion 3 forbids.\n\nTwo places the plan could not be executed as written, both reported rather than\npapered over: 2.3's act/1 template needs a gloss no schema field holds and no\nmodule supplies, so the act term is rendered as itself, marked, and noted (RB1\nexempts the marked span by name); and RB1 as literally specified fires on\nordinary English nouns inside a gloss, so each finding now says whether the\nlabel sat in the gloss or in the renderer's own text — 18 and 16 respectively on\nthe corpus, and collapsing them would misdirect every repair.\n\n19/19 hand-written mutants killed. Suite 467 pass, none lost.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
+  },
+  {
+   "id": "S01112",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "1987-2022",
+   "text": "commit 67f0903872991038bf3cb76e6a5126e61ca8b514\nordinal 76\ndate 2026-08-07 19:59:41 -0700\nauthor Matt Stults\nsubject guard: all six watched files reviewed and accepted -- green for the first time\nMatt re-reviewed the review queue and accepted all six by name: the design doc\nand the five transcriptions of it (four prompt files and schema.py). The\nstaleness guard now reports every watched file at its recorded review point, so\nthe pre-commit hook stops blocking and this is the first commit that does not\nneed --no-verify.\n\nAccepting is per file and there is deliberately no accept-all, so this is six\nseparate recorded human acts, not one.\n\nONE TEST HAD TO CHANGE, and for the reason DEBUGGING_TIPS.md entry 9 names.\ntest_pre_commit_fires_when_a_watched_file_is_staged asserted returncode == 1\nwith the comment \"schema.py has never been reviewed, so this must also BLOCK\".\nThe moment schema.py was legitimately reviewed the test failed and reported a\ncompleted review as a defect -- the third instance in this repo of pinning a\nlive value in a test.\n\nSplit into two: one asserts the hook fires at all, and a new one asserts the\ncontract that actually holds in both states -- the hook blocks EXACTLY when the\nguard is unhappy. Verified in both directions: with the guard green it passes and\nrequires exit 0, and with a digest deliberately corrupted the guard goes to exit\n1 and the test then requires the hook to block.\n\nStill open and NOT resolved by this commit: the world-fact question. The design\ncites m0255's protects_third_party as the exemplary world fact at 03_pipeline.md\nline 119, and its own line 132 says the three licence classes do not reach the\nbehaviour side -- and that fact lives in behaviour_harm3p.lp. The prompt does not\ncarry the example, so the contradiction is confined to the design document.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
+  }
+ ]
+}
