@@ -90,7 +90,7 @@ for k, v in d["conventions"].items():
         else:
             w(f"- **{k}** — {v}")
 w("\n## Citation check\n")
-w("All citations resolve at the pin." if not bad else "**FAILED**: " + "; ".join(f"{t}: {c}" for t, c in bad))
+w("All entry citations resolve to an in-range line at the pin (line-bound check only; support is not machine-verified — see review_1.md)." if not bad else "**FAILED**: " + "; ".join(f"{t}: {c}" for t, c in bad))
 open(os.path.join(HERE, "glossary.md"), "w").write("\n".join(out) + "\n")
 print("rendered glossary.md; bad citations:", bad)
 sys.exit(1 if bad else 0)
