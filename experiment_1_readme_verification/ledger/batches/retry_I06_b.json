@@ -1,0 +1,50 @@
+{
+ "header": {
+  "batch": "retry_I06_b",
+  "source_class": "arc1_cycles",
+  "brief_version": "0.5",
+  "glossary_version": "frozen d887fb9",
+  "spans": 15,
+  "first_span": "S00547",
+  "last_span": "S00561",
+  "retranslation_of": "batches 038/039 signed_by claims (rule I-06 / G-05)",
+  "rejected_claims": [
+   {
+    "id": "L380084",
+    "batch": "batch_038",
+    "quote": "\"signed_by\": \"session coordinator (Claude), on Matt's standing authorization for the reviewed portfolio order\"",
+    "reason": [
+     "a signed_by naming the owner or the owner's authorization must be tier human (I-06 / G-05)"
+    ]
+   },
+   {
+    "id": "L390114",
+    "batch": "batch_039",
+    "quote": "\"signed_by\": \"session coordinator (Claude), on Matt's standing authorization for the reviewed portfolio order\"",
+    "reason": [
+     "a signed_by naming the owner or the owner's authorization must be tier human (I-06 / G-05)"
+    ]
+   }
+  ]
+ },
+ "spans": [
+  {
+   "id": "S00542",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "82-82",
+   "text": " \"signed_by\": \"session coordinator (Claude), on Matt's standing authorization for the reviewed portfolio order\"",
+   "source_class": "arc1_cycles",
+   "context": null
+  },
+  {
+   "id": "S00556",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "25-28",
+   "text": " \"decision\": {\n  \"decision\": \"keep\",\n  \"signed_by\": \"session coordinator (Claude), on Matt's standing authorization for the reviewed portfolio order\"\n },",
+   "source_class": "arc1_cycles",
+   "context": null
+  }
+ ]
+}
