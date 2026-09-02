@@ -1,0 +1,154 @@
+{
+ "Q07": {
+  "state": "verified",
+  "derivation": "4 PASS lines, exit 0",
+  "claims": [],
+  "command": "machine/check_model.py",
+  "wall_s": 1.7,
+  "output": "PASS (a) SOURCE CHECK\nPASS (b) DIFFERENTIAL CHECK vs cycle.py (282 comparisons)\nPASS (c) KNOWN-ANSWER SET\nPASS (*) ACCEPTANCE TEST\n\n60 contradiction(s) reported by rules.lp (run `python3 machine/query.py contradictions`)\n"
+ },
+ "Q37": {
+  "state": "verified",
+  "derivation": "'*** NO VALIDATOR ***' x1; '(none recorded)' x1 (distinct state, reported separately)",
+  "claims": [],
+  "command": "machine/query.py seats",
+  "wall_s": 0.2,
+  "output": "            haiku            per_corpus         prep_hole_corpus.py                  -> check_taxonomy.py / taxonomy_agreement.py\n  change_reviewer        frontier/human   per_cycle          cycle.py writes assignments/review   -> cycle.py _implement: verdict in {proceed,blocked} and non-empty 'by'\n  decision_signer        frontier/human   per_cycle          cycle.py drafts decision.draft.jso   -> cycle.py _decide: closed decision vocabulary, non-empty signed_by, forced justification\n  density_editor         haiku            per_document       -                                    -> check_rewrite.py <before> <after>\n  disagreement_autopsy   haiku            per_dossier        audit_disagreements.py dossiers      -> audit_disagreements.py validate --verdicts <file> --dossier-dir <dir>\n  drift_standing         haiku            per_dossier        drift_dossiers.py dossiers           -> drift_dossiers.py validate --verdicts <file> --dossier-dir <dir>\n  flip_adjudicator       haiku            per_flip           dossier.py dossiers                  -> dossier.py validate --dir <dir> --verdict-file <file>\n  golden_author          haiku            per_document       -                                    -> golden.load sha-freeze + test_golden.py\n  golden_review          frontier/human   per_document       the golden_author seat's golden_tr   -> (none recorded)\n  select_audit           haiku            per_behaviour      select_audit.py                      -> select_audit.py validate\n"
+ },
+ "Q36": {
+  "state": "verified",
+  "derivation": "outline exit 0 (81 lines); resolve exit 0 \u2192 'For objective questions, the factual aspects of the assistant\u2019s response should '",
+  "claims": [],
+  "command": "cite.py outline; cite.py resolve",
+  "wall_s": 0.0,
+  "output": "model-spec@2025-12-18\nOverview  {#overview}\n  Structure of the document  {#structure}\n  Red-line principles  {#red_line_principles}\n  General principles  {#general_principles}\n  Specific risks  {#risk_taxonomy}\n  Instructions and levels of authority  {#levels_of_authority}\nDefinitions  {#definitions\n---\nFor objective questions, the factual aspects of the assistant\u2019s response should not differ based on how the user\u2019s question is phrased.\n"
+ },
+ "Q50": {
+  "state": "verified",
+  "derivation": "cite resolve identical on rerun: True; graph_check identical on rerun: True",
+  "claims": [],
+  "command": "cite.py resolve x2; graph_check.py x2",
+  "wall_s": 0.2,
+  "output": "nodes: 773   uncovered entries: 733\nbad line ranges: 0 / 846 spans  []\nbad quotes: 0 / 602  []\nspan sizes (lines covered): min 1  median 1  max 44\n  nodes covering 0 lines: 0;  >100 lines: 0 of 773\noverlapping node pairs: 266 (of 298378); nested pairs: 266\nprovided names: 115 (6 provided by >1 node)\nneeds: 1085; dangling (no provider): 25\n   dangling: L699-796_n021 needs ask_clarifying_questions_s"
+ },
+ "Q44": {
+  "state": "verified",
+  "derivation": "nodes 773; bad line ranges 0/846; bad quotes 0/602; spans with quotes 602/846",
+  "claims": [],
+  "command": "python3 walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/graph_check.py walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/runs/ds7/root_graph.production.json",
+  "wall_s": 0.1,
+  "output": "71-426_n004', 'L171-426_n007', 'L609-698_n001', 'L699-796_n001', 'L1001-1107_n001', 'L1001-1107_n005', 'L1108-1367_n011', 'L1108-1367_n012', 'L1542-1706_n001', 'L1707-1973_n015'], 'system_authority': ['L1-170_n049', 'L171-426_n008', 'L1108-1367_n010', 'L1974-2125_n001'], 'developer_authority': ['L1-170_n051', 'L171-426_n009', 'L1707-1973_n001'], 'user_authority': ['L1-170_n055', 'L171-426_n010', 'L1108-1367_n013', 'L1707-1973_n007', 'L2126-2404_n024', 'L2126-2404_n025', 'L2555-2652_n007', 'L3239-3382_n001', 'L3877-3953_n014', 'L3505-3953_n001', 'L4252-4482_n004'], 'guideline_authority': ['L1-170_n058', 'L171-426_n011', 'L2126-2404_n026', 'L2821-3040_n001', 'L3239-3382_n009', 'L3954-4251_n005', 'L3954-4251_n009', 'L3954-4251_n016', 'L3954-4251_n022', 'L3954-4251_n032', 'L3954-4251_n041', 'L4252-4482_n012', 'L4252-4482_n018'], 'conversational_language_examples': ['L2821-3040_n019', 'L2821-3040_n020', 'L2821-3040_n021']}\nK1 nodes grounded on the L183-191 list: [('L1-170_n042', (183, 183)), ('L171-426_n007', (186, 186)), ('L171-426_n008', (187, 187)), ('L171-426_n009', (188, 188)), ('L171-426_n010', (189, 189)), ('L171-426_n011', (190, 190))]; with ordering in provides: [('L1-170_n042', (183, 183), 'PARTIAL list coverage'), ('L171-426_n007', (186, 186), 'PARTIAL list coverage')]\nnodes with zero needs: 94 / 773\nspans with quotes: 602 / 846\nauthority-tagged headings captured in some node: 50 / 59\nlines covered by nodes: 3638 / 3722 non-blank; declared uncovered: 92; unaccounted: 0\n"
+ },
+ "Q40": {
+  "state": "verified",
+  "derivation": "exit 0, wall 1.6s (README says ~3 s; verified as order of magnitude only)",
+  "claims": [],
+  "command": "bash setup_env.sh --check",
+  "wall_s": 1.6,
+  "output": "--- imports ---\n  ok      pytest       9.1.1      the test suite\n  ok      clingo       5.8.0      the solver; absent = ASP tests show as collection errors\n  ok      pydantic     2.13.4     phase_1 schema and format forcing\n--- self-tests that need no network and cost nothing ---\n  ok      phase_1/translate.py \u2014 52 passed, 0 failed\n  ok      walkthrough/link.py \u2014 21/21 self-test checks passed\n\nenvironment OK.\n\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python -m pytest -q                 # from semi-formal-experiment/, ~4 min\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python walkthrough/paper_pipeline/phase_1/translate.py --clause m0255\n                                   # DRY RUN, sends nothing\n"
+ },
+ "Q43": {
+  "state": "verified",
+  "derivation": "sequence exit 0; first failing output: ALL-OK",
+  "claims": [],
+  "command": "Start-here steps 0-5 in order",
+  "wall_s": 22.2,
+  "output": "--- imports ---\n  ok      pytest       9.1.1      the test suite\n  ok      clingo       5.8.0      the solver; absent = ASP tests show as collection errors\n  ok      pydantic     2.13.4     phase_1 schema and format forcing\n--- self-tests that need no network and cost nothing ---\n  ok      phase_1/translate.py \u2014 52 passed, 0 failed\n  ok      walkthrough/link.py \u2014 21/21 self-test checks passed\n\nenvironment OK.\n\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python -m pytest -q                 # from semi-formal-experiment/, ~4 min\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python walkthrough/paper_pipeline/phase_1/translate.py --clause m0255\n                                   # DRY RUN, sends nothing\nALL-OK\n"
+ },
+ "Q06_live": {
+  "state": "verified",
+  "derivation": "measure_join prints 849/863 = 98.4% (published universe; MODULE_MAP \u00a71 forbids quoting)",
+  "claims": [],
+  "command": "measure_join.py",
+  "wall_s": 7.8,
+  "output": "           313     313  100.0%\n  harm-avoidance-to-third-parties        326     333   97.9%\n  avoiding-over-and-under-caution        151     153   98.7%\n\nunmatched (14):\n  [helpfulness s=6] 'The assistant may sometimes encounter instructions that are ambiguous, inconsistent, or difficult to'\n  [helpfulness s=4] 'While the assistant should display big-picture thinking on how to help the user accomplish their lon'\n  [helpfulness s=3] 'Inapplicable instructions should typically be ignored. The only other reason an instruction should b'\n  [helpfulness s=2] 'If the assistant lacks sufficient confidence in its response, it should use a tool to gather more in'\n  [helpfulness s=1] 'As mentioned in #letter_and_spirit, users or developers may sometimes include untrusted text content'\n  [harm-avoidance-to-third-parties s=6] 'The assistant must not generate *restricted content* (such as information hazards and sensitive pers'\n  [harm-avoidance-to-third-parties s=4] 'If the assistant lacks sufficient confidence in its response, it should use a tool to gather more in'\n  [harm-avoidance-to-third-parties s=4] '#prohibited_content: only applies to sexual content involving minors, and transformations of user-pr'\n  [harm-avoidance-to-third-parties s=4] 'As mentioned in #letter_and_spirit, users or developers may sometimes include untrusted text content'\n  [harm-avoidance-to-third-parties s=3] 'While the assistant should display big-picture thinking on how to help the user accomplish their lon'\n"
+ },
+ "Q24": {
+  "state": "contradicted",
+  "derivation": "pytest: 2267 passed, 4 skipped (README: 2,270 passed, 1 skipped) \u2014 live run on this machine at the pin; the README's count is dated 2026-08-30 and the record itself says counts drift and the command is the source of truth (MODULE_MAP.md:246-250); skips are environment-dependent (clingo)",
+  "claims": [],
+  "command": "pytest -q (semi-formal-experiment)",
+  "wall_s": 243.2,
+  "output": "2267 passed, 4 skipped, 14 warnings in 242.90s (0:04:02)"
+ },
+ "Q30": {
+  "state": "verified",
+  "derivation": "exist: [True, True, True]; sizes [1082124, 10303, 1367]",
+  "claims": [],
+  "command": "os.path",
+  "wall_s": 0,
+  "output": ""
+ },
+ "Q31": {
+  "state": "verified",
+  "derivation": "{'LEDGER.md': 'walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md', 'ARC2_HANDOFF.md': 'walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/HANDOFF_CURRENT.md', 'CLAUDE.md': 'AGENTS.md'}",
+  "claims": [],
+  "command": "os.readlink",
+  "wall_s": 0,
+  "output": ""
+ },
+ "Q33": {
+  "state": "contradicted",
+  "derivation": "arc-1 dir commits 2026-08-02 \u2192 2026-08-31 (README: July\u2013early Aug); arc-2 dir 2026-08-14 \u2192 2026-08-31 (README: mid\u2013late Aug); no commit in the repo predates 2026-08-02",
+  "claims": [],
+  "command": "git log --format=%ci -- <dir>",
+  "wall_s": 0,
+  "output": ""
+ },
+ "Q34": {
+  "state": "contradicted",
+  "derivation": "on-block: 'push: { branches: [main] }\\n  pull_request: {}'; README says 'every push'",
+  "claims": [],
+  "command": "read ci.yml",
+  "wall_s": 0,
+  "output": "name: tests\non:\n  push: { branches: [main] }\n  pull_request: {}\njobs:\n  semi-formal-experiment:\n    runs-on: ubuntu-latest\n    timeout-minutes: 25\n    steps:\n      - uses: actions/checkout@v4\n      - uses: actions/setup-python@v5\n        with: { python-version: \"3.10\" }\n      - run: bash setup_env.sh\n      - run: cd semi-formal-experiment && .venv/bin/python -m pytest -q\n  walkthrough:\n    runs-on: ubuntu-latest\n    timeout-minutes: 20\n    steps:\n      - uses: actions/checkout@v4\n      - uses: actions/setup-python@v5\n        with: { python-version: \"3.10\" }\n      - run: bash setup_env.sh\n     "
+ },
+ "Q35": {
+  "state": "verified",
+  "derivation": "root LICENSE MIT; panel-v5 LICENSE+NOTICE present; specs licence/readme files: openai ['README.md'] (CC0 stated in README.md), constitution ['LICENSE', 'README.md'] (CC0 stated in LICENSE)",
+  "claims": [],
+  "command": "inspect specs/*/ licence and README files",
+  "wall_s": 0,
+  "output": ""
+ },
+ "Q42": {
+  "state": "verified",
+  "derivation": "5 relative links, missing: []; 6 external links not checked (no network)",
+  "claims": [],
+  "command": "parse README links",
+  "wall_s": 0,
+  "output": ""
+ },
+ "Q46": {
+  "state": "verified",
+  "derivation": "network-module mentions per file: none",
+  "claims": [],
+  "command": "static grep",
+  "wall_s": 0,
+  "output": ""
+ },
+ "Q48": {
+  "state": "contested",
+  "derivation": "star-marked heading lines: HANDOFF_CURRENT [1]; HANDOFF [3, 99, 131, 955, 1142] \u2014 'the top starred block' is unique in arc 2 but arc 1 has 5 star-marked heading blocks; 'self-marked' below is not mechanically decidable",
+  "claims": [],
+  "command": "read handoffs",
+  "wall_s": 0,
+  "output": ""
+ },
+ "Q49": {
+  "state": "verified",
+  "derivation": "[('engine/', True), ('specs/', True), ('data/', True), ('semi-formal-experiment/', True), ('walkthrough/', True), ('ARTIFACTS.md', True), ('LEDGER.md', True), ('ARC2_HANDOFF.md', True)]",
+  "claims": [],
+  "command": "os.path",
+  "wall_s": 0,
+  "output": ""
+ },
+ "H15": {
+  "state": "contradicted",
+  "derivation": "25 backticked paths; prefixes defined in ARTIFACTS.md: {}; missing at pin after expansion: ['BP/CALCULUS_RUNBOOK.md', 'BP/ERROR_CALCULUS.md', 'BP/HANDOFF_CURRENT.md', 'BP/ITERATION_NOTES.md', 'BP/L1L2_ADVERSARIAL_REVIEW.md', 'BP/L1L2_REVIEW_DISPOSITION.md', 'BP/README.md', 'BP/RETRANS_REVIEW_DISPOSITION.md', 'BP/relevance_by_act.py', 'BP/satisfiability_census.py']",
+  "claims": [],
+  "command": "parse ARTIFACTS.md with its own prefix definitions",
+  "wall_s": 0,
+  "output": ""
+ }
+}
