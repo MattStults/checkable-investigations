@@ -31,7 +31,7 @@ stance             the SPAN'S OWN stance toward the value, one of:
                    (never a judgment about other spans; see refs)
 refs               list, possibly empty, of {"rel": one of
                      supersedes restates flags_unsourced strikes withdraws
-                     contradicts re_derives amends quarantines,
+                     contradicts re_derives amends quarantines forbids_citation,
                     "target_text": the words the span uses to name the thing
                      it refers to, copied verbatim,
                     "target_id": null (filled by checker/resolve_links.py, never
@@ -55,7 +55,7 @@ translator         {"model": string, "brief_version": string, "glossary_version"
 notes              free text (may be empty)
 ```
 
-Event types: annotation (a span that speaks about another value's standing), cycle_close, iteration_close, adversarial_review, prediction_freeze,
+Event types: annotation (a span that speaks about another value's standing), trigger (a registered condition firing), cycle_close, iteration_close, adversarial_review, prediction_freeze,
 measurement, ledger_entry, erratum, withdrawal, seat_dispatch, certification_run,
 registration, commit, prune, redaction, engine_failure, cove, ruling, hunk.
 

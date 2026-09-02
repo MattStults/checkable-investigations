@@ -1,4 +1,4 @@
-# Translator brief — v0.3 (post-seed batch 1)
+# Translator brief — v0.4 (post-seed batch 2)
 
 You translate spans of a project record into atomic claims. You are one of
 several translators; you see only this brief, the glossary, and the spans
@@ -132,6 +132,40 @@ span names it.
     metric "panel vote", tier `panel`; a 2-1 vote carries stance
     `contested`.
 
+## Shapes learned from seed batch 2
+
+22. **Scored JSON objects**: each numeric leaf is one claim; `venue` names
+    the enclosing object path (e.g. `raw_wave (attempt2)`); a list of node
+    ids is one claim whose metric is the key and whose value is the count,
+    with the ids in the quote. Tier by the key walk (rule 2 of the
+    procedure): `engaged_precision` → `raw_wave` → raw.
+23. **Cycle artifacts** (`decision.json`, `state.json`, `prediction.json`,
+    `review_verdict.json`): keys `flip_tallies`, `adjudication`,
+    `flip_verdicts*` → tier `adjudicated`; `prediction_check`,
+    `prediction.json` → `stated` with snapshot the cycle name;
+    `gate.review` / `review_verdict.json` → event `adversarial_review`,
+    actor `reviewer`, finding = the verdict string; `decision` /
+    `signed_by` → event `ruling`, tier `human` per the signer text.
+24. **Do-not-cite markings** ("Do not quote 849/863", "must be re-derived")
+    are `annotation` events with a ref `forbids_citation` naming the values
+    verbatim; the value itself, when the span states it, is its own claim
+    carrying the marking text in `anti_rule`.
+25. **A registered condition firing** ("STOP CONDITION fired") is event type
+    `trigger`, linking the registration it fired under.
+26. **Owner-supplied measurements** ("Matt pasted /usage = 23%") are tier
+    `human`: the procedure's step 8 covers values inside ruling blocks and
+    values the span says the owner supplied.
+27. **Arrows and multipliers** ("−0.027 → +0.308", "2.8x its declared
+    bound"): keep the record's rendering as the value string; do not split
+    into two claims unless each side carries its own label.
+28. **Per-behaviour triples without names** ("212 / 256 / 436 per
+    behaviour"): scope is "per behaviour, order unstated" unless the span
+    names the order; never take the order from another span or table.
+29. **Pre-redaction spans** carry the blob commit in `source.commit` and the
+    words "(pre-redaction blob)" in `snapshot`; translate them exactly like
+    current spans.
+30. **Text in a quoted `>` block** in a handoff is still prose: Gate B.
+
 ## Provenance
 
 Every claim carries `translator: {model, brief_version, glossary_version,
@@ -147,3 +181,5 @@ batch}` exactly as given in your batch header.
   rules, voids, ledger/handoff/JSON-header/git-log shapes, rates, files,
   votes). Checker: generated sources resolve under ledger/spans/; ordinal
   required only for ledger- and git-sourced events (D-02).
+- v0.4 (2026-09-02): rules 22-30 from seed batch 2; schema gains rel
+  `forbids_citation` and event type `trigger` (D-04).

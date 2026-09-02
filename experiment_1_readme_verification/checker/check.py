@@ -21,9 +21,9 @@ THRESH = {"in_sample", "label_free", "LOBO", "oracle", "training_folds", "n/a", 
 UNIV = {"published", "true", "n/a", "unstated"}
 REGION = {"starred_block", "archive_block", "body", "n/a"}
 SUP = {"current", "superseded", "struck", "contested", "unknown"}
-RELS = {"supersedes", "restates", "flags_unsourced", "strikes", "withdraws", "contradicts", "re_derives", "amends", "quarantines"}
+RELS = {"supersedes", "restates", "flags_unsourced", "strikes", "withdraws", "contradicts", "re_derives", "amends", "quarantines", "forbids_citation"}
 KINDS = {"value", "rate", "event", "existence"}
-ETYPES = {"annotation", "cycle_close", "iteration_close", "adversarial_review", "prediction_freeze", "measurement",
+ETYPES = {"annotation", "trigger", "cycle_close", "iteration_close", "adversarial_review", "prediction_freeze", "measurement",
           "ledger_entry", "erratum", "withdrawal", "seat_dispatch", "certification_run", "registration",
           "commit", "prune", "redaction", "engine_failure", "cove", "ruling", "hunk"}
 ACTORS = {"owner", "driver", "seat", "panel", "reviewer", "script", "unstated"}
