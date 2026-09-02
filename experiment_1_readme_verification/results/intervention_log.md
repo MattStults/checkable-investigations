@@ -102,7 +102,14 @@ Operationalised: checker rule — erratum.n, when non-null, must appear in
 the quote as "#n" or "erratum n" (check.py, tagged I-01). No brief change
 (rule 9 already says n is the number the span gives).
 
-Recurrence: (tracked below as batches complete)
+Refinement (same day): the rule first required the number in the QUOTE;
+an Opus claim from entry 0037 (heading 'ERRATUM #20') quoting a
+sub-sentence without '#20' was rejected. Rule now requires the number as
+'#n' / 'erratum n' within the claim's cited source lines. The Sonnet
+count case (entry 0000, no '#2' anywhere in the entry) still fails.
+
+Recurrence: batch_003 opus — 0 true recurrences (the one hit was the
+over-narrow rule, not the defect class).
 
 ### Observations not (yet) interventions
 

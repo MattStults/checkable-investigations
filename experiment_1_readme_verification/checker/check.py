@@ -156,8 +156,12 @@ def check_claim(c, repo, pin, ids):
                     fails.append("event.erratum must be null or {n, class}")
                 elif ev["erratum"] is not None and ev["erratum"].get("n") is not None:
                     nn = str(ev["erratum"]["n"])
-                    if not re.search(r"(?i)(erratum\s*#?\s*|#)" + re.escape(nn) + r"\b", norm(c["quote"])):
-                        fails.append(f"erratum.n={nn} does not appear as an erratum number in the quote (I-01)")
+                    src_ = c["source"]; commit_ = pin if src_["commit"] == "pin" else src_["commit"]
+                    text_ = blob(repo, commit_, src_["path"]) or ""
+                    m_ = re.match(r"^(\d+)-(\d+)$", str(src_["lines"]))
+                    window_ = norm("\n".join(text_.split("\n")[int(m_.group(1)) - 1:int(m_.group(2))])) if m_ else norm(c["quote"])
+                    if not re.search(r"(?i)(erratum\s*#?\s*|#)" + re.escape(nn) + r"\b", window_):
+                        fails.append(f"erratum.n={nn} does not appear as an erratum number within the cited source lines (I-01)")
                 if ev["caught_by"] is not None and (not isinstance(ev["caught_by"], dict) or "set" not in ev["caught_by"] or "inferred" not in ev["caught_by"]):
                     fails.append("event.caught_by must be null or {set, inferred}")
                 p_ = c["source"]["path"]

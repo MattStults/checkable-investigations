@@ -13,3 +13,6 @@
 {"file": "batch_008_opus", "model": "opus", "brief_version": "0.5", "batch": "batch_008", "claims": 138, "accepted": 138, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T11:07:44", "check_seconds": 0.2}
 {"file": "batch_007_opus", "model": "opus", "brief_version": "0.5", "batch": "batch_007", "claims": 178, "accepted": 178, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T11:07:47", "check_seconds": 0.2}
 {"file": "batch_004_opus", "model": "opus", "brief_version": "0.4", "batch": "batch_004", "claims": 60, "accepted": 60, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T11:07:53", "check_seconds": 0.1}
+{"file": "batch_009_opus", "model": "opus", "brief_version": "0.5", "batch": "batch_009", "claims": 179, "accepted": 179, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T11:09:03", "check_seconds": 0.3}
+{"file": "batch_003_opus", "model": "opus", "brief_version": "0.4", "batch": "batch_003", "claims": 244, "accepted": 243, "rejected": 1, "fail_reasons": {"erratum.n=20 does not appear as an erratum number in the quote (I-01)": 1}, "checked_at": "2026-09-02T11:10:15", "check_seconds": 1.5}
+{"file": "batch_003_opus", "model": "opus", "brief_version": "0.4", "batch": "batch_003", "claims": 244, "accepted": 244, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T11:10:39", "check_seconds": 0.1}
