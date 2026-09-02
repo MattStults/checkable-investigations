@@ -954,15 +954,12 @@
   ]
  },
  "H15": {
-  "state": "live_run_pending",
-  "derivation": "23 routing-table entries translated; path existence is a filesystem check",
-  "claims": [
-   "L330171",
-   "L330172",
-   "L330173",
-   "L330174",
-   "L330175"
-  ]
+  "state": "verified",
+  "derivation": "25 backticked paths; BP/ abbreviates walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/; missing at pin after expansion: []",
+  "claims": [],
+  "command": "parse ARTIFACTS.md with its own BP/ definition",
+  "wall_s": 0,
+  "output": ""
  },
  "V01": {
   "state": "verified",

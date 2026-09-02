@@ -289,6 +289,7 @@ def main():
         fn = HYP.get(h["id"])
         if fn:
             st, d, ids = fn(claims); res[h["id"]] = {"state": st, "derivation": d, "claims": ids}
+            if st == "live_run_pending" and h["id"] in live: res[h["id"]] = live[h["id"]]
         else:
             res[h["id"]] = {"state": "unverifiable", "derivation": "no hypothesis function (H04: seat inputs not translated as a dimension)", "claims": []}
     for v in inv["verdict_nodes"]:
