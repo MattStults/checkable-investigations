@@ -90,3 +90,10 @@ pre-classifies what the redaction hunks removed; cites corrected
 CALCULUS_RUNBOOK.md:128-129); a denominator route added for the criterion
 standing entry. The PRUNED.md restore sentence is now quoted verbatim rather
 than characterised.
+
+## FROZEN — owner sign-off 2026-09-02
+
+Frozen at this commit after three clean-context reviews. No entry changes
+after this point. Additions go under `amendments` in `glossary.json` as
+dated, numbered entries recorded in `results/intervention_log.md`, each
+gated by `leakscan.py` and `render.py`.
