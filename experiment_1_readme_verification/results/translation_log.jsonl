@@ -66,3 +66,7 @@
 {"file": "retry_c2_opus", "model": "opus", "brief_version": "0.4", "batch": "retry_c2", "claims": 259, "accepted": 259, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T11:42:19", "check_seconds": 0.4}
 {"file": "retry_c3_opus", "model": "opus", "brief_version": "0.4", "batch": "retry_c3", "claims": 271, "accepted": 271, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T11:42:20", "check_seconds": 0.7}
 {"file": "retry_c4_opus", "model": "opus", "brief_version": "0.4", "batch": "retry_c4", "claims": 223, "accepted": 223, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T11:42:20", "check_seconds": 0.4}
+{"file": "retry_c1_opus", "model": "opus", "brief_version": "0.4", "batch": "retry_c1", "claims": 276, "accepted": 276, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T11:42:35", "check_seconds": 0.5}
+{"file": "retry_c5_opus", "model": "opus", "brief_version": "0.4", "batch": "retry_c5", "claims": 220, "accepted": 220, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T11:42:35", "check_seconds": 0.4}
+{"file": "batch_044_opus", "model": "opus", "brief_version": "0.5", "batch": "batch_044", "claims": 104, "accepted": 104, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T11:42:35", "check_seconds": 0.3}
+{"file": "batch_045_opus", "model": "opus", "brief_version": "0.5", "batch": "batch_045", "claims": 109, "accepted": 109, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T11:42:36", "check_seconds": 0.1}
