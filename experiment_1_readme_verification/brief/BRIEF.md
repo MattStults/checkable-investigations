@@ -1,4 +1,4 @@
-# Translator brief — v0.2 (draft, pre-seed)
+# Translator brief — v0.3 (post-seed batch 1)
 
 You translate spans of a project record into atomic claims. You are one of
 several translators; you see only this brief, the glossary, and the spans
@@ -95,6 +95,43 @@ span names it.
     both as separate claims, each with stance `contested` and a ref
     `contradicts` naming the other in the span's own words.
 
+## Granularity and shape (learned from seed batch 1)
+
+12. **One claim per assertion, not per span.** A ledger entry yields one
+    `ledger_entry` event for its heading plus one claim per bullet-level
+    assertion: each number, each rule, each thing that happened. A bullet
+    with a count and two node ids yields three claims.
+13. **Standing rules and conventions** ("EVERY step ... appends a dated
+    entry", "NEW BINDING RULE: ...", "highest-precedence truth") are events of
+    type `registration`, actor `unstated` unless the span names who ruled.
+14. **Voided** dispatches, seats, measurements → event type `withdrawal`
+    with `finding` beginning "voided:".
+15. **Ledger entries**: `ts` = the heading date; `ordinal` = the entry
+    number; `session` = "entry NNNN". Sub-events inside an entry inherit the
+    entry's ts and ordinal unless the span gives another date.
+16. **Handoff starred block**: values in the first star-marked heading block carry
+    `provenance_region` = `starred_block`; below it, `archive_block`;
+    everything else `body`. Document-sourced events carry `ordinal` null.
+17. **JSON header strings** (the `"_"` field of a scored file) are prose whose
+    named scored artifact is the file itself: proceed past Gate B with the
+    label the header attaches to the value.
+18. **Git log spans**: `event.type` `commit`, `ordinal` = the `ordinal` line,
+    `ts` = the date line, `session` = "commit <8 hex>". `actor`: the
+    `author` line is `owner`; a `Co-Authored-By` model trailer adds `driver`
+    with `model_tier` = the trailer's model name verbatim. Events named in
+    the subject or body (a cycle close, a review verdict, a prediction
+    score) are separate claims linking the full hash.
+19. **Rates**: `value` = numerator/denominator rounded to at most 4
+    decimals; write the fraction the span writes in `population` or
+    `notes` if it is not already the numerator/denominator.
+20. **Files named in a span** ("GEN_BLOCK1_SCORED.json") are not existence
+    claims by themselves; put them in `event.links` or `snapshot`. Make an
+    `existence` claim only when the span asserts a file, field, or marker
+    exists or does not.
+21. **Node ids with votes** ("l3954_4251_n038 2-1") are `value` claims,
+    metric "panel vote", tier `panel`; a 2-1 vote carries stance
+    `contested`.
+
 ## Provenance
 
 Every claim carries `translator: {model, brief_version, glossary_version,
@@ -106,3 +143,7 @@ batch}` exactly as given in your batch header.
   translator.
 - v0.2 (2026-09-02): stance + refs replace the single supersession link
   (design change D-01, see results/intervention_log.md).
+- v0.3 (2026-09-02): rules 12-21 from seed batch 1 (granularity, standing
+  rules, voids, ledger/handoff/JSON-header/git-log shapes, rates, files,
+  votes). Checker: generated sources resolve under ledger/spans/; ordinal
+  required only for ledger- and git-sourced events (D-02).

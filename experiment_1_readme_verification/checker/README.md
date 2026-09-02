@@ -17,6 +17,11 @@ Rules (ledger mode):
    `provenance_region`, `supersession.status`, `event.type`, `event.actor`,
    `event.context_origin` must be in their enums (see `SCHEMA.md`). Free text
    in an enum field fails.
+4a. **Ordinals.** Events sourced from the ledger or the generated git log
+   carry an ordinal (entry number / commit ordinal); document-sourced events
+   carry null and take their order from the introducing commit at query time.
+4b. **Generated sources.** Paths beginning `GENERATED:` resolve under
+   `ledger/spans/` (committed), not in the target repo.
 4. **Declared dimensions present.** Every schema field present; `snapshot`,
    `scope`, `metric`, `venue`, `population` non-empty (`unstated`/`n/a`
    allowed). Event claims carry every event attribute the inventory declared

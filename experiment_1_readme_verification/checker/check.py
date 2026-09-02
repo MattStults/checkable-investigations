@@ -33,10 +33,15 @@ REQ = ["id", "kind", "source", "quote", "metric", "value", "numerator", "denomin
 EREQ = ["type", "ts", "ordinal", "actor", "model_tier", "session", "context_origin", "links", "finding",
         "kind", "erratum", "recurrence_of", "caught_by", "asserted_transfer"]
 
+GENERATED_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "ledger", "spans")
 _blob = {}
 def blob(repo, commit, path):
     key = (commit, path)
     if key not in _blob:
+        if path.startswith("GENERATED:"):
+            fp = os.path.join(GENERATED_DIR, path[len("GENERATED:"):])
+            _blob[key] = open(fp).read() if os.path.exists(fp) else None
+            return _blob[key]
         try:
             _blob[key] = subprocess.check_output(["git", "-C", repo, "show", f"{commit}:{path}"],
                                                  stderr=subprocess.DEVNULL).decode("utf-8", "replace")
@@ -151,8 +156,10 @@ def check_claim(c, repo, pin, ids):
                     fails.append("event.erratum must be null or {n, class}")
                 if ev["caught_by"] is not None and (not isinstance(ev["caught_by"], dict) or "set" not in ev["caught_by"] or "inferred" not in ev["caught_by"]):
                     fails.append("event.caught_by must be null or {set, inferred}")
-                if ev["type"] in ("ledger_entry", "erratum", "withdrawal", "ruling", "commit", "hunk") and ev["ordinal"] is None:
-                    fails.append(f"event.type {ev['type']} requires an ordinal (entry number or commit ordinal)")
+                p_ = c["source"]["path"]
+                ordered_source = (p_.endswith("ITERATION_NOTES.md") and not str(c["source"]["lines"]).startswith("1-")) or p_.startswith("GENERATED:")
+                if ordered_source and ev["ordinal"] is None:
+                    fails.append("events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)")
     elif ev is not None:
         fails.append("non-event kinds must have event: null")
     tr = c["translator"]
