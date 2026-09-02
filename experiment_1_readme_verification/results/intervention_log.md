@@ -282,3 +282,18 @@ Recurrence: (tracked)
 ## Compactions
 
 (none recorded yet)
+
+### Process event — 2026-09-02 — query-logic defects found by reading the arm comparison row by row
+
+Not ledger edits; analysis code only. Q35 and H15 live-run checks had been
+reported as fixed but the file was never changed (Q35 looked only for LICENSE
+files; H15 treated `BP/` literally) — fixed now, both verify. H10 verified
+on the mere mention of "sign" in PRUNED.md claims — now folds the Q32
+absence-by-search, contradicted. Q27 accepted any coverage=1.0 without the
+population the README binds it to — now requires it, contested (only the
+39-node census reaches 1.0). Verdict nodes silently ignored providers no
+query evaluates (residue items), so V01 read verified with need (b)
+unaddressed — unevaluated providers now make the node contested. Live-run
+conflict to adjudicate: `setup_env.sh --check` exits 0 here (Q40/Q43) where
+the baseline reports exit 1 with two failing self-tests; pytest gives
+2267 passed / 4 skipped here vs the baseline's 2,270 / 1 (Q24).
