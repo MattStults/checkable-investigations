@@ -21,7 +21,7 @@ def main():
     text = open(os.path.join(HERE, "intervention_log.md")).read()
     interventions = re.findall(r"### (I-\d+) — [\d-]+ — (.+)", text)
     designs = re.findall(r"### (D-\d+) — [\d-]+ — (.+)", text)
-    recur = {i: ("recurr" in (text.split(i + " —")[1].split("###")[0]).lower()) for i, _ in interventions}
+    recur = {i: bool(re.search(r"genuine recurrence|— 1 hit|1 hit:", text.split(i + " —")[1].split("###")[0])) for i, _ in interventions}
     caught_by = {}
     for i, _ in interventions:
         seg = text.split(i + " —")[1].split("###")[0]
