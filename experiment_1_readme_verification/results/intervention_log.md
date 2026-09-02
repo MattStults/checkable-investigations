@@ -124,7 +124,10 @@ addendum" numbered 5 is an erratum number is a reading the rule does not
 admit; the claim is retranslated with n null and the span's words in
 class. Counted as a recurrence of the class (a nearby number taken as n)
 after the checker rule existed; the rule caught it, so no human
-question was needed.
+question was needed. batch_057 (Sonnet, git log) — 1 more hit ('my two
+misreported numbers' → n=2), caught by the rule; retranslated. The class
+(a nearby count read as an erratum number) recurs at low rate in both
+tiers and is fully mechanically caught; no further amendment.
 
 ### I-02 — 2026-09-02 — wave verdict tiered panel by the key walk
 
