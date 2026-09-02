@@ -4,7 +4,7 @@ state (accepted outputs minus superseded ids, retries overriding), find spans
 whose claims show the defect class the amendment fixes, and write a whole-span
 retry batch. Selectors are regex-on-span-text + predicate-on-claims; no
 content judgment. Usage: reselect.py OUT_BATCH_NAME"""
-import glob, json, os, re, sys
+import glob, json, os, re, subprocess, sys
 HERE = os.path.dirname(os.path.abspath(__file__)); X = os.path.dirname(HERE); OUT = os.path.join(X, "ledger/out")
 def current_claims():
     superseded = set()
@@ -41,7 +41,10 @@ def main():
         hits = [k for k, (rx, pred) in SELECTORS.items() if rx.search(s["text"]) and pred(cs)]
         if hits:
             sel.append(s); sup.append({"span": s["id"], "selectors": hits, "ids": [c["id"] for c in cs]})
-    hdr = json.load(open(sorted(glob.glob(os.path.join(X, "ledger/batches/batch_1*.json")))[-1]))["header"]
+    brief_v = [l for l in open(os.path.join(X, "brief/BRIEF.md")) if l.startswith("# Translator brief")][0].split("v")[1].split()[0]
+    gv = "frozen " + subprocess.check_output(["git", "-C", os.path.dirname(X), "log", "-1", "--format=%h", "--", "experiment_1_readme_verification/glossary/glossary.json"], text=True).strip()
+    amend = json.load(open(os.path.join(X, "glossary/glossary.json"))).get("amendments", [])
+    hdr = {"brief_version": brief_v, "glossary_version": gv + (" +" + amend[-1]["id"] if amend else "")}
     json.dump({"header": {**hdr, "batch": name, "retranslation_of": "reselect.py over current ledger state", "superseded_claims": sup}, "spans": sel},
               open(os.path.join(X, "ledger/batches", name + ".json"), "w"), indent=1, ensure_ascii=False)
     print(json.dumps({"spans": len(sel), "claims_superseded": sum(len(x["ids"]) for x in sup), "by_selector": {k: sum(1 for x in sup if k in x["selectors"]) for k in SELECTORS}}))
