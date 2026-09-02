@@ -1,0 +1,1115 @@
+{
+  "pin": {
+    "repo": "https://github.com/MattStults/semi-formal-document-analysis",
+    "commit": "48e66ce04a4d9f06771c42f89cb37b075583c5f6",
+    "commit_date": "2026-09-01 17:44:18 -0700",
+    "file": "README.md",
+    "note": "Pinned by the orchestrator at inventory time; never moved. The README under test is README.md at this commit."
+  },
+  "dimension_vocabulary": {
+    "metric": "Named quantity (see glossary/ once frozen). Examples: match_or_defensible_rate, raw_match_rate, engaged_precision, mcc, node_count, clause_count, passage_count, join_rate, test_count, entry_count, trial_count.",
+    "tier": "How the number was produced. One of: raw (mechanical string/ID match, no judgment), panel (frontier-judge panel ruling), adjudicated (seat ruling folded with panel/human rulings), human (owner ruling), live_run (produced by running a committed script now), git (from commit metadata/history), filesystem (existence/shape of a committed file), stated (a number stated in a document with no re-derivation available).",
+    "snapshot": "Which point in the record: an attempt index, an iteration/entry number, a file version, a commit hash, or a date. Per-attempt series values are never pooled; a pooled value carries snapshot=pooled plus the set it pools.",
+    "denominator": "For every rate or fraction: the count the rate is over and what population it names.",
+    "scope": "Which behaviour(s), spec, universe, or directory the value is about.",
+    "supersession": "Whether a later artifact in the record replaces this value, and which."
+  },
+  "event_predicates": {
+    "event(id, type, ts, source, quote)": "An event recorded in the record. type is one of: cycle_close, iteration_close, adversarial_review, prediction_freeze, measurement, ledger_entry, erratum, withdrawal, seat_dispatch, certification_run, registration, commit, prune, redaction, engine_failure.",
+    "links(a, b)": "Event a refers to b by name, id, hash, or entry number in its recorded text.",
+    "ts(e)": "The timestamp the record gives the event (a date in an entry, or a commit date).",
+    "inputs(d)": "For a seat_dispatch, the set of materials the record says the seat received.",
+    "finding(r)": "For a review, the recorded top-line finding (e.g. noise, unsupported, does_not_license, upheld).",
+    "kind(f)": "For an engine_failure, refusal or wrong_answer.",
+    "status(b)": "For a behaviour, tuned or untuned in the arc-2 campaign, as the record states."
+  },
+  "claims": [
+    {
+      "id": "Q01",
+      "kind": "quantitative",
+      "sentence": "On the behaviors tuned during the arc-2 campaign, in-sample match-or-defensible rates against the panel reached 0.94–0.96, comparable to the panel's own internal agreement (measured on truth the loop iterated against; raw-match certification ran to completion on the three tuned behaviors, and the registered match-or-defensible pass never ran).",
+      "values": {
+        "match_or_defensible_rate_range": [
+          0.94,
+          0.96
+        ]
+      },
+      "dimensions": {
+        "metric": "match_or_defensible_rate",
+        "tier": "panel or adjudicated (in-sample: measured on truth the loop iterated against)",
+        "snapshot": "per tuned behaviour, final attempt of the arc-2 campaign",
+        "denominator": "per-behaviour engaged set size (needed)",
+        "scope": "the tuned arc-2 behaviours (README says three)",
+        "supersession": "must be the latest measurement per behaviour"
+      }
+    },
+    {
+      "id": "Q02",
+      "kind": "quantitative",
+      "sentence": "On the behaviors tuned during the arc-2 campaign, in-sample match-or-defensible rates against the panel reached 0.94–0.96, comparable to the panel's own internal agreement",
+      "values": {
+        "panel_internal_agreement": "unstated; must be comparable to 0.94-0.96"
+      },
+      "dimensions": {
+        "metric": "panel_internal_agreement (inter-judge)",
+        "tier": "panel",
+        "snapshot": "whichever the record cites as the panel's agreement figure",
+        "denominator": "pairs or nodes compared (needed)",
+        "scope": "the panel used for arc-2 truth",
+        "supersession": "latest"
+      }
+    },
+    {
+      "id": "Q03",
+      "kind": "quantitative",
+      "sentence": "raw-match certification ran to completion on the three tuned behaviors",
+      "values": {
+        "tuned_behaviour_count": 3,
+        "certification_completed_each": true
+      },
+      "dimensions": {
+        "metric": "count of tuned behaviours; per-behaviour certification_run status",
+        "tier": "raw",
+        "snapshot": "the certification run per behaviour",
+        "denominator": "n/a",
+        "scope": "arc-2 tuned behaviours (names needed)",
+        "supersession": "n/a"
+      }
+    },
+    {
+      "id": "Q04",
+      "kind": "quantitative",
+      "sentence": "the registered match-or-defensible pass never ran",
+      "values": {
+        "registration_exists": true,
+        "run_exists": false
+      },
+      "dimensions": {
+        "metric": "event presence/absence",
+        "tier": "git and ledger",
+        "snapshot": "whole record through the pin",
+        "denominator": "n/a",
+        "scope": "match-or-defensible certification pass",
+        "supersession": "n/a"
+      }
+    },
+    {
+      "id": "Q05",
+      "kind": "quantitative",
+      "sentence": "# 2. the 773-node document graph, every span checked against the source",
+      "values": {
+        "node_count": 773
+      },
+      "dimensions": {
+        "metric": "node_count",
+        "tier": "live_run (graph_check.py on runs/ds7/root_graph.production.json) and filesystem",
+        "snapshot": "runs/ds7/root_graph.production.json at the pin",
+        "denominator": "n/a",
+        "scope": "graph_v2 production root graph",
+        "supersession": "n/a"
+      }
+    },
+    {
+      "id": "Q06",
+      "kind": "quantitative",
+      "sentence": "# 3. the measurement instrument, and its recall ceiling (98.4% join, misses printed by name)",
+      "values": {
+        "join_rate": 0.984
+      },
+      "dimensions": {
+        "metric": "join_rate",
+        "tier": "live_run (measure_join.py)",
+        "snapshot": "committed inputs at the pin",
+        "denominator": "joined / total (both counts needed)",
+        "scope": "semi-formal-experiment measurement instrument",
+        "supersession": "n/a"
+      }
+    },
+    {
+      "id": "Q07",
+      "kind": "quantitative",
+      "sentence": "(`machine/check_model.py`, the companion source-check for step 5, also runs clean — all four checks pass.)",
+      "values": {
+        "check_count": 4,
+        "all_pass": true
+      },
+      "dimensions": {
+        "metric": "check count and pass status",
+        "tier": "live_run",
+        "snapshot": "pin",
+        "denominator": "4",
+        "scope": "semi-formal-experiment/machine/check_model.py",
+        "supersession": "n/a"
+      }
+    },
+    {
+      "id": "Q08",
+      "kind": "quantitative",
+      "sentence": "Constitution pilot (616 clauses, 16-rule ASP fragment, conflict enumeration, expressibility triage)",
+      "values": {
+        "clause_count": 616
+      },
+      "dimensions": {
+        "metric": "clause_count",
+        "tier": "filesystem or live_run",
+        "snapshot": "the clause inventory artifact the record names as the pilot's",
+        "denominator": "n/a",
+        "scope": "claude-constitution clause inventory, arc 1",
+        "supersession": "later inventories may differ; record which is the pilot's"
+      }
+    },
+    {
+      "id": "Q09",
+      "kind": "quantitative",
+      "sentence": "Constitution pilot (616 clauses, 16-rule ASP fragment, conflict enumeration, expressibility triage)",
+      "values": {
+        "rule_count": 16
+      },
+      "dimensions": {
+        "metric": "rule_count",
+        "tier": "filesystem",
+        "snapshot": "the ASP fragment artifact",
+        "denominator": "n/a",
+        "scope": "arc-1 constitution ASP fragment",
+        "supersession": "n/a"
+      }
+    },
+    {
+      "id": "Q10",
+      "kind": "quantitative",
+      "sentence": "the Model Spec relevance benchmark against a frontier-judge panel on the full 589-passage universe",
+      "values": {
+        "passage_count": 589
+      },
+      "dimensions": {
+        "metric": "passage_count",
+        "tier": "filesystem or live_run (benchmark.py)",
+        "snapshot": "the universe file benchmark.py reads at the pin",
+        "denominator": "n/a",
+        "scope": "Model Spec passage universe, arc 1",
+        "supersession": "n/a"
+      }
+    },
+    {
+      "id": "Q11",
+      "kind": "quantitative",
+      "sentence": "Document-graph translation (773 nodes), panel-adjudicated repair iterations, minted-dimension experiments, the query-class ontology study, and the adversarial reviews that ended the headline claims.",
+      "values": {
+        "node_count": 773
+      },
+      "dimensions": {
+        "metric": "node_count",
+        "tier": "same as Q05",
+        "snapshot": "same as Q05",
+        "denominator": "n/a",
+        "scope": "same as Q05",
+        "supersession": "n/a"
+      },
+      "note": "Same value as Q05, second sentence."
+    },
+    {
+      "id": "Q12",
+      "kind": "quantitative",
+      "sentence": "Arc-1 benchmark (Model Spec, 589-passage universe, MCC): the tool reached +0.32 in-sample (+0.278 label-free)",
+      "values": {
+        "mcc_tool_in_sample": 0.32
+      },
+      "dimensions": {
+        "metric": "mcc",
+        "tier": "live_run (benchmark.py --tool) or stated",
+        "snapshot": "the published arc-1 benchmark run",
+        "denominator": "confusion counts over 589 passages x behaviours",
+        "scope": "tool, in-sample (tuned threshold), Model Spec",
+        "supersession": "the README's own 'true vs published universe' remark: record which universe"
+      }
+    },
+    {
+      "id": "Q13",
+      "kind": "quantitative",
+      "sentence": "the tool reached +0.32 in-sample (+0.278 label-free)",
+      "values": {
+        "mcc_tool_label_free": 0.278
+      },
+      "dimensions": {
+        "metric": "mcc",
+        "tier": "live_run or stated",
+        "snapshot": "the label-free variant of the arc-1 benchmark",
+        "denominator": "as Q12",
+        "scope": "tool, label-free threshold",
+        "supersession": "as Q12"
+      }
+    },
+    {
+      "id": "Q14",
+      "kind": "quantitative",
+      "sentence": "the frontier judges' leave-one-out mean was +0.555",
+      "values": {
+        "mcc_judges_loo_mean": 0.555
+      },
+      "dimensions": {
+        "metric": "mcc, leave-one-out mean over judges",
+        "tier": "panel",
+        "snapshot": "arc-1 benchmark",
+        "denominator": "number of judges averaged (needed)",
+        "scope": "frontier judge panel, Model Spec universe",
+        "supersession": "n/a"
+      }
+    },
+    {
+      "id": "Q15",
+      "kind": "quantitative",
+      "sentence": "the judges beat the tool in all nine behavior-gold cells at the judge's own false-positive rate",
+      "values": {
+        "cell_count": 9,
+        "judge_wins": 9
+      },
+      "dimensions": {
+        "metric": "per-cell comparison at matched false-positive rate",
+        "tier": "panel vs tool",
+        "snapshot": "arc-1 benchmark",
+        "denominator": "9 cells (behaviour x gold)",
+        "scope": "arc-1",
+        "supersession": "n/a"
+      }
+    },
+    {
+      "id": "Q16",
+      "kind": "quantitative",
+      "sentence": "Arc-2 repair loop (engaged precision, one behavior): 0.40 → 0.70 → 0.55 → 0.85 across four adjudicated attempts",
+      "values": {
+        "engaged_precision_series": [
+          0.4,
+          0.7,
+          0.55,
+          0.85
+        ],
+        "attempt_count": 4
+      },
+      "dimensions": {
+        "metric": "engaged_precision",
+        "tier": "adjudicated (README: 'adjudicated attempts')",
+        "snapshot": "per-attempt, attempts 1-4, never pooled",
+        "denominator": "engaged set size per attempt (needed for each)",
+        "scope": "one behaviour (name needed)",
+        "supersession": "each attempt supersedes the previous as 'current'; the series itself is the claim"
+      }
+    },
+    {
+      "id": "Q17",
+      "kind": "quantitative",
+      "sentence": "with the ledger's own honest headline being recall, not precision (23 of 40 declined passages were panel-relevant).",
+      "values": {
+        "numerator": 23,
+        "denominator": 40,
+        "rate": 0.575
+      },
+      "dimensions": {
+        "metric": "declined-set panel-relevant fraction (a recall-side miss rate)",
+        "tier": "panel",
+        "snapshot": "the attempt/entry the ledger records it in (needed)",
+        "denominator": "40 declined passages",
+        "scope": "same behaviour as Q16",
+        "supersession": "later declined-set measurements may exist; record"
+      }
+    },
+    {
+      "id": "Q18",
+      "kind": "quantitative",
+      "sentence": "The separability census (\"integration test passed\") — withdrawn in `bf0d4978`",
+      "values": {
+        "withdrawal_commit": "bf0d4978",
+        "withdrawn_item": "separability census / integration test"
+      },
+      "dimensions": {
+        "metric": "commit existence and content",
+        "tier": "git",
+        "snapshot": "bf0d4978",
+        "denominator": "n/a",
+        "scope": "arc-2",
+        "supersession": "n/a"
+      }
+    },
+    {
+      "id": "Q19",
+      "kind": "quantitative",
+      "sentence": "its pass condition was satisfiable by noise (random partition passed 299/300 trials)",
+      "values": {
+        "numerator": 299,
+        "denominator": 300
+      },
+      "dimensions": {
+        "metric": "random-partition null pass count",
+        "tier": "live_run or stated (re-derivation artifact needed)",
+        "snapshot": "the review or disposition that reports it",
+        "denominator": "300 trials",
+        "scope": "integration census null",
+        "supersession": "n/a"
+      }
+    },
+    {
+      "id": "Q20",
+      "kind": "quantitative",
+      "sentence": "relevance prediction over the representation ran at base rate.",
+      "values": {
+        "prediction_accuracy": "equal to base rate (values needed)"
+      },
+      "dimensions": {
+        "metric": "relevance-prediction accuracy vs base rate",
+        "tier": "stated or live_run",
+        "snapshot": "the review/disposition reporting it",
+        "denominator": "prediction set size (needed)",
+        "scope": "1-NN relevance prediction over the representation",
+        "supersession": "n/a"
+      }
+    },
+    {
+      "id": "Q21",
+      "kind": "quantitative",
+      "sentence": "The L1/L2 licensing experiments — withdrawn in `365d68b3`: DOES-NOT-LICENSE",
+      "values": {
+        "withdrawal_commit": "365d68b3",
+        "verdict": "DOES-NOT-LICENSE"
+      },
+      "dimensions": {
+        "metric": "commit existence and content",
+        "tier": "git",
+        "snapshot": "365d68b3",
+        "denominator": "n/a",
+        "scope": "L1/L2",
+        "supersession": "n/a"
+      }
+    },
+    {
+      "id": "Q22",
+      "kind": "quantitative",
+      "sentence": "one bar was already met by numbers indistinguishable from noise, the other had no null.",
+      "values": {
+        "L1_finding": "bar met by noise-level numbers",
+        "L2_finding": "no null"
+      },
+      "dimensions": {
+        "metric": "review findings per experiment",
+        "tier": "stated (review record)",
+        "snapshot": "the L1/L2 review",
+        "denominator": "n/a",
+        "scope": "L1 and L2 respectively (which is which must be recovered)",
+        "supersession": "n/a"
+      }
+    },
+    {
+      "id": "Q23",
+      "kind": "quantitative",
+      "sentence": "The query-class saturation claim — bounded in `1143a921` (erratum #20)",
+      "values": {
+        "commit": "1143a921",
+        "erratum_number": 20
+      },
+      "dimensions": {
+        "metric": "commit existence; erratum number and subject",
+        "tier": "git and ledger",
+        "snapshot": "1143a921; ledger entry 0037",
+        "denominator": "n/a",
+        "scope": "query-class study",
+        "supersession": "n/a"
+      }
+    },
+    {
+      "id": "Q24",
+      "kind": "quantitative",
+      "sentence": "# 2,270 passed, 1 skipped (4-10 min depending on machine; measured 2026-08-30)",
+      "values": {
+        "passed": 2270,
+        "skipped": 1,
+        "measured_date": "2026-08-30"
+      },
+      "dimensions": {
+        "metric": "test_count by outcome",
+        "tier": "live_run (pytest in semi-formal-experiment/) and stated",
+        "snapshot": "pin (live) vs 2026-08-30 (stated)",
+        "denominator": "2271 collected",
+        "scope": "arc-1 suite",
+        "supersession": "live run at the pin supersedes the stated date if they differ"
+      }
+    },
+    {
+      "id": "Q25",
+      "kind": "quantitative",
+      "sentence": "the append-only ledger, entries 0000–0043",
+      "values": {
+        "first_entry": "0000",
+        "last_entry": "0043",
+        "entry_count": 44
+      },
+      "dimensions": {
+        "metric": "entry_count",
+        "tier": "filesystem",
+        "snapshot": "ITERATION_NOTES.md at pin",
+        "denominator": "n/a",
+        "scope": "arc-2 ledger",
+        "supersession": "n/a"
+      }
+    },
+    {
+      "id": "Q26",
+      "kind": "quantitative",
+      "sentence": "an ontology open-coded from 100 behavior definitions covered every sampled span",
+      "values": {
+        "definition_count": 100
+      },
+      "dimensions": {
+        "metric": "count of behaviour definitions coded",
+        "tier": "filesystem or stated",
+        "snapshot": "the query-class study's input set",
+        "denominator": "n/a",
+        "scope": "query-class ontology study",
+        "supersession": "n/a"
+      }
+    },
+    {
+      "id": "Q27",
+      "kind": "quantitative",
+      "sentence": "an ontology open-coded from 100 behavior definitions covered every sampled span",
+      "values": {
+        "coverage": 1.0
+      },
+      "dimensions": {
+        "metric": "span coverage (covered / sampled)",
+        "tier": "adjudicated or stated",
+        "snapshot": "the coverage measurement the record reports",
+        "denominator": "sampled span count (needed)",
+        "scope": "query-class ontology",
+        "supersession": "bf0d4978's message reports '39/39 blind coverage'; record which measurement the README means"
+      }
+    },
+    {
+      "id": "Q28",
+      "kind": "quantitative",
+      "sentence": "but failed every separability test once a matched random-partition null was run against it.",
+      "values": {
+        "separability_tests_passed_against_null": 0
+      },
+      "dimensions": {
+        "metric": "per-test outcome against matched null",
+        "tier": "stated or live_run",
+        "snapshot": "the review/disposition",
+        "denominator": "number of separability tests run (needed)",
+        "scope": "query-class ontology",
+        "supersession": "n/a"
+      }
+    },
+    {
+      "id": "Q29",
+      "kind": "quantitative",
+      "sentence": "it caught and withdrew three headline claims",
+      "values": {
+        "withdrawn_headline_count": 3
+      },
+      "dimensions": {
+        "metric": "count of withdrawal events on headline claims",
+        "tier": "git and ledger",
+        "snapshot": "whole record",
+        "denominator": "n/a",
+        "scope": "whole repo",
+        "supersession": "n/a"
+      },
+      "note": "The README's own 'Withdrawn' list names two items as withdrawn and one as 'bounded'. Whether 'bounded' counts as a withdrawal is a query-time question, flagged here."
+    },
+    {
+      "id": "Q30",
+      "kind": "quantitative",
+      "sentence": "⚠️ **Two different files are named `behaviours.json` and they are NOT interchangeable** — `data/behaviours.json` (the panel roster) and `engine/panel/behaviours.json` (the vendored harness's own copy); the experiment's query-side definitions are a differently named third file: `semi-formal-experiment/behaviours_query.json`.",
+      "values": {
+        "paths": [
+          "data/behaviours.json",
+          "engine/panel/behaviours.json",
+          "semi-formal-experiment/behaviours_query.json"
+        ],
+        "distinct_contents": true
+      },
+      "dimensions": {
+        "metric": "file existence and content inequality",
+        "tier": "filesystem",
+        "snapshot": "pin",
+        "denominator": "n/a",
+        "scope": "repo root",
+        "supersession": "n/a"
+      }
+    },
+    {
+      "id": "Q31",
+      "kind": "quantitative",
+      "sentence": "LEDGER.md          → the arc-2 append-only ledger (symlink)\nARC2_HANDOFF.md    → the arc-2 handoff (symlink)",
+      "values": {
+        "LEDGER.md": "symlink to walkthrough/.../behavior_pilot/ITERATION_NOTES.md",
+        "ARC2_HANDOFF.md": "symlink to the arc-2 handoff file",
+        "CLAUDE.md": "symlink to AGENTS.md (from 'For agents')"
+      },
+      "dimensions": {
+        "metric": "symlink existence and target",
+        "tier": "filesystem",
+        "snapshot": "pin",
+        "denominator": "n/a",
+        "scope": "repo root",
+        "supersession": "n/a"
+      }
+    },
+    {
+      "id": "Q32",
+      "kind": "quantitative",
+      "sentence": "Large superseded run artifacts were pruned for publication with a signed manifest — see [`PRUNED.md`](walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/PRUNED.md) for what was removed and how to restore any of it from history.",
+      "values": {
+        "manifest_path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/PRUNED.md",
+        "signed": true,
+        "restorable_from_history": true
+      },
+      "dimensions": {
+        "metric": "file existence; presence of a signature; restore commits resolve in git",
+        "tier": "filesystem and git",
+        "snapshot": "pin",
+        "denominator": "n/a",
+        "scope": "graph_v2 runs",
+        "supersession": "n/a"
+      }
+    },
+    {
+      "id": "Q33",
+      "kind": "quantitative",
+      "sentence": "| 1 (July–early Aug) | `semi-formal-experiment/` | ... | 2 (mid–late Aug) | `walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/` |",
+      "values": {
+        "arc1_window": "July to early August 2026",
+        "arc2_window": "mid to late August 2026"
+      },
+      "dimensions": {
+        "metric": "first and last commit dates touching each directory",
+        "tier": "git",
+        "snapshot": "whole history to pin",
+        "denominator": "n/a",
+        "scope": "the two directories named",
+        "supersession": "n/a"
+      }
+    },
+    {
+      "id": "Q34",
+      "kind": "quantitative",
+      "sentence": "CI runs both suites plus the citation and graph checks from the demo path on every push",
+      "values": {
+        "workflow_steps": [
+          "arc-1 pytest",
+          "arc-2 pytest",
+          "cite.py check",
+          "graph_check.py"
+        ],
+        "trigger": "push"
+      },
+      "dimensions": {
+        "metric": "workflow file content",
+        "tier": "filesystem",
+        "snapshot": ".github/workflows/ci.yml at pin",
+        "denominator": "n/a",
+        "scope": "CI",
+        "supersession": "n/a"
+      }
+    },
+    {
+      "id": "Q35",
+      "kind": "quantitative",
+      "sentence": "`specs/openai-model-spec/` and `specs/claude-constitution/` are CC0 1.0 public-domain documents, redistributed with their upstream licence statements and README files intact ... `data/panel-v5/` redistributes data from ... (Andres Cotton), Apache-2.0 — see the LICENSE and NOTICE files in that directory. ... Everything else: MIT (see `LICENSE`).",
+      "values": {
+        "specs_license": "CC0 1.0",
+        "panel_v5_license": "Apache-2.0",
+        "panel_v5_files": [
+          "LICENSE",
+          "NOTICE"
+        ],
+        "root_license": "MIT"
+      },
+      "dimensions": {
+        "metric": "file existence and license identifier text",
+        "tier": "filesystem",
+        "snapshot": "pin",
+        "denominator": "n/a",
+        "scope": "specs/, data/panel-v5/, LICENSE",
+        "supersession": "n/a"
+      }
+    },
+    {
+      "id": "Q36",
+      "kind": "quantitative",
+      "sentence": "# 1. every claim about a spec resolves to verbatim text\npython3 engine/spec-cite/cite.py outline model-spec\npython3 engine/spec-cite/cite.py resolve \"model-spec@2025-12-18 > #avoid_sycophancy > ¶2 s1\"",
+      "values": {
+        "commands_exit_zero": true,
+        "resolve_returns_verbatim_text": true
+      },
+      "dimensions": {
+        "metric": "exit status and output shape",
+        "tier": "live_run",
+        "snapshot": "pin",
+        "denominator": "n/a",
+        "scope": "engine/spec-cite",
+        "supersession": "n/a"
+      }
+    },
+    {
+      "id": "Q37",
+      "kind": "quantitative",
+      "sentence": "# 5. the governance model as a queryable logic program (note the seat it reports as unvalidated)",
+      "values": {
+        "unvalidated_seat_count": 1
+      },
+      "dimensions": {
+        "metric": "count of seats reported unvalidated",
+        "tier": "live_run (machine/query.py seats)",
+        "snapshot": "pin",
+        "denominator": "seats reported (needed)",
+        "scope": "semi-formal-experiment/machine",
+        "supersession": "n/a"
+      }
+    },
+    {
+      "id": "Q38",
+      "kind": "quantitative",
+      "sentence": "operational details (usage plumbing, working notes) were redacted in the current files and remain in history by choice.",
+      "values": {
+        "redaction_markers_present": true,
+        "history_retains_content": true
+      },
+      "dimensions": {
+        "metric": "redaction markers in current files; earlier commit contains the redacted text",
+        "tier": "git and filesystem",
+        "snapshot": "pin vs pre-redaction commit",
+        "denominator": "n/a",
+        "scope": "ledger entries marked '[operational; redacted]' and any other redacted files",
+        "supersession": "n/a"
+      }
+    },
+    {
+      "id": "Q39",
+      "kind": "quantitative",
+      "sentence": "The binding rule that came out of these: a separability claim is only as strong as its margin over a matched-granularity random-partition null, and a pass condition that cannot fail is void.",
+      "values": {
+        "rule_recorded_as_binding": true
+      },
+      "dimensions": {
+        "metric": "presence of the rule text marked binding in the record",
+        "tier": "filesystem and git",
+        "snapshot": "bf0d4978 or the disposition document",
+        "denominator": "n/a",
+        "scope": "arc-2 rulings",
+        "supersession": "n/a"
+      }
+    },
+    {
+      "id": "Q40",
+      "kind": "quantitative",
+      "sentence": "bash setup_env.sh --check    # verifies, ~3 s",
+      "values": {
+        "wall_seconds_approx": 3
+      },
+      "dimensions": {
+        "metric": "wall clock",
+        "tier": "live_run",
+        "snapshot": "pin, this machine",
+        "denominator": "n/a",
+        "scope": "setup_env.sh --check",
+        "supersession": "n/a"
+      },
+      "note": "Soft claim (approximate). Verified as order-of-magnitude only."
+    },
+    {
+      "id": "Q41",
+      "kind": "quantitative",
+      "sentence": "Untuned behaviors never reliably reached that level.",
+      "values": {
+        "threshold": 0.94,
+        "any_untuned_reliably_at_or_above": false
+      },
+      "dimensions": {
+        "metric": "match_or_defensible_rate (or the closest measured rate) per untuned behaviour, with certification status",
+        "tier": "panel or adjudicated",
+        "snapshot": "every untuned-behaviour measurement in the record",
+        "denominator": "per-behaviour set size",
+        "scope": "behaviours with status(b)=untuned",
+        "supersession": "latest per behaviour"
+      },
+      "note": "Also stated as hypothesis H07 for the event-shaped part ('reliably')."
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "H01",
+      "sentence": "adversarial review before every close",
+      "english_in": "Every time a cycle or iteration was closed, an adversarial review of that cycle had already been recorded before the close.",
+      "rule": "∀c. event(c, cycle_close ∨ iteration_close) → ∃r. event(r, adversarial_review) ∧ ts(r) ≤ ts(c) ∧ links(r, c)",
+      "english_out": "For every recorded cycle or iteration close, there exists an adversarial review whose recorded time is no later than the close and whose text refers to that cycle or iteration.",
+      "declared_dimensions": [
+        "event type (cycle_close, iteration_close, adversarial_review)",
+        "timestamp",
+        "linkage: the cycle/iteration id or entry number the review names"
+      ],
+      "scope": "arc-1 cycles under semi-formal-experiment/cycles/ and arc-2 iteration/block closes in ITERATION_NOTES.md"
+    },
+    {
+      "id": "H02",
+      "sentence": "pre-registered predictions",
+      "english_in": "Every measurement in a cycle was preceded by a frozen prediction for that cycle.",
+      "rule": "∀m,c. event(m, measurement) ∧ links(m, c) → ∃p. event(p, prediction_freeze) ∧ ts(p) < ts(m) ∧ links(p, c)",
+      "english_out": "For every recorded measurement that belongs to a cycle, there is a prediction-freeze event for the same cycle with an earlier timestamp.",
+      "declared_dimensions": [
+        "event type (measurement, prediction_freeze)",
+        "timestamp",
+        "linkage: cycle id"
+      ],
+      "scope": "cycles and iterations that record a measurement"
+    },
+    {
+      "id": "H03",
+      "sentence": "an append-only ledger with an erratum list",
+      "english_in": "The ledger was only ever added to (except explicitly marked redactions), and it keeps a numbered list of errata.",
+      "rule": "(∀k. event(k, commit) ∧ touches(k, ITERATION_NOTES.md) → deleted_lines_in_prior_entries(k) = 0 ∨ event(k, redaction)) ∧ ∃L. erratum_list(L) ∧ numbered(L)",
+      "english_out": "Every commit that changed the ledger file either deleted no lines from previously written entries or is recorded as a redaction; and the ledger contains a numbered erratum list.",
+      "declared_dimensions": [
+        "event type (commit, redaction, erratum)",
+        "timestamp (commit date)",
+        "linkage: commit hash to file; erratum number"
+      ],
+      "scope": "ITERATION_NOTES.md across its full git history"
+    },
+    {
+      "id": "H04",
+      "sentence": "blind adjudication seats",
+      "english_in": "No adjudication seat was given panel labels, the cycle's design document, or prior verdicts as input.",
+      "rule": "∀d. event(d, seat_dispatch) → inputs(d) ∩ {panel_labels, design_doc, prior_verdicts} = ∅",
+      "english_out": "For every recorded seat dispatch, the recorded inputs contain none of: panel labels, the cycle's design document, prior verdicts.",
+      "declared_dimensions": [
+        "event type (seat_dispatch)",
+        "timestamp",
+        "linkage: the inputs list the record gives for the dispatch"
+      ],
+      "scope": "seat dispatches recorded in cycle records and the ledger"
+    },
+    {
+      "id": "H05",
+      "sentence": "every step, every erratum, every withdrawal, written at the time",
+      "english_in": "Each ledger entry's stated date matches the date of the commit that first introduced it.",
+      "rule": "∀e. event(e, ledger_entry) → |ts(e) − ts(first_commit(e))| ≤ 1 day",
+      "english_out": "For every ledger entry, the date written in its heading is within one day of the date of the first commit containing that entry.",
+      "declared_dimensions": [
+        "event type (ledger_entry, commit)",
+        "timestamp (heading date; commit date)",
+        "linkage: entry number to introducing commit"
+      ],
+      "scope": "entries 0000-0043"
+    },
+    {
+      "id": "H06",
+      "sentence": "the results that were withdrawn when adversarial review showed they were noise",
+      "english_in": "Every withdrawal was preceded by an adversarial review whose finding was that the result was noise or unsupported.",
+      "rule": "∀w. event(w, withdrawal) → ∃r. event(r, adversarial_review) ∧ ts(r) ≤ ts(w) ∧ links(w, r) ∧ finding(r) ∈ {noise, unsupported, does_not_license, null_dominated}",
+      "english_out": "For every recorded withdrawal there is an adversarial review, no later than the withdrawal and named by it, whose recorded finding is noise, unsupported, does-not-license, or null-dominated.",
+      "declared_dimensions": [
+        "event type (withdrawal, adversarial_review)",
+        "timestamp",
+        "linkage: the review the withdrawal names",
+        "finding"
+      ],
+      "scope": "all withdrawals in the record"
+    },
+    {
+      "id": "H07",
+      "sentence": "Untuned behaviors never reliably reached that level.",
+      "english_in": "No behaviour that was not tuned in the arc-2 campaign has a certified match-or-defensible rate at or above 0.94.",
+      "rule": "∀b. status(b) = untuned → ¬∃m. event(m, measurement) ∧ links(m, b) ∧ metric(m) = match_or_defensible_rate ∧ value(m) ≥ 0.94 ∧ certified(m)",
+      "english_out": "For every untuned behaviour, there is no certified match-or-defensible measurement of that behaviour with a value of 0.94 or more.",
+      "declared_dimensions": [
+        "event type (measurement, certification_run)",
+        "timestamp",
+        "linkage: behaviour name; tuned/untuned status",
+        "value, tier, certification status"
+      ],
+      "scope": "arc-2 behaviours"
+    },
+    {
+      "id": "H08",
+      "sentence": "the symbolic engine (ASP/clingo evaluation, conflict enumeration with witness scenarios, satisfiability checks) worked — its failures were refusals, not wrong answers.",
+      "english_in": "Every recorded failure of the symbolic engine was a refusal to answer, not an incorrect answer.",
+      "rule": "∀f. event(f, engine_failure) → kind(f) = refusal",
+      "english_out": "For every recorded engine failure, its kind is refusal.",
+      "declared_dimensions": [
+        "event type (engine_failure)",
+        "timestamp",
+        "linkage: which engine component",
+        "kind (refusal or wrong_answer)"
+      ],
+      "scope": "ASP/clingo evaluation, conflict enumeration, satisfiability checks, arc 1"
+    },
+    {
+      "id": "H09",
+      "sentence": "Matching behaviors to passages did not beat a single frontier judge on the arc-1 benchmark",
+      "english_in": "The tool's MCC was below every individual judge's MCC on the arc-1 benchmark.",
+      "rule": "∀j. judge(j) → mcc(tool) < mcc(j)",
+      "english_out": "For every judge on the panel, the tool's MCC is less than that judge's MCC.",
+      "declared_dimensions": [
+        "per-judge MCC values",
+        "tool MCC (which tier: in-sample or label-free)",
+        "linkage: benchmark run"
+      ],
+      "scope": "arc-1 benchmark; derived from Q12, Q13, Q14, Q15 plus per-judge values"
+    },
+    {
+      "id": "H10",
+      "sentence": "Large superseded run artifacts were pruned for publication with a signed manifest ... how to restore any of it from history.",
+      "english_in": "There is a prune event with a signed manifest, and every artifact it lists can be found in an earlier commit.",
+      "rule": "∃k. event(k, prune) ∧ manifest(k) ∧ signed(manifest(k)) ∧ ∀a ∈ listed(manifest(k)). ∃k'. ts(k') < ts(k) ∧ contains(k', a)",
+      "english_out": "A prune commit exists whose manifest carries a signature, and each artifact the manifest lists exists in some commit earlier than the prune.",
+      "declared_dimensions": [
+        "event type (prune, commit)",
+        "timestamp",
+        "linkage: manifest paths to commit hashes"
+      ],
+      "scope": "PRUNED.md and git history"
+    },
+    {
+      "id": "H11",
+      "sentence": "operational details (usage plumbing, working notes) were redacted in the current files and remain in history by choice.",
+      "english_in": "Every section marked redacted in the current files had content in an earlier commit.",
+      "rule": "∀s. redaction_marker(s) → ∃k. event(k, commit) ∧ ts(k) < ts(pin) ∧ has_content(k, s)",
+      "english_out": "For every redaction marker in the current files, some earlier commit contains non-empty content at that section.",
+      "declared_dimensions": [
+        "event type (redaction, commit)",
+        "timestamp",
+        "linkage: section/entry to commit"
+      ],
+      "scope": "all '[operational; redacted]' markers and any other redaction markers at the pin"
+    }
+  ],
+  "verdict_nodes": [
+    {
+      "id": "V01",
+      "sentence": "It did not reach that bar on the axis that mattered — generalization.",
+      "needs": [
+        "in-sample rate on tuned behaviours (the bar reached in-sample)",
+        "rate on untuned behaviours (generalization)"
+      ],
+      "providers": [
+        "Q01",
+        "Q41/H07"
+      ]
+    },
+    {
+      "id": "V02",
+      "sentence": "the symbolic engine (ASP/clingo evaluation, conflict enumeration with witness scenarios, satisfiability checks) worked",
+      "needs": [
+        "classification of every engine failure"
+      ],
+      "providers": [
+        "H08"
+      ]
+    },
+    {
+      "id": "V03",
+      "sentence": "Segmentation of both specs into typed clause inventories worked after repair.",
+      "needs": [
+        "a segmentation failure event",
+        "a repair event linked to it",
+        "a post-repair measurement of segmentation quality"
+      ],
+      "providers": [],
+      "note": "No adjacent README sentence provides any of the three needs; Q08/Q10 give inventory sizes only. Candidate dangling verdict."
+    },
+    {
+      "id": "V04",
+      "sentence": "Matching behaviors to passages did not beat a single frontier judge on the arc-1 benchmark",
+      "needs": [
+        "tool MCC",
+        "judge MCC (per judge or LOO)",
+        "per-cell comparison"
+      ],
+      "providers": [
+        "Q12",
+        "Q13",
+        "Q14",
+        "Q15",
+        "H09"
+      ]
+    },
+    {
+      "id": "V05",
+      "sentence": "an ontology open-coded from 100 behavior definitions covered every sampled span but failed every separability test once a matched random-partition null was run against it.",
+      "needs": [
+        "coverage measurement",
+        "per-test separability outcome against null"
+      ],
+      "providers": [
+        "Q26",
+        "Q27",
+        "Q28",
+        "Q19",
+        "Q20"
+      ]
+    },
+    {
+      "id": "V06",
+      "sentence": "The measurement discipline — pre-registered predictions, blind adjudication seats, adversarial review before every close, an append-only ledger with an erratum list — is the part that transferred",
+      "needs": [
+        "each named discipline element instantiated in arc 2 (and in arc 1, for 'transferred')"
+      ],
+      "providers": [
+        "H01",
+        "H02",
+        "H03",
+        "H04"
+      ]
+    },
+    {
+      "id": "V07",
+      "sentence": "it caught and withdrew three headline claims",
+      "needs": [
+        "three withdrawal events each linked to a review"
+      ],
+      "providers": [
+        "Q29",
+        "Q18",
+        "Q21",
+        "Q23",
+        "H06"
+      ],
+      "note": "Q23 says 'bounded', not 'withdrawn'; provider set may resolve to two, not three."
+    },
+    {
+      "id": "V08",
+      "sentence": "Withdrawn, by its own review process",
+      "needs": [
+        "each withdrawal linked to a preceding review"
+      ],
+      "providers": [
+        "H06"
+      ]
+    },
+    {
+      "id": "V09",
+      "sentence": "with the ledger's own honest headline being recall, not precision",
+      "needs": [
+        "a ledger entry stating recall as the headline",
+        "the recall-side number"
+      ],
+      "providers": [
+        "Q17"
+      ],
+      "note": "'honest' is residue (R11); the factual need is the ledger's stated headline."
+    },
+    {
+      "id": "V10",
+      "sentence": "The binding rule that came out of these",
+      "needs": [
+        "the rule recorded as binding, dated after the withdrawals"
+      ],
+      "providers": [
+        "Q39"
+      ]
+    },
+    {
+      "id": "V11",
+      "sentence": "It establishes that the specific demonstrations attempted here did not survive their own review process",
+      "needs": [
+        "each demonstration linked to a failing review"
+      ],
+      "providers": [
+        "H06",
+        "Q18",
+        "Q21"
+      ]
+    },
+    {
+      "id": "V12",
+      "sentence": "the adversarial reviews that ended the headline claims",
+      "needs": [
+        "review events linked to each ended claim"
+      ],
+      "providers": [
+        "H06"
+      ]
+    }
+  ],
+  "commitments": [
+    {
+      "id": "C01",
+      "sentence": "This repo is the complete record of the attempt: the machinery, the measurements, and the discipline that kept the measurements honest"
+    },
+    {
+      "id": "C02",
+      "sentence": "The full commit history is published unrewritten so that every dated claim, pin, and withdrawal is externally checkable"
+    },
+    {
+      "id": "C03",
+      "sentence": "Everything below is deterministic re-analysis of committed data: no API keys, no network, no model calls."
+    },
+    {
+      "id": "C04",
+      "sentence": "Claims are scoped throughout: every separability claim requires its null; every \"unresolved conflict\" is a claim about an encoding and a fragment, not about the document."
+    },
+    {
+      "id": "C05",
+      "sentence": "`AGENTS.md` (symlinked as `CLAUDE.md`) is the canonical brief: read it before acting in this repo."
+    },
+    {
+      "id": "C06",
+      "sentence": "`ARTIFACTS.md` at root is the full routing table."
+    },
+    {
+      "id": "C07",
+      "sentence": "This is the primary artifact."
+    }
+  ],
+  "residue": [
+    {
+      "id": "R01",
+      "sentence": "it is the reason the numbers in this repo can be read at face value."
+    },
+    {
+      "id": "R02",
+      "sentence": "the discipline that kept the measurements honest"
+    },
+    {
+      "id": "R03",
+      "sentence": "The two share a corpus and nothing else. Different representation, different failure modes, different evidence."
+    },
+    {
+      "id": "R04",
+      "sentence": "an archive, not a read."
+    },
+    {
+      "id": "R05",
+      "sentence": "The withdrawn results are defects in measurements, not proofs about the ontology."
+    },
+    {
+      "id": "R06",
+      "sentence": "it documents that process well enough to be reused."
+    },
+    {
+      "id": "R07",
+      "sentence": "the tool should match the panel, or give an answer a frontier model would accept as justifiable."
+    },
+    {
+      "id": "R08",
+      "sentence": "on the axis that mattered"
+    },
+    {
+      "id": "R09",
+      "sentence": "Loading the wrong one produces a silently de-behaviourised score.",
+      "note": "Mechanistic and in principle runnable, but out of the inventory's scope: it asserts a counterfactual misuse, not a recorded measurement."
+    },
+    {
+      "id": "R10",
+      "sentence": "Frontier-model panels were the calibration instrument",
+      "note": "Descriptive framing; not a measurable claim."
+    },
+    {
+      "id": "R11",
+      "sentence": "the ledger's own honest headline"
+    },
+    {
+      "id": "R12",
+      "sentence": "## What this repo does not establish ... That the approach is impossible."
+    }
+  ]
+}
