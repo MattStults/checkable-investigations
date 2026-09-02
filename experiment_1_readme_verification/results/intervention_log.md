@@ -150,6 +150,21 @@ now (retry_I03_a) and to 012-013, 017-021 when they land.
 
 Recurrence: (tracked)
 
+### I-04 — 2026-09-02 — owner name forms not in the human-tier marker set
+
+Caught: the batch_021 translator ("'Matt's D1 amendment' carries no
+step-8 marker, so it stayed stated"). The human markers listed only the
+post-redaction role language and 'MATT RULING'; the record (especially
+pre-redaction blobs and ledger prose) attributes rulings as 'Matt:',
+'(Matt)', "Matt's ruling/correction". Class: marker set incomplete.
+
+Operationalised: glossary amendment G-03 (marker forms added), rendered.
+Mechanical selection: accepted spans matching the new forms with no
+human-tier claim are retranslated whole (list in
+ledger/batches/_g03_pending.json, folded into the next retry batch).
+
+Recurrence: (tracked)
+
 ### Observations not (yet) interventions
 
 - Both tiers type most standing statements in entry 0000 as `registration`

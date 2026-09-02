@@ -634,6 +634,17 @@
         "BP/ITER2_REMEASURE_SCORED.json:188",
         "BP/L1L2_REVIEW_DISPOSITION.md:12-13"
       ]
+    },
+    {
+      "id": "G-03",
+      "date": "2026-09-02",
+      "logged_as": "I-04",
+      "change": "Tier procedure step 8 (`human`) marker set gains the owner's name forms the record uses: `Matt:`, `(Matt)`, `Matt's <ruling|amendment|correction|decision|directive|question>`, `MATT RULING`, `Matt ruled`, `Matt confirmed`, and `owner's <ruling|correction|decision>`. A value the span attributes to the owner by any of these is tier human with actor owner.",
+      "cite": [
+        "BP/ITERATION_NOTES.md:299",
+        "BP/ITERATION_NOTES.md:800",
+        "BP/ITER2_REMEASURE_SCORED.json:188"
+      ]
     }
   ]
 }
