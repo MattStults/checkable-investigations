@@ -69,17 +69,34 @@ def cut_markdown(lines, maxlen=60, entry_mode=False):
                 yield s + 1, min(s + maxlen, b)
 
 def cut_json(lines, maxlen=80):
-    """Top-level keys of a pretty-printed JSON object: split at lines that start a top-level key."""
+    """One span per top-level key INCLUDING its full nested value (brace/bracket
+    depth tracked on the pretty-printed text; strings are not parsed, so a
+    brace inside a string can mis-cut — the checker's verbatim rule catches
+    any resulting bad quote). Values longer than maxlen lines are split into
+    consecutive windows that each restate the key line first."""
+    text = "\n".join(lines)
     starts = [i for i, l in enumerate(lines) if re.match(r'^ {0,2}"[^"]+":', l)]
     if len(starts) < 2:
-        starts = [0]
-    bounds = sorted(set(starts + [len(lines)]))
-    for a, b in zip(bounds, bounds[1:]):
-        if b - a <= maxlen:
-            yield a + 1, b
+        yield 1, len(lines)
+        return
+    bounds = []
+    for s in starts:
+        depth = 0
+        end = s
+        for j in range(s, len(lines)):
+            depth += lines[j].count("{") + lines[j].count("[") - lines[j].count("}") - lines[j].count("]")
+            end = j
+            if depth <= 0:
+                break
+        bounds.append((s, end))
+    for s, e in bounds:
+        if e - s + 1 <= maxlen:
+            yield s + 1, e + 1
         else:
-            for s in range(a, b, maxlen):
-                yield s + 1, min(s + maxlen, b)
+            k = s
+            while k <= e:
+                yield k + 1, min(k + maxlen, e + 1)
+                k += maxlen
 
 def main():
     ap = argparse.ArgumentParser()
