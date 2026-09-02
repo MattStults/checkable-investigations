@@ -1,0 +1,3744 @@
+{
+ "value_conflicts": [
+  {
+   "metric": "engaged precision",
+   "scope": "unstated",
+   "snapshot": "attempt 3",
+   "values": [
+    0.4,
+    0.6
+   ],
+   "claims": [
+    [
+     "L100023",
+     0.6,
+     "adjudicated",
+     "ITER2_REMEASURE_SCORED.json:187-196"
+    ],
+    [
+     "L9960003",
+     0.4,
+     "stated",
+     "ITERATION_NOTES.md:236-265"
+    ],
+    [
+     "L9960023",
+     0.4,
+     "stated",
+     "ITERATION_NOTES.md:236-265"
+    ]
+   ]
+  },
+  {
+   "metric": "engaged precision",
+   "scope": "how to approach tradeoffs",
+   "snapshot": "attempt 2",
+   "values": [
+    0.7,
+    0.75
+   ],
+   "claims": [
+    [
+     "L10103",
+     0.75,
+     "stated",
+     "ITERATION_NOTES.md:141-177"
+    ],
+    [
+     "L10212",
+     0.75,
+     "raw",
+     "ITERATION_NOTES.md:266-298"
+    ],
+    [
+     "L10213",
+     0.7,
+     "panel",
+     "ITERATION_NOTES.md:266-298"
+    ]
+   ]
+  },
+  {
+   "metric": "parity agreement",
+   "scope": "opus parity certificate",
+   "snapshot": "entry 0006",
+   "values": [
+    0.884,
+    0.913
+   ],
+   "claims": [
+    [
+     "L10140",
+     0.913,
+     "panel",
+     "ITERATION_NOTES.md:178-204"
+    ],
+    [
+     "L10141",
+     0.884,
+     "stated",
+     "ITERATION_NOTES.md:178-204"
+    ]
+   ]
+  },
+  {
+   "metric": "per class parity agreement",
+   "scope": "per class order unstated",
+   "snapshot": "entry 0006",
+   "values": [
+    0.8889,
+    0.9286
+   ],
+   "claims": [
+    [
+     "L10143",
+     0.8889,
+     "stated",
+     "ITERATION_NOTES.md:178-204"
+    ],
+    [
+     "L10144",
+     0.9286,
+     "stated",
+     "ITERATION_NOTES.md:178-204"
+    ]
+   ]
+  },
+  {
+   "metric": "engaged precision",
+   "scope": "how to approach tradeoffs",
+   "snapshot": "attempt 3",
+   "values": [
+    0.4,
+    0.55
+   ],
+   "claims": [
+    [
+     "L10214",
+     0.4,
+     "raw",
+     "ITERATION_NOTES.md:266-298"
+    ],
+    [
+     "L10215",
+     0.55,
+     "panel",
+     "ITERATION_NOTES.md:266-298"
+    ]
+   ]
+  },
+  {
+   "metric": "engaged precision",
+   "scope": "user autonomy",
+   "snapshot": "entry 0026",
+   "values": [
+    0.262,
+    0.2623
+   ],
+   "claims": [
+    [
+     "L10461",
+     0.262,
+     "stated",
+     "ITERATION_NOTES.md:554-573"
+    ],
+    [
+     "L10466",
+     0.2623,
+     "stated",
+     "ITERATION_NOTES.md:554-573"
+    ],
+    [
+     "L10470",
+     0.262,
+     "stated",
+     "ITERATION_NOTES.md:554-573"
+    ]
+   ]
+  },
+  {
+   "metric": "engaged precision",
+   "scope": "how to approach tradeoffs",
+   "snapshot": "iter3 attempt4 scored json",
+   "values": [
+    0.8947,
+    0.895
+   ],
+   "claims": [
+    [
+     "L110047",
+     0.8947,
+     "adjudicated",
+     "ITER3_ATTEMPT4_SCORED.json:189-195"
+    ],
+    [
+     "L110052",
+     0.895,
+     "adjudicated",
+     "ITER3_ATTEMPT4_SCORED.json:189-195"
+    ]
+   ]
+  },
+  {
+   "metric": "1 nn relevance prediction",
+   "scope": "relevance prediction over the representation",
+   "snapshot": "handoff current md",
+   "values": [
+    0.7,
+    0.72
+   ],
+   "claims": [
+    [
+     "L120009",
+     0.72,
+     "stated",
+     "HANDOFF_CURRENT.md:1-26"
+    ],
+    [
+     "L120011",
+     0.7,
+     "stated",
+     "HANDOFF_CURRENT.md:1-26"
+    ]
+   ]
+  },
+  {
+   "metric": "base rate",
+   "scope": "relevance prediction over the representation",
+   "snapshot": "handoff current md",
+   "values": [
+    0.59,
+    0.6
+   ],
+   "claims": [
+    [
+     "L120010",
+     0.6,
+     "stated",
+     "HANDOFF_CURRENT.md:1-26"
+    ],
+    [
+     "L120012",
+     0.59,
+     "stated",
+     "HANDOFF_CURRENT.md:1-26"
+    ]
+   ]
+  },
+  {
+   "metric": "criterion standing",
+   "scope": "avoiding over and under caution",
+   "snapshot": "handoff current md",
+   "values": [
+    0.941,
+    12.0,
+    102.0
+   ],
+   "claims": [
+    [
+     "L120034",
+     102,
+     "stated",
+     "HANDOFF_CURRENT.md:33-40"
+    ],
+    [
+     "L120035",
+     12,
+     "stated",
+     "HANDOFF_CURRENT.md:33-40"
+    ],
+    [
+     "L120101",
+     0.941,
+     "stated",
+     "HANDOFF_CURRENT.md:80-109"
+    ]
+   ]
+  },
+  {
+   "metric": "criterion standing",
+   "scope": "harm avoidance to third parties",
+   "snapshot": "handoff current md",
+   "values": [
+    0.953,
+    11.0,
+    73.0
+   ],
+   "claims": [
+    [
+     "L120036",
+     73,
+     "stated",
+     "HANDOFF_CURRENT.md:33-40"
+    ],
+    [
+     "L120037",
+     11,
+     "stated",
+     "HANDOFF_CURRENT.md:33-40"
+    ],
+    [
+     "L120102",
+     0.953,
+     "stated",
+     "HANDOFF_CURRENT.md:80-109"
+    ]
+   ]
+  },
+  {
+   "metric": "criterion standing",
+   "scope": "helpfulness",
+   "snapshot": "handoff current md",
+   "values": [
+    0.96,
+    12.0,
+    178.0
+   ],
+   "claims": [
+    [
+     "L120038",
+     178,
+     "stated",
+     "HANDOFF_CURRENT.md:33-40"
+    ],
+    [
+     "L120039",
+     12,
+     "stated",
+     "HANDOFF_CURRENT.md:33-40"
+    ],
+    [
+     "L120103",
+     0.96,
+     "stated",
+     "HANDOFF_CURRENT.md:80-109"
+    ]
+   ]
+  },
+  {
+   "metric": "criterion standing",
+   "scope": "per behaviour order unstated",
+   "snapshot": "handoff current md",
+   "values": [
+    74.0,
+    104.0,
+    183.0
+   ],
+   "claims": [
+    [
+     "L120068",
+     104,
+     "stated",
+     "HANDOFF_CURRENT.md:80-109"
+    ],
+    [
+     "L120069",
+     74,
+     "stated",
+     "HANDOFF_CURRENT.md:80-109"
+    ],
+    [
+     "L120070",
+     183,
+     "stated",
+     "HANDOFF_CURRENT.md:80-109"
+    ]
+   ]
+  },
+  {
+   "metric": "instrument wrong fps",
+   "scope": "objectivity amendment fps",
+   "snapshot": "handoff current md",
+   "values": [
+    0.5,
+    0.6667
+   ],
+   "claims": [
+    [
+     "L120075",
+     0.5,
+     "stated",
+     "HANDOFF_CURRENT.md:80-109"
+    ],
+    [
+     "L120076",
+     0.6667,
+     "stated",
+     "HANDOFF_CURRENT.md:80-109"
+    ]
+   ]
+  },
+  {
+   "metric": "seed",
+   "scope": "helpfulness",
+   "snapshot": "round4 prereg md",
+   "values": [
+    20260826.0,
+    20260827.0
+   ],
+   "claims": [
+    [
+     "L130063",
+     20260826,
+     "stated",
+     "ROUND4_PREREG.md:55-84"
+    ],
+    [
+     "L9960078",
+     20260827,
+     "stated",
+     "ROUND4_PREREG.md:149-208"
+    ]
+   ]
+  },
+  {
+   "metric": "node",
+   "scope": "helpfulness",
+   "snapshot": "f31",
+   "values": [
+    82.0,
+    157.0,
+    477.0
+   ],
+   "claims": [
+    [
+     "L170079",
+     477,
+     "stated",
+     "L1L2_ADVERSARIAL_REVIEW.md:314-318"
+    ],
+    [
+     "L170080",
+     157,
+     "stated",
+     "L1L2_ADVERSARIAL_REVIEW.md:314-318"
+    ],
+    [
+     "L170081",
+     82,
+     "stated",
+     "L1L2_ADVERSARIAL_REVIEW.md:314-318"
+    ]
+   ]
+  },
+  {
+   "metric": "node",
+   "scope": "user autonomy sealed partition",
+   "snapshot": "f35",
+   "values": [
+    11.0,
+    27.0,
+    38.0
+   ],
+   "claims": [
+    [
+     "L170132",
+     38,
+     "stated",
+     "L1L2_ADVERSARIAL_REVIEW.md:332-335"
+    ],
+    [
+     "L170133",
+     11,
+     "stated",
+     "L1L2_ADVERSARIAL_REVIEW.md:332-335"
+    ],
+    [
+     "L170134",
+     27,
+     "stated",
+     "L1L2_ADVERSARIAL_REVIEW.md:332-335"
+    ]
+   ]
+  },
+  {
+   "metric": "p value",
+   "scope": "1 nn results",
+   "snapshot": "l1l2 review disposition md",
+   "values": [
+    0.154,
+    0.157
+   ],
+   "claims": [
+    [
+     "L180040",
+     0.154,
+     "stated",
+     "L1L2_REVIEW_DISPOSITION.md:13-48"
+    ],
+    [
+     "L180043",
+     0.157,
+     "stated",
+     "L1L2_REVIEW_DISPOSITION.md:13-48"
+    ]
+   ]
+  },
+  {
+   "metric": "1 nn relevance prediction",
+   "scope": "1 nn results",
+   "snapshot": "l1l2 review disposition md",
+   "values": [
+    0.7037,
+    0.72
+   ],
+   "claims": [
+    [
+     "L180041",
+     0.72,
+     "stated",
+     "L1L2_REVIEW_DISPOSITION.md:13-48"
+    ],
+    [
+     "L180044",
+     0.7037,
+     "stated",
+     "L1L2_REVIEW_DISPOSITION.md:13-48"
+    ]
+   ]
+  },
+  {
+   "metric": "base rate",
+   "scope": "1 nn results",
+   "snapshot": "l1l2 review disposition md",
+   "values": [
+    0.59,
+    0.6
+   ],
+   "claims": [
+    [
+     "L180042",
+     0.6,
+     "stated",
+     "L1L2_REVIEW_DISPOSITION.md:13-48"
+    ],
+    [
+     "L180045",
+     0.59,
+     "stated",
+     "L1L2_REVIEW_DISPOSITION.md:13-48"
+    ]
+   ]
+  },
+  {
+   "metric": "engaged precision",
+   "scope": "per behaviour",
+   "snapshot": "generalization prereg draft md",
+   "values": [
+    0.6,
+    0.7
+   ],
+   "claims": [
+    [
+     "L190001",
+     0.7,
+     "stated",
+     "GENERALIZATION_PREREG_DRAFT.md:77-99"
+    ],
+    [
+     "L190008",
+     0.6,
+     "stated",
+     "GENERALIZATION_PREREG_DRAFT.md:77-99"
+    ]
+   ]
+  },
+  {
+   "metric": "draw size",
+   "scope": "block 1 draws",
+   "snapshot": "generalization prereg draft md",
+   "values": [
+    40.0,
+    60.0
+   ],
+   "claims": [
+    [
+     "L190015",
+     40,
+     "human",
+     "GENERALIZATION_PREREG_DRAFT.md:100-115"
+    ],
+    [
+     "L190016",
+     60,
+     "human",
+     "GENERALIZATION_PREREG_DRAFT.md:100-115"
+    ]
+   ]
+  },
+  {
+   "metric": "exact set",
+   "scope": "protects judgment",
+   "snapshot": "2026 08 19 translation contract v2 md 7",
+   "values": [
+    0.6,
+    0.62
+   ],
+   "claims": [
+    [
+     "L200093",
+     0.6,
+     "stated",
+     "TRANSLATION_CONTRACT_V2.md:74-101"
+    ],
+    [
+     "L200094",
+     0.62,
+     "stated",
+     "TRANSLATION_CONTRACT_V2.md:74-101"
+    ]
+   ]
+  },
+  {
+   "metric": "dominant census lever",
+   "scope": "governs aspect",
+   "snapshot": "translation contract v2 md 8",
+   "values": [
+    0.6897,
+    1.0
+   ],
+   "claims": [
+    [
+     "L200113",
+     0.6897,
+     "stated",
+     "TRANSLATION_CONTRACT_V2.md:102-143"
+    ],
+    [
+     "L200114",
+     1.0,
+     "stated",
+     "TRANSLATION_CONTRACT_V2.md:102-143"
+    ]
+   ]
+  },
+  {
+   "metric": "exact",
+   "scope": "seat decomposition experiment",
+   "snapshot": "translation contract v2 md 9",
+   "values": [
+    0.2,
+    0.29
+   ],
+   "claims": [
+    [
+     "L200154",
+     0.29,
+     "stated",
+     "TRANSLATION_CONTRACT_V2.md:144-172"
+    ],
+    [
+     "L200155",
+     0.2,
+     "stated",
+     "TRANSLATION_CONTRACT_V2.md:144-172"
+    ]
+   ]
+  },
+  {
+   "metric": "query atoms",
+   "scope": "per behaviour order unstated",
+   "snapshot": "the current headline configuration all numbers dev",
+   "values": [
+    31.0,
+    37.0,
+    42.0
+   ],
+   "claims": [
+    [
+     "L240062",
+     42,
+     "stated",
+     "HANDOFF.md:351-362"
+    ],
+    [
+     "L240063",
+     31,
+     "stated",
+     "HANDOFF.md:351-362"
+    ],
+    [
+     "L240064",
+     37,
+     "stated",
+     "HANDOFF.md:351-362"
+    ]
+   ]
+  },
+  {
+   "metric": "inter author agreement",
+   "scope": "golden clauses",
+   "snapshot": "golden instruments and the measured human ceiling",
+   "values": [
+    0.29,
+    0.79,
+    0.9091
+   ],
+   "claims": [
+    [
+     "L240098",
+     0.29,
+     "stated",
+     "HANDOFF.md:386-398"
+    ],
+    [
+     "L240099",
+     0.79,
+     "stated",
+     "HANDOFF.md:386-398"
+    ],
+    [
+     "L240100",
+     0.9091,
+     "stated",
+     "HANDOFF.md:386-398"
+    ]
+   ]
+  },
+  {
+   "metric": "gold variant either",
+   "scope": "per behaviour order unstated",
+   "snapshot": "handoff md 566 585",
+   "values": [
+    0.544,
+    0.64,
+    0.689
+   ],
+   "claims": [
+    [
+     "L250013",
+     0.544,
+     "stated",
+     "HANDOFF.md:566-585"
+    ],
+    [
+     "L250014",
+     0.689,
+     "stated",
+     "HANDOFF.md:566-585"
+    ],
+    [
+     "L250015",
+     0.64,
+     "stated",
+     "HANDOFF.md:566-585"
+    ]
+   ]
+  },
+  {
+   "metric": "best judge s own predictions under the tool protocol",
+   "scope": "per behaviour order unstated",
+   "snapshot": "handoff md 597 608",
+   "values": [
+    0.833,
+    0.871,
+    0.884
+   ],
+   "claims": [
+    [
+     "L250047",
+     0.871,
+     "stated",
+     "HANDOFF.md:597-608"
+    ],
+    [
+     "L250048",
+     0.884,
+     "stated",
+     "HANDOFF.md:597-608"
+    ],
+    [
+     "L250049",
+     0.833,
+     "stated",
+     "HANDOFF.md:597-608"
+    ]
+   ]
+  },
+  {
+   "metric": "the bar",
+   "scope": "per behaviour order unstated",
+   "snapshot": "handoff md 597 608",
+   "values": [
+    0.5,
+    0.764,
+    0.78
+   ],
+   "claims": [
+    [
+     "L250050",
+     0.764,
+     "stated",
+     "HANDOFF.md:597-608"
+    ],
+    [
+     "L250051",
+     0.78,
+     "stated",
+     "HANDOFF.md:597-608"
+    ],
+    [
+     "L250052",
+     0.5,
+     "stated",
+     "HANDOFF.md:597-608"
+    ]
+   ]
+  },
+  {
+   "metric": "mean loo",
+   "scope": "per behaviour order unstated",
+   "snapshot": "handoff md 597 608",
+   "values": [
+    0.419,
+    0.636,
+    0.697
+   ],
+   "claims": [
+    [
+     "L250054",
+     0.636,
+     "stated",
+     "HANDOFF.md:597-608"
+    ],
+    [
+     "L250055",
+     0.697,
+     "stated",
+     "HANDOFF.md:597-608"
+    ],
+    [
+     "L250056",
+     0.419,
+     "stated",
+     "HANDOFF.md:597-608"
+    ]
+   ]
+  },
+  {
+   "metric": "reachable clauses",
+   "scope": "per behaviour order unstated",
+   "snapshot": "handoff md 597 608",
+   "values": [
+    0.2546,
+    0.5497,
+    0.6273
+   ],
+   "claims": [
+    [
+     "L250059",
+     0.6273,
+     "stated",
+     "HANDOFF.md:597-608"
+    ],
+    [
+     "L250060",
+     0.5497,
+     "stated",
+     "HANDOFF.md:597-608"
+    ],
+    [
+     "L250061",
+     0.2546,
+     "stated",
+     "HANDOFF.md:597-608"
+    ]
+   ]
+  },
+  {
+   "metric": "predict all inflation",
+   "scope": "per behaviour order unstated",
+   "snapshot": "handoff md 597 608",
+   "values": [
+    0.147,
+    0.228,
+    0.429
+   ],
+   "claims": [
+    [
+     "L250063",
+     0.147,
+     "stated",
+     "HANDOFF.md:597-608"
+    ],
+    [
+     "L250064",
+     0.228,
+     "stated",
+     "HANDOFF.md:597-608"
+    ],
+    [
+     "L250065",
+     0.429,
+     "stated",
+     "HANDOFF.md:597-608"
+    ]
+   ]
+  },
+  {
+   "metric": "median df",
+   "scope": "per behaviour order unstated",
+   "snapshot": "handoff md 687 694",
+   "values": [
+    6.0,
+    7.0,
+    8.0,
+    9.5,
+    10.5
+   ],
+   "claims": [
+    [
+     "L250153",
+     9.5,
+     "stated",
+     "HANDOFF.md:687-694"
+    ],
+    [
+     "L250154",
+     7.0,
+     "stated",
+     "HANDOFF.md:687-694"
+    ],
+    [
+     "L250155",
+     10.5,
+     "stated",
+     "HANDOFF.md:687-694"
+    ],
+    [
+     "L250156",
+     7.0,
+     "stated",
+     "HANDOFF.md:687-694"
+    ],
+    [
+     "L250157",
+     6.0,
+     "stated",
+     "HANDOFF.md:687-694"
+    ],
+    [
+     "L250158",
+     8.0,
+     "stated",
+     "HANDOFF.md:687-694"
+    ]
+   ]
+  },
+  {
+   "metric": "mean",
+   "scope": "per behaviour order unstated",
+   "snapshot": "handoff md 687 694",
+   "values": [
+    0.004,
+    0.042,
+    0.186,
+    0.231,
+    0.342,
+    0.368
+   ],
+   "claims": [
+    [
+     "L250160",
+     0.042,
+     "stated",
+     "HANDOFF.md:687-694"
+    ],
+    [
+     "L250161",
+     0.186,
+     "stated",
+     "HANDOFF.md:687-694"
+    ],
+    [
+     "L250162",
+     0.004,
+     "stated",
+     "HANDOFF.md:687-694"
+    ],
+    [
+     "L250163",
+     0.342,
+     "stated",
+     "HANDOFF.md:687-694"
+    ],
+    [
+     "L250164",
+     0.368,
+     "stated",
+     "HANDOFF.md:687-694"
+    ],
+    [
+     "L250165",
+     0.231,
+     "stated",
+     "HANDOFF.md:687-694"
+    ]
+   ]
+  },
+  {
+   "metric": "supervised ceiling",
+   "scope": "9 cells true 589 universe",
+   "snapshot": "handoff md 711 725",
+   "values": [
+    0.398,
+    0.435,
+    0.536,
+    0.591,
+    0.606
+   ],
+   "claims": [
+    [
+     "L250188",
+     0.398,
+     "stated",
+     "HANDOFF.md:711-725"
+    ],
+    [
+     "L250190",
+     0.435,
+     "stated",
+     "HANDOFF.md:711-725"
+    ],
+    [
+     "L250192",
+     0.536,
+     "stated",
+     "HANDOFF.md:711-725"
+    ],
+    [
+     "L250194",
+     0.591,
+     "stated",
+     "HANDOFF.md:711-725"
+    ],
+    [
+     "L250196",
+     0.606,
+     "stated",
+     "HANDOFF.md:711-725"
+    ]
+   ]
+  },
+  {
+   "metric": "judge mcc",
+   "scope": "9 cells true 589 universe",
+   "snapshot": "handoff md 711 725",
+   "values": [
+    0.555,
+    0.654
+   ],
+   "claims": [
+    [
+     "L250198",
+     0.555,
+     "stated",
+     "HANDOFF.md:711-725"
+    ],
+    [
+     "L250200",
+     0.654,
+     "stated",
+     "HANDOFF.md:711-725"
+    ]
+   ]
+  },
+  {
+   "metric": "auc",
+   "scope": "helpfulness",
+   "snapshot": "handoff md what did work the rebuild wins as a ranking channel",
+   "values": [
+    0.111,
+    0.561,
+    0.673
+   ],
+   "claims": [
+    [
+     "L260121",
+     "0.561",
+     "stated",
+     "HANDOFF.md:870-885"
+    ],
+    [
+     "L260122",
+     "0.673",
+     "stated",
+     "HANDOFF.md:870-885"
+    ],
+    [
+     "L260123",
+     "+0.111",
+     "stated",
+     "HANDOFF.md:870-885"
+    ]
+   ]
+  },
+  {
+   "metric": "auc",
+   "scope": "harm avoidance",
+   "snapshot": "handoff md what did work the rebuild wins as a ranking channel",
+   "values": [
+    0.086,
+    0.695,
+    0.781
+   ],
+   "claims": [
+    [
+     "L260124",
+     "0.695",
+     "stated",
+     "HANDOFF.md:870-885"
+    ],
+    [
+     "L260125",
+     "0.781",
+     "stated",
+     "HANDOFF.md:870-885"
+    ],
+    [
+     "L260126",
+     "+0.086",
+     "stated",
+     "HANDOFF.md:870-885"
+    ]
+   ]
+  },
+  {
+   "metric": "auc",
+   "scope": "over under caution",
+   "snapshot": "handoff md what did work the rebuild wins as a ranking channel",
+   "values": [
+    0.027,
+    0.84,
+    0.867
+   ],
+   "claims": [
+    [
+     "L260127",
+     "0.840",
+     "stated",
+     "HANDOFF.md:870-885"
+    ],
+    [
+     "L260128",
+     "0.867",
+     "stated",
+     "HANDOFF.md:870-885"
+    ],
+    [
+     "L260129",
+     "+0.027",
+     "stated",
+     "HANDOFF.md:870-885"
+    ]
+   ]
+  },
+  {
+   "metric": "judge mcc",
+   "scope": "the small model judges",
+   "snapshot": "handoff md wired panel v2 py",
+   "values": [
+    -0.221,
+    0.525,
+    0.746
+   ],
+   "claims": [
+    [
+     "L260191",
+     "-0.221",
+     "stated",
+     "HANDOFF.md:922-947"
+    ],
+    [
+     "L260192",
+     "+0.525",
+     "stated",
+     "HANDOFF.md:922-947"
+    ],
+    [
+     "L260193",
+     0.746,
+     "stated",
+     "HANDOFF.md:922-947"
+    ]
+   ]
+  },
+  {
+   "metric": "mcc gain",
+   "scope": "per atom re weighting",
+   "snapshot": "semi formal experiment handoff md 1003 1006",
+   "values": [
+    0.009,
+    0.141
+   ],
+   "claims": [
+    [
+     "L270043",
+     "+0.141",
+     "stated",
+     "HANDOFF.md:1003-1006"
+    ],
+    [
+     "L270044",
+     "+0.009",
+     "stated",
+     "HANDOFF.md:1003-1006"
+    ]
+   ]
+  },
+  {
+   "metric": "mcc gain",
+   "scope": "annotation salience rank fidelity",
+   "snapshot": "semi formal experiment handoff md 1007 1037",
+   "values": [
+    0.026,
+    0.088
+   ],
+   "claims": [
+    [
+     "L270065",
+     "+0.088",
+     "stated",
+     "HANDOFF.md:1007-1037"
+    ],
+    [
+     "L270066",
+     "+0.026",
+     "stated",
+     "HANDOFF.md:1007-1037"
+    ]
+   ]
+  },
+  {
+   "metric": "mcc",
+   "scope": "any atom the no choice baseline",
+   "snapshot": "semi formal experiment handoff md 1038 1059",
+   "values": [
+    0.274,
+    0.294
+   ],
+   "claims": [
+    [
+     "L270080",
+     "+0.294",
+     "stated",
+     "HANDOFF.md:1038-1059"
+    ],
+    [
+     "L270081",
+     "+0.274",
+     "stated",
+     "HANDOFF.md:1038-1059"
+    ]
+   ]
+  },
+  {
+   "metric": "mcc",
+   "scope": "bag scorer relevance label free",
+   "snapshot": "semi formal experiment handoff md 1038 1059",
+   "values": [
+    0.277,
+    0.284
+   ],
+   "claims": [
+    [
+     "L270082",
+     "+0.277",
+     "stated",
+     "HANDOFF.md:1038-1059"
+    ],
+    [
+     "L270083",
+     "+0.284",
+     "stated",
+     "HANDOFF.md:1038-1059"
+    ]
+   ]
+  },
+  {
+   "metric": "noise floor",
+   "scope": "noise floor",
+   "snapshot": "semi formal experiment handoff md 1060 1089",
+   "values": [
+    0.0295,
+    0.035
+   ],
+   "claims": [
+    [
+     "L270102",
+     "0.0295",
+     "stated",
+     "HANDOFF.md:1060-1089"
+    ],
+    [
+     "L270103",
+     "0.035",
+     "cove",
+     "HANDOFF.md:1060-1089"
+    ]
+   ]
+  },
+  {
+   "metric": "mcc",
+   "scope": "animal welfare",
+   "snapshot": "semi formal experiment handoff md 1095 1131",
+   "values": [
+    0.133,
+    0.217
+   ],
+   "claims": [
+    [
+     "L270141",
+     "+0.133",
+     "stated",
+     "HANDOFF.md:1095-1131"
+    ],
+    [
+     "L270142",
+     "+0.217",
+     "stated",
+     "HANDOFF.md:1095-1131"
+    ]
+   ]
+  },
+  {
+   "metric": "mcc",
+   "scope": "how to approach tradeoffs",
+   "snapshot": "semi formal experiment handoff md 1095 1131",
+   "values": [
+    0.058,
+    0.188
+   ],
+   "claims": [
+    [
+     "L270143",
+     "+0.058",
+     "stated",
+     "HANDOFF.md:1095-1131"
+    ],
+    [
+     "L270144",
+     "+0.188",
+     "stated",
+     "HANDOFF.md:1095-1131"
+    ]
+   ]
+  },
+  {
+   "metric": "live artifact census count",
+   "scope": "live artifact census count pinned by a gate test",
+   "snapshot": "semi formal experiment cycle design md",
+   "values": [
+    109.0,
+    692.0
+   ],
+   "claims": [
+    [
+     "L320003",
+     109,
+     "stated",
+     "CYCLE_DESIGN.md:205-224"
+    ],
+    [
+     "L320004",
+     692,
+     "stated",
+     "CYCLE_DESIGN.md:205-224"
+    ]
+   ]
+  },
+  {
+   "metric": "check model py checks",
+   "scope": "machine check model py",
+   "snapshot": "semi formal experiment machine readme md",
+   "values": [
+    3.0,
+    4.0
+   ],
+   "claims": [
+    [
+     "L320021",
+     4,
+     "stated",
+     "README.md:13-42"
+    ],
+    [
+     "L320039",
+     3,
+     "stated",
+     "README.md:98-157"
+    ],
+    [
+     "L320056",
+     4,
+     "stated",
+     "README.md:158-165"
+    ]
+   ]
+  },
+  {
+   "metric": "tests passed",
+   "scope": "decoration blind join 2026 08 04 gate tests",
+   "snapshot": "decoration blind join 2026 08 04 state json",
+   "values": [
+    3.0,
+    88.0
+   ],
+   "claims": [
+    [
+     "L400005",
+     3,
+     "stated",
+     "state.json:42-68"
+    ],
+    [
+     "L400045",
+     88,
+     "stated",
+     "state.json:42-68"
+    ]
+   ]
+  },
+  {
+   "metric": "engaged precision",
+   "scope": "helpfulness",
+   "snapshot": "round4 dev table json",
+   "values": [
+    0.625,
+    0.725
+   ],
+   "claims": [
+    [
+     "L40008",
+     0.625,
+     "raw",
+     "ROUND4_DEV_TABLE.json:3-53"
+    ],
+    [
+     "L40010",
+     0.725,
+     "adjudicated",
+     "ROUND4_DEV_TABLE.json:3-53"
+    ]
+   ]
+  },
+  {
+   "metric": "decline correctness",
+   "scope": "helpfulness",
+   "snapshot": "round4 dev table json",
+   "values": [
+    0.875,
+    0.975
+   ],
+   "claims": [
+    [
+     "L40009",
+     0.875,
+     "raw",
+     "ROUND4_DEV_TABLE.json:3-53"
+    ],
+    [
+     "L40011",
+     0.975,
+     "adjudicated",
+     "ROUND4_DEV_TABLE.json:3-53"
+    ]
+   ]
+  },
+  {
+   "metric": "tests passed",
+   "scope": "join integrity v2 2026 08 04 gate tests",
+   "snapshot": "join integrity v2 2026 08 04 decision json",
+   "values": [
+    5.0,
+    276.0
+   ],
+   "claims": [
+    [
+     "L400091",
+     5,
+     "stated",
+     "decision.json:11-43"
+    ],
+    [
+     "L400108",
+     276,
+     "stated",
+     "decision.json:11-43"
+    ]
+   ]
+  },
+  {
+   "metric": "engaged precision",
+   "scope": "harm avoidance to third parties",
+   "snapshot": "round4 dev table json",
+   "values": [
+    0.8235,
+    0.8824
+   ],
+   "claims": [
+    [
+     "L40016",
+     0.8235,
+     "raw",
+     "ROUND4_DEV_TABLE.json:3-53"
+    ],
+    [
+     "L40018",
+     0.8824,
+     "adjudicated",
+     "ROUND4_DEV_TABLE.json:3-53"
+    ]
+   ]
+  },
+  {
+   "metric": "decline correctness",
+   "scope": "harm avoidance to third parties",
+   "snapshot": "round4 dev table json",
+   "values": [
+    0.8,
+    1.0
+   ],
+   "claims": [
+    [
+     "L40017",
+     0.8,
+     "raw",
+     "ROUND4_DEV_TABLE.json:3-53"
+    ],
+    [
+     "L40019",
+     1.0,
+     "adjudicated",
+     "ROUND4_DEV_TABLE.json:3-53"
+    ]
+   ]
+  },
+  {
+   "metric": "engaged precision",
+   "scope": "avoiding over and under caution",
+   "snapshot": "round4 dev table json",
+   "values": [
+    0.675,
+    0.75
+   ],
+   "claims": [
+    [
+     "L40025",
+     0.675,
+     "raw",
+     "ROUND4_DEV_TABLE.json:3-53"
+    ],
+    [
+     "L40027",
+     0.75,
+     "adjudicated",
+     "ROUND4_DEV_TABLE.json:3-53"
+    ]
+   ]
+  },
+  {
+   "metric": "decline correctness",
+   "scope": "avoiding over and under caution",
+   "snapshot": "round4 dev table json",
+   "values": [
+    0.875,
+    0.95
+   ],
+   "claims": [
+    [
+     "L40026",
+     0.875,
+     "raw",
+     "ROUND4_DEV_TABLE.json:3-53"
+    ],
+    [
+     "L40028",
+     0.95,
+     "adjudicated",
+     "ROUND4_DEV_TABLE.json:3-53"
+    ]
+   ]
+  },
+  {
+   "metric": "engaged precision",
+   "scope": "avoiding over and under caution",
+   "snapshot": "round4 caution scored raw json",
+   "values": [
+    0.675,
+    40.0
+   ],
+   "claims": [
+    [
+     "L40052",
+     40,
+     "raw",
+     "round4_caution_scored_raw.json:3-3"
+    ],
+    [
+     "L40054",
+     0.675,
+     "raw",
+     "round4_caution_scored_raw.json:5-5"
+    ]
+   ]
+  },
+  {
+   "metric": "decline correctness",
+   "scope": "avoiding over and under caution",
+   "snapshot": "round4 caution scored raw json",
+   "values": [
+    0.875,
+    40.0
+   ],
+   "claims": [
+    [
+     "L40053",
+     40,
+     "raw",
+     "round4_caution_scored_raw.json:4-4"
+    ],
+    [
+     "L40055",
+     0.875,
+     "raw",
+     "round4_caution_scored_raw.json:6-6"
+    ]
+   ]
+  },
+  {
+   "metric": "tests passed",
+   "scope": "semi formal experiment cycles join integrity v2 2026 08 04",
+   "snapshot": "state json join integrity v2 2026 08 04",
+   "values": [
+    5.0,
+    276.0
+   ],
+   "claims": [
+    [
+     "L420030",
+     5,
+     "stated",
+     "state.json:37-69"
+    ],
+    [
+     "L420038",
+     276,
+     "stated",
+     "state.json:37-69"
+    ]
+   ]
+  },
+  {
+   "metric": "flips in scope",
+   "scope": "arc 1 cycle patient pricing 2026 08 04",
+   "snapshot": "patient pricing 2026 08 04 decision json",
+   "values": [
+    6.0,
+    18.0
+   ],
+   "claims": [
+    [
+     "L450096",
+     18,
+     "adjudicated",
+     "decision.json:2-36"
+    ],
+    [
+     "L450100",
+     6,
+     "adjudicated",
+     "decision.json:2-36"
+    ]
+   ]
+  },
+  {
+   "metric": "flip tally correct",
+   "scope": "arc 1 cycle patient pricing 2026 08 04",
+   "snapshot": "patient pricing 2026 08 04 decision json",
+   "values": [
+    2.0,
+    12.0
+   ],
+   "claims": [
+    [
+     "L450097",
+     12,
+     "adjudicated",
+     "decision.json:2-36"
+    ],
+    [
+     "L450102",
+     2,
+     "adjudicated",
+     "decision.json:2-36"
+    ]
+   ]
+  },
+  {
+   "metric": "flip tally regression",
+   "scope": "arc 1 cycle patient pricing 2026 08 04",
+   "snapshot": "patient pricing 2026 08 04 decision json",
+   "values": [
+    4.0,
+    5.0
+   ],
+   "claims": [
+    [
+     "L450098",
+     5,
+     "adjudicated",
+     "decision.json:2-36"
+    ],
+    [
+     "L450103",
+     4,
+     "adjudicated",
+     "decision.json:2-36"
+    ]
+   ]
+  },
+  {
+   "metric": "m0355 margin normalized minus frozen harm cut",
+   "scope": "m0355",
+   "snapshot": "patient pricing 2026 08 04",
+   "values": [
+    -0.008,
+    -0.0015,
+    0.0018,
+    0.0051
+   ],
+   "claims": [
+    [
+     "L470030",
+     "-0.0080",
+     "stated",
+     "prediction.json:10-10"
+    ],
+    [
+     "L470031",
+     "-0.0015",
+     "stated",
+     "prediction.json:10-10"
+    ],
+    [
+     "L470032",
+     "+0.0018",
+     "stated",
+     "prediction.json:10-10"
+    ],
+    [
+     "L470033",
+     "+0.0051",
+     "stated",
+     "prediction.json:10-10"
+    ]
+   ]
+  },
+  {
+   "metric": "tests passed",
+   "scope": "test dossier py",
+   "snapshot": "patient pricing 2026 08 04",
+   "values": [
+    1.0,
+    33.0
+   ],
+   "claims": [
+    [
+     "L470092",
+     33,
+     "stated",
+     "review_verdict.json:4-4"
+    ],
+    [
+     "L470113",
+     1.0,
+     "stated",
+     "review_verdict.json:4-4"
+    ]
+   ]
+  },
+  {
+   "metric": "tests passed",
+   "scope": "gate test files for the versioned cut cycle",
+   "snapshot": "versioned cut 2026 08 04",
+   "values": [
+    3.0,
+    103.0
+   ],
+   "claims": [
+    [
+     "L490012",
+     3,
+     "stated",
+     "decision.json:11-36"
+    ],
+    [
+     "L490029",
+     103,
+     "stated",
+     "decision.json:11-36"
+    ]
+   ]
+  },
+  {
+   "metric": "test suite counts",
+   "scope": "semi formal experiment suite",
+   "snapshot": "commit 5740a2a6 after the move",
+   "values": [
+    3.0,
+    1446.0
+   ],
+   "claims": [
+    [
+     "L520012",
+     1446,
+     "stated",
+     "git_log_first_parent.txt:8-44"
+    ],
+    [
+     "L520013",
+     3,
+     "stated",
+     "git_log_first_parent.txt:8-44"
+    ]
+   ]
+  },
+  {
+   "metric": "test suite counts",
+   "scope": "last full clean gate",
+   "snapshot": "commit baa962d2",
+   "values": [
+    3.0,
+    1868.0
+   ],
+   "claims": [
+    [
+     "L520049",
+     1868,
+     "stated",
+     "git_log_first_parent.txt:45-77"
+    ],
+    [
+     "L520050",
+     3,
+     "stated",
+     "git_log_first_parent.txt:45-77"
+    ]
+   ]
+  },
+  {
+   "metric": "human ceiling",
+   "scope": "human ceiling order unstated",
+   "snapshot": "commit ed3cf093",
+   "values": [
+    0.79,
+    0.91
+   ],
+   "claims": [
+    [
+     "L520070",
+     0.79,
+     "stated",
+     "git_log_first_parent.txt:78-102"
+    ],
+    [
+     "L520071",
+     0.91,
+     "stated",
+     "git_log_first_parent.txt:78-102"
+    ]
+   ]
+  },
+  {
+   "metric": "test suite counts",
+   "scope": "full suite",
+   "snapshot": "commit ed3cf093",
+   "values": [
+    3.0,
+    1960.0
+   ],
+   "claims": [
+    [
+     "L520073",
+     1960,
+     "stated",
+     "git_log_first_parent.txt:78-102"
+    ],
+    [
+     "L520074",
+     3,
+     "stated",
+     "git_log_first_parent.txt:78-102"
+    ]
+   ]
+  },
+  {
+   "metric": "drift standing admissions",
+   "scope": "p3 drift standing",
+   "snapshot": "commit 5d6374dd",
+   "values": [
+    0.33,
+    0.65
+   ],
+   "claims": [
+    [
+     "L530007",
+     "65%",
+     "stated",
+     "git_log_first_parent.txt:226-235"
+    ],
+    [
+     "L530008",
+     "33%",
+     "stated",
+     "git_log_first_parent.txt:226-235"
+    ]
+   ]
+  },
+  {
+   "metric": "engaged precision",
+   "scope": "unstated",
+   "snapshot": "attempt2 iter2 remeasure scored json",
+   "values": [
+    0.7,
+    0.75
+   ],
+   "claims": [
+    [
+     "L90105",
+     0.75,
+     "raw",
+     "ITER2_REMEASURE_SCORED.json:26-57"
+    ],
+    [
+     "L90107",
+     0.7,
+     "panel",
+     "ITER2_REMEASURE_SCORED.json:26-57"
+    ]
+   ]
+  },
+  {
+   "metric": "decline correctness",
+   "scope": "unstated",
+   "snapshot": "attempt2 iter2 remeasure scored json",
+   "values": [
+    0.5,
+    0.55
+   ],
+   "claims": [
+    [
+     "L90106",
+     0.55,
+     "raw",
+     "ITER2_REMEASURE_SCORED.json:26-57"
+    ],
+    [
+     "L90108",
+     0.5,
+     "panel",
+     "ITER2_REMEASURE_SCORED.json:26-57"
+    ]
+   ]
+  },
+  {
+   "metric": "engaged precision",
+   "scope": "unstated",
+   "snapshot": "attempt3 iter2 remeasure scored json",
+   "values": [
+    0.4,
+    0.55
+   ],
+   "claims": [
+    [
+     "L90111",
+     0.4,
+     "raw",
+     "ITER2_REMEASURE_SCORED.json:58-95"
+    ],
+    [
+     "L90113",
+     0.55,
+     "panel",
+     "ITER2_REMEASURE_SCORED.json:58-95"
+    ]
+   ]
+  },
+  {
+   "metric": "decline correctness",
+   "scope": "unstated",
+   "snapshot": "attempt3 iter2 remeasure scored json",
+   "values": [
+    0.35,
+    0.5
+   ],
+   "claims": [
+    [
+     "L90112",
+     0.5,
+     "raw",
+     "ITER2_REMEASURE_SCORED.json:58-95"
+    ],
+    [
+     "L90114",
+     0.35,
+     "panel",
+     "ITER2_REMEASURE_SCORED.json:58-95"
+    ]
+   ]
+  },
+  {
+   "metric": "mcc",
+   "scope": "tool 0 18",
+   "snapshot": "sfe handoff md universe delta table",
+   "values": [
+    0.274,
+    0.32
+   ],
+   "claims": [
+    [
+     "L9940163",
+     "+0.274",
+     "stated",
+     "HANDOFF.md:446-503"
+    ],
+    [
+     "L9940164",
+     "+0.320",
+     "stated",
+     "HANDOFF.md:446-503"
+    ]
+   ]
+  },
+  {
+   "metric": "judge mcc",
+   "scope": "judges mean of 3",
+   "snapshot": "sfe handoff md universe delta table",
+   "values": [
+    0.394,
+    0.555
+   ],
+   "claims": [
+    [
+     "L9940165",
+     "+0.394",
+     "stated",
+     "HANDOFF.md:446-503"
+    ],
+    [
+     "L9940166",
+     "+0.555",
+     "stated",
+     "HANDOFF.md:446-503"
+    ]
+   ]
+  },
+  {
+   "metric": "tool to judge gap",
+   "scope": "tool vs judges",
+   "snapshot": "sfe handoff md universe delta table",
+   "values": [
+    0.119,
+    0.236
+   ],
+   "claims": [
+    [
+     "L9940167",
+     0.119,
+     "stated",
+     "HANDOFF.md:446-503"
+    ],
+    [
+     "L9940168",
+     0.236,
+     "stated",
+     "HANDOFF.md:446-503"
+    ]
+   ]
+  },
+  {
+   "metric": "mcc",
+   "scope": "shipped tool",
+   "snapshot": "sfe handoff md deficit table",
+   "values": [
+    0.206,
+    0.396
+   ],
+   "claims": [
+    [
+     "L9940187",
+     "+0.206",
+     "stated",
+     "HANDOFF.md:751-768"
+    ],
+    [
+     "L9940188",
+     "+0.396",
+     "stated",
+     "HANDOFF.md:751-768"
+    ]
+   ]
+  },
+  {
+   "metric": "judge mcc",
+   "scope": "judges",
+   "snapshot": "sfe handoff md deficit table",
+   "values": [
+    0.555,
+    0.654
+   ],
+   "claims": [
+    [
+     "L9940190",
+     "+0.555",
+     "stated",
+     "HANDOFF.md:751-768"
+    ],
+    [
+     "L9940191",
+     "+0.654",
+     "stated",
+     "HANDOFF.md:751-768"
+    ]
+   ]
+  },
+  {
+   "metric": "citations",
+   "scope": "the 9 behaviour panel",
+   "snapshot": "sfe handoff md",
+   "values": [
+    1682.0,
+    2632.0
+   ],
+   "claims": [
+    [
+     "L9940202",
+     2632,
+     "stated",
+     "HANDOFF.md:886-900"
+    ],
+    [
+     "L9940203",
+     1682,
+     "stated",
+     "HANDOFF.md:886-900"
+    ]
+   ]
+  },
+  {
+   "metric": "engaged precision",
+   "scope": "how to approach tradeoffs repair loop",
+   "snapshot": "attempt 4",
+   "values": [
+    0.85,
+    0.895
+   ],
+   "claims": [
+    [
+     "L9950004",
+     0.85,
+     "stated",
+     "ITERATION_NOTES.md:346-369"
+    ],
+    [
+     "L9950022",
+     0.895,
+     "stated",
+     "ITERATION_NOTES.md:346-369"
+    ]
+   ]
+  },
+  {
+   "metric": "extension precision",
+   "scope": "p3 move gate",
+   "snapshot": "attempt 4",
+   "values": [
+    0.7143,
+    0.8333
+   ],
+   "claims": [
+    [
+     "L9950010",
+     0.7143,
+     "stated",
+     "ITERATION_NOTES.md:346-369"
+    ],
+    [
+     "L9950023",
+     0.8333,
+     "stated",
+     "ITERATION_NOTES.md:346-369"
+    ]
+   ]
+  },
+  {
+   "metric": "ledger agreement",
+   "scope": "helpfulness",
+   "snapshot": "e2 paired format pilot",
+   "values": [
+    0.7,
+    0.75
+   ],
+   "claims": [
+    [
+     "L9960091",
+     0.75,
+     "stated",
+     "ROUND4_PREREG.md:149-208"
+    ],
+    [
+     "L9960092",
+     0.7,
+     "stated",
+     "ROUND4_PREREG.md:149-208"
+    ]
+   ]
+  },
+  {
+   "metric": "1 nn relevance prediction",
+   "scope": "l1 and l2 as registered",
+   "snapshot": "l1l2 adversarial review md overall verdict",
+   "values": [
+    0.7,
+    0.72
+   ],
+   "claims": [
+    [
+     "L9960119",
+     0.72,
+     "stated",
+     "L1L2_ADVERSARIAL_REVIEW.md:240-272"
+    ],
+    [
+     "L9960122",
+     0.7,
+     "stated",
+     "L1L2_ADVERSARIAL_REVIEW.md:240-272"
+    ]
+   ]
+  },
+  {
+   "metric": "base rate",
+   "scope": "l1 and l2 as registered",
+   "snapshot": "l1l2 adversarial review md overall verdict",
+   "values": [
+    0.59,
+    0.6
+   ],
+   "claims": [
+    [
+     "L9960120",
+     0.6,
+     "stated",
+     "L1L2_ADVERSARIAL_REVIEW.md:240-272"
+    ],
+    [
+     "L9960123",
+     0.59,
+     "stated",
+     "L1L2_ADVERSARIAL_REVIEW.md:240-272"
+    ]
+   ]
+  },
+  {
+   "metric": "p value",
+   "scope": "l1 and l2 as registered",
+   "snapshot": "l1l2 adversarial review md overall verdict",
+   "values": [
+    0.0015,
+    0.0097
+   ],
+   "claims": [
+    [
+     "L9960121",
+     0.0015,
+     "stated",
+     "L1L2_ADVERSARIAL_REVIEW.md:240-272"
+    ],
+    [
+     "L9960124",
+     0.0097,
+     "stated",
+     "L1L2_ADVERSARIAL_REVIEW.md:240-272"
+    ]
+   ]
+  },
+  {
+   "metric": "mcc floor",
+   "scope": "mcc floors",
+   "snapshot": "sfe handoff md",
+   "values": [
+    -0.059,
+    0.0
+   ],
+   "claims": [
+    [
+     "L9960210",
+     0.0,
+     "stated",
+     "HANDOFF.md:586-591"
+    ],
+    [
+     "L9960211",
+     -0.059,
+     "stated",
+     "HANDOFF.md:586-591"
+    ]
+   ]
+  },
+  {
+   "metric": "mcc",
+   "scope": "the section channel",
+   "snapshot": "sfe handoff md lead 2",
+   "values": [
+    0.16,
+    0.177,
+    0.31,
+    0.334,
+    0.335,
+    0.408,
+    0.536,
+    0.641
+   ],
+   "claims": [
+    [
+     "L9960215",
+     "+0.16",
+     "stated",
+     "HANDOFF.md:839-863"
+    ],
+    [
+     "L9960217",
+     "+0.641",
+     "stated",
+     "HANDOFF.md:839-863"
+    ],
+    [
+     "L9960218",
+     "+0.536",
+     "stated",
+     "HANDOFF.md:839-863"
+    ],
+    [
+     "L9960220",
+     "+0.334",
+     "stated",
+     "HANDOFF.md:839-863"
+    ],
+    [
+     "L9960221",
+     "+0.408",
+     "stated",
+     "HANDOFF.md:839-863"
+    ],
+    [
+     "L9960223",
+     "+0.177",
+     "stated",
+     "HANDOFF.md:839-863"
+    ],
+    [
+     "L9960224",
+     "+0.310",
+     "stated",
+     "HANDOFF.md:839-863"
+    ],
+    [
+     "L9960227",
+     "+0.335",
+     "stated",
+     "HANDOFF.md:839-863"
+    ]
+   ]
+  },
+  {
+   "metric": "coverage",
+   "scope": "chain of command",
+   "snapshot": "sfe handoff md",
+   "values": [
+    0.524,
+    0.571
+   ],
+   "claims": [
+    [
+     "L9970201",
+     0.524,
+     "stated",
+     "HANDOFF.md:1300-1338"
+    ],
+    [
+     "L9970202",
+     0.571,
+     "stated",
+     "HANDOFF.md:1300-1338"
+    ]
+   ]
+  },
+  {
+   "metric": "query atoms",
+   "scope": "per behaviour order unstated",
+   "snapshot": "sfe module map md",
+   "values": [
+    31.0,
+    37.0,
+    42.0
+   ],
+   "claims": [
+    [
+     "L9970228",
+     42,
+     "stated",
+     "MODULE_MAP.md:214-231"
+    ],
+    [
+     "L9970229",
+     31,
+     "stated",
+     "MODULE_MAP.md:214-231"
+    ],
+    [
+     "L9970230",
+     37,
+     "stated",
+     "MODULE_MAP.md:214-231"
+    ]
+   ]
+  },
+  {
+   "metric": "1 nn relevance prediction",
+   "scope": "user autonomy",
+   "snapshot": "f1",
+   "values": [
+    0.6967,
+    0.7
+   ],
+   "claims": [
+    [
+     "L9990073",
+     0.7,
+     "cove",
+     "L1L2_ADVERSARIAL_REVIEW.md:94-99"
+    ],
+    [
+     "L9990078",
+     0.6967,
+     "stated",
+     "L1L2_ADVERSARIAL_REVIEW.md:94-99"
+    ]
+   ]
+  }
+ ],
+ "contested": [
+  {
+   "id": "L100019",
+   "metric": "defensible-by-contradiction qualification",
+   "value": "does NOT qualify and stays contested-pending",
+   "source": "ITER2_REMEASURE_SCORED.json:187-196",
+   "refs": []
+  },
+  {
+   "id": "L10033",
+   "metric": "panel vote",
+   "value": "2-1",
+   "source": "ITERATION_NOTES.md:41-70",
+   "refs": []
+  },
+  {
+   "id": "L10054",
+   "metric": "panel vote",
+   "value": "2-1 SPLIT",
+   "source": "ITERATION_NOTES.md:73-103",
+   "refs": []
+  },
+  {
+   "id": "L10152",
+   "metric": "panel vote",
+   "value": "2-1",
+   "source": "ITERATION_NOTES.md:178-204",
+   "refs": []
+  },
+  {
+   "id": "L10224",
+   "metric": "panel vote",
+   "value": "3-0 relevant",
+   "source": "ITERATION_NOTES.md:266-298",
+   "refs": [
+    [
+     "contradicts",
+     "attempt-3 panel 3-0 not_relevant",
+     "L100057"
+    ]
+   ]
+  },
+  {
+   "id": "L10225",
+   "metric": "panel vote",
+   "value": "3-0 not_relevant",
+   "source": "ITERATION_NOTES.md:266-298",
+   "refs": [
+    [
+     "contradicts",
+     "iter-1 escalation 3-0 relevant",
+     "L10115"
+    ]
+   ]
+  },
+  {
+   "id": "L10227",
+   "metric": "panel vote",
+   "value": "2-1 R then wave NR",
+   "source": "ITERATION_NOTES.md:266-298",
+   "refs": []
+  },
+  {
+   "id": "L10238",
+   "metric": "defensible-by-contradiction qualification",
+   "value": "does NOT and stays contested",
+   "source": "ITERATION_NOTES.md:299-312",
+   "refs": []
+  },
+  {
+   "id": "L120105",
+   "metric": "human-panelist baseline",
+   "value": "71%",
+   "source": "HANDOFF_CURRENT.md:80-109",
+   "refs": []
+  },
+  {
+   "id": "L170017",
+   "metric": "positive rate",
+   "value": 0.56,
+   "source": "L1L2_ADVERSARIAL_REVIEW.md:294-303",
+   "refs": [
+    [
+     "contradicts",
+     "panel-v5 (`data/panel-v5/runlog-v5.jsonl`",
+     null
+    ],
+    [
+     "contradicts",
+     "The original frontier panel (`data/behaviours.json`, rubric ",
+     "L10026"
+    ]
+   ]
+  },
+  {
+   "id": "L170019",
+   "metric": "positive rate",
+   "value": 0.443,
+   "source": "L1L2_ADVERSARIAL_REVIEW.md:294-303",
+   "refs": [
+    [
+     "contradicts",
+     "panel-v5 (`data/panel-v5/runlog-v5.jsonl`",
+     null
+    ]
+   ]
+  },
+  {
+   "id": "L170021",
+   "metric": "positive rate",
+   "value": 0.54,
+   "source": "L1L2_ADVERSARIAL_REVIEW.md:294-303",
+   "refs": [
+    [
+     "contradicts",
+     "panel-v5 (`data/panel-v5/runlog-v5.jsonl`",
+     null
+    ]
+   ]
+  },
+  {
+   "id": "L170025",
+   "metric": "positive rate",
+   "value": 0.012,
+   "source": "L1L2_ADVERSARIAL_REVIEW.md:294-303",
+   "refs": [
+    [
+     "contradicts",
+     "the node ledger",
+     "L170028"
+    ]
+   ]
+  },
+  {
+   "id": "L170026",
+   "metric": "positive rate",
+   "value": 0.044,
+   "source": "L1L2_ADVERSARIAL_REVIEW.md:294-303",
+   "refs": [
+    [
+     "contradicts",
+     "the node ledger",
+     "L170028"
+    ]
+   ]
+  },
+  {
+   "id": "L170027",
+   "metric": "positive rate",
+   "value": 0.007,
+   "source": "L1L2_ADVERSARIAL_REVIEW.md:294-303",
+   "refs": [
+    [
+     "contradicts",
+     "the node ledger",
+     "L170028"
+    ]
+   ]
+  },
+  {
+   "id": "L170030",
+   "metric": "positive rate",
+   "value": "0.536/0.550/0.614",
+   "source": "L1L2_ADVERSARIAL_REVIEW.md:294-303",
+   "refs": [
+    [
+     "contradicts",
+     "panel-v5 (`data/panel-v5/runlog-v5.jsonl`",
+     null
+    ],
+    [
+     "contradicts",
+     "Graph-node ledger (`satisfiability_census.truth_all()`",
+     null
+    ]
+   ]
+  },
+  {
+   "id": "L170169",
+   "metric": "relevance ledger",
+   "value": 3,
+   "source": "L1L2_ADVERSARIAL_REVIEW.md:353-373",
+   "refs": []
+  },
+  {
+   "id": "L230059",
+   "metric": "S3b build readiness",
+   "value": "READY TO BUILD",
+   "source": "HANDOFF.md:99-130",
+   "refs": [
+    [
+     "contradicts",
+     "And S3b is **not** build-ready",
+     "L230070"
+    ]
+   ]
+  },
+  {
+   "id": "L230063",
+   "metric": "n/a",
+   "value": null,
+   "source": "HANDOFF.md:99-130",
+   "refs": [
+    [
+     "contradicts",
+     "The order was also ruled the other way: **S4 first, then S3b",
+     "L10253"
+    ]
+   ]
+  },
+  {
+   "id": "L230070",
+   "metric": "S3b build readiness",
+   "value": "not build-ready",
+   "source": "HANDOFF.md:99-130",
+   "refs": [
+    [
+     "contradicts",
+     "it is READY TO BUILD",
+     "L230059"
+    ]
+   ]
+  },
+  {
+   "id": "L230073",
+   "metric": "n/a",
+   "value": null,
+   "source": "HANDOFF.md:99-130",
+   "refs": [
+    [
+     "contradicts",
+     "NEXT STEP: run the S3b build (attribution backfill first), t",
+     "L290229"
+    ]
+   ]
+  },
+  {
+   "id": "L230134",
+   "metric": "contested node",
+   "value": "m0108",
+   "source": "HANDOFF.md:191-217",
+   "refs": []
+  },
+  {
+   "id": "L280017",
+   "metric": "delta",
+   "value": "\u22120.143",
+   "source": "HANDOFF.md:1193-1208",
+   "refs": [
+    [
+     "contradicts",
+     "is an artifact of the operator it inherited",
+     "L280018"
+    ]
+   ]
+  },
+  {
+   "id": "L280079",
+   "metric": "n/a",
+   "value": null,
+   "source": "HANDOFF.md:1249-1268",
+   "refs": [
+    [
+     "contradicts",
+     "Ship `section@any_atom`, not `combined`",
+     "L280074"
+    ]
+   ]
+  },
+  {
+   "id": "L290052",
+   "metric": "negatives ratio in the conflict sample",
+   "value": "1:2",
+   "source": "HANDOFF.md:1440-1460",
+   "refs": [
+    [
+     "contradicts",
+     "the README states and argues for 1:1",
+     "L9940003"
+    ]
+   ]
+  },
+  {
+   "id": "L290053",
+   "metric": "negatives ratio in the conflict sample",
+   "value": "1:1",
+   "source": "HANDOFF.md:1440-1460",
+   "refs": [
+    [
+     "contradicts",
+     "the sample ships 1:2 negatives",
+     "L210087"
+    ]
+   ]
+  },
+  {
+   "id": "L320082",
+   "metric": "briefs listed in briefs/README.md",
+   "value": 11,
+   "source": "README.md:196-240",
+   "refs": [
+    [
+     "contradicts",
+     "`ls briefs/*.md` returns 12",
+     "L320028"
+    ]
+   ]
+  },
+  {
+   "id": "L320083",
+   "metric": "brief files in briefs/",
+   "value": 12,
+   "source": "README.md:196-240",
+   "refs": [
+    [
+     "contradicts",
+     "\"**11** as of 2026-08-05\"",
+     "L320081"
+    ]
+   ]
+  },
+  {
+   "id": "L320089",
+   "metric": "n/a",
+   "value": null,
+   "source": "README.md:241-253",
+   "refs": [
+    [
+     "contradicts",
+     "`cycle.py:846` still prints that exact stale rationale in th",
+     "L320090"
+    ]
+   ]
+  },
+  {
+   "id": "L320090",
+   "metric": "n/a",
+   "value": null,
+   "source": "README.md:241-253",
+   "refs": [
+    [
+     "contradicts",
+     "`CYCLE_DESIGN.md` F5 marks the *\"this workspace has concurre",
+     "L240012"
+    ]
+   ]
+  },
+  {
+   "id": "L320091",
+   "metric": "n/a",
+   "value": null,
+   "source": "README.md:241-253",
+   "refs": [
+    [
+     "contradicts",
+     "`PHASES_BY_SHAPE` puts CENSUS only in the `checkpoint` shape",
+     "L320092"
+    ]
+   ]
+  },
+  {
+   "id": "L320092",
+   "metric": "n/a",
+   "value": null,
+   "source": "README.md:241-253",
+   "refs": [
+    [
+     "contradicts",
+     "`CYCLE_DESIGN.md`'s numbered *Phases* list still has **CENSU",
+     "L180150"
+    ]
+   ]
+  },
+  {
+   "id": "L320093",
+   "metric": "n/a",
+   "value": null,
+   "source": "README.md:241-253",
+   "refs": [
+    [
+     "contradicts",
+     "`_predict` requires mechanism-level targets and accepts `cen",
+     "L10076"
+    ]
+   ]
+  },
+  {
+   "id": "L320094",
+   "metric": "n/a",
+   "value": null,
+   "source": "README.md:241-253",
+   "refs": [
+    [
+     "contradicts",
+     "`CYCLE_DESIGN.md` phase 2: `prediction.json` holds *expected",
+     "L10065"
+    ]
+   ]
+  },
+  {
+   "id": "L320095",
+   "metric": "briefs listed in briefs/README.md",
+   "value": 11,
+   "source": "README.md:241-253",
+   "refs": [
+    [
+     "contradicts",
+     "12 files in `briefs/`; `density_editor.md` is unlisted",
+     "L210201"
+    ]
+   ]
+  },
+  {
+   "id": "L320096",
+   "metric": "brief files in briefs/",
+   "value": 12,
+   "source": "README.md:241-253",
+   "refs": [
+    [
+     "contradicts",
+     "`briefs/README.md`: **11 briefs** as of 2026-08-05",
+     "L320082"
+    ]
+   ]
+  },
+  {
+   "id": "L320097",
+   "metric": "n/a",
+   "value": null,
+   "source": "README.md:241-253",
+   "refs": [
+    [
+     "contradicts",
+     "the `CAUSE_TAXONOMY` gives FP/FN causes a fault-asserting me",
+     "L320098"
+    ]
+   ]
+  },
+  {
+   "id": "L320098",
+   "metric": "n/a",
+   "value": null,
+   "source": "README.md:241-253",
+   "refs": [
+    [
+     "contradicts",
+     "*\"a tool that was wrong for a mechanical reason still gets i",
+     "L320097"
+    ]
+   ]
+  },
+  {
+   "id": "L320100",
+   "metric": "retracted numeric claim",
+   "value": "\u22120.143",
+   "source": "README.md:254-266",
+   "refs": []
+  },
+  {
+   "id": "L320101",
+   "metric": "retracted numeric claim",
+   "value": "+0.310 / \u00b10.06",
+   "source": "README.md:254-266",
+   "refs": []
+  },
+  {
+   "id": "L330017",
+   "metric": "n/a",
+   "value": null,
+   "source": "adversarial_review_1.md:5-12",
+   "refs": [
+    [
+     "contradicts",
+     "either segmentation is wrong (undermines 31.7% + boundary) o",
+     "L330018"
+    ]
+   ]
+  },
+  {
+   "id": "L330038",
+   "metric": "n/a",
+   "value": null,
+   "source": "adversarial_review_1.md:13-36",
+   "refs": [
+    [
+     "contradicts",
+     "abstract says divergence predicts \"problems in model specifi",
+     null
+    ]
+   ]
+  },
+  {
+   "id": "L330078",
+   "metric": "n/a",
+   "value": null,
+   "source": "adversarial_review_1.md:13-36",
+   "refs": [
+    [
+     "contradicts",
+     "the section's recommendation",
+     null
+    ]
+   ]
+  },
+  {
+   "id": "L330100",
+   "metric": "n/a",
+   "value": null,
+   "source": "adversarial_review_1.md:45-48",
+   "refs": [
+    [
+     "contradicts",
+     "present-tense implementation claims contradicted by artifact",
+     null
+    ]
+   ]
+  },
+  {
+   "id": "L450092",
+   "metric": "flip verdict",
+   "value": "regression",
+   "source": "decision.json:2-36",
+   "refs": [
+    [
+     "contradicts",
+     "leg 2 correct",
+     "L160134"
+    ]
+   ]
+  },
+  {
+   "id": "L450093",
+   "metric": "flip verdict",
+   "value": "correct",
+   "source": "decision.json:2-36",
+   "refs": [
+    [
+     "contradicts",
+     "leg 1 regression",
+     "L380016"
+    ]
+   ]
+  },
+  {
+   "id": "L450105",
+   "metric": "flip verdict",
+   "value": "unclear",
+   "source": "decision.json:2-36",
+   "refs": [
+    [
+     "contradicts",
+     "leg 2 correct",
+     "L160134"
+    ]
+   ]
+  },
+  {
+   "id": "L450106",
+   "metric": "flip verdict",
+   "value": "correct",
+   "source": "decision.json:2-36",
+   "refs": [
+    [
+     "contradicts",
+     "leg 1 unclear",
+     "L230092"
+    ]
+   ]
+  },
+  {
+   "id": "L460069",
+   "metric": "flip verdict",
+   "value": "unclear",
+   "source": "decision.json:86-86",
+   "refs": [
+    [
+     "contradicts",
+     "the first leg's verdicts",
+     "L460068"
+    ]
+   ]
+  },
+  {
+   "id": "L460070",
+   "metric": "flip verdict",
+   "value": "correct",
+   "source": "decision.json:86-86",
+   "refs": [
+    [
+     "contradicts",
+     "leg 1 unclear",
+     "L230092"
+    ]
+   ]
+  },
+  {
+   "id": "L80002",
+   "metric": "wave verdict",
+   "value": "relevant",
+   "source": "ITER1_ATTEMPT2_SCORED.json:8-87",
+   "refs": []
+  },
+  {
+   "id": "L80003",
+   "metric": "panel vote",
+   "value": "not_relevant / relevant / not_relevant",
+   "source": "ITER1_ATTEMPT2_SCORED.json:8-87",
+   "refs": []
+  },
+  {
+   "id": "L80004",
+   "metric": "panel majority",
+   "value": "not_relevant",
+   "source": "ITER1_ATTEMPT2_SCORED.json:8-87",
+   "refs": []
+  },
+  {
+   "id": "L80005",
+   "metric": "panel split",
+   "value": true,
+   "source": "ITER1_ATTEMPT2_SCORED.json:8-87",
+   "refs": []
+  },
+  {
+   "id": "L90068",
+   "metric": "panel-tier rulings contradicted",
+   "value": 2,
+   "source": "ITER2_ATTEMPT3_SCORED.json:190-196",
+   "refs": [
+    [
+     "contradicts",
+     "l3877_3953_n002",
+     "L100018"
+    ],
+    [
+     "contradicts",
+     "l3239_3382_n005",
+     "L100021"
+    ]
+   ]
+  },
+  {
+   "id": "L90084",
+   "metric": "n/a",
+   "value": null,
+   "source": "ITER2_ATTEMPT3_SCORED.json:190-196",
+   "refs": [
+    [
+     "contradicts",
+     "P1 REGISTERED RULE SAYS REVERT",
+     "L10794"
+    ]
+   ]
+  },
+  {
+   "id": "L9950135",
+   "metric": "n/a",
+   "value": null,
+   "source": "semantic_audit.json:83-162",
+   "refs": []
+  },
+  {
+   "id": "L9950136",
+   "metric": "auditor instances split",
+   "value": 2,
+   "source": "semantic_audit.json:83-162",
+   "refs": []
+  },
+  {
+   "id": "L9950163",
+   "metric": "n/a",
+   "value": null,
+   "source": "semantic_audit.json:83-162",
+   "refs": []
+  },
+  {
+   "id": "L9960016",
+   "metric": "panel-tier rulings contradicted",
+   "value": 2,
+   "source": "ITERATION_NOTES.md:236-265",
+   "refs": []
+  },
+  {
+   "id": "L9960017",
+   "metric": "node contradicted by the wave seat",
+   "value": "l3877_3953_n002",
+   "source": "ITERATION_NOTES.md:236-265",
+   "refs": [
+    [
+     "contradicts",
+     "TWO panel-tier rulings",
+     "L90068"
+    ]
+   ]
+  },
+  {
+   "id": "L9960018",
+   "metric": "node contradicted by the wave seat",
+   "value": "l3239_3382_n005",
+   "source": "ITERATION_NOTES.md:236-265",
+   "refs": [
+    [
+     "contradicts",
+     "TWO panel-tier rulings",
+     "L90068"
+    ]
+   ]
+  },
+  {
+   "id": "L9960200",
+   "metric": "divergences",
+   "value": 1,
+   "source": "HANDOFF.md:271-289",
+   "refs": []
+  },
+  {
+   "id": "L9970037",
+   "metric": "definition",
+   "value": 100,
+   "source": "ITERATION_NOTES.md:739-756",
+   "refs": []
+  },
+  {
+   "id": "L9980092",
+   "metric": "human-panelist baseline",
+   "value": "71%",
+   "source": "HANDOFF_CURRENT.md:163-219",
+   "refs": []
+  },
+  {
+   "id": "L9990080",
+   "metric": "best canon form field relevance",
+   "value": 0.7,
+   "source": "L1L2_ADVERSARIAL_REVIEW.md:94-99",
+   "refs": []
+  },
+  {
+   "id": "L9990081",
+   "metric": "majority baseline (base rate)",
+   "value": 0.59,
+   "source": "L1L2_ADVERSARIAL_REVIEW.md:94-99",
+   "refs": []
+  },
+  {
+   "id": "L9990082",
+   "metric": "n/a",
+   "value": null,
+   "source": "L1L2_ADVERSARIAL_REVIEW.md:94-99",
+   "refs": [
+    [
+     "contradicts",
+     "a failure in 0031 and a pass in L1",
+     "L10619"
+    ]
+   ]
+  }
+ ],
+ "forbids_citation_edges": [
+  [
+   "L110172",
+   "the 92.3% new-prompt figure",
+   "L110173"
+  ],
+  [
+   "L130188",
+   "The spot-check",
+   "L10345"
+  ],
+  [
+   "L170136",
+   "ua_truth_sealed.json",
+   "L150064"
+  ],
+  [
+   "L230053",
+   "Embedding soft-match, document-internal vs pretrained: `SEMANTIC_ARM_RESULTS.md`",
+   "L320034"
+  ],
+  [
+   "L240070",
+   "**Dev MCC +0.309**",
+   "L240068"
+  ],
+  [
+   "L240231",
+   "a matched-subset score alone",
+   null
+  ],
+  [
+   "L260150",
+   "ITS AGREEMENT AS \"THE BAR.\"",
+   null
+  ],
+  [
+   "L270090",
+   "Anything quoted from `structural.py` at +0.310",
+   null
+  ],
+  [
+   "L280090",
+   "The published-universe bar 0.764/0.780/0.500",
+   "L280089"
+  ],
+  [
+   "L280199",
+   "every prior ablation and every prior threshold derivation",
+   "L280198"
+  ],
+  [
+   "L290006",
+   "Every number in it",
+   "L280174"
+  ],
+  [
+   "L290025",
+   "The section channel's value",
+   null
+  ],
+  [
+   "L290115",
+   "849/863",
+   "L290116"
+  ],
+  [
+   "L300078",
+   "any number in this file",
+   null
+  ],
+  [
+   "L300080",
+   "a remembered number",
+   null
+  ],
+  [
+   "L340032",
+   "a\nsecond number",
+   null
+  ],
+  [
+   "L420047",
+   "a raw per-locator 'scores' field",
+   "L400116"
+  ],
+  [
+   "L460061",
+   "DEV-stamped census composition figures (fp_*/fn_* class counts)",
+   "L460060"
+  ],
+  [
+   "L460096",
+   "The measure snapshot snapshots/patient-pricing-2026-08-04.json",
+   "L470104"
+  ],
+  [
+   "L470087",
+   "DEV-stamped census composition figures (fp_*/fn_* class counts)",
+   "L460060"
+  ],
+  [
+   "L480063",
+   "DEV-stamped census composition figures (fp_*/fn_* class counts)",
+   "L460060"
+  ],
+  [
+   "L9940156",
+   "EVERY PREVIOUSLY PUBLISHED NUMBER IN THIS FILE",
+   null
+  ],
+  [
+   "L9940185",
+   "377/333/153, 863 passages, 0.764/0.780/0.500, +0.274, +0.187, or the over/under ",
+   "L250050"
+  ],
+  [
+   "L9970120",
+   "the cycle's design doc, `PORTFOLIO_REVIEW.md`, prior cycles' `flip_verdicts*.jso",
+   null
+  ]
+ ],
+ "anti_rule_claims": 127,
+ "restated_without_marking": [
+  {
+   "value": 0.309,
+   "marked": [
+    "L240068"
+   ],
+   "unmarked_standing": [
+    [
+     "L520066",
+     "git_log_first_parent.txt"
+    ]
+   ]
+  },
+  {
+   "value": 0.045,
+   "marked": [
+    "L260179"
+   ],
+   "unmarked_standing": [
+    [
+     "L260067",
+     "HANDOFF.md"
+    ],
+    [
+     "L270063",
+     "HANDOFF.md"
+    ]
+   ]
+  },
+  {
+   "value": 0.31,
+   "marked": [
+    "L270078"
+   ],
+   "unmarked_standing": [
+    [
+     "L9960224",
+     "HANDOFF.md"
+    ]
+   ]
+  },
+  {
+   "value": 0.274,
+   "marked": [
+    "L9940163"
+   ],
+   "unmarked_standing": [
+    [
+     "L270081",
+     "HANDOFF.md"
+    ],
+    [
+     "L270095",
+     "HANDOFF.md"
+    ],
+    [
+     "L270130",
+     "HANDOFF.md"
+    ]
+   ]
+  }
+ ],
+ "struck_but_standing": [
+  {
+   "by": "L100026",
+   "rel": "withdraws",
+   "target": "L100027",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "ITER3_ATTEMPT4_SCORED.json:2-2"
+  },
+  {
+   "by": "L100027",
+   "rel": "withdraws",
+   "target": "L100026",
+   "target_metric": "venue",
+   "target_value": "Certified-Opus",
+   "target_source": "ITER3_ATTEMPT4_SCORED.json:2-2"
+  },
+  {
+   "by": "L10398",
+   "rel": "supersedes",
+   "target": "L9940003",
+   "target_metric": "miss triage into standing states",
+   "target_value": 1.0,
+   "target_source": "ITERATION_NOTES.md:370-390"
+  },
+  {
+   "by": "L10785",
+   "rel": "withdraws",
+   "target": "L10773",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "ITERATION_NOTES.md:817-831"
+  },
+  {
+   "by": "L10786",
+   "rel": "withdraws",
+   "target": "L10773",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "ITERATION_NOTES.md:817-831"
+  },
+  {
+   "by": "L120019",
+   "rel": "withdraws",
+   "target": "L10810",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "ITERATION_NOTES.md:866-908"
+  },
+  {
+   "by": "L120259",
+   "rel": "supersedes",
+   "target": "L10026",
+   "target_metric": "round-4 behaviours",
+   "target_value": 3,
+   "target_source": "ITERATION_NOTES.md:41-70"
+  },
+  {
+   "by": "L130163",
+   "rel": "supersedes",
+   "target": "L130164",
+   "target_metric": "engaged precision",
+   "target_value": "0.71-0.87",
+   "target_source": "ROUND4_PREREG.md:209-227"
+  },
+  {
+   "by": "L130164",
+   "rel": "supersedes",
+   "target": "L130163",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "ROUND4_PREREG.md:209-227"
+  },
+  {
+   "by": "L130165",
+   "rel": "supersedes",
+   "target": "L130163",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "ROUND4_PREREG.md:209-227"
+  },
+  {
+   "by": "L170189",
+   "rel": "withdraws",
+   "target": "L10374",
+   "target_metric": "findings partial",
+   "target_value": 2,
+   "target_source": "ITERATION_NOTES.md:466-480"
+  },
+  {
+   "by": "L180040",
+   "rel": "supersedes",
+   "target": "L9940001",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "ITERATION_NOTES.md:370-390"
+  },
+  {
+   "by": "L200025",
+   "rel": "supersedes",
+   "target": "L200018",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "BLOCK2_TRANSFER_PREDICTIONS.md:82-101"
+  },
+  {
+   "by": "L270115",
+   "rel": "supersedes",
+   "target": "L270102",
+   "target_metric": "noise floor",
+   "target_value": "0.0295",
+   "target_source": "HANDOFF.md:1060-1089"
+  },
+  {
+   "by": "L270120",
+   "rel": "supersedes",
+   "target": "L270102",
+   "target_metric": "noise floor",
+   "target_value": "0.0295",
+   "target_source": "HANDOFF.md:1060-1089"
+  },
+  {
+   "by": "L270123",
+   "rel": "strikes",
+   "target": "L230056",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "HANDOFF.md:99-130"
+  },
+  {
+   "by": "L270159",
+   "rel": "supersedes",
+   "target": "L270102",
+   "target_metric": "noise floor",
+   "target_value": "0.0295",
+   "target_source": "HANDOFF.md:1060-1089"
+  },
+  {
+   "by": "L280032",
+   "rel": "strikes",
+   "target": "L250103",
+   "target_metric": "draws (unit of replication)",
+   "target_value": 5,
+   "target_source": "HANDOFF.md:642-647"
+  },
+  {
+   "by": "L280045",
+   "rel": "withdraws",
+   "target": "L270108",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "HANDOFF.md:1060-1089"
+  },
+  {
+   "by": "L280089",
+   "rel": "supersedes",
+   "target": "L280088",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "HANDOFF.md:1269-1277"
+  },
+  {
+   "by": "L280195",
+   "rel": "withdraws",
+   "target": "L320028",
+   "target_metric": "seats modelled",
+   "target_value": 12,
+   "target_source": "README.md:55-78"
+  },
+  {
+   "by": "L290012",
+   "rel": "strikes",
+   "target": "L250049",
+   "target_metric": "best judge's own predictions under the tool protocol",
+   "target_value": 0.833,
+   "target_source": "HANDOFF.md:597-608"
+  },
+  {
+   "by": "L290034",
+   "rel": "strikes",
+   "target": "L270052",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "HANDOFF.md:1007-1037"
+  },
+  {
+   "by": "L290036",
+   "rel": "supersedes",
+   "target": "L230075",
+   "target_metric": "state block date",
+   "target_value": "2026-08-04",
+   "target_source": "HANDOFF.md:131-137"
+  },
+  {
+   "by": "L290162",
+   "rel": "withdraws",
+   "target": "L290161",
+   "target_metric": "PRICING_VERSION",
+   "target_value": "2.0",
+   "target_source": "MODULE_MAP.md:80-115"
+  },
+  {
+   "by": "L290163",
+   "rel": "strikes",
+   "target": "L290057",
+   "target_metric": "threshold-drift admissions",
+   "target_value": 1.0,
+   "target_source": "HANDOFF.md:1440-1460"
+  },
+  {
+   "by": "L290193",
+   "rel": "supersedes",
+   "target": "L180094",
+   "target_metric": "separability",
+   "target_value": 1.0,
+   "target_source": "RETRANS_REVIEW_DISPOSITION.md:9-26"
+  },
+  {
+   "by": "L290199",
+   "rel": "strikes",
+   "target": "L290198",
+   "target_metric": "snapshot files on disk",
+   "target_value": 11,
+   "target_source": "MODULE_MAP.md:116-134"
+  },
+  {
+   "by": "L330199",
+   "rel": "withdraws",
+   "target": "L10773",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "ITERATION_NOTES.md:817-831"
+  },
+  {
+   "by": "L410045",
+   "rel": "supersedes",
+   "target": "L190030",
+   "target_metric": "scattered-quote nodes",
+   "target_value": 2,
+   "target_source": "GENERALIZATION_PREREG_DRAFT.md:116-135"
+  },
+  {
+   "by": "L460015",
+   "rel": "supersedes",
+   "target": "L390094",
+   "target_metric": "prediction freeze",
+   "target_value": "1.2",
+   "target_source": "review_verdict.json:4-4"
+  },
+  {
+   "by": "L470105",
+   "rel": "supersedes",
+   "target": "L10414",
+   "target_metric": "truth-carrying changes",
+   "target_value": 2,
+   "target_source": "ITERATION_NOTES.md:499-513"
+  },
+  {
+   "by": "L540102",
+   "rel": "supersedes",
+   "target": "L9950127",
+   "target_metric": "faithful",
+   "target_value": 3,
+   "target_source": "semantic_audit.json:83-162"
+  },
+  {
+   "by": "L9920043",
+   "rel": "supersedes",
+   "target": "L320004",
+   "target_metric": "live-artifact census count",
+   "target_value": 692,
+   "target_source": "CYCLE_DESIGN.md:205-224"
+  },
+  {
+   "by": "L9930177",
+   "rel": "supersedes",
+   "target": "L10041",
+   "target_metric": "census mismatch count",
+   "target_value": 15,
+   "target_source": "ITERATION_NOTES.md:41-70"
+  },
+  {
+   "by": "L9940145",
+   "rel": "supersedes",
+   "target": "L250158",
+   "target_metric": "median df",
+   "target_value": 8.0,
+   "target_source": "HANDOFF.md:687-694"
+  },
+  {
+   "by": "L9950009",
+   "rel": "supersedes",
+   "target": "L9950007",
+   "target_metric": "decline correctness",
+   "target_value": 0.7,
+   "target_source": "ITERATION_NOTES.md:346-369"
+  },
+  {
+   "by": "L9950186",
+   "rel": "supersedes",
+   "target": "L10028",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "ITERATION_NOTES.md:41-70"
+  },
+  {
+   "by": "L9950236",
+   "rel": "supersedes",
+   "target": "L210137",
+   "target_metric": "pruned entry git object id",
+   "target_value": "b91b95ffcc5e0406570d9358830e93713c5a88b8",
+   "target_source": "PRUNED.md:1-60"
+  },
+  {
+   "by": "L9950239",
+   "rel": "supersedes",
+   "target": "L210126",
+   "target_metric": "pruned entry files",
+   "target_value": 1,
+   "target_source": "PRUNED.md:1-60"
+  },
+  {
+   "by": "L9960169",
+   "rel": "supersedes",
+   "target": "L10805",
+   "target_metric": "five-field coverage",
+   "target_value": 1.0,
+   "target_source": "ITERATION_NOTES.md:832-865"
+  },
+  {
+   "by": "L9960172",
+   "rel": "supersedes",
+   "target": "L10210",
+   "target_metric": "extension not_relevants",
+   "target_value": 2,
+   "target_source": "ITERATION_NOTES.md:266-298"
+  },
+  {
+   "by": "L9970130",
+   "rel": "supersedes",
+   "target": "L9930181",
+   "target_metric": "char coverage",
+   "target_value": "97.35%",
+   "target_source": "HANDOFF.md:1278-1299"
+  },
+  {
+   "by": "L9970139",
+   "rel": "supersedes",
+   "target": "L240003",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "HANDOFF.md:290-300"
+  },
+  {
+   "by": "L9970140",
+   "rel": "supersedes",
+   "target": "L240003",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "HANDOFF.md:290-300"
+  },
+  {
+   "by": "L9970234",
+   "rel": "supersedes",
+   "target": "L130185",
+   "target_metric": "disagreements",
+   "target_value": 1,
+   "target_source": "PREREG_panel_equivalence.md:18-30"
+  }
+ ]
+}

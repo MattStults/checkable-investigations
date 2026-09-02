@@ -8,14 +8,8 @@
 {"claim": "L10224", "rel": "contradicts", "target_text": "attempt-3 panel 3-0 not_relevant", "target_id": "L100057", "basis": "value ['3', '3', '0'] + metric/quote word"}
 {"claim": "L10225", "rel": "contradicts", "target_text": "iter-1 escalation 3-0 relevant", "target_id": "L10115", "basis": "value ['1', '3', '0'] + metric/quote word"}
 {"claim": "L10245", "rel": "restates", "target_text": "defensible-by-contradiction", "target_id": "L10233", "basis": "quote overlap"}
-{"claim": "L10256", "rel": "withdraws", "target_text": "the final-iteration-on-Fable overlay", "target_id": null, "basis": "unresolved"}
-{"claim": "L10260", "rel": "restates", "target_text": "the three \"options\" I offered", "target_id": null, "basis": "unresolved"}
 {"claim": "L10337", "rel": "restates", "target_text": "the frozen 0.55-0.75 band", "target_id": "L10336", "basis": "quote overlap"}
-{"claim": "L10349", "rel": "restates", "target_text": "the deferred 43-dispute re-resolution", "target_id": "L10368", "basis": "value ['43'] + metric/quote word"}
-{"claim": "L10359", "rel": "amends", "target_text": "Runbook", "target_id": "L10002", "basis": "quote overlap"}
-{"claim": "L10364", "rel": "restates", "target_text": "the 10 Opus panel rows", "target_id": "L10347", "basis": "value ['10'] + metric/quote word"}
-{"claim": "L10365", "rel": "restates", "target_text": "the erratum-#14 tripwire", "target_id": "L10361", "basis": "quote overlap"}
-{"claim": "L10368", "rel": "restates", "target_text": "43-dispute re-resolution", "target_id": "L10349", "basis": "value ['43'] + metric/quote word"}
+{"claim": "L10349", "rel": "restates", "target_text": "the deferred 43-dispute re-resolution", "target_id": "L10408", "basis": "value ['43'] + metric/quote word"}
 {"claim": "L10398", "rel": "supersedes", "target_text": "attempt-1", "target_id": "L9940003", "basis": "value ['1'] + metric/quote word"}
 {"claim": "L10411", "rel": "restates", "target_text": "the UA gate failure", "target_id": null, "basis": "unresolved"}
 {"claim": "L10422", "rel": "restates", "target_text": "options in notes 0022", "target_id": "L10385", "basis": "entry number 0022"}
@@ -304,8 +298,6 @@
 {"claim": "L410068", "rel": "contradicts", "target_text": "SEGMENTATION_GAPS_DESIGN §4 predicted the skip is a no-op", "target_id": "L120083", "basis": "value ['4'] + metric/quote word"}
 {"claim": "L410156", "rel": "contradicts", "target_text": "Item 2 (#definitions>¶5 collapse refuted)", "target_id": "L10417", "basis": "value ['2', '5'] + metric/quote word"}
 {"claim": "L420047", "rel": "forbids_citation", "target_text": "a raw per-locator 'scores' field", "target_id": "L400116", "basis": "quote overlap"}
-{"claim": "L430049", "rel": "supersedes", "target_text": "the original live-artifact pin (692/505/347/462)", "target_id": "L320004", "basis": "value ['692', '505', '347', '462'] + metric/quote word"}
-{"claim": "L430088", "rel": "supersedes", "target_text": "the pre-sweep 260/384/48", "target_id": "L440077", "basis": "quote overlap"}
 {"claim": "L440019", "rel": "restates", "target_text": "max_regressions", "target_id": "L230104", "basis": "quote overlap"}
 {"claim": "L440019", "rel": "restates", "target_text": "expected_directions", "target_id": "L360005", "basis": "quote overlap"}
 {"claim": "L440069", "rel": "restates", "target_text": "A2's recorded count", "target_id": "L150059", "basis": "value ['2'] + metric/quote word"}
@@ -313,6 +305,32 @@
 {"claim": "L450093", "rel": "contradicts", "target_text": "leg 1 regression", "target_id": "L380016", "basis": "value ['1'] + metric/quote word"}
 {"claim": "L450105", "rel": "contradicts", "target_text": "leg 2 correct", "target_id": "L160134", "basis": "value ['2'] + metric/quote word"}
 {"claim": "L450106", "rel": "contradicts", "target_text": "leg 1 unclear", "target_id": "L230092", "basis": "value ['1'] + metric/quote word"}
+{"claim": "L460015", "rel": "supersedes", "target_text": "the pre-1.2 'subsumption path unreachable by per-atom mismatch' claim", "target_id": "L390094", "basis": "value ['1.2'] + metric/quote word"}
+{"claim": "L460049", "rel": "re_derives", "target_text": "I1 SAFETY", "target_id": "L470073", "basis": "quote overlap"}
+{"claim": "L460061", "rel": "forbids_citation", "target_text": "DEV-stamped census composition figures (fp_*/fn_* class counts)", "target_id": "L460060", "basis": "quote overlap"}
+{"claim": "L460066", "rel": "restates", "target_text": "the frozen prediction (prediction.json sha c99260f031c991fccbc7a506033cc5a1b89dd90f2e9951e417708587fb621923)", "target_id": "L130185", "basis": "value ['99260', '031', '991', '7', '506033', '5', '1', '89', '90', '2', '9951', '417708587', '621923'] + metric/quote word"}
+{"claim": "L460069", "rel": "contradicts", "target_text": "the first leg's verdicts", "target_id": "L460068", "basis": "quote overlap"}
+{"claim": "L460070", "rel": "contradicts", "target_text": "leg 1 unclear", "target_id": "L230092", "basis": "value ['1'] + metric/quote word"}
+{"claim": "L460096", "rel": "forbids_citation", "target_text": "The measure snapshot snapshots/patient-pricing-2026-08-04.json", "target_id": "L470104", "basis": "quote overlap"}
+{"claim": "L470039", "rel": "amends", "target_text": "the ORIGINAL mechanism's pre-registered plateau {0.1, 0.25, 0.4}", "target_id": "L470025", "basis": "value ['0.1', '0.25', '0.4'] + metric/quote word"}
+{"claim": "L470087", "rel": "forbids_citation", "target_text": "DEV-stamped census composition figures (fp_*/fn_* class counts)", "target_id": "L460060", "basis": "quote overlap"}
+{"claim": "L470105", "rel": "supersedes", "target_text": "the A2 block", "target_id": "L10414", "basis": "value ['2'] + metric/quote word"}
+{"claim": "L480026", "rel": "restates", "target_text": "state.json frozen_prediction_sha", "target_id": "L460032", "basis": "quote overlap"}
+{"claim": "L480027", "rel": "restates", "target_text": "A1's new_sha", "target_id": "L460033", "basis": "quote overlap"}
+{"claim": "L480028", "rel": "restates", "target_text": "state.json frozen_manifest_sha", "target_id": "L400093", "basis": "quote overlap"}
+{"claim": "L480034", "rel": "restates", "target_text": "MECHANISM_AMENDMENT's new sha", "target_id": "L460039", "basis": "quote overlap"}
+{"claim": "L480035", "rel": "restates", "target_text": "the amendment's new sha", "target_id": "L460040", "basis": "quote overlap"}
+{"claim": "L480048", "rel": "re_derives", "target_text": "snapshots/patient-backfill-2026-08-04.json's behaviours section", "target_id": "L460049", "basis": "quote overlap"}
+{"claim": "L480063", "rel": "forbids_citation", "target_text": "DEV-stamped census composition figures (fp_*/fn_* class counts)", "target_id": "L460060", "basis": "quote overlap"}
+{"claim": "L500048", "rel": "restates", "target_text": "adversarial review seat (agent)", "target_id": "L490013", "basis": "quote overlap"}
+{"claim": "L520059", "rel": "amends", "target_text": "baa962d committed that broken state", "target_id": null, "basis": "unresolved"}
+{"claim": "L520154", "rel": "restates", "target_text": "the behavior_atoms.json clobber incident", "target_id": null, "basis": "unresolved"}
+{"claim": "L530022", "rel": "supersedes", "target_text": "the designs-only state section", "target_id": null, "basis": "unresolved"}
+{"claim": "L530033", "rel": "restates", "target_text": "091619c", "target_id": "L230128", "basis": "commit 091619c"}
+{"claim": "L540062", "rel": "contradicts", "target_text": "the review", "target_id": "L10381", "basis": "quote overlap"}
+{"claim": "L540098", "rel": "contradicts", "target_text": "credited two findings FIXED-CORRECT", "target_id": "L540096", "basis": "quote overlap"}
+{"claim": "L540102", "rel": "supersedes", "target_text": "the earlier 'S3b first, it's 53%' recommendation", "target_id": "L9950127", "basis": "value ['3', '53%'] + metric/quote word"}
+{"claim": "L540103", "rel": "restates", "target_text": "53%", "target_id": "L240075", "basis": "quote overlap"}
 {"claim": "L70082", "rel": "amends", "target_text": "amendment 1", "target_id": "L40001", "basis": "quote overlap"}
 {"claim": "L80105", "rel": "restates", "target_text": "attempt-1 transfer (0.40) frozen", "target_id": "L390038", "basis": "value ['1', '0.40'] + metric/quote word"}
 {"claim": "L90068", "rel": "contradicts", "target_text": "l3877_3953_n002", "target_id": "L100018", "basis": "quote overlap"}
@@ -320,8 +338,11 @@
 {"claim": "L90077", "rel": "restates", "target_text": "attempts 2 (0.75) and 3 (0.40)", "target_id": "L9960022", "basis": "value ['2', '0.75', '3', '0.40'] + metric/quote word"}
 {"claim": "L90078", "rel": "restates", "target_text": "attempts 2 (0.75) and 3 (0.40)", "target_id": "L90077", "basis": "value ['2', '0.75', '3', '0.40'] + metric/quote word"}
 {"claim": "L90084", "rel": "contradicts", "target_text": "P1 REGISTERED RULE SAYS REVERT", "target_id": "L10794", "basis": "value ['1'] + metric/quote word"}
+{"claim": "L9920002", "rel": "withdraws", "target_text": "the final-iteration-on-Fable overlay", "target_id": null, "basis": "unresolved"}
+{"claim": "L9920014", "rel": "amends", "target_text": "Runbook", "target_id": "L10002", "basis": "quote overlap"}
+{"claim": "L9920043", "rel": "supersedes", "target_text": "the original live-artifact pin (692/505/347/462)", "target_id": "L320004", "basis": "value ['692', '505', '347', '462'] + metric/quote word"}
 {"claim": "L9930004", "rel": "restates", "target_text": "the prereg's closure", "target_id": null, "basis": "unresolved"}
-{"claim": "L9930055", "rel": "restates", "target_text": "notes 0013", "target_id": "L10255", "basis": "entry number 0013"}
+{"claim": "L9930055", "rel": "restates", "target_text": "notes 0013", "target_id": "L9920001", "basis": "entry number 0013"}
 {"claim": "L9930077", "rel": "restates", "target_text": "entries 0002/0008", "target_id": "L10044", "basis": "entry number 0002"}
 {"claim": "L9930122", "rel": "restates", "target_text": "F5, F7", "target_id": "L9930121", "basis": "quote overlap"}
 {"claim": "L9930177", "rel": "supersedes", "target_text": "Count", "target_id": "L10041", "basis": "quote overlap"}

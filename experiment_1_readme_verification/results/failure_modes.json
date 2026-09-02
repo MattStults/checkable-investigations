@@ -1,0 +1,119 @@
+{
+ "checker_rejections_by_class": {
+  "erratum.n does not appear as an erratum number in the quote": 1,
+  "rate": 12,
+  "a wave-seat verdict  must be tier raw": 3,
+  "erratum.n does not appear as an erratum number within the ci": 1,
+  "engine_failure requires kind refusal|wrong_answer|unstated": 3,
+  "a signed_by naming the owner or the owner's authorization mu": 5,
+  "quote": 2
+ },
+ "rejection_batches": {
+  "erratum.n does not appear as an erratum number in the quote": [
+   "batch_001_sonnet"
+  ],
+  "rate": [
+   "batch_001_sonnet",
+   "batch_047_opus"
+  ],
+  "a wave-seat verdict  must be tier raw": [
+   "batch_008_opus",
+   "batch_009_opus",
+   "batch_010_opus"
+  ],
+  "erratum.n does not appear as an erratum number within the ci": [
+   "batch_012_opus"
+  ],
+  "engine_failure requires kind refusal|wrong_answer|unstated": [
+   "retry_I03_b_opus",
+   "batch_029_opus"
+  ],
+  "a signed_by naming the owner or the owner's authorization mu": [
+   "batch_036_opus",
+   "batch_039_opus",
+   "batch_038_opus"
+  ],
+  "quote": [
+   "batch_052_opus",
+   "batch_054_sonnet"
+  ]
+ },
+ "accepted_rejected_by_model": {
+  "opus": {
+   "accepted": 9482,
+   "rejected": 14
+  },
+  "sonnet": {
+   "accepted": 408,
+   "rejected": 13
+  }
+ },
+ "interventions": [
+  {
+   "id": "I-01",
+   "title": "erratum number taken from a count",
+   "recurrence_noted": true,
+   "caught_by": "orchestrator inspection of batch_001 (Sonnet probe) after the\nchecker passed it"
+  },
+  {
+   "id": "I-02",
+   "title": "wave verdict tiered panel by the key walk",
+   "recurrence_noted": true,
+   "caught_by": "the batch_010 translator flagged it (\"`wave` inside the `panel`\narray resolves to tier `pa"
+  },
+  {
+   "id": "I-03",
+   "title": "human/cove tiers unreachable behind Gate B",
+   "recurrence_noted": true,
+   "caught_by": "the batch_014 translator (\"Gate B fires and stops before the\nhuman/cove steps \u2014 including "
+  },
+  {
+   "id": "I-04",
+   "title": "owner name forms not in the human-tier marker set",
+   "recurrence_noted": true,
+   "caught_by": "the batch_021 translator (\"'Matt's D1 amendment' carries no\nstep-8 marker, so it stayed st"
+  },
+  {
+   "id": "I-05",
+   "title": "'coordinator' not in the actor vocabulary",
+   "recurrence_noted": true,
+   "caught_by": "translators of batch_023 and batch_031 both reported recording\nactor unstated for rulings "
+  },
+  {
+   "id": "I-06",
+   "title": "brief rule 23 vs amendment G-04 on signed decisions",
+   "recurrence_noted": true,
+   "caught_by": "the batch_036 translator (\"G-04 overrides the brief"
+  }
+ ],
+ "design_changes": [
+  {
+   "id": "D-01",
+   "title": "value standing is derived, not translated"
+  },
+  {
+   "id": "D-02",
+   "title": "checker: generated sources and ordinals"
+  },
+  {
+   "id": "D-03",
+   "title": "span assignment: JSON cut carries nested values"
+  },
+  {
+   "id": "D-04",
+   "title": "schema: forbids_citation, trigger; brief v0.4"
+  },
+  {
+   "id": "D-05",
+   "title": "JSON span cut by depth, not indentation"
+  },
+  {
+   "id": "D-06",
+   "title": "batch header provenance"
+  },
+  {
+   "id": "D-07",
+   "title": "engine_failure kind may be unstated"
+  }
+ ]
+}
