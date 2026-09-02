@@ -27,6 +27,8 @@ SELECTORS = {
              lambda cs: cs and not any(c["tier"] == "human" for c in cs)),
     "G-04": (re.compile(r"(coordinator|orchestration seat)", re.I),
              lambda cs: any(c["kind"] == "event" and c["event"]["actor"] == ["unstated"] for c in cs)),
+    "G-06": (re.compile(r"^(?!.*(Matt|project owner|owner)).*(COUNTERSIGNED|SIGNED|RULING:)", re.I | re.M),
+             lambda cs: any(c["tier"] == "human" for c in cs)),
 }
 def main():
     name = sys.argv[1]

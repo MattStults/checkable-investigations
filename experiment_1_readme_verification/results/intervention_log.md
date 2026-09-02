@@ -229,6 +229,16 @@ defect class needing a second fix after its first fix was operationalised.
 | batch_004 (scored JSON, 15 objects) | opus | 74 | 0 | — |
 
 
+## Process events
+
+- 2026-09-02 ~12:40 PT — session rate limit hit with 13 translators in
+  flight (batches 052-063, batch_047 retry); all terminated by the API
+  before writing output. No partial output reached ledger/out. Dispatch
+  paused; owner asked for a slower pace. Remaining at pause: git-log
+  batches 052-099 (48), pre-redaction batches 100-121 (22), retry_G06b
+  (88 spans reselected under G-02/G-04/G-06, not yet split or dispatched),
+  batch_047 single-claim retry.
+
 ## Compactions
 
 (none recorded yet)
