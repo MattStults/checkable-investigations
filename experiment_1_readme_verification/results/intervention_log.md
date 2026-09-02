@@ -189,6 +189,21 @@ consolidated retry.
 
 Recurrence: (tracked)
 
+### I-06 — 2026-09-02 — brief rule 23 vs amendment G-04 on signed decisions
+
+Caught: the batch_036 translator ("G-04 overrides the brief ... if the
+coordinator intended rule 23 to win, these 5 claims need retiering").
+Class: two machinery texts disagreeing; the translator chose one and
+flagged it, which is the correct behaviour.
+
+Operationalised: glossary amendment G-05 (precedence: a signature naming
+the owner's authorization is human with both actors; coordinator-only is
+driver/stated). Checker rule: a claim quoting `signed_by` whose quote
+names Matt/owner must be tier human (I-06). Affected accepted claims
+re-split and retranslated.
+
+Recurrence: (tracked)
+
 ### Observations not (yet) interventions
 
 - Both tiers type most standing statements in entry 0000 as `registration`

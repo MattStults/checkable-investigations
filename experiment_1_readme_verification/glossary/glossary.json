@@ -655,6 +655,16 @@
         "SFE/CYCLE_DESIGN.md:255-256",
         "SFE/cycles/patient-pricing-2026-08-04/decision.json:210"
       ]
+    },
+    {
+      "id": "G-05",
+      "date": "2026-09-02",
+      "logged_as": "I-06",
+      "change": "Precedence between step 8 and G-04: a decision.json `signed_by` (or any signature line) whose text names the owner or the owner's authorization ('on Matt's standing authorization', 'project owner', 'Matt') is tier human with actor the set of parties named (e.g. [\"driver\",\"owner\"]). A signature or ruling naming only the coordinator/driver with no owner authorization is event ruling, actor [\"driver\"], tier stated (G-04). G-04 does not override the frozen human marker 'decision.json signed_by' when the owner is named in it.",
+      "cite": [
+        "SFE/cycles/patient-pricing-2026-08-04/decision.json:210",
+        "SFE/CYCLE_DESIGN.md:37-38"
+      ]
     }
   ]
 }

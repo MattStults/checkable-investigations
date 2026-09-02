@@ -1,0 +1,67 @@
+{
+ "header": {
+  "batch": "retry_I06",
+  "source_class": "arc1_cycles",
+  "brief_version": "0.5",
+  "glossary_version": "frozen d887fb9",
+  "spans": 15,
+  "first_span": "S00502",
+  "last_span": "S00516",
+  "retranslation_of": "batches 035/036 signed_by claims (rule I-06 / G-05)",
+  "rejected_claims": [
+   {
+    "id": "L360001",
+    "batch": "batch_036",
+    "quote": "\"signed_by\": \"session coordinator (Claude), on Matt's standing authorization for the cycle ladder\"",
+    "reason": [
+     "a signed_by naming the owner or the owner's authorization must be tier human (I-06 / G-05)"
+    ]
+   },
+   {
+    "id": "L360002",
+    "batch": "batch_036",
+    "quote": "\"signed_by\": \"session coordinator (Claude), on Matt's standing authorization for the cycle ladder\"",
+    "reason": [
+     "a signed_by naming the owner or the owner's authorization must be tier human (I-06 / G-05)"
+    ]
+   },
+   {
+    "id": "L360070",
+    "batch": "batch_036",
+    "quote": "\"signed_by\": \"session coordinator (Claude), on Matt's standing authorization for the cycle ladder\"",
+    "reason": [
+     "a signed_by naming the owner or the owner's authorization must be tier human (I-06 / G-05)"
+    ]
+   }
+  ]
+ },
+ "spans": [
+  {
+   "id": "S00502",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "71-71",
+   "text": " \"signed_by\": \"session coordinator (Claude), on Matt's standing authorization for the cycle ladder\"",
+   "source_class": "arc1_cycles",
+   "context": null
+  },
+  {
+   "id": "S00502",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "71-71",
+   "text": " \"signed_by\": \"session coordinator (Claude), on Matt's standing authorization for the cycle ladder\"",
+   "source_class": "arc1_cycles",
+   "context": null
+  },
+  {
+   "id": "S00516",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "23-26",
+   "text": " \"decision\": {\n  \"decision\": \"keep\",\n  \"signed_by\": \"session coordinator (Claude), on Matt's standing authorization for the cycle ladder\"\n },",
+   "source_class": "arc1_cycles",
+   "context": null
+  }
+ ]
+}
