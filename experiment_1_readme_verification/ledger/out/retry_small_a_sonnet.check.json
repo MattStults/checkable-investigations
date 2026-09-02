@@ -1,0 +1,27 @@
+{
+ "summary": {
+  "total": 2,
+  "passed": 2,
+  "failed": 0,
+  "fail_reasons": {}
+ },
+ "results": [
+  {
+   "id": "L470098",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines",
+    "rate: 33/33 re-derives 1.0"
+   ]
+  },
+  {
+   "id": "L570150",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  }
+ ]
+}
