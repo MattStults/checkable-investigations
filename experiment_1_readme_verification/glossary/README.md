@@ -59,3 +59,19 @@ engine, relevance-query output, and CI, close-event headings listed, status
 word carried verbatim, 'headline' and 'README' added to overloaded words,
 human-tier markers extended to the post-redaction role language, cove and
 attended rules made mechanical, sources/ pointers replaced by repo paths.
+
+## Revision after closure review (2026-09-02)
+
+`review_2.md` (committed untouched) found the tier decision procedure had
+never rendered (it sat under a key the renderer skips), three more README-only
+phrases that straddle README line breaks, and a rule ordering that mis-tiered
+the handoff span. Applied: the procedure is now rendered, value-keyed rather
+than span-keyed, with the prose/artifact gate first and arc-1 panel triggers;
+the three phrases and the pre-answering sentences (seat names and counts, PASS
+counts, span-quote counts, "at the pin" result glosses) are replaced by
+attributive wording that names the record line or defers to a live run; the
+two miscitations are fixed; the review pointer is gone from the rendered file.
+`leakscan.py` now scans any translator-facing file for word n-grams shared
+with the README that occur nowhere else in the record, tokenising across line
+breaks; the glossary and brief pass with zero candidates, and a probe file
+containing the three removed phrases fails.

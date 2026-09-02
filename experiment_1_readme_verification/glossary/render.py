@@ -51,6 +51,10 @@ w("## Tiers (closed enum)\n")
 for k, v in d["tiers"].items():
     if not k.startswith("_"):
         w(f"- **{k}** — {v}")
+if "tier_procedure" in d:
+    w("\n### Tier decision procedure (apply per value, in order, stop at first match)\n")
+    for i, step in enumerate(d["tier_procedure"], 1):
+        w(f"{i}. {step}")
 w("\n## Entries\n")
 for e in d["entries"]:
     w(f"### {e['term']}  (arc {e['arc']})\n")
@@ -90,7 +94,7 @@ for k, v in d["conventions"].items():
         else:
             w(f"- **{k}** — {v}")
 w("\n## Citation check\n")
-w("All entry citations resolve to an in-range line at the pin (line-bound check only; support is not machine-verified — see review_1.md)." if not bad else "**FAILED**: " + "; ".join(f"{t}: {c}" for t, c in bad))
+w("All entry citations resolve to an in-range line at the pin (line-bound check only; support is not machine-verified.)" if not bad else "**FAILED**: " + "; ".join(f"{t}: {c}" for t, c in bad))
 open(os.path.join(HERE, "glossary.md"), "w").write("\n".join(out) + "\n")
 print("rendered glossary.md; bad citations:", bad)
 sys.exit(1 if bad else 0)

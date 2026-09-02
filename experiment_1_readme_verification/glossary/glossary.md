@@ -6,7 +6,7 @@ Path prefixes: `SFE` = `semi-formal-experiment/`; `BP` = `walkthrough/paper_pipe
 
 ## Tiers (closed enum)
 
-- **raw** — CONFLICT in the record, resolved only by field name (rule 1): round 4 'Raw = strict panel-majority truth' (BP/ROUND4_DEV_TABLE.json:2) vs repair loop 'raw single-wave vs uniform panel tier' (BP/ITERATION_NOTES.md:272). Both are tier=raw with venue recording which sense.
+- **raw** — see procedure step 3; two record senses, both tier=raw, distinguished in venue
 - **panel** — a frontier-judge panel ruling: arc 1 = the 3-judge frontier panel per behaviour (data/behaviours.json provenance block); arc 2 = 3-instance panels, majority supersedes (BP/ROUND4_PREREG.md:24-25)
 - **adjudicated** — a defensibility or dispute overlay on top of raw/panel: one-pass blind defensibility adjudication (BP/ROUND4_PREREG.md:106-113), match-or-defensible addenda (BP/ITER2_REMEASURE_SCORED.json:188), quarantine adjustment (BP/ITER3_ATTEMPT4_SCORED.json:190)
 - **human** — an owner ruling; markers: 'MATT RULING' | 'RULING:' | 'the project owner' | 'project owner's decision' | 'COUNTERSIGNED' | decision.json signed_by (the 2026-08-31 publication commit replaced 'Matt' with role language in retained entries, so both forms occur)
@@ -15,6 +15,18 @@ Path prefixes: `SFE` = `semi-formal-experiment/`; `BP` = `walkthrough/paper_pipe
 - **filesystem** — existence or shape of a committed file
 - **stated** — a number stated in prose with no scored artifact named in the span
 - **cove** — the span itself says CoVe / re-derived / re-derivation (BP/L1L2_REVIEW_DISPOSITION.md:12-13; BP/ITERATION_NOTES.md:836-838); record the actor verbatim; independence is decided at query time, not by the translator
+
+### Tier decision procedure (apply per value, in order, stop at first match)
+
+1. Assign a tier to EACH NUMERIC VALUE separately, never to a span. The key is the nearest enclosing JSON field name, or in prose the label immediately governing that value (the word or phrase attached to it by '=', ':', '/', parentheses, or the table row header). Never use any other word in the span.
+2. GATE: if the value sits in prose or a table in a handoff, ledger entry, review, or disposition, and the span does not name the scored artifact the value came from, the tier is `stated`; set provenance_region (starred_block / archive_block / body). Stop. If the span names the scored artifact, continue with the label the span attaches to the value.
+3. Label or field name contains `_raw`, `raw`, `single-wave`, `wave seat` → `raw`. Record which sense in venue (round-4 'raw = strict panel-majority truth', BP/ROUND4_DEV_TABLE.json:2; repair-loop 'raw single-wave', BP/ITERATION_NOTES.md:272).
+4. Label or field name contains `panel_tier`, `panel`, `3-instance panel`, `majority`, `uniform panel tier`, `judges`, `mean of 3`, `per-judge`, `leave-one-out` → `panel`.
+5. Label or field name contains `addendum`, `defensib`, `headline`, `quarantine_adjusted`, `match-or-defensible`, `match-or-adjudicated-defensible` → `adjudicated`.
+6. The value is inside a block headed `MATT RULING`, `RULING:`, `COUNTERSIGNED`, `the project owner`, `project owner's decision`, or a decision.json signed_by → `human`.
+7. The span itself says `CoVe`, `re-derived`, `re-derivation` of this value → `cove`; record the actor verbatim.
+8. A value you produced by running a script → `live_run` (record command and wall clock); commit metadata → `git`; file existence or shape → `filesystem`.
+9. A value with two labels on one line ('0.75 raw / 0.70 panel') is two claims, one per label. A value with no label at all → `stated`.
 
 ## Entries
 
@@ -96,7 +108,7 @@ Path prefixes: `SFE` = `semi-formal-experiment/`; `BP` = `walkthrough/paper_pipe
 - all-truth is called composition-biased and 'never' to be scored on (BP/L1L2_ADVERSARIAL_REVIEW.md:314-316; BP/L1L2_REVIEW_DISPOSITION.md:66-68) while HANDOFF_CURRENT.md:33-39 uses it as the baseline
 
 **Hazards for translators.**
-- provenance region: this figure lives below the starred block of the handoff; record provenance_region
+- provenance region: this figure lives below the starred block of BP/HANDOFF_CURRENT.md; record provenance_region
 - the same line carries 'the human-panelist baseline 71%'. The record's status for it CONFLICTS: BP/HANDOFF_CURRENT.md:210-211 says it 'has NO source artifact; it must be sourced or struck'; BP/GENERALIZATION_PREREG_DRAFT.md:81-84 says it 'is STRUCK 2026-08-21: no artifact establishes it'. Translate the value with supersession.status=contested, by = the claim translating whichever of those two spans is in the batch, and quote the flag verbatim in notes.
 
 **Cites.** `BP/HANDOFF_CURRENT.md:106-108`; `BP/ROUND4_PREREG.md:12-17`; `BP/ROUND4_PREREG.md:202-206`
@@ -112,9 +124,9 @@ Path prefixes: `SFE` = `semi-formal-experiment/`; `BP` = `walkthrough/paper_pipe
 - helpfulness has three scored files with three different raw cells: BP/round4_helpfulness_scored.json (0.625/0.625; BP/ROUND4_PREREG.md:150-161 marks canary attempt 1 VOID), BP/round4_helpfulness_scored_v2.json (0.575/0.85, header 'canary RE-RUN scored'), BP/round4_helpfulness_scored_final_raw.json:2 (0.625/0.875, 'FINAL raw cells after F5 full-panel escalation'; the cells BP/ROUND4_DEV_TABLE.json:5-7 carries). Only the first is marked void in the record.
 
 **Hazards for translators.**
-- file naming asymmetry: caution and harm are round4_<slug>_scored_raw.json; helpfulness is round4_helpfulness_scored_final_raw.json; no file round4_help*_scored_raw.json exists and the record does not say why
-- 'certification ran to completion' and 'certification passed' are different facts: record the raw_verdict text (e.g. 'F1 FIRES', 'IN BAND') with every certification claim
+- file naming asymmetry: caution and harm are round4_<slug>_scored_raw.json; helpfulness is round4_helpfulness_scored_final_raw.json; the helpfulness file names differ from the other two; copy file names exactly as they appear in git ls-tree
 - repair-loop predictions use P1-P4, not F1-F5
+- record the raw_verdict / headline_verdict string verbatim with every round-4 cell (e.g. BP/ROUND4_DEV_TABLE.json:17 'F1 (prec below floor); decl above band'); do not paraphrase a verdict string
 
 **Cites.** `BP/ROUND4_PREREG.md:12-17`; `BP/ROUND4_PREREG.md:37-45`; `BP/ROUND4_PREREG.md:114-116`; `BP/ROUND4_PREREG.md:47-51`
 
@@ -162,7 +174,7 @@ Path prefixes: `SFE` = `semi-formal-experiment/`; `BP` = `walkthrough/paper_pipe
 
 ### node / passage / span / definition  (arc both)
 
-**Definition.** node = a unit of the arc-2 document graph; passage = the panel's unit (589 in the true Model Spec universe, 374 constitution per SFE/HANDOFF.md:469-486 and the benchmark provenance table); span = a line range attached to a node, optionally carrying a quote; definition = (a) the behaviour definition text a seat receives, (b) one of the 100 query-class corpus items, (c) a norm-free 'definitional lane' node
+**Definition.** node = a unit of the arc-2 document graph; passage = the panel's unit (589 in the true Model Spec universe, 374 constitution per SFE/HANDOFF.md:890 and the benchmark provenance table); span = a line range attached to a node, optionally carrying a quote; definition = (a) the behaviour definition text a seat receives, (b) one of the 100 query-class corpus items, (c) a norm-free 'definitional lane' node
 
 **Conflicts in the record (unresolved).**
 - node count: 773 (graph_v2/node_corpus_all.json and runs/ds7/root_graph.production.json) vs '593 at root unwind per GRAPH_OVERVIEW.md' vs 183 translated (coverage_translated.json) — all on BP/L1L2_ADVERSARIAL_REVIEW.md:288 and BP/L1L2_REVIEW_DISPOSITION.md:17-19; record which artifact a count is over
@@ -171,7 +183,7 @@ Path prefixes: `SFE` = `semi-formal-experiment/`; `BP` = `walkthrough/paper_pipe
 - coverage figures exist over nodes (39/39) and over definitions (94/100, 100 defs); record the unit with every coverage figure
 - passages→nodes is not an identity map (BP/L1L2_ADVERSARIAL_REVIEW.md:312)
 
-**Cites.** `BP/L1L2_ADVERSARIAL_REVIEW.md:288`; `BP/L1L2_ADVERSARIAL_REVIEW.md:302`; `BP/L1L2_REVIEW_DISPOSITION.md:17-19`; `G2/graph_check.py:60-70`; `ARTIFACTS.md:19`; `BP/ITERATION_NOTES.md:769-771`
+**Cites.** `BP/L1L2_ADVERSARIAL_REVIEW.md:288`; `BP/L1L2_ADVERSARIAL_REVIEW.md:302`; `BP/L1L2_REVIEW_DISPOSITION.md:17-19`; `G2/graph_check.py:60-70`; `ARTIFACTS.md:19`; `BP/ITERATION_NOTES.md:769-771`; `SFE/HANDOFF.md:890`
 
 ### erratum / recurrence / CoVe / tripwire / seat / certificate / brief-local / venue / handoff / seed  (arc 2)
 
@@ -196,14 +208,14 @@ Path prefixes: `SFE` = `semi-formal-experiment/`; `BP` = `walkthrough/paper_pipe
 
 **Conflicts in the record (unresolved).**
 - whether MCC is the metric at all: 'NOT MCC' (SFE/HANDOFF.md:61) vs 'Use MCC as the primary metric' (SFE/HANDOFF.md:592)
-- SFE/benchmark.py's preamble text (item 5, 'the in-sample mean MCC (+0.274 published / +0.320 true) is a CEILING') vs its computed universe-delta table in the same run (+0.219 / +0.278 mean, b8 config); SFE/HANDOFF.md:480 carries +0.274/+0.320 for the @0.18 config
+- SFE/benchmark.py:1698-1706 preamble text ('the in-sample mean MCC (+0.274 published / +0.320 true) is a CEILING') vs the universe-delta table the same script computes at run time (live_run; values recorded by the checker step, not stated here); SFE/HANDOFF.md:480 carries +0.274/+0.320 for the @0.18 config
 - gap 0.119→0.236 (HANDOFF:482) vs 0.120→0.235 (benchmark preamble)
 
 **Hazards for translators.**
 - every tool MCC must carry threshold_rule AND universe AND annotation config; a value matching without all three is not a match
 - the in-sample figure is described by the record itself as 'a CEILING, not a result' (hindsight threshold)
 
-**Cites.** `SFE/benchmark.py:661-684`; `SFE/HANDOFF.md:480-482`; `SFE/HANDOFF.md:44`
+**Cites.** `SFE/benchmark.py:661-684`; `SFE/HANDOFF.md:480-482`; `SFE/HANDOFF.md:44`; `SFE/benchmark.py:1698-1706`
 
 ### judge MCC / leave-one-out / LOO / best per behaviour / LOBO  (arc 1)
 
@@ -234,7 +246,7 @@ Path prefixes: `SFE` = `semi-formal-experiment/`; `BP` = `walkthrough/paper_pipe
 
 **Definition.** fraction of panel passages that match a clause; matched/total over data/behaviours.json coverage passages
 
-**Authoritative artifact.** live run of SFE/measure_join.py (prints 849/863 = 98.4% at the pin, wall 9.6 s)
+**Authoritative artifact.** SFE/MODULE_MAP.md:54 gives 849/863 and forbids quoting it ('Re-run it'); the value at the pin comes from a live run of SFE/measure_join.py recorded by the checker step
 
 **Denominator / population.** 863 = the PUBLISHED universe; measure_join.py never uses panel_universe.py
 
@@ -264,7 +276,7 @@ Path prefixes: `SFE` = `semi-formal-experiment/`; `BP` = `walkthrough/paper_pipe
 
 **Definition.** gold cell = (behaviour × held-out judge), gold for judge j = both other judges relevant; 9 cells for the 3-behaviour panel; comparison at the judge's own FPR = tool TPR at the judge's (FPR, TPR) point; distinct from scoring cell = (behaviour × spec), 6 or 18
 
-**Authoritative artifact.** SFE/benchmark.py ROC head-to-head table (judge wins 9/9 at the pin)
+**Authoritative artifact.** SFE/benchmark.py ROC head-to-head table (per-judge, per-cell); SFE/HANDOFF.md:497 states 'Judges beat the tool 9 of 9 cells'
 
 **Cites.** `SFE/benchmark.py:825-830`; `SFE/benchmark.py:715-721`; `SFE/HANDOFF.md:497-498`; `SFE/HANDOFF.md:574-575`
 
@@ -284,39 +296,39 @@ Path prefixes: `SFE` = `semi-formal-experiment/`; `BP` = `walkthrough/paper_pipe
 
 **Definition.** a governance seat = an LLM/human judgment step under a versioned brief between a deterministic producer and validator (sandwich rule); '*** NO VALIDATOR ***' = the model asserts the seat has none; '(none recorded)' = the model says nothing either way
 
-**Authoritative artifact.** live run of SFE/machine/query.py seats (12 seats; attribution_author NO VALIDATOR; golden_review none recorded)
+**Authoritative artifact.** live run of SFE/machine/query.py seats; SFE/machine/query.py:90-91 prints either '*** NO VALIDATOR ***' or '(none recorded)' for a seat with no validator fact; record the seat names and strings the run prints
 
 **Cites.** `SFE/REPRODUCIBILITY.md:38-41`; `SFE/machine/query.py:90-91`; `SFE/machine/README.md:66-70`; `SFE/machine/README.md:66-70`
 
 ### check_model.py checks  (arc 1)
 
-**Definition.** the validator prints four PASS lines: (a) SOURCE CHECK, (b) DIFFERENTIAL CHECK vs cycle.py (282 comparisons), (c) KNOWN-ANSWER SET, (*) ACCEPTANCE TEST; it also reports 60 contradictions from rules.lp without failing
+**Definition.** the validator's checks are named in SFE/machine/README.md as (a) SOURCE CHECK, (b) DIFFERENTIAL CHECK vs cycle.py, (c) KNOWN-ANSWER SET, and an ACCEPTANCE TEST (:190); the checker step records the run's PASS lines, contradiction count, and wall clock — the translator does not assert the count
 
 **Conflicts in the record (unresolved).**
 - SFE/machine/README.md:98 heading says 'three independent checks'; SFE/machine/README.md:16 says 'the validator: 4 checks'; the run prints four PASS lines
 
-**Cites.** `SFE/machine/README.md:16`; `SFE/machine/README.md:98`; `SFE/machine/check_model.py:1-40`
+**Cites.** `SFE/machine/README.md:16`; `SFE/machine/README.md:98`; `SFE/machine/README.md:190`
 
 ### graph_check.py output  (arc 2)
 
-**Definition.** live run on runs/ds7/root_graph.production.json prints: nodes 773; bad line ranges 0 / 846 spans; bad quotes 0 / 602; spans with quotes 602 / 846; dangling (no provider) 25; authority-tagged headings captured 50 / 59 (wall 0.14 s at the pin). ARTIFACTS.md:19 summarises it as '773 nodes, zero bad spans of 846'
+**Definition.** G2/graph_check.py:55-75 prints these fields for a graph file: nodes; uncovered entries; bad line ranges / total spans; bad quotes / quoted spans; span sizes; overlapping pairs; provided names; needs and dangling (no provider); nodes with zero needs; spans with quotes / total spans; authority-tagged headings captured; lines covered. Values come from a live run recorded by the checker step. ARTIFACTS.md:19 is the record's own summary of the run.
 
 **Authoritative artifact.** live run (wall 0.14 s); CI runs the same command (.github/workflows/ci.yml:35)
 
 **Hazards for translators.**
-- 'zero bad spans of 846' is about line ranges; quote verification covers only the 602 quoted spans
+- 'bad spans' in ARTIFACTS.md:19 refers to the line-range field; the quote field is printed over the quoted subset only
 
 **Cites.** `G2/graph_check.py:55-75`; `ARTIFACTS.md:19`; `.github/workflows/ci.yml:35`
 
 ### the three behaviours files  (arc 1)
 
-**Definition.** data/behaviours.json = the panel answer key (3 behaviours, 6 cells, 1,336 passages per SFE/HANDOFF.md:618, verdicts+scores; FORBIDDEN token on the query path); engine/panel/behaviours.json = the vendored harness's 11-behaviour catalogue (definitions only, short slugs); semi-formal-experiment/behaviours_query.json = 3 behaviour definitions, no labels, the only legitimate query input
+**Definition.** data/behaviours.json = the panel answer key (3 behaviours, 6 cells, 1,336 passages per SFE/HANDOFF.md:618, verdicts+scores; FORBIDDEN token on the query path); engine/panel/behaviours.json = the harness copy under engine/ (SFE/MODULE_MAP.md:22 calls engine/'s suites vendored): 11 behaviours, definitions only, short slugs; semi-formal-experiment/behaviours_query.json = 3 behaviour definitions, no labels, the only legitimate query input
 
 **Hazards for translators.**
 - slug schemes differ (third-party-harm vs harm-avoidance-to-third-parties); never join on slug across files
 - SFE/validate_behaviours.py still opens data/behaviours.json though filed superseded (SFE/MODULE_MAP.md:212; SFE/CYCLE5_REVIEW.md:30)
 
-**Cites.** `SFE/behaviours_query.json:2-3`; `SFE/test_no_reference_leak.py:92-108`; `SFE/panel_v2.py:11-15`; `SFE/HANDOFF.md:618`; `SFE/HANDOFF.md:576-578`
+**Cites.** `SFE/behaviours_query.json:2-3`; `SFE/test_no_reference_leak.py:92-108`; `SFE/panel_v2.py:11-15`; `SFE/HANDOFF.md:618`; `SFE/HANDOFF.md:576-578`; `SFE/MODULE_MAP.md:22`
 
 ### PRUNED.md  (arc 2)
 
@@ -385,12 +397,12 @@ Path prefixes: `SFE` = `semi-formal-experiment/`; `BP` = `walkthrough/paper_pipe
 
 **Cites.** `BP/RETRANS_REVIEW_DISPOSITION.md:9-14`; `BP/RETRANS_REVIEW_DISPOSITION.md:46-50`; `BP/RETRANS_REVIEW_DISPOSITION.md:60-66`; `BP/ITERATION_NOTES.md:836-840`
 
-### symbolic engine: ASP/clingo evaluation, conflict enumeration, witness scenario, satisfiability (coherence) check, refusal  (arc 1)
+### conflict enumeration / witness scenario / coherence check / refusal (arc 1 engine)  (arc 1)
 
 **Definition.** conflict enumeration = 'Enumerate distinct norm conflicts in rules.lp and print one minimal-ish witness scenario per conflict' (SFE/run_conflicts.py:1-3) via clingo brave consequences; witness = 'One witness scenario for a given conflict, minimizing true ctx/interp atoms' (SFE/run_conflicts.py:37-38); coherence check = 'the definition/rule trigger is satisfiable under the vocabulary's composability axioms (via clingo)' (SFE/checker.py:7-9), returning a witness world for coherent definitions (SFE/checker.py:74-79); refusal = a deterministic module declining to emit a number or an answer, e.g. 'Degenerate inputs return refusals or floor values, never flattering ones' (SFE/MODULE_MAP.md:318), 'REFUSED' headline rows in benchmark.py, the '{{DOCFACTS marker is a refusal' (SFE/REPRODUCIBILITY.md:134), cycle.py 'REFUSED: 2 open cycles' (SFE/MODULE_MAP.md:34)
 
 **Hazards for translators.**
-- an engine failure event is any span recording the engine giving no answer (refusal, UNSAT with no witness, 'cannot enumerate') or a wrong answer (a conflict or witness later shown false, e.g. 'witnesses may describe impossible situations', SFE/emit_asp.py:285-290); record kind from the span's own words, refusal vs wrong_answer, and 'unstated' if the span does not say
+- an engine failure event is any span recording the engine giving no answer (a refusal, an UNSAT result with no witness, 'cannot enumerate') or giving an answer later shown false (e.g. 'witnesses may describe impossible situations', SFE/emit_asp.py:285-290). Record kind from the span's own words as refusal, wrong_answer, or unstated.
 
 **Cites.** `SFE/run_conflicts.py:1-13`; `SFE/run_conflicts.py:37-38`; `SFE/checker.py:1-13`; `SFE/checker.py:74-79`; `SFE/emit_asp.py:1-23`; `SFE/MODULE_MAP.md:318`; `SFE/REPRODUCIBILITY.md:134`; `SFE/MODULE_MAP.md:34`
 
@@ -399,7 +411,7 @@ Path prefixes: `SFE` = `semi-formal-experiment/`; `BP` = `walkthrough/paper_pipe
 **Definition.** arc 2: BP/panel_run1/relevance_by_act.json maps node_id → a list of act:polarity reason strings; the node id resolves to the graph node's spans (which may or may not carry a quote). arc 1: SFE/relevance.py Scorer.explain() returns matched_atoms with the spans licensing them; the record holds no committed per-hit explanation artifact for arc 1, so hits there come from a live run
 
 **Hazards for translators.**
-- a hit's span 'resolves to verbatim text' only if the node's span carries a quote that is a substring of the spec; 244 of 846 spans carry no quote (G2/graph_check.py output)
+- a span's quote is checkable only when the span carries one and that quote is a substring of the source document; G2/graph_check.py prints the counts of spans with and without quotes — obtain them from a live run
 
 **Cites.** `BP/panel_run1/relevance_by_act.json:1-5`; `SFE/relevance.py:715-725`
 
@@ -433,10 +445,10 @@ Path prefixes: `SFE` = `semi-formal-experiment/`; `BP` = `walkthrough/paper_pipe
 - **marking_systems** — three coexisting systems that do not agree: (a) ledger: append-only, superseded entries are withdrawn by a later numbered entry (0042 withdraws 0041); (b) handoffs: star count = recency of a state block, ⛔ = do not act on, ⚠️ = caveat, ~~strike~~ = retracted-but-retained; (c) delete-don't-annotate: 'A superseded number left in a doc is an instruction, not a footnote. Delete it' (SFE/HANDOFF.md:1357), applied in some sections and contradicted by 'nothing was silently deleted' (SFE/HANDOFF.md:292-294). (BP/ITERATION_NOTES.md:1-5; SFE/HANDOFF.md:292-294, :1352-1357; AGENTS.md:16-18)
 - **git_totals** — 656 commits, 2026-08-02 to 2026-09-01; one merge; HEAD (branch d3-worked-example) == origin/main == public/main == 48e66ce0; local main is behind. Run git log from the pinned hash, never from 'main'.
 - **git_trailers** — 620/656 commits carry one co-author trailer: 'Claude Fable 5' 460, 'Claude Opus 5 (1M context)' 104, 'Claude Opus 5' 14, 'Qwen-Coder' 41 (lowercase 'Co-authored-by'), 'Qwen Code' 1; 36 carry none. 'Claude-Session:' trailers on 361 commits. The driver's model tier is recoverable only from these trailers, never from the span. Two Opus trailer strings are one tier; a case-sensitive grep misses the Qwen commits.
-- **history_rewrites** — reflog complete (661 entries); no rebase, filter-branch, or force-push recorded; six 'reset' entries are no-ops; exactly one amend (HEAD@{416}, message-only, diff empty, orphan 16bbbe59 survives). Consistent with 'History is published unrewritten' except for that message-only amend.
+- **history_rewrites** — reflog complete (661 entries); no rebase, filter-branch, or force-push recorded; six 'reset' entries are no-ops; exactly one amend (HEAD@{416}, message-only, diff empty, orphan 16bbbe59 survives). Translate these as git-tier facts.
 - **withdrawal_commit_conventions** — no fixed prefix; keywords in subjects: 'withdrawn:' (bf0d4978, 365d68b3, ecb2e9df, 86a703c1), 'WITHDRAW' (47779d8c), 'retracted' (94c24b3d, 2254f925, c04b80ef), 'rescinded' (a7a8ca8c), 'struck' (ae00660f, 12181ba0, 999f1403), 'Erratum #N' (#13-#21 each has a subject-visible commit), 'VOIDED' (2b1505bb). Subject-only and full-message keyword filters return different sets; record which filter produced a list.
 - **overloaded_words** — reset = provider capacity reset; block = working block (attended unless marked autonomous); seat = model instance (ledger) vs governance role (machine/query.py); seed = RNG base; venue = instrument configuration; withheld = blinding a seat, not publication redaction; '[REDACTED]' inside specs/openai-model-spec/model_spec.md is upstream source content, not this project's redaction; F1 = falsifier or review finding; 'definition' has three senses (see node/passage/span/definition entry).; headline = (a) the round-4 match-or-adjudicated-defensible column, (b) 'THE HONEST HEADLINE IS RECALL' (a ledger entry's own summary line, BP/ITERATION_NOTES.md:280), (c) a 'headline claim' in a handoff starred block or writeup; 'README' unqualified in this glossary always means the file named in the citation (e.g. SFE/machine/README.md), never the repo root README
 
 ## Citation check
 
-All entry citations resolve to an in-range line at the pin (line-bound check only; support is not machine-verified — see review_1.md).
+All entry citations resolve to an in-range line at the pin (line-bound check only; support is not machine-verified.)
