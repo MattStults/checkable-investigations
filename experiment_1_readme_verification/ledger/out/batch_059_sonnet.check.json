@@ -1,0 +1,1914 @@
+{
+ "summary": {
+  "total": 205,
+  "passed": 83,
+  "failed": 122,
+  "fail_reasons": {
+   "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)": 118,
+   "stance not in enum": 4
+  }
+ },
+ "results": [
+  {
+   "id": "L590001",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590002",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590003",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590004",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590005",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590006",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines",
+    "rate: 14/102 re-derives 0.1373"
+   ]
+  },
+  {
+   "id": "L590007",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590008",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines",
+    "rate: 4/6 re-derives 0.6667"
+   ]
+  },
+  {
+   "id": "L590009",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590010",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590011",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590012",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590013",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590014",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590015",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590016",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590017",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590018",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines",
+    "rate: 40/220 re-derives 0.1818"
+   ]
+  },
+  {
+   "id": "L590019",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590020",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590021",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590022",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590023",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590024",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590025",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590026",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590027",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590028",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590029",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590030",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590031",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590032",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590033",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590034",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590035",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590036",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590037",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590038",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590039",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590040",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590041",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590042",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590043",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590044",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590045",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590046",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590047",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590048",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590049",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590050",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590051",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590052",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590053",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590054",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590055",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590056",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590057",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590058",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590059",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590060",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines",
+    "rate: 26/28 re-derives 0.9286"
+   ]
+  },
+  {
+   "id": "L590061",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590062",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590063",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590064",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590065",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590066",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590067",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590068",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590069",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590070",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590071",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590072",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590073",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590074",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590075",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590076",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590077",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590078",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590079",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590080",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590081",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590082",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590083",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590084",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590085",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590086",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590087",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590088",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590089",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines",
+    "rate: 10/133 re-derives 0.0752"
+   ]
+  },
+  {
+   "id": "L590090",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590091",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590092",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590093",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590094",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590095",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590096",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590097",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590098",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590099",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590100",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines",
+    "rate: 52/53 re-derives 0.9811"
+   ]
+  },
+  {
+   "id": "L590101",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590102",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590103",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590104",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines",
+    "rate: 6/6 re-derives 1.0"
+   ]
+  },
+  {
+   "id": "L590105",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590106",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590107",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590108",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590109",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590110",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590111",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590112",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590113",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590114",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines",
+    "rate: 19/19 re-derives 1.0"
+   ]
+  },
+  {
+   "id": "L590115",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590116",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590117",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590118",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590119",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590120",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590121",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590122",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590123",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590124",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590125",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590126",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590127",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590128",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590129",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590130",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590131",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590132",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590133",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590134",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590135",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590136",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590137",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590138",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590139",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590140",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590141",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590142",
+   "pass": false,
+   "fails": [
+    "stance not in enum"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590143",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines",
+    "rate: 7/9 re-derives 0.7778"
+   ]
+  },
+  {
+   "id": "L590144",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines",
+    "rate: 7/9 re-derives 0.7778"
+   ]
+  },
+  {
+   "id": "L590145",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines",
+    "rate: 4/9 re-derives 0.4444"
+   ]
+  },
+  {
+   "id": "L590146",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590147",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590148",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590149",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590150",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590151",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590152",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590153",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590154",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590155",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590156",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590157",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590158",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590159",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines",
+    "rate: 10/106 re-derives 0.0943"
+   ]
+  },
+  {
+   "id": "L590160",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590161",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590162",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590163",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590164",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590165",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590166",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590167",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590168",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines",
+    "rate: 19/19 re-derives 1.0"
+   ]
+  },
+  {
+   "id": "L590169",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590170",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590171",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590172",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590173",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590174",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590175",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590176",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590177",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590178",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590179",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590180",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590181",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590182",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590183",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590184",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590185",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines",
+    "rate: 44/44 re-derives 1.0"
+   ]
+  },
+  {
+   "id": "L590186",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines",
+    "rate: 45/45 re-derives 1.0"
+   ]
+  },
+  {
+   "id": "L590187",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590188",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590189",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines",
+    "rate: 12/12 re-derives 1.0"
+   ]
+  },
+  {
+   "id": "L590190",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590191",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590192",
+   "pass": false,
+   "fails": [
+    "stance not in enum"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590193",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590194",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590195",
+   "pass": false,
+   "fails": [
+    "stance not in enum"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590196",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590197",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines",
+    "rate: 51/53 re-derives 0.9623"
+   ]
+  },
+  {
+   "id": "L590198",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590199",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590200",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590201",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590202",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590203",
+   "pass": false,
+   "fails": [
+    "stance not in enum"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590204",
+   "pass": false,
+   "fails": [
+    "events sourced from the ledger or the git log require an ordinal (entry number or commit ordinal)"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L590205",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  }
+ ]
+}
