@@ -614,5 +614,16 @@
     "The value is inside a block headed `MATT RULING`, `RULING:`, `COUNTERSIGNED`, `the project owner`, `project owner's decision`, or a decision.json signed_by → `human`.",
     "The span itself says `CoVe`, `re-derived`, `re-derivation` of this value → `cove`; record the actor verbatim.",
     "Any value not matched by steps 3-9 → `stated`."
+  ],
+  "amendments": [
+    {
+      "id": "G-01",
+      "date": "2026-09-02",
+      "logged_as": "I-02",
+      "change": "Tier procedure step 5: the label list gains the bare word `wave` (a wave seat's verdict inside a panel row is tier raw; the enclosing `panel` key must not override it). Rationale: the record names single-seat verdicts 'wave' (BP/ITER1_ATTEMPT2_SCORED.json:9-19 panel rows {node, wave, seats[3], majority, split}).",
+      "cite": [
+        "BP/ITER1_ATTEMPT2_SCORED.json:9-19"
+      ]
+    }
   ]
 }

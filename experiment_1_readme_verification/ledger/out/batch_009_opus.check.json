@@ -1,15 +1,19 @@
 {
  "summary": {
   "total": 179,
-  "passed": 179,
-  "failed": 0,
-  "fail_reasons": {}
+  "passed": 178,
+  "failed": 1,
+  "fail_reasons": {
+   "a wave-seat verdict (quote key \"wave\") must be tier raw (I-02 / G-01)": 1
+  }
  },
  "results": [
   {
    "id": "L90001",
-   "pass": true,
-   "fails": [],
+   "pass": false,
+   "fails": [
+    "a wave-seat verdict (quote key \"wave\") must be tier raw (I-02 / G-01)"
+   ],
    "notes": [
     "quote: verbatim within cited lines"
    ]

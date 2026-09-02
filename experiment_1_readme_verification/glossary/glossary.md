@@ -452,6 +452,10 @@ Path prefixes: `SFE` = `semi-formal-experiment/`; `BP` = `walkthrough/paper_pipe
 - **withdrawal_commit_conventions** — no fixed prefix; keywords in subjects: 'withdrawn:' (bf0d4978, 365d68b3, ecb2e9df, 86a703c1), 'WITHDRAW' (47779d8c), 'retracted' (94c24b3d, 2254f925, c04b80ef), 'rescinded' (a7a8ca8c), 'struck' (ae00660f, 12181ba0, 999f1403), 'Erratum #N' (#13-#21 each has a subject-visible commit), 'VOIDED' (2b1505bb). Subject-only and full-message keyword filters return different sets; record which filter produced a list.
 - **overloaded_words** — reset = provider capacity reset; block = working block (attended unless marked autonomous); seat = model instance (ledger) vs governance role (machine/query.py); seed = RNG base; venue = instrument configuration; withheld = blinding a seat, not publication redaction; '[REDACTED]' inside specs/openai-model-spec/model_spec.md is upstream source content, not this project's redaction; F1 = falsifier or review finding; 'definition' has three senses (see node/passage/span/definition entry).; headline = (a) the round-4 match-or-adjudicated-defensible column, (b) 'THE HONEST HEADLINE IS RECALL' (a ledger entry's own summary line, BP/ITERATION_NOTES.md:280), (c) a 'headline claim' in a handoff starred block or writeup; 'README' unqualified in this glossary always means the file named in the citation (e.g. SFE/machine/README.md), never the repo root README
 
+## Amendments (post-freeze, numbered, logged in results/intervention_log.md)
+
+- **G-01** (2026-09-02, I-02) — Tier procedure step 5: the label list gains the bare word `wave` (a wave seat's verdict inside a panel row is tier raw; the enclosing `panel` key must not override it). Rationale: the record names single-seat verdicts 'wave' (BP/ITER1_ATTEMPT2_SCORED.json:9-19 panel rows {node, wave, seats[3], majority, split}). Cites: `BP/ITER1_ATTEMPT2_SCORED.json:9-19`
+
 ## Citation check
 
 All entry citations resolve to an in-range line at the pin (line-bound check only; support is not machine-verified.)

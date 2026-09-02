@@ -93,6 +93,13 @@ for k, v in d["conventions"].items():
             w("")
         else:
             w(f"- **{k}** — {v}")
+if d.get("amendments"):
+    w("\n## Amendments (post-freeze, numbered, logged in results/intervention_log.md)\n")
+    for a_ in d["amendments"]:
+        w(f"- **{a_['id']}** ({a_['date']}, {a_['logged_as']}) — {a_['change']} Cites: " + "; ".join(f"`{c}`" for c in a_["cite"]))
+        for c in a_["cite"]:
+            if not check(c):
+                bad.append((a_["id"], c))
 w("\n## Citation check\n")
 w("All entry citations resolve to an in-range line at the pin (line-bound check only; support is not machine-verified.)" if not bad else "**FAILED**: " + "; ".join(f"{t}: {c}" for t, c in bad))
 open(os.path.join(HERE, "glossary.md"), "w").write("\n".join(out) + "\n")

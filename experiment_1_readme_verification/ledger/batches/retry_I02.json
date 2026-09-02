@@ -1,0 +1,67 @@
+{
+ "header": {
+  "batch": "retry_I02",
+  "source_class": "arc2_json",
+  "brief_version": "0.5",
+  "glossary_version": "frozen d887fb9",
+  "spans": 15,
+  "first_span": "S00287",
+  "last_span": "S00301",
+  "retranslation_of": "batches 008/009/010 (rule I-02)",
+  "rejected_claims": [
+   {
+    "id": "L80031",
+    "batch": "batch_008",
+    "quote": "\"wave\": \"relevant\",",
+    "reason": [
+     "a wave-seat verdict (quote key \"wave\") must be tier raw (I-02 / G-01)"
+    ]
+   },
+   {
+    "id": "L90001",
+    "batch": "batch_009",
+    "quote": "\"wave\": \"relevant\"",
+    "reason": [
+     "a wave-seat verdict (quote key \"wave\") must be tier raw (I-02 / G-01)"
+    ]
+   },
+   {
+    "id": "L100054",
+    "batch": "batch_010",
+    "quote": "\"wave\": \"not_relevant\"",
+    "reason": [
+     "a wave-seat verdict (quote key \"wave\") must be tier raw (I-02 / G-01)"
+    ]
+   }
+  ]
+ },
+ "spans": [
+  {
+   "id": "S00259",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
+   "commit": "pin",
+   "lines": "88-97",
+   "text": "   \"wave\": \"relevant\",\n   \"seats\": [\n    \"relevant\",\n    \"relevant\",\n    \"relevant\"\n   ],\n   \"majority\": \"relevant\",\n   \"split\": false\n  }\n ],",
+   "source_class": "arc2_json",
+   "context": "inside top-level key \"panel\" (window of a value longer than 80 lines)"
+  },
+  {
+   "id": "S00272",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_ATTEMPT3_SCORED.json",
+   "commit": "pin",
+   "lines": "87-96",
+   "text": "   \"wave\": \"relevant\",\n   \"seats\": [\n    \"relevant\",\n    \"relevant\",\n    \"relevant\"\n   ],\n   \"majority\": \"relevant\",\n   \"split\": false\n  }\n ],",
+   "source_class": "arc2_json",
+   "context": "inside top-level key \"panel\" (window of a value longer than 80 lines)"
+  },
+  {
+   "id": "S00295",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER3_ATTEMPT4_SCORED.json",
+   "commit": "pin",
+   "lines": "86-95",
+   "text": "   \"wave\": \"not_relevant\",\n   \"seats\": [\n    \"not_relevant\",\n    \"not_relevant\",\n    \"not_relevant\"\n   ],\n   \"majority\": \"not_relevant\",\n   \"split\": false\n  }\n ],",
+   "source_class": "arc2_json",
+   "context": "inside top-level key \"panel\" (window of a value longer than 80 lines)"
+  }
+ ]
+}

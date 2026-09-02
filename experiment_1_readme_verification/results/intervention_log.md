@@ -111,6 +111,21 @@ count case (entry 0000, no '#2' anywhere in the entry) still fails.
 Recurrence: batch_003 opus — 0 true recurrences (the one hit was the
 over-narrow rule, not the defect class).
 
+### I-02 — 2026-09-02 — wave verdict tiered panel by the key walk
+
+Caught: the batch_010 translator flagged it ("`wave` inside the `panel`
+array resolves to tier `panel`"); orchestrator confirmed 3 affected
+accepted claims across batches 008, 009, 010 (one per panel-row span).
+Class: the tier procedure's raw-label list lacked the bare word `wave`,
+so the walk climbed to the enclosing `panel` key.
+
+Operationalised: glossary amendment G-01 (step 5 gains `wave`), rendered
+into glossary.md under Amendments; checker rule (a quote keyed "wave" with
+tier ≠ raw is rejected, tagged I-02). The 3 claims are re-split as
+rejected and retranslated.
+
+Recurrence: (tracked as batches complete)
+
 ### Observations not (yet) interventions
 
 - Both tiers type most standing statements in entry 0000 as `registration`

@@ -103,6 +103,8 @@ def check_claim(c, repo, pin, ids):
     (notes if ok else fails).append(f"quote: {why}")
     if c["tier"] not in TIERS:
         fails.append(f"tier {c['tier']!r} not in enum")
+    elif norm(str(c["quote"])).startswith('"wave"') and c["tier"] != "raw":
+        fails.append("a wave-seat verdict (quote key \"wave\") must be tier raw (I-02 / G-01)")
     if c["threshold_rule"] not in THRESH:
         fails.append(f"threshold_rule {c['threshold_rule']!r} not in enum")
     if c["universe"] not in UNIV:
