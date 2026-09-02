@@ -1,0 +1,143 @@
+{
+  "purpose": "Instance-level pre-declarations found by the two clean-context inventory reviews (review_1.md, review_2.md) while probing the record. Committed here so they are timestamped before either arm runs, but NOT part of the inventory either arm sees: the translators never see the inventory, and the baseline reviewer receives only inventory.md. At results time this file becomes a scorecard: for each instance, did the ledger arm surface it unprompted, did the baseline, did neither. The inventory keeps only the general dimensions these instances motivated.",
+  "found_by": "frontier adversarial review (Opus) armed with the claim inventory — itself a data point against the five prior unstructured README reviews, which surfaced none of these.",
+  "instances": {
+    "Q01": {
+      "snapshot_expected": "the in-sample criterion standing in HANDOFF_CURRENT.md (caution 0.941, harm 0.953, help 0.960) recorded before round-4 certification; NOT a final-attempt measurement. Round-4 raw/headline cells for the same behaviours are far lower.",
+      "provenance": "expected in the handoff below the starred block"
+    },
+    "Q02": {
+      "not_to_be_confused_with": [
+        "human-panelist baseline 71% (struck 2026-08-21, still in file)",
+        "Fable single-wave self-agreement 0.846",
+        "mint stability 0.98",
+        "split rates"
+      ],
+      "expected": "the record may hold no measurement of panel-internal agreement; a review registers it as an unmeasured desideratum"
+    },
+    "Q03": {
+      "certification_outcome": "round-4 raw verdicts: helpfulness F1 (prec below floor), caution F1 by one node (27/40 vs floor 28), harm in band"
+    },
+    "Q04": {
+      "registrations": [
+        "ROUND4_PREREG.md §DEFENSIBILITY PASS (owner decision 2026-08-24): a one-pass blind defensibility adjudication that DID run (ROUND4_DEV_TABLE.json headline column)",
+        "PREREG_panel_equivalence.md: a match-or-defensible pass that did not run"
+      ],
+      "expected": "contested unless the README's referent is fixed; sentence added 45 min before the pin (3f87fd40)"
+    },
+    "Q06": {
+      "numerator": 849,
+      "denominator": 863,
+      "anti_rule_quote": "MODULE_MAP.md §11: 'Do not quote 849/863 — that is the published-universe figure, and the published universe deleted every passage the panel scored 0. Re-run it; never cite the number from this table.'"
+    },
+    "Q09": {
+      "correction": "adversarial_review_1.md: '15-rule fragment is actually 16 rules'"
+    },
+    "Q12": {
+      "not_to_be_confused_with": [
+        "+0.274 published universe",
+        "+0.309 dev",
+        "+0.316 best compliant config",
+        "+0.206 LOBO",
+        "+0.396 oracle"
+      ]
+    },
+    "Q14": {
+      "judge_count": "record says 'mean of 3'; panel_agreement.py names five judges; 'leave-one-out' appears only in the README"
+    },
+    "Q16": {
+      "series_tiers": [
+        {
+          "attempt": 1,
+          "value": 0.4,
+          "tier": "frozen transfer (raw, single wave)"
+        },
+        {
+          "attempt": 2,
+          "value": 0.7,
+          "tier": "panel (raw 0.75 also recorded)"
+        },
+        {
+          "attempt": 3,
+          "value": 0.55,
+          "tier": "panel (raw 0.40 also recorded)"
+        },
+        {
+          "attempt": 4,
+          "value": 0.85,
+          "tier": "certified-Opus venue",
+          "adjusted_value": 0.895,
+          "adjusted_basis": "dispute-class quarantine, same entry"
+        }
+      ],
+      "not_to_be_confused_with": [
+        "attempt-3 raw 0.40 (same number as attempt-1)",
+        "attempt-2 raw 0.75"
+      ],
+      "behaviour": "how-to-approach-tradeoffs",
+      "note": "attempt-1 tier is unstated in 0010 (one value under a two-column header); attempts 2-3 have raw values also recorded; attempt 4 rendered '0.85/0.895' with the 0.895 from a dispute-class quarantine in the same entry"
+    },
+    "Q17": {
+      "not_to_be_confused_with": [
+        "23/38 = 0.605 pooled engaged precision (same numerator, adjacent line)",
+        "24/38 = 0.632 pooled match-or-defensible engaged"
+      ],
+      "snapshot": "pooled over attempts 2 and 3 (both frozen draws)"
+    },
+    "Q19": {
+      "tier": "cove: driver re-derived the reviewer's 299/300"
+    },
+    "Q27": {
+      "candidates": "39/39 blind coverage over nodes (0042); coverage census over the 100 definitions (0038, 0034)"
+    },
+    "Q32": {
+      "reading": "PRUNED.md pins content by git object id only; no signature, checksum, or signer line found"
+    },
+    "Q34": {
+      "ci": "on: push: branches [main] + pull_request; demo path runs cite.py resolve only"
+    },
+    "Q37": {
+      "seats": "query.py prints one '*** NO VALIDATOR ***' and one '(none recorded)'"
+    },
+    "Q44": {
+      "spans_total": 846,
+      "spans_with_quotes": 602,
+      "bad_line_ranges": 0,
+      "bad_quotes": 0,
+      "note": "ARTIFACTS.md: '773 nodes, zero bad spans of 846'; quote-verification covers only the quoted subset"
+    },
+    "Q45": {
+      "headline_column": "ROUND4_DEV_TABLE.json headline (match-or-adjudicated-defensible) populated for all three dev behaviours"
+    },
+    "forensic": {
+      "errata_facts": "Numbered errata in the ledger run #13-#21; #1-#12 appear nowhere in the repo. Four errata are unnumbered (0001, 0004, 0009, 0013) and the ledger's own series tally counts some of them. erratum(e, n, class): n is optional; unnumbered errata carry n=null and the entry number.",
+      "history_note": "The 2026-08-31 publication-prep commit rewrote retained ledger entries in place, including replacing owner attributions with impersonal phrasing (reviewer A14/C4). Pre-redaction blobs are in-scope translator sources (hypothesis_rules.history_in_scope); forensic attributes are translated from BOTH the current file and the pre-redaction blob, labelled by commit.",
+      "erratum_class_map": "review_2.md §3: 12 of 13 errata map cleanly; the 0001 runbook erratum is left to the translator",
+      "why_quotes": "The record must support tracing what agent did what when the work went wrong, not only verifying the README. The ledger already carries this vocabulary natively (entry 0000 'SEED: tacit operational knowledge', erratum #16 'stale reset belief', erratum #21 'FOURTH recurrence', 'next agent must know' lines, errata series '4,4,4,2*,1'), so the dimensions are recoverable from spans without inference."
+    },
+    "F01": {
+      "expected_shape": "erratum #21's four instances fall in one block on one date; recurrence expected intra-block"
+    },
+    "F03": {
+      "expected": "erratum #16 (0025) names no catcher; will be inferred=self"
+    },
+    "F09": {
+      "expected_shape": "arc-2 driver is nearly single-tier; tier variance sits on the seat axis (Sonnet 0.13, Haiku 0.00 at v1)"
+    },
+    "H03": {
+      "fact": "numbered errata in the ledger run #13-#21; #1-#12 appear nowhere; four unnumbered errata at 0001, 0004, 0009, 0013"
+    },
+    "H11": {
+      "fact": "publication-prep commit 6d01415b deleted 121 lines from ITERATION_NOTES.md and rewrote retained entries 0003, 0005, 0006, 0007, 0010, 0013, 0014, 0015 in place, including replacing owner attributions ('Matt: ...') with impersonal phrasing ('RULING:', 'per the standing direction')"
+    },
+    "H13": {
+      "fact": "0042 says 'three decisive findings' re-derived; 0043 says 'four decisive defects'"
+    },
+    "Q29": {
+      "fact": "arc-1 also retracted results (WITHDRAWN_EXAMPLE_ASYMMETRY.md; +0.310 gate suspended; retracted +0.258)"
+    },
+    "V03": {
+      "record_only_hint": "adversarial_review_1.md names a segmentation failure and its repair"
+    }
+  }
+}

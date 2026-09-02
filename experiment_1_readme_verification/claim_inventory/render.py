@@ -123,6 +123,9 @@ if "coverage" in d:
     for q in c["additional_query_classes"]:
         w(f"- **{q['id']}** — {q['question']}  \n  needs: {', '.join(q['needs'])}")
     w("\n**Out of scope, noted:** " + c["out_of_scope_noted"] + "\n")
+if "sealed_annex" in d:
+    w("## Sealed annex\n")
+    w(d["sealed_annex"] + "\n")
 w("## Verbatim check\n")
 if readme_text is None:
     w("Pinned README not available at render time; quotes not checked.")

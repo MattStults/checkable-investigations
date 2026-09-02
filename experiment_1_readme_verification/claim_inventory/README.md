@@ -99,3 +99,24 @@ applies every blocking and should-fix item:
 
 Counts now: 49 claims, 15 hypotheses, 12 verdict nodes, 6 commitments, 12
 residue, 9 forensic queries, 6 additional query classes.
+
+## Revision after clean-context review 2 (2026-09-02)
+
+`review_2.md` (committed untouched) audited closure of review 1: 41 closed, 6
+partial, 1 declined, and found two blocking regressions (Q44 values, Q04
+referent) plus should-fixes. All applied: Q44 values corrected; Q04 terminates
+contested if the record holds more than one registration; `min_witnesses`
+default and witness definition; cross-source order relation; H14 domain from
+step-emitted artifacts; H15 inverted to the decidable direction (coverage half
+→ R13); tier constrained to an enum with a separate `venue`; H09/H07/H13
+round-trips corrected; Start-here count fixed (6 steps, 7 commands);
+`caught_by` rule and historical-attribution precedence stated.
+
+**Sealed annex.** Both reviews found the specific traps by probing the record
+with the incumbent method (frontier adversarial review) armed with this
+inventory. Pre-declaring those instances in the inventory would hand the
+answers to both arms. So the inventory keeps only the general dimensions, and
+the instances (26 ids) live in `sealed_instances.json`, which neither the
+translators nor the baseline reviewer sees. At results time it is a scorecard:
+per instance, which arm surfaced it unprompted. That the reviews found them
+where five prior unstructured reviews did not is itself a reported result.
