@@ -2,8 +2,8 @@
  "header": {
   "batch": "batch_027",
   "source_class": "arc1_docs",
-  "brief_version": "0.4",
-  "glossary_version": "frozen ",
+  "brief_version": "0.5",
+  "glossary_version": "frozen d887fb9",
   "spans": 15,
   "first_span": "S00370",
   "last_span": "S00384"

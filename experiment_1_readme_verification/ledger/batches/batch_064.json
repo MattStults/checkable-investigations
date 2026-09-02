@@ -2,8 +2,8 @@
  "header": {
   "batch": "batch_064",
   "source_class": "git_log",
-  "brief_version": "0.4",
-  "glossary_version": "frozen ",
+  "brief_version": "0.5",
+  "glossary_version": "frozen d887fb9",
   "spans": 8,
   "first_span": "S01167",
   "last_span": "S01174"

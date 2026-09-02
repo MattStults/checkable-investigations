@@ -2,8 +2,8 @@
  "header": {
   "batch": "batch_003",
   "source_class": "ledger",
-  "brief_version": "0.4",
-  "glossary_version": "frozen ",
+  "brief_version": "0.5",
+  "glossary_version": "frozen d887fb9",
   "spans": 15,
   "first_span": "S00031",
   "last_span": "S00045"

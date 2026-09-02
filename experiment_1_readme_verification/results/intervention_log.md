@@ -74,6 +74,20 @@ claims, all checker-clean) moved to `ledger/out/pre_d05/` and excluded
 from the final ledger; their batch files to `ledger/batches/pre_d05/`.
 Brief v0.5 rules 31-33 (file name as outermost key; window context).
 
+### D-06 — 2026-09-02 — batch header provenance
+
+Caught by: the batch_005 translator ("brief file itself is v0.5, but I
+followed the batch header"). batch.py parsed the brief version before the
+v0.5 edit and computed the glossary hash from the wrong directory, so
+batches 001-121 as first cut carried brief_version 0.4 and
+glossary_version "frozen " (blank). Artifact: batch.py fixed; headers of
+all not-yet-dispatched batches rewritten. Claims already produced under
+the defective headers (batch_002, 003 dispatched under brief v0.4 text;
+batch_004-009 dispatched under brief v0.5 text but header 0.4) keep
+their translator block as written; the true brief in force at dispatch
+is recorded here: batches 002-003 → v0.4; batches 004-009 → v0.5; every
+batch → glossary frozen f169c02. Not a ledger edit.
+
 ## Interventions
 
 ### I-01 — 2026-09-02 — erratum number taken from a count

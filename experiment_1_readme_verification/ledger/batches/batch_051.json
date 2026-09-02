@@ -2,8 +2,8 @@
  "header": {
   "batch": "batch_051",
   "source_class": "arc1_cycles",
-  "brief_version": "0.4",
-  "glossary_version": "frozen ",
+  "brief_version": "0.5",
+  "glossary_version": "frozen d887fb9",
   "spans": 4,
   "first_span": "S00727",
   "last_span": "S00730"

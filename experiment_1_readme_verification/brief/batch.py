@@ -6,8 +6,12 @@ brief and glossary versions in force and the batch id the translator must
 copy into every claim. Usage: batch.py [--per 15] [--max-lines 400]"""
 import argparse, json, os, subprocess
 HERE = os.path.dirname(os.path.abspath(__file__)); X = os.path.dirname(HERE)
+REPO = os.path.dirname(X)
 def ver(path):
-    return subprocess.check_output(["git", "-C", X, "log", "-1", "--format=%h", "--", path], text=True).strip()
+    out = subprocess.check_output(["git", "-C", REPO, "log", "-1", "--format=%h", "--", os.path.relpath(os.path.join(X, path), REPO)], text=True).strip()
+    if not out:
+        raise SystemExit(f"no git history for {path}")
+    return out
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--per", type=int, default=15); ap.add_argument("--max-lines", type=int, default=400)
     a = ap.parse_args()
@@ -25,7 +29,7 @@ def main():
         if cur:
             bid += 1; out.append((bid, cls, cur))
     for bid, cls, cur in out:
-        hdr = {"batch": f"batch_{bid:03d}", "source_class": cls, "brief_version": brief_v, "glossary_version": "frozen " + ver("experiment_1_readme_verification/glossary/glossary.json"), "spans": len(cur), "first_span": cur[0]["id"], "last_span": cur[-1]["id"]}
+        hdr = {"batch": f"batch_{bid:03d}", "source_class": cls, "brief_version": brief_v, "glossary_version": "frozen " + ver("glossary/glossary.json"), "spans": len(cur), "first_span": cur[0]["id"], "last_span": cur[-1]["id"]}
         json.dump({"header": hdr, "spans": cur}, open(os.path.join(X, "ledger/batches", f"batch_{bid:03d}.json"), "w"), indent=1, ensure_ascii=False)
     json.dump([{"batch": f"batch_{b:03d}", "source_class": c, "spans": len(s), "lines": sum(x["text"].count("\n") + 1 for x in s)} for b, c, s in out], open(os.path.join(X, "ledger/batches/index.json"), "w"), indent=1)
     print(len(out), "batches")
