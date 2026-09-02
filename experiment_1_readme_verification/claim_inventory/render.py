@@ -44,6 +44,10 @@ for k, v in d["dimension_vocabulary"].items():
 w("\n## Event predicates (for hypotheses)\n")
 for k, v in d["event_predicates"].items():
     w(f"- `{k}` — {v}")
+if "hypothesis_rules" in d:
+    w("\n## Global hypothesis rules\n")
+    for k, v in d["hypothesis_rules"].items():
+        w(f"- **{k}** — {v}")
 w("\n## Quantitative / checkable claims\n")
 for c in d["claims"]:
     w(f"### {c['id']}\n")
@@ -52,6 +56,8 @@ for c in d["claims"]:
     w("**Dimensions:**")
     for k, v in c["dimensions"].items():
         w(f"- {k}: {v}")
+    if c.get("not_to_be_confused_with"):
+        w("- not_to_be_confused_with: " + "; ".join(c["not_to_be_confused_with"]))
     if c.get("note"):
         w(f"\n*Note:* {c['note']}")
     w("")
@@ -65,6 +71,10 @@ for h in d["hypotheses"]:
     w(f"- **English (out):** {h['english_out']}")
     w(f"- **Declared dimensions translators must carry:** {'; '.join(h['declared_dimensions'])}")
     w(f"- **Scope:** {h['scope']}")
+    if "min_witnesses" in h:
+        w(f"- **min_witnesses:** {h['min_witnesses']} (fewer → unverifiable (vacuous))")
+    if h.get("note"):
+        w(f"- *Note:* {h['note']}")
     w("")
 w("## Verdict nodes (named needs and candidate providers)\n")
 w("A verdict verifies exactly when all its needs resolve to providers that verify. A need with no provider is loose language and is printed by name in results.\n")
@@ -97,6 +107,9 @@ if "forensic" in d:
     for k, v in f["defect_classes"].items():
         w(f"- `{k}` — {v}")
     w("\n**Glossary hazard:** " + f["glossary_hazard"] + "\n")
+    for k in ("errata_facts", "history_note"):
+        if k in f:
+            w(f"**{k}:** " + f[k] + "\n")
     w("**Pre-registered forensic queries:**")
     for q in f["preregistered_queries"]:
         w(f"- **{q['id']}** — {q['question']}  \n  needs: {', '.join(q['needs'])}")

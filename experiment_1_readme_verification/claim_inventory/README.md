@@ -75,3 +75,27 @@ unchanged.
   sentence-before-or-after-withdrawal, discrepancy direction, evidence grade
   against commitment C02, internal consistency. All derivable at query time
   given the above.
+
+## Revision after clean-context review 1 (2026-09-02)
+
+`review_1.md` is the reviewer's report, committed untouched (Opus, clean
+context, given the inventory, the pinned README and read access to the record).
+Its verdict was not-fit-to-freeze with six blocking findings. This revision
+applies every blocking and should-fix item:
+
+- Non-vacuity guard (`min_witnesses`) and a day-resolution order relation for
+  all ∀-hypotheses; pre-redaction history declared an in-scope source.
+- H03, H07, H09, H11 rewritten; H12–H15 added (span-and-reason per hit,
+  re-derivation of decisive findings, every step has an entry, ARTIFACTS.md
+  lists every star artifact — promoted from C06).
+- New dimensions: `threshold_rule`, `universe`, `provenance_region`,
+  `anti_rule`, `not_to_be_confused_with`; tier gains `cove`, supersession
+  gains `struck`.
+- Q16 now a per-element tiered series with the 0.895 adjusted value; Q01/Q02/
+  Q03/Q04/Q06/Q17/Q29/Q32/Q34/Q37 sharpened; Q44–Q49 added; R03 split.
+- Forensic layer: defect classes extended to cover all thirteen errata found;
+  `caught_by` is a set with an inferred flag; block is the session unit; F01
+  redefined; F06–F09 added.
+
+Counts now: 49 claims, 15 hypotheses, 12 verdict nodes, 6 commitments, 12
+residue, 9 forensic queries, 6 additional query classes.

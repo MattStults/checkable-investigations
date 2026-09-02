@@ -7,11 +7,16 @@ Generated from `inventory.json` by `render.py`; the JSON is the source of truth.
 ## Dimension vocabulary
 
 - **metric** — Named quantity (see glossary/ once frozen). Examples: match_or_defensible_rate, raw_match_rate, engaged_precision, mcc, node_count, clause_count, passage_count, join_rate, test_count, entry_count, trial_count.
-- **tier** — How the number was produced. One of: raw (mechanical string/ID match, no judgment), panel (frontier-judge panel ruling), adjudicated (seat ruling folded with panel/human rulings), human (owner ruling), live_run (produced by running a committed script now), git (from commit metadata/history), filesystem (existence/shape of a committed file), stated (a number stated in a document with no re-derivation available).
+- **tier** — How the number was produced. One of: raw (mechanical string/ID match, no judgment), panel (frontier-judge panel ruling), adjudicated (seat ruling folded with panel/human rulings), human (owner ruling), live_run (produced by running a committed script now), git (from commit metadata/history), filesystem (existence/shape of a committed file), stated (a number stated in a document with no re-derivation available). Plus: cove (independently re-derived by a second party from data on disk; the record's own 'CoVe'), the highest evidence grade in this record.
 - **snapshot** — Which point in the record: an attempt index, an iteration/entry number, a file version, a commit hash, or a date. Per-attempt series values are never pooled; a pooled value carries snapshot=pooled plus the set it pools.
 - **denominator** — For every rate or fraction: the count the rate is over and what population it names.
 - **scope** — Which behaviour(s), spec, universe, or directory the value is about.
-- **supersession** — Whether a later artifact in the record replaces this value, and which.
+- **supersession** — Whether a later artifact in the record replaces this value, and which. Plus the value 'struck': withdrawn by a later ruling but left verbatim in a live file (known instance: 'the human-panelist baseline 71%').
+- **threshold_rule** — For any tool score: how the decision threshold was chosen. One of: in_sample, label_free, LOBO (held-out), oracle, training_folds, n/a. The record holds at least seven tool MCCs separated mainly by this.
+- **universe** — published or true. The published Model Spec universe deleted every passage the panel scored 0; the repo's own anti-rules mark some published-universe figures do-not-quote. Every arc-1 count and score carries this.
+- **provenance_region** — Where in its file a value sits: starred_block (the handoff's current-state block), archive_block (below it, self-marked stale), body. A value found only in an archive_block is reported as such, never silently verified.
+- **anti_rule** — Flag set when the record itself marks a value do-not-cite / do-not-quote (MODULE_MAP.md §11 and similar). A numerically matching value still reports the flag.
+- **not_to_be_confused_with** — Pre-declared nearby values sharing a numerator, a sentence, or a name with the claimed value, which the query must reject.
 
 ## Event predicates (for hypotheses)
 
@@ -31,6 +36,12 @@ Generated from `inventory.json` by `render.py`; the JSON is the source of truth.
 - `recurrence(e, e_prior)` — Event e says the same defect recurred from an earlier event or erratum e_prior.
 - `caught_by(e)` — Who or what surfaced the misstep: owner, adversarial_review, tripwire, cove (chain-of-verification re-derivation), self, script, unstated.
 
+## Global hypothesis rules
+
+- **non_vacuity** — Every universally quantified hypothesis declares min_witnesses. A hypothesis whose witness set is smaller than that terminates 'unverifiable (vacuous)', never 'verified'. (Reviewer A9: the inventory must not reproduce 'a pass condition that cannot fail is void'.)
+- **order_relation** — Ledger timestamps are day-resolution and 32 of 44 entries share one date. 'Before' over ledger events means lexicographic (date, entry ordinal); over commits, (commit date, commit ordinal in first-parent order). A rule that needs strict order across the same day and lacks an ordinal terminates unverifiable, not verified.
+- **history_in_scope** — Pre-redaction blobs of any file (git show <commit>^:<path>) are in-scope translator sources, assigned as spans like any other, labelled with their commit.
+
 ## Quantitative / checkable claims
 
 ### Q01
@@ -42,10 +53,13 @@ Generated from `inventory.json` by `render.py`; the JSON is the source of truth.
 **Dimensions:**
 - metric: match_or_defensible_rate
 - tier: panel or adjudicated (in-sample: measured on truth the loop iterated against)
-- snapshot: per tuned behaviour, final attempt of the arc-2 campaign
+- snapshot: the in-sample criterion standing recorded in the arc-2 handoff before round-4 certification (not a final-attempt measurement)
 - denominator: per-behaviour engaged set size (needed)
-- scope: the tuned arc-2 behaviours (README says three)
-- supersession: must be the latest measurement per behaviour
+- scope: the three dev behaviours: helpfulness, harm-avoidance-to-third-parties, avoiding-over-and-under-caution ('tuned' in the README; 'dev behaviours' in the record)
+- supersession: the round-4 certification cells for the same behaviours (raw and headline columns) — report both
+- provenance_region: expected archive_block or body of the handoff; report
+
+*Note:* Reviewer B5/B6/B9. 'Tuned' in this sentence and 'one behavior' in Q16 denote disjoint behaviour sets; see glossary.
 
 ### Q02
 
@@ -54,25 +68,28 @@ Generated from `inventory.json` by `render.py`; the JSON is the source of truth.
 **Values:** `{"panel_internal_agreement": "unstated; must be comparable to 0.94-0.96"}`
 
 **Dimensions:**
-- metric: panel_internal_agreement (inter-judge)
+- metric: inter-judge agreement on relevance verdicts over the same node/passage set. EXCLUDES: seat self-agreement / test-retest, mint stability, per-behaviour split rates, and the struck human-panelist 71%
 - tier: panel
 - snapshot: whichever the record cites as the panel's agreement figure
 - denominator: pairs or nodes compared (needed)
 - scope: the panel used for arc-2 truth
-- supersession: latest
+- supersession: latest; 'struck' values reported as struck
+- not_to_be_confused_with: human-panelist baseline 71% (struck 2026-08-21, still in file); Fable single-wave self-agreement 0.846; mint stability 0.98; split rates
+
+*Note:* Reviewer B7/B8: the record may hold no measurement of this metric at all; that is a legitimate unverifiable.
 
 ### Q03
 
 > raw-match certification ran to completion on the three tuned behaviors
 
-**Values:** `{"tuned_behaviour_count": 3, "certification_completed_each": true}`
+**Values:** `{"tuned_behaviour_count": 3, "certification_completed_each": true, "certification_outcome_each": "record-supplied, README-silent: the raw verdict per behaviour (in band / falsifier fired), reported under X01"}`
 
 **Dimensions:**
 - metric: count of tuned behaviours; per-behaviour certification_run status
 - tier: raw
 - snapshot: the certification run per behaviour
 - denominator: n/a
-- scope: arc-2 tuned behaviours (names needed)
+- scope: the three dev behaviours (helpfulness, harm-avoidance-to-third-parties, avoiding-over-and-under-caution)
 - supersession: n/a
 
 ### Q04
@@ -86,8 +103,11 @@ Generated from `inventory.json` by `render.py`; the JSON is the source of truth.
 - tier: git and ledger
 - snapshot: whole record through the pin
 - denominator: n/a
-- scope: match-or-defensible certification pass
+- scope: the registered match-or-defensible certification pass; companion Q45 covers the round-4 headline column
 - supersession: n/a
+- registration_artifact: the pass 'ran' iff a run cites the registration by name (the round-4 prereg / panel-equivalence prereg). A defensibility column scored alongside raw does not count unless it cites the registration.
+
+*Note:* Reviewer B4. Sentence added 45 minutes before the pin (3f87fd40).
 
 ### Q05
 
@@ -107,7 +127,7 @@ Generated from `inventory.json` by `render.py`; the JSON is the source of truth.
 
 > # 3. the measurement instrument, and its recall ceiling (98.4% join, misses printed by name)
 
-**Values:** `{"join_rate": 0.984}`
+**Values:** `{"join_rate": 0.984, "numerator": 849, "denominator": 863, "misses_printed_by_name": true}`
 
 **Dimensions:**
 - metric: join_rate
@@ -115,7 +135,11 @@ Generated from `inventory.json` by `render.py`; the JSON is the source of truth.
 - snapshot: committed inputs at the pin
 - denominator: joined / total (both counts needed)
 - scope: semi-formal-experiment measurement instrument
-- supersession: n/a
+- supersession: true-universe re-run if the record holds one
+- universe: published (849/863 is the published-universe figure)
+- anti_rule: MODULE_MAP.md §11: 'Do not quote 849/863 ... never cite the number from this table'. Report the flag even on numeric match.
+
+*Note:* Reviewer B3.
 
 ### Q07
 
@@ -157,7 +181,7 @@ Generated from `inventory.json` by `render.py`; the JSON is the source of truth.
 - snapshot: the ASP fragment artifact
 - denominator: n/a
 - scope: arc-1 constitution ASP fragment
-- supersession: n/a
+- supersession: the count was corrected from 15 to 16 by adversarial review 1; a '15-rule' may survive in older prose
 
 ### Q10
 
@@ -172,6 +196,7 @@ Generated from `inventory.json` by `render.py`; the JSON is the source of truth.
 - denominator: n/a
 - scope: Model Spec passage universe, arc 1
 - supersession: n/a
+- universe: published or true — must be recorded; README's own remark 'true vs published universe'
 
 ### Q11
 
@@ -202,6 +227,9 @@ Generated from `inventory.json` by `render.py`; the JSON is the source of truth.
 - denominator: confusion counts over 589 passages x behaviours
 - scope: tool, in-sample (tuned threshold), Model Spec
 - supersession: the README's own 'true vs published universe' remark: record which universe
+- universe: published or true — must be recorded; README's own remark 'true vs published universe'
+- threshold_rule: in_sample
+- not_to_be_confused_with: +0.274 published universe; +0.309 dev; +0.316 best compliant config; +0.206 LOBO; +0.396 oracle
 
 ### Q13
 
@@ -216,6 +244,8 @@ Generated from `inventory.json` by `render.py`; the JSON is the source of truth.
 - denominator: as Q12
 - scope: tool, label-free threshold
 - supersession: as Q12
+- universe: published or true — must be recorded; README's own remark 'true vs published universe'
+- threshold_rule: label_free
 
 ### Q14
 
@@ -227,9 +257,12 @@ Generated from `inventory.json` by `render.py`; the JSON is the source of truth.
 - metric: mcc, leave-one-out mean over judges
 - tier: panel
 - snapshot: arc-1 benchmark
-- denominator: number of judges averaged (needed)
+- denominator: number of judges averaged: record says 'mean of 3'; a five-judge roster also exists — record which
 - scope: frontier judge panel, Model Spec universe
 - supersession: n/a
+- universe: published or true — must be recorded; README's own remark 'true vs published universe'
+
+*Note:* Reviewer B11: 'leave-one-out' appears only in the README; match on value and metric family, report the README's phrase as its own coinage.
 
 ### Q15
 
@@ -244,20 +277,24 @@ Generated from `inventory.json` by `render.py`; the JSON is the source of truth.
 - denominator: 9 cells (behaviour x gold)
 - scope: arc-1
 - supersession: n/a
+- universe: published or true — must be recorded; README's own remark 'true vs published universe'
 
 ### Q16
 
 > Arc-2 repair loop (engaged precision, one behavior): 0.40 → 0.70 → 0.55 → 0.85 across four adjudicated attempts
 
-**Values:** `{"engaged_precision_series": [0.4, 0.7, 0.55, 0.85], "attempt_count": 4}`
+**Values:** `{"series": [{"attempt": 1, "value": 0.4, "tier": "frozen transfer (raw, single wave)"}, {"attempt": 2, "value": 0.7, "tier": "panel (raw 0.75 also recorded)"}, {"attempt": 3, "value": 0.55, "tier": "panel (raw 0.40 also recorded)"}, {"attempt": 4, "value": 0.85, "tier": "certified-Opus venue", "adjusted_value": 0.895, "adjusted_basis": "dispute-class quarantine, same entry"}], "attempt_count": 4}`
 
 **Dimensions:**
 - metric: engaged_precision
-- tier: adjudicated (README: 'adjudicated attempts')
+- tier: PER ELEMENT (see values); the series is tier-mixed
 - snapshot: per-attempt, attempts 1-4, never pooled
 - denominator: engaged set size per attempt (needed for each)
 - scope: one behaviour (name needed)
-- supersession: each attempt supersedes the previous as 'current'; the series itself is the claim
+- supersession: 0.85 is rendered '0.85/0.895' by the record itself; both reported
+- not_to_be_confused_with: attempt-3 raw 0.40 (same number as attempt-1); attempt-2 raw 0.75
+
+*Note:* Reviewer B1/B2. Behaviour: how-to-approach-tradeoffs (repair-loop behaviour, not a dev behaviour).
 
 ### Q17
 
@@ -268,10 +305,11 @@ Generated from `inventory.json` by `render.py`; the JSON is the source of truth.
 **Dimensions:**
 - metric: declined-set panel-relevant fraction (a recall-side miss rate)
 - tier: panel
-- snapshot: the attempt/entry the ledger records it in (needed)
+- snapshot: pooled over attempts 2 and 3 (both frozen draws) — the value is pooled
 - denominator: 40 declined passages
-- scope: same behaviour as Q16
+- scope: how-to-approach-tradeoffs; 'passages' in the README = 'nodes' in the ledger (glossary term)
 - supersession: later declined-set measurements may exist; record
+- not_to_be_confused_with: 23/38 = 0.605 pooled engaged precision (same numerator, adjacent line); 24/38 = 0.632 pooled match-or-defensible engaged
 
 ### Q18
 
@@ -295,7 +333,7 @@ Generated from `inventory.json` by `render.py`; the JSON is the source of truth.
 
 **Dimensions:**
 - metric: random-partition null pass count
-- tier: live_run or stated (re-derivation artifact needed)
+- tier: cove (driver re-derived the reviewer's number) or stated
 - snapshot: the review or disposition that reports it
 - denominator: 300 trials
 - scope: integration census null
@@ -378,7 +416,7 @@ Generated from `inventory.json` by `render.py`; the JSON is the source of truth.
 **Values:** `{"first_entry": "0000", "last_entry": "0043", "entry_count": 44}`
 
 **Dimensions:**
-- metric: entry_count
+- metric: the set of entry numbers present equals {0000..0043} (gapless), not merely count = 44
 - tier: filesystem
 - snapshot: ITERATION_NOTES.md at pin
 - denominator: n/a
@@ -409,7 +447,7 @@ Generated from `inventory.json` by `render.py`; the JSON is the source of truth.
 - metric: span coverage (covered / sampled)
 - tier: adjudicated or stated
 - snapshot: the coverage measurement the record reports
-- denominator: sampled span count (needed)
+- denominator: sampled span count — two candidates in the record: 39/39 blind coverage over nodes; the coverage census over the 100 definitions. Record both; the README binds coverage to the 100 definitions.
 - scope: query-class ontology
 - supersession: bf0d4978's message reports '39/39 blind coverage'; record which measurement the README means
 
@@ -434,11 +472,11 @@ Generated from `inventory.json` by `render.py`; the JSON is the source of truth.
 **Values:** `{"withdrawn_headline_count": 3}`
 
 **Dimensions:**
-- metric: count of withdrawal events on headline claims
+- metric: count of distinct headline withdrawal events
 - tier: git and ledger
 - snapshot: whole record
 - denominator: n/a
-- scope: whole repo
+- scope: headline withdrawals: a withdrawal is 'headline' iff the withdrawn claim appeared in a handoff starred block or in the README. Arc-1 retractions exist and are reported under X01.
 - supersession: n/a
 
 *Note:* The README's own 'Withdrawn' list names two items as withdrawn and one as 'bounded'. Whether 'bounded' counts as a withdrawal is a query-time question, flagged here.
@@ -476,7 +514,7 @@ Generated from `inventory.json` by `render.py`; the JSON is the source of truth.
 
 > Large superseded run artifacts were pruned for publication with a signed manifest — see [`PRUNED.md`](walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/PRUNED.md) for what was removed and how to restore any of it from history.
 
-**Values:** `{"manifest_path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/PRUNED.md", "signed": true, "restorable_from_history": true}`
+**Values:** `{"manifest_path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/PRUNED.md", "signed": "defined: a detached signature, a signer-attested checksum of the manifest itself, or an explicit signer line. Content-addressed (git object id) entries alone do NOT satisfy 'signed'.", "restorable_from_history": true}`
 
 **Dimensions:**
 - metric: file existence; presence of a signature; restore commits resolve in git
@@ -504,7 +542,7 @@ Generated from `inventory.json` by `render.py`; the JSON is the source of truth.
 
 > CI runs both suites plus the citation and graph checks from the demo path on every push
 
-**Values:** `{"workflow_steps": ["arc-1 pytest", "arc-2 pytest", "cite.py check", "graph_check.py"], "trigger": "push"}`
+**Values:** `{"workflow_steps": "enumerate exactly from ci.yml; the demo path may run cite.py resolve only", "trigger": "push (branches: main) + pull_request — README says 'every push'"}`
 
 **Dimensions:**
 - metric: workflow file content
@@ -551,7 +589,7 @@ Generated from `inventory.json` by `render.py`; the JSON is the source of truth.
 **Values:** `{"unvalidated_seat_count": 1}`
 
 **Dimensions:**
-- metric: count of seats reported unvalidated
+- metric: count of seats the tool prints as '*** NO VALIDATOR ***'; seats printing '(none recorded)' are a distinct, separately reported state
 - tier: live_run (machine/query.py seats)
 - snapshot: pin
 - denominator: seats reported (needed)
@@ -615,6 +653,7 @@ Generated from `inventory.json` by `render.py`; the JSON is the source of truth.
 - denominator: per-behaviour set size
 - scope: behaviours with status(b)=untuned
 - supersession: latest per behaviour
+- threshold_rule: record per measurement
 
 *Note:* Also stated as hypothesis H07 for the event-shaped part ('reliably').
 
@@ -650,6 +689,98 @@ Generated from `inventory.json` by `render.py`; the JSON is the source of truth.
 
 *Note:* Q06/Q07/Q36/Q37 check outputs; this checks the sequence as a reader would type it. The 'no network' half of the sentence stays commitment C03.
 
+### Q44
+
+> # 2. the 773-node document graph, every span checked against the source
+
+**Values:** `{"spans_checked_equals_node_count": true, "span_failures": 0}`
+
+**Dimensions:**
+- metric: graph_check.py spans checked and failures
+- tier: live_run
+- snapshot: pin
+- denominator: node/span count
+- scope: runs/ds7/root_graph.production.json
+- supersession: n/a
+
+*Note:* Split from Q05 (reviewer A3).
+
+### Q45
+
+> the registered match-or-defensible pass never ran
+
+**Values:** `{"round4_headline_column_exists": "record-supplied"}`
+
+**Dimensions:**
+- metric: presence and values of a match-or-adjudicated-defensible ('headline') column in the round-4 scored files, and whether it cites the registration
+- tier: raw/adjudicated
+- snapshot: round-4 scored files
+- denominator: per behaviour
+- scope: three dev behaviours
+- supersession: n/a
+
+*Note:* Companion to Q04 so the round-4 defensibility column terminates in its own state (reviewer B4).
+
+### Q46
+
+> Everything below is deterministic re-analysis of committed data: no API keys, no network, no model calls.
+
+**Values:** `{"network_calls_on_demo_path": 0}`
+
+**Dimensions:**
+- metric: static check: no urllib/requests/httpx/socket use reachable from the five Start-here commands
+- tier: live_run (static analysis)
+- snapshot: pin
+- denominator: 5 commands
+- scope: demo path
+- supersession: n/a
+
+*Note:* The checkable half of C03 (reviewer A4).
+
+### Q47
+
+> The two share a corpus and nothing else.
+
+**Values:** `{"both_arcs_primary_corpus": "the Model Spec under specs/openai-model-spec/"}`
+
+**Dimensions:**
+- metric: corpus identity per arc
+- tier: filesystem
+- snapshot: pin
+- denominator: n/a
+- scope: both arcs
+- supersession: n/a
+
+*Note:* Split from residue R03; 'and nothing else' stays residue (reviewer A5).
+
+### Q48
+
+> **Read only the top starred block of each handoff**: everything below is stacked historical state, self-marked and partly superseded
+
+**Values:** `{"each_handoff_has_starred_top_block": true, "lower_sections_self_marked": true}`
+
+**Dimensions:**
+- metric: file structure
+- tier: filesystem
+- snapshot: pin
+- denominator: 2 handoffs
+- scope: ARC2_HANDOFF.md target and semi-formal-experiment/HANDOFF.md
+- supersession: n/a
+
+### Q49
+
+> engine/            spec-cite (locator → verbatim text) and the vendored panel harness
+
+**Values:** `{"layout_paths_exist": ["engine/", "specs/", "data/", "semi-formal-experiment/", "walkthrough/", "ARTIFACTS.md", "LEDGER.md", "ARC2_HANDOFF.md"]}`
+
+**Dimensions:**
+- metric: path existence
+- tier: filesystem
+- snapshot: pin
+- denominator: 8 paths
+- scope: README Layout block
+- supersession: n/a
+
 ## Prose-claim hypotheses (round-trip for owner confirmation)
 
 Each hypothesis has: the README words; my English reading (in); the rule; the rule rendered back to English (out). Owner confirms in == out.
@@ -661,8 +792,9 @@ Each hypothesis has: the README words; my English reading (in); the rule; the ru
 - **English (in):** Every time a cycle or iteration was closed, an adversarial review of that cycle had already been recorded before the close.
 - **Rule:** `∀c. event(c, cycle_close ∨ iteration_close) → ∃r. event(r, adversarial_review) ∧ ts(r) ≤ ts(c) ∧ links(r, c)`
 - **English (out):** For every recorded cycle or iteration close, there exists an adversarial review whose recorded time is no later than the close and whose text refers to that cycle or iteration.
-- **Declared dimensions translators must carry:** event type (cycle_close, iteration_close, adversarial_review); timestamp; linkage: the cycle/iteration id or entry number the review names
+- **Declared dimensions translators must carry:** event type (cycle_close, iteration_close, adversarial_review); timestamp; linkage: the cycle/iteration id or entry number the review names; ordinal: entry number / commit ordinal (order_relation)
 - **Scope:** arc-1 cycles under semi-formal-experiment/cycles/ and arc-2 iteration/block closes in ITERATION_NOTES.md
+- **min_witnesses:** 1 (fewer → unverifiable (vacuous))
 
 ### H02
 
@@ -671,18 +803,21 @@ Each hypothesis has: the README words; my English reading (in); the rule; the ru
 - **English (in):** Every measurement in a cycle was preceded by a frozen prediction for that cycle.
 - **Rule:** `∀m,c. event(m, measurement) ∧ links(m, c) → ∃p. event(p, prediction_freeze) ∧ ts(p) < ts(m) ∧ links(p, c)`
 - **English (out):** For every recorded measurement that belongs to a cycle, there is a prediction-freeze event for the same cycle with an earlier timestamp.
-- **Declared dimensions translators must carry:** event type (measurement, prediction_freeze); timestamp; linkage: cycle id
+- **Declared dimensions translators must carry:** event type (measurement, prediction_freeze); timestamp; linkage: cycle id; ordinal: entry number / commit ordinal (order_relation)
 - **Scope:** cycles and iterations that record a measurement
+- **min_witnesses:** 1 (fewer → unverifiable (vacuous))
 
 ### H03
 
 > an append-only ledger with an erratum list
 
-- **English (in):** The ledger was only ever added to (except explicitly marked redactions), and it keeps a numbered list of errata.
-- **Rule:** `(∀k. event(k, commit) ∧ touches(k, ITERATION_NOTES.md) → deleted_lines_in_prior_entries(k) = 0 ∨ event(k, redaction)) ∧ ∃L. erratum_list(L) ∧ numbered(L)`
-- **English (out):** Every commit that changed the ledger file either deleted no lines from previously written entries or is recorded as a redaction; and the ledger contains a numbered erratum list.
-- **Declared dimensions translators must carry:** event type (commit, redaction, erratum); timestamp (commit date); linkage: commit hash to file; erratum number
-- **Scope:** ITERATION_NOTES.md across its full git history
+- **English (in):** The ledger was only ever added to, hunk by hunk, except hunks that are marked redactions or remove only operational content; and it records numbered errata.
+- **Rule:** `(∀k,h. hunk(h, k, ITERATION_NOTES.md) ∧ deletes_prior_entry_text(h) → marked_redaction(h) ∨ operational_only(h)) ∧ ∃e. erratum(e, n, _) ∧ numbered(n)`
+- **English (out):** Every deleting hunk in the ledger's history is a marked redaction or removes only operational content; and at least one numbered erratum is recorded in the ledger.
+- **Declared dimensions translators must carry:** event type (commit, redaction, erratum); timestamp and commit ordinal; hunk-level diff content (history_in_scope); erratum number
+- **Scope:** ITERATION_NOTES.md across its full git history, per hunk not per commit
+- **min_witnesses:** 1 (fewer → unverifiable (vacuous))
+- *Note:* Reviewer A13: there is no separate erratum list; errata are inline and numbering starts at #13. The rule is now per-hunk so a single publication-prep commit cannot be waved through as 'a redaction'.
 
 ### H04
 
@@ -693,6 +828,7 @@ Each hypothesis has: the README words; my English reading (in); the rule; the ru
 - **English (out):** For every recorded seat dispatch, the recorded inputs contain none of: panel labels, the cycle's design document, prior verdicts.
 - **Declared dimensions translators must carry:** event type (seat_dispatch); timestamp; linkage: the inputs list the record gives for the dispatch
 - **Scope:** seat dispatches recorded in cycle records and the ledger
+- **min_witnesses:** 1 (fewer → unverifiable (vacuous))
 
 ### H05
 
@@ -712,17 +848,21 @@ Each hypothesis has: the README words; my English reading (in); the rule; the ru
 - **Rule:** `∀w. event(w, withdrawal) → ∃r. event(r, adversarial_review) ∧ ts(r) ≤ ts(w) ∧ links(w, r) ∧ finding(r) ∈ {noise, unsupported, does_not_license, null_dominated}`
 - **English (out):** For every recorded withdrawal there is an adversarial review, no later than the withdrawal and named by it, whose recorded finding is noise, unsupported, does-not-license, or null-dominated.
 - **Declared dimensions translators must carry:** event type (withdrawal, adversarial_review); timestamp; linkage: the review the withdrawal names; finding
-- **Scope:** all withdrawals in the record
+- **Scope:** arc-2 withdrawals (the sentence's referent). Arc-1 retractions are queried separately under X01 with self and cove as admissible catchers.
+- **min_witnesses:** 1 (fewer → unverifiable (vacuous))
+- *Note:* Reviewer A12: arc-1 retractions were self-caught by re-derivation; scoping to all withdrawals would manufacture a contradiction the sentence never claimed.
 
 ### H07
 
 > Untuned behaviors never reliably reached that level.
 
-- **English (in):** No behaviour that was not tuned in the arc-2 campaign has a certified match-or-defensible rate at or above 0.94.
-- **Rule:** `∀b. status(b) = untuned → ¬∃m. event(m, measurement) ∧ links(m, b) ∧ metric(m) = match_or_defensible_rate ∧ value(m) ≥ 0.94 ∧ certified(m)`
-- **English (out):** For every untuned behaviour, there is no certified match-or-defensible measurement of that behaviour with a value of 0.94 or more.
-- **Declared dimensions translators must carry:** event type (measurement, certification_run); timestamp; linkage: behaviour name; tuned/untuned status; value, tier, certification status
+- **English (in):** No untuned behaviour has a certified match-or-defensible rate at or above 0.94, and none has two independent measurements at or above 0.94.
+- **Rule:** `∀b. status(b)=untuned → ¬∃m. certified(m) ∧ links(m,b) ∧ value(m) ≥ 0.94 ∧ ¬∃m1,m2. m1≠m2 ∧ links(m1,b) ∧ links(m2,b) ∧ value(m1) ≥ 0.94 ∧ value(m2) ≥ 0.94`
+- **English (out):** For every untuned behaviour there is no certified measurement at or above 0.94 and no pair of distinct measurements both at or above 0.94.
+- **Declared dimensions translators must carry:** event type (measurement, certification_run); timestamp; linkage: behaviour name; tuned/untuned status; value, tier, threshold_rule, certification status
 - **Scope:** arc-2 behaviours
+- **min_witnesses:** 1 (fewer → unverifiable (vacuous))
+- *Note:* 'Reliably' is operationalised as 'certified, or repeated'. A single uncertified 0.95 does not falsify. Reviewer A11.
 
 ### H08
 
@@ -733,16 +873,18 @@ Each hypothesis has: the README words; my English reading (in); the rule; the ru
 - **English (out):** For every recorded engine failure, its kind is refusal.
 - **Declared dimensions translators must carry:** event type (engine_failure); timestamp; linkage: which engine component; kind (refusal or wrong_answer)
 - **Scope:** ASP/clingo evaluation, conflict enumeration, satisfiability checks, arc 1
+- **min_witnesses:** 1 (fewer → unverifiable (vacuous))
 
 ### H09
 
 > Matching behaviors to passages did not beat a single frontier judge on the arc-1 benchmark
 
 - **English (in):** The tool's MCC was below every individual judge's MCC on the arc-1 benchmark.
-- **Rule:** `∀j. judge(j) → mcc(tool) < mcc(j)`
-- **English (out):** For every judge on the panel, the tool's MCC is less than that judge's MCC.
-- **Declared dimensions translators must carry:** per-judge MCC values; tool MCC (which tier: in-sample or label-free); linkage: benchmark run
+- **Rule:** `∀j. judge(j) → mcc(tool) ≤ mcc(j); fallback comparanda if no per-judge table exists: judges(mean), judges(best per behaviour)`
+- **English (out):** For every judge, the tool's MCC is not greater than that judge's MCC; if the record has no per-judge MCCs, the mean and best-per-behaviour figures are the comparanda and the result is marked as such.
+- **Declared dimensions translators must carry:** per-judge MCC values or the mean/best figures; tool MCC with threshold_rule and universe; linkage: benchmark run
 - **Scope:** arc-1 benchmark; derived from Q12, Q13, Q14, Q15 plus per-judge values
+- *Note:* Reviewer A15: 'leave-one-out' and per-judge MCC may not exist in the record; the hypothesis lands unverifiable for a stated reason rather than by accident.
 
 ### H10
 
@@ -758,11 +900,58 @@ Each hypothesis has: the README words; my English reading (in); the rule; the ru
 
 > operational details (usage plumbing, working notes) were redacted in the current files and remain in history by choice.
 
-- **English (in):** Every section marked redacted in the current files had content in an earlier commit.
-- **Rule:** `∀s. redaction_marker(s) → ∃k. event(k, commit) ∧ ts(k) < ts(pin) ∧ has_content(k, s)`
-- **English (out):** For every redaction marker in the current files, some earlier commit contains non-empty content at that section.
-- **Declared dimensions translators must carry:** event type (redaction, commit); timestamp; linkage: section/entry to commit
+- **English (in):** Every section marked redacted had content in an earlier commit; and every change to a previously written ledger entry is either marked as a redaction in the current file or removes only operational content.
+- **Rule:** `(∀s. redaction_marker(s) → ∃k. ts(k) < ts(pin) ∧ has_content(k,s)) ∧ (∀h. hunk(h) ∧ modifies_prior_entry(h) → marked_redaction(h) ∨ operational_only(h))`
+- **English (out):** For every redaction marker some earlier commit has content there; and for every hunk that modifies an earlier-written entry, the hunk is a marked redaction or removes only operational content (usage, budget, token figures).
+- **Declared dimensions translators must carry:** event type (redaction, commit); timestamp and commit ordinal; hunk content (history_in_scope); linkage: entry number to commit; content class of removed text: operational or substantive (attribution, ruling text, findings)
 - **Scope:** all '[operational; redacted]' markers and any other redaction markers at the pin
+- **min_witnesses:** 1 (fewer → unverifiable (vacuous))
+- *Note:* Reviewer A14/C4: the original rule only checked marked redactions; the second conjunct covers unmarked in-place rewrites of retained entries.
+
+### H12
+
+> then answer deterministically, with a citable span and a stated reason for every hit.
+
+- **English (in):** Every hit the tool returns carries a verbatim span locator and a reason.
+- **Rule:** `∀h. hit(h) → ∃s. span(h,s) ∧ verbatim(s) ∧ ∃r. reason(h,r)`
+- **English (out):** For every hit, there is a span attached to it that resolves to verbatim text, and a reason attached to it.
+- **Declared dimensions translators must carry:** hit id; span locator and whether it resolves; reason presence
+- **Scope:** relevance-query outputs committed in the record (arc 1) and graph query outputs (arc 2)
+- **min_witnesses:** 1 (fewer → unverifiable (vacuous))
+
+### H13
+
+> the review, the independent re-derivation of each decisive finding, the corrected verdicts.
+
+- **English (in):** Every decisive finding of the L1/L2 review was independently re-derived before the verdicts were corrected.
+- **Rule:** `∀f. decisive_finding(f, review) → ∃d. event(d, cove) ∧ links(d,f) ∧ ts(d) ≤ ts(corrected_verdicts)`
+- **English (out):** For every finding the review marks decisive, there is a re-derivation event that names it, no later than the corrected verdicts.
+- **Declared dimensions translators must carry:** event type (adversarial_review, cove, withdrawal); timestamp and ordinal; linkage: finding id to re-derivation; finding: reproduced / corrected
+- **Scope:** L1L2_ADVERSARIAL_REVIEW.md and its disposition; ledger entries 0042-0043
+- **min_witnesses:** 1 (fewer → unverifiable (vacuous))
+
+### H14
+
+> every step, every erratum, every withdrawal, written at the time.
+
+- **English (in):** Every step of every iteration has a dated ledger entry.
+- **Rule:** `∀i,s. step(i,s) → ∃e. event(e, ledger_entry) ∧ links(e,(i,s))`
+- **English (out):** For every (iteration, step) pair the runbook defines as having been run, a ledger entry names it.
+- **Declared dimensions translators must carry:** iteration and step numbering (from the runbook); event type (ledger_entry); linkage: entry to (iteration, step)
+- **Scope:** iterations recorded in ITERATION_NOTES.md against CALCULUS_RUNBOOK.md step numbering
+- **min_witnesses:** 1 (fewer → unverifiable (vacuous))
+
+### H15
+
+> ARTIFACTS.md       routing table for every star artifact
+
+- **English (in):** Every artifact the repo marks as a star artifact is listed in ARTIFACTS.md.
+- **Rule:** `∀a. star_artifact(a) → listed(ARTIFACTS.md, a)`
+- **English (out):** For every star-marked artifact, ARTIFACTS.md has an entry for it.
+- **Declared dimensions translators must carry:** star marking (where the record marks it); path; linkage: listed in ARTIFACTS.md
+- **Scope:** repo at pin
+- **min_witnesses:** 1 (fewer → unverifiable (vacuous))
+- *Note:* Promoted from commitment C06 (reviewer A4).
 
 ## Verdict nodes (named needs and candidate providers)
 
@@ -772,14 +961,14 @@ A verdict verifies exactly when all its needs resolve to providers that verify. 
 
 > It did not reach that bar on the axis that mattered — generalization.
 
-- **Needs:** in-sample rate on tuned behaviours (the bar reached in-sample); rate on untuned behaviours (generalization)
-- **Candidate providers:** Q01, Q41/H07
+- **Needs:** in-sample rate on tuned behaviours (the bar reached in-sample); rate on untuned behaviours (generalization); the bar is defined (definitional provider)
+- **Candidate providers:** Q01, Q41/H07, R07 (definitional)
 
 ### V02
 
 > the symbolic engine (ASP/clingo evaluation, conflict enumeration with witness scenarios, satisfiability checks) worked
 
-- **Needs:** classification of every engine failure
+- **Needs:** classification of every engine failure; an enumeration of engine failures exists in the record (else H08 is vacuous and V02 is unverifiable)
 - **Candidate providers:** H08
 
 ### V03
@@ -788,7 +977,7 @@ A verdict verifies exactly when all its needs resolve to providers that verify. 
 
 - **Needs:** a segmentation failure event; a repair event linked to it; a post-repair measurement of segmentation quality
 - **Candidate providers:** **none — dangling**
-- *Note:* No adjacent README sentence provides any of the three needs; Q08/Q10 give inventory sizes only. Candidate dangling verdict.
+- *Note:* No adjacent README sentence provides any of the three needs; Q08/Q10 give inventory sizes only. Candidate dangling verdict. Per the frozen design V03 stays dangling for README providers. The results additionally report a record_only column: whether the record alone holds a failure, repair, and post-repair measurement for segmentation (reviewer A16 notes adversarial_review_1.md does).
 
 ### V04
 
@@ -815,7 +1004,7 @@ A verdict verifies exactly when all its needs resolve to providers that verify. 
 
 > it caught and withdrew three headline claims
 
-- **Needs:** three withdrawal events each linked to a review
+- **Needs:** three DISTINCT headline withdrawal events (claim appeared in a handoff starred block or the README), each linked to a review
 - **Candidate providers:** Q29, Q18, Q21, Q23, H06
 - *Note:* Q23 says 'bounded', not 'withdrawn'; provider set may resolve to two, not three.
 
@@ -862,18 +1051,19 @@ A verdict verifies exactly when all its needs resolve to providers that verify. 
 - **C03** — > Everything below is deterministic re-analysis of committed data: no API keys, no network, no model calls.
 - **C04** — > Claims are scoped throughout: every separability claim requires its null; every "unresolved conflict" is a claim about an encoding and a fragment, not about the document.
 - **C05** — > `AGENTS.md` (symlinked as `CLAUDE.md`) is the canonical brief: read it before acting in this repo.
-- **C06** — > `ARTIFACTS.md` at root is the full routing table.
 - **C07** — > This is the primary artifact.
 
 ## Evaluative residue (out of scope, listed verbatim)
 
 - **R01** — > it is the reason the numbers in this repo can be read at face value.
 - **R02** — > the discipline that kept the measurements honest
-- **R03** — > The two share a corpus and nothing else. Different representation, different failure modes, different evidence.
+- **R03** — > The two share a corpus and nothing else. Different representation, different failure modes, different evidence.  
+  *'share a corpus' promoted to Q47; only 'and nothing else ... different evidence' remains residue.*
 - **R04** — > an archive, not a read.
 - **R05** — > The withdrawn results are defects in measurements, not proofs about the ontology.
 - **R06** — > it documents that process well enough to be reused.
-- **R07** — > the tool should match the panel, or give an answer a frontier model would accept as justifiable.
+- **R07** — > the tool should match the panel, or give an answer a frontier model would accept as justifiable.  
+  *Also serves as the DEFINITIONAL provider for V01's need 'the bar is defined' (reviewer A18); it declares no state of its own.*
 - **R08** — > on the axis that mattered
 - **R09** — > Loading the wrong one produces a silently de-behaviourised score.  
   *Mechanistic and in principle runnable, but out of the inventory's scope: it asserts a counterfactual misuse, not a recorded measurement.*
@@ -888,7 +1078,7 @@ Declared before freeze as a pre-registered addendum. NOT README-derived; not par
 
 **Why:** The record must support tracing what agent did what when the work went wrong, not only verifying the README. The ledger already carries this vocabulary natively (entry 0000 'SEED: tacit operational knowledge', erratum #16 'stale reset belief', erratum #21 'FOURTH recurrence', 'next agent must know' lines, errata series '4,4,4,2*,1'), so the dimensions are recoverable from spans without inference.
 
-**Required on event spans:** actor; session; context_origin (unstated allowed); erratum number and class where the span records an erratum; recurrence link where the span says a defect recurred; caught_by where the span says who caught it; asserted_transfer where the span hands a fact forward
+**Required on event spans:** actor (set, not single; 'unstated' allowed); model_tier where the span states it; for the driver, from commit trailers (git), labelled as such; session: block name and entry number (the record's own session-like unit is the BLOCK; date changes only at 0032); context_origin: fresh / continued / compacted / seeded_by(artifact) / unstated — expected 'unstated' almost everywhere; see F01; erratum number (nullable) and class; recurrence link; caught_by as a SET; a first-person confession with no named catcher is recorded caught_by=self with inferred=true; asserted_transfer where the span hands a fact forward ('next agent must know' and equivalents)
 
 **Derived at query time, not translated:** fix_artifact(e): what an erratum produced; fired_after_fix(e): whether the class recurred after its fix; belief state of an agent at a time (only its proxy, asserted_transfer plus later contradiction, is translated)
 
@@ -901,21 +1091,41 @@ Declared before freeze as a pre-registered addendum. NOT README-derived; not par
 - `wrong_artifact` — loading or citing the wrong file or tier (the behaviours.json trap; raw vs panel)
 - `transcript_only_procedure` — a ruling or procedure that lived in a transcript instead of the repo
 - `mixed_snapshots` — pooling or comparing values across attempts, tiers, or superseded entries
-- `other` — record the span's own words for the class
+- `other` — record the span's own words; the orchestrator canonicalises 'other' entries into a named class at batch review, logging each as an intervention. Free-text 'other' is never left as a terminal class (the record's own vacuousness trap, 0038).
+- `skipped_verification` — a prediction or contract frozen without the check that would have verified it (erratum #13; runbook erratum at 0001)
+- `stale_registration` — a registered procedure carried forward by inertia after its reason lapsed (erratum #15)
+- `estimation_model_defect` — a cost or size model missing a term, discovered by overshoot (erratum #17)
+- `sequencing_measure_after_spend` — a cheap shelf measurement taken after the expensive one it should have preceded (erratum #18)
+- `circular_construct` — a result relative to the designer's own vocabulary or construction (erratum #20)
+- `invalid_by_construction_registration` — a registered metric or consequence that could not fire or be executed as written (0009)
+- `authority_overreach` — the driver offering or taking a decision that was the owner's (0013)
+- `undocumented_procedure` — a step nobody wrote down how it was built (0004)
 
-**Glossary hazard:** 'reset' in the ledger means a provider usage-window reset, not a context reset. The glossary must define both and translators must not map one to the other.
+**Glossary hazard:** 'reset' in the ledger means a provider usage-window reset, not a context reset. The glossary must define both and translators must not map one to the other. 'block' means a working block (attended or autonomous), the record's only session-like unit. 'seat' means a dispatched model instance in the ledger but a governance role in machine/query.py (Q37).
+
+**errata_facts:** Numbered errata in the ledger run #13-#21; #1-#12 appear nowhere in the repo. Four errata are unnumbered (0001, 0004, 0009, 0013) and the ledger's own series tally counts some of them. erratum(e, n, class): n is optional; unnumbered errata carry n=null and the entry number.
+
+**history_note:** The 2026-08-31 publication-prep commit rewrote retained ledger entries in place, including replacing owner attributions with impersonal phrasing (reviewer A14/C4). Pre-redaction blobs are in-scope translator sources (hypothesis_rules.history_in_scope); forensic attributes are translated from BOTH the current file and the pre-redaction blob, labelled by commit.
 
 **Pre-registered forensic queries:**
-- **F01** — Does any defect class recur after a session boundary or seeding event more often than within a session?  
-  needs: session, context_origin, erratum class, recurrence
-- **F02** — Did the errata series converge by class, not just by count? List classes with a recurrence after their first fix.  
-  needs: erratum number and class, recurrence, session
-- **F03** — Which catch mechanism surfaced which defect class? Did self-catching ever surface a continuity (stale_belief) failure?  
-  needs: caught_by, erratum class
+- **F01** — Does any defect class recur after a BLOCK boundary (the record's session-like unit) or after a seeding event more often than within a block? Pre-registered expected shape: erratum #21's four instances fall in one block on one date, so recurrence here is expected to be intra-block.  
+  needs: session (block), erratum class, recurrence, context_origin where stated (expected: not recoverable; say so)
+- **F02** — Did the errata series converge by class, not just by count? List classes with a recurrence after their first fix. Scoped to #13-#21 plus the four unnumbered errata.  
+  needs: erratum number/class, recurrence, session
+- **F03** — Which catch mechanisms (as sets) surfaced which defect classes? Did self-catching ever surface a stale_belief failure? (Erratum #16 names no catcher; report inferred=true.)  
+  needs: caught_by set with inferred flag, erratum class
 - **F04** — For every asserted transfer, does a later span contradict or violate it, and by which actor?  
   needs: asserted_transfer, actor, session, linkage
 - **F05** — Was any certificate or validated seat used outside the brief it was scoped to?  
-  needs: actor, model_tier, linkage to brief/certificate, erratum class scope_stretched_certificate
+  needs: actor, model_tier, linkage to brief/certificate, class scope_stretched_certificate
+- **F06** — Which forensic attributes (actor especially) are recoverable only from pre-redaction history and not from the published file?  
+  needs: history_in_scope spans, actor per commit version
+- **F07** — Do defect rate, disclosure, and self-catching differ between attended blocks and blocks the record marks as run unattended / autonomous?  
+  needs: session (block) with attended/autonomous marking, erratum, caught_by
+- **F08** — For every registered stop / halt / revert condition that fired, was the registered consequence executed, superseded by a ruling, or surfaced-not-executed?  
+  needs: registration events, trigger events, consequence events, actor of the superseding ruling
+- **F09** — Does defect class vary with the model tier of the acting agent?  
+  needs: model_tier, erratum class, actor
 
 ## Coverage and additional query classes (second addendum)
 
@@ -941,4 +1151,4 @@ Declared before freeze as a pre-registered addendum. NOT README-derived; not par
 
 ## Verbatim check
 
-All 85 quoted sentences are verbatim substrings of the pinned README.
+All 94 quoted sentences are verbatim substrings of the pinned README.
