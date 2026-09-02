@@ -138,3 +138,10 @@ verdicts), H07 (reliably = certified or repeated across draws, at 0.94).
 
 Counts now: 50 claims, 15 hypotheses, 12 verdict nodes, 6 commitments, 13
 residue, 9 forensic queries, 6 additional query classes, 26 sealed instances.
+
+## FROZEN — owner sign-off 2026-09-02
+
+The owner confirmed round-trips H01–H15 (including the three flagged
+operationalisations H02, H04, H07) and froze the inventory at this commit.
+Nothing in this directory changes after this point; defects found later are
+logged in `results/intervention_log.md` against the claim id.
