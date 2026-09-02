@@ -154,6 +154,10 @@ def check_claim(c, repo, pin, ids):
                     fails.append("engine_failure requires kind refusal|wrong_answer")
                 if ev["erratum"] is not None and (not isinstance(ev["erratum"], dict) or "class" not in ev["erratum"]):
                     fails.append("event.erratum must be null or {n, class}")
+                elif ev["erratum"] is not None and ev["erratum"].get("n") is not None:
+                    nn = str(ev["erratum"]["n"])
+                    if not re.search(r"(?i)(erratum\s*#?\s*|#)" + re.escape(nn) + r"\b", norm(c["quote"])):
+                        fails.append(f"erratum.n={nn} does not appear as an erratum number in the quote (I-01)")
                 if ev["caught_by"] is not None and (not isinstance(ev["caught_by"], dict) or "set" not in ev["caught_by"] or "inferred" not in ev["caught_by"]):
                     fails.append("event.caught_by must be null or {set, inferred}")
                 p_ = c["source"]["path"]

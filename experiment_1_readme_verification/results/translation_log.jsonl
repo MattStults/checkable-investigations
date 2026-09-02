@@ -1,0 +1,4 @@
+{"file": "batch_004_opus", "model": "opus", "brief_version": "0.4", "batch": "batch_004", "claims": 74, "accepted": 74, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T10:39:53", "check_seconds": 0.3}
+{"file": "batch_001_sonnet", "model": "sonnet", "brief_version": "0.4", "batch": "batch_001", "claims": 232, "accepted": 221, "rejected": 11, "fail_reasons": {"rate": 11}, "checked_at": "2026-09-02T10:46:26", "check_seconds": 0.3}
+{"file": "batch_001_sonnet_retry1", "model": "sonnet", "brief_version": "0.4", "batch": "batch_001", "claims": 11, "accepted": 11, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T10:49:51", "check_seconds": 0.3}
+{"file": "batch_001_opus", "model": "opus", "brief_version": "0.4", "batch": "batch_001", "claims": 260, "accepted": 260, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T11:01:03", "check_seconds": 0.2}

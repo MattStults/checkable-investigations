@@ -63,7 +63,37 @@ mapping; arrows/multipliers/unnamed triples had no rule). Artifact: rel
 
 ## Interventions
 
-(none yet — translation has not begun)
+### I-01 — 2026-09-02 — erratum number taken from a count
+
+Caught: orchestrator inspection of batch_001 (Sonnet probe) after the
+checker passed it. Span: entry 0000, "two commits today shipped with a
+red/unverified state"; the claim carried erratum.n = 2. The Opus
+translation of the same span carried n = null. Class: a count in the span
+read as an erratum number.
+
+Operationalised: checker rule — erratum.n, when non-null, must appear in
+the quote as "#n" or "erratum n" (check.py, tagged I-01). No brief change
+(rule 9 already says n is the number the span gives).
+
+Recurrence: (tracked below as batches complete)
+
+### Observations not (yet) interventions
+
+- Both tiers type most standing statements in entry 0000 as `registration`
+  (Opus 43 of 123 events, Sonnet 79 of 129). Not mechanisable without a
+  content rule; watched.
+- Actor `unstated` dominates in both tiers on entry-0000 bullets that carry
+  no first-person marker. Consistent with brief rule 2; the orchestrator's
+  own seed had inferred `driver`, which was the over-reading.
+
+## Tier probe (registered: start with Opus, optionally probe others)
+
+| batch | model | claims | checker-rejected | after retry |
+|---|---|---|---|---|
+| batch_001 (ledger, 15 entries) | opus | 260 | 0 | — |
+| batch_001 (ledger, 15 entries) | sonnet | 232 | 11 (rate value as string) | 0 |
+| batch_004 (scored JSON, 15 objects) | opus | 74 | 0 | — |
+
 
 ## Compactions
 
