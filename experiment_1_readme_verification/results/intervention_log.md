@@ -126,6 +126,24 @@ rejected and retranslated.
 
 Recurrence: (tracked as batches complete)
 
+### I-03 — 2026-09-02 — human/cove tiers unreachable behind Gate B
+
+Caught: the batch_014 translator ("Gate B fires and stops before the
+human/cove steps — including the owner-ruling blocks ... and the CoVe
+re-derivation numbers"). Orchestrator confirmed ledger batches 002/003 had
+applied human/cove to the same kinds of span, so the procedure was being
+read two ways. Class: procedure ordering.
+
+Operationalised: glossary amendment G-02 (steps 8-9 before Gate B),
+rendered. No mechanical checker rule is possible without content
+judgment; instead a mechanical SELECTION: every accepted document-batch
+span whose text contains a ruling/CoVe marker and whose claims are all
+tier stated is retranslated whole under G-02, and its prior claims are
+superseded (listed in the retry batch header). Applied to batches 014-016
+now (retry_I03_a) and to 012-013, 017-021 when they land.
+
+Recurrence: (tracked)
+
 ### Observations not (yet) interventions
 
 - Both tiers type most standing statements in entry 0000 as `registration`

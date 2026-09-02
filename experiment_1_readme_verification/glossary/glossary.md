@@ -455,6 +455,7 @@ Path prefixes: `SFE` = `semi-formal-experiment/`; `BP` = `walkthrough/paper_pipe
 ## Amendments (post-freeze, numbered, logged in results/intervention_log.md)
 
 - **G-01** (2026-09-02, I-02) — Tier procedure step 5: the label list gains the bare word `wave` (a wave seat's verdict inside a panel row is tier raw; the enclosing `panel` key must not override it). Rationale: the record names single-seat verdicts 'wave' (BP/ITER1_ATTEMPT2_SCORED.json:9-19 panel rows {node, wave, seats[3], majority, split}). Cites: `BP/ITER1_ATTEMPT2_SCORED.json:9-19`
+- **G-02** (2026-09-02, I-03) — Tier procedure ordering: steps 8 (`human`: value inside a block headed MATT RULING / RULING: / COUNTERSIGNED / the project owner / project owner's decision / decision.json signed_by) and 9 (`cove`: the span itself says CoVe / re-derived / re-derivation of this value) are tested BEFORE Gate B. Gate B (prose → stated) applies only to values neither step matched. Rationale: rulings and re-derivations are prose by nature; with Gate B first they were unreachable, and translators applied them inconsistently (ledger batches did, document batches did not). Cites: `BP/ITER2_REMEASURE_SCORED.json:188`; `BP/L1L2_REVIEW_DISPOSITION.md:12-13`
 
 ## Citation check
 
