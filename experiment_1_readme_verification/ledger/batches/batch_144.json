@@ -2,11 +2,12 @@
  "header": {
   "batch": "batch_144",
   "source_class": "git_log",
-  "brief_version": "0.4",
-  "glossary_version": "frozen ",
+  "brief_version": "0.7",
+  "glossary_version": "frozen aa3da29 +G-06",
   "spans": 15,
   "first_span": "S02348",
-  "last_span": "S02362"
+  "last_span": "S02362",
+  "note": "header refreshed for brief v0.7 (D-09) before translation"
  },
  "spans": [
   {
@@ -54,7 +55,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8573-8579",
-   "text": "commit 066fd2634a81c323d55d14f8d9f6ecfb2744dd2d\nordinal 465\ndate 2026-08-21 20:50:30 -0700\nauthor Matt Stults\nsubject 9b arithmetic adjudication: per-delta charter measured — help+empowerment (13/3) and caution+harm-prevention (3/1) charter-positive, adopted pending 4-node FP adjudication post-reset; trust (7/9), predictability-reliability (6/12), epistemic-autonomy (3/4) charter-negative, rejected with arithmetic; all four governs_conditional declarations INERT — mechanism insight recorded (unconditional governs_concern wins over governs_conditional in signature_ok; the CA-targeted rows stay PENDING-VOCAB for other mechanisms); context-atom merge landed engagement-invariant (census bit-identical, 36 tests); v19_ADOPT_CANDIDATE is the freeze input\n\n----END----",
+   "text": "commit 066fd2634a81c323d55d14f8d9f6ecfb2744dd2d\nordinal 465\ndate 2026-08-21 20:50:30 -0700\nauthor Matt Stults\nsubject 9b arithmetic adjudication: per-delta charter measured \u2014 help+empowerment (13/3) and caution+harm-prevention (3/1) charter-positive, adopted pending 4-node FP adjudication post-reset; trust (7/9), predictability-reliability (6/12), epistemic-autonomy (3/4) charter-negative, rejected with arithmetic; all four governs_conditional declarations INERT \u2014 mechanism insight recorded (unconditional governs_concern wins over governs_conditional in signature_ok; the CA-targeted rows stay PENDING-VOCAB for other mechanisms); context-atom merge landed engagement-invariant (census bit-identical, 36 tests); v19_ADOPT_CANDIDATE is the freeze input\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -62,7 +63,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8580-8587",
-   "text": "commit bb6d7babfacf818716c94dcf869407fae93f1862\nordinal 466\ndate 2026-08-21 23:37:20 -0700\nauthor Matt Stults\nsubject 9b joint lattice (coordination critique resolved): exact enumeration over all purpose-delta subsets (OR-additive channel makes the joint object exactly computable — no LP surrogate needed); flip sets pairwise disjoint, so joint outcomes are exact sums and the per-delta conclusion holds by proof, not assumption; the three additional charter-positive bundles each carry a negative-marginal delta (parasitic — breaks the charter alone if the carrier is removed); selection unchanged: empowerment alone for help, harm-prevention alone for caution; full help triple is exactly 24/24 charter-zero\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "text": "commit bb6d7babfacf818716c94dcf869407fae93f1862\nordinal 466\ndate 2026-08-21 23:37:20 -0700\nauthor Matt Stults\nsubject 9b joint lattice (coordination critique resolved): exact enumeration over all purpose-delta subsets (OR-additive channel makes the joint object exactly computable \u2014 no LP surrogate needed); flip sets pairwise disjoint, so joint outcomes are exact sums and the per-delta conclusion holds by proof, not assumption; the three additional charter-positive bundles each carry a negative-marginal delta (parasitic \u2014 breaks the charter alone if the carrier is removed); selection unchanged: empowerment alone for help, harm-prevention alone for caution; full help triple is exactly 24/24 charter-zero\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -70,7 +71,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8588-8595",
-   "text": "commit 12181ba0fa14099d119f382b88250b745950a6c3\nordinal 467\ndate 2026-08-22 00:06:48 -0700\nauthor Matt Stults\nsubject generalization prereg FROZEN — signed by Matt 2026-08-21: n=40 on attempts-budget rationale with re-measurement protocol (attempt 1 = transfer verdict, attempt 2+ = repair verdicts, never mixed); 71% anchor struck (no artifact; restoration only by erratum if the manual-test artifact surfaces); third probe = how-to-approach-tradeoffs; six never-consulted behaviours, 3+3 sequential, FATAL stop rule, four pre-declared v5 comparison cuts, truth path closed to panel data\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "text": "commit 12181ba0fa14099d119f382b88250b745950a6c3\nordinal 467\ndate 2026-08-22 00:06:48 -0700\nauthor Matt Stults\nsubject generalization prereg FROZEN \u2014 signed by Matt 2026-08-21: n=40 on attempts-budget rationale with re-measurement protocol (attempt 1 = transfer verdict, attempt 2+ = repair verdicts, never mixed); 71% anchor struck (no artifact; restoration only by erratum if the manual-test artifact surfaces); third probe = how-to-approach-tradeoffs; six never-consulted behaviours, 3+3 sequential, FATAL stop rule, four pre-declared v5 comparison cuts, truth path closed to panel data\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
    "source_class": "git_log"
   },
   {

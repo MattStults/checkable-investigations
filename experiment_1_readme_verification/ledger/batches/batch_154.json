@@ -2,11 +2,12 @@
  "header": {
   "batch": "batch_154",
   "source_class": "git_log",
-  "brief_version": "0.4",
-  "glossary_version": "frozen ",
+  "brief_version": "0.7",
+  "glossary_version": "frozen aa3da29 +G-06",
   "spans": 15,
   "first_span": "S02498",
-  "last_span": "S02512"
+  "last_span": "S02512",
+  "note": "header refreshed for brief v0.7 (D-09) before translation"
  },
  "spans": [
   {
@@ -14,7 +15,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9824-9831",
-   "text": "commit ae00660f1dde232bc035c3d15050ee90ddd8b168\nordinal 610\ndate 2026-08-24 23:40:30 -0700\nauthor Matt Stults\nsubject Theory review + blind spot-check, mutually confirming: map corrected append-only (Hohfeld error fixed, locus attribution struck, ARB demoted from defeasibility — the 0.38-stability field confirming relation-as-property fails; comparanda -> LegalRuleML/ODRL; kill-criterion -> pre-registered cell assignments). Spot-check verdict: the norm-FORM frame blind-annotates at 0.87-0.97 (free a-priori schema layer) but NO form field separates behaviour relevance — the relevance dimensions are content-side (ODRL target / frame roles), still to be designed. Notes 0031.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit ae00660f1dde232bc035c3d15050ee90ddd8b168\nordinal 610\ndate 2026-08-24 23:40:30 -0700\nauthor Matt Stults\nsubject Theory review + blind spot-check, mutually confirming: map corrected append-only (Hohfeld error fixed, locus attribution struck, ARB demoted from defeasibility \u2014 the 0.38-stability field confirming relation-as-property fails; comparanda -> LegalRuleML/ODRL; kill-criterion -> pre-registered cell assignments). Spot-check verdict: the norm-FORM frame blind-annotates at 0.87-0.97 (free a-priori schema layer) but NO form field separates behaviour relevance \u2014 the relevance dimensions are content-side (ODRL target / frame roles), still to be designed. Notes 0031.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -22,7 +23,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9832-9839",
-   "text": "commit 3fa49f449f2eecbc157c09a21592abd01ed815db\nordinal 611\ndate 2026-08-25 00:02:56 -0700\nauthor Matt Stults\nsubject QUERY-CLASS SATURATION STUDY: coordinator spec (frozen coding vocabulary — the judgment call made once at Fable tier; P1-P5 with machine-checkable gates, checkpoint discipline, tier-parity certification P3, 15% Opus spot-check + tripwire P4) + the deterministic P5 analysis script (Chao1 + bootstrapped accumulation) committed BEFORE any coding exists. Coordination delegated to Opus per Matt's cost directive; Fable = spec + gates + analysis only.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 3fa49f449f2eecbc157c09a21592abd01ed815db\nordinal 611\ndate 2026-08-25 00:02:56 -0700\nauthor Matt Stults\nsubject QUERY-CLASS SATURATION STUDY: coordinator spec (frozen coding vocabulary \u2014 the judgment call made once at Fable tier; P1-P5 with machine-checkable gates, checkpoint discipline, tier-parity certification P3, 15% Opus spot-check + tripwire P4) + the deterministic P5 analysis script (Chao1 + bootstrapped accumulation) committed BEFORE any coding exists. Coordination delegated to Opus per Matt's cost directive; Fable = spec + gates + analysis only.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -30,7 +31,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9840-9847",
-   "text": "commit 6d0acb3683edeaed363f273ac4954e463560def0\nordinal 612\ndate 2026-08-25 00:03:22 -0700\nauthor Matt Stults\nsubject Notes 0032: AFK envelope registered (<=5pt Fable; plan uses 0 — no pastes available so no Fable dispatches at all); autonomous queue = query-class study (Opus coordinator) + UA repair arc to the seal confirmation ($0), mint parks at signature.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 6d0acb3683edeaed363f273ac4954e463560def0\nordinal 612\ndate 2026-08-25 00:03:22 -0700\nauthor Matt Stults\nsubject Notes 0032: AFK envelope registered (<=5pt Fable; plan uses 0 \u2014 no pastes available so no Fable dispatches at all); autonomous queue = query-class study (Opus coordinator) + UA repair arc to the seal confirmation ($0), mint parks at signature.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -38,7 +39,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9848-9855",
-   "text": "commit af54ff992f78325dae33894a24b9df79cc41c39c\nordinal 613\ndate 2026-08-25 00:06:16 -0700\nauthor Matt Stults\nsubject UA REPAIR MOVE 1 adopted on visible truth: governs wall {substance,tone,objectivity} — the R3 enumeration's admissible optimum over 64 compounds (18 fixes / 0 breaks / 0 new FPs; card measured: zero relevant nodes are calibration/formatting-only). 72 residual FPs -> A1 R3x mint (content/locus dimension), to be calibrated on Opus and PARKED at Matt's signature. Seal stays sealed for the full arc's single confirmation.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit af54ff992f78325dae33894a24b9df79cc41c39c\nordinal 613\ndate 2026-08-25 00:06:16 -0700\nauthor Matt Stults\nsubject UA REPAIR MOVE 1 adopted on visible truth: governs wall {substance,tone,objectivity} \u2014 the R3 enumeration's admissible optimum over 64 compounds (18 fixes / 0 breaks / 0 new FPs; card measured: zero relevant nodes are calibration/formatting-only). 72 residual FPs -> A1 R3x mint (content/locus dimension), to be calibrated on Opus and PARKED at Matt's signature. Seal stays sealed for the full arc's single confirmation.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -54,7 +55,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9864-9871",
-   "text": "commit 866ed62c55e2ea245a6e3bd2645ff1f01ed18e86\nordinal 615\ndate 2026-08-25 00:08:53 -0700\nauthor Matt Stults\nsubject OPERATIVE_TARGET calibration: stability 0.98 (best layer yet), FP-side separation passes (0.20), TP-side coverage FAILS the pre-stated gate (0.67 vs 0.70 — 5/15 TPs relevant via other targets; a pure wall is inadmissible). HELD at Matt's signature with honest numbers and the consumption-design question (second disjunct needed). The calibration-before-signature discipline caught the gate miss before any corpus spend. Notes 0033.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 866ed62c55e2ea245a6e3bd2645ff1f01ed18e86\nordinal 615\ndate 2026-08-25 00:08:53 -0700\nauthor Matt Stults\nsubject OPERATIVE_TARGET calibration: stability 0.98 (best layer yet), FP-side separation passes (0.20), TP-side coverage FAILS the pre-stated gate (0.67 vs 0.70 \u2014 5/15 TPs relevant via other targets; a pure wall is inadmissible). HELD at Matt's signature with honest numbers and the consumption-design question (second disjunct needed). The calibration-before-signature discipline caught the gate miss before any corpus spend. Notes 0033.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -62,7 +63,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9872-9879",
-   "text": "commit 6bb46596bfefec77395ee4184105d0111eb70556\nordinal 616\ndate 2026-08-25 00:15:33 -0700\nauthor Matt Stults\nsubject Query-class study P1-P4 artifacts (Opus coordinator, exemplary run: 100-def corpus w/ provenance, all gates machine-checked, a completed slow Haiku dispatch caught and restored): NO cheap tier certifies (Sonnet 0.13 / Haiku 0.00 pattern-exact vs Opus floor 0.80); P4 TRIPWIRE FIRED at 0.615 pattern disagreement — root cause diagnosed by the coordinator and confirmed by the 0.467 Opus-vs-Opus calibration: the frozen vocabulary under-determines place selection (verbs 0.92, places Jaccard 0.76). The spec owner's judgment call was the defect. Halted per spec; v2 vocabulary next.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 6bb46596bfefec77395ee4184105d0111eb70556\nordinal 616\ndate 2026-08-25 00:15:33 -0700\nauthor Matt Stults\nsubject Query-class study P1-P4 artifacts (Opus coordinator, exemplary run: 100-def corpus w/ provenance, all gates machine-checked, a completed slow Haiku dispatch caught and restored): NO cheap tier certifies (Sonnet 0.13 / Haiku 0.00 pattern-exact vs Opus floor 0.80); P4 TRIPWIRE FIRED at 0.615 pattern disagreement \u2014 root cause diagnosed by the coordinator and confirmed by the 0.467 Opus-vs-Opus calibration: the frozen vocabulary under-determines place selection (verbs 0.92, places Jaccard 0.76). The spec owner's judgment call was the defect. Halted per spec; v2 vocabulary next.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -78,7 +79,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9888-9895",
-   "text": "commit 1a8f832739cff96492717da57b1a68365d783f7a\nordinal 618\ndate 2026-08-25 00:17:52 -0700\nauthor Matt Stults\nsubject v2 calibration GATE PASSES: pattern-exact 0.87 (v1 0.47), Jaccard 0.94, verbs 1.00 — the primary/quote-required/tie-break fix resolved the under-determination. v2 bulk (85) + spot-check (13) packets committed pre-dispatch; recode on Opus.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 1a8f832739cff96492717da57b1a68365d783f7a\nordinal 618\ndate 2026-08-25 00:17:52 -0700\nauthor Matt Stults\nsubject v2 calibration GATE PASSES: pattern-exact 0.87 (v1 0.47), Jaccard 0.94, verbs 1.00 \u2014 the primary/quote-required/tie-break fix resolved the under-determination. v2 bulk (85) + spot-check (13) packets committed pre-dispatch; recode on Opus.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -94,7 +95,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9904-9911",
-   "text": "commit dd8abd55189b8b9073a0db1d67b63f6977f5baa1\nordinal 620\ndate 2026-08-25 00:21:54 -0700\nauthor Matt Stults\nsubject Query-class study: v2 recode complete but the spot-check tripwire fired AGAIN (0.36 vs 0.20 at full-pattern granularity; bulk pairs 0.78). HALTED honestly — no bound published from tripwired data, no post-hoc granularity shopping. Measured reliability by granularity recorded (primary-place and verb are solid; secondaries under-determined); the accept-coarse / iterate-v3 / accept-with-noise decision PARKED for Matt. Descriptive primary inventory included non-bindingly.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit dd8abd55189b8b9073a0db1d67b63f6977f5baa1\nordinal 620\ndate 2026-08-25 00:21:54 -0700\nauthor Matt Stults\nsubject Query-class study: v2 recode complete but the spot-check tripwire fired AGAIN (0.36 vs 0.20 at full-pattern granularity; bulk pairs 0.78). HALTED honestly \u2014 no bound published from tripwired data, no post-hoc granularity shopping. Measured reliability by granularity recorded (primary-place and verb are solid; secondaries under-determined); the accept-coarse / iterate-v3 / accept-with-noise decision PARKED for Matt. Descriptive primary inventory included non-bindingly.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -110,7 +111,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9920-9927",
-   "text": "commit 94606be6197bea84fa8aefb9d0fee305c45c3637\nordinal 622\ndate 2026-08-25 00:22:34 -0700\nauthor Matt Stults\nsubject Housekeeping: coordinator per-batch checkpoint files (v1 bulk) + the UA census projection contract — stragglers from the block, committed for completeness.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 94606be6197bea84fa8aefb9d0fee305c45c3637\nordinal 622\ndate 2026-08-25 00:22:34 -0700\nauthor Matt Stults\nsubject Housekeeping: coordinator per-batch checkpoint files (v1 bulk) + the UA census projection contract \u2014 stragglers from the block, committed for completeness.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -118,7 +119,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9928-9935",
-   "text": "commit 36e4cf0eb130cdcba9304a042e050826b4e7e2c2\nordinal 623\ndate 2026-08-25 08:25:50 -0700\nauthor Matt Stults\nsubject Notes 0035: compositional-sufficiency probe (best compact DNF 23/1 — margins, not the answer) + the recorded program verdict: annotation succeeded, instrument succeeded once, program unproven at scale; the two decisive cheap experiments named.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 36e4cf0eb130cdcba9304a042e050826b4e7e2c2\nordinal 623\ndate 2026-08-25 08:25:50 -0700\nauthor Matt Stults\nsubject Notes 0035: compositional-sufficiency probe (best compact DNF 23/1 \u2014 margins, not the answer) + the recorded program verdict: annotation succeeded, instrument succeeded once, program unproven at scale; the two decisive cheap experiments named.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -126,7 +127,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9936-9943",
-   "text": "commit 7f087c5db819b8f8bcd6b471a60e81541d158fc8\nordinal 624\ndate 2026-08-25 08:36:01 -0700\nauthor Matt Stults\nsubject Notes 0036: representation probes — L1 over full symbolic space and TF-IDF both at base rate (the UA concept is in deep semantics only); behaviours measured near-orthogonal (phi 0.04-0.29), evidence against the log2(n) low-rank hope; minting redefined precisely as frontier-judgment-as-feature-extractor for one auditable bit; the information floor and what the program cheapened around it.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 7f087c5db819b8f8bcd6b471a60e81541d158fc8\nordinal 624\ndate 2026-08-25 08:36:01 -0700\nauthor Matt Stults\nsubject Notes 0036: representation probes \u2014 L1 over full symbolic space and TF-IDF both at base rate (the UA concept is in deep semantics only); behaviours measured near-orthogonal (phi 0.04-0.29), evidence against the log2(n) low-rank hope; minting redefined precisely as frontier-judgment-as-feature-extractor for one auditable bit; the information floor and what the program cheapened around it.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   }
  ]

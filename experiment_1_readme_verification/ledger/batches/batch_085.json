@@ -2,11 +2,12 @@
  "header": {
   "batch": "batch_085",
   "source_class": "git_log",
-  "brief_version": "0.5",
-  "glossary_version": "frozen d887fb9",
+  "brief_version": "0.7",
+  "glossary_version": "frozen aa3da29 +G-06",
   "spans": 15,
   "first_span": "S01466",
-  "last_span": "S01480"
+  "last_span": "S01480",
+  "note": "header refreshed for brief v0.7 (D-09) before translation"
  },
  "spans": [
   {
@@ -23,7 +24,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8302-8310",
-   "text": "commit 0a6a534ec00b3b46ce102f53de0488db22967a3e\nordinal 431\ndate 2026-08-20 10:11:04 -0700\nauthor Matt Stults\nsubject 9f label panel folded: n007 governs += accuracy_calibration+identity_meta (fresh Fable panel; tone_manner NOT upheld), n005 stands complete (identity_meta addition refuted) — regression unchanged (104/74/183 TP, 13/11/12 FP); n007's A-provisional terminal claim now re-derivable from a corrected signature\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 0a6a534ec00b3b46ce102f53de0488db22967a3e\nordinal 431\ndate 2026-08-20 10:11:04 -0700\nauthor Matt Stults\nsubject 9f label panel folded: n007 governs += accuracy_calibration+identity_meta (fresh Fable panel; tone_manner NOT upheld), n005 stands complete (identity_meta addition refuted) \u2014 regression unchanged (104/74/183 TP, 13/11/12 FP); n007's A-provisional terminal claim now re-derivable from a corrected signature\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -32,7 +33,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8311-8319",
-   "text": "commit f2487a9b26f2ba71d21398d949167d41ed011190\nordinal 432\ndate 2026-08-20 10:17:04 -0700\nauthor Matt Stults\nsubject 9g-addendum (Matt's correction): terminal verdicts are INVENTORY-RELATIVE and expire when mechanisms grow — verifier now stamps its inventory and re-stamps 13 context-atom-reachable mismatches PENDING-VOCAB; unqualified 'terminal' is a review finding; handoff carries the warning first\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit f2487a9b26f2ba71d21398d949167d41ed011190\nordinal 432\ndate 2026-08-20 10:17:04 -0700\nauthor Matt Stults\nsubject 9g-addendum (Matt's correction): terminal verdicts are INVENTORY-RELATIVE and expire when mechanisms grow \u2014 verifier now stamps its inventory and re-stamps 13 context-atom-reachable mismatches PENDING-VOCAB; unqualified 'terminal' is a review finding; handoff carries the warning first\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -50,7 +51,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8329-8337",
-   "text": "commit 32417cdc36f186170f702098fed392c1d954e041\nordinal 434\ndate 2026-08-20 10:40:27 -0700\nauthor Matt Stults\nsubject declaration-search prototype RUN 1: validator green, 836x157 matrix, 8 proposals; PROVE-OUT PASSED — deltas integrate mechanically (predicted arithmetic from real instrument mutation), fail-open wall-flip failure mode rediscovered from data (caution +society 4/79 = family-1 flood class), two net-positive purpose_concern hypotheses manual search never tried (help +empowerment 7/3, caution +harm-prevention 2/0); spec gaps recorded for run 2 (interaction features, fair instrument comparison); all outputs hypothesis-only per anti-goals\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 32417cdc36f186170f702098fed392c1d954e041\nordinal 434\ndate 2026-08-20 10:40:27 -0700\nauthor Matt Stults\nsubject declaration-search prototype RUN 1: validator green, 836x157 matrix, 8 proposals; PROVE-OUT PASSED \u2014 deltas integrate mechanically (predicted arithmetic from real instrument mutation), fail-open wall-flip failure mode rediscovered from data (caution +society 4/79 = family-1 flood class), two net-positive purpose_concern hypotheses manual search never tried (help +empowerment 7/3, caution +harm-prevention 2/0); spec gaps recorded for run 2 (interaction features, fair instrument comparison); all outputs hypothesis-only per anti-goals\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -68,7 +69,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8347-8355",
-   "text": "commit 779ce278401ff87fc489cffc9dda2f6eb2abf5b9\nordinal 436\ndate 2026-08-20 11:35:02 -0700\nauthor Matt Stults\nsubject decl-search RUN 2: interaction carvings near-empty (0 stable governs x context); carving queue collapses to 3 nodes that are byte-identical to opposite-verdict colliders — and they are EXACTLY the deferred act-refinement atoms from split mining (form_equivalence, exhibit:illustrate): L1 residuals and the Opus miner converge blind on nodes AND fix family; 33/40 unresolved are collider-free (declaration-space work, 11 covered by purpose_concern proposals); census vector() staleness queued as maintenance; fair comparison confirms instrument > fitted model on all behaviors\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 779ce278401ff87fc489cffc9dda2f6eb2abf5b9\nordinal 436\ndate 2026-08-20 11:35:02 -0700\nauthor Matt Stults\nsubject decl-search RUN 2: interaction carvings near-empty (0 stable governs x context); carving queue collapses to 3 nodes that are byte-identical to opposite-verdict colliders \u2014 and they are EXACTLY the deferred act-refinement atoms from split mining (form_equivalence, exhibit:illustrate): L1 residuals and the Opus miner converge blind on nodes AND fix family; 33/40 unresolved are collider-free (declaration-space work, 11 covered by purpose_concern proposals); census vector() staleness queued as maintenance; fair comparison confirms instrument > fitted model on all behaviors\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -95,7 +96,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8373-8380",
-   "text": "commit 9ebd55ce363f34f33594dd004d6930f55af52696\nordinal 439\ndate 2026-08-21 10:30:30 -0700\nauthor Matt Stults\nsubject Arc1-e: census vector() now mirrors the v18 instrument — definition_* lanes merged per relevance() jurisdiction (definitional purposes excluded, actors included), context atoms as REACHABLE-only view; predictions pre-registered then met (UNSAT 24->16 current ->12 reachable, collider controls stay UNSAT, mismatch sets invariant); 5 new tests + property tests on frozen prefixture; v17-era census artifact untouched\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "text": "commit 9ebd55ce363f34f33594dd004d6930f55af52696\nordinal 439\ndate 2026-08-21 10:30:30 -0700\nauthor Matt Stults\nsubject Arc1-e: census vector() now mirrors the v18 instrument \u2014 definition_* lanes merged per relevance() jurisdiction (definitional purposes excluded, actors included), context atoms as REACHABLE-only view; predictions pre-registered then met (UNSAT 24->16 current ->12 reachable, collider controls stay UNSAT, mismatch sets invariant); 5 new tests + property tests on frozen prefixture; v17-era census artifact untouched\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -104,7 +105,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8381-8388",
-   "text": "commit 1bec1302d563eb726180eaaeb2544d5ed13c91d5\nordinal 440\ndate 2026-08-21 10:36:23 -0700\nauthor Matt Stults\nsubject ingest collaborator v5 frontier panel bench (AndresCotton/ai-character-index @ ef08e676, blob-verified): 31,293 verdict rows, 9 behaviours x both specs, 0-3 rubric; enters ONLY as a pre-declared comparison layer per campaign mandate — never truth (PROVENANCE.md carries the usage rule); Slack reader-test-coverage.json not fetchable (auth wall), stays with Matt\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "text": "commit 1bec1302d563eb726180eaaeb2544d5ed13c91d5\nordinal 440\ndate 2026-08-21 10:36:23 -0700\nauthor Matt Stults\nsubject ingest collaborator v5 frontier panel bench (AndresCotton/ai-character-index @ ef08e676, blob-verified): 31,293 verdict rows, 9 behaviours x both specs, 0-3 rubric; enters ONLY as a pre-declared comparison layer per campaign mandate \u2014 never truth (PROVENANCE.md carries the usage rule); Slack reader-test-coverage.json not fetchable (auth wall), stays with Matt\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -113,7 +114,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8389-8396",
-   "text": "commit c080071529866f8346e64aa6f951dbca6520776c\nordinal 441\ndate 2026-08-21 10:37:20 -0700\nauthor Matt Stults\nsubject Arc1-e addendum-1: channel audit found arg_sorts (declared by all 3 v18 modules) and authority_plumbing (71 keys) live but missing from the vector — added both (functor arg-sort in acts slot, plumbing-key feature); party_concern undeclared everywhere, so census() now fails loud if it is ever declared instead of silently misrepresenting it; extension registered in the prereg before running; no further UNSAT separated by the extension (disclosed); 29 tests green\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "text": "commit c080071529866f8346e64aa6f951dbca6520776c\nordinal 441\ndate 2026-08-21 10:37:20 -0700\nauthor Matt Stults\nsubject Arc1-e addendum-1: channel audit found arg_sorts (declared by all 3 v18 modules) and authority_plumbing (71 keys) live but missing from the vector \u2014 added both (functor arg-sort in acts slot, plumbing-key feature); party_concern undeclared everywhere, so census() now fails loud if it is ever declared instead of silently misrepresenting it; extension registered in the prereg before running; no further UNSAT separated by the extension (disclosed); 29 tests green\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -140,7 +141,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8413-8420",
-   "text": "commit 3b503184a5f2ea7634fa228aa0bc5eff5facf33d\nordinal 444\ndate 2026-08-21 13:16:12 -0700\nauthor Matt Stults\nsubject Arc1-e correction 2 (adversarial review ALARMING-1 resolved): assert status dropped from the vector (relevance() never consumes it), none/other sorts collapsed (arg_ok fails open identically); exhaustive pre/post diff shows exactly two false SEPARABLEs reclassified UNSAT — help::l3877_3953_n010 (reviewer-found) and caution::l2126_2404_n023 (found by the diff; the review's within-class scan could not see cross-class merges) — no other verdict changed; prereg addendum 2 records the erratum incl. the scan undercount; governs_conditional gains the fail-loud guard; latent flattened representations registered as LF-3; E1 pins + load_layers merge + guard tests added; 33 tests green\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "text": "commit 3b503184a5f2ea7634fa228aa0bc5eff5facf33d\nordinal 444\ndate 2026-08-21 13:16:12 -0700\nauthor Matt Stults\nsubject Arc1-e correction 2 (adversarial review ALARMING-1 resolved): assert status dropped from the vector (relevance() never consumes it), none/other sorts collapsed (arg_ok fails open identically); exhaustive pre/post diff shows exactly two false SEPARABLEs reclassified UNSAT \u2014 help::l3877_3953_n010 (reviewer-found) and caution::l2126_2404_n023 (found by the diff; the review's within-class scan could not see cross-class merges) \u2014 no other verdict changed; prereg addendum 2 records the erratum incl. the scan undercount; governs_conditional gains the fail-loud guard; latent flattened representations registered as LF-3; E1 pins + load_layers merge + guard tests added; 33 tests green\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
    "source_class": "git_log",
    "context": null
   }

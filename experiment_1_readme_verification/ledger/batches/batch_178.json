@@ -2,11 +2,12 @@
  "header": {
   "batch": "batch_178",
   "source_class": "arc1_docs_preredaction",
-  "brief_version": "0.4",
-  "glossary_version": "frozen ",
+  "brief_version": "0.7",
+  "glossary_version": "frozen aa3da29 +G-06",
   "spans": 3,
   "first_span": "S01886",
-  "last_span": "S01888"
+  "last_span": "S01888",
+  "note": "header refreshed for brief v0.7 (D-09) before translation"
  },
  "spans": [
   {
@@ -22,7 +23,7 @@
    "path": "AGENTS.md",
    "commit": "365d68b3f550379153b13b89c571672a92e5e396",
    "lines": "73-91",
-   "text": "# from the repo root\npython3 -m venv semi-formal-experiment/.venv\nsemi-formal-experiment/.venv/bin/pip install pytest clingo\ncd semi-formal-experiment && .venv/bin/python -m pytest -q      # ~2,156 pass, 4 min\n```\n\n`clingo` is only needed for the ASP-solver tests; everything else runs without it (those\ntests will show as collection errors, which is a known environment gap, not a failure).\nRun from `semi-formal-experiment/` — several commands take relative path arguments.\nProvider calls use stdlib `urllib`, no vendor SDK. `numpy`/`scikit-learn` are imported\nlazily by `weight_diag.py` only.\n\n**API spend:** this project has a hard budget ceiling and it is `spend.py:BUDGET` — the ONE\nceiling the machine reads ($25.00 as of 2026-08-16; the authorization history is in the\nconstant's comment, and `spend.py` reports the current figure — quote the constant, never a\nsecond number). Nearly all work — every cycle, every audit, every number in the\nwriteups — is deterministic re-analysis of data already on disk and costs nothing. If you\nfind yourself about to spend, check that the question genuinely needs a new model call.\n",
+   "text": "# from the repo root\npython3 -m venv semi-formal-experiment/.venv\nsemi-formal-experiment/.venv/bin/pip install pytest clingo\ncd semi-formal-experiment && .venv/bin/python -m pytest -q      # ~2,156 pass, 4 min\n```\n\n`clingo` is only needed for the ASP-solver tests; everything else runs without it (those\ntests will show as collection errors, which is a known environment gap, not a failure).\nRun from `semi-formal-experiment/` \u2014 several commands take relative path arguments.\nProvider calls use stdlib `urllib`, no vendor SDK. `numpy`/`scikit-learn` are imported\nlazily by `weight_diag.py` only.\n\n**API spend:** this project has a hard budget ceiling and it is `spend.py:BUDGET` \u2014 the ONE\nceiling the machine reads ($25.00 as of 2026-08-16; the authorization history is in the\nconstant's comment, and `spend.py` reports the current figure \u2014 quote the constant, never a\nsecond number). Nearly all work \u2014 every cycle, every audit, every number in the\nwriteups \u2014 is deterministic re-analysis of data already on disk and costs nothing. If you\nfind yourself about to spend, check that the question genuinely needs a new model call.\n",
    "source_class": "arc1_docs_preredaction"
   },
   {

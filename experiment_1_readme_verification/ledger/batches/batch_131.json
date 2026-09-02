@@ -2,11 +2,12 @@
  "header": {
   "batch": "batch_131",
   "source_class": "git_log",
-  "brief_version": "0.4",
-  "glossary_version": "frozen ",
+  "brief_version": "0.7",
+  "glossary_version": "frozen aa3da29 +G-06",
   "spans": 15,
   "first_span": "S02153",
-  "last_span": "S02167"
+  "last_span": "S02167",
+  "note": "header refreshed for brief v0.7 (D-09) before translation"
  },
  "spans": [
   {
@@ -30,7 +31,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "6742-6755",
-   "text": "commit 0f96b0368e502d88077f7f1b07a25168eea023ca\nordinal 267\ndate 2026-08-17 08:12:40 -0700\nauthor Matt Stults\nsubject chunk-2 repairs: 2/3 verified; n002 exclusion softening to should-strength in flight\nVerifier caught the repair over-correcting 'should only' into forbid+cnpa\n(should->must escalation) — the repair pipeline's checks work in both\ndirections. Follow-up applies the n022 precedent (forbid + hedged read_back\n+ cepa) for soft prohibitions.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 0f96b0368e502d88077f7f1b07a25168eea023ca\nordinal 267\ndate 2026-08-17 08:12:40 -0700\nauthor Matt Stults\nsubject chunk-2 repairs: 2/3 verified; n002 exclusion softening to should-strength in flight\nVerifier caught the repair over-correcting 'should only' into forbid+cnpa\n(should->must escalation) \u2014 the repair pipeline's checks work in both\ndirections. Follow-up applies the n022 precedent (forbid + hedged read_back\n+ cepa) for soft prohibitions.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -118,7 +119,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "6853-6869",
-   "text": "commit a9e646e1f56bfd2d0e262f7ab169855a79b70b31\nordinal 278\ndate 2026-08-17 09:38:38 -0700\nauthor Matt Stults\nsubject BULK CAMPAIGN COMPLETE: 757 translated + 32 abstained over all 773 nodes, $16.43/$25\nChunk 6: 63/64, 0 failed. Final gate: 459/757 hard-clean; the remainder\ndecomposes into the grown seam (arity disagreements 14->25, section-local\nglosses 3->18 — new shared names outpaced the 16-name contract; the seam\ncontract needs its next growth round), persona-region contract drops\n(M1/M2), and the semantic detectors' catches — the itemized post-campaign\nrepair queue. Every chunk's audit cohort is sealed (0-5 at 6/6 each);\nchunk 6's audit in flight. Finished >5h before the DeepSeek price change.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit a9e646e1f56bfd2d0e262f7ab169855a79b70b31\nordinal 278\ndate 2026-08-17 09:38:38 -0700\nauthor Matt Stults\nsubject BULK CAMPAIGN COMPLETE: 757 translated + 32 abstained over all 773 nodes, $16.43/$25\nChunk 6: 63/64, 0 failed. Final gate: 459/757 hard-clean; the remainder\ndecomposes into the grown seam (arity disagreements 14->25, section-local\nglosses 3->18 \u2014 new shared names outpaced the 16-name contract; the seam\ncontract needs its next growth round), persona-region contract drops\n(M1/M2), and the semantic detectors' catches \u2014 the itemized post-campaign\nrepair queue. Every chunk's audit cohort is sealed (0-5 at 6/6 each);\nchunk 6's audit in flight. Finished >5h before the DeepSeek price change.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {

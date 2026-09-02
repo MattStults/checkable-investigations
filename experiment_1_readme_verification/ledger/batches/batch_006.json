@@ -2,11 +2,12 @@
  "header": {
   "batch": "batch_006",
   "source_class": "arc2_json",
-  "brief_version": "0.4",
-  "glossary_version": "frozen ",
+  "brief_version": "0.7",
+  "glossary_version": "frozen aa3da29 +G-06",
   "spans": 15,
   "first_span": "S00227",
-  "last_span": "S00241"
+  "last_span": "S00241",
+  "note": "header refreshed for brief v0.7 (D-09) before translation"
  },
  "spans": [
   {

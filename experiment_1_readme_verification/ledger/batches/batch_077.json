@@ -2,11 +2,12 @@
  "header": {
   "batch": "batch_077",
   "source_class": "git_log",
-  "brief_version": "0.5",
-  "glossary_version": "frozen d887fb9",
+  "brief_version": "0.7",
+  "glossary_version": "frozen aa3da29 +G-06",
   "spans": 15,
   "first_span": "S01346",
-  "last_span": "S01360"
+  "last_span": "S01360",
+  "note": "header refreshed for brief v0.7 (D-09) before translation"
  },
  "spans": [
   {
@@ -14,7 +15,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7192-7200",
-   "text": "commit 41500f6460e3b02478ef786b4baeb8358a1b1b51\nordinal 310\ndate 2026-08-18 15:11:41 -0700\nauthor Matt Stults\nsubject BEHAVIOR_TRANSLATION_FAILURES.md: behavior-side failure log (B1-B8, mechanism/evidence/falsifier/fix-locus) — Matt: record errors generally\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
+   "text": "commit 41500f6460e3b02478ef786b4baeb8358a1b1b51\nordinal 310\ndate 2026-08-18 15:11:41 -0700\nauthor Matt Stults\nsubject BEHAVIOR_TRANSLATION_FAILURES.md: behavior-side failure log (B1-B8, mechanism/evidence/falsifier/fix-locus) \u2014 Matt: record errors generally\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -32,7 +33,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7210-7224",
-   "text": "commit 59eb2452138d9f746ccb8e6091487d3bcdc8b193\nordinal 312\ndate 2026-08-18 15:15:28 -0700\nauthor Matt Stults\nsubject behavior translator CONTRACT from the corpus vocabulary (11 provisional canonical acts, 16 seam names, 1739 declared inputs); helpfulness r1 fresh rulings\nMatt's ruling: with one document, translate behaviors INTO the document's\nvocabulary directly, under the spec pipeline's contract discipline. Every\npredicate in a behavior module must be a seam name, a declared input, or a\ncanonical act — anything else is a breach (B5). Canonical acts provisional\npending the act-seam bridge-layer ruling.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
+   "text": "commit 59eb2452138d9f746ccb8e6091487d3bcdc8b193\nordinal 312\ndate 2026-08-18 15:15:28 -0700\nauthor Matt Stults\nsubject behavior translator CONTRACT from the corpus vocabulary (11 provisional canonical acts, 16 seam names, 1739 declared inputs); helpfulness r1 fresh rulings\nMatt's ruling: with one document, translate behaviors INTO the document's\nvocabulary directly, under the spec pipeline's contract discipline. Every\npredicate in a behavior module must be a seam name, a declared input, or a\ncanonical act \u2014 anything else is a breach (B5). Canonical acts provisional\npending the act-seam bridge-layer ruling.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -41,7 +42,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7225-7233",
-   "text": "commit 8f805c3676b3d0104f71c2e0c649cec811b09a65\nordinal 313\ndate 2026-08-18 15:16:15 -0700\nauthor Matt Stults\nsubject validate_behavior_module.py: mechanical B5 check (V1 situation preds declared, V2 performed acts canonical, V3 structure/atoms consistent, V4 no coined guards, V5 clingo grounds); round-1/2 modules breach it — the firing gap made measurable\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
+   "text": "commit 8f805c3676b3d0104f71c2e0c649cec811b09a65\nordinal 313\ndate 2026-08-18 15:16:15 -0700\nauthor Matt Stults\nsubject validate_behavior_module.py: mechanical B5 check (V1 situation preds declared, V2 performed acts canonical, V3 structure/atoms consistent, V4 no coined guards, V5 clingo grounds); round-1/2 modules breach it \u2014 the firing gap made measurable\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -50,7 +51,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7234-7242",
-   "text": "commit c078afe6ab2a753e2be34969030054170e6bf542\nordinal 314\ndate 2026-08-18 15:21:22 -0700\nauthor Matt Stults\nsubject ONTOLOGY_CONTRACT: act seam + situation seam are ONE ontology (Matt); behavior modules written in it, corpus bridged to it; stone re-judges on gloss drift (harm r2 reuse 6/240 — all drifted); harm r2 match + fresh rulings\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
+   "text": "commit c078afe6ab2a753e2be34969030054170e6bf542\nordinal 314\ndate 2026-08-18 15:21:22 -0700\nauthor Matt Stults\nsubject ONTOLOGY_CONTRACT: act seam + situation seam are ONE ontology (Matt); behavior modules written in it, corpus bridged to it; stone re-judges on gloss drift (harm r2 reuse 6/240 \u2014 all drifted); harm r2 match + fresh rulings\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -59,7 +60,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7243-7251",
-   "text": "commit 5ee276b63864b0e01d54b1feb1d8fc56cded6112\nordinal 315\ndate 2026-08-18 15:24:31 -0700\nauthor Matt Stults\nsubject arm 2 round 2: harm-avoidance 0.31->0.72->0.78 (recall 0.80, precision rising); helpfulness r1 flat 0.67->0.65 at 0.97 precision — recall plateau is the matcher's ceiling; act ontology is the next relevance lever\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
+   "text": "commit 5ee276b63864b0e01d54b1feb1d8fc56cded6112\nordinal 315\ndate 2026-08-18 15:24:31 -0700\nauthor Matt Stults\nsubject arm 2 round 2: harm-avoidance 0.31->0.72->0.78 (recall 0.80, precision rising); helpfulness r1 flat 0.67->0.65 at 0.97 precision \u2014 recall plateau is the matcher's ceiling; act ontology is the next relevance lever\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -68,7 +69,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7252-7266",
-   "text": "commit bfbb9cd936e0b7ce63f182718b2282711d42f7d7\nordinal 316\ndate 2026-08-18 15:34:01 -0700\nauthor Matt Stults\nsubject ACT ONTOLOGY generated: 720 bespoke functors -> 11 canonical acts, 718 bridge rules in act_bridges.lp (beside the corpus, no module edits), 2 NEW escapes (CSAM introduce/justify); relevance_by_act.py written\nDistribution: respond 195 (catch-all — review candidate), provide 153,\nact_in_world 130, comply 58, refuse 35, override 29, ask 28,\njudge_or_moralize 26, express_uncertainty 23, engage_relationship 22,\npursue_goal 19. Known misfile sample: reveal_developer_message->override.\nProvisional pending Matt's ontology ruling; measurement first.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
+   "text": "commit bfbb9cd936e0b7ce63f182718b2282711d42f7d7\nordinal 316\ndate 2026-08-18 15:34:01 -0700\nauthor Matt Stults\nsubject ACT ONTOLOGY generated: 720 bespoke functors -> 11 canonical acts, 718 bridge rules in act_bridges.lp (beside the corpus, no module edits), 2 NEW escapes (CSAM introduce/justify); relevance_by_act.py written\nDistribution: respond 195 (catch-all \u2014 review candidate), provide 153,\nact_in_world 130, comply 58, refuse 35, override 29, ask 28,\njudge_or_moralize 26, express_uncertainty 23, engage_relationship 22,\npursue_goal 19. Known misfile sample: reveal_developer_message->override.\nProvisional pending Matt's ontology ruling; measurement first.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -77,7 +78,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7267-7275",
-   "text": "commit ae24596e307cfd97864674dfa3da35ea4b7effa2\nordinal 317\ndate 2026-08-18 15:34:41 -0700\nauthor Matt Stults\nsubject RELEVANCE BY ASP works: 0.73 / 0.67 / 0.61 held-out ($0, deterministic, reasoned) vs seat 0.65-0.78 — beats the seat on 2/3, beats both seat columns on helpfulness; behavior modules in corpus vocab at 0 breaches with 11 gaps recorded\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
+   "text": "commit ae24596e307cfd97864674dfa3da35ea4b7effa2\nordinal 317\ndate 2026-08-18 15:34:41 -0700\nauthor Matt Stults\nsubject RELEVANCE BY ASP works: 0.73 / 0.67 / 0.61 held-out ($0, deterministic, reasoned) vs seat 0.65-0.78 \u2014 beats the seat on 2/3, beats both seat columns on helpfulness; behavior modules in corpus vocab at 0 breaches with 11 gaps recorded\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -86,7 +87,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7276-7293",
-   "text": "commit 49cc7863550ed14dd6eb05715b2b930560e21052\nordinal 318\ndate 2026-08-18 15:39:25 -0700\nauthor Matt Stults\nsubject ONTOLOGY VALIDATORS as pipeline modules: acts (A1-A7) and atoms (T1-T4), tiered, NOT-RUNNABLE reported loudly\nFirst run — ACTS: REVIEW (A7 firing-consistency PASSES after fixing the\nbehavior->corpus bridge direction: bridged S4 reproduces the hand-grounded\n1/0 conflicts; open: respond catch-all 27%, harm-avoidance precision 0.73\nthrough coarse buckets, blind bridge spot-check 62 rows for a reader).\nATOMS: BLOCKED — 93% of 1739 input names are single-module coinages; 25\narity + 18 section-local collisions; the situation ontology has never had\nthe inventory->classify->bridge->gate treatment acts just got. Gap rate per\nbehavior 3-4/~24 says the CONCEPTS exist; the NAMES don't converge.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
+   "text": "commit 49cc7863550ed14dd6eb05715b2b930560e21052\nordinal 318\ndate 2026-08-18 15:39:25 -0700\nauthor Matt Stults\nsubject ONTOLOGY VALIDATORS as pipeline modules: acts (A1-A7) and atoms (T1-T4), tiered, NOT-RUNNABLE reported loudly\nFirst run \u2014 ACTS: REVIEW (A7 firing-consistency PASSES after fixing the\nbehavior->corpus bridge direction: bridged S4 reproduces the hand-grounded\n1/0 conflicts; open: respond catch-all 27%, harm-avoidance precision 0.73\nthrough coarse buckets, blind bridge spot-check 62 rows for a reader).\nATOMS: BLOCKED \u2014 93% of 1739 input names are single-module coinages; 25\narity + 18 section-local collisions; the situation ontology has never had\nthe inventory->classify->bridge->gate treatment acts just got. Gap rate per\nbehavior 3-4/~24 says the CONCEPTS exist; the NAMES don't converge.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -104,7 +105,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7303-7311",
-   "text": "commit d462c131580f7658b48efa9d9fd50d5a4745c4ff\nordinal 320\ndate 2026-08-18 15:49:17 -0700\nauthor Matt Stults\nsubject arm-3 three-way split drawn: tuning (unchanged) / validation (plateau watch) / test (scored once) — 48/48/49, 46/48/48, 32/40/41; test slices relevant-heavy, fresh agreed-negative draw to follow\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
+   "text": "commit d462c131580f7658b48efa9d9fd50d5a4745c4ff\nordinal 320\ndate 2026-08-18 15:49:17 -0700\nauthor Matt Stults\nsubject arm-3 three-way split drawn: tuning (unchanged) / validation (plateau watch) / test (scored once) \u2014 48/48/49, 46/48/48, 32/40/41; test slices relevant-heavy, fresh agreed-negative draw to follow\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -122,7 +123,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7321-7329",
-   "text": "commit 0da5a5e262c3ecab2ea7199e3240bce6dab37478\nordinal 322\ndate 2026-08-18 15:54:42 -0700\nauthor Matt Stults\nsubject mutation_scope.py: arm (b) scope discrimination by mutation, fully symbolic — validated on S4 (n014 scope-relevant via ambiguity, n007 via intent, n017 act-only); grain label scoped to the behavior's performed acts\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
+   "text": "commit 0da5a5e262c3ecab2ea7199e3240bce6dab37478\nordinal 322\ndate 2026-08-18 15:54:42 -0700\nauthor Matt Stults\nsubject mutation_scope.py: arm (b) scope discrimination by mutation, fully symbolic \u2014 validated on S4 (n014 scope-relevant via ambiguity, n007 via intent, n017 act-only); grain label scoped to the behavior's performed acts\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },

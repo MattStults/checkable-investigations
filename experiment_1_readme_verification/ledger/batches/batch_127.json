@@ -2,11 +2,12 @@
  "header": {
   "batch": "batch_127",
   "source_class": "git_log",
-  "brief_version": "0.4",
-  "glossary_version": "frozen ",
+  "brief_version": "0.7",
+  "glossary_version": "frozen aa3da29 +G-06",
   "spans": 14,
   "first_span": "S02102",
-  "last_span": "S02115"
+  "last_span": "S02115",
+  "note": "header refreshed for brief v0.7 (D-09) before translation"
  },
  "spans": [
   {
@@ -94,7 +95,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "5685-5721",
-   "text": "commit 10911de7fbf256ea6309ec137610038d32fd359f\nordinal 224\ndate 2026-08-15 15:58:35 -0700\nauthor Matt Stults\nsubject prefer-polarity detector: catch the class stage 4 structurally cannot\nA stage-4 read of 25 modules found the corpus asserting the OPPOSITE of the\nspecification, in modules that passed schema, clingo, link checks and\nread-back. Verbatim, l1974_2125_n019.lp:57, from a BAD-marked example of\nescalating emotional closeness with a lonely user:\n\n    asserts(l1974_2125_n019, prefer, respond_with(R))\n        :- escalates_emotional_closeness(R).\n\nROOT CAUSE IS A CONTRACT GAP, NOT A MODEL SLIP: `status` has no negative pole.\nWith a single-act `asserts` there is NO CORRECT ENCODING for \"avoid X\", and the\nmodel reliably picks the one that inverts.\n\nWHY NOTHING ELSE CATCHES IT, INCLUDING ALL FOUR STAGE-4 SEATS: the read-back\nprose is CORRECT (\"responding with % is dispreferred\"); only `status` is wrong.\nSeats 4a-4d all judge the English RENDERING -- 4b is explicitly not shown the\nprogram at all -- so a defect living in the gap between a correct rendering and\nthe field it was rendered from is invisible to every one of them. That is why\nthis check is mechanical: it compares an entry's `status` against its OWN\nread-back, a self-contradiction inside one object.\n\nMEASURED over every stored module: 9 entries across 7 clauses.\n\n⛔ ORIGIN IS `stage4-detector`, DELIBERATELY *NOT* DISCLOSABLE. Every instinct\nsays a self-contradiction inside one entry is stage-2-shaped and belongs in the\nrepair loop. It must not go there YET, because with no negative pole a model\ntold \"these two disagree\" cannot resolve it correctly: it will either drop the\nentry (deleting the document's guidance) or rewrite the read-back to say\n\"preferred\" -- silencing the only surviving evidence and leaving a module that\nis semantically backwards AND internally consistent. That is strictly worse\nthan today and is textbook defect-trading. The precondition for promoting it to\na disclosable stage-2 check is a negative pole in `status`, which is an owner\nruling on guard-watched schema.py; the origin changes to \"schema\" in the same",
+   "text": "commit 10911de7fbf256ea6309ec137610038d32fd359f\nordinal 224\ndate 2026-08-15 15:58:35 -0700\nauthor Matt Stults\nsubject prefer-polarity detector: catch the class stage 4 structurally cannot\nA stage-4 read of 25 modules found the corpus asserting the OPPOSITE of the\nspecification, in modules that passed schema, clingo, link checks and\nread-back. Verbatim, l1974_2125_n019.lp:57, from a BAD-marked example of\nescalating emotional closeness with a lonely user:\n\n    asserts(l1974_2125_n019, prefer, respond_with(R))\n        :- escalates_emotional_closeness(R).\n\nROOT CAUSE IS A CONTRACT GAP, NOT A MODEL SLIP: `status` has no negative pole.\nWith a single-act `asserts` there is NO CORRECT ENCODING for \"avoid X\", and the\nmodel reliably picks the one that inverts.\n\nWHY NOTHING ELSE CATCHES IT, INCLUDING ALL FOUR STAGE-4 SEATS: the read-back\nprose is CORRECT (\"responding with % is dispreferred\"); only `status` is wrong.\nSeats 4a-4d all judge the English RENDERING -- 4b is explicitly not shown the\nprogram at all -- so a defect living in the gap between a correct rendering and\nthe field it was rendered from is invisible to every one of them. That is why\nthis check is mechanical: it compares an entry's `status` against its OWN\nread-back, a self-contradiction inside one object.\n\nMEASURED over every stored module: 9 entries across 7 clauses.\n\n\u26d4 ORIGIN IS `stage4-detector`, DELIBERATELY *NOT* DISCLOSABLE. Every instinct\nsays a self-contradiction inside one entry is stage-2-shaped and belongs in the\nrepair loop. It must not go there YET, because with no negative pole a model\ntold \"these two disagree\" cannot resolve it correctly: it will either drop the\nentry (deleting the document's guidance) or rewrite the read-back to say\n\"preferred\" -- silencing the only surviving evidence and leaving a module that\nis semantically backwards AND internally consistent. That is strictly worse\nthan today and is textbook defect-trading. The precondition for promoting it to\na disclosable stage-2 check is a negative pole in `status`, which is an owner\nruling on guard-watched schema.py; the origin changes to \"schema\" in the same",
    "source_class": "git_log"
   },
   {

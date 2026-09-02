@@ -2,11 +2,12 @@
  "header": {
   "batch": "batch_148",
   "source_class": "git_log",
-  "brief_version": "0.4",
-  "glossary_version": "frozen ",
+  "brief_version": "0.7",
+  "glossary_version": "frozen aa3da29 +G-06",
   "spans": 15,
   "first_span": "S02408",
-  "last_span": "S02422"
+  "last_span": "S02422",
+  "note": "header refreshed for brief v0.7 (D-09) before translation"
  },
  "spans": [
   {
@@ -14,7 +15,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9084-9092",
-   "text": "commit 31f5da9102c1a1d3bab5382d225ee1a6430e382d\nordinal 520\ndate 2026-08-24 14:17:51 -0700\nauthor Matt Stults\nsubject ERRATUM: criticality 'rules adopted' overclaimed — Fable test-retest 15/24 (brief-sensitive judgment; protects flipped 7/8->5/30 between seats on a brief change); only quality-drift=ESSENTIAL survives both variants (provisional, panel queued); reason-diff drift escalates to design tier until the criticality brief is pinned and stability-measured — every judgment class needs its instruction pinned before its outputs are consumed\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 31f5da9102c1a1d3bab5382d225ee1a6430e382d\nordinal 520\ndate 2026-08-24 14:17:51 -0700\nauthor Matt Stults\nsubject ERRATUM: criticality 'rules adopted' overclaimed \u2014 Fable test-retest 15/24 (brief-sensitive judgment; protects flipped 7/8->5/30 between seats on a brief change); only quality-drift=ESSENTIAL survives both variants (provisional, panel queued); reason-diff drift escalates to design tier until the criticality brief is pinned and stability-measured \u2014 every judgment class needs its instruction pinned before its outputs are consumed\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -30,7 +31,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9102-9110",
-   "text": "commit bad38c435364d5b4acd661c7535d664d5c13f23a\nordinal 522\ndate 2026-08-24 15:05:09 -0700\nauthor Matt Stults\nsubject ERROR_CALCULUS.md v0: formal spec of the automatic failure-response mechanism — partition theorem (C-V/C-D/C-I/C-T, exhaustive by construction, each witnessed historically), decidable router R1-R5 on census certificates, typed inventory surface I1-I5 with moves and ports, validation obligations V1-V5, closure condition (gate grammar = the v3-engine requirement), judgment-port theorem (exactly four exogenous ports, brief-pinning rider), inventory versioning, historical-validation acceptance test, implementation map\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit bad38c435364d5b4acd661c7535d664d5c13f23a\nordinal 522\ndate 2026-08-24 15:05:09 -0700\nauthor Matt Stults\nsubject ERROR_CALCULUS.md v0: formal spec of the automatic failure-response mechanism \u2014 partition theorem (C-V/C-D/C-I/C-T, exhaustive by construction, each witnessed historically), decidable router R1-R5 on census certificates, typed inventory surface I1-I5 with moves and ports, validation obligations V1-V5, closure condition (gate grammar = the v3-engine requirement), judgment-port theorem (exactly four exogenous ports, brief-pinning rider), inventory versioning, historical-validation acceptance test, implementation map\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -38,7 +39,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9111-9119",
-   "text": "commit 9761271c8983ed344f6b6918476ade0ff80ddbac\nordinal 523\ndate 2026-08-24 15:10:24 -0700\nauthor Matt Stults\nsubject calculus MODEL-CHECKED: exhaustive 65-state verification — checker found THREE real spec gaps across two passes (SEP-with-no-principled-delta -> missing-intension route R3x/A1; revert re-entry loop -> ledger no-retry + budget A2; post-mint REACH with consumer already built -> per-FEATURE builds A4), all amended in the spec and re-verified: 0 gaps, 0 ambiguities, 0 cycles, 0 undefined outcomes; model limitations recorded (A3)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 9761271c8983ed344f6b6918476ade0ff80ddbac\nordinal 523\ndate 2026-08-24 15:10:24 -0700\nauthor Matt Stults\nsubject calculus MODEL-CHECKED: exhaustive 65-state verification \u2014 checker found THREE real spec gaps across two passes (SEP-with-no-principled-delta -> missing-intension route R3x/A1; revert re-entry loop -> ledger no-retry + budget A2; post-mint REACH with consumer already built -> per-FEATURE builds A4), all amended in the spec and re-verified: 0 gaps, 0 ambiguities, 0 cycles, 0 undefined outcomes; model limitations recorded (A3)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -46,7 +47,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9120-9128",
-   "text": "commit 04839e047bfd909d786fb878a3c0695b793d9645\nordinal 524\ndate 2026-08-24 15:14:40 -0700\nauthor Matt Stults\nsubject A5: cost-ordering theorem VERIFIED in extended model (premises-before-expensive-moves; R1->R5 near-optimal at measured costs, lazy variant 48-vs-43 worst case with identical terminal sets — ordering is pure cost, never soundness) + batch semantics defined (inventory moves topologically first because k->k+1 invalidates delta validations; batch selection = weighted set-cover over measured fix-sets) + v1 model obligations: multi-token checker, mutation-test both checkers, ASP encoding\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 04839e047bfd909d786fb878a3c0695b793d9645\nordinal 524\ndate 2026-08-24 15:14:40 -0700\nauthor Matt Stults\nsubject A5: cost-ordering theorem VERIFIED in extended model (premises-before-expensive-moves; R1->R5 near-optimal at measured costs, lazy variant 48-vs-43 worst case with identical terminal sets \u2014 ordering is pure cost, never soundness) + batch semantics defined (inventory moves topologically first because k->k+1 invalidates delta validations; batch selection = weighted set-cover over measured fix-sets) + v1 model obligations: multi-token checker, mutation-test both checkers, ASP encoding\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -54,7 +55,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9129-9137",
-   "text": "commit a5cde5dc0103aa241becb2231478c484e34428a0\nordinal 525\ndate 2026-08-24 15:23:43 -0700\nauthor Matt Stults\nsubject calculus verification stack COMPLETE: ASP encoding (clingo confirms 0/0/0) + mutation testing 5/5 caught + trace-legality checker (legal certified, tampered caught — the auditable replay-based §9 mechanism) + mix->policy map (EAGER insensitive to mix at measured costs) + reuse corrections from the model inventory (verify_terminal/mutation_scope/cycle.py predate and implement calculus components — cited, not re-invented)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit a5cde5dc0103aa241becb2231478c484e34428a0\nordinal 525\ndate 2026-08-24 15:23:43 -0700\nauthor Matt Stults\nsubject calculus verification stack COMPLETE: ASP encoding (clingo confirms 0/0/0) + mutation testing 5/5 caught + trace-legality checker (legal certified, tampered caught \u2014 the auditable replay-based \u00a79 mechanism) + mix->policy map (EAGER insensitive to mix at measured costs) + reuse corrections from the model inventory (verify_terminal/mutation_scope/cycle.py predate and implement calculus components \u2014 cited, not re-invented)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -62,7 +63,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9138-9146",
-   "text": "commit b93bdb2e9deb6b05d89fcc2c4636e6b510631e9c\nordinal 526\ndate 2026-08-24 15:24:37 -0700\nauthor Matt Stults\nsubject calculus visualizations: interactive router widget (blog idiom — IIFE, inline vanilla JS, createElementNS SVG, branch-choice stepping with live budgets and cost accumulator) + static mermaid diagram with ports annotated\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit b93bdb2e9deb6b05d89fcc2c4636e6b510631e9c\nordinal 526\ndate 2026-08-24 15:24:37 -0700\nauthor Matt Stults\nsubject calculus visualizations: interactive router widget (blog idiom \u2014 IIFE, inline vanilla JS, createElementNS SVG, branch-choice stepping with live budgets and cost accumulator) + static mermaid diagram with ports annotated\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -70,7 +71,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9147-9155",
-   "text": "commit b7ca203f171a91516d69e410af20745a9a138593\nordinal 527\ndate 2026-08-24 15:30:00 -0700\nauthor Matt Stults\nsubject widget v2: explanations throughout — what-am-I-looking-at intro with census glossary, per-rule plain-language question shown at each step, hover tooltips (+SVG title) on every node, judgment ports amber-bordered and named, branch labels rewritten as answers to the posed question, budgets in plain words\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit b7ca203f171a91516d69e410af20745a9a138593\nordinal 527\ndate 2026-08-24 15:30:00 -0700\nauthor Matt Stults\nsubject widget v2: explanations throughout \u2014 what-am-I-looking-at intro with census glossary, per-rule plain-language question shown at each step, hover tooltips (+SVG title) on every node, judgment ports amber-bordered and named, branch labels rewritten as answers to the posed question, budgets in plain words\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -86,7 +87,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9165-9173",
-   "text": "commit d31989e38dc8bdb7cb54d3da808b2384c3a12d4c\nordinal 529\ndate 2026-08-24 15:39:10 -0700\nauthor Matt Stults\nsubject A9 extensional identity: an idea IS its extension — ledger keyed by induced-partition fingerprint (same route under a different name refused mechanically); per-node outcome spaces: config CLOSED+countable, mechanism closed under gate grammar, coining bounded by extension lattice + mined frontier with groundability as the irreducible P3 judgment; byte-identity certificate = the only absolute coining closure. MEASURED: 614 distinct vectors over 762 nodes, 45 twin classes (148 nodes), ZERO byte-identity certificates -> nothing in this corpus is provably terminal-by-document; all standing terminals are SUSPENDED-OPEN\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit d31989e38dc8bdb7cb54d3da808b2384c3a12d4c\nordinal 529\ndate 2026-08-24 15:39:10 -0700\nauthor Matt Stults\nsubject A9 extensional identity: an idea IS its extension \u2014 ledger keyed by induced-partition fingerprint (same route under a different name refused mechanically); per-node outcome spaces: config CLOSED+countable, mechanism closed under gate grammar, coining bounded by extension lattice + mined frontier with groundability as the irreducible P3 judgment; byte-identity certificate = the only absolute coining closure. MEASURED: 614 distinct vectors over 762 nodes, 45 twin classes (148 nodes), ZERO byte-identity certificates -> nothing in this corpus is provably terminal-by-document; all standing terminals are SUSPENDED-OPEN\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -94,7 +95,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9174-9182",
-   "text": "commit 16e1a6a8d76329f02b593a2f6446c134e6be67e3\nordinal 530\ndate 2026-08-24 15:43:47 -0700\nauthor Matt Stults\nsubject A10: coining has no confident intension-side bound (non-compositionality, structural distinctions, reader-relative groundability — reasons stated) but a tight extensional bound (2^(c-1) cuts per twin class — many names, few routes) + the five-question capability router (deterministic / pin-the-brief-first / cheapest-certified-tier / generative->frontier+human / process-binding->human), with certificates as the empirical self-updating capability map\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 16e1a6a8d76329f02b593a2f6446c134e6be67e3\nordinal 530\ndate 2026-08-24 15:43:47 -0700\nauthor Matt Stults\nsubject A10: coining has no confident intension-side bound (non-compositionality, structural distinctions, reader-relative groundability \u2014 reasons stated) but a tight extensional bound (2^(c-1) cuts per twin class \u2014 many names, few routes) + the five-question capability router (deterministic / pin-the-brief-first / cheapest-certified-tier / generative->frontier+human / process-binding->human), with certificates as the empirical self-updating capability map\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -102,7 +103,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9183-9191",
-   "text": "commit 066e1714be35da43bdee163592aa6e39c598db8d\nordinal 531\ndate 2026-08-24 15:44:26 -0700\nauthor Matt Stults\nsubject §9 historical validation v0 EXECUTED (Opus-built, Fable-verified): 52 cases, 49/52 match, 52/52 clingo-certified traces (sample independently re-checked). The 3 mismatches indict the RECORD, not the router: canary 'terminal' stamps lack the A8 exhaustion certificate (A9 predicted this — zero byte-identity certificates exist) + one corpus-keying gap. F-r2 serious: verify_terminal.py's move space omits purpose_concern and its truth is stale -> its TERMINAL verdicts are unsound at current inventory; certified-terminal path closed pending its extension; all standing terminals SUSPENDED-OPEN. F-r1: 20 ledger nodes on superseded chunking\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 066e1714be35da43bdee163592aa6e39c598db8d\nordinal 531\ndate 2026-08-24 15:44:26 -0700\nauthor Matt Stults\nsubject \u00a79 historical validation v0 EXECUTED (Opus-built, Fable-verified): 52 cases, 49/52 match, 52/52 clingo-certified traces (sample independently re-checked). The 3 mismatches indict the RECORD, not the router: canary 'terminal' stamps lack the A8 exhaustion certificate (A9 predicted this \u2014 zero byte-identity certificates exist) + one corpus-keying gap. F-r2 serious: verify_terminal.py's move space omits purpose_concern and its truth is stale -> its TERMINAL verdicts are unsound at current inventory; certified-terminal path closed pending its extension; all standing terminals SUSPENDED-OPEN. F-r1: 20 ledger nodes on superseded chunking\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -118,7 +119,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9201-9209",
-   "text": "commit ca0451a2d9581ea71d7e3e2a7c866b9ab875e4fe\nordinal 533\ndate 2026-08-24 15:46:24 -0700\nauthor Matt Stults\nsubject widget v3 (fix of the mis-applied patch batch — prior commit carried only the diagram): every box bordered/badged by required judge class per A10 (green deterministic / blue certified-cheap / amber frontier / red frontier+human), judge line in hover, legend replaces the amber-ports note, intro line added\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit ca0451a2d9581ea71d7e3e2a7c866b9ab875e4fe\nordinal 533\ndate 2026-08-24 15:46:24 -0700\nauthor Matt Stults\nsubject widget v3 (fix of the mis-applied patch batch \u2014 prior commit carried only the diagram): every box bordered/badged by required judge class per A10 (green deterministic / blue certified-cheap / amber frontier / red frontier+human), judge line in hover, legend replaces the amber-ports note, intro line added\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -126,7 +127,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9210-9218",
-   "text": "commit 06720f12b8308c40333757d94d99f44cc057481b\nordinal 534\ndate 2026-08-24 15:52:00 -0700\nauthor Matt Stults\nsubject A12+A13: DECLARABLE_MOVES single-source registry (F-r2 structural fix) — verify_terminal derives its space from it, gains purpose moves, stops foreclosing act-unmatched nodes (purpose is act-independent — second latent staleness found), delegates to maintained truth (rescue reads relevant), and every TERMINAL verdict carries its enumeration scope; registry handshake test fails loud on divergence (16 green). A13: humans never block (SUSPENDED-OPEN + async batch ratification; measured ~4 signatures vs hundreds of machine decisions) with measured-delegation as a Matt-ruled option\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 06720f12b8308c40333757d94d99f44cc057481b\nordinal 534\ndate 2026-08-24 15:52:00 -0700\nauthor Matt Stults\nsubject A12+A13: DECLARABLE_MOVES single-source registry (F-r2 structural fix) \u2014 verify_terminal derives its space from it, gains purpose moves, stops foreclosing act-unmatched nodes (purpose is act-independent \u2014 second latent staleness found), delegates to maintained truth (rescue reads relevant), and every TERMINAL verdict carries its enumeration scope; registry handshake test fails loud on divergence (16 green). A13: humans never block (SUSPENDED-OPEN + async batch ratification; measured ~4 signatures vs hundreds of machine decisions) with measured-delegation as a Matt-ruled option\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   }
  ]

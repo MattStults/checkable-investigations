@@ -2,11 +2,12 @@
  "header": {
   "batch": "batch_092",
   "source_class": "git_log",
-  "brief_version": "0.5",
-  "glossary_version": "frozen d887fb9",
+  "brief_version": "0.7",
+  "glossary_version": "frozen aa3da29 +G-06",
   "spans": 15,
   "first_span": "S01571",
-  "last_span": "S01585"
+  "last_span": "S01585",
+  "note": "header refreshed for brief v0.7 (D-09) before translation"
  },
  "spans": [
   {
@@ -14,7 +15,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9219-9227",
-   "text": "commit 6fd5c0bf05fc013e4ed07d073990fdd6b68d5e81\nordinal 535\ndate 2026-08-24 15:59:01 -0700\nauthor Matt Stults\nsubject agent-facing CALCULUS_RUNBOOK v0 (draft-from-design; to be rewritten from iteration-1's actual trace per the execution-derived-docs rule) + docs-tests (referenced tools exist and expose claimed entry points, lineage brief pinned verbatim, stop conditions present, prediction-registration precedes realization) — 4 green; prerequisites met for the first driven iteration on tradeoffs' 12 FPs\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 6fd5c0bf05fc013e4ed07d073990fdd6b68d5e81\nordinal 535\ndate 2026-08-24 15:59:01 -0700\nauthor Matt Stults\nsubject agent-facing CALCULUS_RUNBOOK v0 (draft-from-design; to be rewritten from iteration-1's actual trace per the execution-derived-docs rule) + docs-tests (referenced tools exist and expose claimed entry points, lineage brief pinned verbatim, stop conditions present, prediction-registration precedes realization) \u2014 4 green; prerequisites met for the first driven iteration on tradeoffs' 12 FPs\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -23,7 +24,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9228-9236",
-   "text": "commit afe4b2a64266172120877584069055535422e8f5\nordinal 536\ndate 2026-08-24 15:59:32 -0700\nauthor Matt Stults\nsubject docs-test fix: verbatim-pinned check normalizes whitespace (token sequence, not byte layout — the instruction file wraps lines); 4/4 green. Prior commit shipped with 1 red docs-test — noted here rather than hidden\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit afe4b2a64266172120877584069055535422e8f5\nordinal 536\ndate 2026-08-24 15:59:32 -0700\nauthor Matt Stults\nsubject docs-test fix: verbatim-pinned check normalizes whitespace (token sequence, not byte layout \u2014 the instruction file wraps lines); 4/4 green. Prior commit shipped with 1 red docs-test \u2014 noted here rather than hidden\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -32,7 +33,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9237-9245",
-   "text": "commit ccb7bd187d4e8b4fc155415584614ca5f8025970\nordinal 537\ndate 2026-08-24 16:02:49 -0700\nauthor Matt Stults\nsubject learning-as-artifact: ITERATION_NOTES.md append-only ledger created with the SEED entry externalizing all tacit operational knowledge from today (registry reload, wave economics, seat failure modes, patching pitfalls, commit-discipline failures, coordinator pattern); runbook STEP 5b binds note-taking at every step and defines HANDOFF = fresh session booting from the repo (no compaction ritual, no handoff prompt — uncommitted context in a departing instance is the bug); HANDOFF_CURRENT gains the entry-point block; docs-tests 5/5\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit ccb7bd187d4e8b4fc155415584614ca5f8025970\nordinal 537\ndate 2026-08-24 16:02:49 -0700\nauthor Matt Stults\nsubject learning-as-artifact: ITERATION_NOTES.md append-only ledger created with the SEED entry externalizing all tacit operational knowledge from today (registry reload, wave economics, seat failure modes, patching pitfalls, commit-discipline failures, coordinator pattern); runbook STEP 5b binds note-taking at every step and defines HANDOFF = fresh session booting from the repo (no compaction ritual, no handoff prompt \u2014 uncommitted context in a departing instance is the bug); HANDOFF_CURRENT gains the entry-point block; docs-tests 5/5\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -41,7 +42,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9246-9253",
-   "text": "commit ce87921c36bd37692c75793df59de6b76699b107\nordinal 538\ndate 2026-08-24 16:10:07 -0700\nauthor Matt Stults\nsubject ITERATION 1 STEP 1 (triage, $0 deterministic): routed queue for tradeoffs' 12 engaged-FPs — census real via derived single-module contract + frozen attempt-1 truth injected read-only (runbook erratum: bare route.py KeyErrors on gen slugs; §9 case-e precedent extended). Result: 3 panel-tier -> C-D, 9 wave-single -> OPEN(P1) R1 panel escalation first (A5 premises-before-moves); all 12 SEPARABLE both views RELATIVE TO the 40-node attempt-1 ledger (caveat recorded). Notes entry 0001.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit ce87921c36bd37692c75793df59de6b76699b107\nordinal 538\ndate 2026-08-24 16:10:07 -0700\nauthor Matt Stults\nsubject ITERATION 1 STEP 1 (triage, $0 deterministic): routed queue for tradeoffs' 12 engaged-FPs \u2014 census real via derived single-module contract + frozen attempt-1 truth injected read-only (runbook erratum: bare route.py KeyErrors on gen slugs; \u00a79 case-e precedent extended). Result: 3 panel-tier -> C-D, 9 wave-single -> OPEN(P1) R1 panel escalation first (A5 premises-before-moves); all 12 SEPARABLE both views RELATIVE TO the 40-node attempt-1 ledger (caveat recorded). Notes entry 0001.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -50,7 +51,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9254-9262",
-   "text": "commit d54f70ae39b5dc015bae28c391b05565637c3f57\nordinal 539\ndate 2026-08-24 16:21:51 -0700\nauthor Matt Stults\nsubject A14 explicit preconditions + preflight.py: the machine is a REPAIR calculus (cannot start from 0 nodes — P1-P4 make E computable; truth is the one cold-startable component via the pinned brief); 7 mechanical checks, currently 7/7 with the F-r1 drift FROZEN by name (20 nodes, any NEW drift fails); the validator's own first version passed spuriously against the wrong corpus and was corrected against the known finding\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit d54f70ae39b5dc015bae28c391b05565637c3f57\nordinal 539\ndate 2026-08-24 16:21:51 -0700\nauthor Matt Stults\nsubject A14 explicit preconditions + preflight.py: the machine is a REPAIR calculus (cannot start from 0 nodes \u2014 P1-P4 make E computable; truth is the one cold-startable component via the pinned brief); 7 mechanical checks, currently 7/7 with the F-r1 drift FROZEN by name (20 nodes, any NEW drift fails); the validator's own first version passed spuriously against the wrong corpus and was corrected against the known finding\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -59,7 +60,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9263-9271",
-   "text": "commit 16456e9538cc3f67b5b0b4af550f7b20de281601\nordinal 540\ndate 2026-08-24 16:24:28 -0700\nauthor Matt Stults\nsubject diagram gains the A14 preconditions table (P1-P7: requirement, why non-arbitrary, mechanical check, cold-startability) + bootstrap->preflight->calculus flow chart; capability tree renumbered to §3\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 16456e9538cc3f67b5b0b4af550f7b20de281601\nordinal 540\ndate 2026-08-24 16:24:28 -0700\nauthor Matt Stults\nsubject diagram gains the A14 preconditions table (P1-P7: requirement, why non-arbitrary, mechanical check, cold-startability) + bootstrap->preflight->calculus flow chart; capability tree renumbered to \u00a73\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -68,7 +69,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9272-9279",
-   "text": "commit 03312494cf7ec3f79c3e82db664e045b406ee3ab\nordinal 541\ndate 2026-08-24 16:26:36 -0700\nauthor Matt Stults\nsubject ITERATION 1 budget ruling (Matt): bar already at 23% (>12% registered cap) at the step-1 checkpoint — stop condition surfaced, not improvised; ruling = up to 3 points for the complete iteration-1 fix arc, hard halt 26%. Notes entry 0002 with the per-wave budget plan.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 03312494cf7ec3f79c3e82db664e045b406ee3ab\nordinal 541\ndate 2026-08-24 16:26:36 -0700\nauthor Matt Stults\nsubject ITERATION 1 budget ruling (Matt): bar already at 23% (>12% registered cap) at the step-1 checkpoint \u2014 stop condition surfaced, not improvised; ruling = up to 3 points for the complete iteration-1 fix arc, hard halt 26%. Notes entry 0002 with the per-wave budget plan.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -77,7 +78,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9280-9287",
-   "text": "commit c5323d9e6359b84aaa620ba8d618dade9588d773\nordinal 542\ndate 2026-08-24 16:27:28 -0700\nauthor Matt Stults\nsubject ITERATION 1 STEP 2 pre-dispatch: R1 escalation panel packet — the 9 single-tier tradeoffs FPs, items subset of the committed attempt-1 lineage wave packet (order preserved from its seeded shuffle; no new ordering information introduced). Committed BEFORE dispatch per runbook.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit c5323d9e6359b84aaa620ba8d618dade9588d773\nordinal 542\ndate 2026-08-24 16:27:28 -0700\nauthor Matt Stults\nsubject ITERATION 1 STEP 2 pre-dispatch: R1 escalation panel packet \u2014 the 9 single-tier tradeoffs FPs, items subset of the committed attempt-1 lineage wave packet (order preserved from its seeded shuffle; no new ordering information introduced). Committed BEFORE dispatch per runbook.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -86,7 +87,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9288-9295",
-   "text": "commit 30193087d0406fbb421e42f5c3921ee965c6feac\nordinal 543\ndate 2026-08-24 16:30:44 -0700\nauthor Matt Stults\nsubject ITERATION 1 STEP 2a: R1 escalation wave executed (3 fresh Fable seats, lineage brief verbatim, ~98k raw) — 3/9 OVERTURNED to relevant (C-T dissolved: l2126_2404_n034 3-0, l3239_3382_n005 3-0, l3877_3953_n002 2-1 split), 6 stand at panel tier. Supersession is repair-ledger-only; attempt-1 transfer claim stays frozen. A5 premises-first vindicated concretely: the pre-escalation governs-wall candidate would have walled two of the overturned nodes. Queue r2: 9 nodes, all panel-tier C-D. Notes entry 0003.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 30193087d0406fbb421e42f5c3921ee965c6feac\nordinal 543\ndate 2026-08-24 16:30:44 -0700\nauthor Matt Stults\nsubject ITERATION 1 STEP 2a: R1 escalation wave executed (3 fresh Fable seats, lineage brief verbatim, ~98k raw) \u2014 3/9 OVERTURNED to relevant (C-T dissolved: l2126_2404_n034 3-0, l3239_3382_n005 3-0, l3877_3953_n002 2-1 split), 6 stand at panel tier. Supersession is repair-ledger-only; attempt-1 transfer claim stays frozen. A5 premises-first vindicated concretely: the pre-escalation governs-wall candidate would have walled two of the overturned nodes. Queue r2: 9 nodes, all panel-tier C-D. Notes entry 0003.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -95,7 +96,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9296-9303",
-   "text": "commit 21529d162e3814d1885014443c53476394f10a21\nordinal 544\ndate 2026-08-24 16:35:30 -0700\nauthor Matt Stults\nsubject ITERATION 1 STEP 2b pre-dispatch: second R1-style escalation packet — l1368_1541_n018 alone (the single-wave TP that the leading census-expressible delta candidate would break; panel truth decides the candidate choice on record rather than on driver judgment). Committed before dispatch.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 21529d162e3814d1885014443c53476394f10a21\nordinal 544\ndate 2026-08-24 16:35:30 -0700\nauthor Matt Stults\nsubject ITERATION 1 STEP 2b pre-dispatch: second R1-style escalation packet \u2014 l1368_1541_n018 alone (the single-wave TP that the leading census-expressible delta candidate would break; panel truth decides the candidate choice on record rather than on driver judgment). Committed before dispatch.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -104,7 +105,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9304-9311",
-   "text": "commit 4412adc80e9bbab122517b3104c2267044cc03f7\nordinal 545\ndate 2026-08-24 16:39:55 -0700\nauthor Matt Stults\nsubject ITERATION 1 STEP 2b-3: C-D delta ADOPTED pending V5 (candidate B: governs wall {substance,accuracy,formatting,objectivity} + first live governs_conditional tone_manner:[vulnerable_interaction]) — V1 5 fixes/0 breaks, V2 drift 0, V3 class card with 48/48 held-out members moving (all tone_manner/identity_meta-only), V4 zero new ledger flips. Escalation-2: l1368_1541_n018 panel-confirmed relevant 3-0 (~82k raw), which rejects candidates A/B2 on record; C rejected for deleting the truth-vs-comfort ordering (l2555). 4 residuals SUSPENDED-OPEN with verify_terminal scoped enumerations. probe.py gains --contract/--truth (defaults unchanged); 4 fingerprinted ledger entries. Full grounds: ITERATION1_CD_DECISION.md.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 4412adc80e9bbab122517b3104c2267044cc03f7\nordinal 545\ndate 2026-08-24 16:39:55 -0700\nauthor Matt Stults\nsubject ITERATION 1 STEP 2b-3: C-D delta ADOPTED pending V5 (candidate B: governs wall {substance,accuracy,formatting,objectivity} + first live governs_conditional tone_manner:[vulnerable_interaction]) \u2014 V1 5 fixes/0 breaks, V2 drift 0, V3 class card with 48/48 held-out members moving (all tone_manner/identity_meta-only), V4 zero new ledger flips. Escalation-2: l1368_1541_n018 panel-confirmed relevant 3-0 (~82k raw), which rejects candidates A/B2 on record; C rejected for deleting the truth-vs-comfort ordering (l2555). 4 residuals SUSPENDED-OPEN with verify_terminal scoped enumerations. probe.py gains --contract/--truth (defaults unchanged); 4 fingerprinted ledger entries. Full grounds: ITERATION1_CD_DECISION.md.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -113,7 +114,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9312-9319",
-   "text": "commit f657a012911826b7e4207d8a3ab51f1f9169030f\nordinal 546\ndate 2026-08-24 16:40:21 -0700\nauthor Matt Stults\nsubject ITERATION 1 STEP 3 close: V5 prediction REGISTERED before any attempt-2 realization measurement — P1 revert line engaged_precision >= 0.55 (venue-matched), point 0.65±0.10, mechanism P3 (fixed class cannot recur), decline P4 >= 0.80; draw seed 20260824, shuffle 20260827, panel sampler 20260828 rate 0.2 registered here (campaign-record material only).\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit f657a012911826b7e4207d8a3ab51f1f9169030f\nordinal 546\ndate 2026-08-24 16:40:21 -0700\nauthor Matt Stults\nsubject ITERATION 1 STEP 3 close: V5 prediction REGISTERED before any attempt-2 realization measurement \u2014 P1 revert line engaged_precision >= 0.55 (venue-matched), point 0.65\u00b10.10, mechanism P3 (fixed class cannot recur), decline P4 >= 0.80; draw seed 20260824, shuffle 20260827, panel sampler 20260828 rate 0.2 registered here (campaign-record material only).\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -140,7 +141,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9336-9343",
-   "text": "commit 65485e0e022af2253eaf306efe56f17391ef9ed6\nordinal 549\ndate 2026-08-24 17:00:59 -0700\nauthor Matt Stults\nsubject ITERATION 1 STEP 4: deterministic attempt-2 scorer committed BEFORE rulings exist — venue-matched (wave + panel override, wave-only fallback disclosed), P1-P4 checks wired to the registered prediction file, P3 mechanism audit on every fresh engaged-FP's governs signature.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 65485e0e022af2253eaf306efe56f17391ef9ed6\nordinal 549\ndate 2026-08-24 17:00:59 -0700\nauthor Matt Stults\nsubject ITERATION 1 STEP 4: deterministic attempt-2 scorer committed BEFORE rulings exist \u2014 venue-matched (wave + panel override, wave-only fallback disclosed), P1-P4 checks wired to the registered prediction file, P3 mechanism audit on every fresh engaged-FP's governs signature.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log",
    "context": null
   }

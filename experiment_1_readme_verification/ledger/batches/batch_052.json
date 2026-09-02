@@ -2,11 +2,12 @@
  "header": {
   "batch": "batch_052",
   "source_class": "git_log",
-  "brief_version": "0.5",
-  "glossary_version": "frozen d887fb9",
+  "brief_version": "0.7",
+  "glossary_version": "frozen aa3da29 +G-06",
   "spans": 15,
   "first_span": "S01037",
-  "last_span": "S01051"
+  "last_span": "S01051",
+  "note": "header refreshed for brief v0.7 (D-09) before translation"
  },
  "spans": [
   {
@@ -41,7 +42,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "78-102",
-   "text": "commit ed3cf09301e5b13cf6db8c30bf4a9726b8ea10aa\nordinal 4\ndate 2026-08-03 19:58:03 -0700\nauthor Matt Stults\nsubject Restore clobbered behavior_atoms.json; update README to current state\nThe behaviour-atoms dry-run (invoked without --out) wrote its 0-atom stub\nover the shipped default artifact, and baa962d committed that broken state —\ncaught by test_shipped_artifacts_still_load_and_still_join, whose failure was\nitself masked by a `| tail` swallowing the gate's exit code (third recorded\noccurrence of that class; the cycle driver's subprocess handling exists for\nexactly this reason. Artifact restored byte-identical from the import\ncommit; incident documented in the README warnings; dry-run clobber guard\nqueued for v1.2.\n\nREADME rewritten: current results (+0.309 dev vs +0.555 bar; translation\n0.86 span / 0.59 structure vs 0.79 / 0.91 human ceiling), the census, the\nexpert salience critique, current layout and test count.\n\nFull suite: 1960 passed, 3 skipped, exit 0 (verified unpiped).\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nEOF\n)\n\n----END----",
+   "text": "commit ed3cf09301e5b13cf6db8c30bf4a9726b8ea10aa\nordinal 4\ndate 2026-08-03 19:58:03 -0700\nauthor Matt Stults\nsubject Restore clobbered behavior_atoms.json; update README to current state\nThe behaviour-atoms dry-run (invoked without --out) wrote its 0-atom stub\nover the shipped default artifact, and baa962d committed that broken state \u2014\ncaught by test_shipped_artifacts_still_load_and_still_join, whose failure was\nitself masked by a `| tail` swallowing the gate's exit code (third recorded\noccurrence of that class; the cycle driver's subprocess handling exists for\nexactly this reason. Artifact restored byte-identical from the import\ncommit; incident documented in the README warnings; dry-run clobber guard\nqueued for v1.2.\n\nREADME rewritten: current results (+0.309 dev vs +0.555 bar; translation\n0.86 span / 0.59 structure vs 0.79 / 0.91 human ceiling), the census, the\nexpert salience critique, current layout and test count.\n\nFull suite: 1960 passed, 3 skipped, exit 0 (verified unpiped).\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nEOF\n)\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -77,7 +78,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "145-152",
-   "text": "commit 4cf47d6d79cf89bbb3e516ff1edc20f30ecb74ba\nordinal 8\ndate 2026-08-03 20:49:53 -0700\nauthor Matt Stults\nsubject atom_refactor: rechain op (chain-only exact renames, --clause scoping, ext_v1 surfaces, per-file ascii style) — precursor for the chain-repair cycle\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 4cf47d6d79cf89bbb3e516ff1edc20f30ecb74ba\nordinal 8\ndate 2026-08-03 20:49:53 -0700\nauthor Matt Stults\nsubject atom_refactor: rechain op (chain-only exact renames, --clause scoping, ext_v1 surfaces, per-file ascii style) \u2014 precursor for the chain-repair cycle\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log",
    "context": null
   },

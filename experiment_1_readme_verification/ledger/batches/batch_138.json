@@ -2,11 +2,12 @@
  "header": {
   "batch": "batch_138",
   "source_class": "git_log",
-  "brief_version": "0.4",
-  "glossary_version": "frozen ",
+  "brief_version": "0.7",
+  "glossary_version": "frozen aa3da29 +G-06",
   "spans": 15,
   "first_span": "S02258",
-  "last_span": "S02272"
+  "last_span": "S02272",
+  "note": "header refreshed for brief v0.7 (D-09) before translation"
  },
  "spans": [
   {
@@ -14,7 +15,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7753-7761",
-   "text": "commit b3d10f9cc75941a3c06366aeecb15ca81abd4138\nordinal 370\ndate 2026-08-18 21:29:19 -0700\nauthor Matt Stults\nsubject DEVIATION_ACCOUNTING: 318/436 (72%) with 0 unexplained deviations — every one of 125 classed (E1 50 structural, E6 21 defensible, E2 18 fixed, E5 20 measured+recorded, E4 8 repaired/queued, E3 8 truth-suspect for Matt); helpfulness 80%, caution 72%, harm 66% at the named E1 party-typing limit\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit b3d10f9cc75941a3c06366aeecb15ca81abd4138\nordinal 370\ndate 2026-08-18 21:29:19 -0700\nauthor Matt Stults\nsubject DEVIATION_ACCOUNTING: 318/436 (72%) with 0 unexplained deviations \u2014 every one of 125 classed (E1 50 structural, E6 21 defensible, E2 18 fixed, E5 20 measured+recorded, E4 8 repaired/queued, E3 8 truth-suspect for Matt); helpfulness 80%, caution 72%, harm 66% at the named E1 party-typing limit\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -22,7 +23,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7762-7770",
-   "text": "commit 8825f1eb9a8866d5211a255e34b3c6c900885321\nordinal 371\ndate 2026-08-18 21:45:40 -0700\nauthor Matt Stults\nsubject decisions 1+2 executed: truth-suspect panel (3 fresh blind instances) — 5 CONFIRMED, 3 OVERTURNED (1 unanimous, 2 split; precedence-wired into truth_for); party walls built and MEASURED OUT at both granularities (act-level recall collapse, module-level net zero) — not deployed, per-assert protects field specified in contract §7 as the durable fix\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 8825f1eb9a8866d5211a255e34b3c6c900885321\nordinal 371\ndate 2026-08-18 21:45:40 -0700\nauthor Matt Stults\nsubject decisions 1+2 executed: truth-suspect panel (3 fresh blind instances) \u2014 5 CONFIRMED, 3 OVERTURNED (1 unanimous, 2 split; precedence-wired into truth_for); party walls built and MEASURED OUT at both granularities (act-level recall collapse, module-level net zero) \u2014 not deployed, per-assert protects field specified in contract \u00a77 as the durable fix\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -30,7 +31,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7771-7779",
-   "text": "commit 25a6f056eb89e99bf21731127177cb86a6cf80a2\nordinal 372\ndate 2026-08-18 21:56:29 -0700\nauthor Matt Stults\nsubject protects annotation: INCREMENTAL protocol per Matt — pre-registered calibration (expected-change node + no-change nodes) 4/4 annotations + 4/4 wall effects PASS; --all gated on calibration_passed; wall wired fail-open; full sweep launched\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 25a6f056eb89e99bf21731127177cb86a6cf80a2\nordinal 372\ndate 2026-08-18 21:56:29 -0700\nauthor Matt Stults\nsubject protects annotation: INCREMENTAL protocol per Matt \u2014 pre-registered calibration (expected-change node + no-change nodes) 4/4 annotations + 4/4 wall effects PASS; --all gated on calibration_passed; wall wired fail-open; full sweep launched\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -38,7 +39,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7780-7788",
-   "text": "commit 940bbca710d39996719d46f7b4613f6d1bf626ac\nordinal 373\ndate 2026-08-18 22:09:03 -0700\nauthor Matt Stults\nsubject protects sweep complete (985 asserts, $0.03): harm 66->74%, FP 24->4 — E1 precision problem solved; 8 newly-blocked relevant nodes identified as the audit's target class (missed co-protection suspected); blind audit dispatched (8 targeted + 25 random)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 940bbca710d39996719d46f7b4613f6d1bf626ac\nordinal 373\ndate 2026-08-18 22:09:03 -0700\nauthor Matt Stults\nsubject protects sweep complete (985 asserts, $0.03): harm 66->74%, FP 24->4 \u2014 E1 precision problem solved; 8 newly-blocked relevant nodes identified as the audit's target class (missed co-protection suspected); blind audit dispatched (8 targeted + 25 random)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -46,7 +47,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7789-7797",
-   "text": "commit 1a1653929055874a2620da41584c2303e70e84e7\nordinal 374\ndate 2026-08-18 22:12:46 -0700\nauthor Matt Stults\nsubject protects audit (blind, 8 targeted + 25 random): 43/56 = 0.77 accuracy recorded honestly; 13 corrections applied (targeted class confirmed: missed co-protection) -> harm 75% FP 5, TOTAL 336/436 = 77%. Annotation layer works but its accuracy is below the 0.85 bulk floor — full-audit-or-refine queued before any registration leans on it\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 1a1653929055874a2620da41584c2303e70e84e7\nordinal 374\ndate 2026-08-18 22:12:46 -0700\nauthor Matt Stults\nsubject protects audit (blind, 8 targeted + 25 random): 43/56 = 0.77 accuracy recorded honestly; 13 corrections applied (targeted class confirmed: missed co-protection) -> harm 75% FP 5, TOTAL 336/436 = 77%. Annotation layer works but its accuracy is below the 0.85 bulk floor \u2014 full-audit-or-refine queued before any registration leans on it\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -62,7 +63,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7807-7815",
-   "text": "commit 57cdb3c0f5de2a87ce0cec8d44b9aa5bf808ff7a\nordinal 376\ndate 2026-08-19 09:55:45 -0700\nauthor Matt Stults\nsubject permit-inheritance RULING: rejected (option 2) per agreed decision rule — opt3 act-matched failed its survival bar (113/154 FP8 FN33 vs opt1 113 FP9 FN32 vs strict 112 FP6 FN36); strict span-grounded wall stands, 4 permit FNs remain named E1 deviations; alternatives rejected by name with measurements; instrument now frozen for fresh-draw prereg draft\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 57cdb3c0f5de2a87ce0cec8d44b9aa5bf808ff7a\nordinal 376\ndate 2026-08-19 09:55:45 -0700\nauthor Matt Stults\nsubject permit-inheritance RULING: rejected (option 2) per agreed decision rule \u2014 opt3 act-matched failed its survival bar (113/154 FP8 FN33 vs opt1 113 FP9 FN32 vs strict 112 FP6 FN36); strict span-grounded wall stands, 4 permit FNs remain named E1 deviations; alternatives rejected by name with measurements; instrument now frozen for fresh-draw prereg draft\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -86,7 +87,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7834-7842",
-   "text": "commit 60bf25892f5a0d6aee55c82769900215465f09b3\nordinal 379\ndate 2026-08-19 10:32:51 -0700\nauthor Matt Stults\nsubject fresh-draw helpfulness SCORED ONCE per signed prereg 28a30a27: F1 FIRED — engaged precision 23/40=0.57 vs band 0.74-0.90 (decline-correctness 0.70 in band; truth tier clean: 0/16 panel splits, 0/16 overturns). Gate NOT certified; campaign stopped per protocol (harm/caution batches not run). 25-pt generalization gap vs adjudicated-set precision 0.82 recorded honestly — the fresh draw did exactly its job\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 60bf25892f5a0d6aee55c82769900215465f09b3\nordinal 379\ndate 2026-08-19 10:32:51 -0700\nauthor Matt Stults\nsubject fresh-draw helpfulness SCORED ONCE per signed prereg 28a30a27: F1 FIRED \u2014 engaged precision 23/40=0.57 vs band 0.74-0.90 (decline-correctness 0.70 in band; truth tier clean: 0/16 panel splits, 0/16 overturns). Gate NOT certified; campaign stopped per protocol (harm/caution batches not run). 25-pt generalization gap vs adjudicated-set precision 0.82 recorded honestly \u2014 the fresh draw did exactly its job\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -94,7 +95,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7843-7851",
-   "text": "commit b453cb8c77d8c711a93135a71bd8733127d77271\nordinal 380\ndate 2026-08-19 10:42:54 -0700\nauthor Matt Stults\nsubject FP dimension census: norm-signature closure CONFIRMED — 74/75 observed false engagements across 3 behaviors decompose into (act, actor, protects, governs-aspect, scope, authority, force); governs-aspect is the dominant lever (40/58 + all 17 fresh-draw FPs); 1 truth-suspect flagged (l797_830_n007 harm); schema is derivable a priori per Matt's requirement, known failures used only as the check\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit b453cb8c77d8c711a93135a71bd8733127d77271\nordinal 380\ndate 2026-08-19 10:42:54 -0700\nauthor Matt Stults\nsubject FP dimension census: norm-signature closure CONFIRMED \u2014 74/75 observed false engagements across 3 behaviors decompose into (act, actor, protects, governs-aspect, scope, authority, force); governs-aspect is the dominant lever (40/58 + all 17 fresh-draw FPs); 1 truth-suspect flagged (l797_830_n007 harm); schema is derivable a priori per Matt's requirement, known failures used only as the check\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -102,7 +103,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7852-7860",
-   "text": "commit 5d0fc8a5cdd697b8779fd96e3279e64178bb4922\nordinal 381\ndate 2026-08-19 10:46:28 -0700\nauthor Matt Stults\nsubject contract §8 NORM SIGNATURE + HANDOFF gate block updated per Matt's ruling (happens for every document): a priori signature tuple, mined governs vocabulary, escalation annotation protocol with measured tier evidence, behavior-free mutation-probe certification\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 5d0fc8a5cdd697b8779fd96e3279e64178bb4922\nordinal 381\ndate 2026-08-19 10:46:28 -0700\nauthor Matt Stults\nsubject contract \u00a78 NORM SIGNATURE + HANDOFF gate block updated per Matt's ruling (happens for every document): a priori signature tuple, mined governs vocabulary, escalation annotation protocol with measured tier evidence, behavior-free mutation-probe certification\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -110,7 +111,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7861-7869",
-   "text": "commit 49e2857e89e23e0051daba3182e6f5751beeaaa2\nordinal 382\ndate 2026-08-19 11:08:07 -0700\nauthor Matt Stults\nsubject annex-vs-retranslate RULING (Matt, cost-conditional): annexation measured ~1 day + <$0.5 + ~1.6M session tokens per layer vs retranslation invalidating 436-node truth (multi-session re-adjudication); condition satisfied by an order of magnitude — recorded with revisit trigger. Also: signature calibration PASSED (pipeline 10/10 incl. n013 3-0 panel revision), agreed-set Fable spot-check pre-registered (seed 20260819, n=100, floor 0.85), dispatch_core batch-mode pointer added to contract §8\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 49e2857e89e23e0051daba3182e6f5751beeaaa2\nordinal 382\ndate 2026-08-19 11:08:07 -0700\nauthor Matt Stults\nsubject annex-vs-retranslate RULING (Matt, cost-conditional): annexation measured ~1 day + <$0.5 + ~1.6M session tokens per layer vs retranslation invalidating 436-node truth (multi-session re-adjudication); condition satisfied by an order of magnitude \u2014 recorded with revisit trigger. Also: signature calibration PASSED (pipeline 10/10 incl. n013 3-0 panel revision), agreed-set Fable spot-check pre-registered (seed 20260819, n=100, floor 0.85), dispatch_core batch-mode pointer added to contract \u00a78\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -118,7 +119,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7870-7878",
-   "text": "commit 44a1e132e04e36afe613b245739e214df89a091d\nordinal 383\ndate 2026-08-19 11:25:50 -0700\nauthor Matt Stults\nsubject signature layer COMPLETE, fully frontier after pre-registered spot-check FAILED (78/100=0.78 < 0.85; shared cheap-seat safety_of_manner bias invisible to disagreement trigger; authority flag alone 0.97) -> pre-registered remedy executed: full escalation, 985/985 Fable-labeled with provenance; contract §8 updated to PER-FIELD seat validation with measured evidence; layer record carries the whole arc\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 44a1e132e04e36afe613b245739e214df89a091d\nordinal 383\ndate 2026-08-19 11:25:50 -0700\nauthor Matt Stults\nsubject signature layer COMPLETE, fully frontier after pre-registered spot-check FAILED (78/100=0.78 < 0.85; shared cheap-seat safety_of_manner bias invisible to disagreement trigger; authority flag alone 0.97) -> pre-registered remedy executed: full escalation, 985/985 Fable-labeled with provenance; contract \u00a78 updated to PER-FIELD seat validation with measured evidence; layer record carries the whole arc\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -126,7 +127,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "7879-7887",
-   "text": "commit ce1ac7be1590dba1eb644e7401bfad4b994c056a\nordinal 384\ndate 2026-08-19 11:28:38 -0700\nauthor Matt Stults\nsubject step 3a: signature walls wired (relevance_by_act.signature_ok — unconditional authority_plumbing exclusion + per-behavior governs_concern) and TUNED as modules_contract_v12: exclusion-shaped declarations (inclusion-shaped measured to collapse recall, help FN 20->79, rejected); tuning numbers help 180/237 FP35, harm 113/154 FP5, caution 97/125 FP23 (byte-stable x2, 22 tests pass); certification deferred to round-2 fresh draw per record\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit ce1ac7be1590dba1eb644e7401bfad4b994c056a\nordinal 384\ndate 2026-08-19 11:28:38 -0700\nauthor Matt Stults\nsubject step 3a: signature walls wired (relevance_by_act.signature_ok \u2014 unconditional authority_plumbing exclusion + per-behavior governs_concern) and TUNED as modules_contract_v12: exclusion-shaped declarations (inclusion-shaped measured to collapse recall, help FN 20->79, rejected); tuning numbers help 180/237 FP35, harm 113/154 FP5, caution 97/125 FP23 (byte-stable x2, 22 tests pass); certification deferred to round-2 fresh draw per record\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log"
   }
  ]

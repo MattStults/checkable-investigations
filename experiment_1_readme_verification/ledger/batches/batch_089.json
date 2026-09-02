@@ -2,11 +2,12 @@
  "header": {
   "batch": "batch_089",
   "source_class": "git_log",
-  "brief_version": "0.5",
-  "glossary_version": "frozen d887fb9",
+  "brief_version": "0.7",
+  "glossary_version": "frozen aa3da29 +G-06",
   "spans": 15,
   "first_span": "S01526",
-  "last_span": "S01540"
+  "last_span": "S01540",
+  "note": "header refreshed for brief v0.7 (D-09) before translation"
  },
  "spans": [
   {
@@ -14,7 +15,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8767-8774",
-   "text": "commit e017d96efb90f21c23935800013dd9748bfd12ac\nordinal 490\ndate 2026-08-22 17:36:15 -0700\nauthor Matt Stults\nsubject packets re-review resolution: R1 stale files regenerated against current draws (membership drift 68 nodes; set-equality added to the leak-check; proportionate-risk swap omission recorded); R2 seed moved out of seat-facing files — base seed 20260823 + per-file index registered in prereg addendum 4 + protocol, dispatch rule written (seat receives only the prompt string); all seven files regenerated and verified (set-equal to draws, no engaged-first order, no seed in headers)\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "text": "commit e017d96efb90f21c23935800013dd9748bfd12ac\nordinal 490\ndate 2026-08-22 17:36:15 -0700\nauthor Matt Stults\nsubject packets re-review resolution: R1 stale files regenerated against current draws (membership drift 68 nodes; set-equality added to the leak-check; proportionate-risk swap omission recorded); R2 seed moved out of seat-facing files \u2014 base seed 20260823 + per-file index registered in prereg addendum 4 + protocol, dispatch rule written (seat receives only the prompt string); all seven files regenerated and verified (set-equal to draws, no engaged-first order, no seed in headers)\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -32,7 +33,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8783-8790",
-   "text": "commit c9a79ab22ce4b387007dcb456688f7634baca10e\nordinal 492\ndate 2026-08-22 17:41:13 -0700\nauthor Matt Stults\nsubject brief ledger FINAL: packets lane CLEAR on round 3 — review coverage complete (census CLEAR/4, mint CLEAR-WITH-NITS/2, six module builds CLEAR-WITH-NITS, 9b design+fixes resolved, draws/arithmetic CLEAR-WITH-NITS/2, packets CLEAR/3); pipeline staged and reviewed for Sunday\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "text": "commit c9a79ab22ce4b387007dcb456688f7634baca10e\nordinal 492\ndate 2026-08-22 17:41:13 -0700\nauthor Matt Stults\nsubject brief ledger FINAL: packets lane CLEAR on round 3 \u2014 review coverage complete (census CLEAR/4, mint CLEAR-WITH-NITS/2, six module builds CLEAR-WITH-NITS, 9b design+fixes resolved, draws/arithmetic CLEAR-WITH-NITS/2, packets CLEAR/3); pipeline staged and reviewed for Sunday\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -41,7 +42,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8791-8815",
-   "text": "commit 591a5b4e8dc48560eb256085b50348b2618a1bd6\nordinal 493\ndate 2026-08-24 10:59:42 -0700\nauthor Matt Stults\nsubject top-review verdict recorded + gate met: CLEAR-WITH-NITS, batch cleared for dispatch\nALARMING-1 resolved BEFORE dispatch (Matt: 'Do it'): OUTCOME BRANCHES section\nappended to DEFENSIBILITY_BATCH_PROTOCOL.md — charter-negative-after-rescue is\nFINAL rejection (no re-adjudication, no widened batch), rescued-rejected-delta\nadoption pre-declared as a foreseen outcome of the pre-frozen per-delta rule\n(25/29 rows belong to rejected deltas: trust 9, P&R 12, EA 4), NO SECOND BATCH\nclause, implicit-branch alternative rejected by name. Brief §2 stale\n'pairwise disjoint' lemma fixed by erratum note (bb6d7bab commit message\ncarries it immutably; the note is its erratum) + positive-marginal framing\ncorrected. 9B FINDING 2 framing note: marginal criterion is post-hoc\nconfirmatory, selection forced by the pre-frozen per-delta adoption rule.\nBuild-spec naming note: review-finding F1 vs prereg falsifier F1\ndisambiguated for the fix ledger. TOP-REVIEW ledger row added: verdict,\nattack-target results (seam HOLDS, strata no-mechanism, packets recomputed\nset-equal/shuffled/seedless), claim-trace corrections (M2 record pointer,\n36-vs-14 test count), reviewer-independence caveat on record.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 591a5b4e8dc48560eb256085b50348b2618a1bd6\nordinal 493\ndate 2026-08-24 10:59:42 -0700\nauthor Matt Stults\nsubject top-review verdict recorded + gate met: CLEAR-WITH-NITS, batch cleared for dispatch\nALARMING-1 resolved BEFORE dispatch (Matt: 'Do it'): OUTCOME BRANCHES section\nappended to DEFENSIBILITY_BATCH_PROTOCOL.md \u2014 charter-negative-after-rescue is\nFINAL rejection (no re-adjudication, no widened batch), rescued-rejected-delta\nadoption pre-declared as a foreseen outcome of the pre-frozen per-delta rule\n(25/29 rows belong to rejected deltas: trust 9, P&R 12, EA 4), NO SECOND BATCH\nclause, implicit-branch alternative rejected by name. Brief \u00a72 stale\n'pairwise disjoint' lemma fixed by erratum note (bb6d7bab commit message\ncarries it immutably; the note is its erratum) + positive-marginal framing\ncorrected. 9B FINDING 2 framing note: marginal criterion is post-hoc\nconfirmatory, selection forced by the pre-frozen per-delta adoption rule.\nBuild-spec naming note: review-finding F1 vs prereg falsifier F1\ndisambiguated for the fix ledger. TOP-REVIEW ledger row added: verdict,\nattack-target results (seam HOLDS, strata no-mechanism, packets recomputed\nset-equal/shuffled/seedless), claim-trace corrections (M2 record pointer,\n36-vs-14 test count), reviewer-independence caveat on record.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -50,7 +51,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8816-8834",
-   "text": "commit 6db9ca4b1d1c67f7a9672ec81571c4f3a94f15c2\nordinal 494\ndate 2026-08-24 11:00:56 -0700\nauthor Matt Stults\nsubject defensibility batch dispatch-ready: seat file + panel rule registered pre-dispatch\ndefensibility_dispatch.txt = 29 numbered prompt strings, generated\ndeterministically from the committed shuffled packets — the ONLY seat\nmaterial (no node routing beyond the in-prompt passage locator the packets\nreview cleared, no seed, no delta). Panel operationalization registered in\nthe protocol BEFORE dispatch: per-row sha256 sampler at the already-\nregistered batch seed 20260829 (base+6), rate 0.2 -> paneled rows 2, 4, 8,\n11 (rate sampler, kept as drawn); three fresh-session instances each,\nmajority supersedes; seat never learns which rows are paneled. Generator\ncommitted for regeneration.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 6db9ca4b1d1c67f7a9672ec81571c4f3a94f15c2\nordinal 494\ndate 2026-08-24 11:00:56 -0700\nauthor Matt Stults\nsubject defensibility batch dispatch-ready: seat file + panel rule registered pre-dispatch\ndefensibility_dispatch.txt = 29 numbered prompt strings, generated\ndeterministically from the committed shuffled packets \u2014 the ONLY seat\nmaterial (no node routing beyond the in-prompt passage locator the packets\nreview cleared, no seed, no delta). Panel operationalization registered in\nthe protocol BEFORE dispatch: per-row sha256 sampler at the already-\nregistered batch seed 20260829 (base+6), rate 0.2 -> paneled rows 2, 4, 8,\n11 (rate sampler, kept as drawn); three fresh-session instances each,\nmajority supersedes; seat never learns which rows are paneled. Generator\ncommitted for regeneration.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -68,7 +69,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8844-8862",
-   "text": "commit e543a747f087c971025dca4bcd8741b1992b361b\nordinal 496\ndate 2026-08-24 11:13:36 -0700\nauthor Matt Stults\nsubject defensibility batch EXECUTED + adoption FINAL: one rescue, E 13/2 + HP 3/1 positive, three rejected deltas stay rejected with zero rescues\n37 blind Fable subagent seats (25 singles + 4 unanimous panels), one pass per\nprotocol. 28/29 NOT_RELEVANT; helpfulness::l427_460_n003 RELEVANT (rescued —\nnon-beneficial-engagement clause demarcates genuine user benefit). Charter on\nrescued counts: empowerment 13/2, harm-prevention 3/1 (both POSITIVE); trust\n7/9, P&R 6/12, EA 3/4 (NEGATIVE, finally rejected under the outcome-branches\nclause). ADOPTION FINAL = v19_ADOPT_CANDIDATE unchanged. Directional prior\noverruled on the trust uncertainty family (Fable wins, recorded). Truth\nrescue landed as highest-precedence overlay in truth_all() + pinned test;\nv18 prefixture pin gains the NAMED truth-event carve-out. 37 tests green.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit e543a747f087c971025dca4bcd8741b1992b361b\nordinal 496\ndate 2026-08-24 11:13:36 -0700\nauthor Matt Stults\nsubject defensibility batch EXECUTED + adoption FINAL: one rescue, E 13/2 + HP 3/1 positive, three rejected deltas stay rejected with zero rescues\n37 blind Fable subagent seats (25 singles + 4 unanimous panels), one pass per\nprotocol. 28/29 NOT_RELEVANT; helpfulness::l427_460_n003 RELEVANT (rescued \u2014\nnon-beneficial-engagement clause demarcates genuine user benefit). Charter on\nrescued counts: empowerment 13/2, harm-prevention 3/1 (both POSITIVE); trust\n7/9, P&R 6/12, EA 3/4 (NEGATIVE, finally rejected under the outcome-branches\nclause). ADOPTION FINAL = v19_ADOPT_CANDIDATE unchanged. Directional prior\noverruled on the trust uncertainty family (Fable wins, recorded). Truth\nrescue landed as highest-precedence overlay in truth_all() + pinned test;\nv18 prefixture pin gains the NAMED truth-event carve-out. 37 tests green.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -131,7 +132,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8931-8939",
-   "text": "commit 68504bcfbff369190cecc4741226885e010d3148\nordinal 503\ndate 2026-08-24 12:23:24 -0700\nauthor Matt Stults\nsubject diagnosis CLOSED: lineage seat recovered from transcripts and REPLICATED 20/20 vs ledger (pilot gate had failed both formats 0.70-0.75 — question wording, not packet anatomy, was the judge); rulings-in-repo violation cured (LINEAGE_SEAT_INSTRUCTION.md); erratum E4 re-registers the canary re-run on the recovered venue with lineage bands (0.71-0.87 / 0.61-0.77, round-2-passed) superseding the mis-derived all-truth predictions — awaiting Matt's re-signature\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 68504bcfbff369190cecc4741226885e010d3148\nordinal 503\ndate 2026-08-24 12:23:24 -0700\nauthor Matt Stults\nsubject diagnosis CLOSED: lineage seat recovered from transcripts and REPLICATED 20/20 vs ledger (pilot gate had failed both formats 0.70-0.75 \u2014 question wording, not packet anatomy, was the judge); rulings-in-repo violation cured (LINEAGE_SEAT_INSTRUCTION.md); erratum E4 re-registers the canary re-run on the recovered venue with lineage bands (0.71-0.87 / 0.61-0.77, round-2-passed) superseding the mis-derived all-truth predictions \u2014 awaiting Matt's re-signature\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   },
@@ -140,7 +141,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8940-8948",
-   "text": "commit 54b332681fe8ba5e44d602f13e9fed2e0d6611ad\nordinal 504\ndate 2026-08-24 12:26:05 -0700\nauthor Matt Stults\nsubject E4 signed by Matt ('approved.') + canary re-run wave files built from the committed draw (40+40 in registered shuffled order, 19-node panel file; 2 corpus-absent nodes source-only, disclosed) — committed before dispatch\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "text": "commit 54b332681fe8ba5e44d602f13e9fed2e0d6611ad\nordinal 504\ndate 2026-08-24 12:26:05 -0700\nauthor Matt Stults\nsubject E4 signed by Matt ('approved.') + canary re-run wave files built from the committed draw (40+40 in registered shuffled order, 19-node panel file; 2 corpus-absent nodes source-only, disclosed) \u2014 committed before dispatch\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
    "source_class": "git_log",
    "context": null
   }

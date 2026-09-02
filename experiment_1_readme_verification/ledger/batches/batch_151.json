@@ -2,11 +2,12 @@
  "header": {
   "batch": "batch_151",
   "source_class": "git_log",
-  "brief_version": "0.4",
-  "glossary_version": "frozen ",
+  "brief_version": "0.7",
+  "glossary_version": "frozen aa3da29 +G-06",
   "spans": 15,
   "first_span": "S02453",
-  "last_span": "S02467"
+  "last_span": "S02467",
+  "note": "header refreshed for brief v0.7 (D-09) before translation"
  },
  "spans": [
   {
@@ -14,7 +15,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9464-9471",
-   "text": "commit b99dd1a45b670059e66e56f191e82a6a6d77c222\nordinal 565\ndate 2026-08-24 18:02:30 -0700\nauthor Matt Stults\nsubject Notes 0009: attempt-3 stop condition — P1 fired on an estimator with zero move-coverage (registration error recorded, runbook rule drafted); seat-noise measured (4/7 vs ledger, two panel-tier contradictions); options surfaced for Matt's ruling, nothing executed.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit b99dd1a45b670059e66e56f191e82a6a6d77c222\nordinal 565\ndate 2026-08-24 18:02:30 -0700\nauthor Matt Stults\nsubject Notes 0009: attempt-3 stop condition \u2014 P1 fired on an estimator with zero move-coverage (registration error recorded, runbook rule drafted); seat-noise measured (4/7 vs ledger, two panel-tier contradictions); options surfaced for Matt's ruling, nothing executed.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -22,7 +23,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9472-9479",
-   "text": "commit 45c60f7390fab209e0b4f947b03101fd01660c93\nordinal 566\ndate 2026-08-24 18:10:01 -0700\nauthor Matt Stults\nsubject VOID-FOR-COVERAGE RULING (Matt) + RE-MEASUREMENT PREREG, committed before any new ruling exists: attempt-3's P1 voided on the result-blind coverage criterion (0/16 gains sampled; driver's registration error named); binding coverage rule for all future V5 registrations; re-measurement = NO new draws — full-extension move gate (16 nodes, threshold 0.60), uniform panel tier over the 62 wave-only nodes of both frozen draws (both verdict directions), raw-vs-panel reporting, seeded 13-node Fable spot-check with >=3/13 halt tripwire, single execution, results final. Scorer committed pre-rulings.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 45c60f7390fab209e0b4f947b03101fd01660c93\nordinal 566\ndate 2026-08-24 18:10:01 -0700\nauthor Matt Stults\nsubject VOID-FOR-COVERAGE RULING (Matt) + RE-MEASUREMENT PREREG, committed before any new ruling exists: attempt-3's P1 voided on the result-blind coverage criterion (0/16 gains sampled; driver's registration error named); binding coverage rule for all future V5 registrations; re-measurement = NO new draws \u2014 full-extension move gate (16 nodes, threshold 0.60), uniform panel tier over the 62 wave-only nodes of both frozen draws (both verdict directions), raw-vs-panel reporting, seeded 13-node Fable spot-check with >=3/13 halt tripwire, single execution, results final. Scorer committed pre-rulings.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -30,7 +31,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9480-9487",
-   "text": "commit f8371d0902067fd96e0048799734bc88d067c875\nordinal 567\ndate 2026-08-24 18:13:09 -0700\nauthor Matt Stults\nsubject RE-MEASUREMENT EXECUTED AND FINAL (one shot, per the void ruling prereg): MOVE GATE STANDS — 0.875 panel-tier precision over the full 16-node extension (14/16 relevant); no revert. Spot-check tripwire not fired (2/13 Fable-Opus disagreements; certificate holds). Frozen draws at uniform panel tier: attempt-2 raw 0.75 -> panel 0.70; attempt-3 raw 0.40 -> panel 0.55 (the attempt-3 wave seat's strictness bias confirmed and corrected); decline correctness 0.50/0.35 at panel tier — the module still under-engages a sizable relevant mass (the characterized provide/definitional reach classes). These numbers are FINAL; surviving mismatches route to the ordinary queue.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit f8371d0902067fd96e0048799734bc88d067c875\nordinal 567\ndate 2026-08-24 18:13:09 -0700\nauthor Matt Stults\nsubject RE-MEASUREMENT EXECUTED AND FINAL (one shot, per the void ruling prereg): MOVE GATE STANDS \u2014 0.875 panel-tier precision over the full 16-node extension (14/16 relevant); no revert. Spot-check tripwire not fired (2/13 Fable-Opus disagreements; certificate holds). Frozen draws at uniform panel tier: attempt-2 raw 0.75 -> panel 0.70; attempt-3 raw 0.40 -> panel 0.55 (the attempt-3 wave seat's strictness bias confirmed and corrected); decline correctness 0.50/0.35 at panel tier \u2014 the module still under-engages a sizable relevant mass (the characterized provide/definitional reach classes). These numbers are FINAL; surviving mismatches route to the ordinary queue.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -38,7 +39,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9488-9495",
-   "text": "commit ecfe8c4d1fc34a359a663268adc0c61644321c27\nordinal 568\ndate 2026-08-24 18:13:54 -0700\nauthor Matt Stults\nsubject Notes 0010: re-measurement final — move stands 0.875 full-extension; attempts at uniform panel tier (0.70 / 0.55, pooled 0.605); recall identified as the honest headline (23/40 declined nodes panel-relevant); l3239_3382_n005 panel-vs-panel contradiction flagged for a panel-of-record; final 15-FP + 23-FN queue recorded.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit ecfe8c4d1fc34a359a663268adc0c61644321c27\nordinal 568\ndate 2026-08-24 18:13:54 -0700\nauthor Matt Stults\nsubject Notes 0010: re-measurement final \u2014 move stands 0.875 full-extension; attempts at uniform panel tier (0.70 / 0.55, pooled 0.605); recall identified as the honest headline (23/40 declined nodes panel-relevant); l3239_3382_n005 panel-vs-panel contradiction flagged for a panel-of-record; final 15-FP + 23-FN queue recorded.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -46,7 +47,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9496-9503",
-   "text": "commit 4b9b7fa9d798eab48238bd766ef467cd439a03cd\nordinal 569\ndate 2026-08-24 18:14:14 -0700\nauthor Matt Stults\nsubject HANDOFF entry point: iterations 1-2 + re-measurement complete — final numbers, kept moves, process events for blog post 3, and the next-session queue (runbook rewrite, panel-of-record contradictions, 15-FP/23-FN routing, tooling support).\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 4b9b7fa9d798eab48238bd766ef467cd439a03cd\nordinal 569\ndate 2026-08-24 18:14:14 -0700\nauthor Matt Stults\nsubject HANDOFF entry point: iterations 1-2 + re-measurement complete \u2014 final numbers, kept moves, process events for blog post 3, and the next-session queue (runbook rewrite, panel-of-record contradictions, 15-FP/23-FN routing, tooling support).\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -54,7 +55,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9504-9511",
-   "text": "commit cd451d2ca69be43a4d92001c390e47b2ccea8213\nordinal 570\ndate 2026-08-24 18:24:07 -0700\nauthor Matt Stults\nsubject Matt ruling executed: DEFENSIBLE-BY-CONTRADICTION — opposing unanimous panels are themselves the defensibility certificate (zero seats); n005 credited in the match-or-defensible view (pooled 0.632) appended to the scored artifact without touching registered finals; panel-of-record queue item closed; n002 stays contested (does not qualify). Notes 0011.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit cd451d2ca69be43a4d92001c390e47b2ccea8213\nordinal 570\ndate 2026-08-24 18:24:07 -0700\nauthor Matt Stults\nsubject Matt ruling executed: DEFENSIBLE-BY-CONTRADICTION \u2014 opposing unanimous panels are themselves the defensibility certificate (zero seats); n005 credited in the match-or-defensible view (pooled 0.632) appended to the scored artifact without touching registered finals; panel-of-record queue item closed; n002 stays contested (does not qualify). Notes 0011.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -62,7 +63,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9512-9519",
-   "text": "commit 8064c6e8486622a592895c2df23bd32b0eebee39\nordinal 571\ndate 2026-08-24 18:28:48 -0700\nauthor Matt Stults\nsubject ITERATION 3 opened: routed queue (14 FP + 20 FN, all panel-tier, refiltered against the current module — 3 FNs confirmed resolved by the kept iter-2 move) routes C-I(I3); MINT_ARBITRATES_PREREG_DRAFT — a per-assert ARBITRATES mark serving both precision (wall) and recall (additive channel), blind criteria with calibration cases incl. the concessive-norm hard boundary, M1-M4 gates, coverage-rule-compliant V5 plan, Fable attempt-4 headline. DRAFT: awaiting Matt's P3 signature before any annotation runs. Notes 0012.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 8064c6e8486622a592895c2df23bd32b0eebee39\nordinal 571\ndate 2026-08-24 18:28:48 -0700\nauthor Matt Stults\nsubject ITERATION 3 opened: routed queue (14 FP + 20 FN, all panel-tier, refiltered against the current module \u2014 3 FNs confirmed resolved by the kept iter-2 move) routes C-I(I3); MINT_ARBITRATES_PREREG_DRAFT \u2014 a per-assert ARBITRATES mark serving both precision (wall) and recall (additive channel), blind criteria with calibration cases incl. the concessive-norm hard boundary, M1-M4 gates, coverage-rule-compliant V5 plan, Fable attempt-4 headline. DRAFT: awaiting Matt's P3 signature before any annotation runs. Notes 0012.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -70,7 +71,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9520-9527",
-   "text": "commit d8d2eef1f38c2593f7bebd5276b4934d78c989e1\nordinal 572\ndate 2026-08-24 18:33:02 -0700\nauthor Matt Stults\nsubject MINT-ARB calibration test pre-dispatch (Matt's requirement: measure the brief before signing): 54-node blind packet (criteria text + ESTABLISHES claims only, families hidden, shuffle 20260839) + answer key with pre-stated thresholds (stability >= 0.80 pairwise; separation >= 0.70 relevant-side / <= 0.30 not-relevant-side). Diagnostic only — nothing adopts; results feed the signature decision.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit d8d2eef1f38c2593f7bebd5276b4934d78c989e1\nordinal 572\ndate 2026-08-24 18:33:02 -0700\nauthor Matt Stults\nsubject MINT-ARB calibration test pre-dispatch (Matt's requirement: measure the brief before signing): 54-node blind packet (criteria text + ESTABLISHES claims only, families hidden, shuffle 20260839) + answer key with pre-stated thresholds (stability >= 0.80 pairwise; separation >= 0.70 relevant-side / <= 0.30 not-relevant-side). Diagnostic only \u2014 nothing adopts; results feed the signature decision.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -78,7 +79,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9528-9535",
-   "text": "commit 289992df89a334af3ce16f1e29b78d29c2b630d7\nordinal 573\ndate 2026-08-24 18:38:54 -0700\nauthor Matt Stults\nsubject MINT-ARB SIGNED SCOPED (Matt, 2026-08-24): calibration measured first per his requirement — stability 0.926 PASS, separation 3/4 gates (FP 0.14, TN 0.20, TP 0.80 pass; FN 0.60 fail) — signature scoped to measured coverage: ~12 FP + ~12 FN fixes expected, the 8 structure-less FNs become a new characterized SUSPENDED-OPEN class with broadening rejected by name; ledger watch on the thrice-flagged n002 and n018. Calibration seats + score committed.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit 289992df89a334af3ce16f1e29b78d29c2b630d7\nordinal 573\ndate 2026-08-24 18:38:54 -0700\nauthor Matt Stults\nsubject MINT-ARB SIGNED SCOPED (Matt, 2026-08-24): calibration measured first per his requirement \u2014 stability 0.926 PASS, separation 3/4 gates (FP 0.14, TN 0.20, TP 0.80 pass; FN 0.60 fail) \u2014 signature scoped to measured coverage: ~12 FP + ~12 FN fixes expected, the 8 structure-less FNs become a new characterized SUSPENDED-OPEN class with broadening rejected by name; ledger watch on the thrice-flagged n002 and n018. Calibration seats + score committed.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -110,7 +111,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9560-9567",
-   "text": "commit b8ac64988fd1b993da73cdd7bb840124ea1c7ba2\nordinal 577\ndate 2026-08-24 19:24:40 -0700\nauthor Matt Stults\nsubject ITERATION 3: consumption moves validated INDIVIDUALLY per the machine (driver erratum recorded: this was wrongly escalated as a scope question) — arbitrates_wall KILLED mechanically on V4 flip content (8 panel-relevant disengagements; charter 24/12 irrelevant per the codified radicalization rule; A1 ledger closure), arbitrates_channel ADOPTED pending V5 (8/4/0; all 4 new FPs carry standing panel truth, V4 discharged on record). Final marks layer (283, dispute panel majorities folded, 9/43 splits) + r4 contract (channel-only).\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit b8ac64988fd1b993da73cdd7bb840124ea1c7ba2\nordinal 577\ndate 2026-08-24 19:24:40 -0700\nauthor Matt Stults\nsubject ITERATION 3: consumption moves validated INDIVIDUALLY per the machine (driver erratum recorded: this was wrongly escalated as a scope question) \u2014 arbitrates_wall KILLED mechanically on V4 flip content (8 panel-relevant disengagements; charter 24/12 irrelevant per the codified radicalization rule; A1 ledger closure), arbitrates_channel ADOPTED pending V5 (8/4/0; all 4 new FPs carry standing panel truth, V4 discharged on record). Final marks layer (283, dispute panel majorities folded, 9/43 splits) + r4 contract (channel-only).\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -126,7 +127,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "9576-9583",
-   "text": "commit e6db88e5be14648b974b6b0ee5fceebf7d9378fd\nordinal 579\ndate 2026-08-24 19:30:02 -0700\nauthor Matt Stults\nsubject ITERATION 3 STEP 4 pre-dispatch: V5 registered (P1 >=0.55 revert line, P3 move gate on 14 measured extension nodes — coverage rule satisfied: 9 drawn gains + 5-node probe), draw seed 20260826 (r4 pools 393/369), all packets committed under registered seeds; venue = certified Opus + two Fable spot-checks per A10 Q3.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "text": "commit e6db88e5be14648b974b6b0ee5fceebf7d9378fd\nordinal 579\ndate 2026-08-24 19:30:02 -0700\nauthor Matt Stults\nsubject ITERATION 3 STEP 4 pre-dispatch: V5 registered (P1 >=0.55 revert line, P3 move gate on 14 measured extension nodes \u2014 coverage rule satisfied: 9 drawn gains + 5-node probe), draw seed 20260826 (r4 pools 393/369), all packets committed under registered seeds; venue = certified Opus + two Fable spot-checks per A10 Q3.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
    "source_class": "git_log"
   }
  ]

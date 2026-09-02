@@ -2,11 +2,12 @@
  "header": {
   "batch": "batch_143",
   "source_class": "git_log",
-  "brief_version": "0.4",
-  "glossary_version": "frozen ",
+  "brief_version": "0.7",
+  "glossary_version": "frozen aa3da29 +G-06",
   "spans": 15,
   "first_span": "S02333",
-  "last_span": "S02347"
+  "last_span": "S02347",
+  "note": "header refreshed for brief v0.7 (D-09) before translation"
  },
  "spans": [
   {
@@ -14,7 +15,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8421-8428",
-   "text": "commit 0c70dfacd8eeb7d643eb6237f449b5a987e81ae3\nordinal 445\ndate 2026-08-21 13:20:14 -0700\nauthor Matt Stults\nsubject Arc1-b first pass: two-seat blind annotation on 583/762 covered nodes — form_equivalence agreement 0.9895 consensus 10 (M3/M4 pass), exhibit:illustrate agreement 0.9987 consensus 169 (M4 STOP per frozen band O(10-30)); coverage defect disclosed: all 179 unjudged nodes are assert-less example-class nodes incl. 22 census mismatches and collider l831_1000_n001 — M2 not evaluable on harm collider; nothing adopted; assembly marked PARTIAL; M4 revision ruling requested in prereg addendum 1\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "text": "commit 0c70dfacd8eeb7d643eb6237f449b5a987e81ae3\nordinal 445\ndate 2026-08-21 13:20:14 -0700\nauthor Matt Stults\nsubject Arc1-b first pass: two-seat blind annotation on 583/762 covered nodes \u2014 form_equivalence agreement 0.9895 consensus 10 (M3/M4 pass), exhibit:illustrate agreement 0.9987 consensus 169 (M4 STOP per frozen band O(10-30)); coverage defect disclosed: all 179 unjudged nodes are assert-less example-class nodes incl. 22 census mismatches and collider l831_1000_n001 \u2014 M2 not evaluable on harm collider; nothing adopted; assembly marked PARTIAL; M4 revision ruling requested in prereg addendum 1\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -22,7 +23,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8429-8436",
-   "text": "commit 19f161aac199defd7ecfb4493ae03f8810b5852a\nordinal 446\ndate 2026-08-21 15:39:21 -0700\nauthor Matt Stults\nsubject Arc1-b extension: M4 revision signed by Matt (pathology = seat disagreement or incoherent quotes, not count); 179 packets built for the unjudged assert-less nodes — 172 from node_corpus_all.json (the canonical full-corpus packet source, same format as the context lane), 7 from later graph builds (frontier-repair era, resolved by graph scan); four extension seats dispatched on ctx_ext1-3\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "text": "commit 19f161aac199defd7ecfb4493ae03f8810b5852a\nordinal 446\ndate 2026-08-21 15:39:21 -0700\nauthor Matt Stults\nsubject Arc1-b extension: M4 revision signed by Matt (pathology = seat disagreement or incoherent quotes, not count); 179 packets built for the unjudged assert-less nodes \u2014 172 from node_corpus_all.json (the canonical full-corpus packet source, same format as the context lane), 7 from later graph builds (frontier-repair era, resolved by graph scan); four extension seats dispatched on ctx_ext1-3\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -30,7 +31,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8437-8443",
-   "text": "commit 4a83679e4b3be97e35ce10181840c1ab11fdf685\nordinal 447\ndate 2026-08-21 15:47:32 -0700\nauthor Matt Stults\nsubject Arc1-e correction 3 (re-review round 2 resolved): scope ruling recorded — CURRENT = frozen instrument PER BEHAVIOR (dead slots masked: contexts always, protects/purposes unless declared), REACHABLE = design space (all declarable slots + consensus atoms); third false SEPARABLE reclassified (harm::l1542_1706_n006, separated only by the inert contexts slot); 12 addressable_by_declaration rows surfaced as 9b's design signal; standing dead-slot probe test codified (the reviewer's meta-criterion); E1 corrected to 7 CURRENT + 1 design-space-only with disclosure; denominator erratum (2 of 140); rejected alternative named in addendum 3; 34 tests green\n\n----END----",
+   "text": "commit 4a83679e4b3be97e35ce10181840c1ab11fdf685\nordinal 447\ndate 2026-08-21 15:47:32 -0700\nauthor Matt Stults\nsubject Arc1-e correction 3 (re-review round 2 resolved): scope ruling recorded \u2014 CURRENT = frozen instrument PER BEHAVIOR (dead slots masked: contexts always, protects/purposes unless declared), REACHABLE = design space (all declarable slots + consensus atoms); third false SEPARABLE reclassified (harm::l1542_1706_n006, separated only by the inert contexts slot); 12 addressable_by_declaration rows surfaced as 9b's design signal; standing dead-slot probe test codified (the reviewer's meta-criterion); E1 corrected to 7 CURRENT + 1 design-space-only with disclosure; denominator erratum (2 of 140); rejected alternative named in addendum 3; 34 tests green\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -38,7 +39,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8444-8450",
-   "text": "commit 9bc1cd9aa9b59e32d1fb499dbb315065dbd29ce1\nordinal 448\ndate 2026-08-21 15:50:24 -0700\nauthor Matt Stults\nsubject Arc1-b extension sanitization: all four extension seats rejected by provider input inspection (the 179-node extension set concentrates the document's prohibited-content examples); ruling recorded — both criteria judge FORM only, so 15 flagged nodes annotated on category-label-sanitized text with structure untouched; manifest + sanitized chunks committed; human-seat fallback kept as named contingency\n\n----END----",
+   "text": "commit 9bc1cd9aa9b59e32d1fb499dbb315065dbd29ce1\nordinal 448\ndate 2026-08-21 15:50:24 -0700\nauthor Matt Stults\nsubject Arc1-b extension sanitization: all four extension seats rejected by provider input inspection (the 179-node extension set concentrates the document's prohibited-content examples); ruling recorded \u2014 both criteria judge FORM only, so 15 flagged nodes annotated on category-label-sanitized text with structure untouched; manifest + sanitized chunks committed; human-seat fallback kept as named contingency\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -46,7 +47,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8451-8457",
-   "text": "commit 667916d283c2a1d1b3f5fb3107f10e9a4385119d\nordinal 449\ndate 2026-08-21 15:53:34 -0700\nauthor Matt Stults\nsubject Arc1-b extension: sanitization insufficient (inspection reads context around labels; v2 screen had dropped minors/gore/violence) — contingency activated: 15 hot nodes carved out to a human seat (Matt; packet committed with both criteria and answer format), four seats re-dispatched on 164-node clean chunks raw; sanitized outputs discarded if any survive; consensus rule for hot nodes = human judgment + mechanical structure screen as second blind signal\n\n----END----",
+   "text": "commit 667916d283c2a1d1b3f5fb3107f10e9a4385119d\nordinal 449\ndate 2026-08-21 15:53:34 -0700\nauthor Matt Stults\nsubject Arc1-b extension: sanitization insufficient (inspection reads context around labels; v2 screen had dropped minors/gore/violence) \u2014 contingency activated: 15 hot nodes carved out to a human seat (Matt; packet committed with both criteria and answer format), four seats re-dispatched on 164-node clean chunks raw; sanitized outputs discarded if any survive; consensus rule for hot nodes = human judgment + mechanical structure screen as second blind signal\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -54,7 +55,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8458-8465",
-   "text": "commit 7bff7accac0a93ba8c62333021e3a9e1b6569012\nordinal 450\ndate 2026-08-21 15:54:43 -0700\nauthor Matt Stults\nsubject Arc1-b hot-node mechanical structure screen: second blind signal for the human seat, deterministic over source text, built BEFORE any human judgment exists — exhibit signals on 5/15 nodes (incl. collider l831_1000_n001: bold Example label + speaker markup), zero form-equivalence phrase hits on all 15; consensus-presence rule applies at assembly\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "text": "commit 7bff7accac0a93ba8c62333021e3a9e1b6569012\nordinal 450\ndate 2026-08-21 15:54:43 -0700\nauthor Matt Stults\nsubject Arc1-b hot-node mechanical structure screen: second blind signal for the human seat, deterministic over source text, built BEFORE any human judgment exists \u2014 exhibit signals on 5/15 nodes (incl. collider l831_1000_n001: bold Example label + speaker markup), zero form-equivalence phrase hits on all 15; consensus-presence rule applies at assembly\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -62,7 +63,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8466-8472",
-   "text": "commit 0a0681ac79a711bab3156de1dca6743c775ca563\nordinal 451\ndate 2026-08-21 15:56:10 -0700\nauthor Matt Stults\nsubject Arc1-b venue ruling: clean-chunk seats also rejected by provider inspection — the assert-less extension stratum is the document's example layer and no carve/sanitize fixes it without biasing the exhibit criterion; extension annotation moves to the doctrinal venue (two fresh Claude-side sessions per MINT_EXT_SEAT_BRIEF.md, refusal-tolerant, consensus rule unchanged); refused nodes fall back to human packet + mechanical screen; first-pass results stand\n\n----END----",
+   "text": "commit 0a0681ac79a711bab3156de1dca6743c775ca563\nordinal 451\ndate 2026-08-21 15:56:10 -0700\nauthor Matt Stults\nsubject Arc1-b venue ruling: clean-chunk seats also rejected by provider inspection \u2014 the assert-less extension stratum is the document's example layer and no carve/sanitize fixes it without biasing the exhibit criterion; extension annotation moves to the doctrinal venue (two fresh Claude-side sessions per MINT_EXT_SEAT_BRIEF.md, refusal-tolerant, consensus rule unchanged); refused nodes fall back to human packet + mechanical screen; first-pass results stand\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -70,7 +71,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8473-8480",
-   "text": "commit 29e831d5cb51cb023fc2d1d009f2850009d2698d\nordinal 452\ndate 2026-08-21 15:59:30 -0700\nauthor Matt Stults\nsubject Arc1-e round-3 review resolved: dead-slot probe rebuilt with independent ground truth — SLOT_INVENTORY + DEAD_SLOTS_PINNED registration fence, current_mask-vs-pin assertion, pinned-mask verdict re-derivation, and slot-arity handshake so the Arc1-b vector edit fails loud without a reviewed update (the old probe was tautological: dead|{slot}==dead, reviewer mutation-proved it); E1 miscount corrected in place (all 8 E1 separations stand CURRENT-separable; n012 was never an E1 flip — error inherited from the round-2 report, owned in the addendum); n006 addressability clarified as in-principle-only pending the vector extension; 34 tests green\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "text": "commit 29e831d5cb51cb023fc2d1d009f2850009d2698d\nordinal 452\ndate 2026-08-21 15:59:30 -0700\nauthor Matt Stults\nsubject Arc1-e round-3 review resolved: dead-slot probe rebuilt with independent ground truth \u2014 SLOT_INVENTORY + DEAD_SLOTS_PINNED registration fence, current_mask-vs-pin assertion, pinned-mask verdict re-derivation, and slot-arity handshake so the Arc1-b vector edit fails loud without a reviewed update (the old probe was tautological: dead|{slot}==dead, reviewer mutation-proved it); E1 miscount corrected in place (all 8 E1 separations stand CURRENT-separable; n012 was never an E1 flip \u2014 error inherited from the round-2 report, owned in the addendum); n006 addressability clarified as in-principle-only pending the vector extension; 34 tests green\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -78,7 +79,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8481-8488",
-   "text": "commit 3640510e2886347f46060d5c8682282da749a7b8\nordinal 453\ndate 2026-08-21 16:03:45 -0700\nauthor Matt Stults\nsubject Arc1-e closed: adversarial verdict CLEAR (round 4) — census addendum-3 semantics certified, standing pinned probe mutation-verified by the reviewer, 9b cleared to consume the corrected census\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "text": "commit 3640510e2886347f46060d5c8682282da749a7b8\nordinal 453\ndate 2026-08-21 16:03:45 -0700\nauthor Matt Stults\nsubject Arc1-e closed: adversarial verdict CLEAR (round 4) \u2014 census addendum-3 semantics certified, standing pinned probe mutation-verified by the reviewer, 9b cleared to consume the corrected census\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -86,7 +87,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8489-8496",
-   "text": "commit 8e772008cc3189c7b230bf9e16b3041025065ac6\nordinal 454\ndate 2026-08-21 16:10:14 -0700\nauthor Matt Stults\nsubject Arc1-a 9b design round opened: blind discipline recorded (incl. disclosure that the design seat has seen fit predictions — mitigations: document-only citations, blind concerns before arithmetic, adversarial anchoring check); first family justified from the document — PC-1 help+empowerment (objective 1 names helpfulness and empowerment together), PC-2 caution+harm-prevention (insufficient pole defined as harm compliance), PC-3 caution+epistemic-autonomy (justified with reservation); PC-4/PC-5 initial reads weak; context atoms, objectivity conditional, walls, and protects conjunctions queued\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "text": "commit 8e772008cc3189c7b230bf9e16b3041025065ac6\nordinal 454\ndate 2026-08-21 16:10:14 -0700\nauthor Matt Stults\nsubject Arc1-a 9b design round opened: blind discipline recorded (incl. disclosure that the design seat has seen fit predictions \u2014 mitigations: document-only citations, blind concerns before arithmetic, adversarial anchoring check); first family justified from the document \u2014 PC-1 help+empowerment (objective 1 names helpfulness and empowerment together), PC-2 caution+harm-prevention (insufficient pole defined as harm compliance), PC-3 caution+epistemic-autonomy (justified with reservation); PC-4/PC-5 initial reads weak; context atoms, objectivity conditional, walls, and protects conjunctions queued\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -110,7 +111,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8512-8519",
-   "text": "commit 22449448e8a0150dc116e84850d538fadfc6855d\nordinal 457\ndate 2026-08-21 17:09:07 -0700\nauthor Matt Stults\nsubject 9b review resolution (adversarial verdict BLOCKED-on-PC-4 confirmed and fixed): fit-rank disclosure recorded — the five purpose candidates' net fit ran monotone with initial outcomes, obliging symmetric rigor on rejections; PC-4's document-free dismissal falsified by verified citations (L2475-2477, L2576-2578, L475) and redone with real document work -> JUSTIFIED with blind concerns incl. the 100-node breadth count; PC-1 gains the wholesale-switch caveat; PC-3 records the inventory constraint (epistemic-autonomy's natural home is the held-out objectivity principle, L808/L2151); PC-5 overlap concern demoted to triage-only, grounds must be document-side; strengthened standing rule: no instrument-side fact may serve as justification or rejection grounds\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "text": "commit 22449448e8a0150dc116e84850d538fadfc6855d\nordinal 457\ndate 2026-08-21 17:09:07 -0700\nauthor Matt Stults\nsubject 9b review resolution (adversarial verdict BLOCKED-on-PC-4 confirmed and fixed): fit-rank disclosure recorded \u2014 the five purpose candidates' net fit ran monotone with initial outcomes, obliging symmetric rigor on rejections; PC-4's document-free dismissal falsified by verified citations (L2475-2477, L2576-2578, L475) and redone with real document work -> JUSTIFIED with blind concerns incl. the 100-node breadth count; PC-1 gains the wholesale-switch caveat; PC-3 records the inventory constraint (epistemic-autonomy's natural home is the held-out objectivity principle, L808/L2151); PC-5 overlap concern demoted to triage-only, grounds must be document-side; strengthened standing rule: no instrument-side fact may serve as justification or rejection grounds\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
@@ -118,7 +119,7 @@
    "path": "GENERATED:generated/git_log_first_parent.txt",
    "commit": "generated",
    "lines": "8520-8527",
-   "text": "commit e769a62c80c7baaa73d67479245efe1c11573870\nordinal 458\ndate 2026-08-21 17:10:07 -0700\nauthor Matt Stults\nsubject EXPERIMENTS.md campaign entries (review B-4): arc1-e closure, arc1-b mint integration, quota reconciliation (orchestration harness vs Fable adjudication bar are different ledgers), 9b status — this file is the canonical campaign log and carried no 2026-08-20/21 entries until now\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "text": "commit e769a62c80c7baaa73d67479245efe1c11573870\nordinal 458\ndate 2026-08-21 17:10:07 -0700\nauthor Matt Stults\nsubject EXPERIMENTS.md campaign entries (review B-4): arc1-e closure, arc1-b mint integration, quota reconciliation (orchestration harness vs Fable adjudication bar are different ledgers), 9b status \u2014 this file is the canonical campaign log and carried no 2026-08-20/21 entries until now\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
    "source_class": "git_log"
   },
   {
