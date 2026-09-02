@@ -36,6 +36,25 @@ Generated from `inventory.json` by `render.py`; the JSON is the source of truth.
 - `erratum(e, n, class)` — Event e records erratum number n of defect class class (see forensic.defect_classes).
 - `recurrence(e, e_prior)` — Event e says the same defect recurred from an earlier event or erratum e_prior.
 - `caught_by(e)` — Who or what surfaced the misstep: owner, adversarial_review, tripwire, cove (chain-of-verification re-derivation), self, script, unstated.
+- `event types (extended)` — cycle_close, iteration_close, adversarial_review, prediction_freeze, measurement, ledger_entry, erratum, withdrawal, seat_dispatch, certification_run, registration, commit, prune, redaction, engine_failure, cove (an independent re-derivation of a finding from data on disk).
+- `pin` — the pinned commit 48e66ce; ts(pin) is its commit date.
+- `hunk(h, k, f)` — h is a diff hunk of commit k on file f.
+- `deletes_prior_entry_text(h)` — hunk h removes or replaces text belonging to a ledger entry that existed before commit k.
+- `marked_redaction(h)` — the text hunk h leaves behind carries an explicit redaction marker (e.g. '[operational; redacted]').
+- `operational_only(h)` — everything hunk h removes is usage, budget, or token figures; anything else removed (attribution, ruling text, findings) makes the hunk substantive.
+- `numbered(n)` — n is an integer erratum number stated in the span.
+- `first_commit(e)` — the earliest commit in first-parent order whose blob contains the entry heading of e.
+- `has_content(k, s)` — at commit k, section s contains non-marker text.
+- `certified(m)` — measurement m is recorded with a certification run or certificate naming it.
+- `value(m)` — the numeric value the record states for measurement m.
+- `different_draw(m1, m2)` — m1 and m2 are recorded under different attempt indexes or different draw/seed identifiers.
+- `judge(j) / mcc(x)` — j is a member of the frontier judge panel; mcc(x) is the MCC value the record states for x.
+- `manifest(k) / signed(m) / listed(m, a) / contains(k, a) / restore_instructions(m)` — the manifest file committed by prune k; signed per Q32's definition; a is a path listed in m; commit k's tree contains a; m states how to restore its listed artifacts from history.
+- `hit(h) / span(h, s) / verbatim(s) / reason(h, r)` — h is one output row of a relevance query; s is the span locator attached to h; verbatim(s) holds iff s resolves to text that is a substring of the source document; r is the reason text attached to h.
+- `decisive_finding(f, r) / corrected_verdicts(r)` — f is a finding review r marks decisive; corrected_verdicts(r) is the disposition event that revises verdicts in response to r.
+- `step_artifact_exists(i, s)` — the runbook says step s emits a committed artifact, and that artifact exists in the record for iteration i.
+- `exists(a, pin)` — path a exists in the tree at the pinned commit.
+- `star_artifact(a)` — a is marked as a star artifact somewhere in the record other than ARTIFACTS.md itself (no such marking is known to exist; see H15).
 
 ## Global hypothesis rules
 
@@ -780,6 +799,22 @@ Generated from `inventory.json` by `render.py`; the JSON is the source of truth.
 
 *Note:* Representative sentence; the claim covers all eight Layout paths.
 
+### Q50
+
+> then answer deterministically, with a citable span and a stated reason for every hit.
+
+**Values:** `{"identical_output_on_rerun": true}`
+
+**Dimensions:**
+- metric: byte-identical output of the demo-path queries on two consecutive runs
+- tier: live_run
+- snapshot: pin, this machine
+- denominator: the Start-here commands that produce query output
+- scope: engine/spec-cite and semi-formal-experiment demo path
+- supersession: n/a
+
+*Note:* The 'deterministically' half of H12's sentence.
+
 ## Prose-claim hypotheses (round-trip for owner confirmation)
 
 Each hypothesis has: the README words; my English reading (in); the rule; the rule rendered back to English (out). Owner confirms in == out.
@@ -788,9 +823,9 @@ Each hypothesis has: the README words; my English reading (in); the rule; the ru
 
 > adversarial review before every close
 
-- **English (in):** Every time a cycle or iteration was closed, an adversarial review of that cycle had already been recorded before the close.
+- **English (in):** Every time a cycle or iteration was closed, an adversarial review of that cycle or iteration had been recorded no later than the close.
 - **Rule:** `∀c. event(c, cycle_close ∨ iteration_close) → ∃r. event(r, adversarial_review) ∧ ts(r) ≤ ts(c) ∧ links(r, c)`
-- **English (out):** For every recorded cycle or iteration close, there exists an adversarial review whose recorded time is no later than the close and whose text refers to that cycle or iteration.
+- **English (out):** For every recorded cycle or iteration close, there exists an adversarial review whose recorded position is no later than the close and whose text refers to that cycle or iteration.
 - **Declared dimensions translators must carry:** event type (cycle_close, iteration_close, adversarial_review); timestamp; linkage: the cycle/iteration id or entry number the review names; ordinal: entry number / commit ordinal (order_relation)
 - **Scope:** arc-1 cycles under semi-formal-experiment/cycles/ and arc-2 iteration/block closes in ITERATION_NOTES.md
 - **min_witnesses:** 1 (fewer → unverifiable (vacuous))
@@ -805,6 +840,7 @@ Each hypothesis has: the README words; my English reading (in); the rule; the ru
 - **Declared dimensions translators must carry:** event type (measurement, prediction_freeze); timestamp; linkage: cycle id; ordinal: entry number / commit ordinal (order_relation)
 - **Scope:** cycles and iterations that record a measurement
 - **min_witnesses:** 1 (fewer → unverifiable (vacuous))
+- *Note:* 'Pre-registered predictions' is read as cycle-scoped: a prediction is pre-registered relative to the measurement it predicts. Owner confirms this reading.
 
 ### H03
 
@@ -812,7 +848,7 @@ Each hypothesis has: the README words; my English reading (in); the rule; the ru
 
 - **English (in):** The ledger was only ever added to, hunk by hunk, except hunks that are marked redactions or remove only operational content; and it records numbered errata.
 - **Rule:** `(∀k,h. hunk(h, k, ITERATION_NOTES.md) ∧ deletes_prior_entry_text(h) → marked_redaction(h) ∨ operational_only(h)) ∧ ∃e. erratum(e, n, _) ∧ numbered(n)`
-- **English (out):** Every deleting hunk in the ledger's history is a marked redaction or removes only operational content; and at least one numbered erratum is recorded in the ledger.
+- **English (out):** The ledger is append-only except that a deleting hunk may be a marked redaction or remove only operational content; and at least one numbered erratum is recorded in the ledger.
 - **Declared dimensions translators must carry:** event type (commit, redaction, erratum); timestamp and commit ordinal; hunk-level diff content (history_in_scope); erratum number; operational_only(h): as defined under H11 — the hunk removes only usage, budget, or token figures
 - **Scope:** ITERATION_NOTES.md across its full git history, per hunk not per commit
 - **min_witnesses:** 1 (fewer → unverifiable (vacuous))
@@ -828,23 +864,25 @@ Each hypothesis has: the README words; my English reading (in); the rule; the ru
 - **Declared dimensions translators must carry:** event type (seat_dispatch); timestamp; linkage: the inputs list the record gives for the dispatch
 - **Scope:** seat dispatches recorded in cycle records and the ledger
 - **min_witnesses:** 1 (fewer → unverifiable (vacuous))
+- *Note:* 'Blind' is glossed as: no panel labels, no design document, no prior verdicts. Owner confirms this is the intended sense (AGENTS.md uses the same three).
 
 ### H05
 
 > every step, every erratum, every withdrawal, written at the time
 
-- **English (in):** Each ledger entry's stated date matches the date of the commit that first introduced it.
+- **English (in):** Each ledger entry's stated date is within one day of the date of the commit that first introduced it.
 - **Rule:** `∀e. event(e, ledger_entry) → |ts(e) − ts(first_commit(e))| ≤ 1 day`
 - **English (out):** For every ledger entry, the date written in its heading is within one day of the date of the first commit containing that entry.
 - **Declared dimensions translators must carry:** event type (ledger_entry, commit); timestamp (heading date; commit date); linkage: entry number to introducing commit
 - **Scope:** entries 0000-0043
 - **min_witnesses:** 1 (fewer → unverifiable (vacuous))
+- *Note:* The sentence's 'every step, every erratum, every withdrawal' is split: timeliness here (H05), step coverage in H14.
 
 ### H06
 
 > the results that were withdrawn when adversarial review showed they were noise
 
-- **English (in):** Every withdrawal was preceded by an adversarial review whose finding was that the result was noise or unsupported.
+- **English (in):** Every arc-2 withdrawal was preceded by an adversarial review whose finding was noise, unsupported, does-not-license, or null-dominated.
 - **Rule:** `∀w. event(w, withdrawal) → ∃r. event(r, adversarial_review) ∧ ts(r) ≤ ts(w) ∧ links(w, r) ∧ finding(r) ∈ {noise, unsupported, does_not_license, null_dominated}`
 - **English (out):** For every recorded withdrawal there is an adversarial review, no later than the withdrawal and named by it, whose recorded finding is noise, unsupported, does-not-license, or null-dominated.
 - **Declared dimensions translators must carry:** event type (withdrawal, adversarial_review); timestamp; linkage: the review the withdrawal names; finding
@@ -857,12 +895,12 @@ Each hypothesis has: the README words; my English reading (in); the rule; the ru
 > Untuned behaviors never reliably reached that level.
 
 - **English (in):** No untuned behaviour has a certified match-or-defensible rate at or above 0.94, and none has two measurements from different attempts or draws both at or above 0.94.
-- **Rule:** `∀b. status(b)=untuned → ¬∃m. certified(m) ∧ links(m,b) ∧ value(m) ≥ 0.94 ∧ ¬∃m1,m2. different_draw(m1,m2) ∧ links(m1,b) ∧ links(m2,b) ∧ value(m1) ≥ 0.94 ∧ value(m2) ≥ 0.94`
+- **Rule:** `∀b. status(b)=untuned → (¬∃m. certified(m) ∧ links(m,b) ∧ value(m) ≥ 0.94) ∧ (¬∃m1,m2. different_draw(m1,m2) ∧ links(m1,b) ∧ links(m2,b) ∧ value(m1) ≥ 0.94 ∧ value(m2) ≥ 0.94)`
 - **English (out):** For every untuned behaviour there is no certified measurement at or above 0.94 and no pair of measurements from different attempts or draws both at or above 0.94.
 - **Declared dimensions translators must carry:** event type (measurement, certification_run); timestamp; linkage: behaviour name; tuned/untuned status; value, tier, threshold_rule, certification status
 - **Scope:** arc-2 behaviours
 - **min_witnesses:** 1 (fewer → unverifiable (vacuous))
-- *Note:* 'Reliably' is operationalised as 'certified, or repeated'. A single uncertified 0.95 does not falsify. Reviewer A11.
+- *Note:* 'Reliably' is operationalised as certified-or-repeated-across-draws at the README's own 0.94 threshold; owner confirms.
 
 ### H08
 
@@ -879,21 +917,21 @@ Each hypothesis has: the README words; my English reading (in); the rule; the ru
 
 > Matching behaviors to passages did not beat a single frontier judge on the arc-1 benchmark
 
-- **English (in):** The tool's MCC was not above any individual judge's MCC on the arc-1 benchmark; a tie does not beat.
-- **Rule:** `∀j. judge(j) → mcc(tool) ≤ mcc(j); fallback comparanda if no per-judge table exists: judges(mean), judges(best per behaviour)`
-- **English (out):** For every judge, the tool's MCC is not greater than that judge's MCC; if the record has no per-judge MCCs, the mean and best-per-behaviour figures are the comparanda and the result is marked as such.
+- **English (in):** The tool's MCC did not exceed the best individual judge's MCC on the arc-1 benchmark; a tie does not beat.
+- **Rule:** `∀j. judge(j) → mcc(tool) ≤ mcc(j)`
+- **English (out):** For every judge, the tool's MCC is not greater than that judge's MCC (equivalently: it does not exceed the best judge's).
 - **Declared dimensions translators must carry:** per-judge MCC values or the mean/best figures; tool MCC with threshold_rule and universe; linkage: benchmark run
 - **Scope:** arc-1 benchmark; derived from Q12, Q13, Q14, Q15 plus per-judge values
 - **min_witnesses:** 1 (fewer → unverifiable (vacuous))
-- *Note:* Reviewer A15: 'leave-one-out' and per-judge MCC may not exist in the record; the hypothesis lands unverifiable for a stated reason rather than by accident.
+- *Note:* Fallback if the record has no per-judge MCCs: the mean and best-per-behaviour figures are the comparanda and the result is marked as such (not part of the rule).
 
 ### H10
 
 > Large superseded run artifacts were pruned for publication with a signed manifest ... how to restore any of it from history.
 
-- **English (in):** There is a prune event with a signed manifest, and every artifact it lists can be found in an earlier commit.
-- **Rule:** `∃k. event(k, prune) ∧ manifest(k) ∧ signed(manifest(k)) ∧ ∀a ∈ listed(manifest(k)). ∃k'. ts(k') < ts(k) ∧ contains(k', a)`
-- **English (out):** A prune commit exists whose manifest carries a signature, and each artifact the manifest lists exists in some commit earlier than the prune.
+- **English (in):** There is a prune event with a signed manifest that states how to restore its artifacts, and every artifact it lists exists in an earlier commit.
+- **Rule:** `∃k. event(k, prune) ∧ signed(manifest(k)) ∧ restore_instructions(manifest(k)) ∧ ∀a. listed(manifest(k), a) → ∃k'. ts(k') < ts(k) ∧ contains(k', a)`
+- **English (out):** A prune commit exists whose manifest is signed and states restore instructions, and each artifact the manifest lists is contained in some commit earlier than the prune.
 - **Declared dimensions translators must carry:** event type (prune, commit); timestamp; linkage: manifest paths to commit hashes
 - **Scope:** PRUNED.md and git history
 - **min_witnesses:** 1 (fewer → unverifiable (vacuous))
@@ -903,9 +941,9 @@ Each hypothesis has: the README words; my English reading (in); the rule; the ru
 
 > operational details (usage plumbing, working notes) were redacted in the current files and remain in history by choice.
 
-- **English (in):** Every section marked redacted had content in an earlier commit; and every change to a previously written ledger entry is either marked as a redaction in the current file or removes only operational content.
-- **Rule:** `(∀s. redaction_marker(s) → ∃k. ts(k) < ts(pin) ∧ has_content(k,s)) ∧ (∀h. hunk(h) ∧ modifies_prior_entry(h) → marked_redaction(h) ∨ operational_only(h))`
-- **English (out):** For every redaction marker some earlier commit has content there; and for every hunk that modifies an earlier-written entry, the hunk is a marked redaction or removes only operational content (usage, budget, token figures).
+- **English (in):** Every section marked redacted had content in an earlier commit; and every hunk that deletes or replaces text of a previously written ledger entry is a marked redaction or removes only operational content.
+- **Rule:** `(∀s. redaction_marker(s) → ∃k. ts(k) < ts(pin) ∧ has_content(k,s)) ∧ (∀h,k. hunk(h,k,ITERATION_NOTES.md) ∧ deletes_prior_entry_text(h) → marked_redaction(h) ∨ operational_only(h))`
+- **English (out):** For every redaction marker some earlier commit has content there; and for every hunk that deletes or replaces earlier-written entry text, the hunk is a marked redaction or removes only operational content.
 - **Declared dimensions translators must carry:** event type (redaction, commit); timestamp and commit ordinal; hunk content (history_in_scope); linkage: entry number to commit; content class of removed text: operational or substantive (attribution, ruling text, findings)
 - **Scope:** all '[operational; redacted]' markers and any other redaction markers at the pin
 - **min_witnesses:** 1 (fewer → unverifiable (vacuous))
@@ -915,20 +953,21 @@ Each hypothesis has: the README words; my English reading (in); the rule; the ru
 
 > then answer deterministically, with a citable span and a stated reason for every hit.
 
-- **English (in):** Every hit the tool returns carries a verbatim span locator and a reason.
+- **English (in):** Every hit carries a span locator that resolves to verbatim text, and a reason.
 - **Rule:** `∀h. hit(h) → ∃s. span(h,s) ∧ verbatim(s) ∧ ∃r. reason(h,r)`
 - **English (out):** For every hit, there is a span attached to it that resolves to verbatim text, and a reason attached to it.
 - **Declared dimensions translators must carry:** hit id; span locator and whether it resolves; reason presence
 - **Scope:** relevance-query outputs committed in the record (arc 2), and for arc 1 the live_run output of the committed explain path on the demo inputs (admitted as a witness source)
 - **min_witnesses:** 1 (fewer → unverifiable (vacuous))
+- *Note:* 'Answer deterministically' is checked separately as Q50 (same query twice gives identical output).
 
 ### H13
 
 > the review, the independent re-derivation of each decisive finding, the corrected verdicts.
 
 - **English (in):** Every decisive finding of the withdrawal reviews (the census review and the L1/L2 review) was independently re-derived before the verdicts were corrected.
-- **Rule:** `∀f. decisive_finding(f, review) → ∃d. event(d, cove) ∧ links(d,f) ∧ ts(d) ≤ ts(corrected_verdicts)`
-- **English (out):** For every finding the review marks decisive, there is a re-derivation event that names it, no later than the corrected verdicts.
+- **Rule:** `∀f,r. decisive_finding(f, r) → ∃d. event(d, cove) ∧ links(d,f) ∧ actor(d) ≠ actor(r) ∧ ts(d) ≤ ts(corrected_verdicts(r))`
+- **English (out):** For every finding a withdrawal review marks decisive, there is a re-derivation event by a different actor than the review's, naming that finding, no later than the corrected verdicts.
 - **Declared dimensions translators must carry:** event type (adversarial_review, cove, withdrawal); timestamp and ordinal; linkage: finding id to re-derivation; finding: reproduced / corrected
 - **Scope:** L1L2_ADVERSARIAL_REVIEW.md and its disposition; ledger entries 0042-0043
 - **min_witnesses:** 1 (fewer → unverifiable (vacuous))
@@ -953,7 +992,7 @@ Each hypothesis has: the README words; my English reading (in); the rule; the ru
 - **Rule:** `∀a. listed(ARTIFACTS.md, a) → exists(a, pin)`
 - **English (out):** For every path listed in ARTIFACTS.md, that path exists in the repo at the pinned commit.
 - **Declared dimensions translators must carry:** paths listed in ARTIFACTS.md; existence at pin
-- **Scope:** ARTIFACTS.md at pin
+- **Scope:** ARTIFACTS.md at pin. The converse (every star artifact is listed) is OUT OF SCOPE: no star marking exists outside ARTIFACTS.md; filed as residue R13.
 - **min_witnesses:** 1 (fewer → unverifiable (vacuous))
 - *Note:* The converse ('every star artifact is listed') has no extension: the record does not mark artifacts as star outside ARTIFACTS.md itself. That half is filed as residue R13.
 
@@ -1161,4 +1200,4 @@ sealed_instances.json holds instance-level pre-declarations found by the invento
 
 ## Verbatim check
 
-All 95 quoted sentences are verbatim substrings of the pinned README.
+All 96 quoted sentences are verbatim substrings of the pinned README.

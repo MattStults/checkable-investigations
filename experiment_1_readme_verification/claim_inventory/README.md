@@ -120,3 +120,21 @@ the instances (26 ids) live in `sealed_instances.json`, which neither the
 translators nor the baseline reviewer sees. At results time it is a scorecard:
 per instance, which arm surfaced it unprompted. That the reviews found them
 where five prior unstructured reviews did not is itself a reported result.
+
+## Round-trip review (2026-09-02)
+
+`review_3_roundtrip.md` (committed untouched): a clean subagent given only
+the hypotheses section checked, for H01–H15, whether English-in and
+English-out are the same claim, whether the rule is faithful using only
+defined predicates, and whether English-in is a fair reading of the sentence.
+It declined to sign off 11 of 15, almost all for undefined predicates or a
+strength mismatch. All fixes applied: every predicate the rules use is now
+defined in `event_predicates`; H01/H05/H06/H09/H10/H11/H12/H13 wording
+aligned; H14's domain defined; H15's scope states the excluded converse; Q50
+added for "answer deterministically". Three readings the reviewer marked as
+"added" are operationalisations the owner is asked to confirm: H02
+(cycle-scoped pre-registration), H04 (blind = no labels, design doc, prior
+verdicts), H07 (reliably = certified or repeated across draws, at 0.94).
+
+Counts now: 50 claims, 15 hypotheses, 12 verdict nodes, 6 commitments, 13
+residue, 9 forensic queries, 6 additional query classes, 26 sealed instances.

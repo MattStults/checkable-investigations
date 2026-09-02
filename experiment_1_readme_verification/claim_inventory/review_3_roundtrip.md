@@ -1,0 +1,33 @@
+<!-- Clean-context round-trip check of H01-H15 at commit f2c2802. Reviewer: general-purpose subagent, model opus, given ONLY the hypotheses section (no README, no record). Committed untouched. -->
+
+| id | same_claim | rule_faithful | sentence_fidelity | note |
+|---|---|---|---|---|
+| H01 | NO | NO | FAIR | `english_in` says review "of that cycle"; `english_out`/rule only require `links(r,c)` — rule direction is review→close, but "had already been recorded before" is strict while `ts(r) ≤ ts(c)` allows same-timestamp; english_in stronger |
+| H02 | YES | NO | added | `english_in` "in a cycle" quantifies measurements bound to a cycle, matching; rule is fine but `sentence` "pre-registered predictions" says nothing about measurements or cycles — cycle-scoping added |
+| H03 | NO | NO | added | `english_out` drops "hunk by hunk … only ever added to"; rule uses undefined `hunk`, `deletes_prior_entry_text`, `marked_redaction`, `numbered`; sentence says nothing about the operational-content exception — exception added, weakening |
+| H04 | YES | YES | added | "the cycle's design document" and "prior verdicts" are a specific gloss the two-word sentence does not supply |
+| H05 | NO | NO | dropped | `english_in` says "matches the date"; `english_out`/rule allow ±1 day — english_in stronger; `first_commit` undefined in `event_predicates`; sentence's "every step, every erratum, every withdrawal" is narrowed to ledger entries only |
+| H06 | NO | YES | added | `english_in` finding set is {noise, unsupported}; rule/`english_out` add does_not_license and null_dominated — english_out weaker |
+| H07 | YES | NO | added | rule uses undefined `certified`, `value`, `different_draw`; also rule's second conjunct binds under `¬∃m` scope ambiguously; sentence's "never reliably reached that level" is operationalised as a specific 0.94 threshold |
+| H08 | YES | YES | FAIR | — |
+| H09 | NO | NO | strengthened | `english_in` "not above any individual judge" = ∀; `english_out` same, but sentence says "did not beat a single frontier judge," i.e. did not beat the best one — ∀-over-all-judges is stronger; rule uses undefined `judge`, `mcc`, and the fallback clause is prose, not formal |
+| H10 | YES | NO | dropped | rule uses undefined `manifest`, `signed`, `listed`, `contains`; sentence's "how to restore any of it from history" (restore instructions) is dropped, replaced by mere existence in an earlier commit |
+| H11 | NO | NO | added | `english_in` "every section marked redacted"; rule's `redaction_marker(s)`+`ts(pin)` — `pin` and `has_content` undefined; second conjunct's `modifies_prior_entry` differs from H03's `deletes_prior_entry_text` (modify ⊃ delete, so H11 stronger); sentence claims content "remains in history", english_in weakens to "had content in an earlier commit" |
+| H12 | NO | NO | dropped | `english_in` "verbatim span locator"; `english_out` "resolves to verbatim text" — resolution is a stronger check than locator presence; rule uses undefined `hit`, `span`, `verbatim`, `reason`; sentence's "answer deterministically" is dropped entirely |
+| H13 | NO | NO | dropped | `english_in` "independently re-derived"; `english_out`/rule only require a cove event that names the finding — independence dropped; `cove` is not an `event` type in `event_predicates` (it appears only under `caught_by`); `decisive_finding`, `corrected_verdicts` undefined |
+| H14 | NO | NO | added | `english_in` domain is "steps the runbook says emit a committed artifact AND whose artifact exists"; rule's `step_artifact_exists(i,s)` drops the runbook condition; `step_artifact_exists` undefined; sentence's "every erratum, every withdrawal, written at the time" is replaced by step-coverage — timeliness dropped |
+| H15 | YES | NO | dropped | rule uses undefined `listed`, `exists`, `pin`; sentence says "routing table for every star artifact" — the ∀ runs over listed paths, not over star artifacts, so the coverage direction the sentence asserts is dropped |
+
+Not signed off, with minimal fix:
+
+- **H01** — `english_in` "had already been recorded before the close" vs `ts(r) ≤ ts(c)`. Fix: change `english_in` to "…had been recorded no later than the close."
+- **H03** — `english_out` drops the append-only claim and the rule's predicates are undefined. Fix: add `hunk(h,k,f)`, `deletes_prior_entry_text(h)`, `marked_redaction(h)`, `numbered(n)` to `event_predicates`, and restore "The ledger is append-only except that" to the front of `english_out`.
+- **H05** — "matches the date" vs ±1 day. Fix: `english_in` → "…is within one day of the date of the commit that first introduced it"; define `first_commit(e)`.
+- **H06** — finding set mismatch. Fix: `english_in` → "…whose finding was noise, unsupported, does-not-license, or null-dominated."
+- **H07** — undefined `certified`/`value`/`different_draw`, and the second `¬∃` is scoped inside the first. Fix: define the three predicates and rewrite as `∀b. status(b)=untuned → (¬∃m. …) ∧ (¬∃m1,m2. …)`.
+- **H09** — sentence says "a single frontier judge" (the best), rule quantifies over all. Fix: either change `english_in`/`english_out` to "the tool's MCC did not exceed the best individual judge's MCC" (matching `∀j. mcc(tool) ≤ mcc(j)`, which is equivalent) and drop the ∀-phrasing from `english_in`, or restate the sentence's referent explicitly; also move the fallback clause out of `rule` into a note.
+- **H11** — `modifies_prior_entry` vs H03's `deletes_prior_entry_text` makes the two hypotheses non-identical while `english_in` reads the same. Fix: use one predicate in both, and define `pin` and `has_content` in `event_predicates`.
+- **H12** — locator-presence vs resolution. Fix: `english_in` → "Every hit carries a span locator that resolves to verbatim text, and a reason"; define `hit`, `span`, `verbatim`, `reason`.
+- **H13** — "independently" is in `english_in` but nowhere in the rule, and `cove` is not a declared event type. Fix: add `cove` to the `event(...)` type list and either add an independence condition (e.g. `actor(d) ≠ actor(f)`) to the rule or drop "independently" from `english_in`.
+- **H14** — rule's domain omits the runbook condition. Fix: define `step_artifact_exists(i,s)` as "the runbook says step s emits a committed artifact and that artifact exists in the record for iteration i", so the rule's antecedent matches `english_in`.
+- **H15** — the sentence claims coverage of star artifacts; the rule checks only that listed paths resolve. Fix: state in `scope` that the converse (every star artifact is listed) is out of scope, or add a second conjunct `∀a. star_artifact(a) → listed(ARTIFACTS.md, a)`.
