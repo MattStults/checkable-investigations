@@ -50,6 +50,37 @@ Set the model explicitly on every subagent dispatch; never inherit by default.
    before acting in it at all). The blog post gains only a Results section at
    the end, owner-approved; nothing else in it changes.
 
+## Identity and entities
+
+Interactions are reified: an event is a first-class entity with its own id
+(`tool_call(e4471, agent_0412, ...)`, `arg(e4471, ...)`), referencing its
+participants by entity id. Facts about an interaction live on the event, never
+"inside" either participant.
+
+- **Equivalence, not substitution.** An unresolved participant gets its own
+  minted constant (`unresolved_actor_17`), and identity resolution arrives as
+  a separate provenance-carrying claim (`same_entity(unresolved_actor_17,
+  agent_B)`) cited to the evidence that established it. Queries close over the
+  equivalence relation. Never rewrite a claim to swap in a resolved identity:
+  an equivalence claim is contestable and retractable like any other, and
+  retracting a bad one must update every conclusion that flowed through it.
+- **Trajectory segments are the ground-level agent entities.** A restart or
+  compaction boundary starts a new segment; `continues(seg_2, seg_1)` is
+  itself a claim with provenance (continuation is an inference from harness
+  records and can be wrong or partial). Agent-level identity is the
+  equivalence closure over segments. Hypotheses about what an agent knew at a
+  time derive through these links, so a broken continuation is a link-level
+  correction, not a retranslation.
+- **Distinctness is load-bearing.** In the target record, fresh sessions of
+  the same model (seats, waves, auditors) are distinct entities; several
+  hypotheses ("blind", "independent", "the original auditor", "a separate
+  agent", "the project's own review") are actor-identity claims. Entity
+  identity is a declared dimension in the claim inventory (step 1), and the
+  glossary (step 2) carries the identity registry: what counts as the same
+  seat/agent/process across artifacts, with the seats-are-distinct rule
+  stated. The translator brief carries the minting rule so translators create
+  unresolved-actor constants instead of guessing identities.
+
 ## Order of work
 
 Each numbered step ends with a commit to this repo. Steps marked **[OWNER]**
@@ -58,7 +89,8 @@ stop for the owner's explicit sign-off before anything later starts.
 1. **`claim_inventory/`** — Extract the pinned README's checkable statements.
    Each claim: the verbatim README sentence, the atomic value(s) asserted, and
    the dimensions needed to verify it (metric, measurement tier, snapshot,
-   denominator). Convert prose claims to hypothesis rules over event
+   denominator, and — for event claims — actor entity ids per the Identity
+   and entities section). Convert prose claims to hypothesis rules over event
    predicates (type, timestamp, linkage), each with an English round-trip
    statement. Represent verdict words as nodes declaring named needs with
    adjacent sentences as candidate providers; type author commitments; list
@@ -75,7 +107,8 @@ stop for the owner's explicit sign-off before anything later starts.
    Primary sources include: the arc-2 ledger `ITERATION_NOTES.md` (entries
    0000–0043), the `round4_*_scored_raw.json` and `ITER*_SCORED.json` files,
    `semantic_audit.json` / `SEMANTIC_AUDIT.md`, `graph_check.py` (runnable),
-   `benchmark.py` (runnable), and the git log. **[OWNER: freezes glossary.]**
+   `benchmark.py` (runnable), and the git log. The glossary also carries the identity registry (see Identity and
+   entities). **[OWNER: freezes glossary.]**
 3. **`checker/`** — The mechanical checks, runnable and committed: every
    claim's quote is a verbatim substring of its cited source file; every rate
    re-derives from its recorded numerator and denominator; every hypothesis's
