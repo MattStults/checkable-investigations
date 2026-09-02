@@ -1,0 +1,1505 @@
+{
+ "summary": {
+  "total": 186,
+  "passed": 186,
+  "failed": 0,
+  "fail_reasons": {}
+ },
+ "results": [
+  {
+   "id": "L230001",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230002",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230003",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230004",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230005",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230006",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230007",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230008",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230009",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230010",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230011",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines",
+    "rate: 74/75 re-derives 0.9867"
+   ]
+  },
+  {
+   "id": "L230012",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230013",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230014",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230015",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230016",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230017",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230018",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230019",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230020",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230021",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230022",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230023",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230024",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230025",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230026",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230027",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230028",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230029",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230030",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230031",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230032",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230033",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230034",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230035",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230036",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230037",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230038",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230039",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230040",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230041",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230042",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230043",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230044",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230045",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230046",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230047",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230048",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230049",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230050",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230051",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230052",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230053",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230054",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230055",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230056",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230057",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230058",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230059",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230060",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230061",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230062",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230063",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230064",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230065",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230066",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230067",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230068",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230069",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230070",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230071",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230072",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230073",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230074",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230075",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230076",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230077",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230078",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230079",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230080",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230081",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230082",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230083",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230084",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230085",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230086",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines",
+    "rate: 4/4 re-derives 1.0"
+   ]
+  },
+  {
+   "id": "L230087",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230088",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230089",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230090",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230091",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230092",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230093",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230094",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230095",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines",
+    "rate: 3/3 re-derives 1.0"
+   ]
+  },
+  {
+   "id": "L230096",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230097",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230098",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230099",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230100",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230101",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines",
+    "rate: 19/19 re-derives 1.0"
+   ]
+  },
+  {
+   "id": "L230102",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230103",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230104",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230105",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230106",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230107",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230108",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230109",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230110",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230111",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230112",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230113",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230114",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230115",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230116",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230117",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230118",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230119",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230120",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230121",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230122",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230123",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230124",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230125",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230126",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230127",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230128",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230129",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines",
+    "rate: 19/20 re-derives 0.95"
+   ]
+  },
+  {
+   "id": "L230130",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230131",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230132",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230133",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230134",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230135",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230136",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230137",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230138",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230139",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230140",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230141",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230142",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230143",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230144",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230145",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230146",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230147",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230148",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230149",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230150",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230151",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230152",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230153",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230154",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines",
+    "duplicate content with ['L230155']"
+   ]
+  },
+  {
+   "id": "L230155",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines",
+    "duplicate content with ['L230154']"
+   ]
+  },
+  {
+   "id": "L230156",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230157",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230158",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230159",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230160",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230161",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230162",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230163",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230164",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230165",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230166",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230167",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230168",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230169",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230170",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230171",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230172",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230173",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230174",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230175",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230176",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230177",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230178",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230179",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230180",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230181",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230182",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230183",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230184",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230185",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L230186",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  }
+ ]
+}

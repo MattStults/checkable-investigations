@@ -88,6 +88,15 @@ their translator block as written; the true brief in force at dispatch
 is recorded here: batches 002-003 → v0.4; batches 004-009 → v0.5; every
 batch → glossary frozen f169c02. Not a ledger edit.
 
+### D-07 — 2026-09-02 — engine_failure kind may be unstated
+
+Caught by: checker rejecting 2 batch_023 claims whose event.kind was
+"unstated". The frozen glossary's engine entry says to record kind as
+refusal, wrong_answer, or unstated; the checker enum lacked unstated.
+Artifact: check.py and SCHEMA.md accept unstated. Query-time consequence:
+an engine_failure with kind unstated is a witness that is undecided, so
+H08 counts it toward unverifiable, never toward vacuous verification.
+
 ## Interventions
 
 ### I-01 — 2026-09-02 — erratum number taken from a count

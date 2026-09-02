@@ -46,7 +46,7 @@ event              null, or for kind == "event":
                     "context_origin": one of fresh continued compacted seeded_by:<artifact> unstated,
                     "links": list of strings (entry numbers, hashes, file names, node ids the span names),
                     "finding": string or null,
-                    "kind": "refusal"|"wrong_answer"|null   (engine_failure only),
+                    "kind": "refusal"|"wrong_answer"|"unstated"|null   (engine_failure only; unstated when the span does not say),
                     "erratum": {"n": integer or null, "class": string} or null,
                     "recurrence_of": string or null,
                     "caught_by": {"set": list, "inferred": bool} or null,

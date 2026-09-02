@@ -152,8 +152,8 @@ def check_claim(c, repo, pin, ids):
                 co = str(ev["context_origin"])
                 if co not in ("fresh", "continued", "compacted", "unstated") and not co.startswith("seeded_by:"):
                     fails.append("event.context_origin not in enum")
-                if ev["type"] == "engine_failure" and ev["kind"] not in ("refusal", "wrong_answer"):
-                    fails.append("engine_failure requires kind refusal|wrong_answer")
+                if ev["type"] == "engine_failure" and ev["kind"] not in ("refusal", "wrong_answer", "unstated"):
+                    fails.append("engine_failure requires kind refusal|wrong_answer|unstated")
                 if ev["erratum"] is not None and (not isinstance(ev["erratum"], dict) or "class" not in ev["erratum"]):
                     fails.append("event.erratum must be null or {n, class}")
                 elif ev["erratum"] is not None and ev["erratum"].get("n") is not None:
