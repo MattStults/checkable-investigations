@@ -113,3 +113,4 @@
 {"file": "batch_080_sonnet", "model": "sonnet", "brief_version": "0.5", "batch": "batch_080", "claims": 124, "accepted": 124, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T14:49:05", "check_seconds": 1.2}
 {"file": "batch_082_sonnet", "model": "sonnet", "brief_version": "0.5", "batch": "batch_082", "claims": 139, "accepted": 139, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T14:53:04", "check_seconds": 0.1}
 {"file": "batch_081_sonnet", "model": "sonnet", "brief_version": "0.5", "batch": "batch_081", "claims": 177, "accepted": 177, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T14:53:48", "check_seconds": 0.3}
+{"file": "batch_083_sonnet", "model": "sonnet", "brief_version": "0.5", "batch": "batch_083", "claims": 118, "accepted": 118, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T14:58:16", "check_seconds": 0.1}
