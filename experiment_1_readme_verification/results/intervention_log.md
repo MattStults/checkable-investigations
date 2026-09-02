@@ -40,6 +40,27 @@ Inventory impact: none. The inventory declares the dimensions (supersession,
 linkage); the schema is their storage. Recorded here rather than as an
 inventory amendment for that reason.
 
+### D-02 — 2026-09-02 — checker: generated sources and ordinals
+
+Caught by: seed batch 1 (5 git-log claims failed 'source not found'; a
+handoff-sourced withdrawal failed 'requires an ordinal').
+Artifact: `check.py` resolves `GENERATED:` paths under `ledger/spans/`;
+ordinal required only for ledger-entry and git-log sourced events (the
+ledger file header excepted). Brief v0.3 rules 12-21.
+
+### D-03 — 2026-09-02 — span assignment: JSON cut carries nested values
+
+Caught by: seed batch 2 selection (a span read `"attempt2": {` and nothing
+else). Artifact: `brief/spans.py` cut_json tracks brace depth; spans
+regenerated (2,538).
+
+### D-04 — 2026-09-02 — schema: forbids_citation, trigger; brief v0.4
+
+Caught by: seed batch 2 translation (no relation for a do-not-cite marking;
+no event type for a stop condition firing; cycle-artifact keys had no tier
+mapping; arrows/multipliers/unnamed triples had no rule). Artifact: rel
+`forbids_citation`, event type `trigger`; brief rules 22-30.
+
 ## Interventions
 
 (none yet — translation has not begun)
