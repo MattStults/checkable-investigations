@@ -214,6 +214,19 @@ Generalised as G-06 (every signature marker: the named signer decides).
 Affected spans reselected mechanically (retry_G06). This is the first
 defect class needing a second fix after its first fix was operationalised.
 
+### I-07 — 2026-09-02 — commit sub-events without an ordinal
+
+Caught: checker (122 of 205 claims in batch_059, Sonnet, rejected for a
+missing ordinal). Class: brief rule 18 never said sub-events of a commit
+inherit the commit's ordinal and date, while rule 15 says so for ledger
+entries; Opus translators had assumed the parallel, Sonnet did not.
+
+Operationalised: brief v0.6 rule 18 (inheritance sentence). The checker
+rule already existed (D-02), so every instance was caught mechanically;
+rejected claims retranslated with the same ids.
+
+Recurrence: (tracked)
+
 ### Observations not (yet) interventions
 
 - Both tiers type most standing statements in entry 0000 as `registration`

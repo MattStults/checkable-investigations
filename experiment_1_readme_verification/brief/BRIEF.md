@@ -1,4 +1,4 @@
-# Translator brief — v0.5 (post-pilot)
+# Translator brief — v0.6
 
 You translate spans of a project record into atomic claims. You are one of
 several translators; you see only this brief, the glossary, and the spans
@@ -120,7 +120,9 @@ span names it.
     `author` line is `owner`; a `Co-Authored-By` model trailer adds `driver`
     with `model_tier` = the trailer's model name verbatim. Events named in
     the subject or body (a cycle close, a review verdict, a prediction
-    score) are separate claims linking the full hash.
+    score) are separate claims linking the full hash, and they INHERIT the
+    commit's `ordinal` and `ts` (as sub-events of a ledger entry inherit the
+    entry's, rule 15) unless the body gives another date.
 19. **Rates**: `value` = numerator/denominator rounded to at most 4
     decimals; write the fraction the span writes in `population` or
     `notes` if it is not already the numerator/denominator.
@@ -196,5 +198,7 @@ batch}` exactly as given in your batch header.
   required only for ledger- and git-sourced events (D-02).
 - v0.4 (2026-09-02): rules 22-30 from seed batch 2; schema gains rel
   `forbids_citation` and event type `trigger` (D-04).
+- v0.6 (2026-09-02): rule 18 — sub-events of a commit inherit its ordinal
+  and ts (I-07).
 - v0.5 (2026-09-02): rules 31-33 after the pilot; JSON spans re-cut by
   brace depth with window context (D-05).
