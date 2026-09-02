@@ -1,0 +1,96 @@
+{
+ "summary": {
+  "total": 8,
+  "passed": 2,
+  "failed": 6,
+  "fail_reasons": {
+   "quote": 2,
+   "rate": 1,
+   "supersession.by L99999 does not resolve to a claim id": 1,
+   "tier 'certified-Opus venue' not in enum": 1,
+   "event.actor must be a non-empty list from the actor enum": 1
+  }
+ },
+ "results": [
+  {
+   "id": "L00001",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines",
+    "duplicate content with ['L00008']"
+   ]
+  },
+  {
+   "id": "L00002",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines",
+    "rate: 23/40 re-derives 0.575",
+    "duplicate content with ['L00006', 'L00007']"
+   ]
+  },
+  {
+   "id": "L00003",
+   "pass": false,
+   "fails": [
+    "quote: not a verbatim substring of the source"
+   ],
+   "notes": []
+  },
+  {
+   "id": "L00004",
+   "pass": false,
+   "fails": [
+    "quote: verbatim in file but not within cited lines"
+   ],
+   "notes": []
+  },
+  {
+   "id": "L00005",
+   "pass": false,
+   "fails": [
+    "rate: 23/40 = 0.575000 does not re-derive value 0.65"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L00006",
+   "pass": false,
+   "fails": [
+    "supersession.by L99999 does not resolve to a claim id"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines",
+    "rate: 23/40 re-derives 0.575",
+    "duplicate content with ['L00002', 'L00007']"
+   ]
+  },
+  {
+   "id": "L00007",
+   "pass": false,
+   "fails": [
+    "tier 'certified-Opus venue' not in enum"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines",
+    "rate: 23/40 re-derives 0.575",
+    "duplicate content with ['L00002', 'L00006']"
+   ]
+  },
+  {
+   "id": "L00008",
+   "pass": false,
+   "fails": [
+    "event.actor must be a non-empty list from the actor enum"
+   ],
+   "notes": [
+    "quote: verbatim within cited lines",
+    "duplicate content with ['L00001']"
+   ]
+  }
+ ]
+}
