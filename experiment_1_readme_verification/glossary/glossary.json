@@ -645,6 +645,16 @@
         "BP/ITERATION_NOTES.md:800",
         "BP/ITER2_REMEASURE_SCORED.json:188"
       ]
+    },
+    {
+      "id": "G-04",
+      "date": "2026-09-02",
+      "logged_as": "I-05",
+      "change": "Actor vocabulary mapping: the record's words `coordinator`, `session coordinator`, `orchestration seat`, `driver`, `the agent`, `I` (in a ledger entry) all map to actor `driver`; `the author` when it names the writer of the entry maps to `driver`; `owner`, `project owner`, `Matt` map to `owner`; `seat`, `subagent`, `wave seat`, `panel seat`, `auditor` map to `seat`; `reviewer`, `adversarial review seat`, `clean-context reviewer` map to `reviewer`; `panel`, `judges` map to `panel`. A ruling by the coordinator is event type ruling with actor driver and is NOT tier human.",
+      "cite": [
+        "SFE/CYCLE_DESIGN.md:255-256",
+        "SFE/cycles/patient-pricing-2026-08-04/decision.json:210"
+      ]
     }
   ]
 }

@@ -174,6 +174,21 @@ ledger/batches/_g03_pending.json, folded into the next retry batch).
 
 Recurrence: (tracked)
 
+### I-05 — 2026-09-02 — 'coordinator' not in the actor vocabulary
+
+Caught: translators of batch_023 and batch_031 both reported recording
+actor unstated for rulings headed "(coordinator, 2026-08-04)" because the
+word is not in the actor enum. Class: record vocabulary → enum mapping
+missing (the arc-1 name for the driver role).
+
+Operationalised: glossary amendment G-04 (actor word mapping), rendered.
+Mechanical selection: accepted spans containing 'coordinator' or
+'orchestration seat' with an event claim whose actor is unstated are
+retranslated whole (ledger/batches/_g04_pending.json), folded into the
+consolidated retry.
+
+Recurrence: (tracked)
+
 ### Observations not (yet) interventions
 
 - Both tiers type most standing statements in entry 0000 as `registration`
