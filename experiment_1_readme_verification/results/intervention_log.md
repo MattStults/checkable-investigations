@@ -204,7 +204,12 @@ re-split and retranslated.
 
 Recurrence: batch_039 (dispatched before G-05 was written) — 1 hit,
 caught by the checker rule; retranslated. Not a post-fix recurrence: the
-translator had not seen G-05.
+translator had not seen G-05. batch_043 (dispatched AFTER G-05) — a
+genuine recurrence of the class: the COUNTERSIGNED marker fired for a
+countersignature by a review seat. G-05 had fixed signed_by only.
+Generalised as G-06 (every signature marker: the named signer decides).
+Affected spans reselected mechanically (retry_G06). This is the first
+defect class needing a second fix after its first fix was operationalised.
 
 ### Observations not (yet) interventions
 
