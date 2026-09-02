@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_135",
+  "source_class": "git_log",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S02213",
+  "last_span": "S02227"
+ },
+ "spans": [
+  {
+   "id": "S02213",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7348-7356",
+   "text": "commit 6f9a10832fda6846501df8ad5da717fde3a5140b\nordinal 325\ndate 2026-08-18 17:03:12 -0700\nauthor Matt Stults\nsubject situation ontology refinement r1 (T4-driven): ambiguity facets re-typed intent:ambiguous, normative conditions stripped of intent dims (sweep: +must_decline_teen_request, requires_safe_completion); dim-less reversal gated to seam names -> canonical S4 reproduces hand-grounded firing EXACTLY (T4 clean)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02214",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7357-7365",
+   "text": "commit b1d4ee800023a02188f7169b49c77e9018432a01\nordinal 326\ndate 2026-08-18 17:04:57 -0700\nauthor Matt Stults\nsubject arm-2 leftover data file (caution query node list) committed for the record\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02215",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7366-7374",
+   "text": "commit 07503b45ab5ebf1c835ce2a5afda1934f468bdf1\nordinal 327\ndate 2026-08-18 17:05:30 -0700\nauthor Matt Stults\nsubject arm-3 prereg draft sign-ready: both sub-arms (b=mutation-based, decline-only), plateau discipline on the frozen 3-way split, margin rule, falsifiers incl. dead-weight mutation stage; arm_ab.py + canonical behavior instances committed\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02216",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7375-7383",
+   "text": "commit b693747821a36867ad899d58d15f8970f77dc0a1\nordinal 328\ndate 2026-08-18 17:06:57 -0700\nauthor Matt Stults\nsubject act ontology r2: provide/respond split into subtypes (provide 153->8 generic; respond 195->65 generic — the rest genuinely manner-of-response); two-level bridges (subtype implies parent); relevance matching hierarchy-aware, firing stays subtype-strict\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02217",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7384-7392",
+   "text": "commit 18dcfa6705cd285c6a00034e9a409a13c4588e35\nordinal 329\ndate 2026-08-18 17:08:51 -0700\nauthor Matt Stults\nsubject round-2 behavior files: performed acts narrowed to subtypes (0 validator breaches); arm_ab parametrized for round files\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02218",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7393-7401",
+   "text": "commit 92146afbbc896a05c643fd3960836d14a26e4957\nordinal 330\ndate 2026-08-18 17:10:28 -0700\nauthor Matt Stults\nsubject act r2b: A5 blind spot-check 50/62 FIRED the accuracy bar -> 12 audited corrections + sharpened-brief reclassification (act_in_world 130->37, express_uncertainty 23->9, 99 moved) + subtype pass on movers; arm-3 r1 validation preview: help 0.77 / harm 0.56 / caution 0.62, mutation stage ~inert (95% undetermined — dims reachability is the lever)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02219",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7402-7410",
+   "text": "commit 10133e5f9dd1130a7f292ddbcb405907009e1fd8\nordinal 331\ndate 2026-08-18 17:13:29 -0700\nauthor Matt Stults\nsubject A5 r2 fresh blind spot-check: 60/63 = 0.952 — bridge-accuracy blocker CLEARED (was 0.806); 3 borderline corrections applied; generics/missed-dims pass over 638 body-blockers launched; reversal honors generic flag\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02220",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7411-7419",
+   "text": "commit 70708d8f660803b7578e39950393162af6abf286\nordinal 332\ndate 2026-08-18 17:14:43 -0700\nauthor Matt Stults\nsubject r2 validation: help 0.77 flat, caution 0.62 flat, harm 0.56->0.52 (subtype narrowing cost recall at flat precision — imprecision is scope-level); tuning half confirms (0.57->0.50) -> v3 reverts harm acts, keeps others; skip-mutation flag for fast act-only scoring\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02221",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7420-7428",
+   "text": "commit 922546e8b44a8ac50e8fac4691ee7362667dfa6c\nordinal 333\ndate 2026-08-18 17:19:04 -0700\nauthor Matt Stults\nsubject round 3 assembled from the failure analysis: H2 protective_response subtype (39 affirmative-duty harm-countering acts, incl. de_escalate/discourage_extremist_involvement — the founding-cautionary-tale clause l1108_1367_n005 now reachable); H3 provide_discussion corrected; reachability generics (35) + missed dims (73, 849->978); r3 validation launched\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02222",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7429-7437",
+   "text": "commit a44848ccdedc37fe3722eab946444043a68e7637\nordinal 334\ndate 2026-08-18 17:24:24 -0700\nauthor Matt Stults\nsubject FULL bridge audit (3 blind auditors, 720/720): 50 corrections (~7%) — disclose_data family recovered (11), CSAM/self-harm-enablement -> provide_hazardous, assess_* safety deliberation -> protective_response, NEW escapes bridged; deliberation boundary ruling recorded (object-of-harm-prevention vs generic weighing)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02223",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7438-7446",
+   "text": "commit 61af11ea9d0242e54b54e0480c20d9299fbb0302\nordinal 335\ndate 2026-08-18 17:24:57 -0700\nauthor Matt Stults\nsubject r3 validation: help 0.77 / harm 0.54 / caution 0.62 — H2 recovered engagement (135->221) but r2b's act_in_world over-moves (audit-corrected) still suppress harm recall; undetermined mass shrinking (272->208) but mutation prune still weak\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02224",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7447-7455",
+   "text": "commit 9a6d9960ff074045ff4e0803daaf032d3a7bce5f\nordinal 336\ndate 2026-08-18 17:27:06 -0700\nauthor Matt Stults\nsubject census (51 tuning failures): H3 21 / H1 15 / H2 10 / H4 actless-node 3 / H5 wrong-actor 2. r5 assembled: 4 node-resolved H3 rebridges (respond_with REVERTED — 53-module generic, an H1 case at bridge level); v4 behaviors (caution +protective_response, helpfulness +refuse); H4/H5 recorded as corpus-extractor ceiling\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02225",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7456-7464",
+   "text": "commit bfc106c495bd142c6946bea56e3a315fbea53fe2\nordinal 337\ndate 2026-08-18 17:35:18 -0700\nauthor Matt Stults\nsubject INPUT-RELEVANCE channel (Matt's design): actless module relevant when it PROVIDES a name an act-relevant module CONSUMES — symbolic, $0, printable reason. Motivating case works: outcome_ranking node reached for caution via its consumers. Tuning: harm +0.02 (recall 0.63->0.67), help recall 0.94->0.97 at small precision cost, caution unchanged. 169/181 actless modules reachable in principle; r4 committed (help 0.77 / harm 0.56 / caution 0.57 — caution dip is the v3/v4 protective_response gap, r5 tests)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02226",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7465-7473",
+   "text": "commit dc51a2daeae2d42d9a2146145e51928ad64594c0\nordinal 338\ndate 2026-08-18 17:42:48 -0700\nauthor Matt Stults\nsubject M30 dropped_modal_assertless detector (Matt's ruling: 'included in the automated machinery for next time') — assertless module with a modal in claims = dropped-norm suspect (FM19 at module scope, review tier, l699_796_n015 exemplar); 7 corpus hits; gate tests 23 passed\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02227",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7474-7482",
+   "text": "commit d092afd96132b4ba80e27e8cab79a35716fb88fc\nordinal 339\ndate 2026-08-18 17:44:16 -0700\nauthor Matt Stults\nsubject r5 validation (help 0.79, arm (b) FIRST WIN 0.81 recall 0.97; harm 0.56 at census-predicted H1 ceiling; caution 0.57 regression) -> root cause: v4 bug, protective_response missing from caution's module does-block; v5 fixes + restores generic provide: caution tuning 0.44->0.81. H5 actor tagging launched\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  }
+ ]
+}

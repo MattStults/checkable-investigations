@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_052",
+  "source_class": "arc2_json",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S00917",
+  "last_span": "S00931"
+ },
+ "spans": [
+  {
+   "id": "S00917",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER3_ATTEMPT4_SCORED.json",
+   "commit": "pin",
+   "lines": "145-145",
+   "text": "  \"a4\": 0.85",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00918",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER3_ATTEMPT4_SCORED.json",
+   "commit": "pin",
+   "lines": "147-188",
+   "text": " \"verdicts\": {\n  \"l1707_1973_n040\": \"relevant\",\n  \"l3596_3876_n041\": \"relevant\",\n  \"l3596_3876_n039\": \"not_relevant\",\n  \"l699_796_n025\": \"relevant\",\n  \"l1001_1107_n012\": \"relevant\",\n  \"l1707_1973_n037\": \"relevant\",\n  \"l699_796_n016\": \"relevant\",\n  \"l1_170_n039\": \"relevant\",\n  \"l3596_3876_n035\": \"not_relevant\",\n  \"l3505_3595_n008\": \"not_relevant\",\n  \"l3596_3876_n045\": \"not_relevant\",\n  \"l699_796_n010\": \"relevant\",\n  \"l2126_2404_n027\": \"not_relevant\",\n  \"l3147_3238_n012\": \"not_relevant\",\n  \"l1_170_n073\": \"not_relevant\",\n  \"l3596_3876_n020\": \"not_relevant\",\n  \"l3041_3146_n008\": \"not_relevant\",\n  \"l3877_3953_n007\": \"not_relevant\",\n  \"l1542_1706_n019\": \"relevant\",\n  \"l3505_3595_n005\": \"not_relevant\",\n  \"l3383_3501_n012\": \"relevant\",\n  \"l3877_3953_n012\": \"not_relevant\",\n  \"l4483_4571_n003\": \"not_relevant\",\n  \"l2126_2404_n012\": \"relevant\",\n  \"l4572_4692_n008\": \"relevant\",\n  \"l3596_3876_n012\": \"relevant\",\n  \"l609_698_n019\": \"relevant\",\n  \"l1001_1107_n011\": \"relevant\",\n  \"l1108_1367_n018\": \"relevant\",\n  \"l171_426_n037\": \"relevant\",\n  \"l3383_3501_n007\": \"not_relevant\",\n  \"l1108_1367_n005\": \"relevant\",\n  \"l1001_1107_n013\": \"relevant\",\n  \"l3954_4251_n031\": \"not_relevant\",\n  \"l461_608_n006\": \"relevant\",\n  \"l2474_2554_n009\": \"relevant\",\n  \"l1_170_n065\": \"not_relevant\",\n  \"l2126_2404_n038\": \"relevant\",\n  \"l3954_4251_n006\": \"relevant\",\n  \"l4252_4482_n013\": \"not_relevant\"\n },",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00919",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER3_ATTEMPT4_SCORED.json",
+   "commit": "pin",
+   "lines": "148-148",
+   "text": "  \"l1707_1973_n040\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00920",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER3_ATTEMPT4_SCORED.json",
+   "commit": "pin",
+   "lines": "149-149",
+   "text": "  \"l3596_3876_n041\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00921",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER3_ATTEMPT4_SCORED.json",
+   "commit": "pin",
+   "lines": "150-150",
+   "text": "  \"l3596_3876_n039\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00922",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER3_ATTEMPT4_SCORED.json",
+   "commit": "pin",
+   "lines": "151-151",
+   "text": "  \"l699_796_n025\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00923",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER3_ATTEMPT4_SCORED.json",
+   "commit": "pin",
+   "lines": "152-152",
+   "text": "  \"l1001_1107_n012\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00924",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER3_ATTEMPT4_SCORED.json",
+   "commit": "pin",
+   "lines": "153-153",
+   "text": "  \"l1707_1973_n037\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00925",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER3_ATTEMPT4_SCORED.json",
+   "commit": "pin",
+   "lines": "154-154",
+   "text": "  \"l699_796_n016\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00926",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER3_ATTEMPT4_SCORED.json",
+   "commit": "pin",
+   "lines": "155-155",
+   "text": "  \"l1_170_n039\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00927",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER3_ATTEMPT4_SCORED.json",
+   "commit": "pin",
+   "lines": "156-156",
+   "text": "  \"l3596_3876_n035\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00928",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER3_ATTEMPT4_SCORED.json",
+   "commit": "pin",
+   "lines": "157-157",
+   "text": "  \"l3505_3595_n008\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00929",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER3_ATTEMPT4_SCORED.json",
+   "commit": "pin",
+   "lines": "158-158",
+   "text": "  \"l3596_3876_n045\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00930",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER3_ATTEMPT4_SCORED.json",
+   "commit": "pin",
+   "lines": "159-159",
+   "text": "  \"l699_796_n010\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00931",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER3_ATTEMPT4_SCORED.json",
+   "commit": "pin",
+   "lines": "160-160",
+   "text": "  \"l2126_2404_n027\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  }
+ ]
+}

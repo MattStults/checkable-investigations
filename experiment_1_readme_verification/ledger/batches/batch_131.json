@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_131",
+  "source_class": "git_log",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S02153",
+  "last_span": "S02167"
+ },
+ "spans": [
+  {
+   "id": "S02153",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "6717-6732",
+   "text": "commit 51d45babf6de1615a1a2bb034781d18cec6a2995\nordinal 265\ndate 2026-08-17 07:36:26 -0700\nauthor Matt Stults\nsubject arm 2 tunes against Fable adjudication, not the panel (Matt's amendment)\nTuning against panel citations would import its measured defects into the\nbehavior. New discipline: 50/50 split of the adjudicated node set by fixed\nseed; tuner sees the tuning half's verdicts-with-grounds only; scoring on\nthe held-out half plus new engagements by FRESH adjudicator instances blind\nto the tuning history. The panel survives in arm 2 only as metric 1's\nnumeric bar. Re-hashed, still unsigned.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02154",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "6733-6741",
+   "text": "commit 2099eb0e0429fe9f70c0c309faf492d3888c48c2\nordinal 266\ndate 2026-08-17 08:09:25 -0700\nauthor Matt Stults\nsubject chunk 2: 83/90 translated; audit 3/6 hard-stratum, fix-loop classes GONE; M29+M28ext detectors added, FM23 taught\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02155",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "6742-6755",
+   "text": "commit 0f96b0368e502d88077f7f1b07a25168eea023ca\nordinal 267\ndate 2026-08-17 08:12:40 -0700\nauthor Matt Stults\nsubject chunk-2 repairs: 2/3 verified; n002 exclusion softening to should-strength in flight\nVerifier caught the repair over-correcting 'should only' into forbid+cnpa\n(should->must escalation) — the repair pipeline's checks work in both\ndirections. Follow-up applies the n022 precedent (forbid + hedged read_back\n+ cepa) for soft prohibitions.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02156",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "6756-6764",
+   "text": "commit 5b8ac4e5709e342628cbe35fb669cb3a1734a0fd\nordinal 268\ndate 2026-08-17 08:13:38 -0700\nauthor Matt Stults\nsubject chunk-2 repairs sealed 3/3 verified (one softening round); known-defect set empty\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02157",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "6765-6773",
+   "text": "commit 4ab82122a167b23c24a6f4bda7cdbcf2afa00e73\nordinal 269\ndate 2026-08-17 08:23:27 -0700\nauthor Matt Stults\nsubject chunk 3: 81/90 translated (8 abstentions); audit 2/6 hard-stratum, four to repair; M28 catches should-not-vs-prefer\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02158",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "6774-6789",
+   "text": "commit 0ceec8e4b4b0e38ca89904e4312dd167039ece49\nordinal 270\ndate 2026-08-17 08:28:24 -0700\nauthor Matt Stults\nsubject chunk-3 repairs: 3/4 verified; n002-2474 exception restructure in flight\nThe verifier surfaced a pre-existing defect deeper than the audit's finding:\nthe higher-authority exception relativized to an invented assistant level\n(a user instruction could license misleading the developer) and an\nunadjudicated permit/forbid clash. Follow-up: relativize to the misled\nparty via party_level/2 + hierarchy, and guard the forbids with the\nnegated exception per rule-4 discipline.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02159",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "6790-6798",
+   "text": "commit f2f474bb9a64c2b68d6d5b3a0f3f5cadf888d532\nordinal 271\ndate 2026-08-17 08:30:08 -0700\nauthor Matt Stults\nsubject chunk-3 repairs sealed 4/4 verified; exception relativized to the misled party; known-defect set empty\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02160",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "6799-6807",
+   "text": "commit 8561714dddda8a658ceba7390f50ea02ff57ecc1\nordinal 272\ndate 2026-08-17 08:55:49 -0700\nauthor Matt Stults\nsubject chunk 4: 87/90, 0 failed (cleanest chunk); audit 3/6 hard-stratum, FM23 held; M28 catches should-avoid; brief-consistency item logged\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02161",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "6808-6816",
+   "text": "commit 0792576ed3808660a7986524cc75c2b0516afe19\nordinal 273\ndate 2026-08-17 09:00:19 -0700\nauthor Matt Stults\nsubject chunk-4 repairs: 1/3 verified round 1; two contract-level follow-ups (require + PROVIDES define) in flight\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02162",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "6817-6825",
+   "text": "commit 811f0a72e50317698fb48ef48753a0ef8141fe2a\nordinal 274\ndate 2026-08-17 09:03:53 -0700\nauthor Matt Stults\nsubject chunk-4 repairs sealed 3/3 (ground-fact PROVIDES discharge); chunk 5: 89/90, 0 failed; known-defect set empty\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02163",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "6826-6834",
+   "text": "commit 64cf864c52adc03998254ed1b329b8c6e75f9939\nordinal 275\ndate 2026-08-17 09:05:45 -0700\nauthor Matt Stults\nsubject chunk 5 audit: 1/6 hard-stratum but 4/6 charges are M1-mechanical (persona region drops authority requires); M28 broadened\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02164",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "6835-6843",
+   "text": "commit 494f58b6579f8092b7027f9900c3a2a16cf43107\nordinal 276\ndate 2026-08-17 09:09:14 -0700\nauthor Matt Stults\nsubject chunk-5 repairs: 5/5 at 0 breaches (validator caught an intermediate body bug live); verification dispatched\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02165",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "6844-6852",
+   "text": "commit 35f1dad369107ededd6a78b57bf4151ebfa5f9e0\nordinal 277\ndate 2026-08-17 09:11:45 -0700\nauthor Matt Stults\nsubject chunk-5 repairs sealed 5/5 verified; known-defect set empty; modal-mapping brief item firmed\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02166",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "6853-6869",
+   "text": "commit a9e646e1f56bfd2d0e262f7ab169855a79b70b31\nordinal 278\ndate 2026-08-17 09:38:38 -0700\nauthor Matt Stults\nsubject BULK CAMPAIGN COMPLETE: 757 translated + 32 abstained over all 773 nodes, $16.43/$25\nChunk 6: 63/64, 0 failed. Final gate: 459/757 hard-clean; the remainder\ndecomposes into the grown seam (arity disagreements 14->25, section-local\nglosses 3->18 — new shared names outpaced the 16-name contract; the seam\ncontract needs its next growth round), persona-region contract drops\n(M1/M2), and the semantic detectors' catches — the itemized post-campaign\nrepair queue. Every chunk's audit cohort is sealed (0-5 at 6/6 each);\nchunk 6's audit in flight. Finished >5h before the DeepSeek price change.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02167",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "6870-6878",
+   "text": "commit 247cd5562c428eb78461ee860f11b9a145a06514\nordinal 279\ndate 2026-08-17 09:46:08 -0700\nauthor Matt Stults\nsubject full-corpus panel run 2 underway: helpfulness partial in (ceiling 0, agree 9); run-1 artifacts archived; chunk-6 repairs at 0 breaches\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  }
+ ]
+}

@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_165",
+  "source_class": "arc2_docs_preredaction",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S01702",
+  "last_span": "S01716"
+ },
+ "spans": [
+  {
+   "id": "S01702",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "283-291",
+   "text": "## Corrections to the main review\n\n**C1 — Cost premise (affects F17, A12).** Panel adjudication is **$0 API**. The $17.179/$25.00 in `spend.py` is corpus translation and matching spend (DeepSeek-V4-Flash bulk translation alone is $13.73); `usage.jsonl` has essentially no rows during the periods when the round-3/4, generalization, UA, and tradeoffs panels ran. Panel truth is produced by **Fable/Opus subagent seats**, and the real budget is Matt's Fable envelope (notes 0032: 5%/week cap), pre-registered at **~0.13–0.17M Fable tokens per 80-node panel round**, ~0.08–0.10M per 40-node generalization behaviour. My F17 experiment is therefore **not** dollar-constrained — but it must be registered against the **Fable** budget, and that is a real constraint the L1/L2 registrations also omit entirely.\n**Fix.** Every registered experiment states its Fable-token cost estimate alongside its $ cost, per the existing prereg pattern.\n\n**C2 — Scale (affects F5, F7).** The graph is **773 nodes** (`graph_v2/node_corpus_all.json`; 593 at root unwind per `GRAPH_OVERVIEW.md`), not ~600. More importantly: `behavior_pilot/coverage_translated.json` records **`translated_nodes: 183`**. See F32.\n\n---\n",
+   "source_class": "arc2_docs_preredaction"
+  },
+  {
+   "id": "S01703",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "292-293",
+   "text": "## New findings\n",
+   "source_class": "arc2_docs_preredaction"
+  },
+  {
+   "id": "S01704",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "294-303",
+   "text": "### F28. There are TWO incompatible \"relevance\" truths on disk, and L1 names neither. This is truth-shopping waiting to happen.\n**Defect.**\n- Graph-node ledger (`satisfiability_census.truth_all()`, `.../behavior_pilot/satisfiability_census.py:180-199`): helpfulness 477 nodes at **0.560** positive, harm-avoidance 291 at **0.443**, caution 285 at **0.540**.\n- panel-v5 (`data/panel-v5/runlog-v5.jsonl`, 31,293 rows, pinned to `ai-character-index@ef08e676`): same behaviours over **589 model-spec passages**, majority-verdict≥2 positive rates of **0.012 (helpfulness), 0.044 (third-party-harm), 0.007 (over-under-caution)** — one to two orders of magnitude apart from the node ledger.\n- The original frontier panel (`data/behaviours.json`, rubric v3w) gives a third set: 377/333/153 passages at 0.536/0.550/0.614.\n\nThree artifacts, three constructs, all called \"relevance.\" L1 says \"relevance prediction over the representation must beat majority baseline\" without naming the ledger, the unit (node vs passage), or the threshold (any-judge≥2 vs majority≥2 vs score≥2).\n**Why it matters.** \"Beats majority baseline\" means something wildly different at base rate 0.56 than at 0.007 — at the latter, a constant-negative predictor scores 0.993 and *nothing* beats it on accuracy. And with three ledgers available, a failing run can be re-scored against another until one passes. This is the granularity-shopping the project already banned once (`dd8abd55`).\n**Fix (registered condition).** Name the ledger, the unit, and the threshold **in the registration, before running**. Register the graph-node ledger at node granularity as primary (it is the only one at the unit the campaign produces), panel-v5 as a pre-registered secondary replication, and prohibit re-scoring against a second ledger without a new registration naming the change. Separately: publish the **cross-ledger agreement rate** on the nodes/passages that join. If two frontier-panel constructs of \"relevance\" disagree this much, the construct validity of the target itself is unestablished, and that is a prior question to Q-A.\n",
+   "source_class": "arc2_docs_preredaction"
+  },
+  {
+   "id": "S01705",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "304-308",
+   "text": "### F29. Q-B is circular by construction: every behaviour with panel truth is IN the 100-definition corpus, because 11 corpus entries ARE the project's own behaviour set.\n**Defect.** `query_class_corpus.json`'s 100 ids break down as `ms:` 29, `sparrow:` 24, `anthropic-constitution:` 12, `anthropic-aup:` 10, **`adria:` 11**, `hhh:` 9, `llamaguard:` 6. Every behaviour with adjudicated node truth maps into the `adria:` block: helpfulness, third-party-harm, over-under-caution, tradeoffs, user-autonomy, harmlessness-to-user, objectivity, general-welfare, proportionate-risk. panel-v5's two additional defined behaviours (`no-sycophancy`, `undermine-oversight`) are *also* in the corpus and have **zero rulings** in the runlog. The one behaviour outside the 100 — `animal-welfare-impacts` — has citation coverage only (`data/panel-coverage.json`) and **zero** adjudicated relevant/not_relevant rulings anywhere.\n**Why it matters for Q-B.** The 24×105 ontology was open-coded from a corpus that includes the definitions of the very behaviours it is scored against. There is **no out-of-corpus panel truth in this repo at all**. L2 as written does not fix this, because L2 never produces a relevance judgment (F12) — so if L2 passes, Q-B remains untested by construction, not merely under-tested.\n**Fix.** Register explicitly: **Q-B cannot be answered by any experiment that does not create new out-of-corpus panel truth.** Minimum: 3 out-of-corpus behaviours × a uniformly drawn, fully ruled node block (the fresh-draw pattern, ~80 nodes each ⇒ ~0.4–0.5M Fable, $0 API), with the behaviour definitions selected per F14 and frozen pre-annotation. `no-sycophancy` and `undermine-oversight` are **not** eligible (in-corpus). This is the single largest gap in the licensing plan and it is affordable.\n",
+   "source_class": "arc2_docs_preredaction"
+  },
+  {
+   "id": "S01706",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "309-313",
+   "text": "### F30. `panel-v5` is a large, pinned, externally-authored truth set that neither L1 nor L2 uses.\n**Defect.** 9 behaviours × 589 model-spec passages, 3 judges each (5 for proportionate-risk), rubric committed, provenance byte-identical to an external repo — i.e. truth the project did not author, already frozen, at $0. It is unexploited.\n**Why it matters.** External-provenance truth is the strongest defence against the designer-smuggling erratum series. It also gives 9 behaviours where L1 gives 2 (F8).\n**Fix.** Register panel-v5 as the pre-registered replication tier for the relevance clause — but only after a committed **join audit**: passages→nodes is not an identity map, and the join must be built, hashed, and its coverage/ambiguity rate published before any metric is computed. Score with class-aware metrics only (F21); at majority≥2 positive rates of 0.005–0.061, accuracy is meaningless and 1-NN will collapse to all-negative.\n",
+   "source_class": "arc2_docs_preredaction"
+  },
+  {
+   "id": "S01707",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "314-318",
+   "text": "### F31. The assembled truth ledger is composition-biased: positives and negatives were selected by different processes.\n**Defect.** `truth_all()` assembles helpfulness's 477 nodes from: the base `arm_ab.truth_for()` block (157), `panel_run1/adjudication_run2_help.json` (82), **`panel_run1/agreed_negative_rulings.json` (15/behaviour, seed 20260816)**, `arm3_negative_rulings.json`, `arm2_*_fresh_rulings.json`, fresh-draw blocks, `panel_rerulings.json` precedence overlays, and a `defensibility_rulings.json` `truth_ledger_updates` entry. Negative-class nodes enter partly through dedicated \"agreed negative\" draws; positive-class nodes partly through escalation panels.\n**Why it matters for Q-A.** Any classifier scored on this ledger can learn the *assembly process* rather than the relevance concept — and a 0.72-vs-0.60 result is exactly the size of effect that assembly artefacts produce. It also means the 0.560/0.443/0.540 base rates are properties of the assembly, not of the document.\n**Fix.** Score the relevance clause on **single-process, uniformly drawn, fully ruled partitions only**. These already exist: `panel_run1/fresh_draw/HELP_RESULT.json` (80), `fresh_draw2/{HELP_R2,HARM_R2,CAUTION_R2}_RESULT.json` (80 each), `fresh_draw3/HELP_R3_RESULT.json` (80), `fresh_draw4/{HELP_R4 80, HARM_R4 57, CAUTION_R4 80}` — ~537 rulings across clean uniform draws, with sane positive rates (0.375–0.538). Register these as the evaluation set; report the assembled ledger, if at all, as a separate stratum with its composition disclosed.\n",
+   "source_class": "arc2_docs_preredaction"
+  },
+  {
+   "id": "S01708",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "319-323",
+   "text": "### F32. L1 presupposes the campaign it is supposed to license — only 183 nodes have ever been translated.\n**Defect.** `coverage_translated.json` records `translated_nodes: 183` of 773. L1 says \"freeze mids induced from HALF the spec's nodes; score … the HELD-OUT half.\" Half of 773 is ~386 nodes that do not exist in translated form. Producing them **is** the retranslation campaign — the ~$/Fable expenditure the experiment is meant to justify. Read literally, L1 cannot be run before the decision it informs.\n**Why it matters.** Either L1 silently means \"half of the 39-node problem-stratified sample\" (n≈19, no power, wrong frame — F5, F7), or it means a several-hundred-node translation commitment made before the licensing question is settled.\n**Fix.** Register L1 explicitly as a **staged pre-flight**: a uniform random draw of N nodes (N set by a power calculation against the F31 clean partitions, and stated), translated end-to-end through the real pipeline, with wall-clock / Fable-token / seat-disagreement / merge-arbitration rates recorded — so the pre-flight simultaneously yields the licensing measurement (F17) and the scaling estimate (F19). State the pre-flight's cost as a fraction of full-campaign cost in the registration.\n",
+   "source_class": "arc2_docs_preredaction"
+  },
+  {
+   "id": "S01709",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "324-328",
+   "text": "### F33. Existing gates have already FAILED, and L1/L2 are structured to bypass rather than reconcile with them.\n**Defect.** On disk right now: `GEN_BLOCK1_SCORED.json` — how-to-approach-tradeoffs engaged-precision **0.40**, \"F2 fires, block-1 **STOP RULE**\"; `panel_run1/REGISTERED_RESULT.json` — **`metric0: FAIL`** on all three behaviours (helpfulness decline 3/24, panel-citation 21/24); `ITER2_ATTEMPT3_SCORED.json` prec 0.40 / decl 0.50; the OPERATIVE_TARGET mint held at TP-side coverage 0.67 vs a ≥0.70 gate. L1/L2 make no reference to any of these and would, if passed, sit alongside an un-cleared STOP RULE.\n**Why it matters for the funding decision.** A licensing experiment that can pass while a prior stop rule remains fired is not a gate; it is a second opinion sought after an unfavourable first one.\n**Fix.** Register a precondition: **L1/L2 results are void unless the block-1 STOP RULE and the `metric0: FAIL` findings are either cleared with a measurement or explicitly superseded by a signed ruling naming them.** The campaign decision memo must list every currently-red gate and its disposition.\n",
+   "source_class": "arc2_docs_preredaction"
+  },
+  {
+   "id": "S01710",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "329-331",
+   "text": "### F34. **Objection withdrawn / good news:** the power problem in F7 is fixable at zero cost.\nThe graph-node ledger holds 477 / 291 / 285 truth-bearing nodes (union 644 across three behaviours), plus UA 175 and tradeoffs 75 — far more than the ~150/~122 I assumed. Restricting to the clean uniform draws of F31 still leaves ~537 single-process rulings. **F7's underpowered-half concern therefore disappears entirely if L1 is scored out-of-fold on the full clean partition set instead of on a single held-out half** — at n = 477 the power to detect 0.72 vs 0.60 is ≈0.999, and n = 80 per fresh-draw block supports per-block replication. This is the one place where the registrations are more conservative than they need to be, and the fix (A4: k-fold out-of-fold induction) costs nothing.\n",
+   "source_class": "arc2_docs_preredaction"
+  },
+  {
+   "id": "S01711",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "332-335",
+   "text": "### F35. `ua_truth_sealed.json` is the repo's only genuinely held-out truth partition, is single-use, and is at risk of being spent on the wrong question.\n**Defect.** 38 nodes (11 relevant / 27 not, 0.289), marked **\"SEALED — single-use at the registered confirmation; must not enter visible truth.\"** It is the closest thing the project has to an uncontaminated confirmation set. Neither L1 nor L2 mentions it, which means an unregistered run could burn it.\n**Fix.** Register: the UA seal is **not** available to L1 or L2. It is reserved for the single registered confirmation it was created for, and any proposal to redirect it requires a signed ruling naming what it is being spent on and what is given up. Add a repo-level guard: a test asserting that no L1/L2 scoring path reads `ua_truth_sealed.json` (the project's existing `FORBIDDEN` / `QUERY_MODULES` registration pattern).\n",
+   "source_class": "arc2_docs_preredaction"
+  },
+  {
+   "id": "S01712",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "336-341",
+   "text": "### F36. UA's own ledger shows the base-rate problem is behaviour-dependent, which breaks any single pass threshold.\n**Defect.** Positive rates across the truth on disk span **0.005 to 0.614** — user-autonomy visible 0.255, tradeoffs iter-1 0.350 / iter-2 0.467, fresh draws 0.375–0.538, panel-v5 majority 0.005–0.061, original panel 0.536–0.614. L1's single \"beats majority baseline\" bar is not comparable across behaviours and is trivially satisfiable at the extremes.\n**Fix.** Per-behaviour thresholds expressed in ceiling-relative, class-aware terms (F21, F22): MCC and positive-class F1 against panel-internal agreement, with the **worst** behaviour as the headline (A3), never a pooled mean.\n\n---\n",
+   "source_class": "arc2_docs_preredaction"
+  },
+  {
+   "id": "S01713",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "342-352",
+   "text": "## Updated Part 3 recommendation\n\nF17 stands as the single strongest experiment, with these revisions from the inventory:\n\n- **Items:** the F31 clean uniform fresh-draw partitions (~537 rulings across helpfulness / harm-avoidance / caution), **not** the assembled `truth_all()` ledger; panel-v5 (589 passages × 9 behaviours) as a pre-registered replication tier after a committed join audit.\n- **Cost:** $0 API. Register the **Fable-token** estimate instead (~0.13–0.17M per 80-node ruled block is the project's own measured unit; the two readout arms are judge calls over already-ruled nodes, so the marginal cost is arm-count × block size).\n- **Behaviour count:** 9 behaviours have some truth, so A3's \"≥5 behaviours\" is achievable today at $0.\n- **Added, non-optional (F29):** ≥3 **out-of-corpus** behaviours with new fresh-draw panel truth. Without this, Q-B is untestable by construction, and it is the cheapest high-value spend available (~0.4–0.5M Fable, $0 API).\n\n---\n",
+   "source_class": "arc2_docs_preredaction"
+  },
+  {
+   "id": "S01714",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "353-373",
+   "text": "## REVISED OVERALL VERDICT\n\n**DOES-NOT-LICENSE** — unchanged, and now on firmer ground.\n\nThe inventory removes one of my objections (F34: power) and adds a worse one in its place: **there is no out-of-corpus panel truth anywhere in the repo, and all nine truth-bearing behaviours are inside the 100-definition corpus via its own `adria:` block.** Q-B is therefore not merely under-tested by L2 — it is untestable by any experiment currently registered, because L2 never produces a relevance judgment and no held-out behaviour has truth to judge against.\n\nMeanwhile L1's relevance clause is (a) already passed by the demolished numbers, (b) unspecified as to which of **three mutually inconsistent relevance ledgers** it means, with base rates spanning 0.005–0.614, and (c) written against a node population 76% of which has never been translated.\n\n**Amendments A1–A12 stand, with these additions:**\n\n- **A13 (F28).** Name the ledger, unit, and threshold in the registration; publish cross-ledger agreement; prohibit re-scoring against a second ledger without a new registration.\n- **A14 (F29).** Q-B requires new out-of-corpus panel truth: ≥3 behaviours × ~80-node uniform fully-ruled draws, definitions frozen per F14, `no-sycophancy` and `undermine-oversight` ineligible as in-corpus. **No amendment substitutes for this one.**\n- **A15 (F30).** Register panel-v5 as the replication tier, gated on a committed passage→node join audit, scored class-aware only.\n- **A16 (F31).** Score on single-process uniform fresh-draw partitions; disclose composition for any assembled stratum.\n- **A17 (F32).** Restructure L1 as a staged translation pre-flight that yields the licensing measurement and the scaling estimate together, with its cost stated as a fraction of the full campaign.\n- **A18 (F33).** Void L1/L2 unless the block-1 STOP RULE and the `metric0: FAIL` results are cleared or superseded by signed ruling; the decision memo enumerates every red gate.\n- **A19 (F35).** The UA seal is off-limits to L1/L2, enforced by a registered test.\n- **A20 (C1).** Every registration states its Fable-token cost, not only its $ cost.\n\n**A14 is the load-bearing one.** Without it, L1 and L2 can both pass and Q-B will be exactly as open as it is today.\n",
+   "source_class": "arc2_docs_preredaction"
+  },
+  {
+   "id": "S01715",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_REVIEW_DISPOSITION.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "1-11",
+   "text": "# DISPOSITION — adversarial review of the L1/L2 licensing experiments\n(2026-08-25. Matt's question: would passing L1/L2 as registered\nactually support answering Q-A (complete representability for\nseparation under full retranslation) and Q-B (extension to novel\nbehaviours)? Clean-context Opus reviewer's full report:\nL1L2_ADVERSARIAL_REVIEW.md (36 findings F1-F36, amendments A1-A20).\nVERDICT: DOES-NOT-LICENSE — ACCEPTED after CoVe. L1/L2 as registered\nin RETRANS_REVIEW_DISPOSITION.md are WITHDRAWN as licensing\nexperiments; they survive only as raw material for the amended\npackage below. No retranslation campaign is fundable on them.)\n",
+   "source_class": "arc2_docs_preredaction"
+  },
+  {
+   "id": "S01716",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_REVIEW_DISPOSITION.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "12-12",
+   "text": "## CoVe results (driver re-derivations; the review is accepted only",
+   "source_class": "arc2_docs_preredaction"
+  }
+ ]
+}

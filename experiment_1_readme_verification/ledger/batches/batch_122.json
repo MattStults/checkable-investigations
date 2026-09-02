@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_122",
+  "source_class": "git_log",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S02027",
+  "last_span": "S02041"
+ },
+ "spans": [
+  {
+   "id": "S02027",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4502-4547",
+   "text": "commit adc49e57aede6501e578d08bae09e91dd2069e91\nordinal 139\ndate 2026-08-09 08:43:53 -0700\nauthor Matt Stults\nsubject DEBUGGING_TIPS 19: the worked example teaches the opposite of the prose on requires/inputs\nMatt, on the measured wholesale flip: \"that seems like we're not defining inputs\nand requires well enough in the prompt.\" Correct, and the section-1 diagnostic\nfinds it in one grep.\n\nThe prose criterion is clear and locally decidable -- requires is what another\nclause must define, inputs describes the case being judged. The worked example\ncontradicts it: 20_worked_example.md's m0088 block emits \"requires\": [] and puts\nall six body predicates in inputs, then says approvingly \"All six appear in\ninputs\". Among them same_level/2 (authority levels are established by\nlevels_of_authority) and misaligned_with_higher_level/1 (needs the chain of\ncommand) are document-side by the prompt's own rule.\n\nAnd those are exactly the concepts m0079 later coined as\nconflicts_with_higher_authority/1 and conflicts_with_later_same_authority/1 and\nplaced in requires. Two translations, two fields, both following the prompt,\nbecause the prompt demonstrates one answer and states the other.\n\nCorrects the diagnosis I filed earlier today. I recorded this as not a model\nfailure -- requires being a global property of the corpus the translator cannot\nknow -- and proposed a schema change to collapse the two fields. Half true, and\nit pointed at the expensive fix. Whether another clause actually defines the\nsymbol is global, but that is not the prompt's criterion; the prompt asks\n\"document or case?\", which is local and decidable from the clause alone. The\nmodel was following a contradictory example, exactly as section 1 predicts.\n\nThe generalisable lesson: check the DEMONSTRATION before concluding the task is\nimpossible. A contradictory example and an unknowable distinction both produce a\nstable-looking coin flip from the outside, and they have wildly different fixes.\n\nThe fix is a prompt change (provenance_hash, modules stay valid) not a contract\nchange (contract_hash, modules may no longer validate). Same ~$0.07\nre-translation, no structural risk. If fixing the example kills the flip, the\nborrows collapse may be unnecessary entirely -- test the cheap fix first.\n\nNotes that test_prompt_examples.py counts demonstrated shapes mechanically but\ndoes not count requires/inputs placement, which is why this survived.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02028",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4548-4603",
+   "text": "commit 818045f4c36c059594a0fa58a79d292ee368d400\nordinal 140\ndate 2026-08-09 11:37:03 -0700\nauthor Matt Stults\nsubject Q-22 FIX: an unsatisfied `requires` now reaches the situation signature\nsituation_signature was inputs UNION (head-less AND declared-in-concepts). A\nborrowed predicate is head-less and the concept table covers only names a clause\nINTRODUCES, so `requires` matched neither term and was silently dropped. 6 of 19\nstored modules carried one.\n\nOn m0079 the dropped predicate sat under a negation, so\nnot higher_authority_conflict(I) was permanently true and the module collapsed\nto \"every instruction is applicable\" -- the clause's entire content inert, probe\ngreen, because no enumerated situation could reach the dead branch.\n\nMeasured before/after on the stored corpus, 40 -> 55 signature predicates:\n  m0255-1339  5 -> 8    m0079-1719  1 -> 3    m0079-1748  1 -> 5\n  m0105-1748  1 -> 5    m0134-1748  5 -> 6    m0150-1748  1 -> 2\n\nm0079-1719 now enumerates 8 situations instead of 2, derives\nhigher_authority_conflict(x) and later_same_authority_conflict(x) in some of\nthem, and applicable_instruction discriminates instead of being permanently\ntrue.\n\nThe fix is NOT \"add requires to the signature\". requires means another clause\ndefines it, and when a linked module does define it the predicate is DERIVED;\nputting a derived predicate in the signature lets a situation assert it\nindependently of the rule that produces it, which is worse than the bug being\nfixed. So an unsatisfied requires joins and a satisfied one does not, pinned by\ntest_q22_control_a_requires_THE_LINK_DEFINES_stays_out.\n\nA fourth term was needed too: linking a provider in moved the required predicate\nout of the signature correctly while the provider's OWN inputs never entered, so\nthe defining rule could not fire either and linking made a module MORE inert.\nLinked modules' inputs are facts about the same case and now join.\n\nReported, not silently repaired: a `requires-unsatisfied` note names each unkept\npromise. severity=note deliberately, not error -- only error drives the stage-2\nrepair loop and no rewrite of this module can conjure the clause that was\nsupposed to define the predicate (DEBUGGING_TIPS 7).\n\nConsequence, surfaced not suppressed: with borrows now enumerated,\nrender_situation refuses them for want of a gloss (Q-6), which blocked two\nshipped specs. The gloss fence is the anti-hollow-stub check and was NOT\nrelaxed. probe_live gains UnglossedSignature and blocking_gaps so a blocked\nmodule is a named, reported state; two new tests prove every block is genuine\n(the predicate really is in requires and really is unglossed) and that the\nerror names the predicate. No count is pinned -- Q-23 landing will legitimately\nempty that set.\n\n730 pass, 1 xfailed.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02029",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4604-4661",
+   "text": "commit ed2bbafda7897f43863944c1ad08d1d522e56be6\nordinal 141\ndate 2026-08-09 13:34:16 -0700\nauthor Matt Stults\nsubject Q-22 FIX: a borrowed condition can no longer vanish from the test space\nThe machinery half. The worked-example fix and its three placement tests are\nheld back together, since those tests fail against the old prompt and would make\na clean checkout red.\n\nTHE BUG. A logic module often needs a condition it does not define, and declares\nit in `requires` -- \"another clause defines this\". situation_signature ignored\nthat field entirely, so the condition was silently treated as never true and any\nrule depending on it could never fire. 6 of 19 stored modules carried one.\n\nOn m0079 the dropped condition sat under a negation, so\n`not higher_authority_conflict(I)` was permanently true and the module collapsed\nfrom \"follow the instruction unless a higher authority conflicts\" to \"always\nfollow the instruction\". The probe reported PASSED, because with the condition\nabsent from the signature no enumerated situation could reach the dead branch.\n\nTHE FIX is not \"add requires to the signature\". When a linked module DOES define\nthe predicate it is derived, and putting a derived predicate in the signature\nlets a situation assert it independently of the rule that produces it -- worse\nthan the bug. So an unsatisfied requires joins and a satisfied one does not,\npinned by test_q22_control_a_requires_THE_LINK_DEFINES_stays_out.\n\nA fourth term was needed too: linking a provider in moved the required predicate\nout of the signature correctly, while the provider's OWN inputs never entered,\nso the defining rule could not fire either and linking made a module MORE inert.\n\nMeasured on the stored corpus, 40 -> 55 signature predicates. m0079 went from 2\nenumerated situations to 8, now derives both conflict predicates, and\napplicable_instruction discriminates instead of being constant.\n\nReported, not silently repaired: a `requires-unsatisfied` note names each unkept\npromise. severity=note not error -- only error drives the stage-2 repair loop,\nand no rewrite of this module can conjure the clause that was supposed to define\nthe predicate (DEBUGGING_TIPS 7).\n\nCONSEQUENCE, surfaced not suppressed. With borrows enumerated, render_situation\nrefuses them for want of a gloss, blocking two shipped specs. The gloss fence is\nthe anti-hollow-stub check and was NOT relaxed. probe_live gains\nUnglossedSignature and blocking_gaps so a blocked module is a named, reported\nstate; two tests prove every block is genuine and that the error names the\npredicate. No count is pinned. This makes a borrow gloss a PREREQUISITE for\nstage 4, not an optimisation.\n\nSome modules now FAIL that previously passed -- they passed by having nothing to\ntest. A pass count alone will misread this as a regression.\n\nIncludes four live translation runs ($0.0318) and the measurement write-up.\n\n730 pass, 1 xfailed.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02030",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4662-4710",
+   "text": "commit 5aeab2d66c1cc899e72e69c792a03d6d8141c71d\nordinal 142\ndate 2026-08-09 20:14:28 -0700\nauthor Matt Stults\nsubject preflight: free Haiku run of the borrow-description change -- two findings, no spend\nMatt asked for a manual run against Haiku before real spend. Built the real\nsystem and user prompts via translate.build_system/build_user, handed them\nverbatim to subagents, put the JSON back through schema.validate. Two clauses,\ntwo runs each, $0.00.\n\nFOUND A DEFECT BEFORE ANY SPEND. The change added a validator and updated the\nworked example and never wrote the instruction down. Every clause with a\nborrowed condition would have been rejected for a rule it was never told,\nburning repair attempts, and it would have presented as \"the model cannot\nfollow the format\" rather than \"we forgot to say\". Fixed before the runs.\n\nThe format is followable and the rule bites: 2 of 4 validate first pass, both\nfailures unrelated (an act used but not declared); every requires entry got a\nsubstantive gloss; zero hollow glosses. Both agents volunteered that the\ninstruction was clear.\n\nTHE FINDING: two runs carve the same sentence at different granularities.\nm0079 run A produced three binary relations (higher_authority/2, conflicts/2,\nsame_authority/2); run B produced two unary bundles\n(conflicts_with_higher_authority/1, superseded_by_later_same_level/1). B's\nsingle condition is approximately A's two conjoined, and the ARITIES differ, so\nthey cannot pair one-to-one even in principle. Borrowed names shared between\nruns: 0 of 8 on m0079, 0 of 7 on m0150. This is a layer of disagreement\nunderneath naming that no gloss quality removes.\n\nCORRECTION: the paid DeepSeek runs measured borrowed-name agreement rising\n0.00 -> 0.50/0.69 after the worked-example fix, reported with the caveat that it\nwas unpredicted and should be re-measured. Re-measured here: 0.00 and 0.00.\nEither Haiku varies more or the earlier figure was noise at 9-16 symbols. It\nmust not be relied on.\n\nKeep the description change -- cheap, followable, readable, and it unblocks the\ntwo specs Q-22 left blocked; its value does not depend on linking. Do NOT yet\nspend on translating whole sections for linking: the plan assumed one condition\nmatches one definition, and that is not the shape of the problem.\n\nRecords three untested options, favouring matching at the CLAUSE level rather\nthan the predicate level -- the only one that does not require the linking\nproblem solved first, and closer to what the tool actually claims.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02031",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4711-4734",
+   "text": "commit 3d856a802e4290acd4f990433fcc0b7b477ec7b5\nordinal 143\ndate 2026-08-12 12:29:03 -0700\nauthor Matt Stults\nsubject graph_v2 campaign: batch execution core, ds3-ds5 fix stack, review closures\nCode, prompts, tests and decision logs for the DeepSeek graph campaign:\n- dispatch_core.py: shared Serial/Concurrent/Batch execution core with\n  in-flight manifest, batch failure taxonomy, orphan recovery\n- recurse_driver.py: duplicate-seed coherence, D6 stage-1 classifier wired\n  (oversize malfunction resamples once), identical-repair-reply restart,\n  promise-vs-delivery health check, formatting classifier, containment\n- stage-2 inputs-gloss rule (schema.py + prompts, guard-accepted by Matt)\n- stage-4 seat fixes: digit-fallback scoped to 4a/4b, per-span clause_text,\n  provider-first merged_gloss, whitespace-claim round-trip\n- consolidated_fix_review.md NEGATIVE verdict: all findings validated,\n  fixed, pinned; latent-branch coverage audit + serial-path mirror pins\n- EXPERIMENTS.md carries every ruling with grounds and rejected alternatives\n\nWatched files re-accepted via guard.py by mattstults 2026-08-12.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02032",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4735-4748",
+   "text": "commit fb05780e3dd96d735b5e0ef72054dd67dcd0173f\nordinal 144\ndate 2026-08-12 12:29:14 -0700\nauthor Matt Stults\nsubject graph_v2 campaign: run artifacts and evidence (ds2-ds5, head-to-head, probes)\nBuild outputs, health telemetry, buried failures, compare reports and the\nusage ledger backing every number in the decision logs. ds5 completed\n817 nodes / $0.92 across three segments; compare_vs_golden.json for\nds3/ds4/ds5 and the batch-vs-concurrent head-to-head runs.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02033",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4749-4770",
+   "text": "commit 87104f4d1600c223dab15408ccd055e8ac7bf30c\nordinal 145\ndate 2026-08-12 12:48:00 -0700\nauthor Matt Stults\nsubject steps 1-4 latent-path audit: fix the two validated bugs, adopt 35 audit pins\nBUG 1: _check_envelope now trusts response_envelope's own truncated flag --\nthe two validators can no longer disagree on the same reply (a\nmax_output_tokens truncation was complete to the serial guard, truncated\nto the batch collector).\nBUG 2: HTTP 402 rides a short retry ladder (2 retries, ~90s) in both\nexecution paths instead of the full 630s transient ladder; terminal-402\nrejected by name (together.ai credit-propagation flaps are measured and\nreal). The two F2 pins in test_translate_exec patch sleep -- the graph_v2\nsuite drops from ~22 min back to ~2 min.\n\ntest_latent_paths_steps14.py (35 offline tests) adopted; both former\nBUG-reproduction pins rewritten to assert the fixed contracts.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqffXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02034",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4771-4791",
+   "text": "commit 8d72842d8b8061f9e7b40b5f0b68d051935d16c2\nordinal 146\ndate 2026-08-12 13:03:56 -0700\nauthor Matt Stults\nsubject dense leaves re-enter Phase D; repair census tool; 2026-08-12 rulings\n- A leaf whose content overflows the cap now recurses through the NORMAL\n  division path in both execution paths (serial fallback + core in-place\n  morph); D6 stages 2-3 mechanical bisect rejected by name. Pinned e2e,\n  byte-identical artifacts across paths.\n- repair_census.py: per-run failure taxonomy with fix levers and run-over-\n  run comparison (ds4: 72 buried failures -> ds5: 25); standing process\n  rule recorded -- repeat-offender categories get tested underlying-cause\n  fixes before the next paid run.\n- Rulings recorded: 0.25 gate -> seat-adjudicated renames (one-shots);\n  per-dispatch enum format-forcing plan for unwind references (F4\n  comparator collapse as fallback).\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02035",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4792-4800",
+   "text": "commit 991aa3937fea874b8b2faef5ce7582c708d71f2a\nordinal 147\ndate 2026-08-12 13:41:04 -0700\nauthor Matt Stults\nsubject rename seat (validated, 22 live judgments), enum forcing, graveyard verdicts, small-set rerun\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02036",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4801-4809",
+   "text": "commit 53812993c1697196f4c13a8bf255937189de9e99\nordinal 148\ndate 2026-08-12 13:55:33 -0700\nauthor Matt Stults\nsubject pre-ds6 review closures: division-cache morph fix, seat retry, record corrections\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02037",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4810-4818",
+   "text": "commit 80e03e61f2aedcfc1ead2f08d1db88c43895d23d\nordinal 149\ndate 2026-08-12 17:01:34 -0700\nauthor Matt Stults\nsubject adopt merge-drop autofix: the pre-registered restart-insufficient trigger fired on ds6\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02038",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4819-4827",
+   "text": "commit 66496d9b2e6130c50a4aebafd8cfadd6bbb9daa9\nordinal 150\ndate 2026-08-13 10:47:19 -0700\nauthor Matt Stults\nsubject seat-brief sweep: H1+H2 adopted (0.57->0.82 sensitivity), probes recorded\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02039",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4828-4836",
+   "text": "commit 9aa68af0e0f39faf1aa4f101cd715f9a44a24494\nordinal 151\ndate 2026-08-13 11:08:02 -0700\nauthor Matt Stults\nsubject ds7 design measurements: modal drift adjudicated, canonical cards negative, authority consumption measured\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02040",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4837-4845",
+   "text": "commit f0751e500626512a9b9ba79ea5797bcfda07e054\nordinal 152\ndate 2026-08-13 11:16:15 -0700\nauthor Matt Stults\nsubject ds7 tranche 1: enforced authority canonicalization, modal+merge prompt lines, rename enums off, adopted seat brief\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02041",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4846-4854",
+   "text": "commit 856aa654eb92f6ea4b2ab7afa0db11705fe7ea54\nordinal 153\ndate 2026-08-13 11:25:26 -0700\nauthor Matt Stults\nsubject ds7 tranche 2: shared rename choke-point at all sites, greedy seat descend, risk queue\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  }
+ ]
+}

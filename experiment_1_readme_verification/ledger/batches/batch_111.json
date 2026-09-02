@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_111",
+  "source_class": "git_log",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S01919",
+  "last_span": "S01933"
+ },
+ "spans": [
+  {
+   "id": "S01919",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "492-508",
+   "text": "commit d26de6ae2baca3cf7de4f08807eac225f0444534\nordinal 31\ndate 2026-08-05 11:47:58 -0700\nauthor Matt Stults\nsubject S3b redesign: REVISION 6 + adversarial review chain + attribution spec + enumerations\n- S3B_REDESIGN.md REVISION 6: R4-B1 m0239 bound-exemption class rule; R4-E1/E2/E3/S1\n  majors; D4 translation-time generic-noun disambiguation; D3 ruled UNIFORM (latent\n  fix LF-1 registered, not implemented).\n- Adversarial review chain (R3/R4/R6). R6 verdict REVISE, no blockers, 3 amendment-\n  grade majors -> REVISION 7 pending.\n- S3B_ATTRIBUTION_TASK_DESIGN.md: mechanical attribution task, reach-R, parity validation.\n- ATTRIBUTION_POPULATION_ENUMERATION.md; D3_EXAMPLE_CLAUSE_ENUMERATION.md (183/183\n  handled by uniform attribution, 0 wrong / 0 undefined).\n- LATENT_FIX_REGISTRY.md (registry for speculative fixes, LF-1 first entry).\n- OUTSTANDING_WORK.md consolidated checklist.\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S01920",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "509-519",
+   "text": "commit 584e428a86e468a76abe8af738b1c9c38c2687bf\nordinal 32\ndate 2026-08-05 11:47:58 -0700\nauthor Matt Stults\nsubject Implied-effects layer design + adversarial review; m0108 seat-defect review\n- IMPLIED_EFFECTS_DESIGN.md + IMPLIED_EFFECTS_ADVERSARIAL_REVIEW.md (REVISE: ENG-B1/B2,\n  SCI-B1/B2; gated on S3b settling).\n- M0108_SEAT_DEFECT_REVIEW.md: m0108's harm is the user's own organisation, not \"those\n  outside the conversation\"; genuine definition ambiguity flagged for a future cycle.\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S01921",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "520-536",
+   "text": "commit f98ff949badb4a05cc3b9f0ed80b2ee26878b25f\nordinal 33\ndate 2026-08-05 11:58:32 -0700\nauthor Matt Stults\nsubject Backfill hardening: grandfather multiplicity bound, legacy-surface denylist, scope identity\nCarried from patient-backfill-2026-08-04 REVIEW_HARDENING_NOTES (F1/F2/R3):\n- test_dechain: grandfather clause now bounds live-side multiplicity of the five\n  grandfathered length-1 triples to their frozen counts (a duplicate goes RED);\n  new test test_grandfather_clause_is_multiplicity_bounded.\n- atom_refactor: LEGACY_SURFACE_DENYLIST refuses NEW scoped entries naming legacy\n  surfaces (planning-time only; legacy replay semantics intact); 3 new tests.\n- test_backfill_worksheet: scope check hardened from live<=frozen to the exact\n  identity live == frozen - licensed; test_scope_identity_catches_over_removal.\nTest-level pins + one planning-time refusal in the maintenance tool; no scoring\npath touched. Full suite green (2163 passed, 3 pre-existing env skips).\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S01922",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "537-552",
+   "text": "commit e204f1110b9350a6ccc2bbed1f31dfe62aef06c4\nordinal 34\ndate 2026-08-05 14:45:30 -0700\nauthor Matt Stults\nsubject S3b redesign: REVISION 9 fixes R8 majors; R8 review + Tier-2 verification\n- S-A: restoration-signature arms bound PER CLAUSE (m0275/m0466 => arm (i) only;\n  m0018 => arm (ii) only), so a comprehensive-laundered verdict FAILS; attribution\n  spec §2.5 gains frozen-backfill re-check cases for m0275/m0466 with immutable\n  {third_party} verdicts.\n- S-B: lapse-condition MEASURE-time semantics stated, receiver readiness added to the\n  OPEN conditions, single re-entry semantic, post-close lapse recounts retroactively.\n- S3B_ADVERSARIAL_REVIEW_R8.md (Tier 1): REVISE, 0 blocking, 2 science majors (both\n  fixed here); all R6 majors + ten minors confirmed fixed, numeric pins reproduce.\n- S3B_TIER2_VERIFICATION.md (Tier 2): READY-FOR-NEXT-STEP, S-A/S-B fixed-correct.\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S01923",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "553-568",
+   "text": "commit 1dc202eb0be6d5155f50e3130f2454ba341bbc43\nordinal 35\ndate 2026-08-05 14:45:49 -0700\nauthor Matt Stults\nsubject S4 section-prior gate: REVISION fixes review findings; Tier-2 verified\n- SCI-B1 (blocking): max_regressions pinned 0 with a named decision rule + the §2\n  arithmetic (only atom-gap clauses are licensed regressions, bounded by the census\n  tool-sided 4-of-30).\n- ENG-M1/M2/M3 + SCI-M1: gate enable/disable vehicle (unconditional, dispatch-only\n  reachability), A2=>A1 corrected to incomparable (m0587 counterexample), standing\n  quality floors disclosed with same-commit re-derivation, corpus-max renormalization\n  condition stated.\n- S4_ADVERSARIAL_REVIEW.md (Tier 1): REVISE, 1 blocking + 4 majors (all fixed).\n- S4_TIER2_VERIFICATION.md (Tier 2): READY-FOR-NEXT-STEP, all 10 fixed-correct.\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S01924",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "569-579",
+   "text": "commit f6cb47a35fb082ed2d7c5b980f1bb7256a61ee57\nordinal 36\ndate 2026-08-05 14:45:50 -0700\nauthor Matt Stults\nsubject REVIEW_POLICY.md: two-tier review policy (proven on S4/S3b)\nFull adversarial review (Tier 1) at decision points (OPEN / build / convergence);\nfocused verification pass (Tier 2) for intermediate revisions fixing prior-review\nfindings. Trailed on S4 and S3b: both Tier-2 passes clean at ~5-12x lower cost than\nfull reviews. OUTSTANDING_WORK checklist refreshed to match.\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S01925",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "580-591",
+   "text": "commit 50a54bdfcb5258b9039caf027385b86d586106be\nordinal 37\ndate 2026-08-05 14:59:52 -0700\nauthor Matt Stults\nsubject Handoff refresh: S3b/S4 build-ready state + BUILD_OVERVIEW\n- HANDOFF: new STATE AS OF 2026-08-05 section (S3b REVISION 9 + S4 Tier-2 verified,\n  build-ready, next step = S3b build then S4 sequenced, budget check first). A fresh\n  agent can now pick up the current state from AGENTS.md -> HANDOFF -> BUILD_OVERVIEW.\n- BUILD_OVERVIEW.md: what each build entails, which models do what and why they are\n  adequate, mermaid data-flow diagram, and the why-not-parallel answer.\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S01926",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "592-634",
+   "text": "commit 5d176c94b1697f26e92b24c31c1c6b48053f7154\nordinal 38\ndate 2026-08-05 17:09:31 -0700\nauthor Matt Stults\nsubject D5 ruled (b-trim/439); S4 review R2 applied; interpretation layer parked\nRulings recorded (S3B_REDESIGN.md §8):\n- D5 = b-trim / 439 instances. 368 REJECTED by name: four of the five canonical\n  clauses are credited through a patient-free SITUATION atom, so under 368 they\n  get no attribution record, price at factor 1.0, and are cap-exempt — m0276 would\n  not be suppressed (a §7.2 automatic revert) and m0275/m0466 would restore without\n  the `consistent` signature §7.1 binds them to. 746 REJECTED by name: its entire\n  marginal reach is two atom names, one an audited false positive whose keyword hit\n  is a negation, one a model knowledge-state. 427 recorded as tied-on-measurement.\n- Disclosed consequence: the mechanism reaches 79 of 155 target cases, i.e. ~27% of\n  the census, not the 53% the class size suggests. BUILD_OVERVIEW.md corrected.\n\nNew analysis (all deterministic re-analysis, zero API spend):\n- D5_WORKED_EXAMPLES.md — corpus-wide reach measured over every predicted clause\n  (panel-blind) with the 155-case census as attention-only cross-check.\n- D5B_ACT_ATOMS.md + D5B_COUNTS.md — the act-population question. Ceiling measured\n  at ~2 cases, not the ≤17 first assumed; the keyword predicate does not transfer to\n  acts (39-63% FP rate vs 7.8% on situations).\n- E2_DECISION.md — the S4 gate-off vehicle, and the finding that the F9 version\n  convention has outgrown its two hand-written ladders.\n\nS4 (SECTION_PRIOR_DESIGN.md), per S4_ADVERSARIAL_REVIEW_R2.md:\n- E1: the driver does NOT enforce revert on max_regressions; it records PASS/FAIL\n  and refuses an unjustified decision. The revert is the DECIDE signer's\n  pre-registered obligation. Bound and decision rule unchanged.\n- S1: the \"4 of 30\" census arithmetic was unsound (24/30 intersection; 6 flips\n  outside the class, 2 of them tool-panel agreements). Bound now rests on principle.\n- All nine minors applied. E2 left pending the index-builder refactor, marked loudly.\n\nINTERPRETATION_LAYER_DESIGN.md + LATENT_FIX_REGISTRY.md LF-2: judgement calls the\nanalysed document does not settle are currently recorded as prose in cycle records\nand are invisible in tool output. Design parked with triggers; the entry notes the\nprotocol caveat that the machinery is latent while four interpretations exist today.\n\nOUTSTANDING_WORK.md rewritten against the tree.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S01927",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "635-656",
+   "text": "commit 5a2973f12f456c0872cb1caa0d9a360a7714e1e4\nordinal 39\ndate 2026-08-05 17:15:33 -0700\nauthor Matt Stults\nsubject S6 Tier-1 review (REVISE: 4 blocking) + implied-effects decision material\nS6_ADVERSARIAL_REVIEW.md: the Shape-A/Shape-B gate that is supposed to stop the\ncensus being laundered into the vocabulary cannot be enforced by any mechanism the\ndesign specifies, and a mechanical recomputation puts 15 of 26 clauses on the wrong\nside. The flip-surface paragraph omits the lexical channel, which is the heaviest in\nthe scorer (lex weight 1.0; atom name+gloss is 36.5% of the lexical document). No\nmax_regressions anywhere. No cycle shape exists for an annotation cycle.\n\nIMPLIED_EFFECTS_DECISIONS.md: options and recommendations for the four blocking\nfindings, with the count-first answer the design never did (~5-15 entries; manual\napproval affordable, signature-batch not forced). Contradicts the review in two\nplaces, both verified: grammar.stem_of is the wrong key function (it merges must_x\nand mustnot_x), and the two ENG-B1 readings do not diverge on m0239 but do on m0276,\nreversing the safety ordering.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S01928",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "657-683",
+   "text": "commit f8227f264b3f05c5fc81e2b94118b7b625a86e36\nordinal 40\ndate 2026-08-05 17:18:03 -0700\nauthor Matt Stults\nsubject S5 Tier-1 review: REVISE, and the headline is that S5 produces ZERO flips\nMeasured, not argued: building S5's snapshot (overlay containment.json, frozen\nthresholds) and diffing it against join-integrity-v2-2026-08-04 yields no flips on\nany of the three behaviours. All 8 clauses that gain subsumption credit were already\npredicted; the nearest non-predicted clause misses its cut by 0.043, and forcing\nfull-credit kind inheritance (2.5x) still yields zero.\n\nSo a cycle whose keep/revert 'cites the flip adjudications only' has none to cite,\nand it would close KEEP with a clean validator, a passing prediction and zero\nadjudications. The gate every widening cycle waits on is unfalsifiable as designed.\n\nAlso blocking: S5 is not expressible as a cycle (it changes no file, and the file it\npoints at is closure-pinned); the expected-effect statement is atom-channel only\nwhile 16 of the 24 changed clauses move through section spillover; and the\npatient-composition contract in 5.3 is false under pricing 1.2 (proven on m0355 --\na chained clause atom IS reachable through the overlay once 1.2 dechains it).\n\nDisclosure carried in the review: measuring S5 before OPEN spends its temporal\nguarantee. That cannot be restored and must ride into the cycle record.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S01929",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "684-720",
+   "text": "commit dab5de830a91d7cb19f6290ab9f6dbe5fbaba515\nordinal 41\ndate 2026-08-05 17:27:55 -0700\nauthor Matt Stults\nsubject Latent-fix tripwires: make the parked-design registry fire on its own triggers\nLATENT_FIX_REGISTRY.md parks designs that are deliberately not built because no\ncurrent instance justifies them, each with a named trigger. Both entries specified\nDETECTION tripwires and neither was implemented, so the registry only reached\nsomeone already reading it — who is exactly the person who does not need reminding.\n\ntest_latent_fix_tripwires.py (8 tests + 1 named skip, registered in\nconftest._OPTIONAL), independent of the S3b build:\n\nLF-1 (example-kind taint rule): example-kind population pinned as a DIGEST rather\nthan 183 ids inline, per the entry's own REVISIT note; m0176/m0300/m0467 pinned as\nstill example-kind; adjudication shape-flag requiring every example-kind flip's\ncycle to carry an explicit LF-1 disposition.\n\nLF-2 (interpretation layer): ambiguity-language scan over cycles/*/decision.json,\nflip_verdicts*.json and *_SEAT_DEFECT_REVIEW.md, failing on any hit outside the\nhand-maintained LF2_KNOWN_HITS allowlist (9 entries: 8 are I-01, m0108's\nrepresentation boundary; 1 a named false positive), plus a reader-surface pin on\nsite/spec-reader-test/ that fires if the prototype gains executable code while no\ninterpretation artifact exists.\n\nThe allowlist is PINNED so growth must be edited in the same diff: it is not a\nquality floor and does not get lowered. Adding an entry means registering an\ninterpretation or consciously deferring one, never silencing the test.\n\nDeliberately not implemented, and named as such: LF-1's load-bearing SURFACING\nassertion, which needs S3b's frozen attribution artifact (present as an explicit\nskip naming what is missing), and dossier-side tagging of LF-1 candidates, since\ndossier.py is under a separate refactor.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S01930",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "721-752",
+   "text": "commit 3d70882bbbe9f24647952ab2ba4f65e72add5d91\nordinal 42\ndate 2026-08-05 17:28:08 -0700\nauthor Matt Stults\nsubject Group 0c: census records the configuration that produced it (S8 prerequisite)\nThe census tool wrote dossiers with no config identity, so a reader could not tell\nwhich scorer, which join, or which inputs a census reflected. Every other artifact\nclass here records identity; this one did not.\n\n- config_identity gains mixed_variants; the key is always present.\n- generate_dossiers pins join_version for BOTH survey and passage_map -- if they\n  disagree the dossiers describe a different join from the one that found the\n  disagreements. None keeps the historical v1/uniform default byte-identically.\n- benchmark.map_reference threads mixed_variants into inventory.match_passage_v2 and\n  records it beside join_version.\n- CLI: --join-version {1,2} (default 1, the measured state, always recorded\n  explicitly) and --mixed-variants. An impossible pairing raises before minutes of\n  loading, and before os.makedirs, so a refusal leaves no half-written directory.\n\nF12 honoured, not 'fixed': join identity stays in CENSUS identity and never enters\nsnapshot identity. mixed_variants keeps the deliberate False default from 68b036d --\nasking for it under --join-version 1 RAISES rather than being silently ignored,\nbecause a silently-ignored flag would make the header's own record false.\n\nThe existing 294-case census is left byte-untouched: a header written today would be\na reconstruction asserted as provenance of a run nobody observed. validate refusing\nthat directory is the correct outcome, and MODULE_MAP §11 records it as an anti-rule\nso no future agent retrofits one.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S01931",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "753-764",
+   "text": "commit bec6705a74bed5ce69e96bd16354bef94920712e\nordinal 43\ndate 2026-08-05 17:28:08 -0700\nauthor Matt Stults\nsubject DECISIONS_FOR_MATT: the open decisions, written for a non-specialist reader\nSeven decisions with concrete examples, options, costs and recommendations, plus the\nlist of what is already ruled so nothing gets re-litigated. Kept current as work\nlands.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S01932",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "765-791",
+   "text": "commit 83119967b43987b9431adac976a5d88e2b5dfca5\nordinal 44\ndate 2026-08-05 17:29:50 -0700\nauthor Matt Stults\nsubject REVIEW_POLICY amendment: a Tier-2 pass verifying a claim about code must read the code\nThe two-tier policy's first real use failed in a structural way. The S4 Tier-2 pass\nscoped itself to 'design-doc verification only -- no code, no git, no test runs' and\ncredited two findings FIXED-CORRECT. The next Tier-1 found one did not hold: the\ndesign claimed cycle.py ENFORCES revert on a breached regression bound, and it does\nnot -- it records a PASS/FAIL check and refuses an unjustified decision, with the\nrevert being the DECIDE signer's obligation. That claim is entirely about what\ncycle.py does, and the pass that verified it never opened cycle.py.\n\nNot carelessness: a design-doc-only reader can confirm a document now SAYS the\nright-looking thing, which is what a fix looks like from outside.\n\nFour binding rules added: scope follows the finding not the tier; per-finding\nevidence (file and line, or the recomputation) not just a verdict; Tier-2 may not be\nthe last word before a decision point; purely editorial fixes stay Tier-2, which is\nwhat the tier is genuinely good for.\n\nAlso: BUILD_OVERVIEW records the ruled S4-before-S3b order, superseding the earlier\n'S3b first, it's 53%' recommendation -- 53% is the class size, not the fix's reach.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S01933",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "792-827",
+   "text": "commit d7736a09073bf46dc8ab2bedf7bd628c43a5db74\nordinal 45\ndate 2026-08-05 17:31:09 -0700\nauthor Matt Stults\nsubject affected_parties rename + the attribution seat brief that never existed\nRENAME (ruled 2026-08-05): harm_bearers -> affected_parties across the live design\ndocs -- 55 sites in S3B_REDESIGN, 21 in the task design, 3 in BUILD_OVERVIEW, each\nwith a naming note at first use so a later reader does not infer two fields. The\nmechanism was never harm-only: the procedure's own step 1 asks about 'harm, risk,\nprotection, or benefit', the population predicate carries benefit keywords, and\nm0018 -- 'People should have easy access to trustworthy safety-critical information'\n-- is one of the three named restorations and contains no harm at all.\n\nDated review records keep the old spelling deliberately: they are records of what a\nreviewer said on a date, and rewriting them edits the record. The naming notes name\nthose files explicitly.\n\nBRIEF: briefs/attribution_author.md (264 lines). It did not exist, and HANDOFF wrongly\npointed the attribution seat at backfill_author.md -- the S2 patient-CHAIN brief,\nwhich has zero occurrences of the field and would have run the wrong task.\n\nIt carries the fixed 7-step procedure, the pinned noun-phrase table with all its\nnotes, NEVER INFER verbatim, unclear as a first-class verdict, and two worked\nexamples verified byte-exact against modelspec_clauses.json: m0018 (a pure benefit\nwith no harm anywhere -- the case the old field name would have made a seat answer\n'unclear' on, failing a control the mechanism handles correctly) and the m0276 trap\n('there are people and resources who care' scans third-party, but the atom's risk\nfalls on the user).\n\nPricing-silence fence verified independently: zero hits for pricing, discount, taint,\nflip, panel, census, golden, revert, snapshot, threshold or any behaviour name. A\nseat that knows attributions move scores has a direction to lean.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log"
+  }
+ ]
+}

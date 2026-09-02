@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_133",
+  "source_class": "git_log",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S02183",
+  "last_span": "S02197"
+ },
+ "spans": [
+  {
+   "id": "S02183",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7038-7046",
+   "text": "commit 6fb8a51d18f3c04e5339cdbc583f35aa3d57ca8d\nordinal 295\ndate 2026-08-18 13:22:22 -0700\nauthor Matt Stults\nsubject PREREG SIGNED (Matt Stults, 2026-08-18) at content hash 6848fb5a489aad29 — registration frozen; scoring authorized\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02184",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7047-7055",
+   "text": "commit f19e166fbb7800ef3f72add45cab6d2a92c25e95\nordinal 296\ndate 2026-08-18 13:23:25 -0700\nauthor Matt Stults\nsubject registered cold-start run: agreed-negative sample (seed 20260816) and second-frontier control sample (seed 20260818) drawn; both adjudication passes dispatched\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02185",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7056-7064",
+   "text": "commit c783bfc58f2eedb6144cef65bbbb5ccf51fb551a\nordinal 297\ndate 2026-08-18 13:24:21 -0700\nauthor Matt Stults\nsubject registered run: agreed-negative rulings (13/45 relevant — the shared recall floor beneath both instruments)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02186",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7065-7079",
+   "text": "commit 49f5c1f686416a6518945b8a6e7fab69782ac0c8\nordinal 298\ndate 2026-08-18 13:26:18 -0700\nauthor Matt Stults\nsubject REGISTERED RESULT (cold-start arm): falsifiers FIRED — not panel-equivalent; validity control 77% (<80%) downgrades tier to single-model\nMetric 0 tool deviation defensibility 0.66/0.35/0.56 vs panel 0.88/0.81/1.00.\nEngagement defensibility strong (0.85-0.88 on two behaviors; harm-avoidance\n0.56 breaches the 0.60 floor); decline defensibility near zero — recall\nfailure sinks the symmetric metric. Registration critique recorded (panel\nmisses enter only via the 13/45 shared floor). Result stands as written.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02187",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7080-7095",
+   "text": "commit 24caec16639f4d13a33679c9dcdd4c8daf6688cc\nordinal 299\ndate 2026-08-18 13:31:29 -0700\nauthor Matt Stults\nsubject general layer fixes (post-registered-result): seat brief gains party-scope test + calibrated doubt; BEHAVIOR_CHECKLIST.md; arm-2 split drawn\nBoth fixes are licensed by the registered result and apply to ALL behaviors\n(layer 1/3), not to any behavior's atoms — the cold-start registration is\nalready scored and closed, so these do not contaminate it. The brief's\nfail-closed rule (designed for the formal-query stage) produced 0.00-0.19\ndecline defensibility at the relevance stage; replaced by an ESTABLISHES-\nanchored calibration. Party-scope test added (harm-avoidance 0.56 breach).\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02188",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7096-7104",
+   "text": "commit 2154aa8969a97943bf468577ab1c93980d6d65f4\nordinal 300\ndate 2026-08-18 13:46:13 -0700\nauthor Matt Stults\nsubject ROSETTA.md: global atoms / per-document stone / document ontology — direction recorded, second-document gate stated\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02189",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7105-7113",
+   "text": "commit d84db055a709de71a5238fb076575aefefb40580\nordinal 301\ndate 2026-08-18 13:47:12 -0700\nauthor Matt Stults\nsubject arm 2: rosetta stone persisted in the matcher (lookup before spend); --atoms/--tag for tuned runs; harm-avoidance round-1 tuned atoms saved\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02190",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7114-7122",
+   "text": "commit 43f550a73cc7075728804b5327fa2ac5519b4fbb\nordinal 302\ndate 2026-08-18 13:54:07 -0700\nauthor Matt Stults\nsubject arm 2 harm-avoidance r1: tuned match run (65 engaged; only 9/46 held-out — flagged for scoring); stone keyed by atom IDENTITY not gloss text (Matt's saturation claim); first stone entries persisted\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02191",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7123-7137",
+   "text": "commit c47e2f7530897f4789ff7a9e4e6affd7ac4eac12\nordinal 303\ndate 2026-08-18 13:57:20 -0700\nauthor Matt Stults\nsubject ARM 2 harm-avoidance ROUND 1: held-out deviation-defensibility 0.31 -> 0.72, recall 0.30 -> 0.70 (fresh adjudicators, probe folded); ROSETTA corrected — behavior is an ASP module in global predicates\nRetrieval beam, not the seat, capped the raw held-out engagement (9/46);\nthe probe over the 35 unretrieved held-out nodes engaged 16 — the layer-3\nfix (wider beam for tuned arms) is general infrastructure and comes next.\nMatt's correction recorded: the tuner emits a MODULE from round 2 on, the\nstone binds predicates, render_behavior_module consumes the translation.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02192",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7138-7146",
+   "text": "commit 6dba0095f60f5ca23a9e15bdd9c060358967ea8e\nordinal 304\ndate 2026-08-18 14:03:48 -0700\nauthor Matt Stults\nsubject BEHAVIOR_MODULE_SPEC.md: behavior = structured ASP module in global predicates; branch structure explicit; atoms derived; per-branch coverage reported\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02193",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7147-7155",
+   "text": "commit 38209046f9bdc518622ad84ca7f165ad28acf4c2\nordinal 305\ndate 2026-08-18 14:04:12 -0700\nauthor Matt Stults\nsubject arm 2 layer-3 fix: TOP_K_TUNED=24 for tuned arms (cold-start TOP_K frozen); matcher accepts BEHAVIOR_MODULE_SPEC-shaped files\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02194",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7156-7164",
+   "text": "commit 233b26cd30a3b6c3dd4510d7d914b2526541bb34\nordinal 306\ndate 2026-08-18 14:05:52 -0700\nauthor Matt Stults\nsubject arm 2 caution round 1: first BEHAVIOR_MODULE_SPEC-shaped module (10 atoms, 3 conditions, 20 does-rules deriving over_caution/under_caution/violates); tuned match launched at TOP_K 24\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02195",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7165-7173",
+   "text": "commit b7eb84944b673bea07d5b2d5dee5c1dcf067ee66\nordinal 307\ndate 2026-08-18 14:17:02 -0700\nauthor Matt Stults\nsubject arm 2 round 1 summary: harm-avoidance 0.31->0.72, caution 0.64->0.67 (held-out, fresh adjudicators); first module with per-branch coverage (38 over / 33 under)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02196",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7174-7182",
+   "text": "commit 281a74fd54ec43881b99f5f75ebde08de5c4eeab\nordinal 308\ndate 2026-08-18 15:06:54 -0700\nauthor Matt Stults\nsubject arm 2: helpfulness r1 module + harm-avoidance r2 module (3 branches, 12/12 ids preserved for stone reuse)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02197",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7183-7191",
+   "text": "commit 212398ce7bcc25c8ef0c43aa9c7bd1b95df5b267\nordinal 309\ndate 2026-08-18 15:07:33 -0700\nauthor Matt Stults\nsubject FIRST CONTRADICTION RESULT on a concrete case: S4 over-cautious refusal -> 1 conflict (forbid judge_user), compliant instance -> 0; act-level seam contract identified as the corpus-wide prerequisite\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
+   "source_class": "git_log"
+  }
+ ]
+}

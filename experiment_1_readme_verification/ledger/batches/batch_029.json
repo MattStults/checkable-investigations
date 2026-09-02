@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_029",
+  "source_class": "arc2_json",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S00572",
+  "last_span": "S00586"
+ },
+ "spans": [
+  {
+   "id": "S00572",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "commit": "pin",
+   "lines": "127-127",
+   "text": "  \"l3596_3876_n011\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00573",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "commit": "pin",
+   "lines": "128-128",
+   "text": "  \"l2126_2404_n047\": \"relevant\"",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00574",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored.json",
+   "commit": "pin",
+   "lines": "2-2",
+   "text": " \"_\": \"ROUND-4 helpfulness scored cells (RAW; defensibility pass per amendment 1 runs on the misses next)\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00575",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored.json",
+   "commit": "pin",
+   "lines": "3-3",
+   "text": " \"n_engaged\": 40,",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00576",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored.json",
+   "commit": "pin",
+   "lines": "4-4",
+   "text": " \"n_not_engaged\": 40,",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00577",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored.json",
+   "commit": "pin",
+   "lines": "5-8",
+   "text": " \"cells\": {\n  \"engaged_precision_raw\": 0.625,\n  \"decline_correctness_raw\": 0.625\n },",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00578",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored.json",
+   "commit": "pin",
+   "lines": "6-6",
+   "text": "  \"engaged_precision_raw\": 0.625,",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00579",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored.json",
+   "commit": "pin",
+   "lines": "7-7",
+   "text": "  \"decline_correctness_raw\": 0.625",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00580",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored.json",
+   "commit": "pin",
+   "lines": "9-44",
+   "text": " \"misses\": {\n  \"engaged_FP\": [\n   \"l1108_1367_n002\",\n   \"l1542_1706_n019\",\n   \"l1542_1706_n022\",\n   \"l1707_1973_n016\",\n   \"l1799_1973_n013\",\n   \"l2474_2554_n013\",\n   \"l2821_3040_n025\",\n   \"l2821_3040_n034\",\n   \"l3596_3876_n012\",\n   \"l3954_4251_n031\",\n   \"l4252_4482_n006\",\n   \"l4252_4482_n014\",\n   \"l461_608_n011\",\n   \"l461_608_n013\",\n   \"l797_830_n018\"\n  ],\n  \"not_engaged_FN\": [\n   \"l1707_1973_n027\",\n   \"l171_426_n008\",\n   \"l171_426_n015\",\n   \"l1974_2125_n005\",\n   \"l1_170_n057\",\n   \"l1_170_n060\",\n   \"l2126_2404_n006\",\n   \"l2126_2404_n029\",\n   \"l2126_2404_n047\",\n   \"l2821_3040_n009\",\n   \"l2821_3040_n029\",\n   \"l3954_4251_n011\",\n   \"l3954_4251_n022\",\n   \"l699_796_n010\",\n   \"l699_796_n020\"\n  ]\n },",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00581",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored.json",
+   "commit": "pin",
+   "lines": "10-26",
+   "text": "  \"engaged_FP\": [\n   \"l1108_1367_n002\",\n   \"l1542_1706_n019\",\n   \"l1542_1706_n022\",\n   \"l1707_1973_n016\",\n   \"l1799_1973_n013\",\n   \"l2474_2554_n013\",\n   \"l2821_3040_n025\",\n   \"l2821_3040_n034\",\n   \"l3596_3876_n012\",\n   \"l3954_4251_n031\",\n   \"l4252_4482_n006\",\n   \"l4252_4482_n014\",\n   \"l461_608_n011\",\n   \"l461_608_n013\",\n   \"l797_830_n018\"\n  ],",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00582",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored.json",
+   "commit": "pin",
+   "lines": "27-43",
+   "text": "  \"not_engaged_FN\": [\n   \"l1707_1973_n027\",\n   \"l171_426_n008\",\n   \"l171_426_n015\",\n   \"l1974_2125_n005\",\n   \"l1_170_n057\",\n   \"l1_170_n060\",\n   \"l2126_2404_n006\",\n   \"l2126_2404_n029\",\n   \"l2126_2404_n047\",\n   \"l2821_3040_n009\",\n   \"l2821_3040_n029\",\n   \"l3954_4251_n011\",\n   \"l3954_4251_n022\",\n   \"l699_796_n010\",\n   \"l699_796_n020\"\n  ]",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00583",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored.json",
+   "commit": "pin",
+   "lines": "45-48",
+   "text": " \"falsifiers\": {\n  \"F4_panel_split_rate\": 0.15789473684210525,\n  \"F5_overturn_rate\": 0.05263157894736842\n },",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00584",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored.json",
+   "commit": "pin",
+   "lines": "46-46",
+   "text": "  \"F4_panel_split_rate\": 0.15789473684210525,",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00585",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored.json",
+   "commit": "pin",
+   "lines": "47-47",
+   "text": "  \"F5_overturn_rate\": 0.05263157894736842",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00586",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored.json",
+   "commit": "pin",
+   "lines": "49-128",
+   "text": " \"verdicts_by_node\": {\n  \"l1542_1706_n010\": \"RELEVANT\",\n  \"l1108_1367_n002\": \"NOT_RELEVANT\",\n  \"l3596_3876_n013\": \"RELEVANT\",\n  \"l171_426_n003\": \"RELEVANT\",\n  \"l1707_1973_n011\": \"RELEVANT\",\n  \"l1542_1706_n016\": \"NOT_RELEVANT\",\n  \"l1974_2125_n001\": \"NOT_RELEVANT\",\n  \"l2821_3040_n034\": \"NOT_RELEVANT\",\n  \"l2126_2404_n029\": \"RELEVANT\",\n  \"l1707_1973_n029\": \"NOT_RELEVANT\",\n  \"l427_460_n010\": \"RELEVANT\",\n  \"l2126_2404_n023\": \"NOT_RELEVANT\",\n  \"l4252_4482_n014\": \"NOT_RELEVANT\",\n  \"l1108_1367_n007\": \"RELEVANT\",\n  \"l427_460_n005\": \"NOT_RELEVANT\",\n  \"l2821_3040_n009\": \"RELEVANT\",\n  \"l2126_2404_n011\": \"NOT_RELEVANT\",\n  \"l3041_3146_n015\": \"RELEVANT\",\n  \"l3954_4251_n011\": \"RELEVANT\",\n  \"l797_830_n018\": \"NOT_RELEVANT\",\n  \"l3041_3146_n008\": \"NOT_RELEVANT\",\n  \"l3954_4251_n022\": \"RELEVANT\",\n  \"l3954_4251_n010\": \"RELEVANT\",\n  \"l1707_1973_n005\": \"RELEVANT\",\n  \"l2405_2473_n011\": \"NOT_RELEVANT\",\n  \"l699_796_n010\": \"RELEVANT\",\n  \"l2126_2404_n003\": \"NOT_RELEVANT\",\n  \"l1_170_n042\": \"NOT_RELEVANT\",\n  \"l171_426_n008\": \"RELEVANT\",\n  \"l1707_1973_n016\": \"NOT_RELEVANT\",\n  \"l4252_4482_n024\": \"RELEVANT\",\n  \"l461_608_n013\": \"NOT_RELEVANT\",\n  \"l699_796_n020\": \"RELEVANT\",\n  \"l171_426_n015\": \"RELEVANT\",\n  \"l2555_2652_n009\": \"RELEVANT\",\n  \"l1799_1974_n009\": \"NOT_RELEVANT\",\n  \"l1542_1706_n019\": \"NOT_RELEVANT\",\n  \"l3954_4251_n005\": \"NOT_RELEVANT\",\n  \"l4483_4571_n009\": \"RELEVANT\",\n  \"l699_796_n009\": \"RELEVANT\",\n  \"l2126_2404_n020\": \"RELEVANT\",\n  \"l1001_1107_n006\": \"NOT_RELEVANT\",\n  \"l1368_1541_n014\": \"RELEVANT\",\n  \"l1_170_n032\": \"NOT_RELEVANT\",\n  \"l2474_2554_n013\": \"NOT_RELEVANT\",\n  \"l4572_4692_n012\": \"NOT_RELEVANT\",\n  \"l1_170_n060\": \"RELEVANT\",\n  \"l1707_1973_n027\": \"RELEVANT\",\n  \"l2126_2404_n006\": \"RELEVANT\",\n  \"l4252_4482_n022\": \"RELEVANT\",\n  \"l1974_2125_n005\": \"RELEVANT\",\n  \"l461_608_n011\": \"NOT_RELEVANT\",\n  \"l1108_1367_n006\": \"NOT_RELEVANT\",\n  \"l2474_2554_n006\": \"NOT_RELEVANT\",\n  \"l1_170_n057\": \"RELEVANT\",\n  \"l3596_3876_n020\": \"NOT_RELEVANT\",\n  \"l427_460_n009\": \"RELEVANT\",\n  \"l3954_4251_n031\": \"NOT_RELEVANT\",\n  \"l461_608_n019\": \"RELEVANT\",\n  \"l1108_1367_n025\": \"RELEVANT\",\n  \"l3505_3595_n001\": \"NOT_RELEVANT\",\n  \"l2821_3040_n029\": \"RELEVANT\",\n  \"l1542_1706_n022\": \"NOT_RELEVANT\",\n  \"l4252_4482_n006\": \"NOT_RELEVANT\",\n  \"l461_608_n022\": \"NOT_RELEVANT\",\n  \"l1799_1973_n013\": \"NOT_RELEVANT\",\n  \"l3596_3876_n012\": \"NOT_RELEVANT\",\n  \"l461_608_n016\": \"NOT_RELEVANT\",\n  \"l1_170_n028\": \"NOT_RELEVANT\",\n  \"l1_170_n036\": \"RELEVANT\",\n  \"l2474_2554_n004\": \"RELEVANT\",\n  \"l3954_4251_n038\": \"RELEVANT\",\n  \"l2821_3040_n032\": \"NOT_RELEVANT\",\n  \"l2821_3040_n025\": \"NOT_RELEVANT\",\n  \"l831_1000_n007\": \"RELEVANT\",\n  \"l1707_1973_n009\": \"RELEVANT\",\n  \"l1542_1706_n017\": \"RELEVANT\",\n  \"l699_796_n005\": \"NOT_RELEVANT\",\n  \"l3596_3876_n011\": \"NOT_RELEVANT\",",
+   "source_class": "arc2_json"
+  }
+ ]
+}

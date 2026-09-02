@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_106",
+  "source_class": "arc1_cycles",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S01550",
+  "last_span": "S01564"
+ },
+ "spans": [
+  {
+   "id": "S01550",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "2-2",
+   "text": " \"census\": \"deferred_to_checkpoint\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01551",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "3-3",
+   "text": " \"closed\": true,",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01552",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "4-12",
+   "text": " \"closure_shas\": {\n  \"annotations_ext_v1_merged.json\": \"bb6f7aecd7f37b069878300d616b62263dc0b8ca111ab435cc03477e2060bdd3\",\n  \"behavior_atoms_audit_v1.json\": \"1e49a65a945215386b0e104fcbaf1812fbd5395e7fe01f2034d9977c55b1bd0b\",\n  \"behaviours_query.json\": \"48dbd8fb0720ce187423d37daf34e415ebbc58a28166619a0b2800b0a1f32d57\",\n  \"constitution_clauses.json\": \"a264e1a07d8a79eaa37710b8c6e25808a0d2807cb55e3ad3716ca422019f06e9\",\n  \"modelspec_clauses.json\": \"c6be91a0c0eb25c9f10bea9947547f64416cdd18e8f5e64b14c354a43b87b546\",\n  \"test_cycle.py\": \"18a038c18e45d7d113cebff243bef4994898d00e16daaafde7a9c547d75b55b5\",\n  \"test_no_reference_leak.py\": \"7175f36b792664258c4ed7837ecebd20a55802a510f301eeb35b5cdbe5398378\"\n },",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01553",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "5-5",
+   "text": "  \"annotations_ext_v1_merged.json\": \"bb6f7aecd7f37b069878300d616b62263dc0b8ca111ab435cc03477e2060bdd3\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01554",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "6-6",
+   "text": "  \"behavior_atoms_audit_v1.json\": \"1e49a65a945215386b0e104fcbaf1812fbd5395e7fe01f2034d9977c55b1bd0b\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01555",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "7-7",
+   "text": "  \"behaviours_query.json\": \"48dbd8fb0720ce187423d37daf34e415ebbc58a28166619a0b2800b0a1f32d57\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01556",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "8-8",
+   "text": "  \"constitution_clauses.json\": \"a264e1a07d8a79eaa37710b8c6e25808a0d2807cb55e3ad3716ca422019f06e9\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01557",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "9-9",
+   "text": "  \"modelspec_clauses.json\": \"c6be91a0c0eb25c9f10bea9947547f64416cdd18e8f5e64b14c354a43b87b546\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01558",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "10-10",
+   "text": "  \"test_cycle.py\": \"18a038c18e45d7d113cebff243bef4994898d00e16daaafde7a9c547d75b55b5\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01559",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "11-11",
+   "text": "  \"test_no_reference_leak.py\": \"7175f36b792664258c4ed7837ecebd20a55802a510f301eeb35b5cdbe5398378\"",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01560",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "13-21",
+   "text": " \"completed\": [\n  \"OPEN\",\n  \"PREDICT\",\n  \"IMPLEMENT\",\n  \"ADJUDICATE\",\n  \"MEASURE\",\n  \"DECIDE\",\n  \"CLOSE\"\n ],",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01561",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "22-22",
+   "text": " \"cycle\": \"versioned-cut-2026-08-04\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01562",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "23-26",
+   "text": " \"decision\": {\n  \"decision\": \"keep\",\n  \"signed_by\": \"session coordinator (Claude), on Matt's standing authorization for the cycle ladder\"\n },",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01563",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "24-24",
+   "text": "  \"decision\": \"keep\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01564",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "25-25",
+   "text": "  \"signed_by\": \"session coordinator (Claude), on Matt's standing authorization for the cycle ladder\"",
+   "source_class": "arc1_cycles"
+  }
+ ]
+}

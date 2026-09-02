@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_125",
+  "source_class": "git_log",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S02072",
+  "last_span": "S02086"
+ },
+ "spans": [
+  {
+   "id": "S02072",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5140-5148",
+   "text": "commit 55c5ae84ce004b83cc72f52ab8829508e3e0f586\nordinal 184\ndate 2026-08-14 16:15:06 -0700\nauthor Matt Stults\nsubject stage-4 design review: skeleton sound, evidential accounting broken; factory spec delivered\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02073",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5149-5157",
+   "text": "commit 6a7f84aa847977fc9697bdf1ba360ed703f3d78f\nordinal 185\ndate 2026-08-14 16:23:52 -0700\nauthor Matt Stults\nsubject pipeline-fix review: 4 defects incl. pause-loses-paid-rows; my prep-split explanation corrected\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02074",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5158-5166",
+   "text": "commit ad5bb4551d81399de3cf4a9456028a97bcb4f320\nordinal 186\ndate 2026-08-14 16:29:31 -0700\nauthor Matt Stults\nsubject ds7 production graph CERTIFIED (773 nodes, 115 names, 25 enumerated danglings)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02075",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5167-5175",
+   "text": "commit dec53ad98b9c98425518f0f5df3217830c2f866e\nordinal 187\ndate 2026-08-14 16:32:55 -0700\nauthor Matt Stults\nsubject full-corpus translation setup: 773-row corpus, cap 10, pausing checkpoints, live mode\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02076",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5176-5184",
+   "text": "commit 5fb10149f0ad25b71e4d48147cf53924c8e20269\nordinal 188\ndate 2026-08-14 16:35:52 -0700\nauthor Matt Stults\nsubject corpus translation paused for batching; pause disabled until 4a lands (binding)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02077",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5185-5193",
+   "text": "commit d552234d844e662af6ef7642d028e971dae475e3\nordinal 189\ndate 2026-08-14 17:01:38 -0700\nauthor Matt Stults\nsubject 4a + 3 defects fixed; corpus/fixture split closes the exact-count hazard at the root\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02078",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5194-5202",
+   "text": "commit 6b19487917cb9446d551b8c772b076c2330bbcd5\nordinal 190\ndate 2026-08-14 17:09:52 -0700\nauthor Matt Stults\nsubject fix round GO; corpus artifacts pinned; checkpoint cadence corrected to record-only\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02079",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5203-5211",
+   "text": "commit ba0f4039f638dc2458968ffb82f2d5bd073db85f\nordinal 191\ndate 2026-08-14 18:41:28 -0700\nauthor Matt Stults\nsubject corpus status script\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02080",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5212-5220",
+   "text": "commit 12891dc6d831c4746f1c6ab32092a533bedf3895\nordinal 192\ndate 2026-08-14 18:58:01 -0700\nauthor Matt Stults\nsubject work order for the review-findings agent (phase 1 now, phase 2 in an isolated worktree)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02081",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5221-5229",
+   "text": "commit f29bb9e8f26be044619d7a17ff1fd4f96e0a15af\nordinal 193\ndate 2026-08-14 19:07:13 -0700\nauthor Matt Stults\nsubject work order amendments: phase-1 worktree, stacked phase 2, G6/test_d4b/C6 guidance\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02082",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5230-5238",
+   "text": "commit 2fc014ea41766cd0a2967bcc243d13394b47d97f\nordinal 194\ndate 2026-08-14 19:10:05 -0700\nauthor Matt Stults\nsubject proactive graveyard check: 2 benign entries cleared; cap-vs-convergence-noise projection\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02083",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5239-5251",
+   "text": "commit b3803e506ec0c940659b29cdcfdc918a666d6406\nordinal 195\ndate 2026-08-14 19:41:09 -0700\nauthor Matt Stults\nsubject translation repair-cost census: 56% of calls are repair rounds; fix plan removes a measured 58%\nGrouped by prompt-bytes generation (not pooled): 3 of the pooled top-8\nclasses are already extinct. Autofix + pins landed but NOT wired -- the\nin-flight corpus run must not change code mid-corpus.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02084",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5252-5260",
+   "text": "commit 6d3bf313e64eacea3a0693deb24554fa4ca69228\nordinal 196\ndate 2026-08-14 20:02:17 -0700\nauthor Matt Stults\nsubject open-items register: the canonical worklist (EXPERIMENTS.md is the record, not a tracker)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02085",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5261-5269",
+   "text": "commit 66cfba8c776ead378c4c9e7dca52c649f293a663\nordinal 197\ndate 2026-08-14 20:05:08 -0700\nauthor Matt Stults\nsubject register: audit the review state of every ruling request (2 unreviewed, 1 partial)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02086",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5270-5278",
+   "text": "commit 86a703c1c4b9a79726d974d2bc6aa1a4bd718144\nordinal 198\ndate 2026-08-14 20:09:04 -0700\nauthor Matt Stults\nsubject build policy: all fixes now, separate commits, shelve at launch; M2 ruling withdrawn\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  }
+ ]
+}

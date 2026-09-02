@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_101",
+  "source_class": "arc1_cycles",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S01475",
+  "last_span": "S01489"
+ },
+ "spans": [
+  {
+   "id": "S01475",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "4-16",
+   "text": " \"closure_shas\": {\n  \"annotations_ext_v1_merged.json\": \"1ea7fe9d684e0954b58c4f0ff3bd21849733d10572e19eb534946aace3357e70\",\n  \"behavior_atoms_audit_v1.json\": \"540562415cdb95e15eb99f06e2d06fb2f5f2347daac42e3b7a998dcc8d3a7531\",\n  \"constitution_clauses.json\": \"a264e1a07d8a79eaa37710b8c6e25808a0d2807cb55e3ad3716ca422019f06e9\",\n  \"modelspec_clauses.json\": \"c6be91a0c0eb25c9f10bea9947547f64416cdd18e8f5e64b14c354a43b87b546\",\n  \"overlay_empty.json\": \"3f3adca9ee17a196ce155f3f900711622b2d99ced863667de9bc823df40cf99e\",\n  \"test_containment.py\": \"237ad5aa5ff0e38dfba0933a2e458e0d86962a8e3c544fb71af765261f5ee648\",\n  \"test_dechain.py\": \"92347d246b222edae7838e71b0beda460e514820239c3b84c5fffc53b5fc0051\",\n  \"test_no_reference_leak.py\": \"5340d26261799f851ec26fadd9bc0557884582bfa06af489358b16679947b894\",\n  \"test_patient.py\": \"779f69f713ddf8222e7dc04523ac53457253c180ddf54b28b9296e89a8ee190f\",\n  \"test_threshold.py\": \"ea7118376e802272ad75057621afc219cba3cac82771e6de41e5b9a720a1ac41\",\n  \"thresholds_frozen.json\": \"60d1273a4e0ac3a4de0eb2a44481b763531491c8c0884387529014dcb724251a\"\n },",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01476",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "5-5",
+   "text": "  \"annotations_ext_v1_merged.json\": \"1ea7fe9d684e0954b58c4f0ff3bd21849733d10572e19eb534946aace3357e70\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01477",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "6-6",
+   "text": "  \"behavior_atoms_audit_v1.json\": \"540562415cdb95e15eb99f06e2d06fb2f5f2347daac42e3b7a998dcc8d3a7531\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01478",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "7-7",
+   "text": "  \"constitution_clauses.json\": \"a264e1a07d8a79eaa37710b8c6e25808a0d2807cb55e3ad3716ca422019f06e9\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01479",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "8-8",
+   "text": "  \"modelspec_clauses.json\": \"c6be91a0c0eb25c9f10bea9947547f64416cdd18e8f5e64b14c354a43b87b546\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01480",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "9-9",
+   "text": "  \"overlay_empty.json\": \"3f3adca9ee17a196ce155f3f900711622b2d99ced863667de9bc823df40cf99e\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01481",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "10-10",
+   "text": "  \"test_containment.py\": \"237ad5aa5ff0e38dfba0933a2e458e0d86962a8e3c544fb71af765261f5ee648\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01482",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "11-11",
+   "text": "  \"test_dechain.py\": \"92347d246b222edae7838e71b0beda460e514820239c3b84c5fffc53b5fc0051\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01483",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "12-12",
+   "text": "  \"test_no_reference_leak.py\": \"5340d26261799f851ec26fadd9bc0557884582bfa06af489358b16679947b894\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01484",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "13-13",
+   "text": "  \"test_patient.py\": \"779f69f713ddf8222e7dc04523ac53457253c180ddf54b28b9296e89a8ee190f\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01485",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "14-14",
+   "text": "  \"test_threshold.py\": \"ea7118376e802272ad75057621afc219cba3cac82771e6de41e5b9a720a1ac41\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01486",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "15-15",
+   "text": "  \"thresholds_frozen.json\": \"60d1273a4e0ac3a4de0eb2a44481b763531491c8c0884387529014dcb724251a\"",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01487",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "17-25",
+   "text": " \"completed\": [\n  \"OPEN\",\n  \"PREDICT\",\n  \"IMPLEMENT\",\n  \"MEASURE\",\n  \"ADJUDICATE\",\n  \"DECIDE\",\n  \"CLOSE\"\n ],",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01488",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "26-26",
+   "text": " \"cycle\": \"patient-pricing-2026-08-04\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01489",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "27-30",
+   "text": " \"decision\": {\n  \"decision\": \"revert\",\n  \"signed_by\": \"session coordinator (Claude), on Matt's standing authorization for the reviewed portfolio order\"\n },",
+   "source_class": "arc1_cycles"
+  }
+ ]
+}

@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_142",
+  "source_class": "git_log",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S02318",
+  "last_span": "S02332"
+ },
+ "spans": [
+  {
+   "id": "S02318",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8293-8301",
+   "text": "commit d136f8f80e12b8d25becf55de1d66f248afefd34\nordinal 430\ndate 2026-08-20 10:09:45 -0700\nauthor Matt Stults\nsubject 9f breadth reviews (Fable seat): l3147_3238_n001 + l2821_3040_n015 COMPLETE (terminal claims clear the gate); l3041_3146_n007 + l797_830_n005 UNDER-LABELED (n007 missing accuracy_calibration/identity_meta/tone_manner, n005 missing identity_meta) -> routed to label panel per 9f; both under-labeled nodes are exactly the premise-gapped proofs\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02319",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8302-8310",
+   "text": "commit 0a6a534ec00b3b46ce102f53de0488db22967a3e\nordinal 431\ndate 2026-08-20 10:11:04 -0700\nauthor Matt Stults\nsubject 9f label panel folded: n007 governs += accuracy_calibration+identity_meta (fresh Fable panel; tone_manner NOT upheld), n005 stands complete (identity_meta addition refuted) — regression unchanged (104/74/183 TP, 13/11/12 FP); n007's A-provisional terminal claim now re-derivable from a corrected signature\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02320",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8311-8319",
+   "text": "commit f2487a9b26f2ba71d21398d949167d41ed011190\nordinal 432\ndate 2026-08-20 10:17:04 -0700\nauthor Matt Stults\nsubject 9g-addendum (Matt's correction): terminal verdicts are INVENTORY-RELATIVE and expire when mechanisms grow — verifier now stamps its inventory and re-stamps 13 context-atom-reachable mismatches PENDING-VOCAB; unqualified 'terminal' is a review finding; handoff carries the warning first\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02321",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8320-8328",
+   "text": "commit 610aa795197e603e95c3413235512e12b6c1c2cf\nordinal 433\ndate 2026-08-20 10:32:58 -0700\nauthor Matt Stults\nsubject declaration-search prototype space (Matt's ask): durable Opus prompt with goal/exit-criteria/anti-goals per the delegation doctrine, rigid output schema in contract vocabulary (deltas are mergeable JSON fragments), machine validator gating completion claims; design tier Fable, execution tier Opus; capability verdict: plausible because the search is convex-mechanical and all design decisions are pre-made in the spec\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02322",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8329-8337",
+   "text": "commit 32417cdc36f186170f702098fed392c1d954e041\nordinal 434\ndate 2026-08-20 10:40:27 -0700\nauthor Matt Stults\nsubject declaration-search prototype RUN 1: validator green, 836x157 matrix, 8 proposals; PROVE-OUT PASSED — deltas integrate mechanically (predicted arithmetic from real instrument mutation), fail-open wall-flip failure mode rediscovered from data (caution +society 4/79 = family-1 flood class), two net-positive purpose_concern hypotheses manual search never tried (help +empowerment 7/3, caution +harm-prevention 2/0); spec gaps recorded for run 2 (interaction features, fair instrument comparison); all outputs hypothesis-only per anti-goals\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02323",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8338-8346",
+   "text": "commit d139d0e4180133aef59161c934f871ba824a83b4\nordinal 435\ndate 2026-08-20 11:27:13 -0700\nauthor Matt Stults\nsubject decl-search run-2 spec: interaction features (carvings of existing atoms; governs x contexts maps to governs_conditional, others to subtype proposals), screened for support; fair instrument comparison; act-encoding resolution made canonical; per-unresolved separating-column report as the run-3 carving queue\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02324",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8347-8355",
+   "text": "commit 779ce278401ff87fc489cffc9dda2f6eb2abf5b9\nordinal 436\ndate 2026-08-20 11:35:02 -0700\nauthor Matt Stults\nsubject decl-search RUN 2: interaction carvings near-empty (0 stable governs x context); carving queue collapses to 3 nodes that are byte-identical to opposite-verdict colliders — and they are EXACTLY the deferred act-refinement atoms from split mining (form_equivalence, exhibit:illustrate): L1 residuals and the Opus miner converge blind on nodes AND fix family; 33/40 unresolved are collider-free (declaration-space work, 11 covered by purpose_concern proposals); census vector() staleness queued as maintenance; fair comparison confirms instrument > fitted model on all behaviors\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02325",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8356-8364",
+   "text": "commit 5cc216272042942d0ba51966070168fddeb53d25\nordinal 437\ndate 2026-08-20 11:37:22 -0700\nauthor Matt Stults\nsubject handoff updated end-of-day: adoption/rejection results, declaration-search runs 1-2 headlines (carving question CLOSED, 3-node queue = the deferred subtype atoms), criterion standing 0.94-0.96 in-sample, and the full two-arc path to the higher-level goal (certify this document a-g; generalize + constitution h-j) with model-tier doctrine inline\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02326",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8365-8372",
+   "text": "commit c7069143a53402b4048d932d02bdb3036e42426b\nordinal 438\ndate 2026-08-21 10:21:48 -0700\nauthor Matt Stults\nsubject campaign start record: 10-hour push baseline commit 5cc21627, mandate (round-4 cert + zero-adaptation generalization on harmlessness-to-user + objectivity + blog series), standing process rules (test-driven-or-pre-declared validation, adversarial review per item), reset-time correction (Sun 9pm PT Aug 23, not Sat), round-3 prereg superseded unrun, 71% baseline flagged unsourced\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02327",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8373-8380",
+   "text": "commit 9ebd55ce363f34f33594dd004d6930f55af52696\nordinal 439\ndate 2026-08-21 10:30:30 -0700\nauthor Matt Stults\nsubject Arc1-e: census vector() now mirrors the v18 instrument — definition_* lanes merged per relevance() jurisdiction (definitional purposes excluded, actors included), context atoms as REACHABLE-only view; predictions pre-registered then met (UNSAT 24->16 current ->12 reachable, collider controls stay UNSAT, mismatch sets invariant); 5 new tests + property tests on frozen prefixture; v17-era census artifact untouched\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02328",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8381-8388",
+   "text": "commit 1bec1302d563eb726180eaaeb2544d5ed13c91d5\nordinal 440\ndate 2026-08-21 10:36:23 -0700\nauthor Matt Stults\nsubject ingest collaborator v5 frontier panel bench (AndresCotton/ai-character-index @ ef08e676, blob-verified): 31,293 verdict rows, 9 behaviours x both specs, 0-3 rubric; enters ONLY as a pre-declared comparison layer per campaign mandate — never truth (PROVENANCE.md carries the usage rule); Slack reader-test-coverage.json not fetchable (auth wall), stays with Matt\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02329",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8389-8396",
+   "text": "commit c080071529866f8346e64aa6f951dbca6520776c\nordinal 441\ndate 2026-08-21 10:37:20 -0700\nauthor Matt Stults\nsubject Arc1-e addendum-1: channel audit found arg_sorts (declared by all 3 v18 modules) and authority_plumbing (71 keys) live but missing from the vector — added both (functor arg-sort in acts slot, plumbing-key feature); party_concern undeclared everywhere, so census() now fails loud if it is ever declared instead of silently misrepresenting it; extension registered in the prereg before running; no further UNSAT separated by the extension (disclosed); 29 tests green\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02330",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8397-8404",
+   "text": "commit 40a34e8f3e74fb3974e5fc5f1cd1c340cc4ffad0\nordinal 442\ndate 2026-08-21 12:56:12 -0700\nauthor Matt Stults\nsubject scope ruling recorded (all six held-out behaviours, 3+3 sequential, FATAL stop rule; rejected alternatives named; Fable capacity: fresh bar absorbs ~1M post-Sun-reset) + subtype-mint prereg frozen before annotation (M1 charter invariance, M2 collider separation >=2/3, M3 seat agreement >=95%, M4 sparsity sanity; seat-tier deviation disclosed)\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02331",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8405-8412",
+   "text": "commit acf6823aedad64fddbf65f6784070d358b91e95d\nordinal 443\ndate 2026-08-21 13:03:09 -0700\nauthor Matt Stults\nsubject generalization prereg DRAFT (signature-ready): six never-consulted behaviours, 3+3 sequential with FATAL stop rule, 40-node panel-informed draws, v5 comparison statistics pre-declared (four cuts, nothing else), fix-ledger classes as primary result, truth path closed to panel data by prereg\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02332",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8413-8420",
+   "text": "commit 3b503184a5f2ea7634fa228aa0bc5eff5facf33d\nordinal 444\ndate 2026-08-21 13:16:12 -0700\nauthor Matt Stults\nsubject Arc1-e correction 2 (adversarial review ALARMING-1 resolved): assert status dropped from the vector (relevance() never consumes it), none/other sorts collapsed (arg_ok fails open identically); exhaustive pre/post diff shows exactly two false SEPARABLEs reclassified UNSAT — help::l3877_3953_n010 (reviewer-found) and caution::l2126_2404_n023 (found by the diff; the review's within-class scan could not see cross-class merges) — no other verdict changed; prereg addendum 2 records the erratum incl. the scan undercount; governs_conditional gains the fail-loud guard; latent flattened representations registered as LF-3; E1 pins + load_layers merge + guard tests added; 33 tests green\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "source_class": "git_log"
+  }
+ ]
+}

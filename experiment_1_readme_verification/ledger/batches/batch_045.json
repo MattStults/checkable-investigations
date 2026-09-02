@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_045",
+  "source_class": "arc2_json",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S00812",
+  "last_span": "S00826"
+ },
+ "spans": [
+  {
+   "id": "S00812",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "commit": "pin",
+   "lines": "26-57",
+   "text": " \"attempt2\": {\n  \"raw_wave\": {\n   \"engaged_precision\": 0.75,\n   \"decline_correctness\": 0.55\n  },\n  \"panel_tier\": {\n   \"engaged_precision\": 0.7,\n   \"decline_correctness\": 0.5\n  },\n  \"panel_tier_misses\": {\n   \"engaged_FP\": [\n    \"l2555_2652_n005\",\n    \"l2821_3040_n029\",\n    \"l3147_3238_n009\",\n    \"l3596_3876_n028\",\n    \"l3954_4251_n038\",\n    \"l3954_4251_n040\"\n   ],\n   \"not_engaged_FN\": [\n    \"l1368_1541_n011\",\n    \"l1707_1973_n013\",\n    \"l1_170_n040\",\n    \"l1_170_n046\",\n    \"l1_170_n058\",\n    \"l2126_2404_n012\",\n    \"l3596_3876_n013\",\n    \"l3954_4251_n013\",\n    \"l699_796_n008\",\n    \"l699_796_n010\"\n   ]\n  }\n },",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00813",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "commit": "pin",
+   "lines": "27-30",
+   "text": "  \"raw_wave\": {\n   \"engaged_precision\": 0.75,\n   \"decline_correctness\": 0.55\n  },",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00814",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "commit": "pin",
+   "lines": "31-34",
+   "text": "  \"panel_tier\": {\n   \"engaged_precision\": 0.7,\n   \"decline_correctness\": 0.5\n  },",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00815",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "commit": "pin",
+   "lines": "35-56",
+   "text": "  \"panel_tier_misses\": {\n   \"engaged_FP\": [\n    \"l2555_2652_n005\",\n    \"l2821_3040_n029\",\n    \"l3147_3238_n009\",\n    \"l3596_3876_n028\",\n    \"l3954_4251_n038\",\n    \"l3954_4251_n040\"\n   ],\n   \"not_engaged_FN\": [\n    \"l1368_1541_n011\",\n    \"l1707_1973_n013\",\n    \"l1_170_n040\",\n    \"l1_170_n046\",\n    \"l1_170_n058\",\n    \"l2126_2404_n012\",\n    \"l3596_3876_n013\",\n    \"l3954_4251_n013\",\n    \"l699_796_n008\",\n    \"l699_796_n010\"\n   ]\n  }",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00816",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "commit": "pin",
+   "lines": "58-95",
+   "text": " \"attempt3\": {\n  \"raw_wave\": {\n   \"engaged_precision\": 0.4,\n   \"decline_correctness\": 0.5\n  },\n  \"panel_tier\": {\n   \"engaged_precision\": 0.55,\n   \"decline_correctness\": 0.35\n  },\n  \"panel_tier_misses\": {\n   \"engaged_FP\": [\n    \"l1368_1541_n017\",\n    \"l1974_2125_n005\",\n    \"l2126_2404_n001\",\n    \"l2821_3040_n030\",\n    \"l3239_3382_n003\",\n    \"l3239_3382_n005\",\n    \"l3505_3595_n002\",\n    \"l3505_3595_n010\",\n    \"l461_608_n016\"\n   ],\n   \"not_engaged_FN\": [\n    \"l1108_1367_n009\",\n    \"l1707_1973_n014\",\n    \"l1_170_n017\",\n    \"l1_170_n032\",\n    \"l1_170_n042\",\n    \"l2126_2404_n002\",\n    \"l3596_3876_n003\",\n    \"l3954_4251_n019\",\n    \"l4252_4482_n007\",\n    \"l4252_4482_n022\",\n    \"l609_698_n010\",\n    \"l699_796_n021\",\n    \"l831_1000_n011\"\n   ]\n  }\n },",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00817",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "commit": "pin",
+   "lines": "59-62",
+   "text": "  \"raw_wave\": {\n   \"engaged_precision\": 0.4,\n   \"decline_correctness\": 0.5\n  },",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00818",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "commit": "pin",
+   "lines": "63-66",
+   "text": "  \"panel_tier\": {\n   \"engaged_precision\": 0.55,\n   \"decline_correctness\": 0.35\n  },",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00819",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "commit": "pin",
+   "lines": "67-94",
+   "text": "  \"panel_tier_misses\": {\n   \"engaged_FP\": [\n    \"l1368_1541_n017\",\n    \"l1974_2125_n005\",\n    \"l2126_2404_n001\",\n    \"l2821_3040_n030\",\n    \"l3239_3382_n003\",\n    \"l3239_3382_n005\",\n    \"l3505_3595_n002\",\n    \"l3505_3595_n010\",\n    \"l461_608_n016\"\n   ],\n   \"not_engaged_FN\": [\n    \"l1108_1367_n009\",\n    \"l1707_1973_n014\",\n    \"l1_170_n017\",\n    \"l1_170_n032\",\n    \"l1_170_n042\",\n    \"l2126_2404_n002\",\n    \"l3596_3876_n003\",\n    \"l3954_4251_n019\",\n    \"l4252_4482_n007\",\n    \"l4252_4482_n022\",\n    \"l609_698_n010\",\n    \"l699_796_n021\",\n    \"l831_1000_n011\"\n   ]\n  }",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00820",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "commit": "pin",
+   "lines": "96-96",
+   "text": " \"attempt1_transfer_frozen\": 0.4,",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00821",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "commit": "pin",
+   "lines": "97-160",
+   "text": " \"new_panel_majorities\": {\n  \"l1542_1706_n020\": \"relevant\",\n  \"l171_426_n016\": \"relevant\",\n  \"l1368_1541_n017\": \"not_relevant\",\n  \"l461_608_n016\": \"not_relevant\",\n  \"l3954_4251_n015\": \"not_relevant\",\n  \"l1001_1107_n010\": \"not_relevant\",\n  \"l171_426_n014\": \"relevant\",\n  \"l1_170_n026\": \"relevant\",\n  \"l171_426_n019\": \"relevant\",\n  \"l699_796_n015\": \"not_relevant\",\n  \"l427_460_n009\": \"relevant\",\n  \"l1_170_n091\": \"relevant\",\n  \"l171_426_n037\": \"relevant\",\n  \"l2126_2404_n001\": \"not_relevant\",\n  \"l3505_3595_n010\": \"not_relevant\",\n  \"l1974_2125_n017\": \"relevant\",\n  \"l3239_3382_n002\": \"relevant\",\n  \"l1974_2125_n016\": \"relevant\",\n  \"l3954_4251_n013\": \"relevant\",\n  \"l3383_3501_n010\": \"relevant\",\n  \"l3041_3146_n010\": \"not_relevant\",\n  \"l4572_4692_n003\": \"not_relevant\",\n  \"l2555_2652_n005\": \"not_relevant\",\n  \"l2555_2652_n004\": \"relevant\",\n  \"l797_830_n011\": \"not_relevant\",\n  \"l1108_1367_n011\": \"not_relevant\",\n  \"l4483_4571_n007\": \"not_relevant\",\n  \"l4252_4482_n007\": \"relevant\",\n  \"l2821_3040_n023\": \"relevant\",\n  \"l3954_4251_n005\": \"not_relevant\",\n  \"l1542_1706_n018\": \"relevant\",\n  \"l1_170_n057\": \"relevant\",\n  \"l1108_1367_n014\": \"not_relevant\",\n  \"l609_698_n014\": \"relevant\",\n  \"l3505_3595_n002\": \"not_relevant\",\n  \"l2555_2652_n008\": \"relevant\",\n  \"l4252_4482_n022\": \"relevant\",\n  \"l1707_1973_n041\": \"not_relevant\",\n  \"l2126_2404_n002\": \"relevant\",\n  \"l3596_3876_n003\": \"relevant\",\n  \"l3596_3876_n013\": \"relevant\",\n  \"l1_170_n017\": \"relevant\",\n  \"l2653_2820_n008\": \"relevant\",\n  \"l2821_3040_n009\": \"not_relevant\",\n  \"l1_170_n043\": \"relevant\",\n  \"l1_170_n059\": \"relevant\",\n  \"l3239_3382_n015\": \"relevant\",\n  \"l1_170_n054\": \"relevant\",\n  \"l1974_2125_n005\": \"not_relevant\",\n  \"l1_170_n081\": \"not_relevant\",\n  \"l831_1000_n011\": \"relevant\",\n  \"l1799_1973_n013\": \"relevant\",\n  \"l1108_1367_n009\": \"relevant\",\n  \"l609_698_n010\": \"relevant\",\n  \"l831_1000_n010\": \"not_relevant\",\n  \"l3596_3876_n031\": \"relevant\",\n  \"l461_608_n018\": \"relevant\",\n  \"l1_170_n060\": \"relevant\",\n  \"l1707_1973_n014\": \"relevant\",\n  \"l1_170_n042\": \"relevant\",\n  \"l3954_4251_n019\": \"relevant\",\n  \"l4572_4691_n011\": \"not_relevant\"\n },",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00822",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "commit": "pin",
+   "lines": "98-98",
+   "text": "  \"l1542_1706_n020\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00823",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "commit": "pin",
+   "lines": "99-99",
+   "text": "  \"l171_426_n016\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00824",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "commit": "pin",
+   "lines": "100-100",
+   "text": "  \"l1368_1541_n017\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00825",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "commit": "pin",
+   "lines": "101-101",
+   "text": "  \"l461_608_n016\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00826",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "commit": "pin",
+   "lines": "102-102",
+   "text": "  \"l3954_4251_n015\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  }
+ ]
+}

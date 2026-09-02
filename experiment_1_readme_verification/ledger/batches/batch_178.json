@@ -1,0 +1,37 @@
+{
+ "header": {
+  "batch": "batch_178",
+  "source_class": "arc1_docs_preredaction",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 3,
+  "first_span": "S01886",
+  "last_span": "S01888"
+ },
+ "spans": [
+  {
+   "id": "S01886",
+   "path": "AGENTS.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "70-72",
+   "text": "## Environment\n\n```bash",
+   "source_class": "arc1_docs_preredaction"
+  },
+  {
+   "id": "S01887",
+   "path": "AGENTS.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "73-91",
+   "text": "# from the repo root\npython3 -m venv semi-formal-experiment/.venv\nsemi-formal-experiment/.venv/bin/pip install pytest clingo\ncd semi-formal-experiment && .venv/bin/python -m pytest -q      # ~2,156 pass, 4 min\n```\n\n`clingo` is only needed for the ASP-solver tests; everything else runs without it (those\ntests will show as collection errors, which is a known environment gap, not a failure).\nRun from `semi-formal-experiment/` — several commands take relative path arguments.\nProvider calls use stdlib `urllib`, no vendor SDK. `numpy`/`scikit-learn` are imported\nlazily by `weight_diag.py` only.\n\n**API spend:** this project has a hard budget ceiling and it is `spend.py:BUDGET` — the ONE\nceiling the machine reads ($25.00 as of 2026-08-16; the authorization history is in the\nconstant's comment, and `spend.py` reports the current figure — quote the constant, never a\nsecond number). Nearly all work — every cycle, every audit, every number in the\nwriteups — is deterministic re-analysis of data already on disk and costs nothing. If you\nfind yourself about to spend, check that the question genuinely needs a new model call.\n",
+   "source_class": "arc1_docs_preredaction"
+  },
+  {
+   "id": "S01888",
+   "path": "AGENTS.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "92-102",
+   "text": "## What \"done\" looks like\n\nA change is done when: predictions were frozen before measurement, every flip was\nadjudicated against the document, an independent review passed, the decision is signed\nwith its grounds, and the cycle log has its line. **Not when the score improved.**\n\nIf you are new here and want the shortest statement of why the process looks like this:\na change that improved the aggregate metric was reverted because per-flip adjudication\nfound it had deleted the spec's guidance on de-escalating a user's radicalization. The\nmetric said ship it. See `cycles/patient-pricing-2026-08-04/decision.json`.\n",
+   "source_class": "arc1_docs_preredaction"
+  }
+ ]
+}

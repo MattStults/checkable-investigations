@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_083",
+  "source_class": "arc1_cycles",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S01205",
+  "last_span": "S01219"
+ },
+ "spans": [
+  {
+   "id": "S01205",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "62-62",
+   "text": "  \"behavior_atoms_audit_v1.json\": \"1e49a65a945215386b0e104fcbaf1812fbd5395e7fe01f2034d9977c55b1bd0b\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01206",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "63-63",
+   "text": "  \"vocabulary_migrations.json\": \"f4a7f858b17a88c4b3ec4621e1a5a28d196f4ca9aebb22a175314a1b14d66d95\"",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01207",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "65-65",
+   "text": " \"overrides\": [],",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01208",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "66-92",
+   "text": " \"prediction_checks\": {\n  \"adjudicate\": [\n   {\n    \"expected\": 0,\n    \"kind\": \"max_regressions\",\n    \"observed\": 0,\n    \"result\": \"PASS\"\n   }\n  ],\n  \"measure\": [\n   {\n    \"expected\": {\n     \"max\": 0,\n     \"min\": 0\n    },\n    \"kind\": \"flip_count\",\n    \"observed\": 0,\n    \"result\": \"PASS\"\n   },\n   {\n    \"expected\": [],\n    \"kind\": \"directions\",\n    \"observed\": [],\n    \"result\": \"PASS\"\n   }\n  ]\n },",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01209",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "67-74",
+   "text": "  \"adjudicate\": [\n   {\n    \"expected\": 0,\n    \"kind\": \"max_regressions\",\n    \"observed\": 0,\n    \"result\": \"PASS\"\n   }\n  ],",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01210",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "75-91",
+   "text": "  \"measure\": [\n   {\n    \"expected\": {\n     \"max\": 0,\n     \"min\": 0\n    },\n    \"kind\": \"flip_count\",\n    \"observed\": 0,\n    \"result\": \"PASS\"\n   },\n   {\n    \"expected\": [],\n    \"kind\": \"directions\",\n    \"observed\": [],\n    \"result\": \"PASS\"\n   }\n  ]",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01211",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "93-93",
+   "text": " \"skipped\": {}",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01212",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "2-2",
+   "text": " \"census\": \"deferred_to_checkpoint\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01213",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "3-3",
+   "text": " \"census_delta\": null,",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01214",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "4-4",
+   "text": " \"cycle\": \"decoration-blind-join-2026-08-04\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01215",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "5-5",
+   "text": " \"date\": \"2026-08-04\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01216",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "6-6",
+   "text": " \"decision\": \"keep\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01217",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "7-7",
+   "text": " \"exploratory\": false,",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01218",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "8-8",
+   "text": " \"fix_description\": \"The DECORATION-BLIND JOIN, pricing v1.2 (spine cycle S1; BACKFILL_DESIGN.md \\u00a76 as amended per PORTFOLIO_REVIEW.md F1 \\u2014 promoted from micro-cycle to a full standard cycle). containment.py's ContainmentIndex becomes the versioned v1.2 pricing path: the atom-channel match key, the atom df/idf, and the lexical atom-text all read the DECHAINED atom name \\u2014 polarity + stem with the principal chain stripped (polarity is NOT stripped; grammar.stem_of is the wrong key). The dechain key applies at every entry point (_atom_score and _subsumption_matches dechain their query-atom names; channel_scores/explain dechain the behaviour, which also strips chain principal tokens from the lexical query text). Chained and chain-free instances of one dechained name share one df entry (clause sets unioned); stripped chains are preserved on the index as pricing metadata (self.chains) for the future 2.0 patient-pricing layer and reported by explain() under a `dechained` key (absent on chain-free evidence). PRICING_VERSION bumps \\\"1.1\\\" -> \\\"1.2\\\". The opt-in vehicle is the existing overlay seam: config.overlay = overlay_empty.json (ZERO edges, budget 0/0), which routes snapshot scoring through ContainmentIndex and records pricing_version \\\"1.2\\\" in the snapshot config identity \\u2014 containment.json's licensed edges stay dormant (reactivation is cycle S5's, PORTFOLIO_REVIEW F2), so the only behavioural delta vs the baseline is the join itself. PROCESS NOTE, disclosed: a first OPEN/PREDICT of this same cycle name earlier today (manifest sha cf6e2496f048..., prediction sha 5b05b018d48d...) was DISCARDED before IMPLEMENT and before any snapshot was built or published: post-freeze RED->GREEN work exposed two defects in the then-frozen gate-test file test_dechain.py (a fixture gloss that embedded the chained name \\u2014 glosses are authored prose, not decoration \\u2014 and a missing pin that the dechain key applies at _atom_score's own entry point), and that file sat sha-pinned in the OPEN closure, so per the driver's own remedy the cycle was reopened with the corrected file finalized pre-OPEN. The prediction content is numerically identical to the discarded freeze; no measurement had run.\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01219",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "9-11",
+   "text": " \"flip_tallies\": {\n  \"regression\": 1\n },",
+   "source_class": "arc1_cycles"
+  }
+ ]
+}

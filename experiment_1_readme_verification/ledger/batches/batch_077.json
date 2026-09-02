@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_077",
+  "source_class": "arc1_docs",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S01118",
+  "last_span": "S01132"
+ },
+ "spans": [
+  {
+   "id": "S01118",
+   "path": "semi-formal-experiment/machine/README.md",
+   "commit": "pin",
+   "lines": "267-274",
+   "text": "## Keeping it honest\n\nRe-run `check_model.py` after any edit to `cycle.py`, `briefs/`,\n`CYCLE_DESIGN.md`, `MODULE_MAP.md` or `REPRODUCIBILITY.md`. The source check\ngoes red the moment a cited line moves, and the differential check goes red the\nmoment a constant or a refusal condition changes. Re-run `scan.py` after any\nedit to a verdict artifact or a retraction marker.\n",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01119",
+   "path": "semi-formal-experiment/adversarial_review_1.md",
+   "commit": "pin",
+   "lines": "1-4",
+   "text": "# Adversarial review 1 of blog draft (clean-context agent, 2026-07-30)\n\nReviewer re-ran both scripts, audited segmentation JSON + rules.lp against the post, read constitution text, fact-checked 13 citations. Findings below verbatim from the reviewer, lightly formatted. Post reviewed: mattstults.github.io/_drafts/2026-07-30-semi-formal-spec-conflicts.md\n",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01120",
+   "path": "semi-formal-experiment/adversarial_review_1.md",
+   "commit": "pin",
+   "lines": "5-12",
+   "text": "## Critical findings\n\n**6. Flagship conflict built from clauses the segmentation tags non-formalizable.** Wellbeing clause (c056) and Autonomy clause (c054) — the two quoted in the worked example — are both tagged `holistic` in constitution_clauses.json, while the post says only `conditional` clauses formalize. Internal contradiction: either segmentation is wrong (undermines 31.7% + boundary) or worked example is out-of-scope for the pipeline.\n\n**7. The constitution arguably resolves the flagship conflict — in clause c317 (tagged `conditional`), absent from the fragment.** c317: \"Personal autonomy: Claude should respect the right of people to make their own choices and act within their own purview, even if this potentially means harming themselves or their interests.\" Near-explicit defeater: autonomy dominates wellbeing-intervention for self-regarding decisions. Supporting: c057 (\"without being paternalistic\"), c068 (paternalism \"disrespectful\"), c127 (names the balance). The \"same-tier unresolved\" verdict is an artifact of fragment selection — the failure mode the full pipeline would systematically produce whenever the resolving clause lives in a different section. Fix: encode c317 as defeater, show the conflict DISSOLVING (a better demo), and add limitation: an enumerated \"unresolved conflict\" is only as trustworthy as fragment completeness.\n\n**19. The determinism is laundered judgment (strongest unanswered objection).** Every reported conflict is downstream of nondeterministic encoding choices: clause selection (finding 7), modality assignment (\"give weight\" → \"oblige\", finding 8), act individuation + incompat axioms (finding 8), open texture → booleans (finding 10). Solver is deterministic *given* the encoding; the encoding has the reliability profile the post criticizes (kappa 0.42) and nothing measures it. \"You've moved the kappa-0.42 problem one layer up and stopped measuring it, while stamping the output 'machine-checked.'\" Fix: pre-register inter-formalizer agreement measurement over the encoding; present findings as \"conflicts under encoding E\" with E's reliability quantified.\n",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01121",
+   "path": "semi-formal-experiment/adversarial_review_1.md",
+   "commit": "pin",
+   "lines": "13-36",
+   "text": "## Major findings\n\n**3. Unverified headline numbers.** kappa 0.42 and \"300,000+ scenarios\" (Zhang et al. 2510.07686) not in the paper's abstract — trace only to our own litreview summary. Also claim shift: abstract says divergence predicts \"problems in model specifications,\" post says \"predicts spec violations.\" Verify against paper body or realign.\n\n**4. GDPR 400→120 + \"no controlled vocabulary\" + \"abstraction errors dominant\" not verifiable from abstract of 2604.14607.** Load-bearing twice. Verify from body or soften.\n\n**8. `incompat(respect_decision, intervene_wellbeing)` is smuggled in.** No textual license; would be labeled \"assumed\"; the post's own eval prompt (\"or something between\") concedes the acts aren't strictly incompatible. Modality inflation: \"pay attention...giving appropriate weight\" encoded as oblige(intervene). Fix: gate on interp/1 atom (machinery exists in rules.lp, unused here) or justify from text.\n\n**9. The \"planted check\" is vacuous — dead code.** p1b_oplimits is defeated by its own activation condition (`defeated(p1b_oplimits) :- ctx(op_restricts_limit_info)` while the rule requires that same ctx); same for p4b_opsilence. These norms can never be active; their absence from conflicts tests nothing. Fix: defeaters on distinct conditions, or delete the claim.\n\n**10. Admission rule not well-defined; pilot violates it.** (a) \"turns on\" is interpretive; (b) the iff fails for act atoms (intervene_wellbeing etc. are invented, not conditions); (c) `ctx(caution_not_needed)` encodes a normative conclusion as scenario input — h2-vs-g5 conflict exists only in arguably incoherent stipulated worlds. Fix: state as discipline w/ residual judgment; add admission rule for acts; measure inter-formalizer vocabulary agreement.\n\n**11. Loud/quiet asymmetry false as stated.** Missing atom fails loudly only at QUERY time; at EXTRACTION time a missing atom fails silently (finding 7 is a live instance — missing self-regarding-harm distinction silently produced the headline conflict). Scope the claim.\n\n**12. Axiom license labels described in present tense; zero exist in rules.lp.** 1 of 3 incompat axioms would be \"assumed\" (the category called \"rare and flagged\"); none labeled. Fix tense or label them.\n\n**13. Refinement-axiom escape nearly self-defeating (though propositionally sound under NAF — reviewer grants the semantics).** You only split A when a clause turns on A1/A2 — precisely when some old rule probably meant A1, i.e., when A ≡ A1∨A2 mislabels it. Fix: refinement event triggers targeted re-review of rules mentioning A (cheap via provenance), don't claim semantics preservation for free.\n\n**14. \"One checker\"/\"195 rehearsals\" overclaims; pilot contradicts.** Rules vs derived predicates are different syntactic categories; spec prose ≠ user-input distribution for calibration. validate_behaviours.py uses no DSL and no checker (hand-mirrored dicts, self-declared \"reification debt\"). Soften to shared vocabulary+validation layer; label rehearsals a hypothesis.\n\n**15. Suppressed adverse coverage evidence.** For helpfulness, 29 of 41 high-consensus panel passages fall OUTSIDE formalized families (19 in \"Balancing helpfulness with other values\"); over/under-caution: 21/24. Post never reports these. They quantify how much behavior-relevance lives in excluded territory. Report in \"What this has not shown.\"\n\n**16. Toy model's optimum contradicts the section's recommendation.** Model says n=D strictly optimal, err-fine strictly harmful; \"err fine\" comes from architecture outside the model but is listed as something \"the model makes visible.\" Asymmetry is assumed, not derived. Fix: say model-alone recommends n=D; err-fine is an architectural override; asymmetry is an assumption.\n",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01122",
+   "path": "semi-formal-experiment/adversarial_review_1.md",
+   "commit": "pin",
+   "lines": "37-44",
+   "text": "## Minor findings\n\n**2. \"15-rule fragment\" is actually 16 rules** (16 norm IDs / source facts). Fix count or state convention.\n**5. Ten of thirteen citations fully confirmed** (tenets, focus areas, ASP>SMT, compact-card, telecom, nl2spec, ManyIH, KG-schema, C-Trace, 2603.20449, EvalGen, PolicyCraft). 2307.07699 predicate-inventory-first: plausible, not confirmed from abstract.\n**17. Widget: fixed D=60 line \"D (text grain)\" visually asserts the quantity the prose says is not unique; escalation diagnostic still treats D as well-defined regional scalar. Caption as illustrative; restate diagnostic via observed inexpressibility.\n**18. Novelty claims survive at stated scope; add \"for an AI model spec\" to the minimal-witness bullet (domain-novelty, not technique-novelty vs NorMAS).\n**1. Core solver numbers reproduce exactly; clause counts reproduce. Not an arithmetic-rigor problem.**\n",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01123",
+   "path": "semi-formal-experiment/adversarial_review_1.md",
+   "commit": "pin",
+   "lines": "45-48",
+   "text": "## Reviewer's verdict (verbatim gist)\n\nThree must-fix before publication: (1) findings 6+7 — worked example doubly broken; re-encoding with c317 and showing the conflict dissolve is a BETTER demo; (2) finding 19 — without inter-formalizer agreement measurement, the kappa-0.42 critique applies to the pipeline itself; (3) findings 9+12+14 — present-tense implementation claims contradicted by artifacts (dead-code planted check, no license labels, no shared checker in pilot). \"Fixing the second and third mostly requires honesty about tense — what is built, what is measured, and what is still a bet.\"\n",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01124",
+   "path": "semi-formal-experiment/cycles/CYCLE_LOG.jsonl",
+   "commit": "pin",
+   "lines": "1-1",
+   "text": "{\"census_consulted\": false, \"census_deltas\": null, \"cycle\": \"versioned-cut-2026-08-04\", \"date\": \"2026-08-04\", \"decision\": \"keep\", \"exploratory\": false, \"noop\": true, \"overrides\": [], \"prediction_pass_rate\": [2, 2], \"shape\": \"code\"}",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01125",
+   "path": "semi-formal-experiment/cycles/CYCLE_LOG.jsonl",
+   "commit": "pin",
+   "lines": "2-2",
+   "text": "{\"census_consulted\": false, \"census_deltas\": null, \"cycle\": \"chain-repair-2026-08-04\", \"date\": \"2026-08-04\", \"decision\": \"keep\", \"exploratory\": false, \"noop\": false, \"overrides\": [], \"prediction_pass_rate\": [3, 3], \"shape\": \"code\"}",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01126",
+   "path": "semi-formal-experiment/cycles/CYCLE_LOG.jsonl",
+   "commit": "pin",
+   "lines": "3-3",
+   "text": "{\"census_consulted\": false, \"census_deltas\": null, \"cycle\": \"decoration-blind-join-2026-08-04\", \"date\": \"2026-08-04\", \"decision\": \"keep\", \"exploratory\": false, \"noop\": false, \"overrides\": [], \"prediction_pass_rate\": [4, 4], \"shape\": \"code\"}",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01127",
+   "path": "semi-formal-experiment/cycles/CYCLE_LOG.jsonl",
+   "commit": "pin",
+   "lines": "4-4",
+   "text": "{\"census_consulted\": false, \"census_deltas\": null, \"cycle\": \"patient-backfill-2026-08-04\", \"date\": \"2026-08-04\", \"decision\": \"keep\", \"exploratory\": false, \"noop\": false, \"overrides\": [], \"prediction_pass_rate\": [3, 3], \"shape\": \"code\"}",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01128",
+   "path": "semi-formal-experiment/cycles/CYCLE_LOG.jsonl",
+   "commit": "pin",
+   "lines": "5-5",
+   "text": "{\"census_consulted\": false, \"census_deltas\": null, \"cycle\": \"patient-pricing-2026-08-04\", \"date\": \"2026-08-04\", \"decision\": \"revert\", \"exploratory\": false, \"noop\": false, \"overrides\": [], \"prediction_pass_rate\": [19, 20], \"shape\": \"code\"}",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01129",
+   "path": "semi-formal-experiment/cycles/CYCLE_LOG.jsonl",
+   "commit": "pin",
+   "lines": "6-6",
+   "text": "{\"census_consulted\": false, \"census_deltas\": null, \"cycle\": \"join-integrity-v2-2026-08-04\", \"date\": \"2026-08-04\", \"decision\": \"keep\", \"exploratory\": false, \"noop\": false, \"overrides\": [], \"prediction_pass_rate\": [3, 3], \"shape\": \"code\"}",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01130",
+   "path": "ARTIFACTS.md",
+   "commit": "pin",
+   "lines": "1-32",
+   "text": "# ARTIFACTS — routing table\n\nEvery star artifact, one line each. Paths are repo-relative; all verified at\npublication. `BP/` abbreviates\n`walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/`.\n\n| Artifact | What it is | Path | Read this if you want |\n|---|---|---|---|\n| The ledger | Append-only research log, entries 0000–0043, errata included | `BP/ITERATION_NOTES.md` (root link: `LEDGER.md`) | the whole arc-2 story as it happened |\n| Arc-2 handoff | Current state in one ⭐⭐ block (rest is archive) | `BP/HANDOFF_CURRENT.md` (root link: `ARC2_HANDOFF.md`) | where things stand |\n| L1/L2 adversarial review | 36-finding review that killed the licensing experiments | `BP/L1L2_ADVERSARIAL_REVIEW.md` | what adversarial review looks like here |\n| L1/L2 disposition | Per-finding verdicts with independent re-derivations | `BP/L1L2_REVIEW_DISPOSITION.md` | how findings get accepted or corrected |\n| Census disposition | The withdrawal of the separability \"pass\" (0041) | `BP/RETRANS_REVIEW_DISPOSITION.md` | the random-partition-null rule's origin |\n| Error calculus | The repair state machine (partition theorem, router, amendments) | `BP/ERROR_CALCULUS.md` | the formal repair framework |\n| Calculus runbook | Execution-derived runbook, docs-tested | `BP/CALCULUS_RUNBOOK.md` | how the calculus actually runs |\n| Behavior-pilot index | Which of the 348 files there are human-authored vs generated | `BP/README.md` | orientation in the arc-2 directory |\n| Arc-2 engine | Relevance instrument + census over the translated corpus | `BP/relevance_by_act.py`, `BP/satisfiability_census.py` | the arc-2 code that runs |\n| Campaign log | Graph-translation campaign: audits, repairs, convergence | `walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/EXPERIMENTS.md` | arc-2 build history |\n| The certified graph | 773 nodes, zero bad spans of 846 | `walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/runs/ds7/root_graph.production.json` | the arc-2 substrate |\n| Prune manifest | What was removed at publication, pinned by git object id | `walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/PRUNED.md` | what was removed and how to restore it |\n| Arc-1 handoff | Arc-1 state and corrected benchmark history (⭐⭐ block) | `semi-formal-experiment/HANDOFF.md` | arc-1 results with their corrections |\n| Module map | What every arc-1 module is; §11 anti-rules | `semi-formal-experiment/MODULE_MAP.md` | how to run or change arc-1 code |\n| Reproducibility rules | Sandwich rule, constant governance, determinism | `semi-formal-experiment/REPRODUCIBILITY.md` | the discipline in 138 lines |\n| Cycle design | How a change cycle runs (ceremony, reviews, close) | `semi-formal-experiment/CYCLE_DESIGN.md` | the change process |\n| The reverted cycle | Metric said ship; adjudication found deleted de-escalation guidance | `semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json` | why per-flip adjudication exists |\n| Governance model | Seats/tiers as a queryable ASP program | `semi-formal-experiment/machine/` (`query.py seats`) | the process as a logic program |\n| Spec citation engine | Locator → verbatim text for both specs | `engine/spec-cite/cite.py` | the citation discipline |\n| Citation convention | The locator format the whole repo uses | `specs/CITATION.md` | how citations are written |\n| Panel roster | The three-behavior frontier-panel verdicts (arc-1 comparator) | `data/behaviours.json` | the calibration instrument |\n| Panel v5 | 9 behaviors × 589 passages, externally authored (Apache-2.0) | `data/panel-v5/runlog-v5.jsonl` | the untouched replication tier |\n| Agent brief | Canonical instructions for agents and new contributors | `AGENTS.md` | to work in this repo |\n",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01131",
+   "path": "AGENTS.md",
+   "commit": "pin",
+   "lines": "1-13",
+   "text": "# AGENTS.md — read this before acting in this repo\n\nSemi-formal document analysis: a label-free tool that finds which clauses of a model\nspec bear on a given behaviour. Most work happens in `semi-formal-experiment/`.\n\n> **This file is the single canonical brief for every AI agent and every new human\n> contributor.** `CLAUDE.md` is a **symlink to this file**, so Claude Code auto-loads\n> the same content other tools read from `AGENTS.md`. If your tool looks for a\n> different filename (`GEMINI.md`, `.github/copilot-instructions.md`, `.cursor/rules`),\n> **add another symlink to this file** — never a copy. Two copies drift, and a stale\n> agent brief is worse than none. (Windows without symlink support: enable\n> `git config core.symlinks true`, or read this file directly.)\n",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01132",
+   "path": "AGENTS.md",
+   "commit": "pin",
+   "lines": "14-26",
+   "text": "## Read in this order\n\n1. **`semi-formal-experiment/HANDOFF.md`** — its top starred section only. Current state,\n   what is closed, what is parked, and the standing rulings. Everything below that\n   section is history (self-marked, some superseded).\n2. **`semi-formal-experiment/CYCLE_DESIGN.md`** — how a change cycle runs. Read the\n   BINDING AMENDMENTS, ⚠️ PRE-BUILT CYCLES, and ⚠️ CYCLE CEREMONY MECHANICS.\n3. **`semi-formal-experiment/MODULE_MAP.md`** — §0 (how to run anything), §1b (what each\n   module is), **§11 (anti-rules — read before \"fixing\" anything that looks wrong)**.\n4. **`semi-formal-experiment/REPRODUCIBILITY.md`** — the sandwich rule, new-constant\n   governance, determinism.\n5. **`semi-formal-experiment/briefs/<seat>.md`** — before dispatching any judgment seat.\n",
+   "source_class": "arc1_docs"
+  }
+ ]
+}

@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_103",
+  "source_class": "arc1_cycles",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S01505",
+  "last_span": "S01519"
+ },
+ "spans": [
+  {
+   "id": "S01505",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "158-165",
+   "text": "  \"tests_passed\": [\n   \"test_containment.py\",\n   \"test_dechain.py\",\n   \"test_no_reference_leak.py\",\n   \"test_patient.py\",\n   \"test_threshold.py\",\n   \"test_validate_query.py\"\n  ]",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01506",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "167-174",
+   "text": " \"open_shas\": {\n  \"behaviours_query.json\": \"48dbd8fb0720ce187423d37daf34e415ebbc58a28166619a0b2800b0a1f32d57\",\n  \"dossier.py\": \"77a50689d1d1fa48ddc71db41bed461e747339a265164e8eaa1bd57312c834c6\",\n  \"snapshot.py\": \"db9431845e6ac8fd9c0cb3cb866aa547f10f8842a55bab0d09785c7acb426702\",\n  \"test_dossier.py\": \"ad31c5b4a1cda13eafc36fb66d71b2b5c4d9b48c2bba3ffd7a0f41d3389ffaa6\",\n  \"test_snapshot.py\": \"06f9b48e30c55a0cfa8449d033e1f56745c7e420397a69027e12254497cc22fe\",\n  \"test_validate_query.py\": \"9ea81733fc0c76de47f7945d56242b5158f0bc3041684cce9e43e0dbe2dad3ce\"\n },",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01507",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "168-168",
+   "text": "  \"behaviours_query.json\": \"48dbd8fb0720ce187423d37daf34e415ebbc58a28166619a0b2800b0a1f32d57\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01508",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "169-169",
+   "text": "  \"dossier.py\": \"77a50689d1d1fa48ddc71db41bed461e747339a265164e8eaa1bd57312c834c6\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01509",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "170-170",
+   "text": "  \"snapshot.py\": \"db9431845e6ac8fd9c0cb3cb866aa547f10f8842a55bab0d09785c7acb426702\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01510",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "171-171",
+   "text": "  \"test_dossier.py\": \"ad31c5b4a1cda13eafc36fb66d71b2b5c4d9b48c2bba3ffd7a0f41d3389ffaa6\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01511",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "172-172",
+   "text": "  \"test_snapshot.py\": \"06f9b48e30c55a0cfa8449d033e1f56745c7e420397a69027e12254497cc22fe\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01512",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "173-173",
+   "text": "  \"test_validate_query.py\": \"9ea81733fc0c76de47f7945d56242b5158f0bc3041684cce9e43e0dbe2dad3ce\"",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01513",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "175-175",
+   "text": " \"overrides\": [],",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01514",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "176-255",
+   "text": " \"prediction_checks\": {\n  \"adjudicate\": [\n   {\n    \"expected\": 0,\n    \"kind\": \"max_regressions\",\n    \"observed\": 5,\n    \"result\": \"FAIL\"\n   }\n  ],\n  \"measure\": [\n   {\n    \"expected\": {\n     \"max\": 18,\n     \"min\": 17\n    },\n    \"kind\": \"flip_count\",\n    \"observed\": 18,\n    \"result\": \"PASS\"\n   },\n   {\n    \"expected\": [\n     \"newly_predicted\",\n     \"no_longer_predicted\"\n    ],\n    \"kind\": \"directions\",\n    \"observed\": [\n     \"newly_predicted\",\n     \"no_longer_predicted\"\n    ],\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0015\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0215\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0265\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0266\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0268\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0269\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0108\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0111\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0194\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0239\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01515",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "256-293",
+   "text": "   },\n   {\n    \"clause\": \"m0275\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0276\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0290\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0466\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0575\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0018\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0463\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   }\n  ]\n },",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01516",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "177-184",
+   "text": "  \"adjudicate\": [\n   {\n    \"expected\": 0,\n    \"kind\": \"max_regressions\",\n    \"observed\": 5,\n    \"result\": \"FAIL\"\n   }\n  ],",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01517",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "185-264",
+   "text": "  \"measure\": [\n   {\n    \"expected\": {\n     \"max\": 18,\n     \"min\": 17\n    },\n    \"kind\": \"flip_count\",\n    \"observed\": 18,\n    \"result\": \"PASS\"\n   },\n   {\n    \"expected\": [\n     \"newly_predicted\",\n     \"no_longer_predicted\"\n    ],\n    \"kind\": \"directions\",\n    \"observed\": [\n     \"newly_predicted\",\n     \"no_longer_predicted\"\n    ],\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0015\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0215\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0265\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0266\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0268\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0269\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0108\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0111\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0194\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0239\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0275\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0276\",\n    \"kind\": \"expected_clause\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01518",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "265-292",
+   "text": "    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0290\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0466\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0575\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0018\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0463\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   }\n  ]",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01519",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "294-294",
+   "text": " \"skipped\": {}",
+   "source_class": "arc1_cycles"
+  }
+ ]
+}

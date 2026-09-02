@@ -1,0 +1,101 @@
+{
+ "header": {
+  "batch": "batch_156",
+  "source_class": "git_log",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 11,
+  "first_span": "S02528",
+  "last_span": "S02538"
+ },
+ "spans": [
+  {
+   "id": "S02528",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "10064-10071",
+   "text": "commit 6f1229fd25f2b566e28b308fd79c3bb7808b7507\nordinal 640\ndate 2026-08-25 09:32:21 -0700\nauthor Matt Stults\nsubject Blind retranslations (both seats, 39/39, five fields, zero NEW coinages — the 24+1 dimension set absorbed everything at the node level too); bridge-lattice merge dispatched (leaf/mid/top per family, mids required to aggregate).\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02529",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "10072-10079",
+   "text": "commit b869a7bfa2361b2f9a0c520d83db3b66f555ac64\nordinal 641\ndate 2026-08-25 09:43:49 -0700\nauthor Matt Stults\nsubject INTEGRATION TEST PASSES: mid-level separability 1.00 both seats at 0.57-0.58 reuse, zero truth-distinct collisions at any level — the combined representation (graph I/O + atoms + emergent dimensions + bridge lattice) addresses the truth-bearing sample non-vacuously; first end-to-end dry run of the next-document recipe. Notes 0041 + HANDOFF. Caveats: n=39, sample-induced mids, matching rules remain.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02530",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "10080-10087",
+   "text": "commit bf0d4978103fe7eeb8b584d9a677ab8b13f92307\nordinal 642\ndate 2026-08-25 10:04:21 -0700\nauthor Matt Stults\nsubject 0041 withdrawn: integration census fails adversarial review (P1/P2 UNSUPPORTED) — CoVe re-derivations confirm the decisive findings (random-partition null dominates the pass condition 299/300; 1-NN relevance prediction at base rate 0.72/0.70 vs 0.60/0.59; mids circular; seat agreement 23/39 masked by pooling). Disposition + corrected verdicts + BINDING matched-granularity random-partition-null rule + licensing experiments L1/L2 registered; HANDOFF headline downgraded. Surviving claims: 39/39 blind coverage zero coinages, reuse 0.57 — necessary conditions only.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02531",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "10088-10095",
+   "text": "commit 365d68b3f550379153b13b89c571672a92e5e396\nordinal 643\ndate 2026-08-25 10:23:55 -0700\nauthor Matt Stults\nsubject L1/L2 withdrawn: the licensing experiments fail their own adversarial review (DOES-NOT-LICENSE, accepted after CoVe). L1's bar already met by the base-rate numbers 0042 rejected (and CoVe shows p~0.15 — not even significant); L2 null-free and elastic (catch-all value; stress dimensions fire 1/100); Q-B untestable by construction (adria: block => zero out-of-corpus panel truth in repo); L1 presupposes the campaign (183/773 translated). Reviewer's panel-v5 rates and p-values corrected by driver re-derivation; findings survive. Replacement adopted: F18 reliability gate -> F17 blind-readout ablation (T/R/N arms, MCC ceiling-relative, worst-behaviour headline) -> F19 scaling pre-flight + A14 out-of-corpus truth purchase; funding rule = all three pass. Erratum #21 4th recurrence logged with the pre-commit question that prevents it.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02532",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "10096-10133",
+   "text": "commit 6d01415be03a62ccaafa8a2fb8ca437c9f428094\nordinal 644\ndate 2026-08-31 08:23:49 -0700\nauthor Matt Stults\nsubject Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer\n- Evidence prune: 9,273 files of superseded iteration runs removed per\n  graph_v2/PRUNED.md (tree-sha manifest; 2,050 load-bearing module files\n  retained after test-driven restore, documented in the manifest).\n- Redactions at HEAD: subscription/quota mechanics, /usage plumbing,\n  verbatim conversational quotes, and private-service references removed\n  across ~60 docs; API spend figures and all design/ruling attributions\n  kept (published by decision). History is published unrewritten; see\n  README disclosure.\n- Reader-facing layer: new root README, ARTIFACTS.md routing table,\n  behavior_pilot/README.md index, LEDGER.md/ARC2_HANDOFF.md symlinks,\n  CI workflow (.github/workflows/ci.yml).\n- Licensing: data/panel-v5 LICENSE (Apache-2.0) + NOTICE for the\n  ingested ai-character-index v5 bench; specs remain CC0 with upstream\n  licenses.\n- Fixes: trace_check.py cwd-independence; orphan prompt declarations in\n  both graph_v2 configs; .venv_clingo untracked (.gitignore .venv*/);\n  corpus_exclusions.py second D1 entry for the re-translated\n  l1108_1367_n014 artifact (fabricated permission from Commentary),\n  ruled same-defect by the project owner 2026-08-31.\n- Renames: DECISIONS_FOR_MATT.md -> SCOPE_DECISIONS.md,\n  CONVERGENCE_REVIEW_FOR_MATT.md -> CONVERGENCE_REVIEW.md,\n  spotcheck_matt_result.json -> spotcheck_owner_result.json.\n- Both suites green at this state: walkthrough 1,341 passed / 8 skipped;\n  semi-formal-experiment 2,270 passed / 1 skipped; check_model exit 0.\n- Committed --no-verify: the pre-commit guard hook overflows argv on\n  11k staged paths; the guard itself was run by hand at this exact\n  staged state and is GREEN (8/8 watched files at review points).\n  Hook fix (staged-list via file, not argv) queued as follow-up.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MgTrc1TZF7qv6hK6s1dKAG\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02533",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "10134-10144",
+   "text": "commit d94a83e5ba7b3dbe2a1258eb7e3af333203bea18\nordinal 645\ndate 2026-08-31 08:32:15 -0700\nauthor Matt Stults\nsubject Final-review fixes: README self-report (check_model now passes), CI scope wording, LICENSE name spacing\nPre-commit guard run by hand: GREEN (8/8 watched at review points); hook argv fix still queued.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MgTrc1TZF7qv6hK6s1dKAG\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02534",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "10145-10158",
+   "text": "commit 622ef433cd5bd3de2f145554cc550ee641794114\nordinal 646\ndate 2026-08-31 08:33:19 -0700\nauthor Matt Stults\nsubject CI: build the documented venv via setup_env.sh (tests subprocess to it); fix YAML quoting in demo-path\nFirst CI run failed for config reasons, not repo reasons: the walkthrough\nsuite's tests invoke semi-formal-experiment/.venv/bin/python by contract,\nwhich the workflow never created; and the demo command's '#' started a\nYAML comment. Guard run by hand: GREEN 8/8.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MgTrc1TZF7qv6hK6s1dKAG\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02535",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "10159-10174",
+   "text": "commit 6d8e65a4a1150c1204b9d01d29ee4c07a0204bb7\nordinal 647\ndate 2026-08-31 08:40:33 -0700\nauthor Matt Stults\nsubject Fresh-clone fixes from first CI runs: graph_check.py resolves the spec relative to __file__; requirements.txt gains xclingo==2.0b24\nThe first CI executions surfaced two fresh-clone gaps the local machine\nmasked: the demo-path graph check hardcoded this machine's absolute spec\npath, and the walkthrough suite's xclingo-grounded tests (plus the\nmutation-guard family, which refuses a non-green baseline) need a package\nthe local venv had but requirements.txt never listed. Guard run by hand:\nGREEN 8/8.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MgTrc1TZF7qv6hK6s1dKAG\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02536",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "10175-10189",
+   "text": "commit 6b9849f95ec33f96ed2017be24203d7bc00017ac\nordinal 648\ndate 2026-09-01 16:59:20 -0700\nauthor Matt Stults\nsubject README: scope the headline verdict — bar unmet on generalization; arc-2 tuned in-sample rates stated with their measurement caveat; frontier-judge result scoped to the arc-1 benchmark\nPrompted by external review of the investigations post: its scoped claim\n(frontier-comparable on tuned behaviors) read as contradicting this README's\nunscoped 'did not reach that bar'. Both are true; the README now says which\naxis failed (generalization) and quotes the tuned in-sample figure with its\ncaveat (0.94-0.96, truth iterated against, certification stopped partway).\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MgTrc1TZF7qv6hK6s1dKAG\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02537",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "10190-10200",
+   "text": "commit 3f87fd408c1f9fe287778628408a4cb8b1b33de5\nordinal 649\ndate 2026-09-01 17:14:08 -0700\nauthor Matt Stults\nsubject README: certification claim corrected (raw ran to completion, defensible pass never ran); drop the 'six weeks' figure that read against the repo's post-import git history\nBoth from the cross-document consistency review before publishing.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MgTrc1TZF7qv6hK6s1dKAG\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02538",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "10201-10210",
+   "text": "commit 48e66ce04a4d9f06771c42f89cb37b075583c5f6\nordinal 650\ndate 2026-09-01 17:44:18 -0700\nauthor Matt Stults\nsubject README: publication links and CI badge filled\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MgTrc1TZF7qv6hK6s1dKAG\n\n----END----\n",
+   "source_class": "git_log"
+  }
+ ]
+}

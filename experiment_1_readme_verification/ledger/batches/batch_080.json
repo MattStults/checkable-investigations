@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_080",
+  "source_class": "arc1_cycles",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S01160",
+  "last_span": "S01174"
+ },
+ "spans": [
+  {
+   "id": "S01160",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "39-39",
+   "text": " \"noop\": false,",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01161",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "40-40",
+   "text": " \"overrides\": [],",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01162",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "41-69",
+   "text": " \"prediction_check\": {\n  \"checks\": [\n   {\n    \"expected\": {\n     \"max\": 0,\n     \"min\": 0\n    },\n    \"kind\": \"flip_count\",\n    \"observed\": 0,\n    \"result\": \"PASS\"\n   },\n   {\n    \"expected\": [],\n    \"kind\": \"directions\",\n    \"observed\": [],\n    \"result\": \"PASS\"\n   },\n   {\n    \"expected\": 0,\n    \"kind\": \"max_regressions\",\n    \"observed\": 0,\n    \"result\": \"PASS\"\n   }\n  ],\n  \"pass_rate\": [\n   3,\n   3\n  ]\n },",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01163",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "42-64",
+   "text": "  \"checks\": [\n   {\n    \"expected\": {\n     \"max\": 0,\n     \"min\": 0\n    },\n    \"kind\": \"flip_count\",\n    \"observed\": 0,\n    \"result\": \"PASS\"\n   },\n   {\n    \"expected\": [],\n    \"kind\": \"directions\",\n    \"observed\": [],\n    \"result\": \"PASS\"\n   },\n   {\n    \"expected\": 0,\n    \"kind\": \"max_regressions\",\n    \"observed\": 0,\n    \"result\": \"PASS\"\n   }\n  ],",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01164",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "65-68",
+   "text": "  \"pass_rate\": [\n   3,\n   3\n  ]",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01165",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "70-70",
+   "text": " \"shape\": \"code\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01166",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "71-71",
+   "text": " \"signed_by\": \"session coordinator (Claude), on Matt's standing authorization for the cycle ladder\"",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01167",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/prediction.json",
+   "commit": "pin",
+   "lines": "2-5",
+   "text": " \"expected_flip_count\": {\n  \"min\": 0,\n  \"max\": 0\n },",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01168",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/prediction.json",
+   "commit": "pin",
+   "lines": "3-3",
+   "text": "  \"min\": 0,",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01169",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/prediction.json",
+   "commit": "pin",
+   "lines": "4-4",
+   "text": "  \"max\": 0",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01170",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/prediction.json",
+   "commit": "pin",
+   "lines": "6-6",
+   "text": " \"expected_directions\": [],",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01171",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/prediction.json",
+   "commit": "pin",
+   "lines": "7-7",
+   "text": " \"expected_clauses\": [],",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01172",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/prediction.json",
+   "commit": "pin",
+   "lines": "8-8",
+   "text": " \"max_regressions\": 0,",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01173",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/prediction.json",
+   "commit": "pin",
+   "lines": "9-9",
+   "text": " \"notes\": \"Mechanism-level zero-flip prediction. The five rechains rewrite the affected names on BOTH the clause side (annotations_ext_v1_merged.json atoms/by_clause/vocabulary) and the query side (behavior_atoms_audit_v1.json: must_preserve_user_agency__user in avoiding-over-and-under-caution's selection) in the same migration, so exact-name matching is preserved end to end; the vocabulary keys move with their clause lists, and the m0271 fold only merges usage counts into an existing key. Thresholds are pinned to thresholds_frozen.json (first use of the driver's config.thresholds support), so no cut can drift. Therefore the diff should be a NO-OP or zero flips; empty expected_directions is the honest zero-flip target. ANY flip falsifies this and is a finding: an unknown load-bearing name or a threshold-path discrepancy.\"",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01174",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/review_verdict.json",
+   "commit": "pin",
+   "lines": "2-2",
+   "text": " \"verdict\": \"proceed\",",
+   "source_class": "arc1_cycles"
+  }
+ ]
+}

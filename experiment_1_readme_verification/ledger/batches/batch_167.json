@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_167",
+  "source_class": "arc2_docs_preredaction",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S01732",
+  "last_span": "S01746"
+ },
+ "spans": [
+  {
+   "id": "S01732",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "173-178",
+   "text": "## Cost and timing\n~0.5-0.6M Fable tokens across six 40-node draws + panels; all post-reset\n(Sun 9pm PT Aug 23). Module builds, instrument runs, v5 comparison: Fable-\nfree and proceed before the reset. Draws are computed and sha-recorded\nbefore any ruling exists.\n",
+   "source_class": "arc2_docs_preredaction"
+  },
+  {
+   "id": "S01733",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "179-188",
+   "text": "## Signatures\nDrafted by the campaign orchestration seat, 2026-08-21.\nMatt: SIGNED 2026-08-21. Rulings incorporated at signature: n=40 on the\nattempts-budget rationale (re-measurement protocol clause); the 71% anchor\nSTRUCK (no artifact establishes it; its presumed source did not recognize it\n— Matt later suggested it may have been a manual test he personally ran; if\nthat artifact surfaces it is restored by appended erratum, not by memory);\nthird probe = how-to-approach-tradeoffs. FROZEN at this signature;\ncorrections append only.\n",
+   "source_class": "arc2_docs_preredaction"
+  },
+  {
+   "id": "S01734",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "189-200",
+   "text": "## ADDENDUM (2026-08-22, post-signature clarification, append-only)\nStratum granularity operationalization: panel-agree/panel-split are computed\nat ANCHOR granularity (the document's {#anchor} principle sections), not\nparagraph granularity: node -> anchor by line containment (deterministic,\ntotal coverage); seat verdict per anchor = max over its paragraphs; agree\niff all three full seats land on the same side of the >=2 cut on those\nmaxima. Reason: paragraph-level indexing validated at only 12/40 against the\nindependent clause corpus (generators disagree on paragraphization —\nmis-stratification risk), while anchor attribution is exact. Strata inform\nsampling only; truth is untouched. Implemented in draw_generalization.py\n(determinism tested: same seed -> byte-identical artifact).\n",
+   "source_class": "arc2_docs_preredaction"
+  },
+  {
+   "id": "S01735",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "201-212",
+   "text": "## ADDENDUM 2 (2026-08-22, draw-machinery correction, append-only)\nFirst draw computation produced degenerate pools (objectivity: 0 engaged).\nCause: strata were keyed on recurse/root/graph.json ids, whose segmentation\ngeneration differs from the translation corpus (L1108-1368 vs l1108_1367) —\nthe id spaces do not match. Correction: node lines now parsed from the\npacket SOURCE-TEXT L-markers (ctx_chunk1-8 + ctx_ext1-3, total coverage\n762/762) and strata keyed on corpus ids. All six draws recomputed under the\nsame registered seed (20260822); the pre-correction draw artifacts remain\nin git history as evidence. Anchor-granularity operationalization\n(addendum 1) unchanged.\n\n",
+   "source_class": "arc2_docs_preredaction"
+  },
+  {
+   "id": "S01736",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "213-235",
+   "text": "## ADDENDUM 5 (2026-08-24, Matt-signed, append-only): BLOCK-2 REOPENED UNDER SCOPED REPORTING\nThe block-1 stop rule (tradeoffs F2) stands as written for the TRANSFER\nclaim: no block-2 result may be reported as clean transfer; the combined\ntransfer verdict remains \"transfers with degradation\" scoped by block-1.\nMatt authorizes block-2 MEASUREMENT under the following scope:\n- PURPOSE: testing the frozen per-behaviour predictions\n  (BLOCK2_TRANSFER_PREDICTIONS.md, committed before this amendment) and\n  measuring the repair calculus's process convergence (errata count under\n  CALCULUS_RUNBOOK v1). Reporting: \"repair-arc under amended protocol.\"\n- ORDER: user-autonomy FIRST (Matt's pick, D2); proportionate-risk\n  preserved as the untouched second test; general-welfare measurable\n  only AFTER its C-V does-lane repair (executed alongside this\n  amendment as the F1 recipe; see the contract's repair addendum).\n- VENUE: per A10 Q3 — certified-Opus wave + 3-seat Opus panels\n  (sha-sampled per the ADDENDUM-4 seed rule: user-autonomy panel seed\n  20260828 = base 20260823 + sorted-slug index 5, rate 0.2) + seeded\n  Fable spot-checks with the standing tripwires. Draws: the registered\n  seed-20260822 artifacts, unchanged.\n- BUDGET (D3): 2 points from the ~30.6% mark, halt-and-surface at cap,\n  /usage pasted before every Fable dispatch. Run now (Matt).\nSigned: Matt, 2026-08-24 (\"D1: approved. D2: user-autonomy. D3: run\nnow.\"). Corrections append only.\n",
+   "source_class": "arc2_docs_preredaction"
+  },
+  {
+   "id": "S01737",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "236-240",
+   "text": "### ADDENDUM 5 CORRECTION 1 (2026-08-24, append-only): the general-welfare\nC-V gate is DISCHARGED VACUOUSLY — the predicted does-lane defect was\nfalsified by engine check (BLOCK2_TRANSFER_PREDICTIONS.md CORRECTION 1);\ngeneral-welfare is measurable as-is whenever its turn comes.\n",
+   "source_class": "arc2_docs_preredaction"
+  },
+  {
+   "id": "S01738",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/BLOCK2_TRANSFER_PREDICTIONS.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "1-12",
+   "text": "# BLOCK-2 TRANSFER PREDICTIONS — frozen before any block-2 ruling exists\n(2026-08-24, design tier. Method: the validated GENERALIZATION_FAMILY_\nPREDICTIONS pattern — per-behaviour failure modes predicted from module\ndefinitions + the now-typed mechanism census, NO truth touched. Inputs:\nmodules_contract_GENERALIZATION.json definitions/declarations; disclosed\nengagement pools (attempt-1-era artifacts, truth-free): user-autonomy\n160/602, proportionate-risk 146/616, general-welfare 97/665; the failure\ntaxonomy and channel inventory from iterations 1-3. Corrections append,\nnever edit. These freeze NOW regardless of when — or whether — block 2\nis measured; the prereg's stop rule means measuring any of them needs\nMatt's signed amendment with scoped reporting.)\n",
+   "source_class": "arc2_docs_preredaction"
+  },
+  {
+   "id": "S01739",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/BLOCK2_TRANSFER_PREDICTIONS.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "13-31",
+   "text": "## 1. user-autonomy (does comply/respond; protects_concern + party_concern declared)\n- DOMINANT PREDICTED FAILURE: engaged-FP, single-consideration class —\n  generic comply/respond prescriptions that pass the protects(user) wall\n  but carry no deference-vs-override content (the tradeoffs FP shape\n  with a wall already present, so milder).\n- SECONDARY: not-engaged-FN on the STRUCTURAL MACHINERY class — the\n  instruction-hierarchy clauses (implicitly-overridable user\n  instructions, user-purview boundaries) are all-plumbing/doc-actor\n  excluded, and user-autonomy is the OTHER behaviour whose subject\n  matter includes that machinery.\n- PREDICTED REPAIR CHANNELS: governs-wall refinement (existing) +\n  machinery_concern declaration (existing, iteration-2's gate). NEW\n  MINTS NEEDED: 0.\n- ATTEMPT-1 ENGAGED PRECISION BAND: 0.55-0.75. Fix-ledger class:\n  EXPECTED.\n- NOTE: this module declares party_concern — census-routable only since\n  the 2026-08-24 Arc1-e extension; routing it earlier would have hit\n  the guard.\n",
+   "source_class": "arc2_docs_preredaction"
+  },
+  {
+   "id": "S01740",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/BLOCK2_TRANSFER_PREDICTIONS.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "32-49",
+   "text": "## 2. proportionate-risk-mitigation (does safe_manner/respond/act_in_world; governs_concern + purpose_concern declared)\n- DOMINANT PREDICTED FAILURE: not-engaged-FN on CALIBRATION-STRUCTURE\n  clauses — the construct is a scaling function (\"more caution when\n  severity/probability higher\"), which the spec states as bounded\n  permissions and conditional resolutions: EXACTLY the ARBITRATES\n  structural signature.\n- THE HEADLINE PREDICTION (the sharpest transfer claim available): a\n  material fraction of this behaviour's FN repairs are fixed by\n  DECLARING arbitrates_channel — the mint built for tradeoffs transfers\n  with ZERO new annotation. Mechanism: calibration IS arbitration\n  between caution and helpfulness. Falsifier: the ARB-marked declined\n  nodes of this venue are ruled not_relevant.\n- SECONDARY: engaged-FP via broad act_in_world/safe_manner heads.\n- PREDICTED REPAIR CHANNELS: arbitrates_channel (existing) + possibly a\n  governs_conditional (existing). NEW MINTS NEEDED: 0-1.\n- ATTEMPT-1 ENGAGED PRECISION BAND: 0.60-0.80. Fix-ledger class:\n  EXPECTED.\n",
+   "source_class": "arc2_docs_preredaction"
+  },
+  {
+   "id": "S01741",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/BLOCK2_TRANSFER_PREDICTIONS.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "50-70",
+   "text": "## 3. general-welfare (does retains ASP-literal names)\n- DOMINANT PREDICTED FAILURE, C-V TRANSLATION-LAYER, high confidence\n  and checkable from the contract file alone: the does list still\n  carries ASP-form entries (\"respond(resp1).\", \"provide(i1).\" …) that\n  behavior_acts() silently discards — the EXACT F1 defect class whose\n  repair in the other three builds (2026-08-22) did not reach this\n  module. The act lane is therefore partially/wholly dead; the 97-node\n  engaged pool rides the declared governs/purpose/protects channels.\n- PREDICTED SHAPE: severe under-engagement — decline side leaks\n  relevant welfare-adjacent clauses; the small engaged set may score\n  deceptively precise. Fix-ledger class: FATAL-or-ALARMING (per the\n  prereg vocabulary this is the stop-rule-owning class; the repair\n  itself — canonical bridge translation — is cheap and known).\n- PREDICTED REPAIR: C-V canonical translation first (the F1 recipe),\n  THEN re-route; failure-mode predictions for the repaired module are\n  deliberately NOT made now (they would be predictions about an\n  instrument that does not exist yet).\n- ATTEMPT-1 ENGAGED PRECISION BAND: not banded — the C-V defect\n  dominates any precision number; measuring before repairing would\n  measure the defect.\n",
+   "source_class": "arc2_docs_preredaction"
+  },
+  {
+   "id": "S01742",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/BLOCK2_TRANSFER_PREDICTIONS.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "71-81",
+   "text": "## Scoring rule (frozen with the predictions)\nEach behaviour's prediction scores on: (a) dominant failure class\nmatches the adjudicated fix-ledger classification; (b) the named repair\nchannels are the ones the validated repair actually uses; (c) the\nprecision band contains the venue-scored attempt-1 number (n/a for\ngeneral-welfare per its entry); (d) for proportionate-risk, the\nheadline arbitrates-transfer claim scores on the ARB-marked declined\nnodes' rulings. Partial credit is reported per-clause, never blended\ninto one number.\n\n",
+   "source_class": "arc2_docs_preredaction"
+  },
+  {
+   "id": "S01743",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/BLOCK2_TRANSFER_PREDICTIONS.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "82-101",
+   "text": "## CORRECTION 1 (2026-08-24, append-only, pre-measurement): general-welfare clause (a) FALSIFIED\nThe dominant-failure prediction for general-welfare (C-V: ASP-literal\ndoes entries discarded) is WRONG, falsified by direct engine check\nbefore any measurement: behavior_acts() extracts the literal head by\nregex and all five heads are canonical — the act lane is LIVE and\nengagement (97) is act+wall-driven. The F1 defect class was BESPOKE\nnames; these were canonical names in ASP syntax, which the regex\nhandles. Scored per the frozen rule: prediction 3 clause (a) FAILED.\nDRIVER ERRATUM (runbook): contract-level predictions must be verified\nagainst the engine ($0) BEFORE freezing — this one was pattern-matched\nto F1 without running behavior_acts(), a check that took one line.\nREPLACEMENT (marked v2, post-falsification, still truth-free):\ngeneral-welfare carries FOUR declared walls (governs, purpose,\nprotects, party — the most-walled module in the corpus) over a small\n97-node engaged pool; predicted attempt-1 band 0.65-0.85 with FN risk\ndominating (narrow pool + welfare-adjacency is contextual, not\nstructural). The prereg ADDENDUM-5 gate (\"measurable only after its\nC-V repair\") is discharged vacuously: no repair exists to perform.\n\n",
+   "source_class": "arc2_docs_preredaction"
+  },
+  {
+   "id": "S01744",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/BLOCK2_TRANSFER_PREDICTIONS.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "102-112",
+   "text": "## CORRECTION 2 (2026-08-24, append-only, pre-measurement; adversarial-review F4/F5)\n- Clause (a) is scored on RATE-NORMALIZED class rates (FP rate among\n  ruled engaged vs FN rate among ruled declined), acquisition weights\n  disclosed — raw counts under asymmetric truth acquisition never\n  decide dominance.\n- Clause (c) for user-autonomy is scored ONLY on the attempt-1 n=20\n  number under its venue-verification outcome (certify -> 0.60 stands;\n  fail -> one deterministic rescoring with corrected rulings). The\n  exhaustive engaged-set precision is a separate metric and never\n  substitutes. Registered before any further ruling exists.\n",
+   "source_class": "arc2_docs_preredaction"
+  },
+  {
+   "id": "S01745",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "1-1",
+   "text": "# TRANSLATION CONTRACT V2 — what the NEXT document's translator receives",
+   "source_class": "arc2_docs_preredaction"
+  },
+  {
+   "id": "S01746",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "2-11",
+   "text": "# (assembles every retrofit lesson of 2026-08-18 into translation-time requirements)\n\nMatt's ruling: the ontology work must be \"included in the automated\nmachinery for next time.\" This document is that machinery's specification.\nEverything below was learned by RETROFIT on the Model Spec corpus — each\nrequirement cites the retrofit artifact that proved its need. The next\ndocument's modules are BORN conforming; the gate enforces at translation\ntime; the bridge files are GENERATED from declarations, never classified\nafter the fact.\n",
+   "source_class": "arc2_docs_preredaction"
+  }
+ ]
+}

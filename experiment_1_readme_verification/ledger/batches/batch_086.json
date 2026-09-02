@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_086",
+  "source_class": "arc1_cycles",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S01250",
+  "last_span": "S01264"
+ },
+ "spans": [
+  {
+   "id": "S01250",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "7-7",
+   "text": "  \"behaviours_query.json\": \"48dbd8fb0720ce187423d37daf34e415ebbc58a28166619a0b2800b0a1f32d57\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01251",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "8-8",
+   "text": "  \"constitution_clauses.json\": \"a264e1a07d8a79eaa37710b8c6e25808a0d2807cb55e3ad3716ca422019f06e9\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01252",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "9-9",
+   "text": "  \"modelspec_clauses.json\": \"c6be91a0c0eb25c9f10bea9947547f64416cdd18e8f5e64b14c354a43b87b546\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01253",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "10-10",
+   "text": "  \"overlay_empty.json\": \"3f3adca9ee17a196ce155f3f900711622b2d99ced863667de9bc823df40cf99e\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01254",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "11-11",
+   "text": "  \"test_dechain.py\": \"cf89637b42aca1847c1740a852f3ffb6cf98c1993cce90307a5f1b1283a3680d\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01255",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "12-12",
+   "text": "  \"test_no_reference_leak.py\": \"87d7b6d6c6bbbe00da4158932420f781fc306301e654f2ad495aa97ee1103fe6\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01256",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "13-13",
+   "text": "  \"thresholds_frozen.json\": \"60d1273a4e0ac3a4de0eb2a44481b763531491c8c0884387529014dcb724251a\"",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01257",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "15-23",
+   "text": " \"completed\": [\n  \"OPEN\",\n  \"PREDICT\",\n  \"IMPLEMENT\",\n  \"MEASURE\",\n  \"ADJUDICATE\",\n  \"DECIDE\",\n  \"CLOSE\"\n ],",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01258",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "24-24",
+   "text": " \"cycle\": \"decoration-blind-join-2026-08-04\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01259",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "25-28",
+   "text": " \"decision\": {\n  \"decision\": \"keep\",\n  \"signed_by\": \"session coordinator (Claude), on Matt's standing authorization for the reviewed portfolio order\"\n },",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01260",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "26-26",
+   "text": "  \"decision\": \"keep\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01261",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "27-27",
+   "text": "  \"signed_by\": \"session coordinator (Claude), on Matt's standing authorization for the reviewed portfolio order\"",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01262",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "29-29",
+   "text": " \"dossier_set_sha\": \"5d905a37b2d2a0962201581aec1d2723b8648f299a6a002d83b18e263699ab96\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01263",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "30-32",
+   "text": " \"flip_tallies\": {\n  \"regression\": 1\n },",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01264",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "31-31",
+   "text": "  \"regression\": 1",
+   "source_class": "arc1_cycles"
+  }
+ ]
+}

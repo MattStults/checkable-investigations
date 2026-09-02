@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_126",
+  "source_class": "git_log",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S02087",
+  "last_span": "S02101"
+ },
+ "spans": [
+  {
+   "id": "S02087",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5279-5287",
+   "text": "commit 52c3276bf7aea4fd437eb453dd0094b59f14b6c2\nordinal 199\ndate 2026-08-14 20:17:57 -0700\nauthor Matt Stults\nsubject M3 ruled: defer the stage-4 factory until the evidential fixes land\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02088",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5288-5296",
+   "text": "commit e1a06c3583156e06d79ddcc568098c13c077e68c\nordinal 200\ndate 2026-08-14 20:22:06 -0700\nauthor Matt Stults\nsubject census review: 58% -> 43%, 47 of 49 kills unmeasured; A/B/D need work, E/F rejected\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02089",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5297-5305",
+   "text": "commit ecb2e9df84fcd62b9f38c6f70962eeae15169a26\nordinal 201\ndate 2026-08-14 20:22:22 -0700\nauthor Matt Stults\nsubject M1 withdrawn pending rework (census review)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02090",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5306-5314",
+   "text": "commit c746a4ca2268e1bc2d901de2d551d08d0739550e\nordinal 202\ndate 2026-08-14 20:25:45 -0700\nauthor Matt Stults\nsubject factory spec review: signature fence cannot close a wire hole; build offline, call later\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02091",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5315-5330",
+   "text": "commit d8b920c93d0375249280ea2c7f63d66a69c2ff24\nordinal 203\ndate 2026-08-14 20:28:04 -0700\nauthor Matt Stults\nsubject M4 ruled: pin the loudness rule on both branches; walkthrough suite green (42)\nThe held test was RED against a CORRECT CLI. Root cause found: the\n_supplement_borrow_glosses helper (added earlier this campaign) declares a\nconcepts entry for every borrow, so a contract-built module always declares\nconcepts and the quiet branch became unreachable. Quiet branch now uses a\nraw fixture with the required justification; loud branch pinned separately\nbecause it is actionable. Each pin fails loudly if its fixture goes stale.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02092",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5331-5337",
+   "text": "commit 1a78a14c924bbef2e151622b6c29e8e79d7827b2\nordinal 204\ndate 2026-08-14 20:28:06 -0700\nauthor Matt Stults\nsubject M4 closed in the register\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02093",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5338-5346",
+   "text": "commit 8b07f2b4ea1dfdb928f0a86d692da6e010931f3e\nordinal 205\ndate 2026-08-14 20:52:59 -0700\nauthor Matt Stults\nsubject gen-11 runs to completion; graveyard obligation moved to a gen-12 gate, not dropped\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02094",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5347-5355",
+   "text": "commit b5fec673618d69ccbc74ae00ca49b03c07909b4e\nordinal 206\ndate 2026-08-15 07:12:47 -0700\nauthor Matt Stults\nsubject coverage finding: 19% unrepaired, 32/40 one class (fix F); Matt's 4 rulings; Haiku reachability blocker\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02095",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5356-5364",
+   "text": "commit e96b03bbef4e298aff08908754bbda1a0c8355a6\nordinal 207\ndate 2026-08-15 07:17:17 -0700\nauthor Matt Stults\nsubject Haiku cross-model test: failures are missing abstention; fix F treats a symptom\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02096",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5365-5371",
+   "text": "commit 47fa6757f4ad856644111f95f73c48e2b22b0f42\nordinal 208\ndate 2026-08-15 07:41:49 -0700\nauthor Matt Stults\nsubject gen-11 debugging dir: one notes file per failure MECHANISM\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02097",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5372-5387",
+   "text": "commit b2f9ef025ec3f67b9095da6ddc7f13869b388537\nordinal 209\ndate 2026-08-15 08:07:19 -0700\nauthor Matt Stults\nsubject gen-11 failure analysis: 7 mechanisms, prior-work map, outcome table\nM1 (no legal declaration bucket) is a PROMPT/CHECKER CONTRADICTION, not a\nmodel failure: the adapter reserves inputs for case facts and requires for\ngraph NEEDS, leaving invented descriptive predicates with no legal home.\n40% of repair rounds returned a BYTE-IDENTICAL module. A fresh re-run\ntranslated 14 of 19 previously-unrepaired clauses in 45 calls, against 95\ncalls the repair loop spent producing nothing.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02098",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5388-5396",
+   "text": "commit ca3d9d3693ac12e39b2566d6d898c72a66390021\nordinal 210\ndate 2026-08-15 09:23:33 -0700\nauthor Matt Stults\nsubject adversarial review of the gen-11 analysis: M1 collapses, new arity mechanism found\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02099",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5397-5405",
+   "text": "commit 23b297c18ecf4d863091f4b2994ff35cae6d586f\nordinal 211\ndate 2026-08-15 09:32:00 -0700\nauthor Matt Stults\nsubject chain analysis: freezing is motion not difficulty (98% vs 9%); restart-once policy designed\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02100",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5406-5414",
+   "text": "commit 1d05514b6f84aef740d6c173c4fcf1caf698cede\nordinal 212\ndate 2026-08-15 09:36:29 -0700\nauthor Matt Stults\nsubject tier analysis: first-try governed by defect kind; DC-7 adjudicated dead; Fix C ranks first\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02101",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5415-5437",
+   "text": "commit 3a354b5d2f74c207111608e5d0c4f0f71f3460a9\nordinal 213\ndate 2026-08-15 10:06:18 -0700\nauthor Matt Stults\nsubject WIP gen-12 fixes: restart-on-repeat chain policy, arity-aware declaration check\nNOT YET GROUP-REVIEWED. Two of three builders reported; each is\nindividually RED-first pinned and suite-green (phase_1 863 passed,\ntest_repair 44, test_checks 34). Committed to clear the tree for the PR #3\nmerge, not as acceptance -- the group adversarial review and the\nprior-success/prior-failure validation run still gate these.\n\nChain policy: repeat-of-any-earlier-reply stops the chain and restarts once\nfrom a clean transcript (29/29 lost chains caught vs 27/29 for adjacent\nidentity); frozen flag on refreeze; estimate_cost now prices the doubled\nworst case (it would have printed 50% low against a hard ledger cap).\nArity check: declaration comparison is arity-aware in checks.py, emitted as\norigin=schema so DISCLOSABLE_ORIGINS actually shows it to the repair prompt;\nschema.py residual proposed, not applied.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  }
+ ]
+}

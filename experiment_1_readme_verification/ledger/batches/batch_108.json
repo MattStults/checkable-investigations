@@ -1,0 +1,37 @@
+{
+ "header": {
+  "batch": "batch_108",
+  "source_class": "arc1_cycles",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 3,
+  "first_span": "S01580",
+  "last_span": "S01582"
+ },
+ "spans": [
+  {
+   "id": "S01580",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "64-83",
+   "text": "  \"measure\": [\n   {\n    \"expected\": {\n     \"max\": 0,\n     \"min\": 0\n    },\n    \"kind\": \"flip_count\",\n    \"observed\": 0,\n    \"result\": \"PASS\"\n   },\n   {\n    \"expected\": [\n     \"newly_predicted\",\n     \"no_longer_predicted\"\n    ],\n    \"kind\": \"directions\",\n    \"observed\": [],\n    \"result\": \"PASS\"\n   }\n  ]",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01581",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "85-87",
+   "text": " \"skipped\": {\n  \"ADJUDICATE\": \"no-op diff: nothing flipped\"\n }",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01582",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "86-86",
+   "text": "  \"ADJUDICATE\": \"no-op diff: nothing flipped\"",
+   "source_class": "arc1_cycles"
+  }
+ ]
+}

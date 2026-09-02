@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_107",
+  "source_class": "arc1_cycles",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S01565",
+  "last_span": "S01579"
+ },
+ "spans": [
+  {
+   "id": "S01565",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "27-27",
+   "text": " \"flips\": [],",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01566",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "28-28",
+   "text": " \"frozen_manifest_sha\": \"fa3e4b250d4dc9d77fd24a94434f620324c6f5e63441216c27e20f1c38811f61\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01567",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "29-29",
+   "text": " \"frozen_prediction_sha\": \"181e7bc7b6dec758c85c0ac5f301b39eb5c17dff74b18b35c2662c459e19f2d9\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01568",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "30-55",
+   "text": " \"gate\": {\n  \"closure_checked\": [\n   \"annotations_ext_v1_merged.json\",\n   \"behavior_atoms_audit_v1.json\",\n   \"behaviours_query.json\",\n   \"constitution_clauses.json\",\n   \"modelspec_clauses.json\",\n   \"test_cycle.py\",\n   \"test_no_reference_leak.py\"\n  ],\n  \"files_changed\": [\n   \"snapshot.py\",\n   \"test_snapshot.py\",\n   \"thresholds_frozen.json\"\n  ],\n  \"review\": {\n   \"by\": \"adversarial review seat (agent)\",\n   \"notes\": \"Verified: (1) frozen manifest/prediction shas match state.json; only snapshot.py, test_snapshot.py, thresholds_frozen.json changed — threshold.py, test_no_reference_leak.py, cycle.py, test_cycle.py byte-untouched per git. (2) thresholds_frozen.json's three cuts EQUAL the baseline snapshot's recorded thresholds exactly (all behaviours covered — full freeze, not partial); its derived_from_snapshot sha256 matches snapshots/baseline-2026-08-04-auditv1.json, rule 'otsu' == threshold.PREFERRED, config matches the baseline's recorded inputs, and the cited escalation (dossiers/baseline-2026-08-03__containment-v1.1-kindinherit/decision.json, m0422) and cut_stability_results.json exist — provenance is label-free (values are the rule's own output; no panel value in the chain). (3) Deliberate no-op reproduced mechanically in an isolated scratch copy: frozen-flag snapshot vs baseline = 0 flips, identical cuts/predicted sets, diff names only 'thresholds' as the changed input. (4) F9 dispatch: no flag -> rule-derived cuts, config inputs.thresholds explicit null, no threshold_source key (old shape); flag -> artifact sha in config identity; no wall-clock, determinism test present and green. (5) Fallback for behaviours absent from the artifact is recorded per behaviour as threshold_source: 'rule_fallback', so a partial freeze is visible in the snapshot itself. (6) Tests bind — mutant checks run by this seat in a scratch copy: mutant A (artifact cut ignored) killed by test_frozen_threshold_artifact_honored + test_cli_thresholds_flag (the honored test also asserts artifact value != rule value, so it cannot green with the flag ignored); mutant B (frozen artifact silently made default) killed by test_old_behavior_reachable_without_thresholds_flag + test_thresholds_sha_recorded_and_null_when_absent. (7) Fence: FORBIDDEN scan of snapshot.py and thresholds_frozen.json, raw and comment/docstring-stripped — zero hits; nothing reads a panel file. All three gate test files pass (103 passed). No files modified by this review other than this verdict.\",\n   \"verdict\": \"proceed\"\n  },\n  \"tests_passed\": [\n   \"test_cycle.py\",\n   \"test_no_reference_leak.py\",\n   \"test_snapshot.py\"\n  ]\n },",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01569",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "31-39",
+   "text": "  \"closure_checked\": [\n   \"annotations_ext_v1_merged.json\",\n   \"behavior_atoms_audit_v1.json\",\n   \"behaviours_query.json\",\n   \"constitution_clauses.json\",\n   \"modelspec_clauses.json\",\n   \"test_cycle.py\",\n   \"test_no_reference_leak.py\"\n  ],",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01570",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "40-44",
+   "text": "  \"files_changed\": [\n   \"snapshot.py\",\n   \"test_snapshot.py\",\n   \"thresholds_frozen.json\"\n  ],",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01571",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "45-49",
+   "text": "  \"review\": {\n   \"by\": \"adversarial review seat (agent)\",\n   \"notes\": \"Verified: (1) frozen manifest/prediction shas match state.json; only snapshot.py, test_snapshot.py, thresholds_frozen.json changed — threshold.py, test_no_reference_leak.py, cycle.py, test_cycle.py byte-untouched per git. (2) thresholds_frozen.json's three cuts EQUAL the baseline snapshot's recorded thresholds exactly (all behaviours covered — full freeze, not partial); its derived_from_snapshot sha256 matches snapshots/baseline-2026-08-04-auditv1.json, rule 'otsu' == threshold.PREFERRED, config matches the baseline's recorded inputs, and the cited escalation (dossiers/baseline-2026-08-03__containment-v1.1-kindinherit/decision.json, m0422) and cut_stability_results.json exist — provenance is label-free (values are the rule's own output; no panel value in the chain). (3) Deliberate no-op reproduced mechanically in an isolated scratch copy: frozen-flag snapshot vs baseline = 0 flips, identical cuts/predicted sets, diff names only 'thresholds' as the changed input. (4) F9 dispatch: no flag -> rule-derived cuts, config inputs.thresholds explicit null, no threshold_source key (old shape); flag -> artifact sha in config identity; no wall-clock, determinism test present and green. (5) Fallback for behaviours absent from the artifact is recorded per behaviour as threshold_source: 'rule_fallback', so a partial freeze is visible in the snapshot itself. (6) Tests bind — mutant checks run by this seat in a scratch copy: mutant A (artifact cut ignored) killed by test_frozen_threshold_artifact_honored + test_cli_thresholds_flag (the honored test also asserts artifact value != rule value, so it cannot green with the flag ignored); mutant B (frozen artifact silently made default) killed by test_old_behavior_reachable_without_thresholds_flag + test_thresholds_sha_recorded_and_null_when_absent. (7) Fence: FORBIDDEN scan of snapshot.py and thresholds_frozen.json, raw and comment/docstring-stripped — zero hits; nothing reads a panel file. All three gate test files pass (103 passed). No files modified by this review other than this verdict.\",\n   \"verdict\": \"proceed\"\n  },",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01572",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "50-54",
+   "text": "  \"tests_passed\": [\n   \"test_cycle.py\",\n   \"test_no_reference_leak.py\",\n   \"test_snapshot.py\"\n  ]",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01573",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "56-56",
+   "text": " \"noop\": true,",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01574",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "57-61",
+   "text": " \"open_shas\": {\n  \"snapshot.py\": \"158d3ddf73efc078921e3fa456e838637878a6782ae91dfc3a15f790567cc373\",\n  \"test_snapshot.py\": \"3534d4c915499c612390a35d345cf638ca34e4222439a53100d4cf7fa46910af\",\n  \"thresholds_frozen.json\": \"16721a86cab79aa07764b6b257597d4e7bd466431b47e8d686dec4122cf3a99d\"\n },",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01575",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "58-58",
+   "text": "  \"snapshot.py\": \"158d3ddf73efc078921e3fa456e838637878a6782ae91dfc3a15f790567cc373\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01576",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "59-59",
+   "text": "  \"test_snapshot.py\": \"3534d4c915499c612390a35d345cf638ca34e4222439a53100d4cf7fa46910af\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01577",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "60-60",
+   "text": "  \"thresholds_frozen.json\": \"16721a86cab79aa07764b6b257597d4e7bd466431b47e8d686dec4122cf3a99d\"",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01578",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "62-62",
+   "text": " \"overrides\": [],",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01579",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "63-84",
+   "text": " \"prediction_checks\": {\n  \"measure\": [\n   {\n    \"expected\": {\n     \"max\": 0,\n     \"min\": 0\n    },\n    \"kind\": \"flip_count\",\n    \"observed\": 0,\n    \"result\": \"PASS\"\n   },\n   {\n    \"expected\": [\n     \"newly_predicted\",\n     \"no_longer_predicted\"\n    ],\n    \"kind\": \"directions\",\n    \"observed\": [],\n    \"result\": \"PASS\"\n   }\n  ]\n },",
+   "source_class": "arc1_cycles"
+  }
+ ]
+}

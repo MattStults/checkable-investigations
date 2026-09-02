@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_123",
+  "source_class": "git_log",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S02042",
+  "last_span": "S02056"
+ },
+ "spans": [
+  {
+   "id": "S02042",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4855-4863",
+   "text": "commit 390c1e799b85a1235dab7dc44e50819c98b80660\nordinal 154\ndate 2026-08-13 11:26:52 -0700\nauthor Matt Stults\nsubject tranche 2 spot checks live-verified; EXPERIMENTS record\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02043",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4864-4872",
+   "text": "commit 947bb287d848051cdf80a18bb5bd2f388257f259\nordinal 155\ndate 2026-08-13 11:27:47 -0700\nauthor Matt Stults\nsubject ds7 pre-registered expectations (frozen before launch)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02044",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4873-4881",
+   "text": "commit 0a6d541f70e39cc7c50b846460d0990a21519592\nordinal 156\ndate 2026-08-13 11:43:58 -0700\nauthor Matt Stults\nsubject pre-ds7 full-pipeline review: 9 findings dispositioned, launch-gates fixed\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02045",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4882-4890",
+   "text": "commit b898b49864a5b51933711a6f857e0d851a6a23b3\nordinal 157\ndate 2026-08-13 12:27:20 -0700\nauthor Matt Stults\nsubject seat-tier spot check: K3 1.00/Flash 0.90/Pro 0.80 sens; Flash is the value king\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02046",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4891-4899",
+   "text": "commit 8614f44dbf59a8871441668f5ecc39e7c573f959\nordinal 158\ndate 2026-08-13 13:40:58 -0700\nauthor Matt Stults\nsubject handoff snapshot: operational state, post-ds7 runbook, transcript-only decisions recorded\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02047",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4900-4908",
+   "text": "commit 9c4d62ef236045714168534a8fea64229c7a7e66\nordinal 159\ndate 2026-08-13 20:02:11 -0700\nauthor Matt Stults\nsubject ds7 restart #1 recorded (DNS blip, no code change); status script pid update\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02048",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4909-4917",
+   "text": "commit 9c4a12382861bb9aa7ddc096ab3f67d9c0b363eb\nordinal 160\ndate 2026-08-13 20:05:30 -0700\nauthor Matt Stults\nsubject correct restart #1 cause: internet outage (Matt ground truth)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02049",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4918-4926",
+   "text": "commit ba161a8d37810d3f883c63c77673c625b3542564\nordinal 161\ndate 2026-08-13 23:05:12 -0700\nauthor Matt Stults\nsubject behavior-pipeline pilot plan recorded (Matt-approved direction)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02050",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4927-4935",
+   "text": "commit 3d642cc7e3f8ee261ee38078ed6632297f4d8f7c\nordinal 162\ndate 2026-08-14 07:15:19 -0700\nauthor Matt Stults\nsubject ds7 restart #2: unwind cap config intervention, two ladder defects queued\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02051",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4936-4944",
+   "text": "commit 4335f65f0713e7922889b811837433d04be9f1b1\nordinal 163\ndate 2026-08-14 07:19:23 -0700\nauthor Matt Stults\nsubject restart #2 diagnosis corrected: identical-retry-at-temp-0 lock-in, not token need\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02052",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4945-4953",
+   "text": "commit 9bce6794baef66c6d60c7cc846a4f57254d41e54\nordinal 164\ndate 2026-08-14 07:22:23 -0700\nauthor Matt Stults\nsubject revert unwind cap override: fail-fast doctrine (replay proved raise unnecessary)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02053",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4954-4962",
+   "text": "commit bfa4ac8099867b5978d620448d02ac607739e279\nordinal 165\ndate 2026-08-14 07:34:05 -0700\nauthor Matt Stults\nsubject identical-retry guard: seam-level design recorded (ds8-era)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02054",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4963-4971",
+   "text": "commit 9f44d2130e50b94b428ca7e3c5385d96ad58c6ec\nordinal 166\ndate 2026-08-14 07:35:11 -0700\nauthor Matt Stults\nsubject ds7 COMPLETE: acceptance PASS on all pre-registered bands (0.6% mismatch, 0 coinages)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02055",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4972-4980",
+   "text": "commit 37e9b48b84f4662de24575799021f43b94dd9b03\nordinal 167\ndate 2026-08-14 07:36:36 -0700\nauthor Matt Stults\nsubject routing-gap audit received: 10 findings recorded, one-commit disposition plan\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02056",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4981-4989",
+   "text": "commit 06c7dbc2a3feb95ec5cc0af914886af8f1d281c6\nordinal 168\ndate 2026-08-14 07:38:49 -0700\nauthor Matt Stults\nsubject frontier review becomes a pipeline stage (design recorded)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  }
+ ]
+}

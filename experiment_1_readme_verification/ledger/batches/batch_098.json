@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_098",
+  "source_class": "arc1_cycles",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S01430",
+  "last_span": "S01444"
+ },
+ "spans": [
+  {
+   "id": "S01430",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "3-3",
+   "text": "  \"agreement_on_contested\": \"4/6\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01431",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "4-9",
+   "text": "  \"confirmed_regressions\": [\n   \"m0239\",\n   \"m0275\",\n   \"m0466\",\n   \"m0018\"\n  ],",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01432",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "10-12",
+   "text": "  \"contested\": {\n   \"m0108\": \"leg 1 regression / leg 2 correct \\u2014 final verdict `unclear` per the divergence rule; both document reasons preserved verbatim in ADJUDICATION_LEGS.md; flagged for seat-defect review, never silently resolved\"\n  },",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01433",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "13-13",
+   "text": "  \"dossier_set_sha\": \"726492bf72fe5e9809ca8f6b402bec3161ca8ca4ff916ab05f7a05060e59b78b\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01434",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "14-22",
+   "text": "  \"leg_1_official\": {\n   \"file\": \"flip_verdicts.json\",\n   \"scope\": \"all 18 flips\",\n   \"tallies\": {\n    \"correct\": 12,\n    \"regression\": 5,\n    \"unclear\": 1\n   }\n  },",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01435",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "23-31",
+   "text": "  \"leg_2_verification\": {\n   \"file\": \"flip_verdicts_verification_leg.json\",\n   \"scope\": \"the 6 contested flips\",\n   \"seat\": \"frontier, split-blind to leg 1's verdicts\",\n   \"tallies\": {\n    \"correct\": 2,\n    \"regression\": 4\n   }\n  },",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01436",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "32-32",
+   "text": "  \"record\": \"ADJUDICATION_LEGS.md\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01437",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "33-35",
+   "text": "  \"resolved_not_regression\": {\n   \"m0355\": \"leg 1 unclear / leg 2 correct \\u2014 the pre-registered threshold-proximity case; its verdict extends the P3 drift-standing family line (m0207 precedent)\"\n  }",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01438",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "37-37",
+   "text": " \"census\": \"deferred_to_checkpoint\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01439",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "38-38",
+   "text": " \"census_delta\": null,",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01440",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "39-39",
+   "text": " \"cycle\": \"patient-pricing-2026-08-04\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01441",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "40-40",
+   "text": " \"date\": \"2026-08-04\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01442",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "41-41",
+   "text": " \"decision\": \"revert\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01443",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "42-42",
+   "text": " \"exploratory\": false,",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01444",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "43-43",
+   "text": " \"fix_description\": \"PATIENT-AWARE MATCH PRICING v2.0 (spine cycle S3; CYCLE5_DESIGN.md REVISION 2 as amended per PORTFOLIO_REVIEW.md, incl. the worktree-core reconciliation and the F4 per-entry freeze-gate ruling) \\u2014 recorded principal-chain patients discount mismatched and uniformly-mismatch-attested matches. Per query with non-empty declared patients P: a credited atom match through a clause atom whose recorded chains name only patients outside P pays patient_mismatch_discount (d = 0.10, a DERIVED module constant in patient.py, unsweepable by contract invariant 9 \\u2014 licensing basis DISCOUNT_DERIVATION.md, the frozen golden-contrast derivation this cycle's designer adopted after the OPEN recomputation broke the pre-registered d-plateau and \\u00a71.4/Q6's re-derivation remedy fired; sha-pinned in test_patient.py); a clause whose every length->=2-chained atom is mismatched with P is uniformly mismatch-attested, and under the S3 MECHANISM AMENDMENT (designer ruling per the derivation's \\u00a74 recommendation, recorded in MECHANISM_AMENDMENT.md with old->new shas) its surviving atom mass is capped at ONE discounted credit \\u2014 tainted atom channel = d * max(base credits)/atom_norm, never d * sum (the F-linearity fix: dense uniformly-mismatched clauses must not retain residual mass proportional to match count); per-atom pricing on mixed clauses (taint defeated by one consistent chain \\u2014 the m0248 guard) is uncapped and pays d per mismatched match, ONCE (never d^2). Patients are read as chain[1:] from length->=2 chains ONLY (agent-first grammar, CYCLE5_REVIEW F1); length-1 chains and chain-free atoms are patient-free; patient-free clauses price bit-identically to today. Declared patients live in behaviours_query.json's per-behaviour `patients` field, licensed ONLY by the behaviour's own name+definition prose via validate_query.py's panel-blind anchor check (F4) under the per-entry definition-freeze gate (F5 + portfolio F4 ruling: PINNED entries byte-frozen modulo `patients`, appends permitted, duplicates refused). MERGE RECONCILIATION, disclosed: the pre-built worktree core (patient.py, validate_query.py, test_patient.py, test_validate_query.py, conftest/_OPTIONAL + test_no_reference_leak registrations) was hand-merged onto main BEFORE this OPEN \\u2014 the worktree branch predated the S1 join, so patient.py's chain-reading seam was reconciled to read the 1.2 metadata (ContainmentIndex.chains; dechained clause-atom names in all explain records; patients per dechained atom = union over its length->=2 chains) instead of the pre-join name set, its stale constant-rationale docstring corrected to the adjudicated basis (109/109 chain-audit + 264 license-quoted S2 chains), and the pre-1.2 'subsumption path unreachable by per-atom mismatch' claim superseded by the design's operative rule (\\u00a71.6 first sentence: the patient factor reads THE CREDITED CLAUSE ATOM's own recorded chain) \\u2014 both directions test-pinned. Those merged files are therefore FINAL BEFORE OPEN and sit sha-pinned in this cycle's gate/closure set, NOT in files_to_change (the driver requires every files_to_change entry to change post-OPEN); this cycle's own diff is the three `patients` declarations (behaviours_query.json: harm-avoidance-to-third-parties -> [third_party]; helpfulness -> [user, developer]; avoiding-over-and-under-caution -> [] \\u2014 I6: `patients` is the ONLY permitted delta) plus the snapshot/dossier wiring: snapshot.py routes overlay-seam scoring through patient.PatientIndex with the anchor-validated declarations (validate_query.load_query_patients \\u2014 the explicit named opt-in), records pricing_version 2.0 and the per-slug declared patients in the snapshot config identity; dossier.py extends reconstruction dispatch (2.0 -> PatientIndex with recorded patients; 1.2 -> ContainmentIndex; <=1.1 pre-join classes; ABSENT pricing_version -> legacy, pinned against the real cycle-4 keep snapshot \\u2014 F6/I5), gains the normalizer_drift dossier annotation (F3/I2: raw-score-untouched flips whose normalized score crossed the cut are tagged threshold-class, never match_change), and [A2] gains the CYCLE-DECLARED reconstruction license: a baseline input whose drift is a cycle's own frozen-manifest files_to_change diff (state.json open_shas pinning exactly the baseline sha) licenses the sha-verified git/pre_change byte fetch, parallel to the migration-log license \\u2014 required because this cycle's behaviours_query.json patients addition is a declared query-side diff no atom_refactor migration can log, and without it MEASURE's own dossier step refuses the baseline side; unrecorded drift still refuses (control-armed test).\",",
+   "source_class": "arc1_cycles"
+  }
+ ]
+}

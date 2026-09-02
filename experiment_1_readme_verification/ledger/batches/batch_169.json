@@ -1,0 +1,45 @@
+{
+ "header": {
+  "batch": "batch_169",
+  "source_class": "arc2_docs_preredaction",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 4,
+  "first_span": "S01762",
+  "last_span": "S01765"
+ },
+ "spans": [
+  {
+   "id": "S01762",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "227-227",
+   "text": "## 8-ADDENDUM-3 (2026-08-20): NO NORMATIVE MODULATION MAY LIVE ONLY IN PROSE —",
+   "source_class": "arc2_docs_preredaction"
+  },
+  {
+   "id": "S01763",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "228-250",
+   "text": "## conditions, scopes, and defeaters are reified as atoms at translation time\nMeasured basis: the satisfiability census found 8 mismatch pairs vector-identical\nto correct opposite-verdict nodes whose distinguishing feature was stated in the\nspan but never atomized (\"if repeated at scale\", \"when they indicate illicit\nintent\", \"no good-cause exception\", provenance of the material, self-reference,\ndelivery-form equivalence). Mining recovered all 8 post hoc (split_mining_*.json)\n— at the cost of a full census + mining + minting round the translator could have\navoided.\nTHE RULE (document-agnostic — no reference to any particular document's phrases):\nwhenever a clause MODULATES a norm — when it applies, to whom or what, under which\njustification it is or is not defeated, in what form or manner, toward which end —\nthe modulator must be emitted as a structured atom in a declared dimension, never\nleft solely inside a read_back or gloss. The a priori modulator classes to check\neach assert against (class-first, validate against known cases): TRIGGER (when),\nSCOPE (to whom/what), DEFEATER (unless / notwithstanding claimed justification),\nMANNER/FORM (how, incl. equivalence-of-form rules), END (toward what).\nTHE REPAIR LOOP (expected to be needed — the rule will be imperfectly applied):\nthe census -> split-mining -> blind-criterion minting -> two-seat annotation ->\ncharter regression pipeline built 2026-08-19/20 is the standing, document-agnostic\nfixing mechanism for whatever the translator still leaves in prose. A missed\nmodulator is therefore a NORMAL, detectable, repairable event — not a design\nfailure; the design failure would be shipping without the census.\n",
+   "source_class": "arc2_docs_preredaction"
+  },
+  {
+   "id": "S01764",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "251-251",
+   "text": "## 9g-ADDENDUM (2026-08-20, Matt's correction): TERMINAL VERDICTS ARE",
+   "source_class": "arc2_docs_preredaction"
+  },
+  {
+   "id": "S01765",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "252-263",
+   "text": "## INVENTORY-RELATIVE AND EXPIRE\nA verify_terminal.py verdict is a proof over a FROZEN mechanism inventory\n(declaration slots + vocabulary at run time), never an absolute property of the\nnode. When the inventory grows — a new context atom is annotated, an act subtype\nminted, a new slot added — every standing TERMINAL verdict touching the new\nmechanism's reach EXPIRES and the verifier must re-run. The verifier now stamps\nits output with the inventory it ran against and re-stamps reachable mismatches\nPENDING-VOCAB (13 nodes as of this writing: reachable by the four annotated but\nnot-yet-declared context atoms). BINDING: no document — handoff, review, proof,\nor report — may call a node \"terminal\" without naming the inventory the claim is\nrelative to; \"terminal\" with no inventory qualifier is a review finding.\n",
+   "source_class": "arc2_docs_preredaction"
+  }
+ ]
+}

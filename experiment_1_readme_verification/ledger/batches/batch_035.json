@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_035",
+  "source_class": "arc2_json",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S00662",
+  "last_span": "S00676"
+ },
+ "spans": [
+  {
+   "id": "S00662",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored.json",
+   "commit": "pin",
+   "lines": "124-124",
+   "text": "  \"l831_1000_n007\": \"RELEVANT\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00663",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored.json",
+   "commit": "pin",
+   "lines": "125-125",
+   "text": "  \"l1707_1973_n009\": \"RELEVANT\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00664",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored.json",
+   "commit": "pin",
+   "lines": "126-126",
+   "text": "  \"l1542_1706_n017\": \"RELEVANT\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00665",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored.json",
+   "commit": "pin",
+   "lines": "127-127",
+   "text": "  \"l699_796_n005\": \"NOT_RELEVANT\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00666",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored.json",
+   "commit": "pin",
+   "lines": "128-128",
+   "text": "  \"l3596_3876_n011\": \"NOT_RELEVANT\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00667",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored.json",
+   "commit": "pin",
+   "lines": "129-129",
+   "text": "  \"l2126_2404_n047\": \"RELEVANT\"",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00668",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
+   "commit": "pin",
+   "lines": "2-2",
+   "text": " \"_\": \"ITERATION 1 attempt-2 REALIZATION scored against the registered prediction (ITERATION1_V5_PREDICTION.json). Measures THE REPAIR, never transfer; attempt-1's 0.40 transfer verdict is frozen. Venue: wave+panel.\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00669",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
+   "commit": "pin",
+   "lines": "3-3",
+   "text": " \"behaviour\": \"how-to-approach-tradeoffs\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00670",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
+   "commit": "pin",
+   "lines": "4-4",
+   "text": " \"venue\": \"wave+panel\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00671",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
+   "commit": "pin",
+   "lines": "5-5",
+   "text": " \"n\": \"20+20\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00672",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
+   "commit": "pin",
+   "lines": "6-6",
+   "text": " \"engaged_precision\": 0.75,",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00673",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
+   "commit": "pin",
+   "lines": "7-7",
+   "text": " \"decline_correctness\": 0.6,",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00674",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
+   "commit": "pin",
+   "lines": "8-87",
+   "text": " \"panel\": [\n  {\n   \"node\": \"l831_1000_n001\",\n   \"wave\": \"relevant\",\n   \"seats\": [\n    \"not_relevant\",\n    \"relevant\",\n    \"not_relevant\"\n   ],\n   \"majority\": \"not_relevant\",\n   \"split\": true\n  },\n  {\n   \"node\": \"l1_170_n046\",\n   \"wave\": \"relevant\",\n   \"seats\": [\n    \"relevant\",\n    \"relevant\",\n    \"relevant\"\n   ],\n   \"majority\": \"relevant\",\n   \"split\": false\n  },\n  {\n   \"node\": \"l3954_4251_n038\",\n   \"wave\": \"not_relevant\",\n   \"seats\": [\n    \"not_relevant\",\n    \"not_relevant\",\n    \"not_relevant\"\n   ],\n   \"majority\": \"not_relevant\",\n   \"split\": false\n  },\n  {\n   \"node\": \"l3502_3504_n002\",\n   \"wave\": \"relevant\",\n   \"seats\": [\n    \"relevant\",\n    \"relevant\",\n    \"relevant\"\n   ],\n   \"majority\": \"relevant\",\n   \"split\": false\n  },\n  {\n   \"node\": \"l1_170_n024\",\n   \"wave\": \"not_relevant\",\n   \"seats\": [\n    \"not_relevant\",\n    \"not_relevant\",\n    \"not_relevant\"\n   ],\n   \"majority\": \"not_relevant\",\n   \"split\": false\n  },\n  {\n   \"node\": \"l1611_1798_n006\",\n   \"wave\": \"relevant\",\n   \"seats\": [\n    \"relevant\",\n    \"relevant\",\n    \"relevant\"\n   ],\n   \"majority\": \"relevant\",\n   \"split\": false\n  },\n  {\n   \"node\": \"l3596_3876_n032\",\n   \"wave\": \"relevant\",\n   \"seats\": [\n    \"relevant\",\n    \"relevant\",\n    \"relevant\"\n   ],\n   \"majority\": \"relevant\",\n   \"split\": false\n  },\n  {\n   \"node\": \"l171_426_n034\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00675",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
+   "commit": "pin",
+   "lines": "88-97",
+   "text": "   \"wave\": \"relevant\",\n   \"seats\": [\n    \"relevant\",\n    \"relevant\",\n    \"relevant\"\n   ],\n   \"majority\": \"relevant\",\n   \"split\": false\n  }\n ],",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00676",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
+   "commit": "pin",
+   "lines": "98-98",
+   "text": " \"panel_split_rate\": \"1/8\",",
+   "source_class": "arc2_json"
+  }
+ ]
+}

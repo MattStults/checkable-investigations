@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_023",
+  "source_class": "arc2_json",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S00482",
+  "last_span": "S00496"
+ },
+ "spans": [
+  {
+   "id": "S00482",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "commit": "pin",
+   "lines": "10-10",
+   "text": "  \"engaged\": false,",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00483",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "commit": "pin",
+   "lines": "11-11",
+   "text": "  \"decline\": false,",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00484",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "commit": "pin",
+   "lines": "12-12",
+   "text": "  \"engaged_above\": false,",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00485",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "commit": "pin",
+   "lines": "13-13",
+   "text": "  \"decline_above\": true",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00486",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "commit": "pin",
+   "lines": "15-18",
+   "text": " \"falsifiers\": {\n  \"F4_panel_split_rate\": 0.0,\n  \"F5_overturn_rate\": 0.10526315789473684\n },",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00487",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "commit": "pin",
+   "lines": "16-16",
+   "text": "  \"F4_panel_split_rate\": 0.0,",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00488",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "commit": "pin",
+   "lines": "17-17",
+   "text": "  \"F5_overturn_rate\": 0.10526315789473684",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00489",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "commit": "pin",
+   "lines": "19-47",
+   "text": " \"misses\": {\n  \"engaged_FP\": [\n   \"l1108_1367_n002\",\n   \"l1108_1367_n025\",\n   \"l1542_1706_n017\",\n   \"l1707_1973_n009\",\n   \"l1707_1973_n016\",\n   \"l171_426_n003\",\n   \"l1799_1973_n013\",\n   \"l2474_2554_n004\",\n   \"l2821_3040_n025\",\n   \"l2821_3040_n034\",\n   \"l3596_3876_n012\",\n   \"l3954_4251_n010\",\n   \"l3954_4251_n031\",\n   \"l4252_4482_n006\",\n   \"l461_608_n013\",\n   \"l699_796_n009\",\n   \"l797_830_n018\"\n  ],\n  \"not_engaged_FN\": [\n   \"l1542_1706_n016\",\n   \"l1_170_n060\",\n   \"l2126_2404_n006\",\n   \"l2126_2404_n023\",\n   \"l2126_2404_n047\",\n   \"l3954_4251_n022\"\n  ]\n },",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00490",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "commit": "pin",
+   "lines": "20-38",
+   "text": "  \"engaged_FP\": [\n   \"l1108_1367_n002\",\n   \"l1108_1367_n025\",\n   \"l1542_1706_n017\",\n   \"l1707_1973_n009\",\n   \"l1707_1973_n016\",\n   \"l171_426_n003\",\n   \"l1799_1973_n013\",\n   \"l2474_2554_n004\",\n   \"l2821_3040_n025\",\n   \"l2821_3040_n034\",\n   \"l3596_3876_n012\",\n   \"l3954_4251_n010\",\n   \"l3954_4251_n031\",\n   \"l4252_4482_n006\",\n   \"l461_608_n013\",\n   \"l699_796_n009\",\n   \"l797_830_n018\"\n  ],",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00491",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "commit": "pin",
+   "lines": "39-46",
+   "text": "  \"not_engaged_FN\": [\n   \"l1542_1706_n016\",\n   \"l1_170_n060\",\n   \"l2126_2404_n006\",\n   \"l2126_2404_n023\",\n   \"l2126_2404_n047\",\n   \"l3954_4251_n022\"\n  ]",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00492",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "commit": "pin",
+   "lines": "48-127",
+   "text": " \"verdicts\": {\n  \"l1542_1706_n010\": \"relevant\",\n  \"l1108_1367_n002\": \"not_relevant\",\n  \"l3596_3876_n013\": \"relevant\",\n  \"l171_426_n003\": \"not_relevant\",\n  \"l1707_1973_n011\": \"relevant\",\n  \"l1542_1706_n016\": \"relevant\",\n  \"l1974_2125_n001\": \"not_relevant\",\n  \"l2821_3040_n034\": \"not_relevant\",\n  \"l2126_2404_n029\": \"not_relevant\",\n  \"l1707_1973_n029\": \"not_relevant\",\n  \"l427_460_n010\": \"relevant\",\n  \"l2126_2404_n023\": \"relevant\",\n  \"l4252_4482_n014\": \"relevant\",\n  \"l1108_1367_n007\": \"relevant\",\n  \"l427_460_n005\": \"not_relevant\",\n  \"l2821_3040_n009\": \"not_relevant\",\n  \"l2126_2404_n011\": \"not_relevant\",\n  \"l3041_3146_n015\": \"relevant\",\n  \"l3954_4251_n011\": \"not_relevant\",\n  \"l797_830_n018\": \"not_relevant\",\n  \"l3041_3146_n008\": \"not_relevant\",\n  \"l3954_4251_n022\": \"relevant\",\n  \"l3954_4251_n010\": \"not_relevant\",\n  \"l1707_1973_n005\": \"relevant\",\n  \"l2405_2473_n011\": \"not_relevant\",\n  \"l699_796_n010\": \"not_relevant\",\n  \"l2126_2404_n003\": \"not_relevant\",\n  \"l1_170_n042\": \"not_relevant\",\n  \"l171_426_n008\": \"not_relevant\",\n  \"l1707_1973_n016\": \"not_relevant\",\n  \"l4252_4482_n024\": \"relevant\",\n  \"l461_608_n013\": \"not_relevant\",\n  \"l699_796_n020\": \"not_relevant\",\n  \"l171_426_n015\": \"not_relevant\",\n  \"l2555_2652_n009\": \"relevant\",\n  \"l1799_1974_n009\": \"not_relevant\",\n  \"l1542_1706_n019\": \"relevant\",\n  \"l3954_4251_n005\": \"not_relevant\",\n  \"l4483_4571_n009\": \"relevant\",\n  \"l699_796_n009\": \"not_relevant\",\n  \"l2126_2404_n020\": \"relevant\",\n  \"l1001_1107_n006\": \"not_relevant\",\n  \"l1368_1541_n014\": \"relevant\",\n  \"l1_170_n032\": \"not_relevant\",\n  \"l2474_2554_n013\": \"relevant\",\n  \"l4572_4692_n012\": \"not_relevant\",\n  \"l1_170_n060\": \"relevant\",\n  \"l1707_1973_n027\": \"not_relevant\",\n  \"l2126_2404_n006\": \"relevant\",\n  \"l4252_4482_n022\": \"relevant\",\n  \"l1974_2125_n005\": \"not_relevant\",\n  \"l461_608_n011\": \"relevant\",\n  \"l1108_1367_n006\": \"not_relevant\",\n  \"l2474_2554_n006\": \"not_relevant\",\n  \"l1_170_n057\": \"not_relevant\",\n  \"l3596_3876_n020\": \"not_relevant\",\n  \"l427_460_n009\": \"relevant\",\n  \"l3954_4251_n031\": \"not_relevant\",\n  \"l461_608_n019\": \"relevant\",\n  \"l1108_1367_n025\": \"not_relevant\",\n  \"l3505_3595_n001\": \"not_relevant\",\n  \"l2821_3040_n029\": \"not_relevant\",\n  \"l1542_1706_n022\": \"relevant\",\n  \"l4252_4482_n006\": \"not_relevant\",\n  \"l461_608_n022\": \"not_relevant\",\n  \"l1799_1973_n013\": \"not_relevant\",\n  \"l3596_3876_n012\": \"not_relevant\",\n  \"l461_608_n016\": \"not_relevant\",\n  \"l1_170_n028\": \"not_relevant\",\n  \"l1_170_n036\": \"relevant\",\n  \"l2474_2554_n004\": \"not_relevant\",\n  \"l3954_4251_n038\": \"relevant\",\n  \"l2821_3040_n032\": \"not_relevant\",\n  \"l2821_3040_n025\": \"not_relevant\",\n  \"l831_1000_n007\": \"relevant\",\n  \"l1707_1973_n009\": \"not_relevant\",\n  \"l1542_1706_n017\": \"not_relevant\",\n  \"l699_796_n005\": \"not_relevant\",\n  \"l3596_3876_n011\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00493",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "commit": "pin",
+   "lines": "128-129",
+   "text": "  \"l2126_2404_n047\": \"relevant\"\n }",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00494",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "commit": "pin",
+   "lines": "49-49",
+   "text": "  \"l1542_1706_n010\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00495",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "commit": "pin",
+   "lines": "50-50",
+   "text": "  \"l1108_1367_n002\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00496",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "commit": "pin",
+   "lines": "51-51",
+   "text": "  \"l3596_3876_n013\": \"relevant\",",
+   "source_class": "arc2_json"
+  }
+ ]
+}

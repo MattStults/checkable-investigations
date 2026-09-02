@@ -1,0 +1,125 @@
+{
+ "header": {
+  "batch": "batch_127",
+  "source_class": "git_log",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 14,
+  "first_span": "S02102",
+  "last_span": "S02115"
+ },
+ "spans": [
+  {
+   "id": "S02102",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5438-5444",
+   "text": "commit 92ed883282293c72c1f4df6a1cb102ad54b5b1d7\nordinal 214\ndate 2026-08-15 10:06:23 -0700\nauthor MattStults\nsubject Merge pull request #3 from MattStults/guardrails-fixes\nguardrails + documentation truth\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02103",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5445-5453",
+   "text": "commit 2be1ea78e09715b3efbd05f06d4c4d4c22360b0d\nordinal 215\ndate 2026-08-15 10:08:59 -0700\nauthor Matt Stults\nsubject Fix C evidence dies under randomisation (p=0.78); the 80% first-try ladder is unsupported\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02104",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5454-5462",
+   "text": "commit 849049c37145696ad3b943836fbae151290012b7\nordinal 216\ndate 2026-08-15 10:12:43 -0700\nauthor Matt Stults\nsubject work order: generate and validate recovery ideas, with the protocol that killed three false positives\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02105",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5463-5471",
+   "text": "commit ee12e0099cf9f30347f29d9b0fbd877e8efa38cb\nordinal 217\ndate 2026-08-15 10:30:07 -0700\nauthor Matt Stults\nsubject DC-1 untestable with Haiku (5.9% vs 15% gate); DeepSeek A/B costed at $0.30\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02106",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5472-5480",
+   "text": "commit 8ba64858f67bf3c2b3f830ec2c89e471b5b47e2d\nordinal 218\ndate 2026-08-15 10:30:52 -0700\nauthor Matt Stults\nsubject record the DC-1 gate result in EXPERIMENTS (earlier append failed on a path error)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02107",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5481-5487",
+   "text": "commit c76f5ee89f910c3826b8ab13b69128406823c2be\nordinal 219\ndate 2026-08-15 10:32:04 -0700\nauthor Matt Stults\nsubject DC-1 experiment artifacts (final answer file)\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02108",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5488-5564",
+   "text": "commit c3f6922034cc83c7a4294a52d78b003055d1b1e4\nordinal 220\ndate 2026-08-15 12:08:30 -0700\nauthor Matt Stults\nsubject gen-12 round FROZEN: restart-on-repeat chain policy + arity check, reviewed and offline-verified\nCommits the exact state the next slice will run with, so the run is\nreproducible against one contract.\n\nCODE (uncommitted until now; suite green at 877 passed / 1 pre-existing\nxfail, plus 411 in resolve_runs):\n\n* Restart-on-repeat chain policy. A repair chain that emits a reply\n  byte-identical to an earlier one in the same chain is frozen: the chain is\n  discarded and redrawn once from attempt 1. Capped at ONE restart per\n  clause -- a refreeze abandons rather than restarting again, so the worst\n  case is a genuine bound of two chains, not a floor.\n* Arity-aware declaration check in checks.py.\n\nFOUR FINDINGS FROM A CLEAN-CONTEXT ADVERSARIAL REVIEW, each reproduced\nindependently before it was applied (this repo's rule: adversarial reviews\nfind false positives):\n\n* D1/F1 cost gate. estimate_cost carries TWO quadratic terms, so the\n  rejected `estimate_cost(..., 2T)` shim over-charged ~4.5x and refused\n  every live config. Correct pricing is estimate_cost(T) DOUBLED. The P5 pin\n  is now parametrised by glob over all 8 reachable config*.json, asserting\n  the relation only -- never a pinned dollar figure. It caught that\n  config_graph_nodes.json ($1.9940 vs its $1.00 ceiling) was refused by its\n  own gate.\n* F2 prev_shape hole. Flags were cleared at the restart but prev_shape was\n  not, so a non-parsing redraw retained the DISCARDED draft's shape and the\n  next module was diffed against bytes nobody kept -- force-keeping a clause\n  into the graveyard on a discarded draft's flag. Fixed; pinned on the\n  non-parsing path specifically.\n* F3 docstring stated the rejected 2T shim as current behaviour.\n* F4 the seam guard can vary the redraw's body; ACCEPTED and recorded rather\n  than repaired, with the reachable path written down.\n\nCEILING, raised by the human, minimal by ruling: config_graph_nodes.json\n1.00 -> 2.00 exactly (not 2.50, not \"with headroom\" -- a ceiling with slack\nhas stopped being a constraint). config_corpus_all.json untouched at $8.00;\nthe ruling is more, smaller slices (~125 nodes, halved by the doubling).\n\nOFFLINE VERIFICATION (preflight_replay/, zero spend):\n* Arity check: 0 false positives on 237 accepted module files, 230 accepted\n  final attempts, 120 first-try successes. No accepted module is pulled into\n  a repair loop.\n* Restart blast radius: 52 of 212 multi-attempt chains fire. Cost multiplier\n  measured at 0.89x-1.28x, NOT 2x -- the truncated chain nearly pays for the\n  redraw. The est*2 in run() is a gate bound, not a spend forecast.\n* 4 chains that SUCCEEDED would have been restarted (7.7% of fired chains),\n  inside the 9-12% band the redraw-not-abandon ruling was made against.\n* Resumption measured, not inferred: the stamp is written on the success\n  path only, so a discarded chain can never make a resume skip real work.\n\nLIVE VALIDATION (20260815-113545, $0.0119 / 7 calls, criteria pre-registered\nper clause BEFORE the run): 6 translated, 0 failed, flags empty, no restart.\nNO REGRESSION -- and explicitly NOT a validation of either new path: no\nchain froze and no module carried an arity mismatch, so neither mechanism\nwas entered. Rejected by name: reading 6/6 translated as validation of the\nchain policy. The cohort went quiet because it was selected on OLD-PROMPT\nfailures and the committed prompt changes appear to have fixed them\n(l171_426_n024: unrepaired-after-5-attempts -> translated on attempt 1).\n\nANALYSIS COMMITTED, NOT ACTED ON: the abstention-boundary measurement and\nits cross-model check. The 32% over-translation FIGURE is WITHDRAWN (kappa\n0.248 between judges); the DIRECTION survives and the circularity worry is\nrefuted by direction (15/15 discordant pairs run toward the stricter\nverdict, McNemar p = 6.1e-5). What needs no judge at all is documentary: the\nprompt contradicts itself on abstain-vs-translate, and DeepSeek gave both\nanswers to a clause whose translated exemplar sits in its own system prompt.\nNo prompt file is touched by this commit.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02109",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5565-5606",
+   "text": "commit 39b464c21868c5bb7e90f2204b060420380c94a6\nordinal 221\ndate 2026-08-15 12:19:30 -0700\nauthor Matt Stults\nsubject guard: fence the graph-node worked example -- it was substituted for a watched file and inherited none of the watching\nFound by asking why a gen-12 commit touched no watched file when the\nassembled system prompt had demonstrably moved (28,091 -> 37,891 chars).\n\nTHE GAP. config_corpus_all.json builds its system prompt from four files:\n00_task.md, 10_output_format.md, **node_worked_example.md**, and\n30_failure_modes.md -- and lists the watched prompt/20_worked_example.md as\nUNUSED. The graph-node run swaps its own worked example in for the watched\none. Three of the four files instructing the corpus run were fenced; the\nfourth was not, purely because it lives beside the graph configs instead of\nin prompt/.\n\nWHY IT MATTERS MORE THAN THE OTHER THREE: a worked example is a\nDEMONSTRATION, and a demonstration overrides prose because it is what the\nmodel imitates. That is not speculation here -- this file currently\ncontradicts 00_task.md's abstention criterion (00_task.md:110 makes a\nsection heading grounds to abstain; node_worked_example.md shows a heading\nnode translated and says a hollow module or a clean abstention \"are both\nbetter than an invented obligation\"), and a production model gave BOTH\nanswers to a clause whose translated exemplar sits in its own system prompt.\n\nNothing has slipped through: both files last moved together in 3d856a8. The\ngap is live, not historical -- the drafted abstention fix edits this very\nfile, and under the old list it would have landed with no human review.\n\nRegistered as a glob (node_*.md) so a future node-side prompt file is fenced\non arrival rather than after the fact. Per this repo's rule that\nregistration, not documentation, fences a thing.\n\nDELIBERATELY NOT ACCEPTED. The guard now reports the file as NEVER REVIEWED,\nwhich is the correct state: `--accept` is a human act recorded with a name,\nand attesting a file whose self-contradiction we just documented would be\nthe exact failure the guard exists to prevent, performed by hand.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02110",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5607-5667",
+   "text": "commit d9cc2d0547a7d607fb14bebd4eb99bb6b46c4174\nordinal 222\ndate 2026-08-15 12:33:45 -0700\nauthor Matt Stults\nsubject review follow-ups: stop the generator from silently reverting the ceiling ruling\nThree findings from a clean-context adversarial review of c3f6922 -- the\nround that FIXED the previous review's findings, and had not itself been\nreviewed. Its verdict on the four fixes themselves (F2/F3/F4/P5): all\ncorrect, all non-vacuous, none breakable -- each was reverted in a pinned\nworktree and exactly the right test reddened. Everything below is collateral\nthe fixes did not reach.\n\nF-A (the serious one) -- node_corpus.py GENERATES config_graph_nodes.json and\nhard-coded `max_cost_usd=1.00`, rebuilding the whole `cost` block from\nphase_1/config.json. A routine `python3 node_corpus.py` refresh therefore\nwrote the old ceiling back AND DELETED the `_ceiling_note` recording why the\nhuman raised it -- silently reverting a ruling, and erasing its grounds so\nthe next reader could not tell. The adjacent comment also still asserted the\npre-doubling \"~$0.99 worst case\", false since the restart policy landed.\nFixed at the source: the note is now emitted BY THE GENERATOR, because a\nvalue hand-patched into a generated file is exactly what the next refresh\nloses. VERIFIED by regenerating -- ceiling 2.00 and note both survive, and\nthe regenerated config is otherwise byte-identical to the committed one.\nRejected by name: patching the JSON again and leaving the generator alone.\n\nF-B -- TRANSLATION_RUNBOOK.md, the document written FOR A HANDS-OFF AGENT\nABOUT TO SPEND, still said 1.00 / $0.9970 / $0.003 margin and did not mention\nthe restart policy anywhere, so its worst-case call count was half of\nreality. Updated to 2.00 / $1.9940 / $0.006, with the doubling explained and\n-- the part the review insisted on -- the distinction that matters at a\ngate: EXPECTED spend is ~1.0x of the old policy (measured 0.89x-1.28x\nwhole-run, because the truncated chain nearly pays for the redraw), but\nREQUIRED GATE HEADROOM stays 2x. The 125-node slice cap depends on it.\n\nF-C -- test_repair.py justified its slice size by claiming a sub-threshold\nqueue \"will not dispatch at all\". dispatch_core.py:930-937 says the opposite\nin its own docstring: a starvation fallback runs sub-threshold queues LIVE,\nso the tail and top of a tree never wait on a threshold they cannot reach.\nThe assertion was never wrong -- 8 nodes is a real slice and it passes -- but\nthe grounds were, and this round's own F3 was precisely \"a docstring\nasserting behaviour the code contradicts is how the wrong thing gets\nreintroduced\".\n\nF-D -- c3f6922's message claimed \"411 in resolve_runs\". Measured: 341.\nFull tree at this commit: 1218 passed, 1 xfailed. Suite counts are\nload-bearing evidence in this repo, so the number is corrected here rather\nthan left standing.\n\nAlso recorded in EXPERIMENTS.md, from the other two reviews landing together:\nthe preflight's blast radius is 32% [24-42] on the live system_sha stratum,\nNOT the pooled 24.5%; the arity check's upside is ~16 live firings, not 39\nreplay flags, because run_checks returns early when schema validation fails\n(its ZERO-FALSE-POSITIVE half is confirmed and is the load-bearing half); and\nnode_worked_example.md is STALE on five counts -- including that its own\nthird exemplar violates the file's own `NEEDS -> requires` contract, which\nnothing catches.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02111",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5668-5684",
+   "text": "commit 4bdc7e5cf1a8c22705da5280245d97ca70677c34\nordinal 223\ndate 2026-08-15 13:08:25 -0700\nauthor Matt Stults\nsubject PRE-REGISTER the paired re-run: fixes vs data, readings fixed before the result\nOwner's question -- 98% on the new 48-node slice vs 69% on 20260814-173322\nconfounds contract change with clause selection, because the slice moved both.\nRe-run holds the CLAUSE SET fixed (the same 88 ids) and moves only the\ncontract. Readings fixed now: R>=92% => FIXES, R<=75% => DATA, between => BOTH\nand R becomes the quoted corpus-wide expectation instead of 98%. Per-clause\n2x2 pairing is the real evidence; old-translated -> new-unrepaired is a\nregression and is reported however small.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02112",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5685-5721",
+   "text": "commit 10911de7fbf256ea6309ec137610038d32fd359f\nordinal 224\ndate 2026-08-15 15:58:35 -0700\nauthor Matt Stults\nsubject prefer-polarity detector: catch the class stage 4 structurally cannot\nA stage-4 read of 25 modules found the corpus asserting the OPPOSITE of the\nspecification, in modules that passed schema, clingo, link checks and\nread-back. Verbatim, l1974_2125_n019.lp:57, from a BAD-marked example of\nescalating emotional closeness with a lonely user:\n\n    asserts(l1974_2125_n019, prefer, respond_with(R))\n        :- escalates_emotional_closeness(R).\n\nROOT CAUSE IS A CONTRACT GAP, NOT A MODEL SLIP: `status` has no negative pole.\nWith a single-act `asserts` there is NO CORRECT ENCODING for \"avoid X\", and the\nmodel reliably picks the one that inverts.\n\nWHY NOTHING ELSE CATCHES IT, INCLUDING ALL FOUR STAGE-4 SEATS: the read-back\nprose is CORRECT (\"responding with % is dispreferred\"); only `status` is wrong.\nSeats 4a-4d all judge the English RENDERING -- 4b is explicitly not shown the\nprogram at all -- so a defect living in the gap between a correct rendering and\nthe field it was rendered from is invisible to every one of them. That is why\nthis check is mechanical: it compares an entry's `status` against its OWN\nread-back, a self-contradiction inside one object.\n\nMEASURED over every stored module: 9 entries across 7 clauses.\n\n⛔ ORIGIN IS `stage4-detector`, DELIBERATELY *NOT* DISCLOSABLE. Every instinct\nsays a self-contradiction inside one entry is stage-2-shaped and belongs in the\nrepair loop. It must not go there YET, because with no negative pole a model\ntold \"these two disagree\" cannot resolve it correctly: it will either drop the\nentry (deleting the document's guidance) or rewrite the read-back to say\n\"preferred\" -- silencing the only surviving evidence and leaving a module that\nis semantically backwards AND internally consistent. That is strictly worse\nthan today and is textbook defect-trading. The precondition for promoting it to\na disclosable stage-2 check is a negative pole in `status`, which is an owner\nruling on guard-watched schema.py; the origin changes to \"schema\" in the same",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02113",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5722-5729",
+   "text": "commit that adds the pole.\n\nSuite: 877 passed, 1 pre-existing xfail.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02114",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5730-5773",
+   "text": "commit feb885b9b7fe06ae30fd8c16848dfe3388014180\nordinal 226\ndate 2026-08-15 22:28:31 -0700\nauthor Matt Stults\nsubject D4: stage 4 could not see the graph corpus, and reported zero instead of saying so\n`seats.survey()` globbed `m*.json`. Clause ids are `m0217`; GRAPH NODE ids are\n`l1_170_n056`. MEASURED against\n`resolve_runs/graph_v2/translation_sample/runs`:\n\n    glob \"m*.json\"  (before) ->   0 modules,   0 reach a seat\n    fixed           (after)  -> 361 modules, 323 reach a seat\n\nSo stage 4 -- the ONLY stage that judges whether a translation says what the\nclause says -- had never judged a single graph node, and `seats.py --cost`\npriced a live run at $0.00. The failure was SILENT in the worst way: it\nprinted \"TOTAL 0 (0 reach a seat)\", which reads as \"nothing to review\", not\nas \"I cannot see your corpus\". This is the failure mode `survey`'s own\ndocstring warns about (\"a pipeline reporting 3 of 4 passed stage 4 would be\nreporting that three clauses had nothing to read back\") one level worse --\nnot miscounted, uncounted.\n\nMATCHED BY ID SHAPE, NOT A WIDENED WILDCARD, and the difference is measured:\na naive `l*.json` also swallows `<id>.version.json` and `<id>.transcript.json`,\nwhich are sidecars, not modules -- they fail `schema.validate` and land in\n`stage-2-invalid`, inflating the very \"never reached a seat\" figure this\nfunction exists to report honestly. Naive glob: 371 stage-2-invalid. This\npatch: 10. A third id naming will need a line here, deliberately, so the next\ncorpus cannot go unseen in silence.\n\nWHAT THIS UNBLOCKS: measuring correctness at all. Today's stage-4 read of 25\nmodules found 13 defective -- all of which passed schema, clingo compile, link\nchecks and read-back. Until now the only thing measurable on the graph corpus\nwas the translation RATE, which is why the rate is what we have been\noptimising.\n\nCOSTED, NOTHING SPENT (`seats.py --cost`, free): 323 clauses at\n$0.2512 likely / $1.6351 worst on flash; $28.44 likely on frontier.\n\nSuite: 877 passed, 1 pre-existing xfail; seat tests 224 passed.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02115",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5774-5806",
+   "text": "commit 6eae34b86bc0857e417c0203e3e5adb314ccb56e\nordinal 227\ndate 2026-08-15 23:02:59 -0700\nauthor Matt Stults\nsubject stage-4 baseline: the driver, the first correctness numbers, and why they cannot be quoted yet\nDriver at _debug_gen11/stage4_baseline/stage4_driver.py -- owns the seat client\nseam READBACK_SMOKE.md gap 2 says nobody owns. $0.083144 over 324 calls\nagainst a printed $0.4182 worst / $0.0711 likely.\n\n81 of 88 clauses reached a seat: 15 clean, 66 with >=1 defect verdict. THAT\nRATIO IS NOT QUOTABLE -- 4d refused on 57 of 81 (70.4%) for one mechanical\nreason (the model drops the 'C1 ' label and seats._reply_item has no prefix\ntolerance), 4c's 264 unlicensed is inflated by an estimated 179 legitimately\nborrowed glosses, and the judge is the same model that wrote the translations.\nAll three were self-reported by the agent that ran it.\n\nTHE SOLID RESULT: stage 4 caught 0 of 1 polarity inversions -- and not because\nit could not see it. readback renders the status field, so 4c and 4a were shown\n'clause l1_170_n053 prefers <impose_restrictive_rules(D)>', each wrote a reason\nstating the correct OPPOSITE meaning, and each then PASSED the item. The defect\nsurvives a reader who has already understood it. n=1; six more clauses exist and\ncost $0.006 to settle.\n\nAlso recorded: D1/D2 arm-B experiments closed at the instrument check (arm B\nnever sent, $0.0895) because single-draw cohort recruitment is mis-powered by\nconstruction -- neither defect reproduces on re-draw, and the prompt is\nbyte-identical across every run since 08-10, so it is temperature-0.2\nstochasticity, not drift.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log"
+  }
+ ]
+}

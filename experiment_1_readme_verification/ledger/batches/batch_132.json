@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_132",
+  "source_class": "git_log",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S02168",
+  "last_span": "S02182"
+ },
+ "spans": [
+  {
+   "id": "S02168",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "6879-6887",
+   "text": "commit a828efcc3ace486de649baf7168fe1713ddab338\nordinal 280\ndate 2026-08-17 09:47:27 -0700\nauthor Matt Stults\nsubject chunk-6 repairs sealed 4/4 FIRST-PASS; all six bulk chunks sealed; known-defect set empty\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02169",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "6888-6900",
+   "text": "commit 0d6b16260a1c2a406636181226b153c014eedc98\nordinal 281\ndate 2026-08-17 10:02:43 -0700\nauthor Matt Stults\nsubject post-crash recovery: chunk files retired (.done), compare merges partials, run-2 helpfulness prelim committed\nMachine died mid-panel-match; the nohup'd chained job SURVIVED (behavior 2\nin flight) and every sealed commit was on disk. Only session observers were\nlost; re-armed.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02170",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "6901-6909",
+   "text": "commit 1a8c3e5e4b03683929ef5b63d343eb1d1b1a4a2a\nordinal 282\ndate 2026-08-17 10:02:54 -0700\nauthor Matt Stults\nsubject retire bulk chunk files 1-6 (.done) — campaign complete\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02171",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "6910-6918",
+   "text": "commit bda3af92cd785f9735a9b9478d7e33d515383f44\nordinal 283\ndate 2026-08-17 10:11:04 -0700\nauthor Matt Stults\nsubject run-2 blind adjudication: helpfulness + harm-avoidance queues ruled\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02172",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "6919-6927",
+   "text": "commit 5989a2f739582b7dcf4577250b242c486ef6fcbb\nordinal 284\ndate 2026-08-17 10:21:56 -0700\nauthor Matt Stults\nsubject run-2 adjudication: over/under-caution queues ruled; probe merges partials\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02173",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "6928-6936",
+   "text": "commit 40e18ce3e8828928bed6d01a0de72955e1b66821\nordinal 285\ndate 2026-08-17 10:38:25 -0700\nauthor Matt Stults\nsubject three-way relevance report generator + pre-probe draft (56 panel-strict / 15 seat-miss / 13 conflation / 124 pending probe)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02174",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "6937-6945",
+   "text": "commit 88d73fa33b4a5cc78c9ddbde438a08ce7dfeb554\nordinal 286\ndate 2026-08-17 10:48:37 -0700\nauthor Matt Stults\nsubject probe complete (450 nodes, 85 new engagements, zero never-retrieved remain); report vocab explicit; round-2b adjudication dispatched on 125 rows\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02175",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "6946-6965",
+   "text": "commit 7238dbf16ae541844692f90f3bb721f39ee8bdd4\nordinal 287\ndate 2026-08-17 10:50:11 -0700\nauthor Matt Stults\nsubject THREE-WAY RELEVANCE REPORT complete: 264 rows, 3 behaviors, full corpus, every row adjudicated or agreed\nCold-start descriptive numbers (NOT the registered equivalence metric):\nagree 55 / panel-strict 98 (tool vindicated over the panel's strict tier)\n/ seat-miss 73 / scope-conflation 27 / panel-broad 11. Aggregate: on\ndisputed engagements the blind adjudicator sided with the tool 98/125\n(78%); on panel-hot nodes the seat declined, 73/84 (86%) were real\nmisses. Fix loci: precision errors are checklist+seat-brief\n(user-vs-third-party scope, structural nodes); recall errors are atom\nvocabulary/retrieval reach (topic/agenda-phrased anti-over-refusal\nclauses; paradigm harm cases). Panel vocabulary made explicit\n(cited>=5 / cited 2-4 / uncited). Honesty notes list the open controls.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02176",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "6966-6974",
+   "text": "commit f851a190c086ee9a60940fe16acad2145113bf7d\nordinal 288\ndate 2026-08-17 10:58:26 -0700\nauthor Matt Stults\nsubject three-way report: aggregates table on top, glyph columns (✓/~/✗/·, * = probe), legend, action column\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02177",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "6975-6992",
+   "text": "commit 721d5b2dae655b1ffac4305d0f218923b1989f6d\nordinal 289\ndate 2026-08-18 11:23:59 -0700\nauthor Matt Stults\nsubject prereg: defensibility becomes metric 0 (Matt Q1) with panel-symmetric comparison + second-frontier control; Matt's stratified spot-check set drawn (Q2)\nMetric 0: is each tool deviation from the truth tier an ERROR or a\nDEFENSIBLE INTERPRETATION, compared against the panel's own defensibility\nunder the SAME reader; equivalence = the tool's deviations are defensible\nat least as often as the panel's. Validity control: a second frontier model\nre-rules a stratified sample of disagreements; <80% agreement downgrades\nthe claim to single-model. Consistency (old metric 1) stays reported.\nRe-hashed 29bd20c8..., still unsigned. SPOTCHECK_matt.md: 22 rows,\n4 strata x 3 behaviors, for Matt's AGREE/DISAGREE calibration.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02178",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "6993-7001",
+   "text": "commit 55755d8c63eaa6c704cfc97870696c020caae152\nordinal 290\ndate 2026-08-18 11:25:22 -0700\nauthor Matt Stults\nsubject prereg: Q3 ruled — cold-start layer scored as blind-decomposed; base-tool pre-fix rejected by name\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02179",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7002-7010",
+   "text": "commit 9b6be0a49ac3c2f4ea141cd993be0ba6f15c01aa\nordinal 291\ndate 2026-08-18 12:26:07 -0700\nauthor Matt Stults\nsubject spot-check set: full ESTABLISHES + full source text per row (same 22 rows) — a calibration exercise must show what the adjudicator saw\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02180",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7011-7019",
+   "text": "commit 492687c74518f4f3ea35891a0cbcf0d955d51d15\nordinal 292\ndate 2026-08-18 12:35:21 -0700\nauthor Matt Stults\nsubject spot-check: exact behavior definition stamped on every row\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02181",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7020-7028",
+   "text": "commit cd1695acb04b2d79dd6a68979ff70af55e3cc27a\nordinal 293\ndate 2026-08-18 12:35:34 -0700\nauthor Matt Stults\nsubject spot-check: exact behavior definition stamped on every row\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  },
+  {
+   "id": "S02182",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7029-7037",
+   "text": "commit e5f7077e3d2a5c5496c64534e79f1c200c7b4b43\nordinal 294\ndate 2026-08-18 13:16:16 -0700\nauthor Matt Stults\nsubject Matt's spot-check: 21/22 agreement with the Fable truth tier; calibration rule adopted; recorded in prereg\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log"
+  }
+ ]
+}
