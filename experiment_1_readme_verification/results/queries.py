@@ -64,7 +64,7 @@ Q = {
  "Q29": {"metric": r"withdraw", "event_type": "withdrawal", "value": None, "count_headline": True},
  "Q30": {"live_run": "files"},
  "Q31": {"live_run": "symlinks"},
- "Q32": {"metric": r"^signed$|^signature$|signer|manifest signature", "scope": r"PRUNED|manifest|prune", "value": None, "present_ok": True, "existence_true": True},
+ "Q32": {"live_run": "absence-by-search over PRUNED.md (D-09): signature markers per the inventory definition, detached signature files, restore hashes resolve"},
  "Q33": {"live_run": "git_dates"},
  "Q34": {"metric": r"trigger|^on$|workflow trigger|ci trigger", "value": r"^push$|every push|on push$", "value_is_regex": True, "others_regex": r"branches|main|pull_request"},
  "Q35": {"live_run": "licenses"},

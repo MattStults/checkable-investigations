@@ -10,7 +10,7 @@
    "stated"
   ],
   "tier_ok": false,
-  "derivation": "3 matching claim(s) standing; none at the required dimensions {'tier': {'panel', 'adjudicated'}} \u2014 matched at ['stated']"
+  "derivation": "3 matching claim(s) standing; none at the required dimensions {'tier': {'adjudicated', 'panel'}} \u2014 matched at ['stated']"
  },
  "Q02": {
   "state": "contradicted",
@@ -537,9 +537,29 @@
   "output": ""
  },
  "Q32": {
-  "state": "unverifiable",
-  "derivation": "no ledger claim matches the metric/scope pattern. Two readings: a translation-coverage gap, or the record holds no such artifact \u2014 a ledger of positive claims cannot distinguish these unless a translator recorded an explicit absence (existence claim with value false); this is reported as a coverage finding",
-  "claims": []
+  "state": "contradicted",
+  "derivation": "PRUNED.md exists (135 lines); signature-pattern hits: none; detached signature files: none; 93 hash-like tokens, 85 resolve in git \u2014 'signed' per the inventory definition is ABSENT, so the README sentence 'signed manifest' is contradicted on the signature and verified on existence/restorability",
+  "claims": [],
+  "command": "grep PRUNED.md for signature markers; ls for detached signatures; git cat-file -e on hashes",
+  "wall_s": 0,
+  "output": "(no signature hits)",
+  "absence_claim": {
+   "kind": "existence",
+   "metric": "signature on PRUNED.md",
+   "value": false,
+   "tier": "live_run",
+   "source": {
+    "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/PRUNED.md",
+    "commit": "pin",
+    "lines": "1-135"
+   },
+   "quote": "# PRUNED.md \u2014 evidence-prune manifest (2026-08-30)",
+   "search": {
+    "pattern": "(?i)(-----BEGIN (PGP|SSH) SIGNATURE|\\bsigned[- ]by\\b|\\bsigner\\b|\\bsignature\\b|\\bcountersign|\\bsha(256|512)sum\\b.*PRUNED|\\bgpg\\b|\\bminisign\\b)",
+    "over": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/PRUNED.md"
+   },
+   "detached_files": []
+  }
  },
  "Q33": {
   "state": "contradicted",
