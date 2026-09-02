@@ -1,0 +1,313 @@
+{
+ "note": "interim comparison: ledger arm on 8,053-claim ledger (git-log/pre-redaction batches incomplete; live runs pending); baseline arm final",
+ "items": {
+  "H01": {
+   "baseline": "contradicted",
+   "ledger_interim": "contradicted"
+  },
+  "H02": {
+   "baseline": "verified",
+   "ledger_interim": "contested"
+  },
+  "H03": {
+   "baseline": "verified",
+   "ledger_interim": "unverifiable"
+  },
+  "H04": {
+   "baseline": "verified",
+   "ledger_interim": "unverifiable"
+  },
+  "H05": {
+   "baseline": "verified",
+   "ledger_interim": "unverifiable"
+  },
+  "H06": {
+   "baseline": "verified",
+   "ledger_interim": "contested"
+  },
+  "H07": {
+   "baseline": "verified",
+   "ledger_interim": "verified"
+  },
+  "H08": {
+   "baseline": "unverifiable",
+   "ledger_interim": "contradicted"
+  },
+  "H09": {
+   "baseline": "verified",
+   "ledger_interim": "verified"
+  },
+  "H10": {
+   "baseline": "contradicted",
+   "ledger_interim": "verified"
+  },
+  "H11": {
+   "baseline": "verified",
+   "ledger_interim": "unverifiable"
+  },
+  "H12": {
+   "baseline": "verified",
+   "ledger_interim": "verified"
+  },
+  "H13": {
+   "baseline": "verified",
+   "ledger_interim": "verified"
+  },
+  "H14": {
+   "baseline": "unverifiable",
+   "ledger_interim": "verified"
+  },
+  "H15": {
+   "baseline": "verified",
+   "ledger_interim": "live_run_pending"
+  },
+  "Q01": {
+   "baseline": "verified",
+   "ledger_interim": "verified"
+  },
+  "Q02": {
+   "baseline": "contradicted",
+   "ledger_interim": "verified"
+  },
+  "Q03": {
+   "baseline": "verified",
+   "ledger_interim": "verified"
+  },
+  "Q04": {
+   "baseline": "contradicted",
+   "ledger_interim": "contested"
+  },
+  "Q05": {
+   "baseline": "verified",
+   "ledger_interim": "verified"
+  },
+  "Q06": {
+   "baseline": "contested",
+   "ledger_interim": "contested"
+  },
+  "Q07": {
+   "baseline": "verified",
+   "ledger_interim": "live_run_pending"
+  },
+  "Q08": {
+   "baseline": "verified",
+   "ledger_interim": "verified"
+  },
+  "Q09": {
+   "baseline": "verified",
+   "ledger_interim": "verified"
+  },
+  "Q10": {
+   "baseline": "verified",
+   "ledger_interim": "verified"
+  },
+  "Q11": {
+   "baseline": "verified",
+   "ledger_interim": "verified"
+  },
+  "Q12": {
+   "baseline": "verified",
+   "ledger_interim": "verified"
+  },
+  "Q13": {
+   "baseline": "verified",
+   "ledger_interim": "verified"
+  },
+  "Q14": {
+   "baseline": "verified",
+   "ledger_interim": "verified"
+  },
+  "Q15": {
+   "baseline": "verified",
+   "ledger_interim": "verified"
+  },
+  "Q16": {
+   "baseline": "verified",
+   "ledger_interim": "verified"
+  },
+  "Q17": {
+   "baseline": "verified",
+   "ledger_interim": "verified"
+  },
+  "Q18": {
+   "baseline": "verified",
+   "ledger_interim": "verified"
+  },
+  "Q19": {
+   "baseline": "verified",
+   "ledger_interim": "verified"
+  },
+  "Q20": {
+   "baseline": "verified",
+   "ledger_interim": "verified"
+  },
+  "Q21": {
+   "baseline": "verified",
+   "ledger_interim": "verified"
+  },
+  "Q22": {
+   "baseline": "verified",
+   "ledger_interim": "verified"
+  },
+  "Q23": {
+   "baseline": "verified",
+   "ledger_interim": "verified"
+  },
+  "Q24": {
+   "baseline": "verified",
+   "ledger_interim": "live_run_pending"
+  },
+  "Q25": {
+   "baseline": "verified",
+   "ledger_interim": "verified"
+  },
+  "Q26": {
+   "baseline": "verified",
+   "ledger_interim": "verified"
+  },
+  "Q27": {
+   "baseline": "contested",
+   "ledger_interim": "verified"
+  },
+  "Q28": {
+   "baseline": "contradicted",
+   "ledger_interim": "contested"
+  },
+  "Q29": {
+   "baseline": "contradicted",
+   "ledger_interim": "contested"
+  },
+  "Q30": {
+   "baseline": "verified",
+   "ledger_interim": "live_run_pending"
+  },
+  "Q31": {
+   "baseline": "verified",
+   "ledger_interim": "live_run_pending"
+  },
+  "Q32": {
+   "baseline": "contradicted",
+   "ledger_interim": "unverifiable"
+  },
+  "Q33": {
+   "baseline": "contradicted",
+   "ledger_interim": "live_run_pending"
+  },
+  "Q34": {
+   "baseline": "contradicted",
+   "ledger_interim": "contradicted"
+  },
+  "Q35": {
+   "baseline": "verified",
+   "ledger_interim": "live_run_pending"
+  },
+  "Q36": {
+   "baseline": "verified",
+   "ledger_interim": "live_run_pending"
+  },
+  "Q37": {
+   "baseline": "verified",
+   "ledger_interim": "live_run_pending"
+  },
+  "Q38": {
+   "baseline": "verified",
+   "ledger_interim": "verified"
+  },
+  "Q39": {
+   "baseline": "verified",
+   "ledger_interim": "verified"
+  },
+  "Q40": {
+   "baseline": "unverifiable",
+   "ledger_interim": "live_run_pending"
+  },
+  "Q41": {
+   "baseline": "verified",
+   "ledger_interim": "verified"
+  },
+  "Q42": {
+   "baseline": "verified",
+   "ledger_interim": "live_run_pending"
+  },
+  "Q43": {
+   "baseline": "contradicted",
+   "ledger_interim": "live_run_pending"
+  },
+  "Q44": {
+   "baseline": "verified",
+   "ledger_interim": "verified"
+  },
+  "Q45": {
+   "baseline": "verified",
+   "ledger_interim": "verified"
+  },
+  "Q46": {
+   "baseline": "verified",
+   "ledger_interim": "live_run_pending"
+  },
+  "Q47": {
+   "baseline": "verified",
+   "ledger_interim": "verified"
+  },
+  "Q48": {
+   "baseline": "contradicted",
+   "ledger_interim": "live_run_pending"
+  },
+  "Q49": {
+   "baseline": "verified",
+   "ledger_interim": "live_run_pending"
+  },
+  "Q50": {
+   "baseline": "verified",
+   "ledger_interim": "live_run_pending"
+  },
+  "V01": {
+   "baseline": "contested",
+   "ledger_interim": "verified"
+  },
+  "V02": {
+   "baseline": "unverifiable",
+   "ledger_interim": "contradicted"
+  },
+  "V03": {
+   "baseline": "unverifiable",
+   "ledger_interim": "dangling"
+  },
+  "V04": {
+   "baseline": "verified",
+   "ledger_interim": "verified"
+  },
+  "V05": {
+   "baseline": "contested",
+   "ledger_interim": "contested"
+  },
+  "V06": {
+   "baseline": "contested",
+   "ledger_interim": "contradicted"
+  },
+  "V07": {
+   "baseline": "contradicted",
+   "ledger_interim": "contested"
+  },
+  "V08": {
+   "baseline": "verified",
+   "ledger_interim": "contested"
+  },
+  "V09": {
+   "baseline": "verified",
+   "ledger_interim": "verified"
+  },
+  "V10": {
+   "baseline": "verified",
+   "ledger_interim": "verified"
+  },
+  "V11": {
+   "baseline": "verified",
+   "ledger_interim": "contested"
+  },
+  "V12": {
+   "baseline": "contested",
+   "ledger_interim": "contested"
+  }
+ }
+}

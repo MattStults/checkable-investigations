@@ -34,7 +34,7 @@ def close(a, b, tol):
 # the actual tier named).
 Q = {
  "Q01": {"metric": r"criterion standing|match-or-adjudicated-defensible|match-or-defensible", "value": [0.941, 0.953, 0.96], "tol": 0.001, "any_of": True, "band": (0.94, 0.96), "require": {"tier": {"panel", "adjudicated"}}},
- "Q02": {"metric": r"panel.internal agreement|inter-judge agreement|panel agreement", "value": None},
+ "Q02": {"metric": r"panel.internal agreement|inter-judge agreement|panel agreement|judge-vs-judge|inter-judge", "value": None, "present_ok": True, "band": (0.94, 0.96), "band_check": True},
  "Q03": {"metric": r"certification|raw_verdict|verdict_engaged", "quote": r"F1|IN BAND|certif", "scope": r"helpfulness|harm|caution|dev behaviour", "value": None, "count_scopes": 3},
  "Q04": {"metric": r"registration|match-or-defensible|defensibility pass|panel.equivalence", "quote": r"registered|registration|scored ONCE|never ran|DEFENSIBILITY PASS", "value": None, "contested_if_multiple_registrations": True},
  "Q05": {"metric": r"node count|^nodes$|node_count", "value": 773, "tol": 0},
@@ -57,16 +57,16 @@ Q = {
  "Q22": {"metric": r"finding|L1|L2", "quote": r"noise|no null|null-free|already met", "value": None, "present_ok": True},
  "Q23": {"metric": r"commit|erratum", "quote": r"1143a921|erratum #20|ERRATUM #20", "value": None, "present_ok": True},
  "Q24": {"live_run": "pytest"},
- "Q25": {"metric": r"entry|ledger", "quote": r"0000.{0,3}0043|0043", "value": None, "present_ok": True},
+ "Q25": {"metric": r"entry|ledger", "quote": r"0000.{0,3}0043", "value": None, "present_ok": True},
  "Q26": {"metric": r"definition", "quote": r"100 def|100 behavio", "value": 100, "tol": 0, "loose": True},
  "Q27": {"metric": r"coverage", "value": 1.0, "tol": 0.001, "rate_any": True},
- "Q28": {"metric": r"separability", "quote": r"fail|null", "value": None, "present_ok": True},
+ "Q28": {"metric": r"separability", "value": None, "every_test": True},
  "Q29": {"metric": r"withdraw", "event_type": "withdrawal", "value": None, "count_headline": True},
  "Q30": {"live_run": "files"},
  "Q31": {"live_run": "symlinks"},
- "Q32": {"metric": r"signed|signature|manifest", "quote": r"sign", "value": None, "present_ok": True},
+ "Q32": {"metric": r"^signed$|^signature$|signer|manifest signature", "scope": r"PRUNED|manifest|prune", "value": None, "present_ok": True, "existence_true": True},
  "Q33": {"live_run": "git_dates"},
- "Q34": {"metric": r"trigger|workflow|ci", "quote": r"on:|push|pull_request", "value": None, "present_ok": True},
+ "Q34": {"metric": r"trigger|^on$|workflow trigger|ci trigger", "value": r"^push$|every push|on push$", "value_is_regex": True, "others_regex": r"branches|main|pull_request"},
  "Q35": {"live_run": "licenses"},
  "Q36": {"live_run": "cite"},
  "Q37": {"live_run": "seats"},
@@ -136,6 +136,26 @@ def decide_q(qid, spec, claims):
         if not vals: return {"state": "unverifiable", "derivation": "no numeric measurement found for untuned behaviours", "claims": [c["id"] for c in cands][:12]}
         if above: return {"state": "contradicted", "derivation": f"{len(above)} measurement(s) at or above threshold: {above[:5]}", "claims": [v[0] for v in above]}
         return {"state": "verified", "derivation": f"{len(vals)} measurement(s), max {max(v[1] for v in vals):.3f} < {spec['threshold_none_above']}", "claims": [v[0] for v in vals][:12]}
+    if spec.get("band_check"):
+        vals = [(c["id"], num(c["value"])) for c in cands if num(c["value"]) is not None and c["stance"] in ("current", "unknown")]
+        inb = [v for v in vals if spec["band"][0] - 0.05 <= v[1] <= spec["band"][1] + 0.05]
+        if not vals: return {"state": "unverifiable", "derivation": "agreement metric named but no numeric value in the ledger (the record may hold none)", "claims": [c["id"] for c in cands][:8]}
+        return {"state": "verified" if inb else "contradicted", "derivation": f"agreement values in ledger {vals[:6]}; within ±0.05 of the README band {spec['band']}: {inb[:4]}", "claims": [v[0] for v in vals][:8]}
+    if spec.get("every_test"):
+        outcomes = [(c["id"], num(c["value"]), c["scope"][:30], c["stance"]) for c in cands if num(c["value"]) is not None]
+        nulls = [c for c in cands if re.search(r"null", c["quote"] + c["scope"] + c["metric"], re.I)]
+        return {"state": "contested", "derivation": f"{len(outcomes)} separability measurements in the ledger, {len(nulls)} mention a null; 'every test failed against a null' requires each measurement to carry a null outcome — the ledger holds measurements without one: {outcomes[:5]}", "claims": [o[0] for o in outcomes][:10]}
+    if spec.get("existence_true"):
+        ex = [c for c in cands if c["kind"] == "existence" or c["kind"] == "value"]
+        pos = [c for c in ex if not re.search(r"\bno\b|none|absent|not |unsigned|missing", str(c["value"]) + c["quote"][:80], re.I)]
+        if not cands: return {"state": "unverifiable", "derivation": "no claim about a manifest signature", "claims": []}
+        return {"state": "verified" if pos else "contradicted", "derivation": f"signature claims: {[(c['id'], c['value']) for c in ex][:6]}; positive: {len(pos)}", "claims": [c["id"] for c in ex][:8]}
+    if spec.get("value_is_regex"):
+        m = [c for c in cands if re.search(spec["value"], str(c["value"]), re.I) and not re.search(spec.get("others_regex", "$^"), str(c["value"]) + c["quote"], re.I)]
+        o = [c for c in cands if re.search(spec.get("others_regex", "$^"), str(c["value"]) + c["quote"], re.I)]
+        if m and not o: return {"state": "verified", "derivation": f"trigger claims match: {[(c['id'], c['value']) for c in m][:4]}", "claims": [c["id"] for c in m][:6]}
+        if o: return {"state": "contradicted", "derivation": f"trigger claims carry a narrower value: {[(c['id'], str(c['value'])[:40]) for c in o][:4]}", "claims": [c["id"] for c in o][:6]}
+        return {"state": "unverifiable", "derivation": "no trigger claim", "claims": []}
     if spec.get("count_headline"):
         w = [c for c in cands if c["stance"] != "superseded"]
         return {"state": "contested" if len(w) != 3 else "verified", "derivation": f"{len(w)} withdrawal events in ledger (README says three headline); headline qualifier needs the starred-block/README linkage at adjudication", "claims": [c["id"] for c in w][:20]}

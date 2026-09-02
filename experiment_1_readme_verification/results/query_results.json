@@ -10,21 +10,21 @@
    "stated"
   ],
   "tier_ok": false,
-  "derivation": "3 matching claim(s) standing; none at the required dimensions {'tier': {'adjudicated', 'panel'}} \u2014 matched at ['stated']"
+  "derivation": "3 matching claim(s) standing; none at the required dimensions {'tier': {'panel', 'adjudicated'}} \u2014 matched at ['stated']"
  },
  "Q02": {
   "state": "verified",
+  "derivation": "5 claim(s) record the event/text as standing",
   "claims": [
    "L160060",
    "L160061",
    "L540050",
+   "L9950230",
    "L9990088"
   ],
   "tiers": [
    "stated"
-  ],
-  "tier_ok": true,
-  "derivation": "4 matching claim(s) standing"
+  ]
  },
  "Q03": {
   "state": "verified",
@@ -410,20 +410,20 @@
  },
  "Q25": {
   "state": "verified",
-  "derivation": "186 claim(s) record the event/text as standing; 1 contested claim(s) also present",
+  "derivation": "185 claim(s) record the event/text as standing; 1 contested claim(s) also present",
   "claims": [
    "L100053",
    "L10039",
    "L10095",
-   "L10810",
    "L10823",
    "L120002",
-   "L120019",
    "L170169",
    "L190131",
    "L190142",
    "L200007",
-   "L210113"
+   "L210113",
+   "L210114",
+   "L210115"
   ],
   "tiers": [
    "panel",
@@ -463,27 +463,19 @@
   "derivation": "5 matching claim(s) standing; 1 struck/superseded, 0 contested; NOTE other values for the same metric/scope: [('L170114', 0.67), ('L520037', 0.9933), ('L90071', 0.0), ('L9930059', 0.0), ('L9930100', 0.741)]"
  },
  "Q28": {
-  "state": "verified",
-  "derivation": "284 claim(s) record the event/text as standing; 3 contested claim(s) also present",
+  "state": "contested",
+  "derivation": "12 separability measurements in the ledger, 2 mention a null; 'every test failed against a null' requires each measurement to carry a null outcome \u2014 the ledger holds measurements without one: [('L10036', 12.0, 'how-to-approach-tradeoffs enga', 'current'), ('L10777', 1.0, 'retranslation integration cens', 'current'), ('L10793', 0.9967, 'matched-granularity random-par', 'current'), ('L120006', 1.0, 'random 4-bucket partition of t', 'current'), ('L120008', 0.9967, 'random 4-bucket partition null', 'current')]",
   "claims": [
-   "L10025",
    "L10036",
-   "L10112",
-   "L10113",
-   "L10308",
-   "L10330",
-   "L10399",
-   "L10411",
-   "L10456",
-   "L10457",
-   "L10474",
-   "L10626"
-  ],
-  "tiers": [
-   "adjudicated",
-   "cove",
-   "human",
-   "stated"
+   "L10777",
+   "L10793",
+   "L120006",
+   "L120008",
+   "L140110",
+   "L180094",
+   "L180095",
+   "L180097",
+   "L9950047"
   ]
  },
  "Q29": {
@@ -523,30 +515,9 @@
   "claims": []
  },
  "Q32": {
-  "state": "verified",
-  "derivation": "394 claim(s) record the event/text as standing; 4 contested claim(s) also present",
-  "claims": [
-   "L10024",
-   "L10059",
-   "L10242",
-   "L10251",
-   "L10252",
-   "L10322",
-   "L10324",
-   "L10376",
-   "L10380",
-   "L10639",
-   "L10704",
-   "L10772"
-  ],
-  "tiers": [
-   "adjudicated",
-   "cove",
-   "filesystem",
-   "git",
-   "human",
-   "stated"
-  ]
+  "state": "unverifiable",
+  "derivation": "no ledger claim matches the metric/scope pattern (translation-coverage gap or the record holds no such value)",
+  "claims": []
  },
  "Q33": {
   "state": "live_run_pending",
@@ -554,29 +525,10 @@
   "claims": []
  },
  "Q34": {
-  "state": "verified",
-  "derivation": "268 claim(s) record the event/text as standing; 2 contested claim(s) also present",
+  "state": "contradicted",
+  "derivation": "trigger claims carry a narrower value: [('L340039', 'push: { branches: [main] }  pull_request')]",
   "claims": [
-   "L100022",
-   "L100023",
-   "L100024",
-   "L100030",
-   "L10057",
-   "L10103",
-   "L10104",
-   "L10209",
-   "L10211",
-   "L10212",
-   "L10213",
-   "L10214"
-  ],
-  "tiers": [
-   "adjudicated",
-   "cove",
-   "human",
-   "panel",
-   "raw",
-   "stated"
+   "L340039"
   ]
  },
  "Q35": {
@@ -963,8 +915,8 @@
   "claims": []
  },
  "V05": {
-  "state": "verified",
-  "derivation": "providers ['Q26', 'Q27', 'Q28', 'Q19', 'Q20'] \u2192 ['verified', 'verified', 'verified', 'verified', 'verified']",
+  "state": "contested",
+  "derivation": "providers ['Q26', 'Q27', 'Q28', 'Q19', 'Q20'] \u2192 ['verified', 'verified', 'contested', 'verified', 'verified']",
   "claims": []
  },
  "V06": {
