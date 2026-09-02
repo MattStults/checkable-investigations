@@ -53,3 +53,4 @@
 {"file": "batch_035_opus", "model": "opus", "brief_version": "0.5", "batch": "batch_035", "claims": 65, "accepted": 65, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T11:32:53", "check_seconds": 0.1}
 {"file": "batch_036_opus", "model": "opus", "brief_version": "0.5", "batch": "batch_036", "claims": 70, "accepted": 67, "rejected": 3, "fail_reasons": {"a signed_by naming the owner or the owner's authorization must be tier human (I-06 / G-05)": 3}, "checked_at": "2026-09-02T11:32:54", "check_seconds": 0.2}
 {"file": "batch_037_opus", "model": "opus", "brief_version": "0.5", "batch": "batch_037", "claims": 71, "accepted": 71, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T11:32:59", "check_seconds": 0.1}
+{"file": "retry_I06_opus", "model": "opus", "brief_version": "0.5", "batch": "batch_036", "claims": 3, "accepted": 3, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T11:33:43", "check_seconds": 0.2}
