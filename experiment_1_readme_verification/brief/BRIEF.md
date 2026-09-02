@@ -1,4 +1,4 @@
-# Translator brief — v0.1 (draft, pre-seed)
+# Translator brief — v0.2 (draft, pre-seed)
 
 You translate spans of a project record into atomic claims. You are one of
 several translators; you see only this brief, the glossary, and the spans
@@ -22,8 +22,8 @@ One JSON object per claim, one per line, in the schema below (identical to
 `checker/SCHEMA.md`). A mechanical checker rejects any claim whose quote is
 not a verbatim substring of the span within its line range, whose rate does
 not re-derive from its numerator and denominator, whose enum fields are
-outside the enum, whose event object lacks any attribute, or whose
-supersession link does not resolve. Rejected claims come back to you with
+outside the enum, whose event object lacks any attribute, or whose refs
+carry a relation outside the enum. Rejected claims come back to you with
 the reason; you fix and resubmit.
 
 ## What is a claim
@@ -44,9 +44,9 @@ One atomic thing the span asserts:
 A span with three numbers yields at least three claims. A span with a
 number given at two tiers ("0.75 raw / 0.70 panel") yields two claims, one
 per tier, each with its own quote. A span that restates a number from an
-earlier entry yields a claim with `supersession.status` set from the span's
-own words and `by` left for the batch coordinator to resolve unless the span
-names the entry.
+earlier entry yields a claim whose `stance` comes from the span's own words
+and whose `refs` carry a `restates` ref with the entry or value named as the
+span names it.
 
 ## Rules
 
@@ -66,11 +66,18 @@ names the entry.
 6. **Scope is the behaviour, spec, universe, or directory the span names.**
    If the span names a class word (tuned, dev, never-consulted), copy it
    into `notes` as `status: <word>` as well.
-7. **Supersession from the span's words only.** `superseded` if the span
-   says a later value replaces this one; `struck` if the span says struck;
-   `contested` if the span records two rulings on one thing or names a
-   conflict; `current` if the span presents the value as standing; `unknown`
-   otherwise.
+7. **Stance from the span's words only.** `stance` is what THIS span says
+   about the value: `superseded` if the span says a later value replaces it;
+   `struck` if the span says struck; `contested` if the span records two
+   rulings on one thing; `current` if the span presents it as standing;
+   `unknown` otherwise. You never know what other spans say, and you must
+   not try to.
+7a. **Refs for anything the span says about another value or event.** When
+   the span refers to something outside itself ("the 71% anchor is STRUCK",
+   "supersedes the 12% registration", "0041 WITHDRAWN", "re-derived by the
+   driver"), add a ref with the relation word and `target_text` = the words
+   the span uses for the target, verbatim. Leave `target_id` null. One ref
+   per reference; a span may carry several.
 8. **Anti-rule**: if the span or the glossary marks this value do-not-cite,
    copy the marking text into `anti_rule`.
 9. **Events**: `actor` is the set of parties the span names by role (owner,
@@ -84,8 +91,9 @@ names the entry.
    style sentence, copied.
 10. **Never merge**: two values with the same number at different attempts,
     tiers, or universes are two claims.
-11. **Never resolve**: if the span contradicts another span you translated,
-    translate both and mark each `contested` with `by` pointing at the other.
+11. **Never resolve**: if a span records two rulings on one thing, translate
+    both as separate claims, each with stance `contested` and a ref
+    `contradicts` naming the other in the span's own words.
 
 ## Provenance
 
@@ -96,3 +104,5 @@ batch}` exactly as given in your batch header.
 
 - v0.1 (2026-09-02): skeleton written before seeding; not yet used by any
   translator.
+- v0.2 (2026-09-02): stance + refs replace the single supersession link
+  (design change D-01, see results/intervention_log.md).

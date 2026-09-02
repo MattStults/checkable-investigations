@@ -23,8 +23,10 @@ Rules (ledger mode):
    (type, timestamp, ordinal for ledger/commit-shaped events, actor set,
    model tier, session, context origin, links, finding, erratum, recurrence,
    caught_by, asserted_transfer).
-5. **Supersession links resolve.** `supersession.by` names an existing claim
-   id, never self; statuses superseded/struck/contested require a `by`.
+5. **Stance and refs.** `stance` is in its enum; every ref has a relation
+   from the closed set and a non-empty verbatim `target_text`; a non-null
+   `target_id` names an existing claim, never self. `resolve_links.py` fills
+   `target_id` by logged text matching; translators never do.
 6. **Provenance.** Every claim names the translator model, brief version,
    glossary version, and batch.
 7. Duplicate ids fail; duplicate content (same source, quote, metric, value)
@@ -35,7 +37,8 @@ commit][, lines]}`) applies rule 1 only. It is used in step 7 to re-verify
 the baseline arm's citations with the same machinery, so both arms report a
 machine-checkable fraction from one checker.
 
-`selftest/claims.jsonl` holds 8 fixture claims (2 valid, 6 each violating one
+`selftest/resolve_log.jsonl` shows the resolver's basis for its one fixture
+ref. `selftest/claims.jsonl` holds 8 fixture claims (2 valid, 6 each violating one
 rule); `selftest/citations.jsonl` holds one good and one bad citation.
 Expected: 2 pass / 6 fail and 1 pass / 1 fail. `selftest/expected_output.json`
 is the checker's JSON for the fixture at commit time.

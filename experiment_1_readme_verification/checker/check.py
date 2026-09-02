@@ -21,14 +21,15 @@ THRESH = {"in_sample", "label_free", "LOBO", "oracle", "training_folds", "n/a", 
 UNIV = {"published", "true", "n/a", "unstated"}
 REGION = {"starred_block", "archive_block", "body", "n/a"}
 SUP = {"current", "superseded", "struck", "contested", "unknown"}
+RELS = {"supersedes", "restates", "flags_unsourced", "strikes", "withdraws", "contradicts", "re_derives", "amends", "quarantines"}
 KINDS = {"value", "rate", "event", "existence"}
-ETYPES = {"cycle_close", "iteration_close", "adversarial_review", "prediction_freeze", "measurement",
+ETYPES = {"annotation", "cycle_close", "iteration_close", "adversarial_review", "prediction_freeze", "measurement",
           "ledger_entry", "erratum", "withdrawal", "seat_dispatch", "certification_run", "registration",
           "commit", "prune", "redaction", "engine_failure", "cove", "ruling", "hunk"}
 ACTORS = {"owner", "driver", "seat", "panel", "reviewer", "script", "unstated"}
 REQ = ["id", "kind", "source", "quote", "metric", "value", "numerator", "denominator", "tier", "venue",
        "snapshot", "population", "scope", "threshold_rule", "universe", "provenance_region", "anti_rule",
-       "supersession", "event", "translator", "notes"]
+       "stance", "refs", "event", "translator", "notes"]
 EREQ = ["type", "ts", "ordinal", "actor", "model_tier", "session", "context_origin", "links", "finding",
         "kind", "erratum", "recurrence_of", "caught_by", "asserted_transfer"]
 
@@ -109,18 +110,21 @@ def check_claim(c, repo, pin, ids):
     if c["kind"] == "rate":
         ok, why = check_rate(c)
         (notes if ok else fails).append(f"rate: {why}")
-    sup = c["supersession"]
-    if not isinstance(sup, dict) or sup.get("status") not in SUP:
-        fails.append("supersession.status not in enum")
+    if c["stance"] not in SUP:
+        fails.append("stance not in enum")
+    if not isinstance(c["refs"], list):
+        fails.append("refs must be a list")
     else:
-        by = sup.get("by")
-        if sup["status"] in ("superseded", "struck", "contested") and not by:
-            fails.append(f"supersession.status={sup['status']} requires 'by'")
-        if by is not None:
-            if by not in ids:
-                fails.append(f"supersession.by {by} does not resolve to a claim id")
-            elif by == c["id"]:
-                fails.append("supersession.by is self")
+        for r in c["refs"]:
+            if not isinstance(r, dict) or r.get("rel") not in RELS or not isinstance(r.get("target_text"), str) or not r["target_text"].strip():
+                fails.append("each ref needs rel (enum) and non-empty target_text")
+                continue
+            tid = r.get("target_id")
+            if tid is not None:
+                if tid not in ids:
+                    fails.append(f"ref target_id {tid} does not resolve")
+                elif tid == c["id"]:
+                    fails.append("ref target_id is self")
     ev = c["event"]
     if c["kind"] == "event":
         if not isinstance(ev, dict):

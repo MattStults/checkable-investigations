@@ -26,8 +26,16 @@ threshold_rule     one of: in_sample label_free LOBO oracle training_folds n/a u
 universe           one of: published true n/a unstated
 provenance_region  one of: starred_block archive_block body n/a
 anti_rule          text of any do-not-cite marking in the record for this value, or null
-supersession       {"status": "current"|"superseded"|"struck"|"contested"|"unknown",
-                    "by": claim id or null}
+stance             the SPAN'S OWN stance toward the value, one of:
+                   "current" | "superseded" | "struck" | "contested" | "unknown"
+                   (never a judgment about other spans; see refs)
+refs               list, possibly empty, of {"rel": one of
+                     supersedes restates flags_unsourced strikes withdraws
+                     contradicts re_derives amends quarantines,
+                    "target_text": the words the span uses to name the thing
+                     it refers to, copied verbatim,
+                    "target_id": null (filled by checker/resolve_links.py, never
+                     by the translator)}
 event              null, or for kind == "event":
                    {"type": one of the event types below,
                     "ts": "YYYY-MM-DD" or "unstated",
@@ -47,10 +55,20 @@ translator         {"model": string, "brief_version": string, "glossary_version"
 notes              free text (may be empty)
 ```
 
-Event types: cycle_close, iteration_close, adversarial_review, prediction_freeze,
+Event types: annotation (a span that speaks about another value's standing), cycle_close, iteration_close, adversarial_review, prediction_freeze,
 measurement, ledger_entry, erratum, withdrawal, seat_dispatch, certification_run,
 registration, commit, prune, redaction, engine_failure, cove, ruling, hunk.
 
 Rules the checker enforces are listed in `README.md`. A claim that fails any
 rule is rejected as a whole and returned for retranslation; the checker never
 edits a claim.
+
+## Value status is derived, not translated
+
+A value's overall standing (asserted-current, flagged-unsourced, struck,
+superseded, contested, restated) is computed at query time from the `refs`
+edges pointing at it. Translators record only what their span says; the
+graph carries the ambiguity. `checker/resolve_links.py` fills `target_id`
+by matching `target_text` against claim quotes and values and logs every
+match with its basis; the checker verifies that every non-null `target_id`
+resolves and is not self.
