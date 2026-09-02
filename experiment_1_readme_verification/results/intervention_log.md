@@ -202,7 +202,9 @@ driver/stated). Checker rule: a claim quoting `signed_by` whose quote
 names Matt/owner must be tier human (I-06). Affected accepted claims
 re-split and retranslated.
 
-Recurrence: (tracked)
+Recurrence: batch_039 (dispatched before G-05 was written) — 1 hit,
+caught by the checker rule; retranslated. Not a post-fix recurrence: the
+translator had not seen G-05.
 
 ### Observations not (yet) interventions
 
