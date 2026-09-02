@@ -50,7 +50,11 @@ event              null, or for kind == "event":
                     "erratum": {"n": integer or null, "class": string} or null,
                     "recurrence_of": string or null,
                     "caught_by": {"set": list, "inferred": bool} or null,
-                    "asserted_transfer": string or null}
+                    "asserted_transfer": string or null,
+                    "inputs": list of strings — for seat_dispatch events, the materials
+                     the span says the seat received or was denied ("packet only",
+                     "never shown seat verdicts"), copied verbatim; [] when the
+                     span names none (D-09)}
 translator         {"model": string, "brief_version": string, "glossary_version": string, "batch": string}
 notes              free text (may be empty)
 ```
@@ -72,3 +76,14 @@ graph carries the ambiguity. `checker/resolve_links.py` fills `target_id`
 by matching `target_text` against claim quotes and values and logs every
 match with its basis; the checker verifies that every non-null `target_id`
 resolves and is not self.
+
+## Absence by search (D-09)
+
+A span can state absence (kind existence, value false). Absence over a whole
+artifact that no span states ("no signature anywhere in PRUNED.md") is not a
+translator's claim: it is produced by the query step as a claim with
+`kind: "existence"`, `value: false`, `tier: "live_run"`, and a `search`
+object `{"pattern": regex, "over": path[:a-b]}` whose patterns are declared
+in the inventory item that needs them. The checker re-derives such a claim
+by running the search and requiring zero matches; the quote is the first
+line of the searched range.

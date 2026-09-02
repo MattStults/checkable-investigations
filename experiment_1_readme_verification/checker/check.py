@@ -99,6 +99,16 @@ def check_claim(c, repo, pin, ids):
         fails.append("id must be L+5 digits")
     if c["kind"] not in KINDS:
         fails.append(f"kind {c['kind']!r} not in {sorted(KINDS)}")
+    if c.get("search"):
+        src_ = c["source"]; commit_ = pin if src_["commit"] == "pin" else src_["commit"]
+        text_ = blob(repo, commit_, src_["path"]) or ""
+        m_ = re.match(r"^(\d+)-(\d+)$", str(src_["lines"]))
+        rng_ = "\n".join(text_.split("\n")[int(m_.group(1)) - 1:int(m_.group(2))]) if m_ else text_
+        hits_ = re.findall(c["search"]["pattern"], rng_, re.I | re.M)
+        if c.get("value") is False and hits_:
+            fails.append(f"absence claim: pattern {c['search']['pattern']!r} matches {len(hits_)} time(s) in the cited range")
+        else:
+            notes.append(f"absence re-derived: pattern {c['search']['pattern']!r} → {len(hits_)} match(es)")
     ok, why = check_quote(repo, pin, c["source"], c["quote"])
     (notes if ok else fails).append(f"quote: {why}")
     if c["tier"] not in TIERS:
@@ -168,6 +178,8 @@ def check_claim(c, repo, pin, ids):
                         fails.append(f"erratum.n={nn} does not appear as an erratum number within the cited source lines (I-01)")
                 if ev["caught_by"] is not None and (not isinstance(ev["caught_by"], dict) or "set" not in ev["caught_by"] or "inferred" not in ev["caught_by"]):
                     fails.append("event.caught_by must be null or {set, inferred}")
+                if ev["type"] == "seat_dispatch" and not isinstance(ev.get("inputs"), list):
+                    fails.append("seat_dispatch events must carry event.inputs as a list (D-09; [] when the span names none)")
                 p_ = c["source"]["path"]
                 ordered_source = (p_.endswith("ITERATION_NOTES.md") and not str(c["source"]["lines"]).startswith("1-")) or p_.startswith("GENERATED:")
                 if ordered_source and ev["ordinal"] is None:

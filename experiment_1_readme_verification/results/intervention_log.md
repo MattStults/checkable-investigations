@@ -106,6 +106,21 @@ byte-identical with a different commit). Only spans whose text differs are
 translated. 306 pre-redaction spans → 89 differing; 22 batches → 8.
 Old batch files kept under ledger/batches/pre_d08/.
 
+### D-09 — 2026-09-02 — seat inputs dropped between inventory and schema; scanned absence
+
+Caught by: the owner's question about H04 and Q32 after the interim arm
+comparison. (a) The inventory declares inputs(d) for seat dispatches; the
+D-01 schema omitted the field and the brief never asked for it, so the 21
+seat_dispatch events in the ledger carry none and H04 was unverifiable.
+Artifact: event.inputs (required list on seat_dispatch, [] allowed),
+checker rule, brief v0.7 rule 34; targeted retranslation of the current-
+file spans carrying dispatch-input vocabulary (mechanical regex selection,
+ledger/batches/_d09_pending.json), pre-redaction spans pick it up in their
+normal batches. (b) The schema states absence only when a span states it;
+absence over a whole artifact (Q32) is now a query-step claim with a
+declared search that the checker re-derives (SCHEMA.md 'Absence by
+search'); translators never produce it.
+
 ## Interventions
 
 ### I-01 — 2026-09-02 — erratum number taken from a count

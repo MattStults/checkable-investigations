@@ -1,4 +1,4 @@
-# Translator brief — v0.6
+# Translator brief — v0.7
 
 You translate spans of a project record into atomic claims. You are one of
 several translators; you see only this brief, the glossary, and the spans
@@ -181,6 +181,16 @@ span names it.
 33. **One-line spans** that are a single JSON leaf are still one claim;
     `scope` is the node id or key; do not invent a behaviour name.
 
+## Seat inputs (D-09)
+
+34. **Every `seat_dispatch` event carries `event.inputs`**: the list of
+    materials the span says the seat received or was denied, copied verbatim
+    ("only the packet prompt string plus the recorded content-free tool
+    fence", "never shown seat verdicts, panel citations, or queue
+    membership", "given ONLY the behavior definition and each node's
+    ESTABLISHES + SOURCE TEXT"). Write `[]` when the span names none. Never
+    infer what a seat saw from what it produced.
+
 ## Provenance
 
 Every claim carries `translator: {model, brief_version, glossary_version,
@@ -200,5 +210,7 @@ batch}` exactly as given in your batch header.
   `forbids_citation` and event type `trigger` (D-04).
 - v0.6 (2026-09-02): rule 18 — sub-events of a commit inherit its ordinal
   and ts (I-07).
+- v0.7 (2026-09-02): rule 34 — seat_dispatch events carry inputs (D-09; the
+  inventory declared inputs(d) for H04 and the schema had dropped it).
 - v0.5 (2026-09-02): rules 31-33 after the pilot; JSON spans re-cut by
   brace depth with window context (D-05).
