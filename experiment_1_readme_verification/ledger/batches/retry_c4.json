@@ -1,0 +1,471 @@
+{
+ "header": {
+  "batch": "retry_c4",
+  "source_class": "arc1_docs_preredaction",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 3,
+  "first_span": "S01886",
+  "last_span": "S01888",
+  "retranslation_of": "reselect.py over current ledger state",
+  "superseded_claims": [
+   {
+    "span": "S00017",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L10291",
+     "L10292",
+     "L10293",
+     "L10294",
+     "L10295",
+     "L10296",
+     "L10297",
+     "L10298",
+     "L10299",
+     "L10300",
+     "L10301"
+    ]
+   },
+   {
+    "span": "S00035",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L10641",
+     "L10642",
+     "L10643",
+     "L10644",
+     "L10645",
+     "L10646",
+     "L10647",
+     "L10648",
+     "L10649",
+     "L10650",
+     "L10651",
+     "L10652",
+     "L10653",
+     "L10654",
+     "L10655",
+     "L10656",
+     "L10657",
+     "L10658",
+     "L10659",
+     "L10660"
+    ]
+   },
+   {
+    "span": "S00055",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9980109",
+     "L9980110",
+     "L9980111",
+     "L9980112",
+     "L9980113",
+     "L9980114",
+     "L9980115",
+     "L9980116",
+     "L9980117",
+     "L9980118",
+     "L9980119",
+     "L9980120",
+     "L9980121",
+     "L9980122",
+     "L9980123",
+     "L9980124",
+     "L9980126",
+     "L9980127",
+     "L9980128",
+     "L9980129",
+     "L9980130",
+     "L9980131",
+     "L9980132",
+     "L9980133",
+     "L9980134",
+     "L9980135",
+     "L9980136",
+     "L9980137",
+     "L9980138",
+     "L9980139",
+     "L9980140",
+     "L9980141",
+     "L9980142",
+     "L9980143",
+     "L9980144",
+     "L9980145",
+     "L9980146",
+     "L9980147",
+     "L9980148",
+     "L9980149"
+    ]
+   },
+   {
+    "span": "S00082",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9990062",
+     "L9990063",
+     "L9990064",
+     "L9990065",
+     "L9990066",
+     "L9990067",
+     "L9990068"
+    ]
+   },
+   {
+    "span": "S00099",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9990142",
+     "L9990143",
+     "L9990144",
+     "L9990145",
+     "L9990146",
+     "L9990147",
+     "L9990148",
+     "L9990149"
+    ]
+   },
+   {
+    "span": "S00123",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9980020",
+     "L9980021",
+     "L9980022",
+     "L9980023",
+     "L9980024",
+     "L9980025",
+     "L9980026",
+     "L9980027",
+     "L9980028",
+     "L9980029",
+     "L9980030",
+     "L9980031",
+     "L9980032",
+     "L9980033",
+     "L9980034",
+     "L9980035",
+     "L9980036",
+     "L9980037",
+     "L9980038",
+     "L9980039",
+     "L9980040",
+     "L9980041",
+     "L9980042",
+     "L9980043"
+    ]
+   },
+   {
+    "span": "S00143",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L180137",
+     "L180138",
+     "L180139",
+     "L180140"
+    ]
+   },
+   {
+    "span": "S00185",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L210044",
+     "L210045",
+     "L210046",
+     "L210047",
+     "L210048",
+     "L210049",
+     "L210050"
+    ]
+   },
+   {
+    "span": "S00314",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L230034",
+     "L230035",
+     "L230036",
+     "L230037",
+     "L230038",
+     "L230039",
+     "L230040",
+     "L230041",
+     "L230042",
+     "L230043",
+     "L230044",
+     "L230045",
+     "L230046"
+    ]
+   },
+   {
+    "span": "S00335",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L240140",
+     "L240141",
+     "L240142",
+     "L240143",
+     "L240144",
+     "L240145",
+     "L240146",
+     "L240147",
+     "L240148",
+     "L240149",
+     "L240150",
+     "L240151",
+     "L240152",
+     "L240153",
+     "L240154",
+     "L240155",
+     "L240156",
+     "L240157",
+     "L240158",
+     "L240159",
+     "L240160",
+     "L240161",
+     "L240162",
+     "L240163",
+     "L240164",
+     "L240165",
+     "L240166",
+     "L240167",
+     "L240168",
+     "L240169",
+     "L240170",
+     "L240171",
+     "L240172",
+     "L240173",
+     "L240174",
+     "L240175",
+     "L240176",
+     "L240177",
+     "L240178",
+     "L240179",
+     "L240180",
+     "L240181",
+     "L240182",
+     "L240183",
+     "L240184",
+     "L240185",
+     "L240186",
+     "L240187"
+    ]
+   },
+   {
+    "span": "S00358",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L260027",
+     "L260028",
+     "L260029",
+     "L260030",
+     "L260031",
+     "L260032",
+     "L260033",
+     "L260034",
+     "L260035",
+     "L260036",
+     "L260037",
+     "L260038"
+    ]
+   },
+   {
+    "span": "S00366",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L260136",
+     "L260137",
+     "L260138",
+     "L260139",
+     "L260140",
+     "L260141",
+     "L260142",
+     "L260143",
+     "L260144",
+     "L260145",
+     "L260146",
+     "L260147",
+     "L260148"
+    ]
+   },
+   {
+    "span": "S00418",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L300015",
+     "L300016",
+     "L300017",
+     "L300018",
+     "L300019"
+    ]
+   },
+   {
+    "span": "S00439",
+    "selectors": [
+     "G-04"
+    ],
+    "ids": [
+     "L310081",
+     "L310082",
+     "L310083",
+     "L310084",
+     "L310085"
+    ]
+   }
+  ]
+ },
+ "spans": [
+  {
+   "id": "S00017",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "pin",
+   "lines": "370-390",
+   "text": "## 0015 — QUIESCENCE + RUNBOOK v1, 2026-08-24\nFollowing the machine's own prescription (per the standing direction to\ncontinue following the state machine):\n- STEP-1 triage of attempt-4 misses: 9/9 into standing states, no new\n  mechanism -> the tradeoffs loop is at its QUIESCENT FIXED POINT at\n  inventory k (ITER4_MISS_TRIAGE.json). Escalations deferred per A5\n  (nothing to pay for), required before any future fix.\n- CALCULUS_RUNBOOK v1 rewritten FROM notes 0001-0014 (execution-derived;\n  docs-tests 5/5). Carries: gen-venue truth-injection pattern, refilter-\n  before-routing, escalate-before-choosing, certificates are task-class-\n  local, measure-criteria-before-signing, consumption mechanisms\n  validated individually, the binding V5 coverage rule, same-samples-\n  higher-tier re-measurement, defensible-by-contradiction, quiescent-\n  fixed-point language, constraint-structure-not-menus, tripwires never\n  silently passed.\n- REMAINING MAINTENANCE (queued, named): census/vector extension for\n  party_concern, governs_conditional, machinery_concern, arbitrates_*\n  (the Arc1-e build — design-tier, needed before census-based routing\n  of the r4 module); trace-audit extension over iterations 2-3; the\n  Fable-tier dispute re-resolution (next block).\n",
+   "source_class": "ledger",
+   "context": null
+  },
+  {
+   "id": "S00035",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "pin",
+   "lines": "653-672",
+   "text": "## 0033 — UA ARC (autonomous block): MOVE-1 ADOPTED; TARGET MINT CALIBRATED AND HELD, 2026-08-25\n- R3 enumeration (64 compounds, $0): admissible optimum = governs wall\n  {substance, tone, objectivity}: 18/90 fixes, 0 breaks, 0 new FPs.\n  ADOPTED (UA_REPAIR_MOVE1.json, ua_contract_r2.json). Seal UNTOUCHED.\n- OPERATIVE_TARGET mint calibration (3 Opus seats, thresholds\n  pre-stated): STABILITY 0.98 mean pairwise, ZERO 3-way splits — the\n  most stable layer ever measured here. FP-side separation PASSES\n  (0.20 <= 0.30). TP-side coverage FAILS the gate: 0.67 vs >=0.70 —\n  5/15 UA TPs are relevant via other targets (incl. machinery-class\n  and assistant-output-with-deference-content), so a PURE WALL is\n  inadmissible (would break 5 TPs). HELD FOR SIGN-OFF with the honest\n  numbers: the concept is real and crisp; the consumption design needs\n  a second disjunct (e.g. wall scoped to a sub-channel, or\n  target-OR-machinery composite). The calibration-before-signature\n  discipline did its job: a gate miss surfaced BEFORE any corpus\n  annotation was bought.\n- Tradeoffs cross-check (descriptive): the enum classifies the\n  cross-behaviour recurrers as assistant_output — consistent with the\n  amortization hypothesis.\n",
+   "source_class": "ledger",
+   "context": null
+  },
+  {
+   "id": "S00055",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/CALCULUS_RUNBOOK.md",
+   "commit": "pin",
+   "lines": "1-60",
+   "text": "# CALCULUS RUNBOOK v1 — agent-facing: take a failure batch through the loop\n(2026-08-24. EXECUTION-DERIVED: rewritten from ITERATION_NOTES.md\n0001-0014 after three live iterations on how-to-approach-tradeoffs, per\nthe execution-derived-docs rule. v0's draft-from-design text is in git\nhistory; every change here traces to a notes entry. Test: test_runbook.py.)\n\nPRECONDITIONS (verify, do not assume):\n  P0 clean tree, everything pushed. P1 you have read ERROR_CALCULUS.md\n  (router R1-R5, amendments A1-A13). P2 the batch is a committed list of\n  (behaviour, node) mismatches with their truth provenance. P3 REFILTER\n  the batch against the CURRENT module before routing — a miss list\n  scored against an older contract may contain already-fixed nodes\n  (notes 0012: 3 of 23 were).\n\nSTEP 1 — TRIAGE (deterministic, $0):\n  .venv/bin/python route.py <slug> <node>      # per mismatch -> class, move, trace\n  GENERALIZATION-VENUE slugs (notes 0001): bare route.py KeyErrors —\n  truth lives outside truth_all's fmap. Use the iteration1_triage.py\n  pattern: derived single-module contract + frozen venue truth injected\n  read-only + ctx truth_tier from committed ruling files; keep the\n  census REAL, never ctx-asserted. probe.py takes --contract/--truth\n  for the same venue.\n  Batch rule (A5): group by class; INVENTORY-level moves (I1 builds, I3\n  mints) sequence BEFORE dependent C-D deltas. Emit the routed queue as\n  a committed artifact before any move executes. Census caveat (notes\n  0001): SEPARABLE relative to a thin venue ledger is weak — say the\n  ledger size in the artifact.\n\nSTEP 2 — MOVES, cheapest first, per the A10 capability router:\n  R1 FIRST, ALWAYS, and once more before choosing between candidates:\n    single-wave truth on engaged misses overturned at 3/9 in iteration 1\n    (notes 0003); when delta candidates differ only on single-tier\n    nodes, escalate THOSE nodes before deciding (notes 0004 — the\n    choice becomes a truth fact, not driver judgment). Escalation may be\n    DEFERRED only when every route lands in a suspension (no move to\n    pay for; notes ITER4_MISS_TRIAGE) — then it is REQUIRED before any\n    future fix attempt.\n  VENUE (A10 Q3, notes 0006/0013): the cheapest CERTIFIED tier + seeded\n    ~20% spot-check + tripwire. Certificates are brief-local AND\n    task-class-local: parity measured on consensus items does NOT cover\n    the dispute/boundary class (tripwire fired 4/9 there, notes 0014) —\n    measure the dispute class separately or keep escalation resolution\n    at the trusted tier. A fired tripwire is mechanical: quarantine or\n    re-run, never silently accept.\n  C-D deltas: candidates via decl-search/discriminator analysis; screen\n    EVERY candidate with probe.py (charter + reason-drift + extensional\n    fingerprint vs HYPOTHESIS_LEDGER.jsonl — a known fingerprint is the\n    same route by another name: REFUSE). Class card REQUIRED (family,\n    general form, predicted non-motivating members) before L2.\n  I3 mints: mined-frontier candidates only; blind criteria; ONE coin per\n    inventory version for zero-collider cases (A8). BEFORE the P3\n    signature, MEASURE the criteria (notes 0011-0012): blind\n    multi-seat calibration on ledger-known cases, families hidden,\n    thresholds pre-stated (stability + separation) — the signature\n    ratifies a measured brief, scoped to its measured coverage. A mint's\n    consumption mechanisms are SEPARATE downstream config moves, each\n    validated individually (notes 0013 erratum: never bundle them into\n    one adoption decision or escalate their selection to a human — V4\n    flip content decides mechanically; the wall died this way while the\n    channel lived).",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00082",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "pin",
+   "lines": "30-67",
+   "text": "### Repo artifacts inspected\n\nAll under\n`/Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/`.\n\nPrimary (read directly by the reviewer):\n- `walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/RETRANS_REVIEW_DISPOSITION.md`\n- `.../behavior_pilot/ITERATION_NOTES.md` (notes 0031, 0032, 0033, 0036, 0042)\n- `.../behavior_pilot/HANDOFF_CURRENT.md`\n- `.../behavior_pilot/qc_separability_census.py`\n- `.../behavior_pilot/RETRANS_INTEGRATION_CENSUS.json`\n- `.../behavior_pilot/qc_canonical_values.json`\n- `.../behavior_pilot/qc_emergent_schema.json`\n- `.../behavior_pilot/qc_emergent_ann_A.json`, `qc_emergent_ann_B.json`\n- `.../behavior_pilot/query_class_corpus.json`\n- `semi-formal-experiment/spend.py` (+ its live report over `usage.jsonl`)\n- `git log` at `bf0d4978` and predecessors\n\nSecondary (inventoried by a delegated exploration pass, results folded into the\naddendum):\n- `data/behaviours.json`, `data/panel-coverage.json`, `data/panel-v5/` (`runlog-v5.jsonl`,\n  `behaviour-definitions-v5.json`, `rubric-v5.txt`, `PROVENANCE.md`)\n- `.../behavior_pilot/satisfiability_census.py`, `arm_ab.py`,\n  `satisfiability_census_v19_frozen.json`, `ROUND4_FREEZE_DERIVATION.json`,\n  `atoms_frontier_frozen.json`, `PREREG_panel_equivalence.{md,sha256}`\n- `.../behavior_pilot/panel_run1/` (adjudication + fresh_draw / fresh_draw2 /\n  fresh_draw3 / fresh_draw4 result blocks, `agreed_negative_rulings.json`,\n  `panel_rerulings.json`, `REGISTERED_RESULT.json`, `spotcheck_owner_result.json`)\n- `.../behavior_pilot/ua_truth_visible.json`, `ua_truth_sealed.json`,\n  `ITER1_TRADEOFFS_REPAIR_TRUTH.json`, `ITER2_TRADEOFFS_REPAIR_TRUTH.json`,\n  `GEN_BLOCK1_SCORED.json`, `ITER*_SCORED.json`, `round4_*_scored*.json`,\n  `ROUND4_DEV_TABLE.json`, `ruling_packets/`, `coverage_translated.json`\n- `graph_v2/node_corpus_all.json`, `graph_v2/GRAPH_OVERVIEW.md`\n- prereg drafts: `FRESH_DRAW_PREREG_DRAFT.md`, `FRESH_DRAW_ROUND2_PREREG_DRAFT.md`,\n  `FRESH_DRAW_ROUND3_PREREG_DRAFT.md`, `ROUND4_PREREG.md`,\n  `GENERALIZATION_PREREG_DRAFT.md`, `DEFENSIBILITY_BATCH_PROTOCOL.md`,\n  `CONVERGENCE_CAMPAIGN.md`\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00099",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "pin",
+   "lines": "154-157",
+   "text": "### F12. Expressing a definition in the schema does not show the representation can SEPARATE or MATCH it against the spec.\n**Defect.** L2 tests a property of the *definition side only*. Q-B's operative content is: given a novel behaviour, does the representation of the spec's clauses suffice to determine which clauses bear on it, matching the frontier panel. L2 never touches spec nodes, never touches panel truth, and never produces a relevance judgment. It measures the schema's descriptive elasticity — which the project has already twice measured and twice found to be the wrong signal (the fingerprinting finding, the null finding).\n**Fix.** L2 must be an end-to-end relevance test, not a coverage test. Register: for **≥3** held-out out-of-corpus behaviours, obtain panel relevance truth over a stratified node sample, then score the representation's relevance determination against it under the same metrics as F1. Coverage-without-coinage may remain as a cheap necessary-condition pre-gate, explicitly labelled as such and explicitly non-licensing.\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00123",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "pin",
+   "lines": "304-308",
+   "text": "### F29. Q-B is circular by construction: every behaviour with panel truth is IN the 100-definition corpus, because 11 corpus entries ARE the project's own behaviour set.\n**Defect.** `query_class_corpus.json`'s 100 ids break down as `ms:` 29, `sparrow:` 24, `anthropic-constitution:` 12, `anthropic-aup:` 10, **`adria:` 11**, `hhh:` 9, `llamaguard:` 6. Every behaviour with adjudicated node truth maps into the `adria:` block: helpfulness, third-party-harm, over-under-caution, tradeoffs, user-autonomy, harmlessness-to-user, objectivity, general-welfare, proportionate-risk. panel-v5's two additional defined behaviours (`no-sycophancy`, `undermine-oversight`) are *also* in the corpus and have **zero rulings** in the runlog. The one behaviour outside the 100 — `animal-welfare-impacts` — has citation coverage only (`data/panel-coverage.json`) and **zero** adjudicated relevant/not_relevant rulings anywhere.\n**Why it matters for Q-B.** The 24×105 ontology was open-coded from a corpus that includes the definitions of the very behaviours it is scored against. There is **no out-of-corpus panel truth in this repo at all**. L2 as written does not fix this, because L2 never produces a relevance judgment (F12) — so if L2 passes, Q-B remains untested by construction, not merely under-tested.\n**Fix.** Register explicitly: **Q-B cannot be answered by any experiment that does not create new out-of-corpus panel truth.** Minimum: 3 out-of-corpus behaviours × a uniformly drawn, fully ruled node block (the fresh-draw pattern, ~80 nodes each), with the behaviour definitions selected per F14 and frozen pre-annotation. `no-sycophancy` and `undermine-oversight` are **not** eligible (in-corpus). This is the single largest gap in the licensing plan and it is affordable.\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00143",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/RETRANS_REVIEW_DISPOSITION.md",
+   "commit": "pin",
+   "lines": "69-77",
+   "text": "## Licensing experiments (registered as the path to honest P1/P2, all parked)\n- L1 (for P1): freeze mids induced from HALF the spec's nodes; score\n  separability + reuse of the HELD-OUT half against the frozen mids;\n  report margin over the random-partition null; AND relevance\n  prediction over the representation must beat majority baseline.\n- L2 (for P2): >=10 held-out behaviour definitions NOT drawn from the\n  corpus's documents, including agentic/tool-use/multi-agent classes,\n  expressed in the schema and scored for coverage without new coinage.\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00185",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
+   "commit": "pin",
+   "lines": "219-226",
+   "text": "## 9g. Mechanical terminality verification (2026-08-19)\nverify_terminal.py runs after every instrument change: FIXABLE moves are surfaced\nautomatically (it is also a fix-finder — it rediscovered the caution+objectivity\namendment independently); TERMINAL-DECL is proof-by-exhaustion over the finite\ndeclaration space with inline receipts; TERMINAL-STRUCT fences the node to the\nbridge/vocabulary space, where terminality is receipt-relative (PREMISE GAP\ndiscipline). No terminal claim may appear in a report without its verifier verdict.\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00314",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "pin",
+   "lines": "56-82",
+   "text": "### What this changes, concretely\n1. **Disagreement is OUTPUT, not error.** Every tool-vs-human disagreement resolves to one of:\n   (a) a missing or wrong fact — fixable, and the fix generalises;\n   (b) a demonstrated inconsistency in the human judgment — **this is the product**;\n   (c) **unexplained** — the honest residual.\n2. **The metric is the accounted-for fraction, with (c) as the residual — NOT MCC.** It cannot be\n   fitted: the only way to move it is a fact that survives replay.\n3. **A cause counts only when DEMONSTRATED, not attributed.** “Missing fact X” is established by\n   adding X, re-running, and showing the disagreement resolves while nothing else breaks. This is\n   the correction to the census `side` field, which was assigned by judgment, was block-segregated\n   by run (129/0/0, 58/0/27, 39/41/0), and was demonstrably wrong on H006.\n4. **Oracle feedback may NEVER be a verdict.** Not “no, this is actually relevant.” Only new or\n   updated facts/relationships: change a representation, split a fact, add a statement whose facts\n   are implied by human experience but absent from the document. **This makes invariant 9 hold by\n   construction** — no labelled example can enter, because the channel does not accept one. If a\n   correction cannot be expressed as a fact or relation, *that is itself the finding*.\n5. **Extra-document facts must be marked and toggleable.** `textual` / `assumed` / `world`. A\n   coverage claim resting on world knowledge is a different claim from one grounded in text, and\n   the report must say which.\n6. **No silent verdicts.** Every (clause, behaviour) pair returns: **relevant (graded)** — with an\n   inspectable derivation; **not relevant** — vocabulary covered the territory, nothing fired; or\n   **cannot decide** — naming what is missing. Until (2) and (3) are distinguishable, non-coverage\n   cannot be published, and non-coverage is the headline claim.\n7. **Grading is lexicographic over discrete features, never a fitted score:** match completeness\n   (rung ladder) > derivation directness (own facts > subsumption hops > section closure) >\n   license strength (textual-only > requires assumed > requires world).\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00335",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "pin",
+   "lines": "446-503",
+   "text": "### What this supersedes below (each site is also marked in place)\n\n- **Plan of record**: the \"READ `LADDER_PLAN.md`\" pointer → superseded by\n  ITERATION_LOOP.md / CYCLE_DESIGN.md / the portfolio.\n- **Preferred artifacts**: `annotations_b8.json` + `behavior_atoms_b8.json` →\n  superseded by the headline config above (b8 remains the comparison config in\n  JOIN_INTEGRITY's re-measurement protocol).\n- **\"Nested/held-out threshold selection ... not implemented\"** → superseded:\n  label-free Otsu shipped, then FROZEN (`thresholds_frozen.json`, cycle 4).\n- **Test count** \"1113 tests (2026-08-02)\" → ~1,960 now (README; 1,919 collect\n  under a bare interpreter without the venv).\n- **\"Ship `section@any_atom`\"** → RESOLVED 2026-08-04 by the joint portfolio\n  review (PORTFOLIO_REVIEW.md, addendum ruling 2): THE shipped ranking surface\n  is `relevance.rank` (the PatientIndex-lineage ranking snapshots record) —\n  `section.py`'s election is panel-fitted (declared bias 0.039) and consulting\n  it at the generalization evaluation would thread a fitted constant through\n  the frozen-label-free claim. section.py remains a diagnostic. The old\n  recommendation predates the surface-hygiene analysis and is superseded.\n\n`MODULE_MAP.md` has the matching 2026-08-04 refresh of the module tables.\n\n---\n\n> ## ⛔ READ FIRST — EVERY PREVIOUSLY PUBLISHED NUMBER IN THIS FILE IS WRONG\n>\n> The panel did **not** score a candidate list. `engine/panel/whole_doc.py` put the\n> **entire spec in one prompt as 589 numbered passages** and required a verdict for every\n> one. `build_site_data.py:40 keeps_citation()` then **dropped every passage scoring 0** —\n> **212 / 256 / 436** per behaviour (36% / 43% / 74%). Those passages are gold-negative\n> **and correctly predicted negative by every judge**, so deleting them stripped\n> true-negative credit the judges had earned.\n>\n> | mean over 3 behaviours × 3 pair-golds | published | **TRUE 589** |\n> |---|---:|---:|\n> | tool @0.18 (in-sample) | +0.274 | **+0.320** |\n> | judges (mean of 3) | +0.394 | **+0.555** |\n> | **tool → judge gap** | 0.119 | **0.236** |\n>\n> **The gap was understated by ~2×.** Reconstructed by `panel_universe.py`, join rate\n> **1.000** on all six (behaviour × spec) cells.\n>\n> Four claims repeated throughout this project are ARTIFACTS of that deletion:\n> * **\"MCC is robust to true negatives, so it is safe here.\"** False as applied — the true\n>   negatives had been deleted upstream.\n> * **\"`sol` is degenerate / near chance.\"** It is a *low-threshold* judge:\n>   helpfulness MCC **−0.027 → +0.308**.\n> * **\"over/under-caution is UNUSABLE for a headline.\"** On the true universe it is the\n>   **strongest** behaviour by AUC (0.90). `kimi-k2` MCC is **+0.552**.\n> * **The selection-effect caveat** (`unliftable_frac` 22% / 14% / 56%) described the broken\n>   universe; on the true one it is **2% / 1% / 2%**.\n>\n> **Judges beat the tool 9 of 9 cells** at the judge's own false-positive rate. On\n> helpfulness the judge gets TPR 0.76–0.79 at FPR ≈0.06 where the tool gets **0.13**.\n>\n> Anything below quoting 377/333/153, 863 passages, 0.764/0.780/0.500, +0.274, +0.187, or\n> the over/under refusal is a published-universe number and must be re-derived.\n\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00358",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "pin",
+   "lines": "751-768",
+   "text": "### What the deficit actually is\n| | MCC |\n|---|---:|\n| shipped tool, held-out (LOBO) threshold | +0.206 |\n| shipped tool, oracle threshold (generous) | +0.396 |\n| supervised over the SAME offline features | **+0.591** |\n| judges (mean / best) | +0.555 / +0.654 |\n\nThe whole recoverable gap sits between the unsupervised scorer and a supervised readout of\n**identical** features. That is the **query/scoring mechanism**. Two pieces, both free, both\nalready named in this file:\n\n1. **Nested/held-out threshold selection** — LOBO→oracle is worth **+0.19**, the single\n   largest gap in the project. Costs $0.\n2. **The section channel** — section identity alone supervised is +0.536, while the shipped\n   channel's AUC is 0.522/0.633/0.623 (near chance on helpfulness) at weight 0.45. Worth\n   **+0.16 on top of atoms**, offline.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00366",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "pin",
+   "lines": "886-900",
+   "text": "## THE 9-BEHAVIOUR PANEL — power, NOT a bar\n\n`ai_character_index/data/panel-coverage.json` — **9 behaviours x 2 specs = 18 cells**,\n2,632 openai + 1,682 anthropic citations. Verified: **locator join is 100%** on both sides\n(589 model-spec / 374 constitution universes via `panel_universe.spec_passages`).\n\nBehaviours: animal-welfare-impacts, harmlessness-to-the-user, helpfulness,\nobjectivity-on-contested-questions, avoiding-over-and-under-caution,\nproportionate-risk-mitigation, harm-avoidance-to-third-parties, how-to-approach-tradeoffs,\nuser-autonomy.\n\n**This fixes the binding statistical constraint.** n=3 behaviours gave a behaviour-level MDE of\n0.209 — every \"which behaviours does this help\" claim in this project has been unmeasurable,\nincluding the base-rate story that had to be demoted to a hypothesis. 9 behaviours settles it.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00418",
+   "path": "semi-formal-experiment/MODULE_MAP.md",
+   "commit": "pin",
+   "lines": "179-187",
+   "text": "## 6. One-off scripts that produced the data (history — do not re-run casually)\n\nThese built the clause files and are kept for provenance and re-derivation.\n\n| module | produced |\n|---|---|\n| `segment_modelspec.py`, `modelspec_kinds.py` | `modelspec_clauses.json` (593 clauses, 97.35% coverage) |\n| `classify_modelspec.py`, `extract_modelspec.py` | `modelspec_focus_areas.json` (259 focus areas) |\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00439",
+   "path": "semi-formal-experiment/CYCLE_DESIGN.md",
+   "commit": "pin",
+   "lines": "130-142",
+   "text": "## ⚠️ PRE-BUILT CYCLES (added 2026-08-04 after P1 hit this undocumented)\n\nThe driver assumes OPEN precedes implementation: `_open` captures each\n`files_to_change` sha, and the IMPLEMENT gate refuses when those files are\nbyte-identical to their OPEN shas (\"the fix has not been implemented\"). Every\ncycle through S3 happened to follow that order, so this was never written down.\n\n**It does not always hold.** Work built in an isolated worktree and parked for a\nlater gate window (P1 join-integrity is the first case) arrives *finished and\nalready measured* before its cycle can open. The coordinator creates these\ndeliberately — parallel work needs isolation — so the pattern is expected, not an\naccident, and it needs a documented handling.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  }
+ ]
+}

@@ -1,0 +1,493 @@
+{
+ "header": {
+  "batch": "retry_c2",
+  "source_class": "arc1_docs_preredaction",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 3,
+  "first_span": "S01886",
+  "last_span": "S01888",
+  "retranslation_of": "reselect.py over current ledger state",
+  "superseded_claims": [
+   {
+    "span": "S00011",
+    "selectors": [
+     "G-03"
+    ],
+    "ids": [
+     "L10180",
+     "L10181",
+     "L10182",
+     "L10183",
+     "L10184",
+     "L10185",
+     "L10186",
+     "L10187",
+     "L10188",
+     "L10189",
+     "L10190",
+     "L10191",
+     "L10192",
+     "L10193",
+     "L10194",
+     "L10195",
+     "L10196",
+     "L10197",
+     "L10198",
+     "L10199",
+     "L10200",
+     "L10201",
+     "L10202",
+     "L10203",
+     "L10204",
+     "L10205"
+    ]
+   },
+   {
+    "span": "S00031",
+    "selectors": [
+     "G-03"
+    ],
+    "ids": [
+     "L10601",
+     "L10602",
+     "L10603",
+     "L10604",
+     "L10605",
+     "L10606",
+     "L10607",
+     "L10608",
+     "L10609",
+     "L10610"
+    ]
+   },
+   {
+    "span": "S00040",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L10732",
+     "L10733",
+     "L10734",
+     "L10735",
+     "L10736",
+     "L10737",
+     "L10738",
+     "L10739",
+     "L10740",
+     "L10741",
+     "L10742",
+     "L10743",
+     "L10744",
+     "L10745",
+     "L10746",
+     "L10747",
+     "L10748",
+     "L10749",
+     "L10750",
+     "L10751"
+    ]
+   },
+   {
+    "span": "S00070",
+    "selectors": [
+     "G-04"
+    ],
+    "ids": [
+     "L130109",
+     "L130110",
+     "L130111",
+     "L130112",
+     "L130113",
+     "L130114",
+     "L130115",
+     "L130116",
+     "L130117",
+     "L130118",
+     "L130119",
+     "L130120",
+     "L130121",
+     "L130122",
+     "L130123",
+     "L130124",
+     "L130125",
+     "L130126",
+     "L130127",
+     "L130128",
+     "L130129",
+     "L130130",
+     "L130131",
+     "L130132",
+     "L130133",
+     "L130134",
+     "L130135",
+     "L130136",
+     "L130137",
+     "L130138",
+     "L130139",
+     "L130140",
+     "L130141",
+     "L130142",
+     "L130143",
+     "L130144",
+     "L130145",
+     "L130146",
+     "L130147",
+     "L130148",
+     "L130149",
+     "L130150",
+     "L130151",
+     "L130152",
+     "L130153",
+     "L130154",
+     "L130155",
+     "L130156",
+     "L130157"
+    ]
+   },
+   {
+    "span": "S00097",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9990122",
+     "L9990123",
+     "L9990124",
+     "L9990125",
+     "L9990126",
+     "L9990127",
+     "L9990128",
+     "L9990129",
+     "L9990130",
+     "L9990131",
+     "L9990132"
+    ]
+   },
+   {
+    "span": "S00117",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9990169",
+     "L9990170",
+     "L9990171",
+     "L9990172",
+     "L9990173",
+     "L9990174",
+     "L9990175",
+     "L9990176",
+     "L9990177",
+     "L9990178",
+     "L9990179",
+     "L9990180",
+     "L9990181",
+     "L9990182",
+     "L9990183",
+     "L9990184",
+     "L9990185",
+     "L9990186",
+     "L9990187",
+     "L9990188",
+     "L9990189",
+     "L9990190",
+     "L9990191",
+     "L9990192",
+     "L9990193",
+     "L9990194",
+     "L9990195",
+     "L9990196",
+     "L9990197",
+     "L9990198",
+     "L9990199",
+     "L9990200",
+     "L9990201",
+     "L9990202",
+     "L9990203",
+     "L9990204",
+     "L9990205",
+     "L9990206",
+     "L9990207",
+     "L9990208",
+     "L9990209",
+     "L9990210",
+     "L9990211",
+     "L9990212",
+     "L9990213",
+     "L9990214",
+     "L9990215"
+    ]
+   },
+   {
+    "span": "S00141",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L180124",
+     "L180125",
+     "L180126",
+     "L180127",
+     "L180128",
+     "L180129",
+     "L180130",
+     "L180131",
+     "L180132",
+     "L180133"
+    ]
+   },
+   {
+    "span": "S00158",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L190085",
+     "L190086",
+     "L190087",
+     "L190088",
+     "L190089",
+     "L190090",
+     "L190091",
+     "L190092"
+    ]
+   },
+   {
+    "span": "S00235",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L60148",
+     "L60149",
+     "L60150"
+    ]
+   },
+   {
+    "span": "S00324",
+    "selectors": [
+     "G-04"
+    ],
+    "ids": [
+     "L230179",
+     "L230180",
+     "L230181",
+     "L230182",
+     "L230183",
+     "L230184",
+     "L230185",
+     "L230186"
+    ]
+   },
+   {
+    "span": "S00341",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L250027",
+     "L250028",
+     "L250029",
+     "L250030",
+     "L250031",
+     "L250032",
+     "L250033",
+     "L250034"
+    ]
+   },
+   {
+    "span": "S00363",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L260098",
+     "L260099",
+     "L260100",
+     "L260101",
+     "L260102",
+     "L260103",
+     "L260104",
+     "L260105",
+     "L260106",
+     "L260107",
+     "L260108",
+     "L260109",
+     "L260110",
+     "L260111",
+     "L260112",
+     "L260113",
+     "L260114"
+    ]
+   },
+   {
+    "span": "S00396",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L280161",
+     "L280162",
+     "L280163",
+     "L280164",
+     "L280165",
+     "L280166",
+     "L280167",
+     "L280168",
+     "L280169",
+     "L280170",
+     "L280171"
+    ]
+   },
+   {
+    "span": "S00427",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L300121",
+     "L300122",
+     "L300123",
+     "L300124",
+     "L300125",
+     "L300126",
+     "L300127",
+     "L300128",
+     "L300129",
+     "L300130",
+     "L300131"
+    ]
+   }
+  ]
+ },
+ "spans": [
+  {
+   "id": "S00011",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "pin",
+   "lines": "236-265",
+   "text": "## 0009 — ITERATION 2, STEP 4 REALIZATION: STOP CONDITION FIRED, 2026-08-24\nAttempt-3 (all-Fable venue as registered): engaged precision 0.40 — P1\n(>=0.60) FAILS, registered consequence = REVERT the batch move. NOT\nEXECUTED: halt-and-surface, because the move-level evidence contradicts\nthe estimator, and resolving that conflict binds process (Q5, Matt).\n- THE ESTIMATOR CARRIED NO SIGNAL ABOUT THE MOVE: the seeded draw\n  sampled 0/16 of the move's gained nodes and the move lost 0 — engaged\n  precision was measured on a sample causally disconnected from the\n  delta it gates. MY REGISTRATION ERROR: the pre-ruling addendum caught\n  exactly this for P3 (added the machinery probe) and did not extend the\n  same coverage requirement to P1/P2. RUNBOOK RULE (bind it): a V5\n  primary metric MUST have measured coverage of the move's extension\n  (gains/losses sampled, or scored on a registered probe), else the\n  registration is invalid-by-construction.\n- MOVE-LEVEL EVIDENCE, all committed: machinery probe 5/5 relevant\n  (blind Fable, the card's thesis in the seat's own grounds); spot-check\n  3/3; charter +3/0 on panel-tier truth; V2 clean.\n- SEAT NOISE IS REAL AND MEASURED: this wave seat agrees 4/7 with\n  standing ledger truth on the draw's known nodes, contradicting TWO\n  panel-tier rulings (l3877_3953_n002, l3239_3382_n005). Baseline\n  single-wave-vs-panel is 0.846. Corrected estimator (panel-tier truth\n  substituted): 0.50 — still sub-line; n=20 draws carry ±~0.2; attempts\n  2 (0.75) and 3 (0.40) are compatible with pool precision ~0.55-0.60.\n  V5's own text warned it is 'a measurement, not a proof'.\n- OPTIONS SURFACED FOR RULING (the owner's ruling required): (a) execute the\n  registered revert; (b) rule the P1 realization void-for-coverage and\n  re-measure under a coverage-valid registration; (c) accept the move on\n  probe+charter evidence recording attempt-3 as noise-dominated. No\n  branch taken in-repo pending the ruling.\n",
+   "source_class": "ledger",
+   "context": null
+  },
+  {
+   "id": "S00031",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "pin",
+   "lines": "593-610",
+   "text": "## 0029 — DIMENSION-ACCRETION QUESTION (Matt) + THE TRACKED METRIC, 2026-08-24\nMatt's architectural critique, recorded at full strength: ~1 new\ndimension per behaviour extrapolates to an untranslatable schema — the\na-priori-translation goal dies of dimension obesity; the alternative is\ndirect frontier relevance with translation kept for audit only.\nCOMPETING HYPOTHESIS (falsifiable): mints are completing the FIXED\nargument structure of a norm (ARB = internal structure; machinery =\nstanding; locus = operative object; joining action/actor/beneficiary/\nquality/condition/force) — slot inventory bounded ~10-12, after which\nbehaviours consume existing slots with new VALUES (cheap).\nTRACKED METRIC: slots-vs-values per behaviour. Current curve: tradeoffs\n+2 slots (ARB, machinery); UA +1 projected (locus); PREDICTIONS ALREADY\nIN PLACE: proportionate-risk = 0 slots (pure ARB reuse, frozen);\ngeneral-welfare = 0 slots (protects VALUE growth: animal/AI welfare).\nKILL-CRITERION (registered): if behaviours 3 AND 4 each require a\ngenuinely new SLOT (not values), the frame hypothesis is dead — stop\nminting, re-architect around direct frontier relevance.\n",
+   "source_class": "ledger",
+   "context": null
+  },
+  {
+   "id": "S00040",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "pin",
+   "lines": "757-782",
+   "text": "## 0038 — QUERY-CLASS ARC CLOSED: THE MEASURED BOUND, 2026-08-25\nMatt's arc (open coding -> place-blind schema -> annotate -> separate)\ncompleted end-to-end, all Opus, zero frontier seats:\n- DISCOVERY WORKED where my closed vocabulary could not: 24 emergent\n  dimensions, 9 with no counterpart in my ten places (evaluation_unit\n  and subject_matter_class the load-bearing two, dual-coder evidenced;\n  our instrument is measurably utterance-locked).\n- The vacuousness trap was caught (free-text values = fingerprints,\n  zero reuse) and fixed by canonicalization (105 values, 46% merger,\n  seat-independent 115/115).\n- FINAL: separability 94/100 both seats identically; all 6 collisions\n  are cross-source SAME-CONSTRUCT duplicates (the census doubling as\n  corpus dedup); zero different-construct collisions. THE BOUND:\n  24 dimensions x 105 values addresses the sampled character-spec\n  query class completely, ~1.2 handles/definition.\n- Errata this arc: designer-vocabulary smuggling caught THREE times\n  (Matt twice, the vacuousness check once) — the standing rule: schema\n  derivation, annotation, and canonicalization must each be blind to\n  the layer above; comparison to prior vocabularies happens only at\n  analysis, as a finding.\nSTANDING FOR SIGN-OFF: the new-dimension candidates' implications for\nthe INSTRUMENT (evaluation_unit especially — trajectory-class\nbehaviours are outside the node-relevance design entirely); the UA mint\ndecision; the prop-risk test. Frontier seats spent this autonomous\ndrive: 0.\n",
+   "source_class": "ledger",
+   "context": null
+  },
+  {
+   "id": "S00070",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_PREREG.md",
+   "commit": "pin",
+   "lines": "149-208",
+   "text": "## session before taking effect)\nE1 — CANARY ATTEMPT 1 VOIDED (protocol event; option A directed by the project owner).\n   The helpfulness canary's 120 seat rulings (raw file\n   round4_helpfulness_rulings_raw.json, preserved) are VOID as a\n   certification measurement: seat material diverged from the format that\n   built the truth ledger. Rounds 2-3 packets carried the node's\n   ESTABLISHES claim block + SOURCE TEXT; the canary packets (built via\n   ruling_packets.load_spans) trimmed to SOURCE TEXT only. The registered\n   predictions are ledger-based, so the comparison was apples-to-oranges;\n   the F1/F2 firings (raw cells 0.625/0.625 vs 0.9336/0.7849) are\n   measurement artifacts of the divergence, not adjudicated instrument\n   failures. The void is TOTAL (all 80 rows, not selective) and the draw,\n   seeds, and exclusions are unchanged. Also recorded: one replacement\n   dispatch was voided for FABRICATED SEAT MATERIAL (the orchestration seat\n   authored a passage from memory instead of the committed packet; caught\n   and discarded immediately — round4_helpfulness_replacements.json carries\n   the disclosure); and 4 malformed replies concentrated on 2\n   ultra-short-fragment packets (document-completion mode), fixed by the\n   uniform content-free anti-completion fence now pinned in E3.\nE2 — PAIRED-FORMAT PILOT (gate for the canary re-run; runs BEFORE it).\n   20 already-ruled helpfulness nodes (truth known; permanently excluded\n   from round-4 draws — zero fresh-draw burn), seed 20260827, 10\n   v19-engaged / 10 not; each dispatched in BOTH formats (T = trimmed,\n   C = ESTABLISHES + SOURCE TEXT) to fresh lean Fable seats — 40 seats.\n   PRE-DECLARED GATE: proceed to the canary re-run only if C-format\n   ledger-agreement >= 0.80 AND (C - T) agreement difference >= 0.10.\n   Any other outcome STOPS the lane for design review (if T is also high,\n   the canary collapse is real distribution shift; if C is also low, the\n   lean seat diverges from the ledger venue). Builder + validator:\n   round4_pilot.py (byte-equal ESTABLISHES extraction from\n   node_corpus_all.json; identical SOURCE TEXT across each T/C pair;\n   uniform fence).\nE3 — SEAT-MATERIAL FORMAT PINNED (the gap the canary exposed: the prereg\n   never specified packet anatomy). Round-4 ruling packets are: the ruling\n   question + behaviour definition + PASSAGE consisting of the node's\n   ESTABLISHES claim block (byte-extracted from node_corpus_all.json;\n   nodes absent from the canonical corpus use their graph-build claim\n   text, disclosed per node) followed by the SOURCE TEXT span with its\n   narrowing line, followed by the uniform anti-completion fence (exact\n   text in round4_pilot.py FENCE). A committed validator must pass before\n   any dispatch; its output commits with the packets. Rejected\n   alternative, by name: scoring the T-format canary as-is (option B) —\n   it indicts the entire claim-aware truth ledger and proves too much.\nE4 — DIAGNOSIS CLOSED; LINEAGE VENUE RECOVERED AND REPLICATED (2026-08-24).\n   The pilot gate FAILED (T 0.75 / C 0.70 — format hypothesis refuted), and\n   the timeframe search the project owner directed recovered the rounds-1-3 seat\n   instruction verbatim from the round-3 dispatch transcripts (it had\n   never been committed — a rulings-go-in-the-repo violation, cured by\n   LINEAGE_SEAT_INSTRUCTION.md). REPLICATION: one wave seat under the\n   recovered instruction scored 20/20 against the ledger on the pilot\n   nodes. Canary attempt 1's divergence is therefore fully attributed:\n   (a) an ad-hoc, stricter ruling question (the recovered criterion —\n   \"governs, permits, forbids, scopes, or directly conditions\" — is the\n   judge the ledger speaks); (b) mis-derived registered predictions: the\n   freeze script implemented \"over all-truth\" literally (0.9336) where\n   every actual fresh draw under the SAME judge landed 0.57-0.78 and prior\n   rounds registered lineage bands (round-2 passed at 0.78 in band\n   0.71-0.87) — the in-sample rate ignores the known generalization gap.\n   RE-REGISTration FOR THE CANARY RE-RUN (requires the project owner's signature):\n   - Seat: LINEAGE_SEAT_INSTRUCTION.md verbatim, wave form (one blind",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00097",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "pin",
+   "lines": "145-149",
+   "text": "### F10. \"Coverage without new coinage\" is satisfiable by construction — the schema contains named coverage sinks.\n**Defect.** `bare_value_word_left_undefined` has the value `undefined_harmfulness_catch_all`; `no_operational_handle` has `names_a_tension_without_a_deciding_property`. Any novel behaviour definition can be assigned to one of these with zero coinage and zero information. Separately, `agentic_action_footprint` has exactly one value (`irreversible_side_effects_and_proportionality`) and `integrity_of_human_oversight` exactly one (`evasion_and_evidence_tampering`) — so *every* agentic/tool-use/multi-agent held-out definition is guaranteed \"covered\" by a single pre-existing value. L2's pass condition is met before the experiment starts, for exactly the classes L2 was designed to stress.\n**Why it matters for Q-B.** Q-B asks whether novel behaviours fall in the *span* of the corpus. Landing every novel agentic behaviour on one value is evidence that they do **not** — the ontology is collapsing them, not spanning them — yet L2 scores that as a pass.\n**Fix.** Register coverage as **discriminative coverage**: an assignment counts only if (a) no component is a catch-all dimension, (b) no component is the sole value of its dimension, (c) the resulting signature is distinct from every other held-out behaviour's signature, and (d) the signature is distinct from that of the most-similar in-corpus definition (nearest neighbour reported explicitly). Report catch-all rate and singleton rate as first-class results, not footnotes.\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00117",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "pin",
+   "lines": "240-272",
+   "text": "## OVERALL VERDICT\n\n**DOES-NOT-LICENSE.**\n\nPassing L1 and L2 exactly as written would **not** answer Q-A or Q-B. The decisive reasons, in order of severity:\n\n1. **L1's relevance clause is pre-satisfied.** 0.72 vs 0.60 (p = 0.0015) and 0.70 vs 0.59 (p = 0.0097) already \"beat the majority baseline.\" The project's own notes 0031 call the identical effect size \"NO field carves behaviour relevance.\" L1 could be marked PASS today, at $0, on the data that demolished 0041. That is a pass condition that cannot fail — erratum #21, fourth recurrence.\n2. **L2 has no null**, in explicit violation of the binding rule adopted in the same document, and its pass condition is met by construction: the schema contains a value literally named `undefined_harmfulness_catch_all`, and the two dimensions L2 exists to stress (`agentic_action_footprint`, `integrity_of_human_oversight`) each hold exactly **one** value fired by exactly **1/100** corpus definitions.\n3. **Neither experiment measures the Q-A construct.** Separability-as-implemented is signature uniqueness — a fingerprinting metric the project has already caught fingerprinting. Coverage-without-coinage is schema elasticity. Neither is \"which clauses bear on which behaviours.\"\n4. **Neither compares against the alternative the campaign must beat** — a frontier model reading the raw clause. On existing evidence that alternative wins, which makes the campaign negative-value regardless of L1/L2.\n\nThese are defects in the *measurements*, not proof the ontology is inadequate — the same distinction the 0041 disposition drew, and it still holds. But on the funding question the burden runs the other way: the designs as registered cannot discharge it.\n\n**Amendments that would convert this to LICENSES-WITH-AMENDMENTS**, in dependency order:\n\n- **A1 (gate, ~$0, run first).** F18: fresh random 60-node draw, two blind seats, α ≥ 0.67 pre-registered floor, all downstream metrics per-seat, pooling prohibited (F3).\n- **A2 (the experiment).** Replace L1 with F17's blind-readout ablation — Arm T / Arm R / seeded Arm N, MCC(R) ≥ MCC(T) − 0.05 and above the 99th null percentile, per behaviour, worst-behaviour headline, panel-internal agreement published as the ceiling (F1, F2, F16, F20–F22).\n- **A3.** Extend the relevance clause to ≥5 behaviours using truth already on disk; inventory partial truth before spending (F8).\n- **A4.** Replace L1's half-split with 5-fold out-of-fold induction so every truth-bearing node is scored, plus both random-node and section-blocked splits reported (F7, F23).\n- **A5.** Contamination audit: 29/100 corpus entries are OpenAI Model Spec; report clean vs contaminated held-out nodes separately, clean subset as headline; state that L1 bounds within-document transfer only (F4).\n- **A6.** Pre-register every L1 parameter — sample frame, seed, seats, blinding, feature set, readout — and exclude the problem-stratified 39 from the headline (F5).\n- **A7.** Null threshold: ≥1000 seeds, matched on family-usage frequency and per-item handle count, 99th percentile, fail = stop (F6). Dead-dimension audit and catch-all/singleton ceiling reported (F9).\n- **A8.** Rebuild L2 as: n ≥ 30, ≥5 per out-of-space class, verbatim-lifted definitions from sources chosen by a schema-blind seat and hashed pre-annotation, Anthropic constitution and Usage Policy disqualified as already in-corpus (F13, F14).\n- **A9.** L2 scored on **discriminative** coverage (no catch-alls, no singletons, distinct from all other held-out and from the nearest in-corpus definition), against a seeded random-assignment null, with dimension-closure and value-coinage as separate pre-registered numbers (F10, F11, F15).\n- **A10.** L2's licensing clause becomes end-to-end: ≥3 out-of-corpus behaviours get panel truth over a stratified node sample and are scored by A2's protocol. Coverage-without-coinage survives only as an explicitly non-licensing pre-gate (F12).\n- **A11.** Behaviour-shaped pre-screen with logged exclusions; frontier-parity check on every seat before results are read; one-run-per-registration rule (F24, F26, F27).\n- **A12.** Fund only on `A1 pass AND A2 pass AND a 60-node end-to-end scaling pre-flight whose extrapolation to 600 fits budget` (F19). Note the budget context: `spend.py` reports **$17.179 of $25.00 (69%)**, ~$7.8 headroom, with the total flagged as an overstatement.\n\nWithout A1, A2, A9, and A10 at minimum, a PASS on L1+L2 is a repeat of 0041 with a larger n.\n\n---\n---\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00141",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/RETRANS_REVIEW_DISPOSITION.md",
+   "commit": "pin",
+   "lines": "45-61",
+   "text": "## Corrected verdicts (what we can honestly claim)\n- P1 (the ontology + graph inputs/outputs/atoms suffice for complete\n  separation under full retranslation): NOT ESTABLISHED. The measured\n  separability is real but carries no information beyond what a random\n  partition of the vocabulary provides at matched granularity; and the\n  representation does not predict relevance above base rate.\n- P2 (extension to novel behaviours because they fall in the corpus\n  space): NOT ESTABLISHED. Both test behaviours are in-corpus; the\n  corpus under-covers agentic/tool-use/multi-turn; a known behaviour\n  class (trajectory-shaped) is already recorded as outside the design.\n- Preserved verbatim from the reviewer, and endorsed: \"this is a defect\n  in the *measurement*, not proof that the ontology is bad.\" What\n  remains true: two blind seats retranslated 39/39 full spans with the\n  schema and ZERO new coinages (coverage-in-form), and mid-level\n  handle reuse (0.57) shows the vocabulary compresses. Those are\n  necessary conditions, now honestly labeled as only that.\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00158",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
+   "commit": "pin",
+   "lines": "190-201",
+   "text": "## ADDENDUM (2026-08-22, post-signature clarification, append-only)\nStratum granularity operationalization: panel-agree/panel-split are computed\nat ANCHOR granularity (the document's {#anchor} principle sections), not\nparagraph granularity: node -> anchor by line containment (deterministic,\ntotal coverage); seat verdict per anchor = max over its paragraphs; agree\niff all three full seats land on the same side of the >=2 cut on those\nmaxima. Reason: paragraph-level indexing validated at only 12/40 against the\nindependent clause corpus (generators disagree on paragraphization —\nmis-stratification risk), while anchor attribution is exact. Strata inform\nsampling only; truth is untouched. Implemented in draw_generalization.py\n(determinism tested: same seed -> byte-identical artifact).\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00235",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "commit": "pin",
+   "lines": "2-2",
+   "text": " \"_\": \"ROUND-4 helpfulness canary RE-RUN scored (recovered lineage venue, E4 bands)\",",
+   "source_class": "arc2_json",
+   "context": null
+  },
+  {
+   "id": "S00324",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "pin",
+   "lines": "271-289",
+   "text": "### How the work is dispatched (process, not history)\n\nOperators and seats are subagents; the session coordinator dispatches at halts, makes\ndesigner rulings, signs decisions, and commits at CLOSE (the driver never runs git).\n**Set the model explicitly on every dispatch** — Fable for orchestration/design/adversarial\nreview, Opus for executing a written+reviewed plan, Haiku for validated seats (the\nadjudication seat is proven at Haiku/frontier parity; one divergence so far, m0108,\nrecorded as contested rather than resolved).\n\n**Work that needs a frontier session and should NOT be started otherwise:** the S3b\nredesign, and the **G-freeze artifact** (it defines the conditions of a measurement we\nonly get to run once).\n\nEvery cycle gets a clean-context adversarial review before its close; **a positive review\nstops everything until fixed** (this has fired twice: the A2 dossier-license block, and\nS1's own disclosed restart).\n\n---\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00341",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "pin",
+   "lines": "586-591",
+   "text": "## The floors — see the banner; the table that was here is superseded\n\nIt was published-universe. Use `panel_universe.py`. Floor A = 0.000 (chance, MCC's\ndefinitional zero); floor B = −0.059 (chance minus the coverage gap), per behaviour\n+0.029 over/under / −0.161 harm-avoidance / −0.043 helpfulness.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00363",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "pin",
+   "lines": "839-863",
+   "text": "### Lead 2 — the section channel (+0.16). NOT RECOVERABLE LABEL-FREE.\n\n| | MCC |\n|---|---:|\n| oracle section election, then distribute | **+0.641** |\n| supervised section-only (78 params/cell) | +0.536 |\n| supervised, TRANSFERRED from the other 2 behaviours | +0.334 |\n| best label-free section ranking at an **oracle** cut | +0.408 |\n| best label-free ranking at any parameter-free cut | +0.18 … +0.34 |\n\nThe pre-registered design **lost** (+0.177 vs +0.310 per-clause baseline, CI\n[−0.211, −0.079]); the best of 16 variants (+0.335) has a CI spanning zero.\n\n**The mechanism is the finding.** The only behaviour-specific label-free signal available is\nthe atom index, and aggregating it to section level **adds no information** — it re-uses the\nsame clause matches. Firing fraction, evidence mass, section-level atom-profile joins, the\nrung ladder as elector, the section tree, `kind` composition, adjacency and heading-word\noverlap all re-derive the same evidence.\n\nAnd the decisive part: **~60% of the supervised +0.536 is a generic \"which sections are\nsubstantive\" prior** that only reaches parity with the clause operator even when handed the\nother behaviours' labels — while **the remaining ~40% encodes which sections THOSE JUDGES\ntreated as relevant. That is a property of the judges, not of the document.** No\ndocument-grounded method can access it, at any budget.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00396",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "pin",
+   "lines": "1339-1351",
+   "text": "## THE OPEN PROBLEM — SOLVED, kept for the reasoning\n\nOpenAI's focus areas are a **test index, not a document index**: 225 of 259 carry rubric\nprompts. They covered **50,855 of 271,474 chars (~19%)**, contained **zero markers inside\nthe 183 example blocks**, and skipped whole sections including `levels_of_authority` (which\n*defines the authority lattice we use*).\n\nSo focus areas are the right unit for the **rule layer** and the wrong unit for the\n**coverage/lookup layer**. Fixed by our own full segmentation → `modelspec_clauses.json`\n(593 clauses, 97.35%), with focus areas retained as a privileged subset carrying authority\n+ rubric joins. `measure_kinds.py` then showed the split has to go further than expected:\nrules on the 188 conditionals, **annotations over all 593 including examples**.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00427",
+   "path": "semi-formal-experiment/REPRODUCIBILITY.md",
+   "commit": "pin",
+   "lines": "9-42",
+   "text": "## The sandwich rule\n\nEvery pipeline step ships as FOUR artifacts, or it is not done:\n\n1. **A deterministic core** — typed artifacts in, typed artifacts out,\n   byte-reproducible (same inputs → same bytes; no wall clock, no hash-seed\n   dependence — the snapshot harness found and now guards that class).\n\n   Corollary (2026-08-03, learned the hard way): artifacts consumed by\n   snapshots get VERSIONED FILENAMES, never in-place edits. The containment\n   overlay was edited in place (adding the budget field for v1), so the bytes\n   snapshot `containment-v0` recorded no longer exist on disk and that\n   snapshot is permanently un-dossierable — `dossier.py`'s stale-sha guard\n   fired, correctly; the artifact practice was the bug, not the guard. A\n   config change is a NEW file (`containment_v1.json`, not an edited\n   `containment.json`); the old bytes stay put so every snapshot that pinned\n   them stays reconstructable.\n2. **A closed interface for judgment** — where an LLM (or a person) must\n   exercise judgment, the interface is a schema, not a conversation:\n   dossier in → verdict out; batch of clauses in → atoms out. Small closed\n   vocabularies, required fields, stable ids.\n3. **A mechanical validator** — the LLM's output is checked by code before it\n   is used: coverage (every id exactly once), schema, sha-pins, budget.\n   `check_taxonomy.py`, `dossier.py validate`, annotate's rejection machinery\n   are the pattern.\n4. **An instruction file IN THE REPO** — the prompt/brief the LLM runs under\n   is a versioned artifact (like `annotate_prompt.md`), never something that\n   lives only in a conversation transcript.\n\nThe LLM is always sandwiched: deterministic producer → LLM under written\ninstructions → deterministic validator. A step where the model's output flows\nonward unvalidated, or whose instructions exist only in a session log, is a\nreproducibility bug even if it worked once.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  }
+ ]
+}

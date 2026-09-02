@@ -1,0 +1,450 @@
+{
+ "header": {
+  "batch": "retry_c5",
+  "source_class": "arc1_docs_preredaction",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 3,
+  "first_span": "S01886",
+  "last_span": "S01888",
+  "retranslation_of": "reselect.py over current ledger state",
+  "superseded_claims": [
+   {
+    "span": "S00029",
+    "selectors": [
+     "G-03"
+    ],
+    "ids": [
+     "L10483",
+     "L10484",
+     "L10485",
+     "L10486",
+     "L10487",
+     "L10488"
+    ]
+   },
+   {
+    "span": "S00036",
+    "selectors": [
+     "G-04"
+    ],
+    "ids": [
+     "L10661",
+     "L10662",
+     "L10663",
+     "L10664",
+     "L10665",
+     "L10666",
+     "L10667",
+     "L10668",
+     "L10669",
+     "L10670",
+     "L10671",
+     "L10672",
+     "L10673",
+     "L10674",
+     "L10675",
+     "L10676",
+     "L10677",
+     "L10678",
+     "L10679",
+     "L10680",
+     "L10681",
+     "L10682",
+     "L10683",
+     "L10684",
+     "L10685",
+     "L10686",
+     "L10687",
+     "L10688",
+     "L10689",
+     "L10690",
+     "L10691",
+     "L10692"
+    ]
+   },
+   {
+    "span": "S00056",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9980150",
+     "L9980151",
+     "L9980152",
+     "L9980153",
+     "L9980154",
+     "L9980155",
+     "L9980156",
+     "L9980157",
+     "L9980158",
+     "L9980159",
+     "L9980160",
+     "L9980161",
+     "L9980162",
+     "L9980163",
+     "L9980164",
+     "L9980165",
+     "L9980166",
+     "L9980167",
+     "L9980168",
+     "L9980169",
+     "L9980170",
+     "L9980171",
+     "L9980172",
+     "L9980173",
+     "L9980174",
+     "L9980175",
+     "L9980176",
+     "L9980177",
+     "L9980178",
+     "L9980179"
+    ]
+   },
+   {
+    "span": "S00090",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9990091",
+     "L9990092",
+     "L9990093",
+     "L9990094",
+     "L9990095",
+     "L9990096",
+     "L9990097",
+     "L9990098",
+     "L9990099",
+     "L9990100",
+     "L9990101",
+     "L9990102",
+     "L9990103",
+     "L9990104",
+     "L9990105",
+     "L9990106",
+     "L9990107"
+    ]
+   },
+   {
+    "span": "S00100",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9990150",
+     "L9990151",
+     "L9990152",
+     "L9990153",
+     "L9990154",
+     "L9990155",
+     "L9990156",
+     "L9990157",
+     "L9990158",
+     "L9990159",
+     "L9990160",
+     "L9990161",
+     "L9990162",
+     "L9990163",
+     "L9990164"
+    ]
+   },
+   {
+    "span": "S00126",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9980044",
+     "L9980045",
+     "L9980046",
+     "L9980047",
+     "L9980048",
+     "L9980049",
+     "L9980050",
+     "L9980051",
+     "L9980052",
+     "L9980053",
+     "L9980054",
+     "L9980055"
+    ]
+   },
+   {
+    "span": "S00155",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L190067",
+     "L190068",
+     "L190069",
+     "L190070",
+     "L190071"
+    ]
+   },
+   {
+    "span": "S00187",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L210052",
+     "L210053",
+     "L210054",
+     "L210055",
+     "L210056",
+     "L210057",
+     "L210058",
+     "L210059",
+     "L210060",
+     "L210061"
+    ]
+   },
+   {
+    "span": "S00320",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L230108",
+     "L230109",
+     "L230110",
+     "L230111",
+     "L230112",
+     "L230113",
+     "L230114",
+     "L230115",
+     "L230116",
+     "L230117",
+     "L230118",
+     "L230119",
+     "L230120",
+     "L230121",
+     "L230122",
+     "L230123",
+     "L230124",
+     "L230125",
+     "L230126"
+    ]
+   },
+   {
+    "span": "S00336",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L240188",
+     "L240189",
+     "L240190",
+     "L240191",
+     "L240192",
+     "L240193",
+     "L240194"
+    ]
+   },
+   {
+    "span": "S00360",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L260045",
+     "L260046",
+     "L260047",
+     "L260048",
+     "L260049"
+    ]
+   },
+   {
+    "span": "S00394",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L280091",
+     "L280092",
+     "L280093",
+     "L280094",
+     "L280095",
+     "L280096",
+     "L280097",
+     "L280098",
+     "L280099",
+     "L280100",
+     "L280101",
+     "L280102",
+     "L280103",
+     "L280104",
+     "L280105",
+     "L280106",
+     "L280107",
+     "L280108",
+     "L280109",
+     "L280110",
+     "L280111",
+     "L280112",
+     "L280113",
+     "L280114",
+     "L280115",
+     "L280116"
+    ]
+   },
+   {
+    "span": "S00419",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L300020",
+     "L300021",
+     "L300022",
+     "L300023",
+     "L300024",
+     "L300025",
+     "L300026",
+     "L300027",
+     "L300028"
+    ]
+   },
+   {
+    "span": "S00440",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L310086",
+     "L310087",
+     "L310088"
+    ]
+   }
+  ]
+ },
+ "spans": [
+  {
+   "id": "S00029",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "pin",
+   "lines": "574-580",
+   "text": "## 0027 — V5-AS-TRUTH MEASURED (Matt's question), 2026-08-24\nAnswered with data: the shelf panel projects to node level at 0.50-0.75\nagreement (granularity smearing) — unusable as truth, the prereg's\nclosure now measured-correct. ERRATUM #18: measure shelf data sources'\ncertificate-ability BEFORE the dominant spend, not after the question.\nArtifact: V5_TRUTH_TIER_MEASUREMENT.json.\n",
+   "source_class": "ledger",
+   "context": null
+  },
+  {
+   "id": "S00036",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "pin",
+   "lines": "673-697",
+   "text": "## 0034 — AUTONOMOUS BLOCK CLOSE, 2026-08-25\nFull block ran at ZERO frontier seats. State at close, all\nparked honestly:\n- UA ARC: move-1 adopted (18/0/0); OPERATIVE_TARGET mint calibrated\n  (stability 0.98 — best ever; FP-side passes; TP-side 0.67 vs 0.70\n  gate -> pure wall inadmissible) -> HELD for signature with the\n  second-disjunct design question. Seal untouched. 72 residual FPs.\n- QUERY-CLASS STUDY: 100-def corpus built (exemplary Opus coordinator\n  run); v1 vocabulary tripwired (my spec defect — under-determination,\n  Opus-vs-Opus 0.47); v2 fix raised calibration to 0.87 and bulk pairs\n  to 0.78 but the INDEPENDENT spot-check tripwired again at full-pattern\n  granularity (0.36 vs 0.20). Halted without publishing a bound.\n  MEASURED: verb 1.00, primary-place 0.93/0.75, full pattern 0.78/0.64\n  — the reliable resolution is primary x verb; secondaries are the\n  noise. DESCRIPTIVE (non-binding): 9 primary places observed over 100\n  definitions, dominated by governed_quality (29), object_sphere (16),\n  act (13) — shape-consistent with the bounded-frame hypothesis.\n  DECISION PARKED: accept coarse bound / brief v3 / accept-with-noise.\n- Tier data: no cheap tier certifies definition-coding (Sonnet 0.13,\n  Haiku 0.00 at v1) — the first measured negative for the down-tier\n  program on a design-adjacent task.\n- Errata: #19 (my coding vocabulary under-specified — same lesson as\n  the mint-criteria discipline: MEASURE the brief before scaling, which\n  the phased design did, catching it at 15 items not 100).\n",
+   "source_class": "ledger",
+   "context": null
+  },
+  {
+   "id": "S00056",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/CALCULUS_RUNBOOK.md",
+   "commit": "pin",
+   "lines": "61-120",
+   "text": "  Rulings/adjudications: LINEAGE_SEAT_INSTRUCTION.md VERBATIM, wave\n    form, fresh seats on the certified venue; panels per registered\n    samplers; prompts ONLY from committed packet files.\n\nSTEP 3 — VALIDATE (V1-V5, all before adoption):\n  probe.py arithmetic on the FULL ledger; reason-drift: DEGRADED =\n  break, SUBSTITUTED = design review (criticality filtering BLOCKED\n  pending its brief-pinning); held-out class-card members must move;\n  new flips blind-adjudicated (standing panel-tier truth discharges\n  this on the record — no seat re-spent); V1 is NEVER sufficient: per-\n  flip content kills regardless of charter sign (the codified\n  radicalization rule; a 24-fixes/12-breaks move died on 8 relevant\n  disengagements, notes 0013). REGISTER the predicted fresh-draw\n  movement in a committed file BEFORE step 4, AND — BINDING, notes\n  0009 — the primary metric MUST have registered COVERAGE of the\n  move's extension: gains/losses sampled in the draw, or a registered\n  full-extension census/probe. A zero-coverage registration is\n  invalid-by-construction (iteration 2 fired a revert off a draw that\n  sampled 0/16 of the move; the void-for-coverage ruling and one-shot\n  re-measurement cost a day). After computing a draw, CHECK it samples\n  the move's classes; if not, register a seeded probe in the same\n  pre-dispatch commit (notes 0007).\n\nSTEP 4 — REALIZE: fresh confirmation wave from the frozen-prereg draw\n  machinery (seeded, committed pre-dispatch), certified-venue seats +\n  Fable spot-checks, score with a scorer COMMITTED BEFORE RULINGS\n  against the registered prediction. Below the registered line ->\n  REVERT with ledger record — unless the measurement itself fails a\n  RESULT-BLIND validity criterion (coverage), in which case halt and\n  surface; the remedy is re-adjudicating the SAME frozen samples at a\n  higher tier, both verdict directions, thresholds fixed pre-dispatch,\n  one shot — NEVER a new draw (notes 0010). Sequence venue decisions\n  before scoring (score only after the seat set is fixed — removes the\n  optional-stopping question, notes 0005).\n\nSTEP 5 — RECORD: traces (trace_check.py-certifiable) with evidence\n  pointers; verdicts carrying enumeration scopes; SUSPENDED-OPEN for\n  every non-certificated exhaustion, each with a NAMED RE-ENTRY;\n  opposing UNANIMOUS panels on identical text = DEFENSIBLE-BY-\n  CONTRADICTION, no seat spent, excluded from top-line error (standing\n  ruling, notes 0011); commit + push each step's artifacts before the\n  next step starts. The loop's healthy terminal is the QUIESCENT FIXED\n  POINT: every open mismatch in a recorded suspension awaiting\n  inventory growth, design capacity, or budget — say it that way.\n\nSTEP 5b — NOTES (binding): append a dated entry to ITERATION_NOTES.md at\n  EVERY step — surprises, doc errors, next-agent-must-know items. An\n  iteration whose learning is not in that file did not record its\n  learning; this runbook is rewritten FROM that file, never from memory.\n  HANDOFF = a fresh session booting CLAUDE.md -> HANDOFF_CURRENT.md ->\n  this runbook -> ITERATION_NOTES.md. No compaction ritual, no handoff\n  prompt: if a departing instance holds uncommitted context, THAT is\n  the bug — commit it here before ending.\n\nCONSTRAINT DISCIPLINE (notes 0013; entries 0002/0008 are redacted stubs): the agent cannot read its\nown resource meter — confirm remaining capacity with the human before\nevery frontier dispatch. When a standing capacity cap and a standing\nvenue ruling conflict, that is a conflict between two HUMAN rulings:\nsurface the CONSTRAINT STRUCTURE (which rulings collide, what the\nmachine's default is — usually suspend until the resource resets), never",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00090",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "pin",
+   "lines": "110-114",
+   "text": "### F4. Held-out-half induction fixes only the *mid-lattice* circularity. The vocabulary leak — and the document leak — survive.\n**Defect.** The 24 dimensions × 105 canonical values were open-coded from `query_class_corpus.json`, whose source distribution is **29/100 entries drawn from the OpenAI Model Spec itself** (plus 12 Anthropic, 10 Anthropic Usage Policy, 11 the project's own behaviour set, 9 HHH, 24 one-line Sparrow rules, 6 Llama Guard). L1 holds out half the spec's *nodes* from mid induction, but every held-out node is scored against a vocabulary that was induced with that same document in view. Separately, mid induction over a fixed 105-value vocabulary shared by both halves is near-trivially transferable: the held-out half tests whether new nodes need new *values* (coverage), not whether the buckets are non-arbitrary — and the null already showed arbitrary buckets do as well.\n**Why it matters for Q-A.** A pass reads as \"the ontology transfers within the OpenAI spec,\" which is a weaker claim than Q-A, and it is contaminated even for that.\n**Fix.** Register: (a) an explicit contamination audit — for every held-out node, record whether its section concept appears among the 29 spec-derived corpus entries, report metrics **separately for contaminated and clean held-out nodes**, and treat the clean subset as the headline; (b) a second, harder arm — induce mids from a corpus with the 29 spec-derived entries removed, and report the delta; (c) state up front that L1 bounds *within-document* transfer only, and that Q-A's \"complete representability\" claim is licensed only on the clean subset.\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00100",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "pin",
+   "lines": "158-162",
+   "text": "### F13. n ≥ 10 is arithmetically incapable of supporting the claim.\n**Defect.** With 10/10 successes, the exact one-sided 95% lower bound on the true coverage rate is **0.741**. L2 passing perfectly is consistent with the ontology missing **1 in 4** novel behaviours. And if the true miss rate were 20%, L2 would return a clean 10/10 sweep **10.7%** of the time. At n = 30 the lower bound is 0.905 and the 20%-miss sweep probability drops to 0.1%.\n**Why it matters for Q-B.** A funding decision on a 600-node campaign cannot rest on \"coverage is somewhere above 74%.\"\n**Fix.** Register **n ≥ 30** held-out definitions with a **minimum of 5 per named out-of-space class** (agentic/tool-use, multi-agent, trajectory-shaped, multi-turn/longitudinal, oversight/control), a pre-registered pass threshold stated as a lower confidence bound (e.g. \"95% LCB on discriminative coverage ≥ 0.85\"), and a pre-registered fail action (which dimensions would have to be added, and what that does to campaign cost).\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00126",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "pin",
+   "lines": "319-323",
+   "text": "### F32. L1 presupposes the campaign it is supposed to license — only 183 nodes have ever been translated.\n**Defect.** `coverage_translated.json` records `translated_nodes: 183` of 773. L1 says \"freeze mids induced from HALF the spec's nodes; score … the HELD-OUT half.\" Half of 773 is ~386 nodes that do not exist in translated form. Producing them **is** the retranslation campaign — the ~$/Fable expenditure the experiment is meant to justify. Read literally, L1 cannot be run before the decision it informs.\n**Why it matters.** Either L1 silently means \"half of the 39-node problem-stratified sample\" (n≈19, no power, wrong frame — F5, F7), or it means a several-hundred-node translation commitment made before the licensing question is settled.\n**Fix.** Register L1 explicitly as a **staged pre-flight**: a uniform random draw of N nodes (N set by a power calculation against the F31 clean partitions, and stated), translated end-to-end through the real pipeline, with wall-clock / Fable-token / seat-disagreement / merge-arbitration rates recorded — so the pre-flight simultaneously yields the licensing measurement (F17) and the scaling estimate (F19). State the pre-flight's cost as a fraction of full-campaign cost in the registration.\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00155",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
+   "commit": "pin",
+   "lines": "163-172",
+   "text": "## Integration slots (pre-declared, so nothing arrives as a surprise)\n- v5 frontier panel (data/panel-v5/, PROVENANCE.md): comparison layer as\n  above. Seat composition (sol/fable/deepseek + partials) differs from the\n  v3w trio; writeups name the panel they cite.\n- Any further frontier data (e.g. the reader-test-coverage.json held out of\n  band, or new aci runs): enters ONLY under the same comparison rule, or\n  not at all. Truth path is closed to it by this prereg.\n- Round-4 results: independent; this prereg neither reads nor is read by the\n  round-4 prereg. Both may be cited together afterward.\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00187",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
+   "commit": "pin",
+   "lines": "228-250",
+   "text": "## conditions, scopes, and defeaters are reified as atoms at translation time\nMeasured basis: the satisfiability census found 8 mismatch pairs vector-identical\nto correct opposite-verdict nodes whose distinguishing feature was stated in the\nspan but never atomized (\"if repeated at scale\", \"when they indicate illicit\nintent\", \"no good-cause exception\", provenance of the material, self-reference,\ndelivery-form equivalence). Mining recovered all 8 post hoc (split_mining_*.json)\n— at the cost of a full census + mining + minting round the translator could have\navoided.\nTHE RULE (document-agnostic — no reference to any particular document's phrases):\nwhenever a clause MODULATES a norm — when it applies, to whom or what, under which\njustification it is or is not defeated, in what form or manner, toward which end —\nthe modulator must be emitted as a structured atom in a declared dimension, never\nleft solely inside a read_back or gloss. The a priori modulator classes to check\neach assert against (class-first, validate against known cases): TRIGGER (when),\nSCOPE (to whom/what), DEFEATER (unless / notwithstanding claimed justification),\nMANNER/FORM (how, incl. equivalence-of-form rules), END (toward what).\nTHE REPAIR LOOP (expected to be needed — the rule will be imperfectly applied):\nthe census -> split-mining -> blind-criterion minting -> two-seat annotation ->\ncharter regression pipeline built 2026-08-19/20 is the standing, document-agnostic\nfixing mechanism for whatever the translator still leaves in prose. A missed\nmodulator is therefore a NORMAL, detectable, repairable event — not a design\nfailure; the design failure would be shipping without the census.\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00320",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "pin",
+   "lines": "158-190",
+   "text": "### ⛔ THE S3 FINDING — read before attempting S3b\n\nThe mechanism is wrong in two specific, document-grounded ways (both confirmed by a\nsplit-blind frontier verification leg; verdicts in\n`cycles/patient-pricing-2026-08-04/flip_verdicts.json` and\n`flip_verdicts_verification_leg.json`):\n\n1. **Taint inheritance across siblings.** A patient-free atom gets discounted through\n   a *sibling* act atom in the same clause that happens to be `__model_user` — and in\n   example passages the model's remedial act is almost always addressed to the user.\n   So any example whose harm falls on a third party but whose modelled response\n   speaks to the user is tainted regardless of who is harmed (m0275 \"I want to shoot\n   someone\", m0466 anthrax-in-iambic-pentameter, contested m0108).\n2. **Recipient ≠ harm-bearer.** De-escalating *the user's* radicalization protects\n   *third parties* (m0239); a clause's generic noun \"People\" annotates `third_party`\n   while the behaviour declares user/developer (m0018). The chain records the\n   grammatical recipient — correctly, per the annotation convention — and the pricing\n   reads it as the harm's bearer.\n\n**What worked and must be preserved in any redesign:** patient-saturated wrong-patient\nclauses were correctly removed (m0276 self-harm, m0290 eating-disorder — the canonical\ncensus false positives); the golden-derived `d=0.10` and the taint *cap* behaved exactly\nas `cycles/patient-pricing-2026-08-04/DISCOUNT_DERIVATION.md` predicted. **The defect is\npatient PROVENANCE, not the discount arithmetic.** S3b must be beneficiary-aware and must\nnot inherit taint across act/situation siblings in example passages. It needs a written,\nreviewed design first — do not re-attempt by tuning constants.\n\nAlso on the S3 record: `DISCOUNT_DERIVATION.md` is a reusable pattern — the constant was\nderived **blind to flip sets** from golden patient-contrast cases, and that derivation is\nwhat discovered the F-linearity defect (a dense all-wrong-patient clause retained the most\nresidual mass). When a constant's plateau breaks, re-derive blind; never re-tie-break after\nseeing which clause crosses (ruled explicitly at the m0355 knife-edge).\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00336",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "pin",
+   "lines": "504-524",
+   "text": "## ⚠️ MUTATION TESTING IN THIS REPO CAN LIE TO YOU — clear the bytecode cache\n\nThis repo verifies tests by planting defects and checking each is caught; ~100 such\nverifications underpin the current guards. A 2026-08-02 agent found that **a mutant run\nwent green against the PREVIOUS module body**: the harness rewrote the file and re-ran\nwithin the same second, so `.pyc` mtime granularity let Python import the stale bytecode.\nThe mutant was never actually loaded.\n\nConsequence: a mutation check can report a verdict about code that never ran. Sometimes\nthat reads as a false escape (harmless, you go looking); sometimes as a false catch\n(harmful — you conclude a test constrains something it does not). Every \"# MUTATION-\nVERIFIED\" marker in this repo predates this discovery.\n\n**Do this in any mutation harness here:** clear `__pycache__` (or set\n`PYTHONDONTWRITEBYTECODE=1`, or `importlib.invalidate_caches()`) between each mutant, and\nassert the mutant is actually present in the loaded source before trusting a verdict.\nA mutation test that cannot prove it ran the mutant proves nothing.\n\nRead this first. Contract: `mattstults.github.io/_drafts/2026-07-31-spec-ontology-tdd.md`.\nDeferred full-system design: `...-full-system-DEFERRED.md`.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00360",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "pin",
+   "lines": "775-780",
+   "text": "## ⛔ THE LABEL-FREE LEADS ARE CLOSED (two by proof, a third measured). Read before proposing more scorer work.\n\nThe supervised ceiling (+0.591) sits above the mean judge (+0.555); the label-free tool sits\nat **+0.278**. That gap was attributed to two recoverable items. **Both have now been\nmeasured and both are dead ends** — by proof, not by failure to try.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00394",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "pin",
+   "lines": "1278-1299",
+   "text": "## Module state — all green, 1113 tests (2026-08-02)\n\n> ⚠️ Count superseded 2026-08-04: the suite is now ~1,960 tests (README figure; 1,919\n> collect under a bare interpreter without the venv). The table below predates the\n> iteration-loop modules — see MODULE_MAP.md §1b for those.\n\n| module | owner | state |\n|---|---|---|\n| `modelspec_clauses.json` | — | **593 clauses**, 97.35% char coverage, 100% verbatim, 0 duplicate locators, 259/259 focus markers preserved as a privileged subset |\n| `measure_join.py` | me | the recall ceiling: 849/863 overall, 110/112 at score ≥5, 313/313 example blocks. **Gates every benchmark number** |\n| `measure_kinds.py` | me | relevance signal by clause kind; source of the 38% ceiling finding above |\n| `annotate.py` | agent | done — 1,629 atoms, 99% coverage, reuse 0.78 (`annotations_b8.json`) |\n| `relevance.py`, `benchmark.py` | agent | done — offline scorer + MCC-primary benchmark; CLI runs the tool, `explain()` wired |\n| `behavior_atoms.py` | agent | done — 70 query atoms, 100% selected from the clause vocabulary |\n| `conflict_output.py` | agent | instrument done (blinded + negatives + rubric + validator); **no tool adapter** |\n| `inventory.py` | A | unique locators `... > L200 [fa_la9s]`; `match_passage()` quote-containment join now normalizes whitespace, `[^xxxx]` footnotes, markdown emphasis, **and both link renderings** — all four required, dropping any one silently lowers every metric. `SPEC_MD` points at the shared `../specs/openai-model-spec/` tree |\n| `emit_asp.py` | A | `--skip-invalid` with cascade + `provenance` block; provenance facts proven inert |\n| `extract_section.py` | B | batched (default 14), span-id selection, act-enum closed across batches, `conflict_capable` diagnostic, truncation as its own failure class |\n| `baseline_conflicts.py`, `delta.py`, `adjudicate.py` | C / chain agent | k=3 baseline, 3-bucket delta, worksheet with encoding-status block |\n| `providers.py` | me | `complete_envelope()` → `{text, finish_reason, reasoning, usage, truncated}`; usage logging; auto-adapts unsupported params |\n| `calibrate.py` | me | measures cost per batch per model from real usage |\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00419",
+   "path": "semi-formal-experiment/MODULE_MAP.md",
+   "commit": "pin",
+   "lines": "188-204",
+   "text": "### 6b. Loss-taxonomy diagnostics (2026-08-02; panel-free, verified so by review)\n\nMine `readback_results.json`'s per-clause loss/fabrication phrases. All read only\n`readback_results.json` / `hole_corpus.json` — a review grepped them for every panel\ntoken and found zero, so they are deliberately NOT in the anti-cheat `FORBIDDEN` set.\nNone feeds a query, a prompt, or a threshold; conclusions go through blind two-coder\nagreement, never one reading.\n\n| module | produced |\n|---|---|\n| `prep_hole_corpus.py` | `hole_corpus.json` — 268 `missing` + 95 `unsupported` phrases with clause text, frozen coder input |\n| (two panel-blind subagent coders) | `hole_taxonomy_coder_{a,b}.json`, `fabrication_taxonomy_coder_{a,b}.json` |\n| `check_taxonomy.py` | independent re-derivation of a coder's coverage/counts (channel-aware) |\n| `taxonomy_agreement.py` | chance-corrected partition agreement (ARI/NMI) + cross-tab, any two coder files |\n| `hole_rollup.py` | category→grammar-feature rollup; ⚠️ its banner: the mapping is editorial, the counts are not |\n| `diagnose_disagreement.py` | ⚠️ PANEL-READING (in FORBIDDEN, unlike the rest of this table): per-case tool-vs-frontier dumps → `case_fn.json`, `case_fp.json`, `DISAGREEMENT_REPORT.md` |\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00440",
+   "path": "semi-formal-experiment/CYCLE_DESIGN.md",
+   "commit": "pin",
+   "lines": "143-153",
+   "text": "### What the freeze can and cannot give you here\n\nSeparate two things the ceremony provides:\n\n* **The temporal guarantee** (predictions made before results are known). For a\n  pre-built cycle this is **already gone and no procedure restores it**. Do not\n  construct a ritual that appears to restore it.\n* **The mechanical gate coverage** (declared files changed; gate tests green;\n  closure of undeclared inputs unchanged; review verdict present). These remain\n  fully meaningful regardless of when the code was written, and are worth keeping.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  }
+ ]
+}

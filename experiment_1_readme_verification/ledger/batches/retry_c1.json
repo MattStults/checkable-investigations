@@ -1,0 +1,519 @@
+{
+ "header": {
+  "batch": "retry_c1",
+  "source_class": "arc1_docs_preredaction",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 3,
+  "first_span": "S01886",
+  "last_span": "S01888",
+  "retranslation_of": "reselect.py over current ledger state",
+  "superseded_claims": [
+   {
+    "span": "S00002",
+    "selectors": [
+     "G-04"
+    ],
+    "ids": [
+     "L10004",
+     "L10005",
+     "L10006",
+     "L10007",
+     "L10008",
+     "L10009",
+     "L10010",
+     "L10011",
+     "L10012",
+     "L10013",
+     "L10014",
+     "L10015",
+     "L10016",
+     "L10017",
+     "L10018",
+     "L10019",
+     "L10020",
+     "L10021",
+     "L10022"
+    ]
+   },
+   {
+    "span": "S00030",
+    "selectors": [
+     "G-03"
+    ],
+    "ids": [
+     "L10489",
+     "L10490",
+     "L10491",
+     "L10492",
+     "L10493",
+     "L10494",
+     "L10495"
+    ]
+   },
+   {
+    "span": "S00039",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L10724",
+     "L10725",
+     "L10726",
+     "L10727",
+     "L10728",
+     "L10729",
+     "L10730",
+     "L10731"
+    ]
+   },
+   {
+    "span": "S00066",
+    "selectors": [
+     "G-04"
+    ],
+    "ids": [
+     "L130070",
+     "L130071",
+     "L130072",
+     "L130073",
+     "L130074",
+     "L130075",
+     "L130076",
+     "L130077"
+    ]
+   },
+   {
+    "span": "S00095",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9990108",
+     "L9990109",
+     "L9990110",
+     "L9990111",
+     "L9990112",
+     "L9990113",
+     "L9990114",
+     "L9990115",
+     "L9990116",
+     "L9990117",
+     "L9990118",
+     "L9990119",
+     "L9990120",
+     "L9990121"
+    ]
+   },
+   {
+    "span": "S00110",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9990165",
+     "L9990166",
+     "L9990167",
+     "L9990168"
+    ]
+   },
+   {
+    "span": "S00140",
+    "selectors": [
+     "G-04"
+    ],
+    "ids": [
+     "L180110",
+     "L180111",
+     "L180112",
+     "L180113",
+     "L180114",
+     "L180115",
+     "L180116",
+     "L180117",
+     "L180118",
+     "L180119",
+     "L180120",
+     "L180121",
+     "L180122",
+     "L180123"
+    ]
+   },
+   {
+    "span": "S00156",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L190072",
+     "L190073",
+     "L190074",
+     "L190075",
+     "L190076"
+    ]
+   },
+   {
+    "span": "S00201",
+    "selectors": [
+     "G-04"
+    ],
+    "ids": [
+     "L40040",
+     "L40041",
+     "L40042",
+     "L40043",
+     "L40044"
+    ]
+   },
+   {
+    "span": "S00322",
+    "selectors": [
+     "G-04"
+    ],
+    "ids": [
+     "L230147",
+     "L230148",
+     "L230149",
+     "L230150",
+     "L230151",
+     "L230152",
+     "L230153",
+     "L230154",
+     "L230155",
+     "L230156",
+     "L230157",
+     "L230158",
+     "L230159",
+     "L230160",
+     "L230161",
+     "L230162",
+     "L230163",
+     "L230164",
+     "L230165",
+     "L230166",
+     "L230167",
+     "L230168",
+     "L230169",
+     "L230170",
+     "L230171"
+    ]
+   },
+   {
+    "span": "S00337",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L240195",
+     "L240196",
+     "L240197",
+     "L240198",
+     "L240199",
+     "L240200",
+     "L240201",
+     "L240202",
+     "L240203",
+     "L240204",
+     "L240205",
+     "L240206",
+     "L240207",
+     "L240208",
+     "L240209",
+     "L240210",
+     "L240211",
+     "L240212",
+     "L240213",
+     "L240214",
+     "L240215",
+     "L240216",
+     "L240217",
+     "L240218",
+     "L240219",
+     "L240220"
+    ]
+   },
+   {
+    "span": "S00362",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L260078",
+     "L260079",
+     "L260080",
+     "L260081",
+     "L260082",
+     "L260083",
+     "L260084",
+     "L260085",
+     "L260086",
+     "L260087",
+     "L260088",
+     "L260089",
+     "L260090",
+     "L260091",
+     "L260092",
+     "L260093",
+     "L260094",
+     "L260095",
+     "L260096",
+     "L260097"
+    ]
+   },
+   {
+    "span": "S00395",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L280117",
+     "L280118",
+     "L280119",
+     "L280120",
+     "L280121",
+     "L280122",
+     "L280123",
+     "L280124",
+     "L280125",
+     "L280126",
+     "L280127",
+     "L280128",
+     "L280129",
+     "L280130",
+     "L280131",
+     "L280132",
+     "L280133",
+     "L280134",
+     "L280135",
+     "L280136",
+     "L280137",
+     "L280138",
+     "L280139",
+     "L280140",
+     "L280141",
+     "L280142",
+     "L280143",
+     "L280144",
+     "L280145",
+     "L280146",
+     "L280147",
+     "L280148",
+     "L280149",
+     "L280150",
+     "L280151",
+     "L280152",
+     "L280153",
+     "L280154",
+     "L280155",
+     "L280156",
+     "L280157",
+     "L280158",
+     "L280159",
+     "L280160"
+    ]
+   },
+   {
+    "span": "S00421",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L300034",
+     "L300035",
+     "L300036",
+     "L300037",
+     "L300038",
+     "L300039",
+     "L300040",
+     "L300041",
+     "L300042",
+     "L300043",
+     "L300044",
+     "L300045",
+     "L300046",
+     "L300047",
+     "L300048",
+     "L300049",
+     "L300050",
+     "L300051",
+     "L300052",
+     "L300053",
+     "L300054",
+     "L300055",
+     "L300056",
+     "L300057",
+     "L300058",
+     "L300059",
+     "L300060",
+     "L300061",
+     "L300062",
+     "L300063",
+     "L300064",
+     "L300065",
+     "L300066",
+     "L300067",
+     "L300068"
+    ]
+   },
+   {
+    "span": "S00441",
+    "selectors": [
+     "G-02",
+     "G-04"
+    ],
+    "ids": [
+     "L310089",
+     "L310090",
+     "L310091",
+     "L310092",
+     "L310093",
+     "L310094",
+     "L310095",
+     "L310096",
+     "L310097",
+     "L310098",
+     "L310099",
+     "L310100",
+     "L310101"
+    ]
+   }
+  ]
+ },
+ "spans": [
+  {
+   "id": "S00002",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "pin",
+   "lines": "7-40",
+   "text": "## 0000 — SEED: tacit operational knowledge from the 2026-08-24 sessions\n(committed so no handoff depends on any instance's memory)\n- SUBAGENT REGISTRY loads at session start only: a new .claude/agents/*.md\n  needs a session restart. The lean ruling-seat agent exists (Read-only\n  tools); wave seats currently run as \"claude\"-type agents because they\n  must read packet files.\n- SEAT FAILURE MODES seen live: ultra-short fragment passages push seats\n  into document-completion (fix: the anti-completion fence line, pinned in\n  E3/round4_pilot.py FENCE); one seat fabricated-from-memory dispatch was\n  voided (rule: prompts ONLY from committed packet files, never retyped).\n- Haiku JSON output can be malformed in grounds strings — parse verdicts\n  with the lenient regex (see parity scoring scripts), never bare\n  json.load, and say \"must be VALID JSON; escape internal quotes\" in\n  briefs.\n- HEREDOC PATCHING: python string-replace patches MUST assert-and-WRITE in\n  the same script (one patch printed diagnostics and never wrote — caught\n  by a later NameError); prefer literal strings grepped from the file over\n  remembered escapes (a ▸ vs \\\\u25b8 mismatch silently no-opped a patch\n  batch and the commit shipped without the widget changes).\n- COMMIT DISCIPLINE FAILURES to not repeat: two commits today shipped with\n  a red/unverified state (docs-test red; widget patch unapplied) because\n  commit preceded verification — run the check, THEN commit.\n- fresh_draw4/ is the round-4-era rulings home; result files named\n  {HELP,HARM,CAUTION}_R4_RESULT.json feed truth_all's fmap. The\n  defensibility overlay in ruling_packets/defensibility_rulings.json is\n  highest-precedence truth.\n- probe.py appends to HYPOTHESIS_LEDGER.jsonl keyed (post-A9) by\n  extensional fingerprint; verify_terminal verdicts now carry enumeration\n  scopes; ENUMERATED vs KNOWN_UNENUMERATED lives in verify_terminal.\n- The Opus coordinator pattern works (dispatch batches, checkpoint the\n  output file after EVERY batch with complete:false/true) — always include\n  the checkpoint instruction; the first coordinator ran end-write-only\n  until amended mid-flight.\n",
+   "source_class": "ledger",
+   "context": null
+  },
+  {
+   "id": "S00030",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "pin",
+   "lines": "581-592",
+   "text": "## 0028 — RECURRENCE ANALYSIS: SECTIONS NOT STATEMENTS, 2026-08-24\nMatt's question answered with counts (PROBLEM_NODE_RECURRENCE.json):\nzero retranslations ever; 7/138 statement-recurrers (contested +\nsuspended-by-design); the mass is sectional (style/formatting +\nobjectivity + authority-machinery). KEY DESIGN CONSEQUENCE: the same\nstyle-section nodes FP across BOTH behaviours measured -> the missing\nconcept is corpus-level, and the UA mint should be designed as the\nGENERAL single-consideration-vs-cross-consideration layer (ARB was the\nbehaviour-flavored first cut) so one mint amortizes across all\nbehaviours — the concrete mechanism by which the concept-per-behaviour\ncost curve could actually bend.\n",
+   "source_class": "ledger",
+   "context": null
+  },
+  {
+   "id": "S00039",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "pin",
+   "lines": "739-756",
+   "text": "## 0037 — ERRATUM #20: CLOSED-VOCABULARY CIRCULARITY (Matt's suspicion, upheld), 2026-08-25\nMatt flagged the too-tidy \"last dimension defined just as you asked.\"\nUpheld on inspection, two mechanisms: (a) ENDOGENEITY — his questions\ncaused this week's analyses; the tidy picture is authorship, not\ncoincidence; (b) CIRCULARITY — the query-class study's 10-place coding\nvocabulary was written by the designer WITH knowledge of the built\nlayers; forced-choice coding into it structurally CANNOT discover an\nout-of-vocabulary place (shoehorning presents as coder disagreement —\nsome of the tripwire noise may be exactly that). Therefore \"100\ndefinitions need no new places\" bounds the query class RELATIVE TO the\ndesigner's vocabulary only. RULE: saturation studies with closed\nvocabularies measure vocabulary coverage, never space completeness;\nunknown-dimension detection needs open coding or external falsifiers.\nThe claims that survive: TARGET's blind calibration (predates the\nstudy), and the three EXTERNAL tests (TARGET at scale, prop-risk\ntransfer, next-document misses) — which do not share the designer's\nvocabulary and can falsify what internal analyses cannot.\n",
+   "source_class": "ledger",
+   "context": null
+  },
+  {
+   "id": "S00066",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_PREREG.md",
+   "commit": "pin",
+   "lines": "85-103",
+   "text": "## Signatures\nDrafted by the campaign orchestration seat, 2026-08-21 (scaffold);\nre-issued at freeze 2026-08-24 with the protocol verbatim.\nSIGNED 2026-08-24 (project owner; in-session; applies to this re-issue\nWITH pre-signature amendments 1-4 and their measured addenda). REGISTERED\nHARD BUDGET (project owner, 2026-08-24, superseding the orchestration seat's\ninitial proposal before it was ever committed): the experiment may consume at\nmost a registered additional capacity allocation, with a hard cap set at\nsignature. Checked at every behaviour checkpoint and\nbatch boundary. CANARY MEASUREMENT RULE: after the helpfulness canary's\nseats complete, actual capacity movement is measured and the remaining run is\nre-projected; if the projection exceeds the cap, the run halts and the\nremainder moves past the capacity reset (the prereg does not expire —\ndraws and seeds are deterministic and committed). BUDGET DISCIPLINE bound\non the orchestration seat: maximal dispatch batching, minimal inter-batch\noutput, results collected to files — today's cost was dominated by\norchestration cache reads, not seats, and the discipline targets exactly\nthat.\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00095",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "pin",
+   "lines": "133-140",
+   "text": "### F9. L1 does not measure whether the ontology is *alive* on the held-out half.\n**Defect.** Four dimensions never fire on the 39-node sample; on the 100-definition corpus, `agentic_action_footprint` fires **1/100** and `integrity_of_human_oversight` **1/100**, and each has exactly **one** canonical value. Two dimensions (`no_operational_handle`, `bare_value_word_left_undefined`) are explicit catch-alls, one of whose values is literally named `undefined_harmfulness_catch_all`. A held-out half can score \"full coverage\" while a large share of its signature mass lands in catch-alls or singleton dimensions.\n**Fix.** Register as a reported gate: per-dimension and per-value firing rates on the held-out half; the fraction of nodes whose signature is **entirely** catch-all or singleton-valued (pre-registered ceiling, e.g. ≤ 10%); and a rule that any dimension firing on 0 held-out nodes is declared dead and removed from the effective-ontology size used in all null matching (an ontology with 4 dead dimensions is a 20-dimension ontology, and the null must be matched to the live one).\n\n**Verdict on Part 1:** L1 as written, passed, licenses nothing. It re-runs a uniqueness metric that is the wrong construct, against a relevance bar that its own demolished data already clears, on an underpowered half of an unspecified sample, without measuring reliability, and against a null with no threshold.\n\n---\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00110",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "pin",
+   "lines": "211-214",
+   "text": "### F21. Accuracy under 60/40 imbalance is a broken metric in both directions.\nA representation that recovers the 40% minority well can score below a majority-class predictor on accuracy.\n**Fix.** Register MCC and positive-class F1 as primary; accuracy reported only alongside base rate; class-balanced resampling reported as a secondary.\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00140",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/RETRANS_REVIEW_DISPOSITION.md",
+   "commit": "pin",
+   "lines": "27-44",
+   "text": "## Dispositions of the remaining findings\n- F2 (mids induced from the same 39 nodes they separate; no\n  falsification condition) — ACCEPT. Circular by construction; the\n  original census flagged it as a caveat but scored it as a pass anyway.\n- F3 (\"zero truth-distinct collisions\" vacuous at leaf/mid — there are\n  no collisions at sep 1.00; at top it rests on 7 single-behaviour\n  pairs) — ACCEPT. The clause was decorative, not evidential.\n- F5 (both scored behaviours are inside the 100-definition corpus;\n  trajectory-class behaviours already recorded as out-of-space, notes\n  0038) — ACCEPT on substance. One reviewer slip corrected for the\n  record: \"ua\" is user-autonomy, not undermine-oversight; the finding\n  is unchanged because user-autonomy is also in-corpus.\n- F6 (corpus ~7 documents, 2021-23 single-turn-chat skew; agentic\n  dimension fires 3/39; four dimensions never fire) — ACCEPT; matches\n  the coordinator's own source counts.\n- F7 (39-node sample stratified on known-problem nodes; more than half\n  the ontology untested) — ACCEPT; that is how the sample was drawn.\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00156",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
+   "commit": "pin",
+   "lines": "173-178",
+   "text": "## Cost and timing\nA registered capacity allocation covers six 40-node draws + panels; all run\nafter the capacity reset. Module builds, instrument runs, v5 comparison:\nFable-free and proceed before the reset. Draws are computed and sha-recorded\nbefore any ruling exists.\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00201",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_DEV_TABLE.json",
+   "commit": "pin",
+   "lines": "65-65",
+   "text": " \"above_band_leak_check\": \"decline cells above band in all three behaviors: seats were fresh file-fenced subagents with no repo access beyond the packet (coordinator-verified), panels near-unanimous (F4 clear); the shared cause is the residual pool's composition (peripheral nodes easy to decline), not seat contamination \\u2014 recorded, cells stand\",",
+   "source_class": "arc2_json",
+   "context": null
+  },
+  {
+   "id": "S00322",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "pin",
+   "lines": "218-256",
+   "text": "### RULINGS a new agent needs before touching S4 (coordinator, 2026-08-04)\n\n1. **S4 IS UNBLOCKED and opens on the post-S2 baseline.** The spine order S3 → S4 was a\n   sequence, not a dependency: A1's gated set is computed from the atom channel, which\n   patient pricing never touched. S3b, being pricing-only, preserves it. Do not wait.\n2. **S4's baseline is `snapshots/patient-backfill-2026-08-04.json`** — the latest\n   closed-KEEP spine snapshot in `cycles/CYCLE_LOG.jsonl`. ⛔ `SECTION_PRIOR_DESIGN.md`\n   §5 says \"cycle-4 config if cycle 5 reverts\"; that parenthetical is **STALE and wrong** —\n   cycle-4 predates S1 (join 1.2) and S2 (backfill), so its recorded config shas no longer\n   match the tree. General rule: **baseline = latest closed-KEEP spine snapshot**, always\n   read from the cycle log, never named statically in a design doc.\n3. **The A1 enumeration stands, verified.** Independently recomputed against the\n   post-S2 baseline: **30 flips = 13 caution + 13 harm + 4 helpfulness, 0 newly_predicted**,\n   helpfulness = m0379/m0381/m0382/m0389 — exactly as PORTFOLIO F5 pre-registers, and\n   identical against the join, chain-repair and versioned-cut baselines too. **F6's worry\n   that S1's join would void this pre-registration did NOT materialize.** 30 is *at* the\n   flip budget, not over it (the halt is strict `>`), so the stratified-sampling path does\n   not trigger. Do not discard the pre-registration as stale.\n4. **A1 needs an F9 version key.** `_open` refuses any `shape: code` manifest without\n   non-empty `compatibility.version_key` + `statement`. A1 is not a pricing change, so it\n   needs its own — `section_gate_version` — carried in snapshot config identity and in\n   `dossier.py`'s reconstruction dispatch, mirroring the `pricing_version` ladder. Without\n   it every pre-gate snapshot becomes un-reconstructable and MEASURE dies mid-cycle.\n5. **Seat fence — GENERAL RULE, not just S4: a cycle's own design document is never seat\n   material.** `SECTION_PRIOR_DESIGN.md` §3 pre-registers the expected verdict distribution\n   and names the designed regression (m0587); handing it to the adjudication seat \"for\n   context\" destroys the adjudication. The same defect was raised as blocking finding B1\n   against `S3B_REDESIGN.md` (see `S3B_REVIEW_COORDINATOR.md`). Forbidden seat material, always:\n   the cycle's design doc, `PORTFOLIO_REVIEW.md`, prior cycles' `flip_verdicts*.json`, the census.\n6. **Always pass `--cycle NAME` to the driver.** A directory containing only drafts counts\n   as OPEN to `_default_cycle`, so the bare command is refused while any draft cycle dir\n   exists. Two do right now (join-integrity-v2, segmentation-variants — both P1/P2 drafts,\n   pre-OPEN, not live work).\n7. **Untracked cycle dirs and worktrees, disambiguated:** `cycles/join-integrity-v2-*` and\n   `cycles/segmentation-variants-*` are P1/P2 **drafts awaiting their gate window** (see\n   PRE-BUILT CYCLES); worktree `agent-a8b74ed98d7f85110` is P1's build; worktree\n   `agent-a4debc733d7d3d318` is the **spent** cycle-5 build, already merged and reverted —\n   it holds nothing live and can be pruned.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00337",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "pin",
+   "lines": "525-547",
+   "text": "## Where we are in one paragraph\n\nThe **scope problem is solved**: full-document segmentation gives 593 clauses at 97.35%\ncharacter coverage (was 18.7% under focus areas), and the panel join now reaches\n**849/863 (98.4%)**, 313/313 example blocks, 110/112 high-consensus. 1113 tests pass. Spend\n**$1.520 of $7.50** (`spend.py`, plus 6 unlogged `gpt-oss-20b` artifacts, so a floor).\nThe conflict-delta spike (priority 3) is built and validated end-to-end on cheap models.\n**The current work is priority 1, relevance** — see the architecture finding below, which\nis the thing most likely to be re-derived expensively by a future agent.\n\n**⇒ ⛔ SUPERSEDED 2026-08-04: `LADDER_PLAN.md` is no longer the plan of record.** The\nplan of record is `ITERATION_LOOP.md` + `CYCLE_DESIGN.md` + the design portfolio — see\n\"STATE AS OF 2026-08-04\" at the top of this file. The paragraph below is kept as the\n2026-08-02 state it was: ~~FOR CURRENT STATE AND THE ACTIVE PLAN, READ `LADDER_PLAN.md`.\nIt is the agreed plan of record (2026-08-02)~~, including the amendments a drift review\nforced on it the same day.\nShort version: read-back ran at full pre-registered scale and found the atoms are an\nadequate INDEX and a poor REPRESENTATION — 91 of 125 clauses are identifiable from their\natoms among nine same-section neighbours while a reader of those atoms would not know what\nthe clause requires (discriminable 0.89 at a 0.944 ceiling; faithful 0.46; sufficient\n0.16). Segmentation accounts for only ~2.6% of that loss (Wilson 0.8-10.2%), so it is an\nassignment/vocabulary/grammar problem. The ladder is the attribution experiment.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00362",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "pin",
+   "lines": "827-838",
+   "text": "### Lead 1 — threshold calibration (+0.19). Recovered 40%, then hits a structural wall.\n11 label-free rules, pre-registered preference (Otsu, zero free parameters). Otsu recovers\n**+0.073 of +0.181 (40%)**, CI excludes zero, beats LOBO in 9/9 cells, stable across all 5\natom draws (+0.268 ± 0.007). But **no rule reaches oracle, and none can**: the three\nbehaviours' score distributions are nearly identical (mean 0.16–0.19, sd 0.14–0.18) while\ntheir optimal cuts differ by **0.40**. A distribution-shape rule structurally cannot produce\nthat spread. Eight of eleven rules land in a narrow +0.25–0.32 band.\n\n*(`relevance.predict` now derives its cut label-free by default, retiring\n`DEFAULT_THRESHOLD = 0.18` — an in-sample argmax on the scoring panel, i.e. a live invariant-9\nviolation that shipped for most of this session.)*\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00395",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "pin",
+   "lines": "1300-1338",
+   "text": "## Key numbers (all measured, not estimated)\n\n**Cost — measured tokens × looked-up rates. Use `luna` for everything until a final\nmeasurement run.**\n\n| model | $/Mtok in–out | $/batch | whole doc (13 batches) | k=2 |\n|---|---|---|---|---|\n| **luna** (gpt-5.6-luna) | 0.20 / 1.20 | **$0.0088** | **$0.11** | **$0.23** |\n| terra (gpt-5.6-terra) | 2 / 12 | $0.068 | $0.88 | $1.76 |\n| kimi (Kimi-K3) | 3 / 15 | $0.223 | $2.89 | $5.79 |\n| sol (gpt-5.6-sol) | 5 / 30 | $0.241 | $3.14 | $6.28 |\n\n**`luna` is 27× cheaper than sol, had the LOWEST reasoning overhead of the four (39%),\nparsed cleanly, and was fastest (35s vs sol's 82s).** It is gpt-5.6-family, so its failure\nmodes should resemble sol's — a much better iteration tier than a different-family\nmid-tier model. Prices are in `providers.json` and `calibrate.py` reads them.\n\n**First comparison table** (both sides `gpt-oss-20b`, chain-of-command only):\n`|C_tool|`=0, `|C_baseline|`=6, coverage 0.524 effective / 0.571 claimed,\n`baseline_self_agreement`=0.244 over k=3. **Degenerate** — tool's zero is structural\n(0 `incompat`, no act both obliged and forbidden), settled before the solver runs.\n\n**Panel join — SOLVED.** Against focus areas it was **70.3% zero-match** (example blocks\n100% zero, core judgments 40.6% zero). Against `modelspec_clauses.json` with the fixed\nnormalizer, via `measure_join.py`:\n\n| stratum | matched | total | |\n|---|---|---|---|\n| all | 849 | 863 | 98.4% |\n| score ≥5 | 110 | 112 | 98.2% |\n| score ==6 | 58 | 60 | 96.7% |\n| example blocks | 313 | 313 | 100% |\n\nThe 14 remaining misses are **not paraphrase and not version skew** — our spec copy is\nbyte-identical to `../specs/openai-model-spec/model_spec.md` (sha256 `8c95f020…`). The\npanel's own renderer rewrote `[text](url)` inconsistently, sometimes *within a single\npassage*, so no one normalization variant matches. A real but small ~1.6% reference-side\nceiling.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00421",
+   "path": "semi-formal-experiment/MODULE_MAP.md",
+   "commit": "pin",
+   "lines": "214-231",
+   "text": "## 8. Data files\n\n| file | size | status |\n|---|---|---|\n| `modelspec_clauses.json` | 496 KB | **live** — 593 clauses, the analysis unit |\n| `annotations_ext_v1_merged.json` | large | **PREFERRED (2026-08-04)** — gpt-5.6-luna, 1,442 atoms / 589 clauses / 590-name vocabulary; the first structure-bearing annotation (force, agent-first principal chains post chain-repair, roles). The census configuration |\n| `behavior_atoms_audit_v1.json` | small | **PREFERRED (2026-08-04)** — 42/31/37 query atoms for the 3 DEV behaviours; mechanical re-selection from `select_audit/findings_v2_*.json`, no LLM in that step |\n| `annotations_ext_v1.json`, `annotations_ext_v1_patch.json`, `patch_clauses_ext_v1.json` | — | inputs the merged artifact was built from; keep for provenance |\n| `behavior_atoms_ext_v1.json` | small | superseded by `behavior_atoms_audit_v1.json` (it was the pre-audit selection the DISAGREEMENT_REPORT_ext_v1 survey ran under) |\n| `annotations_b8.json` | 1.7 MB | ⚠️ was PREFERRED until 2026-08-04 — 1,629 atoms, 99% coverage, 183/183 example blocks, reuse 0.78. Now the b8 comparison config in JOIN_INTEGRITY_DESIGN's re-measurement protocol |\n| `behavior_atoms_b8.json` | small | ⚠️ was PREFERRED — 70 atoms, 100% in-vocabulary, pairs with `annotations_b8` |\n| `annotations.json` | 1510 KB | superseded — 1,423 atoms, 91% coverage, 3 truncated batches lost 24 example blocks |\n| `behavior_atoms.json` | small | superseded — 65 atoms, pairs with `annotations.json` |\n| `constitution_clauses.json` | 311 KB | **live for swappability** — 616 clauses, same schema, loads today |\n| `modelspec_focus_areas.json` | 197 KB | **privileged subset** — authority levels + rubric joins; no longer the analysis unit |\n| `smoke_atoms.json` | 103 KB | 28-clause smoke output; safe to remove |\n| `_extract_raw.json` | 198 KB | intermediate from an early extraction; safe to remove |\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00441",
+   "path": "semi-formal-experiment/CYCLE_DESIGN.md",
+   "commit": "pin",
+   "lines": "154-178",
+   "text": "### The ruling (coordinator, 2026-08-04) — restore-then-reapply\n\n1. Record the hashes of the finished files, then restore them to their **pre-change\n   bytes in the CURRENT tree** — not to the worktree's fork point. A parked branch\n   may have zero unique commits (P1's did); checking out the fork point silently\n   reverts unrelated later work. Verify the restored files differ from the finished\n   ones **only** in this cycle's hunks before proceeding.\n2. Move any test file that exists solely to gate this change into `gate_tests`\n   (closure-pinned), not `files_to_change`.\n3. OPEN (captures the pre-change shas), then PREDICT from the drafts.\n4. Re-apply the saved files as the IMPLEMENT step and **verify byte-identity to the\n   reviewed bytes**. That check is what makes the shuffle legitimate rather than a\n   re-implementation: the gate then genuinely exercises declared-files-changed,\n   tests, and closure.\n5. Regenerate any measurement artifacts produced in the worktree — they were built\n   against a different tree and are misleading as-is (P1's `measure/` files date from\n   a superseded constant).\n\n**Rejected alternatives, with reasons:** `--override IMPLEMENT` records the truth but\ndiscards all three mechanical checks to avoid a file-shuffle — a bad trade, and it\nleaves a permanent override banner on a cycle that doesn't need one. Ratifying by\nreview + no-op proof alone (no cycle) loses the record for a change that does alter the\nmeasurement plumbing the census runs on; \"score-inert\" is a claim that deserves a cycle,\nand the no-op proof is evidence *for* it, not a substitute.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  }
+ ]
+}
