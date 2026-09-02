@@ -34,7 +34,7 @@ def close(a, b, tol):
 # the actual tier named).
 Q = {
  "Q01": {"metric": r"criterion standing|match-or-adjudicated-defensible|match-or-defensible", "value": [0.941, 0.953, 0.96], "tol": 0.001, "any_of": True, "band": (0.94, 0.96), "require": {"tier": {"panel", "adjudicated"}}},
- "Q02": {"metric": r"panel.internal agreement|inter-judge agreement|panel agreement|judge-vs-judge|inter-judge", "value": None, "present_ok": True, "band": (0.94, 0.96), "band_check": True},
+ "Q02": {"metric": r"panel.internal agreement|inter-judge agreement|panel agreement|judge-vs-judge|inter-judge", "value": None, "band": (0.94, 0.96), "band_check": True},
  "Q03": {"metric": r"certification|raw_verdict|verdict_engaged", "quote": r"F1|IN BAND|certif", "scope": r"helpfulness|harm|caution|dev behaviour", "value": None, "count_scopes": 3},
  "Q04": {"metric": r"registration|match-or-defensible|defensibility pass|panel.equivalence", "quote": r"registered|registration|scored ONCE|never ran|DEFENSIBILITY PASS", "value": None, "contested_if_multiple_registrations": True},
  "Q05": {"metric": r"node count|^nodes$|node_count", "value": 773, "tol": 0},
@@ -122,7 +122,12 @@ def decide_q(qid, spec, claims):
         return {"state": "live_run_pending", "derivation": f"decided by running {spec['live_run']}; filled from results/live_runs.json", "claims": []}
     cands = candidates(spec, claims)
     if not cands:
-        return {"state": "unverifiable", "derivation": "no ledger claim matches the metric/scope pattern (translation-coverage gap or the record holds no such value)", "claims": []}
+        return {"state": "unverifiable", "derivation": "no ledger claim matches the metric/scope pattern. Two readings: a translation-coverage gap, or the record holds no such artifact — a ledger of positive claims cannot distinguish these unless a translator recorded an explicit absence (existence claim with value false); this is reported as a coverage finding", "claims": []}
+    if spec.get("band_check"):
+        vals = [(c["id"], num(c["value"])) for c in cands if num(c["value"]) is not None and c["stance"] in ("current", "unknown")]
+        inb = [v for v in vals if spec["band"][0] - 0.05 <= v[1] <= spec["band"][1] + 0.05]
+        if not vals: return {"state": "unverifiable", "derivation": "agreement metric named but no numeric value in the ledger (the record may hold none)", "claims": [c["id"] for c in cands][:8]}
+        return {"state": "verified" if inb else "contradicted", "derivation": f"agreement values in ledger {vals[:6]}; within ±0.05 of the README band {spec['band']}: {inb[:4]}", "claims": [v[0] for v in vals][:8]}
     if spec.get("present_ok") and spec.get("value") is None:
         cont = [c for c in cands if c["stance"] in ("contested",)]
         struck = [c for c in cands if c["stance"] in ("struck", "superseded")]
@@ -136,11 +141,6 @@ def decide_q(qid, spec, claims):
         if not vals: return {"state": "unverifiable", "derivation": "no numeric measurement found for untuned behaviours", "claims": [c["id"] for c in cands][:12]}
         if above: return {"state": "contradicted", "derivation": f"{len(above)} measurement(s) at or above threshold: {above[:5]}", "claims": [v[0] for v in above]}
         return {"state": "verified", "derivation": f"{len(vals)} measurement(s), max {max(v[1] for v in vals):.3f} < {spec['threshold_none_above']}", "claims": [v[0] for v in vals][:12]}
-    if spec.get("band_check"):
-        vals = [(c["id"], num(c["value"])) for c in cands if num(c["value"]) is not None and c["stance"] in ("current", "unknown")]
-        inb = [v for v in vals if spec["band"][0] - 0.05 <= v[1] <= spec["band"][1] + 0.05]
-        if not vals: return {"state": "unverifiable", "derivation": "agreement metric named but no numeric value in the ledger (the record may hold none)", "claims": [c["id"] for c in cands][:8]}
-        return {"state": "verified" if inb else "contradicted", "derivation": f"agreement values in ledger {vals[:6]}; within ±0.05 of the README band {spec['band']}: {inb[:4]}", "claims": [v[0] for v in vals][:8]}
     if spec.get("every_test"):
         outcomes = [(c["id"], num(c["value"]), c["scope"][:30], c["stance"]) for c in cands if num(c["value"]) is not None]
         nulls = [c for c in cands if re.search(r"null", c["quote"] + c["scope"] + c["metric"], re.I)]

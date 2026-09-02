@@ -10,20 +10,15 @@
    "stated"
   ],
   "tier_ok": false,
-  "derivation": "3 matching claim(s) standing; none at the required dimensions {'tier': {'panel', 'adjudicated'}} \u2014 matched at ['stated']"
+  "derivation": "3 matching claim(s) standing; none at the required dimensions {'tier': {'adjudicated', 'panel'}} \u2014 matched at ['stated']"
  },
  "Q02": {
-  "state": "verified",
-  "derivation": "5 claim(s) record the event/text as standing",
+  "state": "contradicted",
+  "derivation": "agreement values in ledger [('L160061', 0.85), ('L540050', 2.0), ('L9990088', 0.05)]; within \u00b10.05 of the README band (0.94, 0.96): []",
   "claims": [
-   "L160060",
    "L160061",
    "L540050",
-   "L9950230",
    "L9990088"
-  ],
-  "tiers": [
-   "stated"
   ]
  },
  "Q03": {
@@ -516,7 +511,7 @@
  },
  "Q32": {
   "state": "unverifiable",
-  "derivation": "no ledger claim matches the metric/scope pattern (translation-coverage gap or the record holds no such value)",
+  "derivation": "no ledger claim matches the metric/scope pattern. Two readings: a translation-coverage gap, or the record holds no such artifact \u2014 a ledger of positive claims cannot distinguish these unless a translator recorded an explicit absence (existence claim with value false); this is reported as a coverage finding",
   "claims": []
  },
  "Q33": {
