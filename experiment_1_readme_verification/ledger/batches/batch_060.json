@@ -1,133 +1,112 @@
 {
  "header": {
   "batch": "batch_060",
-  "source_class": "arc2_docs",
+  "source_class": "git_log",
   "brief_version": "0.4",
   "glossary_version": "frozen ",
-  "spans": 15,
-  "first_span": "S00105",
-  "last_span": "S00119"
+  "spans": 11,
+  "first_span": "S01128",
+  "last_span": "S01138"
  },
  "spans": [
   {
-   "id": "S00105",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
-   "commit": "pin",
-   "lines": "183-196",
-   "text": "### F17. THE SINGLE STRONGEST EXPERIMENT — the blind-readout information-equivalence ablation (run this instead).\nThis is what Q-A actually asks, it uses truth already on disk, and it fits the remaining budget.\n\n**Design (register verbatim before running).**\n- **Items:** all nodes with existing adjudicated panel truth for the two scored behaviours (~150 and ~122), plus any additional behaviours whose partial truth is already on disk, scored per behaviour.\n- **Arms, same frontier judge, same prompt skeleton, same output schema, order-randomized, run blind to each other:**\n  - **Arm T (ceiling):** the raw clause text + the behaviour definition → relevant / not.\n  - **Arm R (the claim):** *only* the symbolic representation of that clause — dimensions + values + inputs/outputs/atoms handles, **no natural-language span, no section title, no node id** → relevant / not.\n  - **Arm N (null):** the same symbolic representation with values permuted within dimension under a seeded random map, ≥100 seeds on a subsample.\n- **Pre-registered pass condition:** `MCC(R) ≥ MCC(T) − 0.05`, **and** `MCC(R)` above the 99th percentile of Arm N, **and** both reported per behaviour with the worst behaviour as the headline, **and** `MCC(T)` itself reported against panel-internal agreement so the ceiling is visible.\n- **Pre-registered fail action:** a leakage audit on Arm R (can the judge reconstruct the clause from the signature? if yes, Arm R is contaminated and void), then a per-node error triage naming which dimensions were missing.\n- **Why this is decisive:** it is a direct test of *sufficiency of the representation* — the literal Q-A claim — under the user's own operative standard (match the panel, or be frontier-justifiable). It cannot be passed by uniqueness, by fingerprinting, by catch-alls, or by noise. A pass licenses the campaign outright; a fail says exactly which dimensions to add before spending.\n- **Cost:** ~272 nodes × 2 arms ≈ 550 short frontier calls, plus a seeded-null arm on a subsample. `spend.py` reports **$17.179 of the $25.00 BUDGET (69%)**, leaving ~$7.8 headroom, and the reported total is flagged as an overstatement (4,645 uncached-rate rows, plus unidentifiable batch-billed rows). This fits, but register a stratified 120-node-per-behaviour subsample as the fallback if a cost pre-flight exceeds a pre-registered ceiling, and route the null arm through the cheap tier with a frontier parity check on a subsample (the project's established pattern).\n",
-   "source_class": "arc2_docs"
+   "id": "S01128",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "2690-2710",
+   "text": "commit 0d930b4f9a4f12bf547b306ab248a266bc9c64e3\nordinal 92\ndate 2026-08-07 23:25:30 -0700\nauthor Matt Stults\nsubject self-test: drop the check that pinned the withdrawn anonymous-variable guard\nThe schema restriction on `_` in a rule BODY was removed on evidence. This\nself-test check asserted it still raised, so it failed with \"raised\nResponseParseError but for the WRONG REASON\" -- the module now fails an\nundeclared-name check instead.\n\nThe agent that removed the guard could not fix this: translate.py was not in\nits file ownership, which is a gap in how I partitioned the work, not a defect\nin the removal. A check that pins a deliberately-withdrawn rule is not a\nquality floor, so deleting it is not lowering one.\n\ntranslate.py --self-test back to 51 passed / 1 failed; the remaining failure is\nthe stale dryrun.txt, tracked as Q-4.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00106",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
-   "commit": "pin",
-   "lines": "197-199",
-   "text": "### F18. The cheap companion that caps everything — run it first, at near-zero cost.\nTwo blind seats annotate a **fresh uniform random 60-node draw** from the full graph (not the problem-stratified 39). Report exact-dimension-set agreement, Jaccard, and α. This is the reliability ceiling on every number the campaign will ever produce; at 23/39 today it may kill the campaign for under $1 before any panel spend. Register it as a **gate that runs before F17**, with α ≥ 0.67 as the pre-registered floor.\n",
-   "source_class": "arc2_docs"
+   "id": "S01129",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "2711-2729",
+   "text": "commit 472d2259dba0a2d7b6fd006e0bac3eff71ad6209\nordinal 93\ndate 2026-08-07 23:25:58 -0700\nauthor Matt Stults\nsubject Four more questions for Matt, from the renderer and schema work\nQ-6 is the significant one: 7 of 14 stored modules return readback-ungloss and\nreach NO stage-4 seat. 14 symbols have no written meaning, almost all requires/\ninputs predicates no clause defines. Three readings recorded, none chosen. The\ncheck was NOT relaxed to make the number look better.\n\nQ-7 the act template needs a schema field. Q-8 two prompt sites still teach the\ndisproved anonymous-variable ground, so the schema change buys nothing at the\nprompt level until they are edited -- deliberately not edited, they are watched\ntranscriptions with their own process. Q-9 RB1 fires on ordinary English inside\nglosses, 18 of 34 findings.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00107",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
-   "commit": "pin",
-   "lines": "200-204",
-   "text": "### F19. What is missing from the funding decision even if F17 passes.\nNo registered experiment estimates the campaign's **cost curve or its degradation at scale**: 600 nodes × 2 blind seats × a merge seat, with a reliability figure measured on 39 problem-stratified nodes. Register a scaling pre-flight: annotate a random 60-node draw end-to-end through the full pipeline (translate → merge → lattice), record wall-clock, $, seat disagreement rate, and merge-arbitration rate, and extrapolate to 600 with the measured per-node figures. Fund on `F18 pass AND F17 pass AND a scaling estimate inside budget` — not on any two of three.\n\n---\n",
-   "source_class": "arc2_docs"
+   "id": "S01130",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "2730-2765",
+   "text": "commit e2ec56ce4d005c2d67ba42b2278c4b0aeed634ad\nordinal 94\ndate 2026-08-07 23:27:19 -0700\nauthor Matt Stults\nsubject stage 3 [L]: the first live labelled run — silent-rate 0.580 (n=138), k histogram, and a live-but-wrong rule the [D] half scored 5/5\nprobe.label_situations had only ever seen stubs. probe_live.py is its first real\ndriver; 49 paid calls, $0.0085, invisible to spend.py as every phase_1 run is.\n\nSTEP_stage3.md §9's two measurements now exist:\n\n* silent-rate 80/138 = 0.580 pooled over two independent 21-call runs, whose\n  pooled label vectors are bit-identical. §9's named failure — collapsing\n  must-be-silent into must-permit — did NOT occur, and the seat's own reasons\n  show it applying the clause's trigger test against distractors it names.\n  Per clause-act the rate ranges 0.000–0.972: the aggregate is an average over\n  a bimodal set, not a property of the seat.\n* k histogram over 17 module files: max k = 8, none over the cap. probe.max_\n  signature is UNCHANGED at 10 — 11 clauses of 593 is not the corpus-scale\n  measurement §9 asks for, and it is biased low for three stated reasons.\n\n⭐ The result that justifies building the [L] half at all: m0150 passes the\ndeterministic half with |R| = 5 and discrimination coverage 5/5, and the seat\nlabels two situations must-be-silent that the module speaks about. Its rules\nassert `prefer make_tool_call` without requiring a tool call to be under\nconsideration. Live, wrong, and invisible to mutation by construction.\n\nRecorded, not acted on (all design, all in RESULT_stage3_labelled_live.md §7):\nrender_situation loses a whole clause at k = 1 (m0014, 6 of 6 refusals — its\nonly forbid-side, cnpa module); compare() is act-blind and produced a false\nMATCH on m0134; no label corresponds to oblige/prefer, which is 4 of 12\nmismatches; the frontier control on the identical brief has not been run, so\n\"the seat is working\" means only \"it did not exhibit the failure §9 named\".\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00108",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
-   "commit": "pin",
-   "lines": "205-206",
-   "text": "## PART 4 — Ways L1 / L2 could FAIL SPURIOUSLY (false negatives that also mis-spend the budget)\n",
-   "source_class": "arc2_docs"
+   "id": "S01131",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "2766-2789",
+   "text": "commit 9e0e15e404ebb4c25453a437ce07316106f727fb\nordinal 95\ndate 2026-08-07 23:29:25 -0700\nauthor Matt Stults\nsubject Four questions from the first live labelled run\nQ-10 is the one that matters: the labelled half found a rule that fires in\nsituations the clause does not speak to, on a module the deterministic half\nscored 5/5 clean. [D] cannot see it by construction. Adjudicating it against the\ndocument is Matt's, per the standing rule that flips are adjudicated with label\nvalues nowhere in the room -- and the seat has a known one-directional bias that\ncuts the other way, which is precisely why it needs a human.\n\nQ-11 render_situation at k=1 cost the run its only forbid-side module. Q-12 the\nthree-valued label set has no answer for oblige or prefer, so 4 of 12 mismatches\nare an artefact. Q-13 the seat is NOT validated: the standing ruling names\nfrontier parity as the test, it has not been run, and it costs about $0.20.\n\nsilent-rate 0.580 over 138 labellings, so section 9's named seat defect did NOT\noccur. k histogram max 8 against a cap of 10, but 11 clauses of 593 and biased\nlow -- not the corpus-scale histogram section 9 asks for.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00109",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
-   "commit": "pin",
-   "lines": "207-210",
-   "text": "### F20. 1-NN over sparse binary Jaccard is a weak, high-variance readout.\nWith ~1.2 handles per item and 105 values, most pairs have Jaccard 0; ties are broken arbitrarily. An adequate representation could score at base rate purely from readout weakness.\n**Fix.** Register a readout family — 1-NN, L2-regularized logistic regression on dimension+value indicators, and a frontier judge on signature-only (Arm R above) — with the **frontier-judge arm decisive** and the others reported. \"The representation does not carry the concept\" may only be concluded if the *best* readout fails.\n",
-   "source_class": "arc2_docs"
+   "id": "S01132",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "2790-2838",
+   "text": "commit 51a9a21bb3e27511ab293bc5b09b6b20d329f26c\nordinal 96\ndate 2026-08-07 23:41:27 -0700\nauthor Matt Stults\nsubject Adversarial spec-drift review: 8 confirmed drifts, 5 suspected\nClean-context review of today's stage-3/stage-4 build against\nresources/03_pipeline.md, STEP_stage3.md and STEP_stage4.md rev 2.\n\nThe three that matter:\n\nA1 The `_` guard in `_check_body` was withdrawn on a renderer ground.\n   The design's ground was never the renderer -- 03_pipeline.md:33 names\n   XCLINGO, and STEP_stage4.md:224 makes xclingo load-bearing for R3.\n   Ran it: xclingo 2.0b24 still crashes on `p(X) :- q(X,_).`, control\n   without `_` is clean. Failure mode 7 is re-opened, loud, and it takes\n   the whole link set's explanation down. Restore the guard on the\n   xclingo ground. (The `_check_term` half, kept for rule HEADS, is\n   correctly regrounded -- only the body half is wrong.)\n\nA2 `probe.impossible_findings` builds a `probe-structural` finding --\n   disclosable -- out of a SEAT LABEL, naming the situation and its\n   atoms, and it reaches a stage-1 repair prompt. Reproduced. The\n   design's own grounds sentence for that origin (\"no expected verdict\n   anywhere near them\") is false of it.\n\nA3 RB1's act-term exemption exists ONLY in readback.py. STEP_stage4.md\n   :415 grants exactly one exception, the clause reference; rev 2 did\n   not amend 2.4. 19 of 19 `asserts` renderings in runs/ show a bare\n   functor. Asked for a view: it is a hole in Invariant 1, not an\n   implementation limit -- it covers the deontic head of every rule and\n   re-imports ASP2CNL's naming model that 2.3a rejects by name.\n\nAlso: RB4 is structurally blind to layer-1 content (rev 2 DID weaken a\ncheck while saying it did not); `readback.Finding` has no `origin` so\n`readback-structural` cannot be registered as 5.5 requires in the same\ndiff; the layer-1 fraction is required in the report and absent; the\nstage-3 seat's \"and any behaviour\" denial is unenforced and `b_asserts(`\nslips `\\basserts\\s*\\(` on a word boundary.\n\nOne where the CODE is right and the DESIGN is stale: 8's mutation bar\nfor stage 4 cannot be met by mutate_schema.py, which deletes ast.Raise\nnodes -- readback.py has zero, by design. Ran the substitute battery by\nhand instead: RB1-RB5 and the ungloss check are all genuinely pinned.\n\nReview only. No code, test or design document changed.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00110",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
-   "commit": "pin",
-   "lines": "211-214",
-   "text": "### F21. Accuracy under 60/40 imbalance is a broken metric in both directions.\nA representation that recovers the 40% minority well can score below a majority-class predictor on accuracy.\n**Fix.** Register MCC and positive-class F1 as primary; accuracy reported only alongside base rate; class-balanced resampling reported as a secondary.\n",
-   "source_class": "arc2_docs"
+   "id": "S01133",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "2839-2876",
+   "text": "commit 9bb82bc0fe2444885c19aeabef8025cfab4586fe\nordinal 97\ndate 2026-08-07 23:44:58 -0700\nauthor Matt Stults\nsubject Adversarial review of today's stage-3/4 work: 12 findings, 2 high\nClean-context review of f775bc2..HEAD. Review only -- no code, test or\ndocument outside this file changed; every verification mutation restored.\n\nThe two that matter:\n\n* `_parse_body` silently drops everything after the first statement in a\n  body. `_check_body` rejects only a TRAILING full stop, so\n  `adult(P). N > 5, N != 9` validates, and the seats are shown a sentence\n  carrying one of its three conditions -- with RB1-RB5 all green and zero\n  findings. RB2 only scans `name(` so a dropped comparison is invisible to\n  it, and RB3 computes `want` and `got` from the same truncated parse, so it\n  agrees with itself. A drop, not a refusal -- which is why totality held\n  everywhere else I attacked it.\n\n* `test_an_anonymous_variable_in_a_BODY_is_accepted_and_clingo_loads_it`\n  passes when clingo never ran: no returncode check, and \"No module named\n  clingo\" contains no `error`. It is the entire positive evidence for\n  withdrawing the `_check_body` guard, and it was written in the same commit\n  series that fixed exactly this shape in `link._check_clingo`.\n\nAlso: `translate.py --self-test` has been RED (51/1, exit 1) through all four\ncommits while pytest read 468 green, because the pytest wrapper asserts only\n\"did not crash\"; `REVIEW_QUEUE.md`'s \"WHAT IS BUILT AND GREEN\" still claims\n53/53, 270 tests, 45 guards (actual 51+1 failed, 468, 44).\n\nRe-ran both sweeps rather than trusting them: mutate_schema 44/44 killed,\nand 12 of 15 hand-written readback mutants killed, each by exactly one\ntargeted test. The three survivors are findings F6 and F7. The pin set is\nreal work; these are its edges.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00111",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
-   "commit": "pin",
-   "lines": "215-218",
-   "text": "### F22. Panel truth is itself noisy, so the achievable ceiling is below 1.0 and is currently unmeasured.\nIf panel-internal agreement is, say, 0.85, a representation at 0.83 is functionally perfect but reads as a fail against any absolute bar.\n**Fix.** Register: panel-internal agreement (or the adjudication seat's own test-retest) is measured and published as the ceiling; the representation is scored as **% of ceiling attained**, with the pass threshold expressed in those terms.\n",
-   "source_class": "arc2_docs"
+   "id": "S01134",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "2877-2917",
+   "text": "commit b7c663e056a2d1f5b050d71d067773e6fea496a5\nordinal 98\ndate 2026-08-07 23:47:48 -0700\nauthor Matt Stults\nsubject RESTORE the anonymous-variable guard: I withdrew it on the wrong tool\nThe spec-drift review caught this and it is my error. I briefed the withdrawal\nas \"the ground is disproved twice over\", citing bare clingo (which does derive\nfrom `p(X) :- q(X,_)`) and the published ASP2CNL renderer (which skips hidden\nterms). Both claims are TRUE and both are about the wrong tool.\n\n03_pipeline.md names XCLINGO, and STEP_stage4.md makes it load-bearing for\nstage 4's R3 derivation layer. [RAN] xclingo 2.0b24:\n\n  p(X) :- q(X,_).  ->  error: unsafe variables in:\n                         _xclingo_sup(2,0,p(X),(#Anon0,X)):-...\n  p(X) :- q(X,Y).  ->  |__\"p holds of a\"\n\nxclingo lifts body variables into a supporting term where an anonymous one\nbecomes unsafe. It is not a limitation we can render around, and it takes the\nWHOLE LINK SET's explanation down, not one rule. 03_pipeline.md:239 stage-2\nnode D1 still requires \"no anonymous placeholders\" -- the code now matches the\ndesign again.\n\nTHE REPLACEMENT TEST RUNS XCLINGO rather than asserting the validator\ncomplains. That is the whole difference: the old test checked only that\nsomething raised, which is exactly what let the guard be withdrawn on a false\npremise. The new one pins the GROUND, with a named-variable control proving the\nfailure is caused by the `_` and not by the fixture, and it refuses to pass\nquietly if xclingo is missing.\n\ntest_readback keeps `_` in its direct-rendering list and excludes it from the\nmodule-level one. The split is the point: the renderer must handle `_` (the\nhand-written .lp files contain it) while the contract refuses to emit it.\nConflating \"renderable\" with \"admissible\" is what caused this.\n\nLesson, recorded because it cost a wrong commit: \"the renderer can handle it\"\nis not a claim about renderers in general. Name the tool and run it.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00112",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
-   "commit": "pin",
-   "lines": "219-222",
-   "text": "### F23. The spec's halves are not exchangeable — either split is wrong in a different direction.\nA random node split leaks (adjacent clauses in one section share vocabulary); a section-blocked split makes the held-out half out-of-distribution for topical reasons unrelated to ontology adequacy. Either can produce a spurious fail (section-blocked) or a spurious pass (random).\n**Fix.** Register **both** splits, report both, and pre-declare section-blocked as the honest estimate and random-node as the leakage upper bound. A gap between them is itself a reportable result.\n",
-   "source_class": "arc2_docs"
+   "id": "S01135",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "2918-2948",
+   "text": "commit f8f83edb52cf88551b3cb37ea44bf6e05e240aeb\nordinal 99\ndate 2026-08-07 23:52:17 -0700\nauthor Matt Stults\nsubject Close the silent content drop: an internal full stop hid two thirds of a rule\nEngineering review F1, HIGH, and it is the worst class of defect this project\nhas -- not a refusal, a DROP.\n\nschema._check_body rejected only a TRAILING full stop, so\n`adult(P). N > 5, N != 9` validated. readback._parse_body wrapped it, clingo\nparsed TWO statements, and the loop returned the first Rule's literals and\ndiscarded the rest. A seat was shown one of three conditions with\noutcome=rendered, RB1-RB5 all True and zero findings.\n\nNeither backstop could reach it. RB2 scans for `name(`, and a dropped\ncomparison has none. RB3 counts `not` in the same broken parse on both sides,\nso it agrees with itself. That is why layer-1 totality held everywhere else and\nthis still got through.\n\nFixed at BOTH layers. The contract now rejects a statement separator in a body,\nwith `1..3` preserved -- the interval operator is legal and a naive guard bans\nit, so that control is a test. The renderer refuses to return a partial parse\nand falls back to layer 1 over the RAW text instead, so nothing is lost and the\nreport shows it as ASP-with-glosses rather than fluent English. Defence in\ndepth is deliberate: trusting the layer above is how the first one got through.\n\nRED-verified both ways. 471 tests, mutate_schema 0 survivors.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00113",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
-   "commit": "pin",
-   "lines": "223-226",
-   "text": "### F24. A held-out definition may be inexpressible because it is badly written, not because the ontology is inadequate.\nThe corpus itself contains items with `no_operational_handle` — definitions that supply nothing decidable. Out-of-corpus sources will contain more.\n**Fix.** Register a blind pre-screen seat that rules each candidate definition behaviour-shaped **before** annotation, with exclusions logged and counted; and register that if the exclusion rate exceeds a pre-registered ceiling, the source-selection procedure — not the ontology — is what failed.\n",
-   "source_class": "arc2_docs"
+   "id": "S01136",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "2949-2972",
+   "text": "commit 223b44ea398f8aa78ec7ed972ec98bb03a72a2f5\nordinal 100\ndate 2026-08-07 23:53:25 -0700\nauthor Matt Stults\nsubject Record the review findings I did not act on, and one where the reviewer is wrong\nQ-14: the spec-drift review filed the disclosable `impossible` finding as a leak\nand said the CODE should change. It should not -- STEP_stage3.md:331 explicitly\nrules that impossible is disclosable BECAUSE it is the one label that is not a\nverdict, and section 8 item 16 is a TDD test for it. The code follows the\ndesign. What is actually wrong is the GROUNDS sentence at :385, which says the\norigin carries findings \"derived from the module and the solver alone\" -- false\nof a seat label. The ruling is probably right for a different reason than the\none written down. A design edit, so left alone.\n\nQ-15: four findings not acted on, each because acting is a design decision --\nRB1 act exemption (same root as Q-7), RB4 blind to layer-1 content, no origin\nfield on readback.Finding so section 5.5 registration is unsatisfiable, and\nsection 8 demanding a mutation run that mutate_schema.py structurally cannot\nprovide for readback.py. On the last one I share the reviewer view: write the\nright instrument, do not weaken the bar.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00114",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
-   "commit": "pin",
-   "lines": "227-230",
-   "text": "### F25. \"No new coinage\" can fail on a healthy ontology.\nSee F15. As written, a correct and useful ontology that mints one new value for a genuinely new domain scores as a failure.\n**Fix.** Split the metric per F15.\n",
-   "source_class": "arc2_docs"
+   "id": "S01137",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "2973-3024",
+   "text": "commit 29e018c6dcf7a530c1f53ec1b64a2a6ed3b6b1d7\nordinal 101\ndate 2026-08-08 00:04:05 -0700\nauthor Matt Stults\nsubject stage 4: the four review seats, enforced rather than stated\n`STEP_stage4.md` §§4–6. `readback.py` composes the one artifact all four seats\njudge; `seats.py` decides who is shown what, computes the four denominators,\nadjudicates the replies, and writes a report in which four agreeing seats\ncannot read as confirmation.\n\n§4's three shared reasons, each answered structurally:\n\n  A they all read the same rendering — `build_4c_prompt` has NO PARAMETER a\n    rendering could arrive through, and renderer marks smuggled through the\n    item text are refused. 4c is the anchor because it is not downstream of 4r.\n  B the rendering echoes the clause — RB4's stamp: 4b/4d verdicts marked\n    `non-evidential`, still asked, still recorded, never counted.\n  C unanimity read as confirmation — no consensus field, no `n_passed`, no\n    pass fraction, refused at construction; 4a in `advisory` and the pass line\n    provably does not read it; 4d `covered` cross-checked against stage 3's\n    discrimination count, `unsupported` where that number does not exist.\n\nThe four denominators (§5.1) and what each excludes: 4a the rendered set; 4b\nminus `world`; 4c every licensed item WITH `concepts` (excluding them takes the\nrun's denominator 12 -> 1); 4d the claims list minus `forbid_body` claims,\nexcluded by name and reported separately so a clause whose only gap is one\ncannot read as full coverage.\n\nLeak perimeter (§5.5/§5.6): `readback-structural` disclosable, every seat\norigin and `covered-but-inert` not; a seat finding discards the transcript and\nre-translates from a clean prompt, carrying zero bits.\n\nTDD, RED first. 134 tests, every fence with a paired silent control. Mutation\nsweep `mutate_seats.py`: 83 mutants, 0 survivors — the first run had 16\nsurvivors out of 71 with all 103 tests green, and each is now named.\n\nThree defects found reviewing this against DEBUGGING_TIPS §8, all the same\nshape (a check that did not run reading like one that passed): RB4 with no\nclause quote reported every verdict as evidential; RB1/RB2/RB3 fire without\nchanging the read-back outcome, so a rendering with a surviving label reached a\nseat unmarked; and a stamped negative verdict lost its stamps on the way into\nthe finding. All three now stamp — on RB4's precedent, never a gate.\n\n⛔ NOTHING WAS SPENT. `judge` raises without an explicit `client_factory` and\nevery seat is exercised against stubs. Measured cost of a live run, off the\nartifact that actually renders (`seats.py --cost`, free): 7 of 19 stored\nmodules reach a seat, worst case $0.0051/clause at flash rates and\n$0.5111/clause at frontier.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00115",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
-   "commit": "pin",
-   "lines": "231-234",
-   "text": "### F26. Seat model tier could produce a fail unrelated to the ontology.\nSmall-model seats may under-annotate where the ontology is fine — and the project's standing rule is that seat/frontier divergence is a *seat defect*.\n**Fix.** Register a frontier-parity check on a ≥20-item subsample for every seat used in L1/L2, run **before** the main results are read, with divergence voiding the run.\n",
-   "source_class": "arc2_docs"
-  },
-  {
-   "id": "S00116",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
-   "commit": "pin",
-   "lines": "235-239",
-   "text": "### F27. Both experiments lack a stated stopping/void rule, so a spurious fail invites re-running until it passes.\n**Fix.** Register: one run per registered design; a fail is published with its number; any re-run requires a new registration naming the change and the reason, and both results appear in the record. (This is the project's existing \"no post-hoc granularity shopping\" rule — bind it explicitly to L1/L2.)\n\n---\n",
-   "source_class": "arc2_docs"
-  },
-  {
-   "id": "S00117",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
-   "commit": "pin",
-   "lines": "240-272",
-   "text": "## OVERALL VERDICT\n\n**DOES-NOT-LICENSE.**\n\nPassing L1 and L2 exactly as written would **not** answer Q-A or Q-B. The decisive reasons, in order of severity:\n\n1. **L1's relevance clause is pre-satisfied.** 0.72 vs 0.60 (p = 0.0015) and 0.70 vs 0.59 (p = 0.0097) already \"beat the majority baseline.\" The project's own notes 0031 call the identical effect size \"NO field carves behaviour relevance.\" L1 could be marked PASS today, at $0, on the data that demolished 0041. That is a pass condition that cannot fail — erratum #21, fourth recurrence.\n2. **L2 has no null**, in explicit violation of the binding rule adopted in the same document, and its pass condition is met by construction: the schema contains a value literally named `undefined_harmfulness_catch_all`, and the two dimensions L2 exists to stress (`agentic_action_footprint`, `integrity_of_human_oversight`) each hold exactly **one** value fired by exactly **1/100** corpus definitions.\n3. **Neither experiment measures the Q-A construct.** Separability-as-implemented is signature uniqueness — a fingerprinting metric the project has already caught fingerprinting. Coverage-without-coinage is schema elasticity. Neither is \"which clauses bear on which behaviours.\"\n4. **Neither compares against the alternative the campaign must beat** — a frontier model reading the raw clause. On existing evidence that alternative wins, which makes the campaign negative-value regardless of L1/L2.\n\nThese are defects in the *measurements*, not proof the ontology is inadequate — the same distinction the 0041 disposition drew, and it still holds. But on the funding question the burden runs the other way: the designs as registered cannot discharge it.\n\n**Amendments that would convert this to LICENSES-WITH-AMENDMENTS**, in dependency order:\n\n- **A1 (gate, ~$0, run first).** F18: fresh random 60-node draw, two blind seats, α ≥ 0.67 pre-registered floor, all downstream metrics per-seat, pooling prohibited (F3).\n- **A2 (the experiment).** Replace L1 with F17's blind-readout ablation — Arm T / Arm R / seeded Arm N, MCC(R) ≥ MCC(T) − 0.05 and above the 99th null percentile, per behaviour, worst-behaviour headline, panel-internal agreement published as the ceiling (F1, F2, F16, F20–F22).\n- **A3.** Extend the relevance clause to ≥5 behaviours using truth already on disk; inventory partial truth before spending (F8).\n- **A4.** Replace L1's half-split with 5-fold out-of-fold induction so every truth-bearing node is scored, plus both random-node and section-blocked splits reported (F7, F23).\n- **A5.** Contamination audit: 29/100 corpus entries are OpenAI Model Spec; report clean vs contaminated held-out nodes separately, clean subset as headline; state that L1 bounds within-document transfer only (F4).\n- **A6.** Pre-register every L1 parameter — sample frame, seed, seats, blinding, feature set, readout — and exclude the problem-stratified 39 from the headline (F5).\n- **A7.** Null threshold: ≥1000 seeds, matched on family-usage frequency and per-item handle count, 99th percentile, fail = stop (F6). Dead-dimension audit and catch-all/singleton ceiling reported (F9).\n- **A8.** Rebuild L2 as: n ≥ 30, ≥5 per out-of-space class, verbatim-lifted definitions from sources chosen by a schema-blind seat and hashed pre-annotation, Anthropic constitution and Usage Policy disqualified as already in-corpus (F13, F14).\n- **A9.** L2 scored on **discriminative** coverage (no catch-alls, no singletons, distinct from all other held-out and from the nearest in-corpus definition), against a seeded random-assignment null, with dimension-closure and value-coinage as separate pre-registered numbers (F10, F11, F15).\n- **A10.** L2's licensing clause becomes end-to-end: ≥3 out-of-corpus behaviours get panel truth over a stratified node sample and are scored by A2's protocol. Coverage-without-coinage survives only as an explicitly non-licensing pre-gate (F12).\n- **A11.** Behaviour-shaped pre-screen with logged exclusions; frontier-parity check on every seat before results are read; one-run-per-registration rule (F24, F26, F27).\n- **A12.** Fund only on `A1 pass AND A2 pass AND a 60-node end-to-end scaling pre-flight whose extrapolation to 600 fits budget` (F19). Note the budget context: `spend.py` reports **$17.179 of $25.00 (69%)**, ~$7.8 headroom, with the total flagged as an overstatement.\n\nWithout A1, A2, A9, and A10 at minimum, a PASS on L1+L2 is a repeat of 0041 with a larger n.\n\n---\n---\n",
-   "source_class": "arc2_docs"
-  },
-  {
-   "id": "S00118",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
-   "commit": "pin",
-   "lines": "273-280",
-   "text": "# PART TWO — ADDENDUM (verbatim)\n\n*Written after a delegated panel-truth inventory returned. It corrects two premises in the\nmain review and adds nine findings — all of which strengthen the negative verdict except\none, which removes an objection.*\n\n---\n",
-   "source_class": "arc2_docs"
-  },
-  {
-   "id": "S00119",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
-   "commit": "pin",
-   "lines": "281-282",
-   "text": "# ADDENDUM — corrections and nine further findings\n",
-   "source_class": "arc2_docs"
+   "id": "S01138",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "3025-3050",
+   "text": "commit 0defdbc45bcf2cb3a6db187a7cea1cea055c807f\nordinal 102\ndate 2026-08-08 00:07:06 -0700\nauthor Matt Stults\nsubject Q-3 answered with a measured number; two gaps recorded\nA full stage-4 run over everything that can reach a seat costs about FOUR CENTS\non the configured flash model (worst case, every reply at its token cap). On a\nfrontier model it is $3.58 -- 42% of the remaining project budget. Computed by\nseats.py --cost from the real rendered artifact, no calls made.\n\nOnly 7 of 19 stored modules reach a seat: 5 fail stage 2, 7 are blocked by\nreadback-ungloss. The check was not relaxed to raise that number.\n\nQ-16: stage 4 section 2.1 specifies THREE rendering layers and readback.py\nproduces two. R3, the xclingo derivation trees, is absent -- no derivation\nreaches any seat and the seats judge items and rules but never why a verdict\nfollowed. Unfinished implementation rather than a design question, so I am\nbuilding it.\n\nQ-17: 4c never runs for the 7 ungloss-blocked modules, so the seat designed to\nbe independent of the shared artifact is switched off exactly when that artifact\nfails. Independent of a WRONG rendering, not of a MISSING one.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   }
  ]
 }

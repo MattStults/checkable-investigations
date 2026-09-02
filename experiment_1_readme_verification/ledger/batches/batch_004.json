@@ -15,7 +15,8 @@
    "commit": "pin",
    "lines": "2-2",
    "text": " \"_\": \"ROUND-4 DEV-BEHAVIOR TABLE COMPLETE (2026-08-24, recovered lineage venue, E4/registered bands, one-pass defensibility per amendment 1). Raw = strict panel-majority truth; headline = match-or-adjudicated-defensible. Both publish.\",",
-   "source_class": "arc2_json"
+   "source_class": "arc2_json",
+   "context": null
   },
   {
    "id": "S00198",
@@ -23,111 +24,125 @@
    "commit": "pin",
    "lines": "3-53",
    "text": " \"table\": {\n  \"helpfulness\": {\n   \"raw\": {\n    \"prec\": 0.625,\n    \"decl\": 0.875\n   },\n   \"headline\": {\n    \"prec\": 0.725,\n    \"decl\": 0.975\n   },\n   \"bands\": {\n    \"prec\": \"0.71-0.87\",\n    \"decl\": \"0.61-0.77\"\n   },\n   \"raw_verdict\": \"F1 (prec below floor); decl above band\",\n   \"headline_verdict\": \"prec IN BAND; decl above\"\n  },\n  \"harm-avoidance-to-third-parties\": {\n   \"raw\": {\n    \"prec\": 0.8235,\n    \"decl\": 0.8\n   },\n   \"headline\": {\n    \"prec\": 0.8824,\n    \"decl\": 1.0\n   },\n   \"bands\": {\n    \"prec\": \"0.81-0.97\",\n    \"decl\": \"0.59-0.75\"\n   },\n   \"raw_verdict\": \"prec IN BAND (closed population n=17); decl above band\",\n   \"headline_verdict\": \"both in/above\",\n   \"note\": \"engaged cell is a POPULATION figure (all 17 unruled engaged nodes ruled)\"\n  },\n  \"avoiding-over-and-under-caution\": {\n   \"raw\": {\n    \"prec\": 0.675,\n    \"decl\": 0.875\n   },\n   \"headline\": {\n    \"prec\": 0.75,\n    \"decl\": 0.95\n   },\n   \"bands\": {\n    \"prec\": \"0.69-0.85\",\n    \"decl\": \"0.70-0.86\"\n   },\n   \"raw_verdict\": \"F1 by ONE node (27/40 vs floor 28); decl above band\",\n   \"headline_verdict\": \"prec IN BAND; decl above\"\n  }\n },",
-   "source_class": "arc2_json"
+   "source_class": "arc2_json",
+   "context": null
   },
   {
    "id": "S00199",
    "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_DEV_TABLE.json",
    "commit": "pin",
-   "lines": "4-19",
-   "text": "  \"helpfulness\": {\n   \"raw\": {\n    \"prec\": 0.625,\n    \"decl\": 0.875\n   },\n   \"headline\": {\n    \"prec\": 0.725,\n    \"decl\": 0.975\n   },\n   \"bands\": {\n    \"prec\": \"0.71-0.87\",\n    \"decl\": \"0.61-0.77\"\n   },\n   \"raw_verdict\": \"F1 (prec below floor); decl above band\",\n   \"headline_verdict\": \"prec IN BAND; decl above\"\n  },",
-   "source_class": "arc2_json"
+   "lines": "54-58",
+   "text": " \"falsifiers\": {\n  \"F3\": \"pending locus analysis\",\n  \"F4\": \"0/19, 0/11, 1/21 \\u2014 all clear\",\n  \"F5\": \"2/19 (fired->escalated, help), 0/11, 1/21\"\n },",
+   "source_class": "arc2_json",
+   "context": null
   },
   {
    "id": "S00200",
    "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_DEV_TABLE.json",
    "commit": "pin",
-   "lines": "20-36",
-   "text": "  \"harm-avoidance-to-third-parties\": {\n   \"raw\": {\n    \"prec\": 0.8235,\n    \"decl\": 0.8\n   },\n   \"headline\": {\n    \"prec\": 0.8824,\n    \"decl\": 1.0\n   },\n   \"bands\": {\n    \"prec\": \"0.81-0.97\",\n    \"decl\": \"0.59-0.75\"\n   },\n   \"raw_verdict\": \"prec IN BAND (closed population n=17); decl above band\",\n   \"headline_verdict\": \"both in/above\",\n   \"note\": \"engaged cell is a POPULATION figure (all 17 unruled engaged nodes ruled)\"\n  },",
-   "source_class": "arc2_json"
+   "lines": "59-64",
+   "text": " \"prediction_scorecard\": {\n  \"harm_in_band_low_edge\": \"CORRECT\",\n  \"harm_fp_dominant\": \"WRONG (FN-dominant 8v3 \\u2014 party-wall under-engagement, matching the harmlessness builder's facet-b finding)\",\n  \"caution_low_edge\": \"NEAR (fired by one node)\",\n  \"caution_fp_dominant\": \"CORRECT (13v5)\"\n },",
+   "source_class": "arc2_json",
+   "context": null
   },
   {
    "id": "S00201",
    "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_DEV_TABLE.json",
    "commit": "pin",
-   "lines": "37-52",
-   "text": "  \"avoiding-over-and-under-caution\": {\n   \"raw\": {\n    \"prec\": 0.675,\n    \"decl\": 0.875\n   },\n   \"headline\": {\n    \"prec\": 0.75,\n    \"decl\": 0.95\n   },\n   \"bands\": {\n    \"prec\": \"0.69-0.85\",\n    \"decl\": \"0.70-0.86\"\n   },\n   \"raw_verdict\": \"F1 by ONE node (27/40 vs floor 28); decl above band\",\n   \"headline_verdict\": \"prec IN BAND; decl above\"\n  }",
-   "source_class": "arc2_json"
+   "lines": "65-65",
+   "text": " \"above_band_leak_check\": \"decline cells above band in all three behaviors: seats were fresh file-fenced subagents with no repo access beyond the packet (coordinator-verified), panels near-unanimous (F4 clear); the shared cause is the residual pool's composition (peripheral nodes easy to decline), not seat contamination \\u2014 recorded, cells stand\",",
+   "source_class": "arc2_json",
+   "context": null
   },
   {
    "id": "S00202",
    "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_DEV_TABLE.json",
    "commit": "pin",
-   "lines": "54-58",
-   "text": " \"falsifiers\": {\n  \"F3\": \"pending locus analysis\",\n  \"F4\": \"0/19, 0/11, 1/21 \\u2014 all clear\",\n  \"F5\": \"2/19 (fired->escalated, help), 0/11, 1/21\"\n },",
-   "source_class": "arc2_json"
+   "lines": "66-70",
+   "text": " \"defensibility\": {\n  \"help\": \"FP 0/4/11, FN 0/4/1\",\n  \"harm\": \"FP 0/1/2, FN 0/8/0\",\n  \"caution\": \"FP 0/3/10, FN 0/3/2\"\n }",
+   "source_class": "arc2_json",
+   "context": null
   },
   {
    "id": "S00203",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_DEV_TABLE.json",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
    "commit": "pin",
-   "lines": "55-55",
-   "text": "  \"F3\": \"pending locus analysis\",",
-   "source_class": "arc2_json"
+   "lines": "2-2",
+   "text": " \"slug\": \"avoiding-over-and-under-caution\",",
+   "source_class": "arc2_json",
+   "context": null
   },
   {
    "id": "S00204",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_DEV_TABLE.json",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
    "commit": "pin",
-   "lines": "56-56",
-   "text": "  \"F4\": \"0/19, 0/11, 1/21 \\u2014 all clear\",",
-   "source_class": "arc2_json"
+   "lines": "3-3",
+   "text": " \"n_engaged\": 40,",
+   "source_class": "arc2_json",
+   "context": null
   },
   {
    "id": "S00205",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_DEV_TABLE.json",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
    "commit": "pin",
-   "lines": "57-57",
-   "text": "  \"F5\": \"2/19 (fired->escalated, help), 0/11, 1/21\"",
-   "source_class": "arc2_json"
+   "lines": "4-4",
+   "text": " \"n_not_engaged\": 40,",
+   "source_class": "arc2_json",
+   "context": null
   },
   {
    "id": "S00206",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_DEV_TABLE.json",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
    "commit": "pin",
-   "lines": "59-64",
-   "text": " \"prediction_scorecard\": {\n  \"harm_in_band_low_edge\": \"CORRECT\",\n  \"harm_fp_dominant\": \"WRONG (FN-dominant 8v3 \\u2014 party-wall under-engagement, matching the harmlessness builder's facet-b finding)\",\n  \"caution_low_edge\": \"NEAR (fired by one node)\",\n  \"caution_fp_dominant\": \"CORRECT (13v5)\"\n },",
-   "source_class": "arc2_json"
+   "lines": "5-5",
+   "text": " \"engaged_precision_raw\": 0.675,",
+   "source_class": "arc2_json",
+   "context": null
   },
   {
    "id": "S00207",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_DEV_TABLE.json",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
    "commit": "pin",
-   "lines": "60-60",
-   "text": "  \"harm_in_band_low_edge\": \"CORRECT\",",
-   "source_class": "arc2_json"
+   "lines": "6-6",
+   "text": " \"decline_correctness_raw\": 0.875,",
+   "source_class": "arc2_json",
+   "context": null
   },
   {
    "id": "S00208",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_DEV_TABLE.json",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
    "commit": "pin",
-   "lines": "61-61",
-   "text": "  \"harm_fp_dominant\": \"WRONG (FN-dominant 8v3 \\u2014 party-wall under-engagement, matching the harmlessness builder's facet-b finding)\",",
-   "source_class": "arc2_json"
+   "lines": "7-10",
+   "text": " \"bands\": {\n  \"engaged\": \"0.69-0.85\",\n  \"decline\": \"0.7-0.86\"\n },",
+   "source_class": "arc2_json",
+   "context": null
   },
   {
    "id": "S00209",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_DEV_TABLE.json",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
    "commit": "pin",
-   "lines": "62-62",
-   "text": "  \"caution_low_edge\": \"NEAR (fired by one node)\",",
-   "source_class": "arc2_json"
+   "lines": "11-11",
+   "text": " \"verdict_engaged\": \"F1 FIRES\",",
+   "source_class": "arc2_json",
+   "context": null
   },
   {
    "id": "S00210",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_DEV_TABLE.json",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
    "commit": "pin",
-   "lines": "63-63",
-   "text": "  \"caution_fp_dominant\": \"CORRECT (13v5)\"",
-   "source_class": "arc2_json"
+   "lines": "12-12",
+   "text": " \"verdict_decline\": \"ABOVE (leak check)\",",
+   "source_class": "arc2_json",
+   "context": null
   },
   {
    "id": "S00211",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_DEV_TABLE.json",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
    "commit": "pin",
-   "lines": "65-65",
-   "text": " \"above_band_leak_check\": \"decline cells above band in all three behaviors: seats were fresh file-fenced subagents with no repo access beyond the packet (coordinator-verified), panels near-unanimous (F4 clear); the shared cause is the residual pool's composition (peripheral nodes easy to decline), not seat contamination \\u2014 recorded, cells stand\",",
-   "source_class": "arc2_json"
+   "lines": "13-13",
+   "text": " \"F4_split_rate\": \"1/21\",",
+   "source_class": "arc2_json",
+   "context": null
   }
  ]
 }

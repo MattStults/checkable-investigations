@@ -1,133 +1,148 @@
 {
  "header": {
   "batch": "batch_083",
-  "source_class": "arc1_cycles",
+  "source_class": "git_log",
   "brief_version": "0.4",
   "glossary_version": "frozen ",
   "spans": 15,
-  "first_span": "S01205",
-  "last_span": "S01219"
+  "first_span": "S01436",
+  "last_span": "S01450"
  },
  "spans": [
   {
-   "id": "S01205",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "62-62",
-   "text": "  \"behavior_atoms_audit_v1.json\": \"1e49a65a945215386b0e104fcbaf1812fbd5395e7fe01f2034d9977c55b1bd0b\",",
-   "source_class": "arc1_cycles"
+   "id": "S01436",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8023-8031",
+   "text": "commit 4ba12b42ecb6f5b4e8858aaa3cf34379894546ba\nordinal 400\ndate 2026-08-19 14:39:54 -0700\nauthor Matt Stults\nsubject convergence campaign CHARTER (Matt 2026-08-19): drive all precision differences to match-or-adjudicated-reading-difference, FN growth only into classified/hypothesized recall classes; pre-committed stop rule (bucket-0 empty OR <5 resolved per 0.3M two iterations running); the terminal bucket-0 set is the research answer\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01206",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "63-63",
-   "text": "  \"vocabulary_migrations.json\": \"f4a7f858b17a88c4b3ec4621e1a5a28d196f4ca9aebb22a175314a1b14d66d95\"",
-   "source_class": "arc1_cycles"
+   "id": "S01437",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8032-8040",
+   "text": "commit 5b79f26733fcfd1a68314526ab0f9f83c9db2948\nordinal 401\ndate 2026-08-19 14:45:30 -0700\nauthor Matt Stults\nsubject convergence iteration 1 COMPLETE: 84 FPs adjudicated -> bucket 2 (both-defensible reading difference, turns_on recorded) 29, bucket 0 (instrument wrong, iter-2 fix targets) 54, panel-wrong (re-panel queue) 1; FN side 115 all in census classes (bucket 3), FN bucket 0 = 0; H-R7 ends-graph closure measured and REJECTED all variants (recovers the predicted FN class but imports more FP mass — wrong direction under charter); ends-graph committed quote-gated with 12 rejected edges named; ledger at panel_run1/convergence/LEDGER_iter1.json\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01207",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "65-65",
-   "text": " \"overrides\": [],",
-   "source_class": "arc1_cycles"
+   "id": "S01438",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8041-8049",
+   "text": "commit cd500de55efc33c1f1aac2c09b881ff6c6a96fb7\nordinal 402\ndate 2026-08-19 14:49:33 -0700\nauthor Matt Stults\nsubject Opus parity floors pre-registered for 3 lanes (rulings/annotation/adjudication) before results read; Opus need only match Fable as well as Fable matches itself\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01208",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "66-92",
-   "text": " \"prediction_checks\": {\n  \"adjudicate\": [\n   {\n    \"expected\": 0,\n    \"kind\": \"max_regressions\",\n    \"observed\": 0,\n    \"result\": \"PASS\"\n   }\n  ],\n  \"measure\": [\n   {\n    \"expected\": {\n     \"max\": 0,\n     \"min\": 0\n    },\n    \"kind\": \"flip_count\",\n    \"observed\": 0,\n    \"result\": \"PASS\"\n   },\n   {\n    \"expected\": [],\n    \"kind\": \"directions\",\n    \"observed\": [],\n    \"result\": \"PASS\"\n   }\n  ]\n },",
-   "source_class": "arc1_cycles"
+   "id": "S01439",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8050-8058",
+   "text": "commit e17ec8e4a236a16b4218e0ad220d72c6474226d8\nordinal 403\ndate 2026-08-19 14:52:21 -0700\nauthor Matt Stults\nsubject Opus parity vs pre-registered floors: annotation lane PASSES (actor 0.96, purpose verdict-level 0.94-0.96) -> sweeps shift to Opus with Fable spot-check gates; rulings lane FAILS (0.81, systematically broader) and adjudication lane FAILS (0.38, 31/42 both-defensible vs Fable 12/42) -> judgment roles stay Fable; campaign-design finding recorded: bucket-2 boundary is judge-dependent, strict-judge standard adopted by name so terminal bucket-0 is the conservative research answer\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01209",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "67-74",
-   "text": "  \"adjudicate\": [\n   {\n    \"expected\": 0,\n    \"kind\": \"max_regressions\",\n    \"observed\": 0,\n    \"result\": \"PASS\"\n   }\n  ],",
-   "source_class": "arc1_cycles"
+   "id": "S01440",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8059-8067",
+   "text": "commit 9052f391ef69253df610d36994cde7b95a3f415d\nordinal 404\ndate 2026-08-19 15:00:26 -0700\nauthor Matt Stults\nsubject convergence iteration 2 (instrument v15): Opus bridge-subtype audit (48 retargets, contract-verified) + helpfulness does-narrowing -> bucket-0 FPs 54->17 with ZERO brand-new FPs, caution 0.82 (best ever, FP 13), help FP 41->17 accuracy up, FN 115->132 into act_no_bridge_or_verb per charter; V1-V6 0 breaches, 22 tests pass; iter-2 Fable cost ~0 (Opus+deterministic); remaining bucket-0 dominated by the uncertainty section (l2821_3040 x7) — the accuracy/honesty relational cluster\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01210",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "75-91",
-   "text": "  \"measure\": [\n   {\n    \"expected\": {\n     \"max\": 0,\n     \"min\": 0\n    },\n    \"kind\": \"flip_count\",\n    \"observed\": 0,\n    \"result\": \"PASS\"\n   },\n   {\n    \"expected\": [],\n    \"kind\": \"directions\",\n    \"observed\": [],\n    \"result\": \"PASS\"\n   }\n  ]",
-   "source_class": "arc1_cycles"
+   "id": "S01441",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8068-8076",
+   "text": "commit b446e87773dde43ce4b100f1e43b2ef1839f6493\nordinal 405\ndate 2026-08-19 15:03:40 -0700\nauthor Matt Stults\nsubject convergence iteration 3 (instrument v16): express_uncertainty subtype split (calibrated-position vs phrasing, 9 functors retargeted, helpfulness does the substantive sibling) + harm governs minus objectivity + adhere_to_spec bridge removed (audit: no_faithful_target) -> bucket-0 17->11, zero new FPs, help FP 12 / caution FP 13 / harm FP 14; trajectory 84->54->17->11 at ~0 Fable for iters 2-3; tests 22 pass, validators 0 breaches\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01211",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "93-93",
-   "text": " \"skipped\": {}",
-   "source_class": "arc1_cycles"
+   "id": "S01442",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8077-8085",
+   "text": "commit 119578905f5c6fc402a0ea66ce0f41dcfa0bb17e\nordinal 406\ndate 2026-08-19 15:05:15 -0700\nauthor Matt Stults\nsubject convergence campaign TERMINAL ANALYSIS: trajectory 84->54->17->11 (1.3% of 836 truth points); final mechanism (quality-scoped purpose conjunction) measured and rejected (fixes 3, costs 24 TPs), emptying the principled mechanism space; the limit is vocabulary-granularity ECONOMICS (finer cuts trade recall ~1:1, measured 3 ways), not relational irreducibility; FN side fully classified, FN bucket-0 = 0; human review point reached per Matt's instruction\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01212",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "2-2",
-   "text": " \"census\": \"deferred_to_checkpoint\",",
-   "source_class": "arc1_cycles"
+   "id": "S01443",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8086-8094",
+   "text": "commit 028bb3f8a4e0751807733c4221564d6328f94ea2\nordinal 407\ndate 2026-08-19 15:45:52 -0700\nauthor Matt Stults\nsubject phase-2 iteration 1 (FN side): 134 FNs strict-adjudicated -> 79 miss-defensible (bucket 2'), 52 instrument-wrong (FN bucket-0 fix frontier: bridge-gap 20, actless 15, wall-blocked 11, actor 6), 3 panel-wrong (re-panel queue); charter amended for two-sided convergence with terminal-11 deferred; GLOBAL bucket-0 now 63 (52 FN + 11 FP)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01213",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "3-3",
-   "text": " \"census_delta\": null,",
-   "source_class": "arc1_cycles"
+   "id": "S01444",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8095-8103",
+   "text": "commit 14495c3b18636d8ba9938b0574e4ade10ff6e4ea\nordinal 408\ndate 2026-08-19 15:55:40 -0700\nauthor Matt Stults\nsubject phase-2 iteration 2 COMPLETE (v17 amended): Opus fix-proposals applied with charter arithmetic — 19 bridge fixes (5 invalid non-canonical targets REVERTED), 17 annotation corrections (3 locked skipped), act_in_world does-addition REVERTED (5 IW FPs vs 1 fix), 5 on-face act_party corrections (assistant acts mislabeled with object party); help 324/397=0.82 FP12, harm 185/234=0.79, caution 166/205=0.81; GLOBAL bucket-0 63->36 (FP 14 + FN 22), bucket-4 mechanisms 15, zero unadjudicated; tests+validators green\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01214",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "4-4",
-   "text": " \"cycle\": \"decoration-blind-join-2026-08-04\",",
-   "source_class": "arc1_cycles"
+   "id": "S01445",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8104-8112",
+   "text": "commit eb9fad6bac4f6f9e116837ec0c6cc2a76030befd\nordinal 409\ndate 2026-08-19 16:33:16 -0700\nauthor Matt Stults\nsubject convergence panels: protects panels (2 fresh + layer) CONFIRM original beneficiary labels on all 9 wall-conflict nodes — Opus relabel proposals REJECTED and nodes panel-locked; the wall-blocked FN class is STRUCTURAL (relevance without matching beneficiary — the permit class writ large), not annotation error; relevance re-panels: caution n011 flips relevant (FP dissolves), harm l1_170_n005 flips not-relevant (org-license FN dissolves), two stand with splits recorded via panel_rerulings; Opus building example-acts layer + deterministic reason renderer\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01215",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "5-5",
-   "text": " \"date\": \"2026-08-04\",",
-   "source_class": "arc1_cycles"
+   "id": "S01446",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8113-8121",
+   "text": "commit e58abe96e2f419b61b2b4aa0f8c69fe055e59938\nordinal 410\ndate 2026-08-19 16:36:51 -0700\nauthor Matt Stults\nsubject phase-2 iteration 3 COMPLETE: example-act lifting wired (6 bucket-4 FNs fixed; help 329/397=0.83 best-ever; 1 new FP adjudicated both-defensible); identity bridges for canonical acts; deterministic reason renderer delivered (explain_relevance.py — query-time LLM-free accounts, all decline gates); protects panels locked 9 nodes (wall-blocked FN class ruled STRUCTURAL); GLOBAL bucket-0 36, bucket-4 9; tests pass\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01216",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "6-6",
-   "text": " \"decision\": \"keep\",",
-   "source_class": "arc1_cycles"
+   "id": "S01447",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8122-8130",
+   "text": "commit f3045b810781034fb2644a93f4c4265a6e1a5164\nordinal 411\ndate 2026-08-19 16:39:42 -0700\nauthor Matt Stults\nsubject consolidated convergence review document for Matt (terminal-candidate sets with per-node grounds, acceptance semantics, next steps)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01217",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "7-7",
-   "text": " \"exploratory\": false,",
-   "source_class": "arc1_cycles"
+   "id": "S01448",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8131-8139",
+   "text": "commit 8c78070bb24a14d37b999728e71d9c2e765c6f3e\nordinal 412\ndate 2026-08-19 16:49:59 -0700\nauthor Matt Stults\nsubject review doc rev 2: per-node dual accounts — the instrument's own mechanical reason (explain_relevance.py output: engaging functor/bridge/wall facts, or first failing gate) beside the strict judge's turns_on, for all 45 terminal-candidate nodes\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01218",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "8-8",
-   "text": " \"fix_description\": \"The DECORATION-BLIND JOIN, pricing v1.2 (spine cycle S1; BACKFILL_DESIGN.md \\u00a76 as amended per PORTFOLIO_REVIEW.md F1 \\u2014 promoted from micro-cycle to a full standard cycle). containment.py's ContainmentIndex becomes the versioned v1.2 pricing path: the atom-channel match key, the atom df/idf, and the lexical atom-text all read the DECHAINED atom name \\u2014 polarity + stem with the principal chain stripped (polarity is NOT stripped; grammar.stem_of is the wrong key). The dechain key applies at every entry point (_atom_score and _subsumption_matches dechain their query-atom names; channel_scores/explain dechain the behaviour, which also strips chain principal tokens from the lexical query text). Chained and chain-free instances of one dechained name share one df entry (clause sets unioned); stripped chains are preserved on the index as pricing metadata (self.chains) for the future 2.0 patient-pricing layer and reported by explain() under a `dechained` key (absent on chain-free evidence). PRICING_VERSION bumps \\\"1.1\\\" -> \\\"1.2\\\". The opt-in vehicle is the existing overlay seam: config.overlay = overlay_empty.json (ZERO edges, budget 0/0), which routes snapshot scoring through ContainmentIndex and records pricing_version \\\"1.2\\\" in the snapshot config identity \\u2014 containment.json's licensed edges stay dormant (reactivation is cycle S5's, PORTFOLIO_REVIEW F2), so the only behavioural delta vs the baseline is the join itself. PROCESS NOTE, disclosed: a first OPEN/PREDICT of this same cycle name earlier today (manifest sha cf6e2496f048..., prediction sha 5b05b018d48d...) was DISCARDED before IMPLEMENT and before any snapshot was built or published: post-freeze RED->GREEN work exposed two defects in the then-frozen gate-test file test_dechain.py (a fixture gloss that embedded the chained name \\u2014 glosses are authored prose, not decoration \\u2014 and a missing pin that the dechain key applies at _atom_score's own entry point), and that file sat sha-pinned in the OPEN closure, so per the driver's own remedy the cycle was reopened with the corrected file finalized pre-OPEN. The prediction content is numerically identical to the discarded freeze; no measurement had run.\",",
-   "source_class": "arc1_cycles"
+   "id": "S01449",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8140-8148",
+   "text": "commit 10c55c586e0918ddc324fd586482999c1d673a3a\nordinal 413\ndate 2026-08-19 16:53:35 -0700\nauthor Matt Stults\nsubject explain_relevance --plain: jargon-free multi-line accounts (friendly vocabularies for acts/qualities/roles/statuses, gate reasons in plain words); review doc rev 3 regenerated with plain accounts per node\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01219",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "9-11",
-   "text": " \"flip_tallies\": {\n  \"regression\": 1\n },",
-   "source_class": "arc1_cycles"
+   "id": "S01450",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8149-8157",
+   "text": "commit 49692a8f105cdc99a9df8b85230b236894e6fa2d\nordinal 414\ndate 2026-08-19 16:55:57 -0700\nauthor Matt Stults\nsubject review doc rev 4 + renderer: full ESTABLISHES clause (no truncation) in plain mode\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   }
  ]
 }

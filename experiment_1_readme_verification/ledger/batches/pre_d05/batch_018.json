@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_018",
+  "source_class": "arc2_json",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S00407",
+  "last_span": "S00421"
+ },
+ "spans": [
+  {
+   "id": "S00407",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "commit": "pin",
+   "lines": "45-45",
+   "text": "  \"l4252_4482_n014\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00408",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "commit": "pin",
+   "lines": "46-46",
+   "text": "  \"l1108_1367_n007\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00409",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "commit": "pin",
+   "lines": "47-47",
+   "text": "  \"l427_460_n005\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00410",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "commit": "pin",
+   "lines": "48-48",
+   "text": "  \"l2821_3040_n009\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00411",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "commit": "pin",
+   "lines": "49-49",
+   "text": "  \"l2126_2404_n011\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00412",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "commit": "pin",
+   "lines": "50-50",
+   "text": "  \"l3041_3146_n015\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00413",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "commit": "pin",
+   "lines": "51-51",
+   "text": "  \"l3954_4251_n011\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00414",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "commit": "pin",
+   "lines": "52-52",
+   "text": "  \"l797_830_n018\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00415",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "commit": "pin",
+   "lines": "53-53",
+   "text": "  \"l3041_3146_n008\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00416",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "commit": "pin",
+   "lines": "54-54",
+   "text": "  \"l3954_4251_n022\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00417",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "commit": "pin",
+   "lines": "55-55",
+   "text": "  \"l3954_4251_n010\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00418",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "commit": "pin",
+   "lines": "56-56",
+   "text": "  \"l1707_1973_n005\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00419",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "commit": "pin",
+   "lines": "57-57",
+   "text": "  \"l2405_2473_n011\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00420",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "commit": "pin",
+   "lines": "58-58",
+   "text": "  \"l699_796_n010\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00421",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "commit": "pin",
+   "lines": "59-59",
+   "text": "  \"l2126_2404_n003\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  }
+ ]
+}

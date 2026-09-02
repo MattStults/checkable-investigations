@@ -69,33 +69,41 @@ def cut_markdown(lines, maxlen=60, entry_mode=False):
                 yield s + 1, min(s + maxlen, b)
 
 def cut_json(lines, maxlen=80):
-    """One span per top-level key INCLUDING its full nested value (brace/bracket
-    depth tracked on the pretty-printed text; strings are not parsed, so a
-    brace inside a string can mis-cut — the checker's verbatim rule catches
-    any resulting bad quote). Values longer than maxlen lines are split into
-    consecutive windows that each restate the key line first."""
-    text = "\n".join(lines)
-    starts = [i for i, l in enumerate(lines) if re.match(r'^ {0,2}"[^"]+":', l)]
-    if len(starts) < 2:
-        yield 1, len(lines)
+    """One span per TOP-LEVEL key (depth 1, found by brace/bracket depth, not
+    indentation) including its full nested value. A value longer than maxlen
+    lines is split into windows; every window after the first is prefixed
+    with the key line's range so the enclosing key is visible (the span text
+    is then non-contiguous: lines "a-b" of the key plus the window — to keep
+    quotes checkable we instead emit the window alone and put the key path in
+    the span's `context` field). Strings are not parsed; a brace inside a
+    string can mis-cut — the checker's verbatim rule catches any bad quote."""
+    depth = 0
+    starts = []
+    for i, l in enumerate(lines):
+        if depth == 1 and re.match(r'^\s*"[^"]+":', l):
+            starts.append(i)
+        depth += l.count("{") + l.count("[") - l.count("}") - l.count("]")
+    if not starts:
+        yield 1, len(lines), None
         return
     bounds = []
     for s in starts:
-        depth = 0
+        d = 0
         end = s
         for j in range(s, len(lines)):
-            depth += lines[j].count("{") + lines[j].count("[") - lines[j].count("}") - lines[j].count("]")
+            d += lines[j].count("{") + lines[j].count("[") - lines[j].count("}") - lines[j].count("]")
             end = j
-            if depth <= 0:
+            if d <= 0:
                 break
         bounds.append((s, end))
     for s, e in bounds:
+        key = re.match(r'^\s*"([^"]+)":', lines[s]).group(1)
         if e - s + 1 <= maxlen:
-            yield s + 1, e + 1
+            yield s + 1, e + 1, None
         else:
             k = s
             while k <= e:
-                yield k + 1, min(k + maxlen, e + 1)
+                yield k + 1, min(k + maxlen, e + 1), (None if k == s else f"inside top-level key \"{key}\" (window of a value longer than {maxlen} lines)")
                 k += maxlen
 
 def main():
@@ -107,11 +115,11 @@ def main():
     os.makedirs(os.path.join(a.out, "generated"), exist_ok=True)
     spans = []
     n = 0
-    def add(path, commit, lines_, a_, b_, cls):
+    def add(path, commit, lines_, a_, b_, cls, context=None):
         nonlocal n
         n += 1
         spans.append({"id": f"S{n:05d}", "path": path, "commit": commit, "lines": f"{a_}-{b_}",
-                      "text": "\n".join(lines_[a_ - 1:b_]), "source_class": cls})
+                      "text": "\n".join(lines_[a_ - 1:b_]), "source_class": cls, "context": context})
     # cycles
     cyc = git(a.repo, "ls-tree", "-r", "--name-only", a.pin, SFE + "cycles/").split("\n")
     SOURCES["arc1_cycles"] = [p for p in cyc if p.endswith(("decision.json", "review_verdict.json", "prediction.json", "state.json"))]
@@ -122,13 +130,15 @@ def main():
                 print("missing at pin:", path, file=sys.stderr)
                 continue
             lines = text.split("\n")
-            if path.endswith(".json") or path.endswith(".jsonl"):
-                cuts = cut_json(lines) if path.endswith(".json") else [(i + 1, i + 1) for i in range(len(lines)) if lines[i].strip()]
+            if path.endswith(".json"):
+                cuts = list(cut_json(lines))
+            elif path.endswith(".jsonl"):
+                cuts = [(i + 1, i + 1, None) for i in range(len(lines)) if lines[i].strip()]
             else:
-                cuts = cut_markdown(lines, entry_mode=(cls == "ledger"))
-            for x, y in cuts:
+                cuts = [(x, y, None) for x, y in cut_markdown(lines, entry_mode=(cls == "ledger"))]
+            for x, y, ctx in cuts:
                 if "\n".join(lines[x - 1:y]).strip():
-                    add(path, "pin", lines, x, y, cls)
+                    add(path, "pin", lines, x, y, cls, ctx)
     # pre-redaction blobs for named sources touched by the redaction commit
     changed = set(git(a.repo, "show", "--name-only", "--format=", REDACT).split("\n"))
     for cls, paths in SOURCES.items():
@@ -138,11 +148,11 @@ def main():
                 if text is None:
                     continue
                 lines = text.split("\n")
-                cuts = cut_markdown(lines, entry_mode=(cls == "ledger")) if not path.endswith(".json") else cut_json(lines)
+                cuts = [(x, y, None) for x, y in cut_markdown(lines, entry_mode=(cls == "ledger"))] if not path.endswith(".json") else list(cut_json(lines))
                 pre = git(a.repo, "rev-parse", REDACT + "^").strip()
-                for x, y in cuts:
+                for x, y, ctx in cuts:
                     if "\n".join(lines[x - 1:y]).strip():
-                        add(path, pre, lines, x, y, cls + "_preredaction")
+                        add(path, pre, lines, x, y, cls + "_preredaction", ctx)
     # git log as a generated source file
     log = git(a.repo, "log", "--first-parent", "--reverse", "--format=commit %H%nordinal %%ORD%%%ndate %ci%nauthor %an%nsubject %s%n%b%n----END----", a.pin)
     out_lines, ordinal = [], 0

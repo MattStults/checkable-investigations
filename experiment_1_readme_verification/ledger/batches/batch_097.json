@@ -1,133 +1,148 @@
 {
  "header": {
   "batch": "batch_097",
-  "source_class": "arc1_cycles",
+  "source_class": "git_log",
   "brief_version": "0.4",
   "glossary_version": "frozen ",
   "spans": 15,
-  "first_span": "S01415",
-  "last_span": "S01429"
+  "first_span": "S01646",
+  "last_span": "S01660"
  },
  "spans": [
   {
-   "id": "S01415",
-   "path": "semi-formal-experiment/cycles/patient-backfill-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "50-56",
-   "text": "  \"files_changed\": [\n   \"annotations_ext_v1.json\",\n   \"annotations_ext_v1_merged.json\",\n   \"backfill_worksheet.py\",\n   \"briefs/backfill_author.md\",\n   \"vocabulary_migrations.json\"\n  ],",
-   "source_class": "arc1_cycles"
+   "id": "S01646",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9824-9831",
+   "text": "commit ae00660f1dde232bc035c3d15050ee90ddd8b168\nordinal 610\ndate 2026-08-24 23:40:30 -0700\nauthor Matt Stults\nsubject Theory review + blind spot-check, mutually confirming: map corrected append-only (Hohfeld error fixed, locus attribution struck, ARB demoted from defeasibility — the 0.38-stability field confirming relation-as-property fails; comparanda -> LegalRuleML/ODRL; kill-criterion -> pre-registered cell assignments). Spot-check verdict: the norm-FORM frame blind-annotates at 0.87-0.97 (free a-priori schema layer) but NO form field separates behaviour relevance — the relevance dimensions are content-side (ODRL target / frame roles), still to be designed. Notes 0031.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01416",
-   "path": "semi-formal-experiment/cycles/patient-backfill-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "57-61",
-   "text": "  \"review\": {\n   \"by\": \"Claude Fable 5 — independent change-review seat, clean context (not the implementer/operator session)\",\n   \"notes\": \"FREEZE + AMENDMENT CHAIN: manifest.json hashes to b5706377.. = the chain head; chain verified end-to-end f9f3a5cd.. (state.json frozen_manifest_sha) -> b3f0ed95.. (A1 surface discovery) -> b5706377.. (A3 legacy withdrawal), each old_sha matching the predecessor; prediction.json hashes to the frozen dae8aa9b..; all 11 closure_shas re-hashed and match, including the A2/A4 re-closure values (test_atom_refactor 15e7648a.., test_dechain 92347d24.., test_backfill_worksheet 861ebc04..). A1 and A3 verified grounded by execution: the migration log's backfill segment touches EXACTLY the ext_v1 trio (patch included, per A1) and annotations.json/annotations_b8.json are byte-identical to git HEAD (per A3). AMENDMENT 4 — COUNTERSIGNED. (i) Stale-by-design confirmed: the apply legitimately converts 264 of the 692 chain-free candidates; my own re-enumeration of the live merged artifact via bw.candidates gives exactly 428 = 425 no_chain_licensed + 3 unclear, so the original live-artifact pin (692/505/347/462) is RED post-apply for precisely the named reason — the test_dechain n==109 failure class, recurring in the operator's own gate file. (ii) No weakening: all four scope counts are still asserted verbatim against the frozen worksheet (sha ce26cf89.., re-hashed, unchanged since the seat assignment — echoed in assignments/backfill.md, verdicts_primary/unmarked, verdict_file_v1 AND verdict_file), plus frozen-key count 692 and a live-coherence subset check; I additionally verified the STRONGER invariant live == frozen_keys - licensed_keys holds today. (iii) Module-untouched claim checked the strong way: the CURRENT backfill_worksheet.py rebuilds the frozen worksheet BYTE-IDENTICALLY from the pre-apply (HEAD) merged artifact, so the re-pin targets the enumeration the original pin equaled at OPEN. (iv) Repair binds: tampering the frozen worksheet's total (692->693) in a scratch tree turns test_real_artifact_counts_match_the_registered_scope RED. APPLY EVIDENCE, re-derived: log = 144 entries (5 legacy-unscoped chain-repair + 139 surface-scoped rechain, every backfill entry scoped to exactly the ext trio with clauses); per-artifact sha_before/sha_after chain GAP-FREE, first backfill sha_before per surface equals the OPEN/pre-apply sha, final sha_after equals live bytes; 1324 backfill rewrites; 264/264 licensed (clause_id, name) pairs decorated in merged with the chain-free name gone, 428/428 non-licensed pairs intact; validator CLEAN on verdict_file.json (my run, errors == []); distribution 264/425/3. REPLAY: all six surfaces (ext trio + annotations.json + annotations_b8.json + golden_translations.json) replayed from git-HEAD copies through the mixed 144-entry log BYTE-IDENTICAL to the working tree; legacy four (annotations, b8, golden, behavior_atoms_audit_v1) byte-untouched vs HEAD. SEAM MUTANT (scratch only): stripping 'surfaces' from backfill entry #5 (accept_compliment, m0478 — a b8-overlapping pair) makes the b8 replay DIVERGE while the unmutated log replays b8 unchanged — the seam is load-bearing, exactly as A2 claims. GATE-BINDING MUTANTS (scratch tree copy, restored+green after): M1 un-applied one migration in merged -> test_shipped_log_replays_every_live_surface_byte_identically RED (noted: the worksheet coherence subset check alone stays green under M1 — un-application is bound by the replay gate, not the scope pin; suggest live == frozen - licensed as a future hardening); M2 worksheet-count tamper -> scope test RED; M3 length-1 chain injected -> test_dechain well-formedness RED. MEASURE PRE-PROOF: snapshot_build/patient-backfill-2026-08-04.json vs snapshots/decoration-blind-join-2026-08-04.json — 'behaviours' and 'vocabulary' sections BIT-IDENTICAL (predicted sets 95/73/146 both sides; atom_count/df 624 both sides, 0 df shifts => TOTAL FLIPS 0 by construction), only 'tag' and config.inputs.annotations differ (cbf50758.. -> 1ea7fe9d.. = the live post-apply merged sha), pricing_version 1.2 both sides. GATES RUN MYSELF: declared five-file set 171 passed (matches A2's recorded count); full suite 1998 passed with the only failures ModuleNotFoundError: clingo (test_core/test_emit_asp/test_locators collection + 2 test_delta items) — an environment gap on this machine, unrelated to the change; operator's environment reports full green. FENCE: FORBIDDEN scan (34 live tokens) over every changed/new file raw AND comment/docstring-stripped: no changed file names a panel loader or imports a fenced module (imports audited by AST: grammar/atom_refactor/stdlib only); residual literal hits are benign self-references ('verdicts' = the seat's own verdict records, 'cycles/' = the cycle artifact's own path — the guard fences QUERY modules, all of which scan clean and stayed green); scan_brief(backfill_author.md) == []. SEAT CHAIN: worksheet sha unbroken assignment -> verdicts_primary/unmarked -> verdict_file_v1 -> verdict_file; v1 preserved with the pre-sweep 260/384/48; sweep verified applied as RULINGS.md orders: exactly 59 records changed, m0259/m0538 no_chain_licensed, m0163 chain_licensed, m0228 quote replaced with the Toronto-mayor span, surviving unclears exactly {m0120, m0155, m0357}. DECLARED-DIFF-ONLY: every moved file is either in the amended files_to_change, an amendment-recorded closure/tooling sha (all re-hashed and matching, incl. apply_rechains 291c64d4.. and the new census fixture 5376cde3..), or accounted bookkeeping; findings (low, non-blocking): (1) conftest.py +1 line registering test_backfill_worksheet in _OPTIONAL is recorded in no manifest/amendment — necessary for the gate test to collect and necessarily predates OPEN (the closure-pinned test ran at OPEN), same shape the versioned-cut review accepted, but it should have been named; (2) A2's designer sign-off exists as attestation in the amendment text + REVIEW_HARDENING_NOTES.md PASS, not as a standalone signed artifact; (3) REVIEW_HARDENING F1/F2 hardenings (grandfather multiplicity, legacy-surface deny-list) remain open for the tooling batch — verified neither can fire on this apply. No panel score, judge rating, or gold value was consulted; all mutation confined to scratch copies, working tree untouched.\",\n   \"verdict\": \"proceed\"\n  },",
-   "source_class": "arc1_cycles"
+   "id": "S01647",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9832-9839",
+   "text": "commit 3fa49f449f2eecbc157c09a21592abd01ed815db\nordinal 611\ndate 2026-08-25 00:02:56 -0700\nauthor Matt Stults\nsubject QUERY-CLASS SATURATION STUDY: coordinator spec (frozen coding vocabulary — the judgment call made once at Fable tier; P1-P5 with machine-checkable gates, checkpoint discipline, tier-parity certification P3, 15% Opus spot-check + tripwire P4) + the deterministic P5 analysis script (Chao1 + bootstrapped accumulation) committed BEFORE any coding exists. Coordination delegated to Opus per Matt's cost directive; Fable = spec + gates + analysis only.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01417",
-   "path": "semi-formal-experiment/cycles/patient-backfill-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "62-68",
-   "text": "  \"tests_passed\": [\n   \"test_atom_refactor.py\",\n   \"test_backfill_worksheet.py\",\n   \"test_dechain.py\",\n   \"test_grammar.py\",\n   \"test_no_reference_leak.py\"\n  ]",
-   "source_class": "arc1_cycles"
+   "id": "S01648",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9840-9847",
+   "text": "commit 6d0acb3683edeaed363f273ac4954e463560def0\nordinal 612\ndate 2026-08-25 00:03:22 -0700\nauthor Matt Stults\nsubject Notes 0032: AFK envelope registered (<=5pt Fable; plan uses 0 — no pastes available so no Fable dispatches at all); autonomous queue = query-class study (Opus coordinator) + UA repair arc to the seal confirmation ($0), mint parks at signature.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01418",
-   "path": "semi-formal-experiment/cycles/patient-backfill-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "70-76",
-   "text": " \"open_shas\": {\n  \"annotations_ext_v1.json\": \"6f10dc3db951e773eee7ddccef74335cda8515e93021c593cf87bf883746bd8b\",\n  \"annotations_ext_v1_merged.json\": \"cbf5075823fe6b3de55d4feed94c169b249a8ce6a1ebe705d8b01f93021d5d3d\",\n  \"backfill_worksheet.py\": \"b1356ff5ccb5750398320d8599be2e21c32efc252fb4837ac3276faf6dea402f\",\n  \"briefs/backfill_author.md\": \"c3f8056855e65cb28d8b65a779319d5b2de1becd0c90d69783e2f5528eb46cc5\",\n  \"vocabulary_migrations.json\": \"aa63ddf4053ec5cccae49337f84f7cf357b4f8e8f123dae491cfb8e3dd10121c\"\n },",
-   "source_class": "arc1_cycles"
+   "id": "S01649",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9848-9855",
+   "text": "commit af54ff992f78325dae33894a24b9df79cc41c39c\nordinal 613\ndate 2026-08-25 00:06:16 -0700\nauthor Matt Stults\nsubject UA REPAIR MOVE 1 adopted on visible truth: governs wall {substance,tone,objectivity} — the R3 enumeration's admissible optimum over 64 compounds (18 fixes / 0 breaks / 0 new FPs; card measured: zero relevant nodes are calibration/formatting-only). 72 residual FPs -> A1 R3x mint (content/locus dimension), to be calibrated on Opus and PARKED at Matt's signature. Seal stays sealed for the full arc's single confirmation.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01419",
-   "path": "semi-formal-experiment/cycles/patient-backfill-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "71-71",
-   "text": "  \"annotations_ext_v1.json\": \"6f10dc3db951e773eee7ddccef74335cda8515e93021c593cf87bf883746bd8b\",",
-   "source_class": "arc1_cycles"
+   "id": "S01650",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9856-9863",
+   "text": "commit 7ec0f4e31f69f8f7006c44db1c77515cf5312a0e\nordinal 614\ndate 2026-08-25 00:06:49 -0700\nauthor Matt Stults\nsubject OPERATIVE_TARGET mint calibration pre-dispatch: the general content-dimension enum (ODRL-target-style, 5 values incl. the amortizing document_machinery/third_party classes), 40-item blind sample (20 UA residual FPs + 14 TPs + 6 tradeoffs cross-check, families hidden, seeds 20260861/62), thresholds pre-stated in the key. Runs on Opus; signature decision parks for Matt with measured numbers.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01420",
-   "path": "semi-formal-experiment/cycles/patient-backfill-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "72-72",
-   "text": "  \"annotations_ext_v1_merged.json\": \"cbf5075823fe6b3de55d4feed94c169b249a8ce6a1ebe705d8b01f93021d5d3d\",",
-   "source_class": "arc1_cycles"
+   "id": "S01651",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9864-9871",
+   "text": "commit 866ed62c55e2ea245a6e3bd2645ff1f01ed18e86\nordinal 615\ndate 2026-08-25 00:08:53 -0700\nauthor Matt Stults\nsubject OPERATIVE_TARGET calibration: stability 0.98 (best layer yet), FP-side separation passes (0.20), TP-side coverage FAILS the pre-stated gate (0.67 vs 0.70 — 5/15 TPs relevant via other targets; a pure wall is inadmissible). HELD at Matt's signature with honest numbers and the consumption-design question (second disjunct needed). The calibration-before-signature discipline caught the gate miss before any corpus spend. Notes 0033.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01421",
-   "path": "semi-formal-experiment/cycles/patient-backfill-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "73-73",
-   "text": "  \"backfill_worksheet.py\": \"b1356ff5ccb5750398320d8599be2e21c32efc252fb4837ac3276faf6dea402f\",",
-   "source_class": "arc1_cycles"
+   "id": "S01652",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9872-9879",
+   "text": "commit 6bb46596bfefec77395ee4184105d0111eb70556\nordinal 616\ndate 2026-08-25 00:15:33 -0700\nauthor Matt Stults\nsubject Query-class study P1-P4 artifacts (Opus coordinator, exemplary run: 100-def corpus w/ provenance, all gates machine-checked, a completed slow Haiku dispatch caught and restored): NO cheap tier certifies (Sonnet 0.13 / Haiku 0.00 pattern-exact vs Opus floor 0.80); P4 TRIPWIRE FIRED at 0.615 pattern disagreement — root cause diagnosed by the coordinator and confirmed by the 0.467 Opus-vs-Opus calibration: the frozen vocabulary under-determines place selection (verbs 0.92, places Jaccard 0.76). The spec owner's judgment call was the defect. Halted per spec; v2 vocabulary next.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01422",
-   "path": "semi-formal-experiment/cycles/patient-backfill-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "74-74",
-   "text": "  \"briefs/backfill_author.md\": \"c3f8056855e65cb28d8b65a779319d5b2de1becd0c90d69783e2f5528eb46cc5\",",
-   "source_class": "arc1_cycles"
+   "id": "S01653",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9880-9887",
+   "text": "commit 7428d2c7c46bc3e6d377aa09119092336f2da973\nordinal 617\ndate 2026-08-25 00:15:58 -0700\nauthor Matt Stults\nsubject Coding vocabulary v2 (spec-owner fix for the tripwired under-determination): mandatory single PRIMARY place, quote-required secondaries, per-pair tie-breaks, worked examples; v2 calibration packet on the same 15-item sample committed pre-dispatch. Gate for proceeding to recode: Opus pairwise pattern-exact >= 0.75 (v1 was 0.467).\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01423",
-   "path": "semi-formal-experiment/cycles/patient-backfill-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "75-75",
-   "text": "  \"vocabulary_migrations.json\": \"aa63ddf4053ec5cccae49337f84f7cf357b4f8e8f123dae491cfb8e3dd10121c\"",
-   "source_class": "arc1_cycles"
+   "id": "S01654",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9888-9895",
+   "text": "commit 1a8f832739cff96492717da57b1a68365d783f7a\nordinal 618\ndate 2026-08-25 00:17:52 -0700\nauthor Matt Stults\nsubject v2 calibration GATE PASSES: pattern-exact 0.87 (v1 0.47), Jaccard 0.94, verbs 1.00 — the primary/quote-required/tie-break fix resolved the under-determination. v2 bulk (85) + spot-check (13) packets committed pre-dispatch; recode on Opus.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01424",
-   "path": "semi-formal-experiment/cycles/patient-backfill-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "77-77",
-   "text": " \"overrides\": [],",
-   "source_class": "arc1_cycles"
+   "id": "S01655",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9896-9903",
+   "text": "commit b9a8ffa2583f07427c56b22987a21515305bcfb1\nordinal 619\ndate 2026-08-25 00:18:24 -0700\nauthor Matt Stults\nsubject P5 analysis retargeted to the v2 recode files (post-tripwire vocabulary fix); logic unchanged.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01425",
-   "path": "semi-formal-experiment/cycles/patient-backfill-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "78-104",
-   "text": " \"prediction_checks\": {\n  \"adjudicate\": [\n   {\n    \"expected\": 0,\n    \"kind\": \"max_regressions\",\n    \"observed\": 0,\n    \"result\": \"PASS\"\n   }\n  ],\n  \"measure\": [\n   {\n    \"expected\": {\n     \"max\": 0,\n     \"min\": 0\n    },\n    \"kind\": \"flip_count\",\n    \"observed\": 0,\n    \"result\": \"PASS\"\n   },\n   {\n    \"expected\": [],\n    \"kind\": \"directions\",\n    \"observed\": [],\n    \"result\": \"PASS\"\n   }\n  ]\n },",
-   "source_class": "arc1_cycles"
+   "id": "S01656",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9904-9911",
+   "text": "commit dd8abd55189b8b9073a0db1d67b63f6977f5baa1\nordinal 620\ndate 2026-08-25 00:21:54 -0700\nauthor Matt Stults\nsubject Query-class study: v2 recode complete but the spot-check tripwire fired AGAIN (0.36 vs 0.20 at full-pattern granularity; bulk pairs 0.78). HALTED honestly — no bound published from tripwired data, no post-hoc granularity shopping. Measured reliability by granularity recorded (primary-place and verb are solid; secondaries under-determined); the accept-coarse / iterate-v3 / accept-with-noise decision PARKED for Matt. Descriptive primary inventory included non-bindingly.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01426",
-   "path": "semi-formal-experiment/cycles/patient-backfill-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "79-86",
-   "text": "  \"adjudicate\": [\n   {\n    \"expected\": 0,\n    \"kind\": \"max_regressions\",\n    \"observed\": 0,\n    \"result\": \"PASS\"\n   }\n  ],",
-   "source_class": "arc1_cycles"
+   "id": "S01657",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9912-9919",
+   "text": "commit e3852affa2b658bece40f5689f5a08896bab146b\nordinal 621\ndate 2026-08-25 00:22:26 -0700\nauthor Matt Stults\nsubject AFK block close (notes 0034 + HANDOFF): zero Fable of the 5pt envelope; UA mint held at signature with 0.98-stability concept and a consumption-design question; query-class study halted honestly at its second tripwire with reliability measured per granularity (primary x verb solid; 9 primary places over 100 defs, bounded-frame-consistent, non-binding); three decisions parked for Matt; erratum #19.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01427",
-   "path": "semi-formal-experiment/cycles/patient-backfill-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "87-103",
-   "text": "  \"measure\": [\n   {\n    \"expected\": {\n     \"max\": 0,\n     \"min\": 0\n    },\n    \"kind\": \"flip_count\",\n    \"observed\": 0,\n    \"result\": \"PASS\"\n   },\n   {\n    \"expected\": [],\n    \"kind\": \"directions\",\n    \"observed\": [],\n    \"result\": \"PASS\"\n   }\n  ]",
-   "source_class": "arc1_cycles"
+   "id": "S01658",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9920-9927",
+   "text": "commit 94606be6197bea84fa8aefb9d0fee305c45c3637\nordinal 622\ndate 2026-08-25 00:22:34 -0700\nauthor Matt Stults\nsubject Housekeeping: coordinator per-batch checkpoint files (v1 bulk) + the UA census projection contract — stragglers from the block, committed for completeness.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01428",
-   "path": "semi-formal-experiment/cycles/patient-backfill-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "105-105",
-   "text": " \"skipped\": {}",
-   "source_class": "arc1_cycles"
+   "id": "S01659",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9928-9935",
+   "text": "commit 36e4cf0eb130cdcba9304a042e050826b4e7e2c2\nordinal 623\ndate 2026-08-25 08:25:50 -0700\nauthor Matt Stults\nsubject Notes 0035: compositional-sufficiency probe (best compact DNF 23/1 — margins, not the answer) + the recorded program verdict: annotation succeeded, instrument succeeded once, program unproven at scale; the two decisive cheap experiments named.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01429",
-   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "2-36",
-   "text": " \"adjudication\": {\n  \"agreement_on_contested\": \"4/6\",\n  \"confirmed_regressions\": [\n   \"m0239\",\n   \"m0275\",\n   \"m0466\",\n   \"m0018\"\n  ],\n  \"contested\": {\n   \"m0108\": \"leg 1 regression / leg 2 correct \\u2014 final verdict `unclear` per the divergence rule; both document reasons preserved verbatim in ADJUDICATION_LEGS.md; flagged for seat-defect review, never silently resolved\"\n  },\n  \"dossier_set_sha\": \"726492bf72fe5e9809ca8f6b402bec3161ca8ca4ff916ab05f7a05060e59b78b\",\n  \"leg_1_official\": {\n   \"file\": \"flip_verdicts.json\",\n   \"scope\": \"all 18 flips\",\n   \"tallies\": {\n    \"correct\": 12,\n    \"regression\": 5,\n    \"unclear\": 1\n   }\n  },\n  \"leg_2_verification\": {\n   \"file\": \"flip_verdicts_verification_leg.json\",\n   \"scope\": \"the 6 contested flips\",\n   \"seat\": \"frontier, split-blind to leg 1's verdicts\",\n   \"tallies\": {\n    \"correct\": 2,\n    \"regression\": 4\n   }\n  },\n  \"record\": \"ADJUDICATION_LEGS.md\",\n  \"resolved_not_regression\": {\n   \"m0355\": \"leg 1 unclear / leg 2 correct \\u2014 the pre-registered threshold-proximity case; its verdict extends the P3 drift-standing family line (m0207 precedent)\"\n  }\n },",
-   "source_class": "arc1_cycles"
+   "id": "S01660",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9936-9943",
+   "text": "commit 7f087c5db819b8f8bcd6b471a60e81541d158fc8\nordinal 624\ndate 2026-08-25 08:36:01 -0700\nauthor Matt Stults\nsubject Notes 0036: representation probes — L1 over full symbolic space and TF-IDF both at base rate (the UA concept is in deep semantics only); behaviours measured near-orthogonal (phi 0.04-0.29), evidence against the log2(n) low-rank hope; minting redefined precisely as frontier-judgment-as-feature-extractor for one auditable bit; the information floor and what the program cheapened around it.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   }
  ]
 }

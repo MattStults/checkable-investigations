@@ -1,133 +1,148 @@
 {
  "header": {
   "batch": "batch_109",
-  "source_class": "git_log",
+  "source_class": "arc2_docs_preredaction",
   "brief_version": "0.4",
   "glossary_version": "frozen ",
   "spans": 15,
-  "first_span": "S01889",
-  "last_span": "S01903"
+  "first_span": "S00865",
+  "last_span": "S00879"
  },
  "spans": [
   {
-   "id": "S01889",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
-   "lines": "1-7",
-   "text": "commit d9d2369f65a920cdf489f1587865380ef54b28d6\nordinal 1\ndate 2026-08-02 12:23:40 -0700\nauthor MattStults\nsubject Initial commit\n\n----END----",
-   "source_class": "git_log"
+   "id": "S00865",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_REVIEW_DISPOSITION.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "13-48",
+   "text": "## where these confirm or the claim is structural)\nCONFIRMED exactly:\n- truth_all() n/base-rates: helpfulness 477/0.560, harm-avoidance\n  291/0.443, over-under-caution 285/0.540.\n- coverage_translated.json translated_nodes = 183 (of 773): L1's\n  \"half the spec's nodes\" do not exist in translated form — L1 as\n  written presupposes the campaign it is meant to license (F32).\n- query_class_corpus.json contains adria: 11 — every behaviour with\n  adjudicated truth is IN the coding corpus; NO out-of-corpus panel\n  truth exists anywhere in the repo (F29). Q-B is untestable by any\n  currently registered experiment.\n- panel-v5: 589 model-spec passages x 9 behaviours on disk, pinned,\n  externally authored, unexploited (F30).\n- Red gates live on disk: block-1 STOP RULE (GEN_BLOCK1_SCORED, prec\n  0.40) and metric0: FAIL x3 (panel_run1/REGISTERED_RESULT) — L1/L2\n  said nothing about them (F33).\n- ua_truth_sealed.json: 38 nodes, single-use marker present (F35).\n- undefined_harmfulness_catch_all exists in qc_canonical_values;\n  agentic_action_footprint and integrity_of_human_oversight each fire\n  once across the 100 coded definitions — L2's stress dimensions are\n  singletons and its coverage clause is elastic (F10-F15 substance).\nCORRECTED against the reviewer (findings survive, numbers replaced):\n- panel-v5 majority(>=2) positive rates are 0.008-0.114 (driver\n  re-derivation; e.g. helpfulness 0.085, third-party-harm 0.098,\n  over-under-caution 0.071), not the reviewer's 0.012/0.044/0.007.\n  The F28 incompatibility with the node ledger (0.443-0.560) is\n  5-50x either way; the three-ledgers/truth-shopping finding stands.\n- The reviewer's significance claims for the 1-NN results (p=0.0015,\n  p=0.0097) are WRONG: one-sided binomial gives p=0.154 (18/25 vs\n  0.60) and p=0.157 (19/27 vs 0.59). The 1-NN results are not even\n  significantly above baseline — which STRENGTHENS the underlying\n  base-rate conclusion but the \"pre-satisfied\" finding is restated\n  as: L1's clause on a point-estimate reading is already met by\n  numbers indistinguishable from noise (erratum #21, 4th recurrence).\n- Corpus sparrow count is 23, not 24 (trivial).\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
   },
   {
-   "id": "S01890",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
-   "lines": "8-44",
-   "text": "commit 5740a2a63eaea76572da96f11fbf8e365c0243a3\nordinal 2\ndate 2026-08-02 12:45:15 -0700\nauthor Matt Stults\nsubject Import semi-formal ontology experiment from ai_character_index\nExtracts this line of work into its own repo at the request of the\nai_character_index owner. Code, tests and result artifacts move as-is; the\ndata it depends on is vendored so the repo runs standalone.\n\nWhat moved:\n  semi-formal-experiment/  code, 1446 tests, result artifacts\n  data/                    panel judgements + behaviour definitions\n  specs/                   OpenAI Model Spec, Anthropic constitution\n  engine/                  panel harness that panel_universe.py imports by path\n  site/spec-reader-test/   panel-v2 behaviour metadata\n\nPath rewrites. Several modules reached into sibling checkouts by absolute\npath (/Users/.../ai_character_index-mvp/...), so they only worked on one\nmachine with three repos side by side. Those are now repo-relative. The suite\npasses identically before and after the move (1446 passed, 3 skipped), which\nis what verifies it.\n\nOne hazard worth stating loudly, because it silently returns wrong answers\nrather than failing: THREE different files in the source workspace are named\nbehaviours.json and they are not interchangeable. data/behaviours.json is the\npanel WITH citations (the bar); data/behaviour-definitions.json is the\n11-entry label file; site/spec-reader-test/data/behaviours.json is panel-v2\nmetadata. Loading the wrong one yields empty queries and a de-behaviourised\nscore. Documented in README and at each call site.\n\nExcluded: external/ (234MB of vendored third-party checkouts, each with its\nown .git) and *.pkl. No credentials are stored here; API keys are read from\nenvironment variables named in data/panel-config.json.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\n\n----END----",
-   "source_class": "git_log"
+   "id": "S00866",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_REVIEW_DISPOSITION.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "49-87",
+   "text": "## Dispositions\n- ACCEPT F17+F18+F19 as the replacement design (the reviewer's A1-A12\n  dependency chain), with the A13-A20 addendum amendments. Key parts:\n  F18 reliability gate first (fresh uniform 60-node draw, two blind\n  seats, alpha >= 0.67 floor, ~$0) — at 23/39 today this alone may\n  kill the campaign cheaply; F17 blind-readout ablation (Arm T raw\n  text ceiling / Arm R signature-only / Arm N seeded permuted null;\n  MCC(R) >= MCC(T)-0.05 AND above 99th null percentile, per\n  behaviour, worst-behaviour headline, ceiling = panel-internal\n  agreement) — the direct Q-A construct, unpassable by fingerprinting\n  or noise; F19 scaling pre-flight (60-node end-to-end, extrapolate\n  cost/reliability to 773).\n- ACCEPT A14 as the load-bearing amendment for Q-B: >= 3 genuinely\n  out-of-corpus behaviours (no-sycophancy and undermine-oversight\n  INELIGIBLE — in-corpus) x ~80-node uniform fully-ruled fresh draws,\n  definitions verbatim-lifted, chosen by a schema-blind seat, hashed\n  pre-annotation. Nothing substitutes for this.\n- ACCEPT A16 (score on single-process uniform fresh-draw partitions,\n  ~537 rulings, never the assembled truth_all() ledger — composition\n  bias F31), A13 (name ledger/unit/threshold; no re-scoring against a\n  second ledger without new registration), A15 (panel-v5 replication\n  tier gated on a committed passage->node join audit, class-aware\n  metrics only), A17 (L1 restructured as staged pre-flight), A18\n  (L1/L2-successor results VOID unless the block-1 STOP RULE and\n  metric0 FAILs are cleared or superseded by signed ruling; decision\n  memo enumerates every red gate), A19 (UA seal off-limits, enforced\n  by a registered test), A20 (every registration states Fable-token\n  cost as well as $).\n- ACCEPT the false-negative protections F20-F27 (readout family with\n  frontier-judge arm decisive; MCC/F1 primary; ceiling-relative\n  scoring; both split types reported; behaviour-shaped pre-screen;\n  seat parity checks before reading results; one-run-per-registration).\n- NOTE the reviewer's F17 cost paragraph inherits the pre-C1 premise\n  (its $ arithmetic is about API spend; panel/judge seats are Fable\n  subagents at $0 API). Per C1/A20 the F17 registration must carry a\n  Fable-token estimate; the ~550 short judge calls are seat calls,\n  and tier routing (certified cheap tier + frontier parity subsample)\n  follows the project's standing pattern.\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
   },
   {
-   "id": "S01891",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
-   "lines": "45-77",
-   "text": "commit baa962d2fb31afdbfdb787dc75c9d0ab59774220\nordinal 3\ndate 2026-08-03 19:50:36 -0700\nauthor Matt Stults\nsubject Iteration loop, grammar extension v1, audit instruments, cycle driver\nEverything since the initial import, spanning 2026-08-02..04:\n\n- Grammar: platform->root rename; polarity/principal/role extension live;\n  docfacts split (procedure vs per-document facts, default byte-pinned)\n- Golden instruments: Model Spec 12+14 dev expansion, constitution 12,\n  second-author ceiling calibration (names 0.29 / spans 0.79 / deco 0.91);\n  span-anchored scorer levels; b8 baseline 0.21 stem / 0.82 span / 0.10 deco\n- Re-annotation under extended grammar (ext_v1_merged, 589/593, $0.55):\n  span_deco 0.10 -> 0.59 at scale over two prompt iterations\n- Iteration loop: snapshot/diff (deterministic, cause-tagged flips), dossier\n  seats, containment overlay v1.1 (priced, budgeted, kind inheritance),\n  atom_refactor, cut_stability diagnostic; 3 adjudicated cycles of record\n- SELECT audit (sweep v2 tool-budgeted + query readback): blind-validated,\n  mechanical re-selection -> dev MCC +0.237 -> +0.309 (first above-noise\n  retrieval gain); disagreement autopsy fleet: 294/294 causal census, CLEAN\n- cycle.py orchestrator per CYCLE_DESIGN.md incl. binding amendments from\n  the parallel adversarial design review (census exiled to checkpoints,\n  double freeze, exploratory demotion, flip budget, verdict binding)\n- Briefs for every judgment seat; REPRODUCIBILITY sandwich rule; expert\n  salience anchors; blog rewritten\n\nSuites: last full clean gate 1868 passed/3 skipped + 92 targeted-green tests\nadded since (select_audit 11, audit 27, cycle 54); full gate re-running.\nSpend: $2.15 of $8.50, all guards intact.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
-   "source_class": "git_log"
+   "id": "S00867",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_REVIEW_DISPOSITION.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "88-97",
+   "text": "## Standing state after this disposition\n- Q-A: answerable by F18 -> F17 (+A3-A7), using truth already on\n  disk. Q-B: answerable ONLY after the A14 out-of-corpus truth\n  purchase. Funding rule adopted verbatim: fund only on F18 pass AND\n  F17 pass AND a scaling estimate inside budget.\n- Nothing in this disposition is a finding that the ontology is\n  inadequate; the reviewer's own caveat (preserved from 0041's\n  disposition) still holds. The finding is that no experiment yet\n  registered could tell us.\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
   },
   {
-   "id": "S01892",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
-   "lines": "78-102",
-   "text": "commit ed3cf09301e5b13cf6db8c30bf4a9726b8ea10aa\nordinal 4\ndate 2026-08-03 19:58:03 -0700\nauthor Matt Stults\nsubject Restore clobbered behavior_atoms.json; update README to current state\nThe behaviour-atoms dry-run (invoked without --out) wrote its 0-atom stub\nover the shipped default artifact, and baa962d committed that broken state —\ncaught by test_shipped_artifacts_still_load_and_still_join, whose failure was\nitself masked by a `| tail` swallowing the gate's exit code (third recorded\noccurrence of that class; the cycle driver's subprocess handling exists for\nexactly this reason. Artifact restored byte-identical from the import\ncommit; incident documented in the README warnings; dry-run clobber guard\nqueued for v1.2.\n\nREADME rewritten: current results (+0.309 dev vs +0.555 bar; translation\n0.86 span / 0.59 structure vs 0.79 / 0.91 human ceiling), the census, the\nexpert salience critique, current layout and test count.\n\nFull suite: 1960 passed, 3 skipped, exit 0 (verified unpiped).\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nEOF\n)\n\n----END----",
-   "source_class": "git_log"
+   "id": "S00868",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "1-6",
+   "text": "# GENERALIZATION PRE-REGISTRATION — zero-adaptation runs on six never-consulted behaviours (DRAFT, awaits Matt's signature)\n\nCampaign: 10-hour push (HANDOFF_CURRENT.md campaign section, baseline commit\n5cc21627, scope ruling same day: all six, 3+3 sequential, FATAL stop rule).\nStatus: DRAFT — not frozen until signed. Corrections append, never edit.\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
   },
   {
-   "id": "S01893",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
-   "lines": "103-126",
-   "text": "commit 4f44c50471320d218a8d294ba1dd93b47078f177\nordinal 5\ndate 2026-08-03 20:20:41 -0700\nauthor Matt Stults\nsubject Cycle 4 of record: versioned cut (KEEP) - the driver's first customer\nFrozen per-behaviour thresholds (thresholds_frozen.json, values = the\nlabel-free rule's own output on the current config; provenance cites the\n3/3 m0422 drift escalation and cut_stability's structural finding).\nsnapshot.py gains --thresholds with F9 version dispatch; threshold.py\nuntouched. Deliberate no-op now, prospective effect: future cycles measure\nagainst a cut that cannot drift.\n\nFull ceremony: manifest+prediction frozen, independent review seat\n(proceed; two mutants killed), MEASURE no-op short-circuit, 2/2 mechanism\npredictions PASS, signed KEEP, CYCLE_LOG line appended.\n\nFirst-customer driver findings queued (6): PREDICT cannot express\nzero-flip honestly; driver lacks config.thresholds; review seat has no\nassignment/brief; max_regressions vacuously dropped from no-op check\nreport; no-op prose overstates; plus confirmations of F3/closure behavior.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
-   "source_class": "git_log"
+   "id": "S00869",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "7-15",
+   "text": "## What this measures\nWhether a NEW behaviour costs a fixed procedure, not another campaign. The\ninstrument (modules_contract_v18 + lanes as frozen at run time) was built\naround three dev behaviours. Six behaviours it has never seen — never\nconsulted in any design, tuning, or adjudication decision — are run through\nthe same procedure, once each, with no adaptation before scoring. The\nPRIMARY result is the fix ledger: what repairs are needed AFTER scoring,\nclassified. The score is secondary.\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
   },
   {
-   "id": "S01894",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
-   "lines": "127-136",
-   "text": "commit 7fd2965bf50e35114f36d2955d5abb69fb8af0f0\nordinal 6\ndate 2026-08-03 20:24:52 -0700\nauthor Matt Stults\nsubject Cycle-5 design review: DO NOT BUILD as written; chain-audit cycle inserted before it\nReviewer implemented the pricing rule and ran it live: chain semantics inverted (m0276's defining chain parses agent-first as 'the user advises'), flip prediction 12 not 1-5 with 11/12 in the contested under-18 class (1/155 of the nominal target), I2 unsound on normalized scores, anchor check housed in a panel-reading module, definition-edit gameability, cycle-4 dependency holes. Ladder: chain-audit cycle -> amended cycle 5 -> patient backfill.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
-   "source_class": "git_log"
+   "id": "S00870",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "16-37",
+   "text": "## Subjects, order, document\nCorpus: OpenAI Model Spec graph corpus (link_nodes.gather() at freeze time),\nthe same corpus as round-4. Behaviours, in fixed order:\n\nBlock 1 (probes): 1. harmlessness-to-the-user — adjacent family; the\nprotects wall must flip from third-parties to the user (the historic S3\nfailure mode). 2. objectivity-on-contested-questions — maximal-distance\nshape; answer-quality class the old census said nothing touched.\n3. how-to-approach-tradeoffs — procedural/meta; the behaviour IS the\ndocument's own weighing method.\nBlock 2 (confirmation; runs ONLY if block 1 transfers cleanly): 4. user-\nautonomy. 5. proportionate-risk-mitigation. 6. general-welfare — CAVEAT:\nthe collaborator's 10th index behaviour (\"general welfare, strict reading\")\nis general-welfare verdicts restricted to what both specs share; on this\nsingle-document corpus it is the plain general-welfare behaviour, and this\nprereg records that the comparison-layer statistic for it is computed on the\nunrestricted rows (data/panel-v5 has only the unrestricted rows anyway).\n\nRejected alternatives (by name): run only the two originally chosen\n(loses breadth now that v5 panel truth-scarcity is resolved); run all six as\none block (loses the confirmation structure).\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
   },
   {
-   "id": "S01895",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
-   "lines": "137-144",
-   "text": "commit b68ae587101859171bb0987085b01532c475344f\nordinal 7\ndate 2026-08-03 20:35:18 -0700\nauthor Matt Stults\nsubject Driver-fix batch (6 first-customer findings + seat briefs + frozen-cut gate helper); chain audit: 97/109 correct, 12 corrections, defect systematic (patient-kept truncation)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
-   "source_class": "git_log"
+   "id": "S00871",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "38-50",
+   "text": "## Build phase (before any run)\nFor each behaviour, an a-priori module built per TRANSLATION_CONTRACT_V2\nsection 8: acts performed, walls derived from the behaviour definition ALONE,\npurpose-channel decision, governs_conditional only via the 9b-declared\ncontext atoms if the definition warrants. Inputs allowed: the behaviour's\ndefinition text (engine/panel + v3w/v5 definitions where they exist), the\ncontract, the frozen act/context vocabulary. Inputs FORBIDDEN: instrument\noutputs on this behaviour, any panel verdict, any truth. Execution tier:\nwritten-spec execution (annotation-class seats); adversarial review per\nmodule; Fable spot-audit queued post-reset (its absence at run time is\nrecorded, not hidden). Modules are frozen as built — no revision before\nscoring.\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
   },
   {
-   "id": "S01896",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
-   "lines": "145-152",
-   "text": "commit 4cf47d6d79cf89bbb3e516ff1edc20f30ecb74ba\nordinal 8\ndate 2026-08-03 20:49:53 -0700\nauthor Matt Stults\nsubject atom_refactor: rechain op (chain-only exact renames, --clause scoping, ext_v1 surfaces, per-file ascii style) — precursor for the chain-repair cycle\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
-   "source_class": "git_log"
+   "id": "S00872",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "51-65",
+   "text": "## Run and truth protocol\n- Instrument runs ONCE per behaviour on the frozen corpus. Zero adaptation:\n  no wall tweaks, no vocabulary additions, no re-runs after looking.\n- Truth: stratified fresh draw, n=40 per behaviour (20 engaged, 20\n  not-engaged; if a side has fewer nodes, take the side whole and top up the\n  other). Strata are informed by the v5 panel COMPARISON layer only, via two\n  pre-declared strata: panel-agree (all three full seats on the same side of\n  the >=2-relevant cut) and panel-split (anything else), drawn 50/50 where\n  population allows. Determinism: seeded draw script, seed + input shas\n  recorded; same seed -> byte-identical sample (tested before use).\n- Rulings: blind Fable adjudication post-reset, single rulings + seeded 20%\n  three-instance panels (per-ruling noise measurement, falsifier F5 in the\n  round-4 lineage). Fable only; no substitution without a fresh parity\n  validation, disclosed.\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
   },
   {
-   "id": "S01897",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
-   "lines": "153-162",
-   "text": "commit 3464ef7bed80e496581788093e1f9e1875f4683b\nordinal 9\ndate 2026-08-03 21:07:11 -0700\nauthor Matt Stults\nsubject Chain-repair cycle (KEEP): 12 grammar-convention corrections via rechain, zero flips as predicted 3/3; dossier zero-flip guard fix\nAll chains now parse agent-first (audit regen: 0 agent_missing). Frozen thresholds first live use, assert_frozen_thresholds PASS. Mid-cycle instrument fixes disclosed: rechain op (4cf47d6), dossier flip-count-before-reconstruction. Review seat: proceed, independent clause spot-reads, HEAD replay, 2 mutants killed.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
-   "source_class": "git_log"
+   "id": "S00873",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "66-76",
+   "text": "## Registered statistics (computed exactly as written, for each behaviour)\nTruth-side: engagement precision = TP/(TP+FP); decline correctness =\nTN/(TN+FN); both with the draw's confidence band; defensible-rescue rate\n(the match-or-adjudicated-defensible criterion standing used for the dev\nbehaviours) reported alongside, same definition as round-4.\nComparison-side (v5 panel; COMPARISON ONLY, never truth): (a) instrument vs\npanel-relevant (verdict >= 2) agreement on the full model-spec passage set;\n(b) same with >= 1; (c) per-seat agreement; (d) instrument precision\ndecomposed on panel-agree vs panel-split strata. These four, nothing else;\nany additional cut is post-hoc and labeled so.\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
   },
   {
-   "id": "S01898",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
+   "id": "S00874",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "77-99",
+   "text": "## Success criterion and falsifiers (per behaviour)\n- S1 TRANSFER: engagement precision >= 0.70 at the 40-node draw AND fix\n  ledger contains no FATAL entry. Basis: below the dev trio's converged\n  standing (0.94-0.96 in-sample after a full campaign — not expected cold),\n  anchored on the round-2 prediction lineage (0.73-0.89). (A former anchor —\n  \"Matt's human-panelist baseline 71%\" — is STRUCK 2026-08-21: no artifact\n  establishes it and its presumed source does not recognize it; the floor\n  stands on the prediction lineage alone.)\n- F1 FATAL fix-ledger entry (a repair that requires a per-behaviour special\n  case in the instrument rather than in the behaviour module) -> behaviour\n  fails transfer; if in block 1, STOP RULE fires: blocks stop, results\n  reported, no further draws or rulings.\n- F2 engagement precision < 0.60 -> procedure-transfer failure for this\n  behaviour; reported; block 1 occurrence also fires the stop rule.\n- F3 seeded-panel disagreement rate > 20% of panelled rulings -> truth\n  noise too high for the band; widen bands or redraw, disclosed, never\n  silently.\n- Fix-ledger classes: EXPECTED (module-local: a wall/act the definition\n  implied but the first build missed), ALARMING (vocabulary gap: a\n  distinction the instrument lacks that the definition implies), FATAL\n  (per-behaviour special case). The ledger is the primary result; all\n  entries land in the record with their class and the rejected quick-fix.\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00875",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "100-115",
+   "text": "## Re-measurement protocol (attempts budget, added 2026-08-21 at Matt's ruling)\nn=40 chosen over n=60 because the binding resource is ATTEMPTS, not band\nwidth: block-1 behaviours may be measured several times as the fix ledger\ndrives repairs, and fatter draws buy fewer attempts.\n- ATTEMPT 1 (zero adaptation) carries the TRANSFER verdict exclusively —\n  the generalization claim. Nothing done later can change it.\n- ATTEMPT 2+ exists for repairs: if the fix ledger holds EXPECTED entries,\n  the repair is module-local; ALARMING entries get design-tier treatment;\n  either way the behaviour is re-measured with a fresh seeded draw + fresh\n  blind rulings, labeled attempt-N. Attempt-N verdicts measure THE REPAIR,\n  never transfer; writeups keep the two claims separate.\n- FATAL entries are never repaired in-campaign (the stop rule owns them).\n- Budget: ~0.5-0.6M Fable covers the six first attempts; re-measurements\n  (~0.1M each) exceeding the fresh bar queue to the following week's bar,\n  disclosed.\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00876",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "116-135",
+   "text": "## ADDENDUM 3 (2026-08-22, draw-machinery defects A1/A2 found by adversarial review, append-only)\nA1: v5_node_strata parsed only the anchor-first locator form; the\ntrailing-tag form (\"... {#anchor authority=...} > ¶N\") was silently dropped\n— exactly 51 rows per behaviour (17 paragraphs x 3 full seats, all\nprioritize_teen_safety) for all six behaviours. The missing-seat fallback\n(split) absorbed it silently, so self-checks passed. A2 (same family):\nnode-to-anchor attribution used the ENVELOPE of multi-segment nodes; the two\nscattered-quote nodes (l171_426_n004, l1_170_n042) mapped to anchors their\ntext never overlaps, shifting pool composition through the seeded shuffle.\nFIXES: re.search over the locator part (both forms); per-SEGMENT anchor\nattribution. Precedent-consistent remedy (addendum 2): all six draws\nRECOMPUTED under the same registered seed (20260822); pre-A1 artifacts\npreserved in git history. Divergence before the fix (reviewer-quantified):\nobjectivity not-engaged 19/20 nodes, user-autonomy 14/20 + 13/20,\ngeneral-welfare 2/20 + 17/20; harmlessness and tradeoffs unaffected. Input\nshas (runlog-v5, model spec) now recorded in each draw artifact (N1).\nStrata inform sampling only; truth untouched; no rulings exist yet.\nATTEMPT-1 ENGAGEMENT SETS ARE UNCHANGED (the defects touched strata and\npool composition, not engagement).\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00877",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "136-156",
+   "text": "## ADDENDUM 4 (2026-08-22, packets re-review R1/R2, append-only)\nR1: four packet files were regenerated BEFORE the draw-review fixes landed\nand were stale against the recomputed draws (68 nodes drifted: welfare 19,\nobjectivity 19, autonomy 27, proportionate-risk 3; harmlessness/tradeoffs\nunaffected). Root cause: parallel tracks, no set-equality gate — count\nchecks do not catch membership drift. All seven packet files regenerated\nagainst the CURRENT draws; leak-check now includes set-equality vs draws.\nRecord correction: the draw-recomputation commit message (95d4e59b) omitted\nthe proportionate-risk 3-node swap (l171_426_n040/l1_170_n021/l1_170_n039\nout, l171_426_n039/l1_170_n022/l1_170_n040 in) — recorded here.\nR2: the shuffle seed was stored inside the seat-facing files it protects —\nciphertext and key in one artifact; inversion was one line for anyone with\nrepo access (the ruling seat is an agent in this repo, not a theoretical\nadversary). FIX, registered here: packet order is a seeded permutation with\nBASE SEED 20260823; per-file seed = base + file index (generalization files\n0..5 in sorted-slug order, defensibility batch = 6). The seed and rule live\nONLY in campaign-record material (this addendum; DEFENSIBILITY_BATCH_\nPROTOCOL.md), never in seat-facing headers. DISPATCH RULE (binding on\nSunday's execution): the ruling seat receives ONLY each packet's prompt\nstring — no headers, no routing fields, no draw files, no repo access.\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00878",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "157-162",
+   "text": "## Confirmation-block rule\nBlock 2 runs only if every block-1 behaviour satisfies S1 and no F1/F2\nfired. If block 2 shows materially worse transfer than block 1 (any\nbehaviour below 0.65 precision or any F1), the combined result is reported\nas \"transfers with degradation\" and the blog claim is scoped to match.\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00879",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
    "lines": "163-172",
-   "text": "commit 3124ec4aa47e832226f8dde7bdb0f0d42677d0aa\nordinal 10\ndate 2026-08-04 08:25:10 -0700\nauthor Matt Stults\nsubject Design portfolio: 9 documents covering every remaining census class + tooling debt\nCYCLE5_DESIGN rev2 (six must-fixes integrated) + BACKFILL, DRIFT_STANDING, SECTION_PRIOR (A1 evidence gate), JOIN_INTEGRITY, SEGMENTATION_GAPS, TOOLING_BATCH, VOCAB_GAPS, CONTAINMENT_WIDENING. Grounded designs: join re-run over 589 universe, all 45 FN dossiers read, 53-family claim failed reproduction (27 strict), decoration-sensitive join discovered (backfill NOT score-invariant without dechained matching).\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
-   "source_class": "git_log"
-  },
-  {
-   "id": "S01899",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
-   "lines": "173-179",
-   "text": "commit bf42bd927262f9694f784a7861edfc5693a7df86\nordinal 11\ndate 2026-08-04 08:25:17 -0700\nauthor Matt Stults\nsubject Exclude agent worktrees from tracking\n\n----END----",
-   "source_class": "git_log"
-  },
-  {
-   "id": "S01900",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
-   "lines": "180-187",
-   "text": "commit b3ce946e6bf1fef3c8d9d7f828ffb95e1234bfc3\nordinal 12\ndate 2026-08-04 08:39:28 -0700\nauthor Matt Stults\nsubject Joint portfolio review: the governing execution order (Group 0 + P1-P3 + spine S1-S9); 13 findings, 3 silent-breakage catches; all designs build-as-is or build-with-amendments\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
-   "source_class": "git_log"
-  },
-  {
-   "id": "S01901",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
-   "lines": "188-195",
-   "text": "commit f7269e8a434c8e16ac6695775a65202c099e05f2\nordinal 13\ndate 2026-08-04 08:44:05 -0700\nauthor Matt Stults\nsubject HANDOFF + MODULE_MAP current through the loop arc; portfolio review addendum rulings recorded; section-surface contradiction resolved per ruling\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
-   "source_class": "git_log"
-  },
-  {
-   "id": "S01902",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
-   "lines": "196-203",
-   "text": "commit a5c8de00f8a8b5800b2bf2e141f1972fb0e1f487\nordinal 14\ndate 2026-08-04 08:50:43 -0700\nauthor Matt Stults\nsubject Portfolio amendments applied: all 11 joint-review items integrated across 10 designs, each tagged to its finding\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
-   "source_class": "git_log"
-  },
-  {
-   "id": "S01903",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
-   "lines": "204-213",
-   "text": "commit cb6b31221c3005ef76f9ac0734c3d14c563ff1d6\nordinal 15\ndate 2026-08-04 09:01:48 -0700\nauthor Matt Stults\nsubject Group 0 tooling batch: no-clobber, dry-run clobber guards, loader pins, commit-at-CLOSE drafting, A-side git reconstruction, census identity headers + overlay/thresholds flags\n324 targeted green across 6 suites; closed cycles byte-verified immutable; worktree freeze-gate fix applied unmerged. The dry-run guard RED reproduces the behavior_atoms.json clobber incident; reconstruction licenses only gap-free migration chains, git-primary, sha-verified.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
-   "source_class": "git_log"
+   "text": "## Integration slots (pre-declared, so nothing arrives as a surprise)\n- v5 frontier panel (data/panel-v5/, PROVENANCE.md): comparison layer as\n  above. Seat composition (sol/fable/deepseek + partials) differs from the\n  v3w trio; writeups name the panel they cite.\n- Any further frontier data (e.g. the Slack reader-test-coverage.json Matt\n  holds, or new aci runs): enters ONLY under the same comparison rule, or\n  not at all. Truth path is closed to it by this prereg.\n- Round-4 results: independent; this prereg neither reads nor is read by the\n  round-4 prereg. Both may be cited together afterward.\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
   }
  ]
 }

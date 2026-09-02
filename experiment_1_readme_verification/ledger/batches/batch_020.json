@@ -1,133 +1,148 @@
 {
  "header": {
   "batch": "batch_020",
-  "source_class": "arc2_json",
+  "source_class": "arc2_docs",
   "brief_version": "0.4",
   "glossary_version": "frozen ",
   "spans": 15,
-  "first_span": "S00437",
-  "last_span": "S00451"
+  "first_span": "S00165",
+  "last_span": "S00179"
  },
  "spans": [
   {
-   "id": "S00437",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00165",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/BLOCK2_TRANSFER_PREDICTIONS.md",
    "commit": "pin",
-   "lines": "75-75",
-   "text": "  \"l1368_1541_n014\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "50-70",
+   "text": "## 3. general-welfare (does retains ASP-literal names)\n- DOMINANT PREDICTED FAILURE, C-V TRANSLATION-LAYER, high confidence\n  and checkable from the contract file alone: the does list still\n  carries ASP-form entries (\"respond(resp1).\", \"provide(i1).\" …) that\n  behavior_acts() silently discards — the EXACT F1 defect class whose\n  repair in the other three builds (2026-08-22) did not reach this\n  module. The act lane is therefore partially/wholly dead; the 97-node\n  engaged pool rides the declared governs/purpose/protects channels.\n- PREDICTED SHAPE: severe under-engagement — decline side leaks\n  relevant welfare-adjacent clauses; the small engaged set may score\n  deceptively precise. Fix-ledger class: FATAL-or-ALARMING (per the\n  prereg vocabulary this is the stop-rule-owning class; the repair\n  itself — canonical bridge translation — is cheap and known).\n- PREDICTED REPAIR: C-V canonical translation first (the F1 recipe),\n  THEN re-route; failure-mode predictions for the repaired module are\n  deliberately NOT made now (they would be predictions about an\n  instrument that does not exist yet).\n- ATTEMPT-1 ENGAGED PRECISION BAND: not banded — the C-V defect\n  dominates any precision number; measuring before repairing would\n  measure the defect.\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00438",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00166",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/BLOCK2_TRANSFER_PREDICTIONS.md",
    "commit": "pin",
-   "lines": "76-76",
-   "text": "  \"l1_170_n032\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "71-81",
+   "text": "## Scoring rule (frozen with the predictions)\nEach behaviour's prediction scores on: (a) dominant failure class\nmatches the adjudicated fix-ledger classification; (b) the named repair\nchannels are the ones the validated repair actually uses; (c) the\nprecision band contains the venue-scored attempt-1 number (n/a for\ngeneral-welfare per its entry); (d) for proportionate-risk, the\nheadline arbitrates-transfer claim scores on the ARB-marked declined\nnodes' rulings. Partial credit is reported per-clause, never blended\ninto one number.\n\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00439",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00167",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/BLOCK2_TRANSFER_PREDICTIONS.md",
    "commit": "pin",
-   "lines": "77-77",
-   "text": "  \"l2474_2554_n013\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "82-101",
+   "text": "## CORRECTION 1 (2026-08-24, append-only, pre-measurement): general-welfare clause (a) FALSIFIED\nThe dominant-failure prediction for general-welfare (C-V: ASP-literal\ndoes entries discarded) is WRONG, falsified by direct engine check\nbefore any measurement: behavior_acts() extracts the literal head by\nregex and all five heads are canonical — the act lane is LIVE and\nengagement (97) is act+wall-driven. The F1 defect class was BESPOKE\nnames; these were canonical names in ASP syntax, which the regex\nhandles. Scored per the frozen rule: prediction 3 clause (a) FAILED.\nDRIVER ERRATUM (runbook): contract-level predictions must be verified\nagainst the engine ($0) BEFORE freezing — this one was pattern-matched\nto F1 without running behavior_acts(), a check that took one line.\nREPLACEMENT (marked v2, post-falsification, still truth-free):\ngeneral-welfare carries FOUR declared walls (governs, purpose,\nprotects, party — the most-walled module in the corpus) over a small\n97-node engaged pool; predicted attempt-1 band 0.65-0.85 with FN risk\ndominating (narrow pool + welfare-adjacency is contextual, not\nstructural). The prereg ADDENDUM-5 gate (\"measurable only after its\nC-V repair\") is discharged vacuously: no repair exists to perform.\n\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00440",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00168",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/BLOCK2_TRANSFER_PREDICTIONS.md",
    "commit": "pin",
-   "lines": "78-78",
-   "text": "  \"l4572_4692_n012\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "102-112",
+   "text": "## CORRECTION 2 (2026-08-24, append-only, pre-measurement; adversarial-review F4/F5)\n- Clause (a) is scored on RATE-NORMALIZED class rates (FP rate among\n  ruled engaged vs FN rate among ruled declined), acquisition weights\n  disclosed — raw counts under asymmetric truth acquisition never\n  decide dominance.\n- Clause (c) for user-autonomy is scored ONLY on the attempt-1 n=20\n  number under its venue-verification outcome (certify -> 0.60 stands;\n  fail -> one deterministic rescoring with corrected rulings). The\n  exhaustive engaged-set precision is a separate metric and never\n  substitutes. Registered before any further ruling exists.\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00441",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00169",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
    "commit": "pin",
-   "lines": "79-79",
-   "text": "  \"l1_170_n060\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "1-1",
+   "text": "# TRANSLATION CONTRACT V2 — what the NEXT document's translator receives",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00442",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00170",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
    "commit": "pin",
-   "lines": "80-80",
-   "text": "  \"l1707_1973_n027\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "2-11",
+   "text": "# (assembles every retrofit lesson of 2026-08-18 into translation-time requirements)\n\nThe project owner's ruling: the ontology work must be \"included in the automated\nmachinery for next time.\" This document is that machinery's specification.\nEverything below was learned by RETROFIT on the Model Spec corpus — each\nrequirement cites the retrofit artifact that proved its need. The next\ndocument's modules are BORN conforming; the gate enforces at translation\ntime; the bridge files are GENERATED from declarations, never classified\nafter the fact.\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00443",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00171",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
    "commit": "pin",
-   "lines": "81-81",
-   "text": "  \"l2126_2404_n006\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "12-29",
+   "text": "## 1. Act declarations are 4-tuples\nEvery act is declared as `{name, canonical, arg_sort, actor}`:\n* `canonical` — one of the two-level canonical act ontology\n  (behavior_pilot/behavior_vocab.json `canonical_acts_provisional` +\n  `_act_hierarchy`). Retrofit cost of not having this: 720 functors\n  classified post hoc, 3 audit rounds, ~7% corrected\n  (act_bridges.json, full-audit commit).\n* `arg_sort` — what the act acts ON (request/topic/content/instruction/...).\n  Retrofit lesson: verb-only bridges caused the H1 wrong-argument failure\n  class, 15/51 of the tuning failure census; walls apply only to\n  homogeneous verb families (relevance_by_act.WALLED_VERBS).\n* `actor` — assistant|developer|user|system. Retrofit lesson: H5 —\n  developer acts engaged assistant behaviors; name-guessed tags were wrong\n  12/19 times, assert-evidence tags correct (act_actors.json).\nGate: act with no canonical binding = HARD; unknown canonical = HARD\n(NEW:<name> escape allowed, surfaces for ontology growth — 2/720 on the\nModel Spec, both genuinely novel).\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00444",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00172",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
    "commit": "pin",
-   "lines": "82-82",
-   "text": "  \"l4252_4482_n022\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "30-44",
+   "text": "## 2. Situation concepts are typed at declaration\nEvery input/ontology concept declares `{sort, dims, generic}`:\n* sort from the fixed list (request, response, user, content, action,\n  instruction, party, setting, information, assistant, tool, other) —\n  `other` >20% = catch-all review (T5).\n* dims — scope-dimension values it EXPRESSES (party/intent/setting/\n  reversibility/content_class/stakes). Retrofit: 2,065 concepts typed post\n  hoc; two typing errors caught only by T4 firing-consistency (compound\n  conditions split across values; normative conditions typed as case\n  facts — both now sweep rules in classify_situation_sorts).\n* generic: true iff the concept holds for ANY entity of its sort — the\n  reversal derives only generic or dim-carrying concepts (measured:\n  ungated reversal made chain_of_command_requires_refusal derivable from\n  request(X), firing l609_698_n010 spuriously).\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00445",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00173",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
    "commit": "pin",
-   "lines": "83-83",
-   "text": "  \"l1974_2125_n005\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "45-52",
+   "text": "## 3. Modals must land in asserts (M30)\nAn assertless module whose CLAIMS carry a modal is a dropped-norm suspect\n(gate detector `dropped_modal_assertless`, review tier). Retrofit: 7 hits,\n2 real dropped norms incl. the agentic web-trust norm — repaired via\nadjudicate -> blind-verify -> repair-run ceremony\n(behavior_pilot/m30_adjudication.json, repair-7). Adjudication categories:\nDROPPED-NORM / SIBLING-OWNED / DEFINITIONAL — only the first is a defect.\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00446",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00174",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
    "commit": "pin",
-   "lines": "84-84",
-   "text": "  \"l461_608_n011\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "53-60",
+   "text": "## 4. Norm-objects for actless norms\nRankings, consequence claims, and definitions with normative force either\ndeclare the acts their norm governs (the outcome_ranking exemplar:\nanswer/hedge/decline) or are reached via the PROVIDES/NEEDS input-\nrelevance channel (relevance_by_dependency.py — the project owner's design; 169/181\nactless Model Spec modules reachable). A module reachable by NEITHER\nchannel is invisible to every query: gate-reportable.\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00447",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00175",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
    "commit": "pin",
-   "lines": "85-85",
-   "text": "  \"l1108_1367_n006\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "61-66",
+   "text": "## 5. Seam discipline from day one\nOne arity + one document-wide gloss per shared name, enforced hard\n(SEAM_CONTRACT growth rule). Retrofit: 93% of 1,739 input names were\nsingle-module coinages; 25 arity + 18 section-local-gloss collisions\nqueued for repair ceremony.\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00448",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00176",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
    "commit": "pin",
-   "lines": "86-86",
-   "text": "  \"l2474_2554_n006\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "67-73",
+   "text": "## 6. The validators run per-chunk, not post hoc\nvalidate_ontology.py (A1-A7 acts, T1-T7 atoms), validate_behavior_module.py\n(B-side), corpus_gate.py M-series — all wired into the translation loop the\nway the mechanical gate already is; a chunk seals only when they pass.\nFiring-consistency (A7/T4) runs against a hand-grounded reference case\nbuilt in the FIRST chunk and kept for the document's lifetime.\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00449",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00177",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
    "commit": "pin",
-   "lines": "87-87",
-   "text": "  \"l1_170_n057\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "74-101",
+   "text": "## 7. Asserts declare WHOSE interest the norm protects (from the E1 terminus)\nMeasured 2026-08-18 (deviation ledger + three ablations): party walls\nretrofitted at act level (gloss-typed) collapse recall (FN 28->43); at\nmodule level (situation-dim join) they are net zero (8FP<->8FN, signal in\n264/762 modules only). \"Whose interest does THIS norm protect\" is\nper-ASSERT information: dual-use clauses protect user AND third parties;\ngloss mention is not protection. The next document's asserts carry\n`protects: [user|third_party|developer|minor|society|...]` at translation\ntime, where the span states it; behaviors then wall on norm-protection\ndirectly. Retrofitting the Model Spec corpus's asserts is a future\nceremony (annotation sweep + blind verification), not a query-side patch.\n\nRETROFIT EXECUTED + TIER REQUIREMENT (2026-08-19, evidence:\npanel_run1/PROTECTS_LAYER_RECORD.md): the Model Spec layer now exists\n(assert_protects.json, frontier-labeled, audited keys locked in\nprotects_locked.json). MEASURED: small-tier seats plateau at ~0.60\nexact-set on this judgment (DeepSeek 0.60, Haiku 0.62 on identical\ninputs) — the deficit is stable normative doctrine on boundary cases\n(unspecified<->user on epistemic norms; co-protection breadth), which\nrubrics do not close. The next document annotates via\nESCALATION-BY-DISAGREEMENT: two cheap seats label every assert; agreement\nkeeps the label (measured 0.88 vs frontier, n=24 — REVALIDATE on >=100\nasserts before relying), disagreement escalates to a frontier instance\n(~40% volume, simulated hybrid 0.93). Inputs MUST include the verbatim\nSOURCE TEXT (two rounds failed on paraphrase-only input) and every\nnode id must resolve to its span (15 drifted ids yielded empty spans\nsilently — check span non-empty per item, fail loud).\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00450",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00178",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
    "commit": "pin",
-   "lines": "88-88",
-   "text": "  \"l3596_3876_n020\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "102-143",
+   "text": "## 8. Every assert emits its full NORM SIGNATURE at translation time (closure ruling, 2026-08-19)\n\nA norm is a typed tuple, and relevance failures are projections of it lost in\ntranslation. The signature (A PRIORI — derived from deontic/frame structure plus\ndocument mining, NOT from behavior failures; the 75-FP census is the CHECK that\nconfirmed closure, 74/75):\n\n  (act, actor, protects, governs_aspect, scope, force, authority)\n\n- act/actor/force: already required (§1, deontic statuses).\n- protects: §7 (built for the Model Spec; 985 asserts, frontier-grade).\n- governs_aspect — WHAT QUALITY of the act the norm constrains. Value vocabulary is\n  MINED per document (the way the act ontology was mined), seeded with the skeleton:\n  substance_usefulness | objectivity_neutrality | accuracy_calibration | tone_manner |\n  safety_of_manner | formatting_style | identity_meta | operational_hygiene.\n  This was the dominant census lever (40/58 + 17/17 fresh-draw FPs).\n- scope: §2 typed situations, per-assert where the span narrows it.\n- authority: instruction-level/precedence plumbing flag — a norm ABOUT the document's\n  own machinery engages no behavior wall (7/58 census).\n\nANNOTATION PROTOCOL (measured, binding): bulk seat sweeps ride dispatch_core.py's\nBATCH mode (graph_v2/dispatch_core.py: submit/poll/collect with resume-safety, spend\ngate at submit, orphan sweep) — the 2026-08-19 retrofit sweeps ran on the live path\nonly because the author missed the existing plumbing; recorded so it isn't repeated.\nSingle pass per assert yields all fields;\ndual cheap seats label everything, agreement keeps the label, disagreement escalates\nto a frontier instance (solo small tiers measured ~0.60 exact-set). MEASURED UPDATE\n(signature retrofit, n=100 pre-registered spot-check): agreed-cheap labels scored 0.78 —\nBELOW floor; shared cheap-seat bias (safety_of_manner over-assignment) is invisible to\nthe disagreement trigger. BINDING: validate seats PER FIELD (the authority flag passed\nat 0.97 while the aspect field failed), spot-check the agreed set at >=0.85 on >=100\nitems BEFORE trusting it, and budget full frontier for any field that fails — twice\nmeasured (protects, governs), cheap tiers have not yet passed a judgment field's floor\non this document. Inputs carry verbatim SOURCE\nTEXT; every node id must resolve to a non-empty span, checked loud. Calibration cases\nwith pre-registered expectations run before any sweep (incremental protocol).\n\nCERTIFICATION (behavior-free, so the document is right FIRST TIME for unspecified\nbehaviors): per-dimension mutation probes — synthetic behavior pairs differing along\nexactly one signature dimension; the instrument must discriminate every pair. Failures\nlocalize the defective dimension before any real behavior is queried.\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00451",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00179",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
    "commit": "pin",
-   "lines": "89-89",
-   "text": "  \"l427_460_n009\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "144-172",
+   "text": "## 9. Generalized rules from the round-2 failure census (2026-08-19) — BINDING before any new document\n\n9a. DIMENSIONAL PURITY of every slot vocabulary, validated BEFORE annotation begins.\nTest: no two values in one slot may be simultaneously true of one beneficiary/norm\nalong different underlying dimensions. Attributes (age, vulnerability), contexts\n(agentic setting, vulnerable interaction), and intents are SEPARATE FIELDS, never\nvalues inside a role/quality vocabulary. Measured basis: the a priori purity audit's\nflags coincided exactly with the empirically troubled values — protects.minor\n(role x age; U18 false-engagement class, 36/71 minor-labels co-occur with user),\ngoverns.safety_of_manner (quality x vulnerable-context; #1 seat-confusion pair AND\nthe spot-check failure locus), governs.operational_hygiene (quality x setting; #2\npair), acts.protective_response family (act x intent; the E5 reverts). Pure slots\n(deontic force, authority flag) were also the tier-robust ones (0.97 at cheap tier):\npurity predicts cheap-seat viability.\n\n9b. BEHAVIOR DECLARATIONS ARE DERIVED A PRIORI, truth only validates. governs_concern,\nprotects_concern, and every wall declaration is derived from the behavior DEFINITION\nby frontier judgment before any truth is consulted; adjudicated truth then validates\nthe derivation. Measured basis: harm's governs exclusion was left empty because\ntuning-on-truth showed no gain on a precision-saturated adjudicated set — the FP mass\nlived in the never-drawn pool and fired F1 (0.60 vs floor 0.81) in round 2. Tuning\ndeclarations on available truth overfits walls to the sample.\n\n9c. Seat-decomposition (per-aspect binaries, mechanical union) is REJECTED at small\ntiers for the current impure vocabulary: pre-registered experiment (seed 20260821,\nn=100 vs frontier layer) scored DeepSeek 0.29 / Haiku 0.20 exact with 66%/48%\ncardinality anomalies (strict phrasing collapses to under-listing). May be re-tried\nONLY after 9a's purity fix, with a fresh pre-registration.\n",
+   "source_class": "arc2_docs",
+   "context": null
   }
  ]
 }

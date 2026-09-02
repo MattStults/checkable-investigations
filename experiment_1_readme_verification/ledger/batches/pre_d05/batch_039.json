@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_039",
+  "source_class": "arc2_json",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S00722",
+  "last_span": "S00736"
+ },
+ "spans": [
+  {
+   "id": "S00722",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
+   "commit": "pin",
+   "lines": "203-203",
+   "text": "  \"l1707_1973_n013\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00723",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
+   "commit": "pin",
+   "lines": "204-204",
+   "text": "  \"l3596_3876_n013\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00724",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
+   "commit": "pin",
+   "lines": "205-205",
+   "text": "  \"l1542_1706_n020\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00725",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
+   "commit": "pin",
+   "lines": "206-206",
+   "text": "  \"l1_170_n040\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00726",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
+   "commit": "pin",
+   "lines": "207-207",
+   "text": "  \"l3596_3876_n028\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00727",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
+   "commit": "pin",
+   "lines": "208-208",
+   "text": "  \"l4483_4571_n007\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00728",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
+   "commit": "pin",
+   "lines": "209-209",
+   "text": "  \"l2555_2652_n008\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00729",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
+   "commit": "pin",
+   "lines": "210-210",
+   "text": "  \"l3954_4251_n005\": \"not_relevant\"",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00730",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_ATTEMPT3_SCORED.json",
+   "commit": "pin",
+   "lines": "2-2",
+   "text": " \"_\": \"ITERATION 2 attempt-3 REALIZATION scored against ITERATION2_V5_PREDICTION.json. FINAL-ITERATION ALL-FABLE VENUE (wave + 3-seat panel override + registered machinery probe). Measures THE REPAIR; attempt-1 transfer (0.40) frozen.\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00731",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_ATTEMPT3_SCORED.json",
+   "commit": "pin",
+   "lines": "3-3",
+   "text": " \"behaviour\": \"how-to-approach-tradeoffs\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00732",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_ATTEMPT3_SCORED.json",
+   "commit": "pin",
+   "lines": "4-4",
+   "text": " \"n\": \"20+20\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00733",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_ATTEMPT3_SCORED.json",
+   "commit": "pin",
+   "lines": "5-5",
+   "text": " \"engaged_precision\": 0.4,",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00734",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_ATTEMPT3_SCORED.json",
+   "commit": "pin",
+   "lines": "6-6",
+   "text": " \"decline_correctness\": 0.5,",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00735",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_ATTEMPT3_SCORED.json",
+   "commit": "pin",
+   "lines": "7-86",
+   "text": " \"panel\": [\n  {\n   \"node\": \"l699_796_n021\",\n   \"wave\": \"relevant\",\n   \"seats\": [\n    \"relevant\",\n    \"relevant\",\n    \"relevant\"\n   ],\n   \"majority\": \"relevant\",\n   \"split\": false\n  },\n  {\n   \"node\": \"l1108_1367_n015\",\n   \"wave\": \"relevant\",\n   \"seats\": [\n    \"relevant\",\n    \"relevant\",\n    \"relevant\"\n   ],\n   \"majority\": \"relevant\",\n   \"split\": false\n  },\n  {\n   \"node\": \"l3239_3382_n003\",\n   \"wave\": \"not_relevant\",\n   \"seats\": [\n    \"not_relevant\",\n    \"not_relevant\",\n    \"not_relevant\"\n   ],\n   \"majority\": \"not_relevant\",\n   \"split\": false\n  },\n  {\n   \"node\": \"l1_170_n032\",\n   \"wave\": \"relevant\",\n   \"seats\": [\n    \"relevant\",\n    \"relevant\",\n    \"relevant\"\n   ],\n   \"majority\": \"relevant\",\n   \"split\": false\n  },\n  {\n   \"node\": \"l3383_3501_n009\",\n   \"wave\": \"not_relevant\",\n   \"seats\": [\n    \"not_relevant\",\n    \"not_relevant\",\n    \"not_relevant\"\n   ],\n   \"majority\": \"not_relevant\",\n   \"split\": false\n  },\n  {\n   \"node\": \"l2126_2404_n008\",\n   \"wave\": \"relevant\",\n   \"seats\": [\n    \"relevant\",\n    \"relevant\",\n    \"relevant\"\n   ],\n   \"majority\": \"relevant\",\n   \"split\": false\n  },\n  {\n   \"node\": \"l3239_3382_n005\",\n   \"wave\": \"not_relevant\",\n   \"seats\": [\n    \"not_relevant\",\n    \"not_relevant\",\n    \"not_relevant\"\n   ],\n   \"majority\": \"not_relevant\",\n   \"split\": false\n  },\n  {\n   \"node\": \"l3502_3504_n002\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00736",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_ATTEMPT3_SCORED.json",
+   "commit": "pin",
+   "lines": "87-96",
+   "text": "   \"wave\": \"relevant\",\n   \"seats\": [\n    \"relevant\",\n    \"relevant\",\n    \"relevant\"\n   ],\n   \"majority\": \"relevant\",\n   \"split\": false\n  }\n ],",
+   "source_class": "arc2_json"
+  }
+ ]
+}

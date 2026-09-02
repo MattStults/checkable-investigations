@@ -15,7 +15,8 @@
    "commit": "pin",
    "lines": "1-6",
    "text": "# ITERATION NOTES — append-only learning ledger for the calculus loop\n(Convention, binding via CALCULUS_RUNBOOK step 5b: EVERY step of every\niteration appends a dated entry here — what surprised, what the docs got\nwrong, what the next agent must know. This file is the SOURCE for runbook\nrewrites; learning that is not an artifact here does not exist.)\n",
-   "source_class": "ledger"
+   "source_class": "ledger",
+   "context": null
   },
   {
    "id": "S00002",
@@ -23,7 +24,8 @@
    "commit": "pin",
    "lines": "7-40",
    "text": "## 0000 — SEED: tacit operational knowledge from the 2026-08-24 sessions\n(committed so no handoff depends on any instance's memory)\n- SUBAGENT REGISTRY loads at session start only: a new .claude/agents/*.md\n  needs a session restart. The lean ruling-seat agent exists (Read-only\n  tools); wave seats currently run as \"claude\"-type agents because they\n  must read packet files.\n- SEAT FAILURE MODES seen live: ultra-short fragment passages push seats\n  into document-completion (fix: the anti-completion fence line, pinned in\n  E3/round4_pilot.py FENCE); one seat fabricated-from-memory dispatch was\n  voided (rule: prompts ONLY from committed packet files, never retyped).\n- Haiku JSON output can be malformed in grounds strings — parse verdicts\n  with the lenient regex (see parity scoring scripts), never bare\n  json.load, and say \"must be VALID JSON; escape internal quotes\" in\n  briefs.\n- HEREDOC PATCHING: python string-replace patches MUST assert-and-WRITE in\n  the same script (one patch printed diagnostics and never wrote — caught\n  by a later NameError); prefer literal strings grepped from the file over\n  remembered escapes (a ▸ vs \\\\u25b8 mismatch silently no-opped a patch\n  batch and the commit shipped without the widget changes).\n- COMMIT DISCIPLINE FAILURES to not repeat: two commits today shipped with\n  a red/unverified state (docs-test red; widget patch unapplied) because\n  commit preceded verification — run the check, THEN commit.\n- fresh_draw4/ is the round-4-era rulings home; result files named\n  {HELP,HARM,CAUTION}_R4_RESULT.json feed truth_all's fmap. The\n  defensibility overlay in ruling_packets/defensibility_rulings.json is\n  highest-precedence truth.\n- probe.py appends to HYPOTHESIS_LEDGER.jsonl keyed (post-A9) by\n  extensional fingerprint; verify_terminal verdicts now carry enumeration\n  scopes; ENUMERATED vs KNOWN_UNENUMERATED lives in verify_terminal.\n- The Opus coordinator pattern works (dispatch batches, checkpoint the\n  output file after EVERY batch with complete:false/true) — always include\n  the checkpoint instruction; the first coordinator ran end-write-only\n  until amended mid-flight.\n",
-   "source_class": "ledger"
+   "source_class": "ledger",
+   "context": null
   },
   {
    "id": "S00003",
@@ -31,7 +33,8 @@
    "commit": "pin",
    "lines": "41-70",
    "text": "## 0001 — ITERATION 1, STEP 1 (TRIAGE), 2026-08-24\nBatch: the 12 indefensible engaged-FPs of how-to-approach-tradeoffs\n(GEN_BLOCK1_SCORED.json), attempt-2 repair under the signed gen prereg.\n- RUNBOOK ERRATUM (first command, first failure): STEP 1's\n  `route.py <slug> <node>` KeyErrors for generalization slugs —\n  SC.truth_all's fmap only knows the three round-4 behaviours. The\n  §9-precedented fix (route_validate.py case e) is route()'s ctx\n  port-record mechanism. iteration1_triage.py goes one better: it keeps\n  the census REAL by (a) projecting the tradeoffs module into a derived\n  single-module contract (iteration1_tradeoffs_contract.json — same\n  wrapper schema as v19, byte-identical module dict) and (b) injecting\n  the FROZEN attempt-1 verdicts into SC.truth_all for this slug only\n  (read-only consumption; the transfer claim is untouched). Only\n  truth_tier is ctx-supplied, from the committed gen ruling files.\n- TIER SPLIT: 3 of 12 FPs are panel-tier (l3596_3876_n037 3-0,\n  l3954_4251_n008 3-0, l3954_4251_n038 2-1) -> route C-D directly.\n  9 are wave-single -> router stops OPEN(P1): R1 prescribes 3-seat\n  panel escalation BEFORE any move (A5 ordering: premises first).\n- CENSUS CAVEAT (next agent must know): all 12 are SEPARABLE in both\n  views, but the certificate is relative to the 40-node attempt-1 truth\n  set, not the 640-node ledger — separability is cheap at n=40. V1\n  charter arithmetic for any delta must run on this same 40-node ledger\n  (it is the only truth these nodes have); the real test is V5's fresh\n  draw, exactly as the prereg's attempt-2 protocol demands.\n- Census mismatch count 15 = 12 FPs + the 3 not_engaged_FNs (FNs are\n  NOT in this batch; they stay unrouted).\n- Prereg alignment: the predictions file blamed a meta/procedural\n  no-walls mechanism; a walls-style C-D delta would classify the fix\n  ledger entry EXPECTED (module-local), keeping attempt-2 in-protocol.\n",
-   "source_class": "ledger"
+   "source_class": "ledger",
+   "context": null
   },
   {
    "id": "S00004",
@@ -39,7 +42,8 @@
    "commit": "pin",
    "lines": "71-72",
    "text": "## 0002 — BUDGET RULING (2026-08-24) — [operational; redacted]\n",
-   "source_class": "ledger"
+   "source_class": "ledger",
+   "context": null
   },
   {
    "id": "S00005",
@@ -47,7 +51,8 @@
    "commit": "pin",
    "lines": "73-103",
    "text": "## 0003 — ITERATION 1, STEP 2a (R1 ESCALATION), 2026-08-24\n3 fresh Fable seats, LINEAGE_SEAT_INSTRUCTION verbatim, packet =\ncommitted 9-node subset of the attempt-1 lineage wave packet.\nMachine-checked: 3x9 rulings, all\nnodes present, all verdicts valid.\n- RESULT: 3 OVERTURNS -> C-T dissolved (l2126_2404_n034 3-0,\n  l3239_3382_n005 3-0, l3877_3953_n002 2-1 SPLIT); 6 stand, now\n  panel-tier. Artifact: fresh_draw4/ITER1_TRADEOFFS_ESCALATION_RESULT\n  .json — supersedes single-wave entries FOR REPAIR ROUTING ONLY; the\n  attempt-1 transfer claim (0.40, F2) stays frozen.\n- A5 PREMISES-FIRST, CONCRETELY VINDICATED (blog-post material): the\n  natural pre-escalation delta was a governs_concern wall excluding\n  formatting_style/objectivity_neutrality — and two of the three\n  overturned nodes are EXACTLY formatting_style/objectivity_neutrality\n  carriers (l3877_3953_n002, l2126_2404_n034). A delta designed before\n  the premise check would have validated against wrong truth and been\n  reverted at V5. The 25%-of-batch overturn rate also says single-wave\n  FP truth on a THIN engaged draw is noisy — future batches should\n  expect R1 escalation to dissolve a nontrivial fraction.\n- Queue r2 (ITERATION1_ROUTED_QUEUE_R2.json): 9 nodes, all panel-tier,\n  all C-D SEPARABLE-both-views. iteration1_triage.py now overlays the\n  escalation result (repair-ledger truth = frozen attempt-1 verdicts +\n  panel supersessions) and emits the r2 queue when the result file\n  exists.\n- Discriminator snapshot AT UPDATED TRUTH: remaining-FP governs =\n  tone_manner x6, accuracy_calibration x2, formatting_style x1; but TPs\n  now carry tone_manner, formatting_style, accuracy_calibration too —\n  NO single governs wall separates. The C-D candidate must come from\n  finer structure (functor/arg-sort/purpose/context combinations);\n  class card required before anything L2.\n",
-   "source_class": "ledger"
+   "source_class": "ledger",
+   "context": null
   },
   {
    "id": "S00006",
@@ -55,7 +60,8 @@
    "commit": "pin",
    "lines": "104-140",
    "text": "## 0004 — ITERATION 1, STEPS 2b-3 (C-D MOVE + V1-V4) and STEP-4 PREP, 2026-08-24\n- ESCALATION-2 (3 seats, 1 node): before choosing between delta\n  candidates, the single-wave TP the leading census-expressible candidate\n  would break (l1368_1541_n018) was panel-escalated: 3-0 RELEVANT. This is\n  the iteration's second premises-before-moves win — the candidate choice\n  became a truth fact instead of a driver judgment. PATTERN FOR THE RUNBOOK:\n  when candidates differ only on nodes with single-tier truth, escalate\n  those nodes BEFORE deciding.\n- ADOPTED (pending V5): candidate B = governs_concern wall + the corpus's\n  FIRST live governs_conditional (tone_manner:[vulnerable_interaction]).\n  V1 5/0, V2 drift 0/0/0, V3 held-out 48/48 (all lost nodes tone_manner/\n  identity_meta-only), V4 zero new ruled flips. Full grounds + rejected\n  candidates by name: ITERATION1_CD_DECISION.md. TOOLING CONSEQUENCE the\n  next agent must know: SC.census REFUSES contracts declaring\n  governs_conditional (Arc1-e guard) and verify_terminal lists it\n  KNOWN_UNENUMERATED — census-based routing of the repaired module is\n  blocked until vector() learns conditional contexts. The engine itself\n  consumes it fine.\n- probe.py extended with --contract/--truth (defaults untouched) — the\n  same gen-venue gap as route.py, same fix pattern. 4 candidates\n  fingerprinted into HYPOTHESIS_LEDGER.jsonl.\n- 4 residuals SUSPENDED-OPEN at this inventory (n030/n007/n038/l4572),\n  verify_terminal scoped TERMINAL-STRUCT(enumerated: protects, governs,\n  purpose); the visible separator (purposes slot) has NO consuming gate —\n  a future I1 consumer build re-enters them.\n- RUNBOOK ERRATUM (STEP 4): nothing documents how attempt-1 wave items\n  were built from ctx packets. Reverse-engineered: ESTABLISHES paragraph +\n  SOURCE TEXT section, ALL-CAPS-header segmentation, blank-line\n  normalization — verified byte-identical on all 40 attempt-1 items before\n  use (11 packets carry GRAPH NODE preambles and PROVIDES/NEEDS middle\n  sections that must be dropped). Builder lives in the STEP-4 pre-dispatch\n  commit; fold into ruling_packets.py at the runbook rewrite.\n- V5 prediction registered (ITERATION1_V5_PREDICTION.json) BEFORE any\n  attempt-2 ruling: P1 revert line >= 0.55 venue-matched, point 0.65±0.10,\n  P3 mechanism (fixed class cannot recur), P4 decline >= 0.80. Draw seed\n  20260824; pools 231/531; 5 ruled-ledger overlaps (fresh rulings anyway).\n",
-   "source_class": "ledger"
+   "source_class": "ledger",
+   "context": null
   },
   {
    "id": "S00007",
@@ -63,7 +69,8 @@
    "commit": "pin",
    "lines": "141-177",
    "text": "## 0005 — ITERATION 1, STEPS 4-5 (REALIZATION + CLOSE), 2026-08-24\nConfirmation venue as registered: 1 wave seat (40 nodes) +\n3 panel seats (8 pre-registered rows). Wave rulings were\ncommitted and the venue decision (dispatch panels vs wave-only) was made\non budget alone BEFORE any scoring — keep that sequencing; it removes the\noptional-stopping question entirely. Scorer was committed before rulings\nexisted. Result (ITER1_ATTEMPT2_SCORED.json):\n- ENGAGED PRECISION 0.75 (attempt-1: 0.40). P1 PASS (>=0.55), P2 within\n  band (point was 0.65), P3 PASS (zero fixed-class recurrence among the 5\n  fresh engaged-FPs), panel split 1/8. Also clears S1's 0.70 bar at the\n  repair venue — reported as exactly that, never as a transfer claim.\n- VERDICT: candidate B KEPT. The V5 keep/revert line was P1, and P1 passed.\n- P4 FAILED (decline_correctness 0.60 vs predicted >=0.80) and the failure\n  is a PREDICTION-CALIBRATION error, not a repair defect, shown three\n  ways: (i) all 8 fresh FNs were un-engaged BEFORE the repair too (the\n  wall created none of them — they are pre-existing act-channel misses:\n  substance/identity/objectivity clauses the does=[respond,comply] lanes\n  never reached); (ii) zero of the 48 walled nodes were ruled relevant\n  anywhere in the fresh draw; (iii) the one walled node the declined draw\n  sampled (l3954_4251_n012, a fixed FP) was freshly, blindly re-ruled\n  not_relevant — the fix confirmed on unseen truth. LESSON FOR THE\n  RUNBOOK: predict decline_correctness from the POST-REPAIR pool\n  composition, not by carrying over the prior attempt's figure — the\n  attempt-1 0.85 was one draw of a different pool; single-wave FN noise\n  on decline sides is real (this is the mirror of the 3/9 FP overturn\n  rate found at R1).\n- NEW MISMATCH QUEUE SEEDED (iteration 2): 5 engaged-FPs (l2821_3040_n029,\n  l3147_3238_n009, l3596_3876_n028, l3954_4251_n038 AGAIN — the standing\n  SUSPENDED-OPEN residual, drawn and re-confirmed FP at panel tier\n  3-0 not_relevant, its wave+panel unanimous, l3954_4251_n040)\n  + 8 not-engaged-FNs (list in scored file). Truth tier: wave-single\n  except panel rows. These route through the calculus next iteration;\n  the FN class (act-channel reach) is C-I-shaped, not C-D — the wall\n  cannot cause or cure it.\n- Budget actual: 10 seats total this iteration; the registered halt line\n  was respected by measuring remaining capacity before each dispatch.\n",
-   "source_class": "ledger"
+   "source_class": "ledger",
+   "context": null
   },
   {
    "id": "S00008",
@@ -71,7 +78,8 @@
    "commit": "pin",
    "lines": "178-204",
    "text": "## 0006 — POST-CLOSE: PATH AUDIT + OPUS PARITY CERTIFICATE, 2026-08-24\nMatt's rulings this block: (a) NO new monotonicity metric — the blog's\nprogress claim rests on the machine's existing artifacts (registered V5\npredictions + charter records); (b) cut cost via the machine's own A10 Q3\nmechanism; (c) THE FINAL ITERATION'S CONFIRMATION WAVE STAYS ON FABLE.\n- PATH AUDIT ($0, committed: ITER1_TRACE_AUDIT.json): all 12 iteration-1\n  traces replayed from recorded artifacts and clingo-certified legal\n  (12/12, 0 violations); Theorem-2 port census: at most one P1 per\n  resolution. Findings F-a1 (SUSPENDED_OPEN is not a terminal in the v1\n  calculus.lp — suspensions are ledger states until encoded) and F-a2\n  (validated deltas do not consume R3 budget) recorded.\n- OPUS PARITY CERTIFICATE GRANTED (ITER1_OPUS_PARITY_CERTIFICATE.json;\n  prereg gates committed BEFORE dispatch; zero Fable): 3 Opus seats on\n  the 23-node panel-tier key -> majority 0.913, mean single 0.884\n  (ABOVE Fable's own 0.846 single-wave baseline on the same key),\n  per-class 8/9 + 13/14. Scope: lineage ruling seat, THIS brief,\n  tradeoffs venue; re-measures on brief change; does NOT touch the 0.38\n  flip-adjudication doctrine. Deployment: Opus waves + seeded 20% Fable\n  spot-checks + >1-disagreement tripwire; final iteration all-Fable.\n- REVISED COST PICTURE for iterations 2-3: Fable only for spot-checks,\n  tripwires, and the final confirmation wave — a several-fold reduction\n  against the all-Fable plan.\n- NOTE ON THE 2 PARITY DISAGREEMENTS (both contested-history nodes):\n  l171_426_n018 (Opus 3-0 relevant vs key) and l2126_2404_n034 (Opus 2-1\n  vs key relevant). Neither blocks the certificate; both are worth a\n  future panel-of-record look if they ever matter to a decision.\n",
-   "source_class": "ledger"
+   "source_class": "ledger",
+   "context": null
   },
   {
    "id": "S00009",
@@ -79,7 +87,8 @@
    "commit": "pin",
    "lines": "205-233",
    "text": "## 0007 — ITERATION 2, STEPS 1-4-PREP, 2026-08-24\n- ESCALATION ON THE CERTIFIED OPUS VENUE: 0/11 overturns (vs attempt-1's\n  3/9 single-wave) — attempt-2's wave was accurate; all 13 misses real.\n  Fable spot-check (seeded 3/11) held for the usage checkpoint;\n  tripwire >1 disagreement voids the Opus wave.\n- FN MECHANISM (the finding of the iteration): the 8 FNs decompose into\n  (a) override-headed chain-of-command clauses the does-lane missed\n  (F1-era rendering used follow_chain_of_command->comply; the corpus\n  heads to canonical override); (b) the spec's instruction-hierarchy\n  DEFINITIONS — all-authority_plumbing, document-actor — structurally\n  excluded by GLOBAL walls no declaration could exempt: a behaviour whose\n  subject matter IS the machinery could not say so. Resolved by a new\n  typed gate machinery_concern:[acts] (I1 build; engine + registry +\n  handshake test one commit; inert unless declared; 43 tests green);\n  (c) a provide-headed trio whose fix (+139 engagements even arg_sorts-\n  walled) was rejected by name as the attempt-1-shaped precision bomb;\n  (d) two definitional-lane nodes with no act credits (C-V lane named).\n- DRAW LUCK IS REAL (next agent must know): the attempt-3 seeded draw\n  sampled ZERO of the 16 gained nodes (p~0.26) — P3 would have been\n  vacuously true. Fixed PRE-RULING by a registered addendum: seeded\n  5-node machinery probe, separate rulings file, P3 scores on the probe\n  only. RUNBOOK RULE CANDIDATE: after computing a confirmation draw,\n  CHECK it samples the move's gain/fix classes; if not, register a\n  seeded probe in the same pre-dispatch commit.\n- Iteration 2 is the FINAL in-scope iteration (post-move queue is\n  entirely fixed-or-suspended), so its confirmation venue is ALL-FABLE\n  per the standing ruling: 1 wave (40) + 3 panels (8) + 1 probe seat (5) +\n  the pending 3-node spot-check.\n",
-   "source_class": "ledger"
+   "source_class": "ledger",
+   "context": null
   },
   {
    "id": "S00010",
@@ -87,7 +96,8 @@
    "commit": "pin",
    "lines": "234-235",
    "text": "## 0008 — FINAL-BLOCK BUDGET CHECKPOINT (2026-08-24) — [operational; redacted]\n",
-   "source_class": "ledger"
+   "source_class": "ledger",
+   "context": null
   },
   {
    "id": "S00011",
@@ -95,7 +105,8 @@
    "commit": "pin",
    "lines": "236-265",
    "text": "## 0009 — ITERATION 2, STEP 4 REALIZATION: STOP CONDITION FIRED, 2026-08-24\nAttempt-3 (all-Fable venue as registered): engaged precision 0.40 — P1\n(>=0.60) FAILS, registered consequence = REVERT the batch move. NOT\nEXECUTED: halt-and-surface, because the move-level evidence contradicts\nthe estimator, and resolving that conflict binds process (Q5, Matt).\n- THE ESTIMATOR CARRIED NO SIGNAL ABOUT THE MOVE: the seeded draw\n  sampled 0/16 of the move's gained nodes and the move lost 0 — engaged\n  precision was measured on a sample causally disconnected from the\n  delta it gates. MY REGISTRATION ERROR: the pre-ruling addendum caught\n  exactly this for P3 (added the machinery probe) and did not extend the\n  same coverage requirement to P1/P2. RUNBOOK RULE (bind it): a V5\n  primary metric MUST have measured coverage of the move's extension\n  (gains/losses sampled, or scored on a registered probe), else the\n  registration is invalid-by-construction.\n- MOVE-LEVEL EVIDENCE, all committed: machinery probe 5/5 relevant\n  (blind Fable, the card's thesis in the seat's own grounds); spot-check\n  3/3; charter +3/0 on panel-tier truth; V2 clean.\n- SEAT NOISE IS REAL AND MEASURED: this wave seat agrees 4/7 with\n  standing ledger truth on the draw's known nodes, contradicting TWO\n  panel-tier rulings (l3877_3953_n002, l3239_3382_n005). Baseline\n  single-wave-vs-panel is 0.846. Corrected estimator (panel-tier truth\n  substituted): 0.50 — still sub-line; n=20 draws carry ±~0.2; attempts\n  2 (0.75) and 3 (0.40) are compatible with pool precision ~0.55-0.60.\n  V5's own text warned it is 'a measurement, not a proof'.\n- OPTIONS SURFACED FOR RULING (the owner's ruling required): (a) execute the\n  registered revert; (b) rule the P1 realization void-for-coverage and\n  re-measure under a coverage-valid registration; (c) accept the move on\n  probe+charter evidence recording attempt-3 as noise-dominated. No\n  branch taken in-repo pending the ruling.\n",
-   "source_class": "ledger"
+   "source_class": "ledger",
+   "context": null
   },
   {
    "id": "S00012",
@@ -103,7 +114,8 @@
    "commit": "pin",
    "lines": "266-298",
    "text": "## 0010 — RE-MEASUREMENT FINAL + ITERATION 2 CLOSE, 2026-08-24\nExecuted exactly per ITER2_VOID_RULING_AND_REMEASURE_PREREG.md; one\nshot; numbers FINAL.\n- MOVE GATE: STANDS at 0.875 (14/16 of the machinery move's full\n  extension panel-relevant — no sampling, no variance, no re-roll).\n  The two extension not_relevants are the residual to type later.\n- FINAL NUMBERS (raw single-wave vs uniform panel tier):\n  attempt-1 transfer 0.40 (frozen) | attempt-2 0.75 raw / 0.70 panel |\n  attempt-3 0.40 raw / 0.55 panel. Pooled panel-tier engaged precision\n  over both frozen draws: 23/38 = 0.605. The attempt-3 wave seat's\n  strictness bias is confirmed (+0.15 at panel tier); the residual\n  attempt-2-vs-3 gap is n=20 draw variance over a ~0.6 pool.\n- SPOT-CHECK: 2/13 disagreements, tripwire NOT fired; the Opus\n  certificate held on a node mix including machinery clauses.\n- THE HONEST HEADLINE IS RECALL, NOT PRECISION: 23/40 pooled declined\n  nodes are panel-relevant. The module's engaged side sits ~0.6-0.7;\n  its DECLINED side leaks a large relevant mass — the provide-class and\n  definitional-lane reach limits, now measured, not just characterized.\n- TRUTH-INSTABILITY FINDING (do not let dict order hide it):\n  l3239_3382_n005 carries two OPPOSING unanimous Fable panels (iter-1\n  escalation 3-0 relevant; attempt-3 panel 3-0 not_relevant). The\n  scorer's recency precedence currently rules; the node needs a\n  panel-of-record with the contradiction in front of it. Same watch on\n  l3877_3953_n002 (2-1 R then wave NR).\n- FINAL QUEUE handed to future work: 15 panel-tier FPs + 23 panel-tier\n  FNs (ITER2_REMEASURE_SCORED.json + this entry); FN mass dominated by\n  reach classes (provide-lane, definitional-lane), FP mass by the\n  single-consideration family — both already carry SUSPENDED-OPEN\n  grounds and named re-entry paths.\n- Fable spend this block: spot-check seat only; everything else\n  Opus. The campaign's Fable discipline held: check-before-dispatch at\n  every Fable seat, tripwires never silently passed.\n",
-   "source_class": "ledger"
+   "source_class": "ledger",
+   "context": null
   },
   {
    "id": "S00013",
@@ -111,7 +123,8 @@
    "commit": "pin",
    "lines": "299-312",
    "text": "## 0011 — MATT RULING: DEFENSIBLE-BY-CONTRADICTION, 2026-08-24\nMatt's ruling on the n005 flag: opposing UNANIMOUS panels on identical\ntext/brief = the node is defensible either way and must not hit the\ntop-line — score it match-or-defensible, the campaign's standing metric\nshape. MECHANIZED AS A ZERO-COST RULE: the contradiction IS the\ndefensibility certificate (no seat, no panel-of-record needed — that\nqueued item is closed by this ruling). Qualification bar: two full\npanels, both unanimous, opposed. l3239_3382_n005 qualifies;\nl3877_3953_n002 (2-1 panel vs wave) does NOT and stays contested.\nApplied append-only to ITER2_REMEASURE_SCORED.json: pooled\nmatch-or-defensible engaged = 24/38 = 0.632; registered final numbers\nuntouched. RUNBOOK RULE CANDIDATE: check every truth supersession for\nthe opposing-unanimous pattern before letting recency precedence decide.\n",
-   "source_class": "ledger"
+   "source_class": "ledger",
+   "context": null
   },
   {
    "id": "S00014",
@@ -119,7 +132,8 @@
    "commit": "pin",
    "lines": "313-335",
    "text": "## 0012 — ITERATION 3 OPENED: TRIAGE + MINT DESIGN, 2026-08-24\n- Queue refiltered against the CURRENT module first (lesson: never route\n  a stale miss list) — 3 FNs already resolved by the kept iter-2 move;\n  n005 out as defensible-by-contradiction; final 14 FP + 20 FN, all\n  panel-tier (R1 free).\n- ROUTE: C-I(I3) unified mint. Contrast analysis supports ONE\n  distinction serving BOTH directions: FN spans carry\n  ordering/exception/bounded-permission structure (\"never refuse\n  unless…\", \"allowed as long as not…\"), FP spans are single\n  prescriptions. Drafted as MINT_ARBITRATES_PREREG_DRAFT.md — per-assert\n  ARBITRATES mark, consumed as an act-channel wall (precision) + an\n  additive channel (recall). The hard boundary (concessive single norms,\n  \"comply even if long\") is ruled NO in the brief with the panel-tier\n  case that forces it.\n- AWAITING THE P3 SIGNATURE — the annotation lanes do not run\n  without it (A10 Q4/Q5). Post-signature pipeline is Opus-dominant\n  (two-seat corpus lane + certified-Opus escalations); Fable only for\n  spot-checks and the attempt-4 headline wave.\n- Convergence note for the writeup: l831_1000_n011 sits in BOTH this\n  queue and split mining's deferred provide:forbid.form_equivalence\n  list — the third time two blind-to-each-other methods named the same\n  fix family.\n",
-   "source_class": "ledger"
+   "source_class": "ledger",
+   "context": null
   },
   {
    "id": "S00015",
@@ -127,7 +141,8 @@
    "commit": "pin",
    "lines": "336-345",
    "text": "## 0013 — RULING AMENDMENT + MACHINE-PRESCRIBED VENUE, 2026-08-24\nRULING: the final-iteration-on-Fable overlay is rescinded (for now). With it gone,\nA10 Q3's prescription stands unopposed: attempt-4 runs on the CHEAPEST\nCERTIFIED TIER (Opus, lineage-brief certificate) + seeded Fable\nspot-checks + tripwire. Remaining Fable this block: two spot-check\nseats. DRIVER ERRATUM banked for the runbook\n(with 0009's): when surfacing a halt, name the CONSTRAINT STRUCTURE\n(which standing rulings conflict), never a design menu — two of the\nthree \"options\" I offered were not mine to offer.\n",
-   "source_class": "ledger"
+   "source_class": "ledger",
+   "context": null
   }
  ]
 }

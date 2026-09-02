@@ -1,133 +1,148 @@
 {
  "header": {
   "batch": "batch_079",
-  "source_class": "arc1_cycles",
+  "source_class": "git_log",
   "brief_version": "0.4",
   "glossary_version": "frozen ",
   "spans": 15,
-  "first_span": "S01145",
-  "last_span": "S01159"
+  "first_span": "S01376",
+  "last_span": "S01390"
  },
  "spans": [
   {
-   "id": "S01145",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "2-2",
-   "text": " \"census\": \"deferred_to_checkpoint\",",
-   "source_class": "arc1_cycles"
+   "id": "S01376",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7483-7491",
+   "text": "commit 9ffd1e13011a4a182356a3bb1c5e8f3b07b9a9a7\nordinal 340\ndate 2026-08-18 17:44:40 -0700\nauthor Matt Stults\nsubject arm-3 round ledger for the freeze decision\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01146",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "3-3",
-   "text": " \"census_delta\": null,",
-   "source_class": "arc1_cycles"
+   "id": "S01377",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7492-7500",
+   "text": "commit 65e3150515049d294bf0745b8ea20c31830f0b49\nordinal 341\ndate 2026-08-18 17:45:28 -0700\nauthor Matt Stults\nsubject M30 sweep adjudicated: 2 DROPPED-NORM (web-page trust -> forbid trust_web_page + cepa; know-it-all -> forbid + cnpa), 3 SIBLING-OWNED, 2 DEFINITIONAL — the 24%-blind worry resolves to 2 real dropped norms; blind re-verification dispatched before any module edit\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01147",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "4-4",
-   "text": " \"cycle\": \"chain-repair-2026-08-04\",",
-   "source_class": "arc1_cycles"
+   "id": "S01378",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7501-7509",
+   "text": "commit ddc4578683269ed4b4e3c99dedb14ea8229edb58\nordinal 342\ndate 2026-08-18 17:45:49 -0700\nauthor Matt Stults\nsubject H5 CLOSED: actor tagging (701 assistant / 19 non-assistant, $0.004); bridges and relevance actor-gated — developer/user/system acts no longer engage assistant behaviors\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01148",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "5-5",
-   "text": " \"date\": \"2026-08-04\",",
-   "source_class": "arc1_cycles"
+   "id": "S01379",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7510-7518",
+   "text": "commit cb9a7355708733bdc07c735fb2f07bfd2eb1a4f7\nordinal 343\ndate 2026-08-18 17:46:36 -0700\nauthor Matt Stults\nsubject actor tags corrected by ASSERT-EVIDENCE (read_backs), not names: assistant-governed acts (write ad, contact police, control side effects, shutdown timer...) restored; only genuinely other-party acts stay excluded\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01149",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "6-6",
-   "text": " \"decision\": \"keep\",",
-   "source_class": "arc1_cycles"
+   "id": "S01380",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7519-7527",
+   "text": "commit efa1c9283e4ef8710c2bcd4e52b4e8ba3a61c29c\nordinal 344\ndate 2026-08-18 17:48:23 -0700\nauthor Matt Stults\nsubject FRONTIER REPAIR 7 applied (blind re-verified APPROVE x2): l699_796_n015 forbid trust_web_page + cepa (the agentic web-trust norm can now FIRE and CONFLICT); l3596_3876_n015 forbid know_it_all + cnpa, inverting ontology entry removed; M30 7->5 (rest sibling-owned/definitional, correctly assertless); new acts bridged (comply / respond_in_manner)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01150",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "7-7",
-   "text": " \"exploratory\": false,",
-   "source_class": "arc1_cycles"
+   "id": "S01381",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7528-7536",
+   "text": "commit fbf762526c0dac107ad6544178dcaaccbdc540c3\nordinal 345\ndate 2026-08-18 17:48:42 -0700\nauthor Matt Stults\nsubject closing proof: the web-injection behavior instance now CONFLICTS with l699_796_n015 (forbidden trust_web_page fired) — the norm Matt's walk-through identified as really-conflicting-but-unable-to went detector -> adjudication -> blind verify -> repair -> firing conflict in one cycle\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01151",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "8-8",
-   "text": " \"fix_description\": \"Apply the 12 chain-audit corrections (chain_audit/verdicts.json) as five atom_refactor rechain migrations: four whole-artifact principal-chain repairs __user -> __model_user (must_disclose_response_changes, must_preserve_user_agency, must_advise_immediate_help, should_support_world_connection; 11 agent_missing verdicts) plus one clause-scoped fold shouldnot_judge__model_user_developer -> shouldnot_judge__model_user --clause m0271 (unlicensed developer patient; m0170's verdict-correct instance of the same name is untouched). All applied with --apply --date 2026-08-04, reasons citing chain_audit/verdicts.json, logged and replayable in vocabulary_migrations.json.\",",
-   "source_class": "arc1_cycles"
+   "id": "S01382",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7537-7545",
+   "text": "commit 9715b1e76f2fca91eb7272273583e004c122c0f0\nordinal 346\ndate 2026-08-18 17:53:01 -0700\nauthor Matt Stults\nsubject ARM 3 FROZEN at r6: validation help 0.79 (b: 0.81) / harm 0.56 (H1 ceiling, explained) / caution 0.68 (bug-fix recovery, recall 0.96). Prereg SIGN-READY, sha256 72845031701d037c9fd2ace4160e7018961919dd1c9f788befbca1659d49fad8 — test slice scored ONCE after Matt signs; frozen instruments named in the registration\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01152",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "9-9",
-   "text": " \"flip_tallies\": {},",
-   "source_class": "arc1_cycles"
+   "id": "S01383",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7546-7554",
+   "text": "commit 72449fa20dfcca7eebe944fbc45859b2c3bf5e88\nordinal 347\ndate 2026-08-18 17:53:27 -0700\nauthor Matt Stults\nsubject freeze-condition check: act validator A7/A5 PASS (S4 1/0 reproduced; bridge accuracy 0.95); A4 hits were contract staleness — two-level subtype layer now declared in behavior_vocab; atoms T4 PASS, T2 corpus collisions remain the (pre-existing) repair queue\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01153",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "10-10",
-   "text": " \"flip_verdicts_reused_from\": null,",
-   "source_class": "arc1_cycles"
+   "id": "S01384",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7555-7563",
+   "text": "commit e1d456e2f882540793e9a1c4e825710f921f8815\nordinal 348\ndate 2026-08-18 19:43:37 -0700\nauthor Matt Stults\nsubject TRANSLATION_CONTRACT_V2: every retrofit lesson assembled into translation-time requirements for the next document (4-tuple acts, typed concepts, M30, norm-objects, seam-from-day-one, per-chunk validators); argument walls restricted to homogeneous verb families after tuning showed respond-family heterogeneity + caution legitimately refuses topics (v6)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01154",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "11-37",
-   "text": " \"gate\": {\n  \"closure_checked\": [\n   \"behaviours_query.json\",\n   \"constitution_clauses.json\",\n   \"modelspec_clauses.json\",\n   \"test_atom_refactor.py\",\n   \"test_grammar.py\",\n   \"test_no_reference_leak.py\",\n   \"thresholds_frozen.json\"\n  ],\n  \"files_changed\": [\n   \"annotations_ext_v1.json\",\n   \"annotations_ext_v1_merged.json\",\n   \"behavior_atoms_audit_v1.json\",\n   \"vocabulary_migrations.json\"\n  ],\n  \"review\": {\n   \"by\": \"change-review seat, Claude (Fable 5), independent session 2026-08-03 \\u2014 not the implementer\",\n   \"notes\": \"FREEZE: manifest.json/prediction.json sha256 match state.json frozen shas exactly (5abae982\\u2026, 07ad0f43\\u2026); no manifest_amendments.json present; all 7 closure_shas re-hashed and match. DECLARED DIFF: HEAD (4cf47d6) copies of the 3 tracked files hash to open_shas; vocabulary_migrations.json absent at HEAD and its OPEN sha f4a7f858\\u2026 independently reproduced as the tool-canonical empty log (atom_refactor._dumps trailing_nl=False); the log's per-migration sha chain links from every OPEN sha to every current on-disk sha with no gaps. ONE UNDECLARED CHANGE, judged non-blocking: chain_audit/worksheet.json moved \\u2014 it is a DERIVED audit view (chain_audit_worksheet.py builds it deterministically from annotations_ext_v1_merged.json, a declared file); I rebuilt it independently in scratch and it byte-equals the working copy, the untracked pre_repair backup byte-equals the HEAD version, and no query/measurement module reads it \\u2014 nothing can ride in on it, but the manifest should have declared it, and verdicts.json (old names) no longer validates against the regenerated worksheet (historical-record wrinkle, not pipeline). CONTENT: exactly the 5 rechains from chain_audit/verdicts.json (11 agent_missing across 4 names: disclose 1 + preserve 3 + advise 2 + world_connection 5; 1 unlicensed fold at m0271); n_rewritten counts (3/7/5/11/3) arithmetically consistent with atoms+by_clause mirrors+vocabulary key. Spot-verified 4 corrections against modelspec_clauses.json quotes: m0197 ('the assistant must preserve user agency', 'must be transparently indicated to the user'), m0276 ('always advising that immediate help should be sought'), m0313 ('The assistant should support the user's connection') \\u2014 assistant is the actor, user the patient, so __model_user is the agent-first chain; m0271's quote names only 'shaming the user' (no developer) while m0170's says 'shouldn't judge the user or developer' \\u2014 fold correct, retention correct. Verified m0170 retains shouldnot_judge__model_user_developer (confined to m0170; vocabulary key kept) while m0271 carries shouldnot_judge__model_user; ZERO occurrences of any of the 4 old names in all changed artifacts and in annotations_ext_v1_patch.json (manifest note 2 confirmed). REPLAY: copied all 3 tracked artifacts from git HEAD and replayed through vocabulary_migrations.json via atom_refactor.replay_artifact \\u2014 byte-identical to working tree for all 3. TESTS: gate set (test_atom_refactor.py, test_grammar.py, test_no_reference_leak.py) run twice, 133 passed. MUTANTS: (1) scratch copy of the log with the fold entry's clauses scope corrupted to m0170 \\u2014 replay byte-compare detects the mismatch; (2) atom_refactor.py rechain scope sabotaged in place (scope=None) \\u2014 killed by test_rechain_clause_scoped_folds_into_the_existing_key and test_rechain_leaves_unrelated_lines_byte_untouched (2 failed), then restored byte-exact (sha cf2fe287\\u2026 re-verified, suite re-green). FENCE: all 31 FORBIDDEN tokens scanned against the 4 changed artifacts; sole hit is the substring 'verdicts' inside the reason strings citing chain_audit/verdicts.json \\u2014 the chain audit's own grammar-verdict file (document-side, contains no panel/judge/label data), a filename collision, not a panel reference; no panel file, loader, or laundering path is named anywhere in the changed artifacts. No panel score, judge rating, or gold value appeared in any material reviewed.\",\n   \"verdict\": \"proceed\"\n  },\n  \"tests_passed\": [\n   \"test_atom_refactor.py\",\n   \"test_grammar.py\",\n   \"test_no_reference_leak.py\"\n  ]\n },",
-   "source_class": "arc1_cycles"
+   "id": "S01385",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7564-7572",
+   "text": "commit b0c95af6c26f267b2541dd28e46bccd6cc67d62a\nordinal 349\ndate 2026-08-18 19:45:35 -0700\nauthor Matt Stults\nsubject silence census (clingo AST, Matt's explanation-loop design): top blockers were SCAFFOLD facts no instance asserted (assistant_definition 26, answers_question 15) -> v7 standard scaffold; residue is module-specific long tail. r7 FINAL round launched — last before hashing, committed stopping point\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01155",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "12-20",
-   "text": "  \"closure_checked\": [\n   \"behaviours_query.json\",\n   \"constitution_clauses.json\",\n   \"modelspec_clauses.json\",\n   \"test_atom_refactor.py\",\n   \"test_grammar.py\",\n   \"test_no_reference_leak.py\",\n   \"thresholds_frozen.json\"\n  ],",
-   "source_class": "arc1_cycles"
+   "id": "S01386",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7573-7581",
+   "text": "commit afc185329efa05497731b7a22e70b9be1d58e007\nordinal 350\ndate 2026-08-18 19:48:35 -0700\nauthor Matt Stults\nsubject HANDOFF ⭐ top block: TRANSLATION_CONTRACT_V2 is the second-document gate artifact — future sessions must implement + test it before any new translation; arm-3 prereg pointer included\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01156",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "21-26",
-   "text": "  \"files_changed\": [\n   \"annotations_ext_v1.json\",\n   \"annotations_ext_v1_merged.json\",\n   \"behavior_atoms_audit_v1.json\",\n   \"vocabulary_migrations.json\"\n  ],",
-   "source_class": "arc1_cycles"
+   "id": "S01387",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7582-7590",
+   "text": "commit 1e949aea88b602c2b94196d6ff88cf678ebfe6b1\nordinal 351\ndate 2026-08-18 19:52:42 -0700\nauthor Matt Stults\nsubject ARM 3 FINAL FREEZE (r7, Matt's stopping-point commitment): config = v7 scaffold ON / argument walls OFF, selected on tuning evidence only; frozen config's validation point deliberately unmeasured. Prereg FINAL sha256 b65bee6a5cae667eaef8600d8cf9d3f889b8d97421abbf7a8f9709bf50b80b94. T2: 35 repair drafts, application HELD until post-test\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01157",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "27-31",
-   "text": "  \"review\": {\n   \"by\": \"change-review seat, Claude (Fable 5), independent session 2026-08-03 \\u2014 not the implementer\",\n   \"notes\": \"FREEZE: manifest.json/prediction.json sha256 match state.json frozen shas exactly (5abae982\\u2026, 07ad0f43\\u2026); no manifest_amendments.json present; all 7 closure_shas re-hashed and match. DECLARED DIFF: HEAD (4cf47d6) copies of the 3 tracked files hash to open_shas; vocabulary_migrations.json absent at HEAD and its OPEN sha f4a7f858\\u2026 independently reproduced as the tool-canonical empty log (atom_refactor._dumps trailing_nl=False); the log's per-migration sha chain links from every OPEN sha to every current on-disk sha with no gaps. ONE UNDECLARED CHANGE, judged non-blocking: chain_audit/worksheet.json moved \\u2014 it is a DERIVED audit view (chain_audit_worksheet.py builds it deterministically from annotations_ext_v1_merged.json, a declared file); I rebuilt it independently in scratch and it byte-equals the working copy, the untracked pre_repair backup byte-equals the HEAD version, and no query/measurement module reads it \\u2014 nothing can ride in on it, but the manifest should have declared it, and verdicts.json (old names) no longer validates against the regenerated worksheet (historical-record wrinkle, not pipeline). CONTENT: exactly the 5 rechains from chain_audit/verdicts.json (11 agent_missing across 4 names: disclose 1 + preserve 3 + advise 2 + world_connection 5; 1 unlicensed fold at m0271); n_rewritten counts (3/7/5/11/3) arithmetically consistent with atoms+by_clause mirrors+vocabulary key. Spot-verified 4 corrections against modelspec_clauses.json quotes: m0197 ('the assistant must preserve user agency', 'must be transparently indicated to the user'), m0276 ('always advising that immediate help should be sought'), m0313 ('The assistant should support the user's connection') \\u2014 assistant is the actor, user the patient, so __model_user is the agent-first chain; m0271's quote names only 'shaming the user' (no developer) while m0170's says 'shouldn't judge the user or developer' \\u2014 fold correct, retention correct. Verified m0170 retains shouldnot_judge__model_user_developer (confined to m0170; vocabulary key kept) while m0271 carries shouldnot_judge__model_user; ZERO occurrences of any of the 4 old names in all changed artifacts and in annotations_ext_v1_patch.json (manifest note 2 confirmed). REPLAY: copied all 3 tracked artifacts from git HEAD and replayed through vocabulary_migrations.json via atom_refactor.replay_artifact \\u2014 byte-identical to working tree for all 3. TESTS: gate set (test_atom_refactor.py, test_grammar.py, test_no_reference_leak.py) run twice, 133 passed. MUTANTS: (1) scratch copy of the log with the fold entry's clauses scope corrupted to m0170 \\u2014 replay byte-compare detects the mismatch; (2) atom_refactor.py rechain scope sabotaged in place (scope=None) \\u2014 killed by test_rechain_clause_scoped_folds_into_the_existing_key and test_rechain_leaves_unrelated_lines_byte_untouched (2 failed), then restored byte-exact (sha cf2fe287\\u2026 re-verified, suite re-green). FENCE: all 31 FORBIDDEN tokens scanned against the 4 changed artifacts; sole hit is the substring 'verdicts' inside the reason strings citing chain_audit/verdicts.json \\u2014 the chain audit's own grammar-verdict file (document-side, contains no panel/judge/label data), a filename collision, not a panel reference; no panel file, loader, or laundering path is named anywhere in the changed artifacts. No panel score, judge rating, or gold value appeared in any material reviewed.\",\n   \"verdict\": \"proceed\"\n  },",
-   "source_class": "arc1_cycles"
+   "id": "S01388",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7591-7599",
+   "text": "commit 6b19539d60d816b0698023bf86ffbd7a60bed63d\nordinal 352\ndate 2026-08-18 20:16:51 -0700\nauthor Matt Stults\nsubject prereg: Known Defects at Registration section (9 items, disclosed pre-signature) — re-hashed\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01158",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "32-36",
-   "text": "  \"tests_passed\": [\n   \"test_atom_refactor.py\",\n   \"test_grammar.py\",\n   \"test_no_reference_leak.py\"\n  ]",
-   "source_class": "arc1_cycles"
+   "id": "S01389",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7600-7608",
+   "text": "commit 639af8713fa28d771cb670c918b93fbd90e44da8\nordinal 353\ndate 2026-08-18 20:17:48 -0700\nauthor Matt Stults\nsubject prereg predictions made per-behavior and consistent with the disclosed defects (Matt's catch: a falsifier validation already expects to fire is a scheduled indictment, not a falsifier) — (b)'s falsifier scoped to helpfulness; final hash\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01159",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "38-38",
-   "text": " \"justification\": \"Document-side basis: the chain-audit verdicts (12 grammar-convention corrections, adjudicated against clause text, independently spot-verified by the review seat). The change was designed measurement-invariant \\u2014 renames landing on both clause and query sides \\u2014 and measured exactly so: 0 flips, 3/3 mechanism predictions PASS, cuts byte-stable under the frozen artifact. Two mid-cycle instrument fixes (rechain op; dossier zero-flip guard order) disclosed and tested. The annotation now parses agent-first everywhere; cycle 5 and the backfill inherit clean chain semantics.\",",
-   "source_class": "arc1_cycles"
+   "id": "S01390",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7609-7617",
+   "text": "commit 65a68ba1bfa8b84389d4a870066270196abf6fcd\nordinal 354\ndate 2026-08-18 20:18:18 -0700\nauthor Matt Stults\nsubject ARM 3 PREREG SIGNED (Matt, 2026-08-18) at a05adfcc... — registration FROZEN; test slice scoring authorized\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ac/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   }
  ]
 }

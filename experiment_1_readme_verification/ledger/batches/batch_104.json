@@ -1,133 +1,148 @@
 {
  "header": {
   "batch": "batch_104",
-  "source_class": "arc1_cycles",
+  "source_class": "arc2_docs_preredaction",
   "brief_version": "0.4",
   "glossary_version": "frozen ",
   "spans": 15,
-  "first_span": "S01520",
-  "last_span": "S01534"
+  "first_span": "S00790",
+  "last_span": "S00804"
  },
  "spans": [
   {
-   "id": "S01520",
-   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "2-2",
-   "text": " \"census\": \"deferred_to_checkpoint\",",
-   "source_class": "arc1_cycles"
+   "id": "S00790",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_PREREG.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "19-36",
+   "text": "## Protocol (fixed, instrument-independent — verbatim from the scaffold)\n- Draws: seeded per behavior (seeds registered below), stratified 40 ENGAGED\n  + 40 NOT-engaged at the frozen instrument's states; every node with ANY\n  prior ruling excluded (the exclusion list is a deterministic script output\n  committed with its sha: round4_freeze.py -> ROUND4_FREEZE_DERIVATION.json).\n- Rulings: single blind Fable rulings + 3-instance panels on a seeded 20%;\n  majority supersedes. Fable only; no substitution without fresh parity\n  validation, disclosed. VENUE (carried from DEFENSIBILITY_BATCH_PROTOCOL.md\n  venue ruling, 2026-08-24): seats execute as fresh Fable subagents receiving\n  only the packet prompt string plus the recorded content-free tool fence.\n- Canary ordering: helpfulness first; Matt /usage checkpoint between\n  behaviors; go/hold at each checkpoint. Budget tripwire carries over: a\n  wave moving the weekly Fable bar disproportionately to its ruling count\n  stops the run for inspection.\n- Cost model: ~250 rulings ~= 0.37-0.4M Fable tokens, $0 API (harm closes\n  its engaged-population remainder — see freeze sections).\n- Errata rule: registered numbers are never edited; corrections append.\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
   },
   {
-   "id": "S01521",
-   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "3-3",
-   "text": " \"census_delta\": null,",
-   "source_class": "arc1_cycles"
+   "id": "S00791",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_PREREG.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "37-46",
+   "text": "## Falsifiers (carried from round 3; apply unchanged)\nF1: any sampled engaged-precision below band floor; population figure below\n    its registered floor.\nF2: any decline-correctness below band floor.\nF3: >=3 unanimous-relevant not-engaged nodes in one behavior sharing one NEW\n    failure locus.\nF4: >30% of panels split 2-1 in any behavior.\nF5: single-vs-panel overturn rate >10% in any behavior -> remaining nodes\n    escalate to panels.\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
   },
   {
-   "id": "S01522",
-   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "4-4",
-   "text": " \"cycle\": \"versioned-cut-2026-08-04\",",
-   "source_class": "arc1_cycles"
+   "id": "S00792",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_PREREG.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "47-52",
+   "text": "## Success criterion (carried)\nAll cells within/above band, no falsifier -> the behaviors are CERTIFIED on\nthis document and the generalization runs + next-document arc unblock per\nthe campaign mandate. Above-band results get the leak-signature check before\nthey are celebrated.\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
   },
   {
-   "id": "S01523",
-   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "5-5",
-   "text": " \"date\": \"2026-08-04\",",
-   "source_class": "arc1_cycles"
+   "id": "S00793",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_PREREG.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "53-53",
+   "text": "## FREEZE SECTIONS (derived 2026-08-24 by round4_freeze.py; full values incl.",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
   },
   {
-   "id": "S01524",
-   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "6-6",
-   "text": " \"decision\": \"keep\",",
-   "source_class": "arc1_cycles"
+   "id": "S00794",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_PREREG.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "54-54",
+   "text": "## per-node exclusion lists in ROUND4_FREEZE_DERIVATION.json — committed with",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
   },
   {
-   "id": "S01525",
-   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "7-7",
-   "text": " \"exploratory\": false,",
-   "source_class": "arc1_cycles"
+   "id": "S00795",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_PREREG.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "55-84",
+   "text": "## this file)\n- Frozen instrument: modules_contract_v19.json, sha256\n  d0e12c234b2056cbe9ff3e4aeeac05f81e22a14ca76a9ca3e49dd5b5eeb7282e\n  (= v18 + helpfulness purpose_concern [empowerment] + caution\n  purpose_concern [harm-prevention], adoption FINAL per\n  DEFENSIBILITY_BATCH_PROTOCOL.md ADJUDICATION RESULT); layers: assert_* +\n  definition_* lanes + act_refinements_FINAL consensus, all at HEAD of this\n  commit; census: satisfiability_census_v19_frozen.json (same commit).\n- Exclusion lists (every node with any prior ruling = assembled truth-ledger\n  keys, incl. the defensibility overlay):\n  caution 205 nodes sha 190dfefe…, harm 234 sha 291353e8…, help 397 sha\n  188f273a… (full 64-char shas + node lists in the derivation artifact).\n- Pool sizes (v19 states, exclusions removed): caution 281 engaged / 276\n  not; harm 17 engaged / 511 not; help 173 engaged / 192 not.\n- Registered predictions (over all-truth at the frozen instrument; band =\n  +-2 nodes = +-5 pts at n=40):\n  caution: engaged precision 0.8843 (basis n=121), decline-correctness\n  0.8214 (n=84);\n  harm: engaged precision 0.8706 (n=85), decline-correctness 0.7785 (n=149);\n  help: engaged precision 0.9336 (n=211), decline-correctness 0.7849 (n=186).\n- Harm population-remainder treatment: the unruled engaged pool is 17 <= 48,\n  so the engaged side is drawn WHOLE (population CLOSED — the certified\n  engaged-precision claim for harm is then a population figure, not a\n  sample); not-engaged side draws 40 as standard.\n- Seeds: base 20260824; caution 20260824, harm 20260825, help 20260826\n  (sorted-slug index, the registered-base-plus-index convention).\n- Ruling volume implied: caution 80 + harm 57 + help 80 = 217 single\n  rulings + seeded 20% panels (~43 extra instances) ~= 260 seat instances,\n  inside the scaffold's cost model.\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
   },
   {
-   "id": "S01526",
-   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "8-8",
-   "text": " \"fix_description\": \"Versioned cut: new artifact thresholds_frozen.json carrying per-behaviour cut values with provenance; snapshot.py gains --thresholds <artifact> / build_snapshot(thresholds_path=None) so that, when given, per-behaviour cuts come FROM the artifact (behaviours absent from it fall back to the derivation rule, recorded per behaviour), and the artifact's sha joins the config identity under 'thresholds' (explicit null when absent, like overlay). The OLD behavior remains reachable by omitting the flag \\u2014 that is the F9 version dispatch; threshold.py itself is NOT modified.\",",
-   "source_class": "arc1_cycles"
+   "id": "S00796",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_PREREG.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "85-103",
+   "text": "## Signatures\nDrafted by the campaign orchestration seat, 2026-08-21 (scaffold);\nre-issued at freeze 2026-08-24 with the protocol verbatim.\nMatt: SIGNED 2026-08-24 (\"(2) signed\", in-session; applies to this re-issue\nWITH pre-signature amendments 1-4 and their measured addenda). REGISTERED\nHARD BUDGET (Matt, 2026-08-24, superseding the orchestration seat's initial\n50% proposal before it was ever committed): the experiment may consume AT\nMOST 5 additional points of the weekly Fable bar — the bar, at 7% at\nsignature, HARD-CAPS AT 12%. Checked at every behaviour checkpoint and\nbatch boundary. CANARY MEASUREMENT RULE: after the helpfulness canary's\nseats complete, actual bar movement is measured and the remaining run is\nre-projected; if the projection exceeds the cap, the run halts and the\nremainder moves past the Aug 30 weekly reset (the prereg does not expire —\ndraws and seeds are deterministic and committed). BUDGET DISCIPLINE bound\non the orchestration seat: maximal dispatch batching, minimal inter-batch\noutput, results collected to files — today's cost was dominated by\norchestration cache reads, not seats, and the discipline targets exactly\nthat.\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
   },
   {
-   "id": "S01527",
-   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "9-9",
-   "text": " \"flip_tallies\": {},",
-   "source_class": "arc1_cycles"
+   "id": "S00797",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_PREREG.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "104-104",
+   "text": "## PRE-SIGNATURE AMENDMENTS (2026-08-24, appended before signature; the",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
   },
   {
-   "id": "S01528",
-   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "10-10",
-   "text": " \"flip_verdicts_reused_from\": null,",
-   "source_class": "arc1_cycles"
+   "id": "S00798",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_PREREG.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "105-147",
+   "text": "## protocol section above remains verbatim — these bind at signature)\n1. DEFENSIBILITY PASS (Matt's decision, 2026-08-24): round-4 misses receive a\n   pre-declared ONE-PASS blind Fable defensibility adjudication, same shape\n   and outcome-branch discipline as DEFENSIBILITY_BATCH_PROTOCOL.md (one\n   pass, no iteration, no second batch). HEADLINE metric =\n   match-or-adjudicated-defensible; RAW match is reported alongside in the\n   same table, always. The registered predictions above are RAW-basis; the\n   defensibility pass cannot move a cell below its raw value, only up, and\n   both numbers publish.\n2. BAND UNITS (Matt's decision): bands are in NODES (+-2 nodes per cell).\n   The \"+-5 pts\" gloss holds only at n=40; for harm's CLOSED engaged\n   population (n=17) the band is +-2 nodes = +-11.8 pts. Nodes are the\n   registered unit everywhere.\n3. COST MODEL CORRECTED (venue measurement): a fresh subagent seat measures\n   ~24k raw tokens (~20k identical harness prefix). Prompt caching bills\n   cache reads at 0.10x, so steady-state effective cost is ~6k-equivalent\n   per seat (empirical check: /usage movement from the 2026-08-24 37-seat\n   batch). A lean seat agent (.claude/agents/ruling-seat.md) is defined and\n   loads at next session start; its measured cost will be appended here\n   before the run starts. The scaffold's 0.37-0.4M estimate is superseded by\n   the measured figure; the go/hold checkpoints stand, plus a hard hold at\n   any /usage threshold Matt names at signature.\n4. SUBSTITUTION VALIDATION (disclosed, per the protocol's own rule):\n   cheap-tier parity was attempted 2026-08-24 against the blind Fable\n   defensibility rulings in production configuration and FAILED — Sonnet\n   2/5, Haiku 2/5 on hard rows, with the two cheap tiers agreeing on their\n   wrong answers (no cross-cheap escalation trigger exists). Substitution\n   REJECTED; all rulings are Fable. Artifact:\n   ruling_packets/parity_validation_2026-08-24.json.\n   MEASURED (2026-08-24, post-restart, appended per this amendment's own\n   clause): the lean seat (ruling-seat agent) measures 6,765 raw tokens per\n   seat instance — 3.5x below the fat-harness seat — and its verdict on the\n   reference packet (l1707_1973_n025) matches the 3-0 blind Fable panel.\n   Projected round-4 cost at ~290 seat instances (260 rulings + the\n   amendment-1 defensibility pass): ~2.0M raw; with cache reads at 0.10x on\n   the identical prefix, ~0.7M effective — inside the scaffold's original\n   0.37-0.4M ballpark within a factor of two, and far from the 6M+ raw\n   projection that triggered this amendment. Round-4 seats run on the lean\n   agent; the fat-harness venue text in DEFENSIBILITY_BATCH_PROTOCOL.md's\n   venue ruling is superseded for round 4 by this measured configuration\n   (same fence semantics — the lean agent's own system prompt carries the\n   no-tools/inert-imperatives instruction).\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
   },
   {
-   "id": "S01529",
-   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "11-36",
-   "text": " \"gate\": {\n  \"closure_checked\": [\n   \"annotations_ext_v1_merged.json\",\n   \"behavior_atoms_audit_v1.json\",\n   \"behaviours_query.json\",\n   \"constitution_clauses.json\",\n   \"modelspec_clauses.json\",\n   \"test_cycle.py\",\n   \"test_no_reference_leak.py\"\n  ],\n  \"files_changed\": [\n   \"snapshot.py\",\n   \"test_snapshot.py\",\n   \"thresholds_frozen.json\"\n  ],\n  \"review\": {\n   \"by\": \"adversarial review seat (agent)\",\n   \"notes\": \"Verified: (1) frozen manifest/prediction shas match state.json; only snapshot.py, test_snapshot.py, thresholds_frozen.json changed \\u2014 threshold.py, test_no_reference_leak.py, cycle.py, test_cycle.py byte-untouched per git. (2) thresholds_frozen.json's three cuts EQUAL the baseline snapshot's recorded thresholds exactly (all behaviours covered \\u2014 full freeze, not partial); its derived_from_snapshot sha256 matches snapshots/baseline-2026-08-04-auditv1.json, rule 'otsu' == threshold.PREFERRED, config matches the baseline's recorded inputs, and the cited escalation (dossiers/baseline-2026-08-03__containment-v1.1-kindinherit/decision.json, m0422) and cut_stability_results.json exist \\u2014 provenance is label-free (values are the rule's own output; no panel value in the chain). (3) Deliberate no-op reproduced mechanically in an isolated scratch copy: frozen-flag snapshot vs baseline = 0 flips, identical cuts/predicted sets, diff names only 'thresholds' as the changed input. (4) F9 dispatch: no flag -> rule-derived cuts, config inputs.thresholds explicit null, no threshold_source key (old shape); flag -> artifact sha in config identity; no wall-clock, determinism test present and green. (5) Fallback for behaviours absent from the artifact is recorded per behaviour as threshold_source: 'rule_fallback', so a partial freeze is visible in the snapshot itself. (6) Tests bind \\u2014 mutant checks run by this seat in a scratch copy: mutant A (artifact cut ignored) killed by test_frozen_threshold_artifact_honored + test_cli_thresholds_flag (the honored test also asserts artifact value != rule value, so it cannot green with the flag ignored); mutant B (frozen artifact silently made default) killed by test_old_behavior_reachable_without_thresholds_flag + test_thresholds_sha_recorded_and_null_when_absent. (7) Fence: FORBIDDEN scan of snapshot.py and thresholds_frozen.json, raw and comment/docstring-stripped \\u2014 zero hits; nothing reads a panel file. All three gate test files pass (103 passed). No files modified by this review other than this verdict.\",\n   \"verdict\": \"proceed\"\n  },\n  \"tests_passed\": [\n   \"test_cycle.py\",\n   \"test_no_reference_leak.py\",\n   \"test_snapshot.py\"\n  ]\n },",
-   "source_class": "arc1_cycles"
+   "id": "S00799",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_PREREG.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "148-148",
+   "text": "## ERRATA (2026-08-24, post-signature, append-only; each ratified by Matt in",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
   },
   {
-   "id": "S01530",
-   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "12-20",
-   "text": "  \"closure_checked\": [\n   \"annotations_ext_v1_merged.json\",\n   \"behavior_atoms_audit_v1.json\",\n   \"behaviours_query.json\",\n   \"constitution_clauses.json\",\n   \"modelspec_clauses.json\",\n   \"test_cycle.py\",\n   \"test_no_reference_leak.py\"\n  ],",
-   "source_class": "arc1_cycles"
+   "id": "S00800",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_PREREG.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "149-208",
+   "text": "## session before taking effect)\nE1 — CANARY ATTEMPT 1 VOIDED (protocol event; Matt: \"Do it\" on option A).\n   The helpfulness canary's 120 seat rulings (raw file\n   round4_helpfulness_rulings_raw.json, preserved) are VOID as a\n   certification measurement: seat material diverged from the format that\n   built the truth ledger. Rounds 2-3 packets carried the node's\n   ESTABLISHES claim block + SOURCE TEXT; the canary packets (built via\n   ruling_packets.load_spans) trimmed to SOURCE TEXT only. The registered\n   predictions are ledger-based, so the comparison was apples-to-oranges;\n   the F1/F2 firings (raw cells 0.625/0.625 vs 0.9336/0.7849) are\n   measurement artifacts of the divergence, not adjudicated instrument\n   failures. The void is TOTAL (all 80 rows, not selective) and the draw,\n   seeds, and exclusions are unchanged. Also recorded: one replacement\n   dispatch was voided for FABRICATED SEAT MATERIAL (the orchestration seat\n   authored a passage from memory instead of the committed packet; caught\n   and discarded immediately — round4_helpfulness_replacements.json carries\n   the disclosure); and 4 malformed replies concentrated on 2\n   ultra-short-fragment packets (document-completion mode), fixed by the\n   uniform content-free anti-completion fence now pinned in E3.\nE2 — PAIRED-FORMAT PILOT (gate for the canary re-run; runs BEFORE it).\n   20 already-ruled helpfulness nodes (truth known; permanently excluded\n   from round-4 draws — zero fresh-draw burn), seed 20260827, 10\n   v19-engaged / 10 not; each dispatched in BOTH formats (T = trimmed,\n   C = ESTABLISHES + SOURCE TEXT) to fresh lean Fable seats — 40 seats.\n   PRE-DECLARED GATE: proceed to the canary re-run only if C-format\n   ledger-agreement >= 0.80 AND (C - T) agreement difference >= 0.10.\n   Any other outcome STOPS the lane for design review (if T is also high,\n   the canary collapse is real distribution shift; if C is also low, the\n   lean seat diverges from the ledger venue). Builder + validator:\n   round4_pilot.py (byte-equal ESTABLISHES extraction from\n   node_corpus_all.json; identical SOURCE TEXT across each T/C pair;\n   uniform fence).\nE3 — SEAT-MATERIAL FORMAT PINNED (the gap the canary exposed: the prereg\n   never specified packet anatomy). Round-4 ruling packets are: the ruling\n   question + behaviour definition + PASSAGE consisting of the node's\n   ESTABLISHES claim block (byte-extracted from node_corpus_all.json;\n   nodes absent from the canonical corpus use their graph-build claim\n   text, disclosed per node) followed by the SOURCE TEXT span with its\n   narrowing line, followed by the uniform anti-completion fence (exact\n   text in round4_pilot.py FENCE). A committed validator must pass before\n   any dispatch; its output commits with the packets. Rejected\n   alternative, by name: scoring the T-format canary as-is (option B) —\n   it indicts the entire claim-aware truth ledger and proves too much.\nE4 — DIAGNOSIS CLOSED; LINEAGE VENUE RECOVERED AND REPLICATED (2026-08-24).\n   The pilot gate FAILED (T 0.75 / C 0.70 — format hypothesis refuted), and\n   the timeframe search Matt directed recovered the rounds-1-3 seat\n   instruction verbatim from the round-3 dispatch transcripts (it had\n   never been committed — a rulings-go-in-the-repo violation, cured by\n   LINEAGE_SEAT_INSTRUCTION.md). REPLICATION: one wave seat under the\n   recovered instruction scored 20/20 against the ledger on the pilot\n   nodes. Canary attempt 1's divergence is therefore fully attributed:\n   (a) an ad-hoc, stricter ruling question (the recovered criterion —\n   \"governs, permits, forbids, scopes, or directly conditions\" — is the\n   judge the ledger speaks); (b) mis-derived registered predictions: the\n   freeze script implemented \"over all-truth\" literally (0.9336) where\n   every actual fresh draw under the SAME judge landed 0.57-0.78 and prior\n   rounds registered lineage bands (round-2 passed at 0.78 in band\n   0.71-0.87) — the in-sample rate ignores the known generalization gap.\n   RE-REGISTration FOR THE CANARY RE-RUN (requires Matt's signature):\n   - Seat: LINEAGE_SEAT_INSTRUCTION.md verbatim, wave form (one blind",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
   },
   {
-   "id": "S01531",
-   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "21-25",
-   "text": "  \"files_changed\": [\n   \"snapshot.py\",\n   \"test_snapshot.py\",\n   \"thresholds_frozen.json\"\n  ],",
-   "source_class": "arc1_cycles"
+   "id": "S00801",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_PREREG.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "209-227",
+   "text": "     Fable seat per wave file; E3's packet anatomy stands, its\n     one-packet-per-seat dispatch form is superseded for round 4).\n   - Panels: the 19 already-registered panel nodes ruled by THREE\n     independent wave seats on a separate panel file; majority supersedes.\n   - Draw/seeds/exclusions: UNCHANGED (committed).\n   - REGISTERED PREDICTIONS, re-derived from lineage (supersede the\n     all-truth figures, which stand in the freeze section as a recorded\n     erratum): engaged precision band 0.71-0.87, decline-correctness band\n     0.61-0.77 (round-2's passed bands, the last same-judge fresh-draw\n     measurement; v19 carries every adopted improvement since v12, so\n     within-or-above band is the expectation and above-band triggers the\n     standing leak-signature check). F1/F2 read against these bands.\n   - Cost: wave form ~= 5 seats total (2 waves + 3 panel seats), ~0.2\n     points.\n\nE4 SIGNATURE: Matt, 2026-08-24 — \"approved.\" (in-session, after the\nband-change walkthrough; lineage bands and recovered-venue re-run take\neffect; canary re-run authorized.)\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
   },
   {
-   "id": "S01532",
-   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "26-30",
-   "text": "  \"review\": {\n   \"by\": \"adversarial review seat (agent)\",\n   \"notes\": \"Verified: (1) frozen manifest/prediction shas match state.json; only snapshot.py, test_snapshot.py, thresholds_frozen.json changed \\u2014 threshold.py, test_no_reference_leak.py, cycle.py, test_cycle.py byte-untouched per git. (2) thresholds_frozen.json's three cuts EQUAL the baseline snapshot's recorded thresholds exactly (all behaviours covered \\u2014 full freeze, not partial); its derived_from_snapshot sha256 matches snapshots/baseline-2026-08-04-auditv1.json, rule 'otsu' == threshold.PREFERRED, config matches the baseline's recorded inputs, and the cited escalation (dossiers/baseline-2026-08-03__containment-v1.1-kindinherit/decision.json, m0422) and cut_stability_results.json exist \\u2014 provenance is label-free (values are the rule's own output; no panel value in the chain). (3) Deliberate no-op reproduced mechanically in an isolated scratch copy: frozen-flag snapshot vs baseline = 0 flips, identical cuts/predicted sets, diff names only 'thresholds' as the changed input. (4) F9 dispatch: no flag -> rule-derived cuts, config inputs.thresholds explicit null, no threshold_source key (old shape); flag -> artifact sha in config identity; no wall-clock, determinism test present and green. (5) Fallback for behaviours absent from the artifact is recorded per behaviour as threshold_source: 'rule_fallback', so a partial freeze is visible in the snapshot itself. (6) Tests bind \\u2014 mutant checks run by this seat in a scratch copy: mutant A (artifact cut ignored) killed by test_frozen_threshold_artifact_honored + test_cli_thresholds_flag (the honored test also asserts artifact value != rule value, so it cannot green with the flag ignored); mutant B (frozen artifact silently made default) killed by test_old_behavior_reachable_without_thresholds_flag + test_thresholds_sha_recorded_and_null_when_absent. (7) Fence: FORBIDDEN scan of snapshot.py and thresholds_frozen.json, raw and comment/docstring-stripped \\u2014 zero hits; nothing reads a panel file. All three gate test files pass (103 passed). No files modified by this review other than this verdict.\",\n   \"verdict\": \"proceed\"\n  },",
-   "source_class": "arc1_cycles"
+   "id": "S00802",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/PREREG_panel_equivalence.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "1-9",
+   "text": "# PRE-REGISTRATION — \"frontier-panel-equivalent\" relevance quality\n\nDrafted 2026-08-16 under Matt's D3 ruling (\"draft and hash; scoring waits\nfor sign-off\"). ⛔ **This measurement is scored ONCE, on the full translated\ncorpus, after the bulk run and the D5 matching fix land. Nothing here may be\nscored, peeked at, or partially computed before Matt approves this document.\nEditing this file after approval voids the registration.** The sha256 of\nthis file at registration is committed beside it; verify before scoring.\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
   },
   {
-   "id": "S01533",
-   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "31-35",
-   "text": "  \"tests_passed\": [\n   \"test_cycle.py\",\n   \"test_no_reference_leak.py\",\n   \"test_snapshot.py\"\n  ]",
-   "source_class": "arc1_cycles"
+   "id": "S00803",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/PREREG_panel_equivalence.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "10-17",
+   "text": "## The claim under test\n\nThe node-matching pipeline (embed-rank + blind small-model seat over\ntranslated node prose) identifies spec material relevant to a behavior at a\nquality equivalent to the frontier panel (`data/behaviours.json`, judges\nsol / kimi / fable / opus / kimi-k2), as measured against a common truth\ntier that is independent of both.\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
   },
   {
-   "id": "S01534",
-   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "37-37",
-   "text": " \"justification\": \"Deliberate no-op by design: the frozen values are the label-free rule's own output on this exact config, so zero flips today is the PREDICTED and observed outcome (2/2 mechanism checks PASS). The change's effect is prospective \\u2014 future score-changing cycles measure against a cut that can no longer drift (m0422 admitted 3/3 cycles; cut_stability measured the class structural). Review seat verified the no-op independently on a scratch rebuild and killed two mutants. Kept to unblock cycle 5, whose design depends on match_change-only flips.\",",
-   "source_class": "arc1_cycles"
+   "id": "S00804",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/PREREG_panel_equivalence.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "18-30",
+   "text": "## Truth tier (per D2)\n\nBlind Fable-tier adjudicators, one clean context per behavior, given ONLY\nthe behavior definition and each node's ESTABLISHES + SOURCE TEXT. Never\nshown seat verdicts, panel citations, or queue membership (protocol as run\n2026-08-16, `panel_run1/adjudication.json`). Matt's stratified spot-check (2026-08-18, `panel_run1/spotcheck_matt_result.json`):\n21/22 agreement with the tier across four strata and three behaviors; one\ndisagreement (Fable not_relevant, Matt relevant). Calibration rule adopted for\nthe tier's brief: judge relevance against the ESTABLISHES claim, source text\nas interpretive evidence only; contract-suspect nodes flagged to the graph\nqueue. Known scope limit: relevance hinging on terms defined in other nodes.\nThe spot-check is diagnostic, not part of the score.\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
   }
  ]
 }

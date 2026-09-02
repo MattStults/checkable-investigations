@@ -1,101 +1,49 @@
 {
  "header": {
   "batch": "batch_112",
-  "source_class": "git_log",
+  "source_class": "arc2_docs_preredaction",
   "brief_version": "0.4",
   "glossary_version": "frozen ",
-  "spans": 11,
-  "first_span": "S01934",
-  "last_span": "S01944"
+  "spans": 4,
+  "first_span": "S00910",
+  "last_span": "S00913"
  },
  "spans": [
   {
-   "id": "S01934",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
-   "lines": "828-847",
-   "text": "commit 052e2ab46dafa887281fdcd90ec2be3fec64e5d1\nordinal 46\ndate 2026-08-05 17:31:33 -0700\nauthor Matt Stults\nsubject HANDOFF: correct two claims that would misroute the next agent\n(1) It named briefs/backfill_author.md 'for the attribution seat'. That is the S2\npatient-CHAIN brief with zero occurrences of the attribution field; a seat routed\nthere would have run the wrong task. The real brief is briefs/attribution_author.md.\n\n(2) It said 'the seat briefs are in place; the build is ready'. Neither held: the\nattribution brief did not exist until today, and S3b's own section 9 OPEN conditions\nare unmet -- REVISION 9 has had only a Tier-2 pass and its closing line still reads\n'awaiting adversarial re-review', while the implied-effects layer it depends on for\nreceiver readiness sits at REVISE with four blocking findings.\n\nAlso records the ruled S4-before-S3b order and points at the live state documents.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
-   "source_class": "git_log"
+   "id": "S00910",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "227-227",
+   "text": "## 8-ADDENDUM-3 (2026-08-20): NO NORMATIVE MODULATION MAY LIVE ONLY IN PROSE —",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
   },
   {
-   "id": "S01935",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
-   "lines": "848-889",
-   "text": "commit 921702ad04209f55adfd19a79a1f4c91332abe6d\nordinal 47\ndate 2026-08-05 17:39:07 -0700\nauthor Matt Stults\nsubject Quality read: the ladder cannot close the gap; index-builder review (REVISE, 4 major)\nRELEVANCE_QUALITY_READ.md answers the go/no-go question directly. Tool at +0.3088\nmean MCC against a +0.5555 frontier-panel bar. The six closed cycles since 2026-08-04\nmoved that by +0.0003 TOTAL, against the project's own noise floor of 0.0316-0.037 --\ntwo orders of magnitude below. The only real gain in the whole record (+0.072) came\nfrom re-selecting the behaviour-atom artifact: an instrument change, not a mechanism.\n\nUpper bound on the remaining ladder, under an ORACLE assumption of perfect landing\nand zero collateral: 42% of the gap. Honest central estimate: 15-28%. And the oracle\nassumptions are already refuted -- S5 measures zero flips, S6's own Tier-1 rules 14-15\nof its 26 targets out of bounds while being 65% of the bound's gain, S3b reaches\n79/155, and the 60-case threshold class has no mechanical owner BY DESIGN (consuming\nthose verdicts is the panel-fitting the invariants exist to prevent).\n\nTwo structural findings that outrank the arithmetic:\n- 43% of the metric's error mass is not in the census at all (256 of 447 disagreement\n  passages covered). Every planned cycle aims at the 57% that is.\n- The census  field -- the mechanical proxy for 'cases where the panel is\n  arguably wrong' -- is perfectly block-segregated by behaviour (129/0/0, 58/0/27,\n  39/41/0). Zero mixing across 294 judgments is a per-run seat stance, not per-case\n  judgment. It must not be quoted as a panel-quality measurement. A recalibrated\n  cross-behaviour pass is the highest-value cheap follow-up on the board.\n\nREADME correction, in the tool's favour: the bag-of-words control is +0.108 on the\nDEV cells, not the +0.19 published (that is HANDOFF's 9-behaviour figure sitting in a\n3-behaviour table). Real lift is ~2.9x, not ~1.6x.\n\nINDEX_BUILDER_REVIEW.md: REVISE, 0 blocking, 4 major. The refactor is a genuine noop,\nconfirmed three independent ways including a route that does not use the author's\nharness. What needs work is the guarantee apparatus: the anti-branch guard does not\ncatch an axis added on a NEW config key (reproduced -- 15 tests pass with a live\noff-registry branch), and the reconstruction gate prints BASELINE MATCH while the\nrecorded threshold and predicted set are never replayed (reproduced by mutating\napply_rule to return 0.0 for every input).\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
-   "source_class": "git_log"
+   "id": "S00911",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "228-250",
+   "text": "## conditions, scopes, and defeaters are reified as atoms at translation time\nMeasured basis: the satisfiability census found 8 mismatch pairs vector-identical\nto correct opposite-verdict nodes whose distinguishing feature was stated in the\nspan but never atomized (\"if repeated at scale\", \"when they indicate illicit\nintent\", \"no good-cause exception\", provenance of the material, self-reference,\ndelivery-form equivalence). Mining recovered all 8 post hoc (split_mining_*.json)\n— at the cost of a full census + mining + minting round the translator could have\navoided.\nTHE RULE (document-agnostic — no reference to any particular document's phrases):\nwhenever a clause MODULATES a norm — when it applies, to whom or what, under which\njustification it is or is not defeated, in what form or manner, toward which end —\nthe modulator must be emitted as a structured atom in a declared dimension, never\nleft solely inside a read_back or gloss. The a priori modulator classes to check\neach assert against (class-first, validate against known cases): TRIGGER (when),\nSCOPE (to whom/what), DEFEATER (unless / notwithstanding claimed justification),\nMANNER/FORM (how, incl. equivalence-of-form rules), END (toward what).\nTHE REPAIR LOOP (expected to be needed — the rule will be imperfectly applied):\nthe census -> split-mining -> blind-criterion minting -> two-seat annotation ->\ncharter regression pipeline built 2026-08-19/20 is the standing, document-agnostic\nfixing mechanism for whatever the translator still leaves in prose. A missed\nmodulator is therefore a NORMAL, detectable, repairable event — not a design\nfailure; the design failure would be shipping without the census.\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
   },
   {
-   "id": "S01936",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
-   "lines": "890-929",
-   "text": "commit 24184dd2332d2879ac21f001a6e1f16134ba4c0c\nordinal 48\ndate 2026-08-05 17:39:33 -0700\nauthor Matt Stults\nsubject S5 design: mechanical fixes applied; the zero-flip question RECORDED, not decided\nPer S5_ADVERSARIAL_REVIEW.md. Every number re-verified from disk by the applying\nagent; no review claim failed.\n\n- ENG-B1: new 0.5.1 manifest section. S5 was not expressible as a cycle at all -- it\n  changes no file, and the file it points at is closure-pinned, so the driver refuses\n  at OPEN three different ways. Now specifies shape, files_to_change (the\n  current-vocabulary family-support pin, which is a real change AND a stronger pin),\n  gate_tests, compatibility version_key overlay, and a baseline RESOLVED at OPEN from\n  the cycle log rather than named statically.\n- ENG-B2: the expected effect was atom-channel only while 16 of 24 changed clauses\n  move through section spillover. Now two-part, with section_spillover added as a\n  permitted adjudicable flip tag.\n- ENG-B3: the patient-composition contract was false under pricing 1.2. Proven again\n  on m0355 -- a chained clause atom IS reached by the overlay once 1.2 dechains it.\n  Rewritten to state the real contract: the patient factor must apply to subsumption\n  credit using the clause atom's preserved chain, or the overlay launders patient\n  structure.\n- ENG-B4 and staleness: PRICING_VERSION 1.2 not 1.1; six closed cycles (5 keep, 1\n  revert) not three; overlay-OFF true of the frozen cuts only; cycle 5 reverted, so\n  5.3's premise is counterfactual and is now conditional on S3b.\n- SCI-M2: the 7-flips-for-a-2-edge-family calibration struck as refuted (measured 0 on\n  the current corpus); the one-family-per-cycle rule kept on better grounds.\n- SCI-B2: a conditional pre-registration written at mechanism level -- 8 subsumption\n  records on named clauses, 1.6812 at kind_factor 0.4, latent manipulation at df 8 /\n  idf 4.2030, 24 clauses changing of which 16 section-only.\n\nThe zero-flip finding is recorded in a fenced OPEN STRATEGIC QUESTION block naming\nthe three options without choosing, pointing at DECISIONS_FOR_MATT Decision 1. The\npre-built disclosure -- measuring S5 before OPEN spends its temporal guarantee, and\nno procedure restores it -- is mandatory in both the prediction notes and the\ndecision justification.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
-   "source_class": "git_log"
+   "id": "S00912",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "251-251",
+   "text": "## 9g-ADDENDUM (2026-08-20, Matt's correction): TERMINAL VERDICTS ARE",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
   },
   {
-   "id": "S01937",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
-   "lines": "930-952",
-   "text": "commit 9998cccf979ccb90e48ff7258d4ffe5394a17bba\nordinal 49\ndate 2026-08-05 17:40:15 -0700\nauthor Matt Stults\nsubject DECISIONS: fill in Decision 6 with the measured answer\nThe strategic question now has numbers. Six cycles moved the metric +0.0003 against a\nnoise floor of 0.032-0.037; the remaining ladder's oracle ceiling is 42% of the gap\nand its honest estimate is 15-28%, resting on assumptions already refuted. Two\nstructural findings outrank the arithmetic: 43% of the measured error was never\ncatalogued, and the field that would tell us how much of the gap is the panel's fault\nis confounded with which seat run produced it.\n\nRecommendation recorded: stop treating the frontier bar as the objective, do not\nspend the S3b budget, run the one cheap recalibration that could legitimately move\nthe bar, go to the checkpoint and generalization test sooner, and rewrite the\nheadline claim around what is actually defensible.\n\nFlagged as a one-way door: the salience check's only usable anchor sits on a held-out\nbehaviour, so running it spends part of a one-shot resource. Not a free follow-up.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
-   "source_class": "git_log"
-  },
-  {
-   "id": "S01938",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
-   "lines": "953-998",
-   "text": "commit 2c96735271a6ea9a3f7e14d181f6ea95a8f53254\nordinal 50\ndate 2026-08-05 17:43:53 -0700\nauthor Matt Stults\nsubject S6 shape partition computed mechanically; README control number corrected\nSHAPE PARTITION. S6's central anti-fitting gate -- add vocabulary only where the\nconcept exists nowhere, fix the QUESTION where it already exists -- was applied by\nprose in a design document and could not be applied by the seat at all (the seat is\ndeliberately blind to query vocabularies). shape_partition.py computes it from the\nartifacts and freezes a sha-pinned output.\n\nResult: 14 shape_b / 12 shape_a, against the design's hand-assignment. 17 of 26\nclauses lack a usable correct assignment -- 13 unambiguous inversions, 2 where the\ndesign contradicts itself (dual family membership), 3 the design never books anywhere.\nThe S6 review's 'already in another query' figure of 14 is confirmed exactly; its '15\nof 26' is off by one (14 under any self-consistent reading).\n\nThe join key matters and was verified, not assumed: containment.dechain_name strips\nthe chain and PRESERVES polarity; grammar.stem_of strips polarity too. On these\nartifacts the two disagree on exactly m0242 and m0253, and in both cases stem_of would\ncall a genuine Shape-A clause Shape-B by merging mustnot_ into shouldnot_. A sibling\ndesign's decision material made exactly that error.\n\nA third state was adopted from the data rather than invented: shape_a_polarity_variant\n(2 cases), the only non-empty candidate of four tested, and the highest duplicate risk\nin Shape A -- a seat adding an atom there is one prefix away from minting the\nduplicate the design forbids.\n\nFenced FORBIDDEN, not QUERY_MODULES, with the reasoning in the module docstring: it\nreads a panel-derived verdict file, and routing that read through an indirection to\npass the static scan would convert a disclosed reader into a laundering path.\nPanel-blindness is enforced positively instead -- classify() has no argument a panel\nvalue can arrive through.\n\nREADME: the bag-of-words control row said +0.19, which is HANDOFF's 9-behaviour figure\nin a 3-behaviour table. Re-measured independently twice: +0.108. The correction is in\nthe tool's favour (2.9x lift, not 1.6x). Added a pointer to the quality read so nobody\nquotes +0.309 as a trajectory without seeing that six cycles moved it +0.0003.\n\ntest_ladder: the no-live-client test wrote into a gitignored directory, so the suite\ncould not pass from a clean clone. It now owns its own tmp_path. The output location\nwas incidental to what the test asserts.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
-   "source_class": "git_log"
-  },
-  {
-   "id": "S01939",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
-   "lines": "999-1024",
-   "text": "commit 7e701dc3b4d3e6a562fba5ebf99ca708c8ea8d43\nordinal 51\ndate 2026-08-05 17:49:55 -0700\nauthor Matt Stults\nsubject PROJECT_ASSESSMENT: the funding memo\nWritten for a reader with no background. Answers the three questions asked: is this\nworth continuing to fund, is there a nearby pivot, or should we just use frontier\nmodels.\n\nThe finding it turns on: the long tail is not made of missing rules, it is made of\njudgement. Four measured walls -- the formal representation loses the deciding fact\n(two structurally identical passages must be answered differently); some questions the\ndocument simply does not settle; some passages protect people they never name; and\nwidening coverage adds errors about as fast as it removes them. Rules can RELOCATE\nthat judgement into reviewable artifacts, which is genuinely valuable, but they cannot\nremove it. That is why returns diminish.\n\nRecommendation: stop funding accuracy work on the rule engine; fund the auditability\nmachinery (which is model-agnostic and works wrapped around a frontier model) and the\nranked-audit axis a human expert actually endorsed; run two cheap decisive experiments\nfirst. If the only goal is quality with little human effort, frontier models are\nbetter today and nothing in our plan closes that.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
-   "source_class": "git_log"
-  },
-  {
-   "id": "S01940",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
-   "lines": "1025-1056",
-   "text": "commit 7421852a97a236a7a3bad7093aa7a783a0df76b9\nordinal 52\ndate 2026-08-05 17:53:58 -0700\nauthor Matt Stults\nsubject Fix join_facts: the refusal facts were keyed on WHO computed the joins\nReported as 'evaluate() with caller-supplied joins + join_version=2 does not populate\njoin_facts'. Reproduced first: a precomputed v2 join handed to evaluate() reports\ndegenerate_quote_refused == 0 where it should be 1, because the refused passage gets\nsilently rebooked into verbatim_but_unsegmented while the accounting identity still\nbalances -- the 'misdescribes its own measurement' failure exactly.\n\nDiagnosis, not a symptom patch: the facts lookup was nested inside the\n'if joins is None' branch, so it was conditioned on who computed the joins rather than\non which join version was declared. join_facts is evaluate's only input to the\nrefusal stratum, so a caller that precomputes joins -- which is the S8 checkpoint\ncensus's exact shape -- loses the whole refusal-reporting path even with\njoin_version=2 passed explicitly.\n\nNow derived from the declared version unconditionally. The cache is keyed identically,\nso the previously-working path recomputes nothing, and v1 stays None (the legacy join\nhas nothing to disclose). No signature, output shape, or v1 number changes.\n\nTwo adjacent gaps found and deliberately NOT widened into this diff -- both recorded\nas Decision 8: cell_evaluate has no join_version parameter at all, so a checkpoint\nrouting through it would silently measure and report v1; and evaluate never surfaces\nthe restriction fact the design calls 'a fact the caller must see'.\n\nSuite 2194 passed / 4 skipped, verified before commit.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
-   "source_class": "git_log"
-  },
-  {
-   "id": "S01941",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
-   "lines": "1057-1072",
-   "text": "commit ee2b2adfa54ca533102119ca6c5349dc076ab0e4\nordinal 53\ndate 2026-08-05 17:54:56 -0700\nauthor Matt Stults\nsubject OUTSTANDING_WORK: status block; the ladder's measured value now governs the list\nRecords what closed today, and puts the measurement in front of the backlog so nobody\nstarts new ladder design work before Decision 6 is made. Also records that H3 was\nalready closed by f98ff94 (F1/F2/R3), leaving only two process notes.\n\nNotes plainly that both cheap decisive experiments the assessment recommends are\nblocked on Matt -- one needs spend, one is a one-way door -- so neither can be run\nautonomously.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
-   "source_class": "git_log"
-  },
-  {
-   "id": "S01942",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
-   "lines": "1073-1106",
-   "text": "commit d3f3403b044acfc2c5ada098167b3c9ebb348a85\nordinal 54\ndate 2026-08-05 18:01:18 -0700\nauthor Matt Stults\nsubject PROJECT_ASSESSMENT: add Option D, the version built for the actual economics\nThe memo compared our cheap tool against frontier-per-query and skipped the option\nthat matches the real cost structure: high one-time cost per DOCUMENT, low cost per\nbehaviour and per iteration. Reframed by Matt, correctly.\n\nOption D: a frontier mapping pass, run once per document, making each decision\nexplicitly with a written explanation and a citation, auditable and human-correctable\nafterwards -- then unlimited cheap behaviour queries against it.\n\nOur evidence favours this more than it favours the rule ladder. Every wall we hit was\nrepresentation loss, never matching failure -- the two structurally identical passages\nare identical precisely BECAUSE the annotation dropped who the harm falls on. The only\nreal gain in the project's history (+0.072) came from improving an instrument; six\ncycles of matching work gave +0.0003. Cost is order $20-60 once, and the correction\nmachinery is already designed.\n\nThe reframing that matters: the long tail may be much shorter in dimension-space than\nin rule-space. Four walls map to four missing annotation DIMENSIONS -- who is affected,\nwhat is implied but unsaid, the scope decision with its reasoning, and what kind of\nobligation a passage is. Four found by failing four times. If the true count is 5-15,\none well-designed pass carries them all.\n\nWhat is unproven is exactly one thing and it is cheap to test: does a behaviour-BLIND\nannotation generalize to behaviours nobody had in mind? The six held-out behaviours\nexist to answer this, and it is a far better use of a one-shot resource than confirming\nthe rule ladder plateaued.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
-   "source_class": "git_log"
-  },
-  {
-   "id": "S01943",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
-   "lines": "1107-1151",
-   "text": "commit 775514fd0222413c7e8db0d1f6ae1d4f61d844d4\nordinal 55\ndate 2026-08-05 18:06:31 -0700\nauthor Matt Stults\nsubject FRONTIER_LAYER_EXPERIMENT: the staged design, with the measurement made explicit\nMatt's structure: burn one behaviour as pure dev to build the frontier-adjudicated\nlayer; generalize to the other two with fixes allowed, to LEARN; then freeze and run\nthe held-out behaviours to see whether it is going to be like that for every behaviour.\n\nTwo things this adds.\n\nWHICH BEHAVIOUR TO BURN, from the census cause distribution: helpfulness. It carries\n44% of catalogued failures, the most distinct classes (7 of 8), and the ~30 cases no\ncurrent mechanism touches at all -- passages about answer quality, where relevance is\nnot a question about parties. Designing against it forces the schema to invent the\ndimension we know is missing rather than re-deriving ones we already designed.\n\nBut NO SINGLE BEHAVIOUR EXERCISES EVERYTHING: helpfulness has zero section-prior cases,\nharm-avoidance has zero threshold-drift, caution lacks both rare classes. That is not a\nflaw in the plan, it is the reason stage 2 exists -- but it must be pre-registered or\nstage 2's fixes get misread.\n\nTHE MEASUREMENT DISCIPLINE, which is the part that decides the question: stage 2 is\nworthless if fixes are made freely and uncounted -- it becomes a second dev set. So\npre-register the classes stage 1 could not have exercised, then classify every stage-2\nfix as EXPECTED (a dimension for a class stage 1 never saw -- fine, the count is\nfinite), ALARMING (a class stage 1 DID exercise and the schema still failed here --\npredicts stage 3 needs the same forever), or FATAL (a per-behaviour special case -- the\ntail is unbounded, stop). The delta between stage 2's fix count and stage 3's IS the\nexperiment.\n\nAlso: two one-shot resources exist and answer different questions -- six held-out\nbehaviours (across behaviours) and the sealed second document (across documents).\nStage 3 spends the first; reserve the second entirely. Recommend splitting the six 3+3.\n\nCost priced honestly: $20-60 per annotation pass, 5-10 passes in stage 1, so $100-600 --\none to two orders of magnitude over the current $8.50 ceiling. Small absolutely, but it\nneeds an explicit budget decision, and it would be the first spend whose result changes\nwhat we believe rather than moving a metric by less than its noise floor.\n\nStop conditions stated in advance so they are not rationalized later.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
-   "source_class": "git_log"
-  },
-  {
-   "id": "S01944",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
-   "lines": "1152-1189",
-   "text": "commit bb4ebc302e3ba27d1e364199975f021194c57e88\nordinal 56\ndate 2026-08-05 18:14:44 -0700\nauthor Matt Stults\nsubject Decision 8: cell_evaluate can select the join, and the restriction fact reaches callers\nFIX 1 -- cell_evaluate had no join_version parameter at all. It hard-defaulted to v1\nand passed nothing down, so a checkpoint caller routing through it could not select v2\nand would silently measure and REPORT v1: a measurement that misdescribes its own\nconfiguration, the exact failure the census config-identity work was done to prevent.\n\nThe non-obvious part: threading the version required widening _join_key, the cache key.\nThe variant set changes WHICH clauses a passage joins to, so without it the\nmodule-global join cache would serve the uniform-variant answer to a mixed-variant run.\nA version-selection fix that left the cache key alone would have looked correct and\nsilently returned the wrong join.\n\nFIX 2 -- evaluate never returned join_facts, so `restricted` (the disclosed\nfull-corpus fallback the design calls a fact the caller must see, never silent) did not\nreach the caller at all. Now surfaced as join.facts: additive, inert under v1, no\nrecomputation, no existing key changed meaning.\n\nThis was deferred earlier on the grounds that it changed an output shape. That was a\ncategory, not a risk assessment. All 14 consumers of evaluate's result were enumerated:\nevery one reads named keys, none enumerates keys, compares dicts wholesale, or\nserializes the result into a recorded artifact -- so no recorded artifact's shape\nshifts. The deferral was over-cautious and the check took minutes.\n\nBEHAVIOUR CHANGE on an error path, recorded deliberately: evaluate and clause_joins now\nRAISE on an impossible option pairing (mixed_variants under v1) where they previously\naccepted and ignored it. That matches MODULE_MAP §11's anti-rule -- a silently-ignored\nflag makes the config header's own record false -- but it is a change, so it is named\nhere rather than buried.\n\nSuite 2198 passed / 4 skipped, verified before commit (+4, exactly the new tests).\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
-   "source_class": "git_log"
+   "id": "S00913",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "252-263",
+   "text": "## INVENTORY-RELATIVE AND EXPIRE\nA verify_terminal.py verdict is a proof over a FROZEN mechanism inventory\n(declaration slots + vocabulary at run time), never an absolute property of the\nnode. When the inventory grows — a new context atom is annotated, an act subtype\nminted, a new slot added — every standing TERMINAL verdict touching the new\nmechanism's reach EXPIRES and the verifier must re-run. The verifier now stamps\nits output with the inventory it ran against and re-stamps reachable mismatches\nPENDING-VOCAB (13 nodes as of this writing: reachable by the four annotated but\nnot-yet-declared context atoms). BINDING: no document — handoff, review, proof,\nor report — may call a node \"terminal\" without naming the inventory the claim is\nrelative to; \"terminal\" with no inventory qualifier is a review finding.\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
   }
  ]
 }

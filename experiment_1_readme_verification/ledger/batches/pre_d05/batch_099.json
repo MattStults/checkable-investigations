@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_099",
+  "source_class": "arc1_cycles",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S01445",
+  "last_span": "S01459"
+ },
+ "spans": [
+  {
+   "id": "S01445",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "44-48",
+   "text": " \"flip_tallies\": {\n  \"correct\": 12,\n  \"regression\": 5,\n  \"unclear\": 1\n },",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01446",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "45-45",
+   "text": "  \"correct\": 12,",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01447",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "46-46",
+   "text": "  \"regression\": 5,",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01448",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "47-47",
+   "text": "  \"unclear\": 1",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01449",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "49-49",
+   "text": " \"flip_verdicts_reused_from\": null,",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01450",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "50-85",
+   "text": " \"gate\": {\n  \"closure_checked\": [\n   \"annotations_ext_v1_merged.json\",\n   \"behavior_atoms_audit_v1.json\",\n   \"constitution_clauses.json\",\n   \"modelspec_clauses.json\",\n   \"overlay_empty.json\",\n   \"test_containment.py\",\n   \"test_dechain.py\",\n   \"test_no_reference_leak.py\",\n   \"test_patient.py\",\n   \"test_threshold.py\",\n   \"thresholds_frozen.json\"\n  ],\n  \"files_changed\": [\n   \"behaviours_query.json\",\n   \"dossier.py\",\n   \"snapshot.py\",\n   \"test_dossier.py\",\n   \"test_snapshot.py\",\n   \"test_validate_query.py\"\n  ],\n  \"review\": {\n   \"by\": \"independent change-review seat (clean-context frontier review agent, Claude/Fable 5, 2026-08-04) \\u2014 not the implementer\",\n   \"notes\": \"FREEZE: prediction.json re-hashed c99260f031c991fccbc7a506033cc5a1b89dd90f2e9951e417708587fb621923 (matches state.json frozen_prediction_sha); manifest.json on disk f89aa032ec0abd1f20f2b9121389065a0b69a6b0e814c63561d43cfe2edca104 = A1's new_sha, A1's old_sha = state.json frozen_manifest_sha 8df0a1b4..., and MECHANISM_AMENDMENT.md's pre-freeze manifest chain (df5159a5... -> 8df0a1b4...) is coherent underneath; DISCOUNT_DERIVATION.md hashes to its pinned 7e1979bc... (also pinned inside test_patient.py). A1 BOOKKEEPING: test_validate_query.py absent from closure_shas and present in open_shas at its OPEN sha 9ea81733... exactly as the amendment states; on-disk file = A1's post-amendment sha 24b4ae4d...; the rewritten pins pin the three declared licensed declarations with the anchor check running against the real file, and the F5/F4 freeze-gate tests are untouched. test_patient.py closure sha 779f69f7... = MECHANISM_AMENDMENT's new sha, on-disk match; patient.py on disk = the amendment's new sha 4d2eda10.... DECLARED-DIFF-ONLY: git status --porcelain shows exactly the 6 files_to_change (all 6 HEAD-hashes equal their recorded open_shas and all differ post-OPEN), the disclosed pre-OPEN merge files (patient.py, validate_query.py, test_patient.py, test_validate_query.py, conftest.py +2 _OPTIONAL lines, test_no_reference_leak.py QUERY_MODULES + spy-driver additions \\u2014 diffs read and confined to the disclosed content), and cycle-dir bookkeeping; nothing else moved; every other closure sha (annotations/atoms/clauses/overlay/thresholds/gate tests) matches on disk. TESTS BIND: the 6 declared gate test files pass (177 passed); THREE mutants in a scratch copy (pycache cleared, mutant presence grep-asserted each time, working tree re-hashed byte-identical after): (1) taint cap disabled (revert to d*sum) -> test_tainted_clause_mass_is_capped_not_linear_in_match_count RED; (2) patient factor dropped from the subsumption path (records forced factor 1.0) -> test_tainted_clause_discounts_subsumption_credit_inside_the_cap and test_subsumption_match_reads_the_credited_clause_atoms_own_chain RED; (3) F9 absent=>legacy dispatch broken in dossier._index_for (legacy branch routed to ContainmentIndex) -> test_index_dispatch_ladder_absent_12_and_20 RED. The F5 definition-freeze gate carries its own in-suite planted-edit reds (definition edit, name edit, new key, dropped behaviour, duplicate slug). FENCE: test_no_reference_leak.py green in-suite (patient + validate_query registered in QUERY_MODULES with spy-driven proof the pricing branch executes); independent grep of the full FORBIDDEN token list over patient.py, validate_query.py, snapshot.py, dossier.py: zero hits; imports audited (patient: containment/grammar/relevance; validate_query: json/os/re/grammar; snapshot's new imports: validate_query+patient; dossier's: patient) \\u2014 no panel artifact opened. I1 SAFETY, RE-DERIVED: build_snapshot with the exact S2 config (all input shas matched) and the OPEN-sha (pre-declaration) behaviours_query.json reproduces snapshots/patient-backfill-2026-08-04.json's behaviours section EXACTLY (dict-equality True), records pricing_version 1.2 and no query_patients key; assert_frozen_thresholds passes on the baseline. PREDICTION COHERENCE, RE-DERIVED: rebuilding with the declared patients routes PatientIndex, records pricing_version 2.0 + the per-slug declarations, and the computed flip set vs the S2 baseline is exactly 18 = the 17 frozen expected_clauses (harm newly 6 / harm no_longer 9 / helpfulness no_longer 2, per-behaviour membership identical) plus m0355 alone \\u2014 the clause the designer ruling excludes from expected_clauses and carries in the band {17,18}; caution 0 flips. FULL SUITE: 2128 passed / 3 skipped (matches expectation exactly). THE CLAIM: code read end-to-end; patient.py implements the amended rule as the manifest states (chain[1:] patients from length>=2 chains via the 1.2 ContainmentIndex.chains metadata only, taint cap = d*max with deterministic survivor, single application never d^2, subtraction-form _atom_score for bit-identity, explicit opt-in only), validate_query.py is the panel-blind word-bounded anchor check, and the rationale is document-side. NON-BLOCKING NOTES: (i) the cycle context records (OPEN_RECOMPUTATION.md / AMENDED_RECOMPUTATION.md) carry DEV-stamped census composition figures (fp_*/fn_* class counts) \\u2014 these are the manifest's own disclosed attention-direction provenance; this review did not use them as evidence and the keep decision must continue to cite flip adjudications only; (ii) validate_query.py itself is not sha-pinned in state.json's closure/open sets (patient.py is pinned via MECHANISM_AMENDMENT.md, test files via state.json) \\u2014 its behavior is pinned by test_validate_query.py's gate tests, but a post-review edit to it would not trip the driver's closure check; recommend adding it to the closure record at or before CLOSE.\",\n   \"verdict\": \"proceed\"\n  },\n  \"tests_passed\": [\n   \"test_containment.py\",\n   \"test_dechain.py\",\n   \"test_no_reference_leak.py\",\n   \"test_patient.py\",\n   \"test_threshold.py\",\n   \"test_validate_query.py\"\n  ]\n },",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01451",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "51-63",
+   "text": "  \"closure_checked\": [\n   \"annotations_ext_v1_merged.json\",\n   \"behavior_atoms_audit_v1.json\",\n   \"constitution_clauses.json\",\n   \"modelspec_clauses.json\",\n   \"overlay_empty.json\",\n   \"test_containment.py\",\n   \"test_dechain.py\",\n   \"test_no_reference_leak.py\",\n   \"test_patient.py\",\n   \"test_threshold.py\",\n   \"thresholds_frozen.json\"\n  ],",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01452",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "64-71",
+   "text": "  \"files_changed\": [\n   \"behaviours_query.json\",\n   \"dossier.py\",\n   \"snapshot.py\",\n   \"test_dossier.py\",\n   \"test_snapshot.py\",\n   \"test_validate_query.py\"\n  ],",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01453",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "72-76",
+   "text": "  \"review\": {\n   \"by\": \"independent change-review seat (clean-context frontier review agent, Claude/Fable 5, 2026-08-04) \\u2014 not the implementer\",\n   \"notes\": \"FREEZE: prediction.json re-hashed c99260f031c991fccbc7a506033cc5a1b89dd90f2e9951e417708587fb621923 (matches state.json frozen_prediction_sha); manifest.json on disk f89aa032ec0abd1f20f2b9121389065a0b69a6b0e814c63561d43cfe2edca104 = A1's new_sha, A1's old_sha = state.json frozen_manifest_sha 8df0a1b4..., and MECHANISM_AMENDMENT.md's pre-freeze manifest chain (df5159a5... -> 8df0a1b4...) is coherent underneath; DISCOUNT_DERIVATION.md hashes to its pinned 7e1979bc... (also pinned inside test_patient.py). A1 BOOKKEEPING: test_validate_query.py absent from closure_shas and present in open_shas at its OPEN sha 9ea81733... exactly as the amendment states; on-disk file = A1's post-amendment sha 24b4ae4d...; the rewritten pins pin the three declared licensed declarations with the anchor check running against the real file, and the F5/F4 freeze-gate tests are untouched. test_patient.py closure sha 779f69f7... = MECHANISM_AMENDMENT's new sha, on-disk match; patient.py on disk = the amendment's new sha 4d2eda10.... DECLARED-DIFF-ONLY: git status --porcelain shows exactly the 6 files_to_change (all 6 HEAD-hashes equal their recorded open_shas and all differ post-OPEN), the disclosed pre-OPEN merge files (patient.py, validate_query.py, test_patient.py, test_validate_query.py, conftest.py +2 _OPTIONAL lines, test_no_reference_leak.py QUERY_MODULES + spy-driver additions \\u2014 diffs read and confined to the disclosed content), and cycle-dir bookkeeping; nothing else moved; every other closure sha (annotations/atoms/clauses/overlay/thresholds/gate tests) matches on disk. TESTS BIND: the 6 declared gate test files pass (177 passed); THREE mutants in a scratch copy (pycache cleared, mutant presence grep-asserted each time, working tree re-hashed byte-identical after): (1) taint cap disabled (revert to d*sum) -> test_tainted_clause_mass_is_capped_not_linear_in_match_count RED; (2) patient factor dropped from the subsumption path (records forced factor 1.0) -> test_tainted_clause_discounts_subsumption_credit_inside_the_cap and test_subsumption_match_reads_the_credited_clause_atoms_own_chain RED; (3) F9 absent=>legacy dispatch broken in dossier._index_for (legacy branch routed to ContainmentIndex) -> test_index_dispatch_ladder_absent_12_and_20 RED. The F5 definition-freeze gate carries its own in-suite planted-edit reds (definition edit, name edit, new key, dropped behaviour, duplicate slug). FENCE: test_no_reference_leak.py green in-suite (patient + validate_query registered in QUERY_MODULES with spy-driven proof the pricing branch executes); independent grep of the full FORBIDDEN token list over patient.py, validate_query.py, snapshot.py, dossier.py: zero hits; imports audited (patient: containment/grammar/relevance; validate_query: json/os/re/grammar; snapshot's new imports: validate_query+patient; dossier's: patient) \\u2014 no panel artifact opened. I1 SAFETY, RE-DERIVED: build_snapshot with the exact S2 config (all input shas matched) and the OPEN-sha (pre-declaration) behaviours_query.json reproduces snapshots/patient-backfill-2026-08-04.json's behaviours section EXACTLY (dict-equality True), records pricing_version 1.2 and no query_patients key; assert_frozen_thresholds passes on the baseline. PREDICTION COHERENCE, RE-DERIVED: rebuilding with the declared patients routes PatientIndex, records pricing_version 2.0 + the per-slug declarations, and the computed flip set vs the S2 baseline is exactly 18 = the 17 frozen expected_clauses (harm newly 6 / harm no_longer 9 / helpfulness no_longer 2, per-behaviour membership identical) plus m0355 alone \\u2014 the clause the designer ruling excludes from expected_clauses and carries in the band {17,18}; caution 0 flips. FULL SUITE: 2128 passed / 3 skipped (matches expectation exactly). THE CLAIM: code read end-to-end; patient.py implements the amended rule as the manifest states (chain[1:] patients from length>=2 chains via the 1.2 ContainmentIndex.chains metadata only, taint cap = d*max with deterministic survivor, single application never d^2, subtraction-form _atom_score for bit-identity, explicit opt-in only), validate_query.py is the panel-blind word-bounded anchor check, and the rationale is document-side. NON-BLOCKING NOTES: (i) the cycle context records (OPEN_RECOMPUTATION.md / AMENDED_RECOMPUTATION.md) carry DEV-stamped census composition figures (fp_*/fn_* class counts) \\u2014 these are the manifest's own disclosed attention-direction provenance; this review did not use them as evidence and the keep decision must continue to cite flip adjudications only; (ii) validate_query.py itself is not sha-pinned in state.json's closure/open sets (patient.py is pinned via MECHANISM_AMENDMENT.md, test files via state.json) \\u2014 its behavior is pinned by test_validate_query.py's gate tests, but a post-review edit to it would not trip the driver's closure check; recommend adding it to the closure record at or before CLOSE.\",\n   \"verdict\": \"proceed\"\n  },",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01454",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "77-84",
+   "text": "  \"tests_passed\": [\n   \"test_containment.py\",\n   \"test_dechain.py\",\n   \"test_no_reference_leak.py\",\n   \"test_patient.py\",\n   \"test_threshold.py\",\n   \"test_validate_query.py\"\n  ]",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01455",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "86-86",
+   "text": " \"justification\": \"REVERT. THE BOUND IS BREACHED: the frozen prediction (prediction.json sha c99260f031c991fccbc7a506033cc5a1b89dd90f2e9951e417708587fb621923) pre-registered max_regressions = 0 as this cycle's falsifiable bound. The blinded flip-adjudicator seat returned 5 regressions over the 18 measured flips; a split-blind frontier verification leg, blind to the first leg's verdicts, CONFIRMED 4 of them bidirectionally (m0239, m0275, m0466, m0018), split on m0108 (recorded CONTESTED, final `unclear`, both reasons preserved), and judged m0355 correct (leg 1 unclear) \\u2014 so the pre-registered threshold-proximity case is NOT a regression. At the strict two-leg count of 4, and at the driver's mechanical count of 5, the bound fires either way. DOCUMENT-SIDE GROUNDS, citing flip adjudications only: the configuration removes clauses an auditor of these behaviours needs \\u2014 the document's one de-radicalization directive (m0239), its record of how to respond to a user announcing intent to shoot someone (m0275), its anthrax-request refusal (m0466), and the red-line principle guaranteeing easy access to safety-critical information (m0018). Per policy a failed prediction obliges written justification and never auto-reverts; this revert is the designed outcome of the pre-registered bound, taken on the adjudications and on nothing else. No census number, panel score, judge rating or gold value informed this decision; census consultation stays deferred to the S8 checkpoint. WHAT THE CYCLE YIELDS \\u2014 three findings, recorded as the cycle's real product: (i) CLAUSE_TAINT INHERITANCE. Patient-free atoms are discounted through sibling user-directed REMEDIAL acts, systematically mispricing example passages whose modeled response addresses the user while the harm falls on a third party. m0275's removal rests on taint imported from should_provide_supportive_response__model_user while the matched situation atom expressed_harmful_intent is glossed 'the user expresses an intention to harm another person'; m0466's on taint from the model-upon-user refusal act, which does not bear on who would be harmed by the requested advice; contested m0108 is the same shape. (ii) RECIPIENT-VS-HARM-BEARER. Protective acts UPON the user FOR others' benefit fire the mismatch rule against needed clauses \\u2014 m0239's de-escalation act takes the user as grammatical patient while the harm it averts falls on people outside the conversation ('dropping it on the ground that the model's act is addressed to the user mistakes the recipient of the intervention for the bearer of the harm') \\u2014 as do GENERIC-NOUN patients: m0018's 'People should have easy access to trustworthy safety-critical information' is annotated third_party, but 'people' as written comprehends the users and developers the model works with rather than excluding them, so the annotation reflects the clause's generic noun, not a subject matter foreign to helpfulness. (iii) WHAT WORKED, PRESERVED AS FINDING: patient-saturated wrong-patient clauses were correctly removed \\u2014 m0276, the defining case, adjudicated `correct` exactly as pre-registered, and m0290 likewise; all 6 normalizer_drift admissions were adjudicated correct; and the golden-derived d = 0.10 with the taint cap behaved exactly as DISCOUNT_DERIVATION.md derived it (dense uniformly-mismatched clauses suppressed without the F-linearity residual; the flip set flat across the licensed range but for the one near-cut clause). THE DEFECT IS PATIENT PROVENANCE, NOT THE DISCOUNT ARITHMETIC: the pricing layer reads chains that record who an act is addressed to, and treats that as who the clause protects. These findings feed a pre-registered S3b REDESIGN \\u2014 beneficiary-aware pricing (harm-bearer distinguished from act recipient) and no taint inheritance across act/situation siblings in example passages \\u2014 which must pass its OWN design + adversarial review before any re-attempt; nothing from this cycle's mechanism ships in the meantime. REVERT SEMANTICS, executed and verified: behaviours_query.json returns to the S2 baseline bytes (the three `patients` declarations withdrawn; file re-hashes to the baseline's recorded 48dbd8fb0720ce187423d37daf34e415ebbc58a28166619a0b2800b0a1f32d57) and test_validate_query.py to its OPEN sha 9ea81733fc0c76de47f7945d56242b5158f0bc3041684cce9e43e0dbe2dad3ce. RETAINED because SCORE-INERT: snapshot.py (the PatientIndex route fires only on non-empty validated declarations \\u2014 with none it falls to ContainmentIndex and records pricing_version 1.2 with no query_patients key; the diff config.changed addition only SURFACES keys) and dossier.py (the F9 dispatch ladder's 2.0 branch is unreachable without a 2.0 snapshot, and the normalizer_drift annotation and cycle-declared reconstruction license are dossier metadata and provenance, never scores), with their tests test_snapshot.py / test_dossier.py. patient.py, validate_query.py and test_patient.py REMAIN in the tree, INERT without declarations and pinned bit-identical by the I1 invariant tests \\u2014 the pre-OPEN worktree merge rides this cycle's commit as disclosed in the manifest. PROOF OF REVERT: rebuilding the S2 baseline snapshot from the reverted tree yields sha256 8159ba49c348034197acee983c7121e674d29fad859cb57c6ffdc6964c13b4a0 \\u2014 BIT-IDENTICAL to the frozen snapshots/patient-backfill-2026-08-04.json \\u2014 recording pricing_version 1.2 and no query_patients key. Full suite after the revert: 2129 passed, 3 skipped. The measure snapshot snapshots/patient-pricing-2026-08-04.json is retained as the immutable record of what was measured (amendment F3); it is a reverted configuration and must never be used as a baseline.\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01456",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "87-87",
+   "text": " \"noop\": false,",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01457",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "88-88",
+   "text": " \"overrides\": [],",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01458",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "89-168",
+   "text": " \"prediction_check\": {\n  \"checks\": [\n   {\n    \"expected\": {\n     \"max\": 18,\n     \"min\": 17\n    },\n    \"kind\": \"flip_count\",\n    \"observed\": 18,\n    \"result\": \"PASS\"\n   },\n   {\n    \"expected\": [\n     \"newly_predicted\",\n     \"no_longer_predicted\"\n    ],\n    \"kind\": \"directions\",\n    \"observed\": [\n     \"newly_predicted\",\n     \"no_longer_predicted\"\n    ],\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0015\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0215\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0265\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0266\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0268\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0269\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0108\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0111\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0194\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0239\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0275\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0276\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01459",
+   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "169-208",
+   "text": "    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0290\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0466\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0575\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0018\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0463\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"expected\": 0,\n    \"kind\": \"max_regressions\",\n    \"observed\": 5,\n    \"result\": \"FAIL\"\n   }\n  ],\n  \"pass_rate\": [\n   19,\n   20\n  ]\n },",
+   "source_class": "arc1_cycles"
+  }
+ ]
+}

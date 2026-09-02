@@ -61,6 +61,19 @@ no event type for a stop condition firing; cycle-artifact keys had no tier
 mapping; arrows/multipliers/unnamed triples had no rule). Artifact: rel
 `forbids_citation`, event type `trigger`; brief rules 22-30.
 
+### D-05 — 2026-09-02 — JSON span cut by depth, not indentation
+
+Caught by: pilot batches 005-008 (Opus): translators reported one-line
+spans with no enclosing key and duplicated content; the old cutter took
+any key at indent ≤2 as top-level, and the scored files use one-space
+indents. Artifact: `brief/spans.py` cut_json finds depth-1 keys by brace
+depth, carries windows of long values with a `context` field; spans
+regenerated (1,686; ledger and doc spans unchanged, ids S00001-S00196
+identical). Outputs translated under the old cut (batches 004-008, 216
+claims, all checker-clean) moved to `ledger/out/pre_d05/` and excluded
+from the final ledger; their batch files to `ledger/batches/pre_d05/`.
+Brief v0.5 rules 31-33 (file name as outermost key; window context).
+
 ## Interventions
 
 ### I-01 — 2026-09-02 — erratum number taken from a count

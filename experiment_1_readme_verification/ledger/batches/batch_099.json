@@ -1,133 +1,112 @@
 {
  "header": {
   "batch": "batch_099",
-  "source_class": "arc1_cycles",
+  "source_class": "git_log",
   "brief_version": "0.4",
   "glossary_version": "frozen ",
-  "spans": 15,
-  "first_span": "S01445",
-  "last_span": "S01459"
+  "spans": 11,
+  "first_span": "S01676",
+  "last_span": "S01686"
  },
  "spans": [
   {
-   "id": "S01445",
-   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "44-48",
-   "text": " \"flip_tallies\": {\n  \"correct\": 12,\n  \"regression\": 5,\n  \"unclear\": 1\n },",
-   "source_class": "arc1_cycles"
+   "id": "S01676",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "10064-10071",
+   "text": "commit 6f1229fd25f2b566e28b308fd79c3bb7808b7507\nordinal 640\ndate 2026-08-25 09:32:21 -0700\nauthor Matt Stults\nsubject Blind retranslations (both seats, 39/39, five fields, zero NEW coinages — the 24+1 dimension set absorbed everything at the node level too); bridge-lattice merge dispatched (leaf/mid/top per family, mids required to aggregate).\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01446",
-   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "45-45",
-   "text": "  \"correct\": 12,",
-   "source_class": "arc1_cycles"
+   "id": "S01677",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "10072-10079",
+   "text": "commit b869a7bfa2361b2f9a0c520d83db3b66f555ac64\nordinal 641\ndate 2026-08-25 09:43:49 -0700\nauthor Matt Stults\nsubject INTEGRATION TEST PASSES: mid-level separability 1.00 both seats at 0.57-0.58 reuse, zero truth-distinct collisions at any level — the combined representation (graph I/O + atoms + emergent dimensions + bridge lattice) addresses the truth-bearing sample non-vacuously; first end-to-end dry run of the next-document recipe. Notes 0041 + HANDOFF. Caveats: n=39, sample-induced mids, matching rules remain.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01447",
-   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "46-46",
-   "text": "  \"regression\": 5,",
-   "source_class": "arc1_cycles"
+   "id": "S01678",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "10080-10087",
+   "text": "commit bf0d4978103fe7eeb8b584d9a677ab8b13f92307\nordinal 642\ndate 2026-08-25 10:04:21 -0700\nauthor Matt Stults\nsubject 0041 withdrawn: integration census fails adversarial review (P1/P2 UNSUPPORTED) — CoVe re-derivations confirm the decisive findings (random-partition null dominates the pass condition 299/300; 1-NN relevance prediction at base rate 0.72/0.70 vs 0.60/0.59; mids circular; seat agreement 23/39 masked by pooling). Disposition + corrected verdicts + BINDING matched-granularity random-partition-null rule + licensing experiments L1/L2 registered; HANDOFF headline downgraded. Surviving claims: 39/39 blind coverage zero coinages, reuse 0.57 — necessary conditions only.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01448",
-   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "47-47",
-   "text": "  \"unclear\": 1",
-   "source_class": "arc1_cycles"
+   "id": "S01679",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "10088-10095",
+   "text": "commit 365d68b3f550379153b13b89c571672a92e5e396\nordinal 643\ndate 2026-08-25 10:23:55 -0700\nauthor Matt Stults\nsubject L1/L2 withdrawn: the licensing experiments fail their own adversarial review (DOES-NOT-LICENSE, accepted after CoVe). L1's bar already met by the base-rate numbers 0042 rejected (and CoVe shows p~0.15 — not even significant); L2 null-free and elastic (catch-all value; stress dimensions fire 1/100); Q-B untestable by construction (adria: block => zero out-of-corpus panel truth in repo); L1 presupposes the campaign (183/773 translated). Reviewer's panel-v5 rates and p-values corrected by driver re-derivation; findings survive. Replacement adopted: F18 reliability gate -> F17 blind-readout ablation (T/R/N arms, MCC ceiling-relative, worst-behaviour headline) -> F19 scaling pre-flight + A14 out-of-corpus truth purchase; funding rule = all three pass. Erratum #21 4th recurrence logged with the pre-commit question that prevents it.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01449",
-   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "49-49",
-   "text": " \"flip_verdicts_reused_from\": null,",
-   "source_class": "arc1_cycles"
+   "id": "S01680",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "10096-10133",
+   "text": "commit 6d01415be03a62ccaafa8a2fb8ca437c9f428094\nordinal 644\ndate 2026-08-31 08:23:49 -0700\nauthor Matt Stults\nsubject Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-facing layer\n- Evidence prune: 9,273 files of superseded iteration runs removed per\n  graph_v2/PRUNED.md (tree-sha manifest; 2,050 load-bearing module files\n  retained after test-driven restore, documented in the manifest).\n- Redactions at HEAD: subscription/quota mechanics, /usage plumbing,\n  verbatim conversational quotes, and private-service references removed\n  across ~60 docs; API spend figures and all design/ruling attributions\n  kept (published by decision). History is published unrewritten; see\n  README disclosure.\n- Reader-facing layer: new root README, ARTIFACTS.md routing table,\n  behavior_pilot/README.md index, LEDGER.md/ARC2_HANDOFF.md symlinks,\n  CI workflow (.github/workflows/ci.yml).\n- Licensing: data/panel-v5 LICENSE (Apache-2.0) + NOTICE for the\n  ingested ai-character-index v5 bench; specs remain CC0 with upstream\n  licenses.\n- Fixes: trace_check.py cwd-independence; orphan prompt declarations in\n  both graph_v2 configs; .venv_clingo untracked (.gitignore .venv*/);\n  corpus_exclusions.py second D1 entry for the re-translated\n  l1108_1367_n014 artifact (fabricated permission from Commentary),\n  ruled same-defect by the project owner 2026-08-31.\n- Renames: DECISIONS_FOR_MATT.md -> SCOPE_DECISIONS.md,\n  CONVERGENCE_REVIEW_FOR_MATT.md -> CONVERGENCE_REVIEW.md,\n  spotcheck_matt_result.json -> spotcheck_owner_result.json.\n- Both suites green at this state: walkthrough 1,341 passed / 8 skipped;\n  semi-formal-experiment 2,270 passed / 1 skipped; check_model exit 0.\n- Committed --no-verify: the pre-commit guard hook overflows argv on\n  11k staged paths; the guard itself was run by hand at this exact\n  staged state and is GREEN (8/8 watched files at review points).\n  Hook fix (staged-list via file, not argv) queued as follow-up.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MgTrc1TZF7qv6hK6s1dKAG\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01450",
-   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "50-85",
-   "text": " \"gate\": {\n  \"closure_checked\": [\n   \"annotations_ext_v1_merged.json\",\n   \"behavior_atoms_audit_v1.json\",\n   \"constitution_clauses.json\",\n   \"modelspec_clauses.json\",\n   \"overlay_empty.json\",\n   \"test_containment.py\",\n   \"test_dechain.py\",\n   \"test_no_reference_leak.py\",\n   \"test_patient.py\",\n   \"test_threshold.py\",\n   \"thresholds_frozen.json\"\n  ],\n  \"files_changed\": [\n   \"behaviours_query.json\",\n   \"dossier.py\",\n   \"snapshot.py\",\n   \"test_dossier.py\",\n   \"test_snapshot.py\",\n   \"test_validate_query.py\"\n  ],\n  \"review\": {\n   \"by\": \"independent change-review seat (clean-context frontier review agent, Claude/Fable 5, 2026-08-04) \\u2014 not the implementer\",\n   \"notes\": \"FREEZE: prediction.json re-hashed c99260f031c991fccbc7a506033cc5a1b89dd90f2e9951e417708587fb621923 (matches state.json frozen_prediction_sha); manifest.json on disk f89aa032ec0abd1f20f2b9121389065a0b69a6b0e814c63561d43cfe2edca104 = A1's new_sha, A1's old_sha = state.json frozen_manifest_sha 8df0a1b4..., and MECHANISM_AMENDMENT.md's pre-freeze manifest chain (df5159a5... -> 8df0a1b4...) is coherent underneath; DISCOUNT_DERIVATION.md hashes to its pinned 7e1979bc... (also pinned inside test_patient.py). A1 BOOKKEEPING: test_validate_query.py absent from closure_shas and present in open_shas at its OPEN sha 9ea81733... exactly as the amendment states; on-disk file = A1's post-amendment sha 24b4ae4d...; the rewritten pins pin the three declared licensed declarations with the anchor check running against the real file, and the F5/F4 freeze-gate tests are untouched. test_patient.py closure sha 779f69f7... = MECHANISM_AMENDMENT's new sha, on-disk match; patient.py on disk = the amendment's new sha 4d2eda10.... DECLARED-DIFF-ONLY: git status --porcelain shows exactly the 6 files_to_change (all 6 HEAD-hashes equal their recorded open_shas and all differ post-OPEN), the disclosed pre-OPEN merge files (patient.py, validate_query.py, test_patient.py, test_validate_query.py, conftest.py +2 _OPTIONAL lines, test_no_reference_leak.py QUERY_MODULES + spy-driver additions \\u2014 diffs read and confined to the disclosed content), and cycle-dir bookkeeping; nothing else moved; every other closure sha (annotations/atoms/clauses/overlay/thresholds/gate tests) matches on disk. TESTS BIND: the 6 declared gate test files pass (177 passed); THREE mutants in a scratch copy (pycache cleared, mutant presence grep-asserted each time, working tree re-hashed byte-identical after): (1) taint cap disabled (revert to d*sum) -> test_tainted_clause_mass_is_capped_not_linear_in_match_count RED; (2) patient factor dropped from the subsumption path (records forced factor 1.0) -> test_tainted_clause_discounts_subsumption_credit_inside_the_cap and test_subsumption_match_reads_the_credited_clause_atoms_own_chain RED; (3) F9 absent=>legacy dispatch broken in dossier._index_for (legacy branch routed to ContainmentIndex) -> test_index_dispatch_ladder_absent_12_and_20 RED. The F5 definition-freeze gate carries its own in-suite planted-edit reds (definition edit, name edit, new key, dropped behaviour, duplicate slug). FENCE: test_no_reference_leak.py green in-suite (patient + validate_query registered in QUERY_MODULES with spy-driven proof the pricing branch executes); independent grep of the full FORBIDDEN token list over patient.py, validate_query.py, snapshot.py, dossier.py: zero hits; imports audited (patient: containment/grammar/relevance; validate_query: json/os/re/grammar; snapshot's new imports: validate_query+patient; dossier's: patient) \\u2014 no panel artifact opened. I1 SAFETY, RE-DERIVED: build_snapshot with the exact S2 config (all input shas matched) and the OPEN-sha (pre-declaration) behaviours_query.json reproduces snapshots/patient-backfill-2026-08-04.json's behaviours section EXACTLY (dict-equality True), records pricing_version 1.2 and no query_patients key; assert_frozen_thresholds passes on the baseline. PREDICTION COHERENCE, RE-DERIVED: rebuilding with the declared patients routes PatientIndex, records pricing_version 2.0 + the per-slug declarations, and the computed flip set vs the S2 baseline is exactly 18 = the 17 frozen expected_clauses (harm newly 6 / harm no_longer 9 / helpfulness no_longer 2, per-behaviour membership identical) plus m0355 alone \\u2014 the clause the designer ruling excludes from expected_clauses and carries in the band {17,18}; caution 0 flips. FULL SUITE: 2128 passed / 3 skipped (matches expectation exactly). THE CLAIM: code read end-to-end; patient.py implements the amended rule as the manifest states (chain[1:] patients from length>=2 chains via the 1.2 ContainmentIndex.chains metadata only, taint cap = d*max with deterministic survivor, single application never d^2, subtraction-form _atom_score for bit-identity, explicit opt-in only), validate_query.py is the panel-blind word-bounded anchor check, and the rationale is document-side. NON-BLOCKING NOTES: (i) the cycle context records (OPEN_RECOMPUTATION.md / AMENDED_RECOMPUTATION.md) carry DEV-stamped census composition figures (fp_*/fn_* class counts) \\u2014 these are the manifest's own disclosed attention-direction provenance; this review did not use them as evidence and the keep decision must continue to cite flip adjudications only; (ii) validate_query.py itself is not sha-pinned in state.json's closure/open sets (patient.py is pinned via MECHANISM_AMENDMENT.md, test files via state.json) \\u2014 its behavior is pinned by test_validate_query.py's gate tests, but a post-review edit to it would not trip the driver's closure check; recommend adding it to the closure record at or before CLOSE.\",\n   \"verdict\": \"proceed\"\n  },\n  \"tests_passed\": [\n   \"test_containment.py\",\n   \"test_dechain.py\",\n   \"test_no_reference_leak.py\",\n   \"test_patient.py\",\n   \"test_threshold.py\",\n   \"test_validate_query.py\"\n  ]\n },",
-   "source_class": "arc1_cycles"
+   "id": "S01681",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "10134-10144",
+   "text": "commit d94a83e5ba7b3dbe2a1258eb7e3af333203bea18\nordinal 645\ndate 2026-08-31 08:32:15 -0700\nauthor Matt Stults\nsubject Final-review fixes: README self-report (check_model now passes), CI scope wording, LICENSE name spacing\nPre-commit guard run by hand: GREEN (8/8 watched at review points); hook argv fix still queued.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MgTrc1TZF7qv6hK6s1dKAG\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01451",
-   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "51-63",
-   "text": "  \"closure_checked\": [\n   \"annotations_ext_v1_merged.json\",\n   \"behavior_atoms_audit_v1.json\",\n   \"constitution_clauses.json\",\n   \"modelspec_clauses.json\",\n   \"overlay_empty.json\",\n   \"test_containment.py\",\n   \"test_dechain.py\",\n   \"test_no_reference_leak.py\",\n   \"test_patient.py\",\n   \"test_threshold.py\",\n   \"thresholds_frozen.json\"\n  ],",
-   "source_class": "arc1_cycles"
+   "id": "S01682",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "10145-10158",
+   "text": "commit 622ef433cd5bd3de2f145554cc550ee641794114\nordinal 646\ndate 2026-08-31 08:33:19 -0700\nauthor Matt Stults\nsubject CI: build the documented venv via setup_env.sh (tests subprocess to it); fix YAML quoting in demo-path\nFirst CI run failed for config reasons, not repo reasons: the walkthrough\nsuite's tests invoke semi-formal-experiment/.venv/bin/python by contract,\nwhich the workflow never created; and the demo command's '#' started a\nYAML comment. Guard run by hand: GREEN 8/8.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MgTrc1TZF7qv6hK6s1dKAG\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01452",
-   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "64-71",
-   "text": "  \"files_changed\": [\n   \"behaviours_query.json\",\n   \"dossier.py\",\n   \"snapshot.py\",\n   \"test_dossier.py\",\n   \"test_snapshot.py\",\n   \"test_validate_query.py\"\n  ],",
-   "source_class": "arc1_cycles"
+   "id": "S01683",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "10159-10174",
+   "text": "commit 6d8e65a4a1150c1204b9d01d29ee4c07a0204bb7\nordinal 647\ndate 2026-08-31 08:40:33 -0700\nauthor Matt Stults\nsubject Fresh-clone fixes from first CI runs: graph_check.py resolves the spec relative to __file__; requirements.txt gains xclingo==2.0b24\nThe first CI executions surfaced two fresh-clone gaps the local machine\nmasked: the demo-path graph check hardcoded this machine's absolute spec\npath, and the walkthrough suite's xclingo-grounded tests (plus the\nmutation-guard family, which refuses a non-green baseline) need a package\nthe local venv had but requirements.txt never listed. Guard run by hand:\nGREEN 8/8.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MgTrc1TZF7qv6hK6s1dKAG\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01453",
-   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "72-76",
-   "text": "  \"review\": {\n   \"by\": \"independent change-review seat (clean-context frontier review agent, Claude/Fable 5, 2026-08-04) \\u2014 not the implementer\",\n   \"notes\": \"FREEZE: prediction.json re-hashed c99260f031c991fccbc7a506033cc5a1b89dd90f2e9951e417708587fb621923 (matches state.json frozen_prediction_sha); manifest.json on disk f89aa032ec0abd1f20f2b9121389065a0b69a6b0e814c63561d43cfe2edca104 = A1's new_sha, A1's old_sha = state.json frozen_manifest_sha 8df0a1b4..., and MECHANISM_AMENDMENT.md's pre-freeze manifest chain (df5159a5... -> 8df0a1b4...) is coherent underneath; DISCOUNT_DERIVATION.md hashes to its pinned 7e1979bc... (also pinned inside test_patient.py). A1 BOOKKEEPING: test_validate_query.py absent from closure_shas and present in open_shas at its OPEN sha 9ea81733... exactly as the amendment states; on-disk file = A1's post-amendment sha 24b4ae4d...; the rewritten pins pin the three declared licensed declarations with the anchor check running against the real file, and the F5/F4 freeze-gate tests are untouched. test_patient.py closure sha 779f69f7... = MECHANISM_AMENDMENT's new sha, on-disk match; patient.py on disk = the amendment's new sha 4d2eda10.... DECLARED-DIFF-ONLY: git status --porcelain shows exactly the 6 files_to_change (all 6 HEAD-hashes equal their recorded open_shas and all differ post-OPEN), the disclosed pre-OPEN merge files (patient.py, validate_query.py, test_patient.py, test_validate_query.py, conftest.py +2 _OPTIONAL lines, test_no_reference_leak.py QUERY_MODULES + spy-driver additions \\u2014 diffs read and confined to the disclosed content), and cycle-dir bookkeeping; nothing else moved; every other closure sha (annotations/atoms/clauses/overlay/thresholds/gate tests) matches on disk. TESTS BIND: the 6 declared gate test files pass (177 passed); THREE mutants in a scratch copy (pycache cleared, mutant presence grep-asserted each time, working tree re-hashed byte-identical after): (1) taint cap disabled (revert to d*sum) -> test_tainted_clause_mass_is_capped_not_linear_in_match_count RED; (2) patient factor dropped from the subsumption path (records forced factor 1.0) -> test_tainted_clause_discounts_subsumption_credit_inside_the_cap and test_subsumption_match_reads_the_credited_clause_atoms_own_chain RED; (3) F9 absent=>legacy dispatch broken in dossier._index_for (legacy branch routed to ContainmentIndex) -> test_index_dispatch_ladder_absent_12_and_20 RED. The F5 definition-freeze gate carries its own in-suite planted-edit reds (definition edit, name edit, new key, dropped behaviour, duplicate slug). FENCE: test_no_reference_leak.py green in-suite (patient + validate_query registered in QUERY_MODULES with spy-driven proof the pricing branch executes); independent grep of the full FORBIDDEN token list over patient.py, validate_query.py, snapshot.py, dossier.py: zero hits; imports audited (patient: containment/grammar/relevance; validate_query: json/os/re/grammar; snapshot's new imports: validate_query+patient; dossier's: patient) \\u2014 no panel artifact opened. I1 SAFETY, RE-DERIVED: build_snapshot with the exact S2 config (all input shas matched) and the OPEN-sha (pre-declaration) behaviours_query.json reproduces snapshots/patient-backfill-2026-08-04.json's behaviours section EXACTLY (dict-equality True), records pricing_version 1.2 and no query_patients key; assert_frozen_thresholds passes on the baseline. PREDICTION COHERENCE, RE-DERIVED: rebuilding with the declared patients routes PatientIndex, records pricing_version 2.0 + the per-slug declarations, and the computed flip set vs the S2 baseline is exactly 18 = the 17 frozen expected_clauses (harm newly 6 / harm no_longer 9 / helpfulness no_longer 2, per-behaviour membership identical) plus m0355 alone \\u2014 the clause the designer ruling excludes from expected_clauses and carries in the band {17,18}; caution 0 flips. FULL SUITE: 2128 passed / 3 skipped (matches expectation exactly). THE CLAIM: code read end-to-end; patient.py implements the amended rule as the manifest states (chain[1:] patients from length>=2 chains via the 1.2 ContainmentIndex.chains metadata only, taint cap = d*max with deterministic survivor, single application never d^2, subtraction-form _atom_score for bit-identity, explicit opt-in only), validate_query.py is the panel-blind word-bounded anchor check, and the rationale is document-side. NON-BLOCKING NOTES: (i) the cycle context records (OPEN_RECOMPUTATION.md / AMENDED_RECOMPUTATION.md) carry DEV-stamped census composition figures (fp_*/fn_* class counts) \\u2014 these are the manifest's own disclosed attention-direction provenance; this review did not use them as evidence and the keep decision must continue to cite flip adjudications only; (ii) validate_query.py itself is not sha-pinned in state.json's closure/open sets (patient.py is pinned via MECHANISM_AMENDMENT.md, test files via state.json) \\u2014 its behavior is pinned by test_validate_query.py's gate tests, but a post-review edit to it would not trip the driver's closure check; recommend adding it to the closure record at or before CLOSE.\",\n   \"verdict\": \"proceed\"\n  },",
-   "source_class": "arc1_cycles"
+   "id": "S01684",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "10175-10189",
+   "text": "commit 6b9849f95ec33f96ed2017be24203d7bc00017ac\nordinal 648\ndate 2026-09-01 16:59:20 -0700\nauthor Matt Stults\nsubject README: scope the headline verdict — bar unmet on generalization; arc-2 tuned in-sample rates stated with their measurement caveat; frontier-judge result scoped to the arc-1 benchmark\nPrompted by external review of the investigations post: its scoped claim\n(frontier-comparable on tuned behaviors) read as contradicting this README's\nunscoped 'did not reach that bar'. Both are true; the README now says which\naxis failed (generalization) and quotes the tuned in-sample figure with its\ncaveat (0.94-0.96, truth iterated against, certification stopped partway).\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MgTrc1TZF7qv6hK6s1dKAG\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01454",
-   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "77-84",
-   "text": "  \"tests_passed\": [\n   \"test_containment.py\",\n   \"test_dechain.py\",\n   \"test_no_reference_leak.py\",\n   \"test_patient.py\",\n   \"test_threshold.py\",\n   \"test_validate_query.py\"\n  ]",
-   "source_class": "arc1_cycles"
+   "id": "S01685",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "10190-10200",
+   "text": "commit 3f87fd408c1f9fe287778628408a4cb8b1b33de5\nordinal 649\ndate 2026-09-01 17:14:08 -0700\nauthor Matt Stults\nsubject README: certification claim corrected (raw ran to completion, defensible pass never ran); drop the 'six weeks' figure that read against the repo's post-import git history\nBoth from the cross-document consistency review before publishing.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MgTrc1TZF7qv6hK6s1dKAG\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01455",
-   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "86-86",
-   "text": " \"justification\": \"REVERT. THE BOUND IS BREACHED: the frozen prediction (prediction.json sha c99260f031c991fccbc7a506033cc5a1b89dd90f2e9951e417708587fb621923) pre-registered max_regressions = 0 as this cycle's falsifiable bound. The blinded flip-adjudicator seat returned 5 regressions over the 18 measured flips; a split-blind frontier verification leg, blind to the first leg's verdicts, CONFIRMED 4 of them bidirectionally (m0239, m0275, m0466, m0018), split on m0108 (recorded CONTESTED, final `unclear`, both reasons preserved), and judged m0355 correct (leg 1 unclear) \\u2014 so the pre-registered threshold-proximity case is NOT a regression. At the strict two-leg count of 4, and at the driver's mechanical count of 5, the bound fires either way. DOCUMENT-SIDE GROUNDS, citing flip adjudications only: the configuration removes clauses an auditor of these behaviours needs \\u2014 the document's one de-radicalization directive (m0239), its record of how to respond to a user announcing intent to shoot someone (m0275), its anthrax-request refusal (m0466), and the red-line principle guaranteeing easy access to safety-critical information (m0018). Per policy a failed prediction obliges written justification and never auto-reverts; this revert is the designed outcome of the pre-registered bound, taken on the adjudications and on nothing else. No census number, panel score, judge rating or gold value informed this decision; census consultation stays deferred to the S8 checkpoint. WHAT THE CYCLE YIELDS \\u2014 three findings, recorded as the cycle's real product: (i) CLAUSE_TAINT INHERITANCE. Patient-free atoms are discounted through sibling user-directed REMEDIAL acts, systematically mispricing example passages whose modeled response addresses the user while the harm falls on a third party. m0275's removal rests on taint imported from should_provide_supportive_response__model_user while the matched situation atom expressed_harmful_intent is glossed 'the user expresses an intention to harm another person'; m0466's on taint from the model-upon-user refusal act, which does not bear on who would be harmed by the requested advice; contested m0108 is the same shape. (ii) RECIPIENT-VS-HARM-BEARER. Protective acts UPON the user FOR others' benefit fire the mismatch rule against needed clauses \\u2014 m0239's de-escalation act takes the user as grammatical patient while the harm it averts falls on people outside the conversation ('dropping it on the ground that the model's act is addressed to the user mistakes the recipient of the intervention for the bearer of the harm') \\u2014 as do GENERIC-NOUN patients: m0018's 'People should have easy access to trustworthy safety-critical information' is annotated third_party, but 'people' as written comprehends the users and developers the model works with rather than excluding them, so the annotation reflects the clause's generic noun, not a subject matter foreign to helpfulness. (iii) WHAT WORKED, PRESERVED AS FINDING: patient-saturated wrong-patient clauses were correctly removed \\u2014 m0276, the defining case, adjudicated `correct` exactly as pre-registered, and m0290 likewise; all 6 normalizer_drift admissions were adjudicated correct; and the golden-derived d = 0.10 with the taint cap behaved exactly as DISCOUNT_DERIVATION.md derived it (dense uniformly-mismatched clauses suppressed without the F-linearity residual; the flip set flat across the licensed range but for the one near-cut clause). THE DEFECT IS PATIENT PROVENANCE, NOT THE DISCOUNT ARITHMETIC: the pricing layer reads chains that record who an act is addressed to, and treats that as who the clause protects. These findings feed a pre-registered S3b REDESIGN \\u2014 beneficiary-aware pricing (harm-bearer distinguished from act recipient) and no taint inheritance across act/situation siblings in example passages \\u2014 which must pass its OWN design + adversarial review before any re-attempt; nothing from this cycle's mechanism ships in the meantime. REVERT SEMANTICS, executed and verified: behaviours_query.json returns to the S2 baseline bytes (the three `patients` declarations withdrawn; file re-hashes to the baseline's recorded 48dbd8fb0720ce187423d37daf34e415ebbc58a28166619a0b2800b0a1f32d57) and test_validate_query.py to its OPEN sha 9ea81733fc0c76de47f7945d56242b5158f0bc3041684cce9e43e0dbe2dad3ce. RETAINED because SCORE-INERT: snapshot.py (the PatientIndex route fires only on non-empty validated declarations \\u2014 with none it falls to ContainmentIndex and records pricing_version 1.2 with no query_patients key; the diff config.changed addition only SURFACES keys) and dossier.py (the F9 dispatch ladder's 2.0 branch is unreachable without a 2.0 snapshot, and the normalizer_drift annotation and cycle-declared reconstruction license are dossier metadata and provenance, never scores), with their tests test_snapshot.py / test_dossier.py. patient.py, validate_query.py and test_patient.py REMAIN in the tree, INERT without declarations and pinned bit-identical by the I1 invariant tests \\u2014 the pre-OPEN worktree merge rides this cycle's commit as disclosed in the manifest. PROOF OF REVERT: rebuilding the S2 baseline snapshot from the reverted tree yields sha256 8159ba49c348034197acee983c7121e674d29fad859cb57c6ffdc6964c13b4a0 \\u2014 BIT-IDENTICAL to the frozen snapshots/patient-backfill-2026-08-04.json \\u2014 recording pricing_version 1.2 and no query_patients key. Full suite after the revert: 2129 passed, 3 skipped. The measure snapshot snapshots/patient-pricing-2026-08-04.json is retained as the immutable record of what was measured (amendment F3); it is a reverted configuration and must never be used as a baseline.\",",
-   "source_class": "arc1_cycles"
-  },
-  {
-   "id": "S01456",
-   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "87-87",
-   "text": " \"noop\": false,",
-   "source_class": "arc1_cycles"
-  },
-  {
-   "id": "S01457",
-   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "88-88",
-   "text": " \"overrides\": [],",
-   "source_class": "arc1_cycles"
-  },
-  {
-   "id": "S01458",
-   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "89-168",
-   "text": " \"prediction_check\": {\n  \"checks\": [\n   {\n    \"expected\": {\n     \"max\": 18,\n     \"min\": 17\n    },\n    \"kind\": \"flip_count\",\n    \"observed\": 18,\n    \"result\": \"PASS\"\n   },\n   {\n    \"expected\": [\n     \"newly_predicted\",\n     \"no_longer_predicted\"\n    ],\n    \"kind\": \"directions\",\n    \"observed\": [\n     \"newly_predicted\",\n     \"no_longer_predicted\"\n    ],\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0015\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0215\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0265\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0266\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0268\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0269\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0108\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0111\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0194\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0239\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0275\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0276\",",
-   "source_class": "arc1_cycles"
-  },
-  {
-   "id": "S01459",
-   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "169-208",
-   "text": "    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0290\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0466\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0575\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0018\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0463\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   },\n   {\n    \"expected\": 0,\n    \"kind\": \"max_regressions\",\n    \"observed\": 5,\n    \"result\": \"FAIL\"\n   }\n  ],\n  \"pass_rate\": [\n   19,\n   20\n  ]\n },",
-   "source_class": "arc1_cycles"
+   "id": "S01686",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "10201-10210",
+   "text": "commit 48e66ce04a4d9f06771c42f89cb37b075583c5f6\nordinal 650\ndate 2026-09-01 17:44:18 -0700\nauthor Matt Stults\nsubject README: publication links and CI badge filled\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MgTrc1TZF7qv6hK6s1dKAG\n\n----END----\n",
+   "source_class": "git_log",
+   "context": null
   }
  ]
 }

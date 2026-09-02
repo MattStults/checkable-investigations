@@ -1,133 +1,148 @@
 {
  "header": {
   "batch": "batch_016",
-  "source_class": "arc2_json",
+  "source_class": "arc2_docs",
   "brief_version": "0.4",
   "glossary_version": "frozen ",
   "spans": 15,
-  "first_span": "S00377",
-  "last_span": "S00391"
+  "first_span": "S00105",
+  "last_span": "S00119"
  },
  "spans": [
   {
-   "id": "S00377",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "id": "S00105",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
    "commit": "pin",
-   "lines": "81-81",
-   "text": "  \"l797_830_n018\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "183-196",
+   "text": "### F17. THE SINGLE STRONGEST EXPERIMENT — the blind-readout information-equivalence ablation (run this instead).\nThis is what Q-A actually asks, it uses truth already on disk, and it fits the remaining budget.\n\n**Design (register verbatim before running).**\n- **Items:** all nodes with existing adjudicated panel truth for the two scored behaviours (~150 and ~122), plus any additional behaviours whose partial truth is already on disk, scored per behaviour.\n- **Arms, same frontier judge, same prompt skeleton, same output schema, order-randomized, run blind to each other:**\n  - **Arm T (ceiling):** the raw clause text + the behaviour definition → relevant / not.\n  - **Arm R (the claim):** *only* the symbolic representation of that clause — dimensions + values + inputs/outputs/atoms handles, **no natural-language span, no section title, no node id** → relevant / not.\n  - **Arm N (null):** the same symbolic representation with values permuted within dimension under a seeded random map, ≥100 seeds on a subsample.\n- **Pre-registered pass condition:** `MCC(R) ≥ MCC(T) − 0.05`, **and** `MCC(R)` above the 99th percentile of Arm N, **and** both reported per behaviour with the worst behaviour as the headline, **and** `MCC(T)` itself reported against panel-internal agreement so the ceiling is visible.\n- **Pre-registered fail action:** a leakage audit on Arm R (can the judge reconstruct the clause from the signature? if yes, Arm R is contaminated and void), then a per-node error triage naming which dimensions were missing.\n- **Why this is decisive:** it is a direct test of *sufficiency of the representation* — the literal Q-A claim — under the user's own operative standard (match the panel, or be frontier-justifiable). It cannot be passed by uniqueness, by fingerprinting, by catch-alls, or by noise. A pass licenses the campaign outright; a fail says exactly which dimensions to add before spending.\n- **Cost:** ~272 nodes × 2 arms ≈ 550 short frontier calls, plus a seeded-null arm on a subsample. `spend.py` reports **$17.179 of the $25.00 BUDGET (69%)**, leaving ~$7.8 headroom, and the reported total is flagged as an overstatement (4,645 uncached-rate rows, plus unidentifiable batch-billed rows). This fits, but register a stratified 120-node-per-behaviour subsample as the fallback if a cost pre-flight exceeds a pre-registered ceiling, and route the null arm through the cheap tier with a frontier parity check on a subsample (the project's established pattern).\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00378",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "id": "S00106",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
    "commit": "pin",
-   "lines": "82-82",
-   "text": "  \"l1974_2125_n016\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "197-199",
+   "text": "### F18. The cheap companion that caps everything — run it first, at near-zero cost.\nTwo blind seats annotate a **fresh uniform random 60-node draw** from the full graph (not the problem-stratified 39). Report exact-dimension-set agreement, Jaccard, and α. This is the reliability ceiling on every number the campaign will ever produce; at 23/39 today it may kill the campaign for under $1 before any panel spend. Register it as a **gate that runs before F17**, with α ≥ 0.67 as the pre-registered floor.\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00379",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "id": "S00107",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
    "commit": "pin",
-   "lines": "83-83",
-   "text": "  \"l1707_1973_n008\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "200-204",
+   "text": "### F19. What is missing from the funding decision even if F17 passes.\nNo registered experiment estimates the campaign's **cost curve or its degradation at scale**: 600 nodes × 2 blind seats × a merge seat, with a reliability figure measured on 39 problem-stratified nodes. Register a scaling pre-flight: annotate a random 60-node draw end-to-end through the full pipeline (translate → merge → lattice), record wall-clock, $, seat disagreement rate, and merge-arbitration rate, and extrapolate to 600 with the measured per-node figures. Fund on `F18 pass AND F17 pass AND a scaling estimate inside budget` — not on any two of three.\n\n---\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00380",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "id": "S00108",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
    "commit": "pin",
-   "lines": "84-84",
-   "text": "  \"l699_796_n014\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "205-206",
+   "text": "## PART 4 — Ways L1 / L2 could FAIL SPURIOUSLY (false negatives that also mis-spend the budget)\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00381",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "id": "S00109",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
    "commit": "pin",
-   "lines": "85-85",
-   "text": "  \"l3954_4251_n019\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "207-210",
+   "text": "### F20. 1-NN over sparse binary Jaccard is a weak, high-variance readout.\nWith ~1.2 handles per item and 105 values, most pairs have Jaccard 0; ties are broken arbitrarily. An adequate representation could score at base rate purely from readout weakness.\n**Fix.** Register a readout family — 1-NN, L2-regularized logistic regression on dimension+value indicators, and a frontier judge on signature-only (Arm R above) — with the **frontier-judge arm decisive** and the others reported. \"The representation does not carry the concept\" may only be concluded if the *best* readout fails.\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00382",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "id": "S00110",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
    "commit": "pin",
-   "lines": "86-86",
-   "text": "  \"l527_796_n012\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "211-214",
+   "text": "### F21. Accuracy under 60/40 imbalance is a broken metric in both directions.\nA representation that recovers the 40% minority well can score below a majority-class predictor on accuracy.\n**Fix.** Register MCC and positive-class F1 as primary; accuracy reported only alongside base rate; class-balanced resampling reported as a secondary.\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00383",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "id": "S00111",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
    "commit": "pin",
-   "lines": "87-87",
-   "text": "  \"l3596_3876_n030\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "215-218",
+   "text": "### F22. Panel truth is itself noisy, so the achievable ceiling is below 1.0 and is currently unmeasured.\nIf panel-internal agreement is, say, 0.85, a representation at 0.83 is functionally perfect but reads as a fail against any absolute bar.\n**Fix.** Register: panel-internal agreement (or the adjudication seat's own test-retest) is measured and published as the ceiling; the representation is scored as **% of ceiling attained**, with the pass threshold expressed in those terms.\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00384",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "id": "S00112",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
    "commit": "pin",
-   "lines": "88-88",
-   "text": "  \"l1001_1107_n007\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "219-222",
+   "text": "### F23. The spec's halves are not exchangeable — either split is wrong in a different direction.\nA random node split leaks (adjacent clauses in one section share vocabulary); a section-blocked split makes the held-out half out-of-distribution for topical reasons unrelated to ontology adequacy. Either can produce a spurious fail (section-blocked) or a spurious pass (random).\n**Fix.** Register **both** splits, report both, and pre-declare section-blocked as the honest estimate and random-node as the leakage upper bound. A gap between them is itself a reportable result.\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00385",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "id": "S00113",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
    "commit": "pin",
-   "lines": "89-89",
-   "text": "  \"l1974_2125_n006\": \"relevant\"",
-   "source_class": "arc2_json"
+   "lines": "223-226",
+   "text": "### F24. A held-out definition may be inexpressible because it is badly written, not because the ontology is inadequate.\nThe corpus itself contains items with `no_operational_handle` — definitions that supply nothing decidable. Out-of-corpus sources will contain more.\n**Fix.** Register a blind pre-screen seat that rules each candidate definition behaviour-shaped **before** annotation, with exclusions logged and counted; and register that if the exclusion rate exceeds a pre-registered ceiling, the source-selection procedure — not the ontology — is what failed.\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00386",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00114",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
    "commit": "pin",
-   "lines": "2-2",
-   "text": " \"_\": \"ROUND-4 helpfulness canary FINAL raw cells after F5 full-panel escalation (all 80 nodes 3-seat majorities; registered 19 panels stand, remainder = wave seat + escalation seats B/C)\",",
-   "source_class": "arc2_json"
+   "lines": "227-230",
+   "text": "### F25. \"No new coinage\" can fail on a healthy ontology.\nSee F15. As written, a correct and useful ontology that mints one new value for a genuinely new domain scores as a failure.\n**Fix.** Split the metric per F15.\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00387",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00115",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
    "commit": "pin",
-   "lines": "3-3",
-   "text": " \"engaged_precision_raw\": 0.625,",
-   "source_class": "arc2_json"
+   "lines": "231-234",
+   "text": "### F26. Seat model tier could produce a fail unrelated to the ontology.\nSmall-model seats may under-annotate where the ontology is fine — and the project's standing rule is that seat/frontier divergence is a *seat defect*.\n**Fix.** Register a frontier-parity check on a ≥20-item subsample for every seat used in L1/L2, run **before** the main results are read, with divergence voiding the run.\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00388",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00116",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
    "commit": "pin",
-   "lines": "4-4",
-   "text": " \"decline_correctness_raw\": 0.875,",
-   "source_class": "arc2_json"
+   "lines": "235-239",
+   "text": "### F27. Both experiments lack a stated stopping/void rule, so a spurious fail invites re-running until it passes.\n**Fix.** Register: one run per registered design; a fail is published with its number; any re-run requires a new registration naming the change and the reason, and both results appear in the record. (This is the project's existing \"no post-hoc granularity shopping\" rule — bind it explicitly to L1/L2.)\n\n---\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00389",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00117",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
    "commit": "pin",
-   "lines": "5-5",
-   "text": " \"panel_split_rate_all80\": 0.1,",
-   "source_class": "arc2_json"
+   "lines": "240-272",
+   "text": "## OVERALL VERDICT\n\n**DOES-NOT-LICENSE.**\n\nPassing L1 and L2 exactly as written would **not** answer Q-A or Q-B. The decisive reasons, in order of severity:\n\n1. **L1's relevance clause is pre-satisfied.** 0.72 vs 0.60 (p = 0.0015) and 0.70 vs 0.59 (p = 0.0097) already \"beat the majority baseline.\" The project's own notes 0031 call the identical effect size \"NO field carves behaviour relevance.\" L1 could be marked PASS today, at $0, on the data that demolished 0041. That is a pass condition that cannot fail — erratum #21, fourth recurrence.\n2. **L2 has no null**, in explicit violation of the binding rule adopted in the same document, and its pass condition is met by construction: the schema contains a value literally named `undefined_harmfulness_catch_all`, and the two dimensions L2 exists to stress (`agentic_action_footprint`, `integrity_of_human_oversight`) each hold exactly **one** value fired by exactly **1/100** corpus definitions.\n3. **Neither experiment measures the Q-A construct.** Separability-as-implemented is signature uniqueness — a fingerprinting metric the project has already caught fingerprinting. Coverage-without-coinage is schema elasticity. Neither is \"which clauses bear on which behaviours.\"\n4. **Neither compares against the alternative the campaign must beat** — a frontier model reading the raw clause. On existing evidence that alternative wins, which makes the campaign negative-value regardless of L1/L2.\n\nThese are defects in the *measurements*, not proof the ontology is inadequate — the same distinction the 0041 disposition drew, and it still holds. But on the funding question the burden runs the other way: the designs as registered cannot discharge it.\n\n**Amendments that would convert this to LICENSES-WITH-AMENDMENTS**, in dependency order:\n\n- **A1 (gate, ~$0, run first).** F18: fresh random 60-node draw, two blind seats, α ≥ 0.67 pre-registered floor, all downstream metrics per-seat, pooling prohibited (F3).\n- **A2 (the experiment).** Replace L1 with F17's blind-readout ablation — Arm T / Arm R / seeded Arm N, MCC(R) ≥ MCC(T) − 0.05 and above the 99th null percentile, per behaviour, worst-behaviour headline, panel-internal agreement published as the ceiling (F1, F2, F16, F20–F22).\n- **A3.** Extend the relevance clause to ≥5 behaviours using truth already on disk; inventory partial truth before spending (F8).\n- **A4.** Replace L1's half-split with 5-fold out-of-fold induction so every truth-bearing node is scored, plus both random-node and section-blocked splits reported (F7, F23).\n- **A5.** Contamination audit: 29/100 corpus entries are OpenAI Model Spec; report clean vs contaminated held-out nodes separately, clean subset as headline; state that L1 bounds within-document transfer only (F4).\n- **A6.** Pre-register every L1 parameter — sample frame, seed, seats, blinding, feature set, readout — and exclude the problem-stratified 39 from the headline (F5).\n- **A7.** Null threshold: ≥1000 seeds, matched on family-usage frequency and per-item handle count, 99th percentile, fail = stop (F6). Dead-dimension audit and catch-all/singleton ceiling reported (F9).\n- **A8.** Rebuild L2 as: n ≥ 30, ≥5 per out-of-space class, verbatim-lifted definitions from sources chosen by a schema-blind seat and hashed pre-annotation, Anthropic constitution and Usage Policy disqualified as already in-corpus (F13, F14).\n- **A9.** L2 scored on **discriminative** coverage (no catch-alls, no singletons, distinct from all other held-out and from the nearest in-corpus definition), against a seeded random-assignment null, with dimension-closure and value-coinage as separate pre-registered numbers (F10, F11, F15).\n- **A10.** L2's licensing clause becomes end-to-end: ≥3 out-of-corpus behaviours get panel truth over a stratified node sample and are scored by A2's protocol. Coverage-without-coinage survives only as an explicitly non-licensing pre-gate (F12).\n- **A11.** Behaviour-shaped pre-screen with logged exclusions; frontier-parity check on every seat before results are read; one-run-per-registration rule (F24, F26, F27).\n- **A12.** Fund only on `A1 pass AND A2 pass AND a 60-node end-to-end scaling pre-flight whose extrapolation to 600 fits budget` (F19). Note the budget context: `spend.py` reports **$17.179 of $25.00 (69%)**, ~$7.8 headroom, with the total flagged as an overstatement.\n\nWithout A1, A2, A9, and A10 at minimum, a PASS on L1+L2 is a repeat of 0041 with a larger n.\n\n---\n---\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00390",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00118",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
    "commit": "pin",
-   "lines": "6-31",
-   "text": " \"misses\": {\n  \"engaged_FP\": [\n   \"l1108_1367_n002\",\n   \"l1707_1973_n016\",\n   \"l171_426_n003\",\n   \"l1799_1973_n013\",\n   \"l2474_2554_n004\",\n   \"l2474_2554_n013\",\n   \"l2821_3040_n025\",\n   \"l2821_3040_n034\",\n   \"l3954_4251_n010\",\n   \"l3954_4251_n031\",\n   \"l4252_4482_n006\",\n   \"l461_608_n011\",\n   \"l461_608_n013\",\n   \"l699_796_n009\",\n   \"l797_830_n018\"\n  ],\n  \"not_engaged_FN\": [\n   \"l1542_1706_n016\",\n   \"l2126_2404_n006\",\n   \"l2126_2404_n023\",\n   \"l2126_2404_n047\",\n   \"l3954_4251_n022\"\n  ]\n },",
-   "source_class": "arc2_json"
+   "lines": "273-280",
+   "text": "# PART TWO — ADDENDUM (verbatim)\n\n*Written after a delegated panel-truth inventory returned. It corrects two premises in the\nmain review and adds nine findings — all of which strengthen the negative verdict except\none, which removes an objection.*\n\n---\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00391",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00119",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
    "commit": "pin",
-   "lines": "7-23",
-   "text": "  \"engaged_FP\": [\n   \"l1108_1367_n002\",\n   \"l1707_1973_n016\",\n   \"l171_426_n003\",\n   \"l1799_1973_n013\",\n   \"l2474_2554_n004\",\n   \"l2474_2554_n013\",\n   \"l2821_3040_n025\",\n   \"l2821_3040_n034\",\n   \"l3954_4251_n010\",\n   \"l3954_4251_n031\",\n   \"l4252_4482_n006\",\n   \"l461_608_n011\",\n   \"l461_608_n013\",\n   \"l699_796_n009\",\n   \"l797_830_n018\"\n  ],",
-   "source_class": "arc2_json"
+   "lines": "281-282",
+   "text": "# ADDENDUM — corrections and nine further findings\n",
+   "source_class": "arc2_docs",
+   "context": null
   }
  ]
 }

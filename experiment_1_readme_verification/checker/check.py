@@ -95,7 +95,7 @@ def check_claim(c, repo, pin, ids):
             fails.append(f"missing field {k}")
     if fails:
         return fails, notes
-    if not re.match(r"^L\d{5}$", str(c["id"])):
+    if not re.match(r"^L\d{5,8}$", str(c["id"])):
         fails.append("id must be L+5 digits")
     if c["kind"] not in KINDS:
         fails.append(f"kind {c['kind']!r} not in {sorted(KINDS)}")

@@ -1,0 +1,31 @@
+{
+ "header": {
+  "batch": "batch_001",
+  "source_class": "ledger",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S00001",
+  "last_span": "S00015",
+  "retranslation_of": "batch_001_sonnet (rule I-01)",
+  "rejected_claims": [
+   {
+    "id": "L30013",
+    "quote": "COMMIT DISCIPLINE FAILURES to not repeat: two commits today shipped with\n  a red/unverified state (docs-test red; widget patch unapplied) because\n  commit preceded verification",
+    "reason": [
+     "erratum.n=2 does not appear as an erratum number in the quote (I-01)"
+    ]
+   }
+  ]
+ },
+ "spans": [
+  {
+   "id": "S00002",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "pin",
+   "lines": "7-40",
+   "text": "## 0000 — SEED: tacit operational knowledge from the 2026-08-24 sessions\n(committed so no handoff depends on any instance's memory)\n- SUBAGENT REGISTRY loads at session start only: a new .claude/agents/*.md\n  needs a session restart. The lean ruling-seat agent exists (Read-only\n  tools); wave seats currently run as \"claude\"-type agents because they\n  must read packet files.\n- SEAT FAILURE MODES seen live: ultra-short fragment passages push seats\n  into document-completion (fix: the anti-completion fence line, pinned in\n  E3/round4_pilot.py FENCE); one seat fabricated-from-memory dispatch was\n  voided (rule: prompts ONLY from committed packet files, never retyped).\n- Haiku JSON output can be malformed in grounds strings — parse verdicts\n  with the lenient regex (see parity scoring scripts), never bare\n  json.load, and say \"must be VALID JSON; escape internal quotes\" in\n  briefs.\n- HEREDOC PATCHING: python string-replace patches MUST assert-and-WRITE in\n  the same script (one patch printed diagnostics and never wrote — caught\n  by a later NameError); prefer literal strings grepped from the file over\n  remembered escapes (a ▸ vs \\\\u25b8 mismatch silently no-opped a patch\n  batch and the commit shipped without the widget changes).\n- COMMIT DISCIPLINE FAILURES to not repeat: two commits today shipped with\n  a red/unverified state (docs-test red; widget patch unapplied) because\n  commit preceded verification — run the check, THEN commit.\n- fresh_draw4/ is the round-4-era rulings home; result files named\n  {HELP,HARM,CAUTION}_R4_RESULT.json feed truth_all's fmap. The\n  defensibility overlay in ruling_packets/defensibility_rulings.json is\n  highest-precedence truth.\n- probe.py appends to HYPOTHESIS_LEDGER.jsonl keyed (post-A9) by\n  extensional fingerprint; verify_terminal verdicts now carry enumeration\n  scopes; ENUMERATED vs KNOWN_UNENUMERATED lives in verify_terminal.\n- The Opus coordinator pattern works (dispatch batches, checkpoint the\n  output file after EVERY batch with complete:false/true) — always include\n  the checkpoint instruction; the first coordinator ran end-write-only\n  until amended mid-flight.\n",
+   "source_class": "ledger"
+  }
+ ]
+}

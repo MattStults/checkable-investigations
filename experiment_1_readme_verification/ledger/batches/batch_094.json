@@ -1,133 +1,148 @@
 {
  "header": {
   "batch": "batch_094",
-  "source_class": "arc1_cycles",
+  "source_class": "git_log",
   "brief_version": "0.4",
   "glossary_version": "frozen ",
   "spans": 15,
-  "first_span": "S01370",
-  "last_span": "S01384"
+  "first_span": "S01601",
+  "last_span": "S01615"
  },
  "spans": [
   {
-   "id": "S01370",
-   "path": "semi-formal-experiment/cycles/patient-backfill-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "25-31",
-   "text": "  \"files_changed\": [\n   \"annotations_ext_v1.json\",\n   \"annotations_ext_v1_merged.json\",\n   \"backfill_worksheet.py\",\n   \"briefs/backfill_author.md\",\n   \"vocabulary_migrations.json\"\n  ],",
-   "source_class": "arc1_cycles"
+   "id": "S01601",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9464-9471",
+   "text": "commit b99dd1a45b670059e66e56f191e82a6a6d77c222\nordinal 565\ndate 2026-08-24 18:02:30 -0700\nauthor Matt Stults\nsubject Notes 0009: attempt-3 stop condition — P1 fired on an estimator with zero move-coverage (registration error recorded, runbook rule drafted); seat-noise measured (4/7 vs ledger, two panel-tier contradictions); options surfaced for Matt's ruling, nothing executed.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01371",
-   "path": "semi-formal-experiment/cycles/patient-backfill-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "32-36",
-   "text": "  \"review\": {\n   \"by\": \"Claude Fable 5 \\u2014 independent change-review seat, clean context (not the implementer/operator session)\",\n   \"notes\": \"FREEZE + AMENDMENT CHAIN: manifest.json hashes to b5706377.. = the chain head; chain verified end-to-end f9f3a5cd.. (state.json frozen_manifest_sha) -> b3f0ed95.. (A1 surface discovery) -> b5706377.. (A3 legacy withdrawal), each old_sha matching the predecessor; prediction.json hashes to the frozen dae8aa9b..; all 11 closure_shas re-hashed and match, including the A2/A4 re-closure values (test_atom_refactor 15e7648a.., test_dechain 92347d24.., test_backfill_worksheet 861ebc04..). A1 and A3 verified grounded by execution: the migration log's backfill segment touches EXACTLY the ext_v1 trio (patch included, per A1) and annotations.json/annotations_b8.json are byte-identical to git HEAD (per A3). AMENDMENT 4 \\u2014 COUNTERSIGNED. (i) Stale-by-design confirmed: the apply legitimately converts 264 of the 692 chain-free candidates; my own re-enumeration of the live merged artifact via bw.candidates gives exactly 428 = 425 no_chain_licensed + 3 unclear, so the original live-artifact pin (692/505/347/462) is RED post-apply for precisely the named reason \\u2014 the test_dechain n==109 failure class, recurring in the operator's own gate file. (ii) No weakening: all four scope counts are still asserted verbatim against the frozen worksheet (sha ce26cf89.., re-hashed, unchanged since the seat assignment \\u2014 echoed in assignments/backfill.md, verdicts_primary/unmarked, verdict_file_v1 AND verdict_file), plus frozen-key count 692 and a live-coherence subset check; I additionally verified the STRONGER invariant live == frozen_keys - licensed_keys holds today. (iii) Module-untouched claim checked the strong way: the CURRENT backfill_worksheet.py rebuilds the frozen worksheet BYTE-IDENTICALLY from the pre-apply (HEAD) merged artifact, so the re-pin targets the enumeration the original pin equaled at OPEN. (iv) Repair binds: tampering the frozen worksheet's total (692->693) in a scratch tree turns test_real_artifact_counts_match_the_registered_scope RED. APPLY EVIDENCE, re-derived: log = 144 entries (5 legacy-unscoped chain-repair + 139 surface-scoped rechain, every backfill entry scoped to exactly the ext trio with clauses); per-artifact sha_before/sha_after chain GAP-FREE, first backfill sha_before per surface equals the OPEN/pre-apply sha, final sha_after equals live bytes; 1324 backfill rewrites; 264/264 licensed (clause_id, name) pairs decorated in merged with the chain-free name gone, 428/428 non-licensed pairs intact; validator CLEAN on verdict_file.json (my run, errors == []); distribution 264/425/3. REPLAY: all six surfaces (ext trio + annotations.json + annotations_b8.json + golden_translations.json) replayed from git-HEAD copies through the mixed 144-entry log BYTE-IDENTICAL to the working tree; legacy four (annotations, b8, golden, behavior_atoms_audit_v1) byte-untouched vs HEAD. SEAM MUTANT (scratch only): stripping 'surfaces' from backfill entry #5 (accept_compliment, m0478 \\u2014 a b8-overlapping pair) makes the b8 replay DIVERGE while the unmutated log replays b8 unchanged \\u2014 the seam is load-bearing, exactly as A2 claims. GATE-BINDING MUTANTS (scratch tree copy, restored+green after): M1 un-applied one migration in merged -> test_shipped_log_replays_every_live_surface_byte_identically RED (noted: the worksheet coherence subset check alone stays green under M1 \\u2014 un-application is bound by the replay gate, not the scope pin; suggest live == frozen - licensed as a future hardening); M2 worksheet-count tamper -> scope test RED; M3 length-1 chain injected -> test_dechain well-formedness RED. MEASURE PRE-PROOF: snapshot_build/patient-backfill-2026-08-04.json vs snapshots/decoration-blind-join-2026-08-04.json \\u2014 'behaviours' and 'vocabulary' sections BIT-IDENTICAL (predicted sets 95/73/146 both sides; atom_count/df 624 both sides, 0 df shifts => TOTAL FLIPS 0 by construction), only 'tag' and config.inputs.annotations differ (cbf50758.. -> 1ea7fe9d.. = the live post-apply merged sha), pricing_version 1.2 both sides. GATES RUN MYSELF: declared five-file set 171 passed (matches A2's recorded count); full suite 1998 passed with the only failures ModuleNotFoundError: clingo (test_core/test_emit_asp/test_locators collection + 2 test_delta items) \\u2014 an environment gap on this machine, unrelated to the change; operator's environment reports full green. FENCE: FORBIDDEN scan (34 live tokens) over every changed/new file raw AND comment/docstring-stripped: no changed file names a panel loader or imports a fenced module (imports audited by AST: grammar/atom_refactor/stdlib only); residual literal hits are benign self-references ('verdicts' = the seat's own verdict records, 'cycles/' = the cycle artifact's own path \\u2014 the guard fences QUERY modules, all of which scan clean and stayed green); scan_brief(backfill_author.md) == []. SEAT CHAIN: worksheet sha unbroken assignment -> verdicts_primary/unmarked -> verdict_file_v1 -> verdict_file; v1 preserved with the pre-sweep 260/384/48; sweep verified applied as RULINGS.md orders: exactly 59 records changed, m0259/m0538 no_chain_licensed, m0163 chain_licensed, m0228 quote replaced with the Toronto-mayor span, surviving unclears exactly {m0120, m0155, m0357}. DECLARED-DIFF-ONLY: every moved file is either in the amended files_to_change, an amendment-recorded closure/tooling sha (all re-hashed and matching, incl. apply_rechains 291c64d4.. and the new census fixture 5376cde3..), or accounted bookkeeping; findings (low, non-blocking): (1) conftest.py +1 line registering test_backfill_worksheet in _OPTIONAL is recorded in no manifest/amendment \\u2014 necessary for the gate test to collect and necessarily predates OPEN (the closure-pinned test ran at OPEN), same shape the versioned-cut review accepted, but it should have been named; (2) A2's designer sign-off exists as attestation in the amendment text + REVIEW_HARDENING_NOTES.md PASS, not as a standalone signed artifact; (3) REVIEW_HARDENING F1/F2 hardenings (grandfather multiplicity, legacy-surface deny-list) remain open for the tooling batch \\u2014 verified neither can fire on this apply. No panel score, judge rating, or gold value was consulted; all mutation confined to scratch copies, working tree untouched.\",\n   \"verdict\": \"proceed\"\n  },",
-   "source_class": "arc1_cycles"
+   "id": "S01602",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9472-9479",
+   "text": "commit 45c60f7390fab209e0b4f947b03101fd01660c93\nordinal 566\ndate 2026-08-24 18:10:01 -0700\nauthor Matt Stults\nsubject VOID-FOR-COVERAGE RULING (Matt) + RE-MEASUREMENT PREREG, committed before any new ruling exists: attempt-3's P1 voided on the result-blind coverage criterion (0/16 gains sampled; driver's registration error named); binding coverage rule for all future V5 registrations; re-measurement = NO new draws — full-extension move gate (16 nodes, threshold 0.60), uniform panel tier over the 62 wave-only nodes of both frozen draws (both verdict directions), raw-vs-panel reporting, seeded 13-node Fable spot-check with >=3/13 halt tripwire, single execution, results final. Scorer committed pre-rulings.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01372",
-   "path": "semi-formal-experiment/cycles/patient-backfill-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "37-43",
-   "text": "  \"tests_passed\": [\n   \"test_atom_refactor.py\",\n   \"test_backfill_worksheet.py\",\n   \"test_dechain.py\",\n   \"test_grammar.py\",\n   \"test_no_reference_leak.py\"\n  ]",
-   "source_class": "arc1_cycles"
+   "id": "S01603",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9480-9487",
+   "text": "commit f8371d0902067fd96e0048799734bc88d067c875\nordinal 567\ndate 2026-08-24 18:13:09 -0700\nauthor Matt Stults\nsubject RE-MEASUREMENT EXECUTED AND FINAL (one shot, per the void ruling prereg): MOVE GATE STANDS — 0.875 panel-tier precision over the full 16-node extension (14/16 relevant); no revert. Spot-check tripwire not fired (2/13 Fable-Opus disagreements; certificate holds). Frozen draws at uniform panel tier: attempt-2 raw 0.75 -> panel 0.70; attempt-3 raw 0.40 -> panel 0.55 (the attempt-3 wave seat's strictness bias confirmed and corrected); decline correctness 0.50/0.35 at panel tier — the module still under-engages a sizable relevant mass (the characterized provide/definitional reach classes). These numbers are FINAL; surviving mismatches route to the ordinary queue.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01373",
-   "path": "semi-formal-experiment/cycles/patient-backfill-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "45-45",
-   "text": " \"justification\": \"KEEP. Document-side basis: 264 principal chains landed exactly where the clause text licenses them, under the annotation contract's own convention, each with a validator-checked verbatim license_quote; 425 candidates stayed chain-free because the text names no party (the never-infer rule holding at scale), 3 remain unclear by B4. The seat chain is intact end-to-end: label-free worksheet (692 candidates, sha ce26cf89) -> behaviour/panel/pricing-blind frontier seat (F10i brief, scan-enforced) -> golden review (55-row stratified sample, both verdict directions) -> four adopted interpretive rulings (RULINGS.md B1-B4) -> 59-record correction sweep (pre-sweep verdict_file_v1 preserved) -> validator CLEAN 264/425/3. All frozen predictions PASS 3/3 exactly: zero flips, no directions, zero regressions - the S2 bit-identity construction under the S1 decoration-blind join held (measured: predicted sets 95/73/146 and every non-config snapshot section bit-identical; vocabulary 624->624, 0 df shifts; pricing_version 1.2 unchanged). The labels landed INERT as designed: nothing consumes chains until S3 patient pricing, which now prices a real 373-chain population instead of 1/155. Independent change review: PROCEED, with amendment 4 countersigned and every apply/replay/measure claim re-derived from scratch (including the seam mutant proving 'surfaces' load-bearing on b8 and the byte-identical mixed-log replay of all six annotation surfaces; legacy b8/annotations frozen chain-free per the designer ruling). Process record, disclosed: one mid-cycle halt (APPLY_HALT.md) - the first apply decorated the legacy surfaces and tripped their frozen b8 compat pins plus a stale n==109 census pin; fully reverted byte-identically, resolved by the adversarially-reviewed surface-scoping seam + census re-pin (amendment 2, designer-approved) and re-applied surface-scoped (1,324 rewrites over the ext_v1 trio only). Amendments 1-4 chain clean f9f3a5cd -> b3f0ed95 -> b5706377 (+2 re-closure records). Non-blocking review findings recorded in backfill/REVIEW_HARDENING_NOTES.md (R1-R3). CLOSE NOTE per R1: conftest.py's one-line _OPTIONAL registration of test_backfill_worksheet predates OPEN and is declared here; this cycle's commit also carries the previously-uncommitted S1 decoration-blind-join CYCLE_LOG line. Census deferred to checkpoint (S8); the census figures that directed attention here appear in no worksheet, verdict, or this decision's grounds. Any later-found-wrong chain is repairable by ONE surface-scoped rechain migration citing that adjudication - the population is repairable chain-by-chain without reverting the cycle.\",",
-   "source_class": "arc1_cycles"
+   "id": "S01604",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9488-9495",
+   "text": "commit ecfe8c4d1fc34a359a663268adc0c61644321c27\nordinal 568\ndate 2026-08-24 18:13:54 -0700\nauthor Matt Stults\nsubject Notes 0010: re-measurement final — move stands 0.875 full-extension; attempts at uniform panel tier (0.70 / 0.55, pooled 0.605); recall identified as the honest headline (23/40 declined nodes panel-relevant); l3239_3382_n005 panel-vs-panel contradiction flagged for a panel-of-record; final 15-FP + 23-FN queue recorded.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01374",
-   "path": "semi-formal-experiment/cycles/patient-backfill-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "46-46",
-   "text": " \"noop\": false,",
-   "source_class": "arc1_cycles"
+   "id": "S01605",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9496-9503",
+   "text": "commit 4b9b7fa9d798eab48238bd766ef467cd439a03cd\nordinal 569\ndate 2026-08-24 18:14:14 -0700\nauthor Matt Stults\nsubject HANDOFF entry point: iterations 1-2 + re-measurement complete — final numbers, kept moves, process events for blog post 3, and the next-session queue (runbook rewrite, panel-of-record contradictions, 15-FP/23-FN routing, tooling support).\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01375",
-   "path": "semi-formal-experiment/cycles/patient-backfill-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "47-47",
-   "text": " \"overrides\": [],",
-   "source_class": "arc1_cycles"
+   "id": "S01606",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9504-9511",
+   "text": "commit cd451d2ca69be43a4d92001c390e47b2ccea8213\nordinal 570\ndate 2026-08-24 18:24:07 -0700\nauthor Matt Stults\nsubject Matt ruling executed: DEFENSIBLE-BY-CONTRADICTION — opposing unanimous panels are themselves the defensibility certificate (zero seats); n005 credited in the match-or-defensible view (pooled 0.632) appended to the scored artifact without touching registered finals; panel-of-record queue item closed; n002 stays contested (does not qualify). Notes 0011.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01376",
-   "path": "semi-formal-experiment/cycles/patient-backfill-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "48-76",
-   "text": " \"prediction_check\": {\n  \"checks\": [\n   {\n    \"expected\": {\n     \"max\": 0,\n     \"min\": 0\n    },\n    \"kind\": \"flip_count\",\n    \"observed\": 0,\n    \"result\": \"PASS\"\n   },\n   {\n    \"expected\": [],\n    \"kind\": \"directions\",\n    \"observed\": [],\n    \"result\": \"PASS\"\n   },\n   {\n    \"expected\": 0,\n    \"kind\": \"max_regressions\",\n    \"observed\": 0,\n    \"result\": \"PASS\"\n   }\n  ],\n  \"pass_rate\": [\n   3,\n   3\n  ]\n },",
-   "source_class": "arc1_cycles"
+   "id": "S01607",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9512-9519",
+   "text": "commit 8064c6e8486622a592895c2df23bd32b0eebee39\nordinal 571\ndate 2026-08-24 18:28:48 -0700\nauthor Matt Stults\nsubject ITERATION 3 opened: routed queue (14 FP + 20 FN, all panel-tier, refiltered against the current module — 3 FNs confirmed resolved by the kept iter-2 move) routes C-I(I3); MINT_ARBITRATES_PREREG_DRAFT — a per-assert ARBITRATES mark serving both precision (wall) and recall (additive channel), blind criteria with calibration cases incl. the concessive-norm hard boundary, M1-M4 gates, coverage-rule-compliant V5 plan, Fable attempt-4 headline. DRAFT: awaiting Matt's P3 signature before any annotation runs. Notes 0012.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01377",
-   "path": "semi-formal-experiment/cycles/patient-backfill-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "49-71",
-   "text": "  \"checks\": [\n   {\n    \"expected\": {\n     \"max\": 0,\n     \"min\": 0\n    },\n    \"kind\": \"flip_count\",\n    \"observed\": 0,\n    \"result\": \"PASS\"\n   },\n   {\n    \"expected\": [],\n    \"kind\": \"directions\",\n    \"observed\": [],\n    \"result\": \"PASS\"\n   },\n   {\n    \"expected\": 0,\n    \"kind\": \"max_regressions\",\n    \"observed\": 0,\n    \"result\": \"PASS\"\n   }\n  ],",
-   "source_class": "arc1_cycles"
+   "id": "S01608",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9520-9527",
+   "text": "commit d8d2eef1f38c2593f7bebd5276b4934d78c989e1\nordinal 572\ndate 2026-08-24 18:33:02 -0700\nauthor Matt Stults\nsubject MINT-ARB calibration test pre-dispatch (Matt's requirement: measure the brief before signing): 54-node blind packet (criteria text + ESTABLISHES claims only, families hidden, shuffle 20260839) + answer key with pre-stated thresholds (stability >= 0.80 pairwise; separation >= 0.70 relevant-side / <= 0.30 not-relevant-side). Diagnostic only — nothing adopts; results feed the signature decision.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01378",
-   "path": "semi-formal-experiment/cycles/patient-backfill-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "72-75",
-   "text": "  \"pass_rate\": [\n   3,\n   3\n  ]",
-   "source_class": "arc1_cycles"
+   "id": "S01609",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9528-9535",
+   "text": "commit 289992df89a334af3ce16f1e29b78d29c2b630d7\nordinal 573\ndate 2026-08-24 18:38:54 -0700\nauthor Matt Stults\nsubject MINT-ARB SIGNED SCOPED (Matt, 2026-08-24): calibration measured first per his requirement — stability 0.926 PASS, separation 3/4 gates (FP 0.14, TN 0.20, TP 0.80 pass; FN 0.60 fail) — signature scoped to measured coverage: ~12 FP + ~12 FN fixes expected, the 8 structure-less FNs become a new characterized SUSPENDED-OPEN class with broadening rejected by name; ledger watch on the thrice-flagged n002 and n018. Calibration seats + score committed.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01379",
-   "path": "semi-formal-experiment/cycles/patient-backfill-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "77-77",
-   "text": " \"shape\": \"code\",",
-   "source_class": "arc1_cycles"
+   "id": "S01610",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9536-9543",
+   "text": "commit 9ed15fedf0e3fe072b0c2e080389594b6a3ae23f\nordinal 574\ndate 2026-08-24 18:39:09 -0700\nauthor Matt Stults\nsubject MINT-ARB corpus lane pre-dispatch: 762 ESTABLISHES claims in 4 committed chunks, frozen criteria embedded (M1/M2: seats see criteria + claims only). Two blind Opus seats per chunk; consensus = intersection; disagreements to escalation.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01380",
-   "path": "semi-formal-experiment/cycles/patient-backfill-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "78-78",
-   "text": " \"signed_by\": \"session coordinator (Claude), on Matt's standing authorization for the reviewed portfolio order\"",
-   "source_class": "arc1_cycles"
+   "id": "S01611",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9544-9551",
+   "text": "commit b064f56cb2ed8447eb6268e21b0866389e75e49f\nordinal 575\ndate 2026-08-24 18:43:39 -0700\nauthor Matt Stults\nsubject MINT-ARB corpus lane complete: 2x4 blind Opus seats, inter-seat agreement 0.944, consensus 260 yes / 459 no / 43 disputes (arb_marks_consensus.json; disputed nodes excluded from BOTH channels until escalated). Queue-family alignment inside the signed scope: wall kills 13/14 FPs, additive reaches 10-11/20 FNs. Dispute escalation packet (43, shuffle 20260840) committed pre-dispatch.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01381",
-   "path": "semi-formal-experiment/cycles/patient-backfill-2026-08-04/prediction.json",
-   "commit": "pin",
-   "lines": "2-2",
-   "text": " \"expected_flip_count\": {\"min\": 0, \"max\": 0},",
-   "source_class": "arc1_cycles"
+   "id": "S01612",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9552-9559",
+   "text": "commit ba375126914d6cfd6a53a90045d94b9ae3a6bdf3\nordinal 576\ndate 2026-08-24 18:44:50 -0700\nauthor Matt Stults\nsubject MINT-ARB consumption channels implemented per the signed prereg: arbitrates_wall (act-channel precision gate) + arbitrates_channel (act-independent additive, actor/protects walls preserved), layer = arb_marks_final.json (absent -> inert; disputed nodes carry no mark). Registry + handshake candidate list same commit; 43 tests green; engagement unchanged for undeclared modules (247/247).\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01382",
-   "path": "semi-formal-experiment/cycles/patient-backfill-2026-08-04/prediction.json",
-   "commit": "pin",
-   "lines": "3-3",
-   "text": " \"expected_directions\": [],",
-   "source_class": "arc1_cycles"
+   "id": "S01613",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9560-9567",
+   "text": "commit b8ac64988fd1b993da73cdd7bb840124ea1c7ba2\nordinal 577\ndate 2026-08-24 19:24:40 -0700\nauthor Matt Stults\nsubject ITERATION 3: consumption moves validated INDIVIDUALLY per the machine (driver erratum recorded: this was wrongly escalated as a scope question) — arbitrates_wall KILLED mechanically on V4 flip content (8 panel-relevant disengagements; charter 24/12 irrelevant per the codified radicalization rule; A1 ledger closure), arbitrates_channel ADOPTED pending V5 (8/4/0; all 4 new FPs carry standing panel truth, V4 discharged on record). Final marks layer (283, dispute panel majorities folded, 9/43 splits) + r4 contract (channel-only).\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01383",
-   "path": "semi-formal-experiment/cycles/patient-backfill-2026-08-04/prediction.json",
-   "commit": "pin",
-   "lines": "4-4",
-   "text": " \"expected_clauses\": [],",
-   "source_class": "arc1_cycles"
+   "id": "S01614",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9568-9575",
+   "text": "commit a7a8ca8c8f88905b238c661c02f8960795bbce9d\nordinal 578\ndate 2026-08-24 19:29:08 -0700\nauthor Matt Stults\nsubject Notes 0013: final-run-on-Fable overlay rescinded (Matt) -> A10 Q3 venue prescription applies (certified Opus + Fable spot-checks); constraint-structure-not-menus erratum recorded.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01384",
-   "path": "semi-formal-experiment/cycles/patient-backfill-2026-08-04/prediction.json",
-   "commit": "pin",
-   "lines": "5-5",
-   "text": " \"max_regressions\": 0,",
-   "source_class": "arc1_cycles"
+   "id": "S01615",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9576-9583",
+   "text": "commit e6db88e5be14648b974b6b0ee5fceebf7d9378fd\nordinal 579\ndate 2026-08-24 19:30:02 -0700\nauthor Matt Stults\nsubject ITERATION 3 STEP 4 pre-dispatch: V5 registered (P1 >=0.55 revert line, P3 move gate on 14 measured extension nodes — coverage rule satisfied: 9 drawn gains + 5-node probe), draw seed 20260826 (r4 pools 393/369), all packets committed under registered seeds; venue = certified Opus + two Fable spot-checks per A10 Q3.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   }
  ]
 }

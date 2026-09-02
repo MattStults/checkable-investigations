@@ -1,85 +1,148 @@
 {
  "header": {
   "batch": "batch_118",
-  "source_class": "git_log",
+  "source_class": "arc1_docs_preredaction",
   "brief_version": "0.4",
   "glossary_version": "frozen ",
-  "spans": 9,
-  "first_span": "S01991",
-  "last_span": "S01999"
+  "spans": 15,
+  "first_span": "S00989",
+  "last_span": "S01003"
  },
  "spans": [
   {
-   "id": "S01991",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
-   "lines": "3051-3118",
-   "text": "commit dc836671873baf612956ec374f9209865dea85ec\nordinal 103\ndate 2026-08-08 00:16:50 -0700\nauthor Matt Stults\nsubject Engineering findings F2-F11: the sweep, and eight defects in the renderer\nTwo adversarial reviews. Design findings stay parked (OPEN_QUESTIONS Q-15);\neverything here is a defect.\n\nF2 GENERALISED — the sweep, not the instance. Shape: anything that shells out\nand decides pass/fail purely from stdout matching. `test_schema.py`'s clingo\ncalls now go through one helper that reads the RETURN CODE too, pinned by a\nfake-interpreter pair copied from `test_link.py` (the reference the review\nnames as correct): one test proves a clingo that never ran is a complaint with\nno `error` text anywhere, its partner proves 0/10/20/30 stay silent so\n`return ['x']` cannot pass.\n\n  NEW, missed by both reviews: `paper_pipeline/cq_check.py` — stage 0's only\n  mechanical check on the design's written-first answers — had the same shape\n  in both runners. With a clingo-less interpreter CQ-4.a, CQ-5.a, CQ-5.b and\n  CQ-6.c all reported `pass` with nothing executed: their expectations are\n  written as ABSENCES, and an absence is what a dead process produces. Return\n  code alone was not enough for `link.py`, whose exit 1 means both \"found\n  errors\" and \"died\"; the second observable is that it always prints.\n  Also swept and sound: `mutate_schema.py`, `model/test_model.py`,\n  `test_link.py` — except its live-run acceptance case, which derived `leaked`\n  by regex from stdout and now asserts `returncode == 0` first.\n\nF4 quoted string constants are DATA. `substitute` had no string awareness, so\n`p(\"political_content is bad\")` was rewritten into prose — and a declared label\ninside a string was glossed AWAY, blinding RB1, whose whole job is to see one.\nF5 a gloss carrying `«` defeated the flat `_strip` and left prose in RB1's,\nRB3's and RB4's scans — RB3 fired on a CORRECT rendering. Fixed at INSERTION\n(the markers must stay unambiguous), and declared as a note, never silently.\nF6 `_CONVERSE`/`_CMP` now pinned over all six operators in both guard\npositions, plus a bijection guard. These were 3 of the reviewer's 4 survivors.\nF7 `_layer` min->max: pinned with the first item that mixes the two layers.\nF8 `KEYWORDS` made the layers disagree: layer 1 refused a gloss `_gloss_slot`\nused, so RB1 fired on a module declaring `count/1` saying \"no definition was\navailable\" — which was false. `#` already excludes the directives; only `not`\nwas load-bearing.\nF9 ontology arguments were dressed in gloss markers, which INVERTED RB1's\nclassification. They go through `substitute` now. On the corpus this removes\nsix RB1 findings on m0014 — not a weakened check: `violence_act` is a declared\nconcept and the renderer now emits its definition instead of its label, which\nis Invariant 1 being satisfied.\nF10 `_rb1` iterated a set with prefix-blind replacement. Longest-first.\n\nF11 the repair-turn USER blocks were unpriced in code and test. The arithmetic\nis left alone (verified >= the true worst case for 1..5). The estimate's\nsurplus is exactly T(T-1)/2 copies of (system+user) — the same coefficient the\nerror-log term carries — so it covers the logs iff a log fits in one\nsystem+user block. That is now a NAMED budget (8,000 chars; largest ever\nproduced: 1,294), priced into the hand-priced floor, and CHECKED.\n\nF3 `translate.py --self-test` exits 1 and pytest read green. The wrapper now\nasserts `returncode == 0` (pins no count) and is `xfail(strict=True)` naming\nQ-4, so the red is VISIBLE and flips to a hard failure the day Q-4 is decided.\n`dryrun.txt` NOT regenerated. Stale numbers corrected in REVIEW_QUEUE.md and\nQ-4 — and the review's own \"44 guards\" is now 46, having moved again when the\nanonymous-variable guard was restored.\n\n10/10 hand mutants killed, including all 4 the reviewer found surviving.\n500 passed + 1 xfail. mutate_schema 46 killed, 0 SURVIVORS. link --self-test\n19/19. schema.py untouched. No API call, no spend.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
-   "source_class": "git_log"
+   "id": "S00989",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "1193-1208",
+   "text": "### 1. The headline traced to ONE fitted parameter we already knew not to trust\nOperator sweep, 7 operators x 3 module families. `any_atom` — the declared NO-CHOICE default —\nranks **1/7 on the held-out 6 behaviours for all three families**. `act_match` ranks 3/7.\n\n| contrast (behaviour-level, n=9) | delta | p | sign |\n|---|---:|---:|---:|\n| `structural@act_match − bag` | −0.038 | **0.121** | 3/9 |\n| `core@any_atom − bag` | −0.011 | 0.49 | — |\n| **`section@any_atom − bag`** | **+0.023** | 0.061 | 7/9 |\n| **`section@any_atom − control`** | **+0.122** | **0.0005** | **9/9** |\n\n**At the no-choice operator the compliant modules are level with or AHEAD of the bag scorer.**\n`section.py`'s own docstring warning \"THIS LOSES, measured −0.143\" is an artifact of the\noperator it inherited. The project applied the `act_match` lesson to `structural.py`'s headline\nand **not** to `section.py`'s, `combined.py`'s primary, or the invariant-10 conclusion.\n",
+   "source_class": "arc1_docs_preredaction",
+   "context": null
   },
   {
-   "id": "S01992",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
-   "lines": "3119-3140",
-   "text": "commit 5cf82a4fc94220c3d7ef2c93239e44bb945d02ef\nordinal 104\ndate 2026-08-08 00:21:26 -0700\nauthor Matt Stults\nsubject Q-18: stage 0 competency check is red -- and a correction, it is NOT quiet\ncq_check.py reports 14 as declared, 2 unexpected, 2 blocked. CQ-6.a and CQ-6.b\nfail against their written-first expectations. Pre-existing and outside the\nstage 1-4 scope, recorded so it is not lost.\n\nTHE CORRECTION: a subagent reported the tool \"exits 0 anyway, so stage 0's\ncompetency check is red and quiet\", and I nearly filed that as a defect. It is\nfalse -- cq_check.py exits 1. Both of us measured through `cmd | tail`, where\n$? reports tail's status, not the program's.\n\nThe general lesson outlives the finding: `cmd | tail` silently discards the exit\ncode, and this repo's entire discipline is that a check must not be able to look\nlike it passed. Two independent agents produced the same false claim from that\none habit.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
-   "source_class": "git_log"
+   "id": "S00990",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "1209-1215",
+   "text": "### 2. The noise floor is MIS-SPECIFIED — delete it\n`benchmark.noise_floor` scores ONE predictor on TWO INDEPENDENT passage resamples. Its\nhalf-width is exactly `1.96*sqrt(2)*SE` — an **unpaired** null. Every contrast it gates is\n**paired** (same resample, clauses, golds, joins). Measured: the floor is **2.1x to 6.5x the\npaired SE**. It would reject a true, perfectly-measured effect of 0.03 forever, at any sample\nsize. Not conservatism — a mis-specified test.\n",
+   "source_class": "arc1_docs_preredaction",
+   "context": null
   },
   {
-   "id": "S01993",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
-   "lines": "3141-3190",
-   "text": "commit 21813f2544ee8b50a7a78ff15de1bdc45e79ec62\nordinal 105\ndate 2026-08-08 00:27:39 -0700\nauthor Matt Stults\nsubject stage 4: build R3, the derivation layer — 8 of 18 covering-set situations\n`STEP_stage4.md` §2.1 specifies three read-back layers. `readback.py` produced\nR1 and R2, so no DERIVATION reached any seat: the seats judged items and rules,\nnever why a verdict followed. `readback_r3.py` is the third layer, as a separate\nmodule — `readback.py`'s public surface is untouched.\n\nThe pipeline, per §2.1/§2.2: compose a `%!trace_rule` per rule MECHANICALLY from\n`readback.render_items` (never the model's authored `read_back`, which §2.2\ndemotes to a second opinion), run xclingo per derived verdict atom, parse the\nascii tree, and replace every leaf with its R1 rendering.\n\nMEASURED, on the six stored modules that reach R3: 8 of 18 covering-set\nsituations have a non-empty derivation. Printed with its denominator, per\nDEBUGGING_TIPS §2, and the ten that derive nothing are stamped `no-derivation`\nrather than dropped.\n\nTwo defects found on live material and pinned:\n\n* `o`, the ontology ablation guard, surfaced as a LEAF of every ontology-backed\n  derivation and was reported as `readback-ungloss` — a false stop on renderer\n  scaffolding. The guard is removed from R3's program rather than exempted by\n  name; exempting a hard-coded symbol is how a real missing gloss would later\n  hide.\n* A body-less `asserts` fact carries R3's own label AND the one\n  `--auto-tracing=facts` adds; xclingo joins them with `;`, and reading the\n  payload as one quoted sentence put `asserts(m0079,oblige,produce_response)` in\n  front of a seat. Invariant 1's exact failure, emitted by the layer written to\n  fix it.\n\nEvery empty result BLOCKS: missing xclingo, `_` anywhere in the link scope\n(refused BY NAME — it takes the whole link set's explanation down and exits 0),\nan unparseable or truncated stream, a line R3 cannot place, and a verdict stage 3\nderives that xclingo roots no tree at. Three redundant xclingo detectors, each\nwith its own RED test after the first sweep showed the return-code and sentinel\narms surviving on the others' coverage (DEBUGGING_TIPS §8).\n\nRECORDED DEPARTURE: §2.1 says `--output ascii-trees -n 0 0`. [RAN] that alone\nyields a tree with NO leaves, which makes R3's defining requirement vacuous, so\n`--auto-tracing=facts` is added — the flag §0 finding (3) itself used.\n\nTDD: RED first (collection error, then 11 failures), 33 tests, mutation sweep\n21/21 killed, 0 survivors. Suite 634 -> 667, no regressions. No API calls.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
-   "source_class": "git_log"
+   "id": "S00991",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "1216-1221",
+   "text": "### 3. The resampling unit is the BEHAVIOUR, not the passage\nBetween-behaviour SD of the `structural − bag` delta is **0.0596**; between-draw SD **0.0172**.\nBehaviour variance dominates ~12x in variance and the passage-unit CIs ignore it entirely.\n**\"Sign consistent in 5/5 draws\" is worthless evidence** — the draws are correlated re-queries\nof the same 9 behaviours. Report behaviour-clustered CIs, a paired t, and a sign test.\n",
+   "source_class": "arc1_docs_preredaction",
+   "context": null
   },
   {
-   "id": "S01994",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
-   "lines": "3191-3218",
-   "text": "commit 9d3c9a4404540b6e182fd19a46663cde598a1a98\nordinal 106\ndate 2026-08-08 00:32:16 -0700\nauthor Matt Stults\nsubject R3: carry §2.3's layer stamp, and keep a missing GLOSS out of it\n§2.3 requires every rendering to record the layer that produced it and the\nlayer-1 fraction to be printed even when zero; R3's nodes were dropping it, so\nfluent English and glossed ASP were indistinguishable in the derivation.\n\n⚠️ Written the other way round first, and the assertion was WRONG. An\nunglossed leaf was stamped layer 1 on the reasoning that a bare term IS layer\n1's fallback form. `readback._gloss_slot` already stamps the same marked hole\nlayer 2 inside a rule rendering, so R3 and R1 would have disagreed about one\nmissing definition — and it re-merges the two things §2.3 says must not be\nblurred: a missing TEMPLATE is our gap and costs fluency, a missing GLOSS is a\nhole in the translation and stops the clause. The stamp tracks templates; the\nERROR carries the gloss.\n\n⚠️ The layer-1 fixture also had to change. `readback` has layer-2 templates\nfor aggregates, comparisons, intervals and conditional literals — [RAN] all\nfour render at layer 2 — so reaching for \"something exotic\" did not exercise\nthe fallback at all. Pooling (`p(X;Y)`) does.\n\nSuite 667 -> 670. Mutation sweep re-run: 21/21 killed, 0 survivors.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
-   "source_class": "git_log"
+   "id": "S00992",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "1222-1228",
+   "text": "### 4. `combined` does NOT beat the bag at n=9, and the typed core adds nothing\n`combined − bag` = +0.032, **t=2.02, p=0.078, 7/9** — fails at the behaviour level. Fragile:\n`harm-avoidance` alone contributes +0.144 while the other eight average +0.018; **drop it and\nthe delta halves to +0.018.**\n`combined − section@any` = **+0.0084, p=0.60** — the typed core adds nothing measurable on top\nof the section module at its no-choice operator.\n",
+   "source_class": "arc1_docs_preredaction",
+   "context": null
   },
   {
-   "id": "S01995",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
-   "lines": "3219-3249",
-   "text": "commit beb8531a9480f4cc250ed57e525b4a0423ae3fc1\nordinal 107\ndate 2026-08-08 00:36:05 -0700\nauthor Matt Stults\nsubject Wire R3 into the seats: 4a and 4b now judge derivations, not just items\nSTEP_stage4.md section 5.1 specifies 4a's denominator as \"the rendered set\n(R1+R2+R3)\". readback_r3 was built but nothing consumed it, so the seats judged\nitems and rules and never WHY A VERDICT FOLLOWED. The design answers the\nquestion the R3 build flagged as open -- a derivation is a 4a/4b item, not a\nfifth denominator -- so this is implementation, not a decision.\n\nR3 arrives as an optional argument rather than off the readback, because it\nneeds a stage-3 covering set and a solver run that plain rendering does not. A\ncaller without one gets R1+R2 and the denominator SAYS SO under\n`r3-not-supplied`, so \"no stage-3 result was given\" can never read as \"this\nmodule has no derivations\". A test pins that those two states are\ndistinguishable -- it is the vacuous-pass shape, and here the two would look\nidentical.\n\nA situation deriving no verdict atom is excluded BY NAME as `no-derivation`,\nnever dropped: 8 of 18 covering-set situations across the stored modules derive\na verdict, so silently dropping the other 10 would overstate 4a's coverage by\nmore than a third.\n\n4b filters 4a's output rather than re-deriving the set, so the two cannot drift.\n\nRED-verified by mutation. 673 passed, 1 xfailed.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
-   "source_class": "git_log"
+   "id": "S00993",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "1229-1236",
+   "text": "### 5. RETRACTED: \"the gain is the partition, not the extra prediction mass\"\nThe size-matched control reproduces exactly (+0.2431) but **cannot come out any other way** —\nsd across 200 randomisations is 0.0021, P(random >= core) = 0.000. The decisive control was\nnever run: random **whole sections**, size-matched, score **+0.2406** — no better than random\nclauses. **The partition is INERT.** The gain is the *election ranking*, computed from the same\ntyped atoms already in the core. That is a claim about aggregation, not ontological structure,\nand it materially changes what the thesis rests on.\n",
+   "source_class": "arc1_docs_preredaction",
+   "context": null
   },
   {
-   "id": "S01996",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
-   "lines": "3250-3264",
-   "text": "commit b17074be02a6c2e0c1e2ad0dfe9b72cf6a41c5c6\nordinal 108\ndate 2026-08-08 00:36:39 -0700\nauthor Matt Stults\nsubject Q-16 resolved: R3 is built, wired, and found two Invariant 1 violations\n36 tests, 21 mutants 0 survivors. 8 of 18 covering-set situations derive a\nverdict; the other 10 are excluded by name rather than dropped.\n\nBoth defects it found were live, not fixtures, and both were raw ASP reaching\nseat-facing text -- the exact failure the read-back exists to prevent, from the\nlayer written to prevent it.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
-   "source_class": "git_log"
+   "id": "S00994",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "1237-1240",
+   "text": "### 6. `act_match`'s selection cost, isolated by difference-in-differences\ngap on the 3 selection behaviours −0.0025; on the 6 held-out +0.0424; **DiD = +0.0449, cluster\nCI [+0.0172, +0.0717], excludes zero — 2.8x the declared 0.016 bound.**\n",
+   "source_class": "arc1_docs_preredaction",
+   "context": null
   },
   {
-   "id": "S01997",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
-   "lines": "3265-3315",
-   "text": "commit b50092ba91b63db1c66604f310e9966bb226953e\nordinal 109\ndate 2026-08-08 00:57:57 -0700\nauthor Matt Stults\nsubject Adversarial review of stage 4: 14 findings, 3 high\nClean-context review of the four review seats (29e018c), the R3 derivation\nlayer, and the R3->seats wiring (beb8531). REVIEW ONLY -- no code, test or\ndesign document was changed. No API call, no spend.\n\nThe three highs are one shape, and it is this repo's named signature failure --\na check that cannot run, exiting like a check that passed:\n\n* divergences() can NEVER fire. Each seat's closed verdict set is disjoint from\n  every other's and every CONTRADICTION pair sits inside one seat's vocabulary,\n  so 0 records over all 81 legal verdict combinations. All five tests that pin\n  section 6 construct judgements validate_judgements refuses.\n* The R3 wiring is a no-op against the real readback_r3.ModuleR3 -- it has\n  `situations`, not `derivations`, and Derivation has no .item/.nodes. A module\n  WITH a rendered derivation yields a 4a denominator identical to r3=None, and\n  excluded=None, i.e. without even the r3-not-supplied marker. The guarantee is\n  inverted. The tests pin a _D/_R3 duck type nothing in the repo builds, and\n  plan_clause has no r3 parameter at all.\n* mutate_seats.py reports \"83 mutants applied, 0 survivor(s)\", exit 0, against a\n  RED test suite. No baseline check, no return-code triage, no collected-count\n  comparison -- all three of which mutate_schema.py guards explicitly. The\n  documented pyc trap IS fixed; a larger hole of the same class sits behind it.\n\nAlso confirmed: no join-key guard on the stage-3 discrimination cross-check (a\nmismatched key makes every `covered` `unsupported` while the report says the\nnumber was available); report_line is NOT byte-identical under a flipped 4a\nverdict because the pooled unclear rate includes 4a; 4c is anchored against\nreadback.py and not against a rendering bug (dropping a rule body from\n_item_text survives all 137 tests); refuse_aggregate scans top-level key names\nonly; RB4's non-evidential stamp cannot fire on the corpus (level 0.90, max\nmeasured echo 0.74); a `%!` in a model-authored gloss is silently rewritten by\nxclingo's own preprocessor -- the third Invariant-1 escape of the shape the\nbuild already fixed twice.\n\nTwo directions where the CODE is right and the DESIGN is stale: section 7's\ncorpus-scale cost is falsified by seats.py --cost by an order of magnitude\n($303 frontier worst, not ~$25 -- 35x the whole cap), and section 8's\nregistration requirement names fencing that exists only in\nsemi-formal-experiment/.\n\n20 hand-written mutants, 6 survivors. The shipped sweep was re-run (83/0, real\nbut not trustworthy). R3's block-on-empty machinery and the seat-origin leak\nfence were attacked and held.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
-   "source_class": "git_log"
+   "id": "S00995",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "1241-1248",
+   "text": "### 7. ⚠️ `combined.MEASURED` and `section.MEASURED` ARE HAND-TRANSCRIBED CONSTANTS\nNo generator exists in the repo. Every variant mean, all 11 bootstrap contrasts, the size\ncontrol and the AUCs live in a literal dict, and the test suite checks only **internal\nconsistency of the literals** (e.g. asserting one hardcoded number is smaller than another).\n**A green suite is not evidence that any of them is what the pipeline computes.** They were all\nindependently verified correct — but \"two agents agree to three decimals\" is weak if both read\nthe same dict, and nothing would catch drift.\n",
+   "source_class": "arc1_docs_preredaction",
+   "context": null
   },
   {
-   "id": "S01998",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
-   "lines": "3316-3349",
-   "text": "commit 5201e52879b5cdceb237dce5a8a3cbaee17857cb\nordinal 110\ndate 2026-08-08 01:01:22 -0700\nauthor Matt Stults\nsubject My R3 wiring was a NO-OP against every real object, and my tests pinned a fiction\nStage-4 review finding 2, HIGH, and it is mine. denominator_4a read\nr3.derivations / d.item / d.nodes. readback_r3 builds NONE of those: ModuleR3\ncarries `situations`, a SituationR3 carries `derivations`, a Derivation is\n(label, verdict, roots).\n\nSo the wiring never fired on anything the repo constructs -- and it failed in\nthe SILENT direction. A module WITH real derivations produced ids identical to\nr3=None, and returned excluded=None, so the only state carrying a marker was\nthe honest-absence one while the silently-dropped one carried nothing. Exactly\nbackwards.\n\nWORSE: all three tests passed, because they hand-wrote a duck type nothing in\nthe repo builds. One of them was named \"the vacuous-pass shape\". A fixture that\nmodels the type wrongly tests the fixture -- which is the failure this\nrepository names as its signature, committed by the person quoting it.\n\nFixed against the real shape and verified on real objects: m0014 contributes\nderivation S0 to 4a; m0037 derives nothing and is excluded by name as\nno-derivation rather than vanishing. A new test asserts ModuleR3 and\nSituationR3 still carry the fields the denominator reads -- including that\nModuleR3 does NOT carry `derivations`, so the original wrong wiring cannot\nstart working by accident and leave the comment lying. excluded is always a\ndict now; it was None, and the membership tests would have raised TypeError.\n\n676 passed, 1 xfailed.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
-   "source_class": "git_log"
+   "id": "S00996",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "1249-1268",
+   "text": "### THE HONEST HEADLINE IS A NULL, AND IT IS STILL INTERESTING\nNo compliant configuration separates from the bag scorer at n=9 (best p=0.061). The defensible\nclaim is:\n\n> **A zero-parameter structural query reaches PARITY with a fitted bag scorer and beats\n> bag-of-words by +0.12 (p=0.0005, 9/9 behaviours).**\n\n**Ship `section@any_atom`, not `combined`** — it is the most transfer-stable predictor measured\n(frontier-3 +0.3085 vs held-out-6 +0.3066, a shift of 0.002, against `act_match`'s 0.088).\n\n> **⚠️ FLAGGED UNRECONCILED (2026-08-04).** The iteration loop as built does NOT run\n> this recommendation: `snapshot.py` (and therefore every cycle, dossier and the\n> 294-case census) scores through `relevance.RelevanceIndex`, optionally through\n> `containment.ContainmentIndex` — the bag-scorer path — not `section.py`. No recorded\n> decision reverses this paragraph; the two simply have not been reconciled. If you are\n> choosing a query module, surface this to Matt rather than resolving it silently.\n\n**n=9 is the binding constraint on every remaining question.** More passages buy nothing; more\nbehaviours buy everything.\n",
+   "source_class": "arc1_docs_preredaction",
+   "context": null
   },
   {
-   "id": "S01999",
-   "path": "GENERATED:generated/git_log_first_parent.txt",
-   "commit": "generated",
-   "lines": "3350-3369",
-   "text": "commit 0ecb617d74b4cc873612ac1f65427bdbf73a17ce\nordinal 111\ndate 2026-08-08 01:02:14 -0700\nauthor Matt Stults\nsubject Q-19: section 6 divergence can never fire, and the design is why\n0 divergence records over all 81 legal verdict combinations. Every seat's\nvocabulary is disjoint and every CONTRADICTIONS pair sits inside ONE seat. The\ncode implements the design literally: section 6 says \"two seats reach opposite\nverdicts\" and its own worked example is faithful vs unfaithful, both 4b's.\n\nThis matters more than its size suggests. Section 4.3's guard is that unanimity\nmust not read as confirmation, and section 6 is the mechanism that makes\ndisagreement visible. If it cannot fire, four agreeing seats are the only\npossible outcome -- the failure section 4 exists to prevent.\n\nThree readings offered, none chosen.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
-   "source_class": "git_log"
+   "id": "S00997",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "1269-1277",
+   "text": "## The loop being tested\n\nTool vs. a frontier LLM answering the **same question**. Adjudicate deltas only; each\ndelta → named artifact → fix → full recompute → regression check. **The document is ground\ntruth; the LLM is a lead generator, never an oracle.** For relevance the reference already\nexists on disk (`behaviours.json`); the bar is the **best single judge**\non the TRUE universe (see banner). The published-universe bar 0.764/0.780/0.500 is\nsuperseded and must not be quoted.\n",
+   "source_class": "arc1_docs_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00998",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "1278-1299",
+   "text": "## Module state — all green, 1113 tests (2026-08-02)\n\n> ⚠️ Count superseded 2026-08-04: the suite is now ~1,960 tests (README figure; 1,919\n> collect under a bare interpreter without the venv). The table below predates the\n> iteration-loop modules — see MODULE_MAP.md §1b for those.\n\n| module | owner | state |\n|---|---|---|\n| `modelspec_clauses.json` | — | **593 clauses**, 97.35% char coverage, 100% verbatim, 0 duplicate locators, 259/259 focus markers preserved as a privileged subset |\n| `measure_join.py` | me | the recall ceiling: 849/863 overall, 110/112 at score ≥5, 313/313 example blocks. **Gates every benchmark number** |\n| `measure_kinds.py` | me | relevance signal by clause kind; source of the 38% ceiling finding above |\n| `annotate.py` | agent | done — 1,629 atoms, 99% coverage, reuse 0.78 (`annotations_b8.json`) |\n| `relevance.py`, `benchmark.py` | agent | done — offline scorer + MCC-primary benchmark; CLI runs the tool, `explain()` wired |\n| `behavior_atoms.py` | agent | done — 70 query atoms, 100% selected from the clause vocabulary |\n| `conflict_output.py` | agent | instrument done (blinded + negatives + rubric + validator); **no tool adapter** |\n| `inventory.py` | A | unique locators `... > L200 [fa_la9s]`; `match_passage()` quote-containment join now normalizes whitespace, `[^xxxx]` footnotes, markdown emphasis, **and both link renderings** — all four required, dropping any one silently lowers every metric. `SPEC_MD` points at the shared `../specs/openai-model-spec/` tree |\n| `emit_asp.py` | A | `--skip-invalid` with cascade + `provenance` block; provenance facts proven inert |\n| `extract_section.py` | B | batched (default 14), span-id selection, act-enum closed across batches, `conflict_capable` diagnostic, truncation as its own failure class |\n| `baseline_conflicts.py`, `delta.py`, `adjudicate.py` | C / chain agent | k=3 baseline, 3-bucket delta, worksheet with encoding-status block |\n| `providers.py` | me | `complete_envelope()` → `{text, finish_reason, reasoning, usage, truncated}`; usage logging; auto-adapts unsupported params |\n| `calibrate.py` | me | measures cost per batch per model from real usage |\n",
+   "source_class": "arc1_docs_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00999",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "1300-1338",
+   "text": "## Key numbers (all measured, not estimated)\n\n**Cost — measured tokens × looked-up rates. Use `luna` for everything until a final\nmeasurement run.**\n\n| model | $/Mtok in–out | $/batch | whole doc (13 batches) | k=2 |\n|---|---|---|---|---|\n| **luna** (gpt-5.6-luna) | 0.20 / 1.20 | **$0.0088** | **$0.11** | **$0.23** |\n| terra (gpt-5.6-terra) | 2 / 12 | $0.068 | $0.88 | $1.76 |\n| kimi (Kimi-K3) | 3 / 15 | $0.223 | $2.89 | $5.79 |\n| sol (gpt-5.6-sol) | 5 / 30 | $0.241 | $3.14 | $6.28 |\n\n**`luna` is 27× cheaper than sol, had the LOWEST reasoning overhead of the four (39%),\nparsed cleanly, and was fastest (35s vs sol's 82s).** It is gpt-5.6-family, so its failure\nmodes should resemble sol's — a much better iteration tier than a different-family\nmid-tier model. Prices are in `providers.json` and `calibrate.py` reads them.\n\n**First comparison table** (both sides `gpt-oss-20b`, chain-of-command only):\n`|C_tool|`=0, `|C_baseline|`=6, coverage 0.524 effective / 0.571 claimed,\n`baseline_self_agreement`=0.244 over k=3. **Degenerate** — tool's zero is structural\n(0 `incompat`, no act both obliged and forbidden), settled before the solver runs.\n\n**Panel join — SOLVED.** Against focus areas it was **70.3% zero-match** (example blocks\n100% zero, core judgments 40.6% zero). Against `modelspec_clauses.json` with the fixed\nnormalizer, via `measure_join.py`:\n\n| stratum | matched | total | |\n|---|---|---|---|\n| all | 849 | 863 | 98.4% |\n| score ≥5 | 110 | 112 | 98.2% |\n| score ==6 | 58 | 60 | 96.7% |\n| example blocks | 313 | 313 | 100% |\n\nThe 14 remaining misses are **not paraphrase and not version skew** — our spec copy is\nbyte-identical to `../specs/openai-model-spec/model_spec.md` (sha256 `8c95f020…`). The\npanel's own renderer rewrote `[text](url)` inconsistently, sometimes *within a single\npassage*, so no one normalization variant matches. A real but small ~1.6% reference-side\nceiling.\n",
+   "source_class": "arc1_docs_preredaction",
+   "context": null
+  },
+  {
+   "id": "S01000",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "1339-1351",
+   "text": "## THE OPEN PROBLEM — SOLVED, kept for the reasoning\n\nOpenAI's focus areas are a **test index, not a document index**: 225 of 259 carry rubric\nprompts. They covered **50,855 of 271,474 chars (~19%)**, contained **zero markers inside\nthe 183 example blocks**, and skipped whole sections including `levels_of_authority` (which\n*defines the authority lattice we use*).\n\nSo focus areas are the right unit for the **rule layer** and the wrong unit for the\n**coverage/lookup layer**. Fixed by our own full segmentation → `modelspec_clauses.json`\n(593 clauses, 97.35%), with focus areas retained as a privileged subset carrying authority\n+ rubric joins. `measure_kinds.py` then showed the split has to go further than expected:\nrules on the 188 conditionals, **annotations over all 593 including examples**.\n",
+   "source_class": "arc1_docs_preredaction",
+   "context": null
+  },
+  {
+   "id": "S01001",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "1352-1360",
+   "text": "## ~~THE RESULT (2026-08-01, first version)~~ — DELETED, IT WAS ALL BUG ARTIFACT\n\nThis section held an F1 table, a \"MCC near chance\" claim, and a channel ablation ending in an instruction to delete a channel. **Every number in it came from the broken loader and was ranked on F1.** The numbers and the instruction have been REMOVED rather than quoted-and-annotated, because a reviewer found the annotated version still being followed and `grep` still returned the instruction. Under the repaired loader and MCC ranking that ablation row is *vacuous* anyway — it is bit-identical to `full`.\n\nTwo general lessons, both earned the expensive way:\n- **A superseded number left in a doc is an instruction, not a footnote.** Delete it.\n- Do not rank channels on F1 here: the all-relevant point is inside the sweep, so F1 rewards\n  rescaling the score distribution rather than discrimination.\n",
+   "source_class": "arc1_docs_preredaction",
+   "context": null
+  },
+  {
+   "id": "S01002",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "1361-1373",
+   "text": "## Update — full-coverage artifact ~~(use these, not the originals)~~\n\n> ⚠️ SUPERSEDED AGAIN 2026-08-04: b8 superseded the originals; the ext_v1 line has now\n> superseded b8. The preferred configuration is `annotations_ext_v1_merged.json` +\n> `behavior_atoms_audit_v1.json` + `thresholds_frozen.json` (see the top section). b8\n> stays on disk as the comparison config in JOIN_INTEGRITY_DESIGN's re-measurement\n> protocol.\n\n`annotations_b8.json` (batch-size 8): **1,629 atoms, 99% coverage, 183/183 example blocks,\n0 truncated, 0 call failures**, reuse 0.78. Paired with `behavior_atoms_b8.json` (70 atoms,\n100% in-vocabulary). Example blocks carry 39% of the relevance signal and were the biggest\nhole — the original run lost 24 of them.\n",
+   "source_class": "arc1_docs_preredaction",
+   "context": null
+  },
+  {
+   "id": "S01003",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "1374-1379",
+   "text": "### ⚠️ Every ablation number recorded before 2026-08-01 12:18 is void\n\n`benchmark._clause_rows` dropped `section_path`, collapsing all 593 clauses into one section\nand turning the section channel (0.45 of the weight) into a constant. **The blast radius is\nevery prior ablation and every prior threshold derivation.** Do not compare across that fix.\n",
+   "source_class": "arc1_docs_preredaction",
+   "context": null
   }
  ]
 }

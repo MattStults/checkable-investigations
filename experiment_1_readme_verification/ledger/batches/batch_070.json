@@ -1,133 +1,139 @@
 {
  "header": {
   "batch": "batch_070",
-  "source_class": "arc1_docs",
+  "source_class": "git_log",
   "brief_version": "0.4",
   "glossary_version": "frozen ",
-  "spans": 15,
-  "first_span": "S01013",
-  "last_span": "S01027"
+  "spans": 14,
+  "first_span": "S01250",
+  "last_span": "S01263"
  },
  "spans": [
   {
-   "id": "S01013",
-   "path": "semi-formal-experiment/HANDOFF.md",
-   "commit": "pin",
-   "lines": "733-737",
-   "text": "### Representation capacity is refuted as an information claim\nThe atom index partitions the 589 passages into **534 distinct equivalence classes**, so the\nmaximum MCC any function of the atom set can reach is **+0.972**. Act-atoms alone bound at\n+0.743; section alone at +0.657. All above the judge bar.\n",
-   "source_class": "arc1_docs"
+   "id": "S01250",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5438-5444",
+   "text": "commit 92ed883282293c72c1f4df6a1cb102ad54b5b1d7\nordinal 214\ndate 2026-08-15 10:06:23 -0700\nauthor MattStults\nsubject Merge pull request #3 from MattStults/guardrails-fixes\nguardrails + documentation truth\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01014",
-   "path": "semi-formal-experiment/HANDOFF.md",
-   "commit": "pin",
-   "lines": "738-743",
-   "text": "### Richer extraction has no headroom, and the arm was already run FREE — twice\nText-only (+0.398) is **BELOW** the atom index (+0.435): raw text contains everything any\nannotator could extract. And `annotations.json` → `annotations_b8.json` was a real +9%\ncoverage / +14% atoms / +9% vocabulary upgrade, same model and prompt. Paired over 10 CV\nseeds: **+0.0054, sd 0.035, t(9)=0.49, CI [−0.019, +0.030], n.s.**\n",
-   "source_class": "arc1_docs"
+   "id": "S01251",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5445-5453",
+   "text": "commit 2be1ea78e09715b3efbd05f06d4c4d4c22360b0d\nordinal 215\ndate 2026-08-15 10:08:59 -0700\nauthor Matt Stults\nsubject Fix C evidence dies under randomisation (p=0.78); the 80% first-try ladder is unsupported\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01015",
-   "path": "semi-formal-experiment/HANDOFF.md",
-   "commit": "pin",
-   "lines": "744-750",
-   "text": "### The paid contrast is unattributable AND underpowered\nThose two same-model runs share **78 of 330/361 atom names — 21% vocabulary overlap**. The\nvocabulary is a per-run DRAW, not a property of the model, so \"model competence\" is\ninseparable from \"different draw\". Forcing shared names costs −0.157. And MDE(80%) is\n**0.032–0.045** while the best estimate of the paid effect is **+0.005 — one sixth of it**.\n**The decision rule cannot fire in either direction.**\n",
-   "source_class": "arc1_docs"
+   "id": "S01252",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5454-5462",
+   "text": "commit 849049c37145696ad3b943836fbae151290012b7\nordinal 216\ndate 2026-08-15 10:12:43 -0700\nauthor Matt Stults\nsubject work order: generate and validate recovery ideas, with the protocol that killed three false positives\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01016",
-   "path": "semi-formal-experiment/HANDOFF.md",
-   "commit": "pin",
-   "lines": "751-768",
-   "text": "### What the deficit actually is\n| | MCC |\n|---|---:|\n| shipped tool, held-out (LOBO) threshold | +0.206 |\n| shipped tool, oracle threshold (generous) | +0.396 |\n| supervised over the SAME offline features | **+0.591** |\n| judges (mean / best) | +0.555 / +0.654 |\n\nThe whole recoverable gap sits between the unsupervised scorer and a supervised readout of\n**identical** features. That is the **query/scoring mechanism**. Two pieces, both free, both\nalready named in this file:\n\n1. **Nested/held-out threshold selection** — LOBO→oracle is worth **+0.19**, the single\n   largest gap in the project. Costs $0.\n2. **The section channel** — section identity alone supervised is +0.536, while the shipped\n   channel's AUC is 0.522/0.633/0.623 (near chance on helpfulness) at weight 0.45. Worth\n   **+0.16 on top of atoms**, offline.\n",
-   "source_class": "arc1_docs"
+   "id": "S01253",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5463-5471",
+   "text": "commit ee12e0099cf9f30347f29d9b0fbd877e8efa38cb\nordinal 217\ndate 2026-08-15 10:30:07 -0700\nauthor Matt Stults\nsubject DC-1 untestable with Haiku (5.9% vs 15% gate); DeepSeek A/B costed at $0.30\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01017",
-   "path": "semi-formal-experiment/HANDOFF.md",
-   "commit": "pin",
-   "lines": "769-774",
-   "text": "### Honest target\nNever the mean of 9. The supervised ceiling LOSES to the strong judges on helpfulness\n(+0.50 vs fable +0.70) and wins only where a judge is degenerate. Report **per-behaviour best\njudge, per cell** (0.706 / 0.705 / 0.552, mean +0.654).\n\n",
-   "source_class": "arc1_docs"
+   "id": "S01254",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5472-5480",
+   "text": "commit 8ba64858f67bf3c2b3f830ec2c89e471b5b47e2d\nordinal 218\ndate 2026-08-15 10:30:52 -0700\nauthor Matt Stults\nsubject record the DC-1 gate result in EXPERIMENTS (earlier append failed on a path error)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01018",
-   "path": "semi-formal-experiment/HANDOFF.md",
-   "commit": "pin",
-   "lines": "775-780",
-   "text": "## ⛔ THE LABEL-FREE LEADS ARE CLOSED (two by proof, a third measured). Read before proposing more scorer work.\n\nThe supervised ceiling (+0.591) sits above the mean judge (+0.555); the label-free tool sits\nat **+0.278**. That gap was attributed to two recoverable items. **Both have now been\nmeasured and both are dead ends** — by proof, not by failure to try.\n",
-   "source_class": "arc1_docs"
+   "id": "S01255",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5481-5487",
+   "text": "commit c76f5ee89f910c3826b8ab13b69128406823c2be\nordinal 219\ndate 2026-08-15 10:32:04 -0700\nauthor Matt Stults\nsubject DC-1 experiment artifacts (final answer file)\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01019",
-   "path": "semi-formal-experiment/HANDOFF.md",
-   "commit": "pin",
-   "lines": "781-826",
-   "text": "### Lead 3 — \"there is unmined MEANING in the document\". Tested 2026-08-06. ⚠️ UNREVIEWED.\nRaised by the project owner against the argument above, and the objection was **correct as stated**: the\nnear-injectivity of the atom index (534/589) and the supervised ceiling prove the atoms\n*distinguish* the passages and that a rule over them exists — **neither shows the document\ncannot supply that rule**. The whole enumeration behind \"both leads closed\" changed only the\nWEIGHT on an exact atom-name match. It contained no distributional semantics, because\n`relevance.py:4` excluded that space BY CONTRACT, not by measurement.\n\nPre-registered (`SEMANTIC_ARM_PREREGISTRATION.md`), then measured\n(`SEMANTIC_ARM_RESULTS.md`, `semantic_arm.py`). Both arms use **soft matching** — a passage\natom merely NEAR a query atom contributes — which is a different functional form, not a\nre-parameterisation. Anchor = exact IDF, +0.293 MCC / 0.723 AUC.\n\n| arm | mean MCC | ΔAUC vs anchor, paired bootstrap | |\n|---|---:|---|---|\n| A — LSA over the spec's own text only | +0.226 | +0.020 [−0.012, +0.053] | **spans zero** |\n| B — `text-embedding-3-small` (outside corpus) | +0.254 | +0.035 [+0.006, +0.064] | excludes zero |\n| B vs A directly | | +0.015 [−0.006, +0.038] | **spans zero** |\n\nDocument-internal semantics does not merely fail to gain — it **loses 0.067–0.101 MCC** to\nplain exact matching, stable in sign across k ∈ {25,50,100,200}. The pre-registered\nfalsification bar (+0.40 MCC, or beating the anchor by the 0.045 floor) was not approached.\n\n**Read this narrowly.** (a) The confirming A-null/B-positive pattern is present in the point\nestimates but **B vs A spans zero** — the arms are not separated from each other, only from\nthe anchor. (b) 589 passages is thin for LSA, so arm A's null is confounded with power: the\nhonest claim is *\"document-internal semantics AT THIS CORPUS SIZE did not close the gap\"*,\nnever *\"the document does not contain it\"*. (c) Two of six frozen predictions did not hold\n(P4 failed for arm B; P6 unestablished). (d) **No adversarial review has run.**\n\n*Unplanned finding, and the most reusable part:* both arms **beat the anchor on RANKING and\nlost on DECIDING**. Soft matching flattens the score distribution and Otsu — a\ndistribution-shape rule — cuts a flattened distribution worse. Real signal, eaten by\ncalibration. Same theme as `threshold.py`'s opening.\n\n*Why the negative weights matter here:* the learned readout gives 3–11 of every 19–28 query\natoms a NEGATIVE weight. Similarity is monotone at any resolution, so no embedding channel\ncan express \"this atom is semantically near the behaviour and counts AGAINST relevance\". The\nmissing function is discriminative, not a similarity — which is why a better semantic space\nwas never going to be the answer, and is direct support for the restated goal's\n`textual`/`assumed`/`world` split.\n\n**Do not iterate this.** Sweeping embedding families/k/scorer forms until MCC rises is the\nwithdrawn `rho` lead one level out. The sweep was fixed in advance and is reported entire,\nlosers included.\n",
-   "source_class": "arc1_docs"
+   "id": "S01256",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5488-5564",
+   "text": "commit c3f6922034cc83c7a4294a52d78b003055d1b1e4\nordinal 220\ndate 2026-08-15 12:08:30 -0700\nauthor Matt Stults\nsubject gen-12 round FROZEN: restart-on-repeat chain policy + arity check, reviewed and offline-verified\nCommits the exact state the next slice will run with, so the run is\nreproducible against one contract.\n\nCODE (uncommitted until now; suite green at 877 passed / 1 pre-existing\nxfail, plus 411 in resolve_runs):\n\n* Restart-on-repeat chain policy. A repair chain that emits a reply\n  byte-identical to an earlier one in the same chain is frozen: the chain is\n  discarded and redrawn once from attempt 1. Capped at ONE restart per\n  clause -- a refreeze abandons rather than restarting again, so the worst\n  case is a genuine bound of two chains, not a floor.\n* Arity-aware declaration check in checks.py.\n\nFOUR FINDINGS FROM A CLEAN-CONTEXT ADVERSARIAL REVIEW, each reproduced\nindependently before it was applied (this repo's rule: adversarial reviews\nfind false positives):\n\n* D1/F1 cost gate. estimate_cost carries TWO quadratic terms, so the\n  rejected `estimate_cost(..., 2T)` shim over-charged ~4.5x and refused\n  every live config. Correct pricing is estimate_cost(T) DOUBLED. The P5 pin\n  is now parametrised by glob over all 8 reachable config*.json, asserting\n  the relation only -- never a pinned dollar figure. It caught that\n  config_graph_nodes.json ($1.9940 vs its $1.00 ceiling) was refused by its\n  own gate.\n* F2 prev_shape hole. Flags were cleared at the restart but prev_shape was\n  not, so a non-parsing redraw retained the DISCARDED draft's shape and the\n  next module was diffed against bytes nobody kept -- force-keeping a clause\n  into the graveyard on a discarded draft's flag. Fixed; pinned on the\n  non-parsing path specifically.\n* F3 docstring stated the rejected 2T shim as current behaviour.\n* F4 the seam guard can vary the redraw's body; ACCEPTED and recorded rather\n  than repaired, with the reachable path written down.\n\nCEILING, raised by the human, minimal by ruling: config_graph_nodes.json\n1.00 -> 2.00 exactly (not 2.50, not \"with headroom\" -- a ceiling with slack\nhas stopped being a constraint). config_corpus_all.json untouched at $8.00;\nthe ruling is more, smaller slices (~125 nodes, halved by the doubling).\n\nOFFLINE VERIFICATION (preflight_replay/, zero spend):\n* Arity check: 0 false positives on 237 accepted module files, 230 accepted\n  final attempts, 120 first-try successes. No accepted module is pulled into\n  a repair loop.\n* Restart blast radius: 52 of 212 multi-attempt chains fire. Cost multiplier\n  measured at 0.89x-1.28x, NOT 2x -- the truncated chain nearly pays for the\n  redraw. The est*2 in run() is a gate bound, not a spend forecast.\n* 4 chains that SUCCEEDED would have been restarted (7.7% of fired chains),\n  inside the 9-12% band the redraw-not-abandon ruling was made against.\n* Resumption measured, not inferred: the stamp is written on the success\n  path only, so a discarded chain can never make a resume skip real work.\n\nLIVE VALIDATION (20260815-113545, $0.0119 / 7 calls, criteria pre-registered\nper clause BEFORE the run): 6 translated, 0 failed, flags empty, no restart.\nNO REGRESSION -- and explicitly NOT a validation of either new path: no\nchain froze and no module carried an arity mismatch, so neither mechanism\nwas entered. Rejected by name: reading 6/6 translated as validation of the\nchain policy. The cohort went quiet because it was selected on OLD-PROMPT\nfailures and the committed prompt changes appear to have fixed them\n(l171_426_n024: unrepaired-after-5-attempts -> translated on attempt 1).\n\nANALYSIS COMMITTED, NOT ACTED ON: the abstention-boundary measurement and\nits cross-model check. The 32% over-translation FIGURE is WITHDRAWN (kappa\n0.248 between judges); the DIRECTION survives and the circularity worry is\nrefuted by direction (15/15 discordant pairs run toward the stricter\nverdict, McNemar p = 6.1e-5). What needs no judge at all is documentary: the\nprompt contradicts itself on abstain-vs-translate, and DeepSeek gave both\nanswers to a clause whose translated exemplar sits in its own system prompt.\nNo prompt file is touched by this commit.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01020",
-   "path": "semi-formal-experiment/HANDOFF.md",
-   "commit": "pin",
-   "lines": "827-838",
-   "text": "### Lead 1 — threshold calibration (+0.19). Recovered 40%, then hits a structural wall.\n11 label-free rules, pre-registered preference (Otsu, zero free parameters). Otsu recovers\n**+0.073 of +0.181 (40%)**, CI excludes zero, beats LOBO in 9/9 cells, stable across all 5\natom draws (+0.268 ± 0.007). But **no rule reaches oracle, and none can**: the three\nbehaviours' score distributions are nearly identical (mean 0.16–0.19, sd 0.14–0.18) while\ntheir optimal cuts differ by **0.40**. A distribution-shape rule structurally cannot produce\nthat spread. Eight of eleven rules land in a narrow +0.25–0.32 band.\n\n*(`relevance.predict` now derives its cut label-free by default, retiring\n`DEFAULT_THRESHOLD = 0.18` — an in-sample argmax on the scoring panel, i.e. a live invariant-9\nviolation that shipped for most of this session.)*\n",
-   "source_class": "arc1_docs"
+   "id": "S01257",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5565-5606",
+   "text": "commit 39b464c21868c5bb7e90f2204b060420380c94a6\nordinal 221\ndate 2026-08-15 12:19:30 -0700\nauthor Matt Stults\nsubject guard: fence the graph-node worked example -- it was substituted for a watched file and inherited none of the watching\nFound by asking why a gen-12 commit touched no watched file when the\nassembled system prompt had demonstrably moved (28,091 -> 37,891 chars).\n\nTHE GAP. config_corpus_all.json builds its system prompt from four files:\n00_task.md, 10_output_format.md, **node_worked_example.md**, and\n30_failure_modes.md -- and lists the watched prompt/20_worked_example.md as\nUNUSED. The graph-node run swaps its own worked example in for the watched\none. Three of the four files instructing the corpus run were fenced; the\nfourth was not, purely because it lives beside the graph configs instead of\nin prompt/.\n\nWHY IT MATTERS MORE THAN THE OTHER THREE: a worked example is a\nDEMONSTRATION, and a demonstration overrides prose because it is what the\nmodel imitates. That is not speculation here -- this file currently\ncontradicts 00_task.md's abstention criterion (00_task.md:110 makes a\nsection heading grounds to abstain; node_worked_example.md shows a heading\nnode translated and says a hollow module or a clean abstention \"are both\nbetter than an invented obligation\"), and a production model gave BOTH\nanswers to a clause whose translated exemplar sits in its own system prompt.\n\nNothing has slipped through: both files last moved together in 3d856a8. The\ngap is live, not historical -- the drafted abstention fix edits this very\nfile, and under the old list it would have landed with no human review.\n\nRegistered as a glob (node_*.md) so a future node-side prompt file is fenced\non arrival rather than after the fact. Per this repo's rule that\nregistration, not documentation, fences a thing.\n\nDELIBERATELY NOT ACCEPTED. The guard now reports the file as NEVER REVIEWED,\nwhich is the correct state: `--accept` is a human act recorded with a name,\nand attesting a file whose self-contradiction we just documented would be\nthe exact failure the guard exists to prevent, performed by hand.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01021",
-   "path": "semi-formal-experiment/HANDOFF.md",
-   "commit": "pin",
-   "lines": "839-863",
-   "text": "### Lead 2 — the section channel (+0.16). NOT RECOVERABLE LABEL-FREE.\n\n| | MCC |\n|---|---:|\n| oracle section election, then distribute | **+0.641** |\n| supervised section-only (78 params/cell) | +0.536 |\n| supervised, TRANSFERRED from the other 2 behaviours | +0.334 |\n| best label-free section ranking at an **oracle** cut | +0.408 |\n| best label-free ranking at any parameter-free cut | +0.18 … +0.34 |\n\nThe pre-registered design **lost** (+0.177 vs +0.310 per-clause baseline, CI\n[−0.211, −0.079]); the best of 16 variants (+0.335) has a CI spanning zero.\n\n**The mechanism is the finding.** The only behaviour-specific label-free signal available is\nthe atom index, and aggregating it to section level **adds no information** — it re-uses the\nsame clause matches. Firing fraction, evidence mass, section-level atom-profile joins, the\nrung ladder as elector, the section tree, `kind` composition, adjacency and heading-word\noverlap all re-derive the same evidence.\n\nAnd the decisive part: **~60% of the supervised +0.536 is a generic \"which sections are\nsubstantive\" prior** that only reaches parity with the clause operator even when handed the\nother behaviours' labels — while **the remaining ~40% encodes which sections THOSE JUDGES\ntreated as relevant. That is a property of the judges, not of the document.** No\ndocument-grounded method can access it, at any budget.\n",
-   "source_class": "arc1_docs"
+   "id": "S01258",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5607-5667",
+   "text": "commit d9cc2d0547a7d607fb14bebd4eb99bb6b46c4174\nordinal 222\ndate 2026-08-15 12:33:45 -0700\nauthor Matt Stults\nsubject review follow-ups: stop the generator from silently reverting the ceiling ruling\nThree findings from a clean-context adversarial review of c3f6922 -- the\nround that FIXED the previous review's findings, and had not itself been\nreviewed. Its verdict on the four fixes themselves (F2/F3/F4/P5): all\ncorrect, all non-vacuous, none breakable -- each was reverted in a pinned\nworktree and exactly the right test reddened. Everything below is collateral\nthe fixes did not reach.\n\nF-A (the serious one) -- node_corpus.py GENERATES config_graph_nodes.json and\nhard-coded `max_cost_usd=1.00`, rebuilding the whole `cost` block from\nphase_1/config.json. A routine `python3 node_corpus.py` refresh therefore\nwrote the old ceiling back AND DELETED the `_ceiling_note` recording why the\nhuman raised it -- silently reverting a ruling, and erasing its grounds so\nthe next reader could not tell. The adjacent comment also still asserted the\npre-doubling \"~$0.99 worst case\", false since the restart policy landed.\nFixed at the source: the note is now emitted BY THE GENERATOR, because a\nvalue hand-patched into a generated file is exactly what the next refresh\nloses. VERIFIED by regenerating -- ceiling 2.00 and note both survive, and\nthe regenerated config is otherwise byte-identical to the committed one.\nRejected by name: patching the JSON again and leaving the generator alone.\n\nF-B -- TRANSLATION_RUNBOOK.md, the document written FOR A HANDS-OFF AGENT\nABOUT TO SPEND, still said 1.00 / $0.9970 / $0.003 margin and did not mention\nthe restart policy anywhere, so its worst-case call count was half of\nreality. Updated to 2.00 / $1.9940 / $0.006, with the doubling explained and\n-- the part the review insisted on -- the distinction that matters at a\ngate: EXPECTED spend is ~1.0x of the old policy (measured 0.89x-1.28x\nwhole-run, because the truncated chain nearly pays for the redraw), but\nREQUIRED GATE HEADROOM stays 2x. The 125-node slice cap depends on it.\n\nF-C -- test_repair.py justified its slice size by claiming a sub-threshold\nqueue \"will not dispatch at all\". dispatch_core.py:930-937 says the opposite\nin its own docstring: a starvation fallback runs sub-threshold queues LIVE,\nso the tail and top of a tree never wait on a threshold they cannot reach.\nThe assertion was never wrong -- 8 nodes is a real slice and it passes -- but\nthe grounds were, and this round's own F3 was precisely \"a docstring\nasserting behaviour the code contradicts is how the wrong thing gets\nreintroduced\".\n\nF-D -- c3f6922's message claimed \"411 in resolve_runs\". Measured: 341.\nFull tree at this commit: 1218 passed, 1 xfailed. Suite counts are\nload-bearing evidence in this repo, so the number is corrected here rather\nthan left standing.\n\nAlso recorded in EXPERIMENTS.md, from the other two reviews landing together:\nthe preflight's blast radius is 32% [24-42] on the live system_sha stratum,\nNOT the pooled 24.5%; the arity check's upside is ~16 live firings, not 39\nreplay flags, because run_checks returns early when schema validation fails\n(its ZERO-FALSE-POSITIVE half is confirmed and is the load-bearing half); and\nnode_worked_example.md is STALE on five counts -- including that its own\nthird exemplar violates the file's own `NEEDS -> requires` contract, which\nnothing catches.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01022",
-   "path": "semi-formal-experiment/HANDOFF.md",
-   "commit": "pin",
-   "lines": "864-869",
-   "text": "### What this implies about the project's central question\nInter-judge Jaccard is 0.16–0.62 and gold is the intersection of two judges. So part of every\njudge's score is **shared idiosyncrasy that no content-grounded function can reach**. The\n+0.278 → +0.591 gap should no longer be assumed recoverable: a measurable share of it is\njudge-specific by construction.\n",
-   "source_class": "arc1_docs"
+   "id": "S01259",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5668-5684",
+   "text": "commit 4bdc7e5cf1a8c22705da5280245d97ca70677c34\nordinal 223\ndate 2026-08-15 13:08:25 -0700\nauthor Matt Stults\nsubject PRE-REGISTER the paired re-run: fixes vs data, readings fixed before the result\nOwner's question -- 98% on the new 48-node slice vs 69% on 20260814-173322\nconfounds contract change with clause selection, because the slice moved both.\nRe-run holds the CLAUSE SET fixed (the same 88 ids) and moves only the\ncontract. Readings fixed now: R>=92% => FIXES, R<=75% => DATA, between => BOTH\nand R becomes the quoted corpus-wide expectation instead of 98%. Per-clause\n2x2 pairing is the real evidence; old-translated -> new-unrepaired is a\nregression and is reported however small.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01023",
-   "path": "semi-formal-experiment/HANDOFF.md",
-   "commit": "pin",
-   "lines": "870-885",
-   "text": "### What DID work — the rebuild wins as a RANKING channel\nPassage AUC, paired bootstrap, all CIs excluding zero:\n\n| behaviour | shipped | rebuilt | Δ |\n|---|---:|---:|---:|\n| helpfulness | 0.561 | **0.673** | +0.111 |\n| harm-avoidance | 0.695 | **0.781** | +0.086 |\n| over/under-caution | 0.840 | **0.867** | +0.027 |\n\nTwo caveats recorded in `section.py`: the previously-quoted shipped AUCs (0.522/0.633/0.623)\n**do not reproduce** — on the corrected universe with the current loader they are\n0.561/0.695/0.840, and the deltas above are against the re-measured figures; and\n`election_score` is a **panel-fitted** choice of 3 (declared, no-choice baseline 0.671/0.742/\n0.864, bias bound 0.039 AUC).\n\n",
-   "source_class": "arc1_docs"
+   "id": "S01260",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5685-5721",
+   "text": "commit 10911de7fbf256ea6309ec137610038d32fd359f\nordinal 224\ndate 2026-08-15 15:58:35 -0700\nauthor Matt Stults\nsubject prefer-polarity detector: catch the class stage 4 structurally cannot\nA stage-4 read of 25 modules found the corpus asserting the OPPOSITE of the\nspecification, in modules that passed schema, clingo, link checks and\nread-back. Verbatim, l1974_2125_n019.lp:57, from a BAD-marked example of\nescalating emotional closeness with a lonely user:\n\n    asserts(l1974_2125_n019, prefer, respond_with(R))\n        :- escalates_emotional_closeness(R).\n\nROOT CAUSE IS A CONTRACT GAP, NOT A MODEL SLIP: `status` has no negative pole.\nWith a single-act `asserts` there is NO CORRECT ENCODING for \"avoid X\", and the\nmodel reliably picks the one that inverts.\n\nWHY NOTHING ELSE CATCHES IT, INCLUDING ALL FOUR STAGE-4 SEATS: the read-back\nprose is CORRECT (\"responding with % is dispreferred\"); only `status` is wrong.\nSeats 4a-4d all judge the English RENDERING -- 4b is explicitly not shown the\nprogram at all -- so a defect living in the gap between a correct rendering and\nthe field it was rendered from is invisible to every one of them. That is why\nthis check is mechanical: it compares an entry's `status` against its OWN\nread-back, a self-contradiction inside one object.\n\nMEASURED over every stored module: 9 entries across 7 clauses.\n\n⛔ ORIGIN IS `stage4-detector`, DELIBERATELY *NOT* DISCLOSABLE. Every instinct\nsays a self-contradiction inside one entry is stage-2-shaped and belongs in the\nrepair loop. It must not go there YET, because with no negative pole a model\ntold \"these two disagree\" cannot resolve it correctly: it will either drop the\nentry (deleting the document's guidance) or rewrite the read-back to say\n\"preferred\" -- silencing the only surviving evidence and leaving a module that\nis semantically backwards AND internally consistent. That is strictly worse\nthan today and is textbook defect-trading. The precondition for promoting it to\na disclosable stage-2 check is a negative pole in `status`, which is an owner\nruling on guard-watched schema.py; the origin changes to \"schema\" in the same",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01024",
-   "path": "semi-formal-experiment/HANDOFF.md",
-   "commit": "pin",
-   "lines": "886-900",
-   "text": "## THE 9-BEHAVIOUR PANEL — power, NOT a bar\n\n`ai_character_index/data/panel-coverage.json` — **9 behaviours x 2 specs = 18 cells**,\n2,632 openai + 1,682 anthropic citations. Verified: **locator join is 100%** on both sides\n(589 model-spec / 374 constitution universes via `panel_universe.spec_passages`).\n\nBehaviours: animal-welfare-impacts, harmlessness-to-the-user, helpfulness,\nobjectivity-on-contested-questions, avoiding-over-and-under-caution,\nproportionate-risk-mitigation, harm-avoidance-to-third-parties, how-to-approach-tradeoffs,\nuser-autonomy.\n\n**This fixes the binding statistical constraint.** n=3 behaviours gave a behaviour-level MDE of\n0.209 — every \"which behaviours does this help\" claim in this project has been unmeasurable,\nincluding the base-rate story that had to be demoted to a hypothesis. 9 behaviours settles it.\n",
-   "source_class": "arc1_docs"
+   "id": "S01261",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5722-5729",
+   "text": "commit that adds the pole.\n\nSuite: 877 passed, 1 pre-existing xfail.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01025",
-   "path": "semi-formal-experiment/HANDOFF.md",
-   "commit": "pin",
-   "lines": "901-921",
-   "text": "### ⚠️ Three things not to get wrong\n\n1. **IT IS A WEAKER PANEL. NEVER QUOTE ITS AGREEMENT AS \"THE BAR.\"** Judges are\n   **gpt-mini, haiku, qwen-small** — small models. The goal is \"quality equal to or better than\n   asking the FRONTIER models\", so `behaviours.json` (sol/kimi/fable/opus/kimi-k2) remains THE\n   BAR. Use this panel for **generalisation and power**, and label it by its roster wherever it\n   appears.\n2. **THE UNIVERSE IS TRUNCATED, WORSE THAN BEFORE.** Score distribution is\n   `{2:1309, 3:1145, 4:741, 5:583, 6:536}` — **no 0 AND no 1**, where `behaviours.json` at\n   least kept score 1. Reconstruct via `panel_universe` and restore absent passages as\n   all-zero. **Score-1 passages are IRRECOVERABLE** — real \"tangentially related\" judgements\n   now indistinguishable from \"not related\". State that limitation with any number.\n   Mistaking a truncated universe for the judged set is the error that made every headline in\n   this project wrong, in the tool's favour, for most of a day.\n3. `verdicts` is a **JSON object (a real dict)**; `role` is JSON `null`. An earlier note here\n   said `verdicts` was a string repr — that was wrong, an artifact of a pretty-printer calling\n   `str()` on it. `panel_v2.parse_verdicts` accepts both shapes and uses `ast.literal_eval`,\n   never `eval`, for the string path. Verdict scale is\n   **2 = relevant, 1 = tangentially related, 0 = not related** (confirmed by the project owner), matching\n   the existing panel's core/related/not-relevant.\n",
-   "source_class": "arc1_docs"
+   "id": "S01262",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5730-5773",
+   "text": "commit feb885b9b7fe06ae30fd8c16848dfe3388014180\nordinal 226\ndate 2026-08-15 22:28:31 -0700\nauthor Matt Stults\nsubject D4: stage 4 could not see the graph corpus, and reported zero instead of saying so\n`seats.survey()` globbed `m*.json`. Clause ids are `m0217`; GRAPH NODE ids are\n`l1_170_n056`. MEASURED against\n`resolve_runs/graph_v2/translation_sample/runs`:\n\n    glob \"m*.json\"  (before) ->   0 modules,   0 reach a seat\n    fixed           (after)  -> 361 modules, 323 reach a seat\n\nSo stage 4 -- the ONLY stage that judges whether a translation says what the\nclause says -- had never judged a single graph node, and `seats.py --cost`\npriced a live run at $0.00. The failure was SILENT in the worst way: it\nprinted \"TOTAL 0 (0 reach a seat)\", which reads as \"nothing to review\", not\nas \"I cannot see your corpus\". This is the failure mode `survey`'s own\ndocstring warns about (\"a pipeline reporting 3 of 4 passed stage 4 would be\nreporting that three clauses had nothing to read back\") one level worse --\nnot miscounted, uncounted.\n\nMATCHED BY ID SHAPE, NOT A WIDENED WILDCARD, and the difference is measured:\na naive `l*.json` also swallows `<id>.version.json` and `<id>.transcript.json`,\nwhich are sidecars, not modules -- they fail `schema.validate` and land in\n`stage-2-invalid`, inflating the very \"never reached a seat\" figure this\nfunction exists to report honestly. Naive glob: 371 stage-2-invalid. This\npatch: 10. A third id naming will need a line here, deliberately, so the next\ncorpus cannot go unseen in silence.\n\nWHAT THIS UNBLOCKS: measuring correctness at all. Today's stage-4 read of 25\nmodules found 13 defective -- all of which passed schema, clingo compile, link\nchecks and read-back. Until now the only thing measurable on the graph corpus\nwas the translation RATE, which is why the rate is what we have been\noptimising.\n\nCOSTED, NOTHING SPENT (`seats.py --cost`, free): 323 clauses at\n$0.2512 likely / $1.6351 worst on flash; $28.44 likely on frontier.\n\nSuite: 877 passed, 1 pre-existing xfail; seat tests 224 passed.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01026",
-   "path": "semi-formal-experiment/HANDOFF.md",
-   "commit": "pin",
-   "lines": "922-947",
-   "text": "### Wired: `panel_v2.py` (+ `benchmark.py --panel-v2`)\n100% join reproduced; universe restored (6,867 recovered rows, all-zero, tested); duplicate,\nunjoinable, and judge-missing rows all RAISE. Re-derived noise floor **0.0288** (18 cells,\n1000 resamples) — the old 0.045 is refused *by name* in code and test.\n\n**⚠️ THE SCORE-1 TRUNCATION INFLATES THE JUDGES BY ~+0.089 MCC.** Gold is untouched (a\npair-gold needs two judges at >=1, so score >=2), so the whole effect lands on the *judges'\npredicted sets*: their lone \"tangentially related\" calls vanish, taking their false positives\nwith them. Applying the export's `score >= 2` rule to the frontier panel moves judge LOO\n**+0.631 -> +0.720**, with 7.5-29.7% of passages changing class. **So the small-model judge\ncolumn on panel v2 over-states its own panel by ~+0.09, and the tool-vs-judge gap it reports\nis conservative IN THE JUDGE'S FAVOUR.** Irreparable from this file; only a re-export from\n`experiments/panel-judges/runlog-v2.jsonl` fixes it.\n\n**Quotes are re-derived for every row.** The export's published rows carry RAW passage text\n(`**bold**`, inline fences) while recovered rows would carry the publisher's cleaned quote —\n1,027/2,632 openai and 306/1,682 anthropic differ. Mixing them would have biased the clause\njoin **along the gold axis**, since \"published\" means some judge saw relevance. Tested.\n\nA second independent demonstration of the truncation defect: on the export's own citation list\nthe small-model judges score **-0.221** mean MCC (base rate near 1) versus +0.525 on the true\nuniverse — a delta of 0.746.\n\n`check_bar_provenance` is now a standing guard: any document quoting a bar off these\nbehaviours must name the roster and say \"small-model panel\", or it raises.\n",
-   "source_class": "arc1_docs"
-  },
-  {
-   "id": "S01027",
-   "path": "semi-formal-experiment/HANDOFF.md",
-   "commit": "pin",
-   "lines": "948-954",
-   "text": "### Blocked on spend\n- **Constitution clause annotations do not exist** — `annotations_b8.json` is 587 clauses, all\n  `m*`, zero `c*`. So the anthropic side cannot run the ontology tier even once atoms exist.\n  `annotate.py --clauses constitution_clauses.json --live` is ~47 requests; `annotate.py`\n  prints no estimate, so cost is **unverified** (~$0.1-0.2 by scaling). Needs its own costing.\n\n",
-   "source_class": "arc1_docs"
+   "id": "S01263",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "5774-5806",
+   "text": "commit 6eae34b86bc0857e417c0203e3e5adb314ccb56e\nordinal 227\ndate 2026-08-15 23:02:59 -0700\nauthor Matt Stults\nsubject stage-4 baseline: the driver, the first correctness numbers, and why they cannot be quoted yet\nDriver at _debug_gen11/stage4_baseline/stage4_driver.py -- owns the seat client\nseam READBACK_SMOKE.md gap 2 says nobody owns. $0.083144 over 324 calls\nagainst a printed $0.4182 worst / $0.0711 likely.\n\n81 of 88 clauses reached a seat: 15 clean, 66 with >=1 defect verdict. THAT\nRATIO IS NOT QUOTABLE -- 4d refused on 57 of 81 (70.4%) for one mechanical\nreason (the model drops the 'C1 ' label and seats._reply_item has no prefix\ntolerance), 4c's 264 unlicensed is inflated by an estimated 179 legitimately\nborrowed glosses, and the judge is the same model that wrote the translations.\nAll three were self-reported by the agent that ran it.\n\nTHE SOLID RESULT: stage 4 caught 0 of 1 polarity inversions -- and not because\nit could not see it. readback renders the status field, so 4c and 4a were shown\n'clause l1_170_n053 prefers <impose_restrictive_rules(D)>', each wrote a reason\nstating the correct OPPOSITE meaning, and each then PASSED the item. The defect\nsurvives a reader who has already understood it. n=1; six more clauses exist and\ncost $0.006 to settle.\n\nAlso recorded: D1/D2 arm-B experiments closed at the instrument check (arm B\nnever sent, $0.0895) because single-draw cohort recruitment is mis-powered by\nconstruction -- neither defect reproduces on re-draw, and the prompt is\nbyte-identical across every run since 08-10, so it is temperature-0.2\nstochasticity, not drift.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   }
  ]
 }

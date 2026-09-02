@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_075",
+  "source_class": "arc1_docs",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S01088",
+  "last_span": "S01102"
+ },
+ "spans": [
+  {
+   "id": "S01088",
+   "path": "semi-formal-experiment/REPRODUCIBILITY.md",
+   "commit": "pin",
+   "lines": "103-139",
+   "text": "## The rule for new work\n\nA fix or feature is in-principle done only when its step conforms to the\nsandwich rule. Reviews (including the standing adversarial reviews) should\nflag transcript-only procedure as a finding, same severity as a missing test.\n\n**A new numeric constant is a fitting surface.** Contract invariant 9 makes any\nsweepable literal in a scoring path a place where results can be fit. Three\nshapes are permitted and the modules differ — pick one deliberately:\n\n* `combined.py` permits **no new numeric constant at all**: every value declares\n  `inherited_from` (`test_combined.py:526-535`).\n* `structural.py` requires a `CONSTANTS` table entry carrying justification and\n  provenance (`test_structural.py:142+`).\n* A **derived** constant — `patient.PATIENT_MISMATCH_DISCOUNT` is the worked\n  example — is sha-pinned to the document that derives it and kept deliberately\n  OUT of `Weights` so it cannot be swept (`test_patient.py:148-149`, `:486-488`).\n  Derivation is outcome-blind (see `cycles/patient-pricing-2026-08-04/DISCOUNT_DERIVATION.md`);\n  if a mechanism change breaks the constant's plateau, **re-derive blind — never\n  re-tie-break after seeing which clause crosses.**\n\nA bare literal in a scoring path is a review finding.\n\n**Determinism is a cross-PROCESS property, not a within-process one.** The\n\"no hash-seed dependence\" rule above is verified by rebuilding under a different\n`PYTHONHASHSEED` in a second process (`test_snapshot.py:125-127`, `:170-172`), not\nby calling the builder twice in one. Any new deterministic artifact gets the same\ntwo-process test; a same-process repeat does not test the class that actually bit us.\n\n**Prompt-hygiene guards bind on the COMPOSED prompt.** Invariant 8 is checked\nagainst the fully spliced prompt for both docfacts files, an unspliced\n`{{DOCFACTS` marker is a refusal, and closed enumerations (e.g. the principals)\nmust occupy **exactly one line** (`test_annotate.py:784-795`, `:1250-1270`). That\nlast rule exists because a review once deleted the enumeration line and 1,701 tests\nstayed green — the old check was a substring scan. Do not reformat a closed\nenumeration across lines.\n",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01089",
+   "path": "semi-formal-experiment/CYCLE_DESIGN.md",
+   "commit": "pin",
+   "lines": "1-11",
+   "text": "# cycle.py — design contract (2026-08-04, under construction)\n\nOne fix cycle as a state machine over typed artifacts. The driver runs\nmechanical phases itself and halts with a named, templated blank wherever\njudgment is required. The operator (LLM or human) is only ever filling typed\nblanks — the seats' dossier-in/verdict-out contract lifted to workflow level.\nMotivation: across this project every recorded operator error was\norchestration (a missing --tool flag scoring an empty prediction set; a\n`| tail` swallowing a failing gate's exit code before a paid run), and zero\nwere judgment errors at certified seats.\n",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01090",
+   "path": "semi-formal-experiment/CYCLE_DESIGN.md",
+   "commit": "pin",
+   "lines": "12-21",
+   "text": "## State and interaction\n\n- All state under `cycles/<name>/` + derived `state.json`; NO wall clock\n  (dates caller-supplied); deterministic artifacts; subprocess exit codes\n  propagated.\n- `status` reports phase, why, and the exact artifact needed next.\n  `next` runs the next mechanical phase, or halts and emits a template.\n- `--override PHASE --reason` skips a gate LOUDLY: recorded in state, echoed\n  by every later `status`, and surfaced in the close log and decision draft.\n",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01091",
+   "path": "semi-formal-experiment/CYCLE_DESIGN.md",
+   "commit": "pin",
+   "lines": "22-40",
+   "text": "## Phases\n\n1. OPEN — `manifest.json`: fix description, DOCUMENT-SIDE rationale, files to\n   change, gate tests, review_required, baseline snapshot tag, config.\n2. PREDICT — `prediction.json`: expected_shrink / must_not_grow over the\n   closed cause taxonomy; sha-FROZEN on validation, tamper = hard error.\n3. IMPLEMENT GATE — refuses until gate tests pass, declared files actually\n   changed, and (if required) a review verdict artifact says \"proceed\".\n4. MEASURE — snapshot, diff vs baseline, flip dossiers. No-op → short-circuit\n   to DECIDE with a drafted no-effect decision.\n5. ADJUDICATE — emits the flip-seat assignment; waits for a verdict file that\n   VALIDATES (document-side adjudication per briefs/flip_adjudicator.md).\n6. CENSUS — regenerates audit dossiers, emits autopsy-seat assignments,\n   merges + validates verdicts, computes census-to-census deltas, checks the\n   frozen predictions → `prediction_check.json`.\n7. DECIDE — drafts `decision.draft.json` with every computed field filled and\n   `decision`/`signed_by` blank; halts for a signed `decision.json`.\n8. CLOSE — one line appended to `cycles/CYCLE_LOG.jsonl`.\n",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01092",
+   "path": "semi-formal-experiment/CYCLE_DESIGN.md",
+   "commit": "pin",
+   "lines": "41-49",
+   "text": "## The decision rule (policy-critical — see tension below)\n\nKeep/revert is grounded in the DOCUMENT-SIDE evidence: the flip\nadjudications (phase 5). The census deltas and prediction check (phase 6) are\nMEASUREMENT, reported in the draft so the decision is informed, and gating\nonly in the refusal direction: a FAILED prediction or an override obliges a\nwritten justification; it never auto-decides. Nothing in the driver keeps a\nchange because a panel-derived count moved the right way.\n",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01093",
+   "path": "semi-formal-experiment/CYCLE_DESIGN.md",
+   "commit": "pin",
+   "lines": "50-61",
+   "text": "## Known tension for review\n\nThe prediction artifact quantifies targets over CENSUS CAUSE CLASSES, which\nare panel-derived (the census pairs tool output with panel verdicts). Policy:\nlabels direct attention, never truth. The design's position: predictions are\nfalsifiable statements about label-derived MEASUREMENTS, checked mechanically\nand disclosed — not fit criteria, because the keep decision cites the\ndocument-side adjudications and a prediction failure forces justification\nrather than reversal. Whether that line is drawn correctly — or whether\nper-cycle prediction-checking on panel-derived counts is de-facto fitting\nwith extra steps — is exactly what an adversarial review should attack.\n",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01094",
+   "path": "semi-formal-experiment/CYCLE_DESIGN.md",
+   "commit": "pin",
+   "lines": "62-67",
+   "text": "## Scope\n\nv1 supports one cycle shape: a code/matching fix. Extension points marked for\nannotation-cycle and selection-cycle variants. cycle.py joins FORBIDDEN (it\norchestrates panel-reading census tooling).\n",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01095",
+   "path": "semi-formal-experiment/CYCLE_DESIGN.md",
+   "commit": "pin",
+   "lines": "68-127",
+   "text": "## ⚠️ BINDING AMENDMENTS (2026-08-04 adversarial design review — supersede\nanything above that conflicts)\n\n1. **CENSUS LEAVES THE PER-CYCLE PATH (F1).** The review confirmed the flagged\n   tension as a contradiction: the census is the rate-limited outer loop, and\n   running it per cycle makes fix selection/stopping coordinate descent on\n   panel-derived counts even when every keep is document-justified. The\n   DEFAULT cycle is: OPEN → PREDICT → IMPLEMENT GATE → MEASURE → ADJUDICATE →\n   DECIDE → CLOSE, with `census: deferred_to_checkpoint` recorded. A separate\n   CHECKPOINT cycle-shape (pre-registered, every N closed cycles or\n   explicitly declared) runs the census, checks any census-class predictions,\n   stamps every census-derived number DEV, and logs `census_consulted: true`.\n   PREDICT's REQUIRED targets are document-side, mechanism-level: expected\n   flip count/direction/specific clauses and adjudication expectations —\n   checkable at MEASURE/ADJUDICATE with zero panel contact.\n2. **Census identity (F2).** Census output is cycle-scoped\n   (`cycles/<name>/census/` or a tag-qualified dir) with the FULL config\n   identity (input shas, overlay sha, pricing_version, threshold rule) in its\n   index header; deltas are computed against a NAMED prior census artifact,\n   never \"the directory\". Never regenerate into a baseline's directory.\n3. **Verdict binding + tag immutability (F3).** Dossier generation records a\n   `dossier_set_sha` (over sorted per-dossier shas) in the assignment; the\n   wait-state requires the verdict artifact to echo it. The driver REFUSES\n   `snapshot --tag T` when snapshots/T.json exists with different content.\n   Verdict REUSE is legal only as an explicit `reused_from` record when the\n   dossier bytes are identical — never presented as fresh adjudication.\n4. **Flip budget (F4b).** MEASURE counts flips; >30 halts with the policy §4\n   template: split the change, or emit a pre-registered stratified-sample\n   assignment (behaviour × direction × cause). The first customer measured 34.\n5. **Freeze integrity (F5).** The MANIFEST's sha freezes at PREDICT alongside\n   the prediction; both re-verified at every later phase; manifest changes\n   only via a loud amendment artifact. PREDICT-freeze, ADJUDICATE-validation\n   and the DECIDE signature are NON-OVERRIDABLE; overriding PREDICT demotes\n   the cycle to `exploratory`, whose CLOSE cannot record KEEP. The\n   one-variable check is TWO-SIDED: declared files changed AND a sha-pinned\n   closure of undeclared inputs (captured at OPEN) unchanged. [Corrected per\n   PORTFOLIO_REVIEW F12: the original \"this workspace has concurrent agents\n   and no git\" rationale is STALE — the repo IS git-tracked (which is what\n   validates the git-primary A-side reconstruction, tooling item 0b). The\n   two-sided closure check stands on its own merits: concurrent agents, and\n   sha-pinned closure being the check the ceremony can verify mechanically.]\n6. **Census scope pin (F7).** Manifest declares `census_scope: dev`; the\n   driver hard-pins the behaviour list to the recorded DEV cells; touching a\n   held-out cell outside a pre-registered checkpoint is a non-overridable\n   refusal.\n7. **Reconstruction compatibility (F9).** A code fix is cycle-compatible ONLY\n   if the old behavior remains reachable via a version recorded in snapshot\n   config (the PRICING_VERSION pattern) so the baseline side reconstructs.\n   The driver must hardcode the two validators' differing flag spellings\n   (`--verdict-file` vs `--verdicts`) — do not \"harmonize\" them.\n8. v1.1 queue (non-blocking): state.json-is-a-cache invariant + tmp/rename\n   atomicity + single-open-cycle lock + pricing_version in the noop identity\n   (F6); briefs for the DECIDE signer and review-verdict seats (F9).\n\nFirst customer (versioned cut): safe on the tooling axis, and on the policy\naxis ONLY in this amended form — rule chosen label-free via the cut_stability\nroute and pre-registered BEFORE any census consultation; predictions at\nmechanism level (\"m0422 stops drifting; flips are threshold_drift only\");\nits 34 flips handled under the §4 budget path.\n",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01096",
+   "path": "semi-formal-experiment/CYCLE_DESIGN.md",
+   "commit": "pin",
+   "lines": "128-129",
+   "text": "---\n",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01097",
+   "path": "semi-formal-experiment/CYCLE_DESIGN.md",
+   "commit": "pin",
+   "lines": "130-142",
+   "text": "## ⚠️ PRE-BUILT CYCLES (added 2026-08-04 after P1 hit this undocumented)\n\nThe driver assumes OPEN precedes implementation: `_open` captures each\n`files_to_change` sha, and the IMPLEMENT gate refuses when those files are\nbyte-identical to their OPEN shas (\"the fix has not been implemented\"). Every\ncycle through S3 happened to follow that order, so this was never written down.\n\n**It does not always hold.** Work built in an isolated worktree and parked for a\nlater gate window (P1 join-integrity is the first case) arrives *finished and\nalready measured* before its cycle can open. The coordinator creates these\ndeliberately — parallel work needs isolation — so the pattern is expected, not an\naccident, and it needs a documented handling.\n",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01098",
+   "path": "semi-formal-experiment/CYCLE_DESIGN.md",
+   "commit": "pin",
+   "lines": "143-153",
+   "text": "### What the freeze can and cannot give you here\n\nSeparate two things the ceremony provides:\n\n* **The temporal guarantee** (predictions made before results are known). For a\n  pre-built cycle this is **already gone and no procedure restores it**. Do not\n  construct a ritual that appears to restore it.\n* **The mechanical gate coverage** (declared files changed; gate tests green;\n  closure of undeclared inputs unchanged; review verdict present). These remain\n  fully meaningful regardless of when the code was written, and are worth keeping.\n",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01099",
+   "path": "semi-formal-experiment/CYCLE_DESIGN.md",
+   "commit": "pin",
+   "lines": "154-178",
+   "text": "### The ruling (coordinator, 2026-08-04) — restore-then-reapply\n\n1. Record the hashes of the finished files, then restore them to their **pre-change\n   bytes in the CURRENT tree** — not to the worktree's fork point. A parked branch\n   may have zero unique commits (P1's did); checking out the fork point silently\n   reverts unrelated later work. Verify the restored files differ from the finished\n   ones **only** in this cycle's hunks before proceeding.\n2. Move any test file that exists solely to gate this change into `gate_tests`\n   (closure-pinned), not `files_to_change`.\n3. OPEN (captures the pre-change shas), then PREDICT from the drafts.\n4. Re-apply the saved files as the IMPLEMENT step and **verify byte-identity to the\n   reviewed bytes**. That check is what makes the shuffle legitimate rather than a\n   re-implementation: the gate then genuinely exercises declared-files-changed,\n   tests, and closure.\n5. Regenerate any measurement artifacts produced in the worktree — they were built\n   against a different tree and are misleading as-is (P1's `measure/` files date from\n   a superseded constant).\n\n**Rejected alternatives, with reasons:** `--override IMPLEMENT` records the truth but\ndiscards all three mechanical checks to avoid a file-shuffle — a bad trade, and it\nleaves a permanent override banner on a cycle that doesn't need one. Ratifying by\nreview + no-op proof alone (no cycle) loses the record for a change that does alter the\nmeasurement plumbing the census runs on; \"score-inert\" is a claim that deserves a cycle,\nand the no-op proof is evidence *for* it, not a substitute.\n",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01100",
+   "path": "semi-formal-experiment/CYCLE_DESIGN.md",
+   "commit": "pin",
+   "lines": "179-189",
+   "text": "### The disclosure is MANDATORY\n\nThe cycle record must state plainly, in the prediction notes **and** repeated in the\ndecision justification, that the change was built and measured before OPEN. Without\nthat line, restore-then-reapply is the one structure that could quietly *overstate*\nour discipline — a passing prediction reads as a blind prediction to any later reader.\nP1's draft prediction already carries the right form of words (\"all numbers below are\nmeasured, not hoped\"); keep them through to the decision.\n\n---\n",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01101",
+   "path": "semi-formal-experiment/CYCLE_DESIGN.md",
+   "commit": "pin",
+   "lines": "190-194",
+   "text": "## ⚠️ CYCLE CEREMONY MECHANICS (added 2026-08-04 — previously precedent-only)\n\nThese were learned by doing and lived only inside cycle directories. The gate-pin rule\nalone cost two halts and two re-closures in a single cycle.\n",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01102",
+   "path": "semi-formal-experiment/CYCLE_DESIGN.md",
+   "commit": "pin",
+   "lines": "195-204",
+   "text": "### The amendment channel\n\n`cycles/<name>/manifest_amendments.json` is the LOUD record for anything that changes a\nfrozen or pinned artifact mid-cycle. Each entry chains: `old_sha` must equal the previous\nentry's `new_sha` (the first equals `state.json`'s `frozen_manifest_sha`), so the chain is\nverifiable end-to-end and `cycle.py status` echoes every amendment forever. An amendment\nthat changes no manifest bytes still gets an entry with `old_sha == new_sha` — use this to\nrecord a test-delta or a disposition. **Never edit a frozen artifact silently; never\n\"fix up\" a sha in place.**\n",
+   "source_class": "arc1_docs"
+  }
+ ]
+}

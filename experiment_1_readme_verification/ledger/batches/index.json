@@ -21,1048 +21,706 @@
   "batch": "batch_004",
   "source_class": "arc2_json",
   "spans": 15,
-  "lines": 120
+  "lines": 81
  },
  {
   "batch": "batch_005",
   "source_class": "arc2_json",
   "spans": 15,
-  "lines": 22
+  "lines": 137
  },
  {
   "batch": "batch_006",
   "source_class": "arc2_json",
   "spans": 15,
-  "lines": 138
+  "lines": 217
  },
  {
   "batch": "batch_007",
   "source_class": "arc2_json",
   "spans": 15,
-  "lines": 15
+  "lines": 216
  },
  {
   "batch": "batch_008",
   "source_class": "arc2_json",
   "spans": 15,
-  "lines": 15
+  "lines": 290
  },
  {
   "batch": "batch_009",
   "source_class": "arc2_json",
   "spans": 15,
-  "lines": 15
+  "lines": 269
  },
  {
   "batch": "batch_010",
   "source_class": "arc2_json",
   "spans": 15,
-  "lines": 15
+  "lines": 181
  },
  {
   "batch": "batch_011",
   "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 15
+  "spans": 8,
+  "lines": 215
  },
  {
   "batch": "batch_012",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 105
- },
- {
-  "batch": "batch_013",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 15
- },
- {
-  "batch": "batch_014",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 15
- },
- {
-  "batch": "batch_015",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 15
- },
- {
-  "batch": "batch_016",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 56
- },
- {
-  "batch": "batch_017",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 101
- },
- {
-  "batch": "batch_018",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 15
- },
- {
-  "batch": "batch_019",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 15
- },
- {
-  "batch": "batch_020",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 15
- },
- {
-  "batch": "batch_021",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 15
- },
- {
-  "batch": "batch_022",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 23
- },
- {
-  "batch": "batch_023",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 151
- },
- {
-  "batch": "batch_024",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 15
- },
- {
-  "batch": "batch_025",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 15
- },
- {
-  "batch": "batch_026",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 15
- },
- {
-  "batch": "batch_027",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 15
- },
- {
-  "batch": "batch_028",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 15
- },
- {
-  "batch": "batch_029",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 167
- },
- {
-  "batch": "batch_030",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 16
- },
- {
-  "batch": "batch_031",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 15
- },
- {
-  "batch": "batch_032",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 15
- },
- {
-  "batch": "batch_033",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 15
- },
- {
-  "batch": "batch_034",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 15
- },
- {
-  "batch": "batch_035",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 103
- },
- {
-  "batch": "batch_036",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 138
- },
- {
-  "batch": "batch_037",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 15
- },
- {
-  "batch": "batch_038",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 15
- },
- {
-  "batch": "batch_039",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 103
- },
- {
-  "batch": "batch_040",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 29
- },
- {
-  "batch": "batch_041",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 111
- },
- {
-  "batch": "batch_042",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 15
- },
- {
-  "batch": "batch_043",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 15
- },
- {
-  "batch": "batch_044",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 60
- },
- {
-  "batch": "batch_045",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 206
- },
- {
-  "batch": "batch_046",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 15
- },
- {
-  "batch": "batch_047",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 15
- },
- {
-  "batch": "batch_048",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 15
- },
- {
-  "batch": "batch_049",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 39
- },
- {
-  "batch": "batch_050",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 164
- },
- {
-  "batch": "batch_051",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 53
- },
- {
-  "batch": "batch_052",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 56
- },
- {
-  "batch": "batch_053",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 15
- },
- {
-  "batch": "batch_054",
-  "source_class": "arc2_json",
-  "spans": 15,
-  "lines": 24
- },
- {
-  "batch": "batch_055",
-  "source_class": "arc2_json",
-  "spans": 6,
-  "lines": 166
- },
- {
-  "batch": "batch_056",
   "source_class": "arc2_docs",
   "spans": 14,
   "lines": 386
  },
  {
-  "batch": "batch_057",
+  "batch": "batch_013",
   "source_class": "arc2_docs",
   "spans": 15,
   "lines": 239
  },
  {
-  "batch": "batch_058",
+  "batch": "batch_014",
   "source_class": "arc2_docs",
   "spans": 15,
   "lines": 237
  },
  {
-  "batch": "batch_059",
+  "batch": "batch_015",
   "source_class": "arc2_docs",
   "spans": 15,
   "lines": 73
  },
  {
-  "batch": "batch_060",
+  "batch": "batch_016",
   "source_class": "arc2_docs",
   "spans": 15,
   "lines": 100
  },
  {
-  "batch": "batch_061",
+  "batch": "batch_017",
   "source_class": "arc2_docs",
   "spans": 15,
   "lines": 103
  },
  {
-  "batch": "batch_062",
+  "batch": "batch_018",
   "source_class": "arc2_docs",
   "spans": 15,
   "lines": 238
  },
  {
-  "batch": "batch_063",
+  "batch": "batch_019",
   "source_class": "arc2_docs",
   "spans": 15,
   "lines": 215
  },
  {
-  "batch": "batch_064",
+  "batch": "batch_020",
   "source_class": "arc2_docs",
   "spans": 15,
   "lines": 235
  },
  {
-  "batch": "batch_065",
+  "batch": "batch_021",
   "source_class": "arc2_docs",
   "spans": 15,
   "lines": 212
  },
  {
-  "batch": "batch_066",
+  "batch": "batch_022",
   "source_class": "arc2_docs",
   "spans": 2,
   "lines": 76
  },
  {
-  "batch": "batch_067",
+  "batch": "batch_023",
   "source_class": "arc1_docs",
   "spans": 15,
   "lines": 289
  },
  {
-  "batch": "batch_068",
+  "batch": "batch_024",
   "source_class": "arc1_docs",
   "spans": 15,
   "lines": 276
  },
  {
-  "batch": "batch_069",
+  "batch": "batch_025",
   "source_class": "arc1_docs",
   "spans": 15,
   "lines": 167
  },
  {
-  "batch": "batch_070",
+  "batch": "batch_026",
   "source_class": "arc1_docs",
   "spans": 15,
   "lines": 222
  },
  {
-  "batch": "batch_071",
+  "batch": "batch_027",
   "source_class": "arc1_docs",
   "spans": 15,
   "lines": 238
  },
  {
-  "batch": "batch_072",
+  "batch": "batch_028",
   "source_class": "arc1_docs",
   "spans": 15,
   "lines": 187
  },
  {
-  "batch": "batch_073",
+  "batch": "batch_029",
   "source_class": "arc1_docs",
   "spans": 15,
   "lines": 273
  },
  {
-  "batch": "batch_074",
+  "batch": "batch_030",
   "source_class": "arc1_docs",
   "spans": 15,
   "lines": 286
  },
  {
-  "batch": "batch_075",
+  "batch": "batch_031",
   "source_class": "arc1_docs",
   "spans": 15,
   "lines": 241
  },
  {
-  "batch": "batch_076",
+  "batch": "batch_032",
   "source_class": "arc1_docs",
   "spans": 15,
   "lines": 323
  },
  {
-  "batch": "batch_077",
+  "batch": "batch_033",
   "source_class": "arc1_docs",
   "spans": 15,
   "lines": 120
  },
  {
-  "batch": "batch_078",
+  "batch": "batch_034",
   "source_class": "arc1_docs",
   "spans": 12,
   "lines": 344
  },
  {
-  "batch": "batch_079",
+  "batch": "batch_035",
   "source_class": "arc1_cycles",
   "spans": 15,
-  "lines": 62
+  "lines": 69
  },
  {
-  "batch": "batch_080",
+  "batch": "batch_036",
   "source_class": "arc1_cycles",
   "spans": 15,
-  "lines": 71
+  "lines": 37
  },
  {
-  "batch": "batch_081",
+  "batch": "batch_037",
   "source_class": "arc1_cycles",
   "spans": 15,
-  "lines": 34
+  "lines": 72
  },
  {
-  "batch": "batch_082",
+  "batch": "batch_038",
   "source_class": "arc1_cycles",
   "spans": 15,
-  "lines": 67
+  "lines": 87
  },
  {
-  "batch": "batch_083",
+  "batch": "batch_039",
   "source_class": "arc1_cycles",
   "spans": 15,
-  "lines": 66
+  "lines": 44
  },
  {
-  "batch": "batch_084",
+  "batch": "batch_040",
   "source_class": "arc1_cycles",
   "spans": 15,
-  "lines": 133
+  "lines": 111
  },
  {
-  "batch": "batch_085",
+  "batch": "batch_041",
   "source_class": "arc1_cycles",
   "spans": 15,
-  "lines": 32
+  "lines": 53
  },
  {
-  "batch": "batch_086",
+  "batch": "batch_042",
   "source_class": "arc1_cycles",
   "spans": 15,
-  "lines": 28
+  "lines": 101
  },
  {
-  "batch": "batch_087",
+  "batch": "batch_043",
   "source_class": "arc1_cycles",
   "spans": 15,
-  "lines": 138
+  "lines": 76
  },
  {
-  "batch": "batch_088",
+  "batch": "batch_044",
   "source_class": "arc1_cycles",
   "spans": 15,
-  "lines": 74
+  "lines": 35
  },
  {
-  "batch": "batch_089",
+  "batch": "batch_045",
   "source_class": "arc1_cycles",
   "spans": 15,
-  "lines": 75
+  "lines": 117
  },
  {
-  "batch": "batch_090",
+  "batch": "batch_046",
   "source_class": "arc1_cycles",
   "spans": 15,
+  "lines": 172
+ },
+ {
+  "batch": "batch_047",
+  "source_class": "arc1_cycles",
+  "spans": 15,
+  "lines": 46
+ },
+ {
+  "batch": "batch_048",
+  "source_class": "arc1_cycles",
+  "spans": 15,
+  "lines": 263
+ },
+ {
+  "batch": "batch_049",
+  "source_class": "arc1_cycles",
+  "spans": 15,
+  "lines": 65
+ },
+ {
+  "batch": "batch_050",
+  "source_class": "arc1_cycles",
+  "spans": 15,
+  "lines": 59
+ },
+ {
+  "batch": "batch_051",
+  "source_class": "arc1_cycles",
+  "spans": 4,
   "lines": 31
  },
  {
-  "batch": "batch_091",
-  "source_class": "arc1_cycles",
-  "spans": 15,
-  "lines": 26
- },
- {
-  "batch": "batch_092",
-  "source_class": "arc1_cycles",
-  "spans": 15,
-  "lines": 78
- },
- {
-  "batch": "batch_093",
-  "source_class": "arc1_cycles",
-  "spans": 15,
-  "lines": 109
- },
- {
-  "batch": "batch_094",
-  "source_class": "arc1_cycles",
-  "spans": 15,
-  "lines": 84
- },
- {
-  "batch": "batch_095",
-  "source_class": "arc1_cycles",
-  "spans": 15,
-  "lines": 27
- },
- {
-  "batch": "batch_096",
-  "source_class": "arc1_cycles",
-  "spans": 15,
-  "lines": 71
- },
- {
-  "batch": "batch_097",
-  "source_class": "arc1_cycles",
-  "spans": 15,
-  "lines": 120
- },
- {
-  "batch": "batch_098",
-  "source_class": "arc1_cycles",
-  "spans": 15,
-  "lines": 40
- },
- {
-  "batch": "batch_099",
-  "source_class": "arc1_cycles",
-  "spans": 15,
-  "lines": 202
- },
- {
-  "batch": "batch_100",
-  "source_class": "arc1_cycles",
-  "spans": 15,
-  "lines": 134
- },
- {
-  "batch": "batch_101",
-  "source_class": "arc1_cycles",
-  "spans": 15,
-  "lines": 38
- },
- {
-  "batch": "batch_102",
-  "source_class": "arc1_cycles",
-  "spans": 15,
-  "lines": 167
- },
- {
-  "batch": "batch_103",
-  "source_class": "arc1_cycles",
-  "spans": 15,
-  "lines": 258
- },
- {
-  "batch": "batch_104",
-  "source_class": "arc1_cycles",
-  "spans": 15,
-  "lines": 60
- },
- {
-  "batch": "batch_105",
-  "source_class": "arc1_cycles",
-  "spans": 15,
-  "lines": 62
- },
- {
-  "batch": "batch_106",
-  "source_class": "arc1_cycles",
-  "spans": 15,
-  "lines": 34
- },
- {
-  "batch": "batch_107",
-  "source_class": "arc1_cycles",
-  "spans": 15,
-  "lines": 85
- },
- {
-  "batch": "batch_108",
-  "source_class": "arc1_cycles",
-  "spans": 3,
-  "lines": 24
- },
- {
-  "batch": "batch_109",
+  "batch": "batch_052",
   "source_class": "git_log",
   "spans": 15,
   "lines": 213
  },
  {
-  "batch": "batch_110",
+  "batch": "batch_053",
   "source_class": "git_log",
   "spans": 15,
   "lines": 278
  },
  {
-  "batch": "batch_111",
+  "batch": "batch_054",
   "source_class": "git_log",
   "spans": 15,
   "lines": 336
  },
  {
-  "batch": "batch_112",
+  "batch": "batch_055",
   "source_class": "git_log",
   "spans": 11,
   "lines": 362
  },
  {
-  "batch": "batch_113",
+  "batch": "batch_056",
   "source_class": "git_log",
   "spans": 10,
   "lines": 373
  },
  {
-  "batch": "batch_114",
+  "batch": "batch_057",
   "source_class": "git_log",
   "spans": 8,
   "lines": 373
  },
  {
-  "batch": "batch_115",
+  "batch": "batch_058",
   "source_class": "git_log",
   "spans": 7,
   "lines": 374
  },
  {
-  "batch": "batch_116",
+  "batch": "batch_059",
   "source_class": "git_log",
   "spans": 10,
   "lines": 380
  },
  {
-  "batch": "batch_117",
+  "batch": "batch_060",
   "source_class": "git_log",
   "spans": 11,
   "lines": 361
  },
  {
-  "batch": "batch_118",
+  "batch": "batch_061",
   "source_class": "git_log",
   "spans": 9,
   "lines": 319
  },
  {
-  "batch": "batch_119",
+  "batch": "batch_062",
   "source_class": "git_log",
   "spans": 9,
   "lines": 384
  },
  {
-  "batch": "batch_120",
+  "batch": "batch_063",
   "source_class": "git_log",
   "spans": 10,
   "lines": 385
  },
  {
-  "batch": "batch_121",
+  "batch": "batch_064",
   "source_class": "git_log",
   "spans": 8,
   "lines": 363
  },
  {
-  "batch": "batch_122",
+  "batch": "batch_065",
   "source_class": "git_log",
   "spans": 15,
   "lines": 353
  },
  {
-  "batch": "batch_123",
+  "batch": "batch_066",
   "source_class": "git_log",
   "spans": 15,
   "lines": 135
  },
  {
-  "batch": "batch_124",
+  "batch": "batch_067",
   "source_class": "git_log",
   "spans": 15,
   "lines": 150
  },
  {
-  "batch": "batch_125",
+  "batch": "batch_068",
   "source_class": "git_log",
   "spans": 15,
   "lines": 139
  },
  {
-  "batch": "batch_126",
+  "batch": "batch_069",
   "source_class": "git_log",
   "spans": 15,
   "lines": 159
  },
  {
-  "batch": "batch_127",
+  "batch": "batch_070",
   "source_class": "git_log",
   "spans": 14,
   "lines": 369
  },
  {
-  "batch": "batch_128",
+  "batch": "batch_071",
   "source_class": "git_log",
   "spans": 7,
   "lines": 379
  },
  {
-  "batch": "batch_129",
+  "batch": "batch_072",
   "source_class": "git_log",
   "spans": 15,
   "lines": 302
  },
  {
-  "batch": "batch_130",
+  "batch": "batch_073",
   "source_class": "git_log",
   "spans": 15,
   "lines": 229
  },
  {
-  "batch": "batch_131",
+  "batch": "batch_074",
   "source_class": "git_log",
   "spans": 15,
   "lines": 162
  },
  {
-  "batch": "batch_132",
+  "batch": "batch_075",
   "source_class": "git_log",
   "spans": 15,
   "lines": 159
  },
  {
-  "batch": "batch_133",
+  "batch": "batch_076",
   "source_class": "git_log",
   "spans": 15,
   "lines": 154
  },
  {
-  "batch": "batch_134",
+  "batch": "batch_077",
   "source_class": "git_log",
   "spans": 15,
   "lines": 156
  },
  {
-  "batch": "batch_135",
+  "batch": "batch_078",
   "source_class": "git_log",
   "spans": 15,
   "lines": 135
  },
  {
-  "batch": "batch_136",
+  "batch": "batch_079",
   "source_class": "git_log",
   "spans": 15,
   "lines": 135
  },
  {
-  "batch": "batch_137",
+  "batch": "batch_080",
   "source_class": "git_log",
   "spans": 15,
   "lines": 135
  },
  {
-  "batch": "batch_138",
+  "batch": "batch_081",
   "source_class": "git_log",
   "spans": 15,
   "lines": 135
  },
  {
-  "batch": "batch_139",
+  "batch": "batch_082",
   "source_class": "git_log",
   "spans": 15,
   "lines": 135
  },
  {
-  "batch": "batch_140",
+  "batch": "batch_083",
   "source_class": "git_log",
   "spans": 15,
   "lines": 135
  },
  {
-  "batch": "batch_141",
+  "batch": "batch_084",
   "source_class": "git_log",
   "spans": 15,
   "lines": 135
  },
  {
-  "batch": "batch_142",
+  "batch": "batch_085",
   "source_class": "git_log",
   "spans": 15,
   "lines": 128
  },
  {
-  "batch": "batch_143",
+  "batch": "batch_086",
   "source_class": "git_log",
   "spans": 15,
   "lines": 115
  },
  {
-  "batch": "batch_144",
+  "batch": "batch_087",
   "source_class": "git_log",
   "spans": 15,
   "lines": 114
  },
  {
-  "batch": "batch_145",
+  "batch": "batch_088",
   "source_class": "git_log",
   "spans": 15,
   "lines": 117
  },
  {
-  "batch": "batch_146",
+  "batch": "batch_089",
   "source_class": "git_log",
   "spans": 15,
   "lines": 182
  },
  {
-  "batch": "batch_147",
+  "batch": "batch_090",
   "source_class": "git_log",
   "spans": 15,
   "lines": 135
  },
  {
-  "batch": "batch_148",
+  "batch": "batch_091",
   "source_class": "git_log",
   "spans": 15,
   "lines": 135
  },
  {
-  "batch": "batch_149",
+  "batch": "batch_092",
   "source_class": "git_log",
   "spans": 15,
   "lines": 125
  },
  {
-  "batch": "batch_150",
+  "batch": "batch_093",
   "source_class": "git_log",
   "spans": 15,
   "lines": 120
  },
  {
-  "batch": "batch_151",
+  "batch": "batch_094",
   "source_class": "git_log",
   "spans": 15,
   "lines": 120
  },
  {
-  "batch": "batch_152",
+  "batch": "batch_095",
   "source_class": "git_log",
   "spans": 15,
   "lines": 120
  },
  {
-  "batch": "batch_153",
+  "batch": "batch_096",
   "source_class": "git_log",
   "spans": 15,
   "lines": 120
  },
  {
-  "batch": "batch_154",
+  "batch": "batch_097",
   "source_class": "git_log",
   "spans": 15,
   "lines": 120
  },
  {
-  "batch": "batch_155",
+  "batch": "batch_098",
   "source_class": "git_log",
   "spans": 15,
   "lines": 120
  },
  {
-  "batch": "batch_156",
+  "batch": "batch_099",
   "source_class": "git_log",
   "spans": 11,
   "lines": 147
  },
  {
-  "batch": "batch_157",
+  "batch": "batch_100",
   "source_class": "ledger_preredaction",
   "spans": 15,
   "lines": 370
  },
  {
-  "batch": "batch_158",
+  "batch": "batch_101",
   "source_class": "ledger_preredaction",
   "spans": 15,
   "lines": 255
  },
  {
-  "batch": "batch_159",
+  "batch": "batch_102",
   "source_class": "ledger_preredaction",
   "spans": 15,
   "lines": 315
  },
  {
-  "batch": "batch_160",
+  "batch": "batch_103",
   "source_class": "arc2_docs_preredaction",
   "spans": 14,
   "lines": 388
  },
  {
-  "batch": "batch_161",
+  "batch": "batch_104",
   "source_class": "arc2_docs_preredaction",
   "spans": 15,
   "lines": 239
  },
  {
-  "batch": "batch_162",
+  "batch": "batch_105",
   "source_class": "arc2_docs_preredaction",
   "spans": 15,
   "lines": 237
  },
  {
-  "batch": "batch_163",
+  "batch": "batch_106",
   "source_class": "arc2_docs_preredaction",
   "spans": 15,
   "lines": 73
  },
  {
-  "batch": "batch_164",
+  "batch": "batch_107",
   "source_class": "arc2_docs_preredaction",
   "spans": 15,
   "lines": 100
  },
  {
-  "batch": "batch_165",
+  "batch": "batch_108",
   "source_class": "arc2_docs_preredaction",
   "spans": 15,
   "lines": 103
  },
  {
-  "batch": "batch_166",
+  "batch": "batch_109",
   "source_class": "arc2_docs_preredaction",
   "spans": 15,
   "lines": 257
  },
  {
-  "batch": "batch_167",
+  "batch": "batch_110",
   "source_class": "arc2_docs_preredaction",
   "spans": 15,
   "lines": 191
  },
  {
-  "batch": "batch_168",
+  "batch": "batch_111",
   "source_class": "arc2_docs_preredaction",
   "spans": 15,
   "lines": 215
  },
  {
-  "batch": "batch_169",
+  "batch": "batch_112",
   "source_class": "arc2_docs_preredaction",
   "spans": 4,
   "lines": 37
  },
  {
-  "batch": "batch_170",
+  "batch": "batch_113",
   "source_class": "arc1_docs_preredaction",
   "spans": 15,
   "lines": 289
  },
  {
-  "batch": "batch_171",
+  "batch": "batch_114",
   "source_class": "arc1_docs_preredaction",
   "spans": 15,
   "lines": 276
  },
  {
-  "batch": "batch_172",
+  "batch": "batch_115",
   "source_class": "arc1_docs_preredaction",
   "spans": 15,
   "lines": 167
  },
  {
-  "batch": "batch_173",
+  "batch": "batch_116",
   "source_class": "arc1_docs_preredaction",
   "spans": 15,
   "lines": 222
  },
  {
-  "batch": "batch_174",
+  "batch": "batch_117",
   "source_class": "arc1_docs_preredaction",
   "spans": 15,
   "lines": 238
  },
  {
-  "batch": "batch_175",
+  "batch": "batch_118",
   "source_class": "arc1_docs_preredaction",
   "spans": 15,
   "lines": 187
  },
  {
-  "batch": "batch_176",
+  "batch": "batch_119",
   "source_class": "arc1_docs_preredaction",
   "spans": 15,
   "lines": 272
  },
  {
-  "batch": "batch_177",
+  "batch": "batch_120",
   "source_class": "arc1_docs_preredaction",
   "spans": 15,
   "lines": 253
  },
  {
-  "batch": "batch_178",
+  "batch": "batch_121",
   "source_class": "arc1_docs_preredaction",
   "spans": 3,
   "lines": 33

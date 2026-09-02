@@ -1,133 +1,148 @@
 {
  "header": {
   "batch": "batch_039",
-  "source_class": "arc2_json",
+  "source_class": "arc1_cycles",
   "brief_version": "0.4",
   "glossary_version": "frozen ",
   "spans": 15,
-  "first_span": "S00722",
-  "last_span": "S00736"
+  "first_span": "S00547",
+  "last_span": "S00561"
  },
  "spans": [
   {
-   "id": "S00722",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
+   "id": "S00547",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/prediction.json",
    "commit": "pin",
-   "lines": "203-203",
-   "text": "  \"l1707_1973_n013\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "13-13",
+   "text": " \"notes\": \"THE TWO-SIDED COINCIDENCE PIN (BACKFILL_DESIGN §6 as amended per PORTFOLIO_REVIEW F1), computed 2026-08-04 against the live baseline configuration (annotations_ext_v1_merged cbf50758.. + behavior_atoms_audit_v1 54056241.. + thresholds_frozen 60d1273a.., overlay-off legacy scorer vs dechained scoring, frozen cuts, snapshot rounding semantics). CLAUSE-SIDE CHAIN INVENTORY: 50 distinct chained names, 109 (name,clause) instances over 100 clauses. QUERY-SIDE: 7 chained query atoms — caution: must_preserve_user_agency__model_user, should_seek_confirmation__model_user; harm: shouldnot_lie_by_commission__model_third_party; helpfulness: should_ask_clarifying_questions__model_user, should_ask_followup_questions__model_user, should_disclose_lack_expertise__model_user, should_disclose_side_effects__model_user. DIRECTION (a) chained-query x chain-free-clause: only should_ask_clarifying_questions__model_user reaches new instances — the 13 chain-free clause instances m0027 m0100 m0106 m0107 m0108 m0156 m0183 m0188 m0374 m0380 m0387 m0457 m0474 (the F1 direction, confirmed verbatim); the other 6 chained query atoms reach 0 new instances (post chain-repair their clause-side instances carry the identical chain; no chain-free siblings exist). CRITICAL REFINEMENT OF F1: helpfulness's query ALSO carries the chain-free sibling should_ask_clarifying_questions, which already exact-matches those 13 clauses today — so under the join the two query entries collapse to one dechained key and the 13 clauses are REPRICED DOWN by the df-merge (df 13+2 -> 15, idf 3.7695 -> 3.6392; atom-channel delta -0.013721 raw on each), not newly matched; none of the 13 flips. m0384/m0385 (the chained clause instances, previously matched by the chained query atom at idf 5.2916) reprice to the merged idf 3.6392: atom-channel delta -0.174077 raw each. DIRECTION (b) chained-clause x chain-free-query: EMPTY — no chained clause name dechains onto any chain-free query atom of any DEV behaviour. DIRECTION (c) df-merge/global repricing: real merges should_ask_clarifying_questions df 15 (13+2), may_delegate_instruction_authority df 3+1 -> 4 (idf 5.0056 -> 4.7842), shouldnot_judge df {4 chained_mu, 1 chained_mud} -> 5 (idf -> 4.6035); the other 47 chained names are PURE RENAMES (df value preserved under the dechained key; vocabulary 628 -> 624 names); _atom_norm unchanged (5.695414224985685); lex channel: chain principal tokens leave 100 clauses' documents and 3 behaviours' query texts, shifting corpus term-idf globally by tiny amounts. NORMALIZER: helpfulness's raw corpus-max moves m0384 1.889654 -> m0438 1.807058 (the argmax clause itself repriced), so EVERY helpfulness normalized score rescales up ~4.5%; caution/harm normalized scores also move at the 3rd-4th decimal (592/593 clauses each) with zero predicted-set movement. FLIPS AT THE FROZEN CUTS: exactly 1 — helpfulness m0207 newly_predicted, 0.3048137341 -> 0.3169816964 vs frozen cut 0.3131186309, cause match_change under snapshot's taxonomy but NORMALIZER-DRIVEN: its raw score FELL (lex -0.0024, atom 0.0 exactly, section -0.0008); it crosses only because the corpus-max fell more. caution 95 -> 95, harm 73 -> 73, helpfulness 145 -> 146. max_regressions is set to 1, NOT 0, deliberately: we do not claim m0207 (an example block under 'Never generate sexual content involving minors') is panel-style relevant to helpfulness; we claim the flip's mechanism (atom delta exactly 0.0; pure normalizer rescale under a frozen cut). A 'regression' verdict there is a finding about reporting corpus-max-normalized scores under frozen cuts — the m0422 threshold-class question, CYCLE5_DESIGN I2's normalizer_drift class — not about dechained match semantics; either verdict is consistent with keeping the join, and the keep decision will cite the adjudication either way. ANY flip outside {m0207}, any no_longer_predicted flip, or any flip count != 1 falsifies this prediction. Chain-free parity: b8 bit-identical under the dechained path (computed True). GATE at MEASURE: snapshot.assert_frozen_thresholds on both snapshots (baseline verified PASS 2026-08-04).\"",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00723",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
-   "commit": "pin",
-   "lines": "204-204",
-   "text": "  \"l3596_3876_n013\": \"not_relevant\",",
-   "source_class": "arc2_json"
-  },
-  {
-   "id": "S00724",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
-   "commit": "pin",
-   "lines": "205-205",
-   "text": "  \"l1542_1706_n020\": \"relevant\",",
-   "source_class": "arc2_json"
-  },
-  {
-   "id": "S00725",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
-   "commit": "pin",
-   "lines": "206-206",
-   "text": "  \"l1_170_n040\": \"relevant\",",
-   "source_class": "arc2_json"
-  },
-  {
-   "id": "S00726",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
-   "commit": "pin",
-   "lines": "207-207",
-   "text": "  \"l3596_3876_n028\": \"not_relevant\",",
-   "source_class": "arc2_json"
-  },
-  {
-   "id": "S00727",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
-   "commit": "pin",
-   "lines": "208-208",
-   "text": "  \"l4483_4571_n007\": \"not_relevant\",",
-   "source_class": "arc2_json"
-  },
-  {
-   "id": "S00728",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
-   "commit": "pin",
-   "lines": "209-209",
-   "text": "  \"l2555_2652_n008\": \"relevant\",",
-   "source_class": "arc2_json"
-  },
-  {
-   "id": "S00729",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
-   "commit": "pin",
-   "lines": "210-210",
-   "text": "  \"l3954_4251_n005\": \"not_relevant\"",
-   "source_class": "arc2_json"
-  },
-  {
-   "id": "S00730",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_ATTEMPT3_SCORED.json",
+   "id": "S00548",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/review_verdict.json",
    "commit": "pin",
    "lines": "2-2",
-   "text": " \"_\": \"ITERATION 2 attempt-3 REALIZATION scored against ITERATION2_V5_PREDICTION.json. FINAL-ITERATION ALL-FABLE VENUE (wave + 3-seat panel override + registered machinery probe). Measures THE REPAIR; attempt-1 transfer (0.40) frozen.\",",
-   "source_class": "arc2_json"
+   "text": " \"verdict\": \"proceed\",",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00731",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_ATTEMPT3_SCORED.json",
+   "id": "S00549",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/review_verdict.json",
    "commit": "pin",
    "lines": "3-3",
-   "text": " \"behaviour\": \"how-to-approach-tradeoffs\",",
-   "source_class": "arc2_json"
+   "text": " \"by\": \"Claude Fable 5 — independent change-review seat (not the implementer session)\",",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00732",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_ATTEMPT3_SCORED.json",
+   "id": "S00550",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/review_verdict.json",
    "commit": "pin",
    "lines": "4-4",
-   "text": " \"n\": \"20+20\",",
-   "source_class": "arc2_json"
+   "text": " \"notes\": \"FREEZE: manifest.json/prediction.json re-hashed and match state.json's frozen shas (3d5451a7.., d0d4472c..); all 9 closure_shas re-hashed and match, including overlay_empty.json and the corrected test_dechain.py. The disclosed restart is recorded in the manifest PROCESS NOTE; the discarded freeze's shas (cf6e2496.., 5b05b018..) appear nowhere on disk outside that note (repo-wide grep), the cycle dir holds only current artifacts, and no snapshot was built under the discarded freeze. DECLARED-DIFF-ONLY: open_shas for containment.py/test_containment.py equal git HEAD blobs exactly, so the working-tree git diff IS the cycle's whole change: containment.py + test_containment.py only, plus the new closure-pinned overlay_empty.json/test_dechain.py. The other tree edits (conftest.py +1 line registering test_drift_dossiers, test_no_reference_leak.py +2 fence tokens, drift_dossiers.py/drift_standing/) are the P3 drift-standing work and provably predate OPEN: test_no_reference_leak.py's MODIFIED sha is the one pinned in this cycle's OPEN closure, and all P3 mtimes (09:12-09:16) precede test_dechain.py finalization (09:22) and the freeze (09:25). SEMANTICS: my own grammar.parse_name spot checks confirm dechain_name strips only the principal chain and keeps polarity (should_ask_clarifying_questions__model_user->should_ask_clarifying_questions; mustnot_lie__model_user->mustnot_lie, NOT lie; unparseable 'must_' passes through); chain-free parity pin (test_chainfree_parity_is_bit_identical) green under my own clean-pycache run. MUTANT: planted my own — dechain_name forced to the identity (reverting the join's core) — 8 named test_dechain.py tests went red (strips-chain, both match directions, df-merge, lex-exclusion, add-chain-invariance gate, explain-dechained, real-artifact-109); containment.py restored byte-exact (sha 59ea877c.. re-verified) and re-run green. COMPUTED PIN, re-derived independently from the frozen artifacts with my own scripts: clause side 50 distinct chained names / 109 instances / 100 clauses; 7 chained query atoms across the 3 dev behaviours; direction (a): should_ask_clarifying_questions__model_user is the ONLY chained query atom with chain-free clause siblings — exactly the 13 predicted clause ids; df merge 13+2->15; vocab 628->624; direction (b) new-match census EMPTY (the one dechain pair, m0384/m0385, is already exact-matched by the chained query atom helpfulness also carries — repriced, not newly matched, per the prediction's refinement); full legacy-vs-v1.2 flip census under the frozen cuts reproduces caution 95->95, harm 73->73, helpfulness 145->146 with the single flip m0207 newly_predicted at 0.3048137341->0.3169816964 vs cut 0.3131186309, raw score FALLING (0.575992->0.572804) with corpus argmax moving m0384 1.889654 -> m0438 1.807058 — confirming the normalizer-driven mechanism the prediction claims. VEHICLE: overlay_empty.json declares budget {0,0} with zero edges and loads clean through containment.load_edges (exercised in my census build); snapshot.py (untouched this cycle) records config['pricing_version']=PRICING_VERSION ('1.2') iff overlay_path is given and dispatches overlay-absent to the legacy RelevanceIndex with no pricing_version key, so the baseline rung stays intact (also pinned by test_legacy_relevance_index_keeps_the_exact_name_join). FENCE: all four changed/new files scanned raw AND comment/docstring-stripped against test_no_reference_leak.py's live FORBIDDEN tuple (34 tokens) — clean; no new import reads any panel artifact (containment.py imports only grammar/relevance/json/math). GATES: test_dechain.py + test_containment.py + test_no_reference_leak.py, 88 passed under my own run with __pycache__/.pytest_cache cleared. No panel score, judge rating, or gold value was consulted.\"",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00733",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_ATTEMPT3_SCORED.json",
+   "id": "S00551",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
    "commit": "pin",
-   "lines": "5-5",
-   "text": " \"engaged_precision\": 0.4,",
-   "source_class": "arc2_json"
+   "lines": "2-2",
+   "text": " \"census\": \"deferred_to_checkpoint\",",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00734",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_ATTEMPT3_SCORED.json",
+   "id": "S00552",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
    "commit": "pin",
-   "lines": "6-6",
-   "text": " \"decline_correctness\": 0.5,",
-   "source_class": "arc2_json"
+   "lines": "3-3",
+   "text": " \"closed\": true,",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00735",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_ATTEMPT3_SCORED.json",
+   "id": "S00553",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
    "commit": "pin",
-   "lines": "7-86",
-   "text": " \"panel\": [\n  {\n   \"node\": \"l699_796_n021\",\n   \"wave\": \"relevant\",\n   \"seats\": [\n    \"relevant\",\n    \"relevant\",\n    \"relevant\"\n   ],\n   \"majority\": \"relevant\",\n   \"split\": false\n  },\n  {\n   \"node\": \"l1108_1367_n015\",\n   \"wave\": \"relevant\",\n   \"seats\": [\n    \"relevant\",\n    \"relevant\",\n    \"relevant\"\n   ],\n   \"majority\": \"relevant\",\n   \"split\": false\n  },\n  {\n   \"node\": \"l3239_3382_n003\",\n   \"wave\": \"not_relevant\",\n   \"seats\": [\n    \"not_relevant\",\n    \"not_relevant\",\n    \"not_relevant\"\n   ],\n   \"majority\": \"not_relevant\",\n   \"split\": false\n  },\n  {\n   \"node\": \"l1_170_n032\",\n   \"wave\": \"relevant\",\n   \"seats\": [\n    \"relevant\",\n    \"relevant\",\n    \"relevant\"\n   ],\n   \"majority\": \"relevant\",\n   \"split\": false\n  },\n  {\n   \"node\": \"l3383_3501_n009\",\n   \"wave\": \"not_relevant\",\n   \"seats\": [\n    \"not_relevant\",\n    \"not_relevant\",\n    \"not_relevant\"\n   ],\n   \"majority\": \"not_relevant\",\n   \"split\": false\n  },\n  {\n   \"node\": \"l2126_2404_n008\",\n   \"wave\": \"relevant\",\n   \"seats\": [\n    \"relevant\",\n    \"relevant\",\n    \"relevant\"\n   ],\n   \"majority\": \"relevant\",\n   \"split\": false\n  },\n  {\n   \"node\": \"l3239_3382_n005\",\n   \"wave\": \"not_relevant\",\n   \"seats\": [\n    \"not_relevant\",\n    \"not_relevant\",\n    \"not_relevant\"\n   ],\n   \"majority\": \"not_relevant\",\n   \"split\": false\n  },\n  {\n   \"node\": \"l3502_3504_n002\",",
-   "source_class": "arc2_json"
+   "lines": "4-14",
+   "text": " \"closure_shas\": {\n  \"annotations_ext_v1_merged.json\": \"cbf5075823fe6b3de55d4feed94c169b249a8ce6a1ebe705d8b01f93021d5d3d\",\n  \"behavior_atoms_audit_v1.json\": \"540562415cdb95e15eb99f06e2d06fb2f5f2347daac42e3b7a998dcc8d3a7531\",\n  \"behaviours_query.json\": \"48dbd8fb0720ce187423d37daf34e415ebbc58a28166619a0b2800b0a1f32d57\",\n  \"constitution_clauses.json\": \"a264e1a07d8a79eaa37710b8c6e25808a0d2807cb55e3ad3716ca422019f06e9\",\n  \"modelspec_clauses.json\": \"c6be91a0c0eb25c9f10bea9947547f64416cdd18e8f5e64b14c354a43b87b546\",\n  \"overlay_empty.json\": \"3f3adca9ee17a196ce155f3f900711622b2d99ced863667de9bc823df40cf99e\",\n  \"test_dechain.py\": \"cf89637b42aca1847c1740a852f3ffb6cf98c1993cce90307a5f1b1283a3680d\",\n  \"test_no_reference_leak.py\": \"87d7b6d6c6bbbe00da4158932420f781fc306301e654f2ad495aa97ee1103fe6\",\n  \"thresholds_frozen.json\": \"60d1273a4e0ac3a4de0eb2a44481b763531491c8c0884387529014dcb724251a\"\n },",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00736",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_ATTEMPT3_SCORED.json",
+   "id": "S00554",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
    "commit": "pin",
-   "lines": "87-96",
-   "text": "   \"wave\": \"relevant\",\n   \"seats\": [\n    \"relevant\",\n    \"relevant\",\n    \"relevant\"\n   ],\n   \"majority\": \"relevant\",\n   \"split\": false\n  }\n ],",
-   "source_class": "arc2_json"
+   "lines": "15-23",
+   "text": " \"completed\": [\n  \"OPEN\",\n  \"PREDICT\",\n  \"IMPLEMENT\",\n  \"MEASURE\",\n  \"ADJUDICATE\",\n  \"DECIDE\",\n  \"CLOSE\"\n ],",
+   "source_class": "arc1_cycles",
+   "context": null
+  },
+  {
+   "id": "S00555",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "24-24",
+   "text": " \"cycle\": \"decoration-blind-join-2026-08-04\",",
+   "source_class": "arc1_cycles",
+   "context": null
+  },
+  {
+   "id": "S00556",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "25-28",
+   "text": " \"decision\": {\n  \"decision\": \"keep\",\n  \"signed_by\": \"session coordinator (Claude), on Matt's standing authorization for the reviewed portfolio order\"\n },",
+   "source_class": "arc1_cycles",
+   "context": null
+  },
+  {
+   "id": "S00557",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "29-29",
+   "text": " \"dossier_set_sha\": \"5d905a37b2d2a0962201581aec1d2723b8648f299a6a002d83b18e263699ab96\",",
+   "source_class": "arc1_cycles",
+   "context": null
+  },
+  {
+   "id": "S00558",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "30-32",
+   "text": " \"flip_tallies\": {\n  \"regression\": 1\n },",
+   "source_class": "arc1_cycles",
+   "context": null
+  },
+  {
+   "id": "S00559",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "33-39",
+   "text": " \"flips\": [\n  {\n   \"behaviour\": \"helpfulness\",\n   \"clause_id\": \"m0207\",\n   \"direction\": \"newly_predicted\"\n  }\n ],",
+   "source_class": "arc1_cycles",
+   "context": null
+  },
+  {
+   "id": "S00560",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "40-40",
+   "text": " \"frozen_manifest_sha\": \"3d5451a7a0f23c0fe9efe2dd827e1ccdbdc16bcfa5515baeeb2937dd07651312\",",
+   "source_class": "arc1_cycles",
+   "context": null
+  },
+  {
+   "id": "S00561",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "41-41",
+   "text": " \"frozen_prediction_sha\": \"d0d4472ce58e52793a5f76d6f4740ae2984b77222a9c273815f0a32e561b93e3\",",
+   "source_class": "arc1_cycles",
+   "context": null
   }
  ]
 }

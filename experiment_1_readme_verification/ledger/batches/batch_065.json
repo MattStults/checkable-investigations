@@ -1,133 +1,148 @@
 {
  "header": {
   "batch": "batch_065",
-  "source_class": "arc2_docs",
+  "source_class": "git_log",
   "brief_version": "0.4",
   "glossary_version": "frozen ",
   "spans": 15,
-  "first_span": "S00180",
-  "last_span": "S00194"
+  "first_span": "S01175",
+  "last_span": "S01189"
  },
  "spans": [
   {
-   "id": "S00180",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
-   "commit": "pin",
-   "lines": "173-181",
-   "text": "## 8-ADDENDUM (2026-08-19, from round-3 census): the ACTOR slot is REQUIRED in full\nThe §8 tuple's actor slot must be annotated as a complete typed field, not merely the\nauthority_plumbing boolean (the implementation shortfall that cost round-3 helpfulness\n4 FPs and appeared as caution's census \"other\" class). Values (pending §9a mining +\npurity check on each document): assistant | organization | developer | document\n(authority_plumbing folds in as actor=document). Behavior walls engage ONLY\nactor=assistant norms. Slot derived a priori (deontic agent position); value vocabulary\nmined per document per §9a.\n",
-   "source_class": "arc2_docs"
+   "id": "S01175",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4502-4547",
+   "text": "commit adc49e57aede6501e578d08bae09e91dd2069e91\nordinal 139\ndate 2026-08-09 08:43:53 -0700\nauthor Matt Stults\nsubject DEBUGGING_TIPS 19: the worked example teaches the opposite of the prose on requires/inputs\nMatt, on the measured wholesale flip: \"that seems like we're not defining inputs\nand requires well enough in the prompt.\" Correct, and the section-1 diagnostic\nfinds it in one grep.\n\nThe prose criterion is clear and locally decidable -- requires is what another\nclause must define, inputs describes the case being judged. The worked example\ncontradicts it: 20_worked_example.md's m0088 block emits \"requires\": [] and puts\nall six body predicates in inputs, then says approvingly \"All six appear in\ninputs\". Among them same_level/2 (authority levels are established by\nlevels_of_authority) and misaligned_with_higher_level/1 (needs the chain of\ncommand) are document-side by the prompt's own rule.\n\nAnd those are exactly the concepts m0079 later coined as\nconflicts_with_higher_authority/1 and conflicts_with_later_same_authority/1 and\nplaced in requires. Two translations, two fields, both following the prompt,\nbecause the prompt demonstrates one answer and states the other.\n\nCorrects the diagnosis I filed earlier today. I recorded this as not a model\nfailure -- requires being a global property of the corpus the translator cannot\nknow -- and proposed a schema change to collapse the two fields. Half true, and\nit pointed at the expensive fix. Whether another clause actually defines the\nsymbol is global, but that is not the prompt's criterion; the prompt asks\n\"document or case?\", which is local and decidable from the clause alone. The\nmodel was following a contradictory example, exactly as section 1 predicts.\n\nThe generalisable lesson: check the DEMONSTRATION before concluding the task is\nimpossible. A contradictory example and an unknowable distinction both produce a\nstable-looking coin flip from the outside, and they have wildly different fixes.\n\nThe fix is a prompt change (provenance_hash, modules stay valid) not a contract\nchange (contract_hash, modules may no longer validate). Same ~$0.07\nre-translation, no structural risk. If fixing the example kills the flip, the\nborrows collapse may be unnecessary entirely -- test the cheap fix first.\n\nNotes that test_prompt_examples.py counts demonstrated shapes mechanically but\ndoes not count requires/inputs placement, which is why this survived.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00181",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
-   "commit": "pin",
-   "lines": "182-187",
-   "text": "## 9d. All-truth regression table REQUIRED before any prereg (practice made law,\nper the project owner 2026-08-19): every instrument change is measured against the FULL accumulated\ntruth before a new registration is drafted; any regression on pre-judged cases requires\nrecorded grounds. As pools exhaust, certification converges to whole-population\nvalidation (harm reached this at round 3: 70-node engaged population).\n",
-   "source_class": "arc2_docs"
+   "id": "S01176",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4548-4603",
+   "text": "commit 818045f4c36c059594a0fa58a79d292ee368d400\nordinal 140\ndate 2026-08-09 11:37:03 -0700\nauthor Matt Stults\nsubject Q-22 FIX: an unsatisfied `requires` now reaches the situation signature\nsituation_signature was inputs UNION (head-less AND declared-in-concepts). A\nborrowed predicate is head-less and the concept table covers only names a clause\nINTRODUCES, so `requires` matched neither term and was silently dropped. 6 of 19\nstored modules carried one.\n\nOn m0079 the dropped predicate sat under a negation, so\nnot higher_authority_conflict(I) was permanently true and the module collapsed\nto \"every instruction is applicable\" -- the clause's entire content inert, probe\ngreen, because no enumerated situation could reach the dead branch.\n\nMeasured before/after on the stored corpus, 40 -> 55 signature predicates:\n  m0255-1339  5 -> 8    m0079-1719  1 -> 3    m0079-1748  1 -> 5\n  m0105-1748  1 -> 5    m0134-1748  5 -> 6    m0150-1748  1 -> 2\n\nm0079-1719 now enumerates 8 situations instead of 2, derives\nhigher_authority_conflict(x) and later_same_authority_conflict(x) in some of\nthem, and applicable_instruction discriminates instead of being permanently\ntrue.\n\nThe fix is NOT \"add requires to the signature\". requires means another clause\ndefines it, and when a linked module does define it the predicate is DERIVED;\nputting a derived predicate in the signature lets a situation assert it\nindependently of the rule that produces it, which is worse than the bug being\nfixed. So an unsatisfied requires joins and a satisfied one does not, pinned by\ntest_q22_control_a_requires_THE_LINK_DEFINES_stays_out.\n\nA fourth term was needed too: linking a provider in moved the required predicate\nout of the signature correctly while the provider's OWN inputs never entered, so\nthe defining rule could not fire either and linking made a module MORE inert.\nLinked modules' inputs are facts about the same case and now join.\n\nReported, not silently repaired: a `requires-unsatisfied` note names each unkept\npromise. severity=note deliberately, not error -- only error drives the stage-2\nrepair loop and no rewrite of this module can conjure the clause that was\nsupposed to define the predicate (DEBUGGING_TIPS 7).\n\nConsequence, surfaced not suppressed: with borrows now enumerated,\nrender_situation refuses them for want of a gloss (Q-6), which blocked two\nshipped specs. The gloss fence is the anti-hollow-stub check and was NOT\nrelaxed. probe_live gains UnglossedSignature and blocking_gaps so a blocked\nmodule is a named, reported state; two new tests prove every block is genuine\n(the predicate really is in requires and really is unglossed) and that the\nerror names the predicate. No count is pinned -- Q-23 landing will legitimately\nempty that set.\n\n730 pass, 1 xfailed.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00182",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
-   "commit": "pin",
-   "lines": "188-193",
-   "text": "## 9e. Prediction bands come from FRESH-POOL evidence only (round-3 lesson): deriving\nbands from all-truth measurements overstates fresh-pool performance because adjudicated\nsets are engagement-favorable (measured: helpfulness all-truth precision 0.82 vs\nfresh-pool 59/80=0.74; the inflated band fired F1 on an instrument performing at its\ndemonstrated level).\n",
-   "source_class": "arc2_docs"
+   "id": "S01177",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4604-4661",
+   "text": "commit ed2bbafda7897f43863944c1ad08d1d522e56be6\nordinal 141\ndate 2026-08-09 13:34:16 -0700\nauthor Matt Stults\nsubject Q-22 FIX: a borrowed condition can no longer vanish from the test space\nThe machinery half. The worked-example fix and its three placement tests are\nheld back together, since those tests fail against the old prompt and would make\na clean checkout red.\n\nTHE BUG. A logic module often needs a condition it does not define, and declares\nit in `requires` -- \"another clause defines this\". situation_signature ignored\nthat field entirely, so the condition was silently treated as never true and any\nrule depending on it could never fire. 6 of 19 stored modules carried one.\n\nOn m0079 the dropped condition sat under a negation, so\n`not higher_authority_conflict(I)` was permanently true and the module collapsed\nfrom \"follow the instruction unless a higher authority conflicts\" to \"always\nfollow the instruction\". The probe reported PASSED, because with the condition\nabsent from the signature no enumerated situation could reach the dead branch.\n\nTHE FIX is not \"add requires to the signature\". When a linked module DOES define\nthe predicate it is derived, and putting a derived predicate in the signature\nlets a situation assert it independently of the rule that produces it -- worse\nthan the bug. So an unsatisfied requires joins and a satisfied one does not,\npinned by test_q22_control_a_requires_THE_LINK_DEFINES_stays_out.\n\nA fourth term was needed too: linking a provider in moved the required predicate\nout of the signature correctly, while the provider's OWN inputs never entered,\nso the defining rule could not fire either and linking made a module MORE inert.\n\nMeasured on the stored corpus, 40 -> 55 signature predicates. m0079 went from 2\nenumerated situations to 8, now derives both conflict predicates, and\napplicable_instruction discriminates instead of being constant.\n\nReported, not silently repaired: a `requires-unsatisfied` note names each unkept\npromise. severity=note not error -- only error drives the stage-2 repair loop,\nand no rewrite of this module can conjure the clause that was supposed to define\nthe predicate (DEBUGGING_TIPS 7).\n\nCONSEQUENCE, surfaced not suppressed. With borrows enumerated, render_situation\nrefuses them for want of a gloss, blocking two shipped specs. The gloss fence is\nthe anti-hollow-stub check and was NOT relaxed. probe_live gains\nUnglossedSignature and blocking_gaps so a blocked module is a named, reported\nstate; two tests prove every block is genuine and that the error names the\npredicate. No count is pinned. This makes a borrow gloss a PREREQUISITE for\nstage 4, not an optimisation.\n\nSome modules now FAIL that previously passed -- they passed by having nothing to\ntest. A pass count alone will misread this as a regression.\n\nIncludes four live translation runs ($0.0318) and the measurement write-up.\n\n730 pass, 1 xfailed.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00183",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
-   "commit": "pin",
-   "lines": "194-211",
-   "text": "## 8-ADDENDUM-2 (2026-08-19): the PURPOSE/END slot is REQUIRED — measured basis\nThe factorization experiment (panel_run1/factorization_*) settled the telos question:\non the 18 hardest confusion pairs (9 residue FPs + 9 same-subtype TPs), rulings made\nfrom BEHAVIOR-BLIND local descriptions alone (fields: constrains / purpose /\nfailure_mode, grounded in the span) matched panel truth 16/18 = 0.89 — panel\nself-agreement level. Adequate local information EXISTS; fixed vocabularies were the\nloss (the pre-registered subtype-granularity test failed its bar: 64% FP recovery at\n27% TP cost — every finer subtype cell still contained both verdicts). REQUIRED for\nthe next document: (a) mine the document's OWN stated ends as the purpose vocabulary\n(§9a purity check applies); (b) annotate purpose per-assert via the\npurpose+failure_mode elicitation, BEHAVIOR-BLIND (blindness is what makes the slot a\ndocument fact rather than cached relevance — the circularity objection dissolves only\nunder blindness, so it is binding); (c) behaviors declare which document-ends they\ntrack; walls remain set-membership tests. The project owner's method ruling encoded: naive a priori\ndescription will not find every needed slot — the discrepancy census after each\ncertification round is the REPAIR loop that discovers missing slots (this one was\nfound by round-3's FP census; the actor slot by the same route).\n",
-   "source_class": "arc2_docs"
+   "id": "S01178",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4662-4710",
+   "text": "commit 5aeab2d66c1cc899e72e69c792a03d6d8141c71d\nordinal 142\ndate 2026-08-09 20:14:28 -0700\nauthor Matt Stults\nsubject preflight: free Haiku run of the borrow-description change -- two findings, no spend\nMatt asked for a manual run against Haiku before real spend. Built the real\nsystem and user prompts via translate.build_system/build_user, handed them\nverbatim to subagents, put the JSON back through schema.validate. Two clauses,\ntwo runs each, $0.00.\n\nFOUND A DEFECT BEFORE ANY SPEND. The change added a validator and updated the\nworked example and never wrote the instruction down. Every clause with a\nborrowed condition would have been rejected for a rule it was never told,\nburning repair attempts, and it would have presented as \"the model cannot\nfollow the format\" rather than \"we forgot to say\". Fixed before the runs.\n\nThe format is followable and the rule bites: 2 of 4 validate first pass, both\nfailures unrelated (an act used but not declared); every requires entry got a\nsubstantive gloss; zero hollow glosses. Both agents volunteered that the\ninstruction was clear.\n\nTHE FINDING: two runs carve the same sentence at different granularities.\nm0079 run A produced three binary relations (higher_authority/2, conflicts/2,\nsame_authority/2); run B produced two unary bundles\n(conflicts_with_higher_authority/1, superseded_by_later_same_level/1). B's\nsingle condition is approximately A's two conjoined, and the ARITIES differ, so\nthey cannot pair one-to-one even in principle. Borrowed names shared between\nruns: 0 of 8 on m0079, 0 of 7 on m0150. This is a layer of disagreement\nunderneath naming that no gloss quality removes.\n\nCORRECTION: the paid DeepSeek runs measured borrowed-name agreement rising\n0.00 -> 0.50/0.69 after the worked-example fix, reported with the caveat that it\nwas unpredicted and should be re-measured. Re-measured here: 0.00 and 0.00.\nEither Haiku varies more or the earlier figure was noise at 9-16 symbols. It\nmust not be relied on.\n\nKeep the description change -- cheap, followable, readable, and it unblocks the\ntwo specs Q-22 left blocked; its value does not depend on linking. Do NOT yet\nspend on translating whole sections for linking: the plan assumed one condition\nmatches one definition, and that is not the shape of the problem.\n\nRecords three untested options, favouring matching at the CLAUSE level rather\nthan the predicate level -- the only one that does not require the linking\nproblem solved first, and closer to what the tool actually claims.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00184",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
-   "commit": "pin",
-   "lines": "212-218",
-   "text": "## 9f. Label-breadth review before terminal claims (2026-08-19, from the caution-accuracy ablation)\nMulti-label breadth noise (measured: exact-set 0.71 vs verdict-level ~0.9) has a consumer beyond walls:\nABLATION ANALYSES. A node engaging only through its weakest label looks irreducibly coupled when it is\nmerely under-labeled (measured case: l2126_2404_n017, whose caution-core moralizing forbids carried\nobjectivity-only labels). BINDING: no same-signature coupling may be declared terminal until the coupled\nnodes' labels pass a breadth review; under-labeled asserts route to label panels first.\n",
-   "source_class": "arc2_docs"
+   "id": "S01179",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4711-4734",
+   "text": "commit 3d856a802e4290acd4f990433fcc0b7b477ec7b5\nordinal 143\ndate 2026-08-12 12:29:03 -0700\nauthor Matt Stults\nsubject graph_v2 campaign: batch execution core, ds3-ds5 fix stack, review closures\nCode, prompts, tests and decision logs for the DeepSeek graph campaign:\n- dispatch_core.py: shared Serial/Concurrent/Batch execution core with\n  in-flight manifest, batch failure taxonomy, orphan recovery\n- recurse_driver.py: duplicate-seed coherence, D6 stage-1 classifier wired\n  (oversize malfunction resamples once), identical-repair-reply restart,\n  promise-vs-delivery health check, formatting classifier, containment\n- stage-2 inputs-gloss rule (schema.py + prompts, guard-accepted by Matt)\n- stage-4 seat fixes: digit-fallback scoped to 4a/4b, per-span clause_text,\n  provider-first merged_gloss, whitespace-claim round-trip\n- consolidated_fix_review.md NEGATIVE verdict: all findings validated,\n  fixed, pinned; latent-branch coverage audit + serial-path mirror pins\n- EXPERIMENTS.md carries every ruling with grounds and rejected alternatives\n\nWatched files re-accepted via guard.py by mattstults 2026-08-12.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00185",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
-   "commit": "pin",
-   "lines": "219-226",
-   "text": "## 9g. Mechanical terminality verification (2026-08-19)\nverify_terminal.py runs after every instrument change: FIXABLE moves are surfaced\nautomatically (it is also a fix-finder — it rediscovered the caution+objectivity\namendment independently); TERMINAL-DECL is proof-by-exhaustion over the finite\ndeclaration space with inline receipts; TERMINAL-STRUCT fences the node to the\nbridge/vocabulary space, where terminality is receipt-relative (PREMISE GAP\ndiscipline). No terminal claim may appear in a report without its verifier verdict.\n",
-   "source_class": "arc2_docs"
+   "id": "S01180",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4735-4748",
+   "text": "commit fb05780e3dd96d735b5e0ef72054dd67dcd0173f\nordinal 144\ndate 2026-08-12 12:29:14 -0700\nauthor Matt Stults\nsubject graph_v2 campaign: run artifacts and evidence (ds2-ds5, head-to-head, probes)\nBuild outputs, health telemetry, buried failures, compare reports and the\nusage ledger backing every number in the decision logs. ds5 completed\n817 nodes / $0.92 across three segments; compare_vs_golden.json for\nds3/ds4/ds5 and the batch-vs-concurrent head-to-head runs.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00186",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
-   "commit": "pin",
-   "lines": "227-227",
-   "text": "## 8-ADDENDUM-3 (2026-08-20): NO NORMATIVE MODULATION MAY LIVE ONLY IN PROSE —",
-   "source_class": "arc2_docs"
+   "id": "S01181",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4749-4770",
+   "text": "commit 87104f4d1600c223dab15408ccd055e8ac7bf30c\nordinal 145\ndate 2026-08-12 12:48:00 -0700\nauthor Matt Stults\nsubject steps 1-4 latent-path audit: fix the two validated bugs, adopt 35 audit pins\nBUG 1: _check_envelope now trusts response_envelope's own truncated flag --\nthe two validators can no longer disagree on the same reply (a\nmax_output_tokens truncation was complete to the serial guard, truncated\nto the batch collector).\nBUG 2: HTTP 402 rides a short retry ladder (2 retries, ~90s) in both\nexecution paths instead of the full 630s transient ladder; terminal-402\nrejected by name (together.ai credit-propagation flaps are measured and\nreal). The two F2 pins in test_translate_exec patch sleep -- the graph_v2\nsuite drops from ~22 min back to ~2 min.\n\ntest_latent_paths_steps14.py (35 offline tests) adopted; both former\nBUG-reproduction pins rewritten to assert the fixed contracts.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqffXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00187",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
-   "commit": "pin",
-   "lines": "228-250",
-   "text": "## conditions, scopes, and defeaters are reified as atoms at translation time\nMeasured basis: the satisfiability census found 8 mismatch pairs vector-identical\nto correct opposite-verdict nodes whose distinguishing feature was stated in the\nspan but never atomized (\"if repeated at scale\", \"when they indicate illicit\nintent\", \"no good-cause exception\", provenance of the material, self-reference,\ndelivery-form equivalence). Mining recovered all 8 post hoc (split_mining_*.json)\n— at the cost of a full census + mining + minting round the translator could have\navoided.\nTHE RULE (document-agnostic — no reference to any particular document's phrases):\nwhenever a clause MODULATES a norm — when it applies, to whom or what, under which\njustification it is or is not defeated, in what form or manner, toward which end —\nthe modulator must be emitted as a structured atom in a declared dimension, never\nleft solely inside a read_back or gloss. The a priori modulator classes to check\neach assert against (class-first, validate against known cases): TRIGGER (when),\nSCOPE (to whom/what), DEFEATER (unless / notwithstanding claimed justification),\nMANNER/FORM (how, incl. equivalence-of-form rules), END (toward what).\nTHE REPAIR LOOP (expected to be needed — the rule will be imperfectly applied):\nthe census -> split-mining -> blind-criterion minting -> two-seat annotation ->\ncharter regression pipeline built 2026-08-19/20 is the standing, document-agnostic\nfixing mechanism for whatever the translator still leaves in prose. A missed\nmodulator is therefore a NORMAL, detectable, repairable event — not a design\nfailure; the design failure would be shipping without the census.\n",
-   "source_class": "arc2_docs"
+   "id": "S01182",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4771-4791",
+   "text": "commit 8d72842d8b8061f9e7b40b5f0b68d051935d16c2\nordinal 146\ndate 2026-08-12 13:03:56 -0700\nauthor Matt Stults\nsubject dense leaves re-enter Phase D; repair census tool; 2026-08-12 rulings\n- A leaf whose content overflows the cap now recurses through the NORMAL\n  division path in both execution paths (serial fallback + core in-place\n  morph); D6 stages 2-3 mechanical bisect rejected by name. Pinned e2e,\n  byte-identical artifacts across paths.\n- repair_census.py: per-run failure taxonomy with fix levers and run-over-\n  run comparison (ds4: 72 buried failures -> ds5: 25); standing process\n  rule recorded -- repeat-offender categories get tested underlying-cause\n  fixes before the next paid run.\n- Rulings recorded: 0.25 gate -> seat-adjudicated renames (one-shots);\n  per-dispatch enum format-forcing plan for unwind references (F4\n  comparator collapse as fallback).\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00188",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
-   "commit": "pin",
-   "lines": "251-251",
-   "text": "## 9g-ADDENDUM (2026-08-20, the project owner's correction): TERMINAL VERDICTS ARE",
-   "source_class": "arc2_docs"
+   "id": "S01183",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4792-4800",
+   "text": "commit 991aa3937fea874b8b2faef5ce7582c708d71f2a\nordinal 147\ndate 2026-08-12 13:41:04 -0700\nauthor Matt Stults\nsubject rename seat (validated, 22 live judgments), enum forcing, graveyard verdicts, small-set rerun\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00189",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
-   "commit": "pin",
-   "lines": "252-263",
-   "text": "## INVENTORY-RELATIVE AND EXPIRE\nA verify_terminal.py verdict is a proof over a FROZEN mechanism inventory\n(declaration slots + vocabulary at run time), never an absolute property of the\nnode. When the inventory grows — a new context atom is annotated, an act subtype\nminted, a new slot added — every standing TERMINAL verdict touching the new\nmechanism's reach EXPIRES and the verifier must re-run. The verifier now stamps\nits output with the inventory it ran against and re-stamps reachable mismatches\nPENDING-VOCAB (13 nodes as of this writing: reachable by the four annotated but\nnot-yet-declared context atoms). BINDING: no document — handoff, review, proof,\nor report — may call a node \"terminal\" without naming the inventory the claim is\nrelative to; \"terminal\" with no inventory qualifier is a review finding.\n",
-   "source_class": "arc2_docs"
+   "id": "S01184",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4801-4809",
+   "text": "commit 53812993c1697196f4c13a8bf255937189de9e99\nordinal 148\ndate 2026-08-12 13:55:33 -0700\nauthor Matt Stults\nsubject pre-ds6 review closures: division-cache morph fix, seat retry, record corrections\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00190",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/SEMANTIC_AUDIT.md",
-   "commit": "pin",
-   "lines": "1-20",
-   "text": "# Stage-4 semantic audit — the go/no-go for the bulk run (2026-08-16)\n\nMatt's challenge, verbatim in spirit: the panel-agreement adjudication\nvalidated node RELEVANCE (prose), not ASP fidelity — so what is the semantic\nconfidence in the translations the bulk run is mass-producing? This audit is\nthe answer, run while chunk 0 sat in the batch queue, with the pre-declared\nrule: **new-prompt cohort ≥85% faithful with no dropped obligations in the\nfaithful set → bulk continues; below → pause and wait for the owner.**\n**COUNTERSIGNED (Matt, 2026-08-16), with one amendment: a breach does not\nend in a parked pause. The standing rule is investigate → verify a fix on\nthe failing sample → restart.** A pause is the state while the fix is being\nverified, not the destination; only a fix that cannot be verified leaves the\nrun stopped for the owner.\n\nProtocol: blind Fable-tier auditors, one per cohort, never shown gate\nresults or each other's work. Per module: read the module JSON and its span\n(`prompt_user.txt`), report DROPPED / INVENTED / WRONG-POLARITY / HOLLOW\nnormative content with the decisive words quoted. Strict on content, lenient\non style. Raw verdicts: `semantic_audit.json`.\n",
-   "source_class": "arc2_docs"
+   "id": "S01185",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4810-4818",
+   "text": "commit 80e03e61f2aedcfc1ead2f08d1db88c43895d23d\nordinal 149\ndate 2026-08-12 17:01:34 -0700\nauthor Matt Stults\nsubject adopt merge-drop autofix: the pre-registered restart-insufficient trigger fired on ds6\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00191",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/SEMANTIC_AUDIT.md",
-   "commit": "pin",
-   "lines": "21-30",
-   "text": "## Results\n\n| cohort | faithful | defective | rate |\n|---|---|---|---|\n| **new-prompt redraws** (run 20260816-221213 — what the bulk run replicates) | 12 | 1 | **92.3%** |\n| old-prompt sample (pre-ruling drafts) | 5 | 2 | 71% |\n\n**Verdict: CONTINUE.** 92.3% clears the 85% floor; the corrected prompt\ncohort beats the old baseline; the bulk run was not paused.\n",
-   "source_class": "arc2_docs"
+   "id": "S01186",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4819-4827",
+   "text": "commit 66496d9b2e6130c50a4aebafd8cfadd6bbb9daa9\nordinal 150\ndate 2026-08-13 10:47:19 -0700\nauthor Matt Stults\nsubject seat-brief sweep: H1+H2 adopted (0.57->0.82 sensitivity), probes recorded\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00192",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/SEMANTIC_AUDIT.md",
-   "commit": "pin",
-   "lines": "31-52",
-   "text": "## The defects, by name\n\n* `l4252_4482_n003` (new): **dropped exclusivity** — \"instructions that\n  discuss the nuances of audio or video … are ONLY relevant to Advanced\n  voice\" encodes the inclusion and omits the exclusion; a world where those\n  instructions also bind standard voice satisfies the module.\n* `l1_170_n046` (old): **converse inversion** — \"'Root' instructions ONLY\n  come from the Model Spec\" encoded as \"every Model Spec instruction is\n  root\", overgeneralizing root authority; the document's own lower-level\n  designations contradict the encoded rule.\n* `l2653_2820_n004` (old): **dropped directive** — the cost-of-incorrect-\n  assumptions weighing is claim C1 and encoded nowhere.\n\n⭐ **Two of three defects are the same mechanism: an \"only\"/exclusivity\nclause encoded as its inclusion with the exclusion dropped or inverted.**\nThis is now a named candidate class for the review-list fold and for a\nmechanical check (a span containing \"only\"/\"solely\"/\"exclusively\" whose\nmodule has no forbid, no cnpa closure, and no forbid_body is a cheap\nattention flag — untested, follow the graveyard discipline before trusting\nit). The battery's prediction that consistent deletion evades the mechanical\ngate is confirmed on real traffic: all three defects passed every check.\n",
-   "source_class": "arc2_docs"
+   "id": "S01187",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4828-4836",
+   "text": "commit 9aa68af0e0f39faf1aa4f101cd715f9a44a24494\nordinal 151\ndate 2026-08-13 11:08:02 -0700\nauthor Matt Stults\nsubject ds7 design measurements: modal drift adjudicated, canonical cards negative, authority consumption measured\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00193",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/SEMANTIC_AUDIT.md",
-   "commit": "pin",
-   "lines": "53-61",
-   "text": "## Standing consequence\n\nPer-chunk sampling continues through the bulk run: each completed chunk gets\na fresh blind audit of ~6 sampled modules under the same rule. A chunk\nfalling below the floor stops the run (`pkill -f bulk_run.sh`) while the\nfailure is diagnosed; a fix verified on the failing sample restarts the\nremaining chunks (Matt's D1 amendment); an unverifiable fix leaves the run\nstopped for the owner. Audit records append to `semantic_audit.json`.\n",
-   "source_class": "arc2_docs"
+   "id": "S01188",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4837-4845",
+   "text": "commit f0751e500626512a9b9ba79ea5797bcfda07e054\nordinal 152\ndate 2026-08-13 11:16:15 -0700\nauthor Matt Stults\nsubject ds7 tranche 1: enforced authority canonicalization, modal+merge prompt lines, rename enums off, adopted seat brief\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00194",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/PRUNED.md",
-   "commit": "pin",
-   "lines": "1-60",
-   "text": "# PRUNED.md — evidence-prune manifest (2026-08-30)\n\nEverything below was removed from the working tree at publication prep to keep\nthe repo reviewable. NOTHING IS LOST: full git history is retained, and each\nentry pins the exact content by git object id (tree/blob sha at the pre-prune\ncommit). To restore any entry: `git checkout <pre-prune-commit> -- <path>`.\nReason per entry: superseded iteration runs, repair-stage intermediates, or\nregenerable caches; the certified artifacts (ds7_production, the cited\ntranslation runs, all behavior_pilot evidence) are retained in full.\n\n| path | git object id | files | bytes |\n|---|---|---|---|\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260810-203553-together-deepseek-v4-flash | a3581523b0781c0b5407934fe5bfd78e5c1c7096 | 54 | 416,495 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260810-205513-together-deepseek-v4-flash | 911b3e30b7ee2c4818bd44950aec179789c2bb4f | 60 | 402,097 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260810-212409-together-deepseek-v4-flash | 16af00b96f2a2feb1c572b2683fad325d12c8e79 | 81 | 475,581 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260810-213043-together-deepseek-v4-flash | 305650d3c24bcbd44b33d4f9f4946e0ac38321e1 | 64 | 406,996 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260810-214234-together-deepseek-v4-flash | 8bc1ade8855affd6ada935175607824f65927084 | 1 | 35,747 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260810-214437-together-deepseek-v4-flash | 618db50e39649c6212373b052e3c8fbfdbbcbccf | 82 | 433,706 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260810-215527-together-deepseek-v4-flash | 34fa4821a3135d91ff6c2891e13ea115d2e08188 | 70 | 465,370 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260810-225427-together-deepseek-v4-flash | 120e2885c75e35bfa30887a4e8e6b5f84f1ae66d | 72 | 492,413 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260810-234100-together-deepseek-v4-flash | b91b95ffcc5e0406570d9358830e93713c5a88b8 | 73 | 476,592 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260812-090344-together-deepseek-v4-flash | bec74a14e7978a5fea2ac070c3750a6c6f09fa64 | 87 | 401,845 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260812-133011-together-deepseek-v4-flash | 5847b826f435d4205fbf6142cc17dd2d291c2b3d | 1 | 36,820 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260814-163457-together-deepseek-v4-flash | 05dddbe9df1069231b4371ccc22f141c08df04d7 | 80 | 253,033 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260814-173322-together-deepseek-v4-flash | a08d40c5a7e582b26c5d8a0bb66cdf521dc21474 | 475 | 2,029,702 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260815-070038-together-deepseek-v4-flash | e9855f02ebbfedde61206dbc45a117fdcf03fccf | 388 | 1,984,483 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260815-130831-together-deepseek-v4-flash | 93e38d86b70dd205bf799180d516f33bf14cdd33 | 528 | 2,022,333 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260816-094505-together-deepseek-v4-flash | e4025c50f0127b5fa2aa77e3e093cc605650d05a | 147 | 698,676 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260816-130000-licence-fixup | f00a8219d73692fd632a583f6379c682021bd90b | 433 | 1,478,785 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260816-221213-together-deepseek-v4-flash | cfc19fd68ec4751312f27a6ea3fb6cef6797688b | 84 | 455,847 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260816-230554-together-deepseek-v4-flash | 008666737480d8057746bed85f646bb81730279f | 532 | 2,668,512 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260817-004238-together-deepseek-v4-flash | af4e26989c912eba8bc9462df44e7302c5a39907 | 538 | 2,537,168 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260817-005052-together-deepseek-v4-flash | ddbf26e4c4f1e87e1d32ded42693afbed69ae743 | 75 | 588,034 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260817-010032-together-deepseek-v4-flash | 329768e2ef3ba6d558cb0f5d9b18b9f39c9d542e | 33 | 260,895 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260817-020000-frontier-repair | 332a905380dcc0655d7ae92355ab38a0b2717525 | 25 | 91,420 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260817-071407-together-deepseek-v4-flash | c35e4e90dd5368fa0702f503e840bf62660f4459 | 541 | 2,229,759 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260817-080454-together-deepseek-v4-flash | d06999890afcc36139be1f7ab7917553ab248a7d | 541 | 2,220,074 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260817-082018-together-deepseek-v4-flash | e8376af7fb92fbd7a3dba9c699775239ae8f8c28 | 544 | 2,277,101 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260817-085233-together-deepseek-v4-flash | 236b7bbf36b2d50695525d0d042d2c16416b5226 | 544 | 2,184,145 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260817-090000-frontier-repair-2 | 032ee7b6bf6f41b6eeea9aaffc67591133476afc | 9 | 31,302 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260817-090314-together-deepseek-v4-flash | 52e6061a8e228f9dfa0d188339355fe362c76d61 | 388 | 1,902,739 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260817-100000-frontier-repair-3 | 2d528891bc44bbdffd095620dad8c71a7c6fabb7 | 12 | 42,578 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260817-110000-frontier-repair-4 | 28e8787f923541dffcb4c28a278298f8e8d20229 | 9 | 32,491 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260817-120000-frontier-repair-5 | 5cd03e06895b5d473db88f733294b4540d82f83c | 15 | 51,594 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260817-130000-frontier-repair-6 | 6984ffffbcccfa65d3eef0bf809b656fb97b6b57 | 12 | 48,492 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260818-200000-frontier-repair-7 | 790cc40036a026f25a40e00a7ba92c556830732b | 6 | 15,164 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260818-220000-frontier-repair-8 | 0db5addeb3785fb8f608eccee789ea2115a616f5 | 102 | 277,912 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260818-233000-frontier-repair-9 | b590863b9f9ce9164cbb1baee0df56d5a9cb4b70 | 399 | 1,044,545 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/repair_graveyard | 5414a5e591635ba3beb2b9cd142d27213abe4c55 | 1519 | 7,640,861 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/runs/ds1 | 112cd21c022cfbb92dc712666f489c97ce64f1c0 | 30 | 2,322,338 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/runs/ds2 | 74eb9adba7d466ce593a78fcf2ae2bfc7c39c0f1 | 124 | 6,845,796 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/runs/ds3 | 17854a59ecd3361c2a206fd7f6b6ea755ee65004 | 80 | 6,010,526 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/runs/ds4 | 66443b9661829f3c41401712ccc03c9996204410 | 154 | 8,251,610 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/runs/ds5 | 2c1d0d79bbf12fc89cf606927d52fb6b92b3b53c | 104 | 11,667,960 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/runs/ds6 | 5142150be3189c6201266d6b2ef7726ef4236546 | 95 | 6,974,732 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/runs/ds7_repaired | 5408f9c10e37c0b00faa46dbc85663fb6f45e164 | 16 | 9,364,837 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/runs/hh_batch | b44b7b0f5b59e7603334b7117d17e5813df7f162 | 123 | 5,900,459 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/runs/hh_concurrent | f61234a1dda2cca38fd3b7995a859364316a114d | 124 | 6,888,467 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/runs/hh2_batch | 6479ba1eba8bf90c90495a20986fa2340f07d753 | 82 | 6,097,806 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/runs/hh2_concurrent | ae7e8016ffbe02feb11dc0e5a49b54e47a50c56c | 81 | 6,120,659 |",
-   "source_class": "arc2_docs"
+   "id": "S01189",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4846-4854",
+   "text": "commit 856aa654eb92f6ea4b2ab7afa0db11705fe7ea54\nordinal 153\ndate 2026-08-13 11:25:26 -0700\nauthor Matt Stults\nsubject ds7 tranche 2: shared rename choke-point at all sites, greedy seat descend, risk queue\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01GmqfXE9c5fKiyTs8V64B6r\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   }
  ]
 }

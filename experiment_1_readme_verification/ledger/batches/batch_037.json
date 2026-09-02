@@ -1,133 +1,148 @@
 {
  "header": {
   "batch": "batch_037",
-  "source_class": "arc2_json",
+  "source_class": "arc1_cycles",
   "brief_version": "0.4",
   "glossary_version": "frozen ",
   "spans": 15,
-  "first_span": "S00692",
-  "last_span": "S00706"
+  "first_span": "S00517",
+  "last_span": "S00531"
  },
  "spans": [
   {
-   "id": "S00692",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
+   "id": "S00517",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
    "commit": "pin",
-   "lines": "173-173",
-   "text": "  \"l2821_3040_n029\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "27-27",
+   "text": " \"dossier_set_sha\": \"508c8aa1606246d5b009babdd64fc0add9032b8c244f3bd2a56a35b7a35c2abc\",",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00693",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
+   "id": "S00518",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
    "commit": "pin",
-   "lines": "174-174",
-   "text": "  \"l1108_1367_n014\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "28-28",
+   "text": " \"flip_tallies\": {},",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00694",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
+   "id": "S00519",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
    "commit": "pin",
-   "lines": "175-175",
-   "text": "  \"l699_796_n010\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "29-29",
+   "text": " \"flips\": [],",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00695",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
+   "id": "S00520",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
    "commit": "pin",
-   "lines": "176-176",
-   "text": "  \"l461_608_n018\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "30-30",
+   "text": " \"frozen_manifest_sha\": \"5abae9829bde3198030afa769654f865f5342af3292bca6ed0a602e2251f09c3\",",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00696",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
+   "id": "S00521",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
    "commit": "pin",
-   "lines": "177-177",
-   "text": "  \"l2821_3040_n009\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "31-31",
+   "text": " \"frozen_prediction_sha\": \"07ad0f437ea02e2976577b5dd075c0fbbbd2155ab04368c9dbcca94393284fb6\",",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00697",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
+   "id": "S00522",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
    "commit": "pin",
-   "lines": "178-178",
-   "text": "  \"l2126_2404_n012\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "32-58",
+   "text": " \"gate\": {\n  \"closure_checked\": [\n   \"behaviours_query.json\",\n   \"constitution_clauses.json\",\n   \"modelspec_clauses.json\",\n   \"test_atom_refactor.py\",\n   \"test_grammar.py\",\n   \"test_no_reference_leak.py\",\n   \"thresholds_frozen.json\"\n  ],\n  \"files_changed\": [\n   \"annotations_ext_v1.json\",\n   \"annotations_ext_v1_merged.json\",\n   \"behavior_atoms_audit_v1.json\",\n   \"vocabulary_migrations.json\"\n  ],\n  \"review\": {\n   \"by\": \"change-review seat, Claude (Fable 5), independent session 2026-08-03 — not the implementer\",\n   \"notes\": \"FREEZE: manifest.json/prediction.json sha256 match state.json frozen shas exactly (5abae982…, 07ad0f43…); no manifest_amendments.json present; all 7 closure_shas re-hashed and match. DECLARED DIFF: HEAD (4cf47d6) copies of the 3 tracked files hash to open_shas; vocabulary_migrations.json absent at HEAD and its OPEN sha f4a7f858… independently reproduced as the tool-canonical empty log (atom_refactor._dumps trailing_nl=False); the log's per-migration sha chain links from every OPEN sha to every current on-disk sha with no gaps. ONE UNDECLARED CHANGE, judged non-blocking: chain_audit/worksheet.json moved — it is a DERIVED audit view (chain_audit_worksheet.py builds it deterministically from annotations_ext_v1_merged.json, a declared file); I rebuilt it independently in scratch and it byte-equals the working copy, the untracked pre_repair backup byte-equals the HEAD version, and no query/measurement module reads it — nothing can ride in on it, but the manifest should have declared it, and verdicts.json (old names) no longer validates against the regenerated worksheet (historical-record wrinkle, not pipeline). CONTENT: exactly the 5 rechains from chain_audit/verdicts.json (11 agent_missing across 4 names: disclose 1 + preserve 3 + advise 2 + world_connection 5; 1 unlicensed fold at m0271); n_rewritten counts (3/7/5/11/3) arithmetically consistent with atoms+by_clause mirrors+vocabulary key. Spot-verified 4 corrections against modelspec_clauses.json quotes: m0197 ('the assistant must preserve user agency', 'must be transparently indicated to the user'), m0276 ('always advising that immediate help should be sought'), m0313 ('The assistant should support the user's connection') — assistant is the actor, user the patient, so __model_user is the agent-first chain; m0271's quote names only 'shaming the user' (no developer) while m0170's says 'shouldn't judge the user or developer' — fold correct, retention correct. Verified m0170 retains shouldnot_judge__model_user_developer (confined to m0170; vocabulary key kept) while m0271 carries shouldnot_judge__model_user; ZERO occurrences of any of the 4 old names in all changed artifacts and in annotations_ext_v1_patch.json (manifest note 2 confirmed). REPLAY: copied all 3 tracked artifacts from git HEAD and replayed through vocabulary_migrations.json via atom_refactor.replay_artifact — byte-identical to working tree for all 3. TESTS: gate set (test_atom_refactor.py, test_grammar.py, test_no_reference_leak.py) run twice, 133 passed. MUTANTS: (1) scratch copy of the log with the fold entry's clauses scope corrupted to m0170 — replay byte-compare detects the mismatch; (2) atom_refactor.py rechain scope sabotaged in place (scope=None) — killed by test_rechain_clause_scoped_folds_into_the_existing_key and test_rechain_leaves_unrelated_lines_byte_untouched (2 failed), then restored byte-exact (sha cf2fe287… re-verified, suite re-green). FENCE: all 31 FORBIDDEN tokens scanned against the 4 changed artifacts; sole hit is the substring 'verdicts' inside the reason strings citing chain_audit/verdicts.json — the chain audit's own grammar-verdict file (document-side, contains no panel/judge/label data), a filename collision, not a panel reference; no panel file, loader, or laundering path is named anywhere in the changed artifacts. No panel score, judge rating, or gold value appeared in any material reviewed.\",\n   \"verdict\": \"proceed\"\n  },\n  \"tests_passed\": [\n   \"test_atom_refactor.py\",\n   \"test_grammar.py\",\n   \"test_no_reference_leak.py\"\n  ]\n },",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00698",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
+   "id": "S00523",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
    "commit": "pin",
-   "lines": "179-179",
-   "text": "  \"l1799_1973_n013\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "59-64",
+   "text": " \"open_shas\": {\n  \"annotations_ext_v1.json\": \"145b2e9afa646150afc7581dfedbc05830acc88ce5a4fa44bc01183cc4f58631\",\n  \"annotations_ext_v1_merged.json\": \"bb6f7aecd7f37b069878300d616b62263dc0b8ca111ab435cc03477e2060bdd3\",\n  \"behavior_atoms_audit_v1.json\": \"1e49a65a945215386b0e104fcbaf1812fbd5395e7fe01f2034d9977c55b1bd0b\",\n  \"vocabulary_migrations.json\": \"f4a7f858b17a88c4b3ec4621e1a5a28d196f4ca9aebb22a175314a1b14d66d95\"\n },",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00699",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
+   "id": "S00524",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
    "commit": "pin",
-   "lines": "180-180",
-   "text": "  \"l3954_4251_n012\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "65-65",
+   "text": " \"overrides\": [],",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00700",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
+   "id": "S00525",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
    "commit": "pin",
-   "lines": "181-181",
-   "text": "  \"l1_170_n081\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "66-92",
+   "text": " \"prediction_checks\": {\n  \"adjudicate\": [\n   {\n    \"expected\": 0,\n    \"kind\": \"max_regressions\",\n    \"observed\": 0,\n    \"result\": \"PASS\"\n   }\n  ],\n  \"measure\": [\n   {\n    \"expected\": {\n     \"max\": 0,\n     \"min\": 0\n    },\n    \"kind\": \"flip_count\",\n    \"observed\": 0,\n    \"result\": \"PASS\"\n   },\n   {\n    \"expected\": [],\n    \"kind\": \"directions\",\n    \"observed\": [],\n    \"result\": \"PASS\"\n   }\n  ]\n },",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00701",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
+   "id": "S00526",
+   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
    "commit": "pin",
-   "lines": "182-182",
-   "text": "  \"l699_796_n008\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "93-93",
+   "text": " \"skipped\": {}",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00702",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
+   "id": "S00527",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/decision.json",
    "commit": "pin",
-   "lines": "183-183",
-   "text": "  \"l2653_2820_n008\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "2-2",
+   "text": " \"census\": \"deferred_to_checkpoint\",",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00703",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
+   "id": "S00528",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/decision.json",
    "commit": "pin",
-   "lines": "184-184",
-   "text": "  \"l1_170_n046\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "3-3",
+   "text": " \"census_delta\": null,",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00704",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
+   "id": "S00529",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/decision.json",
    "commit": "pin",
-   "lines": "185-185",
-   "text": "  \"l3954_4251_n038\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "4-4",
+   "text": " \"cycle\": \"decoration-blind-join-2026-08-04\",",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00705",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
+   "id": "S00530",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/decision.json",
    "commit": "pin",
-   "lines": "186-186",
-   "text": "  \"l3239_3382_n002\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "5-5",
+   "text": " \"date\": \"2026-08-04\",",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00706",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER1_ATTEMPT2_SCORED.json",
+   "id": "S00531",
+   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/decision.json",
    "commit": "pin",
-   "lines": "187-187",
-   "text": "  \"l1974_2125_n017\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "6-6",
+   "text": " \"decision\": \"keep\",",
+   "source_class": "arc1_cycles",
+   "context": null
   }
  ]
 }

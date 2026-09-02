@@ -1,0 +1,109 @@
+{
+ "header": {
+  "batch": "batch_078",
+  "source_class": "arc1_docs",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 12,
+  "first_span": "S01133",
+  "last_span": "S01144"
+ },
+ "spans": [
+  {
+   "id": "S01133",
+   "path": "AGENTS.md",
+   "commit": "pin",
+   "lines": "27-46",
+   "text": "## Things that will silently corrupt a result if you don't know them\n\n* **Never lower a quality floor to make a run pass.** A real gain raises it in the same\n  commit, with the measurement. Scoring far *above* a floor is a **leak signature**, not\n  a win (`ITERATION_LOOP.md`, anti-cheat perimeter).\n* **A cycle's own design document is never seat material.** Design docs pre-register\n  expected outcomes; handing one to an adjudication seat destroys the judgment. Same for\n  `PORTFOLIO_REVIEW.md`, prior `flip_verdicts*.json`, and the census.\n* **Never pin an exact count of a live artifact** in a test (`n == 109`, `692\n  candidates`). Pin a frozen input plus a subset check — a cycle that legitimately grows\n  the artifact will otherwise fail its own gate. This has bitten twice.\n* **Registration, not documentation, fences a module.** New query-side module →\n  `test_no_reference_leak.QUERY_MODULES`; new panel-reading module → `FORBIDDEN`; new\n  test → `conftest._OPTIONAL`. Same diff, every time.\n* **Labels direct ATTENTION, never TRUTH.** A change may be *motivated* by a panel\n  disagreement, but it is kept or reverted on its complete flip set, adjudicated against\n  the document, with label values nowhere in the room.\n* **Check `MODULE_MAP.md` §11 before \"cleaning up\"** anything that looks like a bug.\n  Six known cases are contracts, not defects.\n",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01134",
+   "path": "AGENTS.md",
+   "commit": "pin",
+   "lines": "47-69",
+   "text": "## Working rules\n\n* **The driver never runs git.** `cycle.py` drafts `commit_message.txt` and\n  `staging_list.txt` at CLOSE; a human/coordinator stages and commits. Staging usually\n  needs more than the list — check `git status` against it.\n* **Always pass `--cycle NAME`** to `cycle.py`; a directory holding only drafts counts\n  as open, so the bare command gets refused.\n* **Every cycle gets a clean-context adversarial review before close, and a positive\n  review stops everything until it is fixed.** This has fired twice and was right both\n  times.\n* **Rulings go in the repo, not the transcript.** A decision that resolves an open\n  design question must be written into the cycle record with its grounds, and any\n  tempting alternative rejected **by name**. Transcript-only procedure is a review\n  finding (`REPRODUCIBILITY.md`).\n* **Match the model tier to the work, and say which you used.** Strongest available model\n  for orchestration, design, and adversarial review; a mid tier for executing a written\n  and reviewed plan; a small model for validated judgment seats — the adjudication seat\n  is proven at small-model/frontier parity, and **divergence from a frontier model on the\n  same brief is a seat defect, not a model failure**. Set the model explicitly on every\n  subagent dispatch rather than inheriting. Design work must not be pushed forward on an\n  implementation tier (currently: the S3b redesign, and the G-freeze artifact — which\n  defines a measurement that can only be run once).\n",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01135",
+   "path": "AGENTS.md",
+   "commit": "pin",
+   "lines": "70-72",
+   "text": "## Environment\n\n```bash",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01136",
+   "path": "AGENTS.md",
+   "commit": "pin",
+   "lines": "73-91",
+   "text": "# from the repo root\npython3 -m venv semi-formal-experiment/.venv\nsemi-formal-experiment/.venv/bin/pip install pytest clingo\ncd semi-formal-experiment && .venv/bin/python -m pytest -q      # ~2,270 pass, ~8 min\n```\n\n`clingo` is only needed for the ASP-solver tests; everything else runs without it (those\ntests will show as collection errors, which is a known environment gap, not a failure).\nRun from `semi-formal-experiment/` — several commands take relative path arguments.\nProvider calls use stdlib `urllib`, no vendor SDK. `numpy`/`scikit-learn` are imported\nlazily by `weight_diag.py` only.\n\n**API spend:** this project has a hard budget ceiling and it is `spend.py:BUDGET` — the ONE\nceiling the machine reads (the authorization history is in the\nconstant's comment, and `spend.py` reports the current figure — quote the constant, never a\nsecond number). Nearly all work — every cycle, every audit, every number in the\nwriteups — is deterministic re-analysis of data already on disk and costs nothing. If you\nfind yourself about to spend, check that the question genuinely needs a new model call.\n",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01137",
+   "path": "AGENTS.md",
+   "commit": "pin",
+   "lines": "92-102",
+   "text": "## What \"done\" looks like\n\nA change is done when: predictions were frozen before measurement, every flip was\nadjudicated against the document, an independent review passed, the decision is signed\nwith its grounds, and the cycle log has its line. **Not when the score improved.**\n\nIf you are new here and want the shortest statement of why the process looks like this:\na change that improved the aggregate metric was reverted because per-flip adjudication\nfound it had deleted the spec's guidance on de-escalating a user's radicalization. The\nmetric said ship it. See `cycles/patient-pricing-2026-08-04/decision.json`.\n",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01138",
+   "path": ".github/workflows/ci.yml",
+   "commit": "pin",
+   "lines": "1-36",
+   "text": "name: tests\non:\n  push: { branches: [main] }\n  pull_request: {}\njobs:\n  semi-formal-experiment:\n    runs-on: ubuntu-latest\n    timeout-minutes: 25\n    steps:\n      - uses: actions/checkout@v4\n      - uses: actions/setup-python@v5\n        with: { python-version: \"3.10\" }\n      - run: bash setup_env.sh\n      - run: cd semi-formal-experiment && .venv/bin/python -m pytest -q\n  walkthrough:\n    runs-on: ubuntu-latest\n    timeout-minutes: 20\n    steps:\n      - uses: actions/checkout@v4\n      - uses: actions/setup-python@v5\n        with: { python-version: \"3.10\" }\n      - run: bash setup_env.sh\n      - run: cd walkthrough && ../semi-formal-experiment/.venv/bin/python -m pytest -q\n  demo-path:\n    runs-on: ubuntu-latest\n    timeout-minutes: 10\n    steps:\n      - uses: actions/checkout@v4\n      - uses: actions/setup-python@v5\n        with: { python-version: \"3.10\" }\n      - run: bash setup_env.sh\n      - run: |\n          python3 engine/spec-cite/cite.py resolve 'model-spec@2025-12-18 > #avoid_sycophancy > ¶2 s1'\n      - run: |\n          python3 walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/graph_check.py walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/runs/ds7/root_graph.production.json\n",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01139",
+   "path": "LICENSE",
+   "commit": "pin",
+   "lines": "1-22",
+   "text": "MIT License\n\nCopyright (c) 2026 Matt Stults\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01140",
+   "path": "data/panel-v5/LICENSE",
+   "commit": "pin",
+   "lines": "1-60",
+   "text": "\n                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or entity authorized by\n      the copyright owner that is granting the License.\n\n      \"Legal Entity\" shall mean the union of the acting entity and all\n      other entities that control, are controlled by, or are under common\n      control with that entity. For the purposes of this definition,\n      \"control\" means (i) the power, direct or indirect, to cause the\n      direction or management of such entity, whether by contract or\n      otherwise, or (ii) ownership of fifty percent (50%) or more of the\n      outstanding shares, or (iii) beneficial ownership of such entity.\n\n      \"You\" (or \"Your\") shall mean an individual or Legal Entity\n      exercising permissions granted by this License.\n\n      \"Source\" form shall mean the preferred form for making modifications,\n      including but not limited to software source code, documentation\n      source, and configuration files.\n\n      \"Object\" form shall mean any form resulting from mechanical\n      transformation or translation of a Source form, including but\n      not limited to compiled object code, generated documentation,\n      and conversions to other media types.\n\n      \"Work\" shall mean the work of authorship, whether in Source or\n      Object form, made available under the License, as indicated by a\n      copyright notice that is included in or attached to the work\n      (an example is provided in the Appendix below).\n\n      \"Derivative Works\" shall mean any work, whether in Source or Object\n      form, that is based on (or derived from) the Work and for which the\n      editorial revisions, annotations, elaborations, or other modifications\n      represent, as a whole, an original work of authorship. For the purposes\n      of this License, Derivative Works shall not include works that remain\n      separable from, or merely link (or bind by name) to the interfaces of,\n      the Work and Derivative Works thereof.\n\n      \"Contribution\" shall mean any work of authorship, including\n      the original version of the Work and any modifications or additions\n      to that Work or Derivative Works thereof, that is intentionally\n      submitted to Licensor for inclusion in the Work by the copyright owner\n      or by an individual or Legal Entity authorized to submit on behalf of\n      the copyright owner. For the purposes of this definition, \"submitted\"\n      means any form of electronic, verbal, or written communication sent\n      to the Licensor or its representatives, including but not limited to\n      communication on electronic mailing lists, source code control systems,\n      and issue tracking systems that are managed by, or on behalf of, the\n      Licensor for the purpose of discussing and improving the Work, but\n      excluding communication that is conspicuously marked or otherwise",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01141",
+   "path": "data/panel-v5/LICENSE",
+   "commit": "pin",
+   "lines": "61-120",
+   "text": "      designated in writing by the copyright owner as \"Not a Contribution.\"\n\n      \"Contributor\" shall mean Licensor and any individual or Legal Entity\n      on behalf of whom a Contribution has been received by Licensor and\n      subsequently incorporated within the Work.\n\n   2. Grant of Copyright License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      copyright license to reproduce, prepare Derivative Works of,\n      publicly display, publicly perform, sublicense, and distribute the\n      Work and such Derivative Works in Source or Object form.\n\n   3. Grant of Patent License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      (except as stated in this section) patent license to make, have made,\n      use, offer to sell, sell, import, and otherwise transfer the Work,\n      where such license applies only to those patent claims licensable\n      by such Contributor that are necessarily infringed by their\n      Contribution(s) alone or by combination of their Contribution(s)\n      with the Work to which such Contribution(s) was submitted. If You\n      institute patent litigation against any entity (including a\n      cross-claim or counterclaim in a lawsuit) alleging that the Work\n      or a Contribution incorporated within the Work constitutes direct\n      or contributory patent infringement, then any patent licenses\n      granted to You under this License for that Work shall terminate\n      as of the date such litigation is filed.\n\n   4. Redistribution. You may reproduce and distribute copies of the\n      Work or Derivative Works thereof in any medium, with or without\n      modifications, and in Source or Object form, provided that You\n      meet the following conditions:\n\n      (a) You must give any other recipients of the Work or\n          Derivative Works a copy of this License; and\n\n      (b) You must cause any modified files to carry prominent notices\n          stating that You changed the files; and\n\n      (c) You must retain, in the Source form of any Derivative Works\n          that You distribute, all copyright, patent, trademark, and\n          attribution notices from the Source form of the Work,\n          excluding those notices that do not pertain to any part of\n          the Derivative Works; and\n\n      (d) If the Work includes a \"NOTICE\" text file as part of its\n          distribution, then any Derivative Works that You distribute must\n          include a readable copy of the attribution notices contained\n          within such NOTICE file, excluding those notices that do not\n          pertain to any part of the Derivative Works, in at least one\n          of the following places: within a NOTICE text file distributed\n          as part of the Derivative Works; within the Source form or\n          documentation, if provided along with the Derivative Works; or,\n          within a display generated by the Derivative Works, if and\n          wherever such third-party notices normally appear. The contents\n          of the NOTICE file are for informational purposes only and\n          do not modify the License. You may add Your own attribution\n          notices within Derivative Works that You distribute, alongside\n          or as an addendum to the NOTICE text from the Work, provided",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01142",
+   "path": "data/panel-v5/LICENSE",
+   "commit": "pin",
+   "lines": "121-180",
+   "text": "          that such additional attribution notices cannot be construed\n          as modifying the License.\n\n      You may add Your own copyright statement to Your modifications and\n      may provide additional or different license terms and conditions\n      for use, reproduction, or distribution of Your modifications, or\n      for any such Derivative Works as a whole, provided Your use,\n      reproduction, and distribution of the Work otherwise complies with\n      the conditions stated in this License.\n\n   5. Submission of Contributions. Unless You explicitly state otherwise,\n      any Contribution intentionally submitted for inclusion in the Work\n      by You to the Licensor shall be under the terms and conditions of\n      this License, without any additional terms or conditions.\n      Notwithstanding the above, nothing herein shall supersede or modify\n      the terms of any separate license agreement you may have executed\n      with Licensor regarding such Contributions.\n\n   6. Trademarks. This License does not grant permission to use the trade\n      names, trademarks, service marks, or product names of the Licensor,\n      except as required for reasonable and customary use in describing the\n      origin of the Work and reproducing the content of the NOTICE file.\n\n   7. Disclaimer of Warranty. Unless required by applicable law or\n      agreed to in writing, Licensor provides the Work (and each\n      Contributor provides its Contributions) on an \"AS IS\" BASIS,\n      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\n      implied, including, without limitation, any warranties or conditions\n      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A\n      PARTICULAR PURPOSE. You are solely responsible for determining the\n      appropriateness of using or redistributing the Work and assume any\n      risks associated with Your exercise of permissions under this License.\n\n   8. Limitation of Liability. In no event and under no legal theory,\n      whether in tort (including negligence), contract, or otherwise,\n      unless required by applicable law (such as deliberate and grossly\n      negligent acts) or agreed to in writing, shall any Contributor be\n      liable to You for damages, including any direct, indirect, special,\n      incidental, or consequential damages of any character arising as a\n      result of this License or out of the use or inability to use the\n      Work (including but not limited to damages for loss of goodwill,\n      work stoppage, computer failure or malfunction, or any and all\n      other commercial damages or losses), even if such Contributor\n      has been advised of the possibility of such damages.\n\n   9. Accepting Warranty or Additional Liability. While redistributing\n      the Work or Derivative Works thereof, You may choose to offer,\n      and charge a fee for, acceptance of support, warranty, indemnity,\n      or other liability obligations and/or rights consistent with this\n      License. However, in accepting such obligations, You may act only\n      on Your own behalf and on Your sole responsibility, not on behalf\n      of any other Contributor, and only if You agree to indemnify,\n      defend, and hold each Contributor harmless for any liability\n      incurred by, or claims asserted against, such Contributor by reason\n      of your accepting any such warranty or additional liability.\n\n   END OF TERMS AND CONDITIONS\n\n   APPENDIX: How to apply the Apache License to your work.\n",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01143",
+   "path": "data/panel-v5/LICENSE",
+   "commit": "pin",
+   "lines": "181-203",
+   "text": "      To apply the Apache License to your work, attach the following\n      boilerplate notice, with the fields enclosed by brackets \"[]\"\n      replaced with your own identifying information. (Don't include\n      the brackets!)  The text should be enclosed in the appropriate\n      comment syntax for the file format. We also recommend that a\n      file or class name and description of purpose be included on the\n      same \"printed page\" as the copyright notice for easier\n      identification within third-party archives.\n\n   Copyright [yyyy] [name of copyright owner]\n\n   Licensed under the Apache License, Version 2.0 (the \"License\");\n   you may not use this file except in compliance with the License.\n   You may obtain a copy of the License at\n\n       http://www.apache.org/licenses/LICENSE-2.0\n\n   Unless required by applicable law or agreed to in writing, software\n   distributed under the License is distributed on an \"AS IS\" BASIS,\n   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n   See the License for the specific language governing permissions and\n   limitations under the License.\n",
+   "source_class": "arc1_docs"
+  },
+  {
+   "id": "S01144",
+   "path": "data/panel-v5/NOTICE",
+   "commit": "pin",
+   "lines": "1-7",
+   "text": "This directory redistributes data from the ai-character-index project\n(https://github.com/AndresCotton/ai-character-index, commit ef08e676),\nby Andres Cotton, licensed under the Apache License, Version 2.0.\nSee the LICENSE file in this directory for the license text, and\nPROVENANCE.md for the ingestion record. The rest of this repository is\nlicensed separately (see the repository root LICENSE).\n",
+   "source_class": "arc1_docs"
+  }
+ ]
+}

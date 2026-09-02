@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_012",
+  "source_class": "arc2_json",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S00317",
+  "last_span": "S00331"
+ },
+ "spans": [
+  {
+   "id": "S00317",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "6-6",
+   "text": " \"decline_correctness_raw\": 0.8,",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00318",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "7-10",
+   "text": " \"bands\": {\n  \"engaged\": \"0.81-0.97\",\n  \"decline\": \"0.59-0.75\"\n },",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00319",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "8-8",
+   "text": "  \"engaged\": \"0.81-0.97\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00320",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "9-9",
+   "text": "  \"decline\": \"0.59-0.75\"",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00321",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "11-11",
+   "text": " \"verdict_engaged\": \"IN BAND\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00322",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "12-12",
+   "text": " \"verdict_decline\": \"ABOVE (leak check)\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00323",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "13-13",
+   "text": " \"F4_split_rate\": \"0/11\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00324",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "14-14",
+   "text": " \"F5_overturn_rate\": \"0/11\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00325",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "15-31",
+   "text": " \"misses\": {\n  \"engaged_FP\": [\n   \"l1_170_n084\",\n   \"l2474_2554_n011\",\n   \"l699_796_n022\"\n  ],\n  \"not_engaged_FN\": [\n   \"l1001_1107_n007\",\n   \"l1542_1706_n007\",\n   \"l1707_1973_n015\",\n   \"l171_426_n027\",\n   \"l171_426_n042\",\n   \"l1_170_n047\",\n   \"l699_796_n017\",\n   \"l797_830_n018\"\n  ]\n },",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00326",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "16-20",
+   "text": "  \"engaged_FP\": [\n   \"l1_170_n084\",\n   \"l2474_2554_n011\",\n   \"l699_796_n022\"\n  ],",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00327",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "21-30",
+   "text": "  \"not_engaged_FN\": [\n   \"l1001_1107_n007\",\n   \"l1542_1706_n007\",\n   \"l1707_1973_n015\",\n   \"l171_426_n027\",\n   \"l171_426_n042\",\n   \"l1_170_n047\",\n   \"l699_796_n017\",\n   \"l797_830_n018\"\n  ]",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00328",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "32-90",
+   "text": " \"verdicts\": {\n  \"l1_170_n090\": \"not_relevant\",\n  \"l699_796_n017\": \"relevant\",\n  \"l1_170_n084\": \"not_relevant\",\n  \"l171_426_n027\": \"relevant\",\n  \"l4572_4692_n004\": \"not_relevant\",\n  \"l1368_1541_n007\": \"relevant\",\n  \"l3596_3876_n038\": \"not_relevant\",\n  \"l2653_2820_n010\": \"not_relevant\",\n  \"l1974_2125_n005\": \"not_relevant\",\n  \"l2653_2820_n001\": \"not_relevant\",\n  \"l1542_1706_n019\": \"not_relevant\",\n  \"l2126_2404_n019\": \"not_relevant\",\n  \"l1_170_n059\": \"not_relevant\",\n  \"l171_426_n042\": \"relevant\",\n  \"l4252_4482_n021\": \"not_relevant\",\n  \"l3596_3876_n021\": \"not_relevant\",\n  \"l2821_3040_n006\": \"not_relevant\",\n  \"l2126_2404_n008\": \"relevant\",\n  \"l3954_4251_n030\": \"not_relevant\",\n  \"l2126_2404_n014\": \"not_relevant\",\n  \"l4252_4482_n016\": \"not_relevant\",\n  \"l427_460_n004\": \"not_relevant\",\n  \"l1542_1706_n007\": \"relevant\",\n  \"l1108_1367_n002\": \"relevant\",\n  \"l4572_4692_n012\": \"not_relevant\",\n  \"l3596_3876_n016\": \"not_relevant\",\n  \"l427_1107_n001\": \"relevant\",\n  \"l699_796_n022\": \"not_relevant\",\n  \"l4483_4571_n007\": \"not_relevant\",\n  \"l2474_2554_n011\": \"not_relevant\",\n  \"l1707_1973_n015\": \"relevant\",\n  \"l1_170_n062\": \"not_relevant\",\n  \"l3954_4251_n031\": \"not_relevant\",\n  \"l1_170_n023\": \"not_relevant\",\n  \"l1974_2125_n008\": \"relevant\",\n  \"l699_796_n004\": \"not_relevant\",\n  \"l831_1000_n009\": \"relevant\",\n  \"l1_170_n047\": \"relevant\",\n  \"l3383_3501_n015\": \"relevant\",\n  \"l609_698_n019\": \"relevant\",\n  \"l1707_1973_n011\": \"not_relevant\",\n  \"l1542_1706_n009\": \"relevant\",\n  \"l1_170_n044\": \"relevant\",\n  \"l1542_1706_n022\": \"not_relevant\",\n  \"l3877_3953_n009\": \"not_relevant\",\n  \"l699_796_n024\": \"not_relevant\",\n  \"l4252_4482_n005\": \"relevant\",\n  \"l1001_1107_n002\": \"relevant\",\n  \"l797_830_n018\": \"relevant\",\n  \"l1974_2125_n016\": \"not_relevant\",\n  \"l1707_1973_n008\": \"not_relevant\",\n  \"l699_796_n014\": \"not_relevant\",\n  \"l3954_4251_n019\": \"relevant\",\n  \"l527_796_n012\": \"not_relevant\",\n  \"l3596_3876_n030\": \"not_relevant\",\n  \"l1001_1107_n007\": \"relevant\",\n  \"l1974_2125_n006\": \"relevant\"\n }",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00329",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "33-33",
+   "text": "  \"l1_170_n090\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00330",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "34-34",
+   "text": "  \"l699_796_n017\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00331",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "35-35",
+   "text": "  \"l1_170_n084\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  }
+ ]
+}

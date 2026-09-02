@@ -1,133 +1,148 @@
 {
  "header": {
   "batch": "batch_081",
-  "source_class": "arc1_cycles",
+  "source_class": "git_log",
   "brief_version": "0.4",
   "glossary_version": "frozen ",
   "spans": 15,
-  "first_span": "S01175",
-  "last_span": "S01189"
+  "first_span": "S01406",
+  "last_span": "S01420"
  },
  "spans": [
   {
-   "id": "S01175",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/review_verdict.json",
-   "commit": "pin",
-   "lines": "3-3",
-   "text": " \"by\": \"change-review seat, Claude (Fable 5), independent session 2026-08-03 — not the implementer\",",
-   "source_class": "arc1_cycles"
+   "id": "S01406",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7753-7761",
+   "text": "commit b3d10f9cc75941a3c06366aeecb15ca81abd4138\nordinal 370\ndate 2026-08-18 21:29:19 -0700\nauthor Matt Stults\nsubject DEVIATION_ACCOUNTING: 318/436 (72%) with 0 unexplained deviations — every one of 125 classed (E1 50 structural, E6 21 defensible, E2 18 fixed, E5 20 measured+recorded, E4 8 repaired/queued, E3 8 truth-suspect for Matt); helpfulness 80%, caution 72%, harm 66% at the named E1 party-typing limit\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01176",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/review_verdict.json",
-   "commit": "pin",
-   "lines": "4-4",
-   "text": " \"notes\": \"FREEZE: manifest.json/prediction.json sha256 match state.json frozen shas exactly (5abae982…, 07ad0f43…); no manifest_amendments.json present; all 7 closure_shas re-hashed and match. DECLARED DIFF: HEAD (4cf47d6) copies of the 3 tracked files hash to open_shas; vocabulary_migrations.json absent at HEAD and its OPEN sha f4a7f858… independently reproduced as the tool-canonical empty log (atom_refactor._dumps trailing_nl=False); the log's per-migration sha chain links from every OPEN sha to every current on-disk sha with no gaps. ONE UNDECLARED CHANGE, judged non-blocking: chain_audit/worksheet.json moved — it is a DERIVED audit view (chain_audit_worksheet.py builds it deterministically from annotations_ext_v1_merged.json, a declared file); I rebuilt it independently in scratch and it byte-equals the working copy, the untracked pre_repair backup byte-equals the HEAD version, and no query/measurement module reads it — nothing can ride in on it, but the manifest should have declared it, and verdicts.json (old names) no longer validates against the regenerated worksheet (historical-record wrinkle, not pipeline). CONTENT: exactly the 5 rechains from chain_audit/verdicts.json (11 agent_missing across 4 names: disclose 1 + preserve 3 + advise 2 + world_connection 5; 1 unlicensed fold at m0271); n_rewritten counts (3/7/5/11/3) arithmetically consistent with atoms+by_clause mirrors+vocabulary key. Spot-verified 4 corrections against modelspec_clauses.json quotes: m0197 ('the assistant must preserve user agency', 'must be transparently indicated to the user'), m0276 ('always advising that immediate help should be sought'), m0313 ('The assistant should support the user's connection') — assistant is the actor, user the patient, so __model_user is the agent-first chain; m0271's quote names only 'shaming the user' (no developer) while m0170's says 'shouldn't judge the user or developer' — fold correct, retention correct. Verified m0170 retains shouldnot_judge__model_user_developer (confined to m0170; vocabulary key kept) while m0271 carries shouldnot_judge__model_user; ZERO occurrences of any of the 4 old names in all changed artifacts and in annotations_ext_v1_patch.json (manifest note 2 confirmed). REPLAY: copied all 3 tracked artifacts from git HEAD and replayed through vocabulary_migrations.json via atom_refactor.replay_artifact — byte-identical to working tree for all 3. TESTS: gate set (test_atom_refactor.py, test_grammar.py, test_no_reference_leak.py) run twice, 133 passed. MUTANTS: (1) scratch copy of the log with the fold entry's clauses scope corrupted to m0170 — replay byte-compare detects the mismatch; (2) atom_refactor.py rechain scope sabotaged in place (scope=None) — killed by test_rechain_clause_scoped_folds_into_the_existing_key and test_rechain_leaves_unrelated_lines_byte_untouched (2 failed), then restored byte-exact (sha cf2fe287… re-verified, suite re-green). FENCE: all 31 FORBIDDEN tokens scanned against the 4 changed artifacts; sole hit is the substring 'verdicts' inside the reason strings citing chain_audit/verdicts.json — the chain audit's own grammar-verdict file (document-side, contains no panel/judge/label data), a filename collision, not a panel reference; no panel file, loader, or laundering path is named anywhere in the changed artifacts. No panel score, judge rating, or gold value appeared in any material reviewed.\"",
-   "source_class": "arc1_cycles"
+   "id": "S01407",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7762-7770",
+   "text": "commit 8825f1eb9a8866d5211a255e34b3c6c900885321\nordinal 371\ndate 2026-08-18 21:45:40 -0700\nauthor Matt Stults\nsubject decisions 1+2 executed: truth-suspect panel (3 fresh blind instances) — 5 CONFIRMED, 3 OVERTURNED (1 unanimous, 2 split; precedence-wired into truth_for); party walls built and MEASURED OUT at both granularities (act-level recall collapse, module-level net zero) — not deployed, per-assert protects field specified in contract §7 as the durable fix\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01177",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "2-2",
-   "text": " \"census\": \"deferred_to_checkpoint\",",
-   "source_class": "arc1_cycles"
+   "id": "S01408",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7771-7779",
+   "text": "commit 25a6f056eb89e99bf21731127177cb86a6cf80a2\nordinal 372\ndate 2026-08-18 21:56:29 -0700\nauthor Matt Stults\nsubject protects annotation: INCREMENTAL protocol per Matt — pre-registered calibration (expected-change node + no-change nodes) 4/4 annotations + 4/4 wall effects PASS; --all gated on calibration_passed; wall wired fail-open; full sweep launched\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01178",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "3-3",
-   "text": " \"closed\": true,",
-   "source_class": "arc1_cycles"
+   "id": "S01409",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7780-7788",
+   "text": "commit 940bbca710d39996719d46f7b4613f6d1bf626ac\nordinal 373\ndate 2026-08-18 22:09:03 -0700\nauthor Matt Stults\nsubject protects sweep complete (985 asserts, $0.03): harm 66->74%, FP 24->4 — E1 precision problem solved; 8 newly-blocked relevant nodes identified as the audit's target class (missed co-protection suspected); blind audit dispatched (8 targeted + 25 random)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01179",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "4-12",
-   "text": " \"closure_shas\": {\n  \"behaviours_query.json\": \"48dbd8fb0720ce187423d37daf34e415ebbc58a28166619a0b2800b0a1f32d57\",\n  \"constitution_clauses.json\": \"a264e1a07d8a79eaa37710b8c6e25808a0d2807cb55e3ad3716ca422019f06e9\",\n  \"modelspec_clauses.json\": \"c6be91a0c0eb25c9f10bea9947547f64416cdd18e8f5e64b14c354a43b87b546\",\n  \"test_atom_refactor.py\": \"070fb83207cc461023422147cec90842bdc4063d1c7be81c401fb8188a15aed0\",\n  \"test_grammar.py\": \"54c6cab4370e3ac6c4fe44ece9f3c6323aff344f03513667f1a0bada896bc359\",\n  \"test_no_reference_leak.py\": \"7175f36b792664258c4ed7837ecebd20a55802a510f301eeb35b5cdbe5398378\",\n  \"thresholds_frozen.json\": \"60d1273a4e0ac3a4de0eb2a44481b763531491c8c0884387529014dcb724251a\"\n },",
-   "source_class": "arc1_cycles"
+   "id": "S01410",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7789-7797",
+   "text": "commit 1a1653929055874a2620da41584c2303e70e84e7\nordinal 374\ndate 2026-08-18 22:12:46 -0700\nauthor Matt Stults\nsubject protects audit (blind, 8 targeted + 25 random): 43/56 = 0.77 accuracy recorded honestly; 13 corrections applied (targeted class confirmed: missed co-protection) -> harm 75% FP 5, TOTAL 336/436 = 77%. Annotation layer works but its accuracy is below the 0.85 bulk floor — full-audit-or-refine queued before any registration leans on it\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01180",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "5-5",
-   "text": "  \"behaviours_query.json\": \"48dbd8fb0720ce187423d37daf34e415ebbc58a28166619a0b2800b0a1f32d57\",",
-   "source_class": "arc1_cycles"
+   "id": "S01411",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7798-7806",
+   "text": "commit 0d6b9e52b4002b53e895b1373ea5d5f91df64757\nordinal 375\ndate 2026-08-19 08:57:07 -0700\nauthor Matt Stults\nsubject protects layer finalized frontier-grade + tier study: seat refinement failed honestly twice (v2 calib FAIL -> found INPUT defect, seat never saw SOURCE TEXT; v3 calib 7/7 PASS but audit#2 28/40=0.70 FAIL, checkpoint 336->332) -> full Fable relabel of 889 unlocked asserts (20 blind batches, ~0.9M session tokens, $0 API; second input defect fixed: 15 drifted ids = empty spans). Checkpoint 331/436 (76%): harm FP 6, 4 new FNs are permits protecting user access -- E1 residue named as open design question (permit inherit forbid's protects?), NOT tuned away. TIER STUDY (identical 40-item packet): DeepSeek 0.60 / Haiku 0.62 / Fable ref -- small tiers plateau on boundary doctrine; escalation-by-disagreement sim: 40% escalate, agreed-labels 0.88, hybrid 0.93 -> contract section 7 updated with next-document design + input requirements. Matt's ruling recorded: detector queue EXCLUDED from gate (by name). Tests 22 pass; score re-run byte-stable.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01181",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "6-6",
-   "text": "  \"constitution_clauses.json\": \"a264e1a07d8a79eaa37710b8c6e25808a0d2807cb55e3ad3716ca422019f06e9\",",
-   "source_class": "arc1_cycles"
+   "id": "S01412",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7807-7815",
+   "text": "commit 57cdb3c0f5de2a87ce0cec8d44b9aa5bf808ff7a\nordinal 376\ndate 2026-08-19 09:55:45 -0700\nauthor Matt Stults\nsubject permit-inheritance RULING: rejected (option 2) per agreed decision rule — opt3 act-matched failed its survival bar (113/154 FP8 FN33 vs opt1 113 FP9 FN32 vs strict 112 FP6 FN36); strict span-grounded wall stands, 4 permit FNs remain named E1 deviations; alternatives rejected by name with measurements; instrument now frozen for fresh-draw prereg draft\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01182",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "7-7",
-   "text": "  \"modelspec_clauses.json\": \"c6be91a0c0eb25c9f10bea9947547f64416cdd18e8f5e64b14c354a43b87b546\",",
-   "source_class": "arc1_cycles"
+   "id": "S01413",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7816-7824",
+   "text": "commit 03daf8d3e60203a5f24a2b82c1dc6562395ab61f\nordinal 377\ndate 2026-08-19 09:57:01 -0700\nauthor Matt Stults\nsubject fresh-draw re-registration DRAFT (unsigned, sha256 ad5614f3...): stratified 25+25/behavior from never-adjudicated pools seed 20260819, 3-instance blind Fable panels (~0.7M tokens, run only on Matt's go), predictions derived from full-truth measurements with known-defect consistency disclosed, falsifiers F1-F4, scored once after signature\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01183",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "8-8",
-   "text": "  \"test_atom_refactor.py\": \"070fb83207cc461023422147cec90842bdc4063d1c7be81c401fb8188a15aed0\",",
-   "source_class": "arc1_cycles"
+   "id": "S01414",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7825-7833",
+   "text": "commit 1f20d184c1bde1f32f6eda4699407f86385fb586\nordinal 378\ndate 2026-08-19 10:24:15 -0700\nauthor Matt Stults\nsubject fresh-draw prereg SIGNED by Matt at sha256 28a30a27... (40+40 single-Fable + seeded 20% panels + F5 noise falsifier, batched execution with 2-point wave-1 budget tripwire); draw and scoring now executable\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01184",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "9-9",
-   "text": "  \"test_grammar.py\": \"54c6cab4370e3ac6c4fe44ece9f3c6323aff344f03513667f1a0bada896bc359\",",
-   "source_class": "arc1_cycles"
+   "id": "S01415",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7834-7842",
+   "text": "commit 60bf25892f5a0d6aee55c82769900215465f09b3\nordinal 379\ndate 2026-08-19 10:32:51 -0700\nauthor Matt Stults\nsubject fresh-draw helpfulness SCORED ONCE per signed prereg 28a30a27: F1 FIRED — engaged precision 23/40=0.57 vs band 0.74-0.90 (decline-correctness 0.70 in band; truth tier clean: 0/16 panel splits, 0/16 overturns). Gate NOT certified; campaign stopped per protocol (harm/caution batches not run). 25-pt generalization gap vs adjudicated-set precision 0.82 recorded honestly — the fresh draw did exactly its job\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01185",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "10-10",
-   "text": "  \"test_no_reference_leak.py\": \"7175f36b792664258c4ed7837ecebd20a55802a510f301eeb35b5cdbe5398378\",",
-   "source_class": "arc1_cycles"
+   "id": "S01416",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7843-7851",
+   "text": "commit b453cb8c77d8c711a93135a71bd8733127d77271\nordinal 380\ndate 2026-08-19 10:42:54 -0700\nauthor Matt Stults\nsubject FP dimension census: norm-signature closure CONFIRMED — 74/75 observed false engagements across 3 behaviors decompose into (act, actor, protects, governs-aspect, scope, authority, force); governs-aspect is the dominant lever (40/58 + all 17 fresh-draw FPs); 1 truth-suspect flagged (l797_830_n007 harm); schema is derivable a priori per Matt's requirement, known failures used only as the check\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01186",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "11-11",
-   "text": "  \"thresholds_frozen.json\": \"60d1273a4e0ac3a4de0eb2a44481b763531491c8c0884387529014dcb724251a\"",
-   "source_class": "arc1_cycles"
+   "id": "S01417",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7852-7860",
+   "text": "commit 5d0fc8a5cdd697b8779fd96e3279e64178bb4922\nordinal 381\ndate 2026-08-19 10:46:28 -0700\nauthor Matt Stults\nsubject contract §8 NORM SIGNATURE + HANDOFF gate block updated per Matt's ruling (happens for every document): a priori signature tuple, mined governs vocabulary, escalation annotation protocol with measured tier evidence, behavior-free mutation-probe certification\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01187",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "13-21",
-   "text": " \"completed\": [\n  \"OPEN\",\n  \"PREDICT\",\n  \"IMPLEMENT\",\n  \"MEASURE\",\n  \"ADJUDICATE\",\n  \"DECIDE\",\n  \"CLOSE\"\n ],",
-   "source_class": "arc1_cycles"
+   "id": "S01418",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7861-7869",
+   "text": "commit 49e2857e89e23e0051daba3182e6f5751beeaaa2\nordinal 382\ndate 2026-08-19 11:08:07 -0700\nauthor Matt Stults\nsubject annex-vs-retranslate RULING (Matt, cost-conditional): annexation measured ~1 day + <$0.5 + ~1.6M session tokens per layer vs retranslation invalidating 436-node truth (multi-session re-adjudication); condition satisfied by an order of magnitude — recorded with revisit trigger. Also: signature calibration PASSED (pipeline 10/10 incl. n013 3-0 panel revision), agreed-set Fable spot-check pre-registered (seed 20260819, n=100, floor 0.85), dispatch_core batch-mode pointer added to contract §8\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01188",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "22-22",
-   "text": " \"cycle\": \"chain-repair-2026-08-04\",",
-   "source_class": "arc1_cycles"
+   "id": "S01419",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7870-7878",
+   "text": "commit 44a1e132e04e36afe613b245739e214df89a091d\nordinal 383\ndate 2026-08-19 11:25:50 -0700\nauthor Matt Stults\nsubject signature layer COMPLETE, fully frontier after pre-registered spot-check FAILED (78/100=0.78 < 0.85; shared cheap-seat safety_of_manner bias invisible to disagreement trigger; authority flag alone 0.97) -> pre-registered remedy executed: full escalation, 985/985 Fable-labeled with provenance; contract §8 updated to PER-FIELD seat validation with measured evidence; layer record carries the whole arc\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01189",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "23-26",
-   "text": " \"decision\": {\n  \"decision\": \"keep\",\n  \"signed_by\": \"session coordinator (Claude), on Matt's standing authorization for the cycle ladder\"\n },",
-   "source_class": "arc1_cycles"
+   "id": "S01420",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7879-7887",
+   "text": "commit ce1ac7be1590dba1eb644e7401bfad4b994c056a\nordinal 384\ndate 2026-08-19 11:28:38 -0700\nauthor Matt Stults\nsubject step 3a: signature walls wired (relevance_by_act.signature_ok — unconditional authority_plumbing exclusion + per-behavior governs_concern) and TUNED as modules_contract_v12: exclusion-shaped declarations (inclusion-shaped measured to collapse recall, help FN 20->79, rejected); tuning numbers help 180/237 FP35, harm 113/154 FP5, caution 97/125 FP23 (byte-stable x2, 22 tests pass); certification deferred to round-2 fresh draw per record\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   }
  ]
 }

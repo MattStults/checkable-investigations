@@ -6,7 +6,7 @@ the span's own words is set to the string `"unstated"`, never omitted and
 never guessed.
 
 ```
-id                 "L" + 5 digits, unique
+id                 "L" + 5-8 digits, unique (batch N ≥ 9 uses N*10000+1 upward)
 kind               "value" | "rate" | "event" | "existence"
 source             {"path": repo-relative path, "commit": 40-hex or "pin",
                     "lines": "a-b" (1-based, inclusive)}

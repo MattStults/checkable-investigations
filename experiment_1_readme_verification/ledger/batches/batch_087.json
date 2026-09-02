@@ -1,133 +1,148 @@
 {
  "header": {
   "batch": "batch_087",
-  "source_class": "arc1_cycles",
+  "source_class": "git_log",
   "brief_version": "0.4",
   "glossary_version": "frozen ",
   "spans": 15,
-  "first_span": "S01265",
-  "last_span": "S01279"
+  "first_span": "S01496",
+  "last_span": "S01510"
  },
  "spans": [
   {
-   "id": "S01265",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "33-39",
-   "text": " \"flips\": [\n  {\n   \"behaviour\": \"helpfulness\",\n   \"clause_id\": \"m0207\",\n   \"direction\": \"newly_predicted\"\n  }\n ],",
-   "source_class": "arc1_cycles"
+   "id": "S01496",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8536-8542",
+   "text": "commit 1577defc7b0a5adcadc178f3f98717792ccf8fb4\nordinal 460\ndate 2026-08-21 17:11:27 -0700\nauthor Matt Stults\nsubject handoff status line: arc closures, 9b state, round-4 scaffold, Matt's open signature item\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01266",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "40-40",
-   "text": " \"frozen_manifest_sha\": \"3d5451a7a0f23c0fe9efe2dd827e1ccdbdc16bcfa5515baeeb2937dd07651312\",",
-   "source_class": "arc1_cycles"
+   "id": "S01497",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8543-8550",
+   "text": "commit acb2758bb81f4069583d6e88733105601c42f699\nordinal 461\ndate 2026-08-21 17:21:58 -0700\nauthor Matt Stults\nsubject 9b justification pass COMPLETE: PC-5 justified (L105 predictability-reliability as named end, L2139 reliability as response dimension); CA-1..4 justified (aggregate_effect_at_scale + user_supplied_material -> harm governs_conditional substance_usefulness; requester_purpose_conditioned -> help substance_usefulness, L1545/L1379; assistant_self_reference -> help tone_manner, justified-as-vocabulary with zero-effect pre-accepted); integration prereq recorded (atom credits merge with declarations or not at all; gate-restriction caveat at full force); OBJ HOLD (document conditional exists at L808/L2151 but no pre-existing context; post-hoc derivation is the pre-rejected gerrymander; natural home = held-out objectivity build); CW-1/CW2 batch rejected (document moves opposite to both exclusions); PS-1..10 batch rejected-for-cycle (schema extension unverifiable pre-freeze); 9 justified / 1 hold / 12 rejected, all reasons document- or scope-grounded\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01267",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "41-41",
-   "text": " \"frozen_prediction_sha\": \"d0d4472ce58e52793a5f76d6f4740ae2984b77222a9c273815f0a32e561b93e3\",",
-   "source_class": "arc1_cycles"
+   "id": "S01498",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8551-8558",
+   "text": "commit 94c24b3d6ca806db06fd8c15e6d28850cbd4862d\nordinal 462\ndate 2026-08-21 17:37:10 -0700\nauthor Matt Stults\nsubject mint review round-2 resolution: A1 terminality fence extended to refinement marks + current census source, re-run (45 PENDING-VOCAB re-stamps incl. all four reviewer-named collider rows; inventory string corrected from the false 'unminted' claim); A2 timing claim retracted and restated on its actual ground (mechanical entailment from census addendum 3, committed earlier); A3 five-row REACHABLE delta disclosed by name; A4 same-family independence caveat added (1.0 non-diagnostic for shared interpretive bias; screen disagreement l2474_2554_n011 recorded); N1-N4 errata\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01268",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "42-68",
-   "text": " \"gate\": {\n  \"closure_checked\": [\n   \"annotations_ext_v1_merged.json\",\n   \"behavior_atoms_audit_v1.json\",\n   \"behaviours_query.json\",\n   \"constitution_clauses.json\",\n   \"modelspec_clauses.json\",\n   \"overlay_empty.json\",\n   \"test_dechain.py\",\n   \"test_no_reference_leak.py\",\n   \"thresholds_frozen.json\"\n  ],\n  \"files_changed\": [\n   \"containment.py\",\n   \"test_containment.py\"\n  ],\n  \"review\": {\n   \"by\": \"Claude Fable 5 — independent change-review seat (not the implementer session)\",\n   \"notes\": \"FREEZE: manifest.json/prediction.json re-hashed and match state.json's frozen shas (3d5451a7.., d0d4472c..); all 9 closure_shas re-hashed and match, including overlay_empty.json and the corrected test_dechain.py. The disclosed restart is recorded in the manifest PROCESS NOTE; the discarded freeze's shas (cf6e2496.., 5b05b018..) appear nowhere on disk outside that note (repo-wide grep), the cycle dir holds only current artifacts, and no snapshot was built under the discarded freeze. DECLARED-DIFF-ONLY: open_shas for containment.py/test_containment.py equal git HEAD blobs exactly, so the working-tree git diff IS the cycle's whole change: containment.py + test_containment.py only, plus the new closure-pinned overlay_empty.json/test_dechain.py. The other tree edits (conftest.py +1 line registering test_drift_dossiers, test_no_reference_leak.py +2 fence tokens, drift_dossiers.py/drift_standing/) are the P3 drift-standing work and provably predate OPEN: test_no_reference_leak.py's MODIFIED sha is the one pinned in this cycle's OPEN closure, and all P3 mtimes (09:12-09:16) precede test_dechain.py finalization (09:22) and the freeze (09:25). SEMANTICS: my own grammar.parse_name spot checks confirm dechain_name strips only the principal chain and keeps polarity (should_ask_clarifying_questions__model_user->should_ask_clarifying_questions; mustnot_lie__model_user->mustnot_lie, NOT lie; unparseable 'must_' passes through); chain-free parity pin (test_chainfree_parity_is_bit_identical) green under my own clean-pycache run. MUTANT: planted my own — dechain_name forced to the identity (reverting the join's core) — 8 named test_dechain.py tests went red (strips-chain, both match directions, df-merge, lex-exclusion, add-chain-invariance gate, explain-dechained, real-artifact-109); containment.py restored byte-exact (sha 59ea877c.. re-verified) and re-run green. COMPUTED PIN, re-derived independently from the frozen artifacts with my own scripts: clause side 50 distinct chained names / 109 instances / 100 clauses; 7 chained query atoms across the 3 dev behaviours; direction (a): should_ask_clarifying_questions__model_user is the ONLY chained query atom with chain-free clause siblings — exactly the 13 predicted clause ids; df merge 13+2->15; vocab 628->624; direction (b) new-match census EMPTY (the one dechain pair, m0384/m0385, is already exact-matched by the chained query atom helpfulness also carries — repriced, not newly matched, per the prediction's refinement); full legacy-vs-v1.2 flip census under the frozen cuts reproduces caution 95->95, harm 73->73, helpfulness 145->146 with the single flip m0207 newly_predicted at 0.3048137341->0.3169816964 vs cut 0.3131186309, raw score FALLING (0.575992->0.572804) with corpus argmax moving m0384 1.889654 -> m0438 1.807058 — confirming the normalizer-driven mechanism the prediction claims. VEHICLE: overlay_empty.json declares budget {0,0} with zero edges and loads clean through containment.load_edges (exercised in my census build); snapshot.py (untouched this cycle) records config['pricing_version']=PRICING_VERSION ('1.2') iff overlay_path is given and dispatches overlay-absent to the legacy RelevanceIndex with no pricing_version key, so the baseline rung stays intact (also pinned by test_legacy_relevance_index_keeps_the_exact_name_join). FENCE: all four changed/new files scanned raw AND comment/docstring-stripped against test_no_reference_leak.py's live FORBIDDEN tuple (34 tokens) — clean; no new import reads any panel artifact (containment.py imports only grammar/relevance/json/math). GATES: test_dechain.py + test_containment.py + test_no_reference_leak.py, 88 passed under my own run with __pycache__/.pytest_cache cleared. No panel score, judge rating, or gold value was consulted.\",\n   \"verdict\": \"proceed\"\n  },\n  \"tests_passed\": [\n   \"test_containment.py\",\n   \"test_dechain.py\",\n   \"test_no_reference_leak.py\"\n  ]\n },",
-   "source_class": "arc1_cycles"
+   "id": "S01499",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8559-8565",
+   "text": "commit 3f332d007a3ddd5cecf5cbfd5df2c9a4379ec17c\nordinal 463\ndate 2026-08-21 17:45:01 -0700\nauthor Matt Stults\nsubject Arc1-b lane CLOSED (CLEAR-WITH-NITS): all four round-1 findings resolved and reviewer-reproduced, measurements bit-identical at HEAD; latent fence fail-open nit registered as LF-4; EXPERIMENTS.md + handoff updated\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01269",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "43-53",
-   "text": "  \"closure_checked\": [\n   \"annotations_ext_v1_merged.json\",\n   \"behavior_atoms_audit_v1.json\",\n   \"behaviours_query.json\",\n   \"constitution_clauses.json\",\n   \"modelspec_clauses.json\",\n   \"overlay_empty.json\",\n   \"test_dechain.py\",\n   \"test_no_reference_leak.py\",\n   \"thresholds_frozen.json\"\n  ],",
-   "source_class": "arc1_cycles"
+   "id": "S01500",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8566-8572",
+   "text": "commit a51426294f500e3483c1a218c27465cb2779bd1c\nordinal 464\ndate 2026-08-21 20:35:00 -0700\nauthor Matt Stults\nsubject 9b arithmetic protocol frozen pre-run: 9 deltas enumerated, atom-merge integration prereq restated, mechanically-forced predictions only (purpose adds, gate switches restrictive, merge no-op without declarations), fit predictions demoted to post-hoc commentary, adoption rule = charter-positive + FP adjudication post-reset\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01270",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "54-57",
-   "text": "  \"files_changed\": [\n   \"containment.py\",\n   \"test_containment.py\"\n  ],",
-   "source_class": "arc1_cycles"
+   "id": "S01501",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8573-8579",
+   "text": "commit 066fd2634a81c323d55d14f8d9f6ecfb2744dd2d\nordinal 465\ndate 2026-08-21 20:50:30 -0700\nauthor Matt Stults\nsubject 9b arithmetic adjudication: per-delta charter measured — help+empowerment (13/3) and caution+harm-prevention (3/1) charter-positive, adopted pending 4-node FP adjudication post-reset; trust (7/9), predictability-reliability (6/12), epistemic-autonomy (3/4) charter-negative, rejected with arithmetic; all four governs_conditional declarations INERT — mechanism insight recorded (unconditional governs_concern wins over governs_conditional in signature_ok; the CA-targeted rows stay PENDING-VOCAB for other mechanisms); context-atom merge landed engagement-invariant (census bit-identical, 36 tests); v19_ADOPT_CANDIDATE is the freeze input\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01271",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "58-62",
-   "text": "  \"review\": {\n   \"by\": \"Claude Fable 5 — independent change-review seat (not the implementer session)\",\n   \"notes\": \"FREEZE: manifest.json/prediction.json re-hashed and match state.json's frozen shas (3d5451a7.., d0d4472c..); all 9 closure_shas re-hashed and match, including overlay_empty.json and the corrected test_dechain.py. The disclosed restart is recorded in the manifest PROCESS NOTE; the discarded freeze's shas (cf6e2496.., 5b05b018..) appear nowhere on disk outside that note (repo-wide grep), the cycle dir holds only current artifacts, and no snapshot was built under the discarded freeze. DECLARED-DIFF-ONLY: open_shas for containment.py/test_containment.py equal git HEAD blobs exactly, so the working-tree git diff IS the cycle's whole change: containment.py + test_containment.py only, plus the new closure-pinned overlay_empty.json/test_dechain.py. The other tree edits (conftest.py +1 line registering test_drift_dossiers, test_no_reference_leak.py +2 fence tokens, drift_dossiers.py/drift_standing/) are the P3 drift-standing work and provably predate OPEN: test_no_reference_leak.py's MODIFIED sha is the one pinned in this cycle's OPEN closure, and all P3 mtimes (09:12-09:16) precede test_dechain.py finalization (09:22) and the freeze (09:25). SEMANTICS: my own grammar.parse_name spot checks confirm dechain_name strips only the principal chain and keeps polarity (should_ask_clarifying_questions__model_user->should_ask_clarifying_questions; mustnot_lie__model_user->mustnot_lie, NOT lie; unparseable 'must_' passes through); chain-free parity pin (test_chainfree_parity_is_bit_identical) green under my own clean-pycache run. MUTANT: planted my own — dechain_name forced to the identity (reverting the join's core) — 8 named test_dechain.py tests went red (strips-chain, both match directions, df-merge, lex-exclusion, add-chain-invariance gate, explain-dechained, real-artifact-109); containment.py restored byte-exact (sha 59ea877c.. re-verified) and re-run green. COMPUTED PIN, re-derived independently from the frozen artifacts with my own scripts: clause side 50 distinct chained names / 109 instances / 100 clauses; 7 chained query atoms across the 3 dev behaviours; direction (a): should_ask_clarifying_questions__model_user is the ONLY chained query atom with chain-free clause siblings — exactly the 13 predicted clause ids; df merge 13+2->15; vocab 628->624; direction (b) new-match census EMPTY (the one dechain pair, m0384/m0385, is already exact-matched by the chained query atom helpfulness also carries — repriced, not newly matched, per the prediction's refinement); full legacy-vs-v1.2 flip census under the frozen cuts reproduces caution 95->95, harm 73->73, helpfulness 145->146 with the single flip m0207 newly_predicted at 0.3048137341->0.3169816964 vs cut 0.3131186309, raw score FALLING (0.575992->0.572804) with corpus argmax moving m0384 1.889654 -> m0438 1.807058 — confirming the normalizer-driven mechanism the prediction claims. VEHICLE: overlay_empty.json declares budget {0,0} with zero edges and loads clean through containment.load_edges (exercised in my census build); snapshot.py (untouched this cycle) records config['pricing_version']=PRICING_VERSION ('1.2') iff overlay_path is given and dispatches overlay-absent to the legacy RelevanceIndex with no pricing_version key, so the baseline rung stays intact (also pinned by test_legacy_relevance_index_keeps_the_exact_name_join). FENCE: all four changed/new files scanned raw AND comment/docstring-stripped against test_no_reference_leak.py's live FORBIDDEN tuple (34 tokens) — clean; no new import reads any panel artifact (containment.py imports only grammar/relevance/json/math). GATES: test_dechain.py + test_containment.py + test_no_reference_leak.py, 88 passed under my own run with __pycache__/.pytest_cache cleared. No panel score, judge rating, or gold value was consulted.\",\n   \"verdict\": \"proceed\"\n  },",
-   "source_class": "arc1_cycles"
+   "id": "S01502",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8580-8587",
+   "text": "commit bb6d7babfacf818716c94dcf869407fae93f1862\nordinal 466\ndate 2026-08-21 23:37:20 -0700\nauthor Matt Stults\nsubject 9b joint lattice (coordination critique resolved): exact enumeration over all purpose-delta subsets (OR-additive channel makes the joint object exactly computable — no LP surrogate needed); flip sets pairwise disjoint, so joint outcomes are exact sums and the per-delta conclusion holds by proof, not assumption; the three additional charter-positive bundles each carry a negative-marginal delta (parasitic — breaks the charter alone if the carrier is removed); selection unchanged: empowerment alone for help, harm-prevention alone for caution; full help triple is exactly 24/24 charter-zero\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01272",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "63-67",
-   "text": "  \"tests_passed\": [\n   \"test_containment.py\",\n   \"test_dechain.py\",\n   \"test_no_reference_leak.py\"\n  ]",
-   "source_class": "arc1_cycles"
+   "id": "S01503",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8588-8595",
+   "text": "commit 12181ba0fa14099d119f382b88250b745950a6c3\nordinal 467\ndate 2026-08-22 00:06:48 -0700\nauthor Matt Stults\nsubject generalization prereg FROZEN — signed by Matt 2026-08-21: n=40 on attempts-budget rationale with re-measurement protocol (attempt 1 = transfer verdict, attempt 2+ = repair verdicts, never mixed); 71% anchor struck (no artifact; restoration only by erratum if the manual-test artifact surfaces); third probe = how-to-approach-tradeoffs; six never-consulted behaviours, 3+3 sequential, FATAL stop rule, four pre-declared v5 comparison cuts, truth path closed to panel data\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01273",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "69-72",
-   "text": " \"open_shas\": {\n  \"containment.py\": \"d4645e8941561124bd6681feab0978b30b016ac396d60eaaf2f291ce593bae13\",\n  \"test_containment.py\": \"45cb097e6891fbf198c77522e9fb3c1879b127e8d37bcd4722113f3bcfecc4b2\"\n },",
-   "source_class": "arc1_cycles"
+   "id": "S01504",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8596-8602",
+   "text": "commit 3432438fac0e025926296e4e7b03a6c69c3edb77\nordinal 468\ndate 2026-08-22 00:09:21 -0700\nauthor Matt Stults\nsubject directional FP preview (Matt-requested, NON-BINDING): orchestration-seat, non-blind, unvalidated rulings on all 28 new-FP nodes; trust flips directionally positive on the uncertainty-expression family (l2821_3040 n005/n019/n020/n027 defensible), P&R stays negative, epistemic-autonomy lands at ~zero; blind Fable batch post-reset remains the decision-maker\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01274",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "70-70",
-   "text": "  \"containment.py\": \"d4645e8941561124bd6681feab0978b30b016ac396d60eaaf2f291ce593bae13\",",
-   "source_class": "arc1_cycles"
+   "id": "S01505",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8603-8610",
+   "text": "commit 1723218b25495ef6578d33fc6b6318182dff04da\nordinal 469\ndate 2026-08-22 00:18:31 -0700\nauthor Matt Stults\nsubject post-reset defensibility batch pre-declared (28 nodes, one blind Fable pass, no iteration, rescued-count charter; directive-level approval recorded, non-binding directional prior named) + generalization module build spec frozen (blind inputs enumerated, forbidden files listed, schema + derivation rules, vocab-gap recording without invention)\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01275",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "71-71",
-   "text": "  \"test_containment.py\": \"45cb097e6891fbf198c77522e9fb3c1879b127e8d37bcd4722113f3bcfecc4b2\"",
-   "source_class": "arc1_cycles"
+   "id": "S01506",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8611-8618",
+   "text": "commit 7961dff03e4a5a444ac6643b83f520e702535519\nordinal 470\ndate 2026-08-22 00:30:38 -0700\nauthor Matt Stults\nsubject blog post-2 draft (technical design): four-layer instrument story (graph decomposition + cited typed translation, behaviour modules + gate channels, CURRENT/REACHABLE census with its three defect-class scars, discipline-as-architecture); does-not-claim section; open items listed incl. S3-example public-safety check and post-3 dependency\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01276",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "73-73",
-   "text": " \"overrides\": [],",
-   "source_class": "arc1_cycles"
+   "id": "S01507",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8619-8625",
+   "text": "commit 2525b131ca02ec0af066b9e81b71e3be0dafdfde\nordinal 471\ndate 2026-08-22 00:42:24 -0700\nauthor Matt Stults\nsubject generalization draw machinery: seeded stratified sampler (20/20 engaged/not with top-up rule, 50/50 panel-agree/split strata) with anchor-granularity operationalization recorded as post-signature addendum (paragraph indexing failed cross-validation at 12/40; anchor attribution is exact and total); determinism tested PASS; test draw artifact committed as evidence\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01277",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "74-109",
-   "text": " \"prediction_checks\": {\n  \"adjudicate\": [\n   {\n    \"expected\": 1,\n    \"kind\": \"max_regressions\",\n    \"observed\": 1,\n    \"result\": \"PASS\"\n   }\n  ],\n  \"measure\": [\n   {\n    \"expected\": {\n     \"max\": 1,\n     \"min\": 1\n    },\n    \"kind\": \"flip_count\",\n    \"observed\": 1,\n    \"result\": \"PASS\"\n   },\n   {\n    \"expected\": [\n     \"newly_predicted\"\n    ],\n    \"kind\": \"directions\",\n    \"observed\": [\n     \"newly_predicted\"\n    ],\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0207\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   }\n  ]\n },",
-   "source_class": "arc1_cycles"
+   "id": "S01508",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8626-8633",
+   "text": "commit cbeccba6afdd2b653d399583178140b41bc34e65\nordinal 472\ndate 2026-08-22 00:46:05 -0700\nauthor Matt Stults\nsubject six a-priori generalization modules built blind (definitions + frozen vocabulary only; verdicts/truth/census forbidden): harmlessness-to-user (9 acts, user walls, 7 gaps), objectivity (thin affirmative layer, governs objectivity_neutrality only, 5 gaps), tradeoffs (4 coarse acts, no prioritization vocabulary, 5 gaps), user-autonomy (deference module, prohibitive content inexpressible, 7 gaps), proportionate-risk (no calibration/degree functor, 6 gaps), general-welfare (no non-human party values, 5 gaps); every declaration and rejection definition-cited; adversarial review per module dispatched\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01278",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "75-82",
-   "text": "  \"adjudicate\": [\n   {\n    \"expected\": 1,\n    \"kind\": \"max_regressions\",\n    \"observed\": 1,\n    \"result\": \"PASS\"\n   }\n  ],",
-   "source_class": "arc1_cycles"
+   "id": "S01509",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8634-8641",
+   "text": "commit b5f187f12d5f69d2756a4f57c1f39fe7fd1fdb31\nordinal 473\ndate 2026-08-22 00:51:49 -0700\nauthor Matt Stults\nsubject F1 repair complete: three inert modules translated to canonical does-names (engagement live: 26-279/762); behavior_acts docstring corrected (comment-only; the promised bridging fallback never existed); build-spec schema clause disambiguated as erratum; campaign log updated; reviewer dispositions recorded\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01279",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "83-108",
-   "text": "  \"measure\": [\n   {\n    \"expected\": {\n     \"max\": 1,\n     \"min\": 1\n    },\n    \"kind\": \"flip_count\",\n    \"observed\": 1,\n    \"result\": \"PASS\"\n   },\n   {\n    \"expected\": [\n     \"newly_predicted\"\n    ],\n    \"kind\": \"directions\",\n    \"observed\": [\n     \"newly_predicted\"\n    ],\n    \"result\": \"PASS\"\n   },\n   {\n    \"clause\": \"m0207\",\n    \"kind\": \"expected_clause\",\n    \"result\": \"PASS\"\n   }\n  ]",
-   "source_class": "arc1_cycles"
+   "id": "S01510",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8642-8649",
+   "text": "commit 6b1d7bee7e1cdd288feaa63b0ef4187e0f8aefd0\nordinal 474\ndate 2026-08-22 00:52:09 -0700\nauthor Matt Stults\nsubject generalization contract assembled (six blind-built modules on v18 lineage) + all six attempt-1 seeded draws computed (seed 20260822, anchor-granularity v5 strata; engagement sets frozen as measured today; recomputation-if-review-forces-change rule recorded in the contract header)\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   }
  ]
 }

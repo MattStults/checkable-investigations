@@ -1,133 +1,148 @@
 {
  "header": {
   "batch": "batch_052",
-  "source_class": "arc2_json",
+  "source_class": "git_log",
   "brief_version": "0.4",
   "glossary_version": "frozen ",
   "spans": 15,
-  "first_span": "S00917",
-  "last_span": "S00931"
+  "first_span": "S01037",
+  "last_span": "S01051"
  },
  "spans": [
   {
-   "id": "S00917",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER3_ATTEMPT4_SCORED.json",
-   "commit": "pin",
-   "lines": "145-145",
-   "text": "  \"a4\": 0.85",
-   "source_class": "arc2_json"
+   "id": "S01037",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "1-7",
+   "text": "commit d9d2369f65a920cdf489f1587865380ef54b28d6\nordinal 1\ndate 2026-08-02 12:23:40 -0700\nauthor MattStults\nsubject Initial commit\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00918",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER3_ATTEMPT4_SCORED.json",
-   "commit": "pin",
-   "lines": "147-188",
-   "text": " \"verdicts\": {\n  \"l1707_1973_n040\": \"relevant\",\n  \"l3596_3876_n041\": \"relevant\",\n  \"l3596_3876_n039\": \"not_relevant\",\n  \"l699_796_n025\": \"relevant\",\n  \"l1001_1107_n012\": \"relevant\",\n  \"l1707_1973_n037\": \"relevant\",\n  \"l699_796_n016\": \"relevant\",\n  \"l1_170_n039\": \"relevant\",\n  \"l3596_3876_n035\": \"not_relevant\",\n  \"l3505_3595_n008\": \"not_relevant\",\n  \"l3596_3876_n045\": \"not_relevant\",\n  \"l699_796_n010\": \"relevant\",\n  \"l2126_2404_n027\": \"not_relevant\",\n  \"l3147_3238_n012\": \"not_relevant\",\n  \"l1_170_n073\": \"not_relevant\",\n  \"l3596_3876_n020\": \"not_relevant\",\n  \"l3041_3146_n008\": \"not_relevant\",\n  \"l3877_3953_n007\": \"not_relevant\",\n  \"l1542_1706_n019\": \"relevant\",\n  \"l3505_3595_n005\": \"not_relevant\",\n  \"l3383_3501_n012\": \"relevant\",\n  \"l3877_3953_n012\": \"not_relevant\",\n  \"l4483_4571_n003\": \"not_relevant\",\n  \"l2126_2404_n012\": \"relevant\",\n  \"l4572_4692_n008\": \"relevant\",\n  \"l3596_3876_n012\": \"relevant\",\n  \"l609_698_n019\": \"relevant\",\n  \"l1001_1107_n011\": \"relevant\",\n  \"l1108_1367_n018\": \"relevant\",\n  \"l171_426_n037\": \"relevant\",\n  \"l3383_3501_n007\": \"not_relevant\",\n  \"l1108_1367_n005\": \"relevant\",\n  \"l1001_1107_n013\": \"relevant\",\n  \"l3954_4251_n031\": \"not_relevant\",\n  \"l461_608_n006\": \"relevant\",\n  \"l2474_2554_n009\": \"relevant\",\n  \"l1_170_n065\": \"not_relevant\",\n  \"l2126_2404_n038\": \"relevant\",\n  \"l3954_4251_n006\": \"relevant\",\n  \"l4252_4482_n013\": \"not_relevant\"\n },",
-   "source_class": "arc2_json"
+   "id": "S01038",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8-44",
+   "text": "commit 5740a2a63eaea76572da96f11fbf8e365c0243a3\nordinal 2\ndate 2026-08-02 12:45:15 -0700\nauthor Matt Stults\nsubject Import semi-formal ontology experiment from ai_character_index\nExtracts this line of work into its own repo at the request of the\nai_character_index owner. Code, tests and result artifacts move as-is; the\ndata it depends on is vendored so the repo runs standalone.\n\nWhat moved:\n  semi-formal-experiment/  code, 1446 tests, result artifacts\n  data/                    panel judgements + behaviour definitions\n  specs/                   OpenAI Model Spec, Anthropic constitution\n  engine/                  panel harness that panel_universe.py imports by path\n  site/spec-reader-test/   panel-v2 behaviour metadata\n\nPath rewrites. Several modules reached into sibling checkouts by absolute\npath (/Users/.../ai_character_index-mvp/...), so they only worked on one\nmachine with three repos side by side. Those are now repo-relative. The suite\npasses identically before and after the move (1446 passed, 3 skipped), which\nis what verifies it.\n\nOne hazard worth stating loudly, because it silently returns wrong answers\nrather than failing: THREE different files in the source workspace are named\nbehaviours.json and they are not interchangeable. data/behaviours.json is the\npanel WITH citations (the bar); data/behaviour-definitions.json is the\n11-entry label file; site/spec-reader-test/data/behaviours.json is panel-v2\nmetadata. Loading the wrong one yields empty queries and a de-behaviourised\nscore. Documented in README and at each call site.\n\nExcluded: external/ (234MB of vendored third-party checkouts, each with its\nown .git) and *.pkl. No credentials are stored here; API keys are read from\nenvironment variables named in data/panel-config.json.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00919",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER3_ATTEMPT4_SCORED.json",
-   "commit": "pin",
-   "lines": "148-148",
-   "text": "  \"l1707_1973_n040\": \"relevant\",",
-   "source_class": "arc2_json"
+   "id": "S01039",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "45-77",
+   "text": "commit baa962d2fb31afdbfdb787dc75c9d0ab59774220\nordinal 3\ndate 2026-08-03 19:50:36 -0700\nauthor Matt Stults\nsubject Iteration loop, grammar extension v1, audit instruments, cycle driver\nEverything since the initial import, spanning 2026-08-02..04:\n\n- Grammar: platform->root rename; polarity/principal/role extension live;\n  docfacts split (procedure vs per-document facts, default byte-pinned)\n- Golden instruments: Model Spec 12+14 dev expansion, constitution 12,\n  second-author ceiling calibration (names 0.29 / spans 0.79 / deco 0.91);\n  span-anchored scorer levels; b8 baseline 0.21 stem / 0.82 span / 0.10 deco\n- Re-annotation under extended grammar (ext_v1_merged, 589/593, $0.55):\n  span_deco 0.10 -> 0.59 at scale over two prompt iterations\n- Iteration loop: snapshot/diff (deterministic, cause-tagged flips), dossier\n  seats, containment overlay v1.1 (priced, budgeted, kind inheritance),\n  atom_refactor, cut_stability diagnostic; 3 adjudicated cycles of record\n- SELECT audit (sweep v2 tool-budgeted + query readback): blind-validated,\n  mechanical re-selection -> dev MCC +0.237 -> +0.309 (first above-noise\n  retrieval gain); disagreement autopsy fleet: 294/294 causal census, CLEAN\n- cycle.py orchestrator per CYCLE_DESIGN.md incl. binding amendments from\n  the parallel adversarial design review (census exiled to checkpoints,\n  double freeze, exploratory demotion, flip budget, verdict binding)\n- Briefs for every judgment seat; REPRODUCIBILITY sandwich rule; expert\n  salience anchors; blog rewritten\n\nSuites: last full clean gate 1868 passed/3 skipped + 92 targeted-green tests\nadded since (select_audit 11, audit 27, cycle 54); full gate re-running.\nSpend: $2.15 of $8.50, all guards intact.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00920",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER3_ATTEMPT4_SCORED.json",
-   "commit": "pin",
-   "lines": "149-149",
-   "text": "  \"l3596_3876_n041\": \"relevant\",",
-   "source_class": "arc2_json"
+   "id": "S01040",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "78-102",
+   "text": "commit ed3cf09301e5b13cf6db8c30bf4a9726b8ea10aa\nordinal 4\ndate 2026-08-03 19:58:03 -0700\nauthor Matt Stults\nsubject Restore clobbered behavior_atoms.json; update README to current state\nThe behaviour-atoms dry-run (invoked without --out) wrote its 0-atom stub\nover the shipped default artifact, and baa962d committed that broken state —\ncaught by test_shipped_artifacts_still_load_and_still_join, whose failure was\nitself masked by a `| tail` swallowing the gate's exit code (third recorded\noccurrence of that class; the cycle driver's subprocess handling exists for\nexactly this reason. Artifact restored byte-identical from the import\ncommit; incident documented in the README warnings; dry-run clobber guard\nqueued for v1.2.\n\nREADME rewritten: current results (+0.309 dev vs +0.555 bar; translation\n0.86 span / 0.59 structure vs 0.79 / 0.91 human ceiling), the census, the\nexpert salience critique, current layout and test count.\n\nFull suite: 1960 passed, 3 skipped, exit 0 (verified unpiped).\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nEOF\n)\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00921",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER3_ATTEMPT4_SCORED.json",
-   "commit": "pin",
-   "lines": "150-150",
-   "text": "  \"l3596_3876_n039\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "id": "S01041",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "103-126",
+   "text": "commit 4f44c50471320d218a8d294ba1dd93b47078f177\nordinal 5\ndate 2026-08-03 20:20:41 -0700\nauthor Matt Stults\nsubject Cycle 4 of record: versioned cut (KEEP) - the driver's first customer\nFrozen per-behaviour thresholds (thresholds_frozen.json, values = the\nlabel-free rule's own output on the current config; provenance cites the\n3/3 m0422 drift escalation and cut_stability's structural finding).\nsnapshot.py gains --thresholds with F9 version dispatch; threshold.py\nuntouched. Deliberate no-op now, prospective effect: future cycles measure\nagainst a cut that cannot drift.\n\nFull ceremony: manifest+prediction frozen, independent review seat\n(proceed; two mutants killed), MEASURE no-op short-circuit, 2/2 mechanism\npredictions PASS, signed KEEP, CYCLE_LOG line appended.\n\nFirst-customer driver findings queued (6): PREDICT cannot express\nzero-flip honestly; driver lacks config.thresholds; review seat has no\nassignment/brief; max_regressions vacuously dropped from no-op check\nreport; no-op prose overstates; plus confirmations of F3/closure behavior.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00922",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER3_ATTEMPT4_SCORED.json",
-   "commit": "pin",
-   "lines": "151-151",
-   "text": "  \"l699_796_n025\": \"relevant\",",
-   "source_class": "arc2_json"
+   "id": "S01042",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "127-136",
+   "text": "commit 7fd2965bf50e35114f36d2955d5abb69fb8af0f0\nordinal 6\ndate 2026-08-03 20:24:52 -0700\nauthor Matt Stults\nsubject Cycle-5 design review: DO NOT BUILD as written; chain-audit cycle inserted before it\nReviewer implemented the pricing rule and ran it live: chain semantics inverted (m0276's defining chain parses agent-first as 'the user advises'), flip prediction 12 not 1-5 with 11/12 in the contested under-18 class (1/155 of the nominal target), I2 unsound on normalized scores, anchor check housed in a panel-reading module, definition-edit gameability, cycle-4 dependency holes. Ladder: chain-audit cycle -> amended cycle 5 -> patient backfill.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00923",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER3_ATTEMPT4_SCORED.json",
-   "commit": "pin",
-   "lines": "152-152",
-   "text": "  \"l1001_1107_n012\": \"relevant\",",
-   "source_class": "arc2_json"
+   "id": "S01043",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "137-144",
+   "text": "commit b68ae587101859171bb0987085b01532c475344f\nordinal 7\ndate 2026-08-03 20:35:18 -0700\nauthor Matt Stults\nsubject Driver-fix batch (6 first-customer findings + seat briefs + frozen-cut gate helper); chain audit: 97/109 correct, 12 corrections, defect systematic (patient-kept truncation)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00924",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER3_ATTEMPT4_SCORED.json",
-   "commit": "pin",
-   "lines": "153-153",
-   "text": "  \"l1707_1973_n037\": \"relevant\",",
-   "source_class": "arc2_json"
+   "id": "S01044",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "145-152",
+   "text": "commit 4cf47d6d79cf89bbb3e516ff1edc20f30ecb74ba\nordinal 8\ndate 2026-08-03 20:49:53 -0700\nauthor Matt Stults\nsubject atom_refactor: rechain op (chain-only exact renames, --clause scoping, ext_v1 surfaces, per-file ascii style) — precursor for the chain-repair cycle\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00925",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER3_ATTEMPT4_SCORED.json",
-   "commit": "pin",
-   "lines": "154-154",
-   "text": "  \"l699_796_n016\": \"relevant\",",
-   "source_class": "arc2_json"
+   "id": "S01045",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "153-162",
+   "text": "commit 3464ef7bed80e496581788093e1f9e1875f4683b\nordinal 9\ndate 2026-08-03 21:07:11 -0700\nauthor Matt Stults\nsubject Chain-repair cycle (KEEP): 12 grammar-convention corrections via rechain, zero flips as predicted 3/3; dossier zero-flip guard fix\nAll chains now parse agent-first (audit regen: 0 agent_missing). Frozen thresholds first live use, assert_frozen_thresholds PASS. Mid-cycle instrument fixes disclosed: rechain op (4cf47d6), dossier flip-count-before-reconstruction. Review seat: proceed, independent clause spot-reads, HEAD replay, 2 mutants killed.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00926",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER3_ATTEMPT4_SCORED.json",
-   "commit": "pin",
-   "lines": "155-155",
-   "text": "  \"l1_170_n039\": \"relevant\",",
-   "source_class": "arc2_json"
+   "id": "S01046",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "163-172",
+   "text": "commit 3124ec4aa47e832226f8dde7bdb0f0d42677d0aa\nordinal 10\ndate 2026-08-04 08:25:10 -0700\nauthor Matt Stults\nsubject Design portfolio: 9 documents covering every remaining census class + tooling debt\nCYCLE5_DESIGN rev2 (six must-fixes integrated) + BACKFILL, DRIFT_STANDING, SECTION_PRIOR (A1 evidence gate), JOIN_INTEGRITY, SEGMENTATION_GAPS, TOOLING_BATCH, VOCAB_GAPS, CONTAINMENT_WIDENING. Grounded designs: join re-run over 589 universe, all 45 FN dossiers read, 53-family claim failed reproduction (27 strict), decoration-sensitive join discovered (backfill NOT score-invariant without dechained matching).\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00927",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER3_ATTEMPT4_SCORED.json",
-   "commit": "pin",
-   "lines": "156-156",
-   "text": "  \"l3596_3876_n035\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "id": "S01047",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "173-179",
+   "text": "commit bf42bd927262f9694f784a7861edfc5693a7df86\nordinal 11\ndate 2026-08-04 08:25:17 -0700\nauthor Matt Stults\nsubject Exclude agent worktrees from tracking\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00928",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER3_ATTEMPT4_SCORED.json",
-   "commit": "pin",
-   "lines": "157-157",
-   "text": "  \"l3505_3595_n008\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "id": "S01048",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "180-187",
+   "text": "commit b3ce946e6bf1fef3c8d9d7f828ffb95e1234bfc3\nordinal 12\ndate 2026-08-04 08:39:28 -0700\nauthor Matt Stults\nsubject Joint portfolio review: the governing execution order (Group 0 + P1-P3 + spine S1-S9); 13 findings, 3 silent-breakage catches; all designs build-as-is or build-with-amendments\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00929",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER3_ATTEMPT4_SCORED.json",
-   "commit": "pin",
-   "lines": "158-158",
-   "text": "  \"l3596_3876_n045\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "id": "S01049",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "188-195",
+   "text": "commit f7269e8a434c8e16ac6695775a65202c099e05f2\nordinal 13\ndate 2026-08-04 08:44:05 -0700\nauthor Matt Stults\nsubject HANDOFF + MODULE_MAP current through the loop arc; portfolio review addendum rulings recorded; section-surface contradiction resolved per ruling\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00930",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER3_ATTEMPT4_SCORED.json",
-   "commit": "pin",
-   "lines": "159-159",
-   "text": "  \"l699_796_n010\": \"relevant\",",
-   "source_class": "arc2_json"
+   "id": "S01050",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "196-203",
+   "text": "commit a5c8de00f8a8b5800b2bf2e141f1972fb0e1f487\nordinal 14\ndate 2026-08-04 08:50:43 -0700\nauthor Matt Stults\nsubject Portfolio amendments applied: all 11 joint-review items integrated across 10 designs, each tagged to its finding\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00931",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER3_ATTEMPT4_SCORED.json",
-   "commit": "pin",
-   "lines": "160-160",
-   "text": "  \"l2126_2404_n027\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "id": "S01051",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "204-213",
+   "text": "commit cb6b31221c3005ef76f9ac0734c3d14c563ff1d6\nordinal 15\ndate 2026-08-04 09:01:48 -0700\nauthor Matt Stults\nsubject Group 0 tooling batch: no-clobber, dry-run clobber guards, loader pins, commit-at-CLOSE drafting, A-side git reconstruction, census identity headers + overlay/thresholds flags\n324 targeted green across 6 suites; closed cycles byte-verified immutable; worktree freeze-gate fix applied unmerged. The dry-run guard RED reproduces the behavior_atoms.json clobber incident; reconstruction licenses only gap-free migration chains, git-primary, sha-verified.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   }
  ]
 }

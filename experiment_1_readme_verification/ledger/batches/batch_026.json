@@ -1,133 +1,148 @@
 {
  "header": {
   "batch": "batch_026",
-  "source_class": "arc2_json",
+  "source_class": "arc1_docs",
   "brief_version": "0.4",
   "glossary_version": "frozen ",
   "spans": 15,
-  "first_span": "S00527",
-  "last_span": "S00541"
+  "first_span": "S00355",
+  "last_span": "S00369"
  },
  "spans": [
   {
-   "id": "S00527",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00355",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "82-82",
-   "text": "  \"l171_426_n015\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "733-737",
+   "text": "### Representation capacity is refuted as an information claim\nThe atom index partitions the 589 passages into **534 distinct equivalence classes**, so the\nmaximum MCC any function of the atom set can reach is **+0.972**. Act-atoms alone bound at\n+0.743; section alone at +0.657. All above the judge bar.\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00528",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00356",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "83-83",
-   "text": "  \"l2555_2652_n009\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "738-743",
+   "text": "### Richer extraction has no headroom, and the arm was already run FREE — twice\nText-only (+0.398) is **BELOW** the atom index (+0.435): raw text contains everything any\nannotator could extract. And `annotations.json` → `annotations_b8.json` was a real +9%\ncoverage / +14% atoms / +9% vocabulary upgrade, same model and prompt. Paired over 10 CV\nseeds: **+0.0054, sd 0.035, t(9)=0.49, CI [−0.019, +0.030], n.s.**\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00529",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00357",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "84-84",
-   "text": "  \"l1799_1974_n009\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "744-750",
+   "text": "### The paid contrast is unattributable AND underpowered\nThose two same-model runs share **78 of 330/361 atom names — 21% vocabulary overlap**. The\nvocabulary is a per-run DRAW, not a property of the model, so \"model competence\" is\ninseparable from \"different draw\". Forcing shared names costs −0.157. And MDE(80%) is\n**0.032–0.045** while the best estimate of the paid effect is **+0.005 — one sixth of it**.\n**The decision rule cannot fire in either direction.**\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00530",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00358",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "85-85",
-   "text": "  \"l1542_1706_n019\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "751-768",
+   "text": "### What the deficit actually is\n| | MCC |\n|---|---:|\n| shipped tool, held-out (LOBO) threshold | +0.206 |\n| shipped tool, oracle threshold (generous) | +0.396 |\n| supervised over the SAME offline features | **+0.591** |\n| judges (mean / best) | +0.555 / +0.654 |\n\nThe whole recoverable gap sits between the unsupervised scorer and a supervised readout of\n**identical** features. That is the **query/scoring mechanism**. Two pieces, both free, both\nalready named in this file:\n\n1. **Nested/held-out threshold selection** — LOBO→oracle is worth **+0.19**, the single\n   largest gap in the project. Costs $0.\n2. **The section channel** — section identity alone supervised is +0.536, while the shipped\n   channel's AUC is 0.522/0.633/0.623 (near chance on helpfulness) at weight 0.45. Worth\n   **+0.16 on top of atoms**, offline.\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00531",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00359",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "86-86",
-   "text": "  \"l3954_4251_n005\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "769-774",
+   "text": "### Honest target\nNever the mean of 9. The supervised ceiling LOSES to the strong judges on helpfulness\n(+0.50 vs fable +0.70) and wins only where a judge is degenerate. Report **per-behaviour best\njudge, per cell** (0.706 / 0.705 / 0.552, mean +0.654).\n\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00532",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00360",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "87-87",
-   "text": "  \"l4483_4571_n009\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "775-780",
+   "text": "## ⛔ THE LABEL-FREE LEADS ARE CLOSED (two by proof, a third measured). Read before proposing more scorer work.\n\nThe supervised ceiling (+0.591) sits above the mean judge (+0.555); the label-free tool sits\nat **+0.278**. That gap was attributed to two recoverable items. **Both have now been\nmeasured and both are dead ends** — by proof, not by failure to try.\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00533",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00361",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "88-88",
-   "text": "  \"l699_796_n009\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "781-826",
+   "text": "### Lead 3 — \"there is unmined MEANING in the document\". Tested 2026-08-06. ⚠️ UNREVIEWED.\nRaised by the project owner against the argument above, and the objection was **correct as stated**: the\nnear-injectivity of the atom index (534/589) and the supervised ceiling prove the atoms\n*distinguish* the passages and that a rule over them exists — **neither shows the document\ncannot supply that rule**. The whole enumeration behind \"both leads closed\" changed only the\nWEIGHT on an exact atom-name match. It contained no distributional semantics, because\n`relevance.py:4` excluded that space BY CONTRACT, not by measurement.\n\nPre-registered (`SEMANTIC_ARM_PREREGISTRATION.md`), then measured\n(`SEMANTIC_ARM_RESULTS.md`, `semantic_arm.py`). Both arms use **soft matching** — a passage\natom merely NEAR a query atom contributes — which is a different functional form, not a\nre-parameterisation. Anchor = exact IDF, +0.293 MCC / 0.723 AUC.\n\n| arm | mean MCC | ΔAUC vs anchor, paired bootstrap | |\n|---|---:|---|---|\n| A — LSA over the spec's own text only | +0.226 | +0.020 [−0.012, +0.053] | **spans zero** |\n| B — `text-embedding-3-small` (outside corpus) | +0.254 | +0.035 [+0.006, +0.064] | excludes zero |\n| B vs A directly | | +0.015 [−0.006, +0.038] | **spans zero** |\n\nDocument-internal semantics does not merely fail to gain — it **loses 0.067–0.101 MCC** to\nplain exact matching, stable in sign across k ∈ {25,50,100,200}. The pre-registered\nfalsification bar (+0.40 MCC, or beating the anchor by the 0.045 floor) was not approached.\n\n**Read this narrowly.** (a) The confirming A-null/B-positive pattern is present in the point\nestimates but **B vs A spans zero** — the arms are not separated from each other, only from\nthe anchor. (b) 589 passages is thin for LSA, so arm A's null is confounded with power: the\nhonest claim is *\"document-internal semantics AT THIS CORPUS SIZE did not close the gap\"*,\nnever *\"the document does not contain it\"*. (c) Two of six frozen predictions did not hold\n(P4 failed for arm B; P6 unestablished). (d) **No adversarial review has run.**\n\n*Unplanned finding, and the most reusable part:* both arms **beat the anchor on RANKING and\nlost on DECIDING**. Soft matching flattens the score distribution and Otsu — a\ndistribution-shape rule — cuts a flattened distribution worse. Real signal, eaten by\ncalibration. Same theme as `threshold.py`'s opening.\n\n*Why the negative weights matter here:* the learned readout gives 3–11 of every 19–28 query\natoms a NEGATIVE weight. Similarity is monotone at any resolution, so no embedding channel\ncan express \"this atom is semantically near the behaviour and counts AGAINST relevance\". The\nmissing function is discriminative, not a similarity — which is why a better semantic space\nwas never going to be the answer, and is direct support for the restated goal's\n`textual`/`assumed`/`world` split.\n\n**Do not iterate this.** Sweeping embedding families/k/scorer forms until MCC rises is the\nwithdrawn `rho` lead one level out. The sweep was fixed in advance and is reported entire,\nlosers included.\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00534",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00362",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "89-89",
-   "text": "  \"l2126_2404_n020\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "827-838",
+   "text": "### Lead 1 — threshold calibration (+0.19). Recovered 40%, then hits a structural wall.\n11 label-free rules, pre-registered preference (Otsu, zero free parameters). Otsu recovers\n**+0.073 of +0.181 (40%)**, CI excludes zero, beats LOBO in 9/9 cells, stable across all 5\natom draws (+0.268 ± 0.007). But **no rule reaches oracle, and none can**: the three\nbehaviours' score distributions are nearly identical (mean 0.16–0.19, sd 0.14–0.18) while\ntheir optimal cuts differ by **0.40**. A distribution-shape rule structurally cannot produce\nthat spread. Eight of eleven rules land in a narrow +0.25–0.32 band.\n\n*(`relevance.predict` now derives its cut label-free by default, retiring\n`DEFAULT_THRESHOLD = 0.18` — an in-sample argmax on the scoring panel, i.e. a live invariant-9\nviolation that shipped for most of this session.)*\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00535",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00363",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "90-90",
-   "text": "  \"l1001_1107_n006\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "839-863",
+   "text": "### Lead 2 — the section channel (+0.16). NOT RECOVERABLE LABEL-FREE.\n\n| | MCC |\n|---|---:|\n| oracle section election, then distribute | **+0.641** |\n| supervised section-only (78 params/cell) | +0.536 |\n| supervised, TRANSFERRED from the other 2 behaviours | +0.334 |\n| best label-free section ranking at an **oracle** cut | +0.408 |\n| best label-free ranking at any parameter-free cut | +0.18 … +0.34 |\n\nThe pre-registered design **lost** (+0.177 vs +0.310 per-clause baseline, CI\n[−0.211, −0.079]); the best of 16 variants (+0.335) has a CI spanning zero.\n\n**The mechanism is the finding.** The only behaviour-specific label-free signal available is\nthe atom index, and aggregating it to section level **adds no information** — it re-uses the\nsame clause matches. Firing fraction, evidence mass, section-level atom-profile joins, the\nrung ladder as elector, the section tree, `kind` composition, adjacency and heading-word\noverlap all re-derive the same evidence.\n\nAnd the decisive part: **~60% of the supervised +0.536 is a generic \"which sections are\nsubstantive\" prior** that only reaches parity with the clause operator even when handed the\nother behaviours' labels — while **the remaining ~40% encodes which sections THOSE JUDGES\ntreated as relevant. That is a property of the judges, not of the document.** No\ndocument-grounded method can access it, at any budget.\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00536",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00364",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "91-91",
-   "text": "  \"l1368_1541_n014\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "864-869",
+   "text": "### What this implies about the project's central question\nInter-judge Jaccard is 0.16–0.62 and gold is the intersection of two judges. So part of every\njudge's score is **shared idiosyncrasy that no content-grounded function can reach**. The\n+0.278 → +0.591 gap should no longer be assumed recoverable: a measurable share of it is\njudge-specific by construction.\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00537",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00365",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "92-92",
-   "text": "  \"l1_170_n032\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "870-885",
+   "text": "### What DID work — the rebuild wins as a RANKING channel\nPassage AUC, paired bootstrap, all CIs excluding zero:\n\n| behaviour | shipped | rebuilt | Δ |\n|---|---:|---:|---:|\n| helpfulness | 0.561 | **0.673** | +0.111 |\n| harm-avoidance | 0.695 | **0.781** | +0.086 |\n| over/under-caution | 0.840 | **0.867** | +0.027 |\n\nTwo caveats recorded in `section.py`: the previously-quoted shipped AUCs (0.522/0.633/0.623)\n**do not reproduce** — on the corrected universe with the current loader they are\n0.561/0.695/0.840, and the deltas above are against the re-measured figures; and\n`election_score` is a **panel-fitted** choice of 3 (declared, no-choice baseline 0.671/0.742/\n0.864, bias bound 0.039 AUC).\n\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00538",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00366",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "93-93",
-   "text": "  \"l2474_2554_n013\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "886-900",
+   "text": "## THE 9-BEHAVIOUR PANEL — power, NOT a bar\n\n`ai_character_index/data/panel-coverage.json` — **9 behaviours x 2 specs = 18 cells**,\n2,632 openai + 1,682 anthropic citations. Verified: **locator join is 100%** on both sides\n(589 model-spec / 374 constitution universes via `panel_universe.spec_passages`).\n\nBehaviours: animal-welfare-impacts, harmlessness-to-the-user, helpfulness,\nobjectivity-on-contested-questions, avoiding-over-and-under-caution,\nproportionate-risk-mitigation, harm-avoidance-to-third-parties, how-to-approach-tradeoffs,\nuser-autonomy.\n\n**This fixes the binding statistical constraint.** n=3 behaviours gave a behaviour-level MDE of\n0.209 — every \"which behaviours does this help\" claim in this project has been unmeasurable,\nincluding the base-rate story that had to be demoted to a hypothesis. 9 behaviours settles it.\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00539",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00367",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "94-94",
-   "text": "  \"l4572_4692_n012\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "901-921",
+   "text": "### ⚠️ Three things not to get wrong\n\n1. **IT IS A WEAKER PANEL. NEVER QUOTE ITS AGREEMENT AS \"THE BAR.\"** Judges are\n   **gpt-mini, haiku, qwen-small** — small models. The goal is \"quality equal to or better than\n   asking the FRONTIER models\", so `behaviours.json` (sol/kimi/fable/opus/kimi-k2) remains THE\n   BAR. Use this panel for **generalisation and power**, and label it by its roster wherever it\n   appears.\n2. **THE UNIVERSE IS TRUNCATED, WORSE THAN BEFORE.** Score distribution is\n   `{2:1309, 3:1145, 4:741, 5:583, 6:536}` — **no 0 AND no 1**, where `behaviours.json` at\n   least kept score 1. Reconstruct via `panel_universe` and restore absent passages as\n   all-zero. **Score-1 passages are IRRECOVERABLE** — real \"tangentially related\" judgements\n   now indistinguishable from \"not related\". State that limitation with any number.\n   Mistaking a truncated universe for the judged set is the error that made every headline in\n   this project wrong, in the tool's favour, for most of a day.\n3. `verdicts` is a **JSON object (a real dict)**; `role` is JSON `null`. An earlier note here\n   said `verdicts` was a string repr — that was wrong, an artifact of a pretty-printer calling\n   `str()` on it. `panel_v2.parse_verdicts` accepts both shapes and uses `ast.literal_eval`,\n   never `eval`, for the string path. Verdict scale is\n   **2 = relevant, 1 = tangentially related, 0 = not related** (confirmed by the project owner), matching\n   the existing panel's core/related/not-relevant.\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00540",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00368",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "95-95",
-   "text": "  \"l1_170_n060\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "922-947",
+   "text": "### Wired: `panel_v2.py` (+ `benchmark.py --panel-v2`)\n100% join reproduced; universe restored (6,867 recovered rows, all-zero, tested); duplicate,\nunjoinable, and judge-missing rows all RAISE. Re-derived noise floor **0.0288** (18 cells,\n1000 resamples) — the old 0.045 is refused *by name* in code and test.\n\n**⚠️ THE SCORE-1 TRUNCATION INFLATES THE JUDGES BY ~+0.089 MCC.** Gold is untouched (a\npair-gold needs two judges at >=1, so score >=2), so the whole effect lands on the *judges'\npredicted sets*: their lone \"tangentially related\" calls vanish, taking their false positives\nwith them. Applying the export's `score >= 2` rule to the frontier panel moves judge LOO\n**+0.631 -> +0.720**, with 7.5-29.7% of passages changing class. **So the small-model judge\ncolumn on panel v2 over-states its own panel by ~+0.09, and the tool-vs-judge gap it reports\nis conservative IN THE JUDGE'S FAVOUR.** Irreparable from this file; only a re-export from\n`experiments/panel-judges/runlog-v2.jsonl` fixes it.\n\n**Quotes are re-derived for every row.** The export's published rows carry RAW passage text\n(`**bold**`, inline fences) while recovered rows would carry the publisher's cleaned quote —\n1,027/2,632 openai and 306/1,682 anthropic differ. Mixing them would have biased the clause\njoin **along the gold axis**, since \"published\" means some judge saw relevance. Tested.\n\nA second independent demonstration of the truncation defect: on the export's own citation list\nthe small-model judges score **-0.221** mean MCC (base rate near 1) versus +0.525 on the true\nuniverse — a delta of 0.746.\n\n`check_bar_provenance` is now a standing guard: any document quoting a bar off these\nbehaviours must name the roster and say \"small-model panel\", or it raises.\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00541",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00369",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "96-96",
-   "text": "  \"l1707_1973_n027\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "948-954",
+   "text": "### Blocked on spend\n- **Constitution clause annotations do not exist** — `annotations_b8.json` is 587 clauses, all\n  `m*`, zero `c*`. So the anthropic side cannot run the ontology tier even once atoms exist.\n  `annotate.py --clauses constitution_clauses.json --live` is ~47 requests; `annotate.py`\n  prints no estimate, so cost is **unverified** (~$0.1-0.2 by scaling). Needs its own costing.\n\n",
+   "source_class": "arc1_docs",
+   "context": null
   }
  ]
 }

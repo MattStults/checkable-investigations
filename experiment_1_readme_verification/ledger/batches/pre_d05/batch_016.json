@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_016",
+  "source_class": "arc2_json",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S00377",
+  "last_span": "S00391"
+ },
+ "spans": [
+  {
+   "id": "S00377",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "81-81",
+   "text": "  \"l797_830_n018\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00378",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "82-82",
+   "text": "  \"l1974_2125_n016\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00379",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "83-83",
+   "text": "  \"l1707_1973_n008\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00380",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "84-84",
+   "text": "  \"l699_796_n014\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00381",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "85-85",
+   "text": "  \"l3954_4251_n019\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00382",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "86-86",
+   "text": "  \"l527_796_n012\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00383",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "87-87",
+   "text": "  \"l3596_3876_n030\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00384",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "88-88",
+   "text": "  \"l1001_1107_n007\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00385",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "89-89",
+   "text": "  \"l1974_2125_n006\": \"relevant\"",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00386",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "commit": "pin",
+   "lines": "2-2",
+   "text": " \"_\": \"ROUND-4 helpfulness canary FINAL raw cells after F5 full-panel escalation (all 80 nodes 3-seat majorities; registered 19 panels stand, remainder = wave seat + escalation seats B/C)\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00387",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "commit": "pin",
+   "lines": "3-3",
+   "text": " \"engaged_precision_raw\": 0.625,",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00388",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "commit": "pin",
+   "lines": "4-4",
+   "text": " \"decline_correctness_raw\": 0.875,",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00389",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "commit": "pin",
+   "lines": "5-5",
+   "text": " \"panel_split_rate_all80\": 0.1,",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00390",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "commit": "pin",
+   "lines": "6-31",
+   "text": " \"misses\": {\n  \"engaged_FP\": [\n   \"l1108_1367_n002\",\n   \"l1707_1973_n016\",\n   \"l171_426_n003\",\n   \"l1799_1973_n013\",\n   \"l2474_2554_n004\",\n   \"l2474_2554_n013\",\n   \"l2821_3040_n025\",\n   \"l2821_3040_n034\",\n   \"l3954_4251_n010\",\n   \"l3954_4251_n031\",\n   \"l4252_4482_n006\",\n   \"l461_608_n011\",\n   \"l461_608_n013\",\n   \"l699_796_n009\",\n   \"l797_830_n018\"\n  ],\n  \"not_engaged_FN\": [\n   \"l1542_1706_n016\",\n   \"l2126_2404_n006\",\n   \"l2126_2404_n023\",\n   \"l2126_2404_n047\",\n   \"l3954_4251_n022\"\n  ]\n },",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00391",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "commit": "pin",
+   "lines": "7-23",
+   "text": "  \"engaged_FP\": [\n   \"l1108_1367_n002\",\n   \"l1707_1973_n016\",\n   \"l171_426_n003\",\n   \"l1799_1973_n013\",\n   \"l2474_2554_n004\",\n   \"l2474_2554_n013\",\n   \"l2821_3040_n025\",\n   \"l2821_3040_n034\",\n   \"l3954_4251_n010\",\n   \"l3954_4251_n031\",\n   \"l4252_4482_n006\",\n   \"l461_608_n011\",\n   \"l461_608_n013\",\n   \"l699_796_n009\",\n   \"l797_830_n018\"\n  ],",
+   "source_class": "arc2_json"
+  }
+ ]
+}

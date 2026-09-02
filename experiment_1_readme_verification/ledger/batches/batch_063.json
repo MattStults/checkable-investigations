@@ -1,133 +1,103 @@
 {
  "header": {
   "batch": "batch_063",
-  "source_class": "arc2_docs",
+  "source_class": "git_log",
   "brief_version": "0.4",
   "glossary_version": "frozen ",
-  "spans": 15,
-  "first_span": "S00150",
-  "last_span": "S00164"
+  "spans": 10,
+  "first_span": "S01157",
+  "last_span": "S01166"
  },
  "spans": [
   {
-   "id": "S00150",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
-   "commit": "pin",
-   "lines": "77-99",
-   "text": "## Success criterion and falsifiers (per behaviour)\n- S1 TRANSFER: engagement precision >= 0.70 at the 40-node draw AND fix\n  ledger contains no FATAL entry. Basis: below the dev trio's converged\n  standing (0.94-0.96 in-sample after a full campaign — not expected cold),\n  anchored on the round-2 prediction lineage (0.73-0.89). (A former anchor —\n  \"the human-panelist baseline 71%\" — is STRUCK 2026-08-21: no artifact\n  establishes it and its presumed source does not recognize it; the floor\n  stands on the prediction lineage alone.)\n- F1 FATAL fix-ledger entry (a repair that requires a per-behaviour special\n  case in the instrument rather than in the behaviour module) -> behaviour\n  fails transfer; if in block 1, STOP RULE fires: blocks stop, results\n  reported, no further draws or rulings.\n- F2 engagement precision < 0.60 -> procedure-transfer failure for this\n  behaviour; reported; block 1 occurrence also fires the stop rule.\n- F3 seeded-panel disagreement rate > 20% of panelled rulings -> truth\n  noise too high for the band; widen bands or redraw, disclosed, never\n  silently.\n- Fix-ledger classes: EXPECTED (module-local: a wall/act the definition\n  implied but the first build missed), ALARMING (vocabulary gap: a\n  distinction the instrument lacks that the definition implies), FATAL\n  (per-behaviour special case). The ledger is the primary result; all\n  entries land in the record with their class and the rejected quick-fix.\n",
-   "source_class": "arc2_docs"
+   "id": "S01157",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "3754-3786",
+   "text": "commit e2060569de4aa6e0c986b0b1db7c48abf628fcd2\nordinal 121\ndate 2026-08-08 07:37:51 -0700\nauthor Matt Stults\nsubject Remove the second bad example #6 BEFORE measuring it: zero observed incidence\nIt taught against writing two statements in one body. The check that stopped it\nran before a cent was spent:\n\n  rule bodies examined across every stored response : 911\n  bodies containing a statement separator           : 0\n\nThe model has never produced this failure. A control arm would score zero and\nthe delta would be unreadable -- exactly how the FIRST bad example #6 wasted its\nfirst run, discovered only after paying.\n\nThe asymmetry decides it: the defect is real and reproduced, but schema.py\ncatches it deterministically at zero prompt budget. An example earns its place\nwhen a CHECK CANNOT catch the thing -- true of the gloss case, which is semantic\nand routed to stage-4 seat 4r; false here.\n\nNot a blocklist. The trigger to re-propose is concrete: re-run the 911-body\ncount against new responses, and if incidence becomes non-zero the example has a\ncase.\n\nThe guard stays. The statement-count check, its controls (1..3, #count{},\n\"a.b\") and its mutant are untouched.\n\nReverting is byte-identical to the version Matt already accepted, so the guard\nis green on all six watched files with no new review needed.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00151",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
-   "commit": "pin",
-   "lines": "100-115",
-   "text": "## Re-measurement protocol (attempts budget, added 2026-08-21 at the project owner's ruling)\nn=40 chosen over n=60 because the binding resource is ATTEMPTS, not band\nwidth: block-1 behaviours may be measured several times as the fix ledger\ndrives repairs, and fatter draws buy fewer attempts.\n- ATTEMPT 1 (zero adaptation) carries the TRANSFER verdict exclusively —\n  the generalization claim. Nothing done later can change it.\n- ATTEMPT 2+ exists for repairs: if the fix ledger holds EXPECTED entries,\n  the repair is module-local; ALARMING entries get design-tier treatment;\n  either way the behaviour is re-measured with a fresh seeded draw + fresh\n  blind rulings, labeled attempt-N. Attempt-N verdicts measure THE REPAIR,\n  never transfer; writeups keep the two claims separate.\n- FATAL entries are never repaired in-campaign (the stop rule owns them).\n- Budget: a registered capacity allocation covers the six first attempts;\n  re-measurements exceeding it queue to the next registered allocation,\n  disclosed.\n",
-   "source_class": "arc2_docs"
+   "id": "S01158",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "3787-3810",
+   "text": "commit 4e94355300ba71f24ff10e27df6df9825cd8209b\nordinal 122\ndate 2026-08-08 08:00:06 -0700\nauthor Matt Stults\nsubject Q-6 reframed: a stage-1 contract gap, and D-3's escape clause is half wrong\nThe old reading asked whether readback-ungloss is too strict. It is not, and\nrelaxing it would have been the wrong fix. 14 symbols block 7 modules and NOT\nONE is glossed by any module we have translated -- every one is a predicate a\nmodule borrows, and the contract demands a gloss only for names a clause\nINTRODUCES. The accumulation the design assumes has no source.\n\nD-3 defers corpus-wide resolution because it \"resolves itself as the corpus\ngrows\". Measured: 6 of 14 are owned by a real clause and will resolve; 6 appear\nNOWHERE in the document and never can, because the model coined names whose\nwords are not in any clause. m0053 invented interactable_entity AND\ninteraction_entity for one idea and glossed neither.\n\nAnd linking probably cannot find the definitions without re-reading the source:\nnone of the five blocking clauses carries an anchor, corpus-wide only 13 0o,\nso the only information carried is name+arity -- which is measured at 20% wrong.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00152",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
-   "commit": "pin",
-   "lines": "116-135",
-   "text": "## ADDENDUM 3 (2026-08-22, draw-machinery defects A1/A2 found by adversarial review, append-only)\nA1: v5_node_strata parsed only the anchor-first locator form; the\ntrailing-tag form (\"... {#anchor authority=...} > ¶N\") was silently dropped\n— exactly 51 rows per behaviour (17 paragraphs x 3 full seats, all\nprioritize_teen_safety) for all six behaviours. The missing-seat fallback\n(split) absorbed it silently, so self-checks passed. A2 (same family):\nnode-to-anchor attribution used the ENVELOPE of multi-segment nodes; the two\nscattered-quote nodes (l171_426_n004, l1_170_n042) mapped to anchors their\ntext never overlaps, shifting pool composition through the seeded shuffle.\nFIXES: re.search over the locator part (both forms); per-SEGMENT anchor\nattribution. Precedent-consistent remedy (addendum 2): all six draws\nRECOMPUTED under the same registered seed (20260822); pre-A1 artifacts\npreserved in git history. Divergence before the fix (reviewer-quantified):\nobjectivity not-engaged 19/20 nodes, user-autonomy 14/20 + 13/20,\ngeneral-welfare 2/20 + 17/20; harmlessness and tradeoffs unaffected. Input\nshas (runlog-v5, model spec) now recorded in each draw artifact (N1).\nStrata inform sampling only; truth untouched; no rulings exist yet.\nATTEMPT-1 ENGAGEMENT SETS ARE UNCHANGED (the defects touched strata and\npool composition, not engagement).\n",
-   "source_class": "arc2_docs"
+   "id": "S01159",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "3811-3835",
+   "text": "commit 0fdfdda2197b0cbc1fb8d0cd6eac7abf683ddb5e\nordinal 123\ndate 2026-08-08 08:15:43 -0700\nauthor Matt Stults\nsubject Probe: can a model map the document's concept graph? Plus a frozen prediction\nThe whole document, 593 clauses in 78 sections, two turns on one accumulating\ntranscript. $0.0253. Both turns parsed, neither near the token cap.\n\n78/78 sections covered, 258 input concepts (165 distinct), 220 document / 38\nworld, 108 resolved to a producing section, 36 honestly unresolved.\n\nStatically checkable, and it half-passes: every section id resolves (0 invalid\nacross turn 1, produced_by and consumed_by) but only 72 of 108 evidence phrases\nappear verbatim in the section they name. The misses are quotation drift, not\ninvention -- right section, paraphrased line -- so it is a fixable prompt\nproblem, and the check working is itself the finding.\n\nBUT it overlaps the predicates our translated modules actually borrow by 1 of 32.\nThe map names document-level nouns; modules name clause-level predicates. Both\nright, neither the other.\n\nPre-registered a variant asking for PREDICATES instead of CONCEPTS, with the\nfalsifier written down: if overlap stays near 3\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00153",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
-   "commit": "pin",
-   "lines": "136-156",
-   "text": "## ADDENDUM 4 (2026-08-22, packets re-review R1/R2, append-only)\nR1: four packet files were regenerated BEFORE the draw-review fixes landed\nand were stale against the recomputed draws (68 nodes drifted: welfare 19,\nobjectivity 19, autonomy 27, proportionate-risk 3; harmlessness/tradeoffs\nunaffected). Root cause: parallel tracks, no set-equality gate — count\nchecks do not catch membership drift. All seven packet files regenerated\nagainst the CURRENT draws; leak-check now includes set-equality vs draws.\nRecord correction: the draw-recomputation commit message (95d4e59b) omitted\nthe proportionate-risk 3-node swap (l171_426_n040/l1_170_n021/l1_170_n039\nout, l171_426_n039/l1_170_n022/l1_170_n040 in) — recorded here.\nR2: the shuffle seed was stored inside the seat-facing files it protects —\nciphertext and key in one artifact; inversion was one line for anyone with\nrepo access (the ruling seat is an agent in this repo, not a theoretical\nadversary). FIX, registered here: packet order is a seeded permutation with\nBASE SEED 20260823; per-file seed = base + file index (generalization files\n0..5 in sorted-slug order, defensibility batch = 6). The seed and rule live\nONLY in campaign-record material (this addendum; DEFENSIBILITY_BATCH_\nPROTOCOL.md), never in seat-facing headers. DISPATCH RULE (binding on\nthe scheduled execution): the ruling seat receives ONLY each packet's prompt\nstring — no headers, no routing fields, no draw files, no repo access.\n",
-   "source_class": "arc2_docs"
+   "id": "S01160",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "3836-3873",
+   "text": "commit 7dfc3830b5e5b8291a12b43dfbffa49197876946\nordinal 124\ndate 2026-08-08 10:45:57 -0700\nauthor Matt Stults\nsubject Experiment 3, both arms, built and rendered for review -- not yet run\nPrediction failed twice. Concept-level scored 1/32 against the predicates our\ntranslator actually coined; predicate-level scored 0/32 with 268 candidates on\nthe table. The pre-registered falsifier fired, so the map is a RESOLUTION TARGET\n(Invariant 1 arm C, \"a lookup the model never sees\") rather than prompt context\n(arm A).\n\nresolve_probe.py reverses the direction: supply the names we really coined, ask\nonly where they are defined. Three verdicts -- document, world, coinage.\n\nIT HAS GROUND TRUTH, which neither earlier probe had. Six of the 43 supplied\npredicates appear NOWHERE in the document, verified by searching every clause\nfor all the words of each name. A correct run calls them coinage. The key is\nnever shown to the model.\n\nTWO ARMS, and the difference is the measurement. no-gloss supplies bare names;\ngloss also supplies the borrowing clause's own note, which 16 of 43 carry. If\nresolution needs the gloss then the model is matching our wording rather than\nreading the document, and a lookup that only works when we already wrote the\ndefinition is not a lookup.\n\nA SCORING-SET BUG FIXED ALONG THE WAY: the earlier comparison deduped by\nclause_id and kept the FIRST run's version, discarding 9 of 40 borrowed symbols\nand 6 of the 14 that block a read-back. m0053's two coinages arrive via\ndefines, not requires/inputs, so an extractor reading only the borrow lists\ncannot see them at all. Both corrected, and the reason is recorded where the\nextractor lives.\n\nNothing spent on this commit. Both prompts rendered to resolve_runs/PROMPT_*.txt\nwith the document elided.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00154",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
-   "commit": "pin",
-   "lines": "157-162",
-   "text": "## Confirmation-block rule\nBlock 2 runs only if every block-1 behaviour satisfies S1 and no F1/F2\nfired. If block 2 shows materially worse transfer than block 1 (any\nbehaviour below 0.65 precision or any F1), the combined result is reported\nas \"transfers with degradation\" and the blog claim is scoped to match.\n",
-   "source_class": "arc2_docs"
+   "id": "S01161",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "3874-3932",
+   "text": "commit 467cb836ee8b99c9d159363d91d15b4d45b3efcb\nordinal 125\ndate 2026-08-08 15:43:45 -0700\nauthor Matt Stults\nsubject Five prompts for one question, and four of them were fixing my instrument\nCan a model tell us where a borrowed predicate's meaning lives in the document?\nThat is Invariant 1 arm C, whose only recorded objection is \"requires the lookup\nto exist\".\n\nTHE SEQUENCE IS THE FINDING, so it is written down in full.\n\n1. Concept map, section-level ($0.0253). 78/78 sections, 165 concepts, 72 of 108\n   evidence phrases verbatim. Overlapped what our translator actually coined by\n   1 of 32.\n2. Predicate-level, pre-registered ($0.0166). Predicted the overlap would rise.\n   0 of 32 with 268 candidates. Falsifier fired: prediction is the wrong\n   direction, the map is a resolution TARGET not prompt context.\n3. Five-solver Haiku panel, free. Unanimous on 2 of 43. `document` counts ranged\n   5 to 41 on identical inputs.\n\n   AND THE SPREAD WAS MY FAULT. My prompt asked two different questions in\n   adjacent sentences -- \"a section establishes what it MEANS\" and \"a NAME the\n   document does not use\". Solvers anchored on different ones and both followed\n   instructions. Worse, my KEY was name-level while the pipeline needs\n   concept-level: all six \"coinages\" have their concept in the document, and\n   interactable_entity is literally \"**Assistant**: the entity that the end user\n   or developer interacts with\". The solvers I scored as wrong were answering\n   the more useful question, and the one I called careful had merely shared my\n   narrower reading. I reported the opposite before checking.\n\n4. Single solver, concept-level, free. 4/4 on verdict and section. But\n   over-resolution MOVED rather than vanished -- 29 `defined-here`, 8 failing\n   the prompt's own name test, `absent` used 0 times in 43 -- and the verdict\n   was right far more often than the TERM, which is the part the pipeline\n   consumes.\n\n   The self-report was worth running and both checkable claims held: the phrase\n   it admitted lifting from another section does exist there, and 13 of 41\n   resolutions (32%) give a document_term absent from the section cited. It\n   independently reached the gap I had already been forced into when I dropped\n   pasted_text from the key.\n\n5. Term-first, running. document_term becomes the primary output and the verdict\n   falls out of whether one exists, with `described-not-named` added for the 32%\n   case and `absent` forced by a required field. The key grows to 5 and spans\n   two verdicts, so answering everything the same way cannot score.\n\nTotal spend $0.042; the panel work was free because subagent tokens are not API\nspend.\n\nAlso in this commit: golden_set.py, which built 65 planted items before Matt\npointed out that 58 of them were attached to arbitrary sections -- I had made\nthe section context load-bearing and then filled it with noise. Superseded by\nthe panel approach, kept because the taxonomy of linkage kinds in\nresolve_runs/TAXONOMY.md is still the right frame for a future test set.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00155",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
-   "commit": "pin",
-   "lines": "163-172",
-   "text": "## Integration slots (pre-declared, so nothing arrives as a surprise)\n- v5 frontier panel (data/panel-v5/, PROVENANCE.md): comparison layer as\n  above. Seat composition (sol/fable/deepseek + partials) differs from the\n  v3w trio; writeups name the panel they cite.\n- Any further frontier data (e.g. the reader-test-coverage.json held out of\n  band, or new aci runs): enters ONLY under the same comparison rule, or\n  not at all. Truth path is closed to it by this prereg.\n- Round-4 results: independent; this prereg neither reads nor is read by the\n  round-4 prereg. Both may be cited together afterward.\n",
-   "source_class": "arc2_docs"
+   "id": "S01162",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "3933-3975",
+   "text": "commit fbdb92a58e39864690834a5825c234dc5b340a38\nordinal 126\ndate 2026-08-08 18:55:39 -0700\nauthor Matt Stults\nsubject resolve: iterate definitions to self-sufficiency, n=5 — consolidation yields nothing\nMatt's design: gather passages for a concept, formalize, and if the definition\nis not self-sufficient go back for the newly-opened predicates and repeat --\nthen consolidate across five runs. 8 concepts x 5 runs, bounded at 4 rounds.\n\nThis answered the question experiment 5 could not: single-shot formalization\nopened 2-3 new undefined predicates per concept, so does the recursion close?\n\nIt terminates and the answer is still no. 14 of 40 concept-runs closed. Of 48\nround-to-round transitions, 22 shrank, 15 were flat and 11 GREW; five\nconcept-runs ended with more open than they started, worst [4, 10, 8].\n\nThe decisive result is consolidation. Matching rules on (head, body-predicate\nset) -- structure, not text -- SIX of eight concepts have ZERO rule shapes\nshared by three or more of the five runs. The two that share one share a\nbody-less ground fact. Borrowed-predicate agreement is 0.00 on all eight;\nconflicts_with_later_same_authority accumulated 28 open predicate names with\nnot one common to all five runs. Defined-head agreement is 0.18 and the five\nnames every run shares are five of the eight names we supplied in the prompt.\nEmergent agreement is zero.\n\nNot a competence failure, which is what makes it a finding: 89% of 205\npassages verbatim, clingo accepts 106 of 113 rules, 1 of 40 faked closure.\nIterating makes vocabulary convergence WORSE -- 0.06 single-shot to 0.00 --\nbecause each round coins more names.\n\nQ-6 updated with what this constrains: arm C's lookup cannot be generated,\nonly seeded from the document's own **Term**: inventory. Not ruled.\n\nTwo instrument defects found while scoring, both of which had already produced\na wrong number: the verbatim normaliser did not strip markdown emphasis (76%\nreported, 88% true -- third time this instrument has been the broken part, now\nDEBUGGING_TIPS 17), and the agreement table scored 0.00 where four of five runs\nclosed cleanly, because Jaccard over empty sets reads as total disagreement.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00156",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
-   "commit": "pin",
-   "lines": "173-178",
-   "text": "## Cost and timing\nA registered capacity allocation covers six 40-node draws + panels; all run\nafter the capacity reset. Module builds, instrument runs, v5 comparison:\nFable-free and proceed before the reset. Draws are computed and sha-recorded\nbefore any ruling exists.\n",
-   "source_class": "arc2_docs"
+   "id": "S01163",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "3976-4018",
+   "text": "commit 3e10fdf830d61a33a76a7eeb7b0b55a3b6c55f45\nordinal 127\ndate 2026-08-08 22:20:09 -0700\nauthor Matt Stults\nsubject resolve: reading the transcripts -- 62% of the iteration was renaming, not resolving\nMatt asked why the non-closing concepts did not close. Reading them found the\nopen-set SIZE metric cannot tell resolving from spinning. task/1 run 5 wrote\nthree unrelated one-predicate paraphrases in three rounds, each replacing the\nlast rather than defining what it opened, and open counts [2,2,1] read as\nconverging.\n\nNew measure B2: an open predicate is carried if the next round still owes it or\nlater defines it, replaced if it vanishes never defined. n=159: carried 61\n(38%), REPLACED WITHOUT EVER BEING DEFINED 98 (62%). 27 of 40 concept-runs\ndropped an undefined predicate rather than define it.\n\nSo the 0.00 agreement headline was measuring two things at once. Classifying\nevery open predicate in the transcripts gives three causes with three remedies:\n\n(1) genuinely underdetermined by the document -- the spec says an instruction is\nsuperseded if a later one \"either contradicts it, overrides it, or otherwise\nmakes it irrelevant\", naming three relations and defining none. Carried by every\nrun that reaches them, closed by none. This is the finding worth having.\n\n(2) missing pipeline metadata, NOT a document gap -- seven predicates about\nsection authority, opened while quoting the document saying every section IS\nassigned an authority level. The document states it; the corpus does not carry\nit. Ours to fix.\n\n(3) situation vocabulary the prompt failed to fix -- my defect. message/1,\nrole/2, message_order/2 are exactly what the prompt named primitive. Run 2\ndeclared them primitive, run 3 left them open. The prompt gave a criterion and\nno list, so the runs drew the bottom of the formalization in different places.\n\nA meaningful part of the 0.00 is (2) and (3). A fair re-run needs the situation\nvocabulary as a fixed primitive list, section authority on the corpus, and a\ndriver that pins the open set so a round cannot discharge a predicate by\nparaphrasing the head. Only what survives that is evidence about the document.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00157",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
-   "commit": "pin",
-   "lines": "179-189",
-   "text": "## Signatures\nDrafted by the campaign orchestration seat, 2026-08-21.\nSIGNED 2026-08-21 (project owner). Rulings incorporated at signature: n=40 on the\nattempts-budget rationale (re-measurement protocol clause); the 71% anchor\nSTRUCK (no artifact establishes it; its presumed source did not recognize it\n— the project owner later suggested it may have been a manual test run\npersonally; if\nthat artifact surfaces it is restored by appended erratum, not by memory);\nthird probe = how-to-approach-tradeoffs. FROZEN at this signature;\ncorrections append only.\n",
-   "source_class": "arc2_docs"
+   "id": "S01164",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4019-4052",
+   "text": "commit 39110f6ed119cb730fe5095790c9f7e5ec509b24\nordinal 128\ndate 2026-08-08 22:36:21 -0700\nauthor Matt Stults\nsubject resolve: section agreement is a ROUND-1 phenomenon and iterating only adds disagreement\nMatt asked whether the single-concept multi-turn runs found the same supporting\nsections. Measured across the same 8 concepts, five runs each:\n\n  single-turn retrieval (subset_run1..5): all-5 9, union 14, agreement 0.64\n                                          5 of 8 concepts UNANIMOUS at 1.00\n  multi-turn iterative (iter_run1..5):    all-5 7, union 24, agreement 0.29\n\nSo yes, they typically find the same sections -- retrieval was never the weak\nlink. Multi-turn made it worse, and the by-round split says how:\n\n  round 1 alone   in all 5: 7   union:  9   agreement 0.78\n  round 2 alone   in all 5: 3   union: 10   agreement 0.30\n  round 3 alone   in all 5: 0   union:  3   agreement 0.00\n  cumulative      in all 5: 7 / 7 / 7 / 7   union: 9 / 19 / 24 / 24\n\nThe all-5 column NEVER MOVES after round 1. Fifteen sections are added across\nrounds 2-4 and not one is found by all five runs.\n\nNot a retrieval defect. Round 1 asks all five runs the same question and they\nconverge at 0.78. Rounds 2+ ask what defines the predicates each run itself\nopened, and those agree at 0.00. The later rounds retrieve competently against\nfive different questions -- the loop manufactures the divergence it propagates.\n\nAdded as iter_score.py section F2 so it is reproducible rather than asserted.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00158",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
-   "commit": "pin",
-   "lines": "190-201",
-   "text": "## ADDENDUM (2026-08-22, post-signature clarification, append-only)\nStratum granularity operationalization: panel-agree/panel-split are computed\nat ANCHOR granularity (the document's {#anchor} principle sections), not\nparagraph granularity: node -> anchor by line containment (deterministic,\ntotal coverage); seat verdict per anchor = max over its paragraphs; agree\niff all three full seats land on the same side of the >=2 cut on those\nmaxima. Reason: paragraph-level indexing validated at only 12/40 against the\nindependent clause corpus (generators disagree on paragraphization —\nmis-stratification risk), while anchor attribution is exact. Strata inform\nsampling only; truth is untouched. Implemented in draw_generalization.py\n(determinism tested: same seed -> byte-identical artifact).\n",
-   "source_class": "arc2_docs"
+   "id": "S01165",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4053-4099",
+   "text": "commit 7ffa78f190b3d2058558ff8a07f05e1c27bbc8fc\nordinal 129\ndate 2026-08-08 22:51:53 -0700\nauthor Matt Stults\nsubject resolve: extensional identity -- right idea, but stored data measures clause provenance\nMatt's proposal: stop defining borrowed predicates, let a concept's identity be\nthe region of document text it is grounded in. Names pointing at the same text\nare one concept; relations fall out of set algebra. The measurements favour it --\nit builds on section retrieval (0.78, the only signal that survived repetition)\nand discards vocabulary (0.06 -> 0.00, which never did), and it is statically\ncheckable in a way no definition was.\n\nextension_id.py tests it over solver_v4.json, 41 predicates with locatable\nverbatim excerpts. It does not survive contact:\n\n  character-Jaccard 1.00      5 pairs, 5 share a borrowing clause (100%)\n  0.8+                        1 pair,  1 (100%)\n  0.5+                        8 pairs, 8 (100%)\n  any overlap                31 pairs, 26 (84%)\n  baseline over all 820      104 (13%)\n\nSimilarity is measuring provenance. The resolver was told which clause wanted\neach predicate, so it cited that clause's home passage for every predicate the\nclause borrows. includes_malicious_instructions and not_read_carefully score\n1.00 because both are m0105's.\n\nWorse, interactable_entity/1 and interaction_entity/1 -- m0053's twins, the exact\ndefect Q-6 names -- have no locatable extension at all, so the method is silent\non the case it exists for. And the one real cross-clause synonym pair\n(transformation_of_user_content m0255 / translation_of_user_content m0150) merges\nat section granularity and separates at span granularity: the granularity that\nremoves the confound destroys the signal.\n\nTwo instrument defects fixed here as well, both of which had already produced\noutput: any-overlap identity is dominated by how much text a model chose to\nquote, and union-find takes the transitive closure of overlap, chaining\nunrelated names into one 8-member blob. Together they made a containment table\nwhose 16 pairs shared a right-hand side 15 times. Now character-Jaccard, no\nchaining.\n\nPre-registers the clause-blind retrieval experiment with five predictions and\nnames P1 and P4 as the falsifiers, per the sandwich rule.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00159",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
-   "commit": "pin",
-   "lines": "202-213",
-   "text": "## ADDENDUM 2 (2026-08-22, draw-machinery correction, append-only)\nFirst draw computation produced degenerate pools (objectivity: 0 engaged).\nCause: strata were keyed on recurse/root/graph.json ids, whose segmentation\ngeneration differs from the translation corpus (L1108-1368 vs l1108_1367) —\nthe id spaces do not match. Correction: node lines now parsed from the\npacket SOURCE-TEXT L-markers (ctx_chunk1-8 + ctx_ext1-3, total coverage\n762/762) and strata keyed on corpus ids. All six draws recomputed under the\nsame registered seed (20260822); the pre-correction draw artifacts remain\nin git history as evidence. Anchor-granularity operationalization\n(addendum 1) unchanged.\n\n",
-   "source_class": "arc2_docs"
-  },
-  {
-   "id": "S00160",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
-   "commit": "pin",
-   "lines": "214-237",
-   "text": "## ADDENDUM 5 (2026-08-24, owner-signed, append-only): BLOCK-2 REOPENED UNDER SCOPED REPORTING\nThe block-1 stop rule (tradeoffs F2) stands as written for the TRANSFER\nclaim: no block-2 result may be reported as clean transfer; the combined\ntransfer verdict remains \"transfers with degradation\" scoped by block-1.\nThe project owner authorizes block-2 MEASUREMENT under the following scope:\n- PURPOSE: testing the frozen per-behaviour predictions\n  (BLOCK2_TRANSFER_PREDICTIONS.md, committed before this amendment) and\n  measuring the repair calculus's process convergence (errata count under\n  CALCULUS_RUNBOOK v1). Reporting: \"repair-arc under amended protocol.\"\n- ORDER: user-autonomy FIRST (the project owner's pick, D2); proportionate-risk\n  preserved as the untouched second test; general-welfare measurable\n  only AFTER its C-V does-lane repair (executed alongside this\n  amendment as the F1 recipe; see the contract's repair addendum).\n- VENUE: per A10 Q3 — certified-Opus wave + 3-seat Opus panels\n  (sha-sampled per the ADDENDUM-4 seed rule: user-autonomy panel seed\n  20260828 = base 20260823 + sorted-slug index 5, rate 0.2) + seeded\n  Fable spot-checks with the standing tripwires. Draws: the registered\n  seed-20260822 artifacts, unchanged.\n- BUDGET (D3): a registered capacity allocation from the current position,\n  halt-and-surface at cap, capacity checked before every Fable dispatch.\n  Run now.\nSigned 2026-08-24 (project owner: D1 approved, D2 user-autonomy, D3 run\nnow). Corrections append only.\n",
-   "source_class": "arc2_docs"
-  },
-  {
-   "id": "S00161",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
-   "commit": "pin",
-   "lines": "238-242",
-   "text": "### ADDENDUM 5 CORRECTION 1 (2026-08-24, append-only): the general-welfare\nC-V gate is DISCHARGED VACUOUSLY — the predicted does-lane defect was\nfalsified by engine check (BLOCK2_TRANSFER_PREDICTIONS.md CORRECTION 1);\ngeneral-welfare is measurable as-is whenever its turn comes.\n",
-   "source_class": "arc2_docs"
-  },
-  {
-   "id": "S00162",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/BLOCK2_TRANSFER_PREDICTIONS.md",
-   "commit": "pin",
-   "lines": "1-12",
-   "text": "# BLOCK-2 TRANSFER PREDICTIONS — frozen before any block-2 ruling exists\n(2026-08-24, design tier. Method: the validated GENERALIZATION_FAMILY_\nPREDICTIONS pattern — per-behaviour failure modes predicted from module\ndefinitions + the now-typed mechanism census, NO truth touched. Inputs:\nmodules_contract_GENERALIZATION.json definitions/declarations; disclosed\nengagement pools (attempt-1-era artifacts, truth-free): user-autonomy\n160/602, proportionate-risk 146/616, general-welfare 97/665; the failure\ntaxonomy and channel inventory from iterations 1-3. Corrections append,\nnever edit. These freeze NOW regardless of when — or whether — block 2\nis measured; the prereg's stop rule means measuring any of them needs\nthe project owner's signed amendment with scoped reporting.)\n",
-   "source_class": "arc2_docs"
-  },
-  {
-   "id": "S00163",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/BLOCK2_TRANSFER_PREDICTIONS.md",
-   "commit": "pin",
-   "lines": "13-31",
-   "text": "## 1. user-autonomy (does comply/respond; protects_concern + party_concern declared)\n- DOMINANT PREDICTED FAILURE: engaged-FP, single-consideration class —\n  generic comply/respond prescriptions that pass the protects(user) wall\n  but carry no deference-vs-override content (the tradeoffs FP shape\n  with a wall already present, so milder).\n- SECONDARY: not-engaged-FN on the STRUCTURAL MACHINERY class — the\n  instruction-hierarchy clauses (implicitly-overridable user\n  instructions, user-purview boundaries) are all-plumbing/doc-actor\n  excluded, and user-autonomy is the OTHER behaviour whose subject\n  matter includes that machinery.\n- PREDICTED REPAIR CHANNELS: governs-wall refinement (existing) +\n  machinery_concern declaration (existing, iteration-2's gate). NEW\n  MINTS NEEDED: 0.\n- ATTEMPT-1 ENGAGED PRECISION BAND: 0.55-0.75. Fix-ledger class:\n  EXPECTED.\n- NOTE: this module declares party_concern — census-routable only since\n  the 2026-08-24 Arc1-e extension; routing it earlier would have hit\n  the guard.\n",
-   "source_class": "arc2_docs"
-  },
-  {
-   "id": "S00164",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/BLOCK2_TRANSFER_PREDICTIONS.md",
-   "commit": "pin",
-   "lines": "32-49",
-   "text": "## 2. proportionate-risk-mitigation (does safe_manner/respond/act_in_world; governs_concern + purpose_concern declared)\n- DOMINANT PREDICTED FAILURE: not-engaged-FN on CALIBRATION-STRUCTURE\n  clauses — the construct is a scaling function (\"more caution when\n  severity/probability higher\"), which the spec states as bounded\n  permissions and conditional resolutions: EXACTLY the ARBITRATES\n  structural signature.\n- THE HEADLINE PREDICTION (the sharpest transfer claim available): a\n  material fraction of this behaviour's FN repairs are fixed by\n  DECLARING arbitrates_channel — the mint built for tradeoffs transfers\n  with ZERO new annotation. Mechanism: calibration IS arbitration\n  between caution and helpfulness. Falsifier: the ARB-marked declined\n  nodes of this venue are ruled not_relevant.\n- SECONDARY: engaged-FP via broad act_in_world/safe_manner heads.\n- PREDICTED REPAIR CHANNELS: arbitrates_channel (existing) + possibly a\n  governs_conditional (existing). NEW MINTS NEEDED: 0-1.\n- ATTEMPT-1 ENGAGED PRECISION BAND: 0.60-0.80. Fix-ledger class:\n  EXPECTED.\n",
-   "source_class": "arc2_docs"
+   "id": "S01166",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "4100-4138",
+   "text": "commit de3912246d6051ffd25a82fecc9f2516ba794296\nordinal 130\ndate 2026-08-08 22:56:25 -0700\nauthor Matt Stults\nsubject resolve: the blind corpus had the answer key printed in it -- three runs void\nThe clause-blind experiment was dispatched against DOCUMENT.txt, which is not\nthe document. It is the document with a needs_block injected under every section\nmarker -- 78 of them -- each reading \"[BORROWED PREDICATES -- the rules written\nfrom this section test these...]\" followed by the predicate names. The file\nhanded out as the blind corpus was a complete name-to-section answer key,\nprinted above the text it was meant to hide.\n\nCaught by luck, not by a check: a subagent's prose report mentioned finding a\nname \"listed in the BORROWED PREDICATES section of\nfollow_all_applicable_instructions\". Nothing in the JSON would have shown it,\nand the results would have read as a strong positive -- near-perfect grounding,\nhigh agreement, exactly what the experiment wanted to find.\n\nThe generalisable form, recorded as DEBUGGING_TIPS 18: an artifact built for one\nexperiment carries that experiment's framing, and the framing is often the next\nexperiment's answer. DOCUMENT.txt was correct for resolve_probe.py, whose whole\nquestion was \"given that this section borrows these names, where are they\nestablished?\" Reusing it for a question that must not know the borrower inverted\nits meaning without changing a byte.\n\nAdds DOCUMENT_CLEAN.txt: needs-blocks stripped, 121 lines dropped, all 78\nsections intact, zero residual predicate/arity tokens (the one grep hit is a\nCreative Commons URL). Three leaked runs deleted rather than kept and labelled,\nsince both leaked and clean runs write blind_run<N>.json and a stale file a\nscorer globs up is indistinguishable from a real result.\n\nStill to build: a clean-corpus assertion in the dispatch path. Today it is a\ndocumented manual step, which is the transcript-only procedure REPRODUCIBILITY.md\ncalls a review finding.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   }
  ]
 }

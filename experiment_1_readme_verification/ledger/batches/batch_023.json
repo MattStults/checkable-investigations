@@ -1,133 +1,148 @@
 {
  "header": {
   "batch": "batch_023",
-  "source_class": "arc2_json",
+  "source_class": "arc1_docs",
   "brief_version": "0.4",
   "glossary_version": "frozen ",
   "spans": 15,
-  "first_span": "S00482",
-  "last_span": "S00496"
+  "first_span": "S00310",
+  "last_span": "S00324"
  },
  "spans": [
   {
-   "id": "S00482",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00310",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "10-10",
-   "text": "  \"engaged\": false,",
-   "source_class": "arc2_json"
+   "lines": "1-2",
+   "text": "# HANDOFF — spec ontology spike (2026-08-01; state refreshed 2026-08-05)\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00483",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00311",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "11-11",
-   "text": "  \"decline\": false,",
-   "source_class": "arc2_json"
+   "lines": "3-40",
+   "text": "## ⭐⭐⭐⭐ STATE AS OF 2026-08-06 — THE GOAL IS RESTATED. READ THIS BEFORE ANYTHING ELSE.\n\n> **⭐⭐⭐⭐⭐ 2026-08-18 — SECOND-DOCUMENT GATE ARTIFACT.** Before translating\n> ANY new document, read and implement\n> `walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md`\n> — the assembled retrofit lessons of the arm-3 ontology campaign (4-tuple\n> act declarations, typed situation concepts, M30 dropped-modal detector,\n> norm-objects, seam-from-day-one, per-chunk ontology validators). The\n> Model Spec corpus was retrofitted at the cost of ~6 classification/audit\n> passes; the contract makes the next document born-conforming. Each\n> requirement must be WIRED (translator prompt + gate check) and TESTED\n> (validate_ontology.py / validate_behavior_module.py / corpus_gate M30)\n> before the first chunk seals.\n>\n> **2026-08-19 addition — contract §8, NORM SIGNATURE (ruling by the project owner: happens\n> for EVERY document).** Every assert emits its full signature at translation\n> time: (act, actor, protects, governs-aspect, scope, force, authority).\n> Measured basis: the FP dimension census closed 74/75 observed false\n> engagements under exactly this skeleton (behavior_pilot/panel_run1/\n> PROTECTS_LAYER_RECORD.md); annotation runs the ESCALATION architecture\n> (dual cheap seats, frontier only on disagreement — small tiers measured at\n> ~0.60 exact-set solo); inputs MUST carry verbatim SOURCE TEXT and every\n> node id must resolve to a non-empty span (both bit this campaign).\n> Certification is BEHAVIOR-FREE: per-dimension mutation probes (generalized\n> arm b), so the translation is right the first time for unspecified\n> behaviors. **2026-08-19 late additions — contract §9 (BINDING):** dimensional-purity\n> validation of every slot vocabulary BEFORE annotation (attributes/contexts/intents are\n> separate fields, never values in a role/quality vocabulary — purity predicts cheap-seat\n> viability, 0.97 vs 0.60); behavior wall declarations DERIVED A PRIORI from definitions,\n> truth only validates (tuning-on-truth measured to overfit: harm round-2 F1).\n> Arm-3 registered result: ARM3_REGISTERED_RESULT.md; the\n> post-fix fresh-draw certification is FRESH_DRAW_PREREG_DRAFT.md (signed\n> 28a30a27; helpfulness F1 FIRED at 0.57 — the governs gap, now §8).\n\n\n**The project owner took the scope decision that the 2026-08-05 section (“THE SCOPE DECISION”) said an agent\nmust not resolve.** The answer is option 3: **restate the goal.**\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00484",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00312",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "12-12",
-   "text": "  \"engaged_above\": false,",
-   "source_class": "arc2_json"
+   "lines": "41-46",
+   "text": "### The old goal is retired\n“Quality equivalent to or higher than just asking the frontier models” is **not the target any\nmore**, and on the recorded evidence it was not reachable under the contract: label-free sits at\n+0.278, best compliant config +0.316, judge mean +0.555, and the cross-judge arm (+0.404) bounds\nwhat any judge-generic method can reach. Those numbers stand; they are simply no longer the bar.\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00485",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00313",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "13-13",
-   "text": "  \"decline_above\": true",
-   "source_class": "arc2_json"
+   "lines": "47-55",
+   "text": "### The new goal\n> **The tool provides logically consistent readings of the document for a given behaviour**, with\n> known alternative readings called out, and the ability to specify new ones by manipulating\n> explicit assumptions.\n\nReproducing human judgment is **not** the goal and cannot be — that is a job for an LLM, because it\nrequires holding mutually incompatible commitments at once, which is what humans do and what a\nconsistent formal system must not do.\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00486",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00314",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "15-18",
-   "text": " \"falsifiers\": {\n  \"F4_panel_split_rate\": 0.0,\n  \"F5_overturn_rate\": 0.10526315789473684\n },",
-   "source_class": "arc2_json"
+   "lines": "56-82",
+   "text": "### What this changes, concretely\n1. **Disagreement is OUTPUT, not error.** Every tool-vs-human disagreement resolves to one of:\n   (a) a missing or wrong fact — fixable, and the fix generalises;\n   (b) a demonstrated inconsistency in the human judgment — **this is the product**;\n   (c) **unexplained** — the honest residual.\n2. **The metric is the accounted-for fraction, with (c) as the residual — NOT MCC.** It cannot be\n   fitted: the only way to move it is a fact that survives replay.\n3. **A cause counts only when DEMONSTRATED, not attributed.** “Missing fact X” is established by\n   adding X, re-running, and showing the disagreement resolves while nothing else breaks. This is\n   the correction to the census `side` field, which was assigned by judgment, was block-segregated\n   by run (129/0/0, 58/0/27, 39/41/0), and was demonstrably wrong on H006.\n4. **Oracle feedback may NEVER be a verdict.** Not “no, this is actually relevant.” Only new or\n   updated facts/relationships: change a representation, split a fact, add a statement whose facts\n   are implied by human experience but absent from the document. **This makes invariant 9 hold by\n   construction** — no labelled example can enter, because the channel does not accept one. If a\n   correction cannot be expressed as a fact or relation, *that is itself the finding*.\n5. **Extra-document facts must be marked and toggleable.** `textual` / `assumed` / `world`. A\n   coverage claim resting on world knowledge is a different claim from one grounded in text, and\n   the report must say which.\n6. **No silent verdicts.** Every (clause, behaviour) pair returns: **relevant (graded)** — with an\n   inspectable derivation; **not relevant** — vocabulary covered the territory, nothing fired; or\n   **cannot decide** — naming what is missing. Until (2) and (3) are distinguishable, non-coverage\n   cannot be published, and non-coverage is the headline claim.\n7. **Grading is lexicographic over discrete features, never a fitted score:** match completeness\n   (rung ladder) > derivation directness (own facts > subsumption hops > section closure) >\n   license strength (textual-only > requires assumed > requires world).\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00487",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00315",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "16-16",
-   "text": "  \"F4_panel_split_rate\": 0.0,",
-   "source_class": "arc2_json"
+   "lines": "83-98",
+   "text": "### Status of everything else\n* **Invariant 10 (structural query) is KEPT** — its measured cost is ±0.03 and negative on the best\n  configuration. Logic-first is the contract, not a new idea.\n* **`relevance.py` (bag scorer) becomes a disabled-but-retained reference module.** Disabling means\n  a *registration* change in the same diff, per AGENTS.md — not merely ceasing to call it.\n* **Clingo is adopted** (project owner, explicit, 2026-08-06) — satisfying `MODULE_MAP.md` §4’s requirement.\n  Note §5: the live path already imports `dsl`/`checker` via `extract_section`, so this promotes an\n  existing dependency rather than reactivating dead code.\n* **Ladder cycles aimed at closing the MCC gap (S5, S6, S3b, implied-effects) are re-scoped**, not\n  automatically dead — re-evaluate each against the new goal before running it.\n* **The \"unmined document meaning\" objection was tested 2026-08-06 and did NOT overturn the\n  gap analysis** — but it was a fair objection and the prior argument did not cover it. Embedding\n  soft-match, document-internal vs pretrained: `SEMANTIC_ARM_RESULTS.md`, entry \"Lead 3\" below.\n  **UNREVIEWED**; do not cite as settled, and do not iterate it (fitting hazard, named there).\n* Design: `HARNESS_REDESIGN.md`. Supersedes `RELATIONAL_PAPER_ENCODING.md`.\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00488",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00316",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "17-17",
-   "text": "  \"F5_overturn_rate\": 0.10526315789473684",
-   "source_class": "arc2_json"
+   "lines": "99-130",
+   "text": "## ⭐⭐⭐ STATE AS OF 2026-08-05 — S3b and S4 build-ready. READ THIS FIRST.\n\nThis section supersedes the 2026-08-04-LATE section below for WHAT IS CURRENT.\n\nThe S3b redesign (beneficiary-aware patient pricing) reached REVISION 9 and passed a\nTier-2 verification; it is READY TO BUILD (checklist B4: attribution backfill + parity\nvalidation + pricing cycle). The S4 section-prior evidence gate also passed a Tier-2\nverification and is ready. A two-tier review policy was adopted (REVIEW_POLICY.md: full\nadversarial review at decision points, focused Tier-2 verification for intermediate\nrevisions — proven ~5-12x cheaper for Tier-2). BUILD_OVERVIEW.md gives the build overview\n(models, what each does, why capable, data-flow diagram). NEXT STEP: run the S3b build\n(attribution backfill first), then S4 — SEQUENCED (dispatch-ladder composition), not\nparallel. BUDGET: spend.py hard budget $8.50; the subagent review chain used substantial\ntokens, so CHECK BUDGET (`.venv/bin/python spend.py --check`) BEFORE the backfill.\n\nFor a fresh agent picking this up: read AGENTS.md, then this section, then\nBUILD_OVERVIEW.md, S3B_REDESIGN.md (REVISION 9) / SECTION_PRIOR_DESIGN.md,\nS3B_ATTRIBUTION_TASK_DESIGN.md, REVIEW_POLICY.md, and briefs/ — the attribution seat's\nbrief is **`briefs/attribution_author.md`** (written 2026-08-05).\n\n⚠️ **CORRECTED 2026-08-05.** This paragraph previously named `backfill_author.md` \"for\nthe attribution seat\", and said \"the seat briefs are in place; the build is ready\".\nBoth were wrong. `backfill_author.md` is the S2 patient-**chain** brief; it contains\nzero occurrences of the attribution field and routing the seat to it would have run\nthe wrong task entirely. And S3b is **not** build-ready — `S3B_REDESIGN.md` §9's own\nOPEN conditions include a clean-context adversarial re-review of REVISION 9 (only a\nTier-2 has run, and §9 still reads \"awaiting adversarial re-review\") plus the\nimplied-effects layer's receiver readiness, which is at REVISE with four blocking\nfindings. The order was also ruled the other way: **S4 first, then S3b**\n(`BUILD_OVERVIEW.md` §0). Current state and open decisions live in\n`OUTSTANDING_WORK.md` and `SCOPE_DECISIONS.md` (repo root).\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00489",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00317",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "19-47",
-   "text": " \"misses\": {\n  \"engaged_FP\": [\n   \"l1108_1367_n002\",\n   \"l1108_1367_n025\",\n   \"l1542_1706_n017\",\n   \"l1707_1973_n009\",\n   \"l1707_1973_n016\",\n   \"l171_426_n003\",\n   \"l1799_1973_n013\",\n   \"l2474_2554_n004\",\n   \"l2821_3040_n025\",\n   \"l2821_3040_n034\",\n   \"l3596_3876_n012\",\n   \"l3954_4251_n010\",\n   \"l3954_4251_n031\",\n   \"l4252_4482_n006\",\n   \"l461_608_n013\",\n   \"l699_796_n009\",\n   \"l797_830_n018\"\n  ],\n  \"not_engaged_FN\": [\n   \"l1542_1706_n016\",\n   \"l1_170_n060\",\n   \"l2126_2404_n006\",\n   \"l2126_2404_n023\",\n   \"l2126_2404_n047\",\n   \"l3954_4251_n022\"\n  ]\n },",
-   "source_class": "arc2_json"
+   "lines": "131-137",
+   "text": "## ⭐⭐ STATE AS OF 2026-08-04 LATE — the fix ladder in execution. READ THIS FIRST.\n\nThis section supersedes the one below it (which described the portfolio when it was\n**designs only**). Everything below remains accurate as provenance and for the\nmechanics it documents; where the two disagree about *what has been executed*, this\nsection wins.\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00490",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00318",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "20-38",
-   "text": "  \"engaged_FP\": [\n   \"l1108_1367_n002\",\n   \"l1108_1367_n025\",\n   \"l1542_1706_n017\",\n   \"l1707_1973_n009\",\n   \"l1707_1973_n016\",\n   \"l171_426_n003\",\n   \"l1799_1973_n013\",\n   \"l2474_2554_n004\",\n   \"l2821_3040_n025\",\n   \"l2821_3040_n034\",\n   \"l3596_3876_n012\",\n   \"l3954_4251_n010\",\n   \"l3954_4251_n031\",\n   \"l4252_4482_n006\",\n   \"l461_608_n013\",\n   \"l699_796_n009\",\n   \"l797_830_n018\"\n  ],",
-   "source_class": "arc2_json"
+   "lines": "138-148",
+   "text": "### One paragraph\n\nThe reviewed design portfolio is now **being executed** under the consolidated order\nin `PORTFOLIO_REVIEW.md`. Four more cycles closed (S1 join, P3 drift disclosure, S2\npatient backfill — all KEEP; **S3 patient pricing — REVERT**, the program's first),\nP1 is built and parked in a worktree, and the S3 revert produced the most important\nfinding of the ladder so far: **patient pricing as designed prices on the\ngrammatical recipient of an act, not on the party the harm falls upon**, which\ndeletes clauses an auditor needs. The pre-registered zero-regression bound caught\nit; a frontier-panel comparison would have called the same change a net win.\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00491",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00319",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "39-46",
-   "text": "  \"not_engaged_FN\": [\n   \"l1542_1706_n016\",\n   \"l1_170_n060\",\n   \"l2126_2404_n006\",\n   \"l2126_2404_n023\",\n   \"l2126_2404_n047\",\n   \"l3954_4251_n022\"\n  ]",
-   "source_class": "arc2_json"
+   "lines": "149-157",
+   "text": "### What closed since the portfolio review\n\n| cycle | decision | predictions | what it did |\n|---|---|---|---|\n| `decoration-blind-join-2026-08-04` (S1) | KEEP | 4/4 | Join matches on dechained names; chains survive as `ContainmentIndex.chains` metadata. **This is what makes chains free to carry.** |\n| P3 drift-standing pass | disclosure only | n/a | 60 standing threshold-class admissions audited: 39 defensible / 20 not-needed / 1 unclear. `drift_standing/DISCLOSURE.md`. No mechanism change by design. |\n| `patient-backfill-2026-08-04` (S2) | KEEP | 3/3 | 264 principal chains added (373 total, was 109), each with a validator-checked verbatim license quote. Zero score effect, proven bit-identical. |\n| `patient-pricing-2026-08-04` (S3) | **REVERT** | 19/19 measured, **bound breached** | Patient discount d=0.10 + taint cap. 18 flips: 12 correct, 4 confirmed regressions vs `max_regressions: 0`. See findings below. |\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00492",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00320",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "48-127",
-   "text": " \"verdicts\": {\n  \"l1542_1706_n010\": \"relevant\",\n  \"l1108_1367_n002\": \"not_relevant\",\n  \"l3596_3876_n013\": \"relevant\",\n  \"l171_426_n003\": \"not_relevant\",\n  \"l1707_1973_n011\": \"relevant\",\n  \"l1542_1706_n016\": \"relevant\",\n  \"l1974_2125_n001\": \"not_relevant\",\n  \"l2821_3040_n034\": \"not_relevant\",\n  \"l2126_2404_n029\": \"not_relevant\",\n  \"l1707_1973_n029\": \"not_relevant\",\n  \"l427_460_n010\": \"relevant\",\n  \"l2126_2404_n023\": \"relevant\",\n  \"l4252_4482_n014\": \"relevant\",\n  \"l1108_1367_n007\": \"relevant\",\n  \"l427_460_n005\": \"not_relevant\",\n  \"l2821_3040_n009\": \"not_relevant\",\n  \"l2126_2404_n011\": \"not_relevant\",\n  \"l3041_3146_n015\": \"relevant\",\n  \"l3954_4251_n011\": \"not_relevant\",\n  \"l797_830_n018\": \"not_relevant\",\n  \"l3041_3146_n008\": \"not_relevant\",\n  \"l3954_4251_n022\": \"relevant\",\n  \"l3954_4251_n010\": \"not_relevant\",\n  \"l1707_1973_n005\": \"relevant\",\n  \"l2405_2473_n011\": \"not_relevant\",\n  \"l699_796_n010\": \"not_relevant\",\n  \"l2126_2404_n003\": \"not_relevant\",\n  \"l1_170_n042\": \"not_relevant\",\n  \"l171_426_n008\": \"not_relevant\",\n  \"l1707_1973_n016\": \"not_relevant\",\n  \"l4252_4482_n024\": \"relevant\",\n  \"l461_608_n013\": \"not_relevant\",\n  \"l699_796_n020\": \"not_relevant\",\n  \"l171_426_n015\": \"not_relevant\",\n  \"l2555_2652_n009\": \"relevant\",\n  \"l1799_1974_n009\": \"not_relevant\",\n  \"l1542_1706_n019\": \"relevant\",\n  \"l3954_4251_n005\": \"not_relevant\",\n  \"l4483_4571_n009\": \"relevant\",\n  \"l699_796_n009\": \"not_relevant\",\n  \"l2126_2404_n020\": \"relevant\",\n  \"l1001_1107_n006\": \"not_relevant\",\n  \"l1368_1541_n014\": \"relevant\",\n  \"l1_170_n032\": \"not_relevant\",\n  \"l2474_2554_n013\": \"relevant\",\n  \"l4572_4692_n012\": \"not_relevant\",\n  \"l1_170_n060\": \"relevant\",\n  \"l1707_1973_n027\": \"not_relevant\",\n  \"l2126_2404_n006\": \"relevant\",\n  \"l4252_4482_n022\": \"relevant\",\n  \"l1974_2125_n005\": \"not_relevant\",\n  \"l461_608_n011\": \"relevant\",\n  \"l1108_1367_n006\": \"not_relevant\",\n  \"l2474_2554_n006\": \"not_relevant\",\n  \"l1_170_n057\": \"not_relevant\",\n  \"l3596_3876_n020\": \"not_relevant\",\n  \"l427_460_n009\": \"relevant\",\n  \"l3954_4251_n031\": \"not_relevant\",\n  \"l461_608_n019\": \"relevant\",\n  \"l1108_1367_n025\": \"not_relevant\",\n  \"l3505_3595_n001\": \"not_relevant\",\n  \"l2821_3040_n029\": \"not_relevant\",\n  \"l1542_1706_n022\": \"relevant\",\n  \"l4252_4482_n006\": \"not_relevant\",\n  \"l461_608_n022\": \"not_relevant\",\n  \"l1799_1973_n013\": \"not_relevant\",\n  \"l3596_3876_n012\": \"not_relevant\",\n  \"l461_608_n016\": \"not_relevant\",\n  \"l1_170_n028\": \"not_relevant\",\n  \"l1_170_n036\": \"relevant\",\n  \"l2474_2554_n004\": \"not_relevant\",\n  \"l3954_4251_n038\": \"relevant\",\n  \"l2821_3040_n032\": \"not_relevant\",\n  \"l2821_3040_n025\": \"not_relevant\",\n  \"l831_1000_n007\": \"relevant\",\n  \"l1707_1973_n009\": \"not_relevant\",\n  \"l1542_1706_n017\": \"not_relevant\",\n  \"l699_796_n005\": \"not_relevant\",\n  \"l3596_3876_n011\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "158-190",
+   "text": "### ⛔ THE S3 FINDING — read before attempting S3b\n\nThe mechanism is wrong in two specific, document-grounded ways (both confirmed by a\nsplit-blind frontier verification leg; verdicts in\n`cycles/patient-pricing-2026-08-04/flip_verdicts.json` and\n`flip_verdicts_verification_leg.json`):\n\n1. **Taint inheritance across siblings.** A patient-free atom gets discounted through\n   a *sibling* act atom in the same clause that happens to be `__model_user` — and in\n   example passages the model's remedial act is almost always addressed to the user.\n   So any example whose harm falls on a third party but whose modelled response\n   speaks to the user is tainted regardless of who is harmed (m0275 \"I want to shoot\n   someone\", m0466 anthrax-in-iambic-pentameter, contested m0108).\n2. **Recipient ≠ harm-bearer.** De-escalating *the user's* radicalization protects\n   *third parties* (m0239); a clause's generic noun \"People\" annotates `third_party`\n   while the behaviour declares user/developer (m0018). The chain records the\n   grammatical recipient — correctly, per the annotation convention — and the pricing\n   reads it as the harm's bearer.\n\n**What worked and must be preserved in any redesign:** patient-saturated wrong-patient\nclauses were correctly removed (m0276 self-harm, m0290 eating-disorder — the canonical\ncensus false positives); the golden-derived `d=0.10` and the taint *cap* behaved exactly\nas `cycles/patient-pricing-2026-08-04/DISCOUNT_DERIVATION.md` predicted. **The defect is\npatient PROVENANCE, not the discount arithmetic.** S3b must be beneficiary-aware and must\nnot inherit taint across act/situation siblings in example passages. It needs a written,\nreviewed design first — do not re-attempt by tuning constants.\n\nAlso on the S3 record: `DISCOUNT_DERIVATION.md` is a reusable pattern — the constant was\nderived **blind to flip sets** from golden patient-contrast cases, and that derivation is\nwhat discovered the F-linearity defect (a dense all-wrong-patient clause retained the most\nresidual mass). When a constant's plateau breaks, re-derive blind; never re-tie-break after\nseeing which clause crosses (ruled explicitly at the m0355 knife-edge).\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00493",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00321",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "128-129",
-   "text": "  \"l2126_2404_n047\": \"relevant\"\n }",
-   "source_class": "arc2_json"
+   "lines": "191-217",
+   "text": "### Where everything sits right now\n\n**S3 is closed and committed** (`091619c`, revert, predictions 19/20 — the one FAIL is the\n`max_regressions` bound itself). Revert proof on the record: rebuilding the baseline\nsnapshot from the reverted tree gives `8159ba49…`, byte-identical to the frozen\n`snapshots/patient-backfill-2026-08-04.json`. Suite 2129 green. Two-leg adjudication\naccounting is in `cycles/patient-pricing-2026-08-04/ADJUDICATION_LEGS.md`; the contested\nm0108 carries both document reasons verbatim and a named scope question for seat-defect\nreview (is harm to the user's own organisation's accounts \"outside the conversation\"?).\n\n- **In the tree, inert:** `patient.py` / `validate_query.py` (cycle-5 code, merged from\n  its worktree, repaired for the 1.2 join — the original read chains from `self._names`,\n  which the join had emptied, making pricing silently dead). Invariant I1 pins\n  bit-identity when no patients are declared. S3's revert withdraws the three\n  `behaviours_query.json` declarations; the code stays.\n- **Opening a parked/pre-built cycle:** the driver assumes OPEN precedes implementation;\n  parked work does not. The handling (restore-then-reapply, with a mandatory\n  built-before-OPEN disclosure) is **`CYCLE_DESIGN.md` § PRE-BUILT CYCLES** — read it\n  before opening P1 or any future worktree-parked cycle.\n- **Parked, built, zero-flip proven:** P1 join-integrity v2 + segmentation option-1 in\n  worktree `agent-a8b74ed98d7f85110` (branch `worktree-agent-a8b74ed98d7f85110`). 27 tests,\n  v1 join kept as default deliberately. Merges at the next gate window; re-measurement\n  rides Checkpoint 1. Its own report flags three of its design's predictions as **refuted\n  by measurement** — read them before merging.\n- **Not yet started:** S4 (section-prior evidence gate), S5 (overlay reactivation),\n  Checkpoint 1 census, S6 vocab, generalization G1–G3, final battery.\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00494",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00322",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "49-49",
-   "text": "  \"l1542_1706_n010\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "218-256",
+   "text": "### RULINGS a new agent needs before touching S4 (coordinator, 2026-08-04)\n\n1. **S4 IS UNBLOCKED and opens on the post-S2 baseline.** The spine order S3 → S4 was a\n   sequence, not a dependency: A1's gated set is computed from the atom channel, which\n   patient pricing never touched. S3b, being pricing-only, preserves it. Do not wait.\n2. **S4's baseline is `snapshots/patient-backfill-2026-08-04.json`** — the latest\n   closed-KEEP spine snapshot in `cycles/CYCLE_LOG.jsonl`. ⛔ `SECTION_PRIOR_DESIGN.md`\n   §5 says \"cycle-4 config if cycle 5 reverts\"; that parenthetical is **STALE and wrong** —\n   cycle-4 predates S1 (join 1.2) and S2 (backfill), so its recorded config shas no longer\n   match the tree. General rule: **baseline = latest closed-KEEP spine snapshot**, always\n   read from the cycle log, never named statically in a design doc.\n3. **The A1 enumeration stands, verified.** Independently recomputed against the\n   post-S2 baseline: **30 flips = 13 caution + 13 harm + 4 helpfulness, 0 newly_predicted**,\n   helpfulness = m0379/m0381/m0382/m0389 — exactly as PORTFOLIO F5 pre-registers, and\n   identical against the join, chain-repair and versioned-cut baselines too. **F6's worry\n   that S1's join would void this pre-registration did NOT materialize.** 30 is *at* the\n   flip budget, not over it (the halt is strict `>`), so the stratified-sampling path does\n   not trigger. Do not discard the pre-registration as stale.\n4. **A1 needs an F9 version key.** `_open` refuses any `shape: code` manifest without\n   non-empty `compatibility.version_key` + `statement`. A1 is not a pricing change, so it\n   needs its own — `section_gate_version` — carried in snapshot config identity and in\n   `dossier.py`'s reconstruction dispatch, mirroring the `pricing_version` ladder. Without\n   it every pre-gate snapshot becomes un-reconstructable and MEASURE dies mid-cycle.\n5. **Seat fence — GENERAL RULE, not just S4: a cycle's own design document is never seat\n   material.** `SECTION_PRIOR_DESIGN.md` §3 pre-registers the expected verdict distribution\n   and names the designed regression (m0587); handing it to the adjudication seat \"for\n   context\" destroys the adjudication. The same defect was raised as blocking finding B1\n   against `S3B_REDESIGN.md` (see `S3B_REVIEW_COORDINATOR.md`). Forbidden seat material, always:\n   the cycle's design doc, `PORTFOLIO_REVIEW.md`, prior cycles' `flip_verdicts*.json`, the census.\n6. **Always pass `--cycle NAME` to the driver.** A directory containing only drafts counts\n   as OPEN to `_default_cycle`, so the bare command is refused while any draft cycle dir\n   exists. Two do right now (join-integrity-v2, segmentation-variants — both P1/P2 drafts,\n   pre-OPEN, not live work).\n7. **Untracked cycle dirs and worktrees, disambiguated:** `cycles/join-integrity-v2-*` and\n   `cycles/segmentation-variants-*` are P1/P2 **drafts awaiting their gate window** (see\n   PRE-BUILT CYCLES); worktree `agent-a8b74ed98d7f85110` is P1's build; worktree\n   `agent-a4debc733d7d3d318` is the **spent** cycle-5 build, already merged and reverted —\n   it holds nothing live and can be pruned.\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00495",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00323",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "50-50",
-   "text": "  \"l1108_1367_n002\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "257-270",
+   "text": "### Tooling debt, disclosed and carried (all in cycle records, none silently dropped)\n\n- `_git_bytes_matching` **double-prefix defect**: git-log pathspec is CWD-relative but the\n  code prepends the repo prefix to an already-resolved path → the primary git byte source\n  never fires from `semi-formal-experiment/`. Latent, fails *inert* (finds nothing, falls\n  through to sha-verified `pre_change/`). `cycles/patient-pricing-2026-08-04` A3.\n- F1: grandfather clause in `test_dechain` is multiplicity-blind. F2: \"legacy surfaces\n  frozen chain-free\" is docstring+gate, not tool-enforced. R1–R3: conftest registration\n  outside any manifest; sign-offs as attestation-in-text rather than signed artifacts;\n  scope check should harden to `live == frozen − licensed`. All in\n  `cycles/patient-backfill-2026-08-04/backfill/REVIEW_HARDENING_NOTES.md`.\n- Five pre-existing length-1 chains (m0021, m0178, m0179, m0502 ×2) grandfathered in\n  `dechain_chain_census_s1.json`; repair is an open question for a future annotation cycle.\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00496",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00324",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "51-51",
-   "text": "  \"l3596_3876_n013\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "271-289",
+   "text": "### How the work is dispatched (process, not history)\n\nOperators and seats are subagents; the session coordinator dispatches at halts, makes\ndesigner rulings, signs decisions, and commits at CLOSE (the driver never runs git).\n**Set the model explicitly on every dispatch** — Fable for orchestration/design/adversarial\nreview, Opus for executing a written+reviewed plan, Haiku for validated seats (the\nadjudication seat is proven at Haiku/frontier parity; one divergence so far, m0108,\nrecorded as contested rather than resolved).\n\n**Work that needs a frontier session and should NOT be started otherwise:** the S3b\nredesign, and the **G-freeze artifact** (it defines the conditions of a measurement we\nonly get to run once).\n\nEvery cycle gets a clean-context adversarial review before its close; **a positive review\nstops everything until fixed** (this has fired twice: the A2 dossier-license block, and\nS1's own disclosed restart).\n\n---\n",
+   "source_class": "arc1_docs",
+   "context": null
   }
  ]
 }

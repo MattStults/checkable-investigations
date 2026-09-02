@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_046",
+  "source_class": "arc2_json",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S00827",
+  "last_span": "S00841"
+ },
+ "spans": [
+  {
+   "id": "S00827",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "commit": "pin",
+   "lines": "103-103",
+   "text": "  \"l1001_1107_n010\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00828",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "commit": "pin",
+   "lines": "104-104",
+   "text": "  \"l171_426_n014\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00829",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "commit": "pin",
+   "lines": "105-105",
+   "text": "  \"l1_170_n026\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00830",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "commit": "pin",
+   "lines": "106-106",
+   "text": "  \"l171_426_n019\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00831",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "commit": "pin",
+   "lines": "107-107",
+   "text": "  \"l699_796_n015\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00832",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "commit": "pin",
+   "lines": "108-108",
+   "text": "  \"l427_460_n009\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00833",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "commit": "pin",
+   "lines": "109-109",
+   "text": "  \"l1_170_n091\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00834",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "commit": "pin",
+   "lines": "110-110",
+   "text": "  \"l171_426_n037\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00835",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "commit": "pin",
+   "lines": "111-111",
+   "text": "  \"l2126_2404_n001\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00836",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "commit": "pin",
+   "lines": "112-112",
+   "text": "  \"l3505_3595_n010\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00837",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "commit": "pin",
+   "lines": "113-113",
+   "text": "  \"l1974_2125_n017\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00838",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "commit": "pin",
+   "lines": "114-114",
+   "text": "  \"l3239_3382_n002\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00839",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "commit": "pin",
+   "lines": "115-115",
+   "text": "  \"l1974_2125_n016\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00840",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "commit": "pin",
+   "lines": "116-116",
+   "text": "  \"l3954_4251_n013\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00841",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "commit": "pin",
+   "lines": "117-117",
+   "text": "  \"l3383_3501_n010\": \"relevant\",",
+   "source_class": "arc2_json"
+  }
+ ]
+}

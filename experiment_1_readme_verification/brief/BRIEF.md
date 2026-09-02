@@ -1,4 +1,4 @@
-# Translator brief — v0.4 (post-seed batch 2)
+# Translator brief — v0.5 (post-pilot)
 
 You translate spans of a project record into atomic claims. You are one of
 several translators; you see only this brief, the glossary, and the spans
@@ -166,6 +166,19 @@ span names it.
     current spans.
 30. **Text in a quoted `>` block** in a handoff is still prose: Gate B.
 
+## Learned from the pilot batches
+
+31. **The source file name is the outermost key.** For the tier walk
+    (glossary procedure step 2), after the value's own key and every
+    enclosing object key, the file name in `source.path` is the last key
+    tried: `round4_caution_scored_raw.json` → `_raw` → raw. Put the file
+    name in `venue` when it decided the tier.
+32. **Span `context`.** A span whose `context` field says it is a window
+    inside a top-level key carries that key as an enclosing key for the walk
+    and in `venue`.
+33. **One-line spans** that are a single JSON leaf are still one claim;
+    `scope` is the node id or key; do not invent a behaviour name.
+
 ## Provenance
 
 Every claim carries `translator: {model, brief_version, glossary_version,
@@ -183,3 +196,5 @@ batch}` exactly as given in your batch header.
   required only for ledger- and git-sourced events (D-02).
 - v0.4 (2026-09-02): rules 22-30 from seed batch 2; schema gains rel
   `forbids_citation` and event type `trigger` (D-04).
+- v0.5 (2026-09-02): rules 31-33 after the pilot; JSON spans re-cut by
+  brace depth with window context (D-05).

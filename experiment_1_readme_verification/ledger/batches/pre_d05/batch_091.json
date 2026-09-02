@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_091",
+  "source_class": "arc1_cycles",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S01325",
+  "last_span": "S01339"
+ },
+ "spans": [
+  {
+   "id": "S01325",
+   "path": "semi-formal-experiment/cycles/join-integrity-v2-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "7-7",
+   "text": "  \"behaviours_query.json\": \"48dbd8fb0720ce187423d37daf34e415ebbc58a28166619a0b2800b0a1f32d57\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01326",
+   "path": "semi-formal-experiment/cycles/join-integrity-v2-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "8-8",
+   "text": "  \"constitution_clauses.json\": \"a264e1a07d8a79eaa37710b8c6e25808a0d2807cb55e3ad3716ca422019f06e9\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01327",
+   "path": "semi-formal-experiment/cycles/join-integrity-v2-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "9-9",
+   "text": "  \"modelspec_clauses.json\": \"c6be91a0c0eb25c9f10bea9947547f64416cdd18e8f5e64b14c354a43b87b546\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01328",
+   "path": "semi-formal-experiment/cycles/join-integrity-v2-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "10-10",
+   "text": "  \"overlay_empty.json\": \"3f3adca9ee17a196ce155f3f900711622b2d99ced863667de9bc823df40cf99e\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01329",
+   "path": "semi-formal-experiment/cycles/join-integrity-v2-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "11-11",
+   "text": "  \"test_audit_disagreements.py\": \"d6f4fe297897928111e46f3e07ecd80250204ebaf01342abc871d52b7fe9ca95\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01330",
+   "path": "semi-formal-experiment/cycles/join-integrity-v2-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "12-12",
+   "text": "  \"test_benchmark.py\": \"8bd968896e94dec0abdc3525c84e0a40e6ce9acc70e9fa68973c8fbc55d13c00\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01331",
+   "path": "semi-formal-experiment/cycles/join-integrity-v2-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "13-13",
+   "text": "  \"test_inventory.py\": \"b657f318a16a9b7c70dc1329d128babdf552002bcbc16240307fb6ae0bd041ab\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01332",
+   "path": "semi-formal-experiment/cycles/join-integrity-v2-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "14-14",
+   "text": "  \"test_join_v2.py\": \"832489bf3c1a8c284491d1ec9a9bda5e51f71c9de141b1cc4c81e433b63fef3f\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01333",
+   "path": "semi-formal-experiment/cycles/join-integrity-v2-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "15-15",
+   "text": "  \"test_no_reference_leak.py\": \"5340d26261799f851ec26fadd9bc0557884582bfa06af489358b16679947b894\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01334",
+   "path": "semi-formal-experiment/cycles/join-integrity-v2-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "16-16",
+   "text": "  \"thresholds_frozen.json\": \"60d1273a4e0ac3a4de0eb2a44481b763531491c8c0884387529014dcb724251a\"",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01335",
+   "path": "semi-formal-experiment/cycles/join-integrity-v2-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "18-26",
+   "text": " \"completed\": [\n  \"OPEN\",\n  \"PREDICT\",\n  \"IMPLEMENT\",\n  \"MEASURE\",\n  \"ADJUDICATE\",\n  \"DECIDE\",\n  \"CLOSE\"\n ],",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01336",
+   "path": "semi-formal-experiment/cycles/join-integrity-v2-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "27-27",
+   "text": " \"cycle\": \"join-integrity-v2-2026-08-04\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01337",
+   "path": "semi-formal-experiment/cycles/join-integrity-v2-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "28-31",
+   "text": " \"decision\": {\n  \"decision\": \"keep\",\n  \"signed_by\": \"session coordinator (Qwen Code), on Matt Stults's standing authorization — Option-A (restore-then-reapply) ruling 2026-08-04\"\n },",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01338",
+   "path": "semi-formal-experiment/cycles/join-integrity-v2-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "29-29",
+   "text": "  \"decision\": \"keep\",",
+   "source_class": "arc1_cycles"
+  },
+  {
+   "id": "S01339",
+   "path": "semi-formal-experiment/cycles/join-integrity-v2-2026-08-04/state.json",
+   "commit": "pin",
+   "lines": "30-30",
+   "text": "  \"signed_by\": \"session coordinator (Qwen Code), on Matt Stults's standing authorization — Option-A (restore-then-reapply) ruling 2026-08-04\"",
+   "source_class": "arc1_cycles"
+  }
+ ]
+}

@@ -1,9 +1,10 @@
 {
  "summary": {
   "total": 232,
-  "passed": 221,
-  "failed": 11,
+  "passed": 220,
+  "failed": 12,
   "fail_reasons": {
+   "erratum.n=2 does not appear as an erratum number in the quote (I-01)": 1,
    "rate": 11
   }
  },
@@ -106,8 +107,10 @@
   },
   {
    "id": "L30013",
-   "pass": true,
-   "fails": [],
+   "pass": false,
+   "fails": [
+    "erratum.n=2 does not appear as an erratum number in the quote (I-01)"
+   ],
    "notes": [
     "quote: verbatim within cited lines"
    ]

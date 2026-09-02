@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_015",
+  "source_class": "arc2_json",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S00362",
+  "last_span": "S00376"
+ },
+ "spans": [
+  {
+   "id": "S00362",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "66-66",
+   "text": "  \"l1_170_n023\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00363",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "67-67",
+   "text": "  \"l1974_2125_n008\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00364",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "68-68",
+   "text": "  \"l699_796_n004\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00365",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "69-69",
+   "text": "  \"l831_1000_n009\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00366",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "70-70",
+   "text": "  \"l1_170_n047\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00367",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "71-71",
+   "text": "  \"l3383_3501_n015\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00368",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "72-72",
+   "text": "  \"l609_698_n019\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00369",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "73-73",
+   "text": "  \"l1707_1973_n011\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00370",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "74-74",
+   "text": "  \"l1542_1706_n009\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00371",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "75-75",
+   "text": "  \"l1_170_n044\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00372",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "76-76",
+   "text": "  \"l1542_1706_n022\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00373",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "77-77",
+   "text": "  \"l3877_3953_n009\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00374",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "78-78",
+   "text": "  \"l699_796_n024\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00375",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "79-79",
+   "text": "  \"l4252_4482_n005\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00376",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
+   "commit": "pin",
+   "lines": "80-80",
+   "text": "  \"l1001_1107_n002\": \"relevant\",",
+   "source_class": "arc2_json"
+  }
+ ]
+}

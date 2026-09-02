@@ -1,133 +1,148 @@
 {
  "header": {
   "batch": "batch_027",
-  "source_class": "arc2_json",
+  "source_class": "arc1_docs",
   "brief_version": "0.4",
   "glossary_version": "frozen ",
   "spans": 15,
-  "first_span": "S00542",
-  "last_span": "S00556"
+  "first_span": "S00370",
+  "last_span": "S00384"
  },
  "spans": [
   {
-   "id": "S00542",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00370",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "97-97",
-   "text": "  \"l2126_2404_n006\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "955-960",
+   "text": "## ⭐ THE CENTRAL QUESTION IS ANSWERED: the signal is a DOCUMENT property, not judge idiosyncrasy\n\nThe +0.20 between our label-free query and a supervised readout of **identical features** was\nthe last open question. It is now decomposed, and **replicated across two panels, two judge\ntiers, and 3 -> 9 behaviours.**\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00543",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00371",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "98-98",
-   "text": "  \"l4252_4482_n022\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "961-985",
+   "text": "### The transfer test (and why one test was not enough)\n\"Does it transfer?\" is under-specified: a behaviour-specific but perfectly document-grounded\nsignal ALSO fails leave-one-behaviour-out. So the decisive arm is **cross-judge** — train on\njudge *j*'s own positives, evaluate against gold[j] = the other two judges' intersection, a\nlabel source **disjoint** from the evaluation label.\n\n| arm (atoms+section, fold-wise) | MCC | 95% CI |\n|---|---:|---|\n| in-cell | +0.583 | [+0.520, +0.659] |\n| **cross-judge (disjoint label source)** | **+0.404** | [+0.348, +0.458] |\n| LOBO (other behaviours) | +0.241 | [+0.196, +0.281] |\n\n**69% of the supervised ceiling survives being learned from a judge who did not write the\ngold.** Decomposition: behaviour-agnostic document prior **41%**; behaviour-specific but\njudge-generic **28%**; single-judge label noise 18%; **judge IDENTITY <= 12%** (upper bound).\n\nReplicated on the 9-behaviour panel (27 cells): in-cell +0.644, cross-judge +0.437 —\n**68% vs 69%**, to one point, across two judge tiers. All 9 behaviours in +0.29…+0.54, none\ndegenerate. Honest range: **judge identity 12–22%, document+behaviour signal 68–69%.**\n\n*A memorisation control earned its keep*: fitted on all rows instead of fold-wise, cross-judge\nreads +0.511 and tracks the training judge's own MCC at **r = 0.962** — the model reciting the\njudge it was trained on. Run without holding out rows, this test says \"transfers beautifully\"\nfrom an artifact.\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00544",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00372",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "99-99",
-   "text": "  \"l1974_2125_n005\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "986-1002",
+   "text": "### But the label-free derivation does not exist in anything the corpus supplies\n- The learned weighting is **ANTI-correlated with our IDF in 8/9 cells** (rho −0.00 to −0.50).\n  Positively-weighted atoms have HIGHER df (5.9–9.7) than negatively-weighted (3.3–4.0).\n- **It is not a function of anything we compute** — read this as written: a claim about\n  SURFACE STATISTICS, which is all that had been tried when it was written. The\n  distributional-semantics hole in that enumeration was measured on 2026-08-06 and came out\n  the same way; see\n  the semantic-arm entry below. **That arm is UNREVIEWED and does not upgrade this bullet to a\n  proof.** Coefficient regressed on log clause-df, log\n  passage-df, gloss length, clause count and kind: **R² = 0.039 [0.029, 0.054]**. It encodes\n  atom **identity**.\n- 3–11 of every 19–28 query atoms earn a **negative** weight — which our query cannot express.\n- **54 label-free re-weighting variants** (18 weightings x 3 normalisations): best gain\n  **+0.016**. The 13 corpus-statistic variants span 0.023 MCC, half the noise floor. Eight\n  behaviour-agnostic passage priors all LOSE (−0.098 to −0.318). No monotone df transform works\n  — the weighting is anti-IDF but *not* pro-df.\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00545",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00373",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "100-100",
-   "text": "  \"l461_608_n011\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "1003-1006",
+   "text": "### Gap attribution (+0.278 -> +0.583)\ncalibration **+0.118** · per-atom re-weighting **+0.141** (label-free reachable: **+0.009**) ·\nsection block **+0.118** · lex+section drop −0.039 · supervised's own calibration cost −0.034.\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00546",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00374",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "101-101",
-   "text": "  \"l1108_1367_n006\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "1007-1037",
+   "text": "### ~~THE ONE LEAD LEFT~~ — WITHDRAWN, it was a fitting vector\n\nThis proposed raising the annotation salience field's rank fidelity, **\"with rho against the\nlearned coefficients as a cheap OFFLINE progress metric\"**. Those coefficients are an L2\nlogistic fit to panel labels. **Iterating an annotation prompt until that correlation rises IS\nfitting to the panel** — invariant 9, reached one level of indirection out. The disclaimer\nattached to it guarded the fitted *weight*, not the *selection criterion*.\n\nThis is the same shape as the retracted \"a genuine result being left on the table\", which a\nfunded experiment had already been designed to execute before it was caught. Recorded here\nbecause the recurring failure mode of this project is a fitting-shaped sentence surviving in\nprose until it becomes the plan of record.\n\n**And the observation itself is noise — the lead is dead twice over.**\n* rho = +0.17 is **not distinguishable from zero**: per-cell z-scores +0.20 to +1.45, none\n  reaching 1.96. The \"9/9 cells\" is really **3 independent units** (cells within a behaviour\n  share atoms and golds overlapping J = 0.56-0.76): sign test **p = 0.125**.\n* The field is near-degenerate — harm-avoidance salience is `{2: 17, 3: 6}`, **two distinct\n  values over 23 atoms**.\n* **To clear the 0.045 noise floor you would need rho ~ 0.42 — 2.5x an effect that is\n  currently unmeasurable.** The entire lever caps at **+0.088** at PERFECT rank fidelity, and\n  at **+0.026** under transfer, i.e. inside noise.\n* **rho is falsified as a progress metric by our own data**: IDF has rho -0.30 and is the\n  shipped baseline; the declared salience has rho +0.17 and scored **-0.013**; a synthetic\n  vector at rho +0.17 scores **+0.023**. Two weightings with identical rho differ by 0.036\n  MCC — 80% of the noise floor — because rho ignores tie structure.\n\nDo not revive this without a document-derived metric AND an effect size that clears noise.\n\n\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00547",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00375",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "102-102",
-   "text": "  \"l2474_2554_n006\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "1038-1059",
+   "text": "## ⛔ `act_match` DOES NOT TRANSFER — structural's +0.310 was a 3-behaviour number\n\n`structural.PRIMARY_OPERATOR = \"act_match\"` was selected on panel MCC over 7 operators using\nthe **3-behaviour** frontier panel, declared `fitted_on_panel: True` with a **0.016 bias\nbound**. Measured on **9 behaviours** (openai, 5 draws):\n\n| | 3 behaviours | **9 behaviours** |\n|---|---:|---:|\n| `act_match` (the fitted choice) | +0.310 | **+0.246** |\n| `any_atom` (the NO-CHOICE baseline) | +0.294 | **+0.274** |\n| bag scorer (`relevance`, label-free) | +0.277 | +0.284 |\n\n**The fitted operator LOSES to the unselected one on 9 behaviours** (S0 − S = +0.027; inside\nthe composition P@any − P = **+0.039** [+0.019, +0.058], every draw). And `act_match` at\n+0.246 **loses to the bag scorer**. The declared 0.016 bias bound **understates the cost by\nmore than 2x**.\n\nThis is the clearest instance yet of the project's recurring failure: a choice made by reading\npanel results on n=3 behaviours, declared honestly, and still wrong once n=9 was available.\n**Anything quoted from `structural.py` at +0.310 is a 3-behaviour figure and must not be\ncarried forward.**\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00548",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00376",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "103-103",
-   "text": "  \"l1_170_n057\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "1060-1089",
+   "text": "## The combination: helps on the DECISION side, null on RANKING\n\n`combined.py` — typed core (never vetoed) UNION rung-elected section closure. Pre-registration\nin the docstring predates every number.\n\n| variant | mean MCC (9 beh, 5 draws) |\n|---|---:|\n| **V1@any** typed core ∪ majority-elected sections, no rung gate | **+0.316** |\n| bag scorer | +0.284 |\n| typed core alone (`any_atom`) | +0.274 |\n| PRE-REGISTERED PRIMARY (with the rung gate) | +0.259 |\n| `act_match` alone | +0.246 |\n| section alone (elect & distribute) | +0.198 |\n| intersection | +0.145 |\n\n- **V1@any − typed core = +0.042** [+0.030, +0.055], every draw — clears both noise floors.\n- **V1@any − bag = +0.032** [+0.017, +0.047] — clears the optimistic 0.0295, **NOT** the\n  re-derived 0.035. **Parity-to-marginal, not a clean win.**\n- **The rung gate — the one operator the agent invented — LOSES to its own no-choice\n  baseline** (−0.018, every draw). Reported rather than dropped.\n- **Size-matched randomisation control**: replacing the ~29 closure clauses with a random\n  same-sized non-core set scores **+0.243**, BELOW the unextended core's +0.274, while the\n  elected sections give +0.316. **The gain is the partition, not the extra prediction mass.**\n- **Ranking is a flat null**: combined AUC 0.7425 vs `section.rank` 0.7427 (structural alone\n  0.6475). The typed within-section tiebreak buys nothing; the ranking result stays entirely\n  `section.py`'s.\n\n`section.py`'s earlier null was a null about the section **deciding alone** — never about the\nsection **extending** a typed core. This is the first measurement that separates the two.\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00549",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00377",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "104-104",
-   "text": "  \"l3596_3876_n020\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "1090-1094",
+   "text": "## ⚠️ The noise floor is 0.035–0.037, not 0.0295\nRe-derived at 2000 resamples on this panel for four predictors: 0.0350–0.0357. **0.0295 is\nthe optimistic end.** State verdicts so they hold at 0.037.\n\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00550",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00378",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "105-105",
-   "text": "  \"l427_460_n009\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "1095-1131",
+   "text": "## ⛔ THE CONTRACT-COMPLIANT MODULE IS WORSE THAN THE ONE IT REPLACES\n\n> **⛔⛔ THIS SECTION IS RETRACTED. Read the retraction 84 lines below\n> (\"RETRACTED: 'THE COMPLIANT MODULE IS WORSE'. It was an `act_match`\n> artifact.\") BEFORE you act on anything here.** The finding was an artifact of\n> an operator borrowed from another module and selected on 3 behaviours. At the\n> shipped `any_atom` the compliant module is *not* worse. The section is kept\n> because the measurement discipline in it is sound and worth reading — but a\n> reader who stops at this heading leaves with the opposite of the conclusion,\n> which is exactly what happened for three cycles.\n\nTwo agents measured this independently and agree to three decimals. 9 behaviours, openai,\n589-passage universe, 5 atom draws, label-free, MCC:\n\n| predictor | mean | invariant 10 |\n|---|---:|---|\n| **`combined.py` V1@any** (typed core ∪ elected sections) | **+0.316** | COMPLIANT |\n| `relevance.py` (bag scorer) | **+0.284** | **VIOLATING** |\n| typed core alone (`any_atom`) | +0.274 | compliant |\n| `structural.py` (`act_match`) | +0.246 | compliant |\n| `section.py` | +0.198 | compliant |\n| lexical control | +0.185 | — |\n| FLOOR B / FLOOR A | −0.035 / 0.000 | |\n| small-model judges | +0.514 | (inflated ~+0.09) |\n\n- `structural − relevance` = **−0.0378** [−0.0596, −0.0164], sign consistent in **5/5 draws**.\n  Structural wins 3 of 9 cells and loses badly on animal-welfare (+0.133 vs +0.217) and\n  how-to-approach-tradeoffs (+0.058 vs +0.188).\n- `section − control` = +0.0132, **CI spans zero** — the section quotient's DECISION rule buys\n  nothing over bag-of-words.\n- `structural − control` = +0.0613 [+0.0335, +0.0892] — structural does earn its ontology over\n  the lexical baseline, just **less than the bag scorer does**.\n\n**So the module the contract calls \"scheduled for replacement\" is the best SINGLE module.**\nThe compliant modules' case rests on invariant-10 compliance, zero fitted parameters, and a\nbetter `explain()` — **not on the number.** Say that plainly wherever they are proposed.\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00551",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00379",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "106-106",
-   "text": "  \"l3954_4251_n031\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "1132-1137",
+   "text": "### The one compliant thing that does beat it\n`combined.py` V1@any at **+0.316** vs the bag's +0.284 — but the delta is **+0.032** against a\nre-derived noise floor of **0.0316–0.037** (the two agents derived 0.0316 at 1000 resamples /\n9 cells and 0.0350–0.0357 at 2000 resamples). **Borderline: it clears one estimate of the\nfloor and not the other.** Do not call it a win.\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00552",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00380",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "107-107",
-   "text": "  \"l461_608_n019\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "1138-1141",
+   "text": "### Noise floor: 0.0316–0.037, NOT 0.0295\nThe 0.0295 quoted earlier is the optimistic end. State verdicts so they hold at 0.037.\n\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00553",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00381",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "108-108",
-   "text": "  \"l1108_1367_n025\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "1142-1154",
+   "text": "## ⭐ THE SCOPE DECISION — everything else in this file is input to it\n\nEvery fact below is measured and recorded elsewhere in this document. No page previously put\nthem together as a choice, so here it is.\n\n| | MCC |\n|---|---:|\n| frontier-judge bar (**the stated goal**) | **+0.555 mean / +0.654 best-per-cell** |\n| best COMPLIANT config (`combined` V1@any) | +0.316 |\n| best VIOLATING config (`relevance` bag) | +0.284 |\n| lexical control | +0.185 |\n| chance | 0.000 |\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00554",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00382",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "109-109",
-   "text": "  \"l3505_3595_n001\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "1155-1172",
+   "text": "### Invariant 10 is NOT the constraint — invariant 9 is\nInvariant 10 (structural query, not a similarity score) has a measured cost of **at most\n±0.03**, and on the best available configuration the cost is **NEGATIVE** — the compliant\ncomposition is ahead of the bag scorer. The distance to the goal is **0.24–0.34**. So the\nstructural requirement accounts for **under a tenth** of the shortfall; dropping it would buy\na rounding error and forfeit the auditability that is half the stated value proposition.\n**Keep invariant 10.**\n\nThe binding constraint is **invariant 9 — no labelled examples**. A supervised readout of\nIDENTICAL offline features reaches **+0.591**, above the judge mean. Both label-free routes to\nthat number are now closed BY PROOF, not by failure to try:\n* threshold calibration — the three behaviours' score distributions are near-identical while\n  their optimal cuts differ by 0.40, so no distribution-shape rule can produce that spread;\n* the section channel — ~40% of its supervised advantage encodes which sections THOSE JUDGES\n  treated as relevant, which no document-grounded method can access;\n* 90+ label-free re-weighting variants across five families — best gain +0.018, and **<= 0\n  after correcting for selection**.\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00555",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00383",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "110-110",
-   "text": "  \"l2821_3040_n029\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "1173-1187",
+   "text": "### The question\n> **Is a fast, auditable, fully-explainable tool at ~55–60% of frontier-judge agreement the\n> product — or does the goal need restating?**\n\nThe \"MUCH faster iteration and better explainability/auditability\" half of the value\nproposition is **delivered and defensible today**: annotate once (~$0.28), query offline and\ninstantly, with `explain()` tracing behaviour -> atom -> span -> clause -> locator.\n\nThe \"quality equivalent to or higher than just asking the frontier models\" half is, on current\nevidence, **not reachable under the contract as written**.\n\nDo not let an agent resolve this by continuing to iterate. It is a scope decision, not a\nmeasurement.\n\n",
+   "source_class": "arc1_docs",
+   "context": null
   },
   {
-   "id": "S00556",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_v2.json",
+   "id": "S00384",
+   "path": "semi-formal-experiment/HANDOFF.md",
    "commit": "pin",
-   "lines": "111-111",
-   "text": "  \"l1542_1706_n022\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "1188-1192",
+   "text": "## ⛔⛔ RETRACTED: \"THE COMPLIANT MODULE IS WORSE\". It was an `act_match` artifact.\n\nIndependently recomputed from raw artifacts (every recorded number reproduced to 4 dp — the\nnumbers are honest; the INFERENCE was not).\n",
+   "source_class": "arc1_docs",
+   "context": null
   }
  ]
 }

@@ -1,133 +1,94 @@
 {
  "header": {
   "batch": "batch_061",
-  "source_class": "arc2_docs",
+  "source_class": "git_log",
   "brief_version": "0.4",
   "glossary_version": "frozen ",
-  "spans": 15,
-  "first_span": "S00120",
-  "last_span": "S00134"
+  "spans": 9,
+  "first_span": "S01139",
+  "last_span": "S01147"
  },
  "spans": [
   {
-   "id": "S00120",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
-   "commit": "pin",
-   "lines": "283-291",
-   "text": "## Corrections to the main review\n\n**C1 — Cost premise (affects F17, A12).** Panel adjudication is **$0 API**. The $17.179/$25.00 in `spend.py` is corpus translation and matching spend (DeepSeek-V4-Flash bulk translation alone is $13.73); `usage.jsonl` has essentially no rows during the periods when the round-3/4, generalization, UA, and tradeoffs panels ran. Panel truth is produced by **Fable/Opus subagent seats**, and the operative constraint is the frontier-seat allocation (notes 0032), with **a pre-registered per-round seat-token allocation**. My F17 experiment is therefore **not** dollar-constrained — but it must be registered against the **seat-capacity** budget, and that is a real constraint the L1/L2 registrations also omit entirely.\n**Fix.** Every registered experiment states its compute-cost estimate alongside its $ cost, per the existing prereg pattern.\n\n**C2 — Scale (affects F5, F7).** The graph is **773 nodes** (`graph_v2/node_corpus_all.json`; 593 at root unwind per `GRAPH_OVERVIEW.md`), not ~600. More importantly: `behavior_pilot/coverage_translated.json` records **`translated_nodes: 183`**. See F32.\n\n---\n",
-   "source_class": "arc2_docs"
+   "id": "S01139",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "3051-3118",
+   "text": "commit dc836671873baf612956ec374f9209865dea85ec\nordinal 103\ndate 2026-08-08 00:16:50 -0700\nauthor Matt Stults\nsubject Engineering findings F2-F11: the sweep, and eight defects in the renderer\nTwo adversarial reviews. Design findings stay parked (OPEN_QUESTIONS Q-15);\neverything here is a defect.\n\nF2 GENERALISED — the sweep, not the instance. Shape: anything that shells out\nand decides pass/fail purely from stdout matching. `test_schema.py`'s clingo\ncalls now go through one helper that reads the RETURN CODE too, pinned by a\nfake-interpreter pair copied from `test_link.py` (the reference the review\nnames as correct): one test proves a clingo that never ran is a complaint with\nno `error` text anywhere, its partner proves 0/10/20/30 stay silent so\n`return ['x']` cannot pass.\n\n  NEW, missed by both reviews: `paper_pipeline/cq_check.py` — stage 0's only\n  mechanical check on the design's written-first answers — had the same shape\n  in both runners. With a clingo-less interpreter CQ-4.a, CQ-5.a, CQ-5.b and\n  CQ-6.c all reported `pass` with nothing executed: their expectations are\n  written as ABSENCES, and an absence is what a dead process produces. Return\n  code alone was not enough for `link.py`, whose exit 1 means both \"found\n  errors\" and \"died\"; the second observable is that it always prints.\n  Also swept and sound: `mutate_schema.py`, `model/test_model.py`,\n  `test_link.py` — except its live-run acceptance case, which derived `leaked`\n  by regex from stdout and now asserts `returncode == 0` first.\n\nF4 quoted string constants are DATA. `substitute` had no string awareness, so\n`p(\"political_content is bad\")` was rewritten into prose — and a declared label\ninside a string was glossed AWAY, blinding RB1, whose whole job is to see one.\nF5 a gloss carrying `«` defeated the flat `_strip` and left prose in RB1's,\nRB3's and RB4's scans — RB3 fired on a CORRECT rendering. Fixed at INSERTION\n(the markers must stay unambiguous), and declared as a note, never silently.\nF6 `_CONVERSE`/`_CMP` now pinned over all six operators in both guard\npositions, plus a bijection guard. These were 3 of the reviewer's 4 survivors.\nF7 `_layer` min->max: pinned with the first item that mixes the two layers.\nF8 `KEYWORDS` made the layers disagree: layer 1 refused a gloss `_gloss_slot`\nused, so RB1 fired on a module declaring `count/1` saying \"no definition was\navailable\" — which was false. `#` already excludes the directives; only `not`\nwas load-bearing.\nF9 ontology arguments were dressed in gloss markers, which INVERTED RB1's\nclassification. They go through `substitute` now. On the corpus this removes\nsix RB1 findings on m0014 — not a weakened check: `violence_act` is a declared\nconcept and the renderer now emits its definition instead of its label, which\nis Invariant 1 being satisfied.\nF10 `_rb1` iterated a set with prefix-blind replacement. Longest-first.\n\nF11 the repair-turn USER blocks were unpriced in code and test. The arithmetic\nis left alone (verified >= the true worst case for 1..5). The estimate's\nsurplus is exactly T(T-1)/2 copies of (system+user) — the same coefficient the\nerror-log term carries — so it covers the logs iff a log fits in one\nsystem+user block. That is now a NAMED budget (8,000 chars; largest ever\nproduced: 1,294), priced into the hand-priced floor, and CHECKED.\n\nF3 `translate.py --self-test` exits 1 and pytest read green. The wrapper now\nasserts `returncode == 0` (pins no count) and is `xfail(strict=True)` naming\nQ-4, so the red is VISIBLE and flips to a hard failure the day Q-4 is decided.\n`dryrun.txt` NOT regenerated. Stale numbers corrected in REVIEW_QUEUE.md and\nQ-4 — and the review's own \"44 guards\" is now 46, having moved again when the\nanonymous-variable guard was restored.\n\n10/10 hand mutants killed, including all 4 the reviewer found surviving.\n500 passed + 1 xfail. mutate_schema 46 killed, 0 SURVIVORS. link --self-test\n19/19. schema.py untouched. No API call, no spend.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00121",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
-   "commit": "pin",
-   "lines": "292-293",
-   "text": "## New findings\n",
-   "source_class": "arc2_docs"
+   "id": "S01140",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "3119-3140",
+   "text": "commit 5cf82a4fc94220c3d7ef2c93239e44bb945d02ef\nordinal 104\ndate 2026-08-08 00:21:26 -0700\nauthor Matt Stults\nsubject Q-18: stage 0 competency check is red -- and a correction, it is NOT quiet\ncq_check.py reports 14 as declared, 2 unexpected, 2 blocked. CQ-6.a and CQ-6.b\nfail against their written-first expectations. Pre-existing and outside the\nstage 1-4 scope, recorded so it is not lost.\n\nTHE CORRECTION: a subagent reported the tool \"exits 0 anyway, so stage 0's\ncompetency check is red and quiet\", and I nearly filed that as a defect. It is\nfalse -- cq_check.py exits 1. Both of us measured through `cmd | tail`, where\n$? reports tail's status, not the program's.\n\nThe general lesson outlives the finding: `cmd | tail` silently discards the exit\ncode, and this repo's entire discipline is that a check must not be able to look\nlike it passed. Two independent agents produced the same false claim from that\none habit.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00122",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
-   "commit": "pin",
-   "lines": "294-303",
-   "text": "### F28. There are TWO incompatible \"relevance\" truths on disk, and L1 names neither. This is truth-shopping waiting to happen.\n**Defect.**\n- Graph-node ledger (`satisfiability_census.truth_all()`, `.../behavior_pilot/satisfiability_census.py:180-199`): helpfulness 477 nodes at **0.560** positive, harm-avoidance 291 at **0.443**, caution 285 at **0.540**.\n- panel-v5 (`data/panel-v5/runlog-v5.jsonl`, 31,293 rows, pinned to `ai-character-index@ef08e676`): same behaviours over **589 model-spec passages**, majority-verdict≥2 positive rates of **0.012 (helpfulness), 0.044 (third-party-harm), 0.007 (over-under-caution)** — one to two orders of magnitude apart from the node ledger.\n- The original frontier panel (`data/behaviours.json`, rubric v3w) gives a third set: 377/333/153 passages at 0.536/0.550/0.614.\n\nThree artifacts, three constructs, all called \"relevance.\" L1 says \"relevance prediction over the representation must beat majority baseline\" without naming the ledger, the unit (node vs passage), or the threshold (any-judge≥2 vs majority≥2 vs score≥2).\n**Why it matters.** \"Beats majority baseline\" means something wildly different at base rate 0.56 than at 0.007 — at the latter, a constant-negative predictor scores 0.993 and *nothing* beats it on accuracy. And with three ledgers available, a failing run can be re-scored against another until one passes. This is the granularity-shopping the project already banned once (`dd8abd55`).\n**Fix (registered condition).** Name the ledger, the unit, and the threshold **in the registration, before running**. Register the graph-node ledger at node granularity as primary (it is the only one at the unit the campaign produces), panel-v5 as a pre-registered secondary replication, and prohibit re-scoring against a second ledger without a new registration naming the change. Separately: publish the **cross-ledger agreement rate** on the nodes/passages that join. If two frontier-panel constructs of \"relevance\" disagree this much, the construct validity of the target itself is unestablished, and that is a prior question to Q-A.\n",
-   "source_class": "arc2_docs"
+   "id": "S01141",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "3141-3190",
+   "text": "commit 21813f2544ee8b50a7a78ff15de1bdc45e79ec62\nordinal 105\ndate 2026-08-08 00:27:39 -0700\nauthor Matt Stults\nsubject stage 4: build R3, the derivation layer — 8 of 18 covering-set situations\n`STEP_stage4.md` §2.1 specifies three read-back layers. `readback.py` produced\nR1 and R2, so no DERIVATION reached any seat: the seats judged items and rules,\nnever why a verdict followed. `readback_r3.py` is the third layer, as a separate\nmodule — `readback.py`'s public surface is untouched.\n\nThe pipeline, per §2.1/§2.2: compose a `%!trace_rule` per rule MECHANICALLY from\n`readback.render_items` (never the model's authored `read_back`, which §2.2\ndemotes to a second opinion), run xclingo per derived verdict atom, parse the\nascii tree, and replace every leaf with its R1 rendering.\n\nMEASURED, on the six stored modules that reach R3: 8 of 18 covering-set\nsituations have a non-empty derivation. Printed with its denominator, per\nDEBUGGING_TIPS §2, and the ten that derive nothing are stamped `no-derivation`\nrather than dropped.\n\nTwo defects found on live material and pinned:\n\n* `o`, the ontology ablation guard, surfaced as a LEAF of every ontology-backed\n  derivation and was reported as `readback-ungloss` — a false stop on renderer\n  scaffolding. The guard is removed from R3's program rather than exempted by\n  name; exempting a hard-coded symbol is how a real missing gloss would later\n  hide.\n* A body-less `asserts` fact carries R3's own label AND the one\n  `--auto-tracing=facts` adds; xclingo joins them with `;`, and reading the\n  payload as one quoted sentence put `asserts(m0079,oblige,produce_response)` in\n  front of a seat. Invariant 1's exact failure, emitted by the layer written to\n  fix it.\n\nEvery empty result BLOCKS: missing xclingo, `_` anywhere in the link scope\n(refused BY NAME — it takes the whole link set's explanation down and exits 0),\nan unparseable or truncated stream, a line R3 cannot place, and a verdict stage 3\nderives that xclingo roots no tree at. Three redundant xclingo detectors, each\nwith its own RED test after the first sweep showed the return-code and sentinel\narms surviving on the others' coverage (DEBUGGING_TIPS §8).\n\nRECORDED DEPARTURE: §2.1 says `--output ascii-trees -n 0 0`. [RAN] that alone\nyields a tree with NO leaves, which makes R3's defining requirement vacuous, so\n`--auto-tracing=facts` is added — the flag §0 finding (3) itself used.\n\nTDD: RED first (collection error, then 11 failures), 33 tests, mutation sweep\n21/21 killed, 0 survivors. Suite 634 -> 667, no regressions. No API calls.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00123",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
-   "commit": "pin",
-   "lines": "304-308",
-   "text": "### F29. Q-B is circular by construction: every behaviour with panel truth is IN the 100-definition corpus, because 11 corpus entries ARE the project's own behaviour set.\n**Defect.** `query_class_corpus.json`'s 100 ids break down as `ms:` 29, `sparrow:` 24, `anthropic-constitution:` 12, `anthropic-aup:` 10, **`adria:` 11**, `hhh:` 9, `llamaguard:` 6. Every behaviour with adjudicated node truth maps into the `adria:` block: helpfulness, third-party-harm, over-under-caution, tradeoffs, user-autonomy, harmlessness-to-user, objectivity, general-welfare, proportionate-risk. panel-v5's two additional defined behaviours (`no-sycophancy`, `undermine-oversight`) are *also* in the corpus and have **zero rulings** in the runlog. The one behaviour outside the 100 — `animal-welfare-impacts` — has citation coverage only (`data/panel-coverage.json`) and **zero** adjudicated relevant/not_relevant rulings anywhere.\n**Why it matters for Q-B.** The 24×105 ontology was open-coded from a corpus that includes the definitions of the very behaviours it is scored against. There is **no out-of-corpus panel truth in this repo at all**. L2 as written does not fix this, because L2 never produces a relevance judgment (F12) — so if L2 passes, Q-B remains untested by construction, not merely under-tested.\n**Fix.** Register explicitly: **Q-B cannot be answered by any experiment that does not create new out-of-corpus panel truth.** Minimum: 3 out-of-corpus behaviours × a uniformly drawn, fully ruled node block (the fresh-draw pattern, ~80 nodes each), with the behaviour definitions selected per F14 and frozen pre-annotation. `no-sycophancy` and `undermine-oversight` are **not** eligible (in-corpus). This is the single largest gap in the licensing plan and it is affordable.\n",
-   "source_class": "arc2_docs"
+   "id": "S01142",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "3191-3218",
+   "text": "commit 9d3c9a4404540b6e182fd19a46663cde598a1a98\nordinal 106\ndate 2026-08-08 00:32:16 -0700\nauthor Matt Stults\nsubject R3: carry §2.3's layer stamp, and keep a missing GLOSS out of it\n§2.3 requires every rendering to record the layer that produced it and the\nlayer-1 fraction to be printed even when zero; R3's nodes were dropping it, so\nfluent English and glossed ASP were indistinguishable in the derivation.\n\n⚠️ Written the other way round first, and the assertion was WRONG. An\nunglossed leaf was stamped layer 1 on the reasoning that a bare term IS layer\n1's fallback form. `readback._gloss_slot` already stamps the same marked hole\nlayer 2 inside a rule rendering, so R3 and R1 would have disagreed about one\nmissing definition — and it re-merges the two things §2.3 says must not be\nblurred: a missing TEMPLATE is our gap and costs fluency, a missing GLOSS is a\nhole in the translation and stops the clause. The stamp tracks templates; the\nERROR carries the gloss.\n\n⚠️ The layer-1 fixture also had to change. `readback` has layer-2 templates\nfor aggregates, comparisons, intervals and conditional literals — [RAN] all\nfour render at layer 2 — so reaching for \"something exotic\" did not exercise\nthe fallback at all. Pooling (`p(X;Y)`) does.\n\nSuite 667 -> 670. Mutation sweep re-run: 21/21 killed, 0 survivors.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00124",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
-   "commit": "pin",
-   "lines": "309-313",
-   "text": "### F30. `panel-v5` is a large, pinned, externally-authored truth set that neither L1 nor L2 uses.\n**Defect.** 9 behaviours × 589 model-spec passages, 3 judges each (5 for proportionate-risk), rubric committed, provenance byte-identical to an external repo — i.e. truth the project did not author, already frozen, at $0. It is unexploited.\n**Why it matters.** External-provenance truth is the strongest defence against the designer-smuggling erratum series. It also gives 9 behaviours where L1 gives 2 (F8).\n**Fix.** Register panel-v5 as the pre-registered replication tier for the relevance clause — but only after a committed **join audit**: passages→nodes is not an identity map, and the join must be built, hashed, and its coverage/ambiguity rate published before any metric is computed. Score with class-aware metrics only (F21); at majority≥2 positive rates of 0.005–0.061, accuracy is meaningless and 1-NN will collapse to all-negative.\n",
-   "source_class": "arc2_docs"
+   "id": "S01143",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "3219-3249",
+   "text": "commit beb8531a9480f4cc250ed57e525b4a0423ae3fc1\nordinal 107\ndate 2026-08-08 00:36:05 -0700\nauthor Matt Stults\nsubject Wire R3 into the seats: 4a and 4b now judge derivations, not just items\nSTEP_stage4.md section 5.1 specifies 4a's denominator as \"the rendered set\n(R1+R2+R3)\". readback_r3 was built but nothing consumed it, so the seats judged\nitems and rules and never WHY A VERDICT FOLLOWED. The design answers the\nquestion the R3 build flagged as open -- a derivation is a 4a/4b item, not a\nfifth denominator -- so this is implementation, not a decision.\n\nR3 arrives as an optional argument rather than off the readback, because it\nneeds a stage-3 covering set and a solver run that plain rendering does not. A\ncaller without one gets R1+R2 and the denominator SAYS SO under\n`r3-not-supplied`, so \"no stage-3 result was given\" can never read as \"this\nmodule has no derivations\". A test pins that those two states are\ndistinguishable -- it is the vacuous-pass shape, and here the two would look\nidentical.\n\nA situation deriving no verdict atom is excluded BY NAME as `no-derivation`,\nnever dropped: 8 of 18 covering-set situations across the stored modules derive\na verdict, so silently dropping the other 10 would overstate 4a's coverage by\nmore than a third.\n\n4b filters 4a's output rather than re-deriving the set, so the two cannot drift.\n\nRED-verified by mutation. 673 passed, 1 xfailed.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00125",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
-   "commit": "pin",
-   "lines": "314-318",
-   "text": "### F31. The assembled truth ledger is composition-biased: positives and negatives were selected by different processes.\n**Defect.** `truth_all()` assembles helpfulness's 477 nodes from: the base `arm_ab.truth_for()` block (157), `panel_run1/adjudication_run2_help.json` (82), **`panel_run1/agreed_negative_rulings.json` (15/behaviour, seed 20260816)**, `arm3_negative_rulings.json`, `arm2_*_fresh_rulings.json`, fresh-draw blocks, `panel_rerulings.json` precedence overlays, and a `defensibility_rulings.json` `truth_ledger_updates` entry. Negative-class nodes enter partly through dedicated \"agreed negative\" draws; positive-class nodes partly through escalation panels.\n**Why it matters for Q-A.** Any classifier scored on this ledger can learn the *assembly process* rather than the relevance concept — and a 0.72-vs-0.60 result is exactly the size of effect that assembly artefacts produce. It also means the 0.560/0.443/0.540 base rates are properties of the assembly, not of the document.\n**Fix.** Score the relevance clause on **single-process, uniformly drawn, fully ruled partitions only**. These already exist: `panel_run1/fresh_draw/HELP_RESULT.json` (80), `fresh_draw2/{HELP_R2,HARM_R2,CAUTION_R2}_RESULT.json` (80 each), `fresh_draw3/HELP_R3_RESULT.json` (80), `fresh_draw4/{HELP_R4 80, HARM_R4 57, CAUTION_R4 80}` — ~537 rulings across clean uniform draws, with sane positive rates (0.375–0.538). Register these as the evaluation set; report the assembled ledger, if at all, as a separate stratum with its composition disclosed.\n",
-   "source_class": "arc2_docs"
+   "id": "S01144",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "3250-3264",
+   "text": "commit b17074be02a6c2e0c1e2ad0dfe9b72cf6a41c5c6\nordinal 108\ndate 2026-08-08 00:36:39 -0700\nauthor Matt Stults\nsubject Q-16 resolved: R3 is built, wired, and found two Invariant 1 violations\n36 tests, 21 mutants 0 survivors. 8 of 18 covering-set situations derive a\nverdict; the other 10 are excluded by name rather than dropped.\n\nBoth defects it found were live, not fixtures, and both were raw ASP reaching\nseat-facing text -- the exact failure the read-back exists to prevent, from the\nlayer written to prevent it.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00126",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
-   "commit": "pin",
-   "lines": "319-323",
-   "text": "### F32. L1 presupposes the campaign it is supposed to license — only 183 nodes have ever been translated.\n**Defect.** `coverage_translated.json` records `translated_nodes: 183` of 773. L1 says \"freeze mids induced from HALF the spec's nodes; score … the HELD-OUT half.\" Half of 773 is ~386 nodes that do not exist in translated form. Producing them **is** the retranslation campaign — the ~$/Fable expenditure the experiment is meant to justify. Read literally, L1 cannot be run before the decision it informs.\n**Why it matters.** Either L1 silently means \"half of the 39-node problem-stratified sample\" (n≈19, no power, wrong frame — F5, F7), or it means a several-hundred-node translation commitment made before the licensing question is settled.\n**Fix.** Register L1 explicitly as a **staged pre-flight**: a uniform random draw of N nodes (N set by a power calculation against the F31 clean partitions, and stated), translated end-to-end through the real pipeline, with wall-clock / Fable-token / seat-disagreement / merge-arbitration rates recorded — so the pre-flight simultaneously yields the licensing measurement (F17) and the scaling estimate (F19). State the pre-flight's cost as a fraction of full-campaign cost in the registration.\n",
-   "source_class": "arc2_docs"
+   "id": "S01145",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "3265-3315",
+   "text": "commit b50092ba91b63db1c66604f310e9966bb226953e\nordinal 109\ndate 2026-08-08 00:57:57 -0700\nauthor Matt Stults\nsubject Adversarial review of stage 4: 14 findings, 3 high\nClean-context review of the four review seats (29e018c), the R3 derivation\nlayer, and the R3->seats wiring (beb8531). REVIEW ONLY -- no code, test or\ndesign document was changed. No API call, no spend.\n\nThe three highs are one shape, and it is this repo's named signature failure --\na check that cannot run, exiting like a check that passed:\n\n* divergences() can NEVER fire. Each seat's closed verdict set is disjoint from\n  every other's and every CONTRADICTION pair sits inside one seat's vocabulary,\n  so 0 records over all 81 legal verdict combinations. All five tests that pin\n  section 6 construct judgements validate_judgements refuses.\n* The R3 wiring is a no-op against the real readback_r3.ModuleR3 -- it has\n  `situations`, not `derivations`, and Derivation has no .item/.nodes. A module\n  WITH a rendered derivation yields a 4a denominator identical to r3=None, and\n  excluded=None, i.e. without even the r3-not-supplied marker. The guarantee is\n  inverted. The tests pin a _D/_R3 duck type nothing in the repo builds, and\n  plan_clause has no r3 parameter at all.\n* mutate_seats.py reports \"83 mutants applied, 0 survivor(s)\", exit 0, against a\n  RED test suite. No baseline check, no return-code triage, no collected-count\n  comparison -- all three of which mutate_schema.py guards explicitly. The\n  documented pyc trap IS fixed; a larger hole of the same class sits behind it.\n\nAlso confirmed: no join-key guard on the stage-3 discrimination cross-check (a\nmismatched key makes every `covered` `unsupported` while the report says the\nnumber was available); report_line is NOT byte-identical under a flipped 4a\nverdict because the pooled unclear rate includes 4a; 4c is anchored against\nreadback.py and not against a rendering bug (dropping a rule body from\n_item_text survives all 137 tests); refuse_aggregate scans top-level key names\nonly; RB4's non-evidential stamp cannot fire on the corpus (level 0.90, max\nmeasured echo 0.74); a `%!` in a model-authored gloss is silently rewritten by\nxclingo's own preprocessor -- the third Invariant-1 escape of the shape the\nbuild already fixed twice.\n\nTwo directions where the CODE is right and the DESIGN is stale: section 7's\ncorpus-scale cost is falsified by seats.py --cost by an order of magnitude\n($303 frontier worst, not ~$25 -- 35x the whole cap), and section 8's\nregistration requirement names fencing that exists only in\nsemi-formal-experiment/.\n\n20 hand-written mutants, 6 survivors. The shipped sweep was re-run (83/0, real\nbut not trustworthy). R3's block-on-empty machinery and the seat-origin leak\nfence were attacked and held.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00127",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
-   "commit": "pin",
-   "lines": "324-328",
-   "text": "### F33. Existing gates have already FAILED, and L1/L2 are structured to bypass rather than reconcile with them.\n**Defect.** On disk right now: `GEN_BLOCK1_SCORED.json` — how-to-approach-tradeoffs engaged-precision **0.40**, \"F2 fires, block-1 **STOP RULE**\"; `panel_run1/REGISTERED_RESULT.json` — **`metric0: FAIL`** on all three behaviours (helpfulness decline 3/24, panel-citation 21/24); `ITER2_ATTEMPT3_SCORED.json` prec 0.40 / decl 0.50; the OPERATIVE_TARGET mint held at TP-side coverage 0.67 vs a ≥0.70 gate. L1/L2 make no reference to any of these and would, if passed, sit alongside an un-cleared STOP RULE.\n**Why it matters for the funding decision.** A licensing experiment that can pass while a prior stop rule remains fired is not a gate; it is a second opinion sought after an unfavourable first one.\n**Fix.** Register a precondition: **L1/L2 results are void unless the block-1 STOP RULE and the `metric0: FAIL` findings are either cleared with a measurement or explicitly superseded by a signed ruling naming them.** The campaign decision memo must list every currently-red gate and its disposition.\n",
-   "source_class": "arc2_docs"
+   "id": "S01146",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "3316-3349",
+   "text": "commit 5201e52879b5cdceb237dce5a8a3cbaee17857cb\nordinal 110\ndate 2026-08-08 01:01:22 -0700\nauthor Matt Stults\nsubject My R3 wiring was a NO-OP against every real object, and my tests pinned a fiction\nStage-4 review finding 2, HIGH, and it is mine. denominator_4a read\nr3.derivations / d.item / d.nodes. readback_r3 builds NONE of those: ModuleR3\ncarries `situations`, a SituationR3 carries `derivations`, a Derivation is\n(label, verdict, roots).\n\nSo the wiring never fired on anything the repo constructs -- and it failed in\nthe SILENT direction. A module WITH real derivations produced ids identical to\nr3=None, and returned excluded=None, so the only state carrying a marker was\nthe honest-absence one while the silently-dropped one carried nothing. Exactly\nbackwards.\n\nWORSE: all three tests passed, because they hand-wrote a duck type nothing in\nthe repo builds. One of them was named \"the vacuous-pass shape\". A fixture that\nmodels the type wrongly tests the fixture -- which is the failure this\nrepository names as its signature, committed by the person quoting it.\n\nFixed against the real shape and verified on real objects: m0014 contributes\nderivation S0 to 4a; m0037 derives nothing and is excluded by name as\nno-derivation rather than vanishing. A new test asserts ModuleR3 and\nSituationR3 still carry the fields the denominator reads -- including that\nModuleR3 does NOT carry `derivations`, so the original wrong wiring cannot\nstart working by accident and leave the comment lying. excluded is always a\ndict now; it was None, and the membership tests would have raised TypeError.\n\n676 passed, 1 xfailed.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S00128",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
-   "commit": "pin",
-   "lines": "329-331",
-   "text": "### F34. **Objection withdrawn / good news:** the power problem in F7 is fixable at zero cost.\nThe graph-node ledger holds 477 / 291 / 285 truth-bearing nodes (union 644 across three behaviours), plus UA 175 and tradeoffs 75 — far more than the ~150/~122 I assumed. Restricting to the clean uniform draws of F31 still leaves ~537 single-process rulings. **F7's underpowered-half concern therefore disappears entirely if L1 is scored out-of-fold on the full clean partition set instead of on a single held-out half** — at n = 477 the power to detect 0.72 vs 0.60 is ≈0.999, and n = 80 per fresh-draw block supports per-block replication. This is the one place where the registrations are more conservative than they need to be, and the fix (A4: k-fold out-of-fold induction) costs nothing.\n",
-   "source_class": "arc2_docs"
-  },
-  {
-   "id": "S00129",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
-   "commit": "pin",
-   "lines": "332-335",
-   "text": "### F35. `ua_truth_sealed.json` is the repo's only genuinely held-out truth partition, is single-use, and is at risk of being spent on the wrong question.\n**Defect.** 38 nodes (11 relevant / 27 not, 0.289), marked **\"SEALED — single-use at the registered confirmation; must not enter visible truth.\"** It is the closest thing the project has to an uncontaminated confirmation set. Neither L1 nor L2 mentions it, which means an unregistered run could burn it.\n**Fix.** Register: the UA seal is **not** available to L1 or L2. It is reserved for the single registered confirmation it was created for, and any proposal to redirect it requires a signed ruling naming what it is being spent on and what is given up. Add a repo-level guard: a test asserting that no L1/L2 scoring path reads `ua_truth_sealed.json` (the project's existing `FORBIDDEN` / `QUERY_MODULES` registration pattern).\n",
-   "source_class": "arc2_docs"
-  },
-  {
-   "id": "S00130",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
-   "commit": "pin",
-   "lines": "336-341",
-   "text": "### F36. UA's own ledger shows the base-rate problem is behaviour-dependent, which breaks any single pass threshold.\n**Defect.** Positive rates across the truth on disk span **0.005 to 0.614** — user-autonomy visible 0.255, tradeoffs iter-1 0.350 / iter-2 0.467, fresh draws 0.375–0.538, panel-v5 majority 0.005–0.061, original panel 0.536–0.614. L1's single \"beats majority baseline\" bar is not comparable across behaviours and is trivially satisfiable at the extremes.\n**Fix.** Per-behaviour thresholds expressed in ceiling-relative, class-aware terms (F21, F22): MCC and positive-class F1 against panel-internal agreement, with the **worst** behaviour as the headline (A3), never a pooled mean.\n\n---\n",
-   "source_class": "arc2_docs"
-  },
-  {
-   "id": "S00131",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
-   "commit": "pin",
-   "lines": "342-352",
-   "text": "## Updated Part 3 recommendation\n\nF17 stands as the single strongest experiment, with these revisions from the inventory:\n\n- **Items:** the F31 clean uniform fresh-draw partitions (~537 rulings across helpfulness / harm-avoidance / caution), **not** the assembled `truth_all()` ledger; panel-v5 (589 passages × 9 behaviours) as a pre-registered replication tier after a committed join audit.\n- **Cost:** $0 API. Register the **compute-cost** estimate instead (the project's own measured per-block unit; the two readout arms are judge calls over already-ruled nodes, so the marginal cost is arm-count × block size).\n- **Behaviour count:** 9 behaviours have some truth, so A3's \"≥5 behaviours\" is achievable today at $0.\n- **Added, non-optional (F29):** ≥3 **out-of-corpus** behaviours with new fresh-draw panel truth. Without this, Q-B is untestable by construction, and it is the cheapest high-value spend available.\n\n---\n",
-   "source_class": "arc2_docs"
-  },
-  {
-   "id": "S00132",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
-   "commit": "pin",
-   "lines": "353-373",
-   "text": "## REVISED OVERALL VERDICT\n\n**DOES-NOT-LICENSE** — unchanged, and now on firmer ground.\n\nThe inventory removes one of my objections (F34: power) and adds a worse one in its place: **there is no out-of-corpus panel truth anywhere in the repo, and all nine truth-bearing behaviours are inside the 100-definition corpus via its own `adria:` block.** Q-B is therefore not merely under-tested by L2 — it is untestable by any experiment currently registered, because L2 never produces a relevance judgment and no held-out behaviour has truth to judge against.\n\nMeanwhile L1's relevance clause is (a) already passed by the demolished numbers, (b) unspecified as to which of **three mutually inconsistent relevance ledgers** it means, with base rates spanning 0.005–0.614, and (c) written against a node population 76% of which has never been translated.\n\n**Amendments A1–A12 stand, with these additions:**\n\n- **A13 (F28).** Name the ledger, unit, and threshold in the registration; publish cross-ledger agreement; prohibit re-scoring against a second ledger without a new registration.\n- **A14 (F29).** Q-B requires new out-of-corpus panel truth: ≥3 behaviours × ~80-node uniform fully-ruled draws, definitions frozen per F14, `no-sycophancy` and `undermine-oversight` ineligible as in-corpus. **No amendment substitutes for this one.**\n- **A15 (F30).** Register panel-v5 as the replication tier, gated on a committed passage→node join audit, scored class-aware only.\n- **A16 (F31).** Score on single-process uniform fresh-draw partitions; disclose composition for any assembled stratum.\n- **A17 (F32).** Restructure L1 as a staged translation pre-flight that yields the licensing measurement and the scaling estimate together, with its cost stated as a fraction of the full campaign.\n- **A18 (F33).** Void L1/L2 unless the block-1 STOP RULE and the `metric0: FAIL` results are cleared or superseded by signed ruling; the decision memo enumerates every red gate.\n- **A19 (F35).** The UA seal is off-limits to L1/L2, enforced by a registered test.\n- **A20 (C1).** Every registration states its compute cost, not only its $ cost.\n\n**A14 is the load-bearing one.** Without it, L1 and L2 can both pass and Q-B will be exactly as open as it is today.\n",
-   "source_class": "arc2_docs"
-  },
-  {
-   "id": "S00133",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_REVIEW_DISPOSITION.md",
-   "commit": "pin",
-   "lines": "1-11",
-   "text": "# DISPOSITION — adversarial review of the L1/L2 licensing experiments\n(2026-08-25. The question put to review: would passing L1/L2 as registered\nactually support answering Q-A (complete representability for\nseparation under full retranslation) and Q-B (extension to novel\nbehaviours)? Clean-context Opus reviewer's full report:\nL1L2_ADVERSARIAL_REVIEW.md (36 findings F1-F36, amendments A1-A20).\nVERDICT: DOES-NOT-LICENSE — ACCEPTED after CoVe. L1/L2 as registered\nin RETRANS_REVIEW_DISPOSITION.md are WITHDRAWN as licensing\nexperiments; they survive only as raw material for the amended\npackage below. No retranslation campaign is fundable on them.)\n",
-   "source_class": "arc2_docs"
-  },
-  {
-   "id": "S00134",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_REVIEW_DISPOSITION.md",
-   "commit": "pin",
-   "lines": "12-12",
-   "text": "## CoVe results (driver re-derivations; the review is accepted only",
-   "source_class": "arc2_docs"
+   "id": "S01147",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "3350-3369",
+   "text": "commit 0ecb617d74b4cc873612ac1f65427bdbf73a17ce\nordinal 111\ndate 2026-08-08 01:02:14 -0700\nauthor Matt Stults\nsubject Q-19: section 6 divergence can never fire, and the design is why\n0 divergence records over all 81 legal verdict combinations. Every seat's\nvocabulary is disjoint and every CONTRADICTIONS pair sits inside ONE seat. The\ncode implements the design literally: section 6 says \"two seats reach opposite\nverdicts\" and its own worked example is faithful vs unfaithful, both 4b's.\n\nThis matters more than its size suggests. Section 4.3's guard is that unanimity\nmust not read as confirmation, and section 6 is the mechanism that makes\ndisagreement visible. If it cannot fire, four agreeing seats are the only\npossible outcome -- the failure section 4 exists to prevent.\n\nThree readings offered, none chosen.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   }
  ]
 }

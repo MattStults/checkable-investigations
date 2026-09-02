@@ -1,133 +1,148 @@
 {
  "header": {
   "batch": "batch_082",
-  "source_class": "arc1_cycles",
+  "source_class": "git_log",
   "brief_version": "0.4",
   "glossary_version": "frozen ",
   "spans": 15,
-  "first_span": "S01190",
-  "last_span": "S01204"
+  "first_span": "S01421",
+  "last_span": "S01435"
  },
  "spans": [
   {
-   "id": "S01190",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "24-24",
-   "text": "  \"decision\": \"keep\",",
-   "source_class": "arc1_cycles"
+   "id": "S01421",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7888-7896",
+   "text": "commit ebf10191300355383b3d6498c7d5f1f65c34eb6b\nordinal 385\ndate 2026-08-19 11:29:54 -0700\nauthor Matt Stults\nsubject round-2 fresh-draw prereg DRAFT (unsigned, sha256 b5217b0b...): instrument v12, draws exclude round-1 + adjudicated nodes (tuning reuse disclosed), predictions from v12 measurements, validated single+20%-panel truth protocol, batched with tripwire\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01191",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "25-25",
-   "text": "  \"signed_by\": \"session coordinator (Claude), on Matt's standing authorization for the cycle ladder\"",
-   "source_class": "arc1_cycles"
+   "id": "S01422",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7897-7905",
+   "text": "commit 0f6ff6c8a669c3faf74aaca307880317740568e0\nordinal 386\ndate 2026-08-19 11:57:58 -0700\nauthor Matt Stults\nsubject round-2 prereg SIGNED by Matt at b5217b0b... with execution conditions (decomposition experiment scores first for clean Fable accounting; /usage baseline before batch 1; tripwire carries over); seat-decomposition experiment prereg + seeded sample committed\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01192",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "27-27",
-   "text": " \"dossier_set_sha\": \"508c8aa1606246d5b009babdd64fc0add9032b8c244f3bd2a56a35b7a35c2abc\",",
-   "source_class": "arc1_cycles"
+   "id": "S01423",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7906-7914",
+   "text": "commit d4d4d2ca0ff4c197b3f5cafad99b57636eb772ea\nordinal 387\ndate 2026-08-19 12:05:28 -0700\nauthor Matt Stults\nsubject ROUND-2 helpfulness canary PASSES: precision 31/40=0.78 (band 0.71-0.87), decline 28/40=0.70 (band 0.61-0.77), F4 1/16, F5 1/16 — v12 fixes generalize to never-touched nodes; adaptive execution note recorded pre-scoring; harm/caution proceed under same registration\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01193",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "28-28",
-   "text": " \"flip_tallies\": {},",
-   "source_class": "arc1_cycles"
+   "id": "S01424",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7915-7923",
+   "text": "commit e11587e7a084b0c16e8a2dc3455f9d8f6c761599\nordinal 388\ndate 2026-08-19 12:08:43 -0700\nauthor Matt Stults\nsubject ROUND-2 COMPLETE, scored once each: helpfulness PASSES (0.78/0.70 both in band); harm F1 FIRES (precision 24/40=0.60 vs floor 0.81; decline 0.80 above band); caution F1 FIRES marginally (26/40=0.65 vs floor 0.69; decline 0.72 in band); truth tier clean across all three (F4<=2/16, F5<=1/16). Gate NOT certified. Harm FP census on file: 7/16 = U18 section minor-as-USER conflation (protects ontology defect: 'minor' does not distinguish party role); 5-6/16 = accuracy/format norms unblocked because harm declares no governs_concern; 1 structural\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01194",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "29-29",
-   "text": " \"flips\": [],",
-   "source_class": "arc1_cycles"
+   "id": "S01425",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7924-7932",
+   "text": "commit c31ddb13865260e55c7bbe3cbe3091b7b916d26c\nordinal 389\ndate 2026-08-19 12:15:37 -0700\nauthor Matt Stults\nsubject contract §9 (BINDING, per Matt: into before-next-run TODOs ASAP): 9a dimensional-purity validation of slot vocabularies before annotation (a priori audit flags coincided exactly with measured trouble: minor, safety_of_manner, operational_hygiene, protective_response; purity predicts cheap-seat viability); 9b wall declarations derived a priori from behavior definitions, truth only validates (harm F1 root cause: tuning-on-truth overfit); 9c seat-decomposition rejected at small tiers by pre-registered experiment (DS 0.29/Haiku 0.20, 66%/48% anomalies) — retry only after purity fix; HANDOFF gate block updated\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01195",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "30-30",
-   "text": " \"frozen_manifest_sha\": \"5abae9829bde3198030afa769654f865f5342af3292bca6ed0a602e2251f09c3\",",
-   "source_class": "arc1_cycles"
+   "id": "S01426",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7933-7941",
+   "text": "commit a3fcb81c0bb7ae6ec23b5fad21913055277aeece\nordinal 390\ndate 2026-08-19 12:31:40 -0700\nauthor Matt Stults\nsubject purity migration COMPLETE (contract 9a) + blind a priori walls VALIDATED (9b) = instrument v13: 341 asserts migrated (calibration 4/4 pre-registered PASS; purity validator 0 impure keys; role-pure protects + assert_attributes + contexts), signature_ok supports governs_conditional; blind derivations beat tuned walls on helpfulness (0.78/prec 0.82 vs 0.76/0.78), harm amendment adopted with grounds (minus accuracy: FP 8, prec 0.89), caution conditional measured and rejected (recall cost dominates); caution census: 12/14 governs (tone-register cluster) + 2 org-level; 22 tests pass\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01196",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "31-31",
-   "text": " \"frozen_prediction_sha\": \"07ad0f437ea02e2976577b5dd075c0fbbbd2155ab04368c9dbcca94393284fb6\",",
-   "source_class": "arc1_cycles"
+   "id": "S01427",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7942-7950",
+   "text": "commit 8d383eea78fe02b12f7112ab41134c88e8f5469e\nordinal 391\ndate 2026-08-19 12:33:03 -0700\nauthor Matt Stults\nsubject round-3 prereg DRAFT (unsigned): v13 instrument; harm engaged-set certified as POPULATION (70 modules, 66 ruled, 0.89; adjudicate final 4) instead of unsatisfiable 40-node stratum; help/caution standard strata; ~0.37M est., canary ordering carries over\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01197",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "32-58",
-   "text": " \"gate\": {\n  \"closure_checked\": [\n   \"behaviours_query.json\",\n   \"constitution_clauses.json\",\n   \"modelspec_clauses.json\",\n   \"test_atom_refactor.py\",\n   \"test_grammar.py\",\n   \"test_no_reference_leak.py\",\n   \"thresholds_frozen.json\"\n  ],\n  \"files_changed\": [\n   \"annotations_ext_v1.json\",\n   \"annotations_ext_v1_merged.json\",\n   \"behavior_atoms_audit_v1.json\",\n   \"vocabulary_migrations.json\"\n  ],\n  \"review\": {\n   \"by\": \"change-review seat, Claude (Fable 5), independent session 2026-08-03 — not the implementer\",\n   \"notes\": \"FREEZE: manifest.json/prediction.json sha256 match state.json frozen shas exactly (5abae982…, 07ad0f43…); no manifest_amendments.json present; all 7 closure_shas re-hashed and match. DECLARED DIFF: HEAD (4cf47d6) copies of the 3 tracked files hash to open_shas; vocabulary_migrations.json absent at HEAD and its OPEN sha f4a7f858… independently reproduced as the tool-canonical empty log (atom_refactor._dumps trailing_nl=False); the log's per-migration sha chain links from every OPEN sha to every current on-disk sha with no gaps. ONE UNDECLARED CHANGE, judged non-blocking: chain_audit/worksheet.json moved — it is a DERIVED audit view (chain_audit_worksheet.py builds it deterministically from annotations_ext_v1_merged.json, a declared file); I rebuilt it independently in scratch and it byte-equals the working copy, the untracked pre_repair backup byte-equals the HEAD version, and no query/measurement module reads it — nothing can ride in on it, but the manifest should have declared it, and verdicts.json (old names) no longer validates against the regenerated worksheet (historical-record wrinkle, not pipeline). CONTENT: exactly the 5 rechains from chain_audit/verdicts.json (11 agent_missing across 4 names: disclose 1 + preserve 3 + advise 2 + world_connection 5; 1 unlicensed fold at m0271); n_rewritten counts (3/7/5/11/3) arithmetically consistent with atoms+by_clause mirrors+vocabulary key. Spot-verified 4 corrections against modelspec_clauses.json quotes: m0197 ('the assistant must preserve user agency', 'must be transparently indicated to the user'), m0276 ('always advising that immediate help should be sought'), m0313 ('The assistant should support the user's connection') — assistant is the actor, user the patient, so __model_user is the agent-first chain; m0271's quote names only 'shaming the user' (no developer) while m0170's says 'shouldn't judge the user or developer' — fold correct, retention correct. Verified m0170 retains shouldnot_judge__model_user_developer (confined to m0170; vocabulary key kept) while m0271 carries shouldnot_judge__model_user; ZERO occurrences of any of the 4 old names in all changed artifacts and in annotations_ext_v1_patch.json (manifest note 2 confirmed). REPLAY: copied all 3 tracked artifacts from git HEAD and replayed through vocabulary_migrations.json via atom_refactor.replay_artifact — byte-identical to working tree for all 3. TESTS: gate set (test_atom_refactor.py, test_grammar.py, test_no_reference_leak.py) run twice, 133 passed. MUTANTS: (1) scratch copy of the log with the fold entry's clauses scope corrupted to m0170 — replay byte-compare detects the mismatch; (2) atom_refactor.py rechain scope sabotaged in place (scope=None) — killed by test_rechain_clause_scoped_folds_into_the_existing_key and test_rechain_leaves_unrelated_lines_byte_untouched (2 failed), then restored byte-exact (sha cf2fe287… re-verified, suite re-green). FENCE: all 31 FORBIDDEN tokens scanned against the 4 changed artifacts; sole hit is the substring 'verdicts' inside the reason strings citing chain_audit/verdicts.json — the chain audit's own grammar-verdict file (document-side, contains no panel/judge/label data), a filename collision, not a panel reference; no panel file, loader, or laundering path is named anywhere in the changed artifacts. No panel score, judge rating, or gold value appeared in any material reviewed.\",\n   \"verdict\": \"proceed\"\n  },\n  \"tests_passed\": [\n   \"test_atom_refactor.py\",\n   \"test_grammar.py\",\n   \"test_no_reference_leak.py\"\n  ]\n },",
-   "source_class": "arc1_cycles"
+   "id": "S01428",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7951-7959",
+   "text": "commit d36d6f7b1bb371c1aacb933ec04c9c14e69b7412\nordinal 392\ndate 2026-08-19 12:42:15 -0700\nauthor Matt Stults\nsubject ROUND-3 helpfulness canary: F1 FIRES — precision 28/40=0.70 vs floor 0.77 (decline 0.68 in band; F4 3/16, F5 1/16 acceptable); harm/caution HOLD per execution note, draws unburned; signed 69631bf3 with Matt baseline 71%\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01198",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "33-41",
-   "text": "  \"closure_checked\": [\n   \"behaviours_query.json\",\n   \"constitution_clauses.json\",\n   \"modelspec_clauses.json\",\n   \"test_atom_refactor.py\",\n   \"test_grammar.py\",\n   \"test_no_reference_leak.py\",\n   \"thresholds_frozen.json\"\n  ],",
-   "source_class": "arc1_cycles"
+   "id": "S01429",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7960-7968",
+   "text": "commit 491720884ad6c1468542e07bc202784d7ad514a9\nordinal 393\ndate 2026-08-19 13:13:32 -0700\nauthor Matt Stults\nsubject contract: actor slot required in full (8-addendum), all-truth regression table required pre-prereg (9d), bands from fresh-pool evidence only (9e)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01199",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "42-47",
-   "text": "  \"files_changed\": [\n   \"annotations_ext_v1.json\",\n   \"annotations_ext_v1_merged.json\",\n   \"behavior_atoms_audit_v1.json\",\n   \"vocabulary_migrations.json\"\n  ],",
-   "source_class": "arc1_cycles"
+   "id": "S01430",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7969-7977",
+   "text": "commit c04b80ef8c206ef6b70e78d2e6c0a1891f7b7cfc\nordinal 394\ndate 2026-08-19 13:40:35 -0700\nauthor Matt Stults\nsubject FACTORIZATION EXPERIMENT: telos factorizes through behavior-blind local descriptions — 16/18=0.89 on the hardest FP/TP pairs (7/9 residue FPs rejected, 9/9 TPs kept, blind purpose+failure_mode fields did the work); 'irreducibly relational' claim RETRACTED with evidence; granularity subtype test FAILED its pre-registered bar (64% recovery at 27% TP cost) — vocabulary collapse confirmed as the loss, per Matt's hypothesis; contract 8-addendum-2: purpose/end slot required, mined from document's own ends, annotated behavior-blind, discrepancy census bound as the slot-repair loop\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01200",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "48-52",
-   "text": "  \"review\": {\n   \"by\": \"change-review seat, Claude (Fable 5), independent session 2026-08-03 — not the implementer\",\n   \"notes\": \"FREEZE: manifest.json/prediction.json sha256 match state.json frozen shas exactly (5abae982…, 07ad0f43…); no manifest_amendments.json present; all 7 closure_shas re-hashed and match. DECLARED DIFF: HEAD (4cf47d6) copies of the 3 tracked files hash to open_shas; vocabulary_migrations.json absent at HEAD and its OPEN sha f4a7f858… independently reproduced as the tool-canonical empty log (atom_refactor._dumps trailing_nl=False); the log's per-migration sha chain links from every OPEN sha to every current on-disk sha with no gaps. ONE UNDECLARED CHANGE, judged non-blocking: chain_audit/worksheet.json moved — it is a DERIVED audit view (chain_audit_worksheet.py builds it deterministically from annotations_ext_v1_merged.json, a declared file); I rebuilt it independently in scratch and it byte-equals the working copy, the untracked pre_repair backup byte-equals the HEAD version, and no query/measurement module reads it — nothing can ride in on it, but the manifest should have declared it, and verdicts.json (old names) no longer validates against the regenerated worksheet (historical-record wrinkle, not pipeline). CONTENT: exactly the 5 rechains from chain_audit/verdicts.json (11 agent_missing across 4 names: disclose 1 + preserve 3 + advise 2 + world_connection 5; 1 unlicensed fold at m0271); n_rewritten counts (3/7/5/11/3) arithmetically consistent with atoms+by_clause mirrors+vocabulary key. Spot-verified 4 corrections against modelspec_clauses.json quotes: m0197 ('the assistant must preserve user agency', 'must be transparently indicated to the user'), m0276 ('always advising that immediate help should be sought'), m0313 ('The assistant should support the user's connection') — assistant is the actor, user the patient, so __model_user is the agent-first chain; m0271's quote names only 'shaming the user' (no developer) while m0170's says 'shouldn't judge the user or developer' — fold correct, retention correct. Verified m0170 retains shouldnot_judge__model_user_developer (confined to m0170; vocabulary key kept) while m0271 carries shouldnot_judge__model_user; ZERO occurrences of any of the 4 old names in all changed artifacts and in annotations_ext_v1_patch.json (manifest note 2 confirmed). REPLAY: copied all 3 tracked artifacts from git HEAD and replayed through vocabulary_migrations.json via atom_refactor.replay_artifact — byte-identical to working tree for all 3. TESTS: gate set (test_atom_refactor.py, test_grammar.py, test_no_reference_leak.py) run twice, 133 passed. MUTANTS: (1) scratch copy of the log with the fold entry's clauses scope corrupted to m0170 — replay byte-compare detects the mismatch; (2) atom_refactor.py rechain scope sabotaged in place (scope=None) — killed by test_rechain_clause_scoped_folds_into_the_existing_key and test_rechain_leaves_unrelated_lines_byte_untouched (2 failed), then restored byte-exact (sha cf2fe287… re-verified, suite re-green). FENCE: all 31 FORBIDDEN tokens scanned against the 4 changed artifacts; sole hit is the substring 'verdicts' inside the reason strings citing chain_audit/verdicts.json — the chain audit's own grammar-verdict file (document-side, contains no panel/judge/label data), a filename collision, not a panel reference; no panel file, loader, or laundering path is named anywhere in the changed artifacts. No panel score, judge rating, or gold value appeared in any material reviewed.\",\n   \"verdict\": \"proceed\"\n  },",
-   "source_class": "arc1_cycles"
+   "id": "S01431",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7978-7986",
+   "text": "commit 76e27aeb3a2c89e25ffb035e71b629679afce23c\nordinal 395\ndate 2026-08-19 14:00:40 -0700\nauthor Matt Stults\nsubject document-ends vocabulary mined behavior-blind + purity-checked (10 values; teen-safety/honesty/chain-of-command rejected as non-ends by name); purpose+actor calibration pre-registered incl. the H-R1 permit test case (l609_698_n016: does purpose capture harm-prevention, dissolving the permit-recall class without inheritance)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01201",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "53-57",
-   "text": "  \"tests_passed\": [\n   \"test_atom_refactor.py\",\n   \"test_grammar.py\",\n   \"test_no_reference_leak.py\"\n  ]",
-   "source_class": "arc1_cycles"
+   "id": "S01432",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7987-7995",
+   "text": "commit e002b8164a4cd7fc0d019b636fb25997a184024d\nordinal 396\ndate 2026-08-19 14:06:35 -0700\nauthor Matt Stults\nsubject purpose+actor calibration CLOSED 7/7 (one expectation revised by 3-0 panel: l171_426_n005 purpose=controllability only — registrant's empowerment expectation wrong, n013 precedent); H-R1 CONFIRMED at calibration (permit n016 purpose includes harm-prevention); design tension recorded: purpose walls must be OR-channel or core TPs die (9d will measure); full 985-assert sweep launched (20 batches)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01202",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "59-64",
-   "text": " \"open_shas\": {\n  \"annotations_ext_v1.json\": \"145b2e9afa646150afc7581dfedbc05830acc88ce5a4fa44bc01183cc4f58631\",\n  \"annotations_ext_v1_merged.json\": \"bb6f7aecd7f37b069878300d616b62263dc0b8ca111ab435cc03477e2060bdd3\",\n  \"behavior_atoms_audit_v1.json\": \"1e49a65a945215386b0e104fcbaf1812fbd5395e7fe01f2034d9977c55b1bd0b\",\n  \"vocabulary_migrations.json\": \"f4a7f858b17a88c4b3ec4621e1a5a28d196f4ca9aebb22a175314a1b14d66d95\"\n },",
-   "source_class": "arc1_cycles"
+   "id": "S01433",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7996-8004",
+   "text": "commit f52b51d3b68c1cbd73543e605df0dc8a72854b3a\nordinal 397\ndate 2026-08-19 14:14:16 -0700\nauthor Matt Stults\nsubject purpose+actor sweep COMPLETE: 985/985 labeled, zero malformed (actors: assistant 911 / org 37 / document 26 / developer 11; ends: empowerment 317, harm-prevention 217, well-being 184, controllability 177...); per-field blind spot-check pre-registered (seed 20260823, n=100, floors 0.85) and dispatched\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01203",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "60-60",
-   "text": "  \"annotations_ext_v1.json\": \"145b2e9afa646150afc7581dfedbc05830acc88ce5a4fa44bc01183cc4f58631\",",
-   "source_class": "arc1_cycles"
+   "id": "S01434",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8005-8013",
+   "text": "commit 25da220cbafa990c69771114919c01f175268a41\nordinal 398\ndate 2026-08-19 14:20:52 -0700\nauthor Matt Stults\nsubject instrument v14 (telos+actor COMPLETE): per-field spot-check actor 0.99 PASS, purpose exact-set 0.71 FAIL -> pre-registered verdict-level remedy gate PASSED 0.91/0.94/0.86 (breadth noise priced); blind purpose declarations derived; 9d table: actor wall adopted everywhere (precision up all three, +2/0/0 accuracy), protects-walled purpose OR-channel adopted for HARM only (+3, FN 50->40; unwalled flood 0.66 rejected by name; help/caution channel rejected); H-R1 permit class sharply specified for recall campaign (purpose label carries harm-prevention, protects=user blocks non-flooding designs); v14 byte-stable x2, 22 tests pass\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01204",
-   "path": "semi-formal-experiment/cycles/chain-repair-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "61-61",
-   "text": "  \"annotations_ext_v1_merged.json\": \"bb6f7aecd7f37b069878300d616b62263dc0b8ca111ab435cc03477e2060bdd3\",",
-   "source_class": "arc1_cycles"
+   "id": "S01435",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8014-8022",
+   "text": "commit 8fafaa5560d9c61a3de5d4372c4c8f57503987db\nordinal 399\ndate 2026-08-19 14:22:33 -0700\nauthor Matt Stults\nsubject recall campaign opened: H-R3 mechanical census (115 FNs: actless 35, bridge-gap 33, wall-blocked 32, actor-excluded 15) + H-R2 measured (dep channel recovers only 3-4 actless FNs; harm +2/0-cost adoption candidate, help/caution REJECTED -6/-3; actless class is definitional-relevance, new hypothesis needed)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   }
  ]
 }

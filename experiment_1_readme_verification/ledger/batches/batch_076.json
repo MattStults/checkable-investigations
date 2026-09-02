@@ -1,133 +1,148 @@
 {
  "header": {
   "batch": "batch_076",
-  "source_class": "arc1_docs",
+  "source_class": "git_log",
   "brief_version": "0.4",
   "glossary_version": "frozen ",
   "spans": 15,
-  "first_span": "S01103",
-  "last_span": "S01117"
+  "first_span": "S01331",
+  "last_span": "S01345"
  },
  "spans": [
   {
-   "id": "S01103",
-   "path": "semi-formal-experiment/CYCLE_DESIGN.md",
-   "commit": "pin",
-   "lines": "205-224",
-   "text": "### Gate pins vs declared changes — the trap\n\nA file is either **closure-pinned** (captured at OPEN, must NOT change: the gate refuses\nif it does) or a **declared change** (`files_to_change`: the gate refuses if it does NOT\nchange). Putting a file in the wrong class produces a gate failure that looks like a code\nbug and is not. Two real cases:\n\n* A gate test whose assertions pin the *pre-change* state is closure-pinned by default,\n  but the cycle's own change necessarily turns it red. The fix is a **re-closure**: move\n  it to `files_to_change`, rewriting its pins to the declared state (a *stronger* pin),\n  recorded as an amendment.\n* A test that pins a **live-artifact census count** (`n == 109`, `692 candidates`) will go\n  stale the moment a cycle legitimately changes that artifact. Pin the frozen *input*\n  (a sha-pinned fixture or the frozen worksheet) plus a subset/coherence check — never an\n  exact count of a growing artifact. This failed twice in one cycle, in both S1's test and\n  the operator's own.\n\n**A re-closure made without prior designer sign-off must be FLAGGED FOR THE REVIEW SEAT to\ncountersign or block.** Do not let the operator's convenience silently become policy.\n",
-   "source_class": "arc1_docs"
+   "id": "S01331",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7038-7046",
+   "text": "commit 6fb8a51d18f3c04e5339cdbc583f35aa3d57ca8d\nordinal 295\ndate 2026-08-18 13:22:22 -0700\nauthor Matt Stults\nsubject PREREG SIGNED (Matt Stults, 2026-08-18) at content hash 6848fb5a489aad29 — registration frozen; scoring authorized\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01104",
-   "path": "semi-formal-experiment/CYCLE_DESIGN.md",
-   "commit": "pin",
-   "lines": "225-243",
-   "text": "### Seat conventions\n\n* Every judgment seat gets a written `briefs/` file, a closed output schema, and a\n  mechanical validator. The brief states what the seat may never see.\n* **A cycle's own design document is never seat material** — nor is `PORTFOLIO_REVIEW.md`,\n  prior cycles' `flip_verdicts*.json`, or the census. Design docs pre-register expected\n  outcomes, so handing one to a seat \"for context\" destroys the judgment it was dispatched\n  to make.\n* The coordinator MAY append an **operator addendum** to a driver-written assignment,\n  containing FROZEN FACTS ONLY (mechanism maps, pre-registered expectations already on\n  record). It never overrides the brief and never adds new judgment instructions.\n* **Contested verdicts are recorded as contested.** When two legs of a seat diverge, both\n  document reasons are preserved verbatim, the verdict is `unclear`, and the divergence is\n  flagged for seat-defect review — never resolved by fiat, never averaged, and never\n  re-run at a bigger model to break the tie.\n* A bound-breaching or otherwise decision-critical verdict from a small-model seat gets an\n  independent split-blind verification leg before any decision cites it (the leg learns\n  WHICH items are contested, never which way the first leg ruled).\n",
-   "source_class": "arc1_docs"
+   "id": "S01332",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7047-7055",
+   "text": "commit f19e166fbb7800ef3f72add45cab6d2a92c25e95\nordinal 296\ndate 2026-08-18 13:23:25 -0700\nauthor Matt Stults\nsubject registered cold-start run: agreed-negative sample (seed 20260816) and second-frontier control sample (seed 20260818) drawn; both adjudication passes dispatched\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01105",
-   "path": "semi-formal-experiment/CYCLE_DESIGN.md",
-   "commit": "pin",
-   "lines": "244-252",
-   "text": "### Designer rulings\n\nA ruling is a coordinator decision that resolves something a design left open or that a\nhalt surfaced. It must be **written into the cycle record** (a named `*.md` in the cycle\ndir, or the decision justification), stating the grounds and — where a tempting\nalternative was rejected — **rejecting it by name with the reason**. A ruling that exists\nonly in a dispatch message is transcript-only procedure, which `REPRODUCIBILITY.md`\nclasses as a review finding.\n",
-   "source_class": "arc1_docs"
+   "id": "S01333",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7056-7064",
+   "text": "commit c783bfc58f2eedb6144cef65bbbb5ccf51fb551a\nordinal 297\ndate 2026-08-18 13:24:21 -0700\nauthor Matt Stults\nsubject registered run: agreed-negative rulings (13/45 relevant — the shared recall floor beneath both instruments)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01106",
-   "path": "semi-formal-experiment/CYCLE_DESIGN.md",
-   "commit": "pin",
-   "lines": "253-261",
-   "text": "### Commit at CLOSE\n\nThe driver NEVER runs git. CLOSE drafts `commit_message.txt` and `staging_list.txt`\n(= `files_to_change` ∪ the cycle dir); the coordinator stages, verifies, and commits.\nStaging often needs MORE than the list: newly created modules/tests, `conftest.py`\nregistrations, new fixtures, the published snapshot, and `cycles/CYCLE_LOG.jsonl` — whose\nline may lag the previous cycle's commit and ride the next one. Check `git status` against\nthe list rather than trusting either alone.\n",
-   "source_class": "arc1_docs"
+   "id": "S01334",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7065-7079",
+   "text": "commit 49f5c1f686416a6518945b8a6e7fab69782ac0c8\nordinal 298\ndate 2026-08-18 13:26:18 -0700\nauthor Matt Stults\nsubject REGISTERED RESULT (cold-start arm): falsifiers FIRED — not panel-equivalent; validity control 77% (<80%) downgrades tier to single-model\nMetric 0 tool deviation defensibility 0.66/0.35/0.56 vs panel 0.88/0.81/1.00.\nEngagement defensibility strong (0.85-0.88 on two behaviors; harm-avoidance\n0.56 breaches the 0.60 floor); decline defensibility near zero — recall\nfailure sinks the symmetric metric. Registration critique recorded (panel\nmisses enter only via the 13/45 shared floor). Result stands as written.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01107",
-   "path": "semi-formal-experiment/machine/README.md",
-   "commit": "pin",
-   "lines": "1-12",
-   "text": "# `machine/` — the repo's own governance machine, as a queryable model\n\nQuestions about the cycle/seat/gate system used to be grep expeditions across\n`CYCLE_DESIGN.md`, `MODULE_MAP.md`, `REPRODUCIBILITY.md`, `briefs/` and\n`cycle.py`. This directory makes them queries.\n\n**This is a transcription, not a design.** Every fact restates a rule already\nwritten somewhere in the repo and carries the `file:line` it came from. Where a\nrule is stated nowhere, it is recorded as a GAP below — never invented into the\nmodel. `cycle.py` is the ENFORCEMENT and is authoritative over prose; where they\ndisagree, the disagreement is itself a fact (`disagreement/3`).\n",
-   "source_class": "arc1_docs"
+   "id": "S01335",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7080-7095",
+   "text": "commit 24caec16639f4d13a33679c9dcdd4c8daf6688cc\nordinal 299\ndate 2026-08-18 13:31:29 -0700\nauthor Matt Stults\nsubject general layer fixes (post-registered-result): seat brief gains party-scope test + calibrated doubt; BEHAVIOR_CHECKLIST.md; arm-2 split drawn\nBoth fixes are licensed by the registered result and apply to ALL behaviors\n(layer 1/3), not to any behavior's atoms — the cold-start registration is\nalready scored and closed, so these do not contaminate it. The brief's\nfail-closed rule (designed for the formal-query stage) produced 0.00-0.19\ndecline defensibility at the relevance stage; replaced by an ESTABLISHES-\nanchored calibration. Party-scope test added (harm-avoidance 0.56 breach).\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01108",
-   "path": "semi-formal-experiment/machine/README.md",
-   "commit": "pin",
-   "lines": "13-42",
-   "text": "## Run it\n\n```\n.venv/bin/python machine/check_model.py              # the validator: 4 checks\n.venv/bin/python machine/check_model.py --self-test  # RED-first proof, then GREEN\n.venv/bin/python machine/scan.py                     # regenerate scanned.lp\n.venv/bin/python machine/query.py                    # question list\n```\n\nRecurring questions:\n\n```\nmachine/query.py human-seats            # which seats are human?\nmachine/query.py seats                  # tier x scaling unit x producer x validator\nmachine/query.py scaling per_flip       # which seats scale per flip?\nmachine/query.py gate g_flip_budget     # what does gate X bind / read / refuse on?\nmachine/query.py gates measure          # every gate in front of a phase\nmachine/query.py constant flip_budget   # where did constant Y come from?\nmachine/query.py constants              # every constant with its provenance\nmachine/query.py phases checkpoint      # phase order + overridability\nmachine/query.py artifacts measure      # what a phase produces/consumes\nmachine/query.py contradictions         # what contradictions exist?\nmachine/query.py disagreements          # recorded prose/code disagreements\nmachine/query.py source seat_tier       # the file:line behind any fact\n```\n\n`clingo` (5.8.0, in `.venv`) does all the reasoning; `query.py` is a thin\nrunner. `check_model.py`'s source and differential checks work without a solve;\nonly the acceptance check needs clingo.\n",
-   "source_class": "arc1_docs"
+   "id": "S01336",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7096-7104",
+   "text": "commit 2154aa8969a97943bf468577ab1c93980d6d65f4\nordinal 300\ndate 2026-08-18 13:46:13 -0700\nauthor Matt Stults\nsubject ROSETTA.md: global atoms / per-document stone / document ontology — direction recorded, second-document gate stated\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01109",
-   "path": "semi-formal-experiment/machine/README.md",
-   "commit": "pin",
-   "lines": "43-54",
-   "text": "## Files\n\n| file | what it is |\n|---|---|\n| `facts.lp` | THE MODEL, hand-transcribed. 281 facts, each with a `source/3` + `needle/2` companion (955 more come from `scanned.lp`). |\n| `scanned.lp` | GENERATED by `scan.py`. Facts nobody chose: retraction/assertion pairs, verdict records, the live cause taxonomy. |\n| `rules.lp` | the integrity constraints. Derives `contradiction(Kind,A,B)`; the `strict` subprogram turns them into real `:- ` constraints. |\n| `semantics.lp` | the allow/refuse fragment — what the model PREDICTS `cycle.py` will do, used by the differential check. |\n| `scan.py` | the mechanical extractor. |\n| `query.py` | the question runner. |\n| `check_model.py` | THE VALIDATOR (below). |\n",
-   "source_class": "arc1_docs"
+   "id": "S01337",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7105-7113",
+   "text": "commit d84db055a709de71a5238fb076575aefefb40580\nordinal 301\ndate 2026-08-18 13:47:12 -0700\nauthor Matt Stults\nsubject arm 2: rosetta stone persisted in the matcher (lookup before spend); --atoms/--tag for tuned runs; harm-avoidance round-1 tuned atoms saved\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01110",
-   "path": "semi-formal-experiment/machine/README.md",
-   "commit": "pin",
-   "lines": "55-78",
-   "text": "## What the model covers\n\n* **Phases** — `PHASES_BY_SHAPE` for both shapes (`code`, `checkpoint`), in\n  order, with overridability derived from `cycle.OVERRIDABLE` and the refusal at\n  `cycle.py:553` that makes the complement exhaustive. Plus the PREDICT\n  demotion (`exploratory` ⇒ CLOSE refuses `keep`).\n* **Gates** — 20 gates: what each blocks, what artifact/state it reads, which\n  named constants its refusal turns on, and every condition it refuses on\n  (quoted from the refusal message). Documented escape paths that are *not*\n  `--override` are modelled separately (`escape_path`, `escape_validates_only`,\n  `escape_unverified`).\n* **Seats** — 12 seats (every file in `briefs/`): brief path, model tier\n  (haiku / frontier / human — a seat may carry two when the repo says\n  \"a human, or a frontier model\"), producer, validator, the phase it is used\n  at, and its **scaling unit**: `per_flip`, `per_cycle`, `per_document`,\n  `per_dossier`, `per_worksheet_row`, `per_behaviour`, `per_corpus`.\n* **Constants** — 10, each with value, `file:line`, and PROVENANCE:\n  `derived` (a document shows the derivation; `derivation/2` names it) vs\n  `chosen` (asserted, no derivation exists anywhere).\n  `FLIP_BUDGET = 30` is `chosen`; `NOISE_FLOOR = (0.0316, 0.037)` is `derived`.\n* **Artifacts** — produces/consumes per phase.\n* **Contradiction evidence** — mechanically scanned claim retractions/\n  assertions and every verdict-shaped JSON artifact in the repo.\n",
-   "source_class": "arc1_docs"
+   "id": "S01338",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7114-7122",
+   "text": "commit 43f550a73cc7075728804b5327fa2ac5519b4fbb\nordinal 302\ndate 2026-08-18 13:54:07 -0700\nauthor Matt Stults\nsubject arm 2 harm-avoidance r1: tuned match run (65 engaged; only 9/46 held-out — flagged for scoring); stone keyed by atom IDENTITY not gloss text (Matt's saturation claim); first stone entries persisted\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01111",
-   "path": "semi-formal-experiment/machine/README.md",
-   "commit": "pin",
-   "lines": "79-97",
-   "text": "## What it does NOT cover\n\n* **Only the cycle machine.** The scoring pipeline (annotate → atoms → query →\n  benchmark), the panel, the anti-cheat perimeter and the FORBIDDEN/QUERY module\n  fences are out of scope except where a cycle gate reads them.\n* **No temporal semantics.** The model says what each gate refuses on, not the\n  full state-machine trace. `semantics.lp` covers exactly the three gate\n  families the differential check drives (override, flip budget, DECIDE).\n* **`HARNESS_REDESIGN.md` is excluded entirely** from the scan\n  (`scan_excluded/2` records why): other agents are editing it, so any line\n  citation into it would be stale before it was read. Its content is therefore\n  invisible to the model — including anything it says about `FLIP_BUDGET`.\n* **The retraction scan reads only top-level `.py`/`.md`.** Subdirectory design\n  docs (`cycles/*/`, `vocab_gap/`) are not scanned for retracted claims.\n* **`cycle.py`'s OPEN/IMPLEMENT/CENSUS phases are not driven end to end** by the\n  differential check — they need a real repo tree and real subprocesses. Their\n  refusal conditions are transcribed and source-checked, not differentially\n  tested. MEASURE, DECIDE and the override path *are* driven for real.\n",
-   "source_class": "arc1_docs"
+   "id": "S01339",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7123-7137",
+   "text": "commit c47e2f7530897f4789ff7a9e4e6affd7ac4eac12\nordinal 303\ndate 2026-08-18 13:57:20 -0700\nauthor Matt Stults\nsubject ARM 2 harm-avoidance ROUND 1: held-out deviation-defensibility 0.31 -> 0.72, recall 0.30 -> 0.70 (fresh adjudicators, probe folded); ROSETTA corrected — behavior is an ASP module in global predicates\nRetrieval beam, not the seat, capped the raw held-out engagement (9/46);\nthe probe over the 35 unretrieved held-out nodes engaged 16 — the layer-3\nfix (wider beam for tuned arms) is general infrastructure and comes next.\nMatt's correction recorded: the tuner emits a MODULE from round 2 on, the\nstone binds predicates, render_behavior_module consumes the translation.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01112",
-   "path": "semi-formal-experiment/machine/README.md",
-   "commit": "pin",
-   "lines": "98-157",
-   "text": "## The validator: three independent checks\n\n`check_model.py` (plus the acceptance test):\n\n**(a) SOURCE CHECK.** Every fact must carry `source(Fact, File, Line)` and\n`needle(Fact, Text)`; the file must exist, the line must exist, and the needle\nmust appear at that line (Unicode dashes and whitespace normalised). It also\nflags facts with no citation and citations to facts that do not exist. This\ncaught 26 wrong line numbers in the first draft of `facts.lp`, including several\nthat had drifted because concurrent edits moved `HANDOFF.md` by 55 lines.\n\n**(b) DIFFERENTIAL CHECK against `cycle.py` — 282 comparisons.** The strongest\ncheck. It imports `cycle.py` and:\n\n* compares every closed vocabulary and constant *set-for-set* (`FLIP_BUDGET`,\n  `OVERRIDABLE`, `PHASES_BY_SHAPE` incl. positions, `DECISION_VALUES`,\n  `DIRECTIONS`, `DEV_CENSUS_CELLS`, `CLOSURE_DEFAULTS`) — an *extra* member is\n  as wrong as a missing one, since it would widen a gate's accepted set;\n* drives `Cycle._override` for real over the full 8×8×2 matrix of\n  (current phase × `--override` target × reason present/absent) and compares\n  allow/refuse against `semantics.lp`;\n* drives `Cycle._measure` for real (with `_run` stubbed so no snapshot\n  subprocess runs) over flips ∈ {0,1,29,30,31,34,60} × 5 plan shapes, comparing\n  halt / proceed / refuse;\n* drives `Cycle._decide` for real over all 96 combinations of\n  decision × signed × justified × exploratory × prediction-failed × overridden.\n\n**(c) KNOWN-ANSWER SET.** The five answers established by hand, each asserted\nboth positively and negatively (the model must say the right thing *and* must\nnot say the wrong thing):\n\n1. the flip adjudicator is a MODEL seat (haiku-operable), not human;\n2. `change_reviewer` and `decision_signer` are per-CYCLE, not per-flip;\n3. `FLIP_BUDGET = 30` provenance is `chosen`, not `derived`;\n4. PREDICT-freeze, ADJUDICATE-validation and the DECIDE signature are\n   non-overridable (overriding PREDICT *demotes* rather than waives);\n5. the `stratified_sample` escape validates only a resolution string and a\n   non-empty rationale — no code draws or verifies the sample.\n\n**RED-FIRST.** `--self-test` first proves each check fails for its own named\nreason on a deliberately wrong model — a fabricated source line, a needle that\nis not there, an unsourced fact, the flip adjudicator mislabelled human,\n`FLIP_BUDGET` marked `derived`, a per-cycle seat relabelled per-flip, a constant\nthat disagrees with `cycle.py`, a phase wrongly marked overridable — and only\nthen runs GREEN. Output:\n\n```\nRED — each deliberately wrong model must be REJECTED for its own named reason:\n  [PASS] fabricated source line\n  [PASS] needle absent from the cited line\n  [PASS] fact with no source companion\n  [PASS] seat mislabelled human\n  [PASS] FLIP_BUDGET marked derived\n  [PASS] a per-cycle seat relabelled per-flip\n  [PASS] a constant that disagrees with cycle.py\n  [PASS] a phase wrongly marked overridable\n\nRED — the acceptance test must fail when the scanned evidence for a known contradiction is removed:\n  [PASS] section.py retraction evidence deleted\n  [PASS] both_defensible verdict evidence deleted",
-   "source_class": "arc1_docs"
+   "id": "S01340",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7138-7146",
+   "text": "commit 6dba0095f60f5ca23a9e15bdd9c060358967ea8e\nordinal 304\ndate 2026-08-18 14:03:48 -0700\nauthor Matt Stults\nsubject BEHAVIOR_MODULE_SPEC.md: behavior = structured ASP module in global predicates; branch structure explicit; atoms derived; per-branch coverage reported\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01113",
-   "path": "semi-formal-experiment/machine/README.md",
-   "commit": "pin",
-   "lines": "158-165",
-   "text": "\nGREEN — the real model must pass all four checks:\nPASS (a) SOURCE CHECK\nPASS (b) DIFFERENTIAL CHECK vs cycle.py (282 comparisons)\nPASS (c) KNOWN-ANSWER SET\nPASS (*) ACCEPTANCE TEST\n```\n",
-   "source_class": "arc1_docs"
+   "id": "S01341",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7147-7155",
+   "text": "commit 38209046f9bdc518622ad84ca7f165ad28acf4c2\nordinal 305\ndate 2026-08-18 14:04:12 -0700\nauthor Matt Stults\nsubject arm 2 layer-3 fix: TOP_K_TUNED=24 for tuned arms (cold-start TOP_K frozen); matcher accepts BEHAVIOR_MODULE_SPEC-shaped files\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01114",
-   "path": "semi-formal-experiment/machine/README.md",
-   "commit": "pin",
-   "lines": "166-195",
-   "text": "## The acceptance test: both known contradictions surfaced\n\n**PASSED, and neither was special-cased.** `scan.py` walks the repo without\nbeing told where to look; `rules.lp` fires on what it finds.\n\n1. **`section.py`'s retracted −0.143.** Rule: *a numeric claim retracted on one\n   line of a file and still asserted on other lines of the same file*. The scan\n   finds retraction markers (`RETRACTED`/`WITHDRAWN`) anywhere in the repo's\n   top-level `.py`/`.md`, takes the numeric literals off those lines, and looks\n   for them asserted elsewhere. Result includes\n   `contradiction(retracted_claim_still_asserted_in_same_file,\"-0.143\",\"section.py\")`\n   — the retraction sits at `section.py:480`, the live assertions at `:82` and\n   `:326`. (`REPO_TRAPS.md` §3 independently documents the same trap, which is\n   a confirmation, not the source: the model was not given it.)\n\n2. **The 27 `both_defensible` verdicts.** Rule: *a verdict whose `side` asserts\n   no fault while its `cause` names a fault*. `side = both_defensible` means\n   \"the text genuinely supports both readings\" (`briefs/disagreement_autopsy.md:140`),\n   and the `CAUSE_TAXONOMY` marks each cause `FP` / `FN` / `either` — where\n   `FP`/`FN` name a tool error (the validator itself pairs cause kind with the\n   dossier's FP/FN kind at `audit_disagreements.py:532`) and two dedicated\n   `either`-kind causes, `boundary_dispute_tool_defensible` and\n   `boundary_dispute_panel_defensible`, exist for genuinely two-sided cases.\n   Result: exactly **27** hits in\n   `audit_dossiers/ext_v1_merged__audit_v1/verdicts_merged.json`\n   (14 `fp_threshold_drift`, 13 `fp_promiscuous_atom`). **The two\n   `either`-kind boundary_dispute causes are used ZERO times in the whole\n   294-case census** — every genuinely defensible case was filed under a\n   fault-asserting cause instead.\n",
-   "source_class": "arc1_docs"
+   "id": "S01342",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7156-7164",
+   "text": "commit 233b26cd30a3b6c3dd4510d7d914b2526541bb34\nordinal 306\ndate 2026-08-18 14:05:52 -0700\nauthor Matt Stults\nsubject arm 2 caution round 1: first BEHAVIOR_MODULE_SPEC-shaped module (10 atoms, 3 conditions, 20 does-rules deriving over_caution/under_caution/violates); tuned match launched at TOP_K 24\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01115",
-   "path": "semi-formal-experiment/machine/README.md",
-   "commit": "pin",
-   "lines": "196-240",
-   "text": "## GAPS — rules stated nowhere\n\n1. **`FLIP_BUDGET = 30` has no derivation.** The only upstream statement is\n   `ITERATION_LOOP.md` policy 4: *\"more flips than can be exhaustively\n   adjudicated (guideline: ~30)\"*. Nothing shows how 30 was arrived at, and\n   nothing says why the code enforces a strict `>` (30 flips passes, 31 halts)\n   against a *guideline*. Recorded `provenance(flip_budget, chosen)`.\n2. **The stratified-sample escape is unenforced.** `flip_budget_plan.json` with\n   `resolution: stratified_sample` and a non-empty rationale lets MEASURE\n   proceed; every flip is dossiered, and **no code draws the strata, checks\n   strata coverage, or verifies the adjudicated set against\n   behaviour × direction × cause.** The pre-registration is honour-system.\n   `BUDGET_HALT` names the strata; nothing checks them.\n3. **`FANOUT_DEGENERATE = 5`, `CLOSURE_DEFAULTS`, `DEV_CENSUS_CELLS`,\n   `DIRECTIONS`, `DECISION_VALUES` are all `chosen`** — reasonable choices with\n   stated rationales, but no derivations. Five gates refuse on a `chosen`\n   constant (`machine/query.py contradictions gate_reads_chosen_constant`).\n   This is not a defect per se; it is a list of the places where a refusal\n   rests on an unjustified number.\n4. **`attribution_author` has no producer and no validator.** `briefs/README.md`\n   says \"Producer/validator NOT YET BUILT\". The sandwich rule (leg 3) is\n   therefore unmet for that seat; it is a designed-but-unfenced seat.\n5. **`golden_review` has no mechanical validator** — `MODULE_MAP.md:280`\n   records it as `—`. Same class as (4), but deliberate: it is a human/frontier\n   audit seat over a file that the author seat's sha-freeze already pins.\n6. **`density_editor` is in `briefs/` but not in `briefs/README.md`'s list**,\n   which still says \"**11** as of 2026-08-05\" while `ls briefs/*.md` returns 12.\n   The list warns about itself (\"this list has gone stale before\"); it has.\n7. **Nothing states a seat's scaling unit as a first-class property.** Each\n   unit here is read off the brief's opening sentence (\"You adjudicate ONE flip\n   at a time\", \"for every row of a worksheet\", \"one cycle's keep-or-revert\").\n   There is no repo-wide statement of which seats scale with the size of a\n   measurement — which is the property that decides what a change costs.\n8. **No rule states what happens when two seats' legs diverge below the\n   escalation bar.** `CYCLE_DESIGN.md` covers contested verdicts (recorded as\n   contested, `unclear`, flagged) and `drift_standing.md` sets a >10%\n   divergence bar; nothing covers divergence under the bar.\n9. **The no-op short-circuit is undocumented as an ADJUDICATE bypass.**\n   `cycle.py:964-969` appends `ADJUDICATE` (and `CENSUS`) to `state.completed`\n   when the diff is a no-op. `CYCLE_DESIGN.md` F5 calls ADJUDICATE-validation\n   non-overridable; this path completes it without validating anything. It is\n   defensible (zero flips ⇒ nothing to adjudicate, and\n   `_append_vacuous_checks` records the skipped targets as `PASS_VACUOUS`), but\n   the design document does not name it as an exception.\n",
-   "source_class": "arc1_docs"
+   "id": "S01343",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7165-7173",
+   "text": "commit b7eb84944b673bea07d5b2d5dee5c1dcf067ee66\nordinal 307\ndate 2026-08-18 14:17:02 -0700\nauthor Matt Stults\nsubject arm 2 round 1 summary: harm-avoidance 0.31->0.72, caution 0.64->0.67 (held-out, fresh adjudicators); first module with per-branch coverage (38 over / 33 under)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01116",
-   "path": "semi-formal-experiment/machine/README.md",
-   "commit": "pin",
-   "lines": "241-253",
-   "text": "## PROSE/CODE DISAGREEMENTS found\n\nQuery them with `machine/query.py disagreements`. In `cycle.py`'s favour every\ntime — it is the enforcement.\n\n| # | prose says | code does |\n|---|---|---|\n| 1 | `CYCLE_DESIGN.md` F5 marks the *\"this workspace has concurrent agents and no git\"* rationale **STALE**, corrected per PORTFOLIO_REVIEW F12 (the repo IS git-tracked) | `cycle.py:846` still prints that exact stale rationale in the closure-drift refusal the operator reads |\n| 2 | `CYCLE_DESIGN.md`'s numbered *Phases* list still has **CENSUS as phase 6** of the cycle | `PHASES_BY_SHAPE` puts CENSUS only in the `checkpoint` shape (BINDING AMENDMENT F1 supersedes the list above it, but the list was never edited) |\n| 3 | `CYCLE_DESIGN.md` phase 2: `prediction.json` holds *expected_shrink / must_not_grow over the closed cause taxonomy* | `_predict` requires mechanism-level targets and accepts `census_classes` only in the checkpoint shape (F1) |\n| 4 | `briefs/README.md`: **11 briefs** as of 2026-08-05 | 12 files in `briefs/`; `density_editor.md` is unlisted |\n| 5 | `briefs/disagreement_autopsy.md:144`: *\"a tool that was wrong for a mechanical reason still gets its mechanical cause, and a tool that was right can still carry a cause\"* — i.e. `side` and `cause` are independent | the `CAUSE_TAXONOMY` gives FP/FN causes a fault-asserting meaning and supplies dedicated `either`-kind `boundary_dispute_*` causes for defensible cases. **This is the licensing text for acceptance-test contradiction 2**: the brief authorises the pattern the taxonomy's own type system forbids, and the two `either` causes go unused. |\n",
-   "source_class": "arc1_docs"
+   "id": "S01344",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7174-7182",
+   "text": "commit 281a74fd54ec43881b99f5f75ebde08de5c4eeab\nordinal 308\ndate 2026-08-18 15:06:54 -0700\nauthor Matt Stults\nsubject arm 2: helpfulness r1 module + harm-avoidance r2 module (3 branches, 12/12 ids preserved for stone reuse)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01117",
-   "path": "semi-formal-experiment/machine/README.md",
-   "commit": "pin",
-   "lines": "254-266",
-   "text": "## Known imprecision in the retraction scan\n\nThe scan reports 14 same-file retraction/assertion pairs. `section.py`'s\n−0.143 and `test_structural.py`'s +0.310 / ±0.06 look like genuine live\ncontradictions. Three are a precision limit rather than a finding: in\n`structural.py:323` and `ontology_prompt.md:181` the retraction line itself\n*names the numbers it is suspending* (\"GATE SUSPENDED: +0.340 is DRAW0 …\"), so\nthose numbers reappearing elsewhere in the file is expected. `REPO_TRAPS.md`'s\nhit is the document *about* the `section.py` trap. The rule is deliberately\nkept loose — a retraction that names its own number is exactly the shape the\nscanner cannot distinguish from a retraction that failed to propagate, and\nnarrowing it would have missed `section.py`.\n",
-   "source_class": "arc1_docs"
+   "id": "S01345",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7183-7191",
+   "text": "commit 212398ce7bcc25c8ef0c43aa9c7bd1b95df5b267\nordinal 309\ndate 2026-08-18 15:07:33 -0700\nauthor Matt Stults\nsubject FIRST CONTRADICTION RESULT on a concrete case: S4 over-cautious refusal -> 1 conflict (forbid judge_user), compliant instance -> 0; act-level seam contract identified as the corpus-wide prerequisite\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewWexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   }
  ]
 }

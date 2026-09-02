@@ -1,133 +1,148 @@
 {
  "header": {
   "batch": "batch_086",
-  "source_class": "arc1_cycles",
+  "source_class": "git_log",
   "brief_version": "0.4",
   "glossary_version": "frozen ",
   "spans": 15,
-  "first_span": "S01250",
-  "last_span": "S01264"
+  "first_span": "S01481",
+  "last_span": "S01495"
  },
  "spans": [
   {
-   "id": "S01250",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "7-7",
-   "text": "  \"behaviours_query.json\": \"48dbd8fb0720ce187423d37daf34e415ebbc58a28166619a0b2800b0a1f32d57\",",
-   "source_class": "arc1_cycles"
+   "id": "S01481",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8421-8428",
+   "text": "commit 0c70dfacd8eeb7d643eb6237f449b5a987e81ae3\nordinal 445\ndate 2026-08-21 13:20:14 -0700\nauthor Matt Stults\nsubject Arc1-b first pass: two-seat blind annotation on 583/762 covered nodes — form_equivalence agreement 0.9895 consensus 10 (M3/M4 pass), exhibit:illustrate agreement 0.9987 consensus 169 (M4 STOP per frozen band O(10-30)); coverage defect disclosed: all 179 unjudged nodes are assert-less example-class nodes incl. 22 census mismatches and collider l831_1000_n001 — M2 not evaluable on harm collider; nothing adopted; assembly marked PARTIAL; M4 revision ruling requested in prereg addendum 1\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01251",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "8-8",
-   "text": "  \"constitution_clauses.json\": \"a264e1a07d8a79eaa37710b8c6e25808a0d2807cb55e3ad3716ca422019f06e9\",",
-   "source_class": "arc1_cycles"
+   "id": "S01482",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8429-8436",
+   "text": "commit 19f161aac199defd7ecfb4493ae03f8810b5852a\nordinal 446\ndate 2026-08-21 15:39:21 -0700\nauthor Matt Stults\nsubject Arc1-b extension: M4 revision signed by Matt (pathology = seat disagreement or incoherent quotes, not count); 179 packets built for the unjudged assert-less nodes — 172 from node_corpus_all.json (the canonical full-corpus packet source, same format as the context lane), 7 from later graph builds (frontier-repair era, resolved by graph scan); four extension seats dispatched on ctx_ext1-3\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01252",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "9-9",
-   "text": "  \"modelspec_clauses.json\": \"c6be91a0c0eb25c9f10bea9947547f64416cdd18e8f5e64b14c354a43b87b546\",",
-   "source_class": "arc1_cycles"
+   "id": "S01483",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8437-8443",
+   "text": "commit 4a83679e4b3be97e35ce10181840c1ab11fdf685\nordinal 447\ndate 2026-08-21 15:47:32 -0700\nauthor Matt Stults\nsubject Arc1-e correction 3 (re-review round 2 resolved): scope ruling recorded — CURRENT = frozen instrument PER BEHAVIOR (dead slots masked: contexts always, protects/purposes unless declared), REACHABLE = design space (all declarable slots + consensus atoms); third false SEPARABLE reclassified (harm::l1542_1706_n006, separated only by the inert contexts slot); 12 addressable_by_declaration rows surfaced as 9b's design signal; standing dead-slot probe test codified (the reviewer's meta-criterion); E1 corrected to 7 CURRENT + 1 design-space-only with disclosure; denominator erratum (2 of 140); rejected alternative named in addendum 3; 34 tests green\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01253",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "10-10",
-   "text": "  \"overlay_empty.json\": \"3f3adca9ee17a196ce155f3f900711622b2d99ced863667de9bc823df40cf99e\",",
-   "source_class": "arc1_cycles"
+   "id": "S01484",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8444-8450",
+   "text": "commit 9bc1cd9aa9b59e32d1fb499dbb315065dbd29ce1\nordinal 448\ndate 2026-08-21 15:50:24 -0700\nauthor Matt Stults\nsubject Arc1-b extension sanitization: all four extension seats rejected by provider input inspection (the 179-node extension set concentrates the document's prohibited-content examples); ruling recorded — both criteria judge FORM only, so 15 flagged nodes annotated on category-label-sanitized text with structure untouched; manifest + sanitized chunks committed; human-seat fallback kept as named contingency\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01254",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "11-11",
-   "text": "  \"test_dechain.py\": \"cf89637b42aca1847c1740a852f3ffb6cf98c1993cce90307a5f1b1283a3680d\",",
-   "source_class": "arc1_cycles"
+   "id": "S01485",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8451-8457",
+   "text": "commit 667916d283c2a1d1b3f5fb3107f10e9a4385119d\nordinal 449\ndate 2026-08-21 15:53:34 -0700\nauthor Matt Stults\nsubject Arc1-b extension: sanitization insufficient (inspection reads context around labels; v2 screen had dropped minors/gore/violence) — contingency activated: 15 hot nodes carved out to a human seat (Matt; packet committed with both criteria and answer format), four seats re-dispatched on 164-node clean chunks raw; sanitized outputs discarded if any survive; consensus rule for hot nodes = human judgment + mechanical structure screen as second blind signal\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01255",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "12-12",
-   "text": "  \"test_no_reference_leak.py\": \"87d7b6d6c6bbbe00da4158932420f781fc306301e654f2ad495aa97ee1103fe6\",",
-   "source_class": "arc1_cycles"
+   "id": "S01486",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8458-8465",
+   "text": "commit 7bff7accac0a93ba8c62333021e3a9e1b6569012\nordinal 450\ndate 2026-08-21 15:54:43 -0700\nauthor Matt Stults\nsubject Arc1-b hot-node mechanical structure screen: second blind signal for the human seat, deterministic over source text, built BEFORE any human judgment exists — exhibit signals on 5/15 nodes (incl. collider l831_1000_n001: bold Example label + speaker markup), zero form-equivalence phrase hits on all 15; consensus-presence rule applies at assembly\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01256",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "13-13",
-   "text": "  \"thresholds_frozen.json\": \"60d1273a4e0ac3a4de0eb2a44481b763531491c8c0884387529014dcb724251a\"",
-   "source_class": "arc1_cycles"
+   "id": "S01487",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8466-8472",
+   "text": "commit 0a0681ac79a711bab3156de1dca6743c775ca563\nordinal 451\ndate 2026-08-21 15:56:10 -0700\nauthor Matt Stults\nsubject Arc1-b venue ruling: clean-chunk seats also rejected by provider inspection — the assert-less extension stratum is the document's example layer and no carve/sanitize fixes it without biasing the exhibit criterion; extension annotation moves to the doctrinal venue (two fresh Claude-side sessions per MINT_EXT_SEAT_BRIEF.md, refusal-tolerant, consensus rule unchanged); refused nodes fall back to human packet + mechanical screen; first-pass results stand\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01257",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "15-23",
-   "text": " \"completed\": [\n  \"OPEN\",\n  \"PREDICT\",\n  \"IMPLEMENT\",\n  \"MEASURE\",\n  \"ADJUDICATE\",\n  \"DECIDE\",\n  \"CLOSE\"\n ],",
-   "source_class": "arc1_cycles"
+   "id": "S01488",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8473-8480",
+   "text": "commit 29e831d5cb51cb023fc2d1d009f2850009d2698d\nordinal 452\ndate 2026-08-21 15:59:30 -0700\nauthor Matt Stults\nsubject Arc1-e round-3 review resolved: dead-slot probe rebuilt with independent ground truth — SLOT_INVENTORY + DEAD_SLOTS_PINNED registration fence, current_mask-vs-pin assertion, pinned-mask verdict re-derivation, and slot-arity handshake so the Arc1-b vector edit fails loud without a reviewed update (the old probe was tautological: dead|{slot}==dead, reviewer mutation-proved it); E1 miscount corrected in place (all 8 E1 separations stand CURRENT-separable; n012 was never an E1 flip — error inherited from the round-2 report, owned in the addendum); n006 addressability clarified as in-principle-only pending the vector extension; 34 tests green\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01258",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "24-24",
-   "text": " \"cycle\": \"decoration-blind-join-2026-08-04\",",
-   "source_class": "arc1_cycles"
+   "id": "S01489",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8481-8488",
+   "text": "commit 3640510e2886347f46060d5c8682282da749a7b8\nordinal 453\ndate 2026-08-21 16:03:45 -0700\nauthor Matt Stults\nsubject Arc1-e closed: adversarial verdict CLEAR (round 4) — census addendum-3 semantics certified, standing pinned probe mutation-verified by the reviewer, 9b cleared to consume the corrected census\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01259",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "25-28",
-   "text": " \"decision\": {\n  \"decision\": \"keep\",\n  \"signed_by\": \"session coordinator (Claude), on Matt's standing authorization for the reviewed portfolio order\"\n },",
-   "source_class": "arc1_cycles"
+   "id": "S01490",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8489-8496",
+   "text": "commit 8e772008cc3189c7b230bf9e16b3041025065ac6\nordinal 454\ndate 2026-08-21 16:10:14 -0700\nauthor Matt Stults\nsubject Arc1-a 9b design round opened: blind discipline recorded (incl. disclosure that the design seat has seen fit predictions — mitigations: document-only citations, blind concerns before arithmetic, adversarial anchoring check); first family justified from the document — PC-1 help+empowerment (objective 1 names helpfulness and empowerment together), PC-2 caution+harm-prevention (insufficient pole defined as harm compliance), PC-3 caution+epistemic-autonomy (justified with reservation); PC-4/PC-5 initial reads weak; context atoms, objectivity conditional, walls, and protects conjunctions queued\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01260",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "26-26",
-   "text": "  \"decision\": \"keep\",",
-   "source_class": "arc1_cycles"
+   "id": "S01491",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8497-8504",
+   "text": "commit 1dff1817789b1672ec13b6ff7521a6a91f37202a\nordinal 455\ndate 2026-08-21 16:50:26 -0700\nauthor Matt Stults\nsubject blog scaffolding: series outline (4 artifacts: goals/design/results/living summary, scope-honesty rule per post, post 3 written last) + post-1 draft (problem, product, goal restatement, what-the-project-became, explicit does-not-claim section; numbers flagged for artifact pointers, unsourced 71% figure barred until resolved)\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01261",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "27-27",
-   "text": "  \"signed_by\": \"session coordinator (Claude), on Matt's standing authorization for the reviewed portfolio order\"",
-   "source_class": "arc1_cycles"
+   "id": "S01492",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8505-8511",
+   "text": "commit f463713e2128acf77f30bd8fcb65ff47e99adb87\nordinal 456\ndate 2026-08-21 17:04:29 -0700\nauthor Matt Stults\nsubject Arc1-b mint integrated: refinement slot added to census vector (SLOT_INVENTORY/DEAD_SLOTS_PINNED handshake honored in same commit); final full-corpus consensus committed (form_equivalence 10, exhibit:illustrate 185 = 169 first-pass + 16 extension, Matt-run Claude seats, agreement 1.0, zero refusals); M1 held (CURRENT bit-identical), M2 held 3/3 (all collider mismatches REACHABLE-separable + addressable_by_declaration); extension seats recorded in prereg addendum 4; 35 tests green; adversarial review pending\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01262",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "29-29",
-   "text": " \"dossier_set_sha\": \"5d905a37b2d2a0962201581aec1d2723b8648f299a6a002d83b18e263699ab96\",",
-   "source_class": "arc1_cycles"
+   "id": "S01493",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8512-8519",
+   "text": "commit 22449448e8a0150dc116e84850d538fadfc6855d\nordinal 457\ndate 2026-08-21 17:09:07 -0700\nauthor Matt Stults\nsubject 9b review resolution (adversarial verdict BLOCKED-on-PC-4 confirmed and fixed): fit-rank disclosure recorded — the five purpose candidates' net fit ran monotone with initial outcomes, obliging symmetric rigor on rejections; PC-4's document-free dismissal falsified by verified citations (L2475-2477, L2576-2578, L475) and redone with real document work -> JUSTIFIED with blind concerns incl. the 100-node breadth count; PC-1 gains the wholesale-switch caveat; PC-3 records the inventory constraint (epistemic-autonomy's natural home is the held-out objectivity principle, L808/L2151); PC-5 overlap concern demoted to triage-only, grounds must be document-side; strengthened standing rule: no instrument-side fact may serve as justification or rejection grounds\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01263",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "30-32",
-   "text": " \"flip_tallies\": {\n  \"regression\": 1\n },",
-   "source_class": "arc1_cycles"
+   "id": "S01494",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8520-8527",
+   "text": "commit e769a62c80c7baaa73d67479245efe1c11573870\nordinal 458\ndate 2026-08-21 17:10:07 -0700\nauthor Matt Stults\nsubject EXPERIMENTS.md campaign entries (review B-4): arc1-e closure, arc1-b mint integration, quota reconciliation (orchestration harness vs Fable adjudication bar are different ledgers), 9b status — this file is the canonical campaign log and carried no 2026-08-20/21 entries until now\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01264",
-   "path": "semi-formal-experiment/cycles/decoration-blind-join-2026-08-04/state.json",
-   "commit": "pin",
-   "lines": "31-31",
-   "text": "  \"regression\": 1",
-   "source_class": "arc1_cycles"
+   "id": "S01495",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8528-8535",
+   "text": "commit ba174536f7ce1e885e8747e4306164a179c74ec7\nordinal 459\ndate 2026-08-21 17:11:26 -0700\nauthor Matt Stults\nsubject round-4 prereg SCAFFOLD (review B-1): instrument-independent protocol fixed now (draws, rulings, canary + /usage checkpoints, cost model, falsifiers F1-F5, success criterion, errata rule, lineage incl. round-3 superseded-unrun); freeze sections are placeholders derived mechanically at instrument freeze; re-issue carries the protocol verbatim or appends the change as erratum\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   }
  ]
 }

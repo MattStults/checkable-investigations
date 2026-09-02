@@ -1,0 +1,133 @@
+{
+ "header": {
+  "batch": "batch_009",
+  "source_class": "arc2_json",
+  "brief_version": "0.4",
+  "glossary_version": "frozen ",
+  "spans": 15,
+  "first_span": "S00272",
+  "last_span": "S00286"
+ },
+ "spans": [
+  {
+   "id": "S00272",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
+   "commit": "pin",
+   "lines": "79-79",
+   "text": "  \"l3383_3501_n003\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00273",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
+   "commit": "pin",
+   "lines": "80-80",
+   "text": "  \"l3954_4251_n036\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00274",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
+   "commit": "pin",
+   "lines": "81-81",
+   "text": "  \"l2126_2404_n034\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00275",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
+   "commit": "pin",
+   "lines": "82-82",
+   "text": "  \"l171_426_n013\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00276",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
+   "commit": "pin",
+   "lines": "83-83",
+   "text": "  \"l4572_4692_n007\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00277",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
+   "commit": "pin",
+   "lines": "84-84",
+   "text": "  \"l3954_4251_n019\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00278",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
+   "commit": "pin",
+   "lines": "85-85",
+   "text": "  \"l2126_2404_n040\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00279",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
+   "commit": "pin",
+   "lines": "86-86",
+   "text": "  \"l3596_3876_n003\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00280",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
+   "commit": "pin",
+   "lines": "87-87",
+   "text": "  \"l1974_2125_n005\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00281",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
+   "commit": "pin",
+   "lines": "88-88",
+   "text": "  \"l2555_2652_n006\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00282",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
+   "commit": "pin",
+   "lines": "89-89",
+   "text": "  \"l699_796_n010\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00283",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
+   "commit": "pin",
+   "lines": "90-90",
+   "text": "  \"l4572_4692_n006\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00284",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
+   "commit": "pin",
+   "lines": "91-91",
+   "text": "  \"l699_796_n012\": \"relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00285",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
+   "commit": "pin",
+   "lines": "92-92",
+   "text": "  \"l3954_4251_n032\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  },
+  {
+   "id": "S00286",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
+   "commit": "pin",
+   "lines": "93-93",
+   "text": "  \"l4572_4692_n009\": \"not_relevant\",",
+   "source_class": "arc2_json"
+  }
+ ]
+}

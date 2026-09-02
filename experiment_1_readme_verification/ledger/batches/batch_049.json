@@ -1,133 +1,148 @@
 {
  "header": {
   "batch": "batch_049",
-  "source_class": "arc2_json",
+  "source_class": "arc1_cycles",
   "brief_version": "0.4",
   "glossary_version": "frozen ",
   "spans": 15,
-  "first_span": "S00872",
-  "last_span": "S00886"
+  "first_span": "S00697",
+  "last_span": "S00711"
  },
  "spans": [
   {
-   "id": "S00872",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "id": "S00697",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/decision.json",
    "commit": "pin",
-   "lines": "148-148",
-   "text": "  \"l831_1000_n011\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "7-7",
+   "text": " \"exploratory\": false,",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00873",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "id": "S00698",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/decision.json",
    "commit": "pin",
-   "lines": "149-149",
-   "text": "  \"l1799_1973_n013\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "8-8",
+   "text": " \"fix_description\": \"Versioned cut: new artifact thresholds_frozen.json carrying per-behaviour cut values with provenance; snapshot.py gains --thresholds <artifact> / build_snapshot(thresholds_path=None) so that, when given, per-behaviour cuts come FROM the artifact (behaviours absent from it fall back to the derivation rule, recorded per behaviour), and the artifact's sha joins the config identity under 'thresholds' (explicit null when absent, like overlay). The OLD behavior remains reachable by omitting the flag \\u2014 that is the F9 version dispatch; threshold.py itself is NOT modified.\",",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00874",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "id": "S00699",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/decision.json",
    "commit": "pin",
-   "lines": "150-150",
-   "text": "  \"l1108_1367_n009\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "9-9",
+   "text": " \"flip_tallies\": {},",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00875",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "id": "S00700",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/decision.json",
    "commit": "pin",
-   "lines": "151-151",
-   "text": "  \"l609_698_n010\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "10-10",
+   "text": " \"flip_verdicts_reused_from\": null,",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00876",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "id": "S00701",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/decision.json",
    "commit": "pin",
-   "lines": "152-152",
-   "text": "  \"l831_1000_n010\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "11-36",
+   "text": " \"gate\": {\n  \"closure_checked\": [\n   \"annotations_ext_v1_merged.json\",\n   \"behavior_atoms_audit_v1.json\",\n   \"behaviours_query.json\",\n   \"constitution_clauses.json\",\n   \"modelspec_clauses.json\",\n   \"test_cycle.py\",\n   \"test_no_reference_leak.py\"\n  ],\n  \"files_changed\": [\n   \"snapshot.py\",\n   \"test_snapshot.py\",\n   \"thresholds_frozen.json\"\n  ],\n  \"review\": {\n   \"by\": \"adversarial review seat (agent)\",\n   \"notes\": \"Verified: (1) frozen manifest/prediction shas match state.json; only snapshot.py, test_snapshot.py, thresholds_frozen.json changed \\u2014 threshold.py, test_no_reference_leak.py, cycle.py, test_cycle.py byte-untouched per git. (2) thresholds_frozen.json's three cuts EQUAL the baseline snapshot's recorded thresholds exactly (all behaviours covered \\u2014 full freeze, not partial); its derived_from_snapshot sha256 matches snapshots/baseline-2026-08-04-auditv1.json, rule 'otsu' == threshold.PREFERRED, config matches the baseline's recorded inputs, and the cited escalation (dossiers/baseline-2026-08-03__containment-v1.1-kindinherit/decision.json, m0422) and cut_stability_results.json exist \\u2014 provenance is label-free (values are the rule's own output; no panel value in the chain). (3) Deliberate no-op reproduced mechanically in an isolated scratch copy: frozen-flag snapshot vs baseline = 0 flips, identical cuts/predicted sets, diff names only 'thresholds' as the changed input. (4) F9 dispatch: no flag -> rule-derived cuts, config inputs.thresholds explicit null, no threshold_source key (old shape); flag -> artifact sha in config identity; no wall-clock, determinism test present and green. (5) Fallback for behaviours absent from the artifact is recorded per behaviour as threshold_source: 'rule_fallback', so a partial freeze is visible in the snapshot itself. (6) Tests bind \\u2014 mutant checks run by this seat in a scratch copy: mutant A (artifact cut ignored) killed by test_frozen_threshold_artifact_honored + test_cli_thresholds_flag (the honored test also asserts artifact value != rule value, so it cannot green with the flag ignored); mutant B (frozen artifact silently made default) killed by test_old_behavior_reachable_without_thresholds_flag + test_thresholds_sha_recorded_and_null_when_absent. (7) Fence: FORBIDDEN scan of snapshot.py and thresholds_frozen.json, raw and comment/docstring-stripped \\u2014 zero hits; nothing reads a panel file. All three gate test files pass (103 passed). No files modified by this review other than this verdict.\",\n   \"verdict\": \"proceed\"\n  },\n  \"tests_passed\": [\n   \"test_cycle.py\",\n   \"test_no_reference_leak.py\",\n   \"test_snapshot.py\"\n  ]\n },",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00877",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "id": "S00702",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/decision.json",
    "commit": "pin",
-   "lines": "153-153",
-   "text": "  \"l3596_3876_n031\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "37-37",
+   "text": " \"justification\": \"Deliberate no-op by design: the frozen values are the label-free rule's own output on this exact config, so zero flips today is the PREDICTED and observed outcome (2/2 mechanism checks PASS). The change's effect is prospective \\u2014 future score-changing cycles measure against a cut that can no longer drift (m0422 admitted 3/3 cycles; cut_stability measured the class structural). Review seat verified the no-op independently on a scratch rebuild and killed two mutants. Kept to unblock cycle 5, whose design depends on match_change-only flips.\",",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00878",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "id": "S00703",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/decision.json",
    "commit": "pin",
-   "lines": "154-154",
-   "text": "  \"l461_608_n018\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "38-38",
+   "text": " \"noop\": true,",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00879",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "id": "S00704",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/decision.json",
    "commit": "pin",
-   "lines": "155-155",
-   "text": "  \"l1_170_n060\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "39-39",
+   "text": " \"overrides\": [],",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00880",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "id": "S00705",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/decision.json",
    "commit": "pin",
-   "lines": "156-156",
-   "text": "  \"l1707_1973_n014\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "40-65",
+   "text": " \"prediction_check\": {\n  \"checks\": [\n   {\n    \"expected\": {\n     \"max\": 0,\n     \"min\": 0\n    },\n    \"kind\": \"flip_count\",\n    \"observed\": 0,\n    \"result\": \"PASS\"\n   },\n   {\n    \"expected\": [\n     \"newly_predicted\",\n     \"no_longer_predicted\"\n    ],\n    \"kind\": \"directions\",\n    \"observed\": [],\n    \"result\": \"PASS\"\n   }\n  ],\n  \"pass_rate\": [\n   2,\n   2\n  ]\n },",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00881",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "id": "S00706",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/decision.json",
    "commit": "pin",
-   "lines": "157-157",
-   "text": "  \"l1_170_n042\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "66-66",
+   "text": " \"shape\": \"code\",",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00882",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "id": "S00707",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/decision.json",
    "commit": "pin",
-   "lines": "158-158",
-   "text": "  \"l3954_4251_n019\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "67-67",
+   "text": " \"signed_by\": \"session coordinator (Claude), on Matt's standing authorization for the cycle ladder\"",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00883",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "id": "S00708",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/prediction.json",
    "commit": "pin",
-   "lines": "159-159",
-   "text": "  \"l4572_4691_n011\": \"not_relevant\"",
-   "source_class": "arc2_json"
+   "lines": "2-2",
+   "text": " \"expected_flip_count\": {\"min\": 0, \"max\": 0},",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00884",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "id": "S00709",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/prediction.json",
    "commit": "pin",
-   "lines": "161-168",
-   "text": " \"panel_splits\": [\n  \"l3954_4251_n013\",\n  \"l3041_3146_n010\",\n  \"l2555_2652_n005\",\n  \"l4252_4482_n007\",\n  \"l1707_1973_n041\",\n  \"l461_608_n018\"\n ],",
-   "source_class": "arc2_json"
+   "lines": "3-3",
+   "text": " \"expected_directions\": [\"newly_predicted\", \"no_longer_predicted\"],",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00885",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "id": "S00710",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/prediction.json",
    "commit": "pin",
-   "lines": "169-186",
-   "text": " \"spot_check\": {\n  \"tripwire\": \"not fired (2/13 disagreements: ['l2126_2404_n002', 'l3596_3876_n031'])\",\n  \"rulings\": {\n   \"l3954_4251_n015\": \"not_relevant\",\n   \"l1_170_n026\": \"relevant\",\n   \"l2126_2404_n001\": \"not_relevant\",\n   \"l3505_3595_n010\": \"not_relevant\",\n   \"l3041_3146_n010\": \"not_relevant\",\n   \"l4572_4692_n003\": \"not_relevant\",\n   \"l2126_2404_n002\": \"not_relevant\",\n   \"l1_170_n059\": \"relevant\",\n   \"l1_170_n054\": \"relevant\",\n   \"l609_698_n010\": \"relevant\",\n   \"l3596_3876_n031\": \"not_relevant\",\n   \"l1_170_n060\": \"relevant\",\n   \"l1_170_n042\": \"relevant\"\n  }\n },",
-   "source_class": "arc2_json"
+   "lines": "4-4",
+   "text": " \"expected_clauses\": [],",
+   "source_class": "arc1_cycles",
+   "context": null
   },
   {
-   "id": "S00886",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json",
+   "id": "S00711",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/prediction.json",
    "commit": "pin",
-   "lines": "170-170",
-   "text": "  \"tripwire\": \"not fired (2/13 disagreements: ['l2126_2404_n002', 'l3596_3876_n031'])\",",
-   "source_class": "arc2_json"
+   "lines": "5-5",
+   "text": " \"max_regressions\": 0,",
+   "source_class": "arc1_cycles",
+   "context": null
   }
  ]
 }

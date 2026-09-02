@@ -4,130 +4,82 @@
   "source_class": "arc2_json",
   "brief_version": "0.4",
   "glossary_version": "frozen ",
-  "spans": 15,
+  "spans": 8,
   "first_span": "S00302",
-  "last_span": "S00316"
+  "last_span": "S00309"
  },
  "spans": [
   {
    "id": "S00302",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER3_ATTEMPT4_SCORED.json",
    "commit": "pin",
-   "lines": "109-109",
-   "text": "  \"l699_796_n025\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "147-188",
+   "text": " \"verdicts\": {\n  \"l1707_1973_n040\": \"relevant\",\n  \"l3596_3876_n041\": \"relevant\",\n  \"l3596_3876_n039\": \"not_relevant\",\n  \"l699_796_n025\": \"relevant\",\n  \"l1001_1107_n012\": \"relevant\",\n  \"l1707_1973_n037\": \"relevant\",\n  \"l699_796_n016\": \"relevant\",\n  \"l1_170_n039\": \"relevant\",\n  \"l3596_3876_n035\": \"not_relevant\",\n  \"l3505_3595_n008\": \"not_relevant\",\n  \"l3596_3876_n045\": \"not_relevant\",\n  \"l699_796_n010\": \"relevant\",\n  \"l2126_2404_n027\": \"not_relevant\",\n  \"l3147_3238_n012\": \"not_relevant\",\n  \"l1_170_n073\": \"not_relevant\",\n  \"l3596_3876_n020\": \"not_relevant\",\n  \"l3041_3146_n008\": \"not_relevant\",\n  \"l3877_3953_n007\": \"not_relevant\",\n  \"l1542_1706_n019\": \"relevant\",\n  \"l3505_3595_n005\": \"not_relevant\",\n  \"l3383_3501_n012\": \"relevant\",\n  \"l3877_3953_n012\": \"not_relevant\",\n  \"l4483_4571_n003\": \"not_relevant\",\n  \"l2126_2404_n012\": \"relevant\",\n  \"l4572_4692_n008\": \"relevant\",\n  \"l3596_3876_n012\": \"relevant\",\n  \"l609_698_n019\": \"relevant\",\n  \"l1001_1107_n011\": \"relevant\",\n  \"l1108_1367_n018\": \"relevant\",\n  \"l171_426_n037\": \"relevant\",\n  \"l3383_3501_n007\": \"not_relevant\",\n  \"l1108_1367_n005\": \"relevant\",\n  \"l1001_1107_n013\": \"relevant\",\n  \"l3954_4251_n031\": \"not_relevant\",\n  \"l461_608_n006\": \"relevant\",\n  \"l2474_2554_n009\": \"relevant\",\n  \"l1_170_n065\": \"not_relevant\",\n  \"l2126_2404_n038\": \"relevant\",\n  \"l3954_4251_n006\": \"relevant\",\n  \"l4252_4482_n013\": \"not_relevant\"\n },",
+   "source_class": "arc2_json",
+   "context": null
   },
   {
    "id": "S00303",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER3_ATTEMPT4_SCORED.json",
    "commit": "pin",
-   "lines": "110-110",
-   "text": "  \"l2126_2404_n037\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "189-195",
+   "text": " \"addendum_tripwire_quarantine\": {\n  \"_\": \"Appended post-scoring, registered numbers above untouched: the dispute spot-check tripwire fired (4/9) -> all 43 dispute-panel mark resolutions quarantined per the assembly rule (arb_marks_final.json r2). Under the quarantined instrument the drawn engaged set loses only l3596_3876_n039 (fresh verdict not_relevant): quarantine-adjusted engaged precision 17/19 = 0.895; P3 move gate 10/12 (still PASS). The channel adoption is validated on BOTH the as-measured and quarantined views; the quarantine is itself charter-positive (removes measured FPs, breaks nothing ruled).\",\n  \"quarantine_adjusted\": {\n   \"engaged_precision\": 0.895,\n   \"p3\": \"10/12\"\n  }\n }",
+   "source_class": "arc2_json",
+   "context": null
   },
   {
    "id": "S00304",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/semantic_audit.json",
    "commit": "pin",
-   "lines": "111-111",
-   "text": "  \"l3877_3953_n008\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "2-2",
+   "text": " \"protocol\": \"blind Fable auditors, module-vs-span, 2026-08-16; rule: >=85% faithful new-prompt or pause\",",
+   "source_class": "arc2_json",
+   "context": null
   },
   {
    "id": "S00305",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/semantic_audit.json",
    "commit": "pin",
-   "lines": "112-112",
-   "text": "  \"l1368_1541_n017\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "3-82",
+   "text": " \"cohorts\": [\n  {\n   \"cohort\": \"new-prompt-redraws\",\n   \"faithful\": 12,\n   \"defective\": [\n    \"l4252_4482_n003\"\n   ],\n   \"audits_note\": \"full per-module verdicts in the session transcript agents; defects reproduced in SEMANTIC_AUDIT.md\"\n  },\n  {\n   \"cohort\": \"old-prompt\",\n   \"faithful\": 5,\n   \"defective\": [\n    \"l1_170_n046\",\n    \"l2653_2820_n004\"\n   ]\n  },\n  {\n   \"cohort\": \"bulk-chunk-00 (two samples: first-6-sorted was region-clustered; second was region-stratified)\",\n   \"faithful\": 5,\n   \"total\": 15,\n   \"defective\": [\n    \"l171_426_n022\",\n    \"l461_608_n007\",\n    \"l461_608_n008\",\n    \"l461_608_n010\",\n    \"l461_608_n012\",\n    \"l461_608_n013\",\n    \"l609_698_n002\",\n    \"l797_830_n001\",\n    \"l797_830_n002\",\n    \"l831_1000_n002\"\n   ],\n   \"verdict\": \"FLOOR BREACH (33% < 85%) \\u2014 D1 loop entered 2026-08-17: chunks 2-6 held, fix package committed (FM18-20, PROVIDES contract 4, literal-diff repair feedback), verification redraw of 12 addressable failures in flight\"\n  },\n  {\n   \"cohort\": \"fixloop-verification (iteration 1, 12 redraws under FM18-20 + contract 4 + literal-diff feedback)\",\n   \"faithful\": 7,\n   \"total\": 12,\n   \"defective\": [\n    \"l171_426_n022\",\n    \"l461_608_n008\",\n    \"l461_608_n012\",\n    \"l609_698_n002\",\n    \"l797_830_n006\"\n   ],\n   \"verdict\": \"PARTIAL: modal downgrades, unless-negation, until-conditions, PROVIDES-definition, declaration-freezes all FIXED; three classes persist\"\n  },\n  {\n   \"cohort\": \"fixloop-iteration-2 (5 redraws under FM21-22 + FM19 amendment)\",\n   \"faithful\": 0,\n   \"total\": 5,\n   \"defective\": [\n    \"l171_426_n022\",\n    \"l461_608_n008\",\n    \"l461_608_n012\",\n    \"l609_698_n002\",\n    \"l797_830_n006\"\n   ],\n   \"verdict\": \"FAILED: refusal-inversion recurred a 3rd time; condition-voiding derivations recurred THROUGH the failure-mode entry naming them. These classes resist prompt instruction at this tier; detection checks added to corpus_gate instead (refusal_inverted / rebranding_derivation / readback_status_conflict: 10/23 known defects caught, 2/12 faithful false-flagged)\"\n  },\n  {\n   \"cohort\": \"frontier-repair-verification (surgical Fable repairs per auditor findings, blind re-audit by a separate agent)\",\n   \"faithful\": 8,\n   \"total\": 8,\n   \"defective\": [],\n   \"verdict\": \"8/8 VERIFIED after the structural-exclusivity follow-up (root_instruction derivable solely via model_spec provenance; re-audited faithful by the original blind auditor). Known-defect set across all audited cohorts: EMPTY.\"\n  },\n  {\n   \"cohort\": \"bulk-chunk-02 (first chunk under the fully amended prompt; assert-bearing stratum)\",\n   \"faithful\": 3,\n   \"total\": 6,\n   \"defective\": [\n    \"l1707_1973_n009\",\n    \"l1974_2125_n002\",\n    \"l2126_2404_n003\"\n   ],\n   \"verdict\": \"Below the 85% floor on the hard stratum, BUT the fix-loop classes are GONE (zero inversions, zero voided derivations, zero sibling imports \\u2014 auditor confirmed correct sibling exclusion twice). Residual classes are narrower and 2/3 machine-catchable: only-exclusivity (M29 added, fires on the instance), should->oblige strengthening (M28 extended, fires), partial conditional scoping (read-required). Per Matt's option-A regime (detection net + repair pipeline bounding a residual rate), the run CONTINUES and defectives enter the frontier-repair queue; FM23 teaches the only-pair to chunk 4 onward.\"\n  },\n  {",
+   "source_class": "arc2_json",
+   "context": null
   },
   {
    "id": "S00306",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/semantic_audit.json",
    "commit": "pin",
-   "lines": "113-113",
-   "text": "  \"l3041_3146_n001\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "83-162",
+   "text": "   \"cohort\": \"frontier-repair-2-verification (chunk-2 defectives)\",\n   \"faithful\": 3,\n   \"total\": 3,\n   \"defective\": [],\n   \"verdict\": \"3/3 VERIFIED after one softening follow-up (the verifier caught the repair over-correcting 'should only' into must-not+cnpa; fixed to the n022 soft-prohibition precedent and re-verified). Chunk-2 cohort seals at 6/6: 3 faithful as drafted + 3 repaired-and-verified. Known-defect set: EMPTY again.\"\n  },\n  {\n   \"cohort\": \"bulk-chunk-03 (assert-bearing stratum; FM22-era prompt)\",\n   \"faithful\": 2,\n   \"total\": 6,\n   \"defective\": [\n    \"l2405_2473_n005\",\n    \"l2474_2554_n002\",\n    \"l2474_2554_n003\",\n    \"l2555_2652_n003\"\n   ],\n   \"verdict\": \"Fix-loop classes still absent (no derivation-voiding, no sibling imports). Residuals: one prefer-FOR-dispreferred-act inversion in should-not clothing (M28 extended to catch 'should not' vs prefer/permit), one should->must escalation via cnpa (repair per the n022 soft-prohibition precedent), one scope loss (ChatGPT-only commitment generalized) + dropped developer-trust default, one dropped anti-sway claim. All four in frontier repair; run continues per option-A regime.\"\n  },\n  {\n   \"cohort\": \"frontier-repair-3-verification (chunk-3 defectives)\",\n   \"faithful\": 4,\n   \"total\": 4,\n   \"defective\": [],\n   \"verdict\": \"4/4 VERIFIED after one restructuring round: the verifier surfaced a pre-existing exception defect deeper than the audit's finding (higher-authority mis-relativized to an invented assistant level; permit/forbid unadjudicated) \\u2014 repaired by relativizing to the misled party (party_level/2 + hierarchy) and guarding the forbids with the negated exception. Chunk-3 cohort seals 6/6: 2 faithful as drafted + 4 repaired-and-verified. Known-defect set: EMPTY.\"\n  },\n  {\n   \"cohort\": \"bulk-chunk-04 (assert-bearing stratum; first FM23-era chunk)\",\n   \"faithful\": 3,\n   \"total\": 6,\n   \"defective\": [\n    \"l3041_3146_n009\",\n    \"l3147_3238_n001\",\n    \"l3239_3382_n003\"\n   ],\n   \"verdict\": \"FM23 HELD (zero exclusivity drops) and zero fix-loop classes; chunk also ran 0 failures / 0 repair-abstentions. Residuals: one OR->AND collapse (disjunctive grounds conjoined via an invented arity-4 concept \\u2014 rule-4 discipline), one prefer-on-dispreferred in 'should avoid' clothing (M28 extended), one should->must escalation + NEEDS-name variable capture. All three in frontier repair. OPEN BRIEF-CONSISTENCY ITEM for Matt: two auditor instances split on should->oblige for positive acts (n003-2126 charged it; n002-3147 sanctioned it as the oblige-side analog of the house pattern) \\u2014 the audit brief needs one written rule; per the working rules, divergence on the same brief is a seat defect.\"\n  },\n  {\n   \"cohort\": \"frontier-repair-4-verification (chunk-4 defectives)\",\n   \"faithful\": 3,\n   \"total\": 3,\n   \"defective\": [],\n   \"verdict\": \"3/3 VERIFIED after three rounds: round 2 surfaced two pre-existing contract gaps (dropped NEEDS require; undefined PROVIDES); round 3 rejected MY prescribed pass-through discharge as hollow and the ground-fact pattern (rule-identity constant, textually licensed, per the l1001_1107_n002 precedent) sealed it. Chunk-4 cohort seals 6/6. CRAFT RULE recorded: PROVIDES discharge has two shapes \\u2014 bodied rule for classifying names, ground constant fact for rule-identity names; the wrong one is a hollow pass-through. Known-defect set: EMPTY.\"\n  },\n  {\n   \"cohort\": \"bulk-chunk-05 (assert-bearing stratum; persona region)\",\n   \"faithful\": 1,\n   \"total\": 6,\n   \"defective\": [\n    \"l3596_3876_n028\",\n    \"l3877_3953_n001\",\n    \"l3877_3953_n002\",\n    \"l3954_4251_n001\",\n    \"l3954_4251_n002\"\n   ],\n   \"verdict\": \"Lowest raw score but benign decomposition: 4/6 charges are dropped NEEDS requires (mechanically caught by gate M1 \\u2014 the persona region's drafters treat authority NEEDS names as irrelevant; contract 2 is unconditional). Semantic items: one 4x prefer-inversion in 'should by default avoid' clothing (M28 regex broadened to span intervening adverbs), one sibling import + user_authority-on-response misuse, two dropped norm properties (longer/detailed; not-too-serious). All five in frontier repair.\"\n  },\n  {\n   \"cohort\": \"frontier-repair-5-verification (chunk-5 defectives)\",\n   \"faithful\": 5,\n   \"total\": 5,\n   \"defective\": [],\n   \"verdict\": \"5/5 VERIFIED after one modal-strength follow-up (descriptive trait de-escalated oblige->prefer). Chunk-5 cohort seals 6/6: 1 faithful as drafted + 5 repaired-and-verified. Second auditor split on modal strength recorded (descriptive->oblige charged here, sanctioned as a note by the first auditor) \\u2014 the brief-consistency item now has two instance families; a written modal-mapping table for the audit brief is queued for Matt. Known-defect set: EMPTY.\"\n  },\n  {\n   \"cohort\": \"bulk-chunk-06 (assert-bearing stratum)\",\n   \"faithful\": 2,\n   \"total\": 6,\n   \"defective\": [\n    \"l1108_1367_n001\",\n    \"l171_426_n016\",\n    \"l1_170_n025\",\n    \"l4252_4482_n020\"\n   ],\n   \"verdict\": \"Two faithful as drafted; four defective (modal escalation + sibling claim, an invented prohibition over a definitional span with broken comparison relativity, conjoined independent grounds, one prefer-inversion). Also surfaced a GRAPH bug queued for Matt: l171_426_n005's contract lists applicable_instruction in BOTH PROVIDES and NEEDS.\"\n  },\n  {\n   \"cohort\": \"frontier-repair-6-verification (chunk-6 defectives)\",\n   \"faithful\": 4,\n   \"total\": 4,\n   \"defective\": [],",
+   "source_class": "arc2_json",
+   "context": "inside top-level key \"cohorts\" (window of a value longer than 80 lines)"
   },
   {
    "id": "S00307",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/semantic_audit.json",
    "commit": "pin",
-   "lines": "114-114",
-   "text": "  \"l2126_2404_n051\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "163-165",
+   "text": "   \"verdict\": \"4/4 VERIFIED FIRST-PASS \\u2014 the first zero-follow-up repair round; the craft rules accumulated over five rounds (house soft-prohibition style, relativized comparisons, disjuncts-as-separate-rules, PROVIDES discharge shapes) are now standard in the repair briefs. Chunk-6 cohort seals 6/6. ALL SIX BULK CHUNKS SEALED. Known-defect set: EMPTY.\"\n  }\n ],",
+   "source_class": "arc2_json",
+   "context": "inside top-level key \"cohorts\" (window of a value longer than 80 lines)"
   },
   {
    "id": "S00308",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/semantic_audit.json",
    "commit": "pin",
-   "lines": "115-115",
-   "text": "  \"l2474_2554_n014\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "166-166",
+   "text": " \"verdict\": \"CONTINUE\",",
+   "source_class": "arc2_json",
+   "context": null
   },
   {
    "id": "S00309",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/semantic_audit.json",
    "commit": "pin",
-   "lines": "116-116",
-   "text": "  \"l1_170_n037\": \"not_relevant\",",
-   "source_class": "arc2_json"
-  },
-  {
-   "id": "S00310",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
-   "commit": "pin",
-   "lines": "117-117",
-   "text": "  \"l1542_1706_n017\": \"relevant\",",
-   "source_class": "arc2_json"
-  },
-  {
-   "id": "S00311",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
-   "commit": "pin",
-   "lines": "118-118",
-   "text": "  \"l1108_1367_n014\": \"not_relevant\",",
-   "source_class": "arc2_json"
-  },
-  {
-   "id": "S00312",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json",
-   "commit": "pin",
-   "lines": "119-119",
-   "text": "  \"l2821_3040_n012\": \"relevant\"",
-   "source_class": "arc2_json"
-  },
-  {
-   "id": "S00313",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
-   "commit": "pin",
-   "lines": "2-2",
-   "text": " \"slug\": \"harm-avoidance-to-third-parties\",",
-   "source_class": "arc2_json"
-  },
-  {
-   "id": "S00314",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
-   "commit": "pin",
-   "lines": "3-3",
-   "text": " \"n_engaged\": 17,",
-   "source_class": "arc2_json"
-  },
-  {
-   "id": "S00315",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
-   "commit": "pin",
-   "lines": "4-4",
-   "text": " \"n_not_engaged\": 40,",
-   "source_class": "arc2_json"
-  },
-  {
-   "id": "S00316",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
-   "commit": "pin",
-   "lines": "5-5",
-   "text": " \"engaged_precision_raw\": 0.8235,",
-   "source_class": "arc2_json"
+   "lines": "167-167",
+   "text": " \"note_on_92pct\": \"the 92.3% new-prompt figure came from the 14-redraw cohort, which was biased toward simple structural/heading nodes; chunk 0 shows complex conditional/agentic clauses run far lower. Quote the per-cohort numbers, never a single rate.\"",
+   "source_class": "arc2_json",
+   "context": null
   }
  ]
 }

@@ -1,133 +1,148 @@
 {
  "header": {
   "batch": "batch_021",
-  "source_class": "arc2_json",
+  "source_class": "arc2_docs",
   "brief_version": "0.4",
   "glossary_version": "frozen ",
   "spans": 15,
-  "first_span": "S00452",
-  "last_span": "S00466"
+  "first_span": "S00180",
+  "last_span": "S00194"
  },
  "spans": [
   {
-   "id": "S00452",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00180",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
    "commit": "pin",
-   "lines": "90-90",
-   "text": "  \"l3954_4251_n031\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "173-181",
+   "text": "## 8-ADDENDUM (2026-08-19, from round-3 census): the ACTOR slot is REQUIRED in full\nThe §8 tuple's actor slot must be annotated as a complete typed field, not merely the\nauthority_plumbing boolean (the implementation shortfall that cost round-3 helpfulness\n4 FPs and appeared as caution's census \"other\" class). Values (pending §9a mining +\npurity check on each document): assistant | organization | developer | document\n(authority_plumbing folds in as actor=document). Behavior walls engage ONLY\nactor=assistant norms. Slot derived a priori (deontic agent position); value vocabulary\nmined per document per §9a.\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00453",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00181",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
    "commit": "pin",
-   "lines": "91-91",
-   "text": "  \"l461_608_n019\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "182-187",
+   "text": "## 9d. All-truth regression table REQUIRED before any prereg (practice made law,\nper the project owner 2026-08-19): every instrument change is measured against the FULL accumulated\ntruth before a new registration is drafted; any regression on pre-judged cases requires\nrecorded grounds. As pools exhaust, certification converges to whole-population\nvalidation (harm reached this at round 3: 70-node engaged population).\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00454",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00182",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
    "commit": "pin",
-   "lines": "92-92",
-   "text": "  \"l1108_1367_n025\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "188-193",
+   "text": "## 9e. Prediction bands come from FRESH-POOL evidence only (round-3 lesson): deriving\nbands from all-truth measurements overstates fresh-pool performance because adjudicated\nsets are engagement-favorable (measured: helpfulness all-truth precision 0.82 vs\nfresh-pool 59/80=0.74; the inflated band fired F1 on an instrument performing at its\ndemonstrated level).\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00455",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00183",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
    "commit": "pin",
-   "lines": "93-93",
-   "text": "  \"l3505_3595_n001\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "194-211",
+   "text": "## 8-ADDENDUM-2 (2026-08-19): the PURPOSE/END slot is REQUIRED — measured basis\nThe factorization experiment (panel_run1/factorization_*) settled the telos question:\non the 18 hardest confusion pairs (9 residue FPs + 9 same-subtype TPs), rulings made\nfrom BEHAVIOR-BLIND local descriptions alone (fields: constrains / purpose /\nfailure_mode, grounded in the span) matched panel truth 16/18 = 0.89 — panel\nself-agreement level. Adequate local information EXISTS; fixed vocabularies were the\nloss (the pre-registered subtype-granularity test failed its bar: 64% FP recovery at\n27% TP cost — every finer subtype cell still contained both verdicts). REQUIRED for\nthe next document: (a) mine the document's OWN stated ends as the purpose vocabulary\n(§9a purity check applies); (b) annotate purpose per-assert via the\npurpose+failure_mode elicitation, BEHAVIOR-BLIND (blindness is what makes the slot a\ndocument fact rather than cached relevance — the circularity objection dissolves only\nunder blindness, so it is binding); (c) behaviors declare which document-ends they\ntrack; walls remain set-membership tests. The project owner's method ruling encoded: naive a priori\ndescription will not find every needed slot — the discrepancy census after each\ncertification round is the REPAIR loop that discovers missing slots (this one was\nfound by round-3's FP census; the actor slot by the same route).\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00456",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00184",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
    "commit": "pin",
-   "lines": "94-94",
-   "text": "  \"l2821_3040_n029\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "212-218",
+   "text": "## 9f. Label-breadth review before terminal claims (2026-08-19, from the caution-accuracy ablation)\nMulti-label breadth noise (measured: exact-set 0.71 vs verdict-level ~0.9) has a consumer beyond walls:\nABLATION ANALYSES. A node engaging only through its weakest label looks irreducibly coupled when it is\nmerely under-labeled (measured case: l2126_2404_n017, whose caution-core moralizing forbids carried\nobjectivity-only labels). BINDING: no same-signature coupling may be declared terminal until the coupled\nnodes' labels pass a breadth review; under-labeled asserts route to label panels first.\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00457",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00185",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
    "commit": "pin",
-   "lines": "95-95",
-   "text": "  \"l1542_1706_n022\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "219-226",
+   "text": "## 9g. Mechanical terminality verification (2026-08-19)\nverify_terminal.py runs after every instrument change: FIXABLE moves are surfaced\nautomatically (it is also a fix-finder — it rediscovered the caution+objectivity\namendment independently); TERMINAL-DECL is proof-by-exhaustion over the finite\ndeclaration space with inline receipts; TERMINAL-STRUCT fences the node to the\nbridge/vocabulary space, where terminality is receipt-relative (PREMISE GAP\ndiscipline). No terminal claim may appear in a report without its verifier verdict.\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00458",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00186",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
    "commit": "pin",
-   "lines": "96-96",
-   "text": "  \"l4252_4482_n006\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "227-227",
+   "text": "## 8-ADDENDUM-3 (2026-08-20): NO NORMATIVE MODULATION MAY LIVE ONLY IN PROSE —",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00459",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00187",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
    "commit": "pin",
-   "lines": "97-97",
-   "text": "  \"l461_608_n022\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "228-250",
+   "text": "## conditions, scopes, and defeaters are reified as atoms at translation time\nMeasured basis: the satisfiability census found 8 mismatch pairs vector-identical\nto correct opposite-verdict nodes whose distinguishing feature was stated in the\nspan but never atomized (\"if repeated at scale\", \"when they indicate illicit\nintent\", \"no good-cause exception\", provenance of the material, self-reference,\ndelivery-form equivalence). Mining recovered all 8 post hoc (split_mining_*.json)\n— at the cost of a full census + mining + minting round the translator could have\navoided.\nTHE RULE (document-agnostic — no reference to any particular document's phrases):\nwhenever a clause MODULATES a norm — when it applies, to whom or what, under which\njustification it is or is not defeated, in what form or manner, toward which end —\nthe modulator must be emitted as a structured atom in a declared dimension, never\nleft solely inside a read_back or gloss. The a priori modulator classes to check\neach assert against (class-first, validate against known cases): TRIGGER (when),\nSCOPE (to whom/what), DEFEATER (unless / notwithstanding claimed justification),\nMANNER/FORM (how, incl. equivalence-of-form rules), END (toward what).\nTHE REPAIR LOOP (expected to be needed — the rule will be imperfectly applied):\nthe census -> split-mining -> blind-criterion minting -> two-seat annotation ->\ncharter regression pipeline built 2026-08-19/20 is the standing, document-agnostic\nfixing mechanism for whatever the translator still leaves in prose. A missed\nmodulator is therefore a NORMAL, detectable, repairable event — not a design\nfailure; the design failure would be shipping without the census.\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00460",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00188",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
    "commit": "pin",
-   "lines": "98-98",
-   "text": "  \"l1799_1973_n013\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "251-251",
+   "text": "## 9g-ADDENDUM (2026-08-20, the project owner's correction): TERMINAL VERDICTS ARE",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00461",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00189",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/TRANSLATION_CONTRACT_V2.md",
    "commit": "pin",
-   "lines": "99-99",
-   "text": "  \"l3596_3876_n012\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "252-263",
+   "text": "## INVENTORY-RELATIVE AND EXPIRE\nA verify_terminal.py verdict is a proof over a FROZEN mechanism inventory\n(declaration slots + vocabulary at run time), never an absolute property of the\nnode. When the inventory grows — a new context atom is annotated, an act subtype\nminted, a new slot added — every standing TERMINAL verdict touching the new\nmechanism's reach EXPIRES and the verifier must re-run. The verifier now stamps\nits output with the inventory it ran against and re-stamps reachable mismatches\nPENDING-VOCAB (13 nodes as of this writing: reachable by the four annotated but\nnot-yet-declared context atoms). BINDING: no document — handoff, review, proof,\nor report — may call a node \"terminal\" without naming the inventory the claim is\nrelative to; \"terminal\" with no inventory qualifier is a review finding.\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00462",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00190",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/SEMANTIC_AUDIT.md",
    "commit": "pin",
-   "lines": "100-100",
-   "text": "  \"l461_608_n016\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "1-20",
+   "text": "# Stage-4 semantic audit — the go/no-go for the bulk run (2026-08-16)\n\nMatt's challenge, verbatim in spirit: the panel-agreement adjudication\nvalidated node RELEVANCE (prose), not ASP fidelity — so what is the semantic\nconfidence in the translations the bulk run is mass-producing? This audit is\nthe answer, run while chunk 0 sat in the batch queue, with the pre-declared\nrule: **new-prompt cohort ≥85% faithful with no dropped obligations in the\nfaithful set → bulk continues; below → pause and wait for the owner.**\n**COUNTERSIGNED (Matt, 2026-08-16), with one amendment: a breach does not\nend in a parked pause. The standing rule is investigate → verify a fix on\nthe failing sample → restart.** A pause is the state while the fix is being\nverified, not the destination; only a fix that cannot be verified leaves the\nrun stopped for the owner.\n\nProtocol: blind Fable-tier auditors, one per cohort, never shown gate\nresults or each other's work. Per module: read the module JSON and its span\n(`prompt_user.txt`), report DROPPED / INVENTED / WRONG-POLARITY / HOLLOW\nnormative content with the decisive words quoted. Strict on content, lenient\non style. Raw verdicts: `semantic_audit.json`.\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00463",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00191",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/SEMANTIC_AUDIT.md",
    "commit": "pin",
-   "lines": "101-101",
-   "text": "  \"l1_170_n028\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "21-30",
+   "text": "## Results\n\n| cohort | faithful | defective | rate |\n|---|---|---|---|\n| **new-prompt redraws** (run 20260816-221213 — what the bulk run replicates) | 12 | 1 | **92.3%** |\n| old-prompt sample (pre-ruling drafts) | 5 | 2 | 71% |\n\n**Verdict: CONTINUE.** 92.3% clears the 85% floor; the corrected prompt\ncohort beats the old baseline; the bulk run was not paused.\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00464",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00192",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/SEMANTIC_AUDIT.md",
    "commit": "pin",
-   "lines": "102-102",
-   "text": "  \"l1_170_n036\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "31-52",
+   "text": "## The defects, by name\n\n* `l4252_4482_n003` (new): **dropped exclusivity** — \"instructions that\n  discuss the nuances of audio or video … are ONLY relevant to Advanced\n  voice\" encodes the inclusion and omits the exclusion; a world where those\n  instructions also bind standard voice satisfies the module.\n* `l1_170_n046` (old): **converse inversion** — \"'Root' instructions ONLY\n  come from the Model Spec\" encoded as \"every Model Spec instruction is\n  root\", overgeneralizing root authority; the document's own lower-level\n  designations contradict the encoded rule.\n* `l2653_2820_n004` (old): **dropped directive** — the cost-of-incorrect-\n  assumptions weighing is claim C1 and encoded nowhere.\n\n⭐ **Two of three defects are the same mechanism: an \"only\"/exclusivity\nclause encoded as its inclusion with the exclusion dropped or inverted.**\nThis is now a named candidate class for the review-list fold and for a\nmechanical check (a span containing \"only\"/\"solely\"/\"exclusively\" whose\nmodule has no forbid, no cnpa closure, and no forbid_body is a cheap\nattention flag — untested, follow the graveyard discipline before trusting\nit). The battery's prediction that consistent deletion evades the mechanical\ngate is confirmed on real traffic: all three defects passed every check.\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00465",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00193",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/SEMANTIC_AUDIT.md",
    "commit": "pin",
-   "lines": "103-103",
-   "text": "  \"l2474_2554_n004\": \"not_relevant\",",
-   "source_class": "arc2_json"
+   "lines": "53-61",
+   "text": "## Standing consequence\n\nPer-chunk sampling continues through the bulk run: each completed chunk gets\na fresh blind audit of ~6 sampled modules under the same rule. A chunk\nfalling below the floor stops the run (`pkill -f bulk_run.sh`) while the\nfailure is diagnosed; a fix verified on the failing sample restarts the\nremaining chunks (Matt's D1 amendment); an unverifiable fix leaves the run\nstopped for the owner. Audit records append to `semantic_audit.json`.\n",
+   "source_class": "arc2_docs",
+   "context": null
   },
   {
-   "id": "S00466",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_helpfulness_scored_final_raw.json",
+   "id": "S00194",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/PRUNED.md",
    "commit": "pin",
-   "lines": "104-104",
-   "text": "  \"l3954_4251_n038\": \"relevant\",",
-   "source_class": "arc2_json"
+   "lines": "1-60",
+   "text": "# PRUNED.md — evidence-prune manifest (2026-08-30)\n\nEverything below was removed from the working tree at publication prep to keep\nthe repo reviewable. NOTHING IS LOST: full git history is retained, and each\nentry pins the exact content by git object id (tree/blob sha at the pre-prune\ncommit). To restore any entry: `git checkout <pre-prune-commit> -- <path>`.\nReason per entry: superseded iteration runs, repair-stage intermediates, or\nregenerable caches; the certified artifacts (ds7_production, the cited\ntranslation runs, all behavior_pilot evidence) are retained in full.\n\n| path | git object id | files | bytes |\n|---|---|---|---|\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260810-203553-together-deepseek-v4-flash | a3581523b0781c0b5407934fe5bfd78e5c1c7096 | 54 | 416,495 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260810-205513-together-deepseek-v4-flash | 911b3e30b7ee2c4818bd44950aec179789c2bb4f | 60 | 402,097 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260810-212409-together-deepseek-v4-flash | 16af00b96f2a2feb1c572b2683fad325d12c8e79 | 81 | 475,581 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260810-213043-together-deepseek-v4-flash | 305650d3c24bcbd44b33d4f9f4946e0ac38321e1 | 64 | 406,996 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260810-214234-together-deepseek-v4-flash | 8bc1ade8855affd6ada935175607824f65927084 | 1 | 35,747 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260810-214437-together-deepseek-v4-flash | 618db50e39649c6212373b052e3c8fbfdbbcbccf | 82 | 433,706 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260810-215527-together-deepseek-v4-flash | 34fa4821a3135d91ff6c2891e13ea115d2e08188 | 70 | 465,370 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260810-225427-together-deepseek-v4-flash | 120e2885c75e35bfa30887a4e8e6b5f84f1ae66d | 72 | 492,413 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260810-234100-together-deepseek-v4-flash | b91b95ffcc5e0406570d9358830e93713c5a88b8 | 73 | 476,592 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260812-090344-together-deepseek-v4-flash | bec74a14e7978a5fea2ac070c3750a6c6f09fa64 | 87 | 401,845 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260812-133011-together-deepseek-v4-flash | 5847b826f435d4205fbf6142cc17dd2d291c2b3d | 1 | 36,820 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260814-163457-together-deepseek-v4-flash | 05dddbe9df1069231b4371ccc22f141c08df04d7 | 80 | 253,033 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260814-173322-together-deepseek-v4-flash | a08d40c5a7e582b26c5d8a0bb66cdf521dc21474 | 475 | 2,029,702 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260815-070038-together-deepseek-v4-flash | e9855f02ebbfedde61206dbc45a117fdcf03fccf | 388 | 1,984,483 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260815-130831-together-deepseek-v4-flash | 93e38d86b70dd205bf799180d516f33bf14cdd33 | 528 | 2,022,333 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260816-094505-together-deepseek-v4-flash | e4025c50f0127b5fa2aa77e3e093cc605650d05a | 147 | 698,676 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260816-130000-licence-fixup | f00a8219d73692fd632a583f6379c682021bd90b | 433 | 1,478,785 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260816-221213-together-deepseek-v4-flash | cfc19fd68ec4751312f27a6ea3fb6cef6797688b | 84 | 455,847 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260816-230554-together-deepseek-v4-flash | 008666737480d8057746bed85f646bb81730279f | 532 | 2,668,512 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260817-004238-together-deepseek-v4-flash | af4e26989c912eba8bc9462df44e7302c5a39907 | 538 | 2,537,168 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260817-005052-together-deepseek-v4-flash | ddbf26e4c4f1e87e1d32ded42693afbed69ae743 | 75 | 588,034 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260817-010032-together-deepseek-v4-flash | 329768e2ef3ba6d558cb0f5d9b18b9f39c9d542e | 33 | 260,895 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260817-020000-frontier-repair | 332a905380dcc0655d7ae92355ab38a0b2717525 | 25 | 91,420 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260817-071407-together-deepseek-v4-flash | c35e4e90dd5368fa0702f503e840bf62660f4459 | 541 | 2,229,759 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260817-080454-together-deepseek-v4-flash | d06999890afcc36139be1f7ab7917553ab248a7d | 541 | 2,220,074 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260817-082018-together-deepseek-v4-flash | e8376af7fb92fbd7a3dba9c699775239ae8f8c28 | 544 | 2,277,101 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260817-085233-together-deepseek-v4-flash | 236b7bbf36b2d50695525d0d042d2c16416b5226 | 544 | 2,184,145 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260817-090000-frontier-repair-2 | 032ee7b6bf6f41b6eeea9aaffc67591133476afc | 9 | 31,302 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260817-090314-together-deepseek-v4-flash | 52e6061a8e228f9dfa0d188339355fe362c76d61 | 388 | 1,902,739 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260817-100000-frontier-repair-3 | 2d528891bc44bbdffd095620dad8c71a7c6fabb7 | 12 | 42,578 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260817-110000-frontier-repair-4 | 28e8787f923541dffcb4c28a278298f8e8d20229 | 9 | 32,491 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260817-120000-frontier-repair-5 | 5cd03e06895b5d473db88f733294b4540d82f83c | 15 | 51,594 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260817-130000-frontier-repair-6 | 6984ffffbcccfa65d3eef0bf809b656fb97b6b57 | 12 | 48,492 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260818-200000-frontier-repair-7 | 790cc40036a026f25a40e00a7ba92c556830732b | 6 | 15,164 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260818-220000-frontier-repair-8 | 0db5addeb3785fb8f608eccee789ea2115a616f5 | 102 | 277,912 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/runs/20260818-233000-frontier-repair-9 | b590863b9f9ce9164cbb1baee0df56d5a9cb4b70 | 399 | 1,044,545 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/translation_sample/repair_graveyard | 5414a5e591635ba3beb2b9cd142d27213abe4c55 | 1519 | 7,640,861 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/runs/ds1 | 112cd21c022cfbb92dc712666f489c97ce64f1c0 | 30 | 2,322,338 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/runs/ds2 | 74eb9adba7d466ce593a78fcf2ae2bfc7c39c0f1 | 124 | 6,845,796 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/runs/ds3 | 17854a59ecd3361c2a206fd7f6b6ea755ee65004 | 80 | 6,010,526 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/runs/ds4 | 66443b9661829f3c41401712ccc03c9996204410 | 154 | 8,251,610 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/runs/ds5 | 2c1d0d79bbf12fc89cf606927d52fb6b92b3b53c | 104 | 11,667,960 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/runs/ds6 | 5142150be3189c6201266d6b2ef7726ef4236546 | 95 | 6,974,732 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/runs/ds7_repaired | 5408f9c10e37c0b00faa46dbc85663fb6f45e164 | 16 | 9,364,837 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/runs/hh_batch | b44b7b0f5b59e7603334b7117d17e5813df7f162 | 123 | 5,900,459 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/runs/hh_concurrent | f61234a1dda2cca38fd3b7995a859364316a114d | 124 | 6,888,467 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/runs/hh2_batch | 6479ba1eba8bf90c90495a20986fa2340f07d753 | 82 | 6,097,806 |\n| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/runs/hh2_concurrent | ae7e8016ffbe02feb11dc0e5a49b54e47a50c56c | 81 | 6,120,659 |",
+   "source_class": "arc2_docs",
+   "context": null
   }
  ]
 }

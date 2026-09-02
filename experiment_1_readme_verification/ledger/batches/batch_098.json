@@ -1,133 +1,148 @@
 {
  "header": {
   "batch": "batch_098",
-  "source_class": "arc1_cycles",
+  "source_class": "git_log",
   "brief_version": "0.4",
   "glossary_version": "frozen ",
   "spans": 15,
-  "first_span": "S01430",
-  "last_span": "S01444"
+  "first_span": "S01661",
+  "last_span": "S01675"
  },
  "spans": [
   {
-   "id": "S01430",
-   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "3-3",
-   "text": "  \"agreement_on_contested\": \"4/6\",",
-   "source_class": "arc1_cycles"
+   "id": "S01661",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9944-9951",
+   "text": "commit 1143a9213703e9b44c0ac90daefea1a58331f60f\nordinal 625\ndate 2026-08-25 08:46:33 -0700\nauthor Matt Stults\nsubject Notes 0037 / erratum #20: Matt's too-tidy-narrative suspicion upheld — endogeneity + closed-vocabulary circularity mean the query-class study's 'no new places' claim is vocabulary-relative, not space-complete; some tripwire noise may be shoehorning; the external falsifiers (TARGET at scale, prop-risk, next document) are the only vocabulary-independent tests.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01431",
-   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "4-9",
-   "text": "  \"confirmed_regressions\": [\n   \"m0239\",\n   \"m0275\",\n   \"m0466\",\n   \"m0018\"\n  ],",
-   "source_class": "arc1_cycles"
+   "id": "S01662",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9952-9959",
+   "text": "commit e9ac2b15cf35d71417b0e151d33657cd6489b025\nordinal 626\ndate 2026-08-25 08:49:48 -0700\nauthor Matt Stults\nsubject Open-coding packet for the discovery pass (Matt's correction: the closed-vocabulary study foreclosed dimension discovery by construction): 100 definitions, NO vocabulary supplied — coders describe constraints in their own words; categories emerge rather than being imposed.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01432",
-   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "10-12",
-   "text": "  \"contested\": {\n   \"m0108\": \"leg 1 regression / leg 2 correct \\u2014 final verdict `unclear` per the divergence rule; both document reasons preserved verbatim in ADJUDICATION_LEGS.md; flagged for seat-defect review, never silently resolved\"\n  },",
-   "source_class": "arc1_cycles"
+   "id": "S01663",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9960-9967",
+   "text": "commit 152a9a66705e4207a9fd59285023cbf1f2c52b73\nordinal 627\ndate 2026-08-25 08:53:18 -0700\nauthor Matt Stults\nsubject Open-coding results committed: A 16 emergent categories / 6 misfits, B 20 / 3 — independent, vocabulary-free structure over the 100 definitions; blind alignment seat dispatched (adversarial toward forced fits, NONE a legitimate answer) to test which categories escape the ten designer places.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01433",
-   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "13-13",
-   "text": "  \"dossier_set_sha\": \"726492bf72fe5e9809ca8f6b402bec3161ca8ca4ff916ab05f7a05060e59b78b\",",
-   "source_class": "arc1_cycles"
+   "id": "S01664",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9968-9975",
+   "text": "commit b80ac60609986060bca5bdb8ae1e4c9ece3ad76a\nordinal 628\ndate 2026-08-25 08:59:14 -0700\nauthor Matt Stults\nsubject OPEN-CODING DISCOVERY VERDICT: 8 SINGLE / 18 COMBINATION / 10 NONE over 36 emergent categories; 6/7 misfits covered by no place; NINE new-dimension candidates led by evaluation_unit (the unit-of-assessment axis — our instrument is utterance-locked) and subject_matter_class (topic as constitutive handle), both dual-coder-evidenced. Matt's closed-vocabulary critique empirically vindicated: the discovery the first study could not perform, performed.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01434",
-   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "14-22",
-   "text": "  \"leg_1_official\": {\n   \"file\": \"flip_verdicts.json\",\n   \"scope\": \"all 18 flips\",\n   \"tallies\": {\n    \"correct\": 12,\n    \"regression\": 5,\n    \"unclear\": 1\n   }\n  },",
-   "source_class": "arc1_cycles"
+   "id": "S01665",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9976-9983",
+   "text": "commit c7a6b896efad6eda44e6afbbc6ac5f907405acf3\nordinal 629\ndate 2026-08-25 08:59:16 -0700\nauthor Matt Stults\nsubject Consolidated 19-dimension query schema (ten places with the modality gloss fixed + nine discovered candidates) + the 100-definition annotation packet: up to five (dimension: value) pairs per definition, open values, explicit-handle rule. Pre-dispatch commit for the separability test Matt specified.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01435",
-   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "23-31",
-   "text": "  \"leg_2_verification\": {\n   \"file\": \"flip_verdicts_verification_leg.json\",\n   \"scope\": \"the 6 contested flips\",\n   \"seat\": \"frontier, split-blind to leg 1's verdicts\",\n   \"tallies\": {\n    \"correct\": 2,\n    \"regression\": 4\n   }\n  },",
-   "source_class": "arc1_cycles"
+   "id": "S01666",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9984-9991",
+   "text": "commit 290238b1457f1a34ba6b2dc2a9757e0b64269a76\nordinal 630\ndate 2026-08-25 08:59:41 -0700\nauthor Matt Stults\nsubject SUPERSEDED before use (Matt's catch — third recurrence of designer-vocabulary smuggling): the consolidated schema wrongly grandfathered the ten places; the clean schema derives from emergent categories only, by a place-blind seat. Kept for the record.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01436",
-   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "32-32",
-   "text": "  \"record\": \"ADJUDICATION_LEGS.md\",",
-   "source_class": "arc1_cycles"
+   "id": "S01667",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "9992-9999",
+   "text": "commit f6e34e691bba0c3007c6c7ec912f195592612f28\nordinal 631\ndate 2026-08-25 09:02:54 -0700\nauthor Matt Stults\nsubject Emergent 24-dimension schema (derived place-blind from both coders' categories; judgment calls recorded) + the 100-definition annotation packet for the separability test. The ten designer places enter only at analysis, as a comparison finding.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01437",
-   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "33-35",
-   "text": "  \"resolved_not_regression\": {\n   \"m0355\": \"leg 1 unclear / leg 2 correct \\u2014 the pre-registered threshold-proximity case; its verdict extends the P3 drift-standing family line (m0207 precedent)\"\n  }",
-   "source_class": "arc1_cycles"
+   "id": "S01668",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "10000-10007",
+   "text": "commit 7cc7a628ca913d0be2d9323706ab2f3d2fe1ffb5\nordinal 632\ndate 2026-08-25 09:03:30 -0700\nauthor Matt Stults\nsubject Separability census committed pre-results: three-view signatures (per-seat + conservative dimension-intersection consensus) at dimension-set and dimension+exact-value levels; every collision listed with sources, none auto-excused.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01438",
-   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "37-37",
-   "text": " \"census\": \"deferred_to_checkpoint\",",
-   "source_class": "arc1_cycles"
+   "id": "S01669",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "10008-10015",
+   "text": "commit bd9b69100711916424bd9489de79edf3aed9a2f8\nordinal 633\ndate 2026-08-25 09:06:16 -0700\nauthor Matt Stults\nsubject Emergent annotations (both seats, 100/100 each, 1-3 dims/def) + the vacuousness finding: L2 'perfect separability' is text-fingerprinting (ZERO value reuse in 117/118 assignments — every pair unique); the honest interim numbers are L1 dimension-set separability 0.37-0.40. Canonicalization seat dispatched to build finite per-dimension vocabularies for the real test.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01439",
-   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "38-38",
-   "text": " \"census_delta\": null,",
-   "source_class": "arc1_cycles"
+   "id": "S01670",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "10016-10023",
+   "text": "commit 6daa3ac65442baaf7a703b4b5211fb0fc8238264\nordinal 634\ndate 2026-08-25 09:09:54 -0700\nauthor Matt Stults\nsubject QUERY-CLASS ARC CLOSED: separability 94/100 (both seats identically) under the finite canonical vocabulary — all 6 collisions are cross-source same-construct duplicates, zero different-construct collisions. THE BOUND: 24 place-blind dimensions x 105 canonical values addresses the sampled query class at ~1.2 handles/definition. Notes 0038 + HANDOFF; AFK drive complete at 0 Fable.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01440",
-   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "39-39",
-   "text": " \"cycle\": \"patient-pricing-2026-08-04\",",
-   "source_class": "arc1_cycles"
+   "id": "S01671",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "10024-10031",
+   "text": "commit ee9bf0f6b7e88c8343b10d000c3be20aee4b2e8a\nordinal 635\ndate 2026-08-25 09:16:59 -0700\nauthor Matt Stults\nsubject Node-side test of the emergent ontology (Matt's next step): the 39-node truth-bearing sample annotated under the 24 dimensions with document-first open values + a NEW:* escape valve (no shoehorning); merge/canonicalize step follows per the validated acts-pipeline pattern; then the twin-class collision census vs known truth.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01441",
-   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "40-40",
-   "text": " \"date\": \"2026-08-04\",",
-   "source_class": "arc1_cycles"
+   "id": "S01672",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "10032-10039",
+   "text": "commit 8c0908cea6a80a15dc5d158bc2bd8946f1880051\nordinal 636\ndate 2026-08-25 09:19:06 -0700\nauthor Matt Stults\nsubject Node-side annotations (39 truth-bearing clauses, both seats): 111/106 entries; BOTH seats independently fired the escape valve on the same clause with the same concept (age/vulnerability class of the user) — the first document-side dimension discovery the definitions corpus never surfaced. Merge seat dispatched (granularity-preserving), then the twin-class census vs known truth.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01442",
-   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "41-41",
-   "text": " \"decision\": \"revert\",",
-   "source_class": "arc1_cycles"
+   "id": "S01673",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "10040-10047",
+   "text": "commit b2adc1f6262b9de31fcf83164e2f9801b34cc57b\nordinal 637\ndate 2026-08-25 09:23:22 -0700\nauthor Matt Stults\nsubject SEPARABILITY VERDICT CORRECTED (vacuousness audit at both levels): value-layer separability is mostly fingerprinting (nodes 0% reuse, defs 20%); defensible numbers are dimension-set 0.37-0.40 (defs) / 0.85 (nodes). Twice-measured structural finding: separating granularity does not recur — the DIMENSION layer is the real shared ontology, the VALUE layer is entropy where matching needs coarse classes or judgment. Method rule: every separability claim ships with its reuse audit. Notes 0039.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01443",
-   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "42-42",
-   "text": " \"exploratory\": false,",
-   "source_class": "arc1_cycles"
+   "id": "S01674",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "10048-10055",
+   "text": "commit 07703f4aefad3f648194446ca04007ffc73c0d9b\nordinal 638\ndate 2026-08-25 09:26:03 -0700\nauthor Matt Stults\nsubject Notes 0040 (Matt's correction upheld): values are leaf atoms, matching is hierarchical — 0039's entropy claim downgraded to 'flat vocabularies were the wrong test'; the unifying diagnosis: every campaign precision problem is a hierarchy-level problem, mints are interior-node discovery, and merges must emit bridges not buckets.\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   },
   {
-   "id": "S01444",
-   "path": "semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json",
-   "commit": "pin",
-   "lines": "43-43",
-   "text": " \"fix_description\": \"PATIENT-AWARE MATCH PRICING v2.0 (spine cycle S3; CYCLE5_DESIGN.md REVISION 2 as amended per PORTFOLIO_REVIEW.md, incl. the worktree-core reconciliation and the F4 per-entry freeze-gate ruling) \\u2014 recorded principal-chain patients discount mismatched and uniformly-mismatch-attested matches. Per query with non-empty declared patients P: a credited atom match through a clause atom whose recorded chains name only patients outside P pays patient_mismatch_discount (d = 0.10, a DERIVED module constant in patient.py, unsweepable by contract invariant 9 \\u2014 licensing basis DISCOUNT_DERIVATION.md, the frozen golden-contrast derivation this cycle's designer adopted after the OPEN recomputation broke the pre-registered d-plateau and \\u00a71.4/Q6's re-derivation remedy fired; sha-pinned in test_patient.py); a clause whose every length->=2-chained atom is mismatched with P is uniformly mismatch-attested, and under the S3 MECHANISM AMENDMENT (designer ruling per the derivation's \\u00a74 recommendation, recorded in MECHANISM_AMENDMENT.md with old->new shas) its surviving atom mass is capped at ONE discounted credit \\u2014 tainted atom channel = d * max(base credits)/atom_norm, never d * sum (the F-linearity fix: dense uniformly-mismatched clauses must not retain residual mass proportional to match count); per-atom pricing on mixed clauses (taint defeated by one consistent chain \\u2014 the m0248 guard) is uncapped and pays d per mismatched match, ONCE (never d^2). Patients are read as chain[1:] from length->=2 chains ONLY (agent-first grammar, CYCLE5_REVIEW F1); length-1 chains and chain-free atoms are patient-free; patient-free clauses price bit-identically to today. Declared patients live in behaviours_query.json's per-behaviour `patients` field, licensed ONLY by the behaviour's own name+definition prose via validate_query.py's panel-blind anchor check (F4) under the per-entry definition-freeze gate (F5 + portfolio F4 ruling: PINNED entries byte-frozen modulo `patients`, appends permitted, duplicates refused). MERGE RECONCILIATION, disclosed: the pre-built worktree core (patient.py, validate_query.py, test_patient.py, test_validate_query.py, conftest/_OPTIONAL + test_no_reference_leak registrations) was hand-merged onto main BEFORE this OPEN \\u2014 the worktree branch predated the S1 join, so patient.py's chain-reading seam was reconciled to read the 1.2 metadata (ContainmentIndex.chains; dechained clause-atom names in all explain records; patients per dechained atom = union over its length->=2 chains) instead of the pre-join name set, its stale constant-rationale docstring corrected to the adjudicated basis (109/109 chain-audit + 264 license-quoted S2 chains), and the pre-1.2 'subsumption path unreachable by per-atom mismatch' claim superseded by the design's operative rule (\\u00a71.6 first sentence: the patient factor reads THE CREDITED CLAUSE ATOM's own recorded chain) \\u2014 both directions test-pinned. Those merged files are therefore FINAL BEFORE OPEN and sit sha-pinned in this cycle's gate/closure set, NOT in files_to_change (the driver requires every files_to_change entry to change post-OPEN); this cycle's own diff is the three `patients` declarations (behaviours_query.json: harm-avoidance-to-third-parties -> [third_party]; helpfulness -> [user, developer]; avoiding-over-and-under-caution -> [] \\u2014 I6: `patients` is the ONLY permitted delta) plus the snapshot/dossier wiring: snapshot.py routes overlay-seam scoring through patient.PatientIndex with the anchor-validated declarations (validate_query.load_query_patients \\u2014 the explicit named opt-in), records pricing_version 2.0 and the per-slug declared patients in the snapshot config identity; dossier.py extends reconstruction dispatch (2.0 -> PatientIndex with recorded patients; 1.2 -> ContainmentIndex; <=1.1 pre-join classes; ABSENT pricing_version -> legacy, pinned against the real cycle-4 keep snapshot \\u2014 F6/I5), gains the normalizer_drift dossier annotation (F3/I2: raw-score-untouched flips whose normalized score crossed the cut are tagged threshold-class, never match_change), and [A2] gains the CYCLE-DECLARED reconstruction license: a baseline input whose drift is a cycle's own frozen-manifest files_to_change diff (state.json open_shas pinning exactly the baseline sha) licenses the sha-verified git/pre_change byte fetch, parallel to the migration-log license \\u2014 required because this cycle's behaviours_query.json patients addition is a declared query-side diff no atom_refactor migration can log, and without it MEASURE's own dossier step refuses the baseline side; unrecorded drift still refuses (control-armed test).\",",
-   "source_class": "arc1_cycles"
+   "id": "S01675",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "10056-10063",
+   "text": "commit 88a8467888ff33841678e723f2c2444e9b36da20\nordinal 639\ndate 2026-08-25 09:27:56 -0700\nauthor Matt Stults\nsubject Blind-retranslation integration test (Matt's real question): 39 truth-bearing nodes -> combined representation (claim + inputs/outputs + free-coined content atoms + the 24 emergent dimensions with leaf values, NEW:* valve); two blind seats, then a BRIDGE-emitting merge (0040 rule), then separability verified at the hierarchy level where values recur (non-vacuous).\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
   }
  ]
 }
