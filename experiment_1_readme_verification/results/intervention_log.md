@@ -97,6 +97,15 @@ Artifact: check.py and SCHEMA.md accept unstated. Query-time consequence:
 an engine_failure with kind unstated is a witness that is undecided, so
 H08 counts it toward unverifiable, never toward vacuous verification.
 
+### D-08 — 2026-09-02 — pre-redaction spans restricted to text that differs
+
+Mechanical cut, not content targeting: a pre-redaction span whose
+whitespace-normalised text equals some current-file span of the same path
+adds no claim the current translation lacks (its claims would be
+byte-identical with a different commit). Only spans whose text differs are
+translated. 306 pre-redaction spans → 89 differing; 22 batches → 8.
+Old batch files kept under ledger/batches/pre_d08/.
+
 ## Interventions
 
 ### I-01 — 2026-09-02 — erratum number taken from a count

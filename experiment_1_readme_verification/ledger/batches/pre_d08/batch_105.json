@@ -1,0 +1,148 @@
+{
+ "header": {
+  "batch": "batch_105",
+  "source_class": "arc2_docs_preredaction",
+  "brief_version": "0.5",
+  "glossary_version": "frozen d887fb9",
+  "spans": 15,
+  "first_span": "S00805",
+  "last_span": "S00819"
+ },
+ "spans": [
+  {
+   "id": "S00805",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/PREREG_panel_equivalence.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "31-41",
+   "text": "## Behaviors and universe\n\nThe frontier panel's three behaviors (helpfulness,\nharm-avoidance-to-third-parties, avoiding-over-and-under-caution) over\nevery translated, non-abstained node in `node_corpus_all.json` at scoring\ntime. The adjudicated node set per behavior: the union of (a) every node\nthe seat engaged, (b) every panel-warm node (any_ge2), and (c) a random\nsample of 15 nodes from neither set (drawn by fixed seed 20260816,\nsorted-id order) so both instruments can also be scored on agreed-negative\nground. Every node in the adjudicated set receives a blind ruling.\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00806",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/PREREG_panel_equivalence.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "42-81",
+   "text": "## Metrics (all reported; the equivalence claim is metric 0)\n\n0. **Defensibility (PRIMARY — Matt's ruling, 2026-08-18):** for every\n   deviation the tool makes from the truth tier, is it an ERROR or a\n   DEFENSIBLE INTERPRETATION? Two rates per behavior:\n   * engagement defensibility = share of tool engagements the truth tier\n     rules relevant (both where the panel agreed and where it did not);\n   * decline defensibility = share of tool declines on panel-cited nodes the\n     truth tier rules NOT relevant (i.e. the tool was right to decline).\n   The comparison instrument is the PANEL under the SAME reader:\n   panel-citation defensibility = share of the panel's consensus citations\n   the truth tier rules relevant. **Equivalence = the tool's deviations are\n   defensible at least as often as the panel's are, on the same behavior,\n   under the same reader.** Symmetric by construction; no instrument is\n   assumed correct.\n   Validity control (REQUIRED before the claim is made): a second frontier\n   model, blind, re-rules a stratified sample of the disagreement rows; the\n   Fable defensibility calls must survive that reader at >= 80% agreement\n   or the truth tier is reported as single-model and the claim downgraded.\n   Matt's own stratified spot-check (a few clear-relevant, a few\n   clear-irrelevant, a few borderline in each direction) is recorded\n   alongside as the human calibration.\n\nThe following are reported beside metric 0, not as the claim:\n\n\n1. **Consistency:** seat-vs-truth agreement (Jaccard over\n   relevant sets) >= the frontier panel's own **median pairwise\n   judge-vs-judge agreement** on the same behavior (benchmark.judge_set /\n   jaccard at threshold 1, spec_key openai, computed over the panel's\n   passage universe mapped through clause_joins to the same nodes). If the\n   pipeline agrees with an independent reader at least as well as the\n   panel's judges agree with each other, \"panel-equivalent\" is earned on\n   that behavior.\n2. **Recall against truth:** fraction of truth-relevant nodes the seat\n   engaged. Reported with the structural coverage ceiling (truth-relevant\n   clauses with no translated span) stated beside it.\n3. **Precision against truth:** fraction of seat-engaged nodes ruled\n   relevant.\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00807",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/PREREG_panel_equivalence.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "82-108",
+   "text": "## Pre-stated predictions and falsifiers\n\n* Prediction: metric 0 holds on >= 2 of 3 behaviors; metric 1 reported. (Prior grounds: on the\n  2026-08-16 partial corpus, the adjudicator sided with the seat on 15/20\n  disputed engagements.)\n* Falsifier: metric 0 fails on >= 2 of 3 behaviors, OR engagement\n  defensibility < 0.6 on any behavior, OR the second-frontier control falls\n  below 80% — either result is reported as \"not panel-equivalent\" with\n  no post-hoc rescue. The FROZEN matching layer comprises the D5 fix\n  (TOP_K 12, MAX_ATOMS 10) AND the frontier atom decomposition\n  (`atoms_frontier_frozen.json`, produced BLIND to panel citations,\n  adjudication outcomes, and prior match results — its provenance block\n  states the inputs). Nothing in the matching layer may change after this\n  registration is signed, and no matching parameter may be tuned against\n  these numbers.\n* **Q3 ruled (Matt, 2026-08-18): the cold-start matching layer is scored AS\n  BLIND-DECOMPOSED.** The known precision and recall errors catalogued in\n  `panel_run1/THREEWAY_REPORT.md` (27 scope/structural, 73 seat-miss) are\n  counted against the cold-start number by design; the general fixes they\n  license (party-scope checklist + seat-brief item, topic/agenda atom\n  vocabulary, retrieval brief) are arm-2 material. Rejected by name:\n  applying the party-scope fix to the base tool before signing — legitimate\n  in principle, but it would make the cold-start number describe a tool\n  improved after seeing where it failed.\n* The n=1-style caveat is standing: three behaviors is the panel's own\n  limit, and the conclusion is scoped to them.\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00808",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/PREREG_panel_equivalence.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "109-142",
+   "text": "## Second arm (Matt's ruling, 2026-08-17): the TUNED number\n\nBehaviors are query-side artifacts built to be written and iterated freely\n— that is the product feature (DESIGN.md stage 4: \"feedback refines the\nQUERY, never the corpus\"). So the report carries TWO numbers per behavior,\nanswering two different questions:\n\n* **Cold-start (arm 1, above):** what the system delivers on first contact\n  — frozen blind atoms, one shot. Fair to compare against the panel, whose\n  judges also got one pass.\n* **Tuned (arm 2):** what a user reaches by iterating the behavior. The\n  atoms/definition for each behavior may be revised freely for up to 3\n  rounds. The tuning signal is FABLE ADJUDICATION, not the panel (Matt's\n  amendment, 2026-08-17: tuning against panel citations would import the\n  panel's measured defects — strict-tier under-citation, the truncated\n  universe — into the behavior; the tuned arm must make sense on its own,\n  and Fable judgment is the operative truth tier). Discipline: the\n  behavior's adjudicated node set is split 50/50 by fixed seed (20260817,\n  sorted-id order). The tuner sees verdicts-with-grounds on the TUNING half\n  only. Scoring runs on the HELD-OUT half plus any new engagements the\n  tuned matcher produces, judged by FRESH adjudicator instances shown\n  neither the tuning history nor the tuning half's verdicts. Same\n  instrument type, disjoint verdicts and instances — the tuned number\n  measures reach, not memorization. The panel appears in arm 2 only as the\n  comparison instrument inside metric 0, never as a signal.\n* Reported side by side, always both, labeled: the cold-start number is\n  the generalization claim, the tuned number is the expressiveness ceiling,\n  and the GAP between them is the measured value of the iteration feature\n  itself. Reporting the tuned number alone is forbidden by this\n  registration.\n* Arm-2 falsifier: if tuning cannot bring metric 0 to pass on a behavior\n  in 3 rounds, that behavior is reported \"not reachable by iteration at\n  this corpus\", with the round transcripts kept.\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00809",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/PREREG_panel_equivalence.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "143-158",
+   "text": "## What this deliberately does not measure\n\nASP fidelity (SEMANTIC_AUDIT.md owns that), contradiction detection (needs\nthe D4 concrete instances), and the panel's own correctness — the panel is\nan instrument being compared, not a bar being assumed.\n\n---\n\n**SIGNED — Matt Stults, 2026-08-18.** Content sha256 at signing:\n`6848fb5a489aad2935ae2759f7daf2c14265abb94ebf1ecfb99f5989e54a80f3`. Signed via the coordinator on Matt's instruction (\"ok sign it\") after\nQ1 (defensibility metric), Q2 (21/22 spot-check calibration) and Q3\n(cold-start layer scored as blind-decomposed) were each ruled and recorded\nabove. From this line on, the registration is FROZEN: any edit to the\nsections above voids it; the matching layer may not change; scoring happens\nonce.\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00810",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "1-2",
+   "text": "# L1/L2 LICENSING EXPERIMENTS — CLEAN-CONTEXT ADVERSARIAL REVIEW\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00811",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "3-29",
+   "text": "## Provenance\n\n- **Reviewer:** clean-context adversarial reviewer, Opus tier, no stake in the project's\n  success. No prior context on this repo beyond what is recorded below.\n- **Session date:** 2026-08-24 (the artifacts under review are dated 2026-08-24/25;\n  notes 0042 and commit `bf0d4978` carry 2026-08-25).\n- **Asked to determine:** whether the two registered licensing experiments — L1 (for P1)\n  and L2 (for P2), as registered verbatim in `RETRANS_REVIEW_DISPOSITION.md` — would, if\n  passed exactly as written, answer the user's two questions:\n  - **Q-A:** Would using this ontology in a COMPLETE retranslation of the OpenAI spec\n    allow complete representability of all dimensions necessary for SEPARATION\n    (distinguishing which clauses bear on which behaviours)?\n  - **Q-B:** Is this likely to EXTEND TO NOVEL BEHAVIOURS, on the theory that novel\n    behaviours fall within the space spanned by the 100-definition corpus?\n  Specifically: every way the experiments could PASS while the claims stay FALSE, every\n  way they could FAIL for reasons unrelated to the claims, whether L1+L2 are jointly\n  sufficient for a funding decision on a full retranslation campaign, and what single\n  experiment to run instead or in addition.\n- **Standing context taken as ground truth (not re-litigated):** the prior integration\n  census was demolished by adversarial review and the demolition was accepted in full —\n  random-partition null dominates the pass condition 299/300; 1-NN relevance prediction\n  at 0.72/0.70 vs bases 0.60/0.59; mids induced circularly; 39-node sample stratified on\n  known-problem nodes; both scored behaviours in-corpus; seat agreement 23/39 masked by\n  pooling.\n- **Operative standard applied:** the project's own — the system either MATCHES the\n  frontier panel or gives a FRONTIER-JUSTIFIABLE answer.\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00812",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "30-67",
+   "text": "### Repo artifacts inspected\n\nAll under\n`/Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/`.\n\nPrimary (read directly by the reviewer):\n- `walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/RETRANS_REVIEW_DISPOSITION.md`\n- `.../behavior_pilot/ITERATION_NOTES.md` (notes 0031, 0032, 0033, 0036, 0042)\n- `.../behavior_pilot/HANDOFF_CURRENT.md`\n- `.../behavior_pilot/qc_separability_census.py`\n- `.../behavior_pilot/RETRANS_INTEGRATION_CENSUS.json`\n- `.../behavior_pilot/qc_canonical_values.json`\n- `.../behavior_pilot/qc_emergent_schema.json`\n- `.../behavior_pilot/qc_emergent_ann_A.json`, `qc_emergent_ann_B.json`\n- `.../behavior_pilot/query_class_corpus.json`\n- `semi-formal-experiment/spend.py` (+ its live report over `usage.jsonl`)\n- `git log` at `bf0d4978` and predecessors\n\nSecondary (inventoried by a delegated exploration pass, results folded into the\naddendum):\n- `data/behaviours.json`, `data/panel-coverage.json`, `data/panel-v5/` (`runlog-v5.jsonl`,\n  `behaviour-definitions-v5.json`, `rubric-v5.txt`, `PROVENANCE.md`)\n- `.../behavior_pilot/satisfiability_census.py`, `arm_ab.py`,\n  `satisfiability_census_v19_frozen.json`, `ROUND4_FREEZE_DERIVATION.json`,\n  `atoms_frontier_frozen.json`, `PREREG_panel_equivalence.{md,sha256}`\n- `.../behavior_pilot/panel_run1/` (adjudication + fresh_draw / fresh_draw2 /\n  fresh_draw3 / fresh_draw4 result blocks, `agreed_negative_rulings.json`,\n  `panel_rerulings.json`, `REGISTERED_RESULT.json`, `spotcheck_matt_result.json`)\n- `.../behavior_pilot/ua_truth_visible.json`, `ua_truth_sealed.json`,\n  `ITER1_TRADEOFFS_REPAIR_TRUTH.json`, `ITER2_TRADEOFFS_REPAIR_TRUTH.json`,\n  `GEN_BLOCK1_SCORED.json`, `ITER*_SCORED.json`, `round4_*_scored*.json`,\n  `ROUND4_DEV_TABLE.json`, `ruling_packets/`, `coverage_translated.json`\n- `graph_v2/node_corpus_all.json`, `graph_v2/GRAPH_OVERVIEW.md`\n- prereg drafts: `FRESH_DRAW_PREREG_DRAFT.md`, `FRESH_DRAW_ROUND2_PREREG_DRAFT.md`,\n  `FRESH_DRAW_ROUND3_PREREG_DRAFT.md`, `ROUND4_PREREG.md`,\n  `GENERALIZATION_PREREG_DRAFT.md`, `DEFENSIBILITY_BATCH_PROTOCOL.md`,\n  `CONVERGENCE_CAMPAIGN.md`\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00813",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "68-78",
+   "text": "### Structure of this document\n\nThe **main review** (findings F1–F27, Parts 1–4, amendments A1–A12) is reproduced first,\nverbatim as delivered. The **addendum** (corrections C1–C2, findings F28–F36, revised\nrecommendation and verdict, amendments A13–A20), written after a panel-truth inventory\nreturned, follows verbatim. Nothing has been revised, reconciled, or softened between the\ntwo parts; where the addendum corrects the main review it says so explicitly.\n\n---\n---\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00814",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "79-82",
+   "text": "# PART ONE — MAIN REVIEW (verbatim)\n\n---\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00815",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "83-89",
+   "text": "# ADVERSARIAL REVIEW — licensing experiments L1 / L2\n\nGround-truth artifacts consulted:\n`/Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/` — `RETRANS_REVIEW_DISPOSITION.md`, `ITERATION_NOTES.md` (0031, 0036, 0042), `qc_canonical_values.json`, `qc_emergent_schema.json`, `qc_emergent_ann_{A,B}.json`, `query_class_corpus.json`, `qc_separability_census.py`, `RETRANS_INTEGRATION_CENSUS.json`; and `/Users/mattstults/.../semi-formal-experiment/spend.py`.\n\n---\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00816",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "90-93",
+   "text": "## PART 1 — If L1 passes exactly as written, is Q-A answered YES?\n\n**NO.** L1 as registered is (a) already satisfied by evidence the project has itself ruled inadequate, (b) measuring the wrong quantity, and (c) unspecified on every parameter that determines whether it can fail.\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00817",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "94-99",
+   "text": "### F1. L1's relevance clause is ALREADY PASSED by the exact numbers that demolished 0041. Fatal.\n**Defect.** L1 requires \"relevance prediction over the representation must beat majority baseline.\" The demolition's own CoVe re-derivation reports 1-NN at **0.72 vs base 0.60** (tradeoffs, n≈150) and **0.70 vs 0.59** (user-autonomy, n≈122). Those *beat* the majority baseline, and beat it significantly: one-sided binomial vs p₀ = 0.60 gives **p = 0.0015** (108/150) and **p = 0.0097** (85/122). So the clause is not a hurdle — it is a restatement of the result the review called \"at or near majority-class base rate.\"\nWorse, the project has already ruled on this exact effect size in the opposite direction: `ITERATION_NOTES.md` 0031 records \"**NO canon form field carves behaviour relevance (best 0.70 vs 0.59 base)**\" as a *failure*. The same numbers cannot be a failure in 0031 and a pass in L1.\n**Why it matters for Q-A.** L1 could be \"run\" today, at $0, and would return PASS on its relevance clause, licensing a 600-node campaign on the strength of a base-rate predictor. This is erratum #21 recurring for the fourth time: a pass condition that cannot fail.\n**Fix (registered condition).** Delete \"beats majority baseline.\" Replace with the project's own operative standard: *the representation must reach ≥ (panel-internal agreement − δ) on positive-class F1 or MCC, δ pre-registered at ≤ 0.05, AND must beat a raw-clause-text baseline (TF-IDF and/or a frontier judge reading the clause string) by a pre-registered margin.* Report AUC/MCC, never accuracy, and report panel-internal agreement as the ceiling. Notes 0036 already records that \"L1 over full symbolic space and TF-IDF both at base rate\" — so the text baseline is the comparator that actually decides whether translation buys anything.\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00818",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "100-104",
+   "text": "### F2. \"Separability\" as implemented is signature UNIQUENESS, which is not the Q-A quantity and is arguably anti-correlated with it.\n**Defect.** `qc_separability_census.py` defines `separability = len(distinct_signatures) / n`. That is a fingerprinting metric. Q-A asks whether the representation distinguishes *which clauses bear on which behaviours* — i.e. whether nodes relevant to behaviour X are systematically separated in signature space from nodes not relevant to X. Uniqueness is neither necessary nor sufficient: two clauses that bear on exactly the same behaviours in exactly the same way *should* collide, and a representation optimized for uniqueness degenerates into text fingerprinting — which the project already measured and named (`b2adc1f6`: value-layer separability \"is mostly fingerprinting\", 0% node reuse). Pushing sep→1.00 is the failure mode, not the goal.\n**Why it matters for Q-A.** L1 can score sep 1.00 with a large null margin and still carry zero relevance information — precisely the 0041 outcome.\n**Fix.** Retire uniqueness as a pass condition. Register **truth-aligned separability**: for each behaviour with panel truth, compute (i) AUC of a signature-space classifier for relevant-vs-not, (ii) the ratio of mean within-class to between-class signature distance, (iii) the collision rate *between truth-discordant pairs only* (nodes that differ in relevance to at least one scored behaviour). Uniqueness may be reported descriptively; it may not be a pass condition.\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00819",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "105-109",
+   "text": "### F3. L1 does not test annotation reliability at all, and the reliability ceiling caps everything downstream.\n**Defect.** Two blind seats agreed on the exact dimension set for **23/39** nodes (41% disagreement), masked by pooling. L1 says nothing about seats, blinding, or agreement, and its \"score separability of the held-out half\" is silent on whether scoring is per-seat or pooled — pooling is exactly the move that hid F8.\n**Why it matters for Q-A.** A 600-node campaign whose per-node dimension assignment is reproducible only 59% of the time cannot support \"complete representability.\" Predictive validity is bounded above by reliability; measuring validity without reliability makes a failure uninterpretable and a pass unbelievable.\n**Fix.** Register: two independent blind seats annotate every L1 node; **all metrics are computed per seat and reported per seat — pooling across seats is prohibited**; report exact-dimension-set agreement, Jaccard agreement, and Krippendorff α over the 24-dimension indicator matrix; **pre-register a reliability floor (α ≥ 0.67) as a gate that runs BEFORE any separability or relevance metric is computed**, and a hard rule that a run failing the floor is void, not renegotiated.\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
+  }
+ ]
+}

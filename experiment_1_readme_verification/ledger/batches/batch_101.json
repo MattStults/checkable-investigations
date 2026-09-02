@@ -5,37 +5,11 @@
   "brief_version": "0.5",
   "glossary_version": "frozen d887fb9",
   "spans": 15,
-  "first_span": "S00746",
-  "last_span": "S00760"
+  "first_span": "S00749",
+  "last_span": "S00770",
+  "note": "D-08: pre-redaction spans whose text differs from every current-file span of the same path"
  },
  "spans": [
-  {
-   "id": "S00746",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
-   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
-   "lines": "371-395",
-   "text": "## 0014 — ITERATION 3 CLOSE, 2026-08-24\nAttempt-4 (certified-Opus venue per A10 Q3, coverage-valid registration):\nENGAGED PRECISION 0.85 (P1 pass; P2 exceeded on the HIGH side), DECLINE\n0.70 (P4 pass; was 0.35-0.50 panel-tier), P3 move gate 10/14 extension\nnodes relevant — the arbitrates_channel adoption REALIZED AND KEPT.\nWave spot-check 1/8 (certificate held again). Attempt series:\n0.40 transfer -> 0.70 -> 0.55 -> 0.85/0.895.\n- TRIPWIRE WORKED AS DESIGNED (blog material): the dispute-class\n  spot-check fired (4/9) — the Opus certificate measurably does NOT\n  cover the boundary-item annotation sliver, exactly the population\n  2-seat disagreement selects for. Response was mechanical: quarantine\n  the 43 dispute resolutions (assembly's own rule), marks 283->260,\n  engagement 393->384; the only measured affected node was a fresh FP,\n  so the quarantine RAISED the adjusted precision to 0.895 and P3 holds\n  at 10/12. Lesson for certificates: measure parity ON THE DISPUTE\n  CLASS separately before letting a cheap tier resolve escalations —\n  consensus items and boundary items are different tasks.\n- OPEN AT CLOSE: 43 suspended dispute marks (Fable-tier resolvable,\n  ~0.5pt, next bar); the 8-node relevant-by-example FN class (second\n  concept, future mint); the single-consideration FP family (unchanged,\n  SUSPENDED-OPEN); C-V definitional-lane pair; runbook rewrite from\n  notes 0001-0014 now carrying FOUR banked errata.\n- Fable spend this block: 2 spot-check seats (~64k raw, ~0.6pt from\n  30%). Everything else Opus.\n",
-   "source_class": "ledger_preredaction",
-   "context": null
-  },
-  {
-   "id": "S00747",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
-   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
-   "lines": "396-416",
-   "text": "## 0015 — QUIESCENCE + RUNBOOK v1, 2026-08-24\nFollowing the machine's own prescription (Matt: \"continue to follow the\nstate machine\"):\n- STEP-1 triage of attempt-4 misses: 9/9 into standing states, no new\n  mechanism -> the tradeoffs loop is at its QUIESCENT FIXED POINT at\n  inventory k (ITER4_MISS_TRIAGE.json). Escalations deferred per A5\n  (nothing to pay for), required before any future fix.\n- CALCULUS_RUNBOOK v1 rewritten FROM notes 0001-0014 (execution-derived;\n  docs-tests 5/5). Carries: gen-venue truth-injection pattern, refilter-\n  before-routing, escalate-before-choosing, certificates are task-class-\n  local, measure-criteria-before-signing, consumption mechanisms\n  validated individually, the binding V5 coverage rule, same-samples-\n  higher-tier re-measurement, defensible-by-contradiction, quiescent-\n  fixed-point language, constraint-structure-not-menus, tripwires never\n  silently passed.\n- REMAINING MAINTENANCE (queued, named): census/vector extension for\n  party_concern, governs_conditional, machinery_concern, arbitrates_*\n  (the Arc1-e build — design-tier, needed before census-based routing\n  of the r4 module); trace-audit extension over iterations 2-3; the\n  Fable-tier dispute re-resolution (~0.5pt, next bar).\n",
-   "source_class": "ledger_preredaction",
-   "context": null
-  },
-  {
-   "id": "S00748",
-   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
-   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
-   "lines": "417-437",
-   "text": "## 0016 — ITEMS 1+2 COMPLETE (census extension + frozen transfer predictions), 2026-08-24\n- Arc1-e MAINTENANCE BUILD landed: vector() 8->12 slots (append-only;\n  pinned indices untouched), current_mask consumes every DECLARABLE_MOVES\n  channel, guards lifted-with-reasons-discharged, registration fence\n  updated same-commit, guard test rewritten to the structural form (every\n  registry channel must map to a live-when-declared slot — new channels\n  now fail loud here too). 43 tests green. FIRST census over a\n  new-channel contract (r4): runs; 35 mismatches, incl. 1 UNSAT-both\n  (future R5 datum). Census-routability of user-autonomy (party_concern)\n  unblocked as a side effect.\n- BLOCK2_TRANSFER_PREDICTIONS.md FROZEN before any block-2 ruling:\n  user-autonomy (single-consideration FPs + machinery FNs; existing\n  channels; 0 mints; 0.55-0.75), proportionate-risk (HEADLINE: the\n  tradeoffs ARB mint transfers as a zero-annotation arbitrates_channel\n  declaration — calibration IS arbitration; 0.60-0.80), general-welfare\n  (C-V: does still carries ASP-literal names, the F1 class unrepaired in\n  this module — checkable from the contract file alone; measure-after-\n  repair, not before). Per-clause scoring rule frozen with them.\n- STATUS: measuring any block-2 behaviour awaits Matt's signed prereg\n  amendment (the F2 stop rule) + behaviour pick + budget envelope.\n",
-   "source_class": "ledger_preredaction",
-   "context": null
-  },
   {
    "id": "S00749",
    "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
@@ -127,20 +101,47 @@
    "context": null
   },
   {
-   "id": "S00759",
+   "id": "S00764",
    "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
    "commit": "365d68b3f550379153b13b89c571672a92e5e396",
-   "lines": "607-613",
-   "text": "## 0027 — V5-AS-TRUTH MEASURED (Matt's question), 2026-08-24\nAnswered with data: the shelf panel projects to node level at 0.50-0.75\nagreement (granularity smearing) — unusable as truth, the prereg's\nclosure now measured-correct. ERRATUM #18: measure shelf data sources'\ncertificate-ability BEFORE the dominant spend, not after the question.\nArtifact: V5_TRUTH_TIER_MEASUREMENT.json.\n",
+   "lines": "676-686",
+   "text": "## 0032 — AFK ENVELOPE (Matt, 2026-08-25), AUTONOMOUS DRIVE\nMatt AFK: \"drive this as far as you can, using less capable models to\nthe extent you can; try not to spend more than 5% of my fable budget\nfor the week.\" REGISTERED: incremental Fable cap 5pt; PLAN USES 0 Fable\nseats (query-class study = Opus/Sonnet/Haiku per spec; UA R3\nenumeration, validation, and the SEAL confirmation are all $0 — the\nseal's truth was pre-bought). A mint, if the R3 space exhausts, gets\ndesigned + calibrated on Opus and PARKS at the P3 signature for Matt.\nNo /usage pastes available -> no Fable dispatch at all this block\n(strictly safer than the cap).\n",
    "source_class": "ledger_preredaction",
    "context": null
   },
   {
-   "id": "S00760",
+   "id": "S00765",
    "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
    "commit": "365d68b3f550379153b13b89c571672a92e5e396",
-   "lines": "614-625",
-   "text": "## 0028 — RECURRENCE ANALYSIS: SECTIONS NOT STATEMENTS, 2026-08-24\nMatt's question answered with counts (PROBLEM_NODE_RECURRENCE.json):\nzero retranslations ever; 7/138 statement-recurrers (contested +\nsuspended-by-design); the mass is sectional (style/formatting +\nobjectivity + authority-machinery). KEY DESIGN CONSEQUENCE: the same\nstyle-section nodes FP across BOTH behaviours measured -> the missing\nconcept is corpus-level, and the UA mint should be designed as the\nGENERAL single-consideration-vs-cross-consideration layer (ARB was the\nbehaviour-flavored first cut) so one mint amortizes across all\nbehaviours — the concrete mechanism by which the concept-per-behaviour\ncost curve could actually bend.\n",
+   "lines": "687-706",
+   "text": "## 0033 — UA ARC (AFK block): MOVE-1 ADOPTED; TARGET MINT CALIBRATED AND HELD, 2026-08-25\n- R3 enumeration (64 compounds, $0): admissible optimum = governs wall\n  {substance, tone, objectivity}: 18/90 fixes, 0 breaks, 0 new FPs.\n  ADOPTED (UA_REPAIR_MOVE1.json, ua_contract_r2.json). Seal UNTOUCHED.\n- OPERATIVE_TARGET mint calibration (3 Opus seats, thresholds\n  pre-stated): STABILITY 0.98 mean pairwise, ZERO 3-way splits — the\n  most stable layer ever measured here. FP-side separation PASSES\n  (0.20 <= 0.30). TP-side coverage FAILS the gate: 0.67 vs >=0.70 —\n  5/15 UA TPs are relevant via other targets (incl. machinery-class\n  and assistant-output-with-deference-content), so a PURE WALL is\n  inadmissible (would break 5 TPs). HELD FOR MATT with the honest\n  numbers: the concept is real and crisp; the consumption design needs\n  a second disjunct (e.g. wall scoped to a sub-channel, or\n  target-OR-machinery composite). The calibration-before-signature\n  discipline did its job: a gate miss surfaced BEFORE any corpus\n  annotation was bought.\n- Tradeoffs cross-check (descriptive): the enum classifies the\n  cross-behaviour recurrers as assistant_output — consistent with the\n  amortization hypothesis.\n",
+   "source_class": "ledger_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00766",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "707-731",
+   "text": "## 0034 — AFK BLOCK CLOSE, 2026-08-25\nFull block ran at ZERO Fable (envelope was 5pt). State at close, all\nparked honestly:\n- UA ARC: move-1 adopted (18/0/0); OPERATIVE_TARGET mint calibrated\n  (stability 0.98 — best ever; FP-side passes; TP-side 0.67 vs 0.70\n  gate -> pure wall inadmissible) -> HELD at Matt's signature with the\n  second-disjunct design question. Seal untouched. 72 residual FPs.\n- QUERY-CLASS STUDY: 100-def corpus built (exemplary Opus coordinator\n  run); v1 vocabulary tripwired (my spec defect — under-determination,\n  Opus-vs-Opus 0.47); v2 fix raised calibration to 0.87 and bulk pairs\n  to 0.78 but the INDEPENDENT spot-check tripwired again at full-pattern\n  granularity (0.36 vs 0.20). Halted without publishing a bound.\n  MEASURED: verb 1.00, primary-place 0.93/0.75, full pattern 0.78/0.64\n  — the reliable resolution is primary x verb; secondaries are the\n  noise. DESCRIPTIVE (non-binding): 9 primary places observed over 100\n  definitions, dominated by governed_quality (29), object_sphere (16),\n  act (13) — shape-consistent with the bounded-frame hypothesis.\n  DECISION PARKED: accept coarse bound / brief v3 / accept-with-noise.\n- Tier data: no cheap tier certifies definition-coding (Sonnet 0.13,\n  Haiku 0.00 at v1) — the first measured negative for the down-tier\n  program on a design-adjacent task.\n- Errata: #19 (my coding vocabulary under-specified — same lesson as\n  the mint-criteria discipline: MEASURE the brief before scaling, which\n  the phased design did, catching it at 15 items not 100).\n",
+   "source_class": "ledger_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00767",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "732-746",
+   "text": "## 0035 — COMPOSITIONAL-SUFFICIENCY PROBE + PROGRAM VERDICT, 2026-08-25\nMatt asked whether the build-our-own-ontology idea failed. $0 probe:\nbest compact principled DNF over ALL existing layers on UA truth =\nOR(gov_substance, gov_tone, head_comply): 23 fixes / 1 break — beats\nthe adopted wall (18/0) but leaves ~65/90 FPs untouched; the engine's\nconjunctive-gate weakness was NOT the main bottleneck for UA.\nVERDICT (recorded): layers succeed as annotation (stable, signal-\nbearing); the instrument succeeded once (tradeoffs 0.85); the PROGRAM\nis unproven at scale — cost curve unbent, one concept per behaviour so\nfar. DECISIVE PENDING EXPERIMENTS (both cheap, both designed):\ncorpus-wide OPERATIVE_TARGET (blocked on Matt's mint decision) and the\nfrozen prop-risk ARB-transfer test. Both land -> program stands; both\nmiss -> content doesn't compile and the instrument's role shrinks to\nform-layer + audit over direct frontier relevance.\n",
+   "source_class": "ledger_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00770",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "791-815",
+   "text": "## 0038 — QUERY-CLASS ARC CLOSED: THE MEASURED BOUND, 2026-08-25\nMatt's arc (open coding -> place-blind schema -> annotate -> separate)\ncompleted end-to-end, all Opus, $0 Fable:\n- DISCOVERY WORKED where my closed vocabulary could not: 24 emergent\n  dimensions, 9 with no counterpart in my ten places (evaluation_unit\n  and subject_matter_class the load-bearing two, dual-coder evidenced;\n  our instrument is measurably utterance-locked).\n- The vacuousness trap was caught (free-text values = fingerprints,\n  zero reuse) and fixed by canonicalization (105 values, 46% merger,\n  seat-independent 115/115).\n- FINAL: separability 94/100 both seats identically; all 6 collisions\n  are cross-source SAME-CONSTRUCT duplicates (the census doubling as\n  corpus dedup); zero different-construct collisions. THE BOUND:\n  24 dimensions x 105 values addresses the sampled character-spec\n  query class completely, ~1.2 handles/definition.\n- Errata this arc: designer-vocabulary smuggling caught THREE times\n  (Matt twice, the vacuousness check once) — the standing rule: schema\n  derivation, annotation, and canonicalization must each be blind to\n  the layer above; comparison to prior vocabularies happens only at\n  analysis, as a finding.\nSTANDING FOR MATT: the new-dimension candidates' implications for the\nINSTRUMENT (evaluation_unit especially — trajectory-class behaviours\nare outside the node-relevance design entirely); the UA mint decision;\nthe prop-risk test. Fable spent this AFK drive: 0.\n",
    "source_class": "ledger_preredaction",
    "context": null
   }

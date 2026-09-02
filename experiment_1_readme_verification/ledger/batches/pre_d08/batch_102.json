@@ -1,0 +1,148 @@
+{
+ "header": {
+  "batch": "batch_102",
+  "source_class": "ledger_preredaction",
+  "brief_version": "0.5",
+  "glossary_version": "frozen d887fb9",
+  "spans": 15,
+  "first_span": "S00761",
+  "last_span": "S00775"
+ },
+ "spans": [
+  {
+   "id": "S00761",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "626-643",
+   "text": "## 0029 — DIMENSION-ACCRETION QUESTION (Matt) + THE TRACKED METRIC, 2026-08-24\nMatt's architectural critique, recorded at full strength: ~1 new\ndimension per behaviour extrapolates to an untranslatable schema — the\na-priori-translation goal dies of dimension obesity; the alternative is\ndirect frontier relevance with translation kept for audit only.\nCOMPETING HYPOTHESIS (falsifiable): mints are completing the FIXED\nargument structure of a norm (ARB = internal structure; machinery =\nstanding; locus = operative object; joining action/actor/beneficiary/\nquality/condition/force) — slot inventory bounded ~10-12, after which\nbehaviours consume existing slots with new VALUES (cheap).\nTRACKED METRIC: slots-vs-values per behaviour. Current curve: tradeoffs\n+2 slots (ARB, machinery); UA +1 projected (locus); PREDICTIONS ALREADY\nIN PLACE: proportionate-risk = 0 slots (pure ARB reuse, frozen);\ngeneral-welfare = 0 slots (protects VALUE growth: animal/AI welfare).\nKILL-CRITERION (registered): if behaviours 3 AND 4 each require a\ngenuinely new SLOT (not values), the frame hypothesis is dead — stop\nminting, re-architect around direct frontier relevance.\n",
+   "source_class": "ledger_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00762",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "644-656",
+   "text": "## 0030 — THEORY GROUNDING (Matt's directive), 2026-08-24\n\"Find the existing theory instead of finding dimensions one by one\" —\nNORM_FRAME_THEORY_MAP.md drafted: every empirically-minted slot maps\nonto the canonical inventories (von Wright's six norm elements; Hohfeld\ncorrelatives; Searle constitutive/regulative — which PREDICTED the\nmachinery finding; defeasible deontic logic = ARB). Four a-priori gaps\nno miss has forced yet (full Hohfeld relation-typing; inter-norm\npriority as a RELATION; constitutive flag at translation time; deontic\nvs epistemic modality). Proposal: derive the next document's schema\nfrom the completed frame; kill-criterion upgraded to\nzero-slots-outside-the-theory-frame. DRAFT-FROM-MODEL-KNOWLEDGE:\nrequires a literature-verification pass before anything binds.\n",
+   "source_class": "ledger_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00763",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "657-675",
+   "text": "## 0031 — THEORY REVIEW + SPOT-CHECK: BOTH LANDED, MUTUALLY CONFIRMING, 2026-08-24\nThe web-verified adversarial review found: one doctrinal error (Hohfeld\nprivilege/claim-right conflation), one unsupported attribution (locus as\nvon Wright content-object), one wrong equivalence (ARB=defeasibility),\ncategory mixing (components/relations/types/attributes flattened into\npeer slots), a near-unfalsifiable kill-criterion, and the wrong\ncomparanda (validate vs LegalRuleML/ODRL, not 1963). The blind\nspot-check then CONFIRMED the two testable charges from data:\ndefeasibility 0.38 stability (relation-as-property fails), machinery=\nconstitutive 1/5. And the decisive separation result: NO canon form\nfield carves behaviour relevance (best 0.70 vs 0.59 base) — norm FORM\nannotates cheaply and stably (7/8 fields 0.87-0.97, straight into the\nnext document's schema) but relevance lives on the CONTENT side\n(target/locus), whose proper homes are ODRL target + frame semantics.\nMap corrected append-only (C1-C7). NET for Matt's directional question:\nthe theory gives us the form layer a priori and free; it does NOT hand\nus the relevance-carrying dimensions — those remain to be designed, now\nagainst engineered standards instead of minted from misses.\n",
+   "source_class": "ledger_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00764",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "676-686",
+   "text": "## 0032 — AFK ENVELOPE (Matt, 2026-08-25), AUTONOMOUS DRIVE\nMatt AFK: \"drive this as far as you can, using less capable models to\nthe extent you can; try not to spend more than 5% of my fable budget\nfor the week.\" REGISTERED: incremental Fable cap 5pt; PLAN USES 0 Fable\nseats (query-class study = Opus/Sonnet/Haiku per spec; UA R3\nenumeration, validation, and the SEAL confirmation are all $0 — the\nseal's truth was pre-bought). A mint, if the R3 space exhausts, gets\ndesigned + calibrated on Opus and PARKS at the P3 signature for Matt.\nNo /usage pastes available -> no Fable dispatch at all this block\n(strictly safer than the cap).\n",
+   "source_class": "ledger_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00765",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "687-706",
+   "text": "## 0033 — UA ARC (AFK block): MOVE-1 ADOPTED; TARGET MINT CALIBRATED AND HELD, 2026-08-25\n- R3 enumeration (64 compounds, $0): admissible optimum = governs wall\n  {substance, tone, objectivity}: 18/90 fixes, 0 breaks, 0 new FPs.\n  ADOPTED (UA_REPAIR_MOVE1.json, ua_contract_r2.json). Seal UNTOUCHED.\n- OPERATIVE_TARGET mint calibration (3 Opus seats, thresholds\n  pre-stated): STABILITY 0.98 mean pairwise, ZERO 3-way splits — the\n  most stable layer ever measured here. FP-side separation PASSES\n  (0.20 <= 0.30). TP-side coverage FAILS the gate: 0.67 vs >=0.70 —\n  5/15 UA TPs are relevant via other targets (incl. machinery-class\n  and assistant-output-with-deference-content), so a PURE WALL is\n  inadmissible (would break 5 TPs). HELD FOR MATT with the honest\n  numbers: the concept is real and crisp; the consumption design needs\n  a second disjunct (e.g. wall scoped to a sub-channel, or\n  target-OR-machinery composite). The calibration-before-signature\n  discipline did its job: a gate miss surfaced BEFORE any corpus\n  annotation was bought.\n- Tradeoffs cross-check (descriptive): the enum classifies the\n  cross-behaviour recurrers as assistant_output — consistent with the\n  amortization hypothesis.\n",
+   "source_class": "ledger_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00766",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "707-731",
+   "text": "## 0034 — AFK BLOCK CLOSE, 2026-08-25\nFull block ran at ZERO Fable (envelope was 5pt). State at close, all\nparked honestly:\n- UA ARC: move-1 adopted (18/0/0); OPERATIVE_TARGET mint calibrated\n  (stability 0.98 — best ever; FP-side passes; TP-side 0.67 vs 0.70\n  gate -> pure wall inadmissible) -> HELD at Matt's signature with the\n  second-disjunct design question. Seal untouched. 72 residual FPs.\n- QUERY-CLASS STUDY: 100-def corpus built (exemplary Opus coordinator\n  run); v1 vocabulary tripwired (my spec defect — under-determination,\n  Opus-vs-Opus 0.47); v2 fix raised calibration to 0.87 and bulk pairs\n  to 0.78 but the INDEPENDENT spot-check tripwired again at full-pattern\n  granularity (0.36 vs 0.20). Halted without publishing a bound.\n  MEASURED: verb 1.00, primary-place 0.93/0.75, full pattern 0.78/0.64\n  — the reliable resolution is primary x verb; secondaries are the\n  noise. DESCRIPTIVE (non-binding): 9 primary places observed over 100\n  definitions, dominated by governed_quality (29), object_sphere (16),\n  act (13) — shape-consistent with the bounded-frame hypothesis.\n  DECISION PARKED: accept coarse bound / brief v3 / accept-with-noise.\n- Tier data: no cheap tier certifies definition-coding (Sonnet 0.13,\n  Haiku 0.00 at v1) — the first measured negative for the down-tier\n  program on a design-adjacent task.\n- Errata: #19 (my coding vocabulary under-specified — same lesson as\n  the mint-criteria discipline: MEASURE the brief before scaling, which\n  the phased design did, catching it at 15 items not 100).\n",
+   "source_class": "ledger_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00767",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "732-746",
+   "text": "## 0035 — COMPOSITIONAL-SUFFICIENCY PROBE + PROGRAM VERDICT, 2026-08-25\nMatt asked whether the build-our-own-ontology idea failed. $0 probe:\nbest compact principled DNF over ALL existing layers on UA truth =\nOR(gov_substance, gov_tone, head_comply): 23 fixes / 1 break — beats\nthe adopted wall (18/0) but leaves ~65/90 FPs untouched; the engine's\nconjunctive-gate weakness was NOT the main bottleneck for UA.\nVERDICT (recorded): layers succeed as annotation (stable, signal-\nbearing); the instrument succeeded once (tradeoffs 0.85); the PROGRAM\nis unproven at scale — cost curve unbent, one concept per behaviour so\nfar. DECISIVE PENDING EXPERIMENTS (both cheap, both designed):\ncorpus-wide OPERATIVE_TARGET (blocked on Matt's mint decision) and the\nfrozen prop-risk ARB-transfer test. Both land -> program stands; both\nmiss -> content doesn't compile and the instrument's role shrinks to\nform-layer + audit over direct frontier relevance.\n",
+   "source_class": "ledger_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00768",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "747-772",
+   "text": "## 0036 — REPRESENTATION PROBES: THE INFORMATION FLOOR, 2026-08-25\nThree $0 probes (Matt's optimization/latent questions):\n- L1 over the FULL symbolic feature space (48 features, all sparsity\n  levels): CV ceiling 0.76 vs 0.74 base — the annotations do not\n  contain UA relevance; the guessed-library probe's conclusion was\n  right for the right reason. (Convex fit; no initialization issue —\n  features are deterministic indicators of committed layers.)\n- TF-IDF text features (uni+bigram): CV 0.74 = base. Surface lexical\n  content doesn't carry it either.\n- Pairwise behaviour phi: 0.04-0.29 (help x caution 0.55 the sole\n  exception) — behaviours are near-ORTHOGONAL dichotomies. Matt's\n  log2(n) low-rank hypothesis has measured evidence AGAINST it; ~1\n  load-bearing dimension per behaviour is geometry, not pathology.\nSYNTHESIS (the session's clearest statement of what minting IS):\na mint = frontier judgment used as a feature extractor for ONE named,\nblind-reproducible, auditable bit per node. The concept lives in deep\nsemantics (seats judge it at 0.9+; no shallow space reaches base+0.02);\nembeddings would separate but collapse the instrument into direct-ask-\nin-vector-form. THE COST FLOOR: ~one frontier-extracted dimension per\northogonal behaviour + validation; everything around the floor (form\nlayer, truth memoization, validation-by-lookup, Opus extraction at\n0.98) is what the program has successfully cheapened. Rank test proper\nstill blocked on cross-behaviour truth overlap (4 common nodes) — an\nargument for ruling a common node panel across behaviours if the\nlow-rank question ever needs settling.\n",
+   "source_class": "ledger_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00769",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "773-790",
+   "text": "## 0037 — ERRATUM #20: CLOSED-VOCABULARY CIRCULARITY (Matt's suspicion, upheld), 2026-08-25\nMatt flagged the too-tidy \"last dimension defined just as you asked.\"\nUpheld on inspection, two mechanisms: (a) ENDOGENEITY — his questions\ncaused this week's analyses; the tidy picture is authorship, not\ncoincidence; (b) CIRCULARITY — the query-class study's 10-place coding\nvocabulary was written by the designer WITH knowledge of the built\nlayers; forced-choice coding into it structurally CANNOT discover an\nout-of-vocabulary place (shoehorning presents as coder disagreement —\nsome of the tripwire noise may be exactly that). Therefore \"100\ndefinitions need no new places\" bounds the query class RELATIVE TO the\ndesigner's vocabulary only. RULE: saturation studies with closed\nvocabularies measure vocabulary coverage, never space completeness;\nunknown-dimension detection needs open coding or external falsifiers.\nThe claims that survive: TARGET's blind calibration (predates the\nstudy), and the three EXTERNAL tests (TARGET at scale, prop-risk\ntransfer, next-document misses) — which do not share the designer's\nvocabulary and can falsify what internal analyses cannot.\n",
+   "source_class": "ledger_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00770",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "791-815",
+   "text": "## 0038 — QUERY-CLASS ARC CLOSED: THE MEASURED BOUND, 2026-08-25\nMatt's arc (open coding -> place-blind schema -> annotate -> separate)\ncompleted end-to-end, all Opus, $0 Fable:\n- DISCOVERY WORKED where my closed vocabulary could not: 24 emergent\n  dimensions, 9 with no counterpart in my ten places (evaluation_unit\n  and subject_matter_class the load-bearing two, dual-coder evidenced;\n  our instrument is measurably utterance-locked).\n- The vacuousness trap was caught (free-text values = fingerprints,\n  zero reuse) and fixed by canonicalization (105 values, 46% merger,\n  seat-independent 115/115).\n- FINAL: separability 94/100 both seats identically; all 6 collisions\n  are cross-source SAME-CONSTRUCT duplicates (the census doubling as\n  corpus dedup); zero different-construct collisions. THE BOUND:\n  24 dimensions x 105 values addresses the sampled character-spec\n  query class completely, ~1.2 handles/definition.\n- Errata this arc: designer-vocabulary smuggling caught THREE times\n  (Matt twice, the vacuousness check once) — the standing rule: schema\n  derivation, annotation, and canonicalization must each be blind to\n  the layer above; comparison to prior vocabularies happens only at\n  analysis, as a finding.\nSTANDING FOR MATT: the new-dimension candidates' implications for the\nINSTRUMENT (evaluation_unit especially — trajectory-class behaviours\nare outside the node-relevance design entirely); the UA mint decision;\nthe prop-risk test. Fable spent this AFK drive: 0.\n",
+   "source_class": "ledger_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00771",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "816-832",
+   "text": "## 0039 — SEPARABILITY VERDICT CORRECTED: THE VALUE LAYER IS ENTROPY, 2026-08-25\nThe vacuousness audit (applied at BOTH levels after the node run\nrepeated the fingerprint pattern) downgrades the headline: value-level\nseparability is mostly per-item uniqueness (nodes: 0 reuse; defs: 20%\nreuse). Defensible numbers: dimension-set separability 0.37-0.40\n(definitions) / 0.85 (nodes). STRUCTURAL FINDING, twice-measured:\ncontent values at separating granularity almost never recur — fine\nenough to separate = too fine to share. THE ONTOLOGY THAT EXISTS is\nthe DIMENSION layer (24+1 place-blind, dual-coder-stable, now with a\ndocument-side discovery: age_or_vulnerability_class_of_the_user).\nValues are high-entropy content where exact-vocabulary matching cannot\nwork; query-node value matching needs lossy coarse classes (with\nmeasured loss) or judgment at match time — the information floor\n(0036) reappearing at the value layer. Also: the audit habit is now\nproven twice — EVERY separability claim must ship with its value-reuse\naudit (method rule).\n",
+   "source_class": "ledger_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00772",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "833-849",
+   "text": "## 0040 — CORRECTION (Matt): VALUES = LEAF ATOMS; THE HIERARCHY IS THE OBJECT, 2026-08-25\nMatt: \"values == atoms, which is solved in the ASP.\" Upheld — the 0039\nentropy framing overstated: leaf non-recurrence is the EXPECTED shape\nof taxonomy leaves (cf. functors), and matching is hierarchical\n(bridges/subsumption), never exact-leaf. The 0039 audits tested flat\nvocabularies; the merge step should emit BRIDGES, not buckets.\nWhat survives, unified: (a) the information floor relocates to bridge\nconstruction (one judgment per leaf, amortized — better economics than\njudgment-per-match); (b) EVERY campaign precision problem is a\nhierarchy-LEVEL problem: FPs = matching at too-coarse interior nodes,\nunfixable residuals = missing intermediate levels, mints = discovering\ninterior nodes. The tradeoffs arc, the UA arc, and 0039 are one\nphenomenon at three vocabularies. NEXT-DOCUMENT DESIGN CONSEQUENCE:\nnew dimensions' value merges emit subsumption lattices from the start\n(the acts pipeline generalized), and per-query matching-level\nselection is a first-class declaration.\n",
+   "source_class": "ledger_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00773",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "850-864",
+   "text": "## 0041 — INTEGRATION TEST PASSES: THE MID LEVEL, 2026-08-25\nMatt's real question answered (RETRANS_INTEGRATION_CENSUS.json): blind\nretranslation (claim + inputs/outputs + free atoms + 24 dimensions) ->\nbridge lattice (leaf/mid/top, aggregating mids, cross-seat mid overlap\n0.84-0.98) -> census with reuse audits: MID LEVEL = separability 1.00\non BOTH seats at 0.57-0.58 vocabulary reuse; ZERO truth-distinct\ncollisions at ANY level (even the 9-class top). The combined\nrepresentation addresses the truth-bearing sample non-vacuously at a\nmatching-suitable granularity. Caveats recorded: n=39; sample-induced\nmids (corpus scale is the generalization test — reuse should RISE);\nseparability is necessary-not-sufficient (matching rules per behaviour\nremain). This is the first end-to-end dry run of the next-document\nrecipe: translate five-field, merge to lattice, match at declared\nlevels.\n",
+   "source_class": "ledger_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00774",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "865-898",
+   "text": "## 0042 — 0041 WITHDRAWN: THE INTEGRATION CENSUS FAILS ITS ADVERSARIAL REVIEW, 2026-08-25\nMatt asked for an adversarial review of whether the census actually\nanswers \"complete representability + extension to novel behaviours.\"\nClean-context Opus reviewer: P1 UNSUPPORTED (as measured), P2\nUNSUPPORTED, 8 findings. CoVe'd per standing rule — the three decisive\nfindings were RE-DERIVED by the driver and reproduced exactly:\n(F1) random 4-bucket partition => sep 1.00 in 299/300 trials, reuse\n1.00 — the registered pass condition is satisfiable by noise; (F4)\n1-NN relevance prediction over mid signatures = 0.72/0.70 vs bases\n0.60/0.59 — separability != carrying the relevance concept, consistent\nwith the L1/TF-IDF base-rate results; (F8) exact seat dimension-set\nagreement 23/39, masked by cross-seat pooling. F2/F3/F5/F6/F7 all\nACCEPTED (mids-from-same-nodes circularity; vacuous collision clause;\nboth behaviours in-corpus; corpus skew; problem-node-stratified\nsample). One reviewer slip corrected: \"ua\"=user-autonomy. Full\ndispositions + corrected verdicts: RETRANS_REVIEW_DISPOSITION.md.\nLEARNING (the reviewer did what I did not): I ran a vacuousness audit\n(value-reuse) but never a NULL MODEL, and reuse alone does not\nlicense separability — the two must be scored JOINTLY against a\nmatched-granularity random partition, where the real lattice loses.\nBINDING RULE ADOPTED (companion to V5 coverage): every separability/\nrepresentability claim ships with a seeded matched-granularity\nrandom-partition null; the claim is only its MARGIN over the null; a\npass condition satisfiable by noise is void as registered. What\nsurvives 0041 honestly: blind five-field coverage 39/39 with zero new\ncoinages (form-completeness), reuse 0.57 (compression) — necessary,\nnot sufficient. Path to the real claims registered as L1 (held-out-\nhalf mid induction + null margin + relevance-prediction-above-base)\nand L2 (>=10 out-of-corpus behaviour definitions incl. agentic/\ntool-use), both parked for Matt. Erratum #21: the third instance this\nsession of a pass condition that could not fail (designer vocabulary,\ngrandfathered places, now a noise-satisfiable census) — the fix each\ntime was the same shape: build the null first.\n",
+   "source_class": "ledger_preredaction",
+   "context": null
+  },
+  {
+   "id": "S00775",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "899-940",
+   "text": "## 0043 — L1/L2 THEMSELVES FAIL REVIEW: DOES-NOT-LICENSE, 2026-08-25\nMatt (correctly) declined to fund a retranslation campaign on the\n0042 licensing experiments and asked whether L1/L2 would actually\nanswer his questions. Clean-context Opus review (full text:\nL1L2_ADVERSARIAL_REVIEW.md, 36 findings + 20 amendments): verdict\nDOES-NOT-LICENSE, accepted after CoVe (L1L2_REVIEW_DISPOSITION.md).\nThe four decisive defects: (1) L1's relevance clause is met on a\npoint-estimate reading by the very numbers 0042 dismissed as base\nrate — and my CoVe found those numbers are p~0.15 vs baseline, i.e.\nnot even significant — a pass condition that cannot fail, erratum\n#21's FOURTH recurrence, this time authored in the same document\nthat adopted the null-model rule; (2) L2 has no null and its\ncoverage clause is elastic (undefined_harmfulness_catch_all exists;\nthe two dimensions L2 exists to stress fire 1/100 each); (3) Q-B is\nuntestable by construction — the corpus's adria: block means every\ntruth-bearing behaviour is in-corpus and NO out-of-corpus panel\ntruth exists in the repo; (4) L1 presupposes the campaign (only\n183/773 nodes ever translated; \"half the spec\" doesn't exist).\nAlso surfaced: THREE incompatible relevance ledgers (node ledger\n0.443-0.560 positive vs panel-v5 majority 0.008-0.114 vs rubric-v3w)\nwith L1 naming none — truth-shopping surface; assembled truth_all()\nis composition-biased (positives/negatives acquired by different\nprocesses) — score only on the ~537 single-process fresh-draw\nrulings; live red gates (block-1 STOP RULE, metric0 FAILx3) that\nL1/L2 would have bypassed; the UA seal needed a guard. Reviewer\nerrors corrected in disposition: its panel-v5 rates and its 1-NN\np-values were wrong (findings survive on my re-derived numbers).\nREPLACEMENT PACKAGE adopted (dependency order): F18 reliability gate\n(fresh uniform 60-node draw, 2 blind seats, alpha>=0.67, ~$0 — may\nkill the campaign before any spend); F17 blind-readout ablation\n(Arm T raw-text ceiling / Arm R signature-only / Arm N permuted\nnull; MCC(R)>=MCC(T)-0.05 AND >99th null pct, worst-behaviour\nheadline, ceiling-relative) — the actual Q-A construct; F19 scaling\npre-flight; A14 out-of-corpus truth purchase (>=3 behaviours x ~80\nuniform ruled nodes, ~0.4-0.5M Fable) — the ONLY path to Q-B.\nFUNDING RULE: F18 pass AND F17 pass AND scaling inside budget.\nLEARNING: I wrote L1/L2 in the same commit that adopted \"build the\nnull first\" and still gave L1 a bar already met and L2 no null —\nadopting a method rule is not applying it; every registered pass\ncondition now gets the explicit question \"could this have passed on\nthe data we already rejected?\" before commit.\n",
+   "source_class": "ledger_preredaction",
+   "context": null
+  }
+ ]
+}
