@@ -1,0 +1,104 @@
+{
+ "probe_haiku_1_haiku.jsonl": {
+  "checker": {
+   "total": 31,
+   "passed": 28,
+   "failed": 3,
+   "fail_reasons": {
+    "quote": 3
+   }
+  },
+  "by_lane": {
+   "B": {
+    "probe_claims": 16,
+    "ref_claims": 58,
+    "num_shared": 0,
+    "num_probe": 4,
+    "num_ref": 20,
+    "ev_shared": 7,
+    "ev_probe": 10,
+    "ev_ref": 10,
+    "missed_types": {
+     "cycle_close": 1,
+     "prediction_freeze": 1,
+     "registration": 1
+    },
+    "extra_types": {
+     "annotation": 1,
+     "measurement": 1,
+     "commit": 1
+    },
+    "spans": 5
+   },
+   "C": {
+    "probe_claims": 15,
+    "ref_claims": 59,
+    "num_shared": 10,
+    "num_probe": 12,
+    "num_ref": 25,
+    "ev_shared": 0,
+    "ev_probe": 0,
+    "ev_ref": 0,
+    "missed_types": {},
+    "extra_types": {},
+    "spans": 4
+   }
+  }
+ },
+ "probe_haiku_2_haiku.jsonl": {
+  "checker": {
+   "total": 44,
+   "passed": 37,
+   "failed": 7,
+   "fail_reasons": {
+    "quote": 6,
+    "missing field denominator": 1
+   }
+  },
+  "by_lane": {
+   "D": {
+    "probe_claims": 26,
+    "ref_claims": 122,
+    "num_shared": 12,
+    "num_probe": 15,
+    "num_ref": 30,
+    "ev_shared": 7,
+    "ev_probe": 7,
+    "ev_ref": 20,
+    "missed_types": {
+     "registration": 2,
+     "annotation": 4,
+     "erratum": 1,
+     "ledger_entry": 1,
+     "measurement": 1,
+     "ruling": 1,
+     "withdrawal": 1,
+     "cove": 1,
+     "seat_dispatch": 1
+    },
+    "extra_types": {},
+    "spans": 4
+   },
+   "E": {
+    "probe_claims": 18,
+    "ref_claims": 65,
+    "num_shared": 10,
+    "num_probe": 11,
+    "num_ref": 21,
+    "ev_shared": 4,
+    "ev_probe": 5,
+    "ev_ref": 9,
+    "missed_types": {
+     "adversarial_review": 1,
+     "registration": 1,
+     "seat_dispatch": 2,
+     "annotation": 1
+    },
+    "extra_types": {
+     "annotation": 1
+    },
+    "spans": 5
+   }
+  }
+ }
+}
