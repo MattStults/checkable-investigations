@@ -1,0 +1,949 @@
+{
+ "unique_runs": [
+  {
+   "agent": "Baseline adversarial review \u2014 clean context",
+   "subagent_tokens": 320488,
+   "tool_uses": 89,
+   "duration_ms": 1637263
+  },
+  {
+   "agent": "Clean-context review of claim inventory",
+   "subagent_tokens": 166497,
+   "tool_uses": 39,
+   "duration_ms": 579134
+  },
+  {
+   "agent": "Clean-context review of glossary",
+   "subagent_tokens": 141633,
+   "tool_uses": 25,
+   "duration_ms": 415159
+  },
+  {
+   "agent": "Closure and leak check of revised glossary",
+   "subagent_tokens": 117491,
+   "tool_uses": 31,
+   "duration_ms": 428947
+  },
+  {
+   "agent": "Extract arc-1 metric definitions",
+   "subagent_tokens": 232671,
+   "tool_uses": 58,
+   "duration_ms": 745894
+  },
+  {
+   "agent": "Extract arc-2 metric definitions",
+   "subagent_tokens": 172536,
+   "tool_uses": 21,
+   "duration_ms": 437398
+  },
+  {
+   "agent": "Extract hazard classes and git conventions",
+   "subagent_tokens": 310202,
+   "tool_uses": 77,
+   "duration_ms": 1024042
+  },
+  {
+   "agent": "In-sample vs fresh-draw prereg",
+   "subagent_tokens": 122287,
+   "tool_uses": 20,
+   "duration_ms": 465323
+  },
+  {
+   "agent": "Retranslate I-01 rejected Sonnet claim",
+   "subagent_tokens": 67196,
+   "tool_uses": 5,
+   "duration_ms": 48875
+  },
+  {
+   "agent": "Retranslate I-02 claims \u2014 Opus",
+   "subagent_tokens": 59955,
+   "tool_uses": 5,
+   "duration_ms": 31870
+  },
+  {
+   "agent": "Retranslate I-03 spans (012/013/017) \u2014 Opus",
+   "subagent_tokens": 138086,
+   "tool_uses": 17,
+   "duration_ms": 714962
+  },
+  {
+   "agent": "Retranslate I-03 spans (014-016) \u2014 Opus",
+   "subagent_tokens": 127987,
+   "tool_uses": 13,
+   "duration_ms": 513698
+  },
+  {
+   "agent": "Retranslate I-06 claims b \u2014 Opus",
+   "subagent_tokens": 60383,
+   "tool_uses": 5,
+   "duration_ms": 30149
+  },
+  {
+   "agent": "Retranslate I-06 claims \u2014 Opus",
+   "subagent_tokens": 61087,
+   "tool_uses": 5,
+   "duration_ms": 35411
+  },
+  {
+   "agent": "Retranslate batch_029 rejected claims \u2014 Opus",
+   "subagent_tokens": 60363,
+   "tool_uses": 5,
+   "duration_ms": 23274
+  },
+  {
+   "agent": "Retranslate batch_059 rejected claims \u2014 Sonnet",
+   "subagent_tokens": 113157,
+   "tool_uses": 7,
+   "duration_ms": 238653
+  },
+  {
+   "agent": "Retranslate rejected Sonnet claims",
+   "subagent_tokens": 85907,
+   "tool_uses": 9,
+   "duration_ms": 175282
+  },
+  {
+   "agent": "Retranslate retry_G06 \u2014 Opus",
+   "subagent_tokens": 93765,
+   "tool_uses": 7,
+   "duration_ms": 324199
+  },
+  {
+   "agent": "Retranslate retry_c1 \u2014 Opus",
+   "subagent_tokens": 161046,
+   "tool_uses": 25,
+   "duration_ms": 722092
+  },
+  {
+   "agent": "Retranslate retry_c2 \u2014 Opus",
+   "subagent_tokens": 142944,
+   "tool_uses": 17,
+   "duration_ms": 666589
+  },
+  {
+   "agent": "Retranslate retry_c3 \u2014 Opus",
+   "subagent_tokens": 141380,
+   "tool_uses": 19,
+   "duration_ms": 654237
+  },
+  {
+   "agent": "Retranslate retry_c4 \u2014 Opus",
+   "subagent_tokens": 147730,
+   "tool_uses": 19,
+   "duration_ms": 667656
+  },
+  {
+   "agent": "Retranslate retry_c5 \u2014 Opus",
+   "subagent_tokens": 139705,
+   "tool_uses": 14,
+   "duration_ms": 677065
+  },
+  {
+   "agent": "Retranslate three single claims \u2014 Sonnet",
+   "subagent_tokens": 79055,
+   "tool_uses": 6,
+   "duration_ms": 128488
+  },
+  {
+   "agent": "Retranslate two mis-attached claims \u2014 Sonnet",
+   "subagent_tokens": 75575,
+   "tool_uses": 5,
+   "duration_ms": 80499
+  },
+  {
+   "agent": "Retranslate two single claims \u2014 Sonnet",
+   "subagent_tokens": 79904,
+   "tool_uses": 6,
+   "duration_ms": 118664
+  },
+  {
+   "agent": "Round-trip check of hypotheses H01-H15",
+   "subagent_tokens": 35038,
+   "tool_uses": 1,
+   "duration_ms": 34768
+  },
+  {
+   "agent": "Second clean-context review of revised inventory",
+   "subagent_tokens": 138076,
+   "tool_uses": 41,
+   "duration_ms": 528635
+  },
+  {
+   "agent": "Semantic audit files",
+   "subagent_tokens": 40523,
+   "tool_uses": 10,
+   "duration_ms": 159372
+  },
+  {
+   "agent": "Third closure pass on glossary",
+   "subagent_tokens": 132914,
+   "tool_uses": 22,
+   "duration_ms": 477434
+  },
+  {
+   "agent": "Three behaviours files",
+   "subagent_tokens": 68120,
+   "tool_uses": 22,
+   "duration_ms": 213840
+  },
+  {
+   "agent": "Tier probe: batch_052 \u2014 Sonnet",
+   "subagent_tokens": 112862,
+   "tool_uses": 8,
+   "duration_ms": 391081
+  },
+  {
+   "agent": "Translate batch_001 (ledger) \u2014 Opus",
+   "subagent_tokens": 200655,
+   "tool_uses": 22,
+   "duration_ms": 1461872
+  },
+  {
+   "agent": "Translate batch_001 (ledger) \u2014 Sonnet probe",
+   "subagent_tokens": 147352,
+   "tool_uses": 17,
+   "duration_ms": 580453
+  },
+  {
+   "agent": "Translate batch_002 \u2014 Opus",
+   "subagent_tokens": 124828,
+   "tool_uses": 11,
+   "duration_ms": 548065
+  },
+  {
+   "agent": "Translate batch_003 \u2014 Opus",
+   "subagent_tokens": 120681,
+   "tool_uses": 16,
+   "duration_ms": 500176
+  },
+  {
+   "agent": "Translate batch_004 (scored JSON) \u2014 Opus",
+   "subagent_tokens": 81754,
+   "tool_uses": 11,
+   "duration_ms": 192629
+  },
+  {
+   "agent": "Translate batch_004 \u2014 Opus",
+   "subagent_tokens": 81221,
+   "tool_uses": 9,
+   "duration_ms": 192194
+  },
+  {
+   "agent": "Translate batch_005 \u2014 Opus",
+   "subagent_tokens": 65921,
+   "tool_uses": 7,
+   "duration_ms": 93462
+  },
+  {
+   "agent": "Translate batch_005 \u2014 Opus",
+   "subagent_tokens": 70243,
+   "tool_uses": 9,
+   "duration_ms": 101718
+  },
+  {
+   "agent": "Translate batch_006 \u2014 Opus",
+   "subagent_tokens": 68102,
+   "tool_uses": 7,
+   "duration_ms": 87389
+  },
+  {
+   "agent": "Translate batch_006 \u2014 Opus",
+   "subagent_tokens": 74291,
+   "tool_uses": 7,
+   "duration_ms": 127659
+  },
+  {
+   "agent": "Translate batch_007 \u2014 Opus",
+   "subagent_tokens": 61244,
+   "tool_uses": 6,
+   "duration_ms": 37639
+  },
+  {
+   "agent": "Translate batch_007 \u2014 Opus",
+   "subagent_tokens": 78561,
+   "tool_uses": 7,
+   "duration_ms": 173210
+  },
+  {
+   "agent": "Translate batch_008 \u2014 Opus",
+   "subagent_tokens": 61455,
+   "tool_uses": 6,
+   "duration_ms": 40059
+  },
+  {
+   "agent": "Translate batch_008 \u2014 Opus",
+   "subagent_tokens": 76774,
+   "tool_uses": 7,
+   "duration_ms": 166457
+  },
+  {
+   "agent": "Translate batch_009 \u2014 Opus",
+   "subagent_tokens": 90604,
+   "tool_uses": 11,
+   "duration_ms": 241016
+  },
+  {
+   "agent": "Translate batch_010 \u2014 Opus",
+   "subagent_tokens": 88046,
+   "tool_uses": 13,
+   "duration_ms": 274563
+  },
+  {
+   "agent": "Translate batch_011 \u2014 Opus",
+   "subagent_tokens": 93527,
+   "tool_uses": 11,
+   "duration_ms": 305782
+  },
+  {
+   "agent": "Translate batch_012 \u2014 Opus",
+   "subagent_tokens": 126095,
+   "tool_uses": 7,
+   "duration_ms": 568355
+  },
+  {
+   "agent": "Translate batch_013 \u2014 Opus",
+   "subagent_tokens": 113596,
+   "tool_uses": 7,
+   "duration_ms": 483920
+  },
+  {
+   "agent": "Translate batch_014 \u2014 Opus",
+   "subagent_tokens": 97942,
+   "tool_uses": 7,
+   "duration_ms": 321630
+  },
+  {
+   "agent": "Translate batch_015 \u2014 Opus",
+   "subagent_tokens": 94152,
+   "tool_uses": 7,
+   "duration_ms": 306530
+  },
+  {
+   "agent": "Translate batch_016 \u2014 Opus",
+   "subagent_tokens": 95009,
+   "tool_uses": 7,
+   "duration_ms": 308331
+  },
+  {
+   "agent": "Translate batch_017 \u2014 Opus",
+   "subagent_tokens": 109284,
+   "tool_uses": 7,
+   "duration_ms": 440881
+  },
+  {
+   "agent": "Translate batch_018 \u2014 Opus",
+   "subagent_tokens": 95996,
+   "tool_uses": 7,
+   "duration_ms": 311078
+  },
+  {
+   "agent": "Translate batch_019 \u2014 Opus",
+   "subagent_tokens": 152245,
+   "tool_uses": 8,
+   "duration_ms": 757795
+  },
+  {
+   "agent": "Translate batch_020 \u2014 Opus",
+   "subagent_tokens": 105745,
+   "tool_uses": 8,
+   "duration_ms": 412018
+  },
+  {
+   "agent": "Translate batch_021 \u2014 Opus",
+   "subagent_tokens": 102439,
+   "tool_uses": 7,
+   "duration_ms": 363922
+  },
+  {
+   "agent": "Translate batch_022 \u2014 Opus",
+   "subagent_tokens": 79595,
+   "tool_uses": 7,
+   "duration_ms": 214930
+  },
+  {
+   "agent": "Translate batch_023 \u2014 Opus",
+   "subagent_tokens": 122347,
+   "tool_uses": 8,
+   "duration_ms": 567588
+  },
+  {
+   "agent": "Translate batch_024 \u2014 Opus",
+   "subagent_tokens": 128887,
+   "tool_uses": 8,
+   "duration_ms": 634140
+  },
+  {
+   "agent": "Translate batch_025 \u2014 Opus",
+   "subagent_tokens": 106708,
+   "tool_uses": 13,
+   "duration_ms": 449182
+  },
+  {
+   "agent": "Translate batch_026 \u2014 Opus",
+   "subagent_tokens": 129352,
+   "tool_uses": 20,
+   "duration_ms": 574924
+  },
+  {
+   "agent": "Translate batch_027 \u2014 Opus",
+   "subagent_tokens": 125109,
+   "tool_uses": 18,
+   "duration_ms": 449099
+  },
+  {
+   "agent": "Translate batch_028 \u2014 Opus",
+   "subagent_tokens": 110330,
+   "tool_uses": 16,
+   "duration_ms": 457054
+  },
+  {
+   "agent": "Translate batch_029 \u2014 Opus",
+   "subagent_tokens": 134345,
+   "tool_uses": 11,
+   "duration_ms": 634112
+  },
+  {
+   "agent": "Translate batch_030 \u2014 Opus",
+   "subagent_tokens": 103149,
+   "tool_uses": 8,
+   "duration_ms": 346715
+  },
+  {
+   "agent": "Translate batch_031 \u2014 Opus",
+   "subagent_tokens": 87784,
+   "tool_uses": 8,
+   "duration_ms": 247836
+  },
+  {
+   "agent": "Translate batch_032 \u2014 Opus",
+   "subagent_tokens": 165523,
+   "tool_uses": 13,
+   "duration_ms": 818250
+  },
+  {
+   "agent": "Translate batch_033 \u2014 Opus",
+   "subagent_tokens": 113094,
+   "tool_uses": 12,
+   "duration_ms": 424870
+  },
+  {
+   "agent": "Translate batch_034 \u2014 Opus",
+   "subagent_tokens": 88314,
+   "tool_uses": 7,
+   "duration_ms": 248241
+  },
+  {
+   "agent": "Translate batch_035 \u2014 Opus",
+   "subagent_tokens": 84670,
+   "tool_uses": 10,
+   "duration_ms": 209425
+  },
+  {
+   "agent": "Translate batch_036 \u2014 Opus",
+   "subagent_tokens": 82482,
+   "tool_uses": 7,
+   "duration_ms": 224067
+  },
+  {
+   "agent": "Translate batch_037 \u2014 Opus",
+   "subagent_tokens": 81813,
+   "tool_uses": 7,
+   "duration_ms": 227254
+  },
+  {
+   "agent": "Translate batch_038 \u2014 Opus",
+   "subagent_tokens": 92558,
+   "tool_uses": 9,
+   "duration_ms": 327984
+  },
+  {
+   "agent": "Translate batch_039 \u2014 Opus",
+   "subagent_tokens": 88680,
+   "tool_uses": 7,
+   "duration_ms": 269444
+  },
+  {
+   "agent": "Translate batch_040 \u2014 Opus",
+   "subagent_tokens": 104600,
+   "tool_uses": 7,
+   "duration_ms": 416388
+  },
+  {
+   "agent": "Translate batch_041 \u2014 Opus",
+   "subagent_tokens": 110247,
+   "tool_uses": 7,
+   "duration_ms": 445689
+  },
+  {
+   "agent": "Translate batch_042 \u2014 Opus",
+   "subagent_tokens": 81046,
+   "tool_uses": 7,
+   "duration_ms": 184201
+  },
+  {
+   "agent": "Translate batch_043 \u2014 Opus",
+   "subagent_tokens": 103678,
+   "tool_uses": 7,
+   "duration_ms": 409946
+  },
+  {
+   "agent": "Translate batch_044 \u2014 Opus",
+   "subagent_tokens": 88937,
+   "tool_uses": 7,
+   "duration_ms": 284361
+  },
+  {
+   "agent": "Translate batch_045 \u2014 Opus",
+   "subagent_tokens": 87667,
+   "tool_uses": 8,
+   "duration_ms": 265846
+  },
+  {
+   "agent": "Translate batch_046 \u2014 Opus",
+   "subagent_tokens": 105504,
+   "tool_uses": 7,
+   "duration_ms": 403511
+  },
+  {
+   "agent": "Translate batch_047 \u2014 Opus",
+   "subagent_tokens": 109982,
+   "tool_uses": 8,
+   "duration_ms": 411823
+  },
+  {
+   "agent": "Translate batch_048 \u2014 Opus",
+   "subagent_tokens": 90775,
+   "tool_uses": 8,
+   "duration_ms": 275048
+  },
+  {
+   "agent": "Translate batch_049 \u2014 Opus",
+   "subagent_tokens": 92090,
+   "tool_uses": 7,
+   "duration_ms": 286921
+  },
+  {
+   "agent": "Translate batch_050 \u2014 Opus",
+   "subagent_tokens": 79993,
+   "tool_uses": 7,
+   "duration_ms": 190051
+  },
+  {
+   "agent": "Translate batch_051 \u2014 Opus",
+   "subagent_tokens": 66565,
+   "tool_uses": 6,
+   "duration_ms": 86294
+  },
+  {
+   "agent": "Translate batch_053 \u2014 Sonnet",
+   "subagent_tokens": 105584,
+   "tool_uses": 10,
+   "duration_ms": 192003
+  },
+  {
+   "agent": "Translate batch_054 \u2014 Sonnet",
+   "subagent_tokens": 115784,
+   "tool_uses": 8,
+   "duration_ms": 370183
+  },
+  {
+   "agent": "Translate batch_055 \u2014 Sonnet",
+   "subagent_tokens": 127717,
+   "tool_uses": 15,
+   "duration_ms": 452953
+  },
+  {
+   "agent": "Translate batch_056 \u2014 Sonnet",
+   "subagent_tokens": 111257,
+   "tool_uses": 10,
+   "duration_ms": 340334
+  },
+  {
+   "agent": "Translate batch_057 \u2014 Sonnet",
+   "subagent_tokens": 124320,
+   "tool_uses": 13,
+   "duration_ms": 439205
+  },
+  {
+   "agent": "Translate batch_058 \u2014 Sonnet",
+   "subagent_tokens": 152657,
+   "tool_uses": 17,
+   "duration_ms": 654039
+  },
+  {
+   "agent": "Translate batch_059 \u2014 Sonnet",
+   "subagent_tokens": 126558,
+   "tool_uses": 15,
+   "duration_ms": 423521
+  },
+  {
+   "agent": "Translate batch_060 \u2014 Sonnet",
+   "subagent_tokens": 114217,
+   "tool_uses": 8,
+   "duration_ms": 382430
+  },
+  {
+   "agent": "Translate batch_061 \u2014 Sonnet",
+   "subagent_tokens": 127875,
+   "tool_uses": 15,
+   "duration_ms": 477675
+  },
+  {
+   "agent": "Translate batch_062 \u2014 Sonnet",
+   "subagent_tokens": 118390,
+   "tool_uses": 12,
+   "duration_ms": 349707
+  },
+  {
+   "agent": "Translate batch_063 \u2014 Sonnet",
+   "subagent_tokens": 128772,
+   "tool_uses": 11,
+   "duration_ms": 522137
+  },
+  {
+   "agent": "Translate batch_064 \u2014 Sonnet",
+   "subagent_tokens": 142105,
+   "tool_uses": 36,
+   "duration_ms": 461387
+  },
+  {
+   "agent": "Translate batch_065 \u2014 Sonnet",
+   "subagent_tokens": 98099,
+   "tool_uses": 9,
+   "duration_ms": 232561
+  },
+  {
+   "agent": "Translate batch_066 \u2014 Sonnet",
+   "subagent_tokens": 91910,
+   "tool_uses": 8,
+   "duration_ms": 230558
+  },
+  {
+   "agent": "Translate batch_067 \u2014 Sonnet",
+   "subagent_tokens": 93848,
+   "tool_uses": 8,
+   "duration_ms": 242856
+  },
+  {
+   "agent": "Translate batch_068 \u2014 Sonnet",
+   "subagent_tokens": 86228,
+   "tool_uses": 8,
+   "duration_ms": 176139
+  },
+  {
+   "agent": "Translate batch_069 \u2014 Sonnet",
+   "subagent_tokens": 103987,
+   "tool_uses": 9,
+   "duration_ms": 306414
+  },
+  {
+   "agent": "Translate batch_070 \u2014 Sonnet",
+   "subagent_tokens": 122376,
+   "tool_uses": 11,
+   "duration_ms": 455605
+  },
+  {
+   "agent": "Translate batch_071 \u2014 Sonnet",
+   "subagent_tokens": 114218,
+   "tool_uses": 9,
+   "duration_ms": 352024
+  },
+  {
+   "agent": "Translate batch_072 \u2014 Sonnet",
+   "subagent_tokens": 118902,
+   "tool_uses": 9,
+   "duration_ms": 425404
+  },
+  {
+   "agent": "Translate batch_073 \u2014 Sonnet",
+   "subagent_tokens": 116184,
+   "tool_uses": 14,
+   "duration_ms": 334551
+  },
+  {
+   "agent": "Translate batch_074 \u2014 Sonnet",
+   "subagent_tokens": 98474,
+   "tool_uses": 9,
+   "duration_ms": 279544
+  },
+  {
+   "agent": "Translate batch_075 \u2014 Sonnet",
+   "subagent_tokens": 100019,
+   "tool_uses": 6,
+   "duration_ms": 296083
+  },
+  {
+   "agent": "Translate batch_076 \u2014 Sonnet",
+   "subagent_tokens": 102585,
+   "tool_uses": 8,
+   "duration_ms": 292857
+  },
+  {
+   "agent": "Translate batch_077 \u2014 Sonnet",
+   "subagent_tokens": 105414,
+   "tool_uses": 11,
+   "duration_ms": 323457
+  },
+  {
+   "agent": "Translate batch_078 \u2014 Sonnet",
+   "subagent_tokens": 107476,
+   "tool_uses": 6,
+   "duration_ms": 351971
+  },
+  {
+   "agent": "Translate batch_079 \u2014 Sonnet",
+   "subagent_tokens": 127605,
+   "tool_uses": 7,
+   "duration_ms": 478214
+  },
+  {
+   "agent": "Translate batch_080 \u2014 Sonnet",
+   "subagent_tokens": 114344,
+   "tool_uses": 11,
+   "duration_ms": 361644
+  },
+  {
+   "agent": "Translate batch_081 \u2014 Sonnet",
+   "subagent_tokens": 113346,
+   "tool_uses": 12,
+   "duration_ms": 375284
+  },
+  {
+   "agent": "Translate batch_082 \u2014 Sonnet",
+   "subagent_tokens": 98255,
+   "tool_uses": 13,
+   "duration_ms": 229682
+  },
+  {
+   "agent": "Translate batch_083 \u2014 Sonnet",
+   "subagent_tokens": 104463,
+   "tool_uses": 12,
+   "duration_ms": 299320
+  },
+  {
+   "agent": "Translate batch_084 \u2014 Sonnet",
+   "subagent_tokens": 119814,
+   "tool_uses": 8,
+   "duration_ms": 432063
+  },
+  {
+   "agent": "Translate batch_085 \u2014 Sonnet",
+   "subagent_tokens": 109138,
+   "tool_uses": 8,
+   "duration_ms": 361509
+  },
+  {
+   "agent": "Translate batch_086 \u2014 Sonnet",
+   "subagent_tokens": 112534,
+   "tool_uses": 7,
+   "duration_ms": 335238
+  },
+  {
+   "agent": "Translate batch_087 \u2014 Sonnet",
+   "subagent_tokens": 106249,
+   "tool_uses": 8,
+   "duration_ms": 340242
+  },
+  {
+   "agent": "Translate batch_088 \u2014 Sonnet",
+   "subagent_tokens": 112833,
+   "tool_uses": 9,
+   "duration_ms": 380955
+  },
+  {
+   "agent": "Translate batch_089 \u2014 Sonnet",
+   "subagent_tokens": 126871,
+   "tool_uses": 11,
+   "duration_ms": 495133
+  },
+  {
+   "agent": "Translate batch_090 \u2014 Sonnet",
+   "subagent_tokens": 116124,
+   "tool_uses": 8,
+   "duration_ms": 401900
+  },
+  {
+   "agent": "Translate batch_090 \u2014 Sonnet",
+   "subagent_tokens": 121233,
+   "tool_uses": 11,
+   "duration_ms": 447874
+  },
+  {
+   "agent": "Translate batch_091 \u2014 Sonnet",
+   "subagent_tokens": 101413,
+   "tool_uses": 8,
+   "duration_ms": 300716
+  },
+  {
+   "agent": "Translate batch_092 \u2014 Sonnet",
+   "subagent_tokens": 102074,
+   "tool_uses": 8,
+   "duration_ms": 292006
+  },
+  {
+   "agent": "Translate batch_093 \u2014 Sonnet",
+   "subagent_tokens": 118692,
+   "tool_uses": 8,
+   "duration_ms": 411972
+  },
+  {
+   "agent": "Translate batch_094 \u2014 Sonnet",
+   "subagent_tokens": 113187,
+   "tool_uses": 9,
+   "duration_ms": 367953
+  },
+  {
+   "agent": "Translate batch_095 \u2014 Sonnet",
+   "subagent_tokens": 108261,
+   "tool_uses": 9,
+   "duration_ms": 334627
+  },
+  {
+   "agent": "Translate batch_096 \u2014 Sonnet",
+   "subagent_tokens": 109556,
+   "tool_uses": 10,
+   "duration_ms": 354604
+  },
+  {
+   "agent": "Translate batch_097 \u2014 Sonnet",
+   "subagent_tokens": 107871,
+   "tool_uses": 8,
+   "duration_ms": 321798
+  },
+  {
+   "agent": "Translate batch_098 \u2014 Sonnet",
+   "subagent_tokens": 101143,
+   "tool_uses": 8,
+   "duration_ms": 284340
+  },
+  {
+   "agent": "Translate batch_099 \u2014 Sonnet",
+   "subagent_tokens": 118237,
+   "tool_uses": 8,
+   "duration_ms": 454333
+  },
+  {
+   "agent": "Translate batch_100 \u2014 Opus",
+   "subagent_tokens": 153924,
+   "tool_uses": 14,
+   "duration_ms": 727369
+  },
+  {
+   "agent": "Translate batch_101 \u2014 Opus",
+   "subagent_tokens": 128079,
+   "tool_uses": 16,
+   "duration_ms": 550510
+  },
+  {
+   "agent": "Translate batch_102 \u2014 Opus",
+   "subagent_tokens": 91498,
+   "tool_uses": 9,
+   "duration_ms": 264498
+  },
+  {
+   "agent": "Translate batch_103 \u2014 Opus",
+   "subagent_tokens": 143153,
+   "tool_uses": 17,
+   "duration_ms": 668496
+  },
+  {
+   "agent": "Translate batch_104 \u2014 Opus",
+   "subagent_tokens": 125774,
+   "tool_uses": 15,
+   "duration_ms": 548108
+  },
+  {
+   "agent": "Translate batch_105 \u2014 Opus",
+   "subagent_tokens": 108281,
+   "tool_uses": 8,
+   "duration_ms": 415490
+  },
+  {
+   "agent": "Translate batch_106 \u2014 Opus",
+   "subagent_tokens": 61750,
+   "tool_uses": 5,
+   "duration_ms": 41230
+  },
+  {
+   "agent": "Translate batch_107 \u2014 Opus",
+   "subagent_tokens": 130947,
+   "tool_uses": 11,
+   "duration_ms": 598031
+  },
+  {
+   "agent": "Translate retry_D09a \u2014 Opus",
+   "subagent_tokens": 172141,
+   "tool_uses": 21,
+   "duration_ms": 775015
+  },
+  {
+   "agent": "Translate retry_D09b \u2014 Opus",
+   "subagent_tokens": 292075,
+   "tool_uses": 19,
+   "duration_ms": 1727479
+  },
+  {
+   "agent": "Translate retry_D09c \u2014 Opus",
+   "subagent_tokens": 126982,
+   "tool_uses": 7,
+   "duration_ms": 518071
+  },
+  {
+   "agent": "Translate retry_G06b_1 \u2014 Opus",
+   "subagent_tokens": 164334,
+   "tool_uses": 13,
+   "duration_ms": 860079
+  },
+  {
+   "agent": "Translate retry_G06b_2 \u2014 Opus",
+   "subagent_tokens": 113378,
+   "tool_uses": 10,
+   "duration_ms": 441366
+  },
+  {
+   "agent": "Translate retry_G06b_3 \u2014 Opus",
+   "subagent_tokens": 161052,
+   "tool_uses": 17,
+   "duration_ms": 767400
+  },
+  {
+   "agent": "Translate retry_G06b_4 \u2014 Opus",
+   "subagent_tokens": 218360,
+   "tool_uses": 12,
+   "duration_ms": 1262030
+  },
+  {
+   "agent": "Translate retry_leftover \u2014 Sonnet",
+   "subagent_tokens": 124853,
+   "tool_uses": 6,
+   "duration_ms": 429745
+  },
+  {
+   "agent": "Word senses reset block seat seed venue",
+   "subagent_tokens": 94529,
+   "tool_uses": 33,
+   "duration_ms": 333074
+  }
+ ],
+ "by_role": {
+  "baseline": {
+   "agents": 1,
+   "tokens": 320488,
+   "tool_uses": 89,
+   "minutes": 27
+  },
+  "other (inventory/glossary reviews, extraction, checks)": {
+   "agents": 13,
+   "tokens": 1772517,
+   "tool_uses": 400,
+   "minutes": 97
+  },
+  "translation": {
+   "agents": 140,
+   "tokens": 15406453,
+   "tool_uses": 1417,
+   "minutes": 911
+  }
+ },
+ "note": "from task-notification usage blocks in the orchestrator transcript, deduplicated; orchestrator's own tokens not included"
+}

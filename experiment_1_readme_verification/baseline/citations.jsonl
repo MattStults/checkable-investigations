@@ -1,0 +1,77 @@
+{"id": "Q01-1", "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/HANDOFF_CURRENT.md", "lines": "106-108", "quote": "CRITERION STANDING (in-sample, all-truth): caution 0.941, harm 0.953, help 0.960 under match-or-adjudicated-defensible; raw match 0.81-0.85; the human-panelist baseline 71%. NOT yet certified — that is round-4's job."}
+{"id": "Q02-1", "path": "semi-formal-experiment/REPO_TRAPS.md", "lines": "74-76", "quote": "## 6. No inter-judge kappa exists in this repo … **No `.py` computes one** (verified)."}
+{"id": "Q02-2", "path": "semi-formal-experiment/REPO_TRAPS.md", "lines": "74-76", "quote": "Inter-judge Jaccard is 0.16–0.62 and gold is the intersection of two judges."}
+{"id": "Q02-3", "path": "semi-formal-experiment/REPO_TRAPS.md", "lines": "74-76", "quote": "(A former anchor — \\"}
+{"id": "Q02-4", "path": "semi-formal-experiment/REPO_TRAPS.md", "lines": "74-76", "quote": " — is STRUCK 2026-08-21: no artifact establishes it and its presumed source does not recognize it…)"}
+{"id": "Q06-1", "path": "cd semi-formal-experiment && .venv/bin/python measure_join.py", "lines": "1-999999", "quote": "all | 849 | 863 | 98.4%"}
+{"id": "Q06-2", "path": "cd semi-formal-experiment && .venv/bin/python measure_join.py", "lines": "1-999999", "quote": "⚠️ the recall ceiling. **Do not quote 849/863** — that is the published-universe figure, and the published universe deleted every passage the panel scored 0. Re-run it; never cite the number from this table."}
+{"id": "Q07-1", "path": "cd semi-formal-experiment && .venv/bin/python machine/check_model.py", "lines": "1-999999", "quote": "PASS (a) SOURCE CHECK / PASS (b) DIFFERENTIAL CHECK vs cycle.py (282 comparisons) / PASS (c) KNOWN-ANSWER SET / PASS (*) ACCEPTANCE TEST"}
+{"id": "Q08-1", "path": "semi-formal-experiment/constitution_clauses.json", "lines": "1-999999", "quote": "**Total clauses: 616**"}
+{"id": "Q09-1", "path": "semi-formal-experiment/rules.lp", "lines": "1-999999", "quote": "15-rule fragment\\"}
+{"id": "Q10-1", "path": "benchmark.py --tool --annotations annotations_b8.json --behaviour-atoms behavior_atoms_b8.json", "lines": "1-999999", "quote": "1. **THE UNIVERSE.** The panel graded EVERY passage of the spec in one prompt: 589 for the model spec, 374 for the constitution."}
+{"id": "Q11-1", "path": "graph_check.py", "lines": "1-999999", "quote": "nodes: 773   uncovered entries: 733"}
+{"id": "Q18-1", "path": "bf0d4978103fe7eeb8b584d9a677ab8b13f92307", "lines": "1-999999", "quote": "0041 withdrawn: integration census fails adversarial review (P1/P2 UNSUPPORTED) — CoVe re-derivations confirm the decisive findings (random-partition null dominates the pass condition 299/300; …)"}
+{"id": "Q21-1", "path": "365d68b3f550379153b13b89c571672a92e5e396", "lines": "1-999999", "quote": "L1/L2 withdrawn: the licensing experiments fail their own adversarial review (DOES-NOT-LICENSE, accepted after CoVe)."}
+{"id": "Q23-1", "path": "1143a9213703e9b44c0ac90daefea1a58331f60f", "lines": "1-999999", "quote": "Notes 0037 / erratum #20: Matt's too-tidy-narrative suspicion upheld — endogeneity + closed-vocabulary circularity mean the query-class study's 'no new places' claim is vocabulary-relative, not space-complete"}
+{"id": "Q23-2", "path": "1143a9213703e9b44c0ac90daefea1a58331f60f", "lines": "1-999999", "quote": "## 0037 — ERRATUM #20: CLOSED-VOCABULARY CIRCULARITY (Matt's suspicion, upheld), 2026-08-25"}
+{"id": "Q24-1", "path": "cd semi-formal-experiment && <py3.10> -m pytest -q", "lines": "1-999999", "quote": "2270 passed, 1 skipped, 14 warnings in 296.08s (0:04:56)"}
+{"id": "Q29-1", "path": "bf0d4978", "lines": "1-999999", "quote": "(2) QUERY-CLASS BOUND … tripwired twice at full-pattern granularity — choose: coarse bound now / brief v3 / accept-with-noise."}
+{"id": "Q29-2", "path": "bf0d4978", "lines": "1-999999", "quote": "**Halted without publishing a bound.**"}
+{"id": "Q29-3", "path": "bf0d4978", "lines": "1-999999", "quote": "NO QUERY_CLASS_BOUND.json is published from tripwired data."}
+{"id": "Q30-1", "path": "ls -l", "lines": "1-999999", "quote": "`data/behaviours.json` 1,082,124 B md5 `a64f5f9b…`; `engine/panel/behaviours.json` 10,303 B md5 `68fef491…`; `semi-formal-experiment/behaviours_query.json` 1,367 B md5 `59d1c7bc…`"}
+{"id": "Q31-1", "path": "ls -la LEDGER.md ARC2_HANDOFF.md CLAUDE.md", "lines": "1-999999", "quote": "LEDGER.md -> walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"}
+{"id": "Q31-2", "path": "ls -la LEDGER.md ARC2_HANDOFF.md CLAUDE.md", "lines": "1-999999", "quote": "ARC2_HANDOFF.md -> walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/HANDOFF_CURRENT.md"}
+{"id": "Q31-3", "path": "ls -la LEDGER.md ARC2_HANDOFF.md CLAUDE.md", "lines": "1-999999", "quote": "CLAUDE.md -> AGENTS.md"}
+{"id": "Q32-1", "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/PRUNED.md", "lines": "1-999999", "quote": "NOTHING IS LOST: full git history is retained, and each entry pins the exact content by git object id (tree/blob sha at the pre-prune commit). To restore any entry: `git checkout <pre-prune-commit> -- <path>`."}
+{"id": "Q33-1", "path": "git log --format='%ci' -- semi-formal-experiment/", "lines": "1-999999", "quote": "d9d2369f65a920cdf489f1587865380ef54b28d6 2026-08-02 12:23:40 -0700 Initial commit"}
+{"id": "Q33-2", "path": "git log --format='%ci' -- semi-formal-experiment/", "lines": "1-999999", "quote": "5740a2a6 2026-08-02 12:45:15 -0700 Import semi-formal ontology experiment from ai_character_index"}
+{"id": "Q34-1", "path": ".github/workflows/ci.yml", "lines": "1-999999", "quote": "on:\\n  push: { branches: [main] }\\n  pull_request: {}"}
+{"id": "Q35-1", "path": "specs/openai-model-spec/README.md", "lines": "1-999999", "quote": "The Model Spec is dedicated to the public domain and marked with the [Creative Commons CC0 1.0](…) deed."}
+{"id": "Q35-2", "path": "specs/openai-model-spec/README.md", "lines": "1-999999", "quote": "Creative Commons Legal Code / CC0 1.0 Universal"}
+{"id": "Q35-3", "path": "specs/openai-model-spec/README.md", "lines": "1-999999", "quote": "This directory redistributes data from the ai-character-index project (…, commit ef08e676), by Andres Cotton, licensed under the Apache License, Version 2.0."}
+{"id": "Q35-4", "path": "specs/openai-model-spec/README.md", "lines": "1-999999", "quote": "MIT License / Copyright (c) 2026 Matt Stults"}
+{"id": "Q37-1", "path": "cd semi-formal-experiment && .venv/bin/python machine/query.py seats", "lines": "1-999999", "quote": "attribution_author     haiku            per_worksheet_row  -                                    -> *** NO VALIDATOR ***"}
+{"id": "Q40-1", "path": "bash setup_env.sh --check", "lines": "1-999999", "quote": "15/21 self-test checks passed"}
+{"id": "Q40-2", "path": "bash setup_env.sh --check", "lines": "1-999999", "quote": "environment INCOMPLETE — see MISSING/FAILED above."}
+{"id": "Q42-1", "path": "README.md", "lines": "1-999999", "quote": "5 relative links, 0 missing — `walkthrough/…/behavior_pilot/ITERATION_NOTES.md`, `…/L1L2_ADVERSARIAL_REVIEW.md`, `…/L1L2_REVIEW_DISPOSITION.md`, `semi-formal-experiment/REPRODUCIBILITY.md`, `walkthrough/…/graph_v2/PRUNED.md` — all OK"}
+{"id": "Q46-1", "path": "sys.addaudithook", "lines": "1-999999", "quote": "NETWORK-AUDIT-EVENTS: 0 []"}
+{"id": "Q47-1", "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/graph_check.py", "lines": "11-11", "quote": "RAW = Path(__file__).resolve().parents[5] / 'specs/openai-model-spec/model_spec.md'"}
+{"id": "Q47-2", "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/graph_check.py", "lines": "11-11", "quote": "| helpfulness | model-spec (openai) | 589 | 377 | 212 (36%) | 1.000 |"}
+{"id": "Q50-1", "path": "cmp", "lines": "1-999999", "quote": "IDENTICAL 1a/1b / IDENTICAL 2a/2b / IDENTICAL 3a/3b / IDENTICAL 4a/4b / IDENTICAL 6a/6b / IDENTICAL bench"}
+{"id": "H01-1", "path": "semi-formal-experiment/cycles/*/review_verdict.json", "lines": "1-999999", "quote": "{'verdict': 'proceed', 'by': 'change-review seat, Claude (Fable 5), independent session 2026-08-03 — not the implementer'}"}
+{"id": "H01-2", "path": "semi-formal-experiment/cycles/*/review_verdict.json", "lines": "1-999999", "quote": "## 0006 — **POST-CLOSE**: PATH AUDIT + OPUS PARITY CERTIFICATE, 2026-08-24"}
+{"id": "H02-1", "path": "cycles/*/state.json", "lines": "1-999999", "quote": "the frozen prediction (prediction.json sha c99260f031c991fccbc7a506033cc5a1b89dd90f2e9951e417708587fb621923) pre-registered max_regressions = 0 as this cycle's falsifiable bound"}
+{"id": "H02-2", "path": "cycles/*/state.json", "lines": "1-999999", "quote": "V5 prediction registered (ITERATION1_V5_PREDICTION.json) **BEFORE any attempt-2 ruling**"}
+{"id": "H04-1", "path": "ITERATION_NOTES.md", "lines": "14-17", "quote": "seats execute as fresh Fable subagents receiving **only the packet prompt string plus the recorded content-free tool fence**"}
+{"id": "H04-2", "path": "ITERATION_NOTES.md", "lines": "14-17", "quote": "Seat must be BLIND (packet = claims+span only; never truth or this file)"}
+{"id": "H04-3", "path": "ITERATION_NOTES.md", "lines": "14-17", "quote": "one seat fabricated-from-memory dispatch was voided (rule: prompts ONLY from committed packet files, never retyped)"}
+{"id": "H05-1", "path": "git log --reverse -- ITERATION_NOTES.md", "lines": "1-999999", "quote": "entries found: 44 0000 0043 / gapless 0000-0043: True / entries with NO stated date in heading: 0 / entries whose stated date differs from first-commit date by >1 day: 0"}
+{"id": "H06-1", "path": "ITERATION_NOTES.md", "lines": "832-865", "quote": "Clean-context Opus reviewer: P1 **UNSUPPORTED** (as measured), P2 **UNSUPPORTED**, 8 findings. CoVe'd per standing rule"}
+{"id": "H06-2", "path": "ITERATION_NOTES.md", "lines": "832-865", "quote": "Clean-context Opus review (full text: L1L2_ADVERSARIAL_REVIEW.md, 36 findings + 20 amendments): verdict **DOES-NOT-LICENSE**, accepted after CoVe"}
+{"id": "H07-1", "path": "ITERATION_NOTES.md", "lines": "554-570", "quote": "visible engaged precision is EXACTLY 32/122 = 0.262 (seal: 38 nodes untouched, single-use)"}
+{"id": "H08-1", "path": "grep -rn \"refusals, not wrong\"", "lines": "1-999999", "quote": "worked — its failures were refusals, not wrong answers."}
+{"id": "H11-1", "path": "git show 6d01415b", "lines": "1-999999", "quote": "## 0008 — FINAL-BLOCK BUDGET CHECKPOINT (Matt, 2026-08-24) / /usage pasted at 27% Fable; Matt: \\"}
+{"id": "H11-2", "path": "git show 6d01415b", "lines": "1-999999", "quote": " — explicit authorization for the final all-Fable block…"}
+{"id": "H12-1", "path": "cd semi-formal-experiment && .venv/bin/python relevance.py helpfulness --top 3", "lines": "1-999999", "quote": "1.000  m0452  model_spec@2025-12-18 > Do the best work > Be creative > ¶4"}
+{"id": "H12-2", "path": "cd semi-formal-experiment && .venv/bin/python relevance.py helpfulness --top 3", "lines": "1-999999", "quote": "model_spec@2025-12-18 > Do the best work > Be creative > ¶4"}
+{"id": "H12-3", "path": "cd semi-formal-experiment && .venv/bin/python relevance.py helpfulness --top 3", "lines": "1-999999", "quote": "Context matters, because creativity should not come at the expense of truthfulness, clarity, or usefulness[^uotj]…"}
+{"id": "H12-4", "path": "cd semi-formal-experiment && .venv/bin/python relevance.py helpfulness --top 3", "lines": "1-999999", "quote": ": 0.746…}`, `"}
+{"id": "H12-5", "path": "cd semi-formal-experiment && .venv/bin/python relevance.py helpfulness --top 3", "lines": "1-999999", "quote": "truthful_communication"}
+{"id": "H14-1", "path": "ITERATION_NOTES.md", "lines": "1-999999", "quote": "## 0001 — ITERATION 1, STEP 1 (TRIAGE)"}
+{"id": "H14-2", "path": "ITERATION_NOTES.md", "lines": "1-999999", "quote": "## 0003 — ITERATION 1, STEP 2a (R1 ESCALATION)"}
+{"id": "H14-3", "path": "ITERATION_NOTES.md", "lines": "1-999999", "quote": "## 0004 — ITERATION 1, STEPS 2b-3 (C-D MOVE + V1-V4) and STEP-4 PREP"}
+{"id": "H14-4", "path": "ITERATION_NOTES.md", "lines": "1-999999", "quote": "## 0005 — ITERATION 1, STEPS 4-5 (REALIZATION + CLOSE)"}
+{"id": "H14-5", "path": "ITERATION_NOTES.md", "lines": "1-999999", "quote": "CALCULUS_RUNBOOK v1 rewritten FROM notes 0001-0014 (execution-derived; docs-tests 5/5)"}
+{"id": "H15-1", "path": "ARTIFACTS.md", "lines": "1-999999", "quote": "26 of 26 resolve, including both symlinked roots (`LEDGER.md`, `ARC2_HANDOFF.md`) and the directory route `semi-formal-experiment/machine/`"}
+{"id": "V01-1", "path": "HANDOFF_CURRENT.md", "lines": "106-107", "quote": "Frontier-model panels were the calibration instrument — the tool should match the panel, or give an answer a frontier model would accept as justifiable."}
+{"id": "V03-1", "path": "semi-formal-experiment/segmentation_summary.md", "lines": "1-999999", "quote": "**Total clauses: 616** … **Formalizable fraction (conditional): 31.7%**"}
+{"id": "V05-1", "path": "RETRANS_REVIEW_DISPOSITION.md", "lines": "57-57", "quote": "two blind seats retranslated 39/39 full spans with the schema and ZERO new coinages (coverage-in-form)"}
+{"id": "V07-1", "path": "bf0d4978", "lines": "1-999999", "quote": "1 file changed, 18 insertions(+)"}
+{"id": "V07-2", "path": "bf0d4978", "lines": "1-999999", "quote": "choose: coarse bound now / brief v3 / accept-with-noise"}
+{"id": "V07-3", "path": "bf0d4978", "lines": "1-999999", "quote": "NO QUERY_CLASS_BOUND.json is published from tripwired data."}
+{"id": "V08-1", "path": "bf0d4978", "lines": "1-999999", "quote": "0041 withdrawn: integration census fails adversarial review (P1/P2 UNSUPPORTED)"}
+{"id": "V08-2", "path": "bf0d4978", "lines": "1-999999", "quote": "L1/L2 withdrawn: the licensing experiments fail their own adversarial review (DOES-NOT-LICENSE, accepted after CoVe)"}
+{"id": "V09-1", "path": "ITERATION_NOTES.md", "lines": "280-284", "quote": "THE HONEST HEADLINE IS RECALL, NOT PRECISION: 23/40 pooled declined nodes are panel-relevant. The module's engaged side sits ~0.6-0.7; its DECLINED side leaks a large relevant mass"}
+{"id": "V10-1", "path": "ITERATION_NOTES.md", "lines": "851-856", "quote": "BINDING RULE ADOPTED (companion to V5 coverage): every separability/representability claim ships with a seeded matched-granularity random-partition null; the claim is only its MARGIN over the null; a pass condition satisfiable by noise is void as registered."}
+{"id": "V11-1", "path": "RETRANS_REVIEW_DISPOSITION.md", "lines": "1-999999", "quote": "P1 … NOT ESTABLISHED. The measured separability is real but carries no information beyond what a random partition of the vocabulary provides at matched granularity … P2 … NOT ESTABLISHED."}
+{"id": "V12-1", "path": "RETRANS_REVIEW_DISPOSITION.md", "lines": "1-999999", "quote": "## 0037 — ERRATUM #20: CLOSED-VOCABULARY CIRCULARITY (Matt's suspicion, upheld) … **Upheld on inspection**, two mechanisms: (a) ENDOGENEITY … (b) CIRCULARITY"}
