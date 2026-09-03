@@ -297,3 +297,19 @@ unaddressed — unevaluated providers now make the node contested. Live-run
 conflict to adjudicate: `setup_env.sh --check` exits 0 here (Q40/Q43) where
 the baseline reports exit 1 with two failing self-tests; pytest gives
 2267 passed / 4 skipped here vs the baseline's 2,270 / 1 (Q24).
+
+### Process event — 2026-09-02 evening — resumed dispatch; git-derived census for H03/H11; D-09 third batch
+
+Dispatch resumed at two concurrent translators after the 18:10 reset.
+Git-log batches 087-099 (Sonnet) all accepted; batch_090 returned 48
+value claims tagged kind "event" with a null event object — the checker
+rejected them and the same translator reclassified them (retry1, all
+accepted). The git-log source class is complete. The append-only
+conjunct of H03/H11 is decided by a git census (tier git, live run):
+of 45 first-parent commits touching ITERATION_NOTES.md only 6d01415b
+deletes lines (121 deleted, 89 added). H03 now verified; H05 verified
+from commit linkage (31 entries, 0 date mismatches); H11 waits on the
+pre-redaction batches. Merging under the D-09 checker rule exposed 21
+pre-D-09 seat_dispatch events without inputs; 18 of their spans were
+outside the vocabulary selection and are now a third retranslation
+batch (retry_D09c) selected by claim predicate.
