@@ -1,0 +1,26 @@
+{
+ "summary": {
+  "total": 2,
+  "passed": 2,
+  "failed": 0,
+  "fail_reasons": {}
+ },
+ "results": [
+  {
+   "id": "L1060001",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  },
+  {
+   "id": "L1060002",
+   "pass": true,
+   "fails": [],
+   "notes": [
+    "quote: verbatim within cited lines"
+   ]
+  }
+ ]
+}
