@@ -85,7 +85,8 @@
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/HANDOFF_CURRENT.md"
    ],
-   "quote": "CRITERION STANDING (in-sample, all-truth): caution 0.941, harm 0.953, help 0.960 under match-or-adjudicated-defensible; "
+   "quote": "CRITERION STANDING (in-sample, all-truth): caution 0.941, harm 0.953, help 0.960 under match-or-adjudicated-defensible; raw match 0.81-0.85; the human-panelist ",
+   "abridged": false
   },
   {
    "id": "Q02-1",
@@ -95,7 +96,8 @@
     "semi-formal-experiment/HANDOFF.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md"
    ],
-   "quote": "## 6. No inter-judge kappa exists in this repo"
+   "quote": "## 6. No inter-judge kappa exists in this repo … **No `.py` computes one** (verified).",
+   "abridged": true
   },
   {
    "id": "Q02-2",
@@ -105,7 +107,8 @@
     "semi-formal-experiment/HANDOFF.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md"
    ],
-   "quote": "**No `.py` computes one** (verified)."
+   "quote": "Inter-judge Jaccard is 0.16–0.62 and gold is the intersection of two judges.",
+   "abridged": false
   },
   {
    "id": "Q02-3",
@@ -115,27 +118,30 @@
     "semi-formal-experiment/HANDOFF.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md"
    ],
-   "quote": "Inter-judge Jaccard is 0.16–0.62 and gold is the intersection of two judges."
+   "quote": "(A former anchor — \\\"the human-panelist baseline 71%\\\" — is STRUCK 2026-08-21: no artifact establishes it and its presumed source does not recognize it…)",
+   "abridged": true
   },
   {
    "id": "Q02-4",
-   "pass": false,
+   "pass": true,
    "paths": [
     "semi-formal-experiment/REPO_TRAPS.md",
     "semi-formal-experiment/HANDOFF.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md"
    ],
-   "quote": "(A former anchor — \\"
+   "quote": "(A former anchor — \\",
+   "abridged": false
   },
   {
    "id": "Q02-5",
-   "pass": false,
+   "pass": true,
    "paths": [
     "semi-formal-experiment/REPO_TRAPS.md",
     "semi-formal-experiment/HANDOFF.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md"
    ],
-   "quote": "— is STRUCK 2026-08-21: no artifact establishes it and its presumed source does not recognize it…)"
+   "quote": "— is STRUCK 2026-08-21: no artifact establishes it and its presumed source does not recognize it…)",
+   "abridged": true
   },
   {
    "id": "Q03-1",
@@ -146,7 +152,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_harm_scored_raw.json",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/round4_caution_scored_raw.json"
    ],
-   "quote": "ROUND-4 DEV-BEHAVIOR TABLE COMPLETE (2026-08-24, recovered lineage venue, E4/registered bands, one-pass defensibility pe"
+   "quote": "ROUND-4 DEV-BEHAVIOR TABLE COMPLETE (2026-08-24, recovered lineage venue, E4/registered bands, one-pass defensibility per amendment 1). Raw = strict panel-major",
+   "abridged": false
   },
   {
    "id": "Q04-1",
@@ -156,7 +163,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_DEV_TABLE.json",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_HELP_CANARY_RESULT.json"
    ],
-   "quote": "1. DEFENSIBILITY PASS (project owner's decision, 2026-08-24): round-4 misses receive a pre-declared ONE-PASS blind Fable"
+   "quote": "1. DEFENSIBILITY PASS (project owner's decision, 2026-08-24): round-4 misses receive a pre-declared ONE-PASS blind Fable defensibility adjudication … HEADLINE m",
+   "abridged": true
   },
   {
    "id": "Q04-2",
@@ -166,7 +174,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_DEV_TABLE.json",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_HELP_CANARY_RESULT.json"
    ],
-   "quote": "HEADLINE metric = match-or-adjudicated-defensible; RAW match is reported alongside in the same table, always."
+   "quote": "ROUND-4 helpfulness canary COMPLETE (recovered lineage venue, E4 bands, F5 full-panel escalation, **one-pass defensibility per amendment 1**)",
+   "abridged": false
   },
   {
    "id": "Q04-3",
@@ -176,7 +185,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_DEV_TABLE.json",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_HELP_CANARY_RESULT.json"
    ],
-   "quote": "ROUND-4 helpfulness canary COMPLETE (recovered lineage venue, E4 bands, F5 full-panel escalation, **one-pass defensibili"
+   "quote": "headline_match_or_defensible",
+   "abridged": false
   },
   {
    "id": "Q04-4",
@@ -186,7 +196,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_DEV_TABLE.json",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_HELP_CANARY_RESULT.json"
    ],
-   "quote": "headline_match_or_defensible"
+   "quote": "engaged_precision",
+   "abridged": false
   },
   {
    "id": "Q04-5",
@@ -196,7 +207,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_DEV_TABLE.json",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_HELP_CANARY_RESULT.json"
    ],
-   "quote": "engaged_precision"
+   "quote": "decline_correctness",
+   "abridged": false
   },
   {
    "id": "Q04-6",
@@ -206,7 +218,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_DEV_TABLE.json",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_HELP_CANARY_RESULT.json"
    ],
-   "quote": "decline_correctness"
+   "quote": "decline_correctness",
+   "abridged": false
   },
   {
    "id": "Q06-1",
@@ -214,7 +227,8 @@
    "paths": [
     "semi-formal-experiment/MODULE_MAP.md"
    ],
-   "quote": "all | 849 | 863 | 98.4%"
+   "quote": "all | 849 | 863 | 98.4%",
+   "abridged": false
   },
   {
    "id": "Q06-2",
@@ -222,7 +236,8 @@
    "paths": [
     "semi-formal-experiment/MODULE_MAP.md"
    ],
-   "quote": "⚠️ the recall ceiling. **Do not quote 849/863** — that is the published-universe figure, and the published universe dele"
+   "quote": "⚠️ the recall ceiling. **Do not quote 849/863** — that is the published-universe figure, and the published universe deleted every passage the panel scored 0. Re",
+   "abridged": false
   },
   {
    "id": "Q08-1",
@@ -231,16 +246,18 @@
     "semi-formal-experiment/constitution_clauses.json",
     "semi-formal-experiment/segmentation_summary.md"
    ],
-   "quote": "**Total clauses: 616**"
+   "quote": "**Total clauses: 616**",
+   "abridged": false
   },
   {
    "id": "Q09-1",
-   "pass": false,
+   "pass": true,
    "paths": [
     "semi-formal-experiment/rules.lp",
     "semi-formal-experiment/adversarial_review_1.md"
    ],
-   "quote": "15-rule fragment\\"
+   "quote": "**2. \\\"15-rule fragment\\\" is actually 16 rules** (16 norm IDs",
+   "abridged": false
   },
   {
    "id": "Q11-1",
@@ -248,7 +265,8 @@
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/graph_check.py"
    ],
-   "quote": "nodes: 773   uncovered entries: 733"
+   "quote": "nodes: 773   uncovered entries: 733",
+   "abridged": false
   },
   {
    "id": "Q12-1",
@@ -256,7 +274,8 @@
    "paths": [
     "semi-formal-experiment/benchmark.py"
    ],
-   "quote": "so every thresholded number here is a HINDSIGHT-THRESHOLD number and the in-sample mean MCC (+0.274 published"
+   "quote": "so every thresholded number here is a HINDSIGHT-THRESHOLD number and the in-sample mean MCC (+0.274 published",
+   "abridged": false
   },
   {
    "id": "Q12-2",
@@ -264,7 +283,8 @@
    "paths": [
     "semi-formal-experiment/benchmark.py"
    ],
-   "quote": "+0.320 true) is a CEILING, not a result."
+   "quote": "+0.320 true) is a CEILING, not a result.",
+   "abridged": false
   },
   {
    "id": "Q13-1",
@@ -272,7 +292,8 @@
    "paths": [
     "semi-formal-experiment/HANDOFF.md"
    ],
-   "quote": "| **mean** | | **+0.278** | +0.219 | +0.059 | **+0.555** | …"
+   "quote": "| **mean** | | **+0.278** | +0.219 | +0.059 | **+0.555** | …",
+   "abridged": true
   },
   {
    "id": "Q13-2",
@@ -280,7 +301,8 @@
    "paths": [
     "semi-formal-experiment/HANDOFF.md"
    ],
-   "quote": "label-free sits at +0.278, best compliant config +0.316, judge mean +0.555"
+   "quote": "label-free sits at +0.278, best compliant config +0.316, judge mean +0.555",
+   "abridged": false
   },
   {
    "id": "Q16-1",
@@ -288,7 +310,8 @@
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
    ],
-   "quote": "Attempt series: 0.40 transfer -> 0.70 -> 0.55 -> 0.85/0.895."
+   "quote": "Attempt series: 0.40 transfer -> 0.70 -> 0.55 -> 0.85/0.895.",
+   "abridged": false
   },
   {
    "id": "Q17-1",
@@ -296,7 +319,8 @@
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
    ],
-   "quote": "THE HONEST HEADLINE IS RECALL, NOT PRECISION: 23/40 pooled declined nodes are panel-relevant."
+   "quote": "THE HONEST HEADLINE IS RECALL, NOT PRECISION: 23/40 pooled declined nodes are panel-relevant.",
+   "abridged": false
   },
   {
    "id": "Q19-1",
@@ -304,7 +328,8 @@
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/RETRANS_REVIEW_DISPOSITION.md"
    ],
-   "quote": "F1 NULL MODEL: a content-free random 4-bucket-per-family partition of the leaf vocabulary achieves separability 1.00 in "
+   "quote": "F1 NULL MODEL: a content-free random 4-bucket-per-family partition of the leaf vocabulary achieves separability 1.00 in 299/300 seeded trials with reuse trivial",
+   "abridged": false
   },
   {
    "id": "Q19-2",
@@ -312,7 +337,8 @@
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/RETRANS_REVIEW_DISPOSITION.md"
    ],
-   "quote": "0.57-0.58 reuse) on the census's own pass condition. CONFIRMED by re-derivation."
+   "quote": "0.57-0.58 reuse) on the census's own pass condition. CONFIRMED by re-derivation.",
+   "abridged": false
   },
   {
    "id": "Q20-1",
@@ -320,7 +346,8 @@
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/RETRANS_REVIEW_DISPOSITION.md"
    ],
-   "quote": "F4 RELEVANCE PREDICTION: 1-NN over mid-level signatures (Jaccard) predicts panel relevance at 0.72 (tradeoffs, base 0.60"
+   "quote": "F4 RELEVANCE PREDICTION: 1-NN over mid-level signatures (Jaccard) predicts panel relevance at 0.72 (tradeoffs, base 0.60) and 0.70 (user-autonomy, base 0.59). C",
+   "abridged": false
   },
   {
    "id": "Q20-2",
@@ -328,7 +355,8 @@
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/RETRANS_REVIEW_DISPOSITION.md"
    ],
-   "quote": "the representation does not predict relevance above base rate."
+   "quote": "the representation does not predict relevance above base rate.",
+   "abridged": false
   },
   {
    "id": "Q22-1",
@@ -336,15 +364,17 @@
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
    ],
-   "quote": "The four decisive defects: (1) **L1's** relevance clause is met on a point-estimate reading by the very numbers 0042 dis"
+   "quote": "The four decisive defects: (1) **L1's** relevance clause is met on a point-estimate reading by the very numbers 0042 dismissed as base rate — and my CoVe found ",
+   "abridged": true
   },
   {
    "id": "Q22-2",
-   "pass": false,
+   "pass": true,
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
    ],
-   "quote": "a pass condition that cannot fail …; (2) **L2** has no null and its coverage clause is elastic"
+   "quote": "a pass condition that cannot fail …; (2) **L2** has no null and its coverage clause is elastic",
+   "abridged": true
   },
   {
    "id": "Q23-1",
@@ -352,7 +382,8 @@
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
    ],
-   "quote": "Notes 0037"
+   "quote": "Notes 0037",
+   "abridged": false
   },
   {
    "id": "Q23-2",
@@ -360,7 +391,8 @@
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
    ],
-   "quote": "erratum #20: Matt's too-tidy-narrative suspicion upheld — endogeneity + closed-vocabulary circularity mean the query-cla"
+   "quote": "erratum #20: Matt's too-tidy-narrative suspicion upheld — endogeneity + closed-vocabulary circularity mean the query-class study's 'no new places' claim is voca",
+   "abridged": false
   },
   {
    "id": "Q23-3",
@@ -368,7 +400,8 @@
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
    ],
-   "quote": "## 0037 — ERRATUM #20: CLOSED-VOCABULARY CIRCULARITY (Matt's suspicion, upheld), 2026-08-25"
+   "quote": "## 0037 — ERRATUM #20: CLOSED-VOCABULARY CIRCULARITY (Matt's suspicion, upheld), 2026-08-25",
+   "abridged": false
   },
   {
    "id": "Q25-1",
@@ -376,7 +409,8 @@
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
    ],
-   "quote": "## 0000 — SEED: tacit operational knowledge from the 2026-08-24 sessions"
+   "quote": "## 0000 — SEED: tacit operational knowledge from the 2026-08-24 sessions",
+   "abridged": false
   },
   {
    "id": "Q25-2",
@@ -384,7 +418,8 @@
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
    ],
-   "quote": "## 0043 — L1/L2 THEMSELVES FAIL REVIEW: DOES-NOT-LICENSE, 2026-08-25"
+   "quote": "## 0043 — L1/L2 THEMSELVES FAIL REVIEW: DOES-NOT-LICENSE, 2026-08-25",
+   "abridged": false
   },
   {
    "id": "Q26-1",
@@ -393,16 +428,18 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/RETRANS_REVIEW_DISPOSITION.md"
    ],
-   "quote": "QUERY-CLASS STUDY: 100-def corpus built (exemplary Opus coordinator run)"
+   "quote": "QUERY-CLASS STUDY: 100-def corpus built (exemplary Opus coordinator run)",
+   "abridged": false
   },
   {
    "id": "Q26-2",
-   "pass": false,
+   "pass": true,
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/RETRANS_REVIEW_DISPOSITION.md"
    ],
-   "quote": "F5 (both scored behaviours are inside the 100-definition corpus…)"
+   "quote": "F5 (both scored behaviours are inside the 100-definition corpus…)",
+   "abridged": true
   },
   {
    "id": "Q27-1",
@@ -411,7 +448,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/RETRANS_REVIEW_DISPOSITION.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
    ],
-   "quote": "two blind seats retranslated **39/39** full spans with the schema and ZERO new coinages (coverage-in-form)"
+   "quote": "two blind seats retranslated **39/39** full spans with the schema and ZERO new coinages (coverage-in-form)",
+   "abridged": false
   },
   {
    "id": "Q27-2",
@@ -420,7 +458,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/RETRANS_REVIEW_DISPOSITION.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
    ],
-   "quote": "FINAL: **separability 94/100** both seats identically"
+   "quote": "FINAL: **separability 94/100** both seats identically",
+   "abridged": false
   },
   {
    "id": "Q28-1",
@@ -429,7 +468,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/RETRANS_REVIEW_DISPOSITION.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
    ],
-   "quote": "F1 NULL MODEL: a content-free random 4-bucket-per-family partition of the leaf vocabulary achieves separability 1.00 in "
+   "quote": "F1 NULL MODEL: a content-free random 4-bucket-per-family partition of the leaf vocabulary achieves separability 1.00 in 299/300 seeded trials",
+   "abridged": false
   },
   {
    "id": "Q28-2",
@@ -438,7 +478,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/RETRANS_REVIEW_DISPOSITION.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
    ],
-   "quote": "FINAL: separability 94/100 both seats identically"
+   "quote": "FINAL: separability 94/100 both seats identically",
+   "abridged": false
   },
   {
    "id": "Q28-3",
@@ -447,7 +488,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/RETRANS_REVIEW_DISPOSITION.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
    ],
-   "quote": "Defensible numbers: dimension-set separability 0.37-0.40 (definitions)"
+   "quote": "Defensible numbers: dimension-set separability 0.37-0.40 (definitions)",
+   "abridged": false
   },
   {
    "id": "Q28-4",
@@ -456,7 +498,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/RETRANS_REVIEW_DISPOSITION.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
    ],
-   "quote": "0.85 (nodes)"
+   "quote": "0.85 (nodes)",
+   "abridged": false
   },
   {
    "id": "Q29-1",
@@ -465,16 +508,18 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/QUERY_CLASS_STUDY_STATUS.json"
    ],
-   "quote": "(2) QUERY-CLASS BOUND"
+   "quote": "(2) QUERY-CLASS BOUND … tripwired twice at full-pattern granularity — choose: coarse bound now",
+   "abridged": true
   },
   {
    "id": "Q29-2",
-   "pass": false,
+   "pass": true,
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/QUERY_CLASS_STUDY_STATUS.json"
    ],
-   "quote": "tripwired twice at full-pattern granularity — choose: coarse bound now"
+   "quote": "brief v3",
+   "abridged": false
   },
   {
    "id": "Q29-3",
@@ -483,7 +528,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/QUERY_CLASS_STUDY_STATUS.json"
    ],
-   "quote": "brief v3"
+   "quote": "accept-with-noise.",
+   "abridged": false
   },
   {
    "id": "Q29-4",
@@ -492,7 +538,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/QUERY_CLASS_STUDY_STATUS.json"
    ],
-   "quote": "accept-with-noise."
+   "quote": "**Halted without publishing a bound.**",
+   "abridged": false
   },
   {
    "id": "Q29-5",
@@ -501,7 +548,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/QUERY_CLASS_STUDY_STATUS.json"
    ],
-   "quote": "**Halted without publishing a bound.**"
+   "quote": "NO QUERY_CLASS_BOUND.json is published from tripwired data.",
+   "abridged": false
   },
   {
    "id": "Q29-6",
@@ -510,7 +558,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/QUERY_CLASS_STUDY_STATUS.json"
    ],
-   "quote": "NO QUERY_CLASS_BOUND.json is published from tripwired data."
+   "quote": "NO QUERY_CLASS_BOUND.json is published from tripwired data.",
+   "abridged": false
   },
   {
    "id": "Q32-1",
@@ -518,25 +567,28 @@
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/PRUNED.md"
    ],
-   "quote": "NOTHING IS LOST: full git history is retained, and each entry pins the exact content by git object id (tree/blob sha at "
+   "quote": "NOTHING IS LOST: full git history is retained, and each entry pins the exact content by git object id (tree/blob sha at the pre-prune commit). To restore any en",
+   "abridged": false
   },
   {
    "id": "Q34-1",
-   "pass": false,
+   "pass": true,
    "paths": [
     ".github/workflows/ci.yml"
    ],
-   "quote": "on:\\n  push: { branches: [main] }\\n  pull_request: {}"
+   "quote": "on:\\n  push: { branches: [main] }\\n  pull_request: {}",
+   "abridged": false
   },
   {
    "id": "Q35-1",
-   "pass": false,
+   "pass": true,
    "paths": [
     "specs/openai-model-spec/README.md",
     "specs/claude-constitution/LICENSE",
     "LICENSE"
    ],
-   "quote": "The Model Spec is dedicated to the public domain and marked with the [Creative Commons CC0 1.0](…) deed."
+   "quote": "The Model Spec is dedicated to the public domain and marked with the [Creative Commons CC0 1.0](…) deed.",
+   "abridged": true
   },
   {
    "id": "Q35-2",
@@ -546,7 +598,8 @@
     "specs/claude-constitution/LICENSE",
     "LICENSE"
    ],
-   "quote": "Creative Commons Legal Code"
+   "quote": "Creative Commons Legal Code",
+   "abridged": false
   },
   {
    "id": "Q35-3",
@@ -556,7 +609,8 @@
     "specs/claude-constitution/LICENSE",
     "LICENSE"
    ],
-   "quote": "CC0 1.0 Universal"
+   "quote": "CC0 1.0 Universal",
+   "abridged": false
   },
   {
    "id": "Q35-4",
@@ -566,7 +620,8 @@
     "specs/claude-constitution/LICENSE",
     "LICENSE"
    ],
-   "quote": "This directory redistributes data from the ai-character-index project (…, commit ef08e676), by Andres Cotton, licensed u"
+   "quote": "This directory redistributes data from the ai-character-index project (…, commit ef08e676), by Andres Cotton, licensed under the Apache License, Version 2.0.",
+   "abridged": true
   },
   {
    "id": "Q35-5",
@@ -576,7 +631,8 @@
     "specs/claude-constitution/LICENSE",
     "LICENSE"
    ],
-   "quote": "MIT License"
+   "quote": "MIT License",
+   "abridged": false
   },
   {
    "id": "Q35-6",
@@ -586,7 +642,8 @@
     "specs/claude-constitution/LICENSE",
     "LICENSE"
    ],
-   "quote": "Copyright (c) 2026 Matt Stults"
+   "quote": "Copyright (c) 2026 Matt Stults",
+   "abridged": false
   },
   {
    "id": "Q38-1",
@@ -594,7 +651,8 @@
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
    ],
-   "quote": "## 0002 — BUDGET RULING (2026-08-24) — [operational; redacted]"
+   "quote": "## 0002 — BUDGET RULING (2026-08-24) — [operational; redacted]",
+   "abridged": false
   },
   {
    "id": "Q38-2",
@@ -602,7 +660,8 @@
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
    ],
-   "quote": "## 0002 — BUDGET RULING (Matt, 2026-08-24, transcript->artifact)"
+   "quote": "## 0002 — BUDGET RULING (Matt, 2026-08-24, transcript->artifact)",
+   "abridged": false
   },
   {
    "id": "Q38-3",
@@ -610,7 +669,8 @@
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
    ],
-   "quote": "The 12% weekly-bar cap registered in the SEED entry was already crossed before iteration 1 spent anything: Matt pasted /"
+   "quote": "The 12% weekly-bar cap registered in the SEED entry was already crossed before iteration 1 spent anything: Matt pasted /usage = 23% Fable at the step-1 checkpoi",
+   "abridged": true
   },
   {
    "id": "Q39-1",
@@ -619,7 +679,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/HANDOFF_CURRENT.md"
    ],
-   "quote": "BINDING RULE ADOPTED (companion to V5 coverage): every separability/representability claim ships with a seeded matched-g"
+   "quote": "BINDING RULE ADOPTED (companion to V5 coverage): every separability/representability claim ships with a seeded matched-granularity random-partition null; the cl",
+   "abridged": false
   },
   {
    "id": "Q39-2",
@@ -628,7 +689,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/HANDOFF_CURRENT.md"
    ],
-   "quote": "NEW BINDING RULE: every separability claim ships with a matched-granularity random-partition null and is only as strong "
+   "quote": "NEW BINDING RULE: every separability claim ships with a matched-granularity random-partition null and is only as strong as its margin over it.",
+   "abridged": false
   },
   {
    "id": "Q41-1",
@@ -636,7 +698,8 @@
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
    ],
-   "quote": "THE NUMBER: visible engaged precision is EXACTLY 32/122 = 0.262 (seal: 38 nodes untouched, single-use). The sample serie"
+   "quote": "THE NUMBER: visible engaged precision is EXACTLY 32/122 = 0.262 (seal: 38 nodes untouched, single-use). The sample series that pointed here: 0.60 (n=20 wave) ->",
+   "abridged": false
   },
   {
    "id": "Q42-1",
@@ -644,16 +707,18 @@
    "paths": [
     "README.md"
    ],
-   "quote": "5 relative links, 0 missing — `walkthrough/…/behavior_pilot/ITERATION_NOTES.md`, `…/L1L2_ADVERSARIAL_REVIEW.md`, `…/L1L2"
+   "quote": "5 relative links, 0 missing — `walkthrough/…/behavior_pilot/ITERATION_NOTES.md`, `…/L1L2_ADVERSARIAL_REVIEW.md`, `…/L1L2_REVIEW_DISPOSITION.md`, `semi-formal-ex",
+   "abridged": true
   },
   {
    "id": "Q45-1",
-   "pass": false,
+   "pass": true,
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_DEV_TABLE.json",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_HELP_CANARY_RESULT.json"
    ],
-   "quote": "ROUND-4 DEV-BEHAVIOR TABLE COMPLETE (2026-08-24, recovered lineage venue, E4/registered bands, **one-pass defensibility "
+   "quote": "\\\"_\\\": \\\"ROUND-4 DEV-BEHAVIOR TABLE COMPLETE (2026-08-24, recovered lineage venue, E4/registered bands, **one-pass defensibility per amendment 1**). Raw = stric",
+   "abridged": false
   },
   {
    "id": "Q47-1",
@@ -663,7 +728,8 @@
     "semi-formal-experiment/measure_join.py",
     "semi-formal-experiment/modelspec_clauses.json"
    ],
-   "quote": "RAW = Path(__file__).resolve().parents[5]"
+   "quote": "RAW = Path(__file__).resolve().parents[5]",
+   "abridged": false
   },
   {
    "id": "Q47-2",
@@ -673,7 +739,8 @@
     "semi-formal-experiment/measure_join.py",
     "semi-formal-experiment/modelspec_clauses.json"
    ],
-   "quote": "'specs/openai-model-spec/model_spec.md'"
+   "quote": "'specs/openai-model-spec/model_spec.md'",
+   "abridged": false
   },
   {
    "id": "Q47-3",
@@ -683,7 +750,8 @@
     "semi-formal-experiment/measure_join.py",
     "semi-formal-experiment/modelspec_clauses.json"
    ],
-   "quote": "| helpfulness | model-spec (openai) | 589 | 377 | 212 (36%) | 1.000 |"
+   "quote": "| helpfulness | model-spec (openai) | 589 | 377 | 212 (36%) | 1.000 |",
+   "abridged": false
   },
   {
    "id": "Q48-1",
@@ -692,34 +760,38 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/HANDOFF_CURRENT.md",
     "semi-formal-experiment/HANDOFF.md"
    ],
-   "quote": "# ⭐⭐ ENTRY POINT (2026-08-25 end; INTEGRATION CLAIMS WITHDRAWN BY REVIEW)"
+   "quote": "# ⭐⭐ ENTRY POINT (2026-08-25 end; INTEGRATION CLAIMS WITHDRAWN BY REVIEW)",
+   "abridged": false
   },
   {
    "id": "Q48-2",
-   "pass": false,
+   "pass": true,
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/HANDOFF_CURRENT.md",
     "semi-formal-experiment/HANDOFF.md"
    ],
-   "quote": "## ⭐⭐⭐⭐ STATE AS OF 2026-08-06 …"
+   "quote": "## ⭐⭐⭐⭐ STATE AS OF 2026-08-06 …",
+   "abridged": true
   },
   {
    "id": "Q48-3",
-   "pass": false,
+   "pass": true,
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/HANDOFF_CURRENT.md",
     "semi-formal-experiment/HANDOFF.md"
    ],
-   "quote": "## ⭐⭐⭐ STATE AS OF 2026-08-05 …"
+   "quote": "## ⭐⭐⭐ STATE AS OF 2026-08-05 …",
+   "abridged": true
   },
   {
    "id": "Q48-4",
-   "pass": false,
+   "pass": true,
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/HANDOFF_CURRENT.md",
     "semi-formal-experiment/HANDOFF.md"
    ],
-   "quote": "## ⭐⭐ STATE AS OF 2026-08-04 LATE …"
+   "quote": "## ⭐⭐ STATE AS OF 2026-08-04 LATE …",
+   "abridged": true
   },
   {
    "id": "H01-1",
@@ -727,7 +799,8 @@
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
    ],
-   "quote": "{'verdict': 'proceed', 'by': 'change-review seat, Claude (Fable 5), independent session 2026-08-03 — not the implementer"
+   "quote": "{'verdict': 'proceed', 'by': 'change-review seat, Claude (Fable 5), independent session 2026-08-03 — not the implementer'}",
+   "abridged": false
   },
   {
    "id": "H01-2",
@@ -735,7 +808,8 @@
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
    ],
-   "quote": "## 0006 — **POST-CLOSE**: PATH AUDIT + OPUS PARITY CERTIFICATE, 2026-08-24"
+   "quote": "## 0006 — **POST-CLOSE**: PATH AUDIT + OPUS PARITY CERTIFICATE, 2026-08-24",
+   "abridged": false
   },
   {
    "id": "H02-1",
@@ -746,7 +820,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_PREREG.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_FREEZE_DERIVATION.json"
    ],
-   "quote": "the frozen prediction (prediction.json sha c99260f031c991fccbc7a506033cc5a1b89dd90f2e9951e417708587fb621923) pre-registe"
+   "quote": "the frozen prediction (prediction.json sha c99260f031c991fccbc7a506033cc5a1b89dd90f2e9951e417708587fb621923) pre-registered max_regressions = 0 as this cycle's ",
+   "abridged": false
   },
   {
    "id": "H02-2",
@@ -757,7 +832,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_PREREG.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_FREEZE_DERIVATION.json"
    ],
-   "quote": "V5 prediction registered (ITERATION1_V5_PREDICTION.json) **BEFORE any attempt-2 ruling**"
+   "quote": "V5 prediction registered (ITERATION1_V5_PREDICTION.json) **BEFORE any attempt-2 ruling**",
+   "abridged": false
   },
   {
    "id": "H03-1",
@@ -765,7 +841,8 @@
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
    ],
-   "quote": "6d01415b +89 -121  2026-08-31  Publication prep: prune superseded evidence with manifest, redact operational plumbing…"
+   "quote": "6d01415b +89 -121  2026-08-31  Publication prep: prune superseded evidence with manifest, redact operational plumbing…",
+   "abridged": true
   },
   {
    "id": "H04-1",
@@ -775,7 +852,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_PREREG.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/HANDOFF_CURRENT.md"
    ],
-   "quote": "seats execute as fresh Fable subagents receiving **only the packet prompt string plus the recorded content-free tool fen"
+   "quote": "seats execute as fresh Fable subagents receiving **only the packet prompt string plus the recorded content-free tool fence**",
+   "abridged": false
   },
   {
    "id": "H04-2",
@@ -785,7 +863,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_PREREG.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/HANDOFF_CURRENT.md"
    ],
-   "quote": "Seat must be BLIND (packet = claims+span only; never truth or this file)"
+   "quote": "Seat must be BLIND (packet = claims+span only; never truth or this file)",
+   "abridged": false
   },
   {
    "id": "H04-3",
@@ -795,7 +874,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_PREREG.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/HANDOFF_CURRENT.md"
    ],
-   "quote": "one seat fabricated-from-memory dispatch was voided (rule: prompts ONLY from committed packet files, never retyped)"
+   "quote": "one seat fabricated-from-memory dispatch was voided (rule: prompts ONLY from committed packet files, never retyped)",
+   "abridged": false
   },
   {
    "id": "H06-1",
@@ -805,7 +885,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/RETRANS_REVIEW_DISPOSITION.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_REVIEW_DISPOSITION.md"
    ],
-   "quote": "Clean-context Opus reviewer: P1 **UNSUPPORTED** (as measured), P2 **UNSUPPORTED**, 8 findings. CoVe'd per standing rule"
+   "quote": "Clean-context Opus reviewer: P1 **UNSUPPORTED** (as measured), P2 **UNSUPPORTED**, 8 findings. CoVe'd per standing rule",
+   "abridged": false
   },
   {
    "id": "H06-2",
@@ -815,7 +896,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/RETRANS_REVIEW_DISPOSITION.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_REVIEW_DISPOSITION.md"
    ],
-   "quote": "Clean-context Opus review (full text: L1L2_ADVERSARIAL_REVIEW.md, 36 findings + 20 amendments): verdict **DOES-NOT-LICEN"
+   "quote": "Clean-context Opus review (full text: L1L2_ADVERSARIAL_REVIEW.md, 36 findings + 20 amendments): verdict **DOES-NOT-LICENSE**, accepted after CoVe",
+   "abridged": false
   },
   {
    "id": "H07-1",
@@ -823,7 +905,8 @@
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
    ],
-   "quote": "visible engaged precision is EXACTLY 32/122 = 0.262 (seal: 38 nodes untouched, single-use)"
+   "quote": "visible engaged precision is EXACTLY 32/122 = 0.262 (seal: 38 nodes untouched, single-use)",
+   "abridged": false
   },
   {
    "id": "H10-1",
@@ -831,7 +914,8 @@
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/PRUNED.md"
    ],
-   "quote": "each entry pins the exact content by git object id (tree/blob sha at the pre-prune commit). To restore any entry: `git c"
+   "quote": "each entry pins the exact content by git object id (tree/blob sha at the pre-prune commit). To restore any entry: `git checkout <pre-prune-commit> -- <path>`",
+   "abridged": false
   },
   {
    "id": "H11-1",
@@ -839,7 +923,8 @@
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
    ],
-   "quote": "## 0008 — FINAL-BLOCK BUDGET CHECKPOINT (Matt, 2026-08-24)"
+   "quote": "## 0008 — FINAL-BLOCK BUDGET CHECKPOINT (Matt, 2026-08-24)",
+   "abridged": false
   },
   {
    "id": "H11-2",
@@ -847,7 +932,8 @@
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
    ],
-   "quote": "/usage pasted at 27% Fable; Matt: \\"
+   "quote": "/usage pasted at 27% Fable; Matt: \\\"Please continue.\\\" — explicit authorization for the final all-Fable block…",
+   "abridged": true
   },
   {
    "id": "H11-3",
@@ -855,7 +941,8 @@
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
    ],
-   "quote": "— explicit authorization for the final all-Fable block…"
+   "quote": "— explicit authorization for the final all-Fable block…",
+   "abridged": true
   },
   {
    "id": "H13-1",
@@ -865,7 +952,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_REVIEW_DISPOSITION.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
    ],
-   "quote": "## CoVe re-derivations (driver-run, $0, deterministic)"
+   "quote": "## CoVe re-derivations (driver-run, $0, deterministic) … CONFIRMED by re-derivation (exactly 23/39).",
+   "abridged": true
   },
   {
    "id": "H13-2",
@@ -875,7 +963,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_REVIEW_DISPOSITION.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
    ],
-   "quote": "CONFIRMED by re-derivation (exactly 23/39)."
+   "quote": "Reviewer errors corrected in disposition: its panel-v5 rates and its 1-NN p-values were wrong (findings survive on my re-derived numbers).",
+   "abridged": false
   },
   {
    "id": "H13-3",
@@ -885,7 +974,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_REVIEW_DISPOSITION.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
    ],
-   "quote": "Reviewer errors corrected in disposition: its panel-v5 rates and its 1-NN p-values were wrong (findings survive on my re"
+   "quote": "Reviewer errors corrected in disposition: its panel-v5 rates and its 1-NN p-values were wrong (findings survive on my re",
+   "abridged": false
   },
   {
    "id": "H14-1",
@@ -895,7 +985,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/CALCULUS_RUNBOOK.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
    ],
-   "quote": "## 0001 — ITERATION 1, STEP 1 (TRIAGE)"
+   "quote": "## 0001 — ITERATION 1, STEP 1 (TRIAGE)",
+   "abridged": false
   },
   {
    "id": "H14-2",
@@ -905,7 +996,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/CALCULUS_RUNBOOK.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
    ],
-   "quote": "## 0003 — ITERATION 1, STEP 2a (R1 ESCALATION)"
+   "quote": "## 0003 — ITERATION 1, STEP 2a (R1 ESCALATION)",
+   "abridged": false
   },
   {
    "id": "H14-3",
@@ -915,7 +1007,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/CALCULUS_RUNBOOK.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
    ],
-   "quote": "## 0004 — ITERATION 1, STEPS 2b-3 (C-D MOVE + V1-V4) and STEP-4 PREP"
+   "quote": "## 0004 — ITERATION 1, STEPS 2b-3 (C-D MOVE + V1-V4) and STEP-4 PREP",
+   "abridged": false
   },
   {
    "id": "H14-4",
@@ -925,7 +1018,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/CALCULUS_RUNBOOK.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
    ],
-   "quote": "## 0005 — ITERATION 1, STEPS 4-5 (REALIZATION + CLOSE)"
+   "quote": "## 0005 — ITERATION 1, STEPS 4-5 (REALIZATION + CLOSE)",
+   "abridged": false
   },
   {
    "id": "H14-5",
@@ -935,7 +1029,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/CALCULUS_RUNBOOK.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
    ],
-   "quote": "CALCULUS_RUNBOOK v1 rewritten FROM notes 0001-0014 (execution-derived; docs-tests 5/5)"
+   "quote": "CALCULUS_RUNBOOK v1 rewritten FROM notes 0001-0014 (execution-derived; docs-tests 5/5)",
+   "abridged": false
   },
   {
    "id": "H15-1",
@@ -943,7 +1038,8 @@
    "paths": [
     "ARTIFACTS.md"
    ],
-   "quote": "26 of 26 resolve, including both symlinked roots (`LEDGER.md`, `ARC2_HANDOFF.md`) and the directory route `semi-formal-e"
+   "quote": "26 of 26 resolve, including both symlinked roots (`LEDGER.md`, `ARC2_HANDOFF.md`) and the directory route `semi-formal-experiment/machine/`",
+   "abridged": false
   },
   {
    "id": "V01-1",
@@ -953,7 +1049,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
     "README.md"
    ],
-   "quote": "Frontier-model panels were the calibration instrument — the tool should match the panel, or give an answer a frontier mo"
+   "quote": "Frontier-model panels were the calibration instrument — the tool should match the panel, or give an answer a frontier model would accept as justifiable.",
+   "abridged": false
   },
   {
    "id": "V03-1",
@@ -963,7 +1060,8 @@
     "semi-formal-experiment/modelspec_segmentation_summary.md",
     "semi-formal-experiment/modelspec_classification_summary.md"
    ],
-   "quote": "**Total clauses: 616**"
+   "quote": "**Total clauses: 616** … **Formalizable fraction (conditional): 31.7%**",
+   "abridged": true
   },
   {
    "id": "V03-2",
@@ -973,7 +1071,8 @@
     "semi-formal-experiment/modelspec_segmentation_summary.md",
     "semi-formal-experiment/modelspec_classification_summary.md"
    ],
-   "quote": "**Formalizable fraction (conditional): 31.7%**"
+   "quote": "**Formalizable fraction (conditional): 31.7%**",
+   "abridged": false
   },
   {
    "id": "V05-1",
@@ -981,7 +1080,8 @@
    "paths": [
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/RETRANS_REVIEW_DISPOSITION.md"
    ],
-   "quote": "two blind seats retranslated 39/39 full spans with the schema and ZERO new coinages (coverage-in-form)"
+   "quote": "two blind seats retranslated 39/39 full spans with the schema and ZERO new coinages (coverage-in-form)",
+   "abridged": false
   },
   {
    "id": "V08-1",
@@ -991,7 +1091,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_REVIEW_DISPOSITION.md"
    ],
-   "quote": "0041 withdrawn: integration census fails adversarial review (P1/P2 UNSUPPORTED)"
+   "quote": "0041 withdrawn: integration census fails adversarial review (P1/P2 UNSUPPORTED)",
+   "abridged": false
   },
   {
    "id": "V08-2",
@@ -1001,7 +1102,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_REVIEW_DISPOSITION.md"
    ],
-   "quote": "L1/L2 withdrawn: the licensing experiments fail their own adversarial review (DOES-NOT-LICENSE, accepted after CoVe)"
+   "quote": "L1/L2 withdrawn: the licensing experiments fail their own adversarial review (DOES-NOT-LICENSE, accepted after CoVe)",
+   "abridged": false
   },
   {
    "id": "V09-1",
@@ -1010,7 +1112,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITER2_REMEASURE_SCORED.json"
    ],
-   "quote": "THE HONEST HEADLINE IS RECALL, NOT PRECISION: 23/40 pooled declined nodes are panel-relevant. The module's engaged side "
+   "quote": "THE HONEST HEADLINE IS RECALL, NOT PRECISION: 23/40 pooled declined nodes are panel-relevant. The module's engaged side sits ~0.6-0.7; its DECLINED side leaks a",
+   "abridged": false
   },
   {
    "id": "V10-1",
@@ -1019,7 +1122,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/HANDOFF_CURRENT.md"
    ],
-   "quote": "BINDING RULE ADOPTED (companion to V5 coverage): every separability/representability claim ships with a seeded matched-g"
+   "quote": "BINDING RULE ADOPTED (companion to V5 coverage): every separability/representability claim ships with a seeded matched-granularity random-partition null; the cl",
+   "abridged": false
   },
   {
    "id": "V11-1",
@@ -1030,7 +1134,8 @@
     "semi-formal-experiment/benchmark.py",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_DEV_TABLE.json"
    ],
-   "quote": "NOT ESTABLISHED. The measured separability is real but carries no information beyond what a random partition of the voca"
+   "quote": "P1 … NOT ESTABLISHED. The measured separability is real but carries no information beyond what a random partition of the vocabulary provides at matched granular",
+   "abridged": true
   },
   {
    "id": "V11-2",
@@ -1041,7 +1146,8 @@
     "semi-formal-experiment/benchmark.py",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_DEV_TABLE.json"
    ],
-   "quote": "NOT ESTABLISHED."
+   "quote": "NOT ESTABLISHED.",
+   "abridged": false
   },
   {
    "id": "V12-1",
@@ -1050,7 +1156,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/RETRANS_REVIEW_DISPOSITION.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md"
    ],
-   "quote": "## 0037 — ERRATUM #20: CLOSED-VOCABULARY CIRCULARITY (Matt's suspicion, upheld)"
+   "quote": "## 0037 — ERRATUM #20: CLOSED-VOCABULARY CIRCULARITY (Matt's suspicion, upheld) … **Upheld on inspection**, two mechanisms: (a) ENDOGENEITY … (b) CIRCULARITY",
+   "abridged": true
   },
   {
    "id": "V12-2",
@@ -1059,7 +1166,8 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/RETRANS_REVIEW_DISPOSITION.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md"
    ],
-   "quote": "**Upheld on inspection**, two mechanisms: (a) ENDOGENEITY"
+   "quote": "**Upheld on inspection**, two mechanisms: (a) ENDOGENEITY",
+   "abridged": false
   },
   {
    "id": "V12-3",
@@ -1068,7 +1176,16 @@
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/RETRANS_REVIEW_DISPOSITION.md",
     "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md"
    ],
-   "quote": "(b) CIRCULARITY"
+   "quote": "(b) CIRCULARITY",
+   "abridged": false
   }
- ]
+ ],
+ "summary": {
+  "items": 77,
+  "file_cited_items": 50,
+  "live_run_items": 27,
+  "quote_segments": 109,
+  "verbatim_or_abridged_verbatim": 83,
+  "abridged_segments": 23
+ }
 }
