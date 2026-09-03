@@ -13,7 +13,7 @@
    "stated"
   ],
   "tier_ok": false,
-  "derivation": "6 matching claim(s) standing; none at the required dimensions {'tier': {'panel', 'adjudicated'}} \u2014 matched at ['stated']"
+  "derivation": "6 matching claim(s) standing; none at the required dimensions {'tier': {'adjudicated', 'panel'}} \u2014 matched at ['stated']"
  },
  "Q02": {
   "state": "contradicted",
@@ -81,7 +81,7 @@
    "stated"
   ],
   "tier_ok": true,
-  "derivation": "443 matching claim(s) standing; 5 carry an anti-rule (do-not-cite) marking; 2 struck/superseded, 2 contested \u2192 contested: the record forbids citing the matched value"
+  "derivation": "438 matching claim(s) standing; 5 carry an anti-rule (do-not-cite) marking; 2 struck/superseded, 2 contested \u2192 contested: the record forbids citing the matched value"
  },
  "Q05": {
   "state": "verified",
@@ -379,7 +379,7 @@
  },
  "Q22": {
   "state": "verified",
-  "derivation": "184 claim(s) record the event/text as standing",
+  "derivation": "177 claim(s) record the event/text as standing",
   "claims": [
    "L1000240",
    "L1010052",
@@ -478,7 +478,7 @@
  },
  "Q27": {
   "state": "contested",
-  "derivation": "59 matching claim(s) at the value, none over the required population (\\b100\\b|definition); populations found: [\"0/16 of the batch move's gained nodes\", '0/16 of the move', '10/10 successes', '11 clauses of 593', '15 UA TPs', '16 gained nodes of the move', '16 of the move', '183 example blocks', '39', '39/39', '5/5', '5/5 probe nodes', '589/593', '7/9', '762 node lines', 'covered nodes', 'n/a', 'strata coverage', 'unstated'] \u2014 the README binds coverage to the 100 definitions; a 1.0 whose population is a 39-node sample does not satisfy the binding",
+  "derivation": "60 matching claim(s) at the value, none over the required population (\\b100\\b|definition); populations found: [\"0/16 of the batch move's gained nodes\", '0/16 of the move', '10/10 successes', '11 clauses of 593', '15 UA TPs', '16 gained nodes of the move', '16 of the move', '183 example blocks', '39', '39/39', '5/5', '5/5 probe nodes', '589/593', '7/9', '762 node lines', 'covered nodes', 'n/a', 'strata coverage', 'unstated'] \u2014 the README binds coverage to the 100 definitions; a 1.0 whose population is a 39-node sample does not satisfy the binding",
   "claims": [
    "L1010204",
    "L1010205",
@@ -506,7 +506,7 @@
  },
  "Q29": {
   "state": "contested",
-  "derivation": "84 withdrawal events in ledger (README says three headline); headline qualifier needs the starred-block/README linkage at adjudication",
+  "derivation": "85 withdrawal events in ledger (README says three headline); headline qualifier needs the starred-block/README linkage at adjudication",
   "claims": [
    "L1000016",
    "L100027",
@@ -736,9 +736,9 @@
    "L1050111",
    "L1070003",
    "L10808",
-   "L110091",
    "L120261",
-   "L140062"
+   "L140062",
+   "L180013"
   ],
   "tiers": [
    "cove",
@@ -773,7 +773,7 @@
  },
  "H01": {
   "state": "contradicted",
-  "derivation": "36 close(s) with a prior/linked review, 4 without: [('L230087', 'unstated', []), ('L360057', 'unstated', []), ('L440091', 'unstated', []), ('L500030', 'unstated', [])]",
+  "derivation": "34 close(s) with a prior/linked review, 6 without: [('L230087', 'unstated', []), ('L230093', 'unstated', []), ('L230099', 'unstated', []), ('L360057', 'unstated', []), ('L440091', 'unstated', []), ('L500030', 'unstated', [])]",
   "claims": [
    "L1000113",
    "L1000243",
@@ -819,7 +819,7 @@
  },
  "H02": {
   "state": "contested",
-  "derivation": "302 measurements, 78 with no prediction_freeze earlier or linked: ['L1000055', 'L1000058', 'L1000100', 'L1030230', 'L1050118', 'L1070025', 'L120086', 'L130181']",
+  "derivation": "276 measurements, 51 with no prediction_freeze earlier or linked: ['L1000055', 'L1000058', 'L1000100', 'L1030230', 'L1050118', 'L1070025', 'L120086', 'L130181']",
   "claims": [
    "L1000055",
    "L1000058",
@@ -856,15 +856,11 @@
   ]
  },
  "H04": {
-  "state": "verified",
-  "derivation": "81 seat dispatches; 50 record inputs; none names panel labels, the design document, or prior verdicts as received (mentions inside negations counted as exclusions)",
+  "state": "contradicted",
+  "derivation": "107 seat dispatches; 73 with recorded inputs; inputs naming panel labels / design doc / verdicts without negation: [('L77800098', \"the cycle's design doc\"), ('L77800208', \"A cycle's own design document\")]",
   "claims": [
-   "L1000050",
-   "L1030197",
-   "L1030248",
-   "L1030249",
-   "L1030262",
-   "L1030269"
+   "L77800098",
+   "L77800208"
   ]
  },
  "H05": {
@@ -944,7 +940,7 @@
  },
  "H08": {
   "state": "contradicted",
-  "derivation": "kinds: {'unstated': ['L1000014', 'L230136', 'L230173', 'L290077', 'L290085', 'L330058', 'L440071', 'L77700006', 'L77700013', 'L77700015', 'L77700229', 'L9920080', 'L9940048'], 'refusal': ['L1000093', 'L1070139', 'L290098', 'L290181', 'L290200', 'L460022', 'L500004', 'L570081', 'L570090', 'L580208', 'L710023', 'L77900014', 'L9970122'], 'wrong_answer': ['L290067', 'L330049', 'L520061', 'L570028', 'L570072', 'L9930147', 'L9930149', 'L9930164']}",
+  "derivation": "kinds: {'unstated': ['L1000014', 'L230136', 'L230173', 'L290077', 'L290085', 'L330058', 'L77700006', 'L77700013', 'L77700015', 'L77700229', 'L9920080', 'L9940048'], 'refusal': ['L1000093', 'L1070139', 'L290098', 'L460022', 'L500004', 'L570081', 'L570090', 'L580208', 'L710023', 'L77600008', 'L77600038', 'L77900014'], 'wrong_answer': ['L290067', 'L330049', 'L520061', 'L570028', 'L570072', 'L9930147', 'L9930149', 'L9930164']}",
   "claims": [
    "L1000014",
    "L230136",
@@ -952,7 +948,6 @@
    "L290077",
    "L290085",
    "L330058",
-   "L440071",
    "L77700006",
    "L77700013",
    "L77700015",
@@ -962,16 +957,15 @@
    "L1000093",
    "L1070139",
    "L290098",
-   "L290181",
-   "L290200",
    "L460022",
    "L500004",
    "L570081",
    "L570090",
    "L580208",
    "L710023",
+   "L77600008",
+   "L77600038",
    "L77900014",
-   "L9970122",
    "L290067",
    "L330049",
    "L520061",
@@ -1016,7 +1010,7 @@
  },
  "H13": {
   "state": "verified",
-  "derivation": "cove events 31; claims mentioning decisive findings 22",
+  "derivation": "cove events 27; claims mentioning decisive findings 22",
   "claims": [
    "L1010053",
    "L1020017",
@@ -1079,7 +1073,7 @@
  },
  "V06": {
   "state": "contradicted",
-  "derivation": "providers ['H01', 'H02', 'H03', 'H04'] \u2192 ['contradicted', 'contested', 'verified', 'verified']",
+  "derivation": "providers ['H01', 'H02', 'H03', 'H04'] \u2192 ['contradicted', 'contested', 'verified', 'contradicted']",
   "claims": []
  },
  "V07": {

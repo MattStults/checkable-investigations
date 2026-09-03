@@ -47,7 +47,7 @@
 {"claim": "L1040169", "rel": "withdraws", "target_text": "L1/L2 as registered in RETRANS_REVIEW_DISPOSITION.md", "target_id": "L1010055", "basis": "value ['1', '2'] + metric/quote word"}
 {"claim": "L10411", "rel": "restates", "target_text": "the UA gate failure", "target_id": "L1010102", "basis": "quote overlap"}
 {"claim": "L10422", "rel": "restates", "target_text": "options in notes 0022", "target_id": "L1010076", "basis": "entry number 0022"}
-{"claim": "L10429", "rel": "restates", "target_text": "gate 5/10", "target_id": "L320078", "basis": "value ['5', '10'] + metric/quote word"}
+{"claim": "L10429", "rel": "restates", "target_text": "gate 5/10", "target_id": "L400107", "basis": "value ['5', '10'] + metric/quote word"}
 {"claim": "L10430", "rel": "restates", "target_text": "dispute class 9-vs-23", "target_id": "L1040114", "basis": "value ['9', '23'] + metric/quote word"}
 {"claim": "L10439", "rel": "restates", "target_text": "attempt-1 said 0.60", "target_id": "L1000319", "basis": "value ['1', '0.60'] + metric/quote word"}
 {"claim": "L10440", "rel": "restates", "target_text": "corrected said 0.45", "target_id": "L1010131", "basis": "value ['0.45'] + metric/quote word"}
@@ -64,7 +64,7 @@
 {"claim": "L1070029", "rel": "supersedes", "target_text": "the 2026-08-04-LATE section below", "target_id": "L230056", "basis": "quote overlap"}
 {"claim": "L1070036", "rel": "contradicts", "target_text": "The order was also ruled the other way: **S4 first, then S3b**", "target_id": "L10253", "basis": "value ['4', '3'] + metric/quote word"}
 {"claim": "L1070043", "rel": "contradicts", "target_text": "S3b and S4 build-ready", "target_id": "L1070028", "basis": "quote overlap"}
-{"claim": "L1070045", "rel": "contradicts", "target_text": "NEXT STEP: run the S3b build (attribution backfill first), then S4", "target_id": "L290229", "basis": "value ['3', '4'] + metric/quote word"}
+{"claim": "L1070045", "rel": "contradicts", "target_text": "NEXT STEP: run the S3b build (attribution backfill first), then S4", "target_id": "L540108", "basis": "value ['3', '4'] + metric/quote word"}
 {"claim": "L1070077", "rel": "forbids_citation", "target_text": "Sweeping embedding families/k/scorer forms until MCC rises", "target_id": "L260076", "basis": "quote overlap"}
 {"claim": "L1070077", "rel": "withdraws", "target_text": "the withdrawn `rho` lead", "target_id": "L260076", "basis": "quote overlap"}
 {"claim": "L1070079", "rel": "forbids_citation", "target_text": "ITS AGREEMENT AS \"THE BAR.\"", "target_id": "L260150", "basis": "quote overlap"}
@@ -155,7 +155,6 @@
 {"claim": "L200033", "rel": "amends", "target_text": "Clause (c)", "target_id": "L1010013", "basis": "quote overlap"}
 {"claim": "L210036", "rel": "restates", "target_text": "the actor slot", "target_id": "L1050132", "basis": "quote overlap"}
 {"claim": "L210062", "rel": "amends", "target_text": "9g-ADDENDUM", "target_id": "L1060001", "basis": "quote overlap"}
-{"claim": "L210076", "rel": "amends", "target_text": "the pre-declared\nrule", "target_id": "L210074", "basis": "quote overlap"}
 {"claim": "L210090", "rel": "restates", "target_text": "the 85% floor", "target_id": "L720124", "basis": "value ['85%'] + metric/quote word"}
 {"claim": "L210104", "rel": "amends", "target_text": "Matt's D1 amendment", "target_id": "L1000076", "basis": "value ['1'] + metric/quote word"}
 {"claim": "L230024", "rel": "supersedes", "target_text": "the 2026-08-05 section", "target_id": "L1070017", "basis": "quote overlap"}
@@ -167,7 +166,7 @@
 {"claim": "L230063", "rel": "contradicts", "target_text": "The order was also ruled the other way: **S4 first, then S3b**", "target_id": "L10253", "basis": "value ['4', '3'] + metric/quote word"}
 {"claim": "L230068", "rel": "amends", "target_text": "This paragraph previously named `backfill_author.md`", "target_id": "L1070041", "basis": "quote overlap"}
 {"claim": "L230070", "rel": "contradicts", "target_text": "it is READY TO BUILD", "target_id": "L1070031", "basis": "quote overlap"}
-{"claim": "L230073", "rel": "contradicts", "target_text": "NEXT STEP: run the S3b build (attribution backfill first), then S4", "target_id": "L290229", "basis": "value ['3', '4'] + metric/quote word"}
+{"claim": "L230073", "rel": "contradicts", "target_text": "NEXT STEP: run the S3b build (attribution backfill first), then S4", "target_id": "L540108", "basis": "value ['3', '4'] + metric/quote word"}
 {"claim": "L230076", "rel": "supersedes", "target_text": "the one below it", "target_id": null, "basis": "unresolved"}
 {"claim": "L240002", "rel": "supersedes", "target_text": "Everything below this section", "target_id": null, "basis": "unresolved"}
 {"claim": "L240003", "rel": "supersedes", "target_text": "`LADDER_PLAN.md`", "target_id": "L9940144", "basis": "quote overlap"}
@@ -241,13 +240,6 @@
 {"claim": "L290123", "rel": "strikes", "target_text": "imported by nothing but its own test", "target_id": null, "basis": "unresolved"}
 {"claim": "L290132", "rel": "flags_unsourced", "target_text": "Every pre-existing number", "target_id": null, "basis": "unresolved"}
 {"claim": "L290137", "rel": "supersedes", "target_text": "relevance.DEFAULT_THRESHOLD", "target_id": null, "basis": "unresolved"}
-{"claim": "L290162", "rel": "withdraws", "target_text": "patient-aware match pricing", "target_id": "L290161", "basis": "quote overlap"}
-{"claim": "L290163", "rel": "strikes", "target_text": "1.1, the shippable config after cycles 1–3", "target_id": "L1070133", "basis": "value ['1.1', '1', '3'] + metric/quote word"}
-{"claim": "L290173", "rel": "withdraws", "target_text": "patient-aware pricing", "target_id": "L290168", "basis": "quote overlap"}
-{"claim": "L290193", "rel": "supersedes", "target_text": "`VOCAB_GAPS_DESIGN.md` §1's hand-assignment", "target_id": "L410043", "basis": "value ['1'] + metric/quote word"}
-{"claim": "L290193", "rel": "contradicts", "target_text": "`VOCAB_GAPS_DESIGN.md` §1's hand-assignment", "target_id": "L410043", "basis": "value ['1'] + metric/quote word"}
-{"claim": "L290199", "rel": "strikes", "target_text": "the previous hand-list here", "target_id": "L290198", "basis": "quote overlap"}
-{"claim": "L290232", "rel": "strikes", "target_text": "Two anchors", "target_id": null, "basis": "unresolved"}
 {"claim": "L290238", "rel": "strikes", "target_text": "earlier text saying one had to be written before judging", "target_id": null, "basis": "unresolved"}
 {"claim": "L290239", "rel": "strikes", "target_text": "no tool → `ConflictFinding` adapter existed and one would have to be written before judging", "target_id": "L1070151", "basis": "quote overlap"}
 {"claim": "L300030", "rel": "supersedes", "target_text": "`measure_join.py` + `benchmark.py`", "target_id": null, "basis": "unresolved"}
@@ -259,8 +251,6 @@
 {"claim": "L310069", "rel": "amends", "target_text": "the original \"this workspace has concurrent agents and no git\" rationale", "target_id": "L320089", "basis": "quote overlap"}
 {"claim": "L310080", "rel": "restates", "target_text": "The first customer measured 34.", "target_id": "L310065", "basis": "value ['34'] + metric/quote word"}
 {"claim": "L320059", "rel": "restates", "target_text": "(b) DIFFERENTIAL CHECK against `cycle.py` — 282 comparisons", "target_id": "L320043", "basis": "value ['282'] + metric/quote word"}
-{"claim": "L320082", "rel": "contradicts", "target_text": "`ls briefs/*.md` returns 12", "target_id": "L320028", "basis": "value ['12'] + metric/quote word"}
-{"claim": "L320083", "rel": "contradicts", "target_text": "\"**11** as of 2026-08-05\"", "target_id": "L320081", "basis": "quote overlap"}
 {"claim": "L320089", "rel": "contradicts", "target_text": "`cycle.py:846` still prints that exact stale rationale in the closure-drift refusal the operator reads", "target_id": "L320090", "basis": "quote overlap"}
 {"claim": "L320090", "rel": "contradicts", "target_text": "`CYCLE_DESIGN.md` F5 marks the *\"this workspace has concurrent agents and no git\"* rationale **STALE**", "target_id": "L240012", "basis": "value ['5'] + metric/quote word"}
 {"claim": "L320091", "rel": "contradicts", "target_text": "`PHASES_BY_SHAPE` puts CENSUS only in the `checkpoint` shape", "target_id": "L320092", "basis": "quote overlap"}
@@ -269,7 +259,7 @@
 {"claim": "L320093", "rel": "contradicts", "target_text": "`_predict` requires mechanism-level targets and accepts `census_classes` only in the checkpoint shape (F1)", "target_id": "L1000004", "basis": "value ['1'] + metric/quote word"}
 {"claim": "L320094", "rel": "contradicts", "target_text": "`CYCLE_DESIGN.md` phase 2: `prediction.json` holds *expected_shrink / must_not_grow over the closed cause taxonomy*", "target_id": "L1000066", "basis": "value ['2'] + metric/quote word"}
 {"claim": "L320095", "rel": "contradicts", "target_text": "12 files in `briefs/`; `density_editor.md` is unlisted", "target_id": "L210201", "basis": "value ['12'] + metric/quote word"}
-{"claim": "L320096", "rel": "contradicts", "target_text": "`briefs/README.md`: **11 briefs** as of 2026-08-05", "target_id": "L320082", "basis": "value ['11', '2026', '08', '05'] + metric/quote word"}
+{"claim": "L320096", "rel": "contradicts", "target_text": "`briefs/README.md`: **11 briefs** as of 2026-08-05", "target_id": "L320095", "basis": "value ['11', '2026', '08', '05'] + metric/quote word"}
 {"claim": "L320097", "rel": "contradicts", "target_text": "the `CAUSE_TAXONOMY` gives FP/FN causes a fault-asserting meaning and supplies dedicated `either`-kind `boundary_dispute_*` causes for defensible cases", "target_id": "L320098", "basis": "quote overlap"}
 {"claim": "L320098", "rel": "contradicts", "target_text": "*\"a tool that was wrong for a mechanical reason still gets its mechanical cause, and a tool that was right can still carry a cause\"*", "target_id": "L320097", "basis": "quote overlap"}
 {"claim": "L330017", "rel": "contradicts", "target_text": "either segmentation is wrong (undermines 31.7% + boundary) or worked example is out-of-scope for the pipeline", "target_id": "L330018", "basis": "value ['31.7%'] + metric/quote word"}
@@ -331,21 +321,10 @@
 {"claim": "L420047", "rel": "forbids_citation", "target_text": "a raw per-locator 'scores' field", "target_id": "L400116", "basis": "quote overlap"}
 {"claim": "L440019", "rel": "restates", "target_text": "max_regressions", "target_id": "L230104", "basis": "quote overlap"}
 {"claim": "L440019", "rel": "restates", "target_text": "expected_directions", "target_id": "L360005", "basis": "quote overlap"}
-{"claim": "L440069", "rel": "restates", "target_text": "A2's recorded count", "target_id": "L150059", "basis": "value ['2'] + metric/quote word"}
-{"claim": "L450092", "rel": "contradicts", "target_text": "leg 2 correct", "target_id": "L160134", "basis": "value ['2'] + metric/quote word"}
-{"claim": "L450093", "rel": "contradicts", "target_text": "leg 1 regression", "target_id": "L380016", "basis": "value ['1'] + metric/quote word"}
-{"claim": "L450105", "rel": "contradicts", "target_text": "leg 2 correct", "target_id": "L160134", "basis": "value ['2'] + metric/quote word"}
-{"claim": "L450106", "rel": "contradicts", "target_text": "leg 1 unclear", "target_id": "L230092", "basis": "value ['1'] + metric/quote word"}
 {"claim": "L460015", "rel": "supersedes", "target_text": "the pre-1.2 'subsumption path unreachable by per-atom mismatch' claim", "target_id": "L390094", "basis": "value ['1.2'] + metric/quote word"}
-{"claim": "L460049", "rel": "re_derives", "target_text": "I1 SAFETY", "target_id": "L470073", "basis": "quote overlap"}
+{"claim": "L460049", "rel": "re_derives", "target_text": "I1 SAFETY", "target_id": "L480048", "basis": "quote overlap"}
 {"claim": "L460061", "rel": "forbids_citation", "target_text": "DEV-stamped census composition figures (fp_*/fn_* class counts)", "target_id": "L460060", "basis": "quote overlap"}
-{"claim": "L460066", "rel": "restates", "target_text": "the frozen prediction (prediction.json sha c99260f031c991fccbc7a506033cc5a1b89dd90f2e9951e417708587fb621923)", "target_id": "L1000026", "basis": "value ['99260', '031', '991', '7', '506033', '5', '1', '89', '90', '2', '9951', '417708587', '621923'] + metric/quote word"}
-{"claim": "L460069", "rel": "contradicts", "target_text": "the first leg's verdicts", "target_id": "L460068", "basis": "quote overlap"}
-{"claim": "L460070", "rel": "contradicts", "target_text": "leg 1 unclear", "target_id": "L230092", "basis": "value ['1'] + metric/quote word"}
-{"claim": "L460096", "rel": "forbids_citation", "target_text": "The measure snapshot snapshots/patient-pricing-2026-08-04.json", "target_id": "L470104", "basis": "quote overlap"}
 {"claim": "L470039", "rel": "amends", "target_text": "the ORIGINAL mechanism's pre-registered plateau {0.1, 0.25, 0.4}", "target_id": "L470025", "basis": "value ['0.1', '0.25', '0.4'] + metric/quote word"}
-{"claim": "L470087", "rel": "forbids_citation", "target_text": "DEV-stamped census composition figures (fp_*/fn_* class counts)", "target_id": "L460060", "basis": "quote overlap"}
-{"claim": "L470105", "rel": "supersedes", "target_text": "the A2 block", "target_id": "L1000316", "basis": "value ['2'] + metric/quote word"}
 {"claim": "L480026", "rel": "restates", "target_text": "state.json frozen_prediction_sha", "target_id": "L460032", "basis": "quote overlap"}
 {"claim": "L480027", "rel": "restates", "target_text": "A1's new_sha", "target_id": "L460033", "basis": "quote overlap"}
 {"claim": "L480028", "rel": "restates", "target_text": "state.json frozen_manifest_sha", "target_id": "L400093", "basis": "quote overlap"}
@@ -367,7 +346,7 @@
 {"claim": "L550022", "rel": "restates", "target_text": "+0.072", "target_id": "L550021", "basis": "quote overlap"}
 {"claim": "L550037", "rel": "supersedes", "target_text": "the +0.19\npublished", "target_id": "L550038", "basis": "value ['0.19'] + metric/quote word"}
 {"claim": "L550039", "rel": "supersedes", "target_text": "~1.6x", "target_id": "L550040", "basis": "quote overlap"}
-{"claim": "L550059", "rel": "supersedes", "target_text": "1.1", "target_id": "L290163", "basis": "quote overlap"}
+{"claim": "L550059", "rel": "supersedes", "target_text": "1.1", "target_id": "L310076", "basis": "quote overlap"}
 {"claim": "L550061", "rel": "supersedes", "target_text": "three", "target_id": "L1000066", "basis": "quote overlap"}
 {"claim": "L550097", "rel": "supersedes", "target_text": "'15\nof 26'", "target_id": "L550098", "basis": "quote overlap"}
 {"claim": "L550111", "rel": "supersedes", "target_text": "+0.19", "target_id": "L270008", "basis": "quote overlap"}
@@ -421,7 +400,7 @@
 {"claim": "L620023", "rel": "supersedes", "target_text": "Measured: $3.43 and $509 worst, $60.1 likely", "target_id": "L620024", "basis": "quote overlap"}
 {"claim": "L620024", "rel": "supersedes", "target_text": "593 clauses ~$25 \"over the ceiling\"", "target_id": "L1000070", "basis": "value ['593', '25'] + metric/quote word"}
 {"claim": "L620026", "rel": "restates", "target_text": "the reviewer reported", "target_id": null, "basis": "unresolved"}
-{"claim": "L620028", "rel": "supersedes", "target_text": "674", "target_id": "L460093", "basis": "quote overlap"}
+{"claim": "L620028", "rel": "supersedes", "target_text": "674", "target_id": "L480070", "basis": "quote overlap"}
 {"claim": "L620036", "rel": "supersedes", "target_text": "Measured: $303 worst at the hard-coded\nfrontier price, and $509 worst once the code reads the REAL maximum in\nproviders.json", "target_id": "L610102", "basis": "value ['303', '509'] + metric/quote word"}
 {"claim": "L620066", "rel": "supersedes", "target_text": "100", "target_id": "L1000282", "basis": "quote overlap"}
 {"claim": "L620070", "rel": "supersedes", "target_text": "134", "target_id": "L220064", "basis": "quote overlap"}
@@ -455,15 +434,15 @@
 {"claim": "L70082", "rel": "amends", "target_text": "amendment 1", "target_id": "L40001", "basis": "quote overlap"}
 {"claim": "L710055", "rel": "supersedes", "target_text": "the earlier --no-verify bypass in 69bc5f4", "target_id": null, "basis": "unresolved"}
 {"claim": "L720042", "rel": "supersedes", "target_text": "38", "target_id": "L100002", "basis": "quote overlap"}
-{"claim": "L730047", "rel": "amends", "target_text": "FM19", "target_id": "L110078", "basis": "quote overlap"}
-{"claim": "L730059", "rel": "restates", "target_text": "7/8 faithful", "target_id": "L110074", "basis": "value ['7', '8'] + metric/quote word"}
+{"claim": "L730047", "rel": "amends", "target_text": "FM19", "target_id": "L730044", "basis": "quote overlap"}
+{"claim": "L730059", "rel": "restates", "target_text": "7/8 faithful", "target_id": "L77800049", "basis": "value ['7', '8'] + metric/quote word"}
 {"claim": "L730076", "rel": "supersedes", "target_text": "old hash", "target_id": "L77600068", "basis": "quote overlap"}
 {"claim": "L750032", "rel": "forbids_citation", "target_text": "the registered equivalence metric", "target_id": null, "basis": "unresolved"}
 {"claim": "L750046", "rel": "restates", "target_text": "22 rows", "target_id": "L750038", "basis": "value ['22'] + metric/quote word"}
 {"claim": "L760028", "rel": "restates", "target_text": "13/45", "target_id": "L760011", "basis": "quote overlap"}
 {"claim": "L760033", "rel": "restates", "target_text": "the registered result", "target_id": null, "basis": "unresolved"}
 {"claim": "L760034", "rel": "restates", "target_text": "the cold-start registration", "target_id": null, "basis": "unresolved"}
-{"claim": "L77600043", "rel": "amends", "target_text": "FM19", "target_id": "L110078", "basis": "quote overlap"}
+{"claim": "L77600043", "rel": "amends", "target_text": "FM19", "target_id": "L730044", "basis": "quote overlap"}
 {"claim": "L77600068", "rel": "supersedes", "target_text": "old hash", "target_id": "L730076", "basis": "quote overlap"}
 {"claim": "L77700038", "rel": "supersedes", "target_text": "single-wave entries", "target_id": "L1000063", "basis": "quote overlap"}
 {"claim": "L77700103", "rel": "contradicts", "target_text": "its panel-v5 rates and its 1-NN p-values", "target_id": "L990048", "basis": "value ['5', '1'] + metric/quote word"}
@@ -475,6 +454,29 @@
 {"claim": "L77700264", "rel": "supersedes", "target_text": "its one-packet-per-seat dispatch form", "target_id": "L1040001", "basis": "quote overlap"}
 {"claim": "L77700270", "rel": "supersedes", "target_text": "the all-truth figures", "target_id": "L1040006", "basis": "quote overlap"}
 {"claim": "L77700271", "rel": "supersedes", "target_text": "the all-truth figures", "target_id": "L1040006", "basis": "quote overlap"}
+{"claim": "L77800025", "rel": "amends", "target_text": "the pre-declared rule", "target_id": "L77800023", "basis": "quote overlap"}
+{"claim": "L77800045", "rel": "restates", "target_text": "85%", "target_id": "L110054", "basis": "quote overlap"}
+{"claim": "L77800080", "rel": "contradicts", "target_text": "\"cycle-4 config if cycle 5 reverts\"", "target_id": "L1010062", "basis": "value ['4', '5'] + metric/quote word"}
+{"claim": "L77800090", "rel": "restates", "target_text": "PORTFOLIO F5 pre-registers", "target_id": "L630146", "basis": "value ['5'] + metric/quote word"}
+{"claim": "L77800119", "rel": "supersedes", "target_text": "\"1.1, the shippable config after cycles 1–3\"", "target_id": "L1070133", "basis": "value ['1.1', '1', '3'] + metric/quote word"}
+{"claim": "L77800143", "rel": "contradicts", "target_text": "`VOCAB_GAPS_DESIGN.md` §1's hand-assignment", "target_id": "L410043", "basis": "value ['1'] + metric/quote word"}
+{"claim": "L77800148", "rel": "supersedes", "target_text": "the previous hand-list here", "target_id": null, "basis": "unresolved"}
+{"claim": "L77800184", "rel": "supersedes", "target_text": "\"Two anchors\"", "target_id": null, "basis": "unresolved"}
+{"claim": "L77800216", "rel": "restates", "target_text": "`ITERATION_LOOP.md` policy 4", "target_id": null, "basis": "unresolved"}
+{"claim": "L77800226", "rel": "restates", "target_text": "`MODULE_MAP.md:280`", "target_id": null, "basis": "unresolved"}
+{"claim": "L77800228", "rel": "contradicts", "target_text": "`ls briefs/*.md` returns 12", "target_id": "L320028", "basis": "value ['12'] + metric/quote word"}
+{"claim": "L77800229", "rel": "contradicts", "target_text": "\"**11** as of 2026-08-05\"", "target_id": "L77800228", "basis": "quote overlap"}
+{"claim": "L77800236", "rel": "contradicts", "target_text": "`CYCLE_DESIGN.md` F5 calls ADJUDICATE-validation non-overridable", "target_id": "L240012", "basis": "value ['5'] + metric/quote word"}
+{"claim": "L77800285", "rel": "restates", "target_text": "RULINGS.md orders", "target_id": "L9920086", "basis": "quote overlap"}
+{"claim": "L77800296", "rel": "restates", "target_text": "review_verdict.json", "target_id": "L77800196", "basis": "quote overlap"}
+{"claim": "L77800302", "rel": "contradicts", "target_text": "leg 2 correct", "target_id": "L160134", "basis": "value ['2'] + metric/quote word"}
+{"claim": "L77800303", "rel": "contradicts", "target_text": "leg 1 regression", "target_id": "L380016", "basis": "value ['1'] + metric/quote word"}
+{"claim": "L77800315", "rel": "contradicts", "target_text": "leg 2 correct", "target_id": "L160134", "basis": "value ['2'] + metric/quote word"}
+{"claim": "L77800316", "rel": "contradicts", "target_text": "leg 1 unclear", "target_id": "L230092", "basis": "value ['1'] + metric/quote word"}
+{"claim": "L77800326", "rel": "contradicts", "target_text": "leg 1 unclear", "target_id": "L230092", "basis": "value ['1'] + metric/quote word"}
+{"claim": "L77800329", "rel": "restates", "target_text": "max_regressions = 0", "target_id": "L230107", "basis": "value ['0'] + metric/quote word"}
+{"claim": "L77800337", "rel": "restates", "target_text": "DISCOUNT_DERIVATION.md", "target_id": "L310008", "basis": "quote overlap"}
+{"claim": "L77800391", "rel": "supersedes", "target_text": "the A2 block", "target_id": "L1000316", "basis": "value ['2'] + metric/quote word"}
 {"claim": "L77900178", "rel": "withdraws", "target_text": "gradient claim", "target_id": null, "basis": "unresolved"}
 {"claim": "L780029", "rel": "supersedes", "target_text": "was 0.806", "target_id": "L780028", "basis": "quote overlap"}
 {"claim": "L800052", "rel": "supersedes", "target_text": "were 35/26", "target_id": "L800048", "basis": "quote overlap"}
@@ -602,9 +604,6 @@
 {"claim": "L9960208", "rel": "supersedes", "target_text": "the table that was here", "target_id": null, "basis": "unresolved"}
 {"claim": "L9970037", "rel": "flags_unsourced", "target_text": "\"100 definitions need no new places\"", "target_id": "L1010221", "basis": "value ['100'] + metric/quote word"}
 {"claim": "L9970044", "rel": "supersedes", "target_text": "the orchestration seat's initial proposal before it was ever committed", "target_id": "L1030207", "basis": "quote overlap"}
-{"claim": "L9970102", "rel": "contradicts", "target_text": "`SECTION_PRIOR_DESIGN.md` §5", "target_id": "L400120", "basis": "value ['5'] + metric/quote word"}
-{"claim": "L9970111", "rel": "restates", "target_text": "PORTFOLIO F5", "target_id": null, "basis": "unresolved"}
-{"claim": "L9970120", "rel": "forbids_citation", "target_text": "the cycle's design doc, `PORTFOLIO_REVIEW.md`, prior cycles' `flip_verdicts*.json`, the census", "target_id": null, "basis": "unresolved"}
 {"claim": "L9970130", "rel": "supersedes", "target_text": "97.35% character coverage", "target_id": "L9930181", "basis": "value ['97.35%'] + metric/quote word"}
 {"claim": "L9970139", "rel": "supersedes", "target_text": "`LADDER_PLAN.md`", "target_id": "L240003", "basis": "quote overlap"}
 {"claim": "L9970140", "rel": "supersedes", "target_text": "`LADDER_PLAN.md`", "target_id": "L240003", "basis": "quote overlap"}
