@@ -945,5 +945,27 @@
    "minutes": 911
   }
  },
- "note": "from task-notification usage blocks in the orchestrator transcript, deduplicated; orchestrator's own tokens not included"
+ "note": "from task-notification usage blocks in the orchestrator transcript, deduplicated; orchestrator's own tokens not included",
+ "by_model": {
+  "baseline (opus)": {
+   "agents": 1,
+   "tokens": 320488,
+   "minutes": 27
+  },
+  "setup reviews (opus)": {
+   "agents": 13,
+   "tokens": 1772517,
+   "minutes": 97
+  },
+  "translation sonnet": {
+   "agents": 57,
+   "tokens": 6304060,
+   "minutes": 327
+  },
+  "translation opus": {
+   "agents": 83,
+   "tokens": 9102393,
+   "minutes": 584
+  }
+ }
 }
