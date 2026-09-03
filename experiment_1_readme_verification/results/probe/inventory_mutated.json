@@ -536,7 +536,7 @@
   {
    "id": "Q27",
    "kind": "quantitative",
-   "sentence": "an ontology open-coded from 100 behavior definitions covered every sampled span",
+   "sentence": "an ontology open-coded from 94 behavior definitions covered every sampled span",
    "values": {
     "coverage": 1.0
    },
@@ -544,7 +544,7 @@
     "metric": "span coverage (covered / sampled)",
     "tier": "adjudicated or stated",
     "snapshot": "the coverage measurement the record reports",
-    "denominator": "sampled span count and what a span is (node or definition) — the README binds coverage to the 100 definitions; report every coverage figure found",
+    "denominator": "sampled span count and what a span is (node or definition) — the README binds coverage to the 94 definitions; report every coverage figure found",
     "scope": "query-class ontology",
     "supersession": "bf0d4978's message reports '39/39 blind coverage'; record which measurement the README means"
    }
@@ -1254,7 +1254,7 @@
   },
   {
    "id": "V05",
-   "sentence": "an ontology open-coded from 100 behavior definitions covered every sampled span but failed every separability test once a matched random-partition null was run against it.",
+   "sentence": "an ontology open-coded from 94 behavior definitions covered every sampled span but failed every separability test once a matched random-partition null was run against it.",
    "needs": [
     "coverage measurement",
     "per-test separability outcome against null"
@@ -1632,6 +1632,7 @@
  "probe": {
   "mutation": "Q26 definition_count 100 -> 94",
   "readme_line": 28,
-  "note": "probe copy of the frozen inventory; the frozen file is untouched"
+  "note": "probe copy of the frozen inventory; the frozen file is untouched",
+  "also_mutated": "every inventory quotation of the mutated README sentence (Q26, Q27, and the hypothesis/verdict text that quotes it) and Q27's dimension note naming the README's number, so the reviewer sees a consistent mutated README; other record-derived mentions of 100 definitions (e.g. separability 94/100) untouched"
  }
 }

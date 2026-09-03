@@ -161,10 +161,10 @@ Values: `{"definition_count": 94}`
 Dimensions: metric: count of behaviour definitions coded; tier: filesystem or stated; snapshot: the query-class study's input set; denominator: n/a; scope: query-class ontology study; supersession: n/a
 
 ### Q27
-> an ontology open-coded from 100 behavior definitions covered every sampled span
+> an ontology open-coded from 94 behavior definitions covered every sampled span
 
 Values: `{"coverage": 1.0}`  
-Dimensions: metric: span coverage (covered / sampled); tier: adjudicated or stated; snapshot: the coverage measurement the record reports; denominator: sampled span count and what a span is (node or definition) — the README binds coverage to the 100 definitions; report every coverage figure found; scope: query-class ontology; supersession: bf0d4978's message reports '39/39 blind coverage'; record which measurement the README means
+Dimensions: metric: span coverage (covered / sampled); tier: adjudicated or stated; snapshot: the coverage measurement the record reports; denominator: sampled span count and what a span is (node or definition) — the README binds coverage to the 94 definitions; report every coverage figure found; scope: query-class ontology; supersession: bf0d4978's message reports '39/39 blind coverage'; record which measurement the README means
 
 ### Q28
 > but failed every separability test once a matched random-partition null was run against it.
@@ -437,7 +437,7 @@ Needs: a segmentation failure event; a repair event linked to it; a post-repair 
 Needs: tool MCC; judge MCC (per judge or LOO); per-cell comparison
 
 ### V05
-> an ontology open-coded from 100 behavior definitions covered every sampled span but failed every separability test once a matched random-partition null was run against it.
+> an ontology open-coded from 94 behavior definitions covered every sampled span but failed every separability test once a matched random-partition null was run against it.
 
 Needs: coverage measurement; per-test separability outcome against null
 

@@ -54,3 +54,14 @@ variance", and that variance is itself a result to report.
   (mutated copy); the agent reads only those, AGENTS.md, and the read-only
   repo; it never sees baseline/REPORT.md, the ledger, or anything else under
   the experiment.
+
+## Addendum (before running): consistency of the mutated inventory
+
+The inventory quotes the mutated README sentence in more than one place
+(Q26, Q27, and the hypothesis/verdict text that quotes it) and Q27's
+dimension note names the README's number. All of those are mutated to 94 in
+the probe copy so the baseline reviewer sees one consistent README; record-
+derived mentions of 100 definitions (the separability 94/100) are untouched.
+The ledger arm's Q27 query requires the population "100 or definition"; with
+the mutated note it still matches "definition", so the Q27 prediction is
+unchanged (contested).
