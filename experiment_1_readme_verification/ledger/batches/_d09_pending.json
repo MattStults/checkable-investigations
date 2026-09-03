@@ -52,5 +52,25 @@
   "S01017",
   "S01027"
  ],
- "note": "D-09 targeted retranslation: current-file spans with dispatch-input vocabulary; pre-redaction ones are translated under v0.7 in their normal batches"
+ "note": "D-09 targeted retranslation: current-file spans with dispatch-input vocabulary; pre-redaction ones are translated under v0.7 in their normal batches",
+ "selected_by_claim_predicate": [
+  "S00006",
+  "S00007",
+  "S00020",
+  "S00082",
+  "S00419",
+  "S00812",
+  "S01312",
+  "S01322",
+  "S01332",
+  "S01377",
+  "S01395",
+  "S01399",
+  "S01408",
+  "S01409",
+  "S01454",
+  "S01465",
+  "S01482",
+  "S01485"
+ ]
 }

@@ -1,0 +1,177 @@
+{
+ "header": {
+  "batch": "retry_D09c",
+  "source_class": "mixed",
+  "brief_version": "0.7",
+  "glossary_version": "frozen aa3da29 +G-06",
+  "spans": 18,
+  "first_span": "S00006",
+  "last_span": "S01485",
+  "note": "D-09 (claim-predicate selection): spans whose existing claims carry a seat_dispatch event without event.inputs; whole-span retranslation under brief v0.7 rule 34"
+ },
+ "spans": [
+  {
+   "id": "S00006",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "pin",
+   "lines": "104-140",
+   "text": "## 0004 — ITERATION 1, STEPS 2b-3 (C-D MOVE + V1-V4) and STEP-4 PREP, 2026-08-24\n- ESCALATION-2 (3 seats, 1 node): before choosing between delta\n  candidates, the single-wave TP the leading census-expressible candidate\n  would break (l1368_1541_n018) was panel-escalated: 3-0 RELEVANT. This is\n  the iteration's second premises-before-moves win — the candidate choice\n  became a truth fact instead of a driver judgment. PATTERN FOR THE RUNBOOK:\n  when candidates differ only on nodes with single-tier truth, escalate\n  those nodes BEFORE deciding.\n- ADOPTED (pending V5): candidate B = governs_concern wall + the corpus's\n  FIRST live governs_conditional (tone_manner:[vulnerable_interaction]).\n  V1 5/0, V2 drift 0/0/0, V3 held-out 48/48 (all lost nodes tone_manner/\n  identity_meta-only), V4 zero new ruled flips. Full grounds + rejected\n  candidates by name: ITERATION1_CD_DECISION.md. TOOLING CONSEQUENCE the\n  next agent must know: SC.census REFUSES contracts declaring\n  governs_conditional (Arc1-e guard) and verify_terminal lists it\n  KNOWN_UNENUMERATED — census-based routing of the repaired module is\n  blocked until vector() learns conditional contexts. The engine itself\n  consumes it fine.\n- probe.py extended with --contract/--truth (defaults untouched) — the\n  same gen-venue gap as route.py, same fix pattern. 4 candidates\n  fingerprinted into HYPOTHESIS_LEDGER.jsonl.\n- 4 residuals SUSPENDED-OPEN at this inventory (n030/n007/n038/l4572),\n  verify_terminal scoped TERMINAL-STRUCT(enumerated: protects, governs,\n  purpose); the visible separator (purposes slot) has NO consuming gate —\n  a future I1 consumer build re-enters them.\n- RUNBOOK ERRATUM (STEP 4): nothing documents how attempt-1 wave items\n  were built from ctx packets. Reverse-engineered: ESTABLISHES paragraph +\n  SOURCE TEXT section, ALL-CAPS-header segmentation, blank-line\n  normalization — verified byte-identical on all 40 attempt-1 items before\n  use (11 packets carry GRAPH NODE preambles and PROVIDES/NEEDS middle\n  sections that must be dropped). Builder lives in the STEP-4 pre-dispatch\n  commit; fold into ruling_packets.py at the runbook rewrite.\n- V5 prediction registered (ITERATION1_V5_PREDICTION.json) BEFORE any\n  attempt-2 ruling: P1 revert line >= 0.55 venue-matched, point 0.65±0.10,\n  P3 mechanism (fixed class cannot recur), P4 decline >= 0.80. Draw seed\n  20260824; pools 231/531; 5 ruled-ledger overlaps (fresh rulings anyway).\n",
+   "source_class": "ledger",
+   "context": null
+  },
+  {
+   "id": "S00007",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "pin",
+   "lines": "141-177",
+   "text": "## 0005 — ITERATION 1, STEPS 4-5 (REALIZATION + CLOSE), 2026-08-24\nConfirmation venue as registered: 1 wave seat (40 nodes) +\n3 panel seats (8 pre-registered rows). Wave rulings were\ncommitted and the venue decision (dispatch panels vs wave-only) was made\non budget alone BEFORE any scoring — keep that sequencing; it removes the\noptional-stopping question entirely. Scorer was committed before rulings\nexisted. Result (ITER1_ATTEMPT2_SCORED.json):\n- ENGAGED PRECISION 0.75 (attempt-1: 0.40). P1 PASS (>=0.55), P2 within\n  band (point was 0.65), P3 PASS (zero fixed-class recurrence among the 5\n  fresh engaged-FPs), panel split 1/8. Also clears S1's 0.70 bar at the\n  repair venue — reported as exactly that, never as a transfer claim.\n- VERDICT: candidate B KEPT. The V5 keep/revert line was P1, and P1 passed.\n- P4 FAILED (decline_correctness 0.60 vs predicted >=0.80) and the failure\n  is a PREDICTION-CALIBRATION error, not a repair defect, shown three\n  ways: (i) all 8 fresh FNs were un-engaged BEFORE the repair too (the\n  wall created none of them — they are pre-existing act-channel misses:\n  substance/identity/objectivity clauses the does=[respond,comply] lanes\n  never reached); (ii) zero of the 48 walled nodes were ruled relevant\n  anywhere in the fresh draw; (iii) the one walled node the declined draw\n  sampled (l3954_4251_n012, a fixed FP) was freshly, blindly re-ruled\n  not_relevant — the fix confirmed on unseen truth. LESSON FOR THE\n  RUNBOOK: predict decline_correctness from the POST-REPAIR pool\n  composition, not by carrying over the prior attempt's figure — the\n  attempt-1 0.85 was one draw of a different pool; single-wave FN noise\n  on decline sides is real (this is the mirror of the 3/9 FP overturn\n  rate found at R1).\n- NEW MISMATCH QUEUE SEEDED (iteration 2): 5 engaged-FPs (l2821_3040_n029,\n  l3147_3238_n009, l3596_3876_n028, l3954_4251_n038 AGAIN — the standing\n  SUSPENDED-OPEN residual, drawn and re-confirmed FP at panel tier\n  3-0 not_relevant, its wave+panel unanimous, l3954_4251_n040)\n  + 8 not-engaged-FNs (list in scored file). Truth tier: wave-single\n  except panel rows. These route through the calculus next iteration;\n  the FN class (act-channel reach) is C-I-shaped, not C-D — the wall\n  cannot cause or cure it.\n- Budget actual: 10 seats total this iteration; the registered halt line\n  was respected by measuring remaining capacity before each dispatch.\n",
+   "source_class": "ledger",
+   "context": null
+  },
+  {
+   "id": "S00020",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "pin",
+   "lines": "424-444",
+   "text": "## 0018 — USER-AUTONOMY ATTEMPT-1 (PROVISIONAL) + ERRATUM #14, 2026-08-24\nVenue executed as amended; all seats machine-checked. PROVISIONAL result:\nengaged precision 0.60 (WITHIN the frozen 0.55-0.75 band — prediction\nclause (c) holds provisionally), decline 0.55, panel splits 3/10.\n- TRIPWIRE FIRED (3/8 wave spot-check) AND IT IS RIGHT: the Opus parity\n  certificate was measured on the TRADEOFFS brief; I deployed it on the\n  user-autonomy brief without re-measurement. ERRATUM #14 (runbook):\n  parity certificates are BEHAVIOUR-BRIEF-LOCAL — a new behaviour's\n  venue needs its own (cheap: the panel rows are the free key). The\n  spot-check architecture caught the stretch at a cost of one seat.\n- Scoring stands PROVISIONAL pending post-reset Fable verification:\n  (a) brief-local parity vs the 10 panel-tier rows, (b) re-verification\n  of the 3 disputed rulings, (c) the deferred 43-dispute re-resolution.\n  Deferred to the next block, none of it urgent.\n- Q1 DATA POINT: this fresh run produced one new erratum — the process\n  layer is STILL amending (errata series 4,4,4,2*,1 — trending down,\n  not yet zero; *0013/0009 counted to their iterations). The automation\n  decision correctly waits.\n- Budget: envelope respected — spot-check dispatched, dispute\n  ride-along deferred at the checkpoint per the halt line.\n",
+   "source_class": "ledger",
+   "context": null
+  },
+  {
+   "id": "S00082",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "pin",
+   "lines": "30-67",
+   "text": "### Repo artifacts inspected\n\nAll under\n`/Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/`.\n\nPrimary (read directly by the reviewer):\n- `walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/RETRANS_REVIEW_DISPOSITION.md`\n- `.../behavior_pilot/ITERATION_NOTES.md` (notes 0031, 0032, 0033, 0036, 0042)\n- `.../behavior_pilot/HANDOFF_CURRENT.md`\n- `.../behavior_pilot/qc_separability_census.py`\n- `.../behavior_pilot/RETRANS_INTEGRATION_CENSUS.json`\n- `.../behavior_pilot/qc_canonical_values.json`\n- `.../behavior_pilot/qc_emergent_schema.json`\n- `.../behavior_pilot/qc_emergent_ann_A.json`, `qc_emergent_ann_B.json`\n- `.../behavior_pilot/query_class_corpus.json`\n- `semi-formal-experiment/spend.py` (+ its live report over `usage.jsonl`)\n- `git log` at `bf0d4978` and predecessors\n\nSecondary (inventoried by a delegated exploration pass, results folded into the\naddendum):\n- `data/behaviours.json`, `data/panel-coverage.json`, `data/panel-v5/` (`runlog-v5.jsonl`,\n  `behaviour-definitions-v5.json`, `rubric-v5.txt`, `PROVENANCE.md`)\n- `.../behavior_pilot/satisfiability_census.py`, `arm_ab.py`,\n  `satisfiability_census_v19_frozen.json`, `ROUND4_FREEZE_DERIVATION.json`,\n  `atoms_frontier_frozen.json`, `PREREG_panel_equivalence.{md,sha256}`\n- `.../behavior_pilot/panel_run1/` (adjudication + fresh_draw / fresh_draw2 /\n  fresh_draw3 / fresh_draw4 result blocks, `agreed_negative_rulings.json`,\n  `panel_rerulings.json`, `REGISTERED_RESULT.json`, `spotcheck_owner_result.json`)\n- `.../behavior_pilot/ua_truth_visible.json`, `ua_truth_sealed.json`,\n  `ITER1_TRADEOFFS_REPAIR_TRUTH.json`, `ITER2_TRADEOFFS_REPAIR_TRUTH.json`,\n  `GEN_BLOCK1_SCORED.json`, `ITER*_SCORED.json`, `round4_*_scored*.json`,\n  `ROUND4_DEV_TABLE.json`, `ruling_packets/`, `coverage_translated.json`\n- `graph_v2/node_corpus_all.json`, `graph_v2/GRAPH_OVERVIEW.md`\n- prereg drafts: `FRESH_DRAW_PREREG_DRAFT.md`, `FRESH_DRAW_ROUND2_PREREG_DRAFT.md`,\n  `FRESH_DRAW_ROUND3_PREREG_DRAFT.md`, `ROUND4_PREREG.md`,\n  `GENERALIZATION_PREREG_DRAFT.md`, `DEFENSIBILITY_BATCH_PROTOCOL.md`,\n  `CONVERGENCE_CAMPAIGN.md`\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00419",
+   "path": "semi-formal-experiment/MODULE_MAP.md",
+   "commit": "pin",
+   "lines": "188-204",
+   "text": "### 6b. Loss-taxonomy diagnostics (2026-08-02; panel-free, verified so by review)\n\nMine `readback_results.json`'s per-clause loss/fabrication phrases. All read only\n`readback_results.json` / `hole_corpus.json` — a review grepped them for every panel\ntoken and found zero, so they are deliberately NOT in the anti-cheat `FORBIDDEN` set.\nNone feeds a query, a prompt, or a threshold; conclusions go through blind two-coder\nagreement, never one reading.\n\n| module | produced |\n|---|---|\n| `prep_hole_corpus.py` | `hole_corpus.json` — 268 `missing` + 95 `unsupported` phrases with clause text, frozen coder input |\n| (two panel-blind subagent coders) | `hole_taxonomy_coder_{a,b}.json`, `fabrication_taxonomy_coder_{a,b}.json` |\n| `check_taxonomy.py` | independent re-derivation of a coder's coverage/counts (channel-aware) |\n| `taxonomy_agreement.py` | chance-corrected partition agreement (ARI/NMI) + cross-tab, any two coder files |\n| `hole_rollup.py` | category→grammar-feature rollup; ⚠️ its banner: the mapping is editorial, the counts are not |\n| `diagnose_disagreement.py` | ⚠️ PANEL-READING (in FORBIDDEN, unlike the rest of this table): per-case tool-vs-frontier dumps → `case_fn.json`, `case_fp.json`, `DISAGREEMENT_REPORT.md` |\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00812",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "365d68b3f550379153b13b89c571672a92e5e396",
+   "lines": "30-67",
+   "text": "### Repo artifacts inspected\n\nAll under\n`/Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/`.\n\nPrimary (read directly by the reviewer):\n- `walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/RETRANS_REVIEW_DISPOSITION.md`\n- `.../behavior_pilot/ITERATION_NOTES.md` (notes 0031, 0032, 0033, 0036, 0042)\n- `.../behavior_pilot/HANDOFF_CURRENT.md`\n- `.../behavior_pilot/qc_separability_census.py`\n- `.../behavior_pilot/RETRANS_INTEGRATION_CENSUS.json`\n- `.../behavior_pilot/qc_canonical_values.json`\n- `.../behavior_pilot/qc_emergent_schema.json`\n- `.../behavior_pilot/qc_emergent_ann_A.json`, `qc_emergent_ann_B.json`\n- `.../behavior_pilot/query_class_corpus.json`\n- `semi-formal-experiment/spend.py` (+ its live report over `usage.jsonl`)\n- `git log` at `bf0d4978` and predecessors\n\nSecondary (inventoried by a delegated exploration pass, results folded into the\naddendum):\n- `data/behaviours.json`, `data/panel-coverage.json`, `data/panel-v5/` (`runlog-v5.jsonl`,\n  `behaviour-definitions-v5.json`, `rubric-v5.txt`, `PROVENANCE.md`)\n- `.../behavior_pilot/satisfiability_census.py`, `arm_ab.py`,\n  `satisfiability_census_v19_frozen.json`, `ROUND4_FREEZE_DERIVATION.json`,\n  `atoms_frontier_frozen.json`, `PREREG_panel_equivalence.{md,sha256}`\n- `.../behavior_pilot/panel_run1/` (adjudication + fresh_draw / fresh_draw2 /\n  fresh_draw3 / fresh_draw4 result blocks, `agreed_negative_rulings.json`,\n  `panel_rerulings.json`, `REGISTERED_RESULT.json`, `spotcheck_matt_result.json`)\n- `.../behavior_pilot/ua_truth_visible.json`, `ua_truth_sealed.json`,\n  `ITER1_TRADEOFFS_REPAIR_TRUTH.json`, `ITER2_TRADEOFFS_REPAIR_TRUTH.json`,\n  `GEN_BLOCK1_SCORED.json`, `ITER*_SCORED.json`, `round4_*_scored*.json`,\n  `ROUND4_DEV_TABLE.json`, `ruling_packets/`, `coverage_translated.json`\n- `graph_v2/node_corpus_all.json`, `graph_v2/GRAPH_OVERVIEW.md`\n- prereg drafts: `FRESH_DRAW_PREREG_DRAFT.md`, `FRESH_DRAW_ROUND2_PREREG_DRAFT.md`,\n  `FRESH_DRAW_ROUND3_PREREG_DRAFT.md`, `ROUND4_PREREG.md`,\n  `GENERALIZATION_PREREG_DRAFT.md`, `DEFENSIBILITY_BATCH_PROTOCOL.md`,\n  `CONVERGENCE_CAMPAIGN.md`\n",
+   "source_class": "arc2_docs_preredaction",
+   "context": null
+  },
+  {
+   "id": "S01312",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "6835-6843",
+   "text": "commit 494f58b6579f8092b7027f9900c3a2a16cf43107\nordinal 276\ndate 2026-08-17 09:09:14 -0700\nauthor Matt Stults\nsubject chunk-5 repairs: 5/5 at 0 breaches (validator caught an intermediate body bug live); verification dispatched\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
+  },
+  {
+   "id": "S01322",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "6937-6945",
+   "text": "commit 88d73fa33b4a5cc78c9ddbde438a08ce7dfeb554\nordinal 286\ndate 2026-08-17 10:48:37 -0700\nauthor Matt Stults\nsubject probe complete (450 nodes, 85 new engagements, zero never-retrieved remain); report vocab explicit; round-2b adjudication dispatched on 125 rows\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
+  },
+  {
+   "id": "S01332",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7047-7055",
+   "text": "commit f19e166fbb7800ef3f72add45cab6d2a92c25e95\nordinal 296\ndate 2026-08-18 13:23:25 -0700\nauthor Matt Stults\nsubject registered cold-start run: agreed-negative sample (seed 20260816) and second-frontier control sample (seed 20260818) drawn; both adjudication passes dispatched\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
+  },
+  {
+   "id": "S01377",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7492-7500",
+   "text": "commit 65e3150515049d294bf0745b8ea20c31830f0b49\nordinal 341\ndate 2026-08-18 17:45:28 -0700\nauthor Matt Stults\nsubject M30 sweep adjudicated: 2 DROPPED-NORM (web-page trust -> forbid trust_web_page + cepa; know-it-all -> forbid + cnpa), 3 SIBLING-OWNED, 2 DEFINITIONAL — the 24%-blind worry resolves to 2 real dropped norms; blind re-verification dispatched before any module edit\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
+  },
+  {
+   "id": "S01395",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7654-7662",
+   "text": "commit 793ca28793c197e08339dd82792e95a85848a31f\nordinal 359\ndate 2026-08-18 20:35:18 -0700\nauthor Matt Stults\nsubject T2 blind verification: 33 APPROVE, 2 REVISE (missing acts-list edit; declaration/use arity contradiction) — revisions merged into drafts; application agent dispatched with per-module schema-validate loop\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
+  },
+  {
+   "id": "S01399",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7690-7698",
+   "text": "commit 52677057bbaf1bcb85f3857103bd00724a07d0a9\nordinal 363\ndate 2026-08-18 20:46:27 -0700\nauthor Matt Stults\nsubject gloss harmonization drafts: 17 names, all harmonize / 0 rename (drafter found no same-name-different-concept cases); blind verification dispatched with explicit FM9 merge-check\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
+  },
+  {
+   "id": "S01408",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7771-7779",
+   "text": "commit 25a6f056eb89e99bf21731127177cb86a6cf80a2\nordinal 372\ndate 2026-08-18 21:56:29 -0700\nauthor Matt Stults\nsubject protects annotation: INCREMENTAL protocol per Matt — pre-registered calibration (expected-change node + no-change nodes) 4/4 annotations + 4/4 wall effects PASS; --all gated on calibration_passed; wall wired fail-open; full sweep launched\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
+  },
+  {
+   "id": "S01409",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "7780-7788",
+   "text": "commit 940bbca710d39996719d46f7b4613f6d1bf626ac\nordinal 373\ndate 2026-08-18 22:09:03 -0700\nauthor Matt Stults\nsubject protects sweep complete (985 asserts, $0.03): harm 66->74%, FP 24->4 — E1 precision problem solved; 8 newly-blocked relevant nodes identified as the audit's target class (missed co-protection suspected); blind audit dispatched (8 targeted + 25 random)\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
+  },
+  {
+   "id": "S01454",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8185-8193",
+   "text": "commit 2254f9258dd560d0dab53c8d4776da6bb16de399\nordinal 418\ndate 2026-08-19 17:30:42 -0700\nauthor Matt Stults\nsubject queued work executed: gradient claim retracted+corrected in charter (measure-refine loop IS empirical gradient ascent; obstacles are eval cost, discreteness, measured local minima); class-B round: 3 subtypes + act_with_care + 7 retargets + caution does-narrowing -> v18 (caution 173/205=0.84 FP12 zero-FN-cost, harm 186 n017 recovered, help 327, zero new unadjudicated FPs); l1108_1367_n004 -> D (panel-confirmed label); class-C label panels (14 nodes, both fields) + Opus terminal-proof agents (A and D schemas with PREMISE GAP discipline) dispatched; 22 tests pass\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
+  },
+  {
+   "id": "S01465",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8284-8292",
+   "text": "commit a5067778dc3041a9b14e6a9d84ec20c77bdf199f\nordinal 429\ndate 2026-08-20 10:09:22 -0700\nauthor Matt Stults\nsubject CONTEXT-ATOM LAYER (8-A3 repair loop, round 1): 4 atoms annotated across all 583 assert-bearing nodes by two independent Opus seats; consensus 81 credits / 20 disputes (queued); gerrymander recall checks PASS (aggregate_effect_at_scale 4 independent credits incl. 'political messaging at scale'); 4/5 UNSAT targets carry their atom, 5th separated by collider-side credits per the miner's vice-versa design; declaration design (which behavior consumes which context) deliberately left to design tier per 9b — layer alone changes no engagement\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QjboGhk5XQNsaewwexHvX6\n\n----END----",
+   "source_class": "git_log",
+   "context": null
+  },
+  {
+   "id": "S01482",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8429-8436",
+   "text": "commit 19f161aac199defd7ecfb4493ae03f8810b5852a\nordinal 446\ndate 2026-08-21 15:39:21 -0700\nauthor Matt Stults\nsubject Arc1-b extension: M4 revision signed by Matt (pathology = seat disagreement or incoherent quotes, not count); 179 packets built for the unjudged assert-less nodes — 172 from node_corpus_all.json (the canonical full-corpus packet source, same format as the context lane), 7 from later graph builds (frontier-repair era, resolved by graph scan); four extension seats dispatched on ctx_ext1-3\nCo-authored-by: Qwen-Coder <qwen-coder@alibabacloud.com>\n\n----END----",
+   "source_class": "git_log",
+   "context": null
+  },
+  {
+   "id": "S01485",
+   "path": "GENERATED:generated/git_log_first_parent.txt",
+   "commit": "generated",
+   "lines": "8451-8457",
+   "text": "commit 667916d283c2a1d1b3f5fb3107f10e9a4385119d\nordinal 449\ndate 2026-08-21 15:53:34 -0700\nauthor Matt Stults\nsubject Arc1-b extension: sanitization insufficient (inspection reads context around labels; v2 screen had dropped minors/gore/violence) — contingency activated: 15 hot nodes carved out to a human seat (Matt; packet committed with both criteria and answer format), four seats re-dispatched on 164-node clean chunks raw; sanitized outputs discarded if any survive; consensus rule for hot nodes = human judgment + mechanical structure screen as second blind signal\n\n----END----",
+   "source_class": "git_log",
+   "context": null
+  }
+ ],
+ "superseded_claims": []
+}
