@@ -457,12 +457,14 @@
 {"claim": "L720042", "rel": "supersedes", "target_text": "38", "target_id": "L100002", "basis": "quote overlap"}
 {"claim": "L730047", "rel": "amends", "target_text": "FM19", "target_id": "L110078", "basis": "quote overlap"}
 {"claim": "L730059", "rel": "restates", "target_text": "7/8 faithful", "target_id": "L110074", "basis": "value ['7', '8'] + metric/quote word"}
-{"claim": "L730076", "rel": "supersedes", "target_text": "old hash", "target_id": null, "basis": "unresolved"}
+{"claim": "L730076", "rel": "supersedes", "target_text": "old hash", "target_id": "L77600068", "basis": "quote overlap"}
 {"claim": "L750032", "rel": "forbids_citation", "target_text": "the registered equivalence metric", "target_id": null, "basis": "unresolved"}
 {"claim": "L750046", "rel": "restates", "target_text": "22 rows", "target_id": "L750038", "basis": "value ['22'] + metric/quote word"}
 {"claim": "L760028", "rel": "restates", "target_text": "13/45", "target_id": "L760011", "basis": "quote overlap"}
 {"claim": "L760033", "rel": "restates", "target_text": "the registered result", "target_id": null, "basis": "unresolved"}
 {"claim": "L760034", "rel": "restates", "target_text": "the cold-start registration", "target_id": null, "basis": "unresolved"}
+{"claim": "L77600043", "rel": "amends", "target_text": "FM19", "target_id": "L110078", "basis": "quote overlap"}
+{"claim": "L77600068", "rel": "supersedes", "target_text": "old hash", "target_id": "L730076", "basis": "quote overlap"}
 {"claim": "L77700038", "rel": "supersedes", "target_text": "single-wave entries", "target_id": "L1000063", "basis": "quote overlap"}
 {"claim": "L77700103", "rel": "contradicts", "target_text": "its panel-v5 rates and its 1-NN p-values", "target_id": "L990048", "basis": "value ['5', '1'] + metric/quote word"}
 {"claim": "L77700119", "rel": "withdraws", "target_text": "INTEGRATION CLAIMS", "target_id": "L1030001", "basis": "quote overlap"}

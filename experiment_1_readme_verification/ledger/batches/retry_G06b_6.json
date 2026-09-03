@@ -1,0 +1,101 @@
+{
+ "header": {
+  "brief_version": "0.7",
+  "glossary_version": "frozen aa3da29 +G-06",
+  "batch": "retry_G06b_6",
+  "retranslation_of": "reselect.py over current ledger state",
+  "superseded_claims": [
+   {
+    "span": "S00618",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L430100",
+     "L430101",
+     "L430102",
+     "L430103",
+     "L430104",
+     "L430105",
+     "L430106",
+     "L430107",
+     "L430108",
+     "L430109",
+     "L430110",
+     "L430111",
+     "L430112",
+     "L430113",
+     "L430114",
+     "L430115",
+     "L430116",
+     "L430117",
+     "L430118",
+     "L430119",
+     "L430120",
+     "L430121",
+     "L430122",
+     "L430123",
+     "L430124",
+     "L430125",
+     "L430126",
+     "L430127",
+     "L430128",
+     "L430129"
+    ]
+   },
+   {
+    "span": "S00701",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L490010",
+     "L490011",
+     "L490012",
+     "L490013",
+     "L490014",
+     "L490015",
+     "L490016",
+     "L490017",
+     "L490018",
+     "L490019",
+     "L490020",
+     "L490021",
+     "L490022",
+     "L490023",
+     "L490024",
+     "L490025",
+     "L490026",
+     "L490027",
+     "L490028",
+     "L490029",
+     "L490030"
+    ]
+   }
+  ],
+  "spans": 2,
+  "first_span": "S00618",
+  "last_span": "S00701",
+  "note": "G-06 reselection (pre-amendment claims on spans with signature/ruling/coordinator markers); D-09b spans excluded; whole-span retranslation"
+ },
+ "spans": [
+  {
+   "id": "S00618",
+   "path": "semi-formal-experiment/cycles/patient-backfill-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "45-45",
+   "text": " \"justification\": \"KEEP. Document-side basis: 264 principal chains landed exactly where the clause text licenses them, under the annotation contract's own convention, each with a validator-checked verbatim license_quote; 425 candidates stayed chain-free because the text names no party (the never-infer rule holding at scale), 3 remain unclear by B4. The seat chain is intact end-to-end: label-free worksheet (692 candidates, sha ce26cf89) -> behaviour/panel/pricing-blind frontier seat (F10i brief, scan-enforced) -> golden review (55-row stratified sample, both verdict directions) -> four adopted interpretive rulings (RULINGS.md B1-B4) -> 59-record correction sweep (pre-sweep verdict_file_v1 preserved) -> validator CLEAN 264/425/3. All frozen predictions PASS 3/3 exactly: zero flips, no directions, zero regressions - the S2 bit-identity construction under the S1 decoration-blind join held (measured: predicted sets 95/73/146 and every non-config snapshot section bit-identical; vocabulary 624->624, 0 df shifts; pricing_version 1.2 unchanged). The labels landed INERT as designed: nothing consumes chains until S3 patient pricing, which now prices a real 373-chain population instead of 1/155. Independent change review: PROCEED, with amendment 4 countersigned and every apply/replay/measure claim re-derived from scratch (including the seam mutant proving 'surfaces' load-bearing on b8 and the byte-identical mixed-log replay of all six annotation surfaces; legacy b8/annotations frozen chain-free per the designer ruling). Process record, disclosed: one mid-cycle halt (APPLY_HALT.md) - the first apply decorated the legacy surfaces and tripped their frozen b8 compat pins plus a stale n==109 census pin; fully reverted byte-identically, resolved by the adversarially-reviewed surface-scoping seam + census re-pin (amendment 2, designer-approved) and re-applied surface-scoped (1,324 rewrites over the ext_v1 trio only). Amendments 1-4 chain clean f9f3a5cd -> b3f0ed95 -> b5706377 (+2 re-closure records). Non-blocking review findings recorded in backfill/REVIEW_HARDENING_NOTES.md (R1-R3). CLOSE NOTE per R1: conftest.py's one-line _OPTIONAL registration of test_backfill_worksheet predates OPEN and is declared here; this cycle's commit also carries the previously-uncommitted S1 decoration-blind-join CYCLE_LOG line. Census deferred to checkpoint (S8); the census figures that directed attention here appear in no worksheet, verdict, or this decision's grounds. Any later-found-wrong chain is repairable by ONE surface-scoped rechain migration citing that adjudication - the population is repairable chain-by-chain without reverting the cycle.\",",
+   "source_class": "arc1_cycles",
+   "context": null
+  },
+  {
+   "id": "S00701",
+   "path": "semi-formal-experiment/cycles/versioned-cut-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "11-36",
+   "text": " \"gate\": {\n  \"closure_checked\": [\n   \"annotations_ext_v1_merged.json\",\n   \"behavior_atoms_audit_v1.json\",\n   \"behaviours_query.json\",\n   \"constitution_clauses.json\",\n   \"modelspec_clauses.json\",\n   \"test_cycle.py\",\n   \"test_no_reference_leak.py\"\n  ],\n  \"files_changed\": [\n   \"snapshot.py\",\n   \"test_snapshot.py\",\n   \"thresholds_frozen.json\"\n  ],\n  \"review\": {\n   \"by\": \"adversarial review seat (agent)\",\n   \"notes\": \"Verified: (1) frozen manifest/prediction shas match state.json; only snapshot.py, test_snapshot.py, thresholds_frozen.json changed \\u2014 threshold.py, test_no_reference_leak.py, cycle.py, test_cycle.py byte-untouched per git. (2) thresholds_frozen.json's three cuts EQUAL the baseline snapshot's recorded thresholds exactly (all behaviours covered \\u2014 full freeze, not partial); its derived_from_snapshot sha256 matches snapshots/baseline-2026-08-04-auditv1.json, rule 'otsu' == threshold.PREFERRED, config matches the baseline's recorded inputs, and the cited escalation (dossiers/baseline-2026-08-03__containment-v1.1-kindinherit/decision.json, m0422) and cut_stability_results.json exist \\u2014 provenance is label-free (values are the rule's own output; no panel value in the chain). (3) Deliberate no-op reproduced mechanically in an isolated scratch copy: frozen-flag snapshot vs baseline = 0 flips, identical cuts/predicted sets, diff names only 'thresholds' as the changed input. (4) F9 dispatch: no flag -> rule-derived cuts, config inputs.thresholds explicit null, no threshold_source key (old shape); flag -> artifact sha in config identity; no wall-clock, determinism test present and green. (5) Fallback for behaviours absent from the artifact is recorded per behaviour as threshold_source: 'rule_fallback', so a partial freeze is visible in the snapshot itself. (6) Tests bind \\u2014 mutant checks run by this seat in a scratch copy: mutant A (artifact cut ignored) killed by test_frozen_threshold_artifact_honored + test_cli_thresholds_flag (the honored test also asserts artifact value != rule value, so it cannot green with the flag ignored); mutant B (frozen artifact silently made default) killed by test_old_behavior_reachable_without_thresholds_flag + test_thresholds_sha_recorded_and_null_when_absent. (7) Fence: FORBIDDEN scan of snapshot.py and thresholds_frozen.json, raw and comment/docstring-stripped \\u2014 zero hits; nothing reads a panel file. All three gate test files pass (103 passed). No files modified by this review other than this verdict.\",\n   \"verdict\": \"proceed\"\n  },\n  \"tests_passed\": [\n   \"test_cycle.py\",\n   \"test_no_reference_leak.py\",\n   \"test_snapshot.py\"\n  ]\n },",
+   "source_class": "arc1_cycles",
+   "context": null
+  }
+ ]
+}

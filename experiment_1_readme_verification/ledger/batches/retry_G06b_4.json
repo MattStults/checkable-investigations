@@ -1,0 +1,539 @@
+{
+ "header": {
+  "brief_version": "0.7",
+  "glossary_version": "frozen aa3da29 +G-06",
+  "batch": "retry_G06b_4",
+  "retranslation_of": "reselect.py over current ledger state",
+  "superseded_claims": [
+   {
+    "span": "S00356",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9950217",
+     "L9950218",
+     "L9950219",
+     "L9950220",
+     "L9950221",
+     "L9950222",
+     "L9950223",
+     "L9950224",
+     "L9950225",
+     "L9950226",
+     "L9950227",
+     "L9950228"
+    ]
+   },
+   {
+    "span": "S00358",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9940186",
+     "L9940187",
+     "L9940188",
+     "L9940189",
+     "L9940190",
+     "L9940191",
+     "L9940192",
+     "L9940193",
+     "L9940194",
+     "L9940195",
+     "L9940196",
+     "L9940197",
+     "L9940198"
+    ]
+   },
+   {
+    "span": "S00360",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9930171",
+     "L9930172",
+     "L9930173",
+     "L9930174",
+     "L9930175"
+    ]
+   },
+   {
+    "span": "S00362",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9970153",
+     "L9970154",
+     "L9970155",
+     "L9970156",
+     "L9970157",
+     "L9970158",
+     "L9970159",
+     "L9970160",
+     "L9970161",
+     "L9970162",
+     "L9970163",
+     "L9970164",
+     "L9970165",
+     "L9970166",
+     "L9970167",
+     "L9970168",
+     "L9970169",
+     "L9970170",
+     "L9970171"
+    ]
+   },
+   {
+    "span": "S00363",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9960215",
+     "L9960216",
+     "L9960217",
+     "L9960218",
+     "L9960219",
+     "L9960220",
+     "L9960221",
+     "L9960222",
+     "L9960223",
+     "L9960224",
+     "L9960225",
+     "L9960226",
+     "L9960227",
+     "L9960228",
+     "L9960229",
+     "L9960230",
+     "L9960231",
+     "L9960232",
+     "L9960233"
+    ]
+   },
+   {
+    "span": "S00364",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9950229",
+     "L9950230",
+     "L9950231",
+     "L9950232",
+     "L9950233",
+     "L9950234"
+    ]
+   },
+   {
+    "span": "S00366",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9940199",
+     "L9940200",
+     "L9940201",
+     "L9940202",
+     "L9940203",
+     "L9940204",
+     "L9940205",
+     "L9940206",
+     "L9940207",
+     "L9940208",
+     "L9940209",
+     "L9940210",
+     "L9940211"
+    ]
+   },
+   {
+    "span": "S00394",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9930176",
+     "L9930177",
+     "L9930178",
+     "L9930179",
+     "L9930180",
+     "L9930181",
+     "L9930182",
+     "L9930183",
+     "L9930184",
+     "L9930185",
+     "L9930186",
+     "L9930187",
+     "L9930188",
+     "L9930189",
+     "L9930190",
+     "L9930191",
+     "L9930192",
+     "L9930193",
+     "L9930194",
+     "L9930195",
+     "L9930196",
+     "L9930197",
+     "L9930198",
+     "L9930199",
+     "L9930200",
+     "L9930201",
+     "L9930202",
+     "L9930203",
+     "L9930204",
+     "L9930205"
+    ]
+   },
+   {
+    "span": "S00395",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9970172",
+     "L9970173",
+     "L9970174",
+     "L9970175",
+     "L9970176",
+     "L9970177",
+     "L9970178",
+     "L9970179",
+     "L9970180",
+     "L9970181",
+     "L9970182",
+     "L9970183",
+     "L9970184",
+     "L9970185",
+     "L9970186",
+     "L9970187",
+     "L9970188",
+     "L9970189",
+     "L9970190",
+     "L9970191",
+     "L9970192",
+     "L9970193",
+     "L9970194",
+     "L9970195",
+     "L9970196",
+     "L9970197",
+     "L9970198",
+     "L9970199",
+     "L9970200",
+     "L9970201",
+     "L9970202",
+     "L9970203",
+     "L9970204",
+     "L9970205",
+     "L9970206",
+     "L9970207",
+     "L9970208",
+     "L9970209",
+     "L9970210",
+     "L9970211",
+     "L9970212",
+     "L9970213",
+     "L9970214",
+     "L9970215",
+     "L9970216",
+     "L9970217",
+     "L9970218"
+    ]
+   },
+   {
+    "span": "S00396",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9960234",
+     "L9960235",
+     "L9960236",
+     "L9960237",
+     "L9960238",
+     "L9960239",
+     "L9960240",
+     "L9960241",
+     "L9960242",
+     "L9960243",
+     "L9960244",
+     "L9960245",
+     "L9960246"
+    ]
+   },
+   {
+    "span": "S00398",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9950235",
+     "L9950236",
+     "L9950237",
+     "L9950238",
+     "L9950239",
+     "L9950240",
+     "L9950241",
+     "L9950242",
+     "L9950243",
+     "L9950244",
+     "L9950245",
+     "L9950246",
+     "L9950247",
+     "L9950248"
+    ]
+   },
+   {
+    "span": "S00401",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L290009",
+     "L290010",
+     "L290011",
+     "L290012",
+     "L290013",
+     "L290014"
+    ]
+   },
+   {
+    "span": "S00407",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L290064",
+     "L290065",
+     "L290066",
+     "L290067",
+     "L290068",
+     "L290069",
+     "L290070",
+     "L290071",
+     "L290072",
+     "L290073",
+     "L290074",
+     "L290075",
+     "L290076",
+     "L290078",
+     "L290079",
+     "L290080",
+     "L290081",
+     "L290077"
+    ]
+   },
+   {
+    "span": "S00411",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L290107",
+     "L290108",
+     "L290109",
+     "L290110",
+     "L290111",
+     "L290112",
+     "L290113",
+     "L290114",
+     "L290115",
+     "L290116",
+     "L290117",
+     "L290118",
+     "L290119",
+     "L290120",
+     "L290121",
+     "L290122",
+     "L290123",
+     "L290124",
+     "L290125",
+     "L290126",
+     "L290127",
+     "L290128",
+     "L290129",
+     "L290130",
+     "L290131",
+     "L290132",
+     "L290133",
+     "L290134",
+     "L290135",
+     "L290136",
+     "L290137",
+     "L290138",
+     "L290139",
+     "L290140",
+     "L290141",
+     "L290142",
+     "L290143",
+     "L290144",
+     "L290145",
+     "L290146",
+     "L290147",
+     "L290148",
+     "L290149",
+     "L290150",
+     "L290151",
+     "L290152",
+     "L290153"
+    ]
+   },
+   {
+    "span": "S00418",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9940212",
+     "L9940213",
+     "L9940214",
+     "L9940215",
+     "L9940216",
+     "L9940217"
+    ]
+   }
+  ],
+  "spans": 15,
+  "first_span": "S00356",
+  "last_span": "S00418",
+  "note": "G-06 reselection (pre-amendment claims on spans with signature/ruling/coordinator markers); D-09b spans excluded; whole-span retranslation"
+ },
+ "spans": [
+  {
+   "id": "S00356",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "pin",
+   "lines": "738-743",
+   "text": "### Richer extraction has no headroom, and the arm was already run FREE — twice\nText-only (+0.398) is **BELOW** the atom index (+0.435): raw text contains everything any\nannotator could extract. And `annotations.json` → `annotations_b8.json` was a real +9%\ncoverage / +14% atoms / +9% vocabulary upgrade, same model and prompt. Paired over 10 CV\nseeds: **+0.0054, sd 0.035, t(9)=0.49, CI [−0.019, +0.030], n.s.**\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00358",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "pin",
+   "lines": "751-768",
+   "text": "### What the deficit actually is\n| | MCC |\n|---|---:|\n| shipped tool, held-out (LOBO) threshold | +0.206 |\n| shipped tool, oracle threshold (generous) | +0.396 |\n| supervised over the SAME offline features | **+0.591** |\n| judges (mean / best) | +0.555 / +0.654 |\n\nThe whole recoverable gap sits between the unsupervised scorer and a supervised readout of\n**identical** features. That is the **query/scoring mechanism**. Two pieces, both free, both\nalready named in this file:\n\n1. **Nested/held-out threshold selection** — LOBO→oracle is worth **+0.19**, the single\n   largest gap in the project. Costs $0.\n2. **The section channel** — section identity alone supervised is +0.536, while the shipped\n   channel's AUC is 0.522/0.633/0.623 (near chance on helpfulness) at weight 0.45. Worth\n   **+0.16 on top of atoms**, offline.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00360",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "pin",
+   "lines": "775-780",
+   "text": "## ⛔ THE LABEL-FREE LEADS ARE CLOSED (two by proof, a third measured). Read before proposing more scorer work.\n\nThe supervised ceiling (+0.591) sits above the mean judge (+0.555); the label-free tool sits\nat **+0.278**. That gap was attributed to two recoverable items. **Both have now been\nmeasured and both are dead ends** — by proof, not by failure to try.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00362",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "pin",
+   "lines": "827-838",
+   "text": "### Lead 1 — threshold calibration (+0.19). Recovered 40%, then hits a structural wall.\n11 label-free rules, pre-registered preference (Otsu, zero free parameters). Otsu recovers\n**+0.073 of +0.181 (40%)**, CI excludes zero, beats LOBO in 9/9 cells, stable across all 5\natom draws (+0.268 ± 0.007). But **no rule reaches oracle, and none can**: the three\nbehaviours' score distributions are nearly identical (mean 0.16–0.19, sd 0.14–0.18) while\ntheir optimal cuts differ by **0.40**. A distribution-shape rule structurally cannot produce\nthat spread. Eight of eleven rules land in a narrow +0.25–0.32 band.\n\n*(`relevance.predict` now derives its cut label-free by default, retiring\n`DEFAULT_THRESHOLD = 0.18` — an in-sample argmax on the scoring panel, i.e. a live invariant-9\nviolation that shipped for most of this session.)*\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00363",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "pin",
+   "lines": "839-863",
+   "text": "### Lead 2 — the section channel (+0.16). NOT RECOVERABLE LABEL-FREE.\n\n| | MCC |\n|---|---:|\n| oracle section election, then distribute | **+0.641** |\n| supervised section-only (78 params/cell) | +0.536 |\n| supervised, TRANSFERRED from the other 2 behaviours | +0.334 |\n| best label-free section ranking at an **oracle** cut | +0.408 |\n| best label-free ranking at any parameter-free cut | +0.18 … +0.34 |\n\nThe pre-registered design **lost** (+0.177 vs +0.310 per-clause baseline, CI\n[−0.211, −0.079]); the best of 16 variants (+0.335) has a CI spanning zero.\n\n**The mechanism is the finding.** The only behaviour-specific label-free signal available is\nthe atom index, and aggregating it to section level **adds no information** — it re-uses the\nsame clause matches. Firing fraction, evidence mass, section-level atom-profile joins, the\nrung ladder as elector, the section tree, `kind` composition, adjacency and heading-word\noverlap all re-derive the same evidence.\n\nAnd the decisive part: **~60% of the supervised +0.536 is a generic \"which sections are\nsubstantive\" prior** that only reaches parity with the clause operator even when handed the\nother behaviours' labels — while **the remaining ~40% encodes which sections THOSE JUDGES\ntreated as relevant. That is a property of the judges, not of the document.** No\ndocument-grounded method can access it, at any budget.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00364",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "pin",
+   "lines": "864-869",
+   "text": "### What this implies about the project's central question\nInter-judge Jaccard is 0.16–0.62 and gold is the intersection of two judges. So part of every\njudge's score is **shared idiosyncrasy that no content-grounded function can reach**. The\n+0.278 → +0.591 gap should no longer be assumed recoverable: a measurable share of it is\njudge-specific by construction.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00366",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "pin",
+   "lines": "886-900",
+   "text": "## THE 9-BEHAVIOUR PANEL — power, NOT a bar\n\n`ai_character_index/data/panel-coverage.json` — **9 behaviours x 2 specs = 18 cells**,\n2,632 openai + 1,682 anthropic citations. Verified: **locator join is 100%** on both sides\n(589 model-spec / 374 constitution universes via `panel_universe.spec_passages`).\n\nBehaviours: animal-welfare-impacts, harmlessness-to-the-user, helpfulness,\nobjectivity-on-contested-questions, avoiding-over-and-under-caution,\nproportionate-risk-mitigation, harm-avoidance-to-third-parties, how-to-approach-tradeoffs,\nuser-autonomy.\n\n**This fixes the binding statistical constraint.** n=3 behaviours gave a behaviour-level MDE of\n0.209 — every \"which behaviours does this help\" claim in this project has been unmeasurable,\nincluding the base-rate story that had to be demoted to a hypothesis. 9 behaviours settles it.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00394",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "pin",
+   "lines": "1278-1299",
+   "text": "## Module state — all green, 1113 tests (2026-08-02)\n\n> ⚠️ Count superseded 2026-08-04: the suite is now ~1,960 tests (README figure; 1,919\n> collect under a bare interpreter without the venv). The table below predates the\n> iteration-loop modules — see MODULE_MAP.md §1b for those.\n\n| module | owner | state |\n|---|---|---|\n| `modelspec_clauses.json` | — | **593 clauses**, 97.35% char coverage, 100% verbatim, 0 duplicate locators, 259/259 focus markers preserved as a privileged subset |\n| `measure_join.py` | me | the recall ceiling: 849/863 overall, 110/112 at score ≥5, 313/313 example blocks. **Gates every benchmark number** |\n| `measure_kinds.py` | me | relevance signal by clause kind; source of the 38% ceiling finding above |\n| `annotate.py` | agent | done — 1,629 atoms, 99% coverage, reuse 0.78 (`annotations_b8.json`) |\n| `relevance.py`, `benchmark.py` | agent | done — offline scorer + MCC-primary benchmark; CLI runs the tool, `explain()` wired |\n| `behavior_atoms.py` | agent | done — 70 query atoms, 100% selected from the clause vocabulary |\n| `conflict_output.py` | agent | instrument done (blinded + negatives + rubric + validator); **no tool adapter** |\n| `inventory.py` | A | unique locators `... > L200 [fa_la9s]`; `match_passage()` quote-containment join now normalizes whitespace, `[^xxxx]` footnotes, markdown emphasis, **and both link renderings** — all four required, dropping any one silently lowers every metric. `SPEC_MD` points at the shared `../specs/openai-model-spec/` tree |\n| `emit_asp.py` | A | `--skip-invalid` with cascade + `provenance` block; provenance facts proven inert |\n| `extract_section.py` | B | batched (default 14), span-id selection, act-enum closed across batches, `conflict_capable` diagnostic, truncation as its own failure class |\n| `baseline_conflicts.py`, `delta.py`, `adjudicate.py` | C / chain agent | k=3 baseline, 3-bucket delta, worksheet with encoding-status block |\n| `providers.py` | me | `complete_envelope()` → `{text, finish_reason, reasoning, usage, truncated}`; usage logging; auto-adapts unsupported params |\n| `calibrate.py` | me | measures cost per batch per model from real usage |\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00395",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "pin",
+   "lines": "1300-1338",
+   "text": "## Key numbers (all measured, not estimated)\n\n**Cost — measured tokens × looked-up rates. Use `luna` for everything until a final\nmeasurement run.**\n\n| model | $/Mtok in–out | $/batch | whole doc (13 batches) | k=2 |\n|---|---|---|---|---|\n| **luna** (gpt-5.6-luna) | 0.20 / 1.20 | **$0.0088** | **$0.11** | **$0.23** |\n| terra (gpt-5.6-terra) | 2 / 12 | $0.068 | $0.88 | $1.76 |\n| kimi (Kimi-K3) | 3 / 15 | $0.223 | $2.89 | $5.79 |\n| sol (gpt-5.6-sol) | 5 / 30 | $0.241 | $3.14 | $6.28 |\n\n**`luna` is 27× cheaper than sol, had the LOWEST reasoning overhead of the four (39%),\nparsed cleanly, and was fastest (35s vs sol's 82s).** It is gpt-5.6-family, so its failure\nmodes should resemble sol's — a much better iteration tier than a different-family\nmid-tier model. Prices are in `providers.json` and `calibrate.py` reads them.\n\n**First comparison table** (both sides `gpt-oss-20b`, chain-of-command only):\n`|C_tool|`=0, `|C_baseline|`=6, coverage 0.524 effective / 0.571 claimed,\n`baseline_self_agreement`=0.244 over k=3. **Degenerate** — tool's zero is structural\n(0 `incompat`, no act both obliged and forbidden), settled before the solver runs.\n\n**Panel join — SOLVED.** Against focus areas it was **70.3% zero-match** (example blocks\n100% zero, core judgments 40.6% zero). Against `modelspec_clauses.json` with the fixed\nnormalizer, via `measure_join.py`:\n\n| stratum | matched | total | |\n|---|---|---|---|\n| all | 849 | 863 | 98.4% |\n| score ≥5 | 110 | 112 | 98.2% |\n| score ==6 | 58 | 60 | 96.7% |\n| example blocks | 313 | 313 | 100% |\n\nThe 14 remaining misses are **not paraphrase and not version skew** — our spec copy is\nbyte-identical to `../specs/openai-model-spec/model_spec.md` (sha256 `8c95f020…`). The\npanel's own renderer rewrote `[text](url)` inconsistently, sometimes *within a single\npassage*, so no one normalization variant matches. A real but small ~1.6% reference-side\nceiling.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00396",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "pin",
+   "lines": "1339-1351",
+   "text": "## THE OPEN PROBLEM — SOLVED, kept for the reasoning\n\nOpenAI's focus areas are a **test index, not a document index**: 225 of 259 carry rubric\nprompts. They covered **50,855 of 271,474 chars (~19%)**, contained **zero markers inside\nthe 183 example blocks**, and skipped whole sections including `levels_of_authority` (which\n*defines the authority lattice we use*).\n\nSo focus areas are the right unit for the **rule layer** and the wrong unit for the\n**coverage/lookup layer**. Fixed by our own full segmentation → `modelspec_clauses.json`\n(593 clauses, 97.35%), with focus areas retained as a privileged subset carrying authority\n+ rubric joins. `measure_kinds.py` then showed the split has to go further than expected:\nrules on the 188 conditionals, **annotations over all 593 including examples**.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00398",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "pin",
+   "lines": "1361-1373",
+   "text": "## Update — full-coverage artifact ~~(use these, not the originals)~~\n\n> ⚠️ SUPERSEDED AGAIN 2026-08-04: b8 superseded the originals; the ext_v1 line has now\n> superseded b8. The preferred configuration is `annotations_ext_v1_merged.json` +\n> `behavior_atoms_audit_v1.json` + `thresholds_frozen.json` (see the top section). b8\n> stays on disk as the comparison config in JOIN_INTEGRITY_DESIGN's re-measurement\n> protocol.\n\n`annotations_b8.json` (batch-size 8): **1,629 atoms, 99% coverage, 183/183 example blocks,\n0 truncated, 0 call failures**, reuse 0.78. Paired with `behavior_atoms_b8.json` (70 atoms,\n100% in-vocabulary). Example blocks carry 39% of the relevance signal and were the biggest\nhole — the original run lost 24 of them.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00401",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "pin",
+   "lines": "1388-1396",
+   "text": "### ⚠️ The `section_path` fix was a CALIBRATION fix, not a recovery\n\nBest MCC **over the sweep** moved only **+0.2637 → +0.2743 (Δ +0.011)**. The bug moved where\nthe good operating point sits on the threshold axis (0.36 → 0.18); it did not change how well\nthe method discriminates. An earlier version of this file narrated it as \"MCC near chance →\n50-83% of a judge\". That was a threshold artifact. With n=3 behaviours whose optima are\n0.18 / 0.18 / 0.58, one constant cannot be tuned honestly — **nested selection is the fix and\nis not implemented.**\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00407",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "pin",
+   "lines": "1470-1495",
+   "text": "## Things that will bite you\n\n- **`incompat` is the only channel for indirect conflicts** and the cheap model produced\n  zero. If a frontier model also under-produces it, `|C_tool|` collapses regardless of\n  coverage. B added a pairwise-pass requirement and an `incompat_declined` record; verify it\n  actually fires.\n- **Coverage is gameable by decomposition** — the extractor split one provision into 8 rules\n  differing only in condition, inflating coverage without adding conflict surface.\n- **`jaccard({},{}) == 1.0`** meant all-empty runs reported *perfect* self-agreement. Fixed\n  (`None` when every run empty) but the class of bug — a metric that reads best when the\n  system fails worst — is worth re-checking elsewhere.\n- **The join normalizer needs all four transforms**: whitespace runs, `[^xxxx]` footnote\n  markers (25 mid-sentence), markdown emphasis, and *both* renderings of a markdown link.\n  Emphasis stripping alone is worth 313 passages — every example caption is `**Example**:`\n  in source and `Example:` in the panel, so no example block can match without it. Dropping\n  any one transform silently lowers every downstream metric. `test_inventory.py` guards this.\n- **Relevance must not be scoped to conditional clauses.** Example blocks carry 39.1% of\n  high-consensus panel hits vs 38.2% for conditionals; conditional-only caps recall at 38%.\n  Re-derive with `measure_kinds.py` if you doubt it.\n- **`atom_provenance.py` keys on `clause_id`** and defaults to the constitution pilot; it\n  will `KeyError` on a Model Spec `extraction.json` (`focus_id` naming split). Unfixed.\n- **`gpt-5.6-*` models reject `max_tokens`**, require `max_completion_tokens`. Handled by\n  auto-adaptation in `providers.py`, but don't reintroduce it elsewhere.\n- Reasoning is billed as completion tokens and **scales with the budget you give it** —\n  `gpt-oss-20b` produced 71,964 chars of reasoning and zero content at 16k max_tokens.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00411",
+   "path": "semi-formal-experiment/MODULE_MAP.md",
+   "commit": "pin",
+   "lines": "47-79",
+   "text": "## 1. Priority 1 — RELEVANCE (the live product)\n\nbehaviour → which spec passages bear on it. This is what the project is for.\n\n| module | loc | role |\n|---|---|---|\n| `inventory.py` | 214 | locators + `match_passage` quote-containment join. **Gates every metric.** |\n| `measure_join.py` | 93 | ⚠️ the recall ceiling. **Do not quote 849/863** — that is the published-universe figure, and the published universe deleted every passage the panel scored 0. Re-run it; never cite the number from this table. |\n| `measure_kinds.py` | 61 | relevance signal by clause kind; source of the conditional-only ceiling finding |\n| `annotate.py` | 978 | clause → atoms, behaviour-agnostic, all 5 kinds → `annotations.json` |\n| `behavior_atoms.py` | 825 | behaviour → atoms, **selected from the clause vocabulary** → `behavior_atoms.json` |\n| `relevance.py` | 861 | ⚠️ the BAG scorer — **violates contract invariant 10** (a similarity score, not a structural query). No longer the only option: `benchmark.py --query-module {relevance,structural,section,combined}`. Its threshold constant is retired; `predict()` derives its operating point label-free (Otsu). It is also the ONLY module that consumes glosses lexically, which matters when reading read-back's sufficiency result. |\n| `structural.py` | new | ⚠️ the TYPED query, invariant-10 compliant. Zero-parameter operators, `max_hops=0`. **Now has consumers** (`section.py`, `combined.py`, `benchmark.py --query-module`) — the \"imported by nothing but its own test\" note is obsolete. Ships `PRIMARY_OPERATOR = any_atom`, the *unselected* operator; the panel-fitted `act_match` is recorded but not run (its DiD selection cost is +0.045, 2.8x its declared bound). |\n| `ontology.py` | new | relation layer. Mechanical path is a pinned NULL (20 edges/361 atoms; `contrary`+`entails` fire zero times). Annotated pass built, costed, **un-run**. |\n| `panel_universe.py` | new | the TRUE 589-passage evaluation universe. Join rate 1.000 on all six cells. **Every pre-existing number was computed on a truncated universe and is wrong in the tool's favour.** |\n| `benchmark.py` | 1277 | tool vs panel: MCC primary, floors, refuse-to-headline, per-gold head-to-heads |\n| `lexical_control.py` | 160 | the control, implemented as a *weight setting of the same scorer* |\n\n**⚠️ Added 2026-08-02 — these were live but undocumented here:**\n\n| module | role |\n|---|---|\n| `threshold.py` | 11 label-free operating-point rules; `PREFERRED` = Otsu (zero free parameters). This is what retired `relevance.DEFAULT_THRESHOLD`, an in-sample argmax on the panel it was then scored against. |\n| `section.py` | the section quotient. Ships `ELECTION_OPERATOR = any_atom`. Its own docstring used to read \"⚠️ THIS LOSES. Measured −0.143 MCC\" — that verdict was an artifact of an operator borrowed from `structural.py` and fitted on 3 behaviours. At `any_atom` it is the best single compliant predictor measured. |\n| `salience.py` | the SPEECH-ACT SALIENCE tier (`HARNESS_REDESIGN.md` §0.0a R4) — the 4th tier of the lexicographic grade. Reorders `section.SectionQuotient.rank` by the clause's `kind`; default precedence `conditional · definitional · holistic · example · meta`, default tier order `(\"base\", \"salience\")`, final tie-break document order. **ORDERING ONLY** — `rank()` is a permutation of the baseline's pairs and asserts set identity (R4 guard 1); `predict()` delegates untouched; examples are demoted, never dropped. `sort_order()` supplies R4 guard 2's record. ⛔ **UNMEASURED ON PURPOSE**: the default was fixed from R4's speech-act argument before any result existed. **query module** — scanned |\n| `combined.py` | typed core ∪ elected sections. Moved to `any_atom` before the other two. |\n| `panel_v2.py` | the 9-behaviour × 2-spec panel (`../data/panel-coverage.json`, 4,314 citations). **`panel_universe.py` is the 3-behaviour predecessor — do not confuse them.** Several conclusions that held at n=3 invert at n=9. |\n| `readback.py` | the panel-free representation harness: deterministic renderer (atoms → English, no model) + faithful/sufficient/discriminable. Answers \"does the ontology describe the DOCUMENT\", which nothing else here asks. Now covered by the anti-cheat scan. |\n| `weight_diag.py` | **DIAGNOSTIC ONLY, fenced.** Supervised transfer probe; reads the panel by design. Its `NOISE = 0.045` is scoped to the 3-behaviour panel and guarded so it cannot outlive that scope. |\n\n**Run order:** `annotate.py --live` → `behavior_atoms.py --live --annotations …` →\n`benchmark.py --tool --annotations … --behaviour-atoms …` (add `--ablate` for channels).\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00418",
+   "path": "semi-formal-experiment/MODULE_MAP.md",
+   "commit": "pin",
+   "lines": "179-187",
+   "text": "## 6. One-off scripts that produced the data (history — do not re-run casually)\n\nThese built the clause files and are kept for provenance and re-derivation.\n\n| module | produced |\n|---|---|\n| `segment_modelspec.py`, `modelspec_kinds.py` | `modelspec_clauses.json` (593 clauses, 97.35% coverage) |\n| `classify_modelspec.py`, `extract_modelspec.py` | `modelspec_focus_areas.json` (259 focus areas) |\n",
+   "source_class": "arc1_docs",
+   "context": null
+  }
+ ]
+}

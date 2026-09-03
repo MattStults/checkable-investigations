@@ -1,0 +1,570 @@
+{
+ "header": {
+  "brief_version": "0.7",
+  "glossary_version": "frozen aa3da29 +G-06",
+  "batch": "retry_G06b_1",
+  "retranslation_of": "reselect.py over current ledger state",
+  "superseded_claims": [
+   {
+    "span": "S00016",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9950001",
+     "L9950002",
+     "L9950003",
+     "L9950004",
+     "L9950005",
+     "L9950006",
+     "L9950007",
+     "L9950008",
+     "L9950009",
+     "L9950010",
+     "L9950011",
+     "L9950012",
+     "L9950013",
+     "L9950014",
+     "L9950015",
+     "L9950016",
+     "L9950017",
+     "L9950018",
+     "L9950019",
+     "L9950020",
+     "L9950021",
+     "L9950022",
+     "L9950023",
+     "L9950024",
+     "L9950025",
+     "L9950026",
+     "L9950027",
+     "L9950028",
+     "L9950029",
+     "L9950030"
+    ]
+   },
+   {
+    "span": "S00017",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9940001",
+     "L9940002",
+     "L9940003",
+     "L9940004",
+     "L9940005",
+     "L9940006",
+     "L9940007",
+     "L9940008",
+     "L9940009",
+     "L9940010",
+     "L9940011",
+     "L9940012"
+    ]
+   },
+   {
+    "span": "S00019",
+    "selectors": [
+     "G-06"
+    ],
+    "ids": [
+     "L10323",
+     "L10324",
+     "L10325",
+     "L10326",
+     "L10327",
+     "L10328",
+     "L10329",
+     "L10330",
+     "L10331",
+     "L10332",
+     "L10333"
+    ]
+   },
+   {
+    "span": "S00030",
+    "selectors": [
+     "G-06"
+    ],
+    "ids": [
+     "L9970023",
+     "L9970024",
+     "L9970025",
+     "L9970026",
+     "L9970027",
+     "L9970028",
+     "L9970029"
+    ]
+   },
+   {
+    "span": "S00035",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9940013",
+     "L9940014",
+     "L9940015",
+     "L9940016",
+     "L9940017",
+     "L9940018",
+     "L9940019",
+     "L9940020",
+     "L9940021",
+     "L9940022",
+     "L9940023",
+     "L9940024",
+     "L9940025",
+     "L9940026",
+     "L9940027",
+     "L9940028",
+     "L9940029",
+     "L9940030",
+     "L9940031",
+     "L9940032",
+     "L9940033",
+     "L9940034"
+    ]
+   },
+   {
+    "span": "S00039",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9970030",
+     "L9970031",
+     "L9970032",
+     "L9970033",
+     "L9970034",
+     "L9970035",
+     "L9970036",
+     "L9970037",
+     "L9970038",
+     "L9970039",
+     "L9970040"
+    ]
+   },
+   {
+    "span": "S00040",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9960039",
+     "L9960040",
+     "L9960041",
+     "L9960042",
+     "L9960043",
+     "L9960044",
+     "L9960045",
+     "L9960046",
+     "L9960047",
+     "L9960048",
+     "L9960049",
+     "L9960050",
+     "L9960051",
+     "L9960052",
+     "L9960053",
+     "L9960054",
+     "L9960055",
+     "L9960056",
+     "L9960057",
+     "L9960058",
+     "L9960059",
+     "L9960060"
+    ]
+   },
+   {
+    "span": "S00041",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9950042",
+     "L9950043",
+     "L9950044",
+     "L9950045",
+     "L9950046",
+     "L9950047",
+     "L9950048",
+     "L9950049",
+     "L9950050",
+     "L9950051",
+     "L9950052",
+     "L9950053"
+    ]
+   },
+   {
+    "span": "S00054",
+    "selectors": [
+     "G-06"
+    ],
+    "ids": [
+     "L9980056",
+     "L9980057",
+     "L9980058",
+     "L9980059",
+     "L9980060",
+     "L9980061",
+     "L9980062",
+     "L9980063",
+     "L9980064",
+     "L9980065",
+     "L9980066",
+     "L9980067",
+     "L9980068",
+     "L9980069",
+     "L9980070",
+     "L9980071",
+     "L9980072",
+     "L9980073",
+     "L9980074",
+     "L9980075",
+     "L9980076",
+     "L9980077",
+     "L9980078",
+     "L9980079",
+     "L9980080",
+     "L9980081",
+     "L9980082",
+     "L9980083",
+     "L9980084",
+     "L9980085",
+     "L9980086",
+     "L9980087",
+     "L9980088",
+     "L9980089",
+     "L9980090",
+     "L9980091",
+     "L9980092",
+     "L9980093",
+     "L9980094",
+     "L9980095",
+     "L9980096",
+     "L9980097",
+     "L9980098",
+     "L9980099",
+     "L9980100",
+     "L9980101",
+     "L9980102",
+     "L9980103",
+     "L9980104",
+     "L9980105",
+     "L9980106",
+     "L9980107",
+     "L9980108"
+    ]
+   },
+   {
+    "span": "S00055",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9940035",
+     "L9940036",
+     "L9940037",
+     "L9940038",
+     "L9940039",
+     "L9940040",
+     "L9940041",
+     "L9940042",
+     "L9940043",
+     "L9940044",
+     "L9940045",
+     "L9940046",
+     "L9940047",
+     "L9940048",
+     "L9940049",
+     "L9940050",
+     "L9940051",
+     "L9940052",
+     "L9940053",
+     "L9940054",
+     "L9940055",
+     "L9940056",
+     "L9940057",
+     "L9940058",
+     "L9940059",
+     "L9940060",
+     "L9940061",
+     "L9940062",
+     "L9940063",
+     "L9940064",
+     "L9940065",
+     "L9940066",
+     "L9940067",
+     "L9940068",
+     "L9940069",
+     "L9940070"
+    ]
+   },
+   {
+    "span": "S00056",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9930044",
+     "L9930045",
+     "L9930046",
+     "L9930047",
+     "L9930048",
+     "L9930049",
+     "L9930050",
+     "L9930051",
+     "L9930052",
+     "L9930053",
+     "L9930054",
+     "L9930055",
+     "L9930056",
+     "L9930057",
+     "L9930058",
+     "L9930059",
+     "L9930060",
+     "L9930061",
+     "L9930062",
+     "L9930063",
+     "L9930064",
+     "L9930065",
+     "L9930066",
+     "L9930067",
+     "L9930068",
+     "L9930069",
+     "L9930070",
+     "L9930071",
+     "L9930072",
+     "L9930073",
+     "L9930074",
+     "L9930075",
+     "L9930076",
+     "L9930077",
+     "L9930078",
+     "L9930079"
+    ]
+   },
+   {
+    "span": "S00058",
+    "selectors": [
+     "G-06"
+    ],
+    "ids": [
+     "L120252",
+     "L120253",
+     "L120254",
+     "L120255",
+     "L120256",
+     "L120257",
+     "L120258",
+     "L120259",
+     "L120260"
+    ]
+   },
+   {
+    "span": "S00066",
+    "selectors": [
+     "G-04"
+    ],
+    "ids": [
+     "L9970041",
+     "L9970042",
+     "L9970043",
+     "L9970044",
+     "L9970045",
+     "L9970046",
+     "L9970047",
+     "L9970048",
+     "L9970049"
+    ]
+   },
+   {
+    "span": "S00077",
+    "selectors": [
+     "G-06"
+    ],
+    "ids": [
+     "L9990019",
+     "L9990020",
+     "L9990021",
+     "L9990022",
+     "L9990023",
+     "L9990024",
+     "L9990025",
+     "L9990026",
+     "L9990027",
+     "L9990028",
+     "L9990029",
+     "L9990030",
+     "L9990031",
+     "L9990032",
+     "L9990033",
+     "L9990034",
+     "L9990035",
+     "L9990036"
+    ]
+   },
+   {
+    "span": "S00079",
+    "selectors": [
+     "G-04"
+    ],
+    "ids": [
+     "L9950054",
+     "L9950055",
+     "L9950056",
+     "L9950057",
+     "L9950058",
+     "L9950059",
+     "L9950060",
+     "L9950061",
+     "L9950062",
+     "L9950063",
+     "L9950064"
+    ]
+   }
+  ],
+  "spans": 15,
+  "first_span": "S00016",
+  "last_span": "S00079",
+  "note": "G-06 reselection (pre-amendment claims on spans with signature/ruling/coordinator markers); D-09b spans excluded; whole-span retranslation"
+ },
+ "spans": [
+  {
+   "id": "S00016",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "pin",
+   "lines": "346-369",
+   "text": "## 0014 — ITERATION 3 CLOSE, 2026-08-24\nAttempt-4 (certified-Opus venue per A10 Q3, coverage-valid registration):\nENGAGED PRECISION 0.85 (P1 pass; P2 exceeded on the HIGH side), DECLINE\n0.70 (P4 pass; was 0.35-0.50 panel-tier), P3 move gate 10/14 extension\nnodes relevant — the arbitrates_channel adoption REALIZED AND KEPT.\nWave spot-check 1/8 (certificate held again). Attempt series:\n0.40 transfer -> 0.70 -> 0.55 -> 0.85/0.895.\n- TRIPWIRE WORKED AS DESIGNED (blog material): the dispute-class\n  spot-check fired (4/9) — the Opus certificate measurably does NOT\n  cover the boundary-item annotation sliver, exactly the population\n  2-seat disagreement selects for. Response was mechanical: quarantine\n  the 43 dispute resolutions (assembly's own rule), marks 283->260,\n  engagement 393->384; the only measured affected node was a fresh FP,\n  so the quarantine RAISED the adjusted precision to 0.895 and P3 holds\n  at 10/12. Lesson for certificates: measure parity ON THE DISPUTE\n  CLASS separately before letting a cheap tier resolve escalations —\n  consensus items and boundary items are different tasks.\n- OPEN AT CLOSE: 43 suspended dispute marks (Fable-tier resolvable,\n  next block); the 8-node relevant-by-example FN class (second\n  concept, future mint); the single-consideration FP family (unchanged,\n  SUSPENDED-OPEN); C-V definitional-lane pair; runbook rewrite from\n  notes 0001-0014 now carrying FOUR banked errata.\n- Fable spend this block: 2 spot-check seats. Everything else Opus.\n",
+   "source_class": "ledger",
+   "context": null
+  },
+  {
+   "id": "S00017",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "pin",
+   "lines": "370-390",
+   "text": "## 0015 — QUIESCENCE + RUNBOOK v1, 2026-08-24\nFollowing the machine's own prescription (per the standing direction to\ncontinue following the state machine):\n- STEP-1 triage of attempt-4 misses: 9/9 into standing states, no new\n  mechanism -> the tradeoffs loop is at its QUIESCENT FIXED POINT at\n  inventory k (ITER4_MISS_TRIAGE.json). Escalations deferred per A5\n  (nothing to pay for), required before any future fix.\n- CALCULUS_RUNBOOK v1 rewritten FROM notes 0001-0014 (execution-derived;\n  docs-tests 5/5). Carries: gen-venue truth-injection pattern, refilter-\n  before-routing, escalate-before-choosing, certificates are task-class-\n  local, measure-criteria-before-signing, consumption mechanisms\n  validated individually, the binding V5 coverage rule, same-samples-\n  higher-tier re-measurement, defensible-by-contradiction, quiescent-\n  fixed-point language, constraint-structure-not-menus, tripwires never\n  silently passed.\n- REMAINING MAINTENANCE (queued, named): census/vector extension for\n  party_concern, governs_conditional, machinery_concern, arbitrates_*\n  (the Arc1-e build — design-tier, needed before census-based routing\n  of the r4 module); trace-audit extension over iterations 2-3; the\n  Fable-tier dispute re-resolution (next block).\n",
+   "source_class": "ledger",
+   "context": null
+  },
+  {
+   "id": "S00019",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "pin",
+   "lines": "412-423",
+   "text": "## 0017 — PREDICTION FALSIFIED AT $0 + D-RULINGS EXECUTED, 2026-08-24\nRulings received: D1 approved (ADDENDUM 5 signed), D2 user-autonomy,\nD3 run now, D5' question resolved by FALSIFICATION: general-welfare has no\nC-V defect — behavior_acts() regex-extracts canonical heads from the\nASP-literal form; the F1 class was bespoke NAMES, not ASP SYNTAX.\nPrediction 3 clause (a) scored FAILED pre-measurement, correction\nappended, modest v2 re-prediction recorded. RUNBOOK ERRATUM #13: verify\ncontract-level predictions against the engine before freezing (the\ncheck was one line and I skipped it). This is the per-clause scoring\nrule doing its job — a methodology hit taken in public before a single\nseat was spent on it.\n",
+   "source_class": "ledger",
+   "context": null
+  },
+  {
+   "id": "S00030",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "pin",
+   "lines": "581-592",
+   "text": "## 0028 — RECURRENCE ANALYSIS: SECTIONS NOT STATEMENTS, 2026-08-24\nMatt's question answered with counts (PROBLEM_NODE_RECURRENCE.json):\nzero retranslations ever; 7/138 statement-recurrers (contested +\nsuspended-by-design); the mass is sectional (style/formatting +\nobjectivity + authority-machinery). KEY DESIGN CONSEQUENCE: the same\nstyle-section nodes FP across BOTH behaviours measured -> the missing\nconcept is corpus-level, and the UA mint should be designed as the\nGENERAL single-consideration-vs-cross-consideration layer (ARB was the\nbehaviour-flavored first cut) so one mint amortizes across all\nbehaviours — the concrete mechanism by which the concept-per-behaviour\ncost curve could actually bend.\n",
+   "source_class": "ledger",
+   "context": null
+  },
+  {
+   "id": "S00035",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "pin",
+   "lines": "653-672",
+   "text": "## 0033 — UA ARC (autonomous block): MOVE-1 ADOPTED; TARGET MINT CALIBRATED AND HELD, 2026-08-25\n- R3 enumeration (64 compounds, $0): admissible optimum = governs wall\n  {substance, tone, objectivity}: 18/90 fixes, 0 breaks, 0 new FPs.\n  ADOPTED (UA_REPAIR_MOVE1.json, ua_contract_r2.json). Seal UNTOUCHED.\n- OPERATIVE_TARGET mint calibration (3 Opus seats, thresholds\n  pre-stated): STABILITY 0.98 mean pairwise, ZERO 3-way splits — the\n  most stable layer ever measured here. FP-side separation PASSES\n  (0.20 <= 0.30). TP-side coverage FAILS the gate: 0.67 vs >=0.70 —\n  5/15 UA TPs are relevant via other targets (incl. machinery-class\n  and assistant-output-with-deference-content), so a PURE WALL is\n  inadmissible (would break 5 TPs). HELD FOR SIGN-OFF with the honest\n  numbers: the concept is real and crisp; the consumption design needs\n  a second disjunct (e.g. wall scoped to a sub-channel, or\n  target-OR-machinery composite). The calibration-before-signature\n  discipline did its job: a gate miss surfaced BEFORE any corpus\n  annotation was bought.\n- Tradeoffs cross-check (descriptive): the enum classifies the\n  cross-behaviour recurrers as assistant_output — consistent with the\n  amortization hypothesis.\n",
+   "source_class": "ledger",
+   "context": null
+  },
+  {
+   "id": "S00039",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "pin",
+   "lines": "739-756",
+   "text": "## 0037 — ERRATUM #20: CLOSED-VOCABULARY CIRCULARITY (Matt's suspicion, upheld), 2026-08-25\nMatt flagged the too-tidy \"last dimension defined just as you asked.\"\nUpheld on inspection, two mechanisms: (a) ENDOGENEITY — his questions\ncaused this week's analyses; the tidy picture is authorship, not\ncoincidence; (b) CIRCULARITY — the query-class study's 10-place coding\nvocabulary was written by the designer WITH knowledge of the built\nlayers; forced-choice coding into it structurally CANNOT discover an\nout-of-vocabulary place (shoehorning presents as coder disagreement —\nsome of the tripwire noise may be exactly that). Therefore \"100\ndefinitions need no new places\" bounds the query class RELATIVE TO the\ndesigner's vocabulary only. RULE: saturation studies with closed\nvocabularies measure vocabulary coverage, never space completeness;\nunknown-dimension detection needs open coding or external falsifiers.\nThe claims that survive: TARGET's blind calibration (predates the\nstudy), and the three EXTERNAL tests (TARGET at scale, prop-risk\ntransfer, next-document misses) — which do not share the designer's\nvocabulary and can falsify what internal analyses cannot.\n",
+   "source_class": "ledger",
+   "context": null
+  },
+  {
+   "id": "S00040",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "pin",
+   "lines": "757-782",
+   "text": "## 0038 — QUERY-CLASS ARC CLOSED: THE MEASURED BOUND, 2026-08-25\nMatt's arc (open coding -> place-blind schema -> annotate -> separate)\ncompleted end-to-end, all Opus, zero frontier seats:\n- DISCOVERY WORKED where my closed vocabulary could not: 24 emergent\n  dimensions, 9 with no counterpart in my ten places (evaluation_unit\n  and subject_matter_class the load-bearing two, dual-coder evidenced;\n  our instrument is measurably utterance-locked).\n- The vacuousness trap was caught (free-text values = fingerprints,\n  zero reuse) and fixed by canonicalization (105 values, 46% merger,\n  seat-independent 115/115).\n- FINAL: separability 94/100 both seats identically; all 6 collisions\n  are cross-source SAME-CONSTRUCT duplicates (the census doubling as\n  corpus dedup); zero different-construct collisions. THE BOUND:\n  24 dimensions x 105 values addresses the sampled character-spec\n  query class completely, ~1.2 handles/definition.\n- Errata this arc: designer-vocabulary smuggling caught THREE times\n  (Matt twice, the vacuousness check once) — the standing rule: schema\n  derivation, annotation, and canonicalization must each be blind to\n  the layer above; comparison to prior vocabularies happens only at\n  analysis, as a finding.\nSTANDING FOR SIGN-OFF: the new-dimension candidates' implications for\nthe INSTRUMENT (evaluation_unit especially — trajectory-class\nbehaviours are outside the node-relevance design entirely); the UA mint\ndecision; the prop-risk test. Frontier seats spent this autonomous\ndrive: 0.\n",
+   "source_class": "ledger",
+   "context": null
+  },
+  {
+   "id": "S00041",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "pin",
+   "lines": "783-799",
+   "text": "## 0039 — SEPARABILITY VERDICT CORRECTED: THE VALUE LAYER IS ENTROPY, 2026-08-25\nThe vacuousness audit (applied at BOTH levels after the node run\nrepeated the fingerprint pattern) downgrades the headline: value-level\nseparability is mostly per-item uniqueness (nodes: 0 reuse; defs: 20%\nreuse). Defensible numbers: dimension-set separability 0.37-0.40\n(definitions) / 0.85 (nodes). STRUCTURAL FINDING, twice-measured:\ncontent values at separating granularity almost never recur — fine\nenough to separate = too fine to share. THE ONTOLOGY THAT EXISTS is\nthe DIMENSION layer (24+1 place-blind, dual-coder-stable, now with a\ndocument-side discovery: age_or_vulnerability_class_of_the_user).\nValues are high-entropy content where exact-vocabulary matching cannot\nwork; query-node value matching needs lossy coarse classes (with\nmeasured loss) or judgment at match time — the information floor\n(0036) reappearing at the value layer. Also: the audit habit is now\nproven twice — EVERY separability claim must ship with its value-reuse\naudit (method rule).\n",
+   "source_class": "ledger",
+   "context": null
+  },
+  {
+   "id": "S00054",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/HANDOFF_CURRENT.md",
+   "commit": "pin",
+   "lines": "163-219",
+   "text": "## CAMPAIGN START — the 10-hour push to certifiable, publishable data (2026-08-21, approved)\nBASELINE COMMIT for review: 5cc216272042942d0ba51966070168fddeb53d25\n(d3-worked-example, clean tree, in sync with origin). A reviewing Fable agent:\nreview FORWARD from this commit — everything after it is this campaign.\n\nMANDATE (2026-08-21): inside one bounded human-attention window\nstraddling a provider capacity reset, produce (1) round-4\ncertification of this document, (2) zero-adaptation generalization runs on\nheld-out behaviours, and (3) a blog series (goals / design / results) +\nliving summary document.\n\nSCOPE RULING (2026-08-21): ALL SIX never-consulted\nbehaviours run, 3+3 SEQUENTIAL with a FATAL-class stop rule. First three in\ndiagnostic order: harmlessness-to-user (adjacent-family protects-wall flip),\nobjectivity-on-contested-questions (maximal-distance answer-quality shape),\n+ one of {tradeoffs, user-autonomy, proportionate-risk, general-welfare};\nremaining three run as confirmation IF the first three transfer cleanly.\nGrounds: the collaborator v5 frontier panel (ingested 2026-08-21 as\ndata/panel-v5/, see PROVENANCE.md) supplies 3 full seats on all 9 behaviours\nx both specs, removing the truth-scarcity reason for holding at two;\ncomparison statistics are free for all six; adjudication draws shrink to\n40-node panel-informed samples. Rejected by name:\n\"stay at two\" (loses breadth now that truth-scarcity is gone) and \"all six\nas one block\" (loses the confirmation structure). Capacity ruling:\nadjudication queues until after the next capacity reset; all\nreset-independent work proceeds before it.\nTruth doctrine unchanged: v5 panel is comparison layer ONLY, never truth.\n\nSTANDING PROCESS RULES FOR THIS CAMPAIGN (2026-08-21):\n- Test-driven where possible; where automated tests are not realistic, the\n  validation method is written BEFORE the work and then checked (manually,\n  with human help where asked).\n- Every completed work item gets a clean-context ADVERSARIAL subagent review\n  for engineering excellence and consistency with the higher-level goal\n  before it counts; a positive finding stops the item until fixed.\n- All of Phase 0 (arc-1 items a-e, round-4 prereg draft, generalization\n  prereg, blog scaffolding) is autonomous; human attention is spent on\n  signatures, falsifier readings, and writeup review.\n- Round-3 prereg (signed, sha 69631bf3...) is SUPERSEDED unrun: it froze\n  contract v13; the instrument has moved to v18. Round-4 needs a fresh\n  prereg re-derived from v18 all-truth.\n- ARC1-E CLOSED (2026-08-21, campaign commit 29e831d5, adversarial verdict\n  CLEAR round 4): census vector() mirrors the v18 instrument under addendum-3\n  semantics — CURRENT = frozen instrument per behavior (dead slots masked),\n  REACHABLE = design space; three inert-feature false SEPARABLEs corrected;\n  standing pinned dead-slot probe guards the class and carries the Arc1-b\n  slot-arity handshake. 9b may consume the corrected census.\n- The handoff's \"the human-panelist baseline 71%\" currently has NO source\n  artifact; it must be sourced or struck before it appears in any writeup.\n- STATUS (2026-08-21 late): Arc1-e CLOSED (adversarial CLEAR, 4 rounds);\n  Arc1-b mint CLOSED (adversarial CLEAR-WITH-NITS, 2 rounds: M1 held, M2 held 3/3, errata addendum 5); 9b PC-1..4\n  justified (PC-4 redone after review found a document-free dismissal; fit-\n  rank disclosure recorded); round-4 prereg SCAFFOLD drafted\n  (ROUND4_PREREG_SCAFFOLD.md); EXPERIMENTS.md campaign entries.\n  Open item: generalization prereg signature (GENERALIZATION_PREREG_\n  DRAFT.md).\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00055",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/CALCULUS_RUNBOOK.md",
+   "commit": "pin",
+   "lines": "1-60",
+   "text": "# CALCULUS RUNBOOK v1 — agent-facing: take a failure batch through the loop\n(2026-08-24. EXECUTION-DERIVED: rewritten from ITERATION_NOTES.md\n0001-0014 after three live iterations on how-to-approach-tradeoffs, per\nthe execution-derived-docs rule. v0's draft-from-design text is in git\nhistory; every change here traces to a notes entry. Test: test_runbook.py.)\n\nPRECONDITIONS (verify, do not assume):\n  P0 clean tree, everything pushed. P1 you have read ERROR_CALCULUS.md\n  (router R1-R5, amendments A1-A13). P2 the batch is a committed list of\n  (behaviour, node) mismatches with their truth provenance. P3 REFILTER\n  the batch against the CURRENT module before routing — a miss list\n  scored against an older contract may contain already-fixed nodes\n  (notes 0012: 3 of 23 were).\n\nSTEP 1 — TRIAGE (deterministic, $0):\n  .venv/bin/python route.py <slug> <node>      # per mismatch -> class, move, trace\n  GENERALIZATION-VENUE slugs (notes 0001): bare route.py KeyErrors —\n  truth lives outside truth_all's fmap. Use the iteration1_triage.py\n  pattern: derived single-module contract + frozen venue truth injected\n  read-only + ctx truth_tier from committed ruling files; keep the\n  census REAL, never ctx-asserted. probe.py takes --contract/--truth\n  for the same venue.\n  Batch rule (A5): group by class; INVENTORY-level moves (I1 builds, I3\n  mints) sequence BEFORE dependent C-D deltas. Emit the routed queue as\n  a committed artifact before any move executes. Census caveat (notes\n  0001): SEPARABLE relative to a thin venue ledger is weak — say the\n  ledger size in the artifact.\n\nSTEP 2 — MOVES, cheapest first, per the A10 capability router:\n  R1 FIRST, ALWAYS, and once more before choosing between candidates:\n    single-wave truth on engaged misses overturned at 3/9 in iteration 1\n    (notes 0003); when delta candidates differ only on single-tier\n    nodes, escalate THOSE nodes before deciding (notes 0004 — the\n    choice becomes a truth fact, not driver judgment). Escalation may be\n    DEFERRED only when every route lands in a suspension (no move to\n    pay for; notes ITER4_MISS_TRIAGE) — then it is REQUIRED before any\n    future fix attempt.\n  VENUE (A10 Q3, notes 0006/0013): the cheapest CERTIFIED tier + seeded\n    ~20% spot-check + tripwire. Certificates are brief-local AND\n    task-class-local: parity measured on consensus items does NOT cover\n    the dispute/boundary class (tripwire fired 4/9 there, notes 0014) —\n    measure the dispute class separately or keep escalation resolution\n    at the trusted tier. A fired tripwire is mechanical: quarantine or\n    re-run, never silently accept.\n  C-D deltas: candidates via decl-search/discriminator analysis; screen\n    EVERY candidate with probe.py (charter + reason-drift + extensional\n    fingerprint vs HYPOTHESIS_LEDGER.jsonl — a known fingerprint is the\n    same route by another name: REFUSE). Class card REQUIRED (family,\n    general form, predicted non-motivating members) before L2.\n  I3 mints: mined-frontier candidates only; blind criteria; ONE coin per\n    inventory version for zero-collider cases (A8). BEFORE the P3\n    signature, MEASURE the criteria (notes 0011-0012): blind\n    multi-seat calibration on ledger-known cases, families hidden,\n    thresholds pre-stated (stability + separation) — the signature\n    ratifies a measured brief, scoped to its measured coverage. A mint's\n    consumption mechanisms are SEPARATE downstream config moves, each\n    validated individually (notes 0013 erratum: never bundle them into\n    one adoption decision or escalate their selection to a human — V4\n    flip content decides mechanically; the wall died this way while the\n    channel lived).",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00056",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/CALCULUS_RUNBOOK.md",
+   "commit": "pin",
+   "lines": "61-120",
+   "text": "  Rulings/adjudications: LINEAGE_SEAT_INSTRUCTION.md VERBATIM, wave\n    form, fresh seats on the certified venue; panels per registered\n    samplers; prompts ONLY from committed packet files.\n\nSTEP 3 — VALIDATE (V1-V5, all before adoption):\n  probe.py arithmetic on the FULL ledger; reason-drift: DEGRADED =\n  break, SUBSTITUTED = design review (criticality filtering BLOCKED\n  pending its brief-pinning); held-out class-card members must move;\n  new flips blind-adjudicated (standing panel-tier truth discharges\n  this on the record — no seat re-spent); V1 is NEVER sufficient: per-\n  flip content kills regardless of charter sign (the codified\n  radicalization rule; a 24-fixes/12-breaks move died on 8 relevant\n  disengagements, notes 0013). REGISTER the predicted fresh-draw\n  movement in a committed file BEFORE step 4, AND — BINDING, notes\n  0009 — the primary metric MUST have registered COVERAGE of the\n  move's extension: gains/losses sampled in the draw, or a registered\n  full-extension census/probe. A zero-coverage registration is\n  invalid-by-construction (iteration 2 fired a revert off a draw that\n  sampled 0/16 of the move; the void-for-coverage ruling and one-shot\n  re-measurement cost a day). After computing a draw, CHECK it samples\n  the move's classes; if not, register a seeded probe in the same\n  pre-dispatch commit (notes 0007).\n\nSTEP 4 — REALIZE: fresh confirmation wave from the frozen-prereg draw\n  machinery (seeded, committed pre-dispatch), certified-venue seats +\n  Fable spot-checks, score with a scorer COMMITTED BEFORE RULINGS\n  against the registered prediction. Below the registered line ->\n  REVERT with ledger record — unless the measurement itself fails a\n  RESULT-BLIND validity criterion (coverage), in which case halt and\n  surface; the remedy is re-adjudicating the SAME frozen samples at a\n  higher tier, both verdict directions, thresholds fixed pre-dispatch,\n  one shot — NEVER a new draw (notes 0010). Sequence venue decisions\n  before scoring (score only after the seat set is fixed — removes the\n  optional-stopping question, notes 0005).\n\nSTEP 5 — RECORD: traces (trace_check.py-certifiable) with evidence\n  pointers; verdicts carrying enumeration scopes; SUSPENDED-OPEN for\n  every non-certificated exhaustion, each with a NAMED RE-ENTRY;\n  opposing UNANIMOUS panels on identical text = DEFENSIBLE-BY-\n  CONTRADICTION, no seat spent, excluded from top-line error (standing\n  ruling, notes 0011); commit + push each step's artifacts before the\n  next step starts. The loop's healthy terminal is the QUIESCENT FIXED\n  POINT: every open mismatch in a recorded suspension awaiting\n  inventory growth, design capacity, or budget — say it that way.\n\nSTEP 5b — NOTES (binding): append a dated entry to ITERATION_NOTES.md at\n  EVERY step — surprises, doc errors, next-agent-must-know items. An\n  iteration whose learning is not in that file did not record its\n  learning; this runbook is rewritten FROM that file, never from memory.\n  HANDOFF = a fresh session booting CLAUDE.md -> HANDOFF_CURRENT.md ->\n  this runbook -> ITERATION_NOTES.md. No compaction ritual, no handoff\n  prompt: if a departing instance holds uncommitted context, THAT is\n  the bug — commit it here before ending.\n\nCONSTRAINT DISCIPLINE (notes 0013; entries 0002/0008 are redacted stubs): the agent cannot read its\nown resource meter — confirm remaining capacity with the human before\nevery frontier dispatch. When a standing capacity cap and a standing\nvenue ruling conflict, that is a conflict between two HUMAN rulings:\nsurface the CONSTRAINT STRUCTURE (which rulings collide, what the\nmachine's default is — usually suspend until the resource resets), never",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00058",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_PREREG.md",
+   "commit": "pin",
+   "lines": "1-11",
+   "text": "# ROUND-4 CERTIFICATION PRE-REGISTRATION — RE-ISSUE (signature-ready, 2026-08-24)\n\nStatus: RE-ISSUE at instrument freeze, per the scaffold's own rule (\"Re-issued\nsignature-ready at freeze; the project owner signs the re-issue, which carries this\nscaffold's protocol verbatim\"). Protocol sections below are VERBATIM from\nROUND4_PREREG_SCAFFOLD.md (DRAFT-0, 2026-08-21); no protocol change was made\nbetween scaffold and re-issue, so no erratum attaches. Lineage: round-1\n(protocol proof-out), round-2 (help PASSED, harm F1, caution F1-by-2, all\nfixed), round-3 (signed 2026-08-19, SUPERSEDED UNRUN — froze v13; instrument\nmoved on), this re-issue freezes v19.\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00066",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_PREREG.md",
+   "commit": "pin",
+   "lines": "85-103",
+   "text": "## Signatures\nDrafted by the campaign orchestration seat, 2026-08-21 (scaffold);\nre-issued at freeze 2026-08-24 with the protocol verbatim.\nSIGNED 2026-08-24 (project owner; in-session; applies to this re-issue\nWITH pre-signature amendments 1-4 and their measured addenda). REGISTERED\nHARD BUDGET (project owner, 2026-08-24, superseding the orchestration seat's\ninitial proposal before it was ever committed): the experiment may consume at\nmost a registered additional capacity allocation, with a hard cap set at\nsignature. Checked at every behaviour checkpoint and\nbatch boundary. CANARY MEASUREMENT RULE: after the helpfulness canary's\nseats complete, actual capacity movement is measured and the remaining run is\nre-projected; if the projection exceeds the cap, the run halts and the\nremainder moves past the capacity reset (the prereg does not expire —\ndraws and seeds are deterministic and committed). BUDGET DISCIPLINE bound\non the orchestration seat: maximal dispatch batching, minimal inter-batch\noutput, results collected to files — today's cost was dominated by\norchestration cache reads, not seats, and the discipline targets exactly\nthat.\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00077",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/PREREG_panel_equivalence.md",
+   "commit": "pin",
+   "lines": "82-108",
+   "text": "## Pre-stated predictions and falsifiers\n\n* Prediction: metric 0 holds on >= 2 of 3 behaviors; metric 1 reported. (Prior grounds: on the\n  2026-08-16 partial corpus, the adjudicator sided with the seat on 15/20\n  disputed engagements.)\n* Falsifier: metric 0 fails on >= 2 of 3 behaviors, OR engagement\n  defensibility < 0.6 on any behavior, OR the second-frontier control falls\n  below 80% — either result is reported as \"not panel-equivalent\" with\n  no post-hoc rescue. The FROZEN matching layer comprises the D5 fix\n  (TOP_K 12, MAX_ATOMS 10) AND the frontier atom decomposition\n  (`atoms_frontier_frozen.json`, produced BLIND to panel citations,\n  adjudication outcomes, and prior match results — its provenance block\n  states the inputs). Nothing in the matching layer may change after this\n  registration is signed, and no matching parameter may be tuned against\n  these numbers.\n* **Q3 ruled (project owner, 2026-08-18): the cold-start matching layer is scored AS\n  BLIND-DECOMPOSED.** The known precision and recall errors catalogued in\n  `panel_run1/THREEWAY_REPORT.md` (27 scope/structural, 73 seat-miss) are\n  counted against the cold-start number by design; the general fixes they\n  license (party-scope checklist + seat-brief item, topic/agenda atom\n  vocabulary, retrieval brief) are arm-2 material. Rejected by name:\n  applying the party-scope fix to the base tool before signing — legitimate\n  in principle, but it would make the cold-start number describe a tool\n  improved after seeing where it failed.\n* The n=1-style caveat is standing: three behaviors is the panel's own\n  limit, and the conclusion is scoped to them.\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00079",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/PREREG_panel_equivalence.md",
+   "commit": "pin",
+   "lines": "143-158",
+   "text": "## What this deliberately does not measure\n\nASP fidelity (SEMANTIC_AUDIT.md owns that), contradiction detection (needs\nthe D4 concrete instances), and the panel's own correctness — the panel is\nan instrument being compared, not a bar being assumed.\n\n---\n\n**SIGNED 2026-08-18 (project owner).** Content sha256 at signing:\n`6848fb5a489aad2935ae2759f7daf2c14265abb94ebf1ecfb99f5989e54a80f3`. Signed via the coordinator on the owner's instruction after\nQ1 (defensibility metric), Q2 (21/22 spot-check calibration) and Q3\n(cold-start layer scored as blind-decomposed) were each ruled and recorded\nabove. From this line on, the registration is FROZEN: any edit to the\nsections above voids it; the matching layer may not change; scoring happens\nonce.\n",
+   "source_class": "arc2_docs",
+   "context": null
+  }
+ ]
+}

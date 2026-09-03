@@ -1,0 +1,534 @@
+{
+ "header": {
+  "brief_version": "0.7",
+  "glossary_version": "frozen aa3da29 +G-06",
+  "batch": "retry_G06b_5",
+  "retranslation_of": "reselect.py over current ledger state",
+  "superseded_claims": [
+   {
+    "span": "S00421",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9970219",
+     "L9970220",
+     "L9970221",
+     "L9970222",
+     "L9970223",
+     "L9970224",
+     "L9970225",
+     "L9970226",
+     "L9970227",
+     "L9970228",
+     "L9970229",
+     "L9970230",
+     "L9970231",
+     "L9970232",
+     "L9970233",
+     "L9970234",
+     "L9970235",
+     "L9970236",
+     "L9970237",
+     "L9970238",
+     "L9970239",
+     "L9970240",
+     "L9970241",
+     "L9970242",
+     "L9970243",
+     "L9970244",
+     "L9970245",
+     "L9970246",
+     "L9970247",
+     "L9970248",
+     "L9970249",
+     "L9970250",
+     "L9970251",
+     "L9970252",
+     "L9970253",
+     "L9970254",
+     "L9970255",
+     "L9970256",
+     "L9970257",
+     "L9970258",
+     "L9970259",
+     "L9970260",
+     "L9970261",
+     "L9970262"
+    ]
+   },
+   {
+    "span": "S00427",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9960247",
+     "L9960248",
+     "L9960249",
+     "L9960250",
+     "L9960251",
+     "L9960252",
+     "L9960253",
+     "L9960254",
+     "L9960255",
+     "L9960256",
+     "L9960257",
+     "L9960258",
+     "L9960259"
+    ]
+   },
+   {
+    "span": "S00429",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9950249",
+     "L9950250",
+     "L9950251",
+     "L9950252",
+     "L9950253",
+     "L9950254",
+     "L9950255",
+     "L9950256",
+     "L9950257",
+     "L9950258",
+     "L9950259",
+     "L9950260",
+     "L9950261",
+     "L9950262",
+     "L9950263",
+     "L9950264",
+     "L9950265",
+     "L9950266",
+     "L9950267",
+     "L9950268",
+     "L9950269",
+     "L9950270",
+     "L9950271"
+    ]
+   },
+   {
+    "span": "S00439",
+    "selectors": [
+     "G-04"
+    ],
+    "ids": [
+     "L9940218",
+     "L9940219",
+     "L9940220",
+     "L9940221",
+     "L9940222",
+     "L9940223"
+    ]
+   },
+   {
+    "span": "S00440",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9930217",
+     "L9930218",
+     "L9930219",
+     "L9930220"
+    ]
+   },
+   {
+    "span": "S00441",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9970263",
+     "L9970264",
+     "L9970265",
+     "L9970266",
+     "L9970267",
+     "L9970268",
+     "L9970269",
+     "L9970270",
+     "L9970271",
+     "L9970272",
+     "L9970273",
+     "L9970274",
+     "L9970275",
+     "L9970276"
+    ]
+   },
+   {
+    "span": "S00447",
+    "selectors": [
+     "G-04"
+    ],
+    "ids": [
+     "L320013",
+     "L320014"
+    ]
+   },
+   {
+    "span": "S00448",
+    "selectors": [
+     "G-04"
+    ],
+    "ids": [
+     "L320015",
+     "L320016",
+     "L320017"
+    ]
+   },
+   {
+    "span": "S00452",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L320027",
+     "L320028",
+     "L320029",
+     "L320030",
+     "L320031",
+     "L320032"
+    ]
+   },
+   {
+    "span": "S00453",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L320033",
+     "L320034",
+     "L320035",
+     "L320036",
+     "L320037",
+     "L320038"
+    ]
+   },
+   {
+    "span": "S00463",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L330035",
+     "L330036",
+     "L330037",
+     "L330038",
+     "L330039",
+     "L330040",
+     "L330041",
+     "L330042",
+     "L330043",
+     "L330044",
+     "L330045",
+     "L330046",
+     "L330047",
+     "L330048",
+     "L330049",
+     "L330050",
+     "L330051",
+     "L330052",
+     "L330053",
+     "L330054",
+     "L330055",
+     "L330056",
+     "L330057",
+     "L330058",
+     "L330059",
+     "L330060",
+     "L330061",
+     "L330062",
+     "L330063",
+     "L330064",
+     "L330065",
+     "L330066",
+     "L330067",
+     "L330068",
+     "L330069",
+     "L330070",
+     "L330071",
+     "L330072",
+     "L330073",
+     "L330074",
+     "L330075",
+     "L330076",
+     "L330077",
+     "L330078",
+     "L330079",
+     "L330080",
+     "L330081",
+     "L330082"
+    ]
+   },
+   {
+    "span": "S00472",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L330168",
+     "L330169",
+     "L330170",
+     "L330171",
+     "L330172",
+     "L330173",
+     "L330174",
+     "L330175",
+     "L330176",
+     "L330177",
+     "L330178",
+     "L330179",
+     "L330180",
+     "L330181",
+     "L330182",
+     "L330183",
+     "L330184",
+     "L330185",
+     "L330186",
+     "L330187",
+     "L330188",
+     "L330189",
+     "L330190",
+     "L330191",
+     "L330192",
+     "L330193",
+     "L330194",
+     "L330195",
+     "L330196",
+     "L330197",
+     "L330198",
+     "L330199",
+     "L330200",
+     "L330201",
+     "L330202",
+     "L330203",
+     "L330204",
+     "L330205",
+     "L330206",
+     "L330207"
+    ]
+   },
+   {
+    "span": "S00476",
+    "selectors": [
+     "G-04"
+    ],
+    "ids": [
+     "L340012",
+     "L340013",
+     "L340014",
+     "L340015",
+     "L340016",
+     "L340017",
+     "L340018",
+     "L340019",
+     "L340020",
+     "L340021",
+     "L340022",
+     "L340023"
+    ]
+   },
+   {
+    "span": "S00588",
+    "selectors": [
+     "G-02",
+     "G-04"
+    ],
+    "ids": [
+     "L410086",
+     "L410087",
+     "L410088",
+     "L410089",
+     "L410090",
+     "L410091",
+     "L410092",
+     "L410093",
+     "L410094",
+     "L410095",
+     "L410096",
+     "L410097",
+     "L410098",
+     "L410099",
+     "L410100",
+     "L410101",
+     "L410102",
+     "L410103",
+     "L410104",
+     "L410105",
+     "L410106",
+     "L410107",
+     "L410108"
+    ]
+   },
+   {
+    "span": "S00614",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L430008",
+     "L430009",
+     "L430010",
+     "L430011",
+     "L430012",
+     "L430013",
+     "L430014",
+     "L430015",
+     "L430016",
+     "L430017",
+     "L430018",
+     "L430019",
+     "L430020",
+     "L430021",
+     "L430022",
+     "L430023",
+     "L430024",
+     "L430025"
+    ]
+   }
+  ],
+  "spans": 15,
+  "first_span": "S00421",
+  "last_span": "S00614",
+  "note": "G-06 reselection (pre-amendment claims on spans with signature/ruling/coordinator markers); D-09b spans excluded; whole-span retranslation"
+ },
+ "spans": [
+  {
+   "id": "S00421",
+   "path": "semi-formal-experiment/MODULE_MAP.md",
+   "commit": "pin",
+   "lines": "214-231",
+   "text": "## 8. Data files\n\n| file | size | status |\n|---|---|---|\n| `modelspec_clauses.json` | 496 KB | **live** — 593 clauses, the analysis unit |\n| `annotations_ext_v1_merged.json` | large | **PREFERRED (2026-08-04)** — gpt-5.6-luna, 1,442 atoms / 589 clauses / 590-name vocabulary; the first structure-bearing annotation (force, agent-first principal chains post chain-repair, roles). The census configuration |\n| `behavior_atoms_audit_v1.json` | small | **PREFERRED (2026-08-04)** — 42/31/37 query atoms for the 3 DEV behaviours; mechanical re-selection from `select_audit/findings_v2_*.json`, no LLM in that step |\n| `annotations_ext_v1.json`, `annotations_ext_v1_patch.json`, `patch_clauses_ext_v1.json` | — | inputs the merged artifact was built from; keep for provenance |\n| `behavior_atoms_ext_v1.json` | small | superseded by `behavior_atoms_audit_v1.json` (it was the pre-audit selection the DISAGREEMENT_REPORT_ext_v1 survey ran under) |\n| `annotations_b8.json` | 1.7 MB | ⚠️ was PREFERRED until 2026-08-04 — 1,629 atoms, 99% coverage, 183/183 example blocks, reuse 0.78. Now the b8 comparison config in JOIN_INTEGRITY_DESIGN's re-measurement protocol |\n| `behavior_atoms_b8.json` | small | ⚠️ was PREFERRED — 70 atoms, 100% in-vocabulary, pairs with `annotations_b8` |\n| `annotations.json` | 1510 KB | superseded — 1,423 atoms, 91% coverage, 3 truncated batches lost 24 example blocks |\n| `behavior_atoms.json` | small | superseded — 65 atoms, pairs with `annotations.json` |\n| `constitution_clauses.json` | 311 KB | **live for swappability** — 616 clauses, same schema, loads today |\n| `modelspec_focus_areas.json` | 197 KB | **privileged subset** — authority levels + rubric joins; no longer the analysis unit |\n| `smoke_atoms.json` | 103 KB | 28-clause smoke output; safe to remove |\n| `_extract_raw.json` | 198 KB | intermediate from an early extraction; safe to remove |\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00427",
+   "path": "semi-formal-experiment/REPRODUCIBILITY.md",
+   "commit": "pin",
+   "lines": "9-42",
+   "text": "## The sandwich rule\n\nEvery pipeline step ships as FOUR artifacts, or it is not done:\n\n1. **A deterministic core** — typed artifacts in, typed artifacts out,\n   byte-reproducible (same inputs → same bytes; no wall clock, no hash-seed\n   dependence — the snapshot harness found and now guards that class).\n\n   Corollary (2026-08-03, learned the hard way): artifacts consumed by\n   snapshots get VERSIONED FILENAMES, never in-place edits. The containment\n   overlay was edited in place (adding the budget field for v1), so the bytes\n   snapshot `containment-v0` recorded no longer exist on disk and that\n   snapshot is permanently un-dossierable — `dossier.py`'s stale-sha guard\n   fired, correctly; the artifact practice was the bug, not the guard. A\n   config change is a NEW file (`containment_v1.json`, not an edited\n   `containment.json`); the old bytes stay put so every snapshot that pinned\n   them stays reconstructable.\n2. **A closed interface for judgment** — where an LLM (or a person) must\n   exercise judgment, the interface is a schema, not a conversation:\n   dossier in → verdict out; batch of clauses in → atoms out. Small closed\n   vocabularies, required fields, stable ids.\n3. **A mechanical validator** — the LLM's output is checked by code before it\n   is used: coverage (every id exactly once), schema, sha-pins, budget.\n   `check_taxonomy.py`, `dossier.py validate`, annotate's rejection machinery\n   are the pattern.\n4. **An instruction file IN THE REPO** — the prompt/brief the LLM runs under\n   is a versioned artifact (like `annotate_prompt.md`), never something that\n   lives only in a conversation transcript.\n\nThe LLM is always sandwiched: deterministic producer → LLM under written\ninstructions → deterministic validator. A step where the model's output flows\nonward unvalidated, or whose instructions exist only in a session log, is a\nreproducibility bug even if it worked once.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00429",
+   "path": "semi-formal-experiment/REPRODUCIBILITY.md",
+   "commit": "pin",
+   "lines": "59-102",
+   "text": "## Status audit (2026-08-03)\n\nAlready compliant:\n- **Annotation**: `annotate.py` + `annotate_prompt.md` + rejection/validation\n  + spend guards + sha-pinned frozen demos. The reference example.\n- **Behaviour atoms**: `behavior_atoms.py` + `behavior_atoms_prompt.md`\n  (+ selection-from-vocabulary validation).\n- **Query / threshold / benchmark / renderer**: fully mechanical.\n- **Read-back**: deterministic renderer + `readback_prompt.md` + harness.\n- **Iteration loop** (compliant as of 2026-08-03): snapshot/diff/dossier\n  deterministic; verdicts schema-validated; built Haiku-operable by design.\n  The 2026-08-03 adversarial review caught this entry listed compliant while\n  the adjudicator's brief (leg 4) was still missing — the loop's code legs\n  existed but its judgment seat ran on transcript-only instructions, which\n  is exactly the violation class below. Resolved the same day:\n  `briefs/flip_adjudicator.md` + `briefs/README.md` now exist, and the\n  verdict schema is enforced by `dossier.py validate`.\n- **Segmentation**: one-off scripts kept with provenance (MODULE_MAP §6).\n\nViolations / debt (each is a session-transcript-only procedure today):\n1. ~~**The blind-coder method**~~ RESOLVED 2026-08-03: `briefs/blind_coder.md`\n   now carries the two-coder protocol as actually run twice (corpus-in shape,\n   bottom-up induction, kinds-not-topics, the blindness list with reasons,\n   coverage self-check, output schema, and the verification chain —\n   `check_taxonomy.py`, transcript blindness grep, `taxonomy_agreement.py`,\n   cross-coder-stability reporting rule). Listed in `briefs/README.md`.\n2. ~~**Golden-set authoring and review**~~ RESOLVED 2026-08-03:\n   `briefs/golden_author.md` (selection criteria, principal-chain convention,\n   seeded split, sha-freeze, the report-what-the-grammar-cannot-express duty)\n   and `briefs/golden_review.md` (parse_name chain audit,\n   factual-correction-not-taste, auditable review entries + re-freeze,\n   independent coverage re-derivation; explicitly a human/frontier-model\n   seat). Listed in `briefs/README.md`.\n3. ~~**Flip adjudication**~~ RESOLVED 2026-08-03: `briefs/flip_adjudicator.md`\n   now carries the adjudicator instructions (verdict semantics, the tight\n   symmetric auditor-need question, the edge-validity and threshold-drift\n   variants, the no-label-values rule), with `briefs/README.md` describing\n   leg 4 itself. Moved to \"Already compliant\" above.\n4. **New-document runbook**: WRITTEN 2026-08-03 (`NEW_DOCUMENT_RUNBOOK.md`)\n   but **UNTESTED** — steps 2–7 have never executed on a second document, and\n   the runbook says so per step. It stays in this debt list until the\n   constitution run has executed FROM it and amended it in place; only then\n   does it move to \"Already compliant\".\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00439",
+   "path": "semi-formal-experiment/CYCLE_DESIGN.md",
+   "commit": "pin",
+   "lines": "130-142",
+   "text": "## ⚠️ PRE-BUILT CYCLES (added 2026-08-04 after P1 hit this undocumented)\n\nThe driver assumes OPEN precedes implementation: `_open` captures each\n`files_to_change` sha, and the IMPLEMENT gate refuses when those files are\nbyte-identical to their OPEN shas (\"the fix has not been implemented\"). Every\ncycle through S3 happened to follow that order, so this was never written down.\n\n**It does not always hold.** Work built in an isolated worktree and parked for a\nlater gate window (P1 join-integrity is the first case) arrives *finished and\nalready measured* before its cycle can open. The coordinator creates these\ndeliberately — parallel work needs isolation — so the pattern is expected, not an\naccident, and it needs a documented handling.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00440",
+   "path": "semi-formal-experiment/CYCLE_DESIGN.md",
+   "commit": "pin",
+   "lines": "143-153",
+   "text": "### What the freeze can and cannot give you here\n\nSeparate two things the ceremony provides:\n\n* **The temporal guarantee** (predictions made before results are known). For a\n  pre-built cycle this is **already gone and no procedure restores it**. Do not\n  construct a ritual that appears to restore it.\n* **The mechanical gate coverage** (declared files changed; gate tests green;\n  closure of undeclared inputs unchanged; review verdict present). These remain\n  fully meaningful regardless of when the code was written, and are worth keeping.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00441",
+   "path": "semi-formal-experiment/CYCLE_DESIGN.md",
+   "commit": "pin",
+   "lines": "154-178",
+   "text": "### The ruling (coordinator, 2026-08-04) — restore-then-reapply\n\n1. Record the hashes of the finished files, then restore them to their **pre-change\n   bytes in the CURRENT tree** — not to the worktree's fork point. A parked branch\n   may have zero unique commits (P1's did); checking out the fork point silently\n   reverts unrelated later work. Verify the restored files differ from the finished\n   ones **only** in this cycle's hunks before proceeding.\n2. Move any test file that exists solely to gate this change into `gate_tests`\n   (closure-pinned), not `files_to_change`.\n3. OPEN (captures the pre-change shas), then PREDICT from the drafts.\n4. Re-apply the saved files as the IMPLEMENT step and **verify byte-identity to the\n   reviewed bytes**. That check is what makes the shuffle legitimate rather than a\n   re-implementation: the gate then genuinely exercises declared-files-changed,\n   tests, and closure.\n5. Regenerate any measurement artifacts produced in the worktree — they were built\n   against a different tree and are misleading as-is (P1's `measure/` files date from\n   a superseded constant).\n\n**Rejected alternatives, with reasons:** `--override IMPLEMENT` records the truth but\ndiscards all three mechanical checks to avoid a file-shuffle — a bad trade, and it\nleaves a permanent override banner on a cycle that doesn't need one. Ratifying by\nreview + no-op proof alone (no cycle) loses the record for a change that does alter the\nmeasurement plumbing the census runs on; \"score-inert\" is a claim that deserves a cycle,\nand the no-op proof is evidence *for* it, not a substitute.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00447",
+   "path": "semi-formal-experiment/CYCLE_DESIGN.md",
+   "commit": "pin",
+   "lines": "244-252",
+   "text": "### Designer rulings\n\nA ruling is a coordinator decision that resolves something a design left open or that a\nhalt surfaced. It must be **written into the cycle record** (a named `*.md` in the cycle\ndir, or the decision justification), stating the grounds and — where a tempting\nalternative was rejected — **rejecting it by name with the reason**. A ruling that exists\nonly in a dispatch message is transcript-only procedure, which `REPRODUCIBILITY.md`\nclasses as a review finding.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00448",
+   "path": "semi-formal-experiment/CYCLE_DESIGN.md",
+   "commit": "pin",
+   "lines": "253-261",
+   "text": "### Commit at CLOSE\n\nThe driver NEVER runs git. CLOSE drafts `commit_message.txt` and `staging_list.txt`\n(= `files_to_change` ∪ the cycle dir); the coordinator stages, verifies, and commits.\nStaging often needs MORE than the list: newly created modules/tests, `conftest.py`\nregistrations, new fixtures, the published snapshot, and `cycles/CYCLE_LOG.jsonl` — whose\nline may lag the previous cycle's commit and ride the next one. Check `git status` against\nthe list rather than trusting either alone.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00452",
+   "path": "semi-formal-experiment/machine/README.md",
+   "commit": "pin",
+   "lines": "55-78",
+   "text": "## What the model covers\n\n* **Phases** — `PHASES_BY_SHAPE` for both shapes (`code`, `checkpoint`), in\n  order, with overridability derived from `cycle.OVERRIDABLE` and the refusal at\n  `cycle.py:553` that makes the complement exhaustive. Plus the PREDICT\n  demotion (`exploratory` ⇒ CLOSE refuses `keep`).\n* **Gates** — 20 gates: what each blocks, what artifact/state it reads, which\n  named constants its refusal turns on, and every condition it refuses on\n  (quoted from the refusal message). Documented escape paths that are *not*\n  `--override` are modelled separately (`escape_path`, `escape_validates_only`,\n  `escape_unverified`).\n* **Seats** — 12 seats (every file in `briefs/`): brief path, model tier\n  (haiku / frontier / human — a seat may carry two when the repo says\n  \"a human, or a frontier model\"), producer, validator, the phase it is used\n  at, and its **scaling unit**: `per_flip`, `per_cycle`, `per_document`,\n  `per_dossier`, `per_worksheet_row`, `per_behaviour`, `per_corpus`.\n* **Constants** — 10, each with value, `file:line`, and PROVENANCE:\n  `derived` (a document shows the derivation; `derivation/2` names it) vs\n  `chosen` (asserted, no derivation exists anywhere).\n  `FLIP_BUDGET = 30` is `chosen`; `NOISE_FLOOR = (0.0316, 0.037)` is `derived`.\n* **Artifacts** — produces/consumes per phase.\n* **Contradiction evidence** — mechanically scanned claim retractions/\n  assertions and every verdict-shaped JSON artifact in the repo.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00453",
+   "path": "semi-formal-experiment/machine/README.md",
+   "commit": "pin",
+   "lines": "79-97",
+   "text": "## What it does NOT cover\n\n* **Only the cycle machine.** The scoring pipeline (annotate → atoms → query →\n  benchmark), the panel, the anti-cheat perimeter and the FORBIDDEN/QUERY module\n  fences are out of scope except where a cycle gate reads them.\n* **No temporal semantics.** The model says what each gate refuses on, not the\n  full state-machine trace. `semantics.lp` covers exactly the three gate\n  families the differential check drives (override, flip budget, DECIDE).\n* **`HARNESS_REDESIGN.md` is excluded entirely** from the scan\n  (`scan_excluded/2` records why): other agents are editing it, so any line\n  citation into it would be stale before it was read. Its content is therefore\n  invisible to the model — including anything it says about `FLIP_BUDGET`.\n* **The retraction scan reads only top-level `.py`/`.md`.** Subdirectory design\n  docs (`cycles/*/`, `vocab_gap/`) are not scanned for retracted claims.\n* **`cycle.py`'s OPEN/IMPLEMENT/CENSUS phases are not driven end to end** by the\n  differential check — they need a real repo tree and real subprocesses. Their\n  refusal conditions are transcribed and source-checked, not differentially\n  tested. MEASURE, DECIDE and the override path *are* driven for real.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00463",
+   "path": "semi-formal-experiment/adversarial_review_1.md",
+   "commit": "pin",
+   "lines": "13-36",
+   "text": "## Major findings\n\n**3. Unverified headline numbers.** kappa 0.42 and \"300,000+ scenarios\" (Zhang et al. 2510.07686) not in the paper's abstract — trace only to our own litreview summary. Also claim shift: abstract says divergence predicts \"problems in model specifications,\" post says \"predicts spec violations.\" Verify against paper body or realign.\n\n**4. GDPR 400→120 + \"no controlled vocabulary\" + \"abstraction errors dominant\" not verifiable from abstract of 2604.14607.** Load-bearing twice. Verify from body or soften.\n\n**8. `incompat(respect_decision, intervene_wellbeing)` is smuggled in.** No textual license; would be labeled \"assumed\"; the post's own eval prompt (\"or something between\") concedes the acts aren't strictly incompatible. Modality inflation: \"pay attention...giving appropriate weight\" encoded as oblige(intervene). Fix: gate on interp/1 atom (machinery exists in rules.lp, unused here) or justify from text.\n\n**9. The \"planted check\" is vacuous — dead code.** p1b_oplimits is defeated by its own activation condition (`defeated(p1b_oplimits) :- ctx(op_restricts_limit_info)` while the rule requires that same ctx); same for p4b_opsilence. These norms can never be active; their absence from conflicts tests nothing. Fix: defeaters on distinct conditions, or delete the claim.\n\n**10. Admission rule not well-defined; pilot violates it.** (a) \"turns on\" is interpretive; (b) the iff fails for act atoms (intervene_wellbeing etc. are invented, not conditions); (c) `ctx(caution_not_needed)` encodes a normative conclusion as scenario input — h2-vs-g5 conflict exists only in arguably incoherent stipulated worlds. Fix: state as discipline w/ residual judgment; add admission rule for acts; measure inter-formalizer vocabulary agreement.\n\n**11. Loud/quiet asymmetry false as stated.** Missing atom fails loudly only at QUERY time; at EXTRACTION time a missing atom fails silently (finding 7 is a live instance — missing self-regarding-harm distinction silently produced the headline conflict). Scope the claim.\n\n**12. Axiom license labels described in present tense; zero exist in rules.lp.** 1 of 3 incompat axioms would be \"assumed\" (the category called \"rare and flagged\"); none labeled. Fix tense or label them.\n\n**13. Refinement-axiom escape nearly self-defeating (though propositionally sound under NAF — reviewer grants the semantics).** You only split A when a clause turns on A1/A2 — precisely when some old rule probably meant A1, i.e., when A ≡ A1∨A2 mislabels it. Fix: refinement event triggers targeted re-review of rules mentioning A (cheap via provenance), don't claim semantics preservation for free.\n\n**14. \"One checker\"/\"195 rehearsals\" overclaims; pilot contradicts.** Rules vs derived predicates are different syntactic categories; spec prose ≠ user-input distribution for calibration. validate_behaviours.py uses no DSL and no checker (hand-mirrored dicts, self-declared \"reification debt\"). Soften to shared vocabulary+validation layer; label rehearsals a hypothesis.\n\n**15. Suppressed adverse coverage evidence.** For helpfulness, 29 of 41 high-consensus panel passages fall OUTSIDE formalized families (19 in \"Balancing helpfulness with other values\"); over/under-caution: 21/24. Post never reports these. They quantify how much behavior-relevance lives in excluded territory. Report in \"What this has not shown.\"\n\n**16. Toy model's optimum contradicts the section's recommendation.** Model says n=D strictly optimal, err-fine strictly harmful; \"err fine\" comes from architecture outside the model but is listed as something \"the model makes visible.\" Asymmetry is assumed, not derived. Fix: say model-alone recommends n=D; err-fine is an architectural override; asymmetry is an assumption.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00472",
+   "path": "ARTIFACTS.md",
+   "commit": "pin",
+   "lines": "1-32",
+   "text": "# ARTIFACTS — routing table\n\nEvery star artifact, one line each. Paths are repo-relative; all verified at\npublication. `BP/` abbreviates\n`walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/`.\n\n| Artifact | What it is | Path | Read this if you want |\n|---|---|---|---|\n| The ledger | Append-only research log, entries 0000–0043, errata included | `BP/ITERATION_NOTES.md` (root link: `LEDGER.md`) | the whole arc-2 story as it happened |\n| Arc-2 handoff | Current state in one ⭐⭐ block (rest is archive) | `BP/HANDOFF_CURRENT.md` (root link: `ARC2_HANDOFF.md`) | where things stand |\n| L1/L2 adversarial review | 36-finding review that killed the licensing experiments | `BP/L1L2_ADVERSARIAL_REVIEW.md` | what adversarial review looks like here |\n| L1/L2 disposition | Per-finding verdicts with independent re-derivations | `BP/L1L2_REVIEW_DISPOSITION.md` | how findings get accepted or corrected |\n| Census disposition | The withdrawal of the separability \"pass\" (0041) | `BP/RETRANS_REVIEW_DISPOSITION.md` | the random-partition-null rule's origin |\n| Error calculus | The repair state machine (partition theorem, router, amendments) | `BP/ERROR_CALCULUS.md` | the formal repair framework |\n| Calculus runbook | Execution-derived runbook, docs-tested | `BP/CALCULUS_RUNBOOK.md` | how the calculus actually runs |\n| Behavior-pilot index | Which of the 348 files there are human-authored vs generated | `BP/README.md` | orientation in the arc-2 directory |\n| Arc-2 engine | Relevance instrument + census over the translated corpus | `BP/relevance_by_act.py`, `BP/satisfiability_census.py` | the arc-2 code that runs |\n| Campaign log | Graph-translation campaign: audits, repairs, convergence | `walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/EXPERIMENTS.md` | arc-2 build history |\n| The certified graph | 773 nodes, zero bad spans of 846 | `walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/runs/ds7/root_graph.production.json` | the arc-2 substrate |\n| Prune manifest | What was removed at publication, pinned by git object id | `walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/PRUNED.md` | what was removed and how to restore it |\n| Arc-1 handoff | Arc-1 state and corrected benchmark history (⭐⭐ block) | `semi-formal-experiment/HANDOFF.md` | arc-1 results with their corrections |\n| Module map | What every arc-1 module is; §11 anti-rules | `semi-formal-experiment/MODULE_MAP.md` | how to run or change arc-1 code |\n| Reproducibility rules | Sandwich rule, constant governance, determinism | `semi-formal-experiment/REPRODUCIBILITY.md` | the discipline in 138 lines |\n| Cycle design | How a change cycle runs (ceremony, reviews, close) | `semi-formal-experiment/CYCLE_DESIGN.md` | the change process |\n| The reverted cycle | Metric said ship; adjudication found deleted de-escalation guidance | `semi-formal-experiment/cycles/patient-pricing-2026-08-04/decision.json` | why per-flip adjudication exists |\n| Governance model | Seats/tiers as a queryable ASP program | `semi-formal-experiment/machine/` (`query.py seats`) | the process as a logic program |\n| Spec citation engine | Locator → verbatim text for both specs | `engine/spec-cite/cite.py` | the citation discipline |\n| Citation convention | The locator format the whole repo uses | `specs/CITATION.md` | how citations are written |\n| Panel roster | The three-behavior frontier-panel verdicts (arc-1 comparator) | `data/behaviours.json` | the calibration instrument |\n| Panel v5 | 9 behaviors × 589 passages, externally authored (Apache-2.0) | `data/panel-v5/runlog-v5.jsonl` | the untouched replication tier |\n| Agent brief | Canonical instructions for agents and new contributors | `AGENTS.md` | to work in this repo |\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00476",
+   "path": "AGENTS.md",
+   "commit": "pin",
+   "lines": "47-69",
+   "text": "## Working rules\n\n* **The driver never runs git.** `cycle.py` drafts `commit_message.txt` and\n  `staging_list.txt` at CLOSE; a human/coordinator stages and commits. Staging usually\n  needs more than the list — check `git status` against it.\n* **Always pass `--cycle NAME`** to `cycle.py`; a directory holding only drafts counts\n  as open, so the bare command gets refused.\n* **Every cycle gets a clean-context adversarial review before close, and a positive\n  review stops everything until it is fixed.** This has fired twice and was right both\n  times.\n* **Rulings go in the repo, not the transcript.** A decision that resolves an open\n  design question must be written into the cycle record with its grounds, and any\n  tempting alternative rejected **by name**. Transcript-only procedure is a review\n  finding (`REPRODUCIBILITY.md`).\n* **Match the model tier to the work, and say which you used.** Strongest available model\n  for orchestration, design, and adversarial review; a mid tier for executing a written\n  and reviewed plan; a small model for validated judgment seats — the adjudication seat\n  is proven at small-model/frontier parity, and **divergence from a frontier model on the\n  same brief is a seat defect, not a model failure**. Set the model explicitly on every\n  subagent dispatch rather than inheriting. Design work must not be pushed forward on an\n  implementation tier (currently: the S3b redesign, and the G-freeze artifact — which\n  defines a measurement that can only be run once).\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00588",
+   "path": "semi-formal-experiment/cycles/join-integrity-v2-2026-08-04/prediction.json",
+   "commit": "pin",
+   "lines": "17-17",
+   "text": " \"notes\": \"DISCLOSURE (mandatory, coordinator ruling 2026-08-04): this change was BUILT and MEASURED in the isolated P1 worktree BEFORE this OPEN. The numbers in this prediction are CONFIRMATIONS of measurements already taken, not blind pre-registrations; the freeze's temporal guarantee was already absent at OPEN and no structure restores it. Option A (restore pre-P1 bytes -> OPEN -> PREDICT -> re-apply the reviewed bytes) was chosen to preserve gate coverage (declared-files-changed, tests-green, review-verdict) and an accurate record, NOT to recover a blind freeze. The IMPLEMENT byte-identity check (re-applied bytes == reviewed bytes, sha256-recorded at save) is what makes the re-application legitimate rather than a re-implementation. No future reader should mistake this cycle's passing predictions for blind ones. || CLAUSE-LEVEL (design §3.3): ZERO flips — the join is downstream of the scorer. VERIFIED: pre/post snapshots (baseline config annotations_ext_v1_merged + behavior_atoms_audit_v1 + overlay_empty + thresholds_frozen, frozen cuts 0.2162/0.2365/0.3131) diff as a no-op with byte-identical scores and predicted sets 95/73/146 (snapshot_build/diff_pre_post.json). PASSAGE-LEVEL LOCATOR PIN (v1 vs v2 with mixed_variants=False, TRUE 589-locator universe): EXACTLY SIX locators change, none reference-grade in any behaviour: (1) #ignore_untrusted_data>¶2 refused (28 -> 0, STRUCTURAL arm post-restriction: 2 in-section candidates m0178/m0187, quote proper substring of both); (2) #protect_privileged_information>¶14 refused (2 -> 0, structural: 'Example: confusing the end user...' is a proper substring of both in-section clauses m0305/m0306); (3-6) the four pseudo-heading self-maps drop to zero-match verbatim_but_unsegmented via the F9 empty-meta skip: #express_uncertainty>¶2 (m0393), #express_uncertainty>¶7 (m0398), #be_thorough_but_efficient>¶2 (m0535), #be_thorough_but_efficient>¶6 (m0539). Every other locator's mapped set is byte-identical (fan-out hist v1 {0:7,1:579,2:1,6:1,28:1} -> v2_nomix {0:13(=11 zero-match + 2 refused),1:575,6:1}). Design §3.2 HOLDS as written: no reference-grade (score>=5) passage changes its mapped set. Strata identity holds with the new degenerate_quote_refused stratum. v1 reachability: match_passage untouched; map_reference/clause_joins/evaluate default to v1 and reproduce byte-identically (full suite green). Pinned by test_join_v2.py (27 tests; RED transcripts in measure/red_transcript.txt and measure/red_transcript_floor_recalibration.txt; join maps in measure/join_map_v1.json and measure/join_map_v2_nomix.json; per-locator attribution in measure/delta_v1_v2nomix.json).\"",
+   "source_class": "arc1_cycles",
+   "context": null
+  },
+  {
+   "id": "S00614",
+   "path": "semi-formal-experiment/cycles/patient-backfill-2026-08-04/decision.json",
+   "commit": "pin",
+   "lines": "8-8",
+   "text": " \"fix_description\": \"THE PATIENT BACKFILL (spine cycle S2; BACKFILL_DESIGN.md as amended per PORTFOLIO_REVIEW.md F10i) \\u2014 a targeted chain-completion annotation pass, run under the code-cycle ceremony per the chain-repair precedent (artifact-only change). A deterministic worksheet generator (backfill_worksheet.py, the chain_audit_worksheet.py sibling) enumerates every chain-free act-kind atom instance of annotations_ext_v1_merged.json label-free: 692 instances across 462 clauses, primary stratum = the polarity-marked subset (505 instances across 347 clauses), emitted primary-first. A behaviour- and panel-blind frontier seat (briefs/backfill_author.md \\u2014 SILENT on pricing, discounts and every design document per F10i) verdicts each candidate under the closed schema {chain_licensed | no_chain_licensed | unclear} with a mandatory verbatim license_quote (validator-checked substring of the clause text) for every chain_licensed verdict; the validator additionally enforces coverage-exactly-once, principal-vocabulary and parse round-trip of every corrected chain, length >= 2 (no length-1 addition, the chain-audit agent-missing lesson), stem+polarity immutability (decoration only), and the FORBIDDEN-token scan on worksheet, verdict file and all new CLI/field names. Validated chain_licensed verdicts are then applied as clause-scoped atom_refactor rechain migrations (chain-free name -> decorated name, one migration per (name, corrected_chain, licensed-clause-set), --apply --date, logged and replayable in vocabulary_migrations.json \\u2014 the chain-repair discipline); behavior_atoms_audit_v1.json and every query-side artifact are untouched (the license is per-clause; the query side is NOT decorated by this cycle). Zero flips by construction under the S1 decoration-blind join (pricing_version 1.2): chains are pricing metadata invisible to every channel.\",",
+   "source_class": "arc1_cycles",
+   "context": null
+  }
+ ]
+}

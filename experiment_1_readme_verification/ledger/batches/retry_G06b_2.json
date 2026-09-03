@@ -1,0 +1,435 @@
+{
+ "header": {
+  "brief_version": "0.7",
+  "glossary_version": "frozen aa3da29 +G-06",
+  "batch": "retry_G06b_2",
+  "retranslation_of": "reselect.py over current ledger state",
+  "superseded_claims": [
+   {
+    "span": "S00090",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9930080",
+     "L9930081",
+     "L9930082",
+     "L9930083",
+     "L9930084",
+     "L9930085",
+     "L9930086",
+     "L9930087",
+     "L9930088",
+     "L9930089",
+     "L9930090",
+     "L9930091",
+     "L9930092",
+     "L9930093",
+     "L9930094",
+     "L9930095",
+     "L9930096"
+    ]
+   },
+   {
+    "span": "S00095",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9970050",
+     "L9970051",
+     "L9970052",
+     "L9970053",
+     "L9970054",
+     "L9970055",
+     "L9970056",
+     "L9970057",
+     "L9970058",
+     "L9970059",
+     "L9970060",
+     "L9970061",
+     "L9970062",
+     "L9970063",
+     "L9970064"
+    ]
+   },
+   {
+    "span": "S00097",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9960105",
+     "L9960106",
+     "L9960107",
+     "L9960108",
+     "L9960109",
+     "L9960110",
+     "L9960111",
+     "L9960112",
+     "L9960113",
+     "L9960114"
+    ]
+   },
+   {
+    "span": "S00098",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9950065",
+     "L9950066",
+     "L9950067",
+     "L9950068",
+     "L9950069",
+     "L9950070",
+     "L9950071",
+     "L9950072",
+     "L9950073",
+     "L9950074"
+    ]
+   },
+   {
+    "span": "S00099",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9940083",
+     "L9940084",
+     "L9940085",
+     "L9940086",
+     "L9940087",
+     "L9940088",
+     "L9940089",
+     "L9940090"
+    ]
+   },
+   {
+    "span": "S00100",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9930097",
+     "L9930098",
+     "L9930099",
+     "L9930100",
+     "L9930101",
+     "L9930102",
+     "L9930103",
+     "L9930104",
+     "L9930105",
+     "L9930106",
+     "L9930107",
+     "L9930108",
+     "L9930109",
+     "L9930110",
+     "L9930111",
+     "L9930112",
+     "L9930113",
+     "L9930114"
+    ]
+   },
+   {
+    "span": "S00110",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9970065",
+     "L9970066",
+     "L9970067",
+     "L9970068"
+    ]
+   },
+   {
+    "span": "S00120",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9950075",
+     "L9950076",
+     "L9950077",
+     "L9950078",
+     "L9950079",
+     "L9950080",
+     "L9950081",
+     "L9950082",
+     "L9950083",
+     "L9950084",
+     "L9950085",
+     "L9950086",
+     "L9950087",
+     "L9950088"
+    ]
+   },
+   {
+    "span": "S00123",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9940091",
+     "L9940092",
+     "L9940093",
+     "L9940094",
+     "L9940095",
+     "L9940096",
+     "L9940097",
+     "L9940098",
+     "L9940099",
+     "L9940100",
+     "L9940101",
+     "L9940102",
+     "L9940103",
+     "L9940104",
+     "L9940105",
+     "L9940106",
+     "L9940107",
+     "L9940108",
+     "L9940109",
+     "L9940110",
+     "L9940111"
+    ]
+   },
+   {
+    "span": "S00126",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9930115",
+     "L9930116",
+     "L9930117",
+     "L9930118",
+     "L9930119",
+     "L9930120",
+     "L9930121",
+     "L9930122",
+     "L9930123",
+     "L9930124",
+     "L9930125",
+     "L9930126",
+     "L9930127"
+    ]
+   },
+   {
+    "span": "S00141",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9960168",
+     "L9960169",
+     "L9960170",
+     "L9960171",
+     "L9960172",
+     "L9960173",
+     "L9960174",
+     "L9960175",
+     "L9960176",
+     "L9960177",
+     "L9960178"
+    ]
+   },
+   {
+    "span": "S00142",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9950089",
+     "L9950090",
+     "L9950091",
+     "L9950092",
+     "L9950093"
+    ]
+   },
+   {
+    "span": "S00143",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9940112",
+     "L9940113",
+     "L9940114",
+     "L9940115",
+     "L9940116",
+     "L9940117"
+    ]
+   },
+   {
+    "span": "S00155",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9930128",
+     "L9930129",
+     "L9930130",
+     "L9930131",
+     "L9930132",
+     "L9930133",
+     "L9930134"
+    ]
+   },
+   {
+    "span": "S00156",
+    "selectors": [
+     "G-02"
+    ],
+    "ids": [
+     "L9970088",
+     "L9970089",
+     "L9970090",
+     "L9970091",
+     "L9970092"
+    ]
+   }
+  ],
+  "spans": 15,
+  "first_span": "S00090",
+  "last_span": "S00156",
+  "note": "G-06 reselection (pre-amendment claims on spans with signature/ruling/coordinator markers); D-09b spans excluded; whole-span retranslation"
+ },
+ "spans": [
+  {
+   "id": "S00090",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "pin",
+   "lines": "110-114",
+   "text": "### F4. Held-out-half induction fixes only the *mid-lattice* circularity. The vocabulary leak — and the document leak — survive.\n**Defect.** The 24 dimensions × 105 canonical values were open-coded from `query_class_corpus.json`, whose source distribution is **29/100 entries drawn from the OpenAI Model Spec itself** (plus 12 Anthropic, 10 Anthropic Usage Policy, 11 the project's own behaviour set, 9 HHH, 24 one-line Sparrow rules, 6 Llama Guard). L1 holds out half the spec's *nodes* from mid induction, but every held-out node is scored against a vocabulary that was induced with that same document in view. Separately, mid induction over a fixed 105-value vocabulary shared by both halves is near-trivially transferable: the held-out half tests whether new nodes need new *values* (coverage), not whether the buckets are non-arbitrary — and the null already showed arbitrary buckets do as well.\n**Why it matters for Q-A.** A pass reads as \"the ontology transfers within the OpenAI spec,\" which is a weaker claim than Q-A, and it is contaminated even for that.\n**Fix.** Register: (a) an explicit contamination audit — for every held-out node, record whether its section concept appears among the 29 spec-derived corpus entries, report metrics **separately for contaminated and clean held-out nodes**, and treat the clean subset as the headline; (b) a second, harder arm — induce mids from a corpus with the 29 spec-derived entries removed, and report the delta; (c) state up front that L1 bounds *within-document* transfer only, and that Q-A's \"complete representability\" claim is licensed only on the clean subset.\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00095",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "pin",
+   "lines": "133-140",
+   "text": "### F9. L1 does not measure whether the ontology is *alive* on the held-out half.\n**Defect.** Four dimensions never fire on the 39-node sample; on the 100-definition corpus, `agentic_action_footprint` fires **1/100** and `integrity_of_human_oversight` **1/100**, and each has exactly **one** canonical value. Two dimensions (`no_operational_handle`, `bare_value_word_left_undefined`) are explicit catch-alls, one of whose values is literally named `undefined_harmfulness_catch_all`. A held-out half can score \"full coverage\" while a large share of its signature mass lands in catch-alls or singleton dimensions.\n**Fix.** Register as a reported gate: per-dimension and per-value firing rates on the held-out half; the fraction of nodes whose signature is **entirely** catch-all or singleton-valued (pre-registered ceiling, e.g. ≤ 10%); and a rule that any dimension firing on 0 held-out nodes is declared dead and removed from the effective-ontology size used in all null matching (an ontology with 4 dead dimensions is a 20-dimension ontology, and the null must be matched to the live one).\n\n**Verdict on Part 1:** L1 as written, passed, licenses nothing. It re-runs a uniqueness metric that is the wrong construct, against a relevance bar that its own demolished data already clears, on an underpowered half of an unspecified sample, without measuring reliability, and against a null with no threshold.\n\n---\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00097",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "pin",
+   "lines": "145-149",
+   "text": "### F10. \"Coverage without new coinage\" is satisfiable by construction — the schema contains named coverage sinks.\n**Defect.** `bare_value_word_left_undefined` has the value `undefined_harmfulness_catch_all`; `no_operational_handle` has `names_a_tension_without_a_deciding_property`. Any novel behaviour definition can be assigned to one of these with zero coinage and zero information. Separately, `agentic_action_footprint` has exactly one value (`irreversible_side_effects_and_proportionality`) and `integrity_of_human_oversight` exactly one (`evasion_and_evidence_tampering`) — so *every* agentic/tool-use/multi-agent held-out definition is guaranteed \"covered\" by a single pre-existing value. L2's pass condition is met before the experiment starts, for exactly the classes L2 was designed to stress.\n**Why it matters for Q-B.** Q-B asks whether novel behaviours fall in the *span* of the corpus. Landing every novel agentic behaviour on one value is evidence that they do **not** — the ontology is collapsing them, not spanning them — yet L2 scores that as a pass.\n**Fix.** Register coverage as **discriminative coverage**: an assignment counts only if (a) no component is a catch-all dimension, (b) no component is the sole value of its dimension, (c) the resulting signature is distinct from every other held-out behaviour's signature, and (d) the signature is distinct from that of the most-similar in-corpus definition (nearest neighbour reported explicitly). Report catch-all rate and singleton rate as first-class results, not footnotes.\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00098",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "pin",
+   "lines": "150-153",
+   "text": "### F11. L2 ships with no null — in direct violation of the binding rule adopted in the same document.\n**Defect.** The BINDING METHOD RULE says every representability claim ships with a matched-granularity random-partition null, and a pass condition satisfiable by noise is void as registered. L2 makes a representability claim and has no null. A random assignment of existing (dimension, value) pairs achieves \"coverage without new coinage\" at **100%** by construction.\n**Fix.** Register the null explicitly for L2: random assignment of 1–3 existing (dimension, value) pairs per held-out definition, matched to the empirical handle-count distribution, ≥1000 seeds; the real annotation must beat it on *discriminative* coverage and on agreement with a blind second seat at the 99th percentile. If it cannot, L2 is void as registered — by the project's own rule.\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00099",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "pin",
+   "lines": "154-157",
+   "text": "### F12. Expressing a definition in the schema does not show the representation can SEPARATE or MATCH it against the spec.\n**Defect.** L2 tests a property of the *definition side only*. Q-B's operative content is: given a novel behaviour, does the representation of the spec's clauses suffice to determine which clauses bear on it, matching the frontier panel. L2 never touches spec nodes, never touches panel truth, and never produces a relevance judgment. It measures the schema's descriptive elasticity — which the project has already twice measured and twice found to be the wrong signal (the fingerprinting finding, the null finding).\n**Fix.** L2 must be an end-to-end relevance test, not a coverage test. Register: for **≥3** held-out out-of-corpus behaviours, obtain panel relevance truth over a stratified node sample, then score the representation's relevance determination against it under the same metrics as F1. Coverage-without-coinage may remain as a cheap necessary-condition pre-gate, explicitly labelled as such and explicitly non-licensing.\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00100",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "pin",
+   "lines": "158-162",
+   "text": "### F13. n ≥ 10 is arithmetically incapable of supporting the claim.\n**Defect.** With 10/10 successes, the exact one-sided 95% lower bound on the true coverage rate is **0.741**. L2 passing perfectly is consistent with the ontology missing **1 in 4** novel behaviours. And if the true miss rate were 20%, L2 would return a clean 10/10 sweep **10.7%** of the time. At n = 30 the lower bound is 0.905 and the 20%-miss sweep probability drops to 0.1%.\n**Why it matters for Q-B.** A funding decision on a 600-node campaign cannot rest on \"coverage is somewhere above 74%.\"\n**Fix.** Register **n ≥ 30** held-out definitions with a **minimum of 5 per named out-of-space class** (agentic/tool-use, multi-agent, trajectory-shaped, multi-turn/longitudinal, oversight/control), a pre-registered pass threshold stated as a lower confidence bound (e.g. \"95% LCB on discriminative coverage ≥ 0.85\"), and a pre-registered fail action (which dimensions would have to be added, and what that does to campaign cost).\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00110",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "pin",
+   "lines": "211-214",
+   "text": "### F21. Accuracy under 60/40 imbalance is a broken metric in both directions.\nA representation that recovers the 40% minority well can score below a majority-class predictor on accuracy.\n**Fix.** Register MCC and positive-class F1 as primary; accuracy reported only alongside base rate; class-balanced resampling reported as a secondary.\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00120",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "pin",
+   "lines": "283-291",
+   "text": "## Corrections to the main review\n\n**C1 — Cost premise (affects F17, A12).** Panel adjudication is **$0 API**. The $17.179/$25.00 in `spend.py` is corpus translation and matching spend (DeepSeek-V4-Flash bulk translation alone is $13.73); `usage.jsonl` has essentially no rows during the periods when the round-3/4, generalization, UA, and tradeoffs panels ran. Panel truth is produced by **Fable/Opus subagent seats**, and the operative constraint is the frontier-seat allocation (notes 0032), with **a pre-registered per-round seat-token allocation**. My F17 experiment is therefore **not** dollar-constrained — but it must be registered against the **seat-capacity** budget, and that is a real constraint the L1/L2 registrations also omit entirely.\n**Fix.** Every registered experiment states its compute-cost estimate alongside its $ cost, per the existing prereg pattern.\n\n**C2 — Scale (affects F5, F7).** The graph is **773 nodes** (`graph_v2/node_corpus_all.json`; 593 at root unwind per `GRAPH_OVERVIEW.md`), not ~600. More importantly: `behavior_pilot/coverage_translated.json` records **`translated_nodes: 183`**. See F32.\n\n---\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00123",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "pin",
+   "lines": "304-308",
+   "text": "### F29. Q-B is circular by construction: every behaviour with panel truth is IN the 100-definition corpus, because 11 corpus entries ARE the project's own behaviour set.\n**Defect.** `query_class_corpus.json`'s 100 ids break down as `ms:` 29, `sparrow:` 24, `anthropic-constitution:` 12, `anthropic-aup:` 10, **`adria:` 11**, `hhh:` 9, `llamaguard:` 6. Every behaviour with adjudicated node truth maps into the `adria:` block: helpfulness, third-party-harm, over-under-caution, tradeoffs, user-autonomy, harmlessness-to-user, objectivity, general-welfare, proportionate-risk. panel-v5's two additional defined behaviours (`no-sycophancy`, `undermine-oversight`) are *also* in the corpus and have **zero rulings** in the runlog. The one behaviour outside the 100 — `animal-welfare-impacts` — has citation coverage only (`data/panel-coverage.json`) and **zero** adjudicated relevant/not_relevant rulings anywhere.\n**Why it matters for Q-B.** The 24×105 ontology was open-coded from a corpus that includes the definitions of the very behaviours it is scored against. There is **no out-of-corpus panel truth in this repo at all**. L2 as written does not fix this, because L2 never produces a relevance judgment (F12) — so if L2 passes, Q-B remains untested by construction, not merely under-tested.\n**Fix.** Register explicitly: **Q-B cannot be answered by any experiment that does not create new out-of-corpus panel truth.** Minimum: 3 out-of-corpus behaviours × a uniformly drawn, fully ruled node block (the fresh-draw pattern, ~80 nodes each), with the behaviour definitions selected per F14 and frozen pre-annotation. `no-sycophancy` and `undermine-oversight` are **not** eligible (in-corpus). This is the single largest gap in the licensing plan and it is affordable.\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00126",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "pin",
+   "lines": "319-323",
+   "text": "### F32. L1 presupposes the campaign it is supposed to license — only 183 nodes have ever been translated.\n**Defect.** `coverage_translated.json` records `translated_nodes: 183` of 773. L1 says \"freeze mids induced from HALF the spec's nodes; score … the HELD-OUT half.\" Half of 773 is ~386 nodes that do not exist in translated form. Producing them **is** the retranslation campaign — the ~$/Fable expenditure the experiment is meant to justify. Read literally, L1 cannot be run before the decision it informs.\n**Why it matters.** Either L1 silently means \"half of the 39-node problem-stratified sample\" (n≈19, no power, wrong frame — F5, F7), or it means a several-hundred-node translation commitment made before the licensing question is settled.\n**Fix.** Register L1 explicitly as a **staged pre-flight**: a uniform random draw of N nodes (N set by a power calculation against the F31 clean partitions, and stated), translated end-to-end through the real pipeline, with wall-clock / Fable-token / seat-disagreement / merge-arbitration rates recorded — so the pre-flight simultaneously yields the licensing measurement (F17) and the scaling estimate (F19). State the pre-flight's cost as a fraction of full-campaign cost in the registration.\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00141",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/RETRANS_REVIEW_DISPOSITION.md",
+   "commit": "pin",
+   "lines": "45-61",
+   "text": "## Corrected verdicts (what we can honestly claim)\n- P1 (the ontology + graph inputs/outputs/atoms suffice for complete\n  separation under full retranslation): NOT ESTABLISHED. The measured\n  separability is real but carries no information beyond what a random\n  partition of the vocabulary provides at matched granularity; and the\n  representation does not predict relevance above base rate.\n- P2 (extension to novel behaviours because they fall in the corpus\n  space): NOT ESTABLISHED. Both test behaviours are in-corpus; the\n  corpus under-covers agentic/tool-use/multi-turn; a known behaviour\n  class (trajectory-shaped) is already recorded as outside the design.\n- Preserved verbatim from the reviewer, and endorsed: \"this is a defect\n  in the *measurement*, not proof that the ontology is bad.\" What\n  remains true: two blind seats retranslated 39/39 full spans with the\n  schema and ZERO new coinages (coverage-in-form), and mid-level\n  handle reuse (0.57) shows the vocabulary compresses. Those are\n  necessary conditions, now honestly labeled as only that.\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00142",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/RETRANS_REVIEW_DISPOSITION.md",
+   "commit": "pin",
+   "lines": "62-68",
+   "text": "## BINDING METHOD RULE (adopted; applies to every future separability claim)\nEvery separability/representability claim ships with a MATCHED-\nGRANULARITY RANDOM-PARTITION NULL (same item count, same family\nstructure, same bucket count, seeded), and the claim is only as strong\nas its MARGIN over that null. A pass condition jointly satisfiable by\nnoise is void as registered. (Companion to the V5 coverage rule.)\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00143",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/RETRANS_REVIEW_DISPOSITION.md",
+   "commit": "pin",
+   "lines": "69-77",
+   "text": "## Licensing experiments (registered as the path to honest P1/P2, all parked)\n- L1 (for P1): freeze mids induced from HALF the spec's nodes; score\n  separability + reuse of the HELD-OUT half against the frozen mids;\n  report margin over the random-partition null; AND relevance\n  prediction over the representation must beat majority baseline.\n- L2 (for P2): >=10 held-out behaviour definitions NOT drawn from the\n  corpus's documents, including agentic/tool-use/multi-agent classes,\n  expressed in the schema and scored for coverage without new coinage.\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00155",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
+   "commit": "pin",
+   "lines": "163-172",
+   "text": "## Integration slots (pre-declared, so nothing arrives as a surprise)\n- v5 frontier panel (data/panel-v5/, PROVENANCE.md): comparison layer as\n  above. Seat composition (sol/fable/deepseek + partials) differs from the\n  v3w trio; writeups name the panel they cite.\n- Any further frontier data (e.g. the reader-test-coverage.json held out of\n  band, or new aci runs): enters ONLY under the same comparison rule, or\n  not at all. Truth path is closed to it by this prereg.\n- Round-4 results: independent; this prereg neither reads nor is read by the\n  round-4 prereg. Both may be cited together afterward.\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00156",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/GENERALIZATION_PREREG_DRAFT.md",
+   "commit": "pin",
+   "lines": "173-178",
+   "text": "## Cost and timing\nA registered capacity allocation covers six 40-node draws + panels; all run\nafter the capacity reset. Module builds, instrument runs, v5 comparison:\nFable-free and proceed before the reset. Draws are computed and sha-recorded\nbefore any ruling exists.\n",
+   "source_class": "arc2_docs",
+   "context": null
+  }
+ ]
+}

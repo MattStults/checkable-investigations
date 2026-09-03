@@ -32,6 +32,7 @@ SELECTORS = {
 }
 def main():
     name = sys.argv[1]
+    amend = json.load(open(os.path.join(X, "glossary/glossary.json"))).get("amendments", [])
     claims = current_claims()
     by_span = {}
     for c in claims.values(): by_span.setdefault((c["source"]["path"], c["source"]["commit"][:8], c["source"]["lines"]), []).append(c)
@@ -40,6 +41,9 @@ def main():
     for s in spans:
         cs = by_span.get((s["path"], s["commit"][:8], s["lines"]), [])
         if not cs: continue
+        # only claims produced before the latest amendment are candidates: a claim whose
+        # provenance already carries the latest amendment id was translated under it
+        cs = [c for c in cs if ("+" + amend[-1]["id"]) not in (c.get("translator") or {}).get("glossary_version", "")] if amend else cs
         hits = [k for k, (rx, pred) in SELECTORS.items() if rx.search(s["text"]) and pred(cs)]
         if hits:
             sel.append(s); sup.append({"span": s["id"], "selectors": hits, "ids": [c["id"] for c in cs]})
