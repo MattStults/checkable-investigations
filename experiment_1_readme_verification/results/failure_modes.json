@@ -3,10 +3,13 @@
   "erratum.n does not appear as an erratum number in the quote": 1,
   "rate": 12,
   "a wave-seat verdict  must be tier raw": 3,
-  "erratum.n does not appear as an erratum number within the ci": 2,
+  "erratum.n does not appear as an erratum number within the ci": 4,
   "engine_failure requires kind refusal|wrong_answer|unstated": 3,
   "a signed_by naming the owner or the owner's authorization mu": 5,
-  "quote": 2
+  "quote": 7,
+  "events sourced from the ledger or the git log require an ord": 118,
+  "stance not in enum": 4,
+  "event kind requires an event object": 48
  },
  "rejection_batches": {
   "erratum.n does not appear as an erratum number in the quote": [
@@ -23,7 +26,9 @@
   ],
   "erratum.n does not appear as an erratum number within the ci": [
    "batch_012_opus",
-   "batch_052_sonnet"
+   "batch_052_sonnet",
+   "batch_057_sonnet",
+   "batch_058_sonnet"
   ],
   "engine_failure requires kind refusal|wrong_answer|unstated": [
    "retry_I03_b_opus",
@@ -36,17 +41,29 @@
   ],
   "quote": [
    "batch_052_opus",
-   "batch_054_sonnet"
+   "batch_054_sonnet",
+   "batch_059_retry_sonnet",
+   "retry_small_b_sonnet",
+   "batch_079_sonnet"
+  ],
+  "events sourced from the ledger or the git log require an ord": [
+   "batch_059_sonnet"
+  ],
+  "stance not in enum": [
+   "batch_059_sonnet"
+  ],
+  "event kind requires an event object": [
+   "batch_090_sonnet"
   ]
  },
  "accepted_rejected_by_model": {
   "opus": {
-   "accepted": 9482,
+   "accepted": 13423,
    "rejected": 14
   },
   "sonnet": {
-   "accepted": 557,
-   "rejected": 14
+   "accepted": 5669,
+   "rejected": 191
   }
  },
  "interventions": [
@@ -85,6 +102,12 @@
    "title": "brief rule 23 vs amendment G-04 on signed decisions",
    "recurrence_noted": true,
    "caught_by": "the batch_036 translator (\"G-04 overrides the brief"
+  },
+  {
+   "id": "I-07",
+   "title": "commit sub-events without an ordinal",
+   "recurrence_noted": false,
+   "caught_by": "checker (122 of 205 claims in batch_059, Sonnet, rejected for a\nmissing ordinal)"
   }
  ],
  "design_changes": [
@@ -115,6 +138,14 @@
   {
    "id": "D-07",
    "title": "engine_failure kind may be unstated"
+  },
+  {
+   "id": "D-08",
+   "title": "pre-redaction spans restricted to text that differs"
+  },
+  {
+   "id": "D-09",
+   "title": "seat inputs dropped between inventory and schema; scanned absence"
   }
  ]
 }

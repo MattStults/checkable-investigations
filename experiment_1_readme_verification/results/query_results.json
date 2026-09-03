@@ -81,7 +81,7 @@
    "stated"
   ],
   "tier_ok": true,
-  "derivation": "438 matching claim(s) standing; 5 carry an anti-rule (do-not-cite) marking; 2 struck/superseded, 2 contested \u2192 contested: the record forbids citing the matched value"
+  "derivation": "441 matching claim(s) standing; 5 carry an anti-rule (do-not-cite) marking; 2 struck/superseded, 2 contested \u2192 contested: the record forbids citing the matched value"
  },
  "Q05": {
   "state": "verified",
@@ -89,9 +89,9 @@
    "L180009",
    "L180061",
    "L220128",
-   "L330201",
    "L680006",
-   "L9950086"
+   "L77520101",
+   "L77520130"
   ],
   "tiers": [
    "stated"
@@ -102,29 +102,29 @@
  "Q06": {
   "state": "contested",
   "claims": [
-   "L290116",
-   "L9930185",
-   "L9970131",
-   "L9970211"
+   "L77530307",
+   "L77540103",
+   "L77540161",
+   "L77540162"
   ],
   "tiers": [
    "stated"
   ],
   "tier_ok": false,
-  "derivation": "3 matching claim(s) standing; none at the required dimensions {'universe': {'true'}} \u2014 matched at ['stated']; 4 carry an anti-rule (do-not-cite) marking; 1 struck/superseded, 0 contested \u2192 contested: the record forbids citing the matched value; NOTE other values for the same metric/scope: [('L250078', 0.0106), ('L260173', '100%'), ('L290131', '1.000'), ('L390011', 13), ('L390012', 0)]"
+  "derivation": "4 matching claim(s) standing; none at the required dimensions {'universe': {'true'}} \u2014 matched at ['stated']; 4 carry an anti-rule (do-not-cite) marking \u2192 contested: the record forbids citing the matched value; NOTE other values for the same metric/scope: [('L250078', 0.0106), ('L260173', '100%'), ('L390011', 13), ('L390012', 0), ('L390018', -0.013721)]"
  },
  "Q07": {
   "state": "verified",
   "derivation": "4 PASS lines, exit 0",
   "claims": [],
   "command": "machine/check_model.py",
-  "wall_s": 1.7,
+  "wall_s": 1.6,
   "output": "PASS (a) SOURCE CHECK\nPASS (b) DIFFERENTIAL CHECK vs cycle.py (282 comparisons)\nPASS (c) KNOWN-ANSWER SET\nPASS (*) ACCEPTANCE TEST\n\n60 contradiction(s) reported by rules.lp (run `python3 machine/query.py contradictions`)\n"
  },
  "Q08": {
   "state": "verified",
   "claims": [
-   "L9970255"
+   "L77550031"
   ],
   "tiers": [
    "stated"
@@ -155,9 +155,9 @@
    "L250184",
    "L260003",
    "L270127",
-   "L290130",
-   "L330207",
-   "L410046"
+   "L410046",
+   "L520129",
+   "L77530263"
   ],
   "tiers": [
    "stated"
@@ -171,9 +171,9 @@
    "L180009",
    "L180061",
    "L220128",
-   "L330201",
    "L680006",
-   "L9950086"
+   "L77520101",
+   "L77520130"
   ],
   "tiers": [
    "stated"
@@ -185,19 +185,19 @@
   "state": "verified",
   "claims": [
    "L290007",
-   "L9940164"
+   "L77530269"
   ],
   "tiers": [
    "stated"
   ],
   "tier_ok": true,
-  "derivation": "2 matching claim(s) standing; NOTE other values for the same metric/scope: [('L290061', '+0.358'), ('L550016', 0.3088), ('L550018', 0.0003), ('L9930174', '+0.278'), ('L9940163', '+0.274')]"
+  "derivation": "2 matching claim(s) standing; NOTE other values for the same metric/scope: [('L290061', '+0.358'), ('L550016', 0.3088), ('L550018', 0.0003), ('L77530268', '+0.274'), ('L77540014', '+0.206')]"
  },
  "Q13": {
   "state": "verified",
   "claims": [
    "L230027",
-   "L9930174"
+   "L77540031"
   ],
   "tiers": [
    "stated"
@@ -212,11 +212,12 @@
    "L240069",
    "L250198",
    "L290008",
-   "L9930173",
-   "L9940166",
-   "L9940190"
+   "L77530271",
+   "L77540017",
+   "L77540030"
   ],
   "tiers": [
+   "panel",
    "stated"
   ],
   "tier_ok": true,
@@ -224,7 +225,7 @@
  },
  "Q15": {
   "state": "verified",
-  "derivation": "33 claim(s) record the event/text as standing",
+  "derivation": "40 claim(s) record the event/text as standing",
   "claims": [
    "L1000319",
    "L10398",
@@ -288,7 +289,7 @@
    "stated"
   ],
   "tier_ok": true,
-  "derivation": "3 matching claim(s) standing; NOTE other values for the same metric/scope: [('L1000246', 0.875), ('L240224', '38%'), ('L250025', 1.0), ('L290076', '38%'), ('L290131', '1.000')]"
+  "derivation": "3 matching claim(s) standing; NOTE other values for the same metric/scope: [('L1000246', 0.875), ('L240224', '38%'), ('L250025', 1.0), ('L770019', 0.8), ('L77540103', 0.9838)]"
  },
  "Q18": {
   "state": "verified",
@@ -300,12 +301,12 @@
    "L140057",
    "L140058",
    "L180144",
-   "L230021",
    "L230128",
    "L230139",
    "L340096",
    "L520026",
-   "L570017"
+   "L570017",
+   "L570018"
   ],
   "tiers": [
    "git",
@@ -332,7 +333,7 @@
  },
  "Q20": {
   "state": "verified",
-  "derivation": "73 claim(s) record the event/text as standing; 1 contested claim(s) also present",
+  "derivation": "72 claim(s) record the event/text as standing; 1 contested claim(s) also present",
   "claims": [
    "L1020023",
    "L1020024",
@@ -379,7 +380,7 @@
  },
  "Q22": {
   "state": "verified",
-  "derivation": "177 claim(s) record the event/text as standing",
+  "derivation": "175 claim(s) record the event/text as standing",
   "claims": [
    "L1000240",
    "L1010052",
@@ -410,13 +411,13 @@
    "L1030182",
    "L1050004",
    "L180144",
-   "L230021",
    "L230128",
    "L340096",
    "L520026",
    "L570017",
    "L570018",
-   "L570036"
+   "L570036",
+   "L570079"
   ],
   "tiers": [
    "git",
@@ -429,12 +430,12 @@
   "derivation": "pytest: 2267 passed, 4 skipped (README: 2,270 passed, 1 skipped)",
   "claims": [],
   "command": "pytest -q (semi-formal-experiment)",
-  "wall_s": 193.3,
-  "output": "2267 passed, 4 skipped, 14 warnings in 193.00s (0:03:12)"
+  "wall_s": 159.5,
+  "output": "2267 passed, 4 skipped, 14 warnings in 159.27s (0:02:39)"
  },
  "Q25": {
   "state": "verified",
-  "derivation": "204 claim(s) record the event/text as standing; 1 contested claim(s) also present",
+  "derivation": "201 claim(s) record the event/text as standing; 1 contested claim(s) also present",
   "claims": [
    "L1000111",
    "L1000231",
@@ -462,23 +463,23 @@
    "L1010221",
    "L140062",
    "L180027",
+   "L77510105",
    "L970048",
    "L980006",
    "L980026",
    "L980034",
    "L9930020",
-   "L9970037",
    "L9970078"
   ],
   "tiers": [
    "stated"
   ],
   "tier_ok": true,
-  "derivation": "9 matching claim(s) standing; 0 struck/superseded, 1 contested; NOTE other values for the same metric/scope: [('L1000194', 2), ('L1010234', 9), ('L1010240', 0.13), ('L1010244', 15), ('L10166', 2)]"
+  "derivation": "10 matching claim(s) standing; NOTE other values for the same metric/scope: [('L1000194', 2), ('L1010234', 9), ('L1010240', 0.13), ('L1010244', 15), ('L10166', 2)]"
  },
  "Q27": {
   "state": "contested",
-  "derivation": "60 matching claim(s) at the value, none over the required population (\\b100\\b|definition); populations found: [\"0/16 of the batch move's gained nodes\", '0/16 of the move', '10/10 successes', '11 clauses of 593', '15 UA TPs', '16 gained nodes of the move', '16 of the move', '183 example blocks', '39', '39/39', '5/5', '5/5 probe nodes', '589/593', '7/9', '762 node lines', 'covered nodes', 'n/a', 'strata coverage', 'unstated'] \u2014 the README binds coverage to the 100 definitions; a 1.0 whose population is a 39-node sample does not satisfy the binding",
+  "derivation": "70 matching claim(s) at the value, none over the required population (\\b100\\b|definition); populations found: [\"0/16 of the batch move's gained nodes\", '0/16 of the move', '10/10 successes', '11 clauses of 593', '15 UA TPs', '16 gained nodes of the move', '16 move-extension items', '183 example blocks', '271,474 chars', '39', '39/39', '5/5', '5/5 probe nodes', '589/593', '7/9', '762/762', 'all behaviours covered', 'components listed in the parenthesis', 'covered nodes', 'n = 30', 'n/a', 'strata coverage', 'unstated'] \u2014 the README binds coverage to the 100 definitions; a 1.0 whose population is a 39-node sample does not satisfy the binding",
   "claims": [
    "L1010204",
    "L1010205",
@@ -626,7 +627,7 @@
  },
  "Q39": {
   "state": "verified",
-  "derivation": "149 claim(s) record the event/text as standing; 1 contested claim(s) also present",
+  "derivation": "143 claim(s) record the event/text as standing; 1 contested claim(s) also present",
   "claims": [
    "L1000006",
    "L1000091",
@@ -649,15 +650,15 @@
  },
  "Q40": {
   "state": "verified",
-  "derivation": "exit 0, wall 1.6s (README says ~3 s; verified as order of magnitude only)",
+  "derivation": "exit 0, wall 1.5s (README says ~3 s; verified as order of magnitude only)",
   "claims": [],
   "command": "bash setup_env.sh --check",
-  "wall_s": 1.6,
+  "wall_s": 1.5,
   "output": "--- imports ---\n  ok      pytest       9.1.1      the test suite\n  ok      clingo       5.8.0      the solver; absent = ASP tests show as collection errors\n  ok      pydantic     2.13.4     phase_1 schema and format forcing\n--- self-tests that need no network and cost nothing ---\n  ok      phase_1/translate.py \u2014 52 passed, 0 failed\n  ok      walkthrough/link.py \u2014 21/21 self-test checks passed\n\nenvironment OK.\n\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python -m pytest -q                 # from semi-formal-experiment/, ~4 min\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python walkthrough/paper_pipeline/phase_1/translate.py --clause m0255\n                                   # DRY RUN, sends nothing\n"
  },
  "Q41": {
   "state": "verified",
-  "derivation": "17 measurement(s), max 0.600 < 0.94",
+  "derivation": "18 measurement(s), max 0.600 < 0.94",
   "claims": [
    "L1010013",
    "L1010126",
@@ -669,8 +670,8 @@
    "L10436",
    "L10439",
    "L10440",
-   "L77700053",
-   "L77700058"
+   "L77530012",
+   "L77700053"
   ]
  },
  "Q42": {
@@ -686,19 +687,20 @@
   "derivation": "sequence exit 0; first failing output: ALL-OK",
   "claims": [],
   "command": "Start-here steps 0-5 in order",
-  "wall_s": 21.8,
+  "wall_s": 19.6,
   "output": "--- imports ---\n  ok      pytest       9.1.1      the test suite\n  ok      clingo       5.8.0      the solver; absent = ASP tests show as collection errors\n  ok      pydantic     2.13.4     phase_1 schema and format forcing\n--- self-tests that need no network and cost nothing ---\n  ok      phase_1/translate.py \u2014 52 passed, 0 failed\n  ok      walkthrough/link.py \u2014 21/21 self-test checks passed\n\nenvironment OK.\n\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python -m pytest -q                 # from semi-formal-experiment/, ~4 min\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python walkthrough/paper_pipeline/phase_1/translate.py --clause m0255\n                                   # DRY RUN, sends nothing\nALL-OK\n"
  },
  "Q44": {
   "state": "verified",
   "claims": [
-   "L330202"
+   "L77520148",
+   "L77550184"
   ],
   "tiers": [
    "stated"
   ],
   "tier_ok": true,
-  "derivation": "1 matching claim(s) standing; NOTE other values for the same metric/scope: [('L200104', 15), ('L260060', '+0.226'), ('L270145', '+0.0132'), ('L290028', '+0.0217'), ('L330201', 773)]"
+  "derivation": "2 matching claim(s) standing; NOTE other values for the same metric/scope: [('L200104', 15), ('L260060', '+0.226'), ('L270145', '+0.0132'), ('L290028', '+0.0217'), ('L520030', 0.29)]"
  },
  "Q45": {
   "state": "verified",
@@ -725,7 +727,7 @@
  },
  "Q47": {
   "state": "verified",
-  "derivation": "112 claim(s) record the event/text as standing; 1 contested claim(s) also present",
+  "derivation": "116 claim(s) record the event/text as standing; 1 contested claim(s) also present",
   "claims": [
    "L1020039",
    "L1020054",
@@ -773,7 +775,7 @@
  },
  "H01": {
   "state": "contradicted",
-  "derivation": "34 close(s) with a prior/linked review, 6 without: [('L230087', 'unstated', []), ('L230093', 'unstated', []), ('L230099', 'unstated', []), ('L360057', 'unstated', []), ('L440091', 'unstated', []), ('L500030', 'unstated', [])]",
+  "derivation": "30 close(s) with a prior/linked review, 6 without: [('L230087', 'unstated', []), ('L230093', 'unstated', []), ('L230099', 'unstated', []), ('L360057', 'unstated', []), ('L440091', 'unstated', []), ('L500030', 'unstated', [])]",
   "claims": [
    "L1000113",
    "L1000243",
@@ -799,6 +801,9 @@
    "L500030",
    "L520086",
    "L530033",
+   "L77510002",
+   "L77510112",
+   "L77510187",
    "L820098",
    "L830006",
    "L830075",
@@ -807,19 +812,12 @@
    "L870021",
    "L930008",
    "L950020",
-   "L980048",
-   "L9950002",
-   "L9950178",
-   "L9950197",
-   "L9960040",
-   "L9980086",
-   "L9980095",
-   "L9980097"
+   "L980048"
   ]
  },
  "H02": {
   "state": "contested",
-  "derivation": "276 measurements, 51 with no prediction_freeze earlier or linked: ['L1000055', 'L1000058', 'L1000100', 'L1030230', 'L1050118', 'L1070025', 'L120086', 'L130181']",
+  "derivation": "288 measurements, 64 with no prediction_freeze earlier or linked: ['L1000055', 'L1000058', 'L1000100', 'L1030230', 'L1050118', 'L1070025', 'L120086', 'L130181']",
   "claims": [
    "L1000055",
    "L1000058",
@@ -857,7 +855,7 @@
  },
  "H04": {
   "state": "verified",
-  "derivation": "107 seat dispatches; 73 record inputs; none names panel labels, the design document, or prior verdicts as received (mentions inside negations, or in a list the quote marks as forbidden/denied, counted as exclusions)",
+  "derivation": "112 seat dispatches; 77 record inputs; none names panel labels, the design document, or prior verdicts as received (mentions inside negations, or in a list the quote marks as forbidden/denied, counted as exclusions)",
   "claims": [
    "L1000050",
    "L1030197",
@@ -895,7 +893,7 @@
  },
  "H06": {
   "state": "contested",
-  "derivation": "6 withdrawals with a linked review finding in the set, 19 without: ['L1000016', 'L100027', 'L1000304', 'L1030001', 'L1030151', 'L1030245']",
+  "derivation": "6 withdrawals with a linked review finding in the set, 18 without: ['L1000016', 'L100027', 'L1000304', 'L1030001', 'L1030151', 'L1030245']",
   "claims": [
    "L1000016",
    "L100027",
@@ -914,14 +912,14 @@
    "L170189",
    "L180072",
    "L180092",
+   "L77510261",
    "L77700008",
-   "L77700119",
-   "L77700136"
+   "L77700119"
   ]
  },
  "H07": {
   "state": "verified",
-  "derivation": "17 untuned-behaviour measurements, max 0.600; at/above 0.94: []",
+  "derivation": "18 untuned-behaviour measurements, max 0.600; at/above 0.94: []",
   "claims": [
    "L1010013",
    "L1010126",
@@ -933,6 +931,7 @@
    "L10436",
    "L10439",
    "L10440",
+   "L77530012",
    "L77700053",
    "L77700058",
    "L77700060",
@@ -944,20 +943,19 @@
  },
  "H08": {
   "state": "contradicted",
-  "derivation": "kinds: {'unstated': ['L1000014', 'L230136', 'L230173', 'L290077', 'L290085', 'L330058', 'L77700006', 'L77700013', 'L77700015', 'L77700229', 'L9920080', 'L9940048'], 'refusal': ['L1000093', 'L1070139', 'L290098', 'L460022', 'L500004', 'L570081', 'L570090', 'L580208', 'L710023', 'L77600008', 'L77600038', 'L77900014'], 'wrong_answer': ['L290067', 'L330049', 'L520061', 'L570028', 'L570072', 'L9930147', 'L9930149', 'L9930164']}",
+  "derivation": "kinds: {'unstated': ['L1000014', 'L230136', 'L230173', 'L290085', 'L77510223', 'L77540226', 'L77700006', 'L77700013', 'L77700015', 'L77700229', 'L9920080'], 'refusal': ['L1000093', 'L1070139', 'L290098', 'L460022', 'L500004', 'L570081', 'L570090', 'L580208', 'L710023', 'L77600008', 'L77600038', 'L77900014'], 'wrong_answer': ['L520061', 'L570028', 'L570072', 'L77530294']}",
   "claims": [
    "L1000014",
    "L230136",
    "L230173",
-   "L290077",
    "L290085",
-   "L330058",
+   "L77510223",
+   "L77540226",
    "L77700006",
    "L77700013",
    "L77700015",
    "L77700229",
    "L9920080",
-   "L9940048",
    "L1000093",
    "L1070139",
    "L290098",
@@ -970,14 +968,10 @@
    "L77600008",
    "L77600038",
    "L77900014",
-   "L290067",
-   "L330049",
    "L520061",
    "L570028",
    "L570072",
-   "L9930147",
-   "L9930149",
-   "L9930164"
+   "L77530294"
   ]
  },
  "H09": {
@@ -1005,16 +999,16 @@
   "state": "verified",
   "derivation": "hit claims: 7 (query-output spans were not in the named sources)",
   "claims": [
-   "L290079",
    "L550149",
    "L580174",
-   "L900113",
-   "L900114"
+   "L77540145",
+   "L77540229",
+   "L900113"
   ]
  },
  "H13": {
   "state": "verified",
-  "derivation": "cove events 27; claims mentioning decisive findings 22",
+  "derivation": "cove events 30; claims mentioning decisive findings 23",
   "claims": [
    "L1010053",
    "L1020017",

@@ -4,7 +4,7 @@
   "derivation": "4 PASS lines, exit 0",
   "claims": [],
   "command": "machine/check_model.py",
-  "wall_s": 1.7,
+  "wall_s": 1.6,
   "output": "PASS (a) SOURCE CHECK\nPASS (b) DIFFERENTIAL CHECK vs cycle.py (282 comparisons)\nPASS (c) KNOWN-ANSWER SET\nPASS (*) ACCEPTANCE TEST\n\n60 contradiction(s) reported by rules.lp (run `python3 machine/query.py contradictions`)\n"
  },
  "Q37": {
@@ -41,10 +41,10 @@
  },
  "Q40": {
   "state": "verified",
-  "derivation": "exit 0, wall 1.6s (README says ~3 s; verified as order of magnitude only)",
+  "derivation": "exit 0, wall 1.5s (README says ~3 s; verified as order of magnitude only)",
   "claims": [],
   "command": "bash setup_env.sh --check",
-  "wall_s": 1.6,
+  "wall_s": 1.5,
   "output": "--- imports ---\n  ok      pytest       9.1.1      the test suite\n  ok      clingo       5.8.0      the solver; absent = ASP tests show as collection errors\n  ok      pydantic     2.13.4     phase_1 schema and format forcing\n--- self-tests that need no network and cost nothing ---\n  ok      phase_1/translate.py \u2014 52 passed, 0 failed\n  ok      walkthrough/link.py \u2014 21/21 self-test checks passed\n\nenvironment OK.\n\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python -m pytest -q                 # from semi-formal-experiment/, ~4 min\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python walkthrough/paper_pipeline/phase_1/translate.py --clause m0255\n                                   # DRY RUN, sends nothing\n"
  },
  "Q43": {
@@ -52,7 +52,7 @@
   "derivation": "sequence exit 0; first failing output: ALL-OK",
   "claims": [],
   "command": "Start-here steps 0-5 in order",
-  "wall_s": 21.8,
+  "wall_s": 19.6,
   "output": "--- imports ---\n  ok      pytest       9.1.1      the test suite\n  ok      clingo       5.8.0      the solver; absent = ASP tests show as collection errors\n  ok      pydantic     2.13.4     phase_1 schema and format forcing\n--- self-tests that need no network and cost nothing ---\n  ok      phase_1/translate.py \u2014 52 passed, 0 failed\n  ok      walkthrough/link.py \u2014 21/21 self-test checks passed\n\nenvironment OK.\n\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python -m pytest -q                 # from semi-formal-experiment/, ~4 min\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python walkthrough/paper_pipeline/phase_1/translate.py --clause m0255\n                                   # DRY RUN, sends nothing\nALL-OK\n"
  },
  "Q06_live": {
@@ -60,7 +60,7 @@
   "derivation": "measure_join prints 849/863 = 98.4% (published universe; MODULE_MAP \u00a71 forbids quoting)",
   "claims": [],
   "command": "measure_join.py",
-  "wall_s": 7.2,
+  "wall_s": 6.6,
   "output": "           313     313  100.0%\n  harm-avoidance-to-third-parties        326     333   97.9%\n  avoiding-over-and-under-caution        151     153   98.7%\n\nunmatched (14):\n  [helpfulness s=6] 'The assistant may sometimes encounter instructions that are ambiguous, inconsistent, or difficult to'\n  [helpfulness s=4] 'While the assistant should display big-picture thinking on how to help the user accomplish their lon'\n  [helpfulness s=3] 'Inapplicable instructions should typically be ignored. The only other reason an instruction should b'\n  [helpfulness s=2] 'If the assistant lacks sufficient confidence in its response, it should use a tool to gather more in'\n  [helpfulness s=1] 'As mentioned in #letter_and_spirit, users or developers may sometimes include untrusted text content'\n  [harm-avoidance-to-third-parties s=6] 'The assistant must not generate *restricted content* (such as information hazards and sensitive pers'\n  [harm-avoidance-to-third-parties s=4] 'If the assistant lacks sufficient confidence in its response, it should use a tool to gather more in'\n  [harm-avoidance-to-third-parties s=4] '#prohibited_content: only applies to sexual content involving minors, and transformations of user-pr'\n  [harm-avoidance-to-third-parties s=4] 'As mentioned in #letter_and_spirit, users or developers may sometimes include untrusted text content'\n  [harm-avoidance-to-third-parties s=3] 'While the assistant should display big-picture thinking on how to help the user accomplish their lon'\n"
  },
  "Q24": {
@@ -68,8 +68,8 @@
   "derivation": "pytest: 2267 passed, 4 skipped (README: 2,270 passed, 1 skipped)",
   "claims": [],
   "command": "pytest -q (semi-formal-experiment)",
-  "wall_s": 193.3,
-  "output": "2267 passed, 4 skipped, 14 warnings in 193.00s (0:03:12)"
+  "wall_s": 159.5,
+  "output": "2267 passed, 4 skipped, 14 warnings in 159.27s (0:02:39)"
  },
  "Q30": {
   "state": "verified",

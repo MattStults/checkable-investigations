@@ -1,0 +1,862 @@
+{
+ "groups": {
+  "Q": {
+   "n": 50,
+   "agree": 42,
+   "ledger": {
+    "verified": 38,
+    "contradicted": 5,
+    "contested": 7
+   },
+   "baseline": {
+    "verified": 38,
+    "contradicted": 9,
+    "contested": 2,
+    "unverifiable": 1
+   }
+  },
+  "H": {
+   "n": 15,
+   "agree": 11,
+   "ledger": {
+    "contradicted": 3,
+    "contested": 2,
+    "verified": 10
+   },
+   "baseline": {
+    "contradicted": 2,
+    "verified": 11,
+    "unverifiable": 2
+   }
+  },
+  "V": {
+   "n": 12,
+   "agree": 6,
+   "ledger": {
+    "contested": 6,
+    "contradicted": 2,
+    "dangling": 1,
+    "verified": 3
+   },
+   "baseline": {
+    "contested": 4,
+    "unverifiable": 2,
+    "verified": 5,
+    "contradicted": 1
+   }
+  }
+ },
+ "agreement_total": "59/77",
+ "disagreements": [
+  {
+   "id": "Q04",
+   "ledger": "contested",
+   "baseline": "contradicted",
+   "agree": false,
+   "ledger_derivation": "441 matching claim(s) standing; 5 carry an anti-rule (do-not-cite) marking; 2 struck/superseded, 2 contested \u2192 contested: the record forbids citing the matched value",
+   "baseline_reason": "The README says the registered match-or-defensible pass never ran. The record holds exactly one such registration (ROUND4_PREREG.md pre-signature amendment 1) and **it ran to completion on all three dev behaviours**, citing the registration by amendment id and scoring against the registered bands (`\"headline_verdict\": \"prec IN BAND; decl above\"`). Claimed `run_exists: false`; record: run exists, h",
+   "direction": "baseline stricter"
+  },
+  {
+   "id": "Q10",
+   "ledger": "contested",
+   "baseline": "verified",
+   "agree": false,
+   "ledger_derivation": "16 matching claim(s) standing; 1 carry an anti-rule (do-not-cite) marking \u2192 contested: the record forbids citing the matched value; NOTE other values for the same metric/scope: [('L1020055', 0.2367), ('L1070050', 2), ('L1070084', 1309), ('L1070085', 1145), ('L1070086', 741)]",
+   "baseline_reason": "589 is the **TRUE** (reconstructed) Model Spec universe \u2014 every passage the judges graded. Universe recorded as required. The *published* file holds only 377/333/153 of those 589 per behaviour (863 rows total), so 589 cannot be read off `data/behaviours.json`; it is the reconstruction the benchmark computes and prints, and the README names it correctly.",
+   "direction": "ledger stricter"
+  },
+  {
+   "id": "Q24",
+   "ledger": "contradicted",
+   "baseline": "verified",
+   "agree": false,
+   "ledger_derivation": "pytest: 2267 passed, 4 skipped (README: 2,270 passed, 1 skipped)",
+   "baseline_reason": "Exact match to \"2,270 passed, 1 skipped\", inside the stated 4-10 min window (4 m 56 s). Denominator 2271 collected. Corroborated at the record's own snapshot by commit `6d01415b`'s message (\"semi-formal-experiment 2,270 passed / 1 skipped\"). The live run supersedes the stated 2026-08-30 date and agrees with it.",
+   "direction": "ledger stricter"
+  },
+  {
+   "id": "Q28",
+   "ledger": "contested",
+   "baseline": "contradicted",
+   "agree": false,
+   "ledger_derivation": "20 separability measurements in the ledger, 5 mention a null; 'every test failed against a null' requires each measurement to carry a null outcome \u2014 the ledger holds measurements without one: [('L10036', 12.0, 'how-to-approach-tradeoffs enga', 'current'), ('L1010202', 0.2, 'OPERATIVE_TARGET FP-side separ', 'current'), ('L1010203', 0.3, 'OPERATIVE_TARGET FP-side thres', 'current'), ('L1010267', 0.9",
+   "baseline_reason": "The README says the ontology \"failed **every** separability test once a matched random-partition null was run against it.\" The record documents exactly **one** separability test ever run against a matched-granularity random-partition null \u2014 the 0041 integration census, covering leaf and mid levels \u2014 and it failed. At least two other separability measurements (0038's 94/100 over definitions; 0039's",
+   "direction": "baseline stricter"
+  },
+  {
+   "id": "Q29",
+   "ledger": "contested",
+   "baseline": "contradicted",
+   "agree": false,
+   "ledger_derivation": "85 withdrawal events in ledger (README says three headline); headline qualifier needs the starred-block/README linkage at adjudication",
+   "baseline_reason": "Under the claim's own definition (headline iff the withdrawn claim appeared in a handoff starred block or the README), **two** withdrawals qualify: the separability census (`bf0d4978`, whose message records \"HANDOFF headline downgraded\") and L1/L2 (`365d68b3`, which edits the starred block). The third README item \u2014 the query-class saturation claim (`1143a921`) \u2014 was never in a starred block or the",
+   "direction": "baseline stricter"
+  },
+  {
+   "id": "Q40",
+   "ledger": "verified",
+   "baseline": "unverifiable",
+   "agree": false,
+   "ledger_derivation": "exit 0, wall 1.5s (README says ~3 s; verified as order of magnitude only)",
+   "baseline_reason": "The claim is \"verifies, ~3 s\" \u2014 a wall-clock figure for a *verifying* run. No verifying run is reachable at this pin (see Q43): the check exits 1 in both the as-written and the reconstructed environment, so what I timed is a failure path that short-circuits at a different point than the claimed success path. Reported anyway: the reconstructed run is 1.9\u20133.5 s (median ~2.2 s), consistent with \"~3 s",
+   "direction": "baseline could not decide"
+  },
+  {
+   "id": "Q43",
+   "ledger": "verified",
+   "baseline": "contradicted",
+   "agree": false,
+   "ledger_derivation": "sequence exit 0; first failing output: ALL-OK",
+   "baseline_reason": "Claimed: all commands run as written and exit 0. Record: **step 0 exits 1** \u2014 and not because of the machine's broken venv, since I reproduced it with pytest/clingo/pydantic all importing cleanly; two committed self-tests genuinely fail at this pin. Steps 1\u20135 (7 command lines: `cite.py outline`, `cite.py resolve`, `graph_check.py`, `measure_join.py`, `benchmark.py --tool`, `query.py seats`, plus t",
+   "direction": "baseline stricter"
+  },
+  {
+   "id": "Q48",
+   "ledger": "contested",
+   "baseline": "contradicted",
+   "agree": false,
+   "ledger_derivation": "star-marked heading lines: HANDOFF_CURRENT [1]; HANDOFF [3, 99, 131, 955, 1142] \u2014 'the top starred block' is unique in arc 2 but arc 1 has 5 star-marked heading blocks; 'self-marked' below is not mechanically decidable",
+   "baseline_reason": "First value verifies: both handoffs have a star-marked top block. Second value does **not**. (a) Arc-1's HANDOFF.md has **four** star-marked blocks stacked at the top (\u2b50\u2b50\u2b50\u2b50 at :3, a nested \u2b50\u2b50\u2b50\u2b50\u2b50 blockquote inside it, \u2b50\u2b50\u2b50 at :99, \u2b50\u2b50 at :131), so \"the top starred block\" does not pick out a unique region and a reader following the README has no way to know where to stop. (b) Several sections below ca",
+   "direction": "baseline stricter"
+  },
+  {
+   "id": "H02",
+   "ledger": "contested",
+   "baseline": "verified",
+   "agree": false,
+   "ledger_derivation": "288 measurements, 64 with no prediction_freeze earlier or linked: ['L1000055', 'L1000058', 'L1000100', 'L1030230', 'L1050118', 'L1070025', 'L120086', 'L130181']",
+   "baseline_reason": "Within the rule's stated scope (cycles and iterations that record a measurement) every measurement is preceded by a frozen, sha-pinned prediction: six arc-1 cycles each carry `frozen_prediction_sha`; arc-2 iterations 1\u20133 each register a V5 prediction before rulings; round 4 registers per-behaviour predictions with a seed and an exclusion-list sha in `ROUND4_FREEZE_DERIVATION.json`; block 2 freezes",
+   "direction": "ledger stricter"
+  },
+  {
+   "id": "H06",
+   "ledger": "contested",
+   "baseline": "verified",
+   "agree": false,
+   "ledger_derivation": "6 withdrawals with a linked review finding in the set, 18 without: ['L1000016', 'L100027', 'L1000304', 'L1030001', 'L1030151', 'L1030245']",
+   "baseline_reason": "Arc-2 has exactly two withdrawal events, and both are preceded (same entry, review first, disposition second) by a clean-context adversarial review whose finding is in the admissible set \u2014 UNSUPPORTED/null-dominated for the census, DOES-NOT-LICENSE for L1/L2 \u2014 with the withdrawal linked to the review by named disposition document and commit. The third item the README lists (query-class, `1143a921`",
+   "direction": "ledger stricter"
+  },
+  {
+   "id": "H08",
+   "ledger": "contradicted",
+   "baseline": "unverifiable",
+   "agree": false,
+   "ledger_derivation": "kinds: {'unstated': ['L1000014', 'L230136', 'L230173', 'L290085', 'L77510223', 'L77540226', 'L77700006', 'L77700013', 'L77700015', 'L77700229', 'L9920080'], 'refusal': ['L1000093', 'L1070139', 'L290098', 'L460022', 'L500004', 'L570081', 'L570090', 'L580208', 'L710023', 'L77600008', 'L77600038', 'L77900014'], 'wrong_answer': ['L520061', 'L570028', 'L570072', 'L77530294']}",
+   "baseline_reason": "The record holds **no enumeration of symbolic-engine failures**, so the universal has no domain to quantify over and no artifact decides it. The nearest candidate, `semi-formal-experiment/S3B_FINDING_RECLASSIFICATION.md`, buckets *adversarial-review findings* (INEXPR / EXPR-UNVER / PROCESS / DOC), not engine outputs. Pulling the other way, `semi-formal-experiment/adversarial_review_1.md` finding 1",
+   "direction": "baseline could not decide"
+  },
+  {
+   "id": "H14",
+   "ledger": "verified",
+   "baseline": "unverifiable",
+   "agree": false,
+   "ledger_derivation": "11 entries headed ITERATION n, STEP k; step-artifact domain not translated (runbook step artifacts are not a named source)",
+   "baseline_reason": "Step-headed entries exist for iterations 1\u20133 and each names its steps and cites artifacts by filename, so the hypothesis is well supported in the direction sampled. But the quantifier runs the other way \u2014 over every step the runbook says emits a committed artifact \u2014 and the runbook at the pin was itself rewritten *from* the very ledger entries it would be used to audit. The step\u2192artifact\u2192entry map",
+   "direction": "baseline could not decide"
+  },
+  {
+   "id": "V02",
+   "ledger": "contradicted",
+   "baseline": "unverifiable",
+   "agree": false,
+   "ledger_derivation": "providers ['H08'] \u2192 ['contradicted']",
+   "baseline_reason": "Need 2 (\"an enumeration of engine failures exists in the record\") has no provider, which the claim itself anticipated as the vacuity condition; need 1 (classification of every engine failure) is therefore unreachable. **Dangling need:** the enumeration of engine failures. The one candidate wrong-answer instance the record does hold points the opposite way from the verdict.",
+   "direction": "baseline could not decide"
+  },
+  {
+   "id": "V03",
+   "ledger": "dangling",
+   "baseline": "unverifiable",
+   "agree": false,
+   "ledger_derivation": "providers [] \u2192 []",
+   "baseline_reason": "The record holds post-segmentation *inventories* for both specs with kind distributions, but I could locate no artifact pairing (i) a named segmentation-failure event, (ii) a repair event linked to it, and (iii) a post-repair measurement of segmentation quality. **Dangling needs: all three.** The summaries state what the segmentation produced, not that it failed, was repaired, and then measured be",
+   "direction": "neither decided"
+  },
+  {
+   "id": "V06",
+   "ledger": "contradicted",
+   "baseline": "contested",
+   "agree": false,
+   "ledger_derivation": "providers ['H01', 'H02', 'H03', 'H04'] \u2192 ['contradicted', 'contested', 'verified', 'verified']",
+   "baseline_reason": "Three of the four named discipline elements instantiate in both arcs. The fourth \u2014 adversarial review before *every* close \u2014 instantiates in arc 1 (6/6 cycles) but not at arc-2's three iteration closes, so the element that most needs the word \"transferred\" is the one that did not transfer intact. Additionally the append-only ledger with numbered errata is an arc-2 construct with no arc-1 counterpa",
+   "direction": "ledger stricter"
+  },
+  {
+   "id": "V07",
+   "ledger": "contested",
+   "baseline": "contradicted",
+   "agree": false,
+   "ledger_derivation": "providers ['Q29', 'Q18', 'Q21', 'Q23', 'H06'] \u2192 ['contested', 'verified', 'verified', 'verified', 'contested']",
+   "baseline_reason": "The need is three DISTINCT headline withdrawal events, each linked to a review. Two exist and are exemplary. The third is a bounding erratum against a claim that was never published as a headline and was not preceded by an adversarial review \u2014 it was the project owner's suspicion upheld by the driver's own inspection. Claimed 3; record supports 2.",
+   "direction": "baseline stricter"
+  },
+  {
+   "id": "V08",
+   "ledger": "contested",
+   "baseline": "verified",
+   "agree": false,
+   "ledger_derivation": "providers ['H06'] \u2192 ['contested']",
+   "baseline_reason": "Both actual withdrawals are linked, in the same commit, to a preceding named review document with a recorded verdict. The linkage is tight: review file, disposition file, ledger entry, and commit message all name each other. (This verdict is about the two withdrawals, not the count \u2014 the count is V07.)",
+   "direction": "ledger stricter"
+  },
+  {
+   "id": "V11",
+   "ledger": "contested",
+   "baseline": "verified",
+   "agree": false,
+   "ledger_derivation": "providers ['H06', 'Q18', 'Q21'] \u2192 ['contested', 'verified', 'verified']",
+   "baseline_reason": "Each demonstration attempted is linked to a failing review or a failing measurement: the integration census (review, NOT ESTABLISHED \u00d72), L1/L2 (review, DOES-NOT-LICENSE), the arc-1 relevance benchmark (the committed scorer's own verdict column reads \"below bar\" for all three behaviours on the true universe and \"BELOW FLOOR\"/\"UNUSABLE FOR HEADLINE\" on the published one), and the round-4 certificat",
+   "direction": "ledger stricter"
+  }
+ ],
+ "machine_checkable": {
+  "ledger": {
+   "claims": null,
+   "checker_pass": null,
+   "note": "every ledger claim carries a verbatim quote, source lines and typed fields; all re-verified by check.py"
+  },
+  "baseline": {
+   "baseline_citations": 109,
+   "verbatim": 83,
+   "note": "baseline quotes re-verified as verbatim substrings of the cited file at the pin by check.py --citations"
+  }
+ },
+ "rows": [
+  {
+   "id": "Q01",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "6 matching claim(s) standing; none at the required dimensions {'tier': {'adjudicated', 'panel'}} \u2014 matched at ['stated']",
+   "baseline_reason": "0.941\u20130.960 over the three dev behaviours is exactly the README's 0.94\u20130.96, at the claimed metric and tier (match-or-adjudicated-defensible, in-sample, all-truth). **Supersession, reported as required:** the round-4 certification cells for the same three behaviours are far lower on both columns \u2014 `ROUND4_DEV_TABLE.json` gives raw engaged precision 0.625 / 0.8235 / 0.675 and *headline* (match-or-a"
+  },
+  {
+   "id": "Q02",
+   "ledger": "contradicted",
+   "baseline": "contradicted",
+   "agree": true,
+   "ledger_derivation": "agreement values in ledger [('L160061', 0.85), ('L540050', 2.0), ('L560027', 0.39), ('L560028', 0.41), ('L560029', 0.5), ('L560037', 0.556)]; within \u00b10.05 of the README band (0.94, 0.96): []",
+   "baseline_reason": "The README says 0.94\u20130.96 is \"comparable to the panel's own internal agreement.\" The record's only admissible panel-agreement statistic is arc-1's inter-judge Jaccard of **0.16\u20130.62** \u2014 not comparable. The one figure that could read as a panel baseline (71%) is explicitly **struck** as sourceless (also `HANDOFF_CURRENT.md`:210: \"currently has NO source artifact; it must be sourced or struck before"
+  },
+  {
+   "id": "Q03",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "58 matching claim(s) standing; 1 struck/superseded, 0 contested",
+   "baseline_reason": "All three tuned behaviours have completed raw-match certification cells. **Per-behaviour raw outcome (record-supplied, README-silent):** helpfulness `\"raw_verdict\": \"F1 (prec below floor); decl above band\"` (0.625 vs band 0.71-0.87 \u2014 falsifier FIRED); harm-avoidance `\"prec IN BAND (closed population n=17)\"` (0.8235, band 0.81-0.97); avoiding-over-and-under-caution `\"F1 by ONE node (27/40 vs floor "
+  },
+  {
+   "id": "Q04",
+   "ledger": "contested",
+   "baseline": "contradicted",
+   "agree": false,
+   "ledger_derivation": "441 matching claim(s) standing; 5 carry an anti-rule (do-not-cite) marking; 2 struck/superseded, 2 contested \u2192 contested: the record forbids citing the matched value",
+   "baseline_reason": "The README says the registered match-or-defensible pass never ran. The record holds exactly one such registration (ROUND4_PREREG.md pre-signature amendment 1) and **it ran to completion on all three dev behaviours**, citing the registration by amendment id and scoring against the registered bands (`\"headline_verdict\": \"prec IN BAND; decl above\"`). Claimed `run_exists: false`; record: run exists, h",
+   "direction": "baseline stricter"
+  },
+  {
+   "id": "Q05",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "6 matching claim(s) standing; NOTE other values for the same metric/scope: [('L1010069', 24), ('L1010071', 14), ('L1010163', 38), ('L1010172', 160), ('L160026', 120)]",
+   "baseline_reason": "Both the committed checker and a direct read of the JSON give exactly 773 nodes in the graph_v2 production root graph at the pin."
+  },
+  {
+   "id": "Q06",
+   "ledger": "contested",
+   "baseline": "contested",
+   "agree": true,
+   "ledger_derivation": "4 matching claim(s) standing; none at the required dimensions {'universe': {'true'}} \u2014 matched at ['stated']; 4 carry an anti-rule (do-not-cite) marking \u2192 contested: the record forbids citing the matched value; NOTE other values for the same metric/scope: [('L250078', 0.0106), ('L260173', '100%'), ('L390011', 13), ('L390012', 0), ('L390018', -0.013721)]",
+   "baseline_reason": "The join rate reproduces exactly (849/863 = 98.4%) and 14 unmatched passages print with behaviour, score and a text prefix (identified by opening text, not by clause/node id \u2014 \"printed by name\" is loose). But **the record marks this exact figure do-not-cite**: it is the *published* universe (863 rows, score-0 passages already deleted), while the README's own arc-1 headline three paragraphs later r"
+  },
+  {
+   "id": "Q07",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "4 PASS lines, exit 0",
+   "baseline_reason": "Four checks, all four PASS, exit 0. (It also prints \"60 contradiction(s) reported by rules.lp\" \u2014 an output of the model, not a check failure.)"
+  },
+  {
+   "id": "Q08",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "1 matching claim(s) standing",
+   "baseline_reason": "The inventory the summary names as the pilot's (`constitution_clauses.json`) holds exactly 616 clauses; `MODULE_MAP.md`:227 corroborates (\"616 clauses, same schema, loads today\"). No later inventory in the repo differs."
+  },
+  {
+   "id": "Q09",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "1 matching claim(s) standing; NOTE other values for the same metric/scope: [('L1030259', 20), ('L720082', 0.8), ('L77700233', 20)]",
+   "baseline_reason": "The arc-1 ASP fragment (\"Prototype: solver-based conflict enumeration over the 'faithfulness to the user' fragment of Claude's Constitution\") declares 16 `active(NormID, \u2026)` rules: h1/h2/h4/h5/h7, g1_immediate/g1_reliance/g3/g5/g6, p1/p1b/p2/p3/p4/p4b. The record's own correction of an earlier \"15-rule\" claim to 16 is the supersession requested, and the README carries the corrected count."
+  },
+  {
+   "id": "Q10",
+   "ledger": "contested",
+   "baseline": "verified",
+   "agree": false,
+   "ledger_derivation": "16 matching claim(s) standing; 1 carry an anti-rule (do-not-cite) marking \u2192 contested: the record forbids citing the matched value; NOTE other values for the same metric/scope: [('L1020055', 0.2367), ('L1070050', 2), ('L1070084', 1309), ('L1070085', 1145), ('L1070086', 741)]",
+   "baseline_reason": "589 is the **TRUE** (reconstructed) Model Spec universe \u2014 every passage the judges graded. Universe recorded as required. The *published* file holds only 377/333/153 of those 589 per behaviour (863 rows total), so 589 cannot be read off `data/behaviours.json`; it is the reconstruction the benchmark computes and prints, and the README names it correctly.",
+   "direction": "ledger stricter"
+  },
+  {
+   "id": "Q11",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "6 matching claim(s) standing; NOTE other values for the same metric/scope: [('L1010069', 24), ('L1010071', 14), ('L1010163', 38), ('L1010172', 160), ('L160026', 120)]",
+   "baseline_reason": "Identical metric, snapshot, and scope to Q05; the README's two uses of 773 are consistent with each other and with the artifact."
+  },
+  {
+   "id": "Q12",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "2 matching claim(s) standing; NOTE other values for the same metric/scope: [('L290061', '+0.358'), ('L550016', 0.3088), ('L550018', 0.0003), ('L77530268', '+0.274'), ('L77540014', '+0.206')]",
+   "baseline_reason": "+0.320 on the TRUE 589-passage universe, in-sample (threshold fitted on these same three behaviours) \u2014 matching \"+0.32 in-sample\" at the universe the README's own sentence names. Universe recorded: **true**. Adversarial note: the artifact labels this figure \"a CEILING, not a result\", which the README does not carry over; the published-universe counterpart is +0.274."
+  },
+  {
+   "id": "Q13",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "2 matching claim(s) standing; NOTE other values for the same metric/scope: [('L270002', '+0.20'), ('L270034', '+0.016'), ('L270036', '0.023'), ('L270044', '+0.009'), ('L270082', '+0.277')]",
+   "baseline_reason": "+0.278 is the tool's mean MCC on the TRUE universe at the label-free (Otsu-derived) operating point; per behaviour +0.201 / +0.350 / +0.283. Universe: **true**; threshold rule: **label_free**. Published-universe counterpart +0.219."
+  },
+  {
+   "id": "Q14",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "7 matching claim(s) standing; NOTE other values for the same metric/scope: [('L230027', '+0.278'), ('L230028', '+0.316'), ('L240068', '+0.309'), ('L250040', 0.659), ('L250041', 0.648)]",
+   "baseline_reason": "Denominator recovered: three behaviours \u00d7 three leave-one-out judge positions = 9 cells; rosters fable/kimi/sol (helpfulness), kimi/opus/sol (harm), fable/kimi-k2/sol (caution). Universe: **true** (published counterpart +0.394)."
+  },
+  {
+   "id": "Q15",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "40 claim(s) record the event/text as standing",
+   "baseline_reason": "Nine rows, one per behaviour\u00d7judge, each holding the tool to the judge's own false-positive rate; the winner column reads **judge** in all nine. Universe: **true**. This is the one table in the report not selected on these behaviours."
+  },
+  {
+   "id": "Q16",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "every series value present: {0.4: ['L1000064', 'L1000124', 'L1000219'], 0.7: ['L1000250', 'L100087', 'L10213'], 0.55: ['L100024', 'L1000252', 'L100088'], 0.85: ['L1000291', 'L100030', 'L100089']}",
+   "baseline_reason": "Behaviour = **how-to-approach-tradeoffs** (entry 0001). Per-element tiers, as the dimension demands: attempt-1 = 0.40 frozen transfer, single-wave truth; attempt-2 = 0.70 **panel-tier** (raw 0.75); attempt-3 = 0.55 **panel-tier** (raw 0.40); attempt-4 = 0.85 at the **certified-Opus venue**, adjusted to 0.895 after the dispute-class quarantine. Denominators: attempts 1\u20133 are n=40 draws with n=20 en"
+  },
+  {
+   "id": "Q17",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "3 matching claim(s) standing; NOTE other values for the same metric/scope: [('L1000246', 0.875), ('L240224', '38%'), ('L250025', 1.0), ('L770019', 0.8), ('L77540103', 0.9838)]",
+   "baseline_reason": "23/40 = 0.575, panel tier, same behaviour as Q16. Snapshot = **pooled** over both frozen draws (attempts 2 and 3), which the README's flat \"23 of 40 declined passages\" does not disclose. The record's unit is **nodes**; the README says \"passages\" \u2014 a glossary substitution, not an error of value."
+  },
+  {
+   "id": "Q18",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "31 claim(s) record the event/text as standing",
+   "baseline_reason": "The commit exists at the stated short hash, withdraws exactly the separability/integration census (ledger entry 0041, \"INTEGRATION TEST PASSES\"), and touches `ITERATION_NOTES.md` (+34), `HANDOFF_CURRENT.md`, and the new `RETRANS_REVIEW_DISPOSITION.md`."
+  },
+  {
+   "id": "Q19",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "7 matching claim(s) standing; NOTE other values for the same metric/scope: [('L10036', 12), ('L1010202', 0.2), ('L1010203', 0.3), ('L1010267', 0.94), ('L1020019', 1.0)]",
+   "baseline_reason": "299/300 exactly, against the census's registered pass condition; corroborated verbatim in ledger 0042 and in `bf0d4978`'s commit message. Tier recorded: **cove** (reviewer finding, independently re-derived by the driver)."
+  },
+  {
+   "id": "Q20",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "72 claim(s) record the event/text as standing; 1 contested claim(s) also present",
+   "baseline_reason": "Values supplied: 0.72 vs base 0.60 and 0.70 vs base 0.59, prediction set n=39 nodes per behaviour. The record's own corrected verdict states flatly that the representation \"does not predict relevance above base rate\", so the README's wording is the record's. **Adversarial caveat:** the raw numbers are nominally +0.12/+0.11 above base; the equality reading rests on non-significance, quantified only"
+  },
+  {
+   "id": "Q21",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "43 claim(s) record the event/text as standing",
+   "baseline_reason": "The commit exists at the stated short hash, carries the DOES-NOT-LICENSE verdict, and adds `L1L2_ADVERSARIAL_REVIEW.md` (+372) and `L1L2_REVIEW_DISPOSITION.md` (+96)."
+  },
+  {
+   "id": "Q22",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "175 claim(s) record the event/text as standing",
+   "baseline_reason": "Which-is-which recovered: **L1** is the bar already met by noise-level numbers; **L2** is the one with no null. `L1L2_ADVERSARIAL_REVIEW.md`:150 corroborates (\"### F11. L2 ships with no null \u2014 in direct violation of the binding rule adopted in the same document.\")."
+  },
+  {
+   "id": "Q23",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "32 claim(s) record the event/text as standing",
+   "baseline_reason": "Commit exists at the stated short hash, erratum number is 20, subject is the query-class saturation claim, recorded in the ledger at entry **0037** (the CLAIMS dimension's \"ledger entry 0037\" matches). The commit touches only `ITERATION_NOTES.md` (+18); it did not amend the handoff."
+  },
+  {
+   "id": "Q24",
+   "ledger": "contradicted",
+   "baseline": "verified",
+   "agree": false,
+   "ledger_derivation": "pytest: 2267 passed, 4 skipped (README: 2,270 passed, 1 skipped)",
+   "baseline_reason": "Exact match to \"2,270 passed, 1 skipped\", inside the stated 4-10 min window (4 m 56 s). Denominator 2271 collected. Corroborated at the record's own snapshot by commit `6d01415b`'s message (\"semi-formal-experiment 2,270 passed / 1 skipped\"). The live run supersedes the stated 2026-08-30 date and agrees with it.",
+   "direction": "ledger stricter"
+  },
+  {
+   "id": "Q25",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "201 claim(s) record the event/text as standing; 1 contested claim(s) also present",
+   "baseline_reason": "The set of entry numbers present is exactly {0000\u20260043} \u2014 44 entries, **gapless**, verified by set equality against `[f\"{i:04d}\" for i in range(44)]`, not merely by count."
+  },
+  {
+   "id": "Q26",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "10 matching claim(s) standing; NOTE other values for the same metric/scope: [('L1000194', 2), ('L1010234', 9), ('L1010240', 0.13), ('L1010244', 15), ('L10166', 2)]",
+   "baseline_reason": "The query-class study's input set is a corpus of 100 behaviour definitions, open-coded; ledger 0038 gives \"~1.2 handles/definition\" over the same 100 and 0034 \"9 primary places observed over 100 definitions\"."
+  },
+  {
+   "id": "Q27",
+   "ledger": "contested",
+   "baseline": "contested",
+   "agree": true,
+   "ledger_derivation": "70 matching claim(s) at the value, none over the required population (\\b100\\b|definition); populations found: [\"0/16 of the batch move's gained nodes\", '0/16 of the move', '10/10 successes', '11 clauses of 593', '15 UA TPs', '16 gained nodes of the move', '16 move-extension items', '183 example blocks', '271,474 chars', '39', '39/39', '5/5', '5/5 probe nodes', '589/593', '7/9', '762/762', 'all beh",
+   "baseline_reason": "Coverage = 1.0 verifies, but **only over a 39-node sample**, not over the 100 definitions the README's sentence binds it to. The record contains no coverage figure over the 100 definitions; the only 100-denominator number is *separability* 94/100, a different metric. Two artifacts pull the sentence apart, so the referent is contested. Adversarially: the disposition accepts finding F7 \u2014 \"39-node sa"
+  },
+  {
+   "id": "Q28",
+   "ledger": "contested",
+   "baseline": "contradicted",
+   "agree": false,
+   "ledger_derivation": "20 separability measurements in the ledger, 5 mention a null; 'every test failed against a null' requires each measurement to carry a null outcome \u2014 the ledger holds measurements without one: [('L10036', 12.0, 'how-to-approach-tradeoffs enga', 'current'), ('L1010202', 0.2, 'OPERATIVE_TARGET FP-side separ', 'current'), ('L1010203', 0.3, 'OPERATIVE_TARGET FP-side thres', 'current'), ('L1010267', 0.9",
+   "baseline_reason": "The README says the ontology \"failed **every** separability test once a matched random-partition null was run against it.\" The record documents exactly **one** separability test ever run against a matched-granularity random-partition null \u2014 the 0041 integration census, covering leaf and mid levels \u2014 and it failed. At least two other separability measurements (0038's 94/100 over definitions; 0039's",
+   "direction": "baseline stricter"
+  },
+  {
+   "id": "Q29",
+   "ledger": "contested",
+   "baseline": "contradicted",
+   "agree": false,
+   "ledger_derivation": "85 withdrawal events in ledger (README says three headline); headline qualifier needs the starred-block/README linkage at adjudication",
+   "baseline_reason": "Under the claim's own definition (headline iff the withdrawn claim appeared in a handoff starred block or the README), **two** withdrawals qualify: the separability census (`bf0d4978`, whose message records \"HANDOFF headline downgraded\") and L1/L2 (`365d68b3`, which edits the starred block). The third README item \u2014 the query-class saturation claim (`1143a921`) \u2014 was never in a starred block or the",
+   "direction": "baseline stricter"
+  },
+  {
+   "id": "Q30",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "exist: [True, True, True]; sizes [1082124, 10303, 1367]",
+   "baseline_reason": "All three exist at the stated paths and are pairwise distinct in content (three distinct md5s, sizes spanning three orders of magnitude). The warning is accurate."
+  },
+  {
+   "id": "Q31",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "{'LEDGER.md': 'walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md', 'ARC2_HANDOFF.md': 'walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/HANDOFF_CURRENT.md', 'CLAUDE.md': 'AGENTS.md'}",
+   "baseline_reason": "All three are real symlinks with the claimed targets, and all three targets exist and resolve."
+  },
+  {
+   "id": "Q32",
+   "ledger": "contradicted",
+   "baseline": "contradicted",
+   "agree": true,
+   "ledger_derivation": "PRUNED.md exists (135 lines); signature-pattern hits: none; detached signature files: none; 93 hash-like tokens, 85 resolve in git \u2014 'signed' per the inventory definition is ABSENT, so the README sentence 'signed manifest' is contradicted on the signature and verified on existence/restorability",
+   "baseline_reason": "The file exists at exactly the linked path and its object ids resolve (4/4 sampled: three trees, one blob, all `cat-file -t` clean). But **it is not signed** under the claim's own definition: `grep -in \"sign|gpg|sha256|checksum\"` over PRUNED.md returns nothing relevant; there is no detached signature, no signer-attested checksum of the manifest, no signer line; and the commits are unsigned (`%G?` "
+  },
+  {
+   "id": "Q33",
+   "ledger": "contradicted",
+   "baseline": "contradicted",
+   "agree": true,
+   "ledger_derivation": "arc-1 dir commits 2026-08-02 \u2192 2026-08-31 (README: July\u2013early Aug); arc-2 dir 2026-08-14 \u2192 2026-08-31 (README: mid\u2013late Aug); no commit in the repo predates 2026-08-02",
+   "baseline_reason": "Claimed arc-1 window \"July\u2013early Aug\". By the stated metric, `semi-formal-experiment/` is touched from **2026-08-02** to 2026-08-31, and **zero July commits exist anywhere in this repository** (`--before=2026-08-01` is empty; all 656 commits fall 2026-08-02 \u2192 2026-09-01). Arc-1 work predates the repo and arrived as an import, so July is unrecoverable from this history. Arc-2 verifies: `behavior_pi"
+  },
+  {
+   "id": "Q34",
+   "ledger": "contradicted",
+   "baseline": "contradicted",
+   "agree": true,
+   "ledger_derivation": "trigger claims carry a narrower value: [('L340039', 'push: { branches: [main] }  pull_request')]",
+   "baseline_reason": "Steps enumerate as claimed \u2014 three jobs: `semi-formal-experiment` (`.venv/bin/python -m pytest -q`), `walkthrough` (`../semi-formal-experiment/.venv/bin/python -m pytest -q`), and `demo-path` (`cite.py resolve \u2026` plus `graph_check.py \u2026 root_graph.production.json`) \u2014 matching \"both suites plus the citation and graph checks from the demo path\". The **trigger is narrower than claimed**: pushes fire o"
+  },
+  {
+   "id": "Q35",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "root LICENSE MIT: True; panel-v5 LICENSE/NOTICE: [True, True]; upstream licence statements found in: {'openai-model-spec CC0': ['README.md'], 'claude-constitution CC BY': ['LICENSE']} (README says 'upstream licence statements and README files intact', so a statement inside README.md counts)",
+   "baseline_reason": "All four license identifiers are as claimed. `specs/openai-model-spec/` has no standalone LICENSE file, but the README's wording is \"upstream licence statements **and README files** intact\", and the CC0 statement lives in that README \u2014 satisfied as worded. `data/panel-v5/` carries both LICENSE and NOTICE."
+  },
+  {
+   "id": "Q36",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "outline exit 0 (81 lines); resolve exit 0 \u2192 'For objective questions, the factual aspects of the assistant\u2019s response should '",
+   "baseline_reason": "Both run under system `python3` with no venv, exit 0, and `resolve` returns a single verbatim sentence confirmed present in `specs/openai-model-spec/model_spec.md`."
+  },
+  {
+   "id": "Q37",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "'*** NO VALIDATOR ***' x1; '(none recorded)' x1 (distinct state, reported separately)",
+   "baseline_reason": "Exactly one seat prints `*** NO VALIDATOR ***` (`attribution_author`) out of **12 seats reported** \u2014 the denominator the dimension asked for. The distinct state is reported separately as required: exactly one seat prints `(none recorded)` (`golden_review`). The README's singular \"the seat it reports as unvalidated\" is correct for the `NO VALIDATOR` state."
+  },
+  {
+   "id": "Q38",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "5 claim(s) record the event/text as standing",
+   "baseline_reason": "Three `[operational; redacted]` markers exist at the pin (entries 0002, 0008, 0021) and the pre-redaction text for each is fully present one commit earlier. The redacted content is exactly what the README says: usage plumbing, quota mechanics, per-seat token counts, budget-point arithmetic. History retains it and is unrewritten (`6d01415b` is an ordinary commit)."
+  },
+  {
+   "id": "Q39",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "143 claim(s) record the event/text as standing; 1 contested claim(s) also present",
+   "baseline_reason": "Recorded, explicitly marked BINDING, in both the ledger and the top starred block, dated after the withdrawal it came out of. `L1L2_ADVERSARIAL_REVIEW.md`:150 then cites it as binding against a later document \u2014 operative, not decorative."
+  },
+  {
+   "id": "Q40",
+   "ledger": "verified",
+   "baseline": "unverifiable",
+   "agree": false,
+   "ledger_derivation": "exit 0, wall 1.5s (README says ~3 s; verified as order of magnitude only)",
+   "baseline_reason": "The claim is \"verifies, ~3 s\" \u2014 a wall-clock figure for a *verifying* run. No verifying run is reachable at this pin (see Q43): the check exits 1 in both the as-written and the reconstructed environment, so what I timed is a failure path that short-circuits at a different point than the claimed success path. Reported anyway: the reconstructed run is 1.9\u20133.5 s (median ~2.2 s), consistent with \"~3 s",
+   "direction": "baseline could not decide"
+  },
+  {
+   "id": "Q41",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "18 measurement(s), max 0.600 < 0.94",
+   "baseline_reason": "The untuned behaviours in arc-2 are user-autonomy, proportionate-risk, general-welfare (entry 0016 freezes transfer predictions for all three). **user-autonomy** is the only one ever measured: 0.60 provisional (n=20) \u2192 0.45 corrected \u2192 **0.262** exhaustive (n=122, panel/trusted tier), all far below 0.94, none certified. **proportionate-risk** and **general-welfare** were never measured (0016: \"mea"
+  },
+  {
+   "id": "Q42",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "5 relative links, missing: []; 6 external links not checked (no network)",
+   "baseline_reason": "Denominator 5 relative links; all 5 targets exist. Four distinct external URLs (two blog posts, ai-character-index, the CI badge/actions link) flagged, not checked \u2014 no network."
+  },
+  {
+   "id": "Q43",
+   "ledger": "verified",
+   "baseline": "contradicted",
+   "agree": false,
+   "ledger_derivation": "sequence exit 0; first failing output: ALL-OK",
+   "baseline_reason": "Claimed: all commands run as written and exit 0. Record: **step 0 exits 1** \u2014 and not because of the machine's broken venv, since I reproduced it with pytest/clingo/pydantic all importing cleanly; two committed self-tests genuinely fail at this pin. Steps 1\u20135 (7 command lines: `cite.py outline`, `cite.py resolve`, `graph_check.py`, `measure_join.py`, `benchmark.py --tool`, `query.py seats`, plus t",
+   "direction": "baseline stricter"
+  },
+  {
+   "id": "Q44",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "2 matching claim(s) standing; NOTE other values for the same metric/scope: [('L200104', 15), ('L260060', '+0.226'), ('L270145', '+0.0132'), ('L290028', '+0.0217'), ('L520030', 0.29)]",
+   "baseline_reason": "Both failure counts are zero. Denominators recovered as the dimension demands: line ranges are checked against **all 846** spans; quotes against the **602** spans that carry one. So \"every span checked against the source\" is exactly true for line ranges and true for 71% of spans on the stronger quote check \u2014 244 spans have no quote to check. The same run also reports 25 dangling `needs` with no pr"
+  },
+  {
+   "id": "Q45",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "5 claim(s) record the event/text as standing",
+   "baseline_reason": "A match-or-adjudicated-defensible (\"headline\") column **does exist** in the round-4 scored files, per behaviour, with decline cells 0.975 / 1.0 / 0.95 and verdicts scored against the registered bands (\"prec IN BAND; decl above\" / \"both in/above\" / \"prec IN BAND; decl above\"). It cites the registration by amendment id. `ROUND4_HELP_CANARY_RESULT.json` carries the same column under `headline_match_o"
+  },
+  {
+   "id": "Q46",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "network-module mentions per file: none",
+   "baseline_reason": "Zero network events at runtime on every Start-here command. The static walk finds `urllib.request`/`urllib.error` in exactly two first-party modules \u2014 `semi-formal-experiment/providers.py`:60-61 and `semi-formal-experiment/extract_section.py`:46-47 \u2014 and `providers` is reached only via a function-local `import providers` at `extract_section.py`:1101; neither network path executes on the demo path,"
+  },
+  {
+   "id": "Q47",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "116 claim(s) record the event/text as standing; 1 contested claim(s) also present",
+   "baseline_reason": "Both arcs read the same primary source, `specs/openai-model-spec/model_spec.md` \u2014 arc 2's checker resolves every span against it directly; arc 1's benchmark and join run on clauses segmented from it. `walkthrough/\u2026/behavior_pilot/draw_generalization.py`:38 points at the same file. Corpus shared; representations (clause inventory vs 773-node graph), truth tiers, and metrics disjoint."
+  },
+  {
+   "id": "Q48",
+   "ledger": "contested",
+   "baseline": "contradicted",
+   "agree": false,
+   "ledger_derivation": "star-marked heading lines: HANDOFF_CURRENT [1]; HANDOFF [3, 99, 131, 955, 1142] \u2014 'the top starred block' is unique in arc 2 but arc 1 has 5 star-marked heading blocks; 'self-marked' below is not mechanically decidable",
+   "baseline_reason": "First value verifies: both handoffs have a star-marked top block. Second value does **not**. (a) Arc-1's HANDOFF.md has **four** star-marked blocks stacked at the top (\u2b50\u2b50\u2b50\u2b50 at :3, a nested \u2b50\u2b50\u2b50\u2b50\u2b50 blockquote inside it, \u2b50\u2b50\u2b50 at :99, \u2b50\u2b50 at :131), so \"the top starred block\" does not pick out a unique region and a reader following the README has no way to know where to stop. (b) Several sections below ca",
+   "direction": "baseline stricter"
+  },
+  {
+   "id": "Q49",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "[('engine/', True), ('specs/', True), ('data/', True), ('semi-formal-experiment/', True), ('walkthrough/', True), ('ARTIFACTS.md', True), ('LEDGER.md', True), ('ARC2_HANDOFF.md', True)]",
+   "baseline_reason": "8 of 8 exist (the last two as symlinks whose targets resolve)."
+  },
+  {
+   "id": "Q50",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "cite resolve identical on rerun: True; graph_check identical on rerun: True",
+   "baseline_reason": "`cite.py outline`, `cite.py resolve`, `graph_check.py`, `measure_join.py`, `benchmark.py --tool` (354 lines including every threshold-curve row) and `query.py seats` all produce byte-identical output on consecutive runs. Determinism holds across the whole Start-here block."
+  },
+  {
+   "id": "H01",
+   "ledger": "contradicted",
+   "baseline": "contradicted",
+   "agree": true,
+   "ledger_derivation": "30 close(s) with a prior/linked review, 6 without: [('L230087', 'unstated', []), ('L230093', 'unstated', []), ('L230099', 'unstated', []), ('L360057', 'unstated', []), ('L440091', 'unstated', []), ('L500030', 'unstated', [])]",
+   "baseline_reason": "Arc-1 verifies cleanly: all six cycles listed in CYCLE_LOG.jsonl carry a `review_verdict.json` by a named independent, clean-context, not-the-implementer reviewer; the seventh directory (`segmentation-variants-2026-08-04`) has no decision/state/review and was never closed, so it is not a close. Arc-2 **fails the universal**: the three iteration closes (0005 \"ITERATION 1, STEPS 4-5 (REALIZATION + C"
+  },
+  {
+   "id": "H02",
+   "ledger": "contested",
+   "baseline": "verified",
+   "agree": false,
+   "ledger_derivation": "288 measurements, 64 with no prediction_freeze earlier or linked: ['L1000055', 'L1000058', 'L1000100', 'L1030230', 'L1050118', 'L1070025', 'L120086', 'L130181']",
+   "baseline_reason": "Within the rule's stated scope (cycles and iterations that record a measurement) every measurement is preceded by a frozen, sha-pinned prediction: six arc-1 cycles each carry `frozen_prediction_sha`; arc-2 iterations 1\u20133 each register a V5 prediction before rulings; round 4 registers per-behaviour predictions with a seed and an exclusion-list sha in `ROUND4_FREEZE_DERIVATION.json`; block 2 freezes",
+   "direction": "ledger stricter"
+  },
+  {
+   "id": "H03",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "numbered errata: 29; append-only conjunct by git census: 45 first-parent commits touch ITERATION_NOTES.md; commits deleting lines: [('6d01415b', '2026-08-31', 89, 121)] \u2014 only the redaction commit",
+   "baseline_reason": "Of 45 commits that touch the ledger, **exactly one** deletes prior entry text, and every one of its hunks removes operational content (weekly-bar percentages, `/usage` pastes, per-seat raw-token counts, budget-point arithmetic) or replaces a verbatim conversational quote with an unattributed paraphrase of the same ruling \u2014 all inside the README's declared redaction scope (\"usage plumbing, working "
+  },
+  {
+   "id": "H04",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "112 seat dispatches; 77 record inputs; none names panel labels, the design document, or prior verdicts as received (mentions inside negations, or in a list the quote marks as forbidden/denied, counted as exclusions)",
+   "baseline_reason": "Every seat-dispatch record in the ledger and preregs specifies packet-only inputs with truth, design documents, and prior verdicts excluded, and the record includes the one violation it caught and voided. The truth-injection at entry 0001 (\"injecting the FROZEN attempt-1 verdicts into SC.truth_all for this slug only\") is scorer-side, not seat-side, and is disclosed as read-only consumption. **Qual"
+  },
+  {
+   "id": "H05",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "55 entries linked to commits; 0 with a commit date differing from the heading date: []",
+   "baseline_reason": "All 44 entries carry a date in the heading and every one is within one day of the commit that first introduced it \u2014 zero exceptions across the full history. \"Written at the time\" is borne out at the entry level."
+  },
+  {
+   "id": "H06",
+   "ledger": "contested",
+   "baseline": "verified",
+   "agree": false,
+   "ledger_derivation": "6 withdrawals with a linked review finding in the set, 18 without: ['L1000016', 'L100027', 'L1000304', 'L1030001', 'L1030151', 'L1030245']",
+   "baseline_reason": "Arc-2 has exactly two withdrawal events, and both are preceded (same entry, review first, disposition second) by a clean-context adversarial review whose finding is in the admissible set \u2014 UNSUPPORTED/null-dominated for the census, DOES-NOT-LICENSE for L1/L2 \u2014 with the withdrawal linked to the review by named disposition document and commit. The third item the README lists (query-class, `1143a921`",
+   "direction": "ledger stricter"
+  },
+  {
+   "id": "H07",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "18 untuned-behaviour measurements, max 0.600; at/above 0.94: []",
+   "baseline_reason": "No untuned behaviour has any certified measurement at or above 0.94, and none has two draws at or above 0.94 \u2014 user-autonomy's measurements are 0.60 / 0.45 / 0.262, and proportionate-risk and general-welfare have no measurements at all. The universal holds, but partly by **vacuity**: for two of three untuned behaviours the record contains nothing to falsify it, and for the third the available metr"
+  },
+  {
+   "id": "H08",
+   "ledger": "contradicted",
+   "baseline": "unverifiable",
+   "agree": false,
+   "ledger_derivation": "kinds: {'unstated': ['L1000014', 'L230136', 'L230173', 'L290085', 'L77510223', 'L77540226', 'L77700006', 'L77700013', 'L77700015', 'L77700229', 'L9920080'], 'refusal': ['L1000093', 'L1070139', 'L290098', 'L460022', 'L500004', 'L570081', 'L570090', 'L580208', 'L710023', 'L77600008', 'L77600038', 'L77900014'], 'wrong_answer': ['L520061', 'L570028', 'L570072', 'L77530294']}",
+   "baseline_reason": "The record holds **no enumeration of symbolic-engine failures**, so the universal has no domain to quantify over and no artifact decides it. The nearest candidate, `semi-formal-experiment/S3B_FINDING_RECLASSIFICATION.md`, buckets *adversarial-review findings* (INEXPR / EXPR-UNVER / PROCESS / DOC), not engine outputs. Pulling the other way, `semi-formal-experiment/adversarial_review_1.md` finding 1",
+   "direction": "baseline could not decide"
+  },
+  {
+   "id": "H09",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "tool max 0.396 (incl. oracle/ceiling variants), judge min -0.221, judge mean-of-3 0.555 present: True",
+   "baseline_reason": "In all nine head-to-head cells the tool's MCC is strictly below the held-out judge's on the TRUE universe (tool 0.172/0.223/0.207, 0.359/0.316/0.375, 0.276/0.296/0.276 vs judges 0.697/0.706/0.308, 0.705/0.677/0.464, 0.535/0.552/0.354). Narrowest gap +0.101 (helpfulness vs sol). No tie, no exceedance; the threshold-free table gives the same verdict without the fitted threshold."
+  },
+  {
+   "id": "H10",
+   "ledger": "contradicted",
+   "baseline": "contradicted",
+   "agree": true,
+   "ledger_derivation": "306 PRUNED.md claims (prune manifest exists); signed(manifest): PRUNED.md exists (135 lines); signature-pattern hits: none; detached signature files: none; 93 hash-like tokens, 85 resolve in git \u2014 'signed' per the inventory ",
+   "baseline_reason": "The prune event exists (`6d01415b`), the manifest carries restore instructions, and sampled entries resolve in git (4/4 clean, so listed artifacts do exist in an earlier commit). But `signed(manifest(k))` **fails**: no signature of any admissible kind on the manifest, and no signed commits anywhere in the repository. The conjunction fails on its middle clause. Two lesser gaps: the restore recipe l"
+  },
+  {
+   "id": "H11",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "redaction events 5; 1481 claims translated from the pre-redaction blob (content existed before the redaction); deleting commits by git census: 45 first-parent commits touch ITERATION_NOTES.md; commits deleting lines: [('6d01415b', '2026-08-31', 89, 121)] \u2014 only the redaction commit",
+   "baseline_reason": "Both conjuncts hold. Every marked-redacted section has content in the immediately preceding commit (checked for all three: 0002, 0008, 0021). And every hunk that deletes prior entry text lives in the single commit `6d01415b` and removes only operational content or replaces a quote with a paraphrase preserving the ruling. The `[REDACTED]` strings at `specs/openai-model-spec/model_spec.md`:884,888 a"
+  },
+  {
+   "id": "H12",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "hit claims: 7 (query-output spans were not in the named sources)",
+   "baseline_reason": "Every hit carries a resolvable span locator, the verbatim quote at that locator, and \u2014 via `--explain` \u2014 a decomposed reason (per-channel contributions, channel shares, and the named atoms that matched). The locator format is the one `engine/spec-cite/cite.py resolve` consumes (Q36), so the span is verifiably verbatim. Minor gap: the reason requires the `--explain` flag; the ranking output alone g"
+  },
+  {
+   "id": "H13",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "cove events 30; claims mentioning decisive findings 23",
+   "baseline_reason": "For both withdrawal reviews, each decisive finding was re-derived by the driver \u2014 an actor distinct from the clean-context Opus reviewer \u2014 before the corrected verdicts were written, and both dispositions record re-derivation results alongside the reviewer's originals. The independence is real enough to have caught reviewer errors in both directions (0042: \"One reviewer slip corrected: 'ua'=user-a"
+  },
+  {
+   "id": "H14",
+   "ledger": "verified",
+   "baseline": "unverifiable",
+   "agree": false,
+   "ledger_derivation": "11 entries headed ITERATION n, STEP k; step-artifact domain not translated (runbook step artifacts are not a named source)",
+   "baseline_reason": "Step-headed entries exist for iterations 1\u20133 and each names its steps and cites artifacts by filename, so the hypothesis is well supported in the direction sampled. But the quantifier runs the other way \u2014 over every step the runbook says emits a committed artifact \u2014 and the runbook at the pin was itself rewritten *from* the very ledger entries it would be used to audit. The step\u2192artifact\u2192entry map",
+   "direction": "baseline could not decide"
+  },
+  {
+   "id": "H15",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "25 backticked paths in ARTIFACTS.md; missing at pin: []",
+   "baseline_reason": "Zero dangling routes. Two incidental drifts noticed but outside the claim: ARTIFACTS.md says \"the 348 files there\" for `behavior_pilot/` (`ls` gives 346 at the pin), and describes the certified graph as \"773 nodes, zero bad spans of 846\", which matches Q44 exactly. The converse (every star artifact is listed) is out of scope per the claim."
+  },
+  {
+   "id": "V01",
+   "ledger": "contested",
+   "baseline": "contested",
+   "agree": true,
+   "ledger_derivation": "providers ['Q01', 'Q41', 'R07'] \u2192 ['verified', 'verified']; unevaluated providers (dangling need): ['R07']",
+   "baseline_reason": "The verdict's direction is right and two of three needs verify outright. Need (b) does not verify at the claim's dimensions: the only untuned measurement is *engaged precision* (0.262), not match-or-defensible, and the two remaining untuned behaviours were never measured \u2014 so \"did not reach that bar on generalization\" rests on one behaviour at a non-comparable metric plus two absences. The bar's d"
+  },
+  {
+   "id": "V02",
+   "ledger": "contradicted",
+   "baseline": "unverifiable",
+   "agree": false,
+   "ledger_derivation": "providers ['H08'] \u2192 ['contradicted']",
+   "baseline_reason": "Need 2 (\"an enumeration of engine failures exists in the record\") has no provider, which the claim itself anticipated as the vacuity condition; need 1 (classification of every engine failure) is therefore unreachable. **Dangling need:** the enumeration of engine failures. The one candidate wrong-answer instance the record does hold points the opposite way from the verdict.",
+   "direction": "baseline could not decide"
+  },
+  {
+   "id": "V03",
+   "ledger": "dangling",
+   "baseline": "unverifiable",
+   "agree": false,
+   "ledger_derivation": "providers [] \u2192 []",
+   "baseline_reason": "The record holds post-segmentation *inventories* for both specs with kind distributions, but I could locate no artifact pairing (i) a named segmentation-failure event, (ii) a repair event linked to it, and (iii) a post-repair measurement of segmentation quality. **Dangling needs: all three.** The summaries state what the segmentation produced, not that it failed, was repaired, and then measured be",
+   "direction": "neither decided"
+  },
+  {
+   "id": "V04",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "providers ['Q12', 'Q13', 'Q14', 'Q15', 'H09'] \u2192 ['verified', 'verified', 'verified', 'verified', 'verified']",
+   "baseline_reason": "Tool MCC, judge MCC per judge and as LOO mean, and the per-cell comparison at matched false-positive rate are all present and mutually consistent on the TRUE universe. The tool loses every cell by every comparator offered. No dangling needs."
+  },
+  {
+   "id": "V05",
+   "ledger": "contested",
+   "baseline": "contested",
+   "agree": true,
+   "ledger_derivation": "providers ['Q26', 'Q27', 'Q28', 'Q19', 'Q20'] \u2192 ['verified', 'contested', 'contested', 'verified', 'verified']",
+   "baseline_reason": "Inherits Q27 and Q28. The coverage need is met by a measurement over 39 stratified nodes, not the 100 definitions the sentence binds it to; the per-test need is met for exactly one separability test out of at least three separability measurements in the record. The sentence compresses two differently scoped results into one clause the record does not support as a whole."
+  },
+  {
+   "id": "V06",
+   "ledger": "contradicted",
+   "baseline": "contested",
+   "agree": false,
+   "ledger_derivation": "providers ['H01', 'H02', 'H03', 'H04'] \u2192 ['contradicted', 'contested', 'verified', 'verified']",
+   "baseline_reason": "Three of the four named discipline elements instantiate in both arcs. The fourth \u2014 adversarial review before *every* close \u2014 instantiates in arc 1 (6/6 cycles) but not at arc-2's three iteration closes, so the element that most needs the word \"transferred\" is the one that did not transfer intact. Additionally the append-only ledger with numbered errata is an arc-2 construct with no arc-1 counterpa",
+   "direction": "ledger stricter"
+  },
+  {
+   "id": "V07",
+   "ledger": "contested",
+   "baseline": "contradicted",
+   "agree": false,
+   "ledger_derivation": "providers ['Q29', 'Q18', 'Q21', 'Q23', 'H06'] \u2192 ['contested', 'verified', 'verified', 'verified', 'contested']",
+   "baseline_reason": "The need is three DISTINCT headline withdrawal events, each linked to a review. Two exist and are exemplary. The third is a bounding erratum against a claim that was never published as a headline and was not preceded by an adversarial review \u2014 it was the project owner's suspicion upheld by the driver's own inspection. Claimed 3; record supports 2.",
+   "direction": "baseline stricter"
+  },
+  {
+   "id": "V08",
+   "ledger": "contested",
+   "baseline": "verified",
+   "agree": false,
+   "ledger_derivation": "providers ['H06'] \u2192 ['contested']",
+   "baseline_reason": "Both actual withdrawals are linked, in the same commit, to a preceding named review document with a recorded verdict. The linkage is tight: review file, disposition file, ledger entry, and commit message all name each other. (This verdict is about the two withdrawals, not the count \u2014 the count is V07.)",
+   "direction": "ledger stricter"
+  },
+  {
+   "id": "V09",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "providers ['Q17'] \u2192 ['verified']",
+   "baseline_reason": "Both needs verify: a ledger entry states recall as the honest headline in those words, and supplies the recall-side number (23 of 40 declined nodes panel-relevant, a 57.5% miss rate on the declined set), pooled over the two frozen draws."
+  },
+  {
+   "id": "V10",
+   "ledger": "verified",
+   "baseline": "verified",
+   "agree": true,
+   "ledger_derivation": "providers ['Q39'] \u2192 ['verified']",
+   "baseline_reason": "The rule is recorded as binding, in the same entry as the first withdrawal and therefore dated at-or-after it, and it is applied against the second withdrawal 19 minutes later (`L1L2_ADVERSARIAL_REVIEW.md`:150: \"L2 ships with no null \u2014 in direct violation of the binding rule adopted in the same document\"). \"Came out of these\" is supported by the sequence."
+  },
+  {
+   "id": "V11",
+   "ledger": "contested",
+   "baseline": "verified",
+   "agree": false,
+   "ledger_derivation": "providers ['H06', 'Q18', 'Q21'] \u2192 ['contested', 'verified', 'verified']",
+   "baseline_reason": "Each demonstration attempted is linked to a failing review or a failing measurement: the integration census (review, NOT ESTABLISHED \u00d72), L1/L2 (review, DOES-NOT-LICENSE), the arc-1 relevance benchmark (the committed scorer's own verdict column reads \"below bar\" for all three behaviours on the true universe and \"BELOW FLOOR\"/\"UNUSABLE FOR HEADLINE\" on the published one), and the round-4 certificat",
+   "direction": "ledger stricter"
+  },
+  {
+   "id": "V12",
+   "ledger": "contested",
+   "baseline": "contested",
+   "agree": true,
+   "ledger_derivation": "providers ['H06'] \u2192 ['contested']",
+   "baseline_reason": "For the two withdrawals the review\u2192claim linkage is explicit and documented. For the query-class saturation claim the \"review\" is the project owner's suspicion upheld by the driver's own inspection \u2014 self-review, not the clean-context adversarial review the sentence advertises. **Dangling need:** a review event for the third ended claim. The README's \"the adversarial reviews that ended the headlin"
+  }
+ ]
+}

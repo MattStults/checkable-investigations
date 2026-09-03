@@ -2,6 +2,99 @@
  "value_conflicts": [
   {
    "metric": "engaged precision",
+   "scope": "how to approach tradeoffs",
+   "snapshot": "attempt 2 pre redaction blob",
+   "values": [
+    0.7,
+    0.75
+   ],
+   "claims": [
+    [
+     "L1000123",
+     0.75,
+     "stated",
+     "ITERATION_NOTES.md:160-197"
+    ],
+    [
+     "L1000236",
+     0.75,
+     "stated",
+     "ITERATION_NOTES.md:260-289"
+    ],
+    [
+     "L1000249",
+     0.75,
+     "raw",
+     "ITERATION_NOTES.md:290-322"
+    ],
+    [
+     "L1000250",
+     0.7,
+     "panel",
+     "ITERATION_NOTES.md:290-322"
+    ]
+   ]
+  },
+  {
+   "metric": "per class parity",
+   "scope": "opus parity per class",
+   "snapshot": "entry 0006 pre redaction blob",
+   "values": [
+    0.8889,
+    0.9286
+   ],
+   "claims": [
+    [
+     "L1000168",
+     0.8889,
+     "stated",
+     "ITERATION_NOTES.md:198-224"
+    ],
+    [
+     "L1000169",
+     0.9286,
+     "stated",
+     "ITERATION_NOTES.md:198-224"
+    ]
+   ]
+  },
+  {
+   "metric": "engaged precision",
+   "scope": "how to approach tradeoffs",
+   "snapshot": "attempt 3 pre redaction blob",
+   "values": [
+    0.4,
+    0.55
+   ],
+   "claims": [
+    [
+     "L1000219",
+     0.4,
+     "stated",
+     "ITERATION_NOTES.md:260-289"
+    ],
+    [
+     "L1000237",
+     0.4,
+     "stated",
+     "ITERATION_NOTES.md:260-289"
+    ],
+    [
+     "L1000251",
+     0.4,
+     "raw",
+     "ITERATION_NOTES.md:290-322"
+    ],
+    [
+     "L1000252",
+     0.55,
+     "panel",
+     "ITERATION_NOTES.md:290-322"
+    ]
+   ]
+  },
+  {
+   "metric": "engaged precision",
    "scope": "unstated",
    "snapshot": "attempt 3",
    "values": [
@@ -30,31 +123,108 @@
    ]
   },
   {
-   "metric": "engaged precision",
-   "scope": "how to approach tradeoffs",
-   "snapshot": "attempt 2",
+   "metric": "conditional reliability",
+   "scope": "user autonomy",
+   "snapshot": "entry 0022 pre redaction blob",
    "values": [
-    0.7,
-    0.75
+    0.5,
+    1.0
    ],
    "claims": [
     [
-     "L10103",
-     0.75,
+     "L1010084",
+     1.0,
      "stated",
-     "ITERATION_NOTES.md:141-177"
+     "ITERATION_NOTES.md:514-529"
     ],
     [
-     "L10212",
-     0.75,
-     "raw",
-     "ITERATION_NOTES.md:266-298"
+     "L1010085",
+     0.5,
+     "stated",
+     "ITERATION_NOTES.md:514-529"
+    ]
+   ]
+  },
+  {
+   "metric": "downgrades",
+   "scope": "user autonomy escalation batch 1",
+   "snapshot": "entry 0024 pre redaction blob",
+   "values": [
+    0.4167,
+    0.5833
+   ],
+   "claims": [
+    [
+     "L1010116",
+     0.4167,
+     "stated",
+     "ITERATION_NOTES.md:545-571"
     ],
     [
-     "L10213",
-     0.7,
-     "panel",
-     "ITERATION_NOTES.md:266-298"
+     "L1010120",
+     0.5833,
+     "stated",
+     "ITERATION_NOTES.md:545-571"
+    ]
+   ]
+  },
+  {
+   "metric": "agreement",
+   "scope": "query class definition coding",
+   "snapshot": "entry 0034 pre redaction blob",
+   "values": [
+    0.36,
+    0.47,
+    0.78,
+    0.87
+   ],
+   "claims": [
+    [
+     "L1010223",
+     0.47,
+     "stated",
+     "ITERATION_NOTES.md:707-731"
+    ],
+    [
+     "L1010224",
+     0.87,
+     "stated",
+     "ITERATION_NOTES.md:707-731"
+    ],
+    [
+     "L1010225",
+     0.78,
+     "stated",
+     "ITERATION_NOTES.md:707-731"
+    ],
+    [
+     "L1010227",
+     0.36,
+     "stated",
+     "ITERATION_NOTES.md:707-731"
+    ]
+   ]
+  },
+  {
+   "metric": "agreement",
+   "scope": "definition coding",
+   "snapshot": "entry 0034 pre redaction blob",
+   "values": [
+    0.0,
+    0.13
+   ],
+   "claims": [
+    [
+     "L1010240",
+     0.13,
+     "stated",
+     "ITERATION_NOTES.md:707-731"
+    ],
+    [
+     "L1010241",
+     0.0,
+     "stated",
+     "ITERATION_NOTES.md:707-731"
     ]
    ]
   },
@@ -107,6 +277,35 @@
   {
    "metric": "engaged precision",
    "scope": "how to approach tradeoffs",
+   "snapshot": "attempt 2",
+   "values": [
+    0.7,
+    0.75
+   ],
+   "claims": [
+    [
+     "L10212",
+     0.75,
+     "raw",
+     "ITERATION_NOTES.md:266-298"
+    ],
+    [
+     "L10213",
+     0.7,
+     "panel",
+     "ITERATION_NOTES.md:266-298"
+    ],
+    [
+     "L77900045",
+     0.75,
+     "stated",
+     "ITERATION_NOTES.md:141-177"
+    ]
+   ]
+  },
+  {
+   "metric": "engaged precision",
+   "scope": "how to approach tradeoffs",
    "snapshot": "attempt 3",
    "values": [
     0.4,
@@ -128,31 +327,48 @@
    ]
   },
   {
-   "metric": "engaged precision",
-   "scope": "user autonomy",
-   "snapshot": "entry 0026",
+   "metric": "instrument wrong false positives",
+   "scope": "objectivity amendment",
+   "snapshot": "handoff current md pre redaction blob",
    "values": [
-    0.262,
-    0.2623
+    0.5,
+    0.6667
    ],
    "claims": [
     [
-     "L10461",
-     0.262,
+     "L1030034",
+     0.5,
      "stated",
-     "ITERATION_NOTES.md:554-573"
+     "HANDOFF_CURRENT.md:80-109"
     ],
     [
-     "L10466",
-     0.2623,
+     "L1030035",
+     0.6667,
      "stated",
-     "ITERATION_NOTES.md:554-573"
+     "HANDOFF_CURRENT.md:80-109"
+    ]
+   ]
+  },
+  {
+   "metric": "mcc",
+   "scope": "section any atom predictor",
+   "snapshot": "handoff md the honest headline is a null commit 365d68b3 pre redaction blob",
+   "values": [
+    0.3066,
+    0.3085
+   ],
+   "claims": [
+    [
+     "L1070113",
+     "+0.3085",
+     "stated",
+     "HANDOFF.md:1249-1268"
     ],
     [
-     "L10470",
-     0.262,
+     "L1070114",
+     "+0.3066",
      "stated",
-     "ITERATION_NOTES.md:554-573"
+     "HANDOFF.md:1249-1268"
     ]
    ]
   },
@@ -176,52 +392,6 @@
      0.895,
      "adjudicated",
      "ITER3_ATTEMPT4_SCORED.json:189-195"
-    ]
-   ]
-  },
-  {
-   "metric": "1 nn relevance prediction",
-   "scope": "relevance prediction over the representation",
-   "snapshot": "handoff current md",
-   "values": [
-    0.7,
-    0.72
-   ],
-   "claims": [
-    [
-     "L120009",
-     0.72,
-     "stated",
-     "HANDOFF_CURRENT.md:1-26"
-    ],
-    [
-     "L120011",
-     0.7,
-     "stated",
-     "HANDOFF_CURRENT.md:1-26"
-    ]
-   ]
-  },
-  {
-   "metric": "base rate",
-   "scope": "relevance prediction over the representation",
-   "snapshot": "handoff current md",
-   "values": [
-    0.59,
-    0.6
-   ],
-   "claims": [
-    [
-     "L120010",
-     0.6,
-     "stated",
-     "HANDOFF_CURRENT.md:1-26"
-    ],
-    [
-     "L120012",
-     0.59,
-     "stated",
-     "HANDOFF_CURRENT.md:1-26"
     ]
    ]
   },
@@ -365,29 +535,6 @@
      0.6667,
      "stated",
      "HANDOFF_CURRENT.md:80-109"
-    ]
-   ]
-  },
-  {
-   "metric": "seed",
-   "scope": "helpfulness",
-   "snapshot": "round4 prereg md",
-   "values": [
-    20260826.0,
-    20260827.0
-   ],
-   "claims": [
-    [
-     "L130063",
-     20260826,
-     "stated",
-     "ROUND4_PREREG.md:55-84"
-    ],
-    [
-     "L9960078",
-     20260827,
-     "stated",
-     "ROUND4_PREREG.md:149-208"
     ]
    ]
   },
@@ -1630,75 +1777,6 @@
    ]
   },
   {
-   "metric": "flips in scope",
-   "scope": "arc 1 cycle patient pricing 2026 08 04",
-   "snapshot": "patient pricing 2026 08 04 decision json",
-   "values": [
-    6.0,
-    18.0
-   ],
-   "claims": [
-    [
-     "L450096",
-     18,
-     "adjudicated",
-     "decision.json:2-36"
-    ],
-    [
-     "L450100",
-     6,
-     "adjudicated",
-     "decision.json:2-36"
-    ]
-   ]
-  },
-  {
-   "metric": "flip tally correct",
-   "scope": "arc 1 cycle patient pricing 2026 08 04",
-   "snapshot": "patient pricing 2026 08 04 decision json",
-   "values": [
-    2.0,
-    12.0
-   ],
-   "claims": [
-    [
-     "L450097",
-     12,
-     "adjudicated",
-     "decision.json:2-36"
-    ],
-    [
-     "L450102",
-     2,
-     "adjudicated",
-     "decision.json:2-36"
-    ]
-   ]
-  },
-  {
-   "metric": "flip tally regression",
-   "scope": "arc 1 cycle patient pricing 2026 08 04",
-   "snapshot": "patient pricing 2026 08 04 decision json",
-   "values": [
-    4.0,
-    5.0
-   ],
-   "claims": [
-    [
-     "L450098",
-     5,
-     "adjudicated",
-     "decision.json:2-36"
-    ],
-    [
-     "L450103",
-     4,
-     "adjudicated",
-     "decision.json:2-36"
-    ]
-   ]
-  },
-  {
    "metric": "m0355 margin normalized minus frozen harm cut",
    "scope": "m0355",
    "snapshot": "patient pricing 2026 08 04",
@@ -1732,52 +1810,6 @@
      "+0.0051",
      "stated",
      "prediction.json:10-10"
-    ]
-   ]
-  },
-  {
-   "metric": "tests passed",
-   "scope": "test dossier py",
-   "snapshot": "patient pricing 2026 08 04",
-   "values": [
-    1.0,
-    33.0
-   ],
-   "claims": [
-    [
-     "L470092",
-     33,
-     "stated",
-     "review_verdict.json:4-4"
-    ],
-    [
-     "L470113",
-     1.0,
-     "stated",
-     "review_verdict.json:4-4"
-    ]
-   ]
-  },
-  {
-   "metric": "tests passed",
-   "scope": "gate test files for the versioned cut cycle",
-   "snapshot": "versioned cut 2026 08 04",
-   "values": [
-    3.0,
-    103.0
-   ],
-   "claims": [
-    [
-     "L490012",
-     3,
-     "stated",
-     "decision.json:11-36"
-    ],
-    [
-     "L490029",
-     103,
-     "stated",
-     "decision.json:11-36"
     ]
    ]
   },
@@ -1897,6 +1929,1306 @@
    ]
   },
   {
+   "metric": "inter judge cohen kappa",
+   "scope": "per behaviour order unstated",
+   "snapshot": "commit 74ad42e8",
+   "values": [
+    0.39,
+    0.41,
+    0.5
+   ],
+   "claims": [
+    [
+     "L560027",
+     0.39,
+     "stated",
+     "git_log_first_parent.txt:1322-1366"
+    ],
+    [
+     "L560028",
+     0.41,
+     "stated",
+     "git_log_first_parent.txt:1322-1366"
+    ],
+    [
+     "L560029",
+     0.5,
+     "stated",
+     "git_log_first_parent.txt:1322-1366"
+    ]
+   ]
+  },
+  {
+   "metric": "judge relevance marking rate",
+   "scope": "helpfulness",
+   "snapshot": "commit 74ad42e8",
+   "values": [
+    0.2037,
+    0.6299
+   ],
+   "claims": [
+    [
+     "L560031",
+     0.6299,
+     "stated",
+     "git_log_first_parent.txt:1322-1366"
+    ],
+    [
+     "L560033",
+     0.2037,
+     "stated",
+     "git_log_first_parent.txt:1322-1366"
+    ]
+   ]
+  },
+  {
+   "metric": "judge core count",
+   "scope": "helpfulness",
+   "snapshot": "commit 74ad42e8",
+   "values": [
+    15.0,
+    35.0,
+    178.0
+   ],
+   "claims": [
+    [
+     "L560034",
+     178,
+     "stated",
+     "git_log_first_parent.txt:1322-1366"
+    ],
+    [
+     "L560035",
+     35,
+     "stated",
+     "git_log_first_parent.txt:1322-1366"
+    ],
+    [
+     "L560036",
+     15,
+     "stated",
+     "git_log_first_parent.txt:1322-1366"
+    ]
+   ]
+  },
+  {
+   "metric": "panel signal strength",
+   "scope": "unstated",
+   "snapshot": "commit 1d32db06",
+   "values": [
+    0.8333,
+    1.0
+   ],
+   "claims": [
+    [
+     "L560061",
+     1.0,
+     "stated",
+     "git_log_first_parent.txt:1454-1499"
+    ],
+    [
+     "L560062",
+     0.8333,
+     "stated",
+     "git_log_first_parent.txt:1454-1499"
+    ]
+   ]
+  },
+  {
+   "metric": "mcc modal verbs relevance signal",
+   "scope": "per behaviour order unstated",
+   "snapshot": "2026 08 07",
+   "values": [
+    -0.068,
+    0.005,
+    0.129
+   ],
+   "claims": [
+    [
+     "L570008",
+     0.005,
+     "stated",
+     "git_log_first_parent.txt:1563-1601"
+    ],
+    [
+     "L570009",
+     0.129,
+     "stated",
+     "git_log_first_parent.txt:1563-1601"
+    ],
+    [
+     "L570010",
+     -0.068,
+     "stated",
+     "git_log_first_parent.txt:1563-1601"
+    ]
+   ]
+  },
+  {
+   "metric": "test count",
+   "scope": "phase 1",
+   "snapshot": "2026 08 07",
+   "values": [
+    217.0,
+    219.0,
+    231.0
+   ],
+   "claims": [
+    [
+     "L570044",
+     217,
+     "stated",
+     "git_log_first_parent.txt:1646-1712"
+    ],
+    [
+     "L570076",
+     219,
+     "stated",
+     "git_log_first_parent.txt:1713-1753"
+    ],
+    [
+     "L570098",
+     231,
+     "stated",
+     "git_log_first_parent.txt:1754-1813"
+    ]
+   ]
+  },
+  {
+   "metric": "cost",
+   "scope": "unstated",
+   "snapshot": "unstated",
+   "values": [
+    0.0,
+    0.1075
+   ],
+   "claims": [
+    [
+     "L590003",
+     0.1075,
+     "stated",
+     "git_log_first_parent.txt:2310-2353"
+    ],
+    [
+     "L950073",
+     0,
+     "stated",
+     "git_log_first_parent.txt:9648-9655"
+    ]
+   ]
+  },
+  {
+   "metric": "test suite pass count",
+   "scope": "unstated",
+   "snapshot": "unstated",
+   "values": [
+    352.0,
+    467.0
+   ],
+   "claims": [
+    [
+     "L590099",
+     352,
+     "stated",
+     "git_log_first_parent.txt:2438-2470"
+    ],
+    [
+     "L590169",
+     467,
+     "stated",
+     "git_log_first_parent.txt:2565-2607"
+    ]
+   ]
+  },
+  {
+   "metric": "self test pass rate",
+   "scope": "unstated",
+   "snapshot": "unstated",
+   "values": [
+    0.9623,
+    0.9811,
+    1.0
+   ],
+   "claims": [
+    [
+     "L590100",
+     0.9811,
+     "stated",
+     "git_log_first_parent.txt:2438-2470"
+    ],
+    [
+     "L590114",
+     1.0,
+     "stated",
+     "git_log_first_parent.txt:2502-2564"
+    ],
+    [
+     "L590197",
+     0.9623,
+     "stated",
+     "git_log_first_parent.txt:2608-2681"
+    ]
+   ]
+  },
+  {
+   "metric": "all 5 sections",
+   "scope": "section agreement measurement",
+   "snapshot": "commit 39110f6e",
+   "values": [
+    7.0,
+    9.0
+   ],
+   "claims": [
+    [
+     "L630107",
+     9,
+     "stated",
+     "git_log_first_parent.txt:4019-4052"
+    ],
+    [
+     "L630111",
+     7,
+     "stated",
+     "git_log_first_parent.txt:4019-4052"
+    ]
+   ]
+  },
+  {
+   "metric": "union sections",
+   "scope": "section agreement measurement",
+   "snapshot": "commit 39110f6e",
+   "values": [
+    14.0,
+    24.0
+   ],
+   "claims": [
+    [
+     "L630108",
+     14,
+     "stated",
+     "git_log_first_parent.txt:4019-4052"
+    ],
+    [
+     "L630112",
+     24,
+     "stated",
+     "git_log_first_parent.txt:4019-4052"
+    ]
+   ]
+  },
+  {
+   "metric": "agreement",
+   "scope": "section agreement measurement",
+   "snapshot": "commit 39110f6e",
+   "values": [
+    0.29,
+    0.64
+   ],
+   "claims": [
+    [
+     "L630109",
+     0.64,
+     "stated",
+     "git_log_first_parent.txt:4019-4052"
+    ],
+    [
+     "L630113",
+     0.29,
+     "stated",
+     "git_log_first_parent.txt:4019-4052"
+    ]
+   ]
+  },
+  {
+   "metric": "all 5 sections",
+   "scope": "by round section agreement split",
+   "snapshot": "commit 39110f6e",
+   "values": [
+    0.0,
+    3.0,
+    7.0
+   ],
+   "claims": [
+    [
+     "L630114",
+     7,
+     "stated",
+     "git_log_first_parent.txt:4019-4052"
+    ],
+    [
+     "L630117",
+     3,
+     "stated",
+     "git_log_first_parent.txt:4019-4052"
+    ],
+    [
+     "L630120",
+     0,
+     "stated",
+     "git_log_first_parent.txt:4019-4052"
+    ]
+   ]
+  },
+  {
+   "metric": "union sections",
+   "scope": "by round section agreement split",
+   "snapshot": "commit 39110f6e",
+   "values": [
+    3.0,
+    9.0,
+    10.0
+   ],
+   "claims": [
+    [
+     "L630115",
+     9,
+     "stated",
+     "git_log_first_parent.txt:4019-4052"
+    ],
+    [
+     "L630118",
+     10,
+     "stated",
+     "git_log_first_parent.txt:4019-4052"
+    ],
+    [
+     "L630121",
+     3,
+     "stated",
+     "git_log_first_parent.txt:4019-4052"
+    ]
+   ]
+  },
+  {
+   "metric": "agreement",
+   "scope": "by round section agreement split",
+   "snapshot": "commit 39110f6e",
+   "values": [
+    0.0,
+    0.3,
+    0.78
+   ],
+   "claims": [
+    [
+     "L630116",
+     0.78,
+     "stated",
+     "git_log_first_parent.txt:4019-4052"
+    ],
+    [
+     "L630119",
+     0.3,
+     "stated",
+     "git_log_first_parent.txt:4019-4052"
+    ],
+    [
+     "L630122",
+     0.0,
+     "stated",
+     "git_log_first_parent.txt:4019-4052"
+    ]
+   ]
+  },
+  {
+   "metric": "sens",
+   "scope": "seat tier spot check",
+   "snapshot": "b898b49864a5b51933711a6f857e0d851a6a23b3",
+   "values": [
+    0.8,
+    0.9,
+    1.0
+   ],
+   "claims": [
+    [
+     "L660020",
+     1.0,
+     "stated",
+     "git_log_first_parent.txt:4882-4890"
+    ],
+    [
+     "L660021",
+     0.9,
+     "stated",
+     "git_log_first_parent.txt:4882-4890"
+    ],
+    [
+     "L660022",
+     0.8,
+     "stated",
+     "git_log_first_parent.txt:4882-4890"
+    ]
+   ]
+  },
+  {
+   "metric": "test stage4 node plumbing py results seats py reverted",
+   "scope": "test stage4 node plumbing py",
+   "snapshot": "commit b79a44d7",
+   "values": [
+    3.0,
+    30.0
+   ],
+   "claims": [
+    [
+     "L710006",
+     30,
+     "stated",
+     "git_log_first_parent.txt:5807-5879"
+    ],
+    [
+     "L710007",
+     3,
+     "stated",
+     "git_log_first_parent.txt:5807-5879"
+    ]
+   ]
+  },
+  {
+   "metric": "test prompt examples passed",
+   "scope": "test prompt examples",
+   "snapshot": "713f8aef91d3770db7eb6e713a530f736b144fbb",
+   "values": [
+    15.0,
+    16.0
+   ],
+   "claims": [
+    [
+     "L720003",
+     15,
+     "stated",
+     "git_log_first_parent.txt:6186-6218"
+    ],
+    [
+     "L720010",
+     16,
+     "stated",
+     "git_log_first_parent.txt:6186-6218"
+    ]
+   ]
+  },
+  {
+   "metric": "stage 4 semantic audit new prompt cohort faithful",
+   "scope": "semantic audit md",
+   "snapshot": "71b100a8a9dbe9698bb7646f185fa001fba492a6",
+   "values": [
+    0.923,
+    0.9231
+   ],
+   "claims": [
+    [
+     "L720122",
+     "92.3%",
+     "stated",
+     "git_log_first_parent.txt:6428-6447"
+    ],
+    [
+     "L720123",
+     0.9231,
+     "stated",
+     "git_log_first_parent.txt:6428-6447"
+    ]
+   ]
+  },
+  {
+   "metric": "tool deviation defensibility",
+   "scope": "per behaviour order unstated",
+   "snapshot": "commit 49f5c1f686416a6518945b8a6e7fab69782ac0c8",
+   "values": [
+    0.35,
+    0.56,
+    0.66,
+    0.81,
+    0.88,
+    1.0
+   ],
+   "claims": [
+    [
+     "L760017",
+     0.66,
+     "stated",
+     "git_log_first_parent.txt:7065-7079"
+    ],
+    [
+     "L760018",
+     0.35,
+     "stated",
+     "git_log_first_parent.txt:7065-7079"
+    ],
+    [
+     "L760019",
+     0.56,
+     "stated",
+     "git_log_first_parent.txt:7065-7079"
+    ],
+    [
+     "L760020",
+     0.88,
+     "panel",
+     "git_log_first_parent.txt:7065-7079"
+    ],
+    [
+     "L760021",
+     0.81,
+     "panel",
+     "git_log_first_parent.txt:7065-7079"
+    ],
+    [
+     "L760022",
+     "1.00",
+     "panel",
+     "git_log_first_parent.txt:7065-7079"
+    ]
+   ]
+  },
+  {
+   "metric": "held out",
+   "scope": "per behaviour order unstated",
+   "snapshot": "commit ae24596e",
+   "values": [
+    0.61,
+    0.67,
+    0.73
+   ],
+   "claims": [
+    [
+     "L770040",
+     0.73,
+     "stated",
+     "git_log_first_parent.txt:7267-7275"
+    ],
+    [
+     "L770041",
+     0.67,
+     "stated",
+     "git_log_first_parent.txt:7267-7275"
+    ],
+    [
+     "L770042",
+     0.61,
+     "stated",
+     "git_log_first_parent.txt:7267-7275"
+    ]
+   ]
+  },
+  {
+   "metric": "engaged precision",
+   "scope": "unstated",
+   "snapshot": "attempt 4",
+   "values": [
+    0.85,
+    0.895
+   ],
+   "claims": [
+    [
+     "L77510004",
+     0.85,
+     "stated",
+     "ITERATION_NOTES.md:346-369"
+    ],
+    [
+     "L77510023",
+     0.895,
+     "stated",
+     "ITERATION_NOTES.md:346-369"
+    ],
+    [
+     "L950002",
+     0.85,
+     "stated",
+     "git_log_first_parent.txt:9584-9591"
+    ]
+   ]
+  },
+  {
+   "metric": "extension precision move gate",
+   "scope": "extension nodes",
+   "snapshot": "attempt 4",
+   "values": [
+    0.7143,
+    0.8333
+   ],
+   "claims": [
+    [
+     "L77510010",
+     0.7143,
+     "stated",
+     "ITERATION_NOTES.md:346-369"
+    ],
+    [
+     "L77510024",
+     0.8333,
+     "stated",
+     "ITERATION_NOTES.md:346-369"
+    ]
+   ]
+  },
+  {
+   "metric": "mcc",
+   "scope": "tool 0 18",
+   "snapshot": "handoff md supersession list banner",
+   "values": [
+    0.274,
+    0.32
+   ],
+   "claims": [
+    [
+     "L77530268",
+     "+0.274",
+     "stated",
+     "HANDOFF.md:446-503"
+    ],
+    [
+     "L77530269",
+     "+0.320",
+     "stated",
+     "HANDOFF.md:446-503"
+    ]
+   ]
+  },
+  {
+   "metric": "judge mcc",
+   "scope": "judges mean of 3",
+   "snapshot": "handoff md supersession list banner",
+   "values": [
+    0.394,
+    0.555
+   ],
+   "claims": [
+    [
+     "L77530270",
+     "+0.394",
+     "panel",
+     "HANDOFF.md:446-503"
+    ],
+    [
+     "L77530271",
+     "+0.555",
+     "panel",
+     "HANDOFF.md:446-503"
+    ]
+   ]
+  },
+  {
+   "metric": "tool judge gap",
+   "scope": "tool judge gap",
+   "snapshot": "handoff md supersession list banner",
+   "values": [
+    0.119,
+    0.236
+   ],
+   "claims": [
+    [
+     "L77530272",
+     0.119,
+     "stated",
+     "HANDOFF.md:446-503"
+    ],
+    [
+     "L77530273",
+     0.236,
+     "stated",
+     "HANDOFF.md:446-503"
+    ]
+   ]
+  },
+  {
+   "metric": "mcc",
+   "scope": "shipped tool",
+   "snapshot": "sfe handoff md 751 768",
+   "values": [
+    0.206,
+    0.396
+   ],
+   "claims": [
+    [
+     "L77540014",
+     "+0.206",
+     "stated",
+     "HANDOFF.md:751-768"
+    ],
+    [
+     "L77540015",
+     "+0.396",
+     "stated",
+     "HANDOFF.md:751-768"
+    ]
+   ]
+  },
+  {
+   "metric": "auc",
+   "scope": "per behaviour order unstated",
+   "snapshot": "sfe handoff md 751 768",
+   "values": [
+    0.522,
+    0.623,
+    0.633
+   ],
+   "claims": [
+    [
+     "L77540023",
+     "0.522",
+     "stated",
+     "HANDOFF.md:751-768"
+    ],
+    [
+     "L77540024",
+     "0.633",
+     "stated",
+     "HANDOFF.md:751-768"
+    ],
+    [
+     "L77540025",
+     "0.623",
+     "stated",
+     "HANDOFF.md:751-768"
+    ]
+   ]
+  },
+  {
+   "metric": "join rate recall ceiling measure join py",
+   "scope": "all strata",
+   "snapshot": "sfe handoff md 1300 1338",
+   "values": [
+    0.9838,
+    0.984
+   ],
+   "claims": [
+    [
+     "L77540161",
+     0.9838,
+     "stated",
+     "HANDOFF.md:1300-1338"
+    ],
+    [
+     "L77540162",
+     "98.4%",
+     "stated",
+     "HANDOFF.md:1300-1338"
+    ]
+   ]
+  },
+  {
+   "metric": "tests passed",
+   "scope": "versioned cut 2026 08 04 cycle frozen thresholds",
+   "snapshot": "versioned cut 2026 08 04 decision json",
+   "values": [
+    3.0,
+    103.0
+   ],
+   "claims": [
+    [
+     "L77560081",
+     103,
+     "stated",
+     "decision.json:11-36"
+    ],
+    [
+     "L77560083",
+     3,
+     "stated",
+     "decision.json:11-36"
+    ]
+   ]
+  },
+  {
+   "metric": "engaged precision",
+   "scope": "user autonomy",
+   "snapshot": "entry 0026",
+   "values": [
+    0.262,
+    0.2623
+   ],
+   "claims": [
+    [
+     "L77700053",
+     0.262,
+     "stated",
+     "ITERATION_NOTES.md:554-573"
+    ],
+    [
+     "L77700058",
+     0.2623,
+     "stated",
+     "ITERATION_NOTES.md:554-573"
+    ]
+   ]
+  },
+  {
+   "metric": "engaged precision",
+   "scope": "user autonomy",
+   "snapshot": "entry 0026 sample series",
+   "values": [
+    0.262,
+    0.45,
+    0.6
+   ],
+   "claims": [
+    [
+     "L77700060",
+     0.6,
+     "raw",
+     "ITERATION_NOTES.md:554-573"
+    ],
+    [
+     "L77700061",
+     0.45,
+     "stated",
+     "ITERATION_NOTES.md:554-573"
+    ],
+    [
+     "L77700062",
+     0.262,
+     "stated",
+     "ITERATION_NOTES.md:554-573"
+    ]
+   ]
+  },
+  {
+   "metric": "1 nn relevance prediction",
+   "scope": "relevance prediction",
+   "snapshot": "handoff current md 2026 08 25 end",
+   "values": [
+    0.7,
+    0.72
+   ],
+   "claims": [
+    [
+     "L77700127",
+     0.72,
+     "cove",
+     "HANDOFF_CURRENT.md:1-26"
+    ],
+    [
+     "L77700129",
+     0.7,
+     "cove",
+     "HANDOFF_CURRENT.md:1-26"
+    ]
+   ]
+  },
+  {
+   "metric": "base rate",
+   "scope": "relevance prediction",
+   "snapshot": "handoff current md 2026 08 25 end",
+   "values": [
+    0.59,
+    0.6
+   ],
+   "claims": [
+    [
+     "L77700128",
+     0.6,
+     "cove",
+     "HANDOFF_CURRENT.md:1-26"
+    ],
+    [
+     "L77700130",
+     0.59,
+     "cove",
+     "HANDOFF_CURRENT.md:1-26"
+    ]
+   ]
+  },
+  {
+   "metric": "1 nn relevance prediction",
+   "scope": "relevance prediction",
+   "snapshot": "l1l2 adversarial review md overall verdict",
+   "values": [
+    0.7,
+    0.72
+   ],
+   "claims": [
+    [
+     "L77700320",
+     0.72,
+     "stated",
+     "L1L2_ADVERSARIAL_REVIEW.md:240-272"
+    ],
+    [
+     "L77700323",
+     0.7,
+     "stated",
+     "L1L2_ADVERSARIAL_REVIEW.md:240-272"
+    ]
+   ]
+  },
+  {
+   "metric": "majority baseline",
+   "scope": "relevance prediction",
+   "snapshot": "l1l2 adversarial review md overall verdict",
+   "values": [
+    0.59,
+    0.6
+   ],
+   "claims": [
+    [
+     "L77700321",
+     0.6,
+     "stated",
+     "L1L2_ADVERSARIAL_REVIEW.md:240-272"
+    ],
+    [
+     "L77700324",
+     0.59,
+     "stated",
+     "L1L2_ADVERSARIAL_REVIEW.md:240-272"
+    ]
+   ]
+  },
+  {
+   "metric": "faithful rate",
+   "scope": "bulk chunk 00 cohort",
+   "snapshot": "cohort bulk chunk 00",
+   "values": [
+    0.33,
+    0.3333
+   ],
+   "claims": [
+    [
+     "L77800043",
+     0.3333,
+     "stated",
+     "semantic_audit.json:3-82"
+    ],
+    [
+     "L77800046",
+     "33%",
+     "stated",
+     "semantic_audit.json:3-82"
+    ]
+   ]
+  },
+  {
+   "metric": "frozen per behaviour cut",
+   "scope": "per behaviour order unstated",
+   "snapshot": "2026 08 04",
+   "values": [
+    0.2162,
+    0.2365,
+    0.3131
+   ],
+   "claims": [
+    [
+     "L77800169",
+     0.2162,
+     "stated",
+     "MODULE_MAP.md:116-134"
+    ],
+    [
+     "L77800170",
+     0.2365,
+     "stated",
+     "MODULE_MAP.md:116-134"
+    ],
+    [
+     "L77800171",
+     0.3131,
+     "stated",
+     "MODULE_MAP.md:116-134"
+    ]
+   ]
+  },
+  {
+   "metric": "predicted set size",
+   "scope": "per behaviour order unstated",
+   "snapshot": "cycle patient backfill 2026 08 04",
+   "values": [
+    73.0,
+    95.0,
+    146.0
+   ],
+   "claims": [
+    [
+     "L77800272",
+     95,
+     "stated",
+     "review_verdict.json:3-3"
+    ],
+    [
+     "L77800273",
+     73,
+     "stated",
+     "review_verdict.json:3-3"
+    ],
+    [
+     "L77800274",
+     146,
+     "stated",
+     "review_verdict.json:3-3"
+    ]
+   ]
+  },
+  {
+   "metric": "tests passed",
+   "scope": "the test suite",
+   "snapshot": "cycle patient pricing 2026 08 04",
+   "values": [
+    2128.0,
+    2129.0
+   ],
+   "claims": [
+    [
+     "L77800346",
+     2129,
+     "stated",
+     "decision.json:86-86"
+    ],
+    [
+     "L77800377",
+     2128,
+     "stated",
+     "review_verdict.json:4-4"
+    ]
+   ]
+  },
+  {
+   "metric": "packets",
+   "scope": "unjudged assert less nodes",
+   "snapshot": "commit 19f161aa",
+   "values": [
+    7.0,
+    172.0,
+    179.0
+   ],
+   "claims": [
+    [
+     "L77900207",
+     179,
+     "git",
+     "git_log_first_parent.txt:8429-8436"
+    ],
+    [
+     "L77900208",
+     172,
+     "git",
+     "git_log_first_parent.txt:8429-8436"
+    ],
+    [
+     "L77900209",
+     7,
+     "git",
+     "git_log_first_parent.txt:8429-8436"
+    ]
+   ]
+  },
+  {
+   "metric": "helpfulness mutation stage tuning",
+   "scope": "help",
+   "snapshot": "unstated",
+   "values": [
+    0.75,
+    0.77
+   ],
+   "claims": [
+    [
+     "L800011",
+     0.75,
+     "stated",
+     "git_log_first_parent.txt:7618-7626"
+    ],
+    [
+     "L800012",
+     0.77,
+     "stated",
+     "git_log_first_parent.txt:7618-7626"
+    ]
+   ]
+  },
+  {
+   "metric": "helpfulness mutation stage tuning r9",
+   "scope": "help",
+   "snapshot": "unstated",
+   "values": [
+    0.75,
+    0.77
+   ],
+   "claims": [
+    [
+     "L800036",
+     0.77,
+     "stated",
+     "git_log_first_parent.txt:7663-7671"
+    ],
+    [
+     "L800037",
+     0.75,
+     "stated",
+     "git_log_first_parent.txt:7663-7671"
+    ]
+   ]
+  },
+  {
+   "metric": "gloss verification verdict count",
+   "scope": "gloss verification",
+   "snapshot": "unstated",
+   "values": [
+    1.0,
+    2.0,
+    14.0
+   ],
+   "claims": [
+    [
+     "L800067",
+     14,
+     "stated",
+     "git_log_first_parent.txt:7699-7707"
+    ],
+    [
+     "L800068",
+     2,
+     "stated",
+     "git_log_first_parent.txt:7699-7707"
+    ],
+    [
+     "L800069",
+     1,
+     "stated",
+     "git_log_first_parent.txt:7699-7707"
+    ]
+   ]
+  },
+  {
+   "metric": "harm fp census",
+   "scope": "harm",
+   "snapshot": "commit e11587e7 ordinal 388",
+   "values": [
+    0.4375,
+    1.0
+   ],
+   "claims": [
+    [
+     "L820033",
+     0.4375,
+     "stated",
+     "git_log_first_parent.txt:7915-7923"
+    ],
+    [
+     "L820035",
+     1,
+     "stated",
+     "git_log_first_parent.txt:7915-7923"
+    ]
+   ]
+  },
+  {
+   "metric": "caution census",
+   "scope": "caution",
+   "snapshot": "commit a3fcb81c ordinal 390",
+   "values": [
+    0.8571,
+    2.0
+   ],
+   "claims": [
+    [
+     "L820056",
+     0.8571,
+     "stated",
+     "git_log_first_parent.txt:7933-7941"
+    ],
+    [
+     "L820057",
+     2,
+     "stated",
+     "git_log_first_parent.txt:7933-7941"
+    ]
+   ]
+  },
+  {
+   "metric": "engaged precision",
+   "scope": "per behaviour order unstated",
+   "snapshot": "commit d9caa6e4",
+   "values": [
+    0.8706,
+    0.8843,
+    0.9336
+   ],
+   "claims": [
+    [
+     "L890100",
+     0.8843,
+     "stated",
+     "git_log_first_parent.txt:8863-8885"
+    ],
+    [
+     "L890101",
+     0.8706,
+     "stated",
+     "git_log_first_parent.txt:8863-8885"
+    ],
+    [
+     "L890102",
+     0.9336,
+     "stated",
+     "git_log_first_parent.txt:8863-8885"
+    ]
+   ]
+  },
+  {
+   "metric": "decline correctness",
+   "scope": "per behaviour order unstated",
+   "snapshot": "commit d9caa6e4",
+   "values": [
+    0.7785,
+    0.7849,
+    0.8214
+   ],
+   "claims": [
+    [
+     "L890103",
+     0.8214,
+     "stated",
+     "git_log_first_parent.txt:8863-8885"
+    ],
+    [
+     "L890104",
+     0.7785,
+     "stated",
+     "git_log_first_parent.txt:8863-8885"
+    ],
+    [
+     "L890105",
+     0.7849,
+     "stated",
+     "git_log_first_parent.txt:8863-8885"
+    ]
+   ]
+  },
+  {
+   "metric": "tests green",
+   "scope": "unstated",
+   "snapshot": "unstated",
+   "values": [
+    15.0,
+    37.0,
+    43.0
+   ],
+   "claims": [
+    [
+     "L900029",
+     15,
+     "stated",
+     "git_log_first_parent.txt:8967-8975"
+    ],
+    [
+     "L900070",
+     37,
+     "stated",
+     "git_log_first_parent.txt:9003-9011"
+    ],
+    [
+     "L940101",
+     43,
+     "stated",
+     "git_log_first_parent.txt:9552-9559"
+    ],
+    [
+     "L950054",
+     43,
+     "stated",
+     "git_log_first_parent.txt:9624-9631"
+    ]
+   ]
+  },
+  {
    "metric": "engaged precision",
    "scope": "unstated",
    "snapshot": "attempt2 iter2 remeasure scored json",
@@ -1989,169 +3321,146 @@
    ]
   },
   {
-   "metric": "mcc",
-   "scope": "tool 0 18",
-   "snapshot": "sfe handoff md universe delta table",
+   "metric": "per class accuracy",
+   "scope": "opus parity certificate",
+   "snapshot": "commit a7e9a40b",
    "values": [
-    0.274,
-    0.32
+    0.8889,
+    0.9286
    ],
    "claims": [
     [
-     "L9940163",
-     "+0.274",
+     "L930052",
+     0.8889,
      "stated",
-     "HANDOFF.md:446-503"
+     "git_log_first_parent.txt:9384-9391"
     ],
     [
-     "L9940164",
-     "+0.320",
+     "L930053",
+     0.9286,
      "stated",
-     "HANDOFF.md:446-503"
+     "git_log_first_parent.txt:9384-9391"
     ]
    ]
   },
   {
-   "metric": "judge mcc",
-   "scope": "judges mean of 3",
-   "snapshot": "sfe handoff md universe delta table",
+   "metric": "unstated",
+   "scope": "frozen draws",
+   "snapshot": "attempt 2",
    "values": [
-    0.394,
-    0.555
+    0.7,
+    0.75
    ],
    "claims": [
     [
-     "L9940165",
-     "+0.394",
-     "stated",
-     "HANDOFF.md:446-503"
+     "L940025",
+     0.75,
+     "raw",
+     "git_log_first_parent.txt:9480-9487"
     ],
     [
-     "L9940166",
-     "+0.555",
-     "stated",
-     "HANDOFF.md:446-503"
+     "L940026",
+     0.7,
+     "panel",
+     "git_log_first_parent.txt:9480-9487"
     ]
    ]
   },
   {
-   "metric": "tool to judge gap",
-   "scope": "tool vs judges",
-   "snapshot": "sfe handoff md universe delta table",
+   "metric": "unstated",
+   "scope": "frozen draws",
+   "snapshot": "attempt 3",
    "values": [
-    0.119,
-    0.236
+    0.4,
+    0.55
    ],
    "claims": [
     [
-     "L9940167",
-     0.119,
-     "stated",
-     "HANDOFF.md:446-503"
+     "L940027",
+     0.4,
+     "raw",
+     "git_log_first_parent.txt:9480-9487"
     ],
     [
-     "L9940168",
-     0.236,
-     "stated",
-     "HANDOFF.md:446-503"
+     "L940028",
+     0.55,
+     "panel",
+     "git_log_first_parent.txt:9480-9487"
     ]
    ]
   },
   {
-   "metric": "mcc",
-   "scope": "shipped tool",
-   "snapshot": "sfe handoff md deficit table",
+   "metric": "decline correctness",
+   "scope": "unstated",
+   "snapshot": "unstated",
    "values": [
-    0.206,
-    0.396
+    0.35,
+    0.5
    ],
    "claims": [
     [
-     "L9940187",
-     "+0.206",
-     "stated",
-     "HANDOFF.md:751-768"
+     "L940030",
+     0.5,
+     "panel",
+     "git_log_first_parent.txt:9480-9487"
     ],
     [
-     "L9940188",
-     "+0.396",
-     "stated",
-     "HANDOFF.md:751-768"
+     "L940031",
+     0.35,
+     "panel",
+     "git_log_first_parent.txt:9480-9487"
     ]
    ]
   },
   {
-   "metric": "judge mcc",
-   "scope": "judges",
-   "snapshot": "sfe handoff md deficit table",
+   "metric": "unstated",
+   "scope": "unstated",
+   "snapshot": "entry 0010",
    "values": [
-    0.555,
-    0.654
+    0.55,
+    0.7
    ],
    "claims": [
     [
-     "L9940190",
-     "+0.555",
-     "stated",
-     "HANDOFF.md:751-768"
+     "L940036",
+     0.7,
+     "panel",
+     "git_log_first_parent.txt:9488-9495"
     ],
     [
-     "L9940191",
-     "+0.654",
-     "stated",
-     "HANDOFF.md:751-768"
+     "L940037",
+     0.55,
+     "panel",
+     "git_log_first_parent.txt:9488-9495"
     ]
    ]
   },
   {
-   "metric": "citations",
-   "scope": "the 9 behaviour panel",
-   "snapshot": "sfe handoff md",
+   "metric": "r4 pools",
+   "scope": "unstated",
+   "snapshot": "unstated",
    "values": [
-    1682.0,
-    2632.0
+    369.0,
+    393.0
    ],
    "claims": [
     [
-     "L9940202",
-     2632,
+     "L940129",
+     393,
      "stated",
-     "HANDOFF.md:886-900"
+     "git_log_first_parent.txt:9576-9583"
     ],
     [
-     "L9940203",
-     1682,
+     "L940130",
+     369,
      "stated",
-     "HANDOFF.md:886-900"
+     "git_log_first_parent.txt:9576-9583"
     ]
    ]
   },
   {
-   "metric": "engaged precision",
-   "scope": "how to approach tradeoffs repair loop",
-   "snapshot": "attempt 4",
-   "values": [
-    0.85,
-    0.895
-   ],
-   "claims": [
-    [
-     "L9950004",
-     0.85,
-     "stated",
-     "ITERATION_NOTES.md:346-369"
-    ],
-    [
-     "L9950022",
-     0.895,
-     "stated",
-     "ITERATION_NOTES.md:346-369"
-    ]
-   ]
-  },
-  {
-   "metric": "extension precision",
-   "scope": "p3 move gate",
+   "metric": "p3",
+   "scope": "unstated",
    "snapshot": "attempt 4",
    "values": [
     0.7143,
@@ -2159,249 +3468,39 @@
    ],
    "claims": [
     [
-     "L9950010",
+     "L950004",
      0.7143,
      "stated",
-     "ITERATION_NOTES.md:346-369"
+     "git_log_first_parent.txt:9584-9591"
     ],
     [
-     "L9950023",
+     "L950017",
      0.8333,
      "stated",
-     "ITERATION_NOTES.md:346-369"
+     "git_log_first_parent.txt:9584-9591"
     ]
    ]
   },
   {
-   "metric": "ledger agreement",
-   "scope": "helpfulness",
-   "snapshot": "e2 paired format pilot",
+   "metric": "node side annotation entries",
+   "scope": "per seat order unstated",
+   "snapshot": "unstated",
    "values": [
-    0.7,
-    0.75
+    106.0,
+    111.0
    ],
    "claims": [
     [
-     "L9960091",
-     0.75,
+     "L980062",
+     111,
      "stated",
-     "ROUND4_PREREG.md:149-208"
+     "git_log_first_parent.txt:10032-10039"
     ],
     [
-     "L9960092",
-     0.7,
+     "L980063",
+     106,
      "stated",
-     "ROUND4_PREREG.md:149-208"
-    ]
-   ]
-  },
-  {
-   "metric": "1 nn relevance prediction",
-   "scope": "l1 and l2 as registered",
-   "snapshot": "l1l2 adversarial review md overall verdict",
-   "values": [
-    0.7,
-    0.72
-   ],
-   "claims": [
-    [
-     "L9960119",
-     0.72,
-     "stated",
-     "L1L2_ADVERSARIAL_REVIEW.md:240-272"
-    ],
-    [
-     "L9960122",
-     0.7,
-     "stated",
-     "L1L2_ADVERSARIAL_REVIEW.md:240-272"
-    ]
-   ]
-  },
-  {
-   "metric": "base rate",
-   "scope": "l1 and l2 as registered",
-   "snapshot": "l1l2 adversarial review md overall verdict",
-   "values": [
-    0.59,
-    0.6
-   ],
-   "claims": [
-    [
-     "L9960120",
-     0.6,
-     "stated",
-     "L1L2_ADVERSARIAL_REVIEW.md:240-272"
-    ],
-    [
-     "L9960123",
-     0.59,
-     "stated",
-     "L1L2_ADVERSARIAL_REVIEW.md:240-272"
-    ]
-   ]
-  },
-  {
-   "metric": "p value",
-   "scope": "l1 and l2 as registered",
-   "snapshot": "l1l2 adversarial review md overall verdict",
-   "values": [
-    0.0015,
-    0.0097
-   ],
-   "claims": [
-    [
-     "L9960121",
-     0.0015,
-     "stated",
-     "L1L2_ADVERSARIAL_REVIEW.md:240-272"
-    ],
-    [
-     "L9960124",
-     0.0097,
-     "stated",
-     "L1L2_ADVERSARIAL_REVIEW.md:240-272"
-    ]
-   ]
-  },
-  {
-   "metric": "mcc floor",
-   "scope": "mcc floors",
-   "snapshot": "sfe handoff md",
-   "values": [
-    -0.059,
-    0.0
-   ],
-   "claims": [
-    [
-     "L9960210",
-     0.0,
-     "stated",
-     "HANDOFF.md:586-591"
-    ],
-    [
-     "L9960211",
-     -0.059,
-     "stated",
-     "HANDOFF.md:586-591"
-    ]
-   ]
-  },
-  {
-   "metric": "mcc",
-   "scope": "the section channel",
-   "snapshot": "sfe handoff md lead 2",
-   "values": [
-    0.16,
-    0.177,
-    0.31,
-    0.334,
-    0.335,
-    0.408,
-    0.536,
-    0.641
-   ],
-   "claims": [
-    [
-     "L9960215",
-     "+0.16",
-     "stated",
-     "HANDOFF.md:839-863"
-    ],
-    [
-     "L9960217",
-     "+0.641",
-     "stated",
-     "HANDOFF.md:839-863"
-    ],
-    [
-     "L9960218",
-     "+0.536",
-     "stated",
-     "HANDOFF.md:839-863"
-    ],
-    [
-     "L9960220",
-     "+0.334",
-     "stated",
-     "HANDOFF.md:839-863"
-    ],
-    [
-     "L9960221",
-     "+0.408",
-     "stated",
-     "HANDOFF.md:839-863"
-    ],
-    [
-     "L9960223",
-     "+0.177",
-     "stated",
-     "HANDOFF.md:839-863"
-    ],
-    [
-     "L9960224",
-     "+0.310",
-     "stated",
-     "HANDOFF.md:839-863"
-    ],
-    [
-     "L9960227",
-     "+0.335",
-     "stated",
-     "HANDOFF.md:839-863"
-    ]
-   ]
-  },
-  {
-   "metric": "coverage",
-   "scope": "chain of command",
-   "snapshot": "sfe handoff md",
-   "values": [
-    0.524,
-    0.571
-   ],
-   "claims": [
-    [
-     "L9970201",
-     0.524,
-     "stated",
-     "HANDOFF.md:1300-1338"
-    ],
-    [
-     "L9970202",
-     0.571,
-     "stated",
-     "HANDOFF.md:1300-1338"
-    ]
-   ]
-  },
-  {
-   "metric": "query atoms",
-   "scope": "per behaviour order unstated",
-   "snapshot": "sfe module map md",
-   "values": [
-    31.0,
-    37.0,
-    42.0
-   ],
-   "claims": [
-    [
-     "L9970228",
-     42,
-     "stated",
-     "MODULE_MAP.md:214-231"
-    ],
-    [
-     "L9970229",
-     31,
-     "stated",
-     "MODULE_MAP.md:214-231"
-    ],
-    [
-     "L9970230",
-     37,
-     "stated",
-     "MODULE_MAP.md:214-231"
+     "git_log_first_parent.txt:10032-10039"
     ]
    ]
   },
@@ -2431,6 +3530,20 @@
  ],
  "contested": [
   {
+   "id": "L1000061",
+   "metric": "panel vote",
+   "value": "2-1",
+   "source": "ITERATION_NOTES.md:92-122",
+   "refs": []
+  },
+  {
+   "id": "L1000178",
+   "metric": "panel vote",
+   "value": "2-1",
+   "source": "ITERATION_NOTES.md:198-224",
+   "refs": []
+  },
+  {
    "id": "L100019",
    "metric": "defensible-by-contradiction qualification",
    "value": "does NOT qualify and stays contested-pending",
@@ -2438,17 +3551,63 @@
    "refs": []
   },
   {
+   "id": "L1000232",
+   "metric": "n/a",
+   "value": null,
+   "source": "ITERATION_NOTES.md:260-289",
+   "refs": [
+    [
+     "contradicts",
+     "TWO panel-tier rulings (l3877_3953_n002, l3239_3382_n005)",
+     "L9960016"
+    ]
+   ]
+  },
+  {
+   "id": "L1000260",
+   "metric": "n/a",
+   "value": null,
+   "source": "ITERATION_NOTES.md:290-322",
+   "refs": []
+  },
+  {
+   "id": "L1000261",
+   "metric": "panel vote",
+   "value": "3-0",
+   "source": "ITERATION_NOTES.md:290-322",
+   "refs": [
+    [
+     "contradicts",
+     "attempt-3 panel 3-0 not_relevant",
+     "L1000118"
+    ]
+   ]
+  },
+  {
+   "id": "L1000262",
+   "metric": "panel vote",
+   "value": "3-0",
+   "source": "ITERATION_NOTES.md:290-322",
+   "refs": [
+    [
+     "contradicts",
+     "iter-1 escalation 3-0 relevant",
+     "L1000043"
+    ]
+   ]
+  },
+  {
+   "id": "L1000264",
+   "metric": "panel vote",
+   "value": "2-1 R then wave NR",
+   "source": "ITERATION_NOTES.md:290-322",
+   "refs": []
+  },
+  {
    "id": "L10033",
    "metric": "panel vote",
    "value": "2-1",
    "source": "ITERATION_NOTES.md:41-70",
-   "refs": []
-  },
-  {
-   "id": "L10054",
-   "metric": "panel vote",
-   "value": "2-1 SPLIT",
-   "source": "ITERATION_NOTES.md:73-103",
    "refs": []
   },
   {
@@ -2467,7 +3626,7 @@
     [
      "contradicts",
      "attempt-3 panel 3-0 not_relevant",
-     "L100057"
+     "L1000118"
     ]
    ]
   },
@@ -2480,7 +3639,7 @@
     [
      "contradicts",
      "iter-1 escalation 3-0 relevant",
-     "L10115"
+     "L1000043"
     ]
    ]
   },
@@ -2497,6 +3656,104 @@
    "value": "does NOT and stays contested",
    "source": "ITERATION_NOTES.md:299-312",
    "refs": []
+  },
+  {
+   "id": "L1030068",
+   "metric": "human-panelist baseline",
+   "value": "71%",
+   "source": "HANDOFF_CURRENT.md:80-109",
+   "refs": []
+  },
+  {
+   "id": "L1070036",
+   "metric": "n/a",
+   "value": null,
+   "source": "HANDOFF.md:99-130",
+   "refs": [
+    [
+     "contradicts",
+     "The order was also ruled the other way: **S4 first, then S3b",
+     "L10253"
+    ]
+   ]
+  },
+  {
+   "id": "L1070043",
+   "metric": "n/a",
+   "value": null,
+   "source": "HANDOFF.md:99-130",
+   "refs": [
+    [
+     "contradicts",
+     "S3b and S4 build-ready",
+     "L1070028"
+    ]
+   ]
+  },
+  {
+   "id": "L1070045",
+   "metric": "n/a",
+   "value": null,
+   "source": "HANDOFF.md:99-130",
+   "refs": [
+    [
+     "contradicts",
+     "NEXT STEP: run the S3b build (attribution backfill first), t",
+     "L540108"
+    ]
+   ]
+  },
+  {
+   "id": "L1070112",
+   "metric": "n/a",
+   "value": null,
+   "source": "HANDOFF.md:1249-1268",
+   "refs": [
+    [
+     "contradicts",
+     "The iteration loop as built does NOT run this recommendation",
+     "L1070117"
+    ]
+   ]
+  },
+  {
+   "id": "L1070117",
+   "metric": "n/a",
+   "value": null,
+   "source": "HANDOFF.md:1249-1268",
+   "refs": [
+    [
+     "contradicts",
+     "**Ship `section@any_atom`, not `combined`**",
+     "L1070112"
+    ]
+   ]
+  },
+  {
+   "id": "L1070129",
+   "metric": "sample negative ratio",
+   "value": "1:2",
+   "source": "HANDOFF.md:1440-1460",
+   "refs": [
+    [
+     "contradicts",
+     "the README states and argues for 1:1",
+     "L1000319"
+    ]
+   ]
+  },
+  {
+   "id": "L1070130",
+   "metric": "sample negative ratio",
+   "value": "1:1",
+   "source": "HANDOFF.md:1440-1460",
+   "refs": [
+    [
+     "contradicts",
+     "the sample ships 1:2 negatives",
+     "L210087"
+    ]
+   ]
   },
   {
    "id": "L120105",
@@ -2519,7 +3776,7 @@
     [
      "contradicts",
      "The original frontier panel (`data/behaviours.json`, rubric ",
-     "L10026"
+     "L1000118"
     ]
    ]
   },
@@ -2622,7 +3879,7 @@
     [
      "contradicts",
      "And S3b is **not** build-ready",
-     "L230070"
+     "L1070043"
     ]
    ]
   },
@@ -2648,7 +3905,7 @@
     [
      "contradicts",
      "it is READY TO BUILD",
-     "L230059"
+     "L1070031"
     ]
    ]
   },
@@ -2661,7 +3918,7 @@
     [
      "contradicts",
      "NEXT STEP: run the S3b build (attribution backfill first), t",
-     "L290229"
+     "L540108"
     ]
    ]
   },
@@ -2694,7 +3951,7 @@
     [
      "contradicts",
      "Ship `section@any_atom`, not `combined`",
-     "L280074"
+     "L1070112"
     ]
    ]
   },
@@ -2707,7 +3964,7 @@
     [
      "contradicts",
      "the README states and argues for 1:1",
-     "L9940003"
+     "L1000319"
     ]
    ]
   },
@@ -2721,32 +3978,6 @@
      "contradicts",
      "the sample ships 1:2 negatives",
      "L210087"
-    ]
-   ]
-  },
-  {
-   "id": "L320082",
-   "metric": "briefs listed in briefs/README.md",
-   "value": 11,
-   "source": "README.md:196-240",
-   "refs": [
-    [
-     "contradicts",
-     "`ls briefs/*.md` returns 12",
-     "L320028"
-    ]
-   ]
-  },
-  {
-   "id": "L320083",
-   "metric": "brief files in briefs/",
-   "value": 12,
-   "source": "README.md:196-240",
-   "refs": [
-    [
-     "contradicts",
-     "\"**11** as of 2026-08-05\"",
-     "L320081"
     ]
    ]
   },
@@ -2798,7 +4029,7 @@
     [
      "contradicts",
      "`CYCLE_DESIGN.md`'s numbered *Phases* list still has **CENSU",
-     "L180150"
+     "L1010268"
     ]
    ]
   },
@@ -2811,7 +4042,7 @@
     [
      "contradicts",
      "`_predict` requires mechanism-level targets and accepts `cen",
-     "L10076"
+     "L1000004"
     ]
    ]
   },
@@ -2824,7 +4055,7 @@
     [
      "contradicts",
      "`CYCLE_DESIGN.md` phase 2: `prediction.json` holds *expected",
-     "L10065"
+     "L1000066"
     ]
    ]
   },
@@ -2850,7 +4081,7 @@
     [
      "contradicts",
      "`briefs/README.md`: **11 briefs** as of 2026-08-05",
-     "L320082"
+     "L320095"
     ]
    ]
   },
@@ -2908,32 +4139,6 @@
    ]
   },
   {
-   "id": "L330038",
-   "metric": "n/a",
-   "value": null,
-   "source": "adversarial_review_1.md:13-36",
-   "refs": [
-    [
-     "contradicts",
-     "abstract says divergence predicts \"problems in model specifi",
-     null
-    ]
-   ]
-  },
-  {
-   "id": "L330078",
-   "metric": "n/a",
-   "value": null,
-   "source": "adversarial_review_1.md:13-36",
-   "refs": [
-    [
-     "contradicts",
-     "the section's recommendation",
-     null
-    ]
-   ]
-  },
-  {
    "id": "L330100",
    "metric": "n/a",
    "value": null,
@@ -2947,7 +4152,229 @@
    ]
   },
   {
-   "id": "L450092",
+   "id": "L580207",
+   "metric": "n/a",
+   "value": null,
+   "source": "git_log_first_parent.txt:2256-2309",
+   "refs": [
+    [
+     "contradicts",
+     "scores 8/8 under the closure-resolved comparison",
+     "L380036"
+    ]
+   ]
+  },
+  {
+   "id": "L580223",
+   "metric": "n/a",
+   "value": null,
+   "source": "git_log_first_parent.txt:2256-2309",
+   "refs": [
+    [
+     "contradicts",
+     "\u00a76",
+     "L390001"
+    ],
+    [
+     "contradicts",
+     "\u00a77",
+     "L200111"
+    ]
+   ]
+  },
+  {
+   "id": "L600060",
+   "metric": "REVIEW_QUEUE.md claimed guards",
+   "value": 45,
+   "source": "git_log_first_parent.txt:2839-2876",
+   "refs": [
+    [
+     "contradicts",
+     "45 guards",
+     "L580099"
+    ]
+   ]
+  },
+  {
+   "id": "L600061",
+   "metric": "actual guards",
+   "value": 44,
+   "source": "git_log_first_parent.txt:2839-2876",
+   "refs": [
+    [
+     "contradicts",
+     "45 guards",
+     "L580099"
+    ]
+   ]
+  },
+  {
+   "id": "L700065",
+   "metric": "resolve_runs suite count (claimed, c3f6922)",
+   "value": 411,
+   "source": "git_log_first_parent.txt:5607-5667",
+   "refs": [
+    [
+     "contradicts",
+     "Measured: 341",
+     "L700066"
+    ]
+   ]
+  },
+  {
+   "id": "L700066",
+   "metric": "resolve_runs suite count (measured, d9cc2d05)",
+   "value": 341,
+   "source": "git_log_first_parent.txt:5607-5667",
+   "refs": [
+    [
+     "contradicts",
+     "c3f6922's message claimed \"411 in resolve_runs\"",
+     "L1000272"
+    ]
+   ]
+  },
+  {
+   "id": "L77510195",
+   "metric": "human-panelist baseline",
+   "value": "71%",
+   "source": "HANDOFF_CURRENT.md:163-219",
+   "refs": []
+  },
+  {
+   "id": "L77510196",
+   "metric": "n/a",
+   "value": null,
+   "source": "HANDOFF_CURRENT.md:163-219",
+   "refs": []
+  },
+  {
+   "id": "L77530073",
+   "metric": "n/a",
+   "value": null,
+   "source": "semantic_audit.json:83-162",
+   "refs": [
+    [
+     "contradicts",
+     "n002-3147 sanctioned it as the oblige-side analog of the hou",
+     null
+    ]
+   ]
+  },
+  {
+   "id": "L77530102",
+   "metric": "n/a",
+   "value": null,
+   "source": "semantic_audit.json:83-162",
+   "refs": [
+    [
+     "contradicts",
+     "sanctioned as a note by the first auditor",
+     null
+    ]
+   ]
+  },
+  {
+   "id": "L77530170",
+   "metric": "tainted example passage",
+   "value": "m0108",
+   "source": "HANDOFF.md:158-190",
+   "refs": []
+  },
+  {
+   "id": "L77530194",
+   "metric": "divergences",
+   "value": 1,
+   "source": "HANDOFF.md:271-289",
+   "refs": []
+  },
+  {
+   "id": "L77540267",
+   "metric": "MCC",
+   "value": "\u22120.143",
+   "source": "MODULE_MAP.md:47-79",
+   "refs": [
+    [
+     "contradicts",
+     "that verdict was an artifact of an operator borrowed from `s",
+     "L10026"
+    ]
+   ]
+  },
+  {
+   "id": "L77540268",
+   "metric": "n/a",
+   "value": null,
+   "source": "MODULE_MAP.md:47-79",
+   "refs": [
+    [
+     "contradicts",
+     "\"\u26a0\ufe0f THIS LOSES. Measured \u22120.143 MCC\"",
+     "L77540267"
+    ]
+   ]
+  },
+  {
+   "id": "L77550075",
+   "metric": "driver assumption standing",
+   "value": "It does not always hold.",
+   "source": "CYCLE_DESIGN.md:130-142",
+   "refs": [
+    [
+     "contradicts",
+     "The driver assumes OPEN precedes implementation",
+     "L230140"
+    ]
+   ]
+  },
+  {
+   "id": "L77550139",
+   "metric": "n/a",
+   "value": null,
+   "source": "adversarial_review_1.md:13-36",
+   "refs": [
+    [
+     "contradicts",
+     "abstract says divergence predicts \"problems in model specifi",
+     null
+    ]
+   ]
+  },
+  {
+   "id": "L77550156",
+   "metric": "rehearsals",
+   "value": 195,
+   "source": "adversarial_review_1.md:13-36",
+   "refs": [
+    [
+     "contradicts",
+     "pilot contradicts",
+     "L77550155"
+    ]
+   ]
+  },
+  {
+   "id": "L77550163",
+   "metric": "n/a",
+   "value": null,
+   "source": "adversarial_review_1.md:13-36",
+   "refs": [
+    [
+     "contradicts",
+     "the section's recommendation",
+     null
+    ]
+   ]
+  },
+  {
+   "id": "L77700036",
+   "metric": "panel vote",
+   "value": "2-1",
+   "source": "ITERATION_NOTES.md:73-103",
+   "refs": []
+  },
+  {
+   "id": "L77800302",
    "metric": "flip verdict",
    "value": "regression",
    "source": "decision.json:2-36",
@@ -2960,7 +4387,7 @@
    ]
   },
   {
-   "id": "L450093",
+   "id": "L77800303",
    "metric": "flip verdict",
    "value": "correct",
    "source": "decision.json:2-36",
@@ -2973,7 +4400,14 @@
    ]
   },
   {
-   "id": "L450105",
+   "id": "L77800304",
+   "metric": "flip verdict",
+   "value": "unclear",
+   "source": "decision.json:2-36",
+   "refs": []
+  },
+  {
+   "id": "L77800315",
    "metric": "flip verdict",
    "value": "unclear",
    "source": "decision.json:2-36",
@@ -2986,7 +4420,7 @@
    ]
   },
   {
-   "id": "L450106",
+   "id": "L77800316",
    "metric": "flip verdict",
    "value": "correct",
    "source": "decision.json:2-36",
@@ -2999,20 +4433,14 @@
    ]
   },
   {
-   "id": "L460069",
+   "id": "L77800325",
    "metric": "flip verdict",
    "value": "unclear",
    "source": "decision.json:86-86",
-   "refs": [
-    [
-     "contradicts",
-     "the first leg's verdicts",
-     "L460068"
-    ]
-   ]
+   "refs": []
   },
   {
-   "id": "L460070",
+   "id": "L77800326",
    "metric": "flip verdict",
    "value": "correct",
    "source": "decision.json:86-86",
@@ -3061,12 +4489,12 @@
     [
      "contradicts",
      "l3877_3953_n002",
-     "L100018"
+     "L1000058"
     ],
     [
      "contradicts",
      "l3239_3382_n005",
-     "L100021"
+     "L1000058"
     ]
    ]
   },
@@ -3084,24 +4512,71 @@
    ]
   },
   {
-   "id": "L9950135",
-   "metric": "n/a",
-   "value": null,
-   "source": "semantic_audit.json:83-162",
+   "id": "L920037",
+   "metric": "panel vote",
+   "value": "2-1",
+   "source": "git_log_first_parent.txt:9288-9295",
    "refs": []
   },
   {
-   "id": "L9950136",
-   "metric": "auditor instances split",
+   "id": "L930073",
+   "metric": "panel vote",
+   "value": "2-1 relevant",
+   "source": "git_log_first_parent.txt:9408-9415",
+   "refs": []
+  },
+  {
+   "id": "L930126",
+   "metric": "panel-tier contradictions",
    "value": 2,
-   "source": "semantic_audit.json:83-162",
+   "source": "git_log_first_parent.txt:9456-9463",
    "refs": []
   },
   {
-   "id": "L9950163",
+   "id": "L930128",
    "metric": "n/a",
    "value": null,
-   "source": "semantic_audit.json:83-162",
+   "source": "git_log_first_parent.txt:9456-9463",
+   "refs": [
+    [
+     "contradicts",
+     "move-level evidence says the estimator failed",
+     "L930113"
+    ]
+   ]
+  },
+  {
+   "id": "L930129",
+   "metric": "n/a",
+   "value": null,
+   "source": "git_log_first_parent.txt:9456-9463",
+   "refs": [
+    [
+     "contradicts",
+     "registered rule says revert",
+     "L90082"
+    ]
+   ]
+  },
+  {
+   "id": "L930130",
+   "metric": "n/a",
+   "value": null,
+   "source": "git_log_first_parent.txt:9456-9463",
+   "refs": []
+  },
+  {
+   "id": "L940041",
+   "metric": "n/a",
+   "value": null,
+   "source": "git_log_first_parent.txt:9488-9495",
+   "refs": []
+  },
+  {
+   "id": "L940053",
+   "metric": "n/a",
+   "value": null,
+   "source": "git_log_first_parent.txt:9504-9511",
    "refs": []
   },
   {
@@ -3120,7 +4595,7 @@
     [
      "contradicts",
      "TWO panel-tier rulings",
-     "L90068"
+     "L1000232"
     ]
    ]
   },
@@ -3133,30 +4608,9 @@
     [
      "contradicts",
      "TWO panel-tier rulings",
-     "L90068"
+     "L1000232"
     ]
    ]
-  },
-  {
-   "id": "L9960200",
-   "metric": "divergences",
-   "value": 1,
-   "source": "HANDOFF.md:271-289",
-   "refs": []
-  },
-  {
-   "id": "L9970037",
-   "metric": "definition",
-   "value": 100,
-   "source": "ITERATION_NOTES.md:739-756",
-   "refs": []
-  },
-  {
-   "id": "L9980092",
-   "metric": "human-panelist baseline",
-   "value": "71%",
-   "source": "HANDOFF_CURRENT.md:163-219",
-   "refs": []
   },
   {
    "id": "L9990080",
@@ -3188,6 +4642,31 @@
  ],
  "forbids_citation_edges": [
   [
+   "L1040079",
+   "the tuned number",
+   "L1040064"
+  ],
+  [
+   "L1070026",
+   "the \"unmined document meaning\" objection",
+   "L1070025"
+  ],
+  [
+   "L1070077",
+   "Sweeping embedding families/k/scorer forms until MCC rises",
+   "L260076"
+  ],
+  [
+   "L1070079",
+   "ITS AGREEMENT AS \"THE BAR.\"",
+   "L260150"
+  ],
+  [
+   "L1070166",
+   "a second number",
+   "L340032"
+  ],
+  [
    "L110172",
    "the 92.3% new-prompt figure",
    "L110173"
@@ -3195,7 +4674,7 @@
   [
    "L130188",
    "The spot-check",
-   "L10345"
+   "L1010022"
   ],
   [
    "L170136",
@@ -3205,7 +4684,7 @@
   [
    "L230053",
    "Embedding soft-match, document-internal vs pretrained: `SEMANTIC_ARM_RESULTS.md`",
-   "L320034"
+   "L710007"
   ],
   [
    "L240070",
@@ -3220,7 +4699,7 @@
   [
    "L260150",
    "ITS AGREEMENT AS \"THE BAR.\"",
-   null
+   "L1070079"
   ],
   [
    "L270090",
@@ -3248,11 +4727,6 @@
    null
   ],
   [
-   "L290115",
-   "849/863",
-   "L290116"
-  ],
-  [
    "L300078",
    "any number in this file",
    null
@@ -3265,7 +4739,7 @@
   [
    "L340032",
    "a\nsecond number",
-   null
+   "L1070166"
   ],
   [
    "L420047",
@@ -3278,63 +4752,152 @@
    "L460060"
   ],
   [
-   "L460096",
-   "The measure snapshot snapshots/patient-pricing-2026-08-04.json",
-   "L470104"
-  ],
-  [
-   "L470087",
-   "DEV-stamped census composition figures (fp_*/fn_* class counts)",
-   "L460060"
-  ],
-  [
    "L480063",
    "DEV-stamped census composition figures (fp_*/fn_* class counts)",
    "L460060"
   ],
   [
-   "L9940156",
-   "EVERY PREVIOUSLY PUBLISHED NUMBER IN THIS FILE",
+   "L560091",
+   "SALIENCE_RESULT.md",
    null
   ],
   [
-   "L9940185",
+   "L750032",
+   "the registered equivalence metric",
+   null
+  ],
+  [
+   "L77530291",
    "377/333/153, 863 passages, 0.764/0.780/0.500, +0.274, +0.187, or the over/under ",
    "L250050"
   ],
   [
-   "L9970120",
-   "the cycle's design doc, `PORTFOLIO_REVIEW.md`, prior cycles' `flip_verdicts*.jso",
-   null
+   "L77540238",
+   "849/863",
+   "L77530307"
+  ],
+  [
+   "L77700121",
+   "any census number",
+   "L1030002"
   ]
  ],
- "anti_rule_claims": 127,
+ "anti_rule_claims": 171,
  "restated_without_marking": [
   {
-   "value": 0.309,
+   "value": 0.293,
    "marked": [
-    "L240068"
+    "L1070058"
    ],
    "unmarked_standing": [
     [
-     "L520066",
+     "L260058",
+     "HANDOFF.md"
+    ]
+   ]
+  },
+  {
+   "value": 0.723,
+   "marked": [
+    "L1070059"
+   ],
+   "unmarked_standing": [
+    [
+     "L260059",
+     "HANDOFF.md"
+    ]
+   ]
+  },
+  {
+   "value": 0.226,
+   "marked": [
+    "L1070060"
+   ],
+   "unmarked_standing": [
+    [
+     "L260060",
+     "HANDOFF.md"
+    ]
+   ]
+  },
+  {
+   "value": 0.254,
+   "marked": [
+    "L1070062"
+   ],
+   "unmarked_standing": [
+    [
+     "L260062",
+     "HANDOFF.md"
+    ]
+   ]
+  },
+  {
+   "value": 0.4,
+   "marked": [
+    "L1070066"
+   ],
+   "unmarked_standing": [
+    [
+     "L260066",
+     "HANDOFF.md"
+    ]
+   ]
+  },
+  {
+   "value": 589.0,
+   "marked": [
+    "L1070069"
+   ],
+   "unmarked_standing": [
+    [
+     "L180016",
+     "L1L2_REVIEW_DISPOSITION.md"
+    ],
+    [
+     "L260003",
+     "HANDOFF.md"
+    ],
+    [
+     "L77530263",
+     "HANDOFF.md"
+    ]
+   ]
+  },
+  {
+   "value": 0.3333,
+   "marked": [
+    "L1070071"
+   ],
+   "unmarked_standing": [
+    [
+     "L260070",
+     "HANDOFF.md"
+    ]
+   ]
+  },
+  {
+   "value": 4.0,
+   "marked": [
+    "L130183"
+   ],
+   "unmarked_standing": [
+    [
+     "L750039",
      "git_log_first_parent.txt"
     ]
    ]
   },
   {
-   "value": 0.045,
+   "value": 0.309,
    "marked": [
-    "L260179"
+    "L240068",
+    "L550114"
    ],
    "unmarked_standing": [
     [
-     "L260067",
-     "HANDOFF.md"
-    ],
-    [
-     "L270063",
-     "HANDOFF.md"
+     "L520066",
+     "git_log_first_parent.txt"
     ]
    ]
   },
@@ -3345,7 +4908,7 @@
    ],
    "unmarked_standing": [
     [
-     "L9960224",
+     "L77540064",
      "HANDOFF.md"
     ]
    ]
@@ -3353,7 +4916,7 @@
   {
    "value": 0.274,
    "marked": [
-    "L9940163"
+    "L77530268"
    ],
    "unmarked_standing": [
     [
@@ -3369,9 +4932,97 @@
      "HANDOFF.md"
     ]
    ]
+  },
+  {
+   "value": 0.42,
+   "marked": [
+    "L77550137"
+   ],
+   "unmarked_standing": [
+    [
+     "L330032",
+     "adversarial_review_1.md"
+    ]
+   ]
+  },
+  {
+   "value": 0.75,
+   "marked": [
+    "L77900045"
+   ],
+   "unmarked_standing": [
+    [
+     "L1000123",
+     "ITERATION_NOTES.md"
+    ],
+    [
+     "L1000236",
+     "ITERATION_NOTES.md"
+    ],
+    [
+     "L1000249",
+     "ITERATION_NOTES.md"
+    ],
+    [
+     "L10212",
+     "ITERATION_NOTES.md"
+    ],
+    [
+     "L40027",
+     "ROUND4_DEV_TABLE.json"
+    ],
+    [
+     "L70178",
+     "ITER1_ATTEMPT2_SCORED.json"
+    ]
+   ]
+  },
+  {
+   "value": 0.7,
+   "marked": [
+    "L77900055"
+   ],
+   "unmarked_standing": [
+    [
+     "L1000250",
+     "ITERATION_NOTES.md"
+    ],
+    [
+     "L10213",
+     "ITERATION_NOTES.md"
+    ],
+    [
+     "L1050027",
+     "GENERALIZATION_PREREG_DRAFT.md"
+    ],
+    [
+     "L190001",
+     "GENERALIZATION_PREREG_DRAFT.md"
+    ],
+    [
+     "L90107",
+     "ITER2_REMEASURE_SCORED.json"
+    ]
+   ]
   }
  ],
  "struck_but_standing": [
+  {
+   "by": "L1000063",
+   "rel": "supersedes",
+   "target": "L77700038",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "ITERATION_NOTES.md:73-103"
+  },
+  {
+   "by": "L1000216",
+   "rel": "supersedes",
+   "target": "L1000015",
+   "target_metric": "n/a",
+   "target_value": true,
+   "target_source": "ITERATION_NOTES.md:7-45"
+  },
   {
    "by": "L100026",
    "rel": "withdraws",
@@ -3389,12 +5040,140 @@
    "target_source": "ITER3_ATTEMPT4_SCORED.json:2-2"
   },
   {
+   "by": "L1000284",
+   "rel": "withdraws",
+   "target": "L9920002",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "ITERATION_NOTES.md:336-345"
+  },
+  {
+   "by": "L1010132",
+   "rel": "supersedes",
+   "target": "L1000319",
+   "target_metric": "misses triaged into standing states",
+   "target_value": 1.0,
+   "target_source": "ITERATION_NOTES.md:396-416"
+  },
+  {
+   "by": "L1020011",
+   "rel": "withdraws",
+   "target": "L10773",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "ITERATION_NOTES.md:817-831"
+  },
+  {
+   "by": "L1020012",
+   "rel": "withdraws",
+   "target": "L10773",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "ITERATION_NOTES.md:817-831"
+  },
+  {
+   "by": "L1030001",
+   "rel": "withdraws",
+   "target": "L77700119",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "HANDOFF_CURRENT.md:1-26"
+  },
+  {
+   "by": "L1030017",
+   "rel": "withdraws",
+   "target": "L1020041",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "ITERATION_NOTES.md:899-940"
+  },
+  {
+   "by": "L1030168",
+   "rel": "supersedes",
+   "target": "L9980181",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "CALCULUS_RUNBOOK.md:121-149"
+  },
+  {
+   "by": "L1030243",
+   "rel": "supersedes",
+   "target": "L77700212",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "ROUND4_PREREG.md:105-147"
+  },
+  {
    "by": "L10398",
    "rel": "supersedes",
-   "target": "L9940003",
-   "target_metric": "miss triage into standing states",
+   "target": "L1000319",
+   "target_metric": "misses triaged into standing states",
    "target_value": 1.0,
-   "target_source": "ITERATION_NOTES.md:370-390"
+   "target_source": "ITERATION_NOTES.md:396-416"
+  },
+  {
+   "by": "L1040004",
+   "rel": "supersedes",
+   "target": "L1030194",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "ROUND4_PREREG.md:19-36"
+  },
+  {
+   "by": "L1040006",
+   "rel": "supersedes",
+   "target": "L77700270",
+   "target_metric": "engaged precision band",
+   "target_value": "0.71-0.87",
+   "target_source": "ROUND4_PREREG.md:209-227"
+  },
+  {
+   "by": "L1040104",
+   "rel": "supersedes",
+   "target": "L77520101",
+   "target_metric": "node count",
+   "target_value": 773,
+   "target_source": "L1L2_ADVERSARIAL_REVIEW.md:283-291"
+  },
+  {
+   "by": "L1040169",
+   "rel": "withdraws",
+   "target": "L1010055",
+   "target_metric": "review findings",
+   "target_value": 2,
+   "target_source": "ITERATION_NOTES.md:492-506"
+  },
+  {
+   "by": "L1050032",
+   "rel": "strikes",
+   "target": "L1050031",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "GENERALIZATION_PREREG_DRAFT.md:77-99"
+  },
+  {
+   "by": "L1070027",
+   "rel": "supersedes",
+   "target": "L230054",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "HANDOFF.md:83-98"
+  },
+  {
+   "by": "L1070029",
+   "rel": "supersedes",
+   "target": "L230056",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "HANDOFF.md:99-130"
+  },
+  {
+   "by": "L1070077",
+   "rel": "withdraws",
+   "target": "L260076",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "HANDOFF.md:781-826"
   },
   {
    "by": "L10785",
@@ -3413,60 +5192,28 @@
    "target_source": "ITERATION_NOTES.md:817-831"
   },
   {
-   "by": "L120019",
+   "by": "L170165",
    "rel": "withdraws",
-   "target": "L10810",
+   "target": "L1040144",
    "target_metric": "n/a",
    "target_value": null,
-   "target_source": "ITERATION_NOTES.md:866-908"
-  },
-  {
-   "by": "L120259",
-   "rel": "supersedes",
-   "target": "L10026",
-   "target_metric": "round-4 behaviours",
-   "target_value": 3,
-   "target_source": "ITERATION_NOTES.md:41-70"
-  },
-  {
-   "by": "L130163",
-   "rel": "supersedes",
-   "target": "L130164",
-   "target_metric": "engaged precision",
-   "target_value": "0.71-0.87",
-   "target_source": "ROUND4_PREREG.md:209-227"
-  },
-  {
-   "by": "L130164",
-   "rel": "supersedes",
-   "target": "L130163",
-   "target_metric": "n/a",
-   "target_value": null,
-   "target_source": "ROUND4_PREREG.md:209-227"
-  },
-  {
-   "by": "L130165",
-   "rel": "supersedes",
-   "target": "L130163",
-   "target_metric": "n/a",
-   "target_value": null,
-   "target_source": "ROUND4_PREREG.md:209-227"
+   "target_source": "L1L2_ADVERSARIAL_REVIEW.md:353-373"
   },
   {
    "by": "L170189",
    "rel": "withdraws",
-   "target": "L10374",
-   "target_metric": "findings partial",
+   "target": "L1010055",
+   "target_metric": "review findings",
    "target_value": 2,
-   "target_source": "ITERATION_NOTES.md:466-480"
+   "target_source": "ITERATION_NOTES.md:492-506"
   },
   {
    "by": "L180040",
    "rel": "supersedes",
-   "target": "L9940001",
+   "target": "L1000317",
    "target_metric": "n/a",
    "target_value": null,
-   "target_source": "ITERATION_NOTES.md:370-390"
+   "target_source": "ITERATION_NOTES.md:396-416"
   },
   {
    "by": "L200025",
@@ -3475,6 +5222,30 @@
    "target_metric": "n/a",
    "target_value": null,
    "target_source": "BLOCK2_TRANSFER_PREDICTIONS.md:82-101"
+  },
+  {
+   "by": "L230054",
+   "rel": "supersedes",
+   "target": "L1070027",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "HANDOFF.md:83-98"
+  },
+  {
+   "by": "L230056",
+   "rel": "supersedes",
+   "target": "L1070029",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "HANDOFF.md:99-130"
+  },
+  {
+   "by": "L260076",
+   "rel": "withdraws",
+   "target": "L1070077",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "HANDOFF.md:781-826"
   },
   {
    "by": "L270115",
@@ -3495,7 +5266,7 @@
   {
    "by": "L270123",
    "rel": "strikes",
-   "target": "L230056",
+   "target": "L1070029",
    "target_metric": "n/a",
    "target_value": null,
    "target_source": "HANDOFF.md:99-130"
@@ -3535,18 +5306,10 @@
   {
    "by": "L280195",
    "rel": "withdraws",
-   "target": "L320028",
-   "target_metric": "seats modelled",
+   "target": "L590041",
+   "target_metric": "live defects count",
    "target_value": 12,
-   "target_source": "README.md:55-78"
-  },
-  {
-   "by": "L290012",
-   "rel": "strikes",
-   "target": "L250049",
-   "target_metric": "best judge's own predictions under the tool protocol",
-   "target_value": 0.833,
-   "target_source": "HANDOFF.md:597-608"
+   "target_source": "git_log_first_parent.txt:2354-2406"
   },
   {
    "by": "L290034",
@@ -3565,52 +5328,60 @@
    "target_source": "HANDOFF.md:131-137"
   },
   {
-   "by": "L290162",
+   "by": "L290042",
    "rel": "withdraws",
-   "target": "L290161",
-   "target_metric": "PRICING_VERSION",
-   "target_value": "2.0",
-   "target_source": "MODULE_MAP.md:80-115"
-  },
-  {
-   "by": "L290163",
-   "rel": "strikes",
-   "target": "L290057",
-   "target_metric": "threshold-drift admissions",
-   "target_value": 1.0,
+   "target": "L1070121",
+   "target_metric": "n/a",
+   "target_value": null,
    "target_source": "HANDOFF.md:1440-1460"
   },
   {
-   "by": "L290193",
-   "rel": "supersedes",
-   "target": "L180094",
-   "target_metric": "separability",
-   "target_value": 1.0,
-   "target_source": "RETRANS_REVIEW_DISPOSITION.md:9-26"
-  },
-  {
-   "by": "L290199",
-   "rel": "strikes",
-   "target": "L290198",
-   "target_metric": "snapshot files on disk",
-   "target_value": 11,
-   "target_source": "MODULE_MAP.md:116-134"
-  },
-  {
-   "by": "L330199",
+   "by": "L290044",
    "rel": "withdraws",
-   "target": "L10773",
+   "target": "L1070122",
    "target_metric": "n/a",
    "target_value": null,
-   "target_source": "ITERATION_NOTES.md:817-831"
+   "target_source": "HANDOFF.md:1440-1460"
+  },
+  {
+   "by": "L290048",
+   "rel": "withdraws",
+   "target": "L1070125",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "HANDOFF.md:1440-1460"
+  },
+  {
+   "by": "L290049",
+   "rel": "withdraws",
+   "target": "L1070126",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "HANDOFF.md:1440-1460"
+  },
+  {
+   "by": "L290239",
+   "rel": "strikes",
+   "target": "L1070151",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "MODULE_MAP.md:134-148"
+  },
+  {
+   "by": "L330219",
+   "rel": "supersedes",
+   "target": "L1070154",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "AGENTS.md:14-26"
   },
   {
    "by": "L410045",
    "rel": "supersedes",
-   "target": "L190030",
-   "target_metric": "scattered-quote nodes",
+   "target": "L1040117",
+   "target_metric": "n/a",
    "target_value": 2,
-   "target_source": "GENERALIZATION_PREREG_DRAFT.md:116-135"
+   "target_source": "L1L2_ADVERSARIAL_REVIEW.md:304-308"
   },
   {
    "by": "L460015",
@@ -3621,20 +5392,476 @@
    "target_source": "review_verdict.json:4-4"
   },
   {
-   "by": "L470105",
-   "rel": "supersedes",
-   "target": "L10414",
-   "target_metric": "truth-carrying changes",
-   "target_value": 2,
-   "target_source": "ITERATION_NOTES.md:499-513"
-  },
-  {
    "by": "L540102",
    "rel": "supersedes",
-   "target": "L9950127",
-   "target_metric": "faithful",
+   "target": "L570107",
+   "target_metric": "requires-unprovided NOTES counted in earlier 19",
    "target_value": 3,
-   "target_source": "semantic_audit.json:83-162"
+   "target_source": "git_log_first_parent.txt:1814-1848"
+  },
+  {
+   "by": "L550059",
+   "rel": "supersedes",
+   "target": "L310076",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "CYCLE_DESIGN.md:68-127"
+  },
+  {
+   "by": "L550061",
+   "rel": "supersedes",
+   "target": "L1000066",
+   "target_metric": "overturned nodes carrying formatting_style/objectivity_neutrality",
+   "target_value": 2,
+   "target_source": "ITERATION_NOTES.md:92-122"
+  },
+  {
+   "by": "L550111",
+   "rel": "supersedes",
+   "target": "L270008",
+   "target_metric": "MCC",
+   "target_value": "+0.241",
+   "target_source": "HANDOFF.md:961-985"
+  },
+  {
+   "by": "L550112",
+   "rel": "supersedes",
+   "target": "L550039",
+   "target_metric": "tool lift over control (corrected)",
+   "target_value": "~2.9x",
+   "target_source": "git_log_first_parent.txt:848-889"
+  },
+  {
+   "by": "L550131",
+   "rel": "supersedes",
+   "target": "L1040119",
+   "target_metric": "n/a",
+   "target_value": 1,
+   "target_source": "L1L2_ADVERSARIAL_REVIEW.md:304-308"
+  },
+  {
+   "by": "L570049",
+   "rel": "supersedes",
+   "target": "L570048",
+   "target_metric": "5 witnesses figure",
+   "target_value": null,
+   "target_source": "git_log_first_parent.txt:1646-1712"
+  },
+  {
+   "by": "L600097",
+   "rel": "supersedes",
+   "target": "L570045",
+   "target_metric": "mutate_schema.py guard survivors",
+   "target_value": 0.0,
+   "target_source": "git_log_first_parent.txt:1646-1712"
+  },
+  {
+   "by": "L620023",
+   "rel": "supersedes",
+   "target": "L620024",
+   "target_metric": "measured corpus cost (593 clauses)",
+   "target_value": "$3.43 / $509 worst / $60.1 likely",
+   "target_source": "git_log_first_parent.txt:3370-3463"
+  },
+  {
+   "by": "L620024",
+   "rel": "supersedes",
+   "target": "L1000070",
+   "target_metric": "overturn rate",
+   "target_value": 25,
+   "target_source": "ITERATION_NOTES.md:92-122"
+  },
+  {
+   "by": "L620028",
+   "rel": "supersedes",
+   "target": "L480070",
+   "target_metric": "open_sha",
+   "target_value": "06f9b48e30c55a0cfa8449d033e1f56745c7e420397a69027e12254497cc22fe",
+   "target_source": "state.json:167-174"
+  },
+  {
+   "by": "L620036",
+   "rel": "supersedes",
+   "target": "L610102",
+   "target_metric": "corpus-scale cost (frontier worst), USD",
+   "target_value": 303,
+   "target_source": "git_log_first_parent.txt:3265-3315"
+  },
+  {
+   "by": "L620066",
+   "rel": "supersedes",
+   "target": "L1000282",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "ITERATION_NOTES.md:337-359"
+  },
+  {
+   "by": "L620070",
+   "rel": "supersedes",
+   "target": "L220064",
+   "target_metric": "git object id",
+   "target_value": "013499100d35d71572942448d7c1c1f0f348c973",
+   "target_source": "PRUNED.md:61-120"
+  },
+  {
+   "by": "L620083",
+   "rel": "supersedes",
+   "target": "L570045",
+   "target_metric": "mutate_schema.py guard survivors",
+   "target_value": 0.0,
+   "target_source": "git_log_first_parent.txt:1646-1712"
+  },
+  {
+   "by": "L620088",
+   "rel": "supersedes",
+   "target": "L210167",
+   "target_metric": "pruned entry git object id",
+   "target_value": "008666737480d8057746bed85f646bb81730279f",
+   "target_source": "PRUNED.md:1-60"
+  },
+  {
+   "by": "L620124",
+   "rel": "supersedes",
+   "target": "L620008",
+   "target_metric": "mutate_readback_r3.py mutant count",
+   "target_value": 33,
+   "target_source": "git_log_first_parent.txt:3370-3463"
+  },
+  {
+   "by": "L630092",
+   "rel": "supersedes",
+   "target": "L630093",
+   "target_metric": "passages verbatim (true, post-fix)",
+   "target_value": "88%",
+   "target_source": "git_log_first_parent.txt:3933-3975"
+  },
+  {
+   "by": "L640028",
+   "rel": "strikes",
+   "target": "L460041",
+   "target_metric": "files_to_change changed",
+   "target_value": 6,
+   "target_source": "decision.json:50-85"
+  },
+  {
+   "by": "L640069",
+   "rel": "strikes",
+   "target": "L350025",
+   "target_metric": "undeclared changes",
+   "target_value": 1,
+   "target_source": "decision.json:11-37"
+  },
+  {
+   "by": "L640094",
+   "rel": "strikes",
+   "target": "L170072",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "L1L2_ADVERSARIAL_REVIEW.md:309-313"
+  },
+  {
+   "by": "L660025",
+   "rel": "supersedes",
+   "target": "L660006",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "git_log_first_parent.txt:4900-4908"
+  },
+  {
+   "by": "L660029",
+   "rel": "supersedes",
+   "target": "L660010",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "git_log_first_parent.txt:4936-4944"
+  },
+  {
+   "by": "L660030",
+   "rel": "withdraws",
+   "target": "L660011",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "git_log_first_parent.txt:4945-4953"
+  },
+  {
+   "by": "L680037",
+   "rel": "withdraws",
+   "target": "L1040117",
+   "target_metric": "n/a",
+   "target_value": 2,
+   "target_source": "L1L2_ADVERSARIAL_REVIEW.md:304-308"
+  },
+  {
+   "by": "L700094",
+   "rel": "supersedes",
+   "target": "L700096",
+   "target_metric": "modules found (fixed glob)",
+   "target_value": 361,
+   "target_source": "git_log_first_parent.txt:5730-5773"
+  },
+  {
+   "by": "L700099",
+   "rel": "supersedes",
+   "target": "L1000149",
+   "target_metric": "seats this iteration",
+   "target_value": 10,
+   "target_source": "ITERATION_NOTES.md:160-197"
+  },
+  {
+   "by": "L720042",
+   "rel": "supersedes",
+   "target": "L100002",
+   "target_metric": "tripwire",
+   "target_value": "not fired",
+   "target_source": "ITER2_REMEASURE_SCORED.json:169-186"
+  },
+  {
+   "by": "L730076",
+   "rel": "supersedes",
+   "target": "L77600068",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "git_log_first_parent.txt:6683-6700"
+  },
+  {
+   "by": "L77510296",
+   "rel": "supersedes",
+   "target": "L1030207",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "ROUND4_PREREG.md:85-103"
+  },
+  {
+   "by": "L77530212",
+   "rel": "supersedes",
+   "target": "L1000079",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "ITERATION_NOTES.md:123-159"
+  },
+  {
+   "by": "L77530249",
+   "rel": "supersedes",
+   "target": "L250158",
+   "target_metric": "median df",
+   "target_value": 8.0,
+   "target_source": "HANDOFF.md:687-694"
+  },
+  {
+   "by": "L77530316",
+   "rel": "supersedes",
+   "target": "L240003",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "HANDOFF.md:290-300"
+  },
+  {
+   "by": "L77540187",
+   "rel": "supersedes",
+   "target": "L1000022",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "ITERATION_NOTES.md:7-45"
+  },
+  {
+   "by": "L77550013",
+   "rel": "supersedes",
+   "target": "L1000026",
+   "target_metric": "n/a",
+   "target_value": true,
+   "target_source": "ITERATION_NOTES.md:7-45"
+  },
+  {
+   "by": "L77550176",
+   "rel": "withdraws",
+   "target": "L10773",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "ITERATION_NOTES.md:817-831"
+  },
+  {
+   "by": "L77600068",
+   "rel": "supersedes",
+   "target": "L730076",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "git_log_first_parent.txt:6693-6695"
+  },
+  {
+   "by": "L77700038",
+   "rel": "supersedes",
+   "target": "L1000063",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "ITERATION_NOTES.md:92-122"
+  },
+  {
+   "by": "L77700119",
+   "rel": "withdraws",
+   "target": "L1030001",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "HANDOFF_CURRENT.md:1-26"
+  },
+  {
+   "by": "L77700136",
+   "rel": "withdraws",
+   "target": "L1020041",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "ITERATION_NOTES.md:899-940"
+  },
+  {
+   "by": "L77700212",
+   "rel": "supersedes",
+   "target": "L1030243",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "ROUND4_PREREG.md:105-147"
+  },
+  {
+   "by": "L77700270",
+   "rel": "supersedes",
+   "target": "L1040006",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "ROUND4_PREREG.md:209-227"
+  },
+  {
+   "by": "L77700271",
+   "rel": "supersedes",
+   "target": "L1040006",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "ROUND4_PREREG.md:209-227"
+  },
+  {
+   "by": "L77800119",
+   "rel": "supersedes",
+   "target": "L1070133",
+   "target_metric": "containment cycles with threshold-drift admissions",
+   "target_value": 1.0,
+   "target_source": "HANDOFF.md:1440-1460"
+  },
+  {
+   "by": "L77800391",
+   "rel": "supersedes",
+   "target": "L1000316",
+   "target_metric": "spot-check seats",
+   "target_value": 2,
+   "target_source": "ITERATION_NOTES.md:371-395"
+  },
+  {
+   "by": "L780029",
+   "rel": "supersedes",
+   "target": "L780028",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "git_log_first_parent.txt:7402-7410"
+  },
+  {
+   "by": "L800052",
+   "rel": "supersedes",
+   "target": "L800048",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "git_log_first_parent.txt:7681-7689"
+  },
+  {
+   "by": "L800053",
+   "rel": "supersedes",
+   "target": "L800048",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "git_log_first_parent.txt:7681-7689"
+  },
+  {
+   "by": "L840111",
+   "rel": "strikes",
+   "target": "L1000194",
+   "target_metric": "definitional-lane nodes with no act credits",
+   "target_value": 2,
+   "target_source": "ITERATION_NOTES.md:225-253"
+  },
+  {
+   "by": "L850052",
+   "rel": "supersedes",
+   "target": "L1000330",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "ITERATION_NOTES.md:417-437"
+  },
+  {
+   "by": "L880045",
+   "rel": "supersedes",
+   "target": "L1000093",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "ITERATION_NOTES.md:123-159"
+  },
+  {
+   "by": "L880056",
+   "rel": "supersedes",
+   "target": "L1000093",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "ITERATION_NOTES.md:123-159"
+  },
+  {
+   "by": "L880074",
+   "rel": "supersedes",
+   "target": "L1000093",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "ITERATION_NOTES.md:123-159"
+  },
+  {
+   "by": "L880080",
+   "rel": "withdraws",
+   "target": "L220100",
+   "target_metric": "git object id",
+   "target_value": "d22bce780c6f7b56f5db9f982d597501f1f78fef",
+   "target_source": "PRUNED.md:61-120"
+  },
+  {
+   "by": "L890160",
+   "rel": "supersedes",
+   "target": "L890153",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "git_log_first_parent.txt:8931-8939"
+  },
+  {
+   "by": "L980076",
+   "rel": "supersedes",
+   "target": "L77510138",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "ITERATION_NOTES.md:783-799"
+  },
+  {
+   "by": "L990013",
+   "rel": "withdraws",
+   "target": "L10773",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "ITERATION_NOTES.md:817-831"
+  },
+  {
+   "by": "L990026",
+   "rel": "withdraws",
+   "target": "L1020041",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "ITERATION_NOTES.md:899-940"
+  },
+  {
+   "by": "L990090",
+   "rel": "strikes",
+   "target": "L990088",
+   "target_metric": "n/a",
+   "target_value": null,
+   "target_source": "git_log_first_parent.txt:10190-10200"
   },
   {
    "by": "L9920043",
@@ -3645,100 +5872,12 @@
    "target_source": "CYCLE_DESIGN.md:205-224"
   },
   {
-   "by": "L9930177",
+   "by": "L9980181",
    "rel": "supersedes",
-   "target": "L10041",
-   "target_metric": "census mismatch count",
-   "target_value": 15,
-   "target_source": "ITERATION_NOTES.md:41-70"
-  },
-  {
-   "by": "L9940145",
-   "rel": "supersedes",
-   "target": "L250158",
-   "target_metric": "median df",
-   "target_value": 8.0,
-   "target_source": "HANDOFF.md:687-694"
-  },
-  {
-   "by": "L9950009",
-   "rel": "supersedes",
-   "target": "L9950007",
-   "target_metric": "decline correctness",
-   "target_value": 0.7,
-   "target_source": "ITERATION_NOTES.md:346-369"
-  },
-  {
-   "by": "L9950186",
-   "rel": "supersedes",
-   "target": "L10028",
+   "target": "L1030168",
    "target_metric": "n/a",
    "target_value": null,
-   "target_source": "ITERATION_NOTES.md:41-70"
-  },
-  {
-   "by": "L9950236",
-   "rel": "supersedes",
-   "target": "L210137",
-   "target_metric": "pruned entry git object id",
-   "target_value": "b91b95ffcc5e0406570d9358830e93713c5a88b8",
-   "target_source": "PRUNED.md:1-60"
-  },
-  {
-   "by": "L9950239",
-   "rel": "supersedes",
-   "target": "L210126",
-   "target_metric": "pruned entry files",
-   "target_value": 1,
-   "target_source": "PRUNED.md:1-60"
-  },
-  {
-   "by": "L9960169",
-   "rel": "supersedes",
-   "target": "L10805",
-   "target_metric": "five-field coverage",
-   "target_value": 1.0,
-   "target_source": "ITERATION_NOTES.md:832-865"
-  },
-  {
-   "by": "L9960172",
-   "rel": "supersedes",
-   "target": "L10210",
-   "target_metric": "extension not_relevants",
-   "target_value": 2,
-   "target_source": "ITERATION_NOTES.md:266-298"
-  },
-  {
-   "by": "L9970130",
-   "rel": "supersedes",
-   "target": "L9930181",
-   "target_metric": "char coverage",
-   "target_value": "97.35%",
-   "target_source": "HANDOFF.md:1278-1299"
-  },
-  {
-   "by": "L9970139",
-   "rel": "supersedes",
-   "target": "L240003",
-   "target_metric": "n/a",
-   "target_value": null,
-   "target_source": "HANDOFF.md:290-300"
-  },
-  {
-   "by": "L9970140",
-   "rel": "supersedes",
-   "target": "L240003",
-   "target_metric": "n/a",
-   "target_value": null,
-   "target_source": "HANDOFF.md:290-300"
-  },
-  {
-   "by": "L9970234",
-   "rel": "supersedes",
-   "target": "L130185",
-   "target_metric": "disagreements",
-   "target_value": 1,
-   "target_source": "PREREG_panel_equivalence.md:18-30"
+   "target_source": "CALCULUS_RUNBOOK.md:121-149"
   }
  ]
 }
