@@ -391,3 +391,19 @@ inventory; no ledger, glossary, brief, baseline report or logs), and any
 ruling the adjudicator marks as needing owner knowledge stays provisional
 until the owner confirms. The Results section must state this. Brief:
 results/rulings/ADJUDICATOR_BRIEF.md.
+
+### D-12b — 2026-09-03 — blind re-adjudication (fairness correction, owner's instruction)
+
+The first model adjudication (D-12) was not blind: packets named the arms
+and carried the baseline's prose reasons beside the ledger's derivations,
+and the adjudicator is of the baseline's model family. Correction: the same
+24 items re-adjudicated from evidence-only packets (states, cited sources,
+verbatim quotes, live-run outputs; no reasoning) with the arms anonymized
+as A/B, randomized per item, mapping sealed until fold. Scoring is reported
+both label-inclusive and substance-only, because 13 of the 24 disagreements
+were the ledger's "contested" convention against a weighed ruling. Other
+fairness limits recorded but not corrected here: the ledger's query layer
+was hand-written and patched after the orchestrator had read the baseline
+report (Q27, V01, H10), which leaks in the ledger's favor; the ledger's
+declared live runs and named sources were incomplete, which cuts against
+it.
