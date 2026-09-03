@@ -1,0 +1,32 @@
+{
+ "removed_claims": [
+  "L230027",
+  "L290007",
+  "L77530269",
+  "L77540031"
+ ],
+ "flips": [
+  [
+   "Q12",
+   "verified",
+   "contradicted"
+  ],
+  [
+   "Q13",
+   "verified",
+   "contradicted"
+  ],
+  [
+   "V04",
+   "verified",
+   "contradicted"
+  ]
+ ],
+ "unchanged": 74,
+ "wall_seconds": 2.0,
+ "derivations": {
+  "Q12": "no claim carries the claimed value; the record holds [('L290061', '+0.358', 'stated'), ('L550016', 0.3088, 'stated'), ('L550018', 0.0003, 'stated'), ('L77530268', '+0.274', 'stated'), ('L77540014', '+0.206', 'stated'), ('L77540015', '+0.396', 'stated')]",
+  "Q13": "no claim carries the claimed value; the record holds [('L270002', '+0.20', 'stated'), ('L270034', '+0.016', 'stated'), ('L270036', '0.023', 'stated'), ('L270044', '+0.009', 'stated'), ('L270082', '+0.277', 'stated'), ('L270083', '+0.284', 'stated')]",
+  "V04": "providers ['Q12', 'Q13', 'Q14', 'Q15', 'H09'] \u2192 ['contradicted', 'contradicted', 'verified', 'verified', 'verified']"
+ }
+}
