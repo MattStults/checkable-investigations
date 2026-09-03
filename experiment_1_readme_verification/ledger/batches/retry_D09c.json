@@ -7,7 +7,383 @@
   "spans": 18,
   "first_span": "S00006",
   "last_span": "S01485",
-  "note": "D-09 (claim-predicate selection): spans whose existing claims carry a seat_dispatch event without event.inputs; whole-span retranslation under brief v0.7 rule 34"
+  "note": "D-09 (claim-predicate selection): spans whose existing claims carry a seat_dispatch event without event.inputs; whole-span retranslation under brief v0.7 rule 34",
+  "superseded_claims": [
+   {
+    "span": "S00006",
+    "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
+    "ids": [
+     "L10069",
+     "L10070",
+     "L10071",
+     "L10072",
+     "L10073",
+     "L10074",
+     "L10075",
+     "L10076",
+     "L10077",
+     "L10078",
+     "L10079",
+     "L10080",
+     "L10081",
+     "L10082",
+     "L10083",
+     "L10084",
+     "L10085",
+     "L10086",
+     "L10087",
+     "L10088",
+     "L10089",
+     "L10090",
+     "L10091",
+     "L10092",
+     "L10093",
+     "L10094",
+     "L10095",
+     "L30084",
+     "L30060",
+     "L30061",
+     "L30062",
+     "L30063",
+     "L30064",
+     "L30065",
+     "L30066",
+     "L30067",
+     "L30068",
+     "L30069",
+     "L30070",
+     "L30071",
+     "L30072",
+     "L30073",
+     "L30074",
+     "L30075",
+     "L30076",
+     "L30077",
+     "L30078",
+     "L30079",
+     "L30080",
+     "L30081",
+     "L30082",
+     "L30083",
+     "L30085"
+    ]
+   },
+   {
+    "span": "S00007",
+    "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
+    "ids": [
+     "L10096",
+     "L10097",
+     "L10098",
+     "L10099",
+     "L10100",
+     "L10101",
+     "L10102",
+     "L10103",
+     "L10104",
+     "L10105",
+     "L10106",
+     "L10107",
+     "L10108",
+     "L10109",
+     "L10110",
+     "L10111",
+     "L10112",
+     "L10113",
+     "L10114",
+     "L10115",
+     "L10116",
+     "L10117",
+     "L10118",
+     "L10119",
+     "L10120",
+     "L10121",
+     "L10122",
+     "L10123",
+     "L10124",
+     "L10125",
+     "L10126",
+     "L30102",
+     "L30086",
+     "L30087",
+     "L30088",
+     "L30089",
+     "L30090",
+     "L30091",
+     "L30092",
+     "L30093",
+     "L30094",
+     "L30095",
+     "L30096",
+     "L30097",
+     "L30098",
+     "L30099",
+     "L30100",
+     "L30101",
+     "L30103",
+     "L30104",
+     "L30105",
+     "L30106",
+     "L30107",
+     "L30108",
+     "L30109",
+     "L30110",
+     "L30111",
+     "L30112"
+    ]
+   },
+   {
+    "span": "S00020",
+    "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
+    "ids": [
+     "L10334",
+     "L10335",
+     "L10336",
+     "L10337",
+     "L10338",
+     "L10339",
+     "L10340",
+     "L10341",
+     "L10342",
+     "L10343",
+     "L10344",
+     "L10345",
+     "L10346",
+     "L10347",
+     "L10348",
+     "L10349",
+     "L10350",
+     "L10351",
+     "L10352",
+     "L10353"
+    ]
+   },
+   {
+    "span": "S00082",
+    "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
+    "ids": [
+     "L9940071",
+     "L9940072",
+     "L9940073",
+     "L9940074",
+     "L9940075",
+     "L9940076",
+     "L9940077",
+     "L9940078",
+     "L9940079",
+     "L9940080",
+     "L9940081",
+     "L9940082",
+     "L140073",
+     "L140074",
+     "L140075",
+     "L9990062",
+     "L9990063",
+     "L9990064",
+     "L9990065",
+     "L9990066",
+     "L9990067",
+     "L9990068"
+    ]
+   },
+   {
+    "span": "S00419",
+    "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
+    "ids": [
+     "L9930206",
+     "L9930207",
+     "L9930208",
+     "L9930209",
+     "L9930210",
+     "L9930211",
+     "L9930212",
+     "L9930213",
+     "L9930214",
+     "L9930215",
+     "L9930216",
+     "L300020",
+     "L300021",
+     "L300022",
+     "L300023",
+     "L300024",
+     "L300025",
+     "L300026",
+     "L300027",
+     "L300028"
+    ]
+   },
+   {
+    "span": "S00812",
+    "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
+    "ids": [
+     "L1040087",
+     "L1040088"
+    ]
+   },
+   {
+    "span": "S01312",
+    "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
+    "ids": [
+     "L740050",
+     "L740051",
+     "L740052",
+     "L740053",
+     "L740054"
+    ]
+   },
+   {
+    "span": "S01322",
+    "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
+    "ids": [
+     "L750017",
+     "L750018",
+     "L750019",
+     "L750020",
+     "L750021"
+    ]
+   },
+   {
+    "span": "S01332",
+    "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
+    "ids": [
+     "L760004",
+     "L760005",
+     "L760006",
+     "L760007",
+     "L760008"
+    ]
+   },
+   {
+    "span": "S01377",
+    "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
+    "ids": [
+     "L790002",
+     "L790003",
+     "L790004",
+     "L790005",
+     "L790006",
+     "L790007",
+     "L790008"
+    ]
+   },
+   {
+    "span": "S01395",
+    "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
+    "ids": [
+     "L800027",
+     "L800028",
+     "L800029",
+     "L800030",
+     "L800031",
+     "L800032",
+     "L800033"
+    ]
+   },
+   {
+    "span": "S01399",
+    "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
+    "ids": [
+     "L800059",
+     "L800060",
+     "L800061",
+     "L800062",
+     "L800063",
+     "L800064"
+    ]
+   },
+   {
+    "span": "S01408",
+    "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
+    "ids": [
+     "L810026",
+     "L810027",
+     "L810028",
+     "L810029",
+     "L810030",
+     "L810031",
+     "L810032"
+    ]
+   },
+   {
+    "span": "S01409",
+    "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
+    "ids": [
+     "L810033",
+     "L810034",
+     "L810035",
+     "L810036",
+     "L810037",
+     "L810038",
+     "L810039",
+     "L810040",
+     "L810041",
+     "L810042",
+     "L810043"
+    ]
+   },
+   {
+    "span": "S01454",
+    "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
+    "ids": [
+     "L840019",
+     "L840020",
+     "L840021",
+     "L840022",
+     "L840023",
+     "L840024",
+     "L840025",
+     "L840026",
+     "L840027",
+     "L840028",
+     "L840029",
+     "L840030",
+     "L840031",
+     "L840032",
+     "L840033"
+    ]
+   },
+   {
+    "span": "S01465",
+    "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
+    "ids": [
+     "L840123",
+     "L840124",
+     "L840125",
+     "L840126",
+     "L840127",
+     "L840128",
+     "L840129",
+     "L840130",
+     "L840131",
+     "L840132",
+     "L840133"
+    ]
+   },
+   {
+    "span": "S01482",
+    "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
+    "ids": [
+     "L860013",
+     "L860014",
+     "L860015",
+     "L860016",
+     "L860017",
+     "L860018"
+    ]
+   },
+   {
+    "span": "S01485",
+    "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
+    "ids": [
+     "L860035",
+     "L860036",
+     "L860037",
+     "L860038",
+     "L860039",
+     "L860040"
+    ]
+   }
+  ]
  },
  "spans": [
   {
@@ -171,382 +547,6 @@
    "text": "commit 667916d283c2a1d1b3f5fb3107f10e9a4385119d\nordinal 449\ndate 2026-08-21 15:53:34 -0700\nauthor Matt Stults\nsubject Arc1-b extension: sanitization insufficient (inspection reads context around labels; v2 screen had dropped minors/gore/violence) — contingency activated: 15 hot nodes carved out to a human seat (Matt; packet committed with both criteria and answer format), four seats re-dispatched on 164-node clean chunks raw; sanitized outputs discarded if any survive; consensus rule for hot nodes = human judgment + mechanical structure screen as second blind signal\n\n----END----",
    "source_class": "git_log",
    "context": null
-  }
- ],
- "superseded_claims": [
-  {
-   "span": "S00006",
-   "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
-   "ids": [
-    "L10069",
-    "L10070",
-    "L10071",
-    "L10072",
-    "L10073",
-    "L10074",
-    "L10075",
-    "L10076",
-    "L10077",
-    "L10078",
-    "L10079",
-    "L10080",
-    "L10081",
-    "L10082",
-    "L10083",
-    "L10084",
-    "L10085",
-    "L10086",
-    "L10087",
-    "L10088",
-    "L10089",
-    "L10090",
-    "L10091",
-    "L10092",
-    "L10093",
-    "L10094",
-    "L10095",
-    "L30084",
-    "L30060",
-    "L30061",
-    "L30062",
-    "L30063",
-    "L30064",
-    "L30065",
-    "L30066",
-    "L30067",
-    "L30068",
-    "L30069",
-    "L30070",
-    "L30071",
-    "L30072",
-    "L30073",
-    "L30074",
-    "L30075",
-    "L30076",
-    "L30077",
-    "L30078",
-    "L30079",
-    "L30080",
-    "L30081",
-    "L30082",
-    "L30083",
-    "L30085"
-   ]
-  },
-  {
-   "span": "S00007",
-   "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
-   "ids": [
-    "L10096",
-    "L10097",
-    "L10098",
-    "L10099",
-    "L10100",
-    "L10101",
-    "L10102",
-    "L10103",
-    "L10104",
-    "L10105",
-    "L10106",
-    "L10107",
-    "L10108",
-    "L10109",
-    "L10110",
-    "L10111",
-    "L10112",
-    "L10113",
-    "L10114",
-    "L10115",
-    "L10116",
-    "L10117",
-    "L10118",
-    "L10119",
-    "L10120",
-    "L10121",
-    "L10122",
-    "L10123",
-    "L10124",
-    "L10125",
-    "L10126",
-    "L30102",
-    "L30086",
-    "L30087",
-    "L30088",
-    "L30089",
-    "L30090",
-    "L30091",
-    "L30092",
-    "L30093",
-    "L30094",
-    "L30095",
-    "L30096",
-    "L30097",
-    "L30098",
-    "L30099",
-    "L30100",
-    "L30101",
-    "L30103",
-    "L30104",
-    "L30105",
-    "L30106",
-    "L30107",
-    "L30108",
-    "L30109",
-    "L30110",
-    "L30111",
-    "L30112"
-   ]
-  },
-  {
-   "span": "S00020",
-   "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
-   "ids": [
-    "L10334",
-    "L10335",
-    "L10336",
-    "L10337",
-    "L10338",
-    "L10339",
-    "L10340",
-    "L10341",
-    "L10342",
-    "L10343",
-    "L10344",
-    "L10345",
-    "L10346",
-    "L10347",
-    "L10348",
-    "L10349",
-    "L10350",
-    "L10351",
-    "L10352",
-    "L10353"
-   ]
-  },
-  {
-   "span": "S00082",
-   "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
-   "ids": [
-    "L9940071",
-    "L9940072",
-    "L9940073",
-    "L9940074",
-    "L9940075",
-    "L9940076",
-    "L9940077",
-    "L9940078",
-    "L9940079",
-    "L9940080",
-    "L9940081",
-    "L9940082",
-    "L140073",
-    "L140074",
-    "L140075",
-    "L9990062",
-    "L9990063",
-    "L9990064",
-    "L9990065",
-    "L9990066",
-    "L9990067",
-    "L9990068"
-   ]
-  },
-  {
-   "span": "S00419",
-   "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
-   "ids": [
-    "L9930206",
-    "L9930207",
-    "L9930208",
-    "L9930209",
-    "L9930210",
-    "L9930211",
-    "L9930212",
-    "L9930213",
-    "L9930214",
-    "L9930215",
-    "L9930216",
-    "L300020",
-    "L300021",
-    "L300022",
-    "L300023",
-    "L300024",
-    "L300025",
-    "L300026",
-    "L300027",
-    "L300028"
-   ]
-  },
-  {
-   "span": "S00812",
-   "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
-   "ids": [
-    "L1040087",
-    "L1040088"
-   ]
-  },
-  {
-   "span": "S01312",
-   "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
-   "ids": [
-    "L740050",
-    "L740051",
-    "L740052",
-    "L740053",
-    "L740054"
-   ]
-  },
-  {
-   "span": "S01322",
-   "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
-   "ids": [
-    "L750017",
-    "L750018",
-    "L750019",
-    "L750020",
-    "L750021"
-   ]
-  },
-  {
-   "span": "S01332",
-   "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
-   "ids": [
-    "L760004",
-    "L760005",
-    "L760006",
-    "L760007",
-    "L760008"
-   ]
-  },
-  {
-   "span": "S01377",
-   "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
-   "ids": [
-    "L790002",
-    "L790003",
-    "L790004",
-    "L790005",
-    "L790006",
-    "L790007",
-    "L790008"
-   ]
-  },
-  {
-   "span": "S01395",
-   "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
-   "ids": [
-    "L800027",
-    "L800028",
-    "L800029",
-    "L800030",
-    "L800031",
-    "L800032",
-    "L800033"
-   ]
-  },
-  {
-   "span": "S01399",
-   "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
-   "ids": [
-    "L800059",
-    "L800060",
-    "L800061",
-    "L800062",
-    "L800063",
-    "L800064"
-   ]
-  },
-  {
-   "span": "S01408",
-   "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
-   "ids": [
-    "L810026",
-    "L810027",
-    "L810028",
-    "L810029",
-    "L810030",
-    "L810031",
-    "L810032"
-   ]
-  },
-  {
-   "span": "S01409",
-   "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
-   "ids": [
-    "L810033",
-    "L810034",
-    "L810035",
-    "L810036",
-    "L810037",
-    "L810038",
-    "L810039",
-    "L810040",
-    "L810041",
-    "L810042",
-    "L810043"
-   ]
-  },
-  {
-   "span": "S01454",
-   "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
-   "ids": [
-    "L840019",
-    "L840020",
-    "L840021",
-    "L840022",
-    "L840023",
-    "L840024",
-    "L840025",
-    "L840026",
-    "L840027",
-    "L840028",
-    "L840029",
-    "L840030",
-    "L840031",
-    "L840032",
-    "L840033"
-   ]
-  },
-  {
-   "span": "S01465",
-   "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
-   "ids": [
-    "L840123",
-    "L840124",
-    "L840125",
-    "L840126",
-    "L840127",
-    "L840128",
-    "L840129",
-    "L840130",
-    "L840131",
-    "L840132",
-    "L840133"
-   ]
-  },
-  {
-   "span": "S01482",
-   "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
-   "ids": [
-    "L860013",
-    "L860014",
-    "L860015",
-    "L860016",
-    "L860017",
-    "L860018"
-   ]
-  },
-  {
-   "span": "S01485",
-   "reason": "D-09 whole-span retranslation under brief v0.7 rule 34",
-   "ids": [
-    "L860035",
-    "L860036",
-    "L860037",
-    "L860038",
-    "L860039",
-    "L860040"
-   ]
   }
  ]
 }
