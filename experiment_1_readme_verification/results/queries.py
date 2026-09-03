@@ -209,12 +209,11 @@ def H02(claims):
     bad = [m["id"] for m in meas if not any(p["event"]["ordinal"] is not None and m["event"]["ordinal"] is not None and p["event"]["ordinal"] < m["event"]["ordinal"] for p in pf) and not any(l for l in m["event"]["links"] if re.search(r"PREDICTION|prereg|prediction", str(l), re.I))]
     return ("verified" if not bad else "contested"), f"{len(meas)} measurements, {len(bad)} with no prediction_freeze earlier or linked: {bad[:8]}", [m["id"] for m in meas][:20]
 def H03(claims):
-    err = [c for c in events(claims, "erratum") if c["event"]["erratum"] and c["event"]["erratum"].get("n")]
-    hunks = events(claims, "hunk")
-    d = f"numbered errata: {len(err)}; hunk events translated: {len(hunks)}"
-    if not hunks: return "unverifiable", d + " — append-only conjunct needs hunk-level diff claims (dimension not yet in ledger; git-log/pre-redaction batches pending)", [c["id"] for c in err][:10]
-    dele = [h for h in hunks if re.search(r"delet|remov", h["quote"], re.I)]
-    return "contested" if dele else "verified", d + f"; deleting hunks: {len(dele)}", [h["id"] for h in dele][:10]
+    err = [c for c in claims if c["kind"] == "event" and c["event"]["type"] == "erratum" and (c["event"].get("erratum") or {}).get("n") is not None]
+    lr = json.load(open(os.path.join(HERE, "live_runs.json"))).get("H03_append_only") if os.path.exists(os.path.join(HERE, "live_runs.json")) else None
+    if not lr: return "unverifiable", f"numbered errata: {len(err)}; append-only conjunct needs the git deletion census (live run)", [c["id"] for c in err][:6]
+    st = "contradicted" if lr["state"] == "contradicted" else ("verified" if err else "contested")
+    return st, f"numbered errata: {len(err)}; append-only conjunct by git census: {lr['derivation'][:200]}", [c["id"] for c in err][:6]
 def H05(claims):
     entries = events(claims, "ledger_entry"); commits = events(claims, "commit")
     if not commits: return "unverifiable", f"{len(entries)} ledger entries; no commit events yet (git-log batches pending)", []
@@ -263,8 +262,13 @@ def H10(claims):
         return ("contradicted" if lr["state"] == "contradicted" else ("verified" if p else "unverifiable")), f"{len(p)} PRUNED.md claims (prune manifest exists); signed(manifest): {lr['derivation'][:160]}", []
     return ("unverifiable"), f"{len(p)} PRUNED.md claims; signature presence not decidable from span claims", []
 def H11(claims):
-    red = events(claims, "redaction"); hunks = events(claims, "hunk")
-    return ("unverifiable" if not hunks else "contested"), f"redaction events {len(red)}; hunk events {len(hunks)} (second conjunct needs hunk claims — pending pre-redaction/git batches)", [c["id"] for c in red][:6]
+    red = events(claims, "redaction")
+    pre = [c for c in claims if c["source"]["commit"] not in ("pin", "generated")]
+    lr = json.load(open(os.path.join(HERE, "live_runs.json"))).get("H03_append_only") if os.path.exists(os.path.join(HERE, "live_runs.json")) else None
+    if not pre: return "unverifiable", f"redaction events {len(red)}; pre-redaction blob claims 0 (pending batches 100-107)", [c["id"] for c in red][:6]
+    if not lr: return "unverifiable", f"redaction events {len(red)}; pre-redaction blob claims {len(pre)}; deletion census missing", []
+    st = "contradicted" if lr["state"] == "contradicted" else "verified"
+    return st, f"redaction events {len(red)}; {len(pre)} claims translated from the pre-redaction blob (content existed before the redaction); deleting commits by git census: {lr['derivation'][:160]}", [c["id"] for c in red][:6]
 def H12(claims):
     hits = [c for c in claims if re.search(r"^hit|relevance_by_act|reason", c["metric"], re.I)]
     return ("unverifiable" if not hits else "verified"), f"hit claims: {len(hits)} (query-output spans were not in the named sources)", [c["id"] for c in hits][:5]

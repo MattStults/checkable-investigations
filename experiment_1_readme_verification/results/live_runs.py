@@ -134,5 +134,16 @@ rec("Q32", "verified" if (not sig_hits and not detached) else "contradicted",
     "grep PRUNED.md for signature markers; ls for detached signatures; git cat-file -e on hashes", 0, "\n".join(f"{i}: {l}" for i, l in sig_hits) or "(no signature hits)")
 out["Q32"]["state"] = "contradicted" if (not sig_hits and not detached) else "verified"
 out["Q32"]["absence_claim"] = absence
+# H03/H11 append-only conjunct: git census of every first-parent commit that deletes lines from the ledger file (tier git)
+LEDGER = "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md"
+rc, o, w = run(["git", "-C", T, "log", "--first-parent", "--format=%h %ad", "--date=short", "--numstat", PIN, "--", LEDGER])
+dels, cur, touching = [], None, 0
+for line in o.splitlines():
+    parts = line.split()
+    if len(parts) == 2 and re.match(r"^[0-9a-f]{7,}$", parts[0]): cur = parts; touching += 1
+    elif len(parts) == 3 and parts[1].isdigit() and int(parts[1]) > 0 and cur: dels.append((cur[0], cur[1], int(parts[0]), int(parts[1])))
+only_redaction = all(d[0].startswith("6d01415b") for d in dels)
+out["H03_append_only"] = {"state": "verified" if only_redaction else "contradicted", "derivation": f"{touching} first-parent commits touch ITERATION_NOTES.md; commits deleting lines: {dels} — {'only the redaction commit' if only_redaction else 'deletions outside the redaction commit'}", "claims": [], "command": "git log --first-parent --numstat -- ITERATION_NOTES.md", "wall_s": w, "output": o[-800:]}
+print("H03_append_only", out["H03_append_only"]["state"], "|", out["H03_append_only"]["derivation"][:140])
 json.dump(out, open(os.path.join(HERE, "live_runs.json"), "w"), indent=1)
 print("wrote live_runs.json", len(out))

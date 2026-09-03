@@ -4,7 +4,7 @@
   "derivation": "4 PASS lines, exit 0",
   "claims": [],
   "command": "machine/check_model.py",
-  "wall_s": 3.7,
+  "wall_s": 1.7,
   "output": "PASS (a) SOURCE CHECK\nPASS (b) DIFFERENTIAL CHECK vs cycle.py (282 comparisons)\nPASS (c) KNOWN-ANSWER SET\nPASS (*) ACCEPTANCE TEST\n\n60 contradiction(s) reported by rules.lp (run `python3 machine/query.py contradictions`)\n"
  },
  "Q37": {
@@ -12,7 +12,7 @@
   "derivation": "'*** NO VALIDATOR ***' x1; '(none recorded)' x1 (distinct state, reported separately)",
   "claims": [],
   "command": "machine/query.py seats",
-  "wall_s": 0.4,
+  "wall_s": 0.2,
   "output": "            haiku            per_corpus         prep_hole_corpus.py                  -> check_taxonomy.py / taxonomy_agreement.py\n  change_reviewer        frontier/human   per_cycle          cycle.py writes assignments/review   -> cycle.py _implement: verdict in {proceed,blocked} and non-empty 'by'\n  decision_signer        frontier/human   per_cycle          cycle.py drafts decision.draft.jso   -> cycle.py _decide: closed decision vocabulary, non-empty signed_by, forced justification\n  density_editor         haiku            per_document       -                                    -> check_rewrite.py <before> <after>\n  disagreement_autopsy   haiku            per_dossier        audit_disagreements.py dossiers      -> audit_disagreements.py validate --verdicts <file> --dossier-dir <dir>\n  drift_standing         haiku            per_dossier        drift_dossiers.py dossiers           -> drift_dossiers.py validate --verdicts <file> --dossier-dir <dir>\n  flip_adjudicator       haiku            per_flip           dossier.py dossiers                  -> dossier.py validate --dir <dir> --verdict-file <file>\n  golden_author          haiku            per_document       -                                    -> golden.load sha-freeze + test_golden.py\n  golden_review          frontier/human   per_document       the golden_author seat's golden_tr   -> (none recorded)\n  select_audit           haiku            per_behaviour      select_audit.py                      -> select_audit.py validate\n"
  },
  "Q36": {
@@ -20,7 +20,7 @@
   "derivation": "outline exit 0 (81 lines); resolve exit 0 \u2192 'For objective questions, the factual aspects of the assistant\u2019s response should '",
   "claims": [],
   "command": "cite.py outline; cite.py resolve",
-  "wall_s": 0.2,
+  "wall_s": 0.0,
   "output": "model-spec@2025-12-18\nOverview  {#overview}\n  Structure of the document  {#structure}\n  Red-line principles  {#red_line_principles}\n  General principles  {#general_principles}\n  Specific risks  {#risk_taxonomy}\n  Instructions and levels of authority  {#levels_of_authority}\nDefinitions  {#definitions\n---\nFor objective questions, the factual aspects of the assistant\u2019s response should not differ based on how the user\u2019s question is phrased.\n"
  },
  "Q50": {
@@ -28,7 +28,7 @@
   "derivation": "cite resolve identical on rerun: True; graph_check identical on rerun: True",
   "claims": [],
   "command": "cite.py resolve x2; graph_check.py x2",
-  "wall_s": 0.5,
+  "wall_s": 0.2,
   "output": "nodes: 773   uncovered entries: 733\nbad line ranges: 0 / 846 spans  []\nbad quotes: 0 / 602  []\nspan sizes (lines covered): min 1  median 1  max 44\n  nodes covering 0 lines: 0;  >100 lines: 0 of 773\noverlapping node pairs: 266 (of 298378); nested pairs: 266\nprovided names: 115 (6 provided by >1 node)\nneeds: 1085; dangling (no provider): 25\n   dangling: L699-796_n021 needs ask_clarifying_questions_s"
  },
  "Q44": {
@@ -36,15 +36,15 @@
   "derivation": "nodes 773; bad line ranges 0/846; bad quotes 0/602; spans with quotes 602/846",
   "claims": [],
   "command": "python3 walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/graph_check.py walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/runs/ds7/root_graph.production.json",
-  "wall_s": 0.2,
+  "wall_s": 0.1,
   "output": "71-426_n004', 'L171-426_n007', 'L609-698_n001', 'L699-796_n001', 'L1001-1107_n001', 'L1001-1107_n005', 'L1108-1367_n011', 'L1108-1367_n012', 'L1542-1706_n001', 'L1707-1973_n015'], 'system_authority': ['L1-170_n049', 'L171-426_n008', 'L1108-1367_n010', 'L1974-2125_n001'], 'developer_authority': ['L1-170_n051', 'L171-426_n009', 'L1707-1973_n001'], 'user_authority': ['L1-170_n055', 'L171-426_n010', 'L1108-1367_n013', 'L1707-1973_n007', 'L2126-2404_n024', 'L2126-2404_n025', 'L2555-2652_n007', 'L3239-3382_n001', 'L3877-3953_n014', 'L3505-3953_n001', 'L4252-4482_n004'], 'guideline_authority': ['L1-170_n058', 'L171-426_n011', 'L2126-2404_n026', 'L2821-3040_n001', 'L3239-3382_n009', 'L3954-4251_n005', 'L3954-4251_n009', 'L3954-4251_n016', 'L3954-4251_n022', 'L3954-4251_n032', 'L3954-4251_n041', 'L4252-4482_n012', 'L4252-4482_n018'], 'conversational_language_examples': ['L2821-3040_n019', 'L2821-3040_n020', 'L2821-3040_n021']}\nK1 nodes grounded on the L183-191 list: [('L1-170_n042', (183, 183)), ('L171-426_n007', (186, 186)), ('L171-426_n008', (187, 187)), ('L171-426_n009', (188, 188)), ('L171-426_n010', (189, 189)), ('L171-426_n011', (190, 190))]; with ordering in provides: [('L1-170_n042', (183, 183), 'PARTIAL list coverage'), ('L171-426_n007', (186, 186), 'PARTIAL list coverage')]\nnodes with zero needs: 94 / 773\nspans with quotes: 602 / 846\nauthority-tagged headings captured in some node: 50 / 59\nlines covered by nodes: 3638 / 3722 non-blank; declared uncovered: 92; unaccounted: 0\n"
  },
  "Q40": {
   "state": "verified",
-  "derivation": "exit 0, wall 3.4s (README says ~3 s; verified as order of magnitude only)",
+  "derivation": "exit 0, wall 1.6s (README says ~3 s; verified as order of magnitude only)",
   "claims": [],
   "command": "bash setup_env.sh --check",
-  "wall_s": 3.4,
+  "wall_s": 1.6,
   "output": "--- imports ---\n  ok      pytest       9.1.1      the test suite\n  ok      clingo       5.8.0      the solver; absent = ASP tests show as collection errors\n  ok      pydantic     2.13.4     phase_1 schema and format forcing\n--- self-tests that need no network and cost nothing ---\n  ok      phase_1/translate.py \u2014 52 passed, 0 failed\n  ok      walkthrough/link.py \u2014 21/21 self-test checks passed\n\nenvironment OK.\n\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python -m pytest -q                 # from semi-formal-experiment/, ~4 min\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python walkthrough/paper_pipeline/phase_1/translate.py --clause m0255\n                                   # DRY RUN, sends nothing\n"
  },
  "Q43": {
@@ -52,7 +52,7 @@
   "derivation": "sequence exit 0; first failing output: ALL-OK",
   "claims": [],
   "command": "Start-here steps 0-5 in order",
-  "wall_s": 39.0,
+  "wall_s": 21.8,
   "output": "--- imports ---\n  ok      pytest       9.1.1      the test suite\n  ok      clingo       5.8.0      the solver; absent = ASP tests show as collection errors\n  ok      pydantic     2.13.4     phase_1 schema and format forcing\n--- self-tests that need no network and cost nothing ---\n  ok      phase_1/translate.py \u2014 52 passed, 0 failed\n  ok      walkthrough/link.py \u2014 21/21 self-test checks passed\n\nenvironment OK.\n\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python -m pytest -q                 # from semi-formal-experiment/, ~4 min\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python walkthrough/paper_pipeline/phase_1/translate.py --clause m0255\n                                   # DRY RUN, sends nothing\nALL-OK\n"
  },
  "Q06_live": {
@@ -60,7 +60,7 @@
   "derivation": "measure_join prints 849/863 = 98.4% (published universe; MODULE_MAP \u00a71 forbids quoting)",
   "claims": [],
   "command": "measure_join.py",
-  "wall_s": 13.1,
+  "wall_s": 7.2,
   "output": "           313     313  100.0%\n  harm-avoidance-to-third-parties        326     333   97.9%\n  avoiding-over-and-under-caution        151     153   98.7%\n\nunmatched (14):\n  [helpfulness s=6] 'The assistant may sometimes encounter instructions that are ambiguous, inconsistent, or difficult to'\n  [helpfulness s=4] 'While the assistant should display big-picture thinking on how to help the user accomplish their lon'\n  [helpfulness s=3] 'Inapplicable instructions should typically be ignored. The only other reason an instruction should b'\n  [helpfulness s=2] 'If the assistant lacks sufficient confidence in its response, it should use a tool to gather more in'\n  [helpfulness s=1] 'As mentioned in #letter_and_spirit, users or developers may sometimes include untrusted text content'\n  [harm-avoidance-to-third-parties s=6] 'The assistant must not generate *restricted content* (such as information hazards and sensitive pers'\n  [harm-avoidance-to-third-parties s=4] 'If the assistant lacks sufficient confidence in its response, it should use a tool to gather more in'\n  [harm-avoidance-to-third-parties s=4] '#prohibited_content: only applies to sexual content involving minors, and transformations of user-pr'\n  [harm-avoidance-to-third-parties s=4] 'As mentioned in #letter_and_spirit, users or developers may sometimes include untrusted text content'\n  [harm-avoidance-to-third-parties s=3] 'While the assistant should display big-picture thinking on how to help the user accomplish their lon'\n"
  },
  "Q24": {
@@ -68,8 +68,8 @@
   "derivation": "pytest: 2267 passed, 4 skipped (README: 2,270 passed, 1 skipped)",
   "claims": [],
   "command": "pytest -q (semi-formal-experiment)",
-  "wall_s": 261.5,
-  "output": "2267 passed, 4 skipped, 14 warnings in 261.12s (0:04:21)"
+  "wall_s": 193.3,
+  "output": "2267 passed, 4 skipped, 14 warnings in 193.00s (0:03:12)"
  },
  "Q30": {
   "state": "verified",
@@ -175,5 +175,13 @@
    },
    "detached_files": []
   }
+ },
+ "H03_append_only": {
+  "state": "verified",
+  "derivation": "45 first-parent commits touch ITERATION_NOTES.md; commits deleting lines: [('6d01415b', '2026-08-31', 89, 121)] \u2014 only the redaction commit",
+  "claims": [],
+  "command": "git log --first-parent --numstat -- ITERATION_NOTES.md",
+  "wall_s": 0.1,
+  "output": "\n\n27\t0\twalkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md\nba186702 2026-08-24\n\n38\t0\twalkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md\n4edd8e9a 2026-08-24\n\n37\t0\twalkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md\n30193087 2026-08-24\n\n31\t0\twalkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md\n03312494 2026-08-24\n\n16\t0\twalkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md\nce87921c 2026-08-24\n\n30\t0\twalkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md\nccb7bd18 2026-08-24\n\n44\t0\twalkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md\n"
  }
 }
