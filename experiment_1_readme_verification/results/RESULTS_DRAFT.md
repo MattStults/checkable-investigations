@@ -48,15 +48,25 @@ Baseline: one clean-context Opus agent with the README, the repo and a brief; 27
 | ledger arm, verdict nodes (12) | 3 | 2 | 6 | 1 dangling |
 | baseline, all 77 | 54 | 12 | 6 | 5 |
 
-Agreement: 60 of 77. Of the 17 disagreements, 13 are label only (the ledger says contested wherever the record holds unweighed conflict; the baseline weighs), 4 are substance.
+Agreement: 60 of 77. Of the 24 items that ended non-verified in the ledger, the adjudicators classified 11 of the arm disagreements as label only (the ledger says contested wherever the record holds unweighed conflict; the baseline weighs) and 13 as substance.
 
 Machine-checkable fraction: every ledger claim re-verifies. Of the baseline's 77 items, 27 rest on live runs with no file quote; of its 109 quoted segments, 83 verify verbatim at the pin, 5 exist only in pre-redaction history, and the rest are command output or the reviewer's summaries.
 
 ### Adjudication
 
-Non-blind model rulings (D-12) on the 24 items ending non-verified in the ledger: arm judged right, both 8, baseline 10, ledger 2, neither 4; ledger state equals ruling on 9, baseline on 16. Restricted to the 11 substance disagreements: both 7, baseline 3, ledger 2, neither 1.
+Non-blind model rulings (D-12) on the 24 items ending non-verified in the ledger: arm judged right, both 8, baseline 10, ledger 2, neither 4; ledger state equals ruling on 9, baseline on 16.
 
-Blind re-adjudication (D-12b, arms anonymized, reasons removed): [BLIND: rulings agree with non-blind on N of 24; evidence decided by ledger X / baseline Y / both Z / neither W; substance-only ...].
+Blind re-adjudication (D-12b, arms anonymized as A/B per item, reasons removed, mapping sealed until fold): rulings agree with the non-blind ones on 22 of 24 (Q28 moved contradicted to verified, read as a single null test; H06 moved verified to contradicted). Whose evidence decided the ruling, unsealed:
+
+| | all 24 items | 13 substance items |
+|---|---|---|
+| both arms | 5 | 5 |
+| baseline's evidence | 9 | 4 |
+| ledger's evidence | 3 | 2 |
+| neither (ruling reached from the record directly) | 7 | 2 |
+| arm's own state equals the blind ruling: ledger / baseline | 9 / 14 | 8 / 9 |
+
+On substance the arms are close to even; the baseline's overall edge comes from the label items, where the ledger reported unweighed conflict as contested and the record, once weighed, supported one side. A weighing rule over stance and supersession refs was in the design and only partly implemented.
 
 Live-run conflicts settled by re-running: the setup check exits 0; pytest gives 2,267 passed and 4 skipped in the README's own venv (2,270 and 1 only with two optional packages installed). Both reproduce the ledger arm's observation.
 

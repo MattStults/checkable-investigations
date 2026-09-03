@@ -1,0 +1,313 @@
+{
+ "rows": [
+  {
+   "id": "H01",
+   "ledger": "contradicted",
+   "baseline": "contradicted",
+   "blind_ruling": "contradicted",
+   "blind_arm_right": "both",
+   "nonblind_ruling": "contradicted",
+   "nonblind_arm_right": "both",
+   "substance_or_label": "substance",
+   "ledger_matches": true,
+   "baseline_matches": true
+  },
+  {
+   "id": "H02",
+   "ledger": "contested",
+   "baseline": "verified",
+   "blind_ruling": "verified",
+   "blind_arm_right": "baseline",
+   "nonblind_ruling": "verified",
+   "nonblind_arm_right": "baseline",
+   "substance_or_label": "label",
+   "ledger_matches": false,
+   "baseline_matches": true
+  },
+  {
+   "id": "H06",
+   "ledger": "contested",
+   "baseline": "verified",
+   "blind_ruling": "contradicted",
+   "blind_arm_right": "neither",
+   "nonblind_ruling": "verified",
+   "nonblind_arm_right": "baseline",
+   "substance_or_label": "label",
+   "ledger_matches": false,
+   "baseline_matches": false
+  },
+  {
+   "id": "H08",
+   "ledger": "contradicted",
+   "baseline": "unverifiable",
+   "blind_ruling": "unverifiable",
+   "blind_arm_right": "baseline",
+   "nonblind_ruling": "unverifiable",
+   "nonblind_arm_right": "baseline",
+   "substance_or_label": "substance",
+   "ledger_matches": false,
+   "baseline_matches": true
+  },
+  {
+   "id": "H10",
+   "ledger": "contradicted",
+   "baseline": "contradicted",
+   "blind_ruling": "contradicted",
+   "blind_arm_right": "both",
+   "nonblind_ruling": "contradicted",
+   "nonblind_arm_right": "both",
+   "substance_or_label": "substance",
+   "ledger_matches": true,
+   "baseline_matches": true
+  },
+  {
+   "id": "Q02",
+   "ledger": "contradicted",
+   "baseline": "contradicted",
+   "blind_ruling": "contradicted",
+   "blind_arm_right": "both",
+   "nonblind_ruling": "contradicted",
+   "nonblind_arm_right": "both",
+   "substance_or_label": "substance",
+   "ledger_matches": true,
+   "baseline_matches": true
+  },
+  {
+   "id": "Q06",
+   "ledger": "contested",
+   "baseline": "contested",
+   "blind_ruling": "verified",
+   "blind_arm_right": "neither",
+   "nonblind_ruling": "verified",
+   "nonblind_arm_right": "neither",
+   "substance_or_label": "label",
+   "ledger_matches": false,
+   "baseline_matches": false
+  },
+  {
+   "id": "Q24",
+   "ledger": "contradicted",
+   "baseline": "verified",
+   "blind_ruling": "contradicted",
+   "blind_arm_right": "ledger",
+   "nonblind_ruling": "contradicted",
+   "nonblind_arm_right": "ledger",
+   "substance_or_label": "substance",
+   "ledger_matches": true,
+   "baseline_matches": false
+  },
+  {
+   "id": "Q27",
+   "ledger": "contested",
+   "baseline": "contested",
+   "blind_ruling": "verified",
+   "blind_arm_right": "neither",
+   "nonblind_ruling": "verified",
+   "nonblind_arm_right": "neither",
+   "substance_or_label": "substance",
+   "ledger_matches": false,
+   "baseline_matches": false
+  },
+  {
+   "id": "Q28",
+   "ledger": "contested",
+   "baseline": "contradicted",
+   "blind_ruling": "verified",
+   "blind_arm_right": "neither",
+   "nonblind_ruling": "contradicted",
+   "nonblind_arm_right": "baseline",
+   "substance_or_label": "label",
+   "ledger_matches": false,
+   "baseline_matches": false
+  },
+  {
+   "id": "Q29",
+   "ledger": "contested",
+   "baseline": "contradicted",
+   "blind_ruling": "contradicted",
+   "blind_arm_right": "baseline",
+   "nonblind_ruling": "contradicted",
+   "nonblind_arm_right": "baseline",
+   "substance_or_label": "label",
+   "ledger_matches": false,
+   "baseline_matches": true
+  },
+  {
+   "id": "Q32",
+   "ledger": "contradicted",
+   "baseline": "contradicted",
+   "blind_ruling": "contradicted",
+   "blind_arm_right": "both",
+   "nonblind_ruling": "contradicted",
+   "nonblind_arm_right": "both",
+   "substance_or_label": "substance",
+   "ledger_matches": true,
+   "baseline_matches": true
+  },
+  {
+   "id": "Q33",
+   "ledger": "contradicted",
+   "baseline": "contradicted",
+   "blind_ruling": "contradicted",
+   "blind_arm_right": "baseline",
+   "nonblind_ruling": "contradicted",
+   "nonblind_arm_right": "both",
+   "substance_or_label": "substance",
+   "ledger_matches": true,
+   "baseline_matches": true
+  },
+  {
+   "id": "Q34",
+   "ledger": "contradicted",
+   "baseline": "contradicted",
+   "blind_ruling": "contradicted",
+   "blind_arm_right": "both",
+   "nonblind_ruling": "contradicted",
+   "nonblind_arm_right": "both",
+   "substance_or_label": "substance",
+   "ledger_matches": true,
+   "baseline_matches": true
+  },
+  {
+   "id": "Q48",
+   "ledger": "contested",
+   "baseline": "contradicted",
+   "blind_ruling": "contradicted",
+   "blind_arm_right": "baseline",
+   "nonblind_ruling": "contradicted",
+   "nonblind_arm_right": "baseline",
+   "substance_or_label": "label",
+   "ledger_matches": false,
+   "baseline_matches": true
+  },
+  {
+   "id": "V01",
+   "ledger": "contested",
+   "baseline": "contested",
+   "blind_ruling": "verified",
+   "blind_arm_right": "neither",
+   "nonblind_ruling": "verified",
+   "nonblind_arm_right": "both",
+   "substance_or_label": "substance",
+   "ledger_matches": false,
+   "baseline_matches": false
+  },
+  {
+   "id": "V02",
+   "ledger": "contradicted",
+   "baseline": "unverifiable",
+   "blind_ruling": "unverifiable",
+   "blind_arm_right": "baseline",
+   "nonblind_ruling": "unverifiable",
+   "nonblind_arm_right": "baseline",
+   "substance_or_label": "substance",
+   "ledger_matches": false,
+   "baseline_matches": true
+  },
+  {
+   "id": "V03",
+   "ledger": "dangling",
+   "baseline": "unverifiable",
+   "blind_ruling": "dangling",
+   "blind_arm_right": "ledger",
+   "nonblind_ruling": "dangling",
+   "nonblind_arm_right": "both",
+   "substance_or_label": "label",
+   "ledger_matches": true,
+   "baseline_matches": false
+  },
+  {
+   "id": "V05",
+   "ledger": "contested",
+   "baseline": "contested",
+   "blind_ruling": "verified",
+   "blind_arm_right": "neither",
+   "nonblind_ruling": "verified",
+   "nonblind_arm_right": "neither",
+   "substance_or_label": "label",
+   "ledger_matches": false,
+   "baseline_matches": false
+  },
+  {
+   "id": "V06",
+   "ledger": "contradicted",
+   "baseline": "contested",
+   "blind_ruling": "contradicted",
+   "blind_arm_right": "ledger",
+   "nonblind_ruling": "contradicted",
+   "nonblind_arm_right": "ledger",
+   "substance_or_label": "substance",
+   "ledger_matches": true,
+   "baseline_matches": false
+  },
+  {
+   "id": "V07",
+   "ledger": "contested",
+   "baseline": "contradicted",
+   "blind_ruling": "contradicted",
+   "blind_arm_right": "baseline",
+   "nonblind_ruling": "contradicted",
+   "nonblind_arm_right": "baseline",
+   "substance_or_label": "substance",
+   "ledger_matches": false,
+   "baseline_matches": true
+  },
+  {
+   "id": "V08",
+   "ledger": "contested",
+   "baseline": "verified",
+   "blind_ruling": "verified",
+   "blind_arm_right": "baseline",
+   "nonblind_ruling": "verified",
+   "nonblind_arm_right": "baseline",
+   "substance_or_label": "label",
+   "ledger_matches": false,
+   "baseline_matches": true
+  },
+  {
+   "id": "V11",
+   "ledger": "contested",
+   "baseline": "verified",
+   "blind_ruling": "verified",
+   "blind_arm_right": "baseline",
+   "nonblind_ruling": "verified",
+   "nonblind_arm_right": "baseline",
+   "substance_or_label": "label",
+   "ledger_matches": false,
+   "baseline_matches": true
+  },
+  {
+   "id": "V12",
+   "ledger": "contested",
+   "baseline": "contested",
+   "blind_ruling": "verified",
+   "blind_arm_right": "neither",
+   "nonblind_ruling": "verified",
+   "nonblind_arm_right": "neither",
+   "substance_or_label": "label",
+   "ledger_matches": false,
+   "baseline_matches": false
+  }
+ ],
+ "agree_rulings": 22,
+ "tally_all": {
+  "both": 5,
+  "baseline": 9,
+  "neither": 7,
+  "ledger": 3
+ },
+ "tally_substance": {
+  "both": 5,
+  "baseline": 4,
+  "ledger": 2,
+  "neither": 2
+ },
+ "match_all": {
+  "ledger": 9,
+  "baseline": 14
+ },
+ "match_substance": {
+  "ledger": 8,
+  "baseline": 9
+ }
+}
