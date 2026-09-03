@@ -1,0 +1,912 @@
+[
+ {
+  "id": "Q01",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": false,
+  "nums": {},
+  "n_claims": 6,
+  "sources": 1,
+  "tiers": [
+   "stated"
+  ],
+  "decoys": 0,
+  "downstream": [
+   "V01"
+  ],
+  "baseline_evidence": "1 quote segment(s) over 1 file(s)",
+  "sentence": "On the behaviors tuned during the arc-2 campaign, in-sample match-or-defensible rates agai"
+ },
+ {
+  "id": "Q02",
+  "ledger": "contradicted",
+  "baseline": "contradicted",
+  "live": false,
+  "nums": {},
+  "n_claims": 8,
+  "sources": 2,
+  "tiers": [
+   "stated"
+  ],
+  "decoys": 0,
+  "downstream": [],
+  "baseline_evidence": "5 quote segment(s) over 3 file(s)",
+  "sentence": "On the behaviors tuned during the arc-2 campaign, in-sample match-or-defensible rates agai"
+ },
+ {
+  "id": "Q03",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": false,
+  "nums": {
+   "tuned_behaviour_count": 3,
+   "certification_completed_each": true
+  },
+  "n_claims": 12,
+  "sources": 5,
+  "tiers": [
+   "stated"
+  ],
+  "decoys": 0,
+  "downstream": [],
+  "baseline_evidence": "1 quote segment(s) over 4 file(s)",
+  "sentence": "raw-match certification ran to completion on the three tuned behaviors"
+ },
+ {
+  "id": "Q04",
+  "ledger": "verified",
+  "baseline": "contradicted",
+  "live": false,
+  "nums": {
+   "registration_exists": true,
+   "run_exists": false
+  },
+  "n_claims": 12,
+  "sources": 2,
+  "tiers": [
+   "human",
+   "panel",
+   "stated"
+  ],
+  "decoys": 0,
+  "downstream": [],
+  "baseline_evidence": "6 quote segment(s) over 3 file(s)",
+  "sentence": "the registered match-or-defensible pass never ran"
+ },
+ {
+  "id": "Q05",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": false,
+  "nums": {
+   "node_count": 773
+  },
+  "n_claims": 6,
+  "sources": 4,
+  "tiers": [
+   "stated"
+  ],
+  "decoys": 5,
+  "downstream": [],
+  "baseline_evidence": "live run / command evidence (no file cit",
+  "sentence": "# 2. the 773-node document graph, every span checked against the source"
+ },
+ {
+  "id": "Q06",
+  "ledger": "contested",
+  "baseline": "contested",
+  "live": false,
+  "nums": {
+   "join_rate": 0.984,
+   "misses_printed_by_name": true
+  },
+  "n_claims": 4,
+  "sources": 1,
+  "tiers": [
+   "stated"
+  ],
+  "decoys": 5,
+  "downstream": [],
+  "baseline_evidence": "2 quote segment(s) over 1 file(s)",
+  "sentence": "# 3. the measurement instrument, and its recall ceiling (98.4% join, misses printed by nam"
+ },
+ {
+  "id": "Q07",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": true,
+  "nums": {
+   "check_count": 4,
+   "all_pass": true
+  },
+  "n_claims": 0,
+  "sources": 0,
+  "tiers": [],
+  "decoys": 0,
+  "downstream": [],
+  "baseline_evidence": "live run / command evidence (no file cit",
+  "sentence": "(`machine/check_model.py`, the companion source-check for step 5, also runs clean \u2014 all fo"
+ },
+ {
+  "id": "Q08",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": false,
+  "nums": {
+   "clause_count": 616
+  },
+  "n_claims": 1,
+  "sources": 1,
+  "tiers": [
+   "stated"
+  ],
+  "decoys": 0,
+  "downstream": [],
+  "baseline_evidence": "1 quote segment(s) over 2 file(s)",
+  "sentence": "Constitution pilot (616 clauses, 16-rule ASP fragment, conflict enumeration, expressibilit"
+ },
+ {
+  "id": "Q09",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": false,
+  "nums": {
+   "rule_count": 16
+  },
+  "n_claims": 1,
+  "sources": 1,
+  "tiers": [
+   "stated"
+  ],
+  "decoys": 3,
+  "downstream": [],
+  "baseline_evidence": "1 quote segment(s) over 2 file(s)",
+  "sentence": "Constitution pilot (616 clauses, 16-rule ASP fragment, conflict enumeration, expressibilit"
+ },
+ {
+  "id": "Q10",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": false,
+  "nums": {
+   "passage_count": 589
+  },
+  "n_claims": 12,
+  "sources": 5,
+  "tiers": [
+   "stated"
+  ],
+  "decoys": 5,
+  "downstream": [],
+  "baseline_evidence": "live run / command evidence (no file cit",
+  "sentence": "the Model Spec relevance benchmark against a frontier-judge panel on the full 589-passage "
+ },
+ {
+  "id": "Q11",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": false,
+  "nums": {
+   "node_count": 773
+  },
+  "n_claims": 6,
+  "sources": 4,
+  "tiers": [
+   "stated"
+  ],
+  "decoys": 5,
+  "downstream": [],
+  "baseline_evidence": "1 quote segment(s) over 1 file(s)",
+  "sentence": "Document-graph translation (773 nodes), panel-adjudicated repair iterations, minted-dimens"
+ },
+ {
+  "id": "Q12",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": false,
+  "nums": {
+   "mcc_tool_in_sample": 0.32
+  },
+  "n_claims": 2,
+  "sources": 1,
+  "tiers": [
+   "stated"
+  ],
+  "decoys": 5,
+  "downstream": [
+   "V04"
+  ],
+  "baseline_evidence": "2 quote segment(s) over 1 file(s)",
+  "sentence": "Arc-1 benchmark (Model Spec, 589-passage universe, MCC): the tool reached +0.32 in-sample "
+ },
+ {
+  "id": "Q13",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": false,
+  "nums": {
+   "mcc_tool_label_free": 0.278
+  },
+  "n_claims": 2,
+  "sources": 1,
+  "tiers": [
+   "stated"
+  ],
+  "decoys": 5,
+  "downstream": [
+   "V04"
+  ],
+  "baseline_evidence": "2 quote segment(s) over 1 file(s)",
+  "sentence": "the tool reached +0.32 in-sample (+0.278 label-free)"
+ },
+ {
+  "id": "Q14",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": false,
+  "nums": {
+   "mcc_judges_loo_mean": 0.555
+  },
+  "n_claims": 7,
+  "sources": 1,
+  "tiers": [
+   "panel",
+   "stated"
+  ],
+  "decoys": 5,
+  "downstream": [
+   "V04"
+  ],
+  "baseline_evidence": "live run / command evidence (no file cit",
+  "sentence": "the frontier judges' leave-one-out mean was +0.555"
+ },
+ {
+  "id": "Q15",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": false,
+  "nums": {
+   "cell_count": 9,
+   "judge_wins": 9
+  },
+  "n_claims": 12,
+  "sources": 2,
+  "tiers": [
+   "stated"
+  ],
+  "decoys": 0,
+  "downstream": [
+   "V04"
+  ],
+  "baseline_evidence": "live run / command evidence (no file cit",
+  "sentence": "the judges beat the tool in all nine behavior-gold cells at the judge's own false-positive"
+ },
+ {
+  "id": "Q16",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": false,
+  "nums": {
+   "attempt_count": 4
+  },
+  "n_claims": 20,
+  "sources": 7,
+  "tiers": [
+   "raw",
+   "stated"
+  ],
+  "decoys": 0,
+  "downstream": [],
+  "baseline_evidence": "1 quote segment(s) over 1 file(s)",
+  "sentence": "Arc-2 repair loop (engaged precision, one behavior): 0.40 \u2192 0.70 \u2192 0.55 \u2192 0.85 across four"
+ },
+ {
+  "id": "Q17",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": false,
+  "nums": {
+   "numerator": 23,
+   "denominator": 40,
+   "rate": 0.575
+  },
+  "n_claims": 3,
+  "sources": 2,
+  "tiers": [
+   "panel",
+   "stated"
+  ],
+  "decoys": 5,
+  "downstream": [
+   "V09"
+  ],
+  "baseline_evidence": "1 quote segment(s) over 1 file(s)",
+  "sentence": "with the ledger's own honest headline being recall, not precision (23 of 40 declined passa"
+ },
+ {
+  "id": "Q18",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": false,
+  "nums": {},
+  "n_claims": 12,
+  "sources": 7,
+  "tiers": [
+   "git",
+   "stated"
+  ],
+  "decoys": 0,
+  "downstream": [
+   "V07",
+   "V11"
+  ],
+  "baseline_evidence": "live run / command evidence (no file cit",
+  "sentence": "The separability census (\"integration test passed\") \u2014 withdrawn in `bf0d4978`"
+ },
+ {
+  "id": "Q19",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": false,
+  "nums": {
+   "numerator": 299,
+   "denominator": 300
+  },
+  "n_claims": 7,
+  "sources": 5,
+  "tiers": [
+   "cove",
+   "stated"
+  ],
+  "decoys": 5,
+  "downstream": [
+   "V05"
+  ],
+  "baseline_evidence": "2 quote segment(s) over 1 file(s)",
+  "sentence": "its pass condition was satisfiable by noise (random partition passed 299/300 trials)"
+ },
+ {
+  "id": "Q20",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": false,
+  "nums": {},
+  "n_claims": 12,
+  "sources": 3,
+  "tiers": [
+   "cove",
+   "stated"
+  ],
+  "decoys": 0,
+  "downstream": [
+   "V05"
+  ],
+  "baseline_evidence": "2 quote segment(s) over 1 file(s)",
+  "sentence": "relevance prediction over the representation ran at base rate."
+ },
+ {
+  "id": "Q21",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": false,
+  "nums": {},
+  "n_claims": 12,
+  "sources": 5,
+  "tiers": [
+   "cove",
+   "git",
+   "stated"
+  ],
+  "decoys": 0,
+  "downstream": [
+   "V07",
+   "V11"
+  ],
+  "baseline_evidence": "live run / command evidence (no file cit",
+  "sentence": "The L1/L2 licensing experiments \u2014 withdrawn in `365d68b3`: DOES-NOT-LICENSE"
+ },
+ {
+  "id": "Q22",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": false,
+  "nums": {},
+  "n_claims": 12,
+  "sources": 1,
+  "tiers": [
+   "stated"
+  ],
+  "decoys": 0,
+  "downstream": [],
+  "baseline_evidence": "2 quote segment(s) over 1 file(s)",
+  "sentence": "one bar was already met by numbers indistinguishable from noise, the other had no null."
+ },
+ {
+  "id": "Q23",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": false,
+  "nums": {
+   "erratum_number": 20
+  },
+  "n_claims": 12,
+  "sources": 7,
+  "tiers": [
+   "git",
+   "stated"
+  ],
+  "decoys": 0,
+  "downstream": [
+   "V07"
+  ],
+  "baseline_evidence": "3 quote segment(s) over 1 file(s)",
+  "sentence": "The query-class saturation claim \u2014 bounded in `1143a921` (erratum #20)"
+ },
+ {
+  "id": "Q24",
+  "ledger": "contradicted",
+  "baseline": "verified",
+  "live": true,
+  "nums": {
+   "passed": 2270,
+   "skipped": 1
+  },
+  "n_claims": 0,
+  "sources": 0,
+  "tiers": [],
+  "decoys": 0,
+  "downstream": [],
+  "baseline_evidence": "live run / command evidence (no file cit",
+  "sentence": "# 2,270 passed, 1 skipped (4-10 min depending on machine; measured 2026-08-30)"
+ },
+ {
+  "id": "Q25",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": false,
+  "nums": {
+   "first_entry": "0000",
+   "last_entry": "0043",
+   "entry_count": 44
+  },
+  "n_claims": 12,
+  "sources": 5,
+  "tiers": [
+   "panel",
+   "raw",
+   "stated"
+  ],
+  "decoys": 0,
+  "downstream": [],
+  "baseline_evidence": "2 quote segment(s) over 1 file(s)",
+  "sentence": "the append-only ledger, entries 0000\u20130043"
+ },
+ {
+  "id": "Q26",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": false,
+  "nums": {
+   "definition_count": 100
+  },
+  "n_claims": 10,
+  "sources": 5,
+  "tiers": [
+   "stated"
+  ],
+  "decoys": 5,
+  "downstream": [
+   "V05"
+  ],
+  "baseline_evidence": "2 quote segment(s) over 2 file(s)",
+  "sentence": "an ontology open-coded from 100 behavior definitions covered every sampled span"
+ },
+ {
+  "id": "Q27",
+  "ledger": "contested",
+  "baseline": "contested",
+  "live": false,
+  "nums": {
+   "coverage": 1.0
+  },
+  "n_claims": 6,
+  "sources": 1,
+  "tiers": [
+   "stated"
+  ],
+  "decoys": 0,
+  "downstream": [
+   "V05"
+  ],
+  "baseline_evidence": "2 quote segment(s) over 2 file(s)",
+  "sentence": "an ontology open-coded from 100 behavior definitions covered every sampled span"
+ },
+ {
+  "id": "Q28",
+  "ledger": "contested",
+  "baseline": "contradicted",
+  "live": false,
+  "nums": {
+   "separability_tests_passed_against_null": 0
+  },
+  "n_claims": 10,
+  "sources": 3,
+  "tiers": [
+   "cove",
+   "stated"
+  ],
+  "decoys": 0,
+  "downstream": [
+   "V05"
+  ],
+  "baseline_evidence": "4 quote segment(s) over 2 file(s)",
+  "sentence": "but failed every separability test once a matched random-partition null was run against it"
+ },
+ {
+  "id": "Q29",
+  "ledger": "contested",
+  "baseline": "contradicted",
+  "live": false,
+  "nums": {
+   "withdrawn_headline_count": 3
+  },
+  "n_claims": 20,
+  "sources": 9,
+  "tiers": [
+   "human",
+   "stated"
+  ],
+  "decoys": 0,
+  "downstream": [
+   "V07"
+  ],
+  "baseline_evidence": "6 quote segment(s) over 2 file(s)",
+  "sentence": "it caught and withdrew three headline claims"
+ },
+ {
+  "id": "Q30",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": true,
+  "nums": {
+   "distinct_contents": true
+  },
+  "n_claims": 0,
+  "sources": 0,
+  "tiers": [],
+  "decoys": 0,
+  "downstream": [],
+  "baseline_evidence": "live run / command evidence (no file cit",
+  "sentence": "\u26a0\ufe0f **Two different files are named `behaviours.json` and they are NOT interchangeable** \u2014 "
+ },
+ {
+  "id": "Q31",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": true,
+  "nums": {},
+  "n_claims": 0,
+  "sources": 0,
+  "tiers": [],
+  "decoys": 0,
+  "downstream": [],
+  "baseline_evidence": "live run / command evidence (no file cit",
+  "sentence": "LEDGER.md          \u2192 the arc-2 append-only ledger (symlink)\nARC2_HANDOFF.md    \u2192 the arc-2"
+ },
+ {
+  "id": "Q32",
+  "ledger": "contradicted",
+  "baseline": "contradicted",
+  "live": true,
+  "nums": {
+   "restorable_from_history": true
+  },
+  "n_claims": 0,
+  "sources": 0,
+  "tiers": [],
+  "decoys": 0,
+  "downstream": [],
+  "baseline_evidence": "1 quote segment(s) over 1 file(s)",
+  "sentence": "Large superseded run artifacts were pruned for publication with a signed manifest \u2014 see [`"
+ },
+ {
+  "id": "Q33",
+  "ledger": "contradicted",
+  "baseline": "contradicted",
+  "live": true,
+  "nums": {},
+  "n_claims": 0,
+  "sources": 0,
+  "tiers": [],
+  "decoys": 0,
+  "downstream": [],
+  "baseline_evidence": "live run / command evidence (no file cit",
+  "sentence": "| 1 (July\u2013early Aug) | `semi-formal-experiment/` | ... | 2 (mid\u2013late Aug) | `walkthrough/p"
+ },
+ {
+  "id": "Q34",
+  "ledger": "contradicted",
+  "baseline": "contradicted",
+  "live": false,
+  "nums": {},
+  "n_claims": 1,
+  "sources": 1,
+  "tiers": [
+   "stated"
+  ],
+  "decoys": 0,
+  "downstream": [],
+  "baseline_evidence": "1 quote segment(s) over 1 file(s)",
+  "sentence": "CI runs both suites plus the citation and graph checks from the demo path on every push"
+ },
+ {
+  "id": "Q35",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": true,
+  "nums": {},
+  "n_claims": 0,
+  "sources": 0,
+  "tiers": [],
+  "decoys": 0,
+  "downstream": [],
+  "baseline_evidence": "6 quote segment(s) over 3 file(s)",
+  "sentence": "`specs/openai-model-spec/` and `specs/claude-constitution/` are CC0 1.0 public-domain docu"
+ },
+ {
+  "id": "Q36",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": true,
+  "nums": {
+   "commands_exit_zero": true,
+   "resolve_returns_verbatim_text": true
+  },
+  "n_claims": 0,
+  "sources": 0,
+  "tiers": [],
+  "decoys": 0,
+  "downstream": [],
+  "baseline_evidence": "live run / command evidence (no file cit",
+  "sentence": "# 1. every claim about a spec resolves to verbatim text\npython3 engine/spec-cite/cite.py o"
+ },
+ {
+  "id": "Q37",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": true,
+  "nums": {
+   "unvalidated_seat_count": 1
+  },
+  "n_claims": 0,
+  "sources": 0,
+  "tiers": [],
+  "decoys": 0,
+  "downstream": [],
+  "baseline_evidence": "live run / command evidence (no file cit",
+  "sentence": "# 5. the governance model as a queryable logic program (note the seat it reports as unvali"
+ },
+ {
+  "id": "Q38",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": false,
+  "nums": {
+   "redaction_markers_present": true,
+   "history_retains_content": true
+  },
+  "n_claims": 5,
+  "sources": 3,
+  "tiers": [
+   "stated"
+  ],
+  "decoys": 0,
+  "downstream": [],
+  "baseline_evidence": "3 quote segment(s) over 1 file(s)",
+  "sentence": "operational details (usage plumbing, working notes) were redacted in the current files and"
+ },
+ {
+  "id": "Q39",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": false,
+  "nums": {
+   "rule_recorded_as_binding": true
+  },
+  "n_claims": 12,
+  "sources": 2,
+  "tiers": [
+   "stated"
+  ],
+  "decoys": 0,
+  "downstream": [
+   "V10"
+  ],
+  "baseline_evidence": "2 quote segment(s) over 2 file(s)",
+  "sentence": "The binding rule that came out of these: a separability claim is only as strong as its mar"
+ },
+ {
+  "id": "Q40",
+  "ledger": "verified",
+  "baseline": "unverifiable",
+  "live": true,
+  "nums": {
+   "wall_seconds_approx": 3
+  },
+  "n_claims": 0,
+  "sources": 0,
+  "tiers": [],
+  "decoys": 0,
+  "downstream": [],
+  "baseline_evidence": "live run / command evidence (no file cit",
+  "sentence": "bash setup_env.sh --check    # verifies, ~3 s"
+ },
+ {
+  "id": "Q41",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": false,
+  "nums": {
+   "threshold": 0.94,
+   "any_untuned_reliably_at_or_above": false
+  },
+  "n_claims": 12,
+  "sources": 2,
+  "tiers": [
+   "raw",
+   "stated"
+  ],
+  "decoys": 0,
+  "downstream": [
+   "V01"
+  ],
+  "baseline_evidence": "1 quote segment(s) over 1 file(s)",
+  "sentence": "Untuned behaviors never reliably reached that level."
+ },
+ {
+  "id": "Q42",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": true,
+  "nums": {
+   "all_relative_links_resolve": true
+  },
+  "n_claims": 0,
+  "sources": 0,
+  "tiers": [],
+  "decoys": 0,
+  "downstream": [],
+  "baseline_evidence": "1 quote segment(s) over 1 file(s)",
+  "sentence": "[`ITERATION_NOTES.md`](walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_p"
+ },
+ {
+  "id": "Q43",
+  "ledger": "verified",
+  "baseline": "contradicted",
+  "live": true,
+  "nums": {
+   "start_here_sequence_runs_as_written": true
+  },
+  "n_claims": 0,
+  "sources": 0,
+  "tiers": [],
+  "decoys": 0,
+  "downstream": [],
+  "baseline_evidence": "live run / command evidence (no file cit",
+  "sentence": "Everything below is deterministic re-analysis of committed data: no API keys, no network, "
+ },
+ {
+  "id": "Q44",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": false,
+  "nums": {
+   "bad_line_ranges": 0,
+   "bad_quotes": 0
+  },
+  "n_claims": 2,
+  "sources": 2,
+  "tiers": [
+   "stated"
+  ],
+  "decoys": 5,
+  "downstream": [],
+  "baseline_evidence": "live run / command evidence (no file cit",
+  "sentence": "# 2. the 773-node document graph, every span checked against the source"
+ },
+ {
+  "id": "Q45",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": false,
+  "nums": {},
+  "n_claims": 5,
+  "sources": 2,
+  "tiers": [
+   "adjudicated",
+   "stated"
+  ],
+  "decoys": 0,
+  "downstream": [],
+  "baseline_evidence": "1 quote segment(s) over 2 file(s)",
+  "sentence": "the registered match-or-defensible pass never ran"
+ },
+ {
+  "id": "Q46",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": true,
+  "nums": {
+   "network_calls_on_demo_path": 0
+  },
+  "n_claims": 0,
+  "sources": 0,
+  "tiers": [],
+  "decoys": 0,
+  "downstream": [],
+  "baseline_evidence": "live run / command evidence (no file cit",
+  "sentence": "Everything below is deterministic re-analysis of committed data: no API keys, no network, "
+ },
+ {
+  "id": "Q47",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": false,
+  "nums": {},
+  "n_claims": 12,
+  "sources": 7,
+  "tiers": [
+   "stated"
+  ],
+  "decoys": 0,
+  "downstream": [],
+  "baseline_evidence": "3 quote segment(s) over 3 file(s)",
+  "sentence": "The two share a corpus and nothing else."
+ },
+ {
+  "id": "Q48",
+  "ledger": "contested",
+  "baseline": "contradicted",
+  "live": true,
+  "nums": {
+   "each_handoff_has_starred_top_block": true
+  },
+  "n_claims": 0,
+  "sources": 0,
+  "tiers": [],
+  "decoys": 0,
+  "downstream": [],
+  "baseline_evidence": "4 quote segment(s) over 2 file(s)",
+  "sentence": "**Read only the top starred block of each handoff**: everything below is stacked historica"
+ },
+ {
+  "id": "Q49",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": true,
+  "nums": {},
+  "n_claims": 0,
+  "sources": 0,
+  "tiers": [],
+  "decoys": 0,
+  "downstream": [],
+  "baseline_evidence": "live run / command evidence (no file cit",
+  "sentence": "engine/            spec-cite (locator \u2192 verbatim text) and the vendored panel harness"
+ },
+ {
+  "id": "Q50",
+  "ledger": "verified",
+  "baseline": "verified",
+  "live": true,
+  "nums": {
+   "identical_output_on_rerun": true
+  },
+  "n_claims": 0,
+  "sources": 0,
+  "tiers": [],
+  "decoys": 0,
+  "downstream": [],
+  "baseline_evidence": "live run / command evidence (no file cit",
+  "sentence": "then answer deterministically, with a citable span and a stated reason for every hit."
+ }
+]
