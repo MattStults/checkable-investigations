@@ -379,3 +379,15 @@ unchanged. Post-D-11 the counterfactual flips nothing, matching the
 baseline. Class: declared source not carried into machinery (with D-09,
 D-10). Probe result recorded with the pre-D-11 ledger answer as the
 registered outcome; D-11 is a post-probe fix.
+
+### D-12 — 2026-09-03 — adjudication delegated to a model (owner's decision)
+
+The frozen design (blog step 6, ORCHESTRATION step 9 [OWNER]) makes
+adjudication human. The owner has asked for a Fable adjudicator to rule on
+the 24 packets, the two live-run conflicts and the two scope caveats.
+Recorded as a design change: every ruling is labelled model-made, the
+adjudicator is clean-context (packets, read-only repo, owner testimony,
+inventory; no ledger, glossary, brief, baseline report or logs), and any
+ruling the adjudicator marks as needing owner knowledge stays provisional
+until the owner confirms. The Results section must state this. Brief:
+results/rulings/ADJUDICATOR_BRIEF.md.
