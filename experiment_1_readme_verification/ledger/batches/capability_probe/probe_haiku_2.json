@@ -1,0 +1,104 @@
+{
+ "header": {
+  "batch": "probe_haiku_2",
+  "source_class": "mixed",
+  "brief_version": "0.7",
+  "glossary_version": "frozen aa3da29 +G-06",
+  "spans": 10,
+  "first_span": "S00071",
+  "last_span": "S00358",
+  "note": "capability probe (Haiku vs Opus on the same spans); excluded from the merged ledger"
+ },
+ "spans": [
+  {
+   "id": "S00071",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ROUND4_PREREG.md",
+   "commit": "pin",
+   "lines": "209-227",
+   "text": "     Fable seat per wave file; E3's packet anatomy stands, its\n     one-packet-per-seat dispatch form is superseded for round 4).\n   - Panels: the 19 already-registered panel nodes ruled by THREE\n     independent wave seats on a separate panel file; majority supersedes.\n   - Draw/seeds/exclusions: UNCHANGED (committed).\n   - REGISTERED PREDICTIONS, re-derived from lineage (supersede the\n     all-truth figures, which stand in the freeze section as a recorded\n     erratum): engaged precision band 0.71-0.87, decline-correctness band\n     0.61-0.77 (round-2's passed bands, the last same-judge fresh-draw\n     measurement; v19 carries every adopted improvement since v12, so\n     within-or-above band is the expectation and above-band triggers the\n     standing leak-signature check). F1/F2 read against these bands.\n   - Cost: wave form ~= 5 seats total (2 waves + 3 panel seats), a\n     negligible share of registered capacity.\n\nE4 SIGNATURE: project owner, 2026-08-24 — approved in-session, after the\nband-change walkthrough ( lineage bands and recovered-venue re-run take\neffect; canary re-run authorized.)\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00046",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/HANDOFF_CURRENT.md",
+   "commit": "pin",
+   "lines": "1-26",
+   "text": "# ⭐⭐ ENTRY POINT (2026-08-25 end; INTEGRATION CLAIMS WITHDRAWN BY REVIEW)\nBoot: CLAUDE.md -> this file -> CALCULUS_RUNBOOK.md -> ITERATION_NOTES\n0000-0043. HEADLINE: the adversarial review of the retranslation\nintegration census (RETRANS_REVIEW_DISPOSITION.md — read it before\nciting any census number) returned P1/P2 UNSUPPORTED and the driver's\nCoVe re-derivations CONFIRMED the decisive findings: (1) the census's\npass condition is satisfiable by noise — a random 4-bucket partition\nachieves sep 1.00 / reuse 1.00 in 299/300 trials, dominating the real\nlattice; (2) 1-NN relevance prediction over the representation is\n~base rate (0.72 vs 0.60, 0.70 vs 0.59); (3) mids were induced from\nthe same 39 nodes they separate; (4) seat dimension-set agreement is\nonly 23/39, masked by pooling. What survives: 39/39 blind coverage\nwith ZERO new coinages, mid reuse 0.57 — necessary conditions only.\nNEW BINDING RULE: every separability claim ships with a matched-\ngranularity random-partition null and is only as strong as its margin\nover it. L1/L2 were then THEMSELVES reviewed and WITHDRAWN\n(DOES-NOT-LICENSE; L1L2_ADVERSARIAL_REVIEW.md + disposition, notes\n0043): Q-B is untestable without out-of-corpus panel truth (none\nexists — the corpus's adria: block covers every truth-bearing\nbehaviour); replacement package = F18 reliability gate -> F17\nblind-readout ablation -> F19 scaling pre-flight + A14 out-of-corpus\ntruth purchase; funding rule: all three pass.\nEarlier arc: query-class bound (24 dims x 105 values, open-coded,\nplace-blind); value hierarchy (0040). PARKED FOR SIGN-OFF: UA mint\n(0.98-stable, consumption redesign), prop-risk frozen test, L1/L2,\nround-4 certification.",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00026",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md",
+   "commit": "pin",
+   "lines": "514-540",
+   "text": "## 0024 — OPTION (a) EXECUTED: UA TRUTH LEDGER v1 + BLOCK CLOSE, 2026-08-24\n- ASYMMETRIC CERTIFICATE VALIDATED IN USE: negative spot-check 10/10\n  (tripwire clear) -> 74 Opus negatives memoized as trusted truth at\n  ~zero Fable. Escalation batch 1: Fable downgrades 10/24 Opus-relevants\n  — the Opus permissiveness on this brief measured a THIRD independent\n  time (gate 5/10, dispute class 9-vs-23, now 14/24).\n- LEDGER: 122/175 relevant-side+key nodes ruled (98 visible + 24\n  sealed); 53 escalations PENDING next block.\n- HONEST EARLY PROJECTION (disclosed-partial, firms up with the 53):\n  visible engaged precision-so-far 13/83 = 0.16, and even projecting\n  batch-1's 58% escalation-confirm rate onto the pending nodes the\n  engaged precision lands ~0.25-0.30 — the user-autonomy module\n  OVER-ENGAGES far more than any sample suggested (attempt-1 said\n  0.60; corrected said 0.45; the exhaustive ledger is heading to\n  ~0.3). Prediction clause (a) (FP-dominant) is being confirmed\n  emphatically; the band in clause (c) was optimistic by 2x. THE\n  MEMOIZED-EXHAUSTIVE ARCHITECTURE JUST EARNED ITS KEEP: no n=20\n  sample was ever going to reveal a 0.3-precision module reliably.\n- BUDGET DISCLOSURE: escalation seats ran over their per-seat estimate,\n  putting the batch past its registered line. The overshoot is mine\n  (batch sized on stale per-seat costs); logged, not hidden. NO further\n  frontier seats this block.\n- NEXT BAR QUEUE: 53 escalations (completes the visible+sealed engaged\n  truth) -> exact precision -> FP-population triage -> repair arc on\n  lookups -> single seal-scored confirmation -> prediction §1 final\n  scoring + the Q1 errata datum.\n",
+   "source_class": "ledger",
+   "context": null
+  },
+  {
+   "id": "S00133",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_REVIEW_DISPOSITION.md",
+   "commit": "pin",
+   "lines": "1-11",
+   "text": "# DISPOSITION — adversarial review of the L1/L2 licensing experiments\n(2026-08-25. The question put to review: would passing L1/L2 as registered\nactually support answering Q-A (complete representability for\nseparation under full retranslation) and Q-B (extension to novel\nbehaviours)? Clean-context Opus reviewer's full report:\nL1L2_ADVERSARIAL_REVIEW.md (36 findings F1-F36, amendments A1-A20).\nVERDICT: DOES-NOT-LICENSE — ACCEPTED after CoVe. L1/L2 as registered\nin RETRANS_REVIEW_DISPOSITION.md are WITHDRAWN as licensing\nexperiments; they survive only as raw material for the amended\npackage below. No retranslation campaign is fundable on them.)\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00474",
+   "path": "AGENTS.md",
+   "commit": "pin",
+   "lines": "14-26",
+   "text": "## Read in this order\n\n1. **`semi-formal-experiment/HANDOFF.md`** — its top starred section only. Current state,\n   what is closed, what is parked, and the standing rulings. Everything below that\n   section is history (self-marked, some superseded).\n2. **`semi-formal-experiment/CYCLE_DESIGN.md`** — how a change cycle runs. Read the\n   BINDING AMENDMENTS, ⚠️ PRE-BUILT CYCLES, and ⚠️ CYCLE CEREMONY MECHANICS.\n3. **`semi-formal-experiment/MODULE_MAP.md`** — §0 (how to run anything), §1b (what each\n   module is), **§11 (anti-rules — read before \"fixing\" anything that looks wrong)**.\n4. **`semi-formal-experiment/REPRODUCIBILITY.md`** — the sandwich rule, new-constant\n   governance, determinism.\n5. **`semi-formal-experiment/briefs/<seat>.md`** — before dispatching any judgment seat.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00414",
+   "path": "semi-formal-experiment/MODULE_MAP.md",
+   "commit": "pin",
+   "lines": "135-149",
+   "text": "## 2. Priority 2 — BEHAVIOUR-VS-DOCUMENT CONFLICT (built, blocked on a pending decision)\n\n| module | loc | role |\n|---|---|---|\n| `conflict_output.py` | 1647 | blinded emitter + side-car + validator + judge prompt |\n| `make_conflict_sample.py` | 201 | regenerates the sample and side-car reproducibly |\n| `conflict_adapter.py` | new | **the tool → `ConflictFinding` adapter. IT EXISTS** — earlier text saying one had to be written before judging is obsolete. |\n\n**Adapter status: BUILT** (`conflict_adapter.py`). Earlier text here said no tool →\n`ConflictFinding` adapter existed and one would have to be written before judging — that is\n**obsolete**. What remains are two open decisions (human vs model judges; which `conduct`\nvignettes) and one honesty caveat preserved in `conflict_adapter.py`: the score it emits is a\n**relevance** score, not a violation model, so the panel measures precision over a\nrelevance-ranked candidate list. See `CONFLICT_PANEL_README.md`.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  },
+  {
+   "id": "S00082",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "pin",
+   "lines": "30-67",
+   "text": "### Repo artifacts inspected\n\nAll under\n`/Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/`.\n\nPrimary (read directly by the reviewer):\n- `walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/RETRANS_REVIEW_DISPOSITION.md`\n- `.../behavior_pilot/ITERATION_NOTES.md` (notes 0031, 0032, 0033, 0036, 0042)\n- `.../behavior_pilot/HANDOFF_CURRENT.md`\n- `.../behavior_pilot/qc_separability_census.py`\n- `.../behavior_pilot/RETRANS_INTEGRATION_CENSUS.json`\n- `.../behavior_pilot/qc_canonical_values.json`\n- `.../behavior_pilot/qc_emergent_schema.json`\n- `.../behavior_pilot/qc_emergent_ann_A.json`, `qc_emergent_ann_B.json`\n- `.../behavior_pilot/query_class_corpus.json`\n- `semi-formal-experiment/spend.py` (+ its live report over `usage.jsonl`)\n- `git log` at `bf0d4978` and predecessors\n\nSecondary (inventoried by a delegated exploration pass, results folded into the\naddendum):\n- `data/behaviours.json`, `data/panel-coverage.json`, `data/panel-v5/` (`runlog-v5.jsonl`,\n  `behaviour-definitions-v5.json`, `rubric-v5.txt`, `PROVENANCE.md`)\n- `.../behavior_pilot/satisfiability_census.py`, `arm_ab.py`,\n  `satisfiability_census_v19_frozen.json`, `ROUND4_FREEZE_DERIVATION.json`,\n  `atoms_frontier_frozen.json`, `PREREG_panel_equivalence.{md,sha256}`\n- `.../behavior_pilot/panel_run1/` (adjudication + fresh_draw / fresh_draw2 /\n  fresh_draw3 / fresh_draw4 result blocks, `agreed_negative_rulings.json`,\n  `panel_rerulings.json`, `REGISTERED_RESULT.json`, `spotcheck_owner_result.json`)\n- `.../behavior_pilot/ua_truth_visible.json`, `ua_truth_sealed.json`,\n  `ITER1_TRADEOFFS_REPAIR_TRUTH.json`, `ITER2_TRADEOFFS_REPAIR_TRUTH.json`,\n  `GEN_BLOCK1_SCORED.json`, `ITER*_SCORED.json`, `round4_*_scored*.json`,\n  `ROUND4_DEV_TABLE.json`, `ruling_packets/`, `coverage_translated.json`\n- `graph_v2/node_corpus_all.json`, `graph_v2/GRAPH_OVERVIEW.md`\n- prereg drafts: `FRESH_DRAW_PREREG_DRAFT.md`, `FRESH_DRAW_ROUND2_PREREG_DRAFT.md`,\n  `FRESH_DRAW_ROUND3_PREREG_DRAFT.md`, `ROUND4_PREREG.md`,\n  `GENERALIZATION_PREREG_DRAFT.md`, `DEFENSIBILITY_BATCH_PROTOCOL.md`,\n  `CONVERGENCE_CAMPAIGN.md`\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00131",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/L1L2_ADVERSARIAL_REVIEW.md",
+   "commit": "pin",
+   "lines": "342-352",
+   "text": "## Updated Part 3 recommendation\n\nF17 stands as the single strongest experiment, with these revisions from the inventory:\n\n- **Items:** the F31 clean uniform fresh-draw partitions (~537 rulings across helpfulness / harm-avoidance / caution), **not** the assembled `truth_all()` ledger; panel-v5 (589 passages × 9 behaviours) as a pre-registered replication tier after a committed join audit.\n- **Cost:** $0 API. Register the **compute-cost** estimate instead (the project's own measured per-block unit; the two readout arms are judge calls over already-ruled nodes, so the marginal cost is arm-count × block size).\n- **Behaviour count:** 9 behaviours have some truth, so A3's \"≥5 behaviours\" is achievable today at $0.\n- **Added, non-optional (F29):** ≥3 **out-of-corpus** behaviours with new fresh-draw panel truth. Without this, Q-B is untestable by construction, and it is the cheapest high-value spend available.\n\n---\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00141",
+   "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/RETRANS_REVIEW_DISPOSITION.md",
+   "commit": "pin",
+   "lines": "45-61",
+   "text": "## Corrected verdicts (what we can honestly claim)\n- P1 (the ontology + graph inputs/outputs/atoms suffice for complete\n  separation under full retranslation): NOT ESTABLISHED. The measured\n  separability is real but carries no information beyond what a random\n  partition of the vocabulary provides at matched granularity; and the\n  representation does not predict relevance above base rate.\n- P2 (extension to novel behaviours because they fall in the corpus\n  space): NOT ESTABLISHED. Both test behaviours are in-corpus; the\n  corpus under-covers agentic/tool-use/multi-turn; a known behaviour\n  class (trajectory-shaped) is already recorded as outside the design.\n- Preserved verbatim from the reviewer, and endorsed: \"this is a defect\n  in the *measurement*, not proof that the ontology is bad.\" What\n  remains true: two blind seats retranslated 39/39 full spans with the\n  schema and ZERO new coinages (coverage-in-form), and mid-level\n  handle reuse (0.57) shows the vocabulary compresses. Those are\n  necessary conditions, now honestly labeled as only that.\n",
+   "source_class": "arc2_docs",
+   "context": null
+  },
+  {
+   "id": "S00358",
+   "path": "semi-formal-experiment/HANDOFF.md",
+   "commit": "pin",
+   "lines": "751-768",
+   "text": "### What the deficit actually is\n| | MCC |\n|---|---:|\n| shipped tool, held-out (LOBO) threshold | +0.206 |\n| shipped tool, oracle threshold (generous) | +0.396 |\n| supervised over the SAME offline features | **+0.591** |\n| judges (mean / best) | +0.555 / +0.654 |\n\nThe whole recoverable gap sits between the unsupervised scorer and a supervised readout of\n**identical** features. That is the **query/scoring mechanism**. Two pieces, both free, both\nalready named in this file:\n\n1. **Nested/held-out threshold selection** — LOBO→oracle is worth **+0.19**, the single\n   largest gap in the project. Costs $0.\n2. **The section channel** — section identity alone supervised is +0.536, while the shipped\n   channel's AUC is 0.522/0.633/0.623 (near chance on helpfulness) at weight 0.45. Worth\n   **+0.16 on top of atoms**, offline.\n",
+   "source_class": "arc1_docs",
+   "context": null
+  }
+ ]
+}
