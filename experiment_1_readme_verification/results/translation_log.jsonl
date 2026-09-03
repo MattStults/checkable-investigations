@@ -134,3 +134,4 @@
 {"file": "batch_100_opus", "model": "opus", "brief_version": "0.7", "batch": "batch_100", "claims": 340, "accepted": 340, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T19:25:51", "check_seconds": 0.1}
 {"file": "batch_101_opus", "model": "opus", "brief_version": "0.7", "batch": "batch_101", "claims": 275, "accepted": 275, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T19:29:35", "check_seconds": 0.1}
 {"file": "batch_102_opus", "model": "opus", "brief_version": "0.7", "batch": "batch_102", "claims": 81, "accepted": 81, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T19:30:30", "check_seconds": 0.1}
+{"file": "batch_104_opus", "model": "opus", "brief_version": "0.7", "batch": "batch_104", "claims": 198, "accepted": 198, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T19:39:51", "check_seconds": 0.1}
