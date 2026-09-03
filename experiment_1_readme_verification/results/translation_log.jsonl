@@ -142,3 +142,4 @@
 {"file": "retry_D09a_opus", "model": "opus", "brief_version": "0.7", "batch": "retry_D09a", "claims": 383, "accepted": 383, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T20:00:38", "check_seconds": 0.2}
 {"file": "retry_D09c_opus", "model": "opus", "brief_version": "0.7", "batch": "retry_D09c", "claims": 221, "accepted": 221, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T20:09:31", "check_seconds": 0.2}
 {"file": "retry_leftover_sonnet", "model": "sonnet", "brief_version": "0.7", "batch": "retry_leftover", "claims": 72, "accepted": 72, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T20:19:32", "check_seconds": 0.2}
+{"file": "retry_D09b_opus", "model": "opus", "brief_version": "0.7", "batch": "retry_D09b", "claims": 403, "accepted": 403, "rejected": 0, "fail_reasons": {}, "checked_at": "2026-09-02T20:21:16", "check_seconds": 0.5}
