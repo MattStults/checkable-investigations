@@ -309,6 +309,25 @@ def main():
     a = ap.parse_args()
     claims = [json.loads(l) for l in open(a.ledger) if l.strip()]
     inv = json.load(open(a.inventory))
+    # Bind each spec's target value to the inventory (D-10): the spec table holds matching rules
+    # (metric/scope/quote patterns, tolerance); the README value itself comes from the inventory,
+    # so a changed README flows through. Binding: the frozen inventory key whose value equals the
+    # spec's literal; the literal in a quote regex is re-templated to the bound value.
+    frozen = json.load(open(os.path.join(X, "claim_inventory/inventory.json")))
+    fvals = {c["id"]: c.get("values", {}) for c in frozen["claims"]}; ivals = {c["id"]: c.get("values", {}) for c in inv["claims"]}
+    bindings = {}
+    for qid, spec in Q.items():
+        v = spec.get("value")
+        if not isinstance(v, (int, float)) or isinstance(v, bool): continue
+        keys = [k for k, fv in fvals.get(qid, {}).items() if isinstance(fv, (int, float)) and not isinstance(fv, bool) and abs(float(fv) - float(v)) < 1e-9]
+        if len(keys) != 1: continue
+        nv = ivals.get(qid, {}).get(keys[0])
+        if not isinstance(nv, (int, float)) or nv == v: bindings[qid] = (keys[0], v, v); continue
+        spec = dict(spec); spec["value"] = nv
+        if "quote" in spec: spec["quote"] = spec["quote"].replace(str(v), str(nv))
+        Q[qid] = spec; bindings[qid] = (keys[0], v, nv)
+    rebound = {k: b for k, b in bindings.items() if b[1] != b[2]}
+    if rebound: print("value bindings changed by the inventory:", rebound)
     live = json.load(open(os.path.join(HERE, "live_runs.json"))) if os.path.exists(os.path.join(HERE, "live_runs.json")) else {}
     res = {}
     for c in inv["claims"]:

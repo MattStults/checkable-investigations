@@ -345,3 +345,15 @@ is noted but does not contest a value (Q10 had flipped on such a flag
 from a pre-redaction span). Cost and machine-checkability recorded in
 results/COST.md and results/arm_comparison.json. Steps 8 and 9 not
 started: waiting on the owner.
+
+### D-10 — 2026-09-02 21:35 — query specs held literal README values (exposed by the probe)
+
+Caught by: the perturbation probe's first run — 0 of 77 items changed
+under the mutated inventory. The query table duplicated each README value
+as a literal (and inside Q26's quote regex) instead of reading it from the
+inventory; a changed README could not flow through. Artifact: values are
+bound to inventory keys at load time (queries.py), logged when a binding
+differs from the frozen literal. Frozen run unchanged. Probe run 1 is
+recorded as a failure in results/probe/RESULT_ledger.md; run 2 met both
+registered predictions. Class: machinery duplicating a source of truth
+(same class as D-09, where the schema dropped an inventory dimension).

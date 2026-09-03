@@ -1,0 +1,1107 @@
+{
+ "Q01": {
+  "state": "verified",
+  "claims": [
+   "L1030064",
+   "L1030065",
+   "L1030066",
+   "L120101",
+   "L120102",
+   "L120103"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "tier_ok": false,
+  "derivation": "6 matching claim(s) standing; none at the required dimensions {'tier': {'adjudicated', 'panel'}} \u2014 matched at ['stated']"
+ },
+ "Q02": {
+  "state": "contradicted",
+  "derivation": "agreement values in ledger [('L160061', 0.85), ('L540050', 2.0), ('L560027', 0.39), ('L560028', 0.41), ('L560029', 0.5), ('L560037', 0.556)]; within \u00b10.05 of the README band (0.94, 0.96): []",
+  "claims": [
+   "L160061",
+   "L540050",
+   "L560027",
+   "L560028",
+   "L560029",
+   "L560037",
+   "L560065",
+   "L9990088"
+  ]
+ },
+ "Q03": {
+  "state": "verified",
+  "claims": [
+   "L1010107",
+   "L1030082",
+   "L1030184",
+   "L1030185",
+   "L1030186",
+   "L1030246",
+   "L10418",
+   "L1050115",
+   "L1070013",
+   "L1070015",
+   "L1070016",
+   "L120118"
+  ],
+  "tiers": [
+   "adjudicated",
+   "git",
+   "raw",
+   "stated"
+  ],
+  "tier_ok": true,
+  "derivation": "58 matching claim(s) standing; 1 struck/superseded, 0 contested"
+ },
+ "Q04": {
+  "state": "verified",
+  "claims": [
+   "L1000010",
+   "L1000011",
+   "L1000034",
+   "L1000040",
+   "L1000042",
+   "L1000104",
+   "L1000114",
+   "L1000118",
+   "L1000119",
+   "L1000120",
+   "L1000154",
+   "L100017"
+  ],
+  "tiers": [
+   "adjudicated",
+   "cove",
+   "filesystem",
+   "git",
+   "human",
+   "panel",
+   "raw",
+   "stated"
+  ],
+  "tier_ok": true,
+  "derivation": "441 matching claim(s) standing; 2 struck/superseded, 2 contested"
+ },
+ "Q05": {
+  "state": "verified",
+  "claims": [
+   "L180009",
+   "L180061",
+   "L220128",
+   "L680006",
+   "L77520101",
+   "L77520130"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "tier_ok": true,
+  "derivation": "6 matching claim(s) standing; NOTE other values for the same metric/scope: [('L1010069', 24), ('L1010071', 14), ('L1010163', 38), ('L1010172', 160), ('L160026', 120)]"
+ },
+ "Q06": {
+  "state": "contested",
+  "claims": [
+   "L77530307",
+   "L77540103",
+   "L77540161",
+   "L77540162"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "tier_ok": false,
+  "derivation": "4 matching claim(s) standing; none at the required dimensions {'universe': {'true'}} \u2014 matched at ['stated']; 4 carry an anti-rule (do-not-cite) marking \u2192 contested: the record forbids citing the matched value; NOTE other values for the same metric/scope: [('L250078', 0.0106), ('L260173', '100%'), ('L390011', 13), ('L390012', 0), ('L390018', -0.013721)]"
+ },
+ "Q07": {
+  "state": "verified",
+  "derivation": "4 PASS lines, exit 0",
+  "claims": [],
+  "command": "machine/check_model.py",
+  "wall_s": 1.6,
+  "output": "PASS (a) SOURCE CHECK\nPASS (b) DIFFERENTIAL CHECK vs cycle.py (282 comparisons)\nPASS (c) KNOWN-ANSWER SET\nPASS (*) ACCEPTANCE TEST\n\n60 contradiction(s) reported by rules.lp (run `python3 machine/query.py contradictions`)\n"
+ },
+ "Q08": {
+  "state": "verified",
+  "claims": [
+   "L77550031"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "tier_ok": true,
+  "derivation": "1 matching claim(s) standing"
+ },
+ "Q09": {
+  "state": "verified",
+  "claims": [
+   "L330085"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "tier_ok": true,
+  "derivation": "1 matching claim(s) standing; NOTE other values for the same metric/scope: [('L1030259', 20), ('L720082', 0.8), ('L77700233', 20)]"
+ },
+ "Q10": {
+  "state": "verified",
+  "claims": [
+   "L1040133",
+   "L1070069",
+   "L170024",
+   "L170067",
+   "L170155",
+   "L180016",
+   "L250184",
+   "L260003",
+   "L270127",
+   "L410046",
+   "L520129",
+   "L77530263"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "tier_ok": true,
+  "derivation": "16 matching claim(s) standing; NOTE other values for the same metric/scope: [('L1020055', 0.2367), ('L1070050', 2), ('L1070084', 1309), ('L1070085', 1145), ('L1070086', 741)]"
+ },
+ "Q11": {
+  "state": "verified",
+  "claims": [
+   "L180009",
+   "L180061",
+   "L220128",
+   "L680006",
+   "L77520101",
+   "L77520130"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "tier_ok": true,
+  "derivation": "6 matching claim(s) standing; NOTE other values for the same metric/scope: [('L1010069', 24), ('L1010071', 14), ('L1010163', 38), ('L1010172', 160), ('L160026', 120)]"
+ },
+ "Q12": {
+  "state": "verified",
+  "claims": [
+   "L290007",
+   "L77530269"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "tier_ok": true,
+  "derivation": "2 matching claim(s) standing; NOTE other values for the same metric/scope: [('L290061', '+0.358'), ('L550016', 0.3088), ('L550018', 0.0003), ('L77530268', '+0.274'), ('L77540014', '+0.206')]"
+ },
+ "Q13": {
+  "state": "verified",
+  "claims": [
+   "L230027",
+   "L77540031"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "tier_ok": true,
+  "derivation": "2 matching claim(s) standing; NOTE other values for the same metric/scope: [('L270002', '+0.20'), ('L270034', '+0.016'), ('L270036', '0.023'), ('L270044', '+0.009'), ('L270082', '+0.277')]"
+ },
+ "Q14": {
+  "state": "verified",
+  "claims": [
+   "L230029",
+   "L240069",
+   "L250198",
+   "L290008",
+   "L77530271",
+   "L77540017",
+   "L77540030"
+  ],
+  "tiers": [
+   "panel",
+   "stated"
+  ],
+  "tier_ok": true,
+  "derivation": "7 matching claim(s) standing; NOTE other values for the same metric/scope: [('L230027', '+0.278'), ('L230028', '+0.316'), ('L240068', '+0.309'), ('L250040', 0.659), ('L250041', 0.648)]"
+ },
+ "Q15": {
+  "state": "verified",
+  "derivation": "40 claim(s) record the event/text as standing",
+  "claims": [
+   "L1000319",
+   "L10398",
+   "L1070109",
+   "L1070110",
+   "L1070111",
+   "L240009",
+   "L250116",
+   "L250120",
+   "L250123",
+   "L250129",
+   "L250185",
+   "L250208"
+  ],
+  "tiers": [
+   "cove",
+   "git",
+   "stated"
+  ]
+ },
+ "Q16": {
+  "state": "verified",
+  "derivation": "every series value present: {0.4: ['L1000064', 'L1000124', 'L1000219'], 0.7: ['L1000250', 'L100087', 'L10213'], 0.55: ['L100024', 'L1000252', 'L100088'], 0.85: ['L1000291', 'L100030', 'L100089']}",
+  "claims": [
+   "L1000064",
+   "L1000124",
+   "L1000219",
+   "L1000237",
+   "L1000248",
+   "L1000251",
+   "L100086",
+   "L10211",
+   "L10214",
+   "L170107",
+   "L170112",
+   "L70173",
+   "L77700039",
+   "L77900046",
+   "L80060",
+   "L80105",
+   "L80108",
+   "L90111",
+   "L930010",
+   "L930032"
+  ],
+  "tiers": [
+   "panel",
+   "raw",
+   "stated"
+  ]
+ },
+ "Q17": {
+  "state": "verified",
+  "claims": [
+   "L1000258",
+   "L10221",
+   "L940040"
+  ],
+  "tiers": [
+   "panel",
+   "stated"
+  ],
+  "tier_ok": true,
+  "derivation": "3 matching claim(s) standing; NOTE other values for the same metric/scope: [('L1000246', 0.875), ('L240224', '38%'), ('L250025', 1.0), ('L770019', 0.8), ('L77540103', 0.9838)]"
+ },
+ "Q18": {
+  "state": "verified",
+  "derivation": "31 claim(s) record the event/text as standing",
+  "claims": [
+   "L1000024",
+   "L1030095",
+   "L1050004",
+   "L140057",
+   "L140058",
+   "L180144",
+   "L230128",
+   "L230139",
+   "L340096",
+   "L520026",
+   "L570017",
+   "L570018"
+  ],
+  "tiers": [
+   "git",
+   "stated"
+  ]
+ },
+ "Q19": {
+  "state": "verified",
+  "claims": [
+   "L1020020",
+   "L1030007",
+   "L10793",
+   "L140065",
+   "L77700126",
+   "L77700368",
+   "L990016"
+  ],
+  "tiers": [
+   "cove",
+   "stated"
+  ],
+  "tier_ok": true,
+  "derivation": "7 matching claim(s) standing; NOTE other values for the same metric/scope: [('L10036', 12), ('L1010202', 0.2), ('L1010203', 0.3), ('L1010267', 0.94), ('L1020019', 1.0)]"
+ },
+ "Q20": {
+  "state": "verified",
+  "derivation": "72 claim(s) record the event/text as standing; 1 contested claim(s) also present",
+  "claims": [
+   "L1020023",
+   "L1020024",
+   "L1020047",
+   "L1020048",
+   "L1020065",
+   "L1030008",
+   "L1030009",
+   "L1040148",
+   "L1040150",
+   "L10629",
+   "L10710",
+   "L10796"
+  ],
+  "tiers": [
+   "cove",
+   "git",
+   "panel",
+   "stated"
+  ]
+ },
+ "Q21": {
+  "state": "verified",
+  "derivation": "43 claim(s) record the event/text as standing",
+  "claims": [
+   "L1000024",
+   "L1020041",
+   "L1020043",
+   "L1030016",
+   "L1030017",
+   "L1030095",
+   "L1040143",
+   "L1040168",
+   "L1050004",
+   "L170164",
+   "L170188",
+   "L180144"
+  ],
+  "tiers": [
+   "cove",
+   "git",
+   "stated"
+  ]
+ },
+ "Q22": {
+  "state": "verified",
+  "derivation": "175 claim(s) record the event/text as standing",
+  "claims": [
+   "L1000240",
+   "L1010052",
+   "L1010054",
+   "L1010055",
+   "L1010056",
+   "L1010057",
+   "L1010058",
+   "L1010059",
+   "L1010082",
+   "L1010233",
+   "L1010239",
+   "L1020016"
+  ],
+  "tiers": [
+   "cove",
+   "git",
+   "human",
+   "stated"
+  ]
+ },
+ "Q23": {
+  "state": "verified",
+  "derivation": "32 claim(s) record the event/text as standing",
+  "claims": [
+   "L1000024",
+   "L1030095",
+   "L1030182",
+   "L1050004",
+   "L180144",
+   "L230128",
+   "L340096",
+   "L520026",
+   "L570017",
+   "L570018",
+   "L570036",
+   "L570079"
+  ],
+  "tiers": [
+   "git",
+   "human",
+   "stated"
+  ]
+ },
+ "Q24": {
+  "state": "contradicted",
+  "derivation": "pytest: 2267 passed, 4 skipped (README: 2,270 passed, 1 skipped)",
+  "claims": [],
+  "command": "pytest -q (semi-formal-experiment)",
+  "wall_s": 159.5,
+  "output": "2267 passed, 4 skipped, 14 warnings in 159.27s (0:02:39)"
+ },
+ "Q25": {
+  "state": "verified",
+  "derivation": "201 claim(s) record the event/text as standing; 1 contested claim(s) also present",
+  "claims": [
+   "L1000111",
+   "L1000231",
+   "L100053",
+   "L10039",
+   "L1020057",
+   "L1030264",
+   "L1030273",
+   "L1030274",
+   "L1030276",
+   "L170169",
+   "L190131",
+   "L190142"
+  ],
+  "tiers": [
+   "filesystem",
+   "panel",
+   "raw",
+   "stated"
+  ]
+ },
+ "Q26": {
+  "state": "verified",
+  "claims": [
+   "L1010221",
+   "L140062",
+   "L180027",
+   "L77510105",
+   "L970048",
+   "L980006",
+   "L980026",
+   "L980034",
+   "L9930020",
+   "L9970078"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "tier_ok": true,
+  "derivation": "10 matching claim(s) standing; NOTE other values for the same metric/scope: [('L1000194', 2), ('L1010234', 9), ('L1010240', 0.13), ('L1010244', 15), ('L10166', 2)]"
+ },
+ "Q27": {
+  "state": "contested",
+  "derivation": "70 matching claim(s) at the value, none over the required population (\\b100\\b|definition); populations found: [\"0/16 of the batch move's gained nodes\", '0/16 of the move', '10/10 successes', '11 clauses of 593', '15 UA TPs', '16 gained nodes of the move', '16 move-extension items', '183 example blocks', '271,474 chars', '39', '39/39', '5/5', '5/5 probe nodes', '589/593', '7/9', '762/762', 'all behaviours covered', 'components listed in the parenthesis', 'covered nodes', 'n = 30', 'n/a', 'strata coverage', 'unstated'] \u2014 the README binds coverage to the 100 definitions; a 1.0 whose population is a 39-node sample does not satisfy the binding",
+  "claims": [
+   "L1010204",
+   "L1010205",
+   "L1010206",
+   "L1010217",
+   "L1010218",
+   "L1020034"
+  ]
+ },
+ "Q28": {
+  "state": "contested",
+  "derivation": "20 separability measurements in the ledger, 5 mention a null; 'every test failed against a null' requires each measurement to carry a null outcome \u2014 the ledger holds measurements without one: [('L10036', 12.0, 'how-to-approach-tradeoffs enga', 'current'), ('L1010202', 0.2, 'OPERATIVE_TARGET FP-side separ', 'current'), ('L1010203', 0.3, 'OPERATIVE_TARGET FP-side thres', 'current'), ('L1010267', 0.94, 'query-class corpus', 'current'), ('L1020019', 1.0, 'content-free random 4-bucket p', 'current')]",
+  "claims": [
+   "L10036",
+   "L1010202",
+   "L1010203",
+   "L1010267",
+   "L1020019",
+   "L1030005",
+   "L1030007",
+   "L10777",
+   "L10793",
+   "L140110"
+  ]
+ },
+ "Q29": {
+  "state": "contested",
+  "derivation": "85 withdrawal events in ledger (README says three headline); headline qualifier needs the starred-block/README linkage at adjudication",
+  "claims": [
+   "L1000016",
+   "L100027",
+   "L1000304",
+   "L1020012",
+   "L1030001",
+   "L1030017",
+   "L1030151",
+   "L1030245",
+   "L1030254",
+   "L1040169",
+   "L10786",
+   "L110044",
+   "L170120",
+   "L170165",
+   "L170189",
+   "L180072",
+   "L180092",
+   "L230138",
+   "L250084",
+   "L250087"
+  ]
+ },
+ "Q30": {
+  "state": "verified",
+  "derivation": "exist: [True, True, True]; sizes [1082124, 10303, 1367]",
+  "claims": [],
+  "command": "os.path",
+  "wall_s": 0,
+  "output": ""
+ },
+ "Q31": {
+  "state": "verified",
+  "derivation": "{'LEDGER.md': 'walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md', 'ARC2_HANDOFF.md': 'walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/HANDOFF_CURRENT.md', 'CLAUDE.md': 'AGENTS.md'}",
+  "claims": [],
+  "command": "os.readlink",
+  "wall_s": 0,
+  "output": ""
+ },
+ "Q32": {
+  "state": "contradicted",
+  "derivation": "PRUNED.md exists (135 lines); signature-pattern hits: none; detached signature files: none; 93 hash-like tokens, 85 resolve in git \u2014 'signed' per the inventory definition is ABSENT, so the README sentence 'signed manifest' is contradicted on the signature and verified on existence/restorability",
+  "claims": [],
+  "command": "grep PRUNED.md for signature markers; ls for detached signatures; git cat-file -e on hashes",
+  "wall_s": 0,
+  "output": "(no signature hits)",
+  "absence_claim": {
+   "kind": "existence",
+   "metric": "signature on PRUNED.md",
+   "value": false,
+   "tier": "live_run",
+   "source": {
+    "path": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/PRUNED.md",
+    "commit": "pin",
+    "lines": "1-135"
+   },
+   "quote": "# PRUNED.md \u2014 evidence-prune manifest (2026-08-30)",
+   "search": {
+    "pattern": "(?i)(-----BEGIN (PGP|SSH) SIGNATURE|\\bsigned[- ]by\\b|\\bsigner\\b|\\bsignature\\b|\\bcountersign|\\bsha(256|512)sum\\b.*PRUNED|\\bgpg\\b|\\bminisign\\b)",
+    "over": "walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/PRUNED.md"
+   },
+   "detached_files": []
+  }
+ },
+ "Q33": {
+  "state": "contradicted",
+  "derivation": "arc-1 dir commits 2026-08-02 \u2192 2026-08-31 (README: July\u2013early Aug); arc-2 dir 2026-08-14 \u2192 2026-08-31 (README: mid\u2013late Aug); no commit in the repo predates 2026-08-02",
+  "claims": [],
+  "command": "git log --format=%ci -- <dir>",
+  "wall_s": 0,
+  "output": ""
+ },
+ "Q34": {
+  "state": "contradicted",
+  "derivation": "trigger claims carry a narrower value: [('L340039', 'push: { branches: [main] }  pull_request')]",
+  "claims": [
+   "L340039"
+  ]
+ },
+ "Q35": {
+  "state": "verified",
+  "derivation": "root LICENSE MIT: True; panel-v5 LICENSE/NOTICE: [True, True]; upstream licence statements found in: {'openai-model-spec CC0': ['README.md'], 'claude-constitution CC BY': ['LICENSE']} (README says 'upstream licence statements and README files intact', so a statement inside README.md counts)",
+  "claims": [],
+  "command": "read LICENSE/README/NOTICE files",
+  "wall_s": 0,
+  "output": "MIT License\n\nCopyright (c) 2026 Matt Stults\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\n"
+ },
+ "Q36": {
+  "state": "verified",
+  "derivation": "outline exit 0 (81 lines); resolve exit 0 \u2192 'For objective questions, the factual aspects of the assistant\u2019s response should '",
+  "claims": [],
+  "command": "cite.py outline; cite.py resolve",
+  "wall_s": 0.0,
+  "output": "model-spec@2025-12-18\nOverview  {#overview}\n  Structure of the document  {#structure}\n  Red-line principles  {#red_line_principles}\n  General principles  {#general_principles}\n  Specific risks  {#risk_taxonomy}\n  Instructions and levels of authority  {#levels_of_authority}\nDefinitions  {#definitions\n---\nFor objective questions, the factual aspects of the assistant\u2019s response should not differ based on how the user\u2019s question is phrased.\n"
+ },
+ "Q37": {
+  "state": "verified",
+  "derivation": "'*** NO VALIDATOR ***' x1; '(none recorded)' x1 (distinct state, reported separately)",
+  "claims": [],
+  "command": "machine/query.py seats",
+  "wall_s": 0.2,
+  "output": "            haiku            per_corpus         prep_hole_corpus.py                  -> check_taxonomy.py / taxonomy_agreement.py\n  change_reviewer        frontier/human   per_cycle          cycle.py writes assignments/review   -> cycle.py _implement: verdict in {proceed,blocked} and non-empty 'by'\n  decision_signer        frontier/human   per_cycle          cycle.py drafts decision.draft.jso   -> cycle.py _decide: closed decision vocabulary, non-empty signed_by, forced justification\n  density_editor         haiku            per_document       -                                    -> check_rewrite.py <before> <after>\n  disagreement_autopsy   haiku            per_dossier        audit_disagreements.py dossiers      -> audit_disagreements.py validate --verdicts <file> --dossier-dir <dir>\n  drift_standing         haiku            per_dossier        drift_dossiers.py dossiers           -> drift_dossiers.py validate --verdicts <file> --dossier-dir <dir>\n  flip_adjudicator       haiku            per_flip           dossier.py dossiers                  -> dossier.py validate --dir <dir> --verdict-file <file>\n  golden_author          haiku            per_document       -                                    -> golden.load sha-freeze + test_golden.py\n  golden_review          frontier/human   per_document       the golden_author seat's golden_tr   -> (none recorded)\n  select_audit           haiku            per_behaviour      select_audit.py                      -> select_audit.py validate\n"
+ },
+ "Q38": {
+  "state": "verified",
+  "derivation": "5 claim(s) record the event/text as standing",
+  "claims": [
+   "L10045",
+   "L10178",
+   "L10383",
+   "L280175",
+   "L990041"
+  ],
+  "tiers": [
+   "stated"
+  ]
+ },
+ "Q39": {
+  "state": "verified",
+  "derivation": "143 claim(s) record the event/text as standing; 1 contested claim(s) also present",
+  "claims": [
+   "L1000006",
+   "L1000091",
+   "L1000111",
+   "L1000139",
+   "L10002",
+   "L1000324",
+   "L1010062",
+   "L1020030",
+   "L1020031",
+   "L1020049",
+   "L1030015",
+   "L1030032"
+  ],
+  "tiers": [
+   "git",
+   "human",
+   "stated"
+  ]
+ },
+ "Q40": {
+  "state": "verified",
+  "derivation": "exit 0, wall 1.5s (README says ~3 s; verified as order of magnitude only)",
+  "claims": [],
+  "command": "bash setup_env.sh --check",
+  "wall_s": 1.5,
+  "output": "--- imports ---\n  ok      pytest       9.1.1      the test suite\n  ok      clingo       5.8.0      the solver; absent = ASP tests show as collection errors\n  ok      pydantic     2.13.4     phase_1 schema and format forcing\n--- self-tests that need no network and cost nothing ---\n  ok      phase_1/translate.py \u2014 52 passed, 0 failed\n  ok      walkthrough/link.py \u2014 21/21 self-test checks passed\n\nenvironment OK.\n\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python -m pytest -q                 # from semi-formal-experiment/, ~4 min\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python walkthrough/paper_pipeline/phase_1/translate.py --clause m0255\n                                   # DRY RUN, sends nothing\n"
+ },
+ "Q41": {
+  "state": "verified",
+  "derivation": "18 measurement(s), max 0.600 < 0.94",
+  "claims": [
+   "L1010013",
+   "L1010126",
+   "L1010130",
+   "L1010131",
+   "L1010162",
+   "L1010164",
+   "L1010165",
+   "L10436",
+   "L10439",
+   "L10440",
+   "L77530012",
+   "L77700053"
+  ]
+ },
+ "Q42": {
+  "state": "verified",
+  "derivation": "5 relative links, missing: []; 6 external links not checked (no network)",
+  "claims": [],
+  "command": "parse README links",
+  "wall_s": 0,
+  "output": ""
+ },
+ "Q43": {
+  "state": "verified",
+  "derivation": "sequence exit 0; first failing output: ALL-OK",
+  "claims": [],
+  "command": "Start-here steps 0-5 in order",
+  "wall_s": 19.6,
+  "output": "--- imports ---\n  ok      pytest       9.1.1      the test suite\n  ok      clingo       5.8.0      the solver; absent = ASP tests show as collection errors\n  ok      pydantic     2.13.4     phase_1 schema and format forcing\n--- self-tests that need no network and cost nothing ---\n  ok      phase_1/translate.py \u2014 52 passed, 0 failed\n  ok      walkthrough/link.py \u2014 21/21 self-test checks passed\n\nenvironment OK.\n\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python -m pytest -q                 # from semi-formal-experiment/, ~4 min\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python walkthrough/paper_pipeline/phase_1/translate.py --clause m0255\n                                   # DRY RUN, sends nothing\nALL-OK\n"
+ },
+ "Q44": {
+  "state": "verified",
+  "claims": [
+   "L77520148",
+   "L77550184"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "tier_ok": true,
+  "derivation": "2 matching claim(s) standing; NOTE other values for the same metric/scope: [('L200104', 15), ('L260060', '+0.226'), ('L270145', '+0.0132'), ('L290028', '+0.0217'), ('L520030', 0.29)]"
+ },
+ "Q45": {
+  "state": "verified",
+  "derivation": "5 claim(s) record the event/text as standing",
+  "claims": [
+   "L40015",
+   "L40023",
+   "L40032",
+   "L900007",
+   "L900008"
+  ],
+  "tiers": [
+   "adjudicated",
+   "stated"
+  ]
+ },
+ "Q46": {
+  "state": "verified",
+  "derivation": "network-module mentions per file: none",
+  "claims": [],
+  "command": "static grep",
+  "wall_s": 0,
+  "output": ""
+ },
+ "Q47": {
+  "state": "verified",
+  "derivation": "116 claim(s) record the event/text as standing; 1 contested claim(s) also present",
+  "claims": [
+   "L1020039",
+   "L1020054",
+   "L1020056",
+   "L1030018",
+   "L1050108",
+   "L1050110",
+   "L1050111",
+   "L1070003",
+   "L10808",
+   "L120261",
+   "L140062",
+   "L180013"
+  ],
+  "tiers": [
+   "cove",
+   "git",
+   "live_run",
+   "stated"
+  ]
+ },
+ "Q48": {
+  "state": "contested",
+  "derivation": "star-marked heading lines: HANDOFF_CURRENT [1]; HANDOFF [3, 99, 131, 955, 1142] \u2014 'the top starred block' is unique in arc 2 but arc 1 has 5 star-marked heading blocks; 'self-marked' below is not mechanically decidable",
+  "claims": [],
+  "command": "read handoffs",
+  "wall_s": 0,
+  "output": ""
+ },
+ "Q49": {
+  "state": "verified",
+  "derivation": "[('engine/', True), ('specs/', True), ('data/', True), ('semi-formal-experiment/', True), ('walkthrough/', True), ('ARTIFACTS.md', True), ('LEDGER.md', True), ('ARC2_HANDOFF.md', True)]",
+  "claims": [],
+  "command": "os.path",
+  "wall_s": 0,
+  "output": ""
+ },
+ "Q50": {
+  "state": "verified",
+  "derivation": "cite resolve identical on rerun: True; graph_check identical on rerun: True",
+  "claims": [],
+  "command": "cite.py resolve x2; graph_check.py x2",
+  "wall_s": 0.2,
+  "output": "nodes: 773   uncovered entries: 733\nbad line ranges: 0 / 846 spans  []\nbad quotes: 0 / 602  []\nspan sizes (lines covered): min 1  median 1  max 44\n  nodes covering 0 lines: 0;  >100 lines: 0 of 773\noverlapping node pairs: 266 (of 298378); nested pairs: 266\nprovided names: 115 (6 provided by >1 node)\nneeds: 1085; dangling (no provider): 25\n   dangling: L699-796_n021 needs ask_clarifying_questions_s"
+ },
+ "H01": {
+  "state": "contradicted",
+  "derivation": "30 close(s) with a prior/linked review, 6 without: [('L230087', 'unstated', []), ('L230093', 'unstated', []), ('L230099', 'unstated', []), ('L360057', 'unstated', []), ('L440091', 'unstated', []), ('L500030', 'unstated', [])]",
+  "claims": [
+   "L1000113",
+   "L1000243",
+   "L1000290",
+   "L1010214",
+   "L1010259",
+   "L10207",
+   "L1030124",
+   "L230080",
+   "L230087",
+   "L230093",
+   "L230099",
+   "L230127",
+   "L330102",
+   "L330113",
+   "L330124",
+   "L330135",
+   "L330146",
+   "L330157",
+   "L360057",
+   "L390101",
+   "L440091",
+   "L500030",
+   "L520086",
+   "L530033",
+   "L77510002",
+   "L77510112",
+   "L77510187",
+   "L820098",
+   "L830006",
+   "L830075",
+   "L830100",
+   "L860060",
+   "L870021",
+   "L930008",
+   "L950020",
+   "L980048"
+  ]
+ },
+ "H02": {
+  "state": "contested",
+  "derivation": "288 measurements, 64 with no prediction_freeze earlier or linked: ['L1000055', 'L1000058', 'L1000100', 'L1030230', 'L1050118', 'L1070025', 'L120086', 'L130181']",
+  "claims": [
+   "L1000055",
+   "L1000058",
+   "L1000100",
+   "L1000157",
+   "L1000160",
+   "L1000244",
+   "L100025",
+   "L1000330",
+   "L1010012",
+   "L1010102",
+   "L1010117",
+   "L10131",
+   "L10208",
+   "L1030230",
+   "L10310",
+   "L10411",
+   "L10428",
+   "L1050118",
+   "L10625",
+   "L10630"
+  ]
+ },
+ "H03": {
+  "state": "verified",
+  "derivation": "numbered errata: 29; append-only conjunct by git census: 45 first-parent commits touch ITERATION_NOTES.md; commits deleting lines: [('6d01415b', '2026-08-31', 89, 121)] \u2014 only the redaction commit",
+  "claims": [
+   "L1010009",
+   "L1010020",
+   "L1010041",
+   "L1010146",
+   "L1010181",
+   "L1010243"
+  ]
+ },
+ "H04": {
+  "state": "verified",
+  "derivation": "112 seat dispatches; 77 record inputs; none names panel labels, the design document, or prior verdicts as received (mentions inside negations, or in a list the quote marks as forbidden/denied, counted as exclusions)",
+  "claims": [
+   "L1000050",
+   "L1030197",
+   "L1030248",
+   "L1030249",
+   "L1030262",
+   "L1030269"
+  ]
+ },
+ "H05": {
+  "state": "verified",
+  "derivation": "55 entries linked to commits; 0 with a commit date differing from the heading date: []",
+  "claims": [
+   "L1000033",
+   "L1000049",
+   "L1000079",
+   "L1000112",
+   "L1000153",
+   "L1000180",
+   "L1000207",
+   "L1000217",
+   "L1000242",
+   "L1000270",
+   "L1000283",
+   "L1000289",
+   "L1000317",
+   "L1000326",
+   "L10023",
+   "L10044",
+   "L1010001",
+   "L1010011",
+   "L1010034",
+   "L1010050"
+  ]
+ },
+ "H06": {
+  "state": "contested",
+  "derivation": "6 withdrawals with a linked review finding in the set, 18 without: ['L1000016', 'L100027', 'L1000304', 'L1030001', 'L1030151', 'L1030245']",
+  "claims": [
+   "L1000016",
+   "L100027",
+   "L1000304",
+   "L1020012",
+   "L1030001",
+   "L1030017",
+   "L1030151",
+   "L1030245",
+   "L1030254",
+   "L1040169",
+   "L10786",
+   "L110044",
+   "L170120",
+   "L170165",
+   "L170189",
+   "L180072",
+   "L180092",
+   "L77510261",
+   "L77700008",
+   "L77700119"
+  ]
+ },
+ "H07": {
+  "state": "verified",
+  "derivation": "18 untuned-behaviour measurements, max 0.600; at/above 0.94: []",
+  "claims": [
+   "L1010013",
+   "L1010126",
+   "L1010130",
+   "L1010131",
+   "L1010162",
+   "L1010164",
+   "L1010165",
+   "L10436",
+   "L10439",
+   "L10440",
+   "L77530012",
+   "L77700053",
+   "L77700058",
+   "L77700060",
+   "L77700061",
+   "L77700062",
+   "L77900082",
+   "L950088"
+  ]
+ },
+ "H08": {
+  "state": "contradicted",
+  "derivation": "kinds: {'unstated': ['L1000014', 'L230136', 'L230173', 'L290085', 'L77510223', 'L77540226', 'L77700006', 'L77700013', 'L77700015', 'L77700229', 'L9920080'], 'refusal': ['L1000093', 'L1070139', 'L290098', 'L460022', 'L500004', 'L570081', 'L570090', 'L580208', 'L710023', 'L77600008', 'L77600038', 'L77900014'], 'wrong_answer': ['L520061', 'L570028', 'L570072', 'L77530294']}",
+  "claims": [
+   "L1000014",
+   "L230136",
+   "L230173",
+   "L290085",
+   "L77510223",
+   "L77540226",
+   "L77700006",
+   "L77700013",
+   "L77700015",
+   "L77700229",
+   "L9920080",
+   "L1000093",
+   "L1070139",
+   "L290098",
+   "L460022",
+   "L500004",
+   "L570081",
+   "L570090",
+   "L580208",
+   "L710023",
+   "L77600008",
+   "L77600038",
+   "L77900014",
+   "L520061",
+   "L570028",
+   "L570072",
+   "L77530294"
+  ]
+ },
+ "H09": {
+  "state": "verified",
+  "derivation": "tool max 0.396 (incl. oracle/ceiling variants), judge min -0.221, judge mean-of-3 0.555 present: True",
+  "claims": []
+ },
+ "H10": {
+  "state": "contradicted",
+  "derivation": "306 PRUNED.md claims (prune manifest exists); signed(manifest): PRUNED.md exists (135 lines); signature-pattern hits: none; detached signature files: none; 93 hash-like tokens, 85 resolve in git \u2014 'signed' per the inventory ",
+  "claims": []
+ },
+ "H11": {
+  "state": "verified",
+  "derivation": "redaction events 5; 1481 claims translated from the pre-redaction blob (content existed before the redaction); deleting commits by git census: 45 first-parent commits touch ITERATION_NOTES.md; commits deleting lines: [('6d01415b', '2026-08-31', 89, 121)] \u2014 only the redaction commit",
+  "claims": [
+   "L10045",
+   "L10178",
+   "L10383",
+   "L280175",
+   "L990041"
+  ]
+ },
+ "H12": {
+  "state": "verified",
+  "derivation": "hit claims: 7 (query-output spans were not in the named sources)",
+  "claims": [
+   "L550149",
+   "L580174",
+   "L77540145",
+   "L77540229",
+   "L900113"
+  ]
+ },
+ "H13": {
+  "state": "verified",
+  "derivation": "cove events 30; claims mentioning decisive findings 23",
+  "claims": [
+   "L1010053",
+   "L1020017",
+   "L1030003",
+   "L10372",
+   "L10792",
+   "L170192",
+   "L180089",
+   "L180090"
+  ]
+ },
+ "H14": {
+  "state": "verified",
+  "derivation": "11 entries headed ITERATION n, STEP k; step-artifact domain not translated (runbook step artifacts are not a named source)",
+  "claims": [
+   "L1000049",
+   "L1000079",
+   "L1000112",
+   "L1000180",
+   "L1000217",
+   "L10023",
+   "L10154",
+   "L77700027",
+   "L77900001",
+   "L77900037"
+  ]
+ },
+ "H15": {
+  "state": "verified",
+  "derivation": "25 backticked paths in ARTIFACTS.md; missing at pin: []",
+  "claims": [],
+  "command": "parse ARTIFACTS.md",
+  "wall_s": 0,
+  "output": ""
+ },
+ "V01": {
+  "state": "contested",
+  "derivation": "providers ['Q01', 'Q41', 'R07'] \u2192 ['verified', 'verified']; unevaluated providers (dangling need): ['R07']",
+  "claims": []
+ },
+ "V02": {
+  "state": "contradicted",
+  "derivation": "providers ['H08'] \u2192 ['contradicted']",
+  "claims": []
+ },
+ "V03": {
+  "state": "dangling",
+  "derivation": "providers [] \u2192 []",
+  "claims": []
+ },
+ "V04": {
+  "state": "verified",
+  "derivation": "providers ['Q12', 'Q13', 'Q14', 'Q15', 'H09'] \u2192 ['verified', 'verified', 'verified', 'verified', 'verified']",
+  "claims": []
+ },
+ "V05": {
+  "state": "contested",
+  "derivation": "providers ['Q26', 'Q27', 'Q28', 'Q19', 'Q20'] \u2192 ['verified', 'contested', 'contested', 'verified', 'verified']",
+  "claims": []
+ },
+ "V06": {
+  "state": "contradicted",
+  "derivation": "providers ['H01', 'H02', 'H03', 'H04'] \u2192 ['contradicted', 'contested', 'verified', 'verified']",
+  "claims": []
+ },
+ "V07": {
+  "state": "contested",
+  "derivation": "providers ['Q29', 'Q18', 'Q21', 'Q23', 'H06'] \u2192 ['contested', 'verified', 'verified', 'verified', 'contested']",
+  "claims": []
+ },
+ "V08": {
+  "state": "contested",
+  "derivation": "providers ['H06'] \u2192 ['contested']",
+  "claims": []
+ },
+ "V09": {
+  "state": "verified",
+  "derivation": "providers ['Q17'] \u2192 ['verified']",
+  "claims": []
+ },
+ "V10": {
+  "state": "verified",
+  "derivation": "providers ['Q39'] \u2192 ['verified']",
+  "claims": []
+ },
+ "V11": {
+  "state": "contested",
+  "derivation": "providers ['H06', 'Q18', 'Q21'] \u2192 ['contested', 'verified', 'verified']",
+  "claims": []
+ },
+ "V12": {
+  "state": "contested",
+  "derivation": "providers ['H06'] \u2192 ['contested']",
+  "claims": []
+ }
+}
