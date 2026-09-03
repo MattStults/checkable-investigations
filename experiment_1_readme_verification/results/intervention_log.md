@@ -357,3 +357,12 @@ differs from the frozen literal. Frozen run unchanged. Probe run 1 is
 recorded as a failure in results/probe/RESULT_ledger.md; run 2 met both
 registered predictions. Class: machinery duplicating a source of truth
 (same class as D-09, where the schema dropped an inventory dimension).
+
+### Process event — 2026-09-03 early — baseline counterfactual review blocked by API overload
+
+Three consecutive attempts to run/resume the clean-context Opus reviewer for
+the reframed probe ended in server-side 529 (Overloaded) errors (request
+ids req_011CegdETpQHZM1VqukChPzN, req_011CegdXqLSARKQ5rqmFzj9p,
+req_011CegeCznYS3hSyeVosqhUG). Model not switched (the baseline is defined
+as Opus). Backing off 20 minutes between further attempts. Ledger-arm
+result unaffected.
