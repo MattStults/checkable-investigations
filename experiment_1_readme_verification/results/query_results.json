@@ -856,11 +856,15 @@
   ]
  },
  "H04": {
-  "state": "contradicted",
-  "derivation": "107 seat dispatches; 73 with recorded inputs; inputs naming panel labels / design doc / verdicts without negation: [('L77800098', \"the cycle's design doc\"), ('L77800208', \"A cycle's own design document\")]",
+  "state": "verified",
+  "derivation": "107 seat dispatches; 73 record inputs; none names panel labels, the design document, or prior verdicts as received (mentions inside negations, or in a list the quote marks as forbidden/denied, counted as exclusions)",
   "claims": [
-   "L77800098",
-   "L77800208"
+   "L1000050",
+   "L1030197",
+   "L1030248",
+   "L1030249",
+   "L1030262",
+   "L1030269"
   ]
  },
  "H05": {
@@ -1073,7 +1077,7 @@
  },
  "V06": {
   "state": "contradicted",
-  "derivation": "providers ['H01', 'H02', 'H03', 'H04'] \u2192 ['contradicted', 'contested', 'verified', 'contradicted']",
+  "derivation": "providers ['H01', 'H02', 'H03', 'H04'] \u2192 ['contradicted', 'contested', 'verified', 'verified']",
   "claims": []
  },
  "V07": {

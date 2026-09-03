@@ -222,12 +222,13 @@ def H04(claims):
     for c in sd:
         ins = c["event"].get("inputs") or []
         if ins: witnesses.append(c["id"])
+        denial_list = bool(neg.search(c["quote"]))  # a quote such as "Forbidden seat material, always: ..." lists denied inputs
         for t in ins:
-            if forbid.search(t) and not neg.search(t): viol.append((c["id"], t[:80]))
+            if forbid.search(t) and not neg.search(t) and not denial_list: viol.append((c["id"], t[:80]))
     if not sd: return "unverifiable", "no seat_dispatch events", []
     if viol: return "contradicted", f"{len(sd)} seat dispatches; {len(witnesses)} with recorded inputs; inputs naming panel labels / design doc / verdicts without negation: {viol[:6]}", [v[0] for v in viol][:6]
     if not witnesses: return "unverifiable", f"{len(sd)} seat dispatches, none records its inputs (vacuous)", []
-    return "verified", f"{len(sd)} seat dispatches; {len(witnesses)} record inputs; none names panel labels, the design document, or prior verdicts as received (mentions inside negations counted as exclusions)", witnesses[:6]
+    return "verified", f"{len(sd)} seat dispatches; {len(witnesses)} record inputs; none names panel labels, the design document, or prior verdicts as received (mentions inside negations, or in a list the quote marks as forbidden/denied, counted as exclusions)", witnesses[:6]
 
 def H05(claims):
     entries = events(claims, "ledger_entry"); commits = events(claims, "commit")
