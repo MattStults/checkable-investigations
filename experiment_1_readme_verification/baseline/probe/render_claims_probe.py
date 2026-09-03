@@ -6,7 +6,7 @@ annex, no glossary, no ledger, no reviews, no notes that reference the
 record) reaches the baseline."""
 import json, os
 HERE = os.path.dirname(os.path.abspath(__file__)); X = os.path.dirname(HERE)
-d = json.load(open(os.path.join(X, "results/probe/inventory_mutated.json")))
+d = json.load(open("/Users/mattstults/Documents/ai_safety_projects/checkable-investigations/experiment_1_readme_verification/results/probe/inventory_mutated.json"))
 o = []
 w = o.append
 w("# Claims to verify\n")
@@ -25,5 +25,5 @@ for v in d["verdict_nodes"]:
 w("## Author commitments (report whether the record bears them out; no state required)\n")
 for c in d["commitments"]:
     w(f"- **{c['id']}** > {c['sentence']}")
-open(os.path.join(HERE, "probe/CLAIMS.md"), "w").write("\n".join(o) + "\n")
+open(os.path.join(HERE, "CLAIMS.md"), "w").write("\n".join(o) + "\n")
 print("rendered", len(d["claims"]), len(d["hypotheses"]), len(d["verdict_nodes"]), len(d["commitments"]))
