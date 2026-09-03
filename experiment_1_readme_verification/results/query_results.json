@@ -183,27 +183,19 @@
  },
  "Q12": {
   "state": "verified",
-  "claims": [
-   "L290007",
-   "L77530269"
-  ],
-  "tiers": [
-   "stated"
-  ],
-  "tier_ok": true,
-  "derivation": "2 matching claim(s) standing; NOTE other values for the same metric/scope: [('L290061', '+0.358'), ('L550016', 0.3088), ('L550018', 0.0003), ('L77530268', '+0.274'), ('L77540014', '+0.206')]"
+  "derivation": "benchmark.py --tool prints in-sample mean MCC 0.32 on the true universe (README +0.32); exit 0",
+  "claims": [],
+  "command": "benchmark.py --tool",
+  "wall_s": 11.7,
+  "output": "# Behavioural-relevance benchmark\n\nclause set: `modelspec_clauses.json @ threshold None (tool)` (593 clauses)\n\nHeadline universe: **TRUE universe (every passage the judges graded)**. Every number is printed beside its **published universe (score-0 passages deleted)** counterpart and the delta.\n\n## Judged universe \u2014 reconstruction provenance\n\nThe panel graded EVERY passage of the spec in one prompt; `build_site_data.keeps_citation` then dropped every passage whose summed score was 0 before publishing. Those rows are gold-negative AND unanimously predicted negative, so restoring them restores true-negative credit rather than inventing any. Recovered rows carry verdict 0 from every judge.\n\n| behaviour | spec | universe | published | recovered as 0 | join rate |\n| --- | --- | ---: | ---: | ---: | ---: |\n| avoiding-over-and-under-caution | constitution (anthropic) | 374 | 77 | 297 (79%) | 1.000 |\n| avoiding-over-and-under-caution | model-spec (openai) | 589 | 153 | 436 (74%) | 1.000 |\n| harm-avoidance-to-third-parties | constitution (anthropic) | 374 | 199 | 175 (47%) | 1.000 |\n| harm-avoidance-to-third-parties | model-spec (openai) | 589 | 333 | 256 (43%) | 1.000 |\n| helpfulness | cons"
  },
  "Q13": {
   "state": "verified",
-  "claims": [
-   "L230027",
-   "L77540031"
-  ],
-  "tiers": [
-   "stated"
-  ],
-  "tier_ok": true,
-  "derivation": "2 matching claim(s) standing; NOTE other values for the same metric/scope: [('L270002', '+0.20'), ('L270034', '+0.016'), ('L270036', '0.023'), ('L270044', '+0.009'), ('L270082', '+0.277')]"
+  "derivation": "benchmark.py --tool universe-delta table mean row: 0.278 (README +0.278); exit 0",
+  "claims": [],
+  "command": "benchmark.py --tool",
+  "wall_s": 11.7,
+  "output": "# Behavioural-relevance benchmark\n\nclause set: `modelspec_clauses.json @ threshold None (tool)` (593 clauses)\n\nHeadline universe: **TRUE universe (every passage the judges graded)**. Every number is printed beside its **published universe (score-0 passages deleted)** counterpart and the delta.\n\n## Judged universe \u2014 reconstruction provenance\n\nThe panel graded EVERY passage of the spec in one prompt; `build_site_data.keeps_citation` then dropped every passage whose summed score was 0 before publishing. Those rows are gold-negative AND unanimously predicted negative, so restoring them restores true-negative credit rather than inventing any. Recovered rows carry verdict 0 from every judge.\n\n| behaviour | spec | universe | published | recovered as 0 | join rate |\n| --- | --- | ---: | ---: | ---: | ---: |\n| avoiding-over-and-under-caution | constitution (anthropic) | 374 | 77 | 297 (79%) | 1.000 |\n| avoiding-over-and-under-caution | model-spec (openai) | 589 | 153 | 436 (74%) | 1.000 |\n| harm-avoidance-to-third-parties | constitution (anthropic) | 374 | 199 | 175 (47%) | 1.000 |\n| harm-avoidance-to-third-parties | model-spec (openai) | 589 | 333 | 256 (43%) | 1.000 |\n| helpfulness | cons"
  },
  "Q14": {
   "state": "verified",
@@ -430,8 +422,8 @@
   "derivation": "pytest: 2267 passed, 4 skipped (README: 2,270 passed, 1 skipped)",
   "claims": [],
   "command": "pytest -q (semi-formal-experiment)",
-  "wall_s": 159.5,
-  "output": "2267 passed, 4 skipped, 14 warnings in 159.27s (0:02:39)"
+  "wall_s": 163.6,
+  "output": "2267 passed, 4 skipped, 14 warnings in 163.30s (0:02:43)"
  },
  "Q25": {
   "state": "verified",
@@ -650,10 +642,10 @@
  },
  "Q40": {
   "state": "verified",
-  "derivation": "exit 0, wall 1.5s (README says ~3 s; verified as order of magnitude only)",
+  "derivation": "exit 0, wall 1.6s (README says ~3 s; verified as order of magnitude only)",
   "claims": [],
   "command": "bash setup_env.sh --check",
-  "wall_s": 1.5,
+  "wall_s": 1.6,
   "output": "--- imports ---\n  ok      pytest       9.1.1      the test suite\n  ok      clingo       5.8.0      the solver; absent = ASP tests show as collection errors\n  ok      pydantic     2.13.4     phase_1 schema and format forcing\n--- self-tests that need no network and cost nothing ---\n  ok      phase_1/translate.py \u2014 52 passed, 0 failed\n  ok      walkthrough/link.py \u2014 21/21 self-test checks passed\n\nenvironment OK.\n\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python -m pytest -q                 # from semi-formal-experiment/, ~4 min\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python walkthrough/paper_pipeline/phase_1/translate.py --clause m0255\n                                   # DRY RUN, sends nothing\n"
  },
  "Q41": {
@@ -687,7 +679,7 @@
   "derivation": "sequence exit 0; first failing output: ALL-OK",
   "claims": [],
   "command": "Start-here steps 0-5 in order",
-  "wall_s": 19.6,
+  "wall_s": 19.9,
   "output": "--- imports ---\n  ok      pytest       9.1.1      the test suite\n  ok      clingo       5.8.0      the solver; absent = ASP tests show as collection errors\n  ok      pydantic     2.13.4     phase_1 schema and format forcing\n--- self-tests that need no network and cost nothing ---\n  ok      phase_1/translate.py \u2014 52 passed, 0 failed\n  ok      walkthrough/link.py \u2014 21/21 self-test checks passed\n\nenvironment OK.\n\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python -m pytest -q                 # from semi-formal-experiment/, ~4 min\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python walkthrough/paper_pipeline/phase_1/translate.py --clause m0255\n                                   # DRY RUN, sends nothing\nALL-OK\n"
  },
  "Q44": {

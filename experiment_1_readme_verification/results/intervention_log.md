@@ -366,3 +366,16 @@ ids req_011CegdETpQHZM1VqukChPzN, req_011CegdXqLSARKQ5rqmFzj9p,
 req_011CegeCznYS3hSyeVosqhUG). Model not switched (the baseline is defined
 as Opus). Backing off 20 minutes between further attempts. Ledger-arm
 result unaffected.
+
+### D-11 — 2026-09-03 — Q12/Q13 live run declared by the inventory, never implemented (exposed by the reframed probe)
+
+Caught by: the baseline counterfactual review re-deriving the MCC numbers
+from benchmark.py while the ledger arm, holding the numbers only as prose,
+predicted Q12/Q13/V04 would fall if the prose were fabricated. The
+inventory's Q12/Q13 tier is "live_run (benchmark.py --tool) or stated";
+live_runs.py had no entry. Artifact: Q12/Q13 live runs added (benchmark.py
+--tool, 11 s; 0.32 and 0.278 verify); queries fold them. Frozen scorecard
+unchanged. Post-D-11 the counterfactual flips nothing, matching the
+baseline. Class: declared source not carried into machinery (with D-09,
+D-10). Probe result recorded with the pre-D-11 ledger answer as the
+registered outcome; D-11 is a post-probe fix.

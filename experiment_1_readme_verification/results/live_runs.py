@@ -116,6 +116,14 @@ bp = re.search(r"`BP/` abbreviates\s*`([^`]+)`", art)
 expand = lambda q: (bp.group(1).rstrip("/") + "/" + q[3:]) if bp and q.startswith("BP/") else q
 miss = [p for p in paths if not exists(expand(p))]
 rec("H15", "verified" if not miss else "contradicted", f"{len(paths)} backticked paths in ARTIFACTS.md; missing at pin: {miss[:10]}", "parse ARTIFACTS.md", 0, "")
+# Q12/Q13 (added after the reframed probe, D-11): the inventory declares tier "live_run (benchmark.py --tool) or stated";
+# the live run had been omitted. benchmark.py --tool prints the in-sample true-universe MCC and the universe-delta mean.
+rc, o, w = run(f"{PY} benchmark.py --tool --annotations annotations_b8.json --behaviour-atoms behavior_atoms_b8.json", cwd=os.path.join(T, "semi-formal-experiment"))
+m12 = re.search(r"in-sample mean MCC \(\+[\d.]+ published / \+([\d.]+) true\)", o)
+m13 = re.search(r"^\| \*\*mean\*\* \| \| \*\*\+([\d.]+)\*\*", o, re.M)
+v12 = float(m12.group(1)) if m12 else None; v13 = float(m13.group(1)) if m13 else None
+rec("Q12", "verified" if v12 is not None and abs(v12 - 0.32) < 0.0005 else "contradicted", f"benchmark.py --tool prints in-sample mean MCC {v12} on the true universe (README +0.32); exit {rc}", "benchmark.py --tool", w, o[:1200])
+rec("Q13", "verified" if v13 is not None and abs(v13 - 0.278) < 0.0005 else "contradicted", f"benchmark.py --tool universe-delta table mean row: {v13} (README +0.278); exit {rc}", "benchmark.py --tool", w, o[:1200])
 # Q32 absence-by-search (D-09): PRUNED.md exists; signature presence decided by the
 # inventory's own definition (detached signature, signer-attested checksum of the
 # manifest, or an explicit signer line; git object ids alone do not count).

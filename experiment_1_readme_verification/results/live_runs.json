@@ -41,10 +41,10 @@
  },
  "Q40": {
   "state": "verified",
-  "derivation": "exit 0, wall 1.5s (README says ~3 s; verified as order of magnitude only)",
+  "derivation": "exit 0, wall 1.6s (README says ~3 s; verified as order of magnitude only)",
   "claims": [],
   "command": "bash setup_env.sh --check",
-  "wall_s": 1.5,
+  "wall_s": 1.6,
   "output": "--- imports ---\n  ok      pytest       9.1.1      the test suite\n  ok      clingo       5.8.0      the solver; absent = ASP tests show as collection errors\n  ok      pydantic     2.13.4     phase_1 schema and format forcing\n--- self-tests that need no network and cost nothing ---\n  ok      phase_1/translate.py \u2014 52 passed, 0 failed\n  ok      walkthrough/link.py \u2014 21/21 self-test checks passed\n\nenvironment OK.\n\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python -m pytest -q                 # from semi-formal-experiment/, ~4 min\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python walkthrough/paper_pipeline/phase_1/translate.py --clause m0255\n                                   # DRY RUN, sends nothing\n"
  },
  "Q43": {
@@ -52,7 +52,7 @@
   "derivation": "sequence exit 0; first failing output: ALL-OK",
   "claims": [],
   "command": "Start-here steps 0-5 in order",
-  "wall_s": 19.6,
+  "wall_s": 19.9,
   "output": "--- imports ---\n  ok      pytest       9.1.1      the test suite\n  ok      clingo       5.8.0      the solver; absent = ASP tests show as collection errors\n  ok      pydantic     2.13.4     phase_1 schema and format forcing\n--- self-tests that need no network and cost nothing ---\n  ok      phase_1/translate.py \u2014 52 passed, 0 failed\n  ok      walkthrough/link.py \u2014 21/21 self-test checks passed\n\nenvironment OK.\n\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python -m pytest -q                 # from semi-formal-experiment/, ~4 min\n  /Users/mattstults/Documents/ai_safety_projects/semi-formal-document-analysis/semi-formal-experiment/.venv/bin/python walkthrough/paper_pipeline/phase_1/translate.py --clause m0255\n                                   # DRY RUN, sends nothing\nALL-OK\n"
  },
  "Q06_live": {
@@ -60,7 +60,7 @@
   "derivation": "measure_join prints 849/863 = 98.4% (published universe; MODULE_MAP \u00a71 forbids quoting)",
   "claims": [],
   "command": "measure_join.py",
-  "wall_s": 6.6,
+  "wall_s": 6.8,
   "output": "           313     313  100.0%\n  harm-avoidance-to-third-parties        326     333   97.9%\n  avoiding-over-and-under-caution        151     153   98.7%\n\nunmatched (14):\n  [helpfulness s=6] 'The assistant may sometimes encounter instructions that are ambiguous, inconsistent, or difficult to'\n  [helpfulness s=4] 'While the assistant should display big-picture thinking on how to help the user accomplish their lon'\n  [helpfulness s=3] 'Inapplicable instructions should typically be ignored. The only other reason an instruction should b'\n  [helpfulness s=2] 'If the assistant lacks sufficient confidence in its response, it should use a tool to gather more in'\n  [helpfulness s=1] 'As mentioned in #letter_and_spirit, users or developers may sometimes include untrusted text content'\n  [harm-avoidance-to-third-parties s=6] 'The assistant must not generate *restricted content* (such as information hazards and sensitive pers'\n  [harm-avoidance-to-third-parties s=4] 'If the assistant lacks sufficient confidence in its response, it should use a tool to gather more in'\n  [harm-avoidance-to-third-parties s=4] '#prohibited_content: only applies to sexual content involving minors, and transformations of user-pr'\n  [harm-avoidance-to-third-parties s=4] 'As mentioned in #letter_and_spirit, users or developers may sometimes include untrusted text content'\n  [harm-avoidance-to-third-parties s=3] 'While the assistant should display big-picture thinking on how to help the user accomplish their lon'\n"
  },
  "Q24": {
@@ -68,8 +68,8 @@
   "derivation": "pytest: 2267 passed, 4 skipped (README: 2,270 passed, 1 skipped)",
   "claims": [],
   "command": "pytest -q (semi-formal-experiment)",
-  "wall_s": 159.5,
-  "output": "2267 passed, 4 skipped, 14 warnings in 159.27s (0:02:39)"
+  "wall_s": 163.6,
+  "output": "2267 passed, 4 skipped, 14 warnings in 163.30s (0:02:43)"
  },
  "Q30": {
   "state": "verified",
@@ -151,6 +151,22 @@
   "wall_s": 0,
   "output": ""
  },
+ "Q12": {
+  "state": "verified",
+  "derivation": "benchmark.py --tool prints in-sample mean MCC 0.32 on the true universe (README +0.32); exit 0",
+  "claims": [],
+  "command": "benchmark.py --tool",
+  "wall_s": 11.7,
+  "output": "# Behavioural-relevance benchmark\n\nclause set: `modelspec_clauses.json @ threshold None (tool)` (593 clauses)\n\nHeadline universe: **TRUE universe (every passage the judges graded)**. Every number is printed beside its **published universe (score-0 passages deleted)** counterpart and the delta.\n\n## Judged universe \u2014 reconstruction provenance\n\nThe panel graded EVERY passage of the spec in one prompt; `build_site_data.keeps_citation` then dropped every passage whose summed score was 0 before publishing. Those rows are gold-negative AND unanimously predicted negative, so restoring them restores true-negative credit rather than inventing any. Recovered rows carry verdict 0 from every judge.\n\n| behaviour | spec | universe | published | recovered as 0 | join rate |\n| --- | --- | ---: | ---: | ---: | ---: |\n| avoiding-over-and-under-caution | constitution (anthropic) | 374 | 77 | 297 (79%) | 1.000 |\n| avoiding-over-and-under-caution | model-spec (openai) | 589 | 153 | 436 (74%) | 1.000 |\n| harm-avoidance-to-third-parties | constitution (anthropic) | 374 | 199 | 175 (47%) | 1.000 |\n| harm-avoidance-to-third-parties | model-spec (openai) | 589 | 333 | 256 (43%) | 1.000 |\n| helpfulness | cons"
+ },
+ "Q13": {
+  "state": "verified",
+  "derivation": "benchmark.py --tool universe-delta table mean row: 0.278 (README +0.278); exit 0",
+  "claims": [],
+  "command": "benchmark.py --tool",
+  "wall_s": 11.7,
+  "output": "# Behavioural-relevance benchmark\n\nclause set: `modelspec_clauses.json @ threshold None (tool)` (593 clauses)\n\nHeadline universe: **TRUE universe (every passage the judges graded)**. Every number is printed beside its **published universe (score-0 passages deleted)** counterpart and the delta.\n\n## Judged universe \u2014 reconstruction provenance\n\nThe panel graded EVERY passage of the spec in one prompt; `build_site_data.keeps_citation` then dropped every passage whose summed score was 0 before publishing. Those rows are gold-negative AND unanimously predicted negative, so restoring them restores true-negative credit rather than inventing any. Recovered rows carry verdict 0 from every judge.\n\n| behaviour | spec | universe | published | recovered as 0 | join rate |\n| --- | --- | ---: | ---: | ---: | ---: |\n| avoiding-over-and-under-caution | constitution (anthropic) | 374 | 77 | 297 (79%) | 1.000 |\n| avoiding-over-and-under-caution | model-spec (openai) | 589 | 153 | 436 (74%) | 1.000 |\n| harm-avoidance-to-third-parties | constitution (anthropic) | 374 | 199 | 175 (47%) | 1.000 |\n| harm-avoidance-to-third-parties | model-spec (openai) | 589 | 333 | 256 (43%) | 1.000 |\n| helpfulness | cons"
+ },
  "Q32": {
   "state": "contradicted",
   "derivation": "PRUNED.md exists (135 lines); signature-pattern hits: none; detached signature files: none; 93 hash-like tokens, 85 resolve in git \u2014 'signed' per the inventory definition is ABSENT, so the README sentence 'signed manifest' is contradicted on the signature and verified on existence/restorability",
@@ -181,7 +197,7 @@
   "derivation": "45 first-parent commits touch ITERATION_NOTES.md; commits deleting lines: [('6d01415b', '2026-08-31', 89, 121)] \u2014 only the redaction commit",
   "claims": [],
   "command": "git log --first-parent --numstat -- ITERATION_NOTES.md",
-  "wall_s": 0.1,
+  "wall_s": 0.4,
   "output": "\n\n27\t0\twalkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md\nba186702 2026-08-24\n\n38\t0\twalkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md\n4edd8e9a 2026-08-24\n\n37\t0\twalkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md\n30193087 2026-08-24\n\n31\t0\twalkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md\n03312494 2026-08-24\n\n16\t0\twalkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md\nce87921c 2026-08-24\n\n30\t0\twalkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md\nccb7bd18 2026-08-24\n\n44\t0\twalkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/behavior_pilot/ITERATION_NOTES.md\n"
  }
 }
