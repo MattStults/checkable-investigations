@@ -50,7 +50,7 @@
    "stated"
   ],
   "tier_ok": true,
-  "derivation": "46 matching claim(s) standing; 2 struck/superseded, 0 contested"
+  "derivation": "51 matching claim(s) standing; 2 struck/superseded, 0 contested"
  },
  "Q04": {
   "state": "contested",
@@ -79,7 +79,7 @@
    "stated"
   ],
   "tier_ok": true,
-  "derivation": "295 matching claim(s) standing; 2 carry an anti-rule (do-not-cite) marking; 2 struck/superseded, 0 contested \u2192 contested: the record forbids citing the matched value"
+  "derivation": "368 matching claim(s) standing; 2 carry an anti-rule (do-not-cite) marking; 2 struck/superseded, 2 contested \u2192 contested: the record forbids citing the matched value"
  },
  "Q05": {
   "state": "verified",
@@ -222,7 +222,7 @@
  },
  "Q15": {
   "state": "verified",
-  "derivation": "28 claim(s) record the event/text as standing",
+  "derivation": "29 claim(s) record the event/text as standing",
   "claims": [
    "L10398",
    "L240009",
@@ -245,7 +245,7 @@
  },
  "Q16": {
   "state": "verified",
-  "derivation": "every series value present: {0.4: ['L100086', 'L10057', 'L10104'], 0.7: ['L100087', 'L10213', 'L90107'], 0.55: ['L100024', 'L100088', 'L10215'], 0.85: ['L100030', 'L100089', 'L9950004']}",
+  "derivation": "every series value present: {0.4: ['L100086', 'L10057', 'L10104'], 0.7: ['L100087', 'L10213', 'L90107'], 0.55: ['L100024', 'L100088', 'L10215'], 0.85: ['L100030', 'L100089', 'L950002']}",
   "claims": [
    "L100086",
    "L10057",
@@ -259,14 +259,14 @@
    "L80105",
    "L80108",
    "L90111",
+   "L930010",
+   "L930032",
+   "L930114",
    "L9960003",
    "L9960023",
    "L100087",
    "L10213",
-   "L90107",
-   "L100024",
-   "L100088",
-   "L10215"
+   "L90107"
   ],
   "tiers": [
    "panel",
@@ -277,13 +277,15 @@
  "Q17": {
   "state": "verified",
   "claims": [
-   "L10221"
+   "L10221",
+   "L940040"
   ],
   "tiers": [
-   "panel"
+   "panel",
+   "stated"
   ],
   "tier_ok": true,
-  "derivation": "1 matching claim(s) standing; NOTE other values for the same metric/scope: [('L240224', '38%'), ('L250025', 1.0), ('L290076', '38%'), ('L290131', '1.000'), ('L770019', 0.8)]"
+  "derivation": "2 matching claim(s) standing; NOTE other values for the same metric/scope: [('L240224', '38%'), ('L250025', 1.0), ('L290076', '38%'), ('L290131', '1.000'), ('L770019', 0.8)]"
  },
  "Q18": {
   "state": "verified",
@@ -313,18 +315,19 @@
    "L10793",
    "L120008",
    "L140065",
-   "L180095"
+   "L180095",
+   "L990016"
   ],
   "tiers": [
    "cove",
    "stated"
   ],
   "tier_ok": true,
-  "derivation": "4 matching claim(s) standing; NOTE other values for the same metric/scope: [('L10036', 12), ('L10777', 1.0), ('L120006', 1.0), ('L140110', '1.00'), ('L180058', 99)]"
+  "derivation": "5 matching claim(s) standing; NOTE other values for the same metric/scope: [('L10036', 12), ('L10777', 1.0), ('L120006', 1.0), ('L140110', '1.00'), ('L180058', 99)]"
  },
  "Q20": {
   "state": "verified",
-  "derivation": "63 claim(s) record the event/text as standing; 1 contested claim(s) also present",
+  "derivation": "66 claim(s) record the event/text as standing; 1 contested claim(s) also present",
   "claims": [
    "L10629",
    "L10710",
@@ -341,13 +344,14 @@
   ],
   "tiers": [
    "cove",
+   "git",
    "panel",
    "stated"
   ]
  },
  "Q21": {
   "state": "verified",
-  "derivation": "32 claim(s) record the event/text as standing",
+  "derivation": "35 claim(s) record the event/text as standing",
   "claims": [
    "L10810",
    "L10812",
@@ -370,7 +374,7 @@
  },
  "Q22": {
   "state": "verified",
-  "derivation": "148 claim(s) record the event/text as standing",
+  "derivation": "158 claim(s) record the event/text as standing",
   "claims": [
    "L10371",
    "L10373",
@@ -394,7 +398,7 @@
  },
  "Q23": {
   "state": "verified",
-  "derivation": "26 claim(s) record the event/text as standing",
+  "derivation": "28 claim(s) record the event/text as standing",
   "claims": [
    "L180144",
    "L230021",
@@ -411,6 +415,7 @@
   ],
   "tiers": [
    "git",
+   "human",
    "stated"
   ]
  },
@@ -424,7 +429,7 @@
  },
  "Q25": {
   "state": "verified",
-  "derivation": "191 claim(s) record the event/text as standing; 1 contested claim(s) also present",
+  "derivation": "198 claim(s) record the event/text as standing; 1 contested claim(s) also present",
   "claims": [
    "L100053",
    "L10039",
@@ -440,7 +445,9 @@
    "L210115"
   ],
   "tiers": [
+   "filesystem",
    "panel",
+   "raw",
    "stated"
   ]
  },
@@ -449,6 +456,10 @@
   "claims": [
    "L140062",
    "L180027",
+   "L970048",
+   "L980006",
+   "L980026",
+   "L980034",
    "L9930020",
    "L9970037",
    "L9970078"
@@ -457,11 +468,11 @@
    "stated"
   ],
   "tier_ok": true,
-  "derivation": "4 matching claim(s) standing; 0 struck/superseded, 1 contested; NOTE other values for the same metric/scope: [('L10166', 2), ('L120034', 102), ('L120035', 12), ('L120045', 4), ('L120055', 268)]"
+  "derivation": "8 matching claim(s) standing; 0 struck/superseded, 1 contested; NOTE other values for the same metric/scope: [('L10166', 2), ('L120034', 102), ('L120035', 12), ('L120045', 4), ('L120055', 268)]"
  },
  "Q27": {
   "state": "contested",
-  "derivation": "46 matching claim(s) at the value, none over the required population (\\b100\\b|definition); populations found: [\"0/16 of the batch move's gained nodes\", '10/10 successes', '11 clauses of 593', '16 gained nodes of the move', '16 of the move', '183 example blocks', '39', '39/39', '5/5', '5/5 probe nodes', '589/593', '7/9', '762 node lines', 'covered nodes', 'n/a', 'unstated'] \u2014 the README binds coverage to the 100 definitions; a 1.0 whose population is a 39-node sample does not satisfy the binding",
+  "derivation": "51 matching claim(s) at the value, none over the required population (\\b100\\b|definition); populations found: [\"0/16 of the batch move's gained nodes\", '10/10 successes', '11 clauses of 593', '16 gained nodes of the move', '16 of the move', '183 example blocks', '39', '39/39', '5/5', '5/5 probe nodes', '589/593', '7/9', '762 node lines', 'covered nodes', 'n/a', 'strata coverage', 'unstated'] \u2014 the README binds coverage to the 100 definitions; a 1.0 whose population is a 39-node sample does not satisfy the binding",
   "claims": [
    "L10805",
    "L120015",
@@ -473,7 +484,7 @@
  },
  "Q28": {
   "state": "contested",
-  "derivation": "12 separability measurements in the ledger, 2 mention a null; 'every test failed against a null' requires each measurement to carry a null outcome \u2014 the ledger holds measurements without one: [('L10036', 12.0, 'how-to-approach-tradeoffs enga', 'current'), ('L10777', 1.0, 'retranslation integration cens', 'current'), ('L10793', 0.9967, 'matched-granularity random-par', 'current'), ('L120006', 1.0, 'random 4-bucket partition of t', 'current'), ('L120008', 0.9967, 'random 4-bucket partition null', 'current')]",
+  "derivation": "15 separability measurements in the ledger, 2 mention a null; 'every test failed against a null' requires each measurement to carry a null outcome \u2014 the ledger holds measurements without one: [('L10036', 12.0, 'how-to-approach-tradeoffs enga', 'current'), ('L10777', 1.0, 'retranslation integration cens', 'current'), ('L10793', 0.9967, 'matched-granularity random-par', 'current'), ('L120006', 1.0, 'random 4-bucket partition of t', 'current'), ('L120008', 0.9967, 'random 4-bucket partition null', 'current')]",
   "claims": [
    "L10036",
    "L10777",
@@ -484,12 +495,12 @@
    "L180094",
    "L180095",
    "L180097",
-   "L9950047"
+   "L980049"
   ]
  },
  "Q29": {
   "state": "contested",
-  "derivation": "63 withdrawal events in ledger (README says three headline); headline qualifier needs the starred-block/README linkage at adjudication",
+  "derivation": "74 withdrawal events in ledger (README says three headline); headline qualifier needs the starred-block/README linkage at adjudication",
   "claims": [
    "L100027",
    "L10786",
@@ -595,12 +606,13 @@
  },
  "Q38": {
   "state": "verified",
-  "derivation": "4 claim(s) record the event/text as standing",
+  "derivation": "5 claim(s) record the event/text as standing",
   "claims": [
    "L10045",
    "L10178",
    "L10383",
-   "L280175"
+   "L280175",
+   "L990041"
   ],
   "tiers": [
    "stated"
@@ -608,7 +620,7 @@
  },
  "Q39": {
   "state": "verified",
-  "derivation": "118 claim(s) record the event/text as standing; 1 contested claim(s) also present",
+  "derivation": "129 claim(s) record the event/text as standing; 1 contested claim(s) also present",
   "claims": [
    "L10002",
    "L10077",
@@ -639,7 +651,7 @@
  },
  "Q41": {
   "state": "verified",
-  "derivation": "9 measurement(s), max 0.600 < 0.94",
+  "derivation": "10 measurement(s), max 0.600 < 0.94",
   "claims": [
    "L10336",
    "L10436",
@@ -649,7 +661,8 @@
    "L10466",
    "L10468",
    "L10469",
-   "L10470"
+   "L10470",
+   "L950088"
   ]
  },
  "Q42": {
@@ -681,14 +694,17 @@
  },
  "Q45": {
   "state": "verified",
-  "derivation": "3 claim(s) record the event/text as standing",
+  "derivation": "5 claim(s) record the event/text as standing",
   "claims": [
    "L40015",
    "L40023",
-   "L40032"
+   "L40032",
+   "L900007",
+   "L900008"
   ],
   "tiers": [
-   "adjudicated"
+   "adjudicated",
+   "stated"
   ]
  },
  "Q46": {
@@ -701,7 +717,7 @@
  },
  "Q47": {
   "state": "verified",
-  "derivation": "103 claim(s) record the event/text as standing; 1 contested claim(s) also present",
+  "derivation": "106 claim(s) record the event/text as standing; 1 contested claim(s) also present",
   "claims": [
    "L10808",
    "L110091",
@@ -749,7 +765,7 @@
  },
  "H01": {
   "state": "contradicted",
-  "derivation": "27 close(s) with a prior/linked review, 4 without: [('L230087', 'unstated', []), ('L360057', 'unstated', []), ('L440091', 'unstated', []), ('L500030', 'unstated', [])]",
+  "derivation": "31 close(s) with a prior/linked review, 4 without: [('L230087', 'unstated', []), ('L360057', 'unstated', []), ('L440091', 'unstated', []), ('L500030', 'unstated', [])]",
   "claims": [
    "L10097",
    "L10207",
@@ -775,6 +791,10 @@
    "L830075",
    "L830100",
    "L860060",
+   "L870021",
+   "L930008",
+   "L950020",
+   "L980048",
    "L9950002",
    "L9950178",
    "L9950197",
@@ -786,7 +806,7 @@
  },
  "H02": {
   "state": "contested",
-  "derivation": "242 measurements, 71 with no prediction_freeze earlier or linked: ['L120086', 'L130088', 'L130096', 'L130100', 'L130181', 'L190032', 'L200064', 'L200083']",
+  "derivation": "292 measurements, 71 with no prediction_freeze earlier or linked: ['L120086', 'L130088', 'L130096', 'L130100', 'L130181', 'L190032', 'L200064', 'L200083']",
   "claims": [
    "L100025",
    "L10131",
@@ -812,7 +832,7 @@
  },
  "H03": {
   "state": "unverifiable",
-  "derivation": "numbered errata: 13; hunk events translated: 0 \u2014 append-only conjunct needs hunk-level diff claims (dimension not yet in ledger; git-log/pre-redaction batches pending)",
+  "derivation": "numbered errata: 21; hunk events translated: 0 \u2014 append-only conjunct needs hunk-level diff claims (dimension not yet in ledger; git-log/pre-redaction batches pending)",
   "claims": [
    "L10332",
    "L10344",
@@ -821,9 +841,9 @@
    "L10809",
    "L10818",
    "L180047",
-   "L9920015",
-   "L9930005",
-   "L9930042"
+   "L950080",
+   "L950101",
+   "L960063"
   ]
  },
  "H04": {
@@ -832,9 +852,30 @@
   "claims": []
  },
  "H05": {
-  "state": "unverifiable",
-  "derivation": "44 entries, none linked by a commit claim to its entry number",
-  "claims": []
+  "state": "verified",
+  "derivation": "31 entries linked to commits; 0 with a commit date differing from the heading date: []",
+  "claims": [
+   "L10023",
+   "L10044",
+   "L10047",
+   "L10069",
+   "L10096",
+   "L10127",
+   "L10154",
+   "L10177",
+   "L10206",
+   "L10233",
+   "L10242",
+   "L10302",
+   "L10323",
+   "L10334",
+   "L10369",
+   "L10382",
+   "L10385",
+   "L10407",
+   "L10423",
+   "L10460"
+  ]
  },
  "H06": {
   "state": "contested",
@@ -859,7 +900,7 @@
  },
  "H07": {
   "state": "verified",
-  "derivation": "9 untuned-behaviour measurements, max 0.600; at/above 0.94: []",
+  "derivation": "10 untuned-behaviour measurements, max 0.600; at/above 0.94: []",
   "claims": [
    "L10336",
    "L10436",
@@ -869,7 +910,8 @@
    "L10466",
    "L10468",
    "L10469",
-   "L10470"
+   "L10470",
+   "L950088"
   ]
  },
  "H08": {
@@ -918,27 +960,29 @@
  },
  "H11": {
   "state": "unverifiable",
-  "derivation": "redaction events 4; hunk events 0 (second conjunct needs hunk claims \u2014 pending pre-redaction/git batches)",
+  "derivation": "redaction events 5; hunk events 0 (second conjunct needs hunk claims \u2014 pending pre-redaction/git batches)",
   "claims": [
    "L10045",
    "L10178",
    "L10383",
-   "L280175"
+   "L280175",
+   "L990041"
   ]
  },
  "H12": {
   "state": "verified",
-  "derivation": "hit claims: 4 (query-output spans were not in the named sources)",
+  "derivation": "hit claims: 7 (query-output spans were not in the named sources)",
   "claims": [
    "L290079",
    "L550149",
    "L580174",
-   "L9970192"
+   "L900113",
+   "L900114"
   ]
  },
  "H13": {
   "state": "verified",
-  "derivation": "cove events 25; claims mentioning decisive findings 13",
+  "derivation": "cove events 27; claims mentioning decisive findings 16",
   "claims": [
    "L10372",
    "L10792",

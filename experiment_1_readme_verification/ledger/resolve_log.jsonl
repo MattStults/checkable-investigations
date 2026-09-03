@@ -2,7 +2,7 @@
 {"claim": "L100026", "rel": "withdraws", "target_text": "final-run overlay", "target_id": "L100027", "basis": "quote overlap"}
 {"claim": "L100027", "rel": "withdraws", "target_text": "final-run overlay", "target_id": "L100026", "basis": "quote overlap"}
 {"claim": "L10056", "rel": "supersedes", "target_text": "single-wave entries", "target_id": null, "basis": "unresolved"}
-{"claim": "L10104", "rel": "restates", "target_text": "attempt-1: 0.40", "target_id": "L9940003", "basis": "value ['1', '0.40'] + metric/quote word"}
+{"claim": "L10104", "rel": "restates", "target_text": "attempt-1: 0.40", "target_id": "L950027", "basis": "value ['1', '0.40'] + metric/quote word"}
 {"claim": "L10119", "rel": "restates", "target_text": "the 3/9 FP overturn rate found at R1", "target_id": "L10051", "basis": "value ['3', '9', '1'] + metric/quote word"}
 {"claim": "L10156", "rel": "restates", "target_text": "attempt-1's 3/9 single-wave", "target_id": "L10049", "basis": "value ['1', '3', '9'] + metric/quote word"}
 {"claim": "L10224", "rel": "contradicts", "target_text": "attempt-3 panel 3-0 not_relevant", "target_id": "L100057", "basis": "value ['3', '3', '0'] + metric/quote word"}
@@ -10,7 +10,7 @@
 {"claim": "L10245", "rel": "restates", "target_text": "defensible-by-contradiction", "target_id": "L10233", "basis": "quote overlap"}
 {"claim": "L10337", "rel": "restates", "target_text": "the frozen 0.55-0.75 band", "target_id": "L10336", "basis": "quote overlap"}
 {"claim": "L10349", "rel": "restates", "target_text": "the deferred 43-dispute re-resolution", "target_id": "L10408", "basis": "value ['43'] + metric/quote word"}
-{"claim": "L10398", "rel": "supersedes", "target_text": "attempt-1", "target_id": "L9940003", "basis": "value ['1'] + metric/quote word"}
+{"claim": "L10398", "rel": "supersedes", "target_text": "attempt-1", "target_id": "L950027", "basis": "value ['1'] + metric/quote word"}
 {"claim": "L10411", "rel": "restates", "target_text": "the UA gate failure", "target_id": null, "basis": "unresolved"}
 {"claim": "L10422", "rel": "restates", "target_text": "options in notes 0022", "target_id": "L10385", "basis": "entry number 0022"}
 {"claim": "L10429", "rel": "restates", "target_text": "gate 5/10", "target_id": "L320078", "basis": "value ['5', '10'] + metric/quote word"}
@@ -36,7 +36,7 @@
 {"claim": "L10817", "rel": "re_derives", "target_text": "those numbers", "target_id": "L230031", "basis": "quote overlap"}
 {"claim": "L110044", "rel": "quarantines", "target_text": "all 43 dispute-panel mark resolutions", "target_id": "L10349", "basis": "value ['43'] + metric/quote word"}
 {"claim": "L110172", "rel": "forbids_citation", "target_text": "the 92.3% new-prompt figure", "target_id": "L110173", "basis": "value ['92.3%'] + metric/quote word"}
-{"claim": "L120004", "rel": "re_derives", "target_text": "the decisive findings", "target_id": null, "basis": "unresolved"}
+{"claim": "L120004", "rel": "re_derives", "target_text": "the decisive findings", "target_id": "L990012", "basis": "quote overlap"}
 {"claim": "L120019", "rel": "withdraws", "target_text": "L1/L2", "target_id": "L10810", "basis": "quote overlap"}
 {"claim": "L120259", "rel": "supersedes", "target_text": "round-3 (signed 2026-08-19, SUPERSEDED UNRUN — froze v13; instrument moved on)", "target_id": "L10026", "basis": "value ['3', '2026', '08', '19', '13'] + metric/quote word"}
 {"claim": "L130009", "rel": "restates", "target_text": "DEFENSIBILITY_BATCH_PROTOCOL.md venue ruling, 2026-08-24", "target_id": "L10401", "basis": "value ['2026', '08', '24'] + metric/quote word"}
@@ -201,7 +201,7 @@
 {"claim": "L290044", "rel": "withdraws", "target_text": "Wire `explain()`.", "target_id": null, "basis": "unresolved"}
 {"claim": "L290048", "rel": "withdraws", "target_text": "Print the floor in the ablation table.", "target_id": null, "basis": "unresolved"}
 {"claim": "L290049", "rel": "withdraws", "target_text": "Build the tool → `ConflictFinding` adapter.", "target_id": null, "basis": "unresolved"}
-{"claim": "L290052", "rel": "contradicts", "target_text": "the README states and argues for 1:1", "target_id": "L9940003", "basis": "value ['1', '1'] + metric/quote word"}
+{"claim": "L290052", "rel": "contradicts", "target_text": "the README states and argues for 1:1", "target_id": "L950027", "basis": "value ['1', '1'] + metric/quote word"}
 {"claim": "L290053", "rel": "contradicts", "target_text": "the sample ships 1:2 negatives", "target_id": "L210087", "basis": "value ['1', '2'] + metric/quote word"}
 {"claim": "L290055", "rel": "supersedes", "target_text": "**Nested/held-out threshold selection.** Every lift currently quoted is a hindsight-threshold number.", "target_id": null, "basis": "unresolved"}
 {"claim": "L290059", "rel": "withdraws", "target_text": "Reframe the tool as a high-precision lead generator reporting P@k.", "target_id": null, "basis": "unresolved"}
@@ -449,11 +449,61 @@
 {"claim": "L860081", "rel": "restates", "target_text": "169 first-pass", "target_id": null, "basis": "unresolved"}
 {"claim": "L860099", "rel": "restates", "target_text": "arc1-e closure", "target_id": "L580206", "basis": "value ['1'] + metric/quote word"}
 {"claim": "L860099", "rel": "restates", "target_text": "arc1-b mint integration", "target_id": "L860098", "basis": "quote overlap"}
+{"claim": "L870015", "rel": "restates", "target_text": "A2 timing claim", "target_id": "L10374", "basis": "value ['2'] + metric/quote word"}
+{"claim": "L870028", "rel": "restates", "target_text": "atom-merge integration prereq", "target_id": null, "basis": "unresolved"}
+{"claim": "L870053", "rel": "strikes", "target_text": "71% anchor", "target_id": "L190080", "basis": "value ['71%'] + metric/quote word"}
+{"claim": "L880012", "rel": "amends", "target_text": "GAP-6 zero-instances fact", "target_id": "L9970136", "basis": "value ['6'] + metric/quote word"}
+{"claim": "L880013", "rel": "amends", "target_text": "N3 out-of-envelope phrasing", "target_id": null, "basis": "unresolved"}
+{"claim": "L880027", "rel": "amends", "target_text": "the earlier commit message", "target_id": null, "basis": "unresolved"}
+{"claim": "L880039", "rel": "contradicts", "target_text": "M1", "target_id": "L110069", "basis": "quote overlap"}
+{"claim": "L880045", "rel": "supersedes", "target_text": "BLOCKED", "target_id": "L10079", "basis": "quote overlap"}
+{"claim": "L880056", "rel": "supersedes", "target_text": "BLOCKED", "target_id": "L10079", "basis": "quote overlap"}
+{"claim": "L880071", "rel": "restates", "target_text": "fixed earlier in b81afbfa", "target_id": null, "basis": "unresolved"}
+{"claim": "L880074", "rel": "supersedes", "target_text": "BLOCKED", "target_id": "L10079", "basis": "quote overlap"}
+{"claim": "L880080", "rel": "withdraws", "target_text": "N5", "target_id": "L220100", "basis": "quote overlap"}
+{"claim": "L890038", "rel": "amends", "target_text": "bb6d7bab commit message", "target_id": "L580095", "basis": "value ['6', '7'] + metric/quote word"}
+{"claim": "L890109", "rel": "restates", "target_text": "the venue ruling", "target_id": null, "basis": "unresolved"}
+{"claim": "L890160", "rel": "supersedes", "target_text": "the mis-derived all-truth predictions", "target_id": "L890153", "basis": "quote overlap"}
+{"claim": "L900049", "rel": "supersedes", "target_text": "strict-question packets", "target_id": null, "basis": "unresolved"}
 {"claim": "L90068", "rel": "contradicts", "target_text": "l3877_3953_n002", "target_id": "L100018", "basis": "quote overlap"}
 {"claim": "L90068", "rel": "contradicts", "target_text": "l3239_3382_n005", "target_id": "L100021", "basis": "quote overlap"}
 {"claim": "L90077", "rel": "restates", "target_text": "attempts 2 (0.75) and 3 (0.40)", "target_id": "L9960022", "basis": "value ['2', '0.75', '3', '0.40'] + metric/quote word"}
 {"claim": "L90078", "rel": "restates", "target_text": "attempts 2 (0.75) and 3 (0.40)", "target_id": "L90077", "basis": "value ['2', '0.75', '3', '0.40'] + metric/quote word"}
 {"claim": "L90084", "rel": "contradicts", "target_text": "P1 REGISTERED RULE SAYS REVERT", "target_id": "L10794", "basis": "value ['1'] + metric/quote word"}
+{"claim": "L910048", "rel": "amends", "target_text": "prior commit", "target_id": null, "basis": "unresolved"}
+{"claim": "L910052", "rel": "amends", "target_text": "F-r2", "target_id": "L910044", "basis": "quote overlap"}
+{"claim": "L920067", "rel": "restates", "target_text": "registered seeds", "target_id": "L930091", "basis": "quote overlap"}
+{"claim": "L920068", "rel": "restates", "target_text": "registered seeds", "target_id": "L930091", "basis": "quote overlap"}
+{"claim": "L920069", "rel": "restates", "target_text": "registered seeds", "target_id": "L930091", "basis": "quote overlap"}
+{"claim": "L920077", "rel": "restates", "target_text": "the registered prediction file", "target_id": null, "basis": "unresolved"}
+{"claim": "L930010", "rel": "restates", "target_text": "attempt-1's 0.40", "target_id": "L950027", "basis": "value ['1', '0.40'] + metric/quote word"}
+{"claim": "L930051", "rel": "restates", "target_text": "Fable's own 0.846 baseline", "target_id": "L10142", "basis": "value ['0.846'] + metric/quote word"}
+{"claim": "L930068", "rel": "restates", "target_text": "the seeded 3/11 sample", "target_id": "L10473", "basis": "value ['3', '11'] + metric/quote word"}
+{"claim": "L930074", "rel": "restates", "target_text": "attempt-1's 3/9 single-wave overturn rate", "target_id": "L10049", "basis": "value ['1', '3', '9'] + metric/quote word"}
+{"claim": "L930104", "rel": "restates", "target_text": "certified-Opus escalation (0/11 overturns)", "target_id": "L10155", "basis": "value ['0', '11'] + metric/quote word"}
+{"claim": "L930128", "rel": "contradicts", "target_text": "move-level evidence says the estimator failed", "target_id": "L930113", "basis": "quote overlap"}
+{"claim": "L930129", "rel": "contradicts", "target_text": "registered rule says revert", "target_id": "L90082", "basis": "quote overlap"}
+{"claim": "L940046", "rel": "restates", "target_text": "15-FP", "target_id": "L940034", "basis": "quote overlap"}
+{"claim": "L940047", "rel": "restates", "target_text": "23-FN", "target_id": "L940034", "basis": "quote overlap"}
+{"claim": "L940058", "rel": "restates", "target_text": "kept iter-2 move", "target_id": "L580081", "basis": "value ['2'] + metric/quote word"}
+{"claim": "L940098", "rel": "restates", "target_text": "43 disputes", "target_id": "L10408", "basis": "value ['43'] + metric/quote word"}
+{"claim": "L950095", "rel": "restates", "target_text": "the deferred 43 disputes", "target_id": "L10349", "basis": "value ['43'] + metric/quote word"}
+{"claim": "L970003", "rel": "strikes", "target_text": "locus attribution", "target_id": null, "basis": "unresolved"}
+{"claim": "L970063", "rel": "amends", "target_text": "the tripwired under-determination", "target_id": null, "basis": "unresolved"}
+{"claim": "L970067", "rel": "restates", "target_text": "v1 was 0.467", "target_id": null, "basis": "unresolved"}
+{"claim": "L970071", "rel": "restates", "target_text": "v1 0.47", "target_id": "L970069", "basis": "quote overlap"}
+{"claim": "L970078", "rel": "amends", "target_text": "the v2 recode files", "target_id": "L380019", "basis": "value ['2'] + metric/quote word"}
+{"claim": "L970091", "rel": "restates", "target_text": "0.98-stability concept", "target_id": "L10722", "basis": "value ['0.98'] + metric/quote word"}
+{"claim": "L970107", "rel": "contradicts", "target_text": "the log2(n) low-rank hope", "target_id": null, "basis": "unresolved"}
+{"claim": "L980030", "rel": "supersedes", "target_text": "the consolidated schema", "target_id": null, "basis": "unresolved"}
+{"claim": "L980076", "rel": "supersedes", "target_text": "0039's entropy claim", "target_id": "L9950042", "basis": "entry number 0039"}
+{"claim": "L990013", "rel": "withdraws", "target_text": "0041", "target_id": "L10773", "basis": "entry number 0041"}
+{"claim": "L990015", "rel": "re_derives", "target_text": "the decisive findings", "target_id": "L120004", "basis": "quote overlap"}
+{"claim": "L990026", "rel": "withdraws", "target_text": "L1/L2", "target_id": "L10810", "basis": "quote overlap"}
+{"claim": "L990034", "rel": "re_derives", "target_text": "panel-v5 rates and p-values", "target_id": "L990025", "basis": "quote overlap"}
+{"claim": "L990086", "rel": "contradicts", "target_text": "did not reach that bar", "target_id": null, "basis": "unresolved"}
+{"claim": "L990089", "rel": "amends", "target_text": "certification claim", "target_id": "L990088", "basis": "quote overlap"}
+{"claim": "L990090", "rel": "strikes", "target_text": "'six weeks' figure", "target_id": "L990088", "basis": "quote overlap"}
 {"claim": "L9920002", "rel": "withdraws", "target_text": "the final-iteration-on-Fable overlay", "target_id": null, "basis": "unresolved"}
 {"claim": "L9920014", "rel": "amends", "target_text": "Runbook", "target_id": "L10002", "basis": "quote overlap"}
 {"claim": "L9920043", "rel": "supersedes", "target_text": "the original live-artifact pin (692/505/347/462)", "target_id": "L320004", "basis": "value ['692', '505', '347', '462'] + metric/quote word"}
@@ -482,7 +532,7 @@
 {"claim": "L9940179", "rel": "strikes", "target_text": "The selection-effect caveat", "target_id": null, "basis": "unresolved"}
 {"claim": "L9940185", "rel": "forbids_citation", "target_text": "377/333/153, 863 passages, 0.764/0.780/0.500, +0.274, +0.187, or the over/under refusal", "target_id": "L250050", "basis": "value ['377', '333', '153', '863', '0.764', '0.780', '0.500', '0.274', '0.187'] + metric/quote word"}
 {"claim": "L9940210", "rel": "strikes", "target_text": "every \"which behaviours does this help\" claim in this project", "target_id": null, "basis": "unresolved"}
-{"claim": "L9950009", "rel": "supersedes", "target_text": "DECLINE 0.70", "target_id": "L9950007", "basis": "quote overlap"}
+{"claim": "L9950009", "rel": "supersedes", "target_text": "DECLINE 0.70", "target_id": "L950003", "basis": "quote overlap"}
 {"claim": "L9950017", "rel": "quarantines", "target_text": "the 43 dispute resolutions", "target_id": "L10349", "basis": "value ['43'] + metric/quote word"}
 {"claim": "L9950043", "rel": "amends", "target_text": "the headline", "target_id": "L150062", "basis": "quote overlap"}
 {"claim": "L9950052", "rel": "restates", "target_text": "the information floor (0036)", "target_id": "L10706", "basis": "entry number 0036"}
