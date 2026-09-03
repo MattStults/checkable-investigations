@@ -856,9 +856,16 @@
   ]
  },
  "H04": {
-  "state": "unverifiable",
-  "derivation": "no hypothesis function (H04: seat inputs not translated as a dimension)",
-  "claims": []
+  "state": "verified",
+  "derivation": "81 seat dispatches; 50 record inputs; none names panel labels, the design document, or prior verdicts as received (mentions inside negations counted as exclusions)",
+  "claims": [
+   "L1000050",
+   "L1030197",
+   "L1030248",
+   "L1030249",
+   "L1030262",
+   "L1030269"
+  ]
  },
  "H05": {
   "state": "verified",
@@ -1072,7 +1079,7 @@
  },
  "V06": {
   "state": "contradicted",
-  "derivation": "providers ['H01', 'H02', 'H03', 'H04'] \u2192 ['contradicted', 'contested', 'verified', 'unverifiable']",
+  "derivation": "providers ['H01', 'H02', 'H03', 'H04'] \u2192 ['contradicted', 'contested', 'verified', 'verified']",
   "claims": []
  },
  "V07": {

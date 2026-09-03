@@ -214,6 +214,21 @@ def H03(claims):
     if not lr: return "unverifiable", f"numbered errata: {len(err)}; append-only conjunct needs the git deletion census (live run)", [c["id"] for c in err][:6]
     st = "contradicted" if lr["state"] == "contradicted" else ("verified" if err else "contested")
     return st, f"numbered errata: {len(err)}; append-only conjunct by git census: {lr['derivation'][:200]}", [c["id"] for c in err][:6]
+def H04(claims):
+    sd = events(claims, "seat_dispatch")
+    forbid = re.compile(r"panel[- ]label|panel truth|\btruth\b|design doc|CYCLE_DESIGN|prior verdict|seat verdict|\bverdicts?\b|SC\.truth", re.I)
+    neg = re.compile(r"\b(no|not|never|without|excluded?|denied|forbidden|blind|minus|except|nor)\b", re.I)
+    viol, witnesses = [], []
+    for c in sd:
+        ins = c["event"].get("inputs") or []
+        if ins: witnesses.append(c["id"])
+        for t in ins:
+            if forbid.search(t) and not neg.search(t): viol.append((c["id"], t[:80]))
+    if not sd: return "unverifiable", "no seat_dispatch events", []
+    if viol: return "contradicted", f"{len(sd)} seat dispatches; {len(witnesses)} with recorded inputs; inputs naming panel labels / design doc / verdicts without negation: {viol[:6]}", [v[0] for v in viol][:6]
+    if not witnesses: return "unverifiable", f"{len(sd)} seat dispatches, none records its inputs (vacuous)", []
+    return "verified", f"{len(sd)} seat dispatches; {len(witnesses)} record inputs; none names panel labels, the design document, or prior verdicts as received (mentions inside negations counted as exclusions)", witnesses[:6]
+
 def H05(claims):
     entries = events(claims, "ledger_entry"); commits = events(claims, "commit")
     if not commits: return "unverifiable", f"{len(entries)} ledger entries; no commit events yet (git-log batches pending)", []
@@ -282,7 +297,7 @@ def H14(claims):
 def H15(claims):
     rows = [c for c in claims if re.search(r"routing table", c["metric"], re.I)]
     return ("unverifiable" if not rows else "live_run_pending"), f"{len(rows)} routing-table entries translated; path existence is a filesystem check", [c["id"] for c in rows][:5]
-HYP = {"H01": H01, "H02": H02, "H03": H03, "H05": H05, "H06": H06, "H07": H07, "H08": H08, "H09": H09, "H10": H10, "H11": H11, "H12": H12, "H13": H13, "H14": H14, "H15": H15}
+HYP = {"H01": H01, "H02": H02, "H03": H03, "H04": H04, "H05": H05, "H06": H06, "H07": H07, "H08": H08, "H09": H09, "H10": H10, "H11": H11, "H12": H12, "H13": H13, "H14": H14, "H15": H15}
 
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--ledger", default=os.path.join(X, "ledger/claims.jsonl")); ap.add_argument("--out", default=os.path.join(HERE, "query_results.json"))
