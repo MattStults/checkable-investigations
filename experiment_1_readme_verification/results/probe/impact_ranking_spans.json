@@ -1,0 +1,1880 @@
+[
+ {
+  "path": "adversarial_review_1.md",
+  "commit": "pin",
+  "lines": "37-44",
+  "claims_removed": 13,
+  "flips": [
+   [
+    "Q09",
+    "verified",
+    "contradicted"
+   ]
+  ],
+  "n_flips": 1,
+  "first_quote": "**2. \"15-rule fragment\" is actually 16 rules** (16 norm IDs / source facts). Fix count or state conv"
+ },
+ {
+  "path": "ci.yml",
+  "commit": "pin",
+  "lines": "1-36",
+  "claims_removed": 14,
+  "flips": [
+   [
+    "Q34",
+    "contradicted",
+    "unverifiable"
+   ]
+  ],
+  "n_flips": 1,
+  "first_quote": "name: tests"
+ },
+ {
+  "path": "ARTIFACTS.md",
+  "commit": "pin",
+  "lines": "1-32",
+  "claims_removed": 34,
+  "flips": [
+   [
+    "H15",
+    "verified",
+    "unverifiable"
+   ]
+  ],
+  "n_flips": 1,
+  "first_quote": "Every star artifact, one line each. Paths are repo-relative; all verified at\npublication."
+ },
+ {
+  "path": "MODULE_MAP.md",
+  "commit": "pin",
+  "lines": "214-231",
+  "claims_removed": 37,
+  "flips": [
+   [
+    "Q08",
+    "verified",
+    "unverifiable"
+   ]
+  ],
+  "n_flips": 1,
+  "first_quote": "| `modelspec_clauses.json` | 496 KB |"
+ },
+ {
+  "path": "state.json",
+  "commit": "pin",
+  "lines": "3-3",
+  "claims_removed": 1,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "\"closed\": true"
+ },
+ {
+  "path": "L1L2_REVIEW_DISPOSITION.md",
+  "commit": "pin",
+  "lines": "12-12",
+  "claims_removed": 1,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## CoVe results (driver re-derivations; the review is accepted only"
+ },
+ {
+  "path": "ITER2_ATTEMPT3_SCORED.json",
+  "commit": "pin",
+  "lines": "5-5",
+  "claims_removed": 1,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "\"engaged_precision\": 0.4,"
+ },
+ {
+  "path": "state.json",
+  "commit": "pin",
+  "lines": "3-3",
+  "claims_removed": 1,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "\"closed\": true,"
+ },
+ {
+  "path": "state.json",
+  "commit": "pin",
+  "lines": "3-3",
+  "claims_removed": 1,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "\"closed\": true"
+ },
+ {
+  "path": "state.json",
+  "commit": "pin",
+  "lines": "3-3",
+  "claims_removed": 2,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "\"closed\": true,"
+ },
+ {
+  "path": "ITER1_ATTEMPT2_SCORED.json",
+  "commit": "pin",
+  "lines": "166-169",
+  "claims_removed": 2,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "\"attempt1_engaged_precision_transfer_frozen\": 0.4,"
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "280-287",
+  "claims_removed": 2,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "commit 2a81d18c15820bcb1cd3c49ec3061339410b9aae"
+ },
+ {
+  "path": "TRANSLATION_CONTRACT_V2.md",
+  "commit": "365d68b3",
+  "lines": "53-60",
+  "claims_removed": 3,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "Rankings, consequence claims, and definitions with normative force either declare the acts their nor"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "pin",
+  "lines": "71-72",
+  "claims_removed": 3,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0002 — BUDGET RULING (2026-08-24) — [operational; redacted]"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "pin",
+  "lines": "234-235",
+  "claims_removed": 3,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0008 — FINAL-BLOCK BUDGET CHECKPOINT (2026-08-24) — [operational; redacted]"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "pin",
+  "lines": "481-482",
+  "claims_removed": 3,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0021 — ENVELOPE + PLAN-V2 DISPATCH (2026-08-24) — [operational; redacted]"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "pin",
+  "lines": "1-6",
+  "claims_removed": 3,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "# ITERATION NOTES — append-only learning ledger for the calculus loop"
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "9992-9999",
+  "claims_removed": 4,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "commit f6e34e691bba0c3007c6c7ec912f195592612f28"
+ },
+ {
+  "path": "TRANSLATION_CONTRACT_V2.md",
+  "commit": "365d68b3",
+  "lines": "2-11",
+  "claims_removed": 4,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "# (assembles every retrofit lesson of 2026-08-18 into translation-time requirements)"
+ },
+ {
+  "path": "ROUND4_PREREG.md",
+  "commit": "pin",
+  "lines": "12-18",
+  "claims_removed": 4,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## What round 4 certifies The three dev behaviours (helpfulness, harm-avoidance-to-third-parties, av"
+ },
+ {
+  "path": "ITER3_ATTEMPT4_SCORED.json",
+  "commit": "pin",
+  "lines": "2-2",
+  "claims_removed": 4,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "\"_\": \"ITERATION 3 attempt-4 REALIZATION vs ITERATION3_V5_PREDICTION.json."
+ },
+ {
+  "path": "ITER2_ATTEMPT3_SCORED.json",
+  "commit": "pin",
+  "lines": "2-2",
+  "claims_removed": 4,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "ITERATION 2 attempt-3 REALIZATION scored against ITERATION2_V5_PREDICTION.json."
+ },
+ {
+  "path": "ITER1_ATTEMPT2_SCORED.json",
+  "commit": "pin",
+  "lines": "2-2",
+  "claims_removed": 4,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "ITERATION 1 attempt-2 REALIZATION scored against the registered prediction (ITERATION1_V5_PREDICTION"
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "9952-9959",
+  "claims_removed": 4,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "commit e9ac2b15cf35d71417b0e151d33657cd6489b025"
+ },
+ {
+  "path": "TRANSLATION_CONTRACT_V2.md",
+  "commit": "365d68b3",
+  "lines": "182-187",
+  "claims_removed": 4,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 9d. All-truth regression table REQUIRED before any prereg (practice made law, per Matt 2026-08-19"
+ },
+ {
+  "path": "ITER3_ATTEMPT4_SCORED.json",
+  "commit": "pin",
+  "lines": "141-146",
+  "claims_removed": 4,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "\"a1_transfer_frozen\": 0.4"
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "5158-5166",
+  "claims_removed": 5,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "ds7 production graph CERTIFIED (773 nodes, 115 names, 25 enumerated danglings)"
+ },
+ {
+  "path": "L1L2_ADVERSARIAL_REVIEW.md",
+  "commit": "pin",
+  "lines": "215-218",
+  "claims_removed": 5,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "### F22. Panel truth is itself noisy, so the achievable ceiling is below 1.0 and is currently unmeas"
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "9360-9367",
+  "claims_removed": 5,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "HANDOFF entry point updated: iteration 1 complete (found->fixed->predicted->realized, B kept at 0.75"
+ },
+ {
+  "path": "HANDOFF.md",
+  "commit": "pin",
+  "lines": "775-780",
+  "claims_removed": 5,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## ⛔ THE LABEL-FREE LEADS ARE CLOSED (two by proof, a third measured). Read before proposing more sc"
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "6488-6511",
+  "claims_removed": 5,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "commit 9834120a9b60135f39f1294ea5b860940e53f8f2"
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "8559-8565",
+  "claims_removed": 5,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "Arc1-b lane CLOSED (CLEAR-WITH-NITS)"
+ },
+ {
+  "path": "HANDOFF.md",
+  "commit": "pin",
+  "lines": "621-626",
+  "claims_removed": 5,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## THE STRUCTURAL RESULT — the earlier NULL WAS WRONG. Retracted."
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "6590-6606",
+  "claims_removed": 5,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "commit 4be72311e2a74e328e0ec1e62229b2663733d049"
+ },
+ {
+  "path": "HANDOFF.md",
+  "commit": "pin",
+  "lines": "41-46",
+  "claims_removed": 6,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "### The old goal is retired"
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "8481-8488",
+  "claims_removed": 6,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "Arc1-e closed: adversarial verdict CLEAR (round 4)"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "365d68b3",
+  "lines": "360-370",
+  "claims_removed": 6,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0013 — RULING AMENDMENT + MACHINE-PRESCRIBED VENUE, 2026-08-24"
+ },
+ {
+  "path": "NOTICE",
+  "commit": "pin",
+  "lines": "1-7",
+  "claims_removed": 6,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "This directory redistributes data from the ai-character-index project\n(https://github.com/AndresCott"
+ },
+ {
+  "path": "ITER2_REMEASURE_SCORED.json",
+  "commit": "pin",
+  "lines": "58-95",
+  "claims_removed": 6,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "\"engaged_precision\": 0.4"
+ },
+ {
+  "path": "prediction.json",
+  "commit": "pin",
+  "lines": "6-6",
+  "claims_removed": 6,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "the artifact freezes the cuts AT the values the baseline snapshot itself computes under the current "
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "9592-9599",
+  "claims_removed": 6,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "commit 02fc3e0b27f95e6fe4b8ab5f013769ad63e396d4"
+ },
+ {
+  "path": "HANDOFF.md",
+  "commit": "pin",
+  "lines": "1496-1503",
+  "claims_removed": 6,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "Blind two-rater experiment (`audit_*.json`):"
+ },
+ {
+  "path": "L1L2_REVIEW_DISPOSITION.md",
+  "commit": "365d68b3",
+  "lines": "1-11",
+  "claims_removed": 7,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "# DISPOSITION — adversarial review of the L1/L2 licensing experiments (2026-08-25. Matt's question: "
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "1057-1072",
+  "claims_removed": 7,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "OUTSTANDING_WORK: status block; the ladder's measured value now governs the list"
+ },
+ {
+  "path": "HANDOFF.md",
+  "commit": "pin",
+  "lines": "733-737",
+  "claims_removed": 7,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "### Representation capacity is refuted as an information claim"
+ },
+ {
+  "path": "GENERALIZATION_PREREG_DRAFT.md",
+  "commit": "pin",
+  "lines": "1-6",
+  "claims_removed": 7,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "# GENERALIZATION PRE-REGISTRATION — zero-adaptation runs on six never-consulted behaviours (DRAFT, a"
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "9976-9983",
+  "claims_removed": 7,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "commit c7a6b896efad6eda44e6afbbc6ac5f907405acf3"
+ },
+ {
+  "path": "HANDOFF.md",
+  "commit": "pin",
+  "lines": "138-148",
+  "claims_removed": 7,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "The reviewed design portfolio is now **being executed** under the consolidated order"
+ },
+ {
+  "path": "GENERALIZATION_PREREG_DRAFT.md",
+  "commit": "365d68b3",
+  "lines": "1-6",
+  "claims_removed": 7,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "# GENERALIZATION PRE-REGISTRATION — zero-adaptation runs on six never-consulted behaviours (DRAFT, a"
+ },
+ {
+  "path": "HANDOFF.md",
+  "commit": "pin",
+  "lines": "257-270",
+  "claims_removed": 7,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "### Tooling debt, disclosed and carried (all in cycle records, none silently dropped)"
+ },
+ {
+  "path": "RETRANS_REVIEW_DISPOSITION.md",
+  "commit": "pin",
+  "lines": "1-8",
+  "claims_removed": 8,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "# ADVERSARIAL REVIEW DISPOSITION — retranslation integration census (P1/P2)"
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "7987-7995",
+  "claims_removed": 8,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "commit e002b8164a4cd7fc0d019b636fb25997a184024d\nordinal 396\ndate 2026-08-19 14:06:35 -0700\nauthor Ma"
+ },
+ {
+  "path": "HANDOFF.md",
+  "commit": "pin",
+  "lines": "1352-1360",
+  "claims_removed": 8,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## ~~THE RESULT (2026-08-01, first version)~~ — DELETED, IT WAS ALL BUG ARTIFACT"
+ },
+ {
+  "path": "HANDOFF.md",
+  "commit": "pin",
+  "lines": "1380-1387",
+  "claims_removed": 8,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "### ~~Current headline~~ — DELETED (published universe, superseded)"
+ },
+ {
+  "path": "ITER2_REMEASURE_SCORED.json",
+  "commit": "pin",
+  "lines": "187-196",
+  "claims_removed": 8,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "MATT RULING (2026-08-24, post-final, append-only \\u2014 registered numbers above untouched): a node "
+ },
+ {
+  "path": "BLOCK2_TRANSFER_PREDICTIONS.md",
+  "commit": "pin",
+  "lines": "13-31",
+  "claims_removed": 8,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "1. user-autonomy (does comply/respond; protects_concern + party_concern declared)"
+ },
+ {
+  "path": "L1L2_ADVERSARIAL_REVIEW.md",
+  "commit": "pin",
+  "lines": "100-104",
+  "claims_removed": 9,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "### F2. \"Separability\" as implemented is signature UNIQUENESS, which is not the Q-A quantity and is "
+ },
+ {
+  "path": "L1L2_REVIEW_DISPOSITION.md",
+  "commit": "pin",
+  "lines": "1-11",
+  "claims_removed": 9,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "# DISPOSITION — adversarial review of the L1/L2 licensing experiments\n(2026-08-25."
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "163-172",
+  "claims_removed": 9,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "commit 3124ec4aa47e832226f8dde7bdb0f0d42677d0aa ordinal 10 date 2026-08-04 08:25:10 -0700 author Mat"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "365d68b3",
+  "lines": "396-416",
+  "claims_removed": 9,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0015 — QUIESCENCE + RUNBOOK v1, 2026-08-24"
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "10016-10023",
+  "claims_removed": 9,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "commit 6daa3ac65442baaf7a703b4b5211fb0fc8238264"
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "9488-9495",
+  "claims_removed": 10,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "Notes 0010: re-measurement final — move stands 0.875 full-extension; attempts at uniform panel tier "
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "9075-9083",
+  "claims_removed": 10,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "commit 68b3fac32a08c13d920a604e5597b1dfe7c3ccb7"
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "8113-8121",
+  "claims_removed": 10,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "commit e58abe96e2f419b61b2b4aa0f8c69fe055e59938"
+ },
+ {
+  "path": "HANDOFF.md",
+  "commit": "pin",
+  "lines": "301-313",
+  "claims_removed": 10,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "2026-08-03/04 turned the project from \"iterate on a scorer\" into an **iteration\nprocess with instrum"
+ },
+ {
+  "path": "BLOCK2_TRANSFER_PREDICTIONS.md",
+  "commit": "pin",
+  "lines": "32-49",
+  "claims_removed": 10,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "2. proportionate-risk-mitigation (does safe_manner/respond/act_in_world; governs_concern + purpose_c"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "365d68b3",
+  "lines": "438-449",
+  "claims_removed": 10,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0017 — PREDICTION FALSIFIED AT $0 + D-RULINGS EXECUTED, 2026-08-24"
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "8032-8040",
+  "claims_removed": 10,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "commit 5b79f26733fcfd1a68314526ab0f9f83c9db2948"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "365d68b3",
+  "lines": "254-259",
+  "claims_removed": 10,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0008 — FINAL-BLOCK BUDGET CHECKPOINT (Matt, 2026-08-24)"
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "9664-9671",
+  "claims_removed": 10,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "commit e6c0c66767a5174f819a55a461ab2526914ca38c"
+ },
+ {
+  "path": "ROUND4_PREREG.md",
+  "commit": "365d68b3",
+  "lines": "1-11",
+  "claims_removed": 11,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "# ROUND-4 CERTIFICATION PRE-REGISTRATION — RE-ISSUE (signature-ready, 2026-08-24)"
+ },
+ {
+  "path": "GENERALIZATION_PREREG_DRAFT.md",
+  "commit": "pin",
+  "lines": "202-213",
+  "claims_removed": 11,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## ADDENDUM 2 (2026-08-22, draw-machinery correction, append-only)"
+ },
+ {
+  "path": "CYCLE_LOG.jsonl",
+  "commit": "pin",
+  "lines": "4-4",
+  "claims_removed": 11,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "{\"census_consulted\": false, \"census_deltas\": null, \"cycle\": \"patient-backfill-2026-08-04\", \"date\": \""
+ },
+ {
+  "path": "HANDOFF.md",
+  "commit": "pin",
+  "lines": "504-524",
+  "claims_removed": 11,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## ⚠️ MUTATION TESTING IN THIS REPO CAN LIE TO YOU — clear the bytecode cache"
+ },
+ {
+  "path": "CYCLE_LOG.jsonl",
+  "commit": "pin",
+  "lines": "5-5",
+  "claims_removed": 11,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "{\"census_consulted\": false, \"census_deltas\": null, \"cycle\": \"patient-pricing-2026-08-04\", \"date\": \"2"
+ },
+ {
+  "path": "CYCLE_LOG.jsonl",
+  "commit": "pin",
+  "lines": "1-1",
+  "claims_removed": 11,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "{\"census_consulted\": false, \"census_deltas\": null, \"cycle\": \"versioned-cut-2026-08-04\", \"date\": \"202"
+ },
+ {
+  "path": "MODULE_MAP.md",
+  "commit": "365d68b3",
+  "lines": "15-45",
+  "claims_removed": 11,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "Every command in this file assumes you are **in `semi-formal-experiment/`**, invoking the repo venv "
+ },
+ {
+  "path": "L1L2_ADVERSARIAL_REVIEW.md",
+  "commit": "pin",
+  "lines": "329-331",
+  "claims_removed": 11,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "### F34. **Objection withdrawn / good news:** the power problem in F7 is fixable at zero cost."
+ },
+ {
+  "path": "CYCLE_LOG.jsonl",
+  "commit": "pin",
+  "lines": "2-2",
+  "claims_removed": 11,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "{\"census_consulted\": false, \"census_deltas\": null, \"cycle\": \"chain-repair-2026-08-04\", \"date\": \"2026"
+ },
+ {
+  "path": "CYCLE_LOG.jsonl",
+  "commit": "pin",
+  "lines": "3-3",
+  "claims_removed": 11,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "{\"census_consulted\": false, \"census_deltas\": null, \"cycle\": \"decoration-blind-join-2026-08-04\", \"dat"
+ },
+ {
+  "path": "CYCLE_LOG.jsonl",
+  "commit": "pin",
+  "lines": "6-6",
+  "claims_removed": 11,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "{\"census_consulted\": false, \"census_deltas\": null, \"cycle\": \"join-integrity-v2-2026-08-04\", \"date\": "
+ },
+ {
+  "path": "L1L2_ADVERSARIAL_REVIEW.md",
+  "commit": "365d68b3",
+  "lines": "342-352",
+  "claims_removed": 12,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## Updated Part 3 recommendation F17 stands as the single strongest experiment, with these revisions"
+ },
+ {
+  "path": "L1L2_ADVERSARIAL_REVIEW.md",
+  "commit": "pin",
+  "lines": "342-352",
+  "claims_removed": 12,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "F17 stands as the single strongest experiment, with these revisions from the inventory:"
+ },
+ {
+  "path": "MODULE_MAP.md",
+  "commit": "pin",
+  "lines": "15-46",
+  "claims_removed": 12,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "Every command in this file assumes you are **in `semi-formal-experiment/`**, invoking the repo venv "
+ },
+ {
+  "path": "HANDOFF.md",
+  "commit": "pin",
+  "lines": "726-732",
+  "claims_removed": 12,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "### Where the retracted +0.258 came from"
+ },
+ {
+  "path": "RETRANS_REVIEW_DISPOSITION.md",
+  "commit": "pin",
+  "lines": "45-61",
+  "claims_removed": 12,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## Corrected verdicts (what we can honestly claim)"
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "1454-1499",
+  "claims_removed": 12,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "Human vs model judges: the panel was right 4 of 4, and the census side field is wrong"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "pin",
+  "lines": "817-831",
+  "claims_removed": 12,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0041 — INTEGRATION TEST PASSES: THE MID LEVEL, 2026-08-25"
+ },
+ {
+  "path": "L1L2_ADVERSARIAL_REVIEW.md",
+  "commit": "pin",
+  "lines": "319-323",
+  "claims_removed": 12,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "### F32. L1 presupposes the campaign it is supposed to license — only 183 nodes have ever been trans"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "365d68b3",
+  "lines": "492-506",
+  "claims_removed": 13,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0020 — ADVERSARIAL REVIEW OF THE PLAN: BLOCKING, LARGELY UPHELD, 2026-08-24"
+ },
+ {
+  "path": "L1L2_ADVERSARIAL_REVIEW.md",
+  "commit": "pin",
+  "lines": "309-313",
+  "claims_removed": 13,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "### F30. `panel-v5` is a large, pinned, externally-authored truth set that neither L1 nor L2 uses."
+ },
+ {
+  "path": "ITER3_ATTEMPT4_SCORED.json",
+  "commit": "pin",
+  "lines": "189-195",
+  "claims_removed": 13,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "Appended post-scoring, registered numbers above untouched"
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "10080-10087",
+  "claims_removed": 13,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "0041 withdrawn: integration census fails adversarial review (P1/P2 UNSUPPORTED) — CoVe re-derivation"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "365d68b3",
+  "lines": "337-359",
+  "claims_removed": 13,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0012 — ITERATION 3 OPENED: TRIAGE + MINT DESIGN, 2026-08-24"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "pin",
+  "lines": "466-480",
+  "claims_removed": 13,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0020 — ADVERSARIAL REVIEW OF THE PLAN: BLOCKING, LARGELY UPHELD, 2026-08-24"
+ },
+ {
+  "path": "HANDOFF.md",
+  "commit": "pin",
+  "lines": "648-664",
+  "claims_removed": 14,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "### 3. The published test never tested typing — it confounded typing with SET SIZE"
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "1602-1645",
+  "claims_removed": 14,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "walkthrough: close the representation question by measurement"
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "1713-1753",
+  "claims_removed": 14,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "phase_1: four prompt/loop fixes, each from an observed failure"
+ },
+ {
+  "path": "L1L2_ADVERSARIAL_REVIEW.md",
+  "commit": "pin",
+  "lines": "324-328",
+  "claims_removed": 14,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "### F33. Existing gates have already FAILED, and L1/L2 are structured to bypass rather than reconcil"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "pin",
+  "lines": "739-756",
+  "claims_removed": 14,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0037 — ERRATUM #20: CLOSED-VOCABULARY CIRCULARITY (Matt's suspicion, upheld), 2026-08-25"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "365d68b3",
+  "lines": "572-585",
+  "claims_removed": 14,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0025 — ERRATUM #16 (stale reset belief) + CONTINUE RULING, 2026-08-24"
+ },
+ {
+  "path": "HANDOFF.md",
+  "commit": "pin",
+  "lines": "351-362",
+  "claims_removed": 14,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "`annotations_ext_v1_merged.json` (gpt-5.6-luna, 1,442 atoms over 589 clauses,\n590-name vocabulary"
+ },
+ {
+  "path": "HANDOFF.md",
+  "commit": "365d68b3",
+  "lines": "1249-1268",
+  "claims_removed": 15,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "### THE HONEST HEADLINE IS A NULL, AND IT IS STILL INTERESTING"
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "9872-9879",
+  "claims_removed": 15,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "commit 6bb46596bfefec77395ee4184105d0111eb70556"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "365d68b3",
+  "lines": "417-437",
+  "claims_removed": 15,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0016 — ITEMS 1+2 COMPLETE (census extension + frozen transfer predictions), 2026-08-24"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "365d68b3",
+  "lines": "530-544",
+  "claims_removed": 15,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0023 — DISPUTE QUARANTINE CLOSED + BLOCK WRAP, 2026-08-24"
+ },
+ {
+  "path": "ROUND4_PREREG.md",
+  "commit": "365d68b3",
+  "lines": "19-36",
+  "claims_removed": 15,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## Protocol (fixed, instrument-independent — verbatim from the scaffold)"
+ },
+ {
+  "path": "HANDOFF.md",
+  "commit": "pin",
+  "lines": "751-768",
+  "claims_removed": 15,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "### What the deficit actually is"
+ },
+ {
+  "path": "L1L2_ADVERSARIAL_REVIEW.md",
+  "commit": "pin",
+  "lines": "283-291",
+  "claims_removed": 15,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## Corrections to the main review"
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "8949-8957",
+  "claims_removed": 16,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "commit 59ab320275908c153a45df2f808b707a1fa385c3"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "pin",
+  "lines": "624-642",
+  "claims_removed": 16,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0031 — THEORY REVIEW + SPOT-CHECK: BOTH LANDED, MUTUALLY CONFIRMING, 2026-08-24"
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "8095-8103",
+  "claims_removed": 16,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "commit 14495c3b18636d8ba9938b0574e4ade10ff6e4ea"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "365d68b3",
+  "lines": "76-91",
+  "claims_removed": 16,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0002 — BUDGET RULING (Matt, 2026-08-24, transcript->artifact)"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "pin",
+  "lines": "499-513",
+  "claims_removed": 16,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0023 — DISPUTE QUARANTINE CLOSED + BLOCK WRAP, 2026-08-24"
+ },
+ {
+  "path": "TRANSLATION_CONTRACT_V2.md",
+  "commit": "365d68b3",
+  "lines": "194-211",
+  "claims_removed": 16,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 8-ADDENDUM-2 (2026-08-19): the PURPOSE/END slot is REQUIRED — measured basis"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "365d68b3",
+  "lines": "471-491",
+  "claims_removed": 16,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0019 — TRUTH ECONOMICS RULING (Matt) + ERRATUM #15, 2026-08-24"
+ },
+ {
+  "path": "HANDOFF.md",
+  "commit": "365d68b3",
+  "lines": "3-40",
+  "claims_removed": 17,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## ⭐⭐⭐⭐ STATE AS OF 2026-08-06 — THE GOAL IS RESTATED. READ THIS BEFORE ANYTHING ELSE."
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "1322-1366",
+  "claims_removed": 17,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "Adjudication pass: two items, three findings, and a reframe"
+ },
+ {
+  "path": "L1L2_ADVERSARIAL_REVIEW.md",
+  "commit": "pin",
+  "lines": "3-29",
+  "claims_removed": 17,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "- **Reviewer:** clean-context adversarial reviewer, Opus tier, no stake in the project's success. No"
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "592-634",
+  "claims_removed": 18,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "D5 ruled (b-trim/439); S4 review R2 applied; interpretation layer parked"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "365d68b3",
+  "lines": "791-815",
+  "claims_removed": 18,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0038 — QUERY-CLASS ARC CLOSED: THE MEASURED BOUND, 2026-08-25"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "pin",
+  "lines": "713-738",
+  "claims_removed": 18,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0036 — REPRESENTATION PROBES: THE INFORMATION FLOOR, 2026-08-25"
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "103-126",
+  "claims_removed": 18,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "commit 4f44c50471320d218a8d294ba1dd93b47078f177 ordinal 5 date 2026-08-03 20:20:41 -0700 author Matt"
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "78-102",
+  "claims_removed": 18,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "commit ed3cf09301e5b13cf6db8c30bf4a9726b8ea10aa ordinal 4 date 2026-08-03 19:58:03 -0700 author Matt"
+ },
+ {
+  "path": "RETRANS_REVIEW_DISPOSITION.md",
+  "commit": "pin",
+  "lines": "9-26",
+  "claims_removed": 18,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## CoVe re-derivations (driver-run, $0, deterministic)"
+ },
+ {
+  "path": "L1L2_ADVERSARIAL_REVIEW.md",
+  "commit": "pin",
+  "lines": "353-373",
+  "claims_removed": 19,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## REVISED OVERALL VERDICT\n\n**DOES-NOT-LICENSE** — unchanged, and now on firmer ground."
+ },
+ {
+  "path": "RETRANS_REVIEW_DISPOSITION.md",
+  "commit": "pin",
+  "lines": "27-44",
+  "claims_removed": 19,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## Dispositions of the remaining findings"
+ },
+ {
+  "path": "decision.json",
+  "commit": "pin",
+  "lines": "43-43",
+  "claims_removed": 19,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "\"fix_description\": \"PATIENT-AWARE MATCH PRICING v2.0 (spine cycle S3; CYCLE5_DESIGN.md REVISION 2 as"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "pin",
+  "lines": "424-444",
+  "claims_removed": 19,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0018 — USER-AUTONOMY ATTEMPT-1 (PROVISIONAL) + ERRATUM #14, 2026-08-24"
+ },
+ {
+  "path": "HANDOFF.md",
+  "commit": "pin",
+  "lines": "191-217",
+  "claims_removed": 20,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "**S3 is closed and committed** (`091619c`, revert, predictions 19/20 — the one FAIL is the"
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "1563-1601",
+  "claims_removed": 20,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "walkthrough: record session state, adopt surveyed practice, probe deontic representation"
+ },
+ {
+  "path": "HANDOFF.md",
+  "commit": "pin",
+  "lines": "711-725",
+  "claims_removed": 20,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "### The supervised ceiling is ABOVE the judge bar"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "365d68b3",
+  "lines": "687-706",
+  "claims_removed": 20,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0033 — UA ARC (AFK block): MOVE-1 ADOPTED; TARGET MINT CALIBRATED AND HELD, 2026-08-25"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "pin",
+  "lines": "41-70",
+  "claims_removed": 21,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0001 — ITERATION 1, STEP 1 (TRIAGE), 2026-08-24"
+ },
+ {
+  "path": "L1L2_ADVERSARIAL_REVIEW.md",
+  "commit": "365d68b3",
+  "lines": "353-373",
+  "claims_removed": 21,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## REVISED OVERALL VERDICT **DOES-NOT-LICENSE** — unchanged, and now on firmer ground."
+ },
+ {
+  "path": "HANDOFF_CURRENT.md",
+  "commit": "pin",
+  "lines": "110-153",
+  "claims_removed": 21,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "Goal: a validated ASP-translated corpus whose relevance matching runs symbolically (no LLM at query "
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "pin",
+  "lines": "391-411",
+  "claims_removed": 21,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0016 — ITEMS 1+2 COMPLETE (census extension + frozen transfer predictions), 2026-08-24"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "pin",
+  "lines": "483-498",
+  "claims_removed": 22,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0022 — UA GATE: NOT CERTIFIED (one node shy, one direction), 2026-08-24"
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "9352-9359",
+  "claims_removed": 22,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "ITERATION 1 CLOSE (steps 4-5): attempt-2 realization at the full registered venue — engaged precisio"
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "1754-1813",
+  "claims_removed": 22,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "phase_1: the graveyard's persistence layer, and stage 3 plan revision 3"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "365d68b3",
+  "lines": "514-529",
+  "claims_removed": 22,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0022 — UA GATE: NOT CERTIFIED (one node shy, one direction), 2026-08-24"
+ },
+ {
+  "path": "ITER3_ATTEMPT4_SCORED.json",
+  "commit": "pin",
+  "lines": "6-85",
+  "claims_removed": 22,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "\"node\": \"l1707_1973_n037\",\n   \"wave\": \"relevant\""
+ },
+ {
+  "path": "L1L2_ADVERSARIAL_REVIEW.md",
+  "commit": "pin",
+  "lines": "94-99",
+  "claims_removed": 22,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "### F1. L1's relevance clause is ALREADY PASSED by the exact numbers that demolished 0041. Fatal."
+ },
+ {
+  "path": "HANDOFF.md",
+  "commit": "pin",
+  "lines": "149-157",
+  "claims_removed": 23,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "(S1) | KEEP | 4/4 |"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "365d68b3",
+  "lines": "450-470",
+  "claims_removed": 23,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0018 — USER-AUTONOMY ATTEMPT-1 (PROVISIONAL) + ERRATUM #14, 2026-08-24"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "pin",
+  "lines": "205-233",
+  "claims_removed": 23,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0007 — ITERATION 2, STEPS 1-4-PREP, 2026-08-24"
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "2217-2255",
+  "claims_removed": 24,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "Freeze the bad-example-6 re-run BEFORE spending: a rule, a fix, and three arms"
+ },
+ {
+  "path": "HANDOFF_CURRENT.md",
+  "commit": "365d68b3",
+  "lines": "110-154",
+  "claims_removed": 24,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "Goal: a validated ASP-translated corpus whose relevance matching runs symbolically (no LLM at query "
+ },
+ {
+  "path": "HANDOFF.md",
+  "commit": "pin",
+  "lines": "1470-1495",
+  "claims_removed": 24,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## Things that will bite you"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "pin",
+  "lines": "832-865",
+  "claims_removed": 25,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0042 — 0041 WITHDRAWN: THE INTEGRATION CENSUS FAILS ITS ADVERSARIAL REVIEW, 2026-08-25"
+ },
+ {
+  "path": "HANDOFF_CURRENT.md",
+  "commit": "365d68b3",
+  "lines": "1-26",
+  "claims_removed": 25,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "# ⭐⭐ ENTRY POINT (2026-08-25 end; INTEGRATION CLAIMS WITHDRAWN BY REVIEW)"
+ },
+ {
+  "path": "HANDOFF.md",
+  "commit": "pin",
+  "lines": "665-686",
+  "claims_removed": 25,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "### MEASURED: typing's sign differs by behaviour. HYPOTHESISED: base rate explains it."
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "pin",
+  "lines": "73-103",
+  "claims_removed": 25,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0003 — ITERATION 1, STEP 2a (R1 ESCALATION), 2026-08-24"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "365d68b3",
+  "lines": "260-289",
+  "claims_removed": 25,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0009 — ITERATION 2, STEP 4 REALIZATION: STOP CONDITION FIRED, 2026-08-24"
+ },
+ {
+  "path": "HANDOFF_CURRENT.md",
+  "commit": "pin",
+  "lines": "1-26",
+  "claims_removed": 25,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "# ⭐⭐ ENTRY POINT (2026-08-25 end; INTEGRATION CLAIMS WITHDRAWN BY REVIEW)"
+ },
+ {
+  "path": "ROUND4_DEV_TABLE.json",
+  "commit": "pin",
+  "lines": "3-53",
+  "claims_removed": 25,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "\"prec\": 0.625"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "pin",
+  "lines": "514-540",
+  "claims_removed": 26,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0024 — OPTION (a) EXECUTED: UA TRUTH LEDGER v1 + BLOCK CLOSE, 2026-08-24"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "365d68b3",
+  "lines": "586-606",
+  "claims_removed": 26,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0026 — UA ENGAGED-SET TRUTH COMPLETE: EXACT PRECISION 0.262, 2026-08-24"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "pin",
+  "lines": "7-40",
+  "claims_removed": 26,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0000 — SEED: tacit operational knowledge from the 2026-08-24 sessions"
+ },
+ {
+  "path": "L1L2_ADVERSARIAL_REVIEW.md",
+  "commit": "pin",
+  "lines": "294-303",
+  "claims_removed": 26,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "### F28. There are TWO incompatible \"relevance\" truths on disk, and L1 names neither. This is truth-"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "pin",
+  "lines": "178-204",
+  "claims_removed": 27,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0006 — POST-CLOSE: PATH AUDIT + OPUS PARITY CERTIFICATE, 2026-08-24"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "365d68b3",
+  "lines": "198-224",
+  "claims_removed": 27,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0006 — POST-CLOSE: PATH AUDIT + OPUS PARITY CERTIFICATE, 2026-08-24"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "pin",
+  "lines": "266-298",
+  "claims_removed": 27,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0010 — RE-MEASUREMENT FINAL + ITERATION 2 CLOSE, 2026-08-24"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "365d68b3",
+  "lines": "225-253",
+  "claims_removed": 27,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0007 — ITERATION 2, STEPS 1-4-PREP, 2026-08-24"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "pin",
+  "lines": "757-782",
+  "claims_removed": 27,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0038 — QUERY-CLASS ARC CLOSED: THE MEASURED BOUND, 2026-08-25"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "pin",
+  "lines": "554-573",
+  "claims_removed": 27,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0026 — UA ENGAGED-SET TRUTH COMPLETE: EXACT PRECISION 0.262, 2026-08-24"
+ },
+ {
+  "path": "CALCULUS_RUNBOOK.md",
+  "commit": "365d68b3",
+  "lines": "61-120",
+  "claims_removed": 27,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "Rulings/adjudications: LINEAGE_SEAT_INSTRUCTION.md VERBATIM, wave form, fresh seats on the certified"
+ },
+ {
+  "path": "HANDOFF.md",
+  "commit": "365d68b3",
+  "lines": "781-826",
+  "claims_removed": 28,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "### Lead 3 — \"there is unmined MEANING in the document\". Tested 2026-08-06. ⚠️ UNREVIEWED."
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "365d68b3",
+  "lines": "290-322",
+  "claims_removed": 28,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0010 — RE-MEASUREMENT FINAL + ITERATION 2 CLOSE, 2026-08-24"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "365d68b3",
+  "lines": "371-395",
+  "claims_removed": 28,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0014 — ITERATION 3 CLOSE, 2026-08-24"
+ },
+ {
+  "path": "ROUND4_PREREG.md",
+  "commit": "365d68b3",
+  "lines": "105-147",
+  "claims_removed": 28,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "DEFENSIBILITY PASS (Matt's decision, 2026-08-24): round-4 misses receive a pre-declared ONE-PASS bli"
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "5807-5879",
+  "claims_removed": 28,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "commit b79a44d7ad6961191e43a87391fd6367c66d6080\nordinal 228\ndate 2026-08-15 23:17:33 -0700\nauthor Ma"
+ },
+ {
+  "path": "HANDOFF.md",
+  "commit": "pin",
+  "lines": "1095-1131",
+  "claims_removed": 29,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## ⛔ THE CONTRACT-COMPLIANT MODULE IS WORSE THAN THE ONE IT REPLACES"
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "10096-10133",
+  "claims_removed": 29,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "Publication prep: prune superseded evidence with manifest, redact operational plumbing, add reader-f"
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "1646-1712",
+  "claims_removed": 29,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "walkthrough: stage 1 + stage 2 running end to end, with the checks that grade them"
+ },
+ {
+  "path": "HANDOFF.md",
+  "commit": "pin",
+  "lines": "525-547",
+  "claims_removed": 29,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "The **scope problem is solved**"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "365d68b3",
+  "lines": "865-898",
+  "claims_removed": 30,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0042 — 0041 WITHDRAWN: THE INTEGRATION CENSUS FAILS ITS ADVERSARIAL REVIEW, 2026-08-25"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "365d68b3",
+  "lines": "545-571",
+  "claims_removed": 30,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0024 — OPTION (a) EXECUTED: UA TRUTH LEDGER v1 + BLOCK CLOSE, 2026-08-24"
+ },
+ {
+  "path": "L1L2_REVIEW_DISPOSITION.md",
+  "commit": "pin",
+  "lines": "49-87",
+  "claims_removed": 30,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "ACCEPT F17+F18+F19 as the replacement design (the reviewer's A1-A12 dependency chain), with the A13-"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "365d68b3",
+  "lines": "92-122",
+  "claims_removed": 30,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0003 — ITERATION 1, STEP 2a (R1 ESCALATION), 2026-08-24"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "365d68b3",
+  "lines": "7-45",
+  "claims_removed": 32,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0000 — SEED: tacit operational knowledge from the 2026-08-24 sessions"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "365d68b3",
+  "lines": "123-159",
+  "claims_removed": 33,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0004 — ITERATION 1, STEPS 2b-3 (C-D MOVE + V1-V4) and STEP-4 PREP, 2026-08-24"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "pin",
+  "lines": "346-369",
+  "claims_removed": 33,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0014 — ITERATION 3 CLOSE, 2026-08-24"
+ },
+ {
+  "path": "CALCULUS_RUNBOOK.md",
+  "commit": "pin",
+  "lines": "61-120",
+  "claims_removed": 33,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "Rulings/adjudications: LINEAGE_SEAT_INSTRUCTION.md VERBATIM, wave\n    form, fresh seats on the certi"
+ },
+ {
+  "path": "HANDOFF.md",
+  "commit": "pin",
+  "lines": "1278-1299",
+  "claims_removed": 33,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## Module state — all green, 1113 tests (2026-08-02)"
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "45-77",
+  "claims_removed": 33,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "commit baa962d2fb31afdbfdb787dc75c9d0ab59774220 ordinal 3 date 2026-08-03 19:50:36 -0700 author Matt"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "365d68b3",
+  "lines": "707-731",
+  "claims_removed": 34,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0034 — AFK BLOCK CLOSE, 2026-08-25"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "pin",
+  "lines": "104-140",
+  "claims_removed": 36,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0004 — ITERATION 1, STEPS 2b-3 (C-D MOVE + V1-V4) and STEP-4 PREP, 2026-08-24"
+ },
+ {
+  "path": "CALCULUS_RUNBOOK.md",
+  "commit": "pin",
+  "lines": "1-60",
+  "claims_removed": 37,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "# CALCULUS RUNBOOK v1 — agent-facing: take a failure batch through the loop"
+ },
+ {
+  "path": "prediction.json",
+  "commit": "pin",
+  "lines": "2-9",
+  "claims_removed": 38,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "Design §2b claimed only ONE quote under 25 normalized chars"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "pin",
+  "lines": "673-697",
+  "claims_removed": 38,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0034 — AUTONOMOUS BLOCK CLOSE, 2026-08-25"
+ },
+ {
+  "path": "ROUND4_PREREG.md",
+  "commit": "365d68b3",
+  "lines": "149-208",
+  "claims_removed": 40,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "E1 — CANARY ATTEMPT 1 VOIDED (protocol event; Matt: \"Do it\" on option A)."
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "365d68b3",
+  "lines": "160-197",
+  "claims_removed": 41,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0005 — ITERATION 1, STEPS 4-5 (REALIZATION + CLOSE), 2026-08-24"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "365d68b3",
+  "lines": "899-940",
+  "claims_removed": 41,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0043 — L1/L2 THEMSELVES FAIL REVIEW: DOES-NOT-LICENSE, 2026-08-25"
+ },
+ {
+  "path": "HANDOFF_CURRENT.md",
+  "commit": "pin",
+  "lines": "80-109",
+  "claims_removed": 42,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## What happened after the first version of this handoff (all committed/pushed)"
+ },
+ {
+  "path": "git_log_first_parent.txt",
+  "commit": "generate",
+  "lines": "2256-2309",
+  "claims_removed": 43,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "stage 3: enumerate, mutate, label — and the two places the plan could not be executed"
+ },
+ {
+  "path": "ITERATION_NOTES.md",
+  "commit": "pin",
+  "lines": "141-177",
+  "claims_removed": 43,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## 0005 — ITERATION 1, STEPS 4-5 (REALIZATION + CLOSE), 2026-08-24"
+ },
+ {
+  "path": "HANDOFF_CURRENT.md",
+  "commit": "365d68b3",
+  "lines": "80-109",
+  "claims_removed": 44,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "DEFINITIONAL LANE ADOPTED: +8 TP (104/74/183), sole FP adjudicated defensible."
+ },
+ {
+  "path": "HANDOFF.md",
+  "commit": "pin",
+  "lines": "1300-1338",
+  "claims_removed": 45,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## Key numbers (all measured, not estimated)"
+ },
+ {
+  "path": "HANDOFF.md",
+  "commit": "pin",
+  "lines": "446-503",
+  "claims_removed": 45,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "### What this supersedes below (each site is also marked in place)"
+ },
+ {
+  "path": "HANDOFF_CURRENT.md",
+  "commit": "365d68b3",
+  "lines": "164-221",
+  "claims_removed": 45,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## CAMPAIGN START — the 10-hour push to certifiable, publishable data (2026-08-21, Matt-approved)"
+ },
+ {
+  "path": "L1L2_REVIEW_DISPOSITION.md",
+  "commit": "pin",
+  "lines": "13-48",
+  "claims_removed": 49,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "helpfulness 477/0.560"
+ },
+ {
+  "path": "ROUND4_PREREG.md",
+  "commit": "pin",
+  "lines": "149-208",
+  "claims_removed": 51,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## session before taking effect)"
+ },
+ {
+  "path": "HANDOFF_CURRENT.md",
+  "commit": "pin",
+  "lines": "163-219",
+  "claims_removed": 58,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "## CAMPAIGN START — the 10-hour push to certifiable, publishable data (2026-08-21, approved)"
+ },
+ {
+  "path": "decision.json",
+  "commit": "pin",
+  "lines": "11-44",
+  "claims_removed": 75,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": " \"gate\": {\n  \"closure_checked\": [\n   \"behavior_atoms_audit_v1.json\",\n   \"behaviours_query.json\",\n   "
+ },
+ {
+  "path": "PRUNED.md",
+  "commit": "pin",
+  "lines": "61-120",
+  "claims_removed": 141,
+  "flips": [],
+  "n_flips": 0,
+  "first_quote": "| walkthrough/paper_pipeline/phase_1/resolve_runs/graph_v2/runs/ds7/c1 | 6b243e172f68401379739e0adf2"
+ }
+]

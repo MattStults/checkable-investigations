@@ -304,15 +304,37 @@ def H15(claims):
     return ("unverifiable" if not rows else "live_run_pending"), f"{len(rows)} routing-table entries translated; path existence is a filesystem check", [c["id"] for c in rows][:5]
 HYP = {"H01": H01, "H02": H02, "H03": H03, "H04": H04, "H05": H05, "H06": H06, "H07": H07, "H08": H08, "H09": H09, "H10": H10, "H11": H11, "H12": H12, "H13": H13, "H14": H14, "H15": H15}
 
-def main():
-    ap = argparse.ArgumentParser(); ap.add_argument("--ledger", default=os.path.join(X, "ledger/claims.jsonl")); ap.add_argument("--out", default=os.path.join(HERE, "query_results.json")); ap.add_argument("--inventory", default=os.path.join(X, "claim_inventory/inventory.json"))
-    a = ap.parse_args()
-    claims = [json.loads(l) for l in open(a.ledger) if l.strip()]
-    inv = json.load(open(a.inventory))
-    # Bind each spec's target value to the inventory (D-10): the spec table holds matching rules
-    # (metric/scope/quote patterns, tolerance); the README value itself comes from the inventory,
-    # so a changed README flows through. Binding: the frozen inventory key whose value equals the
-    # spec's literal; the literal in a quote regex is re-templated to the bound value.
+def evaluate(claims, inv, live):
+    """Decide every inventory item over a claim list. Pure: no file IO, no printing."""
+    res = {}
+    for c in inv["claims"]:
+        spec = Q.get(c["id"])
+        r = decide_q(c["id"], spec, claims) if spec else {"state": "unverifiable", "derivation": "no query spec", "claims": []}
+        if r["state"] == "live_run_pending" and c["id"] in live: r = live[c["id"]]
+        res[c["id"]] = r
+    for h in inv["hypotheses"]:
+        fn = HYP.get(h["id"])
+        if fn:
+            st, d, ids = fn(claims); res[h["id"]] = {"state": st, "derivation": d, "claims": ids}
+            if st == "live_run_pending" and h["id"] in live: res[h["id"]] = live[h["id"]]
+        else:
+            res[h["id"]] = {"state": "unverifiable", "derivation": "no hypothesis function", "claims": []}
+    for v in inv["verdict_nodes"]:
+        provs = [p.split(" ")[0].split("/")[0] for p in v["providers"]]
+        states = [res.get(p, {}).get("state") for p in provs if p in res]
+        missing = [p for p in provs if p not in res]  # e.g. residue items (R..) that no query evaluates: a dangling need
+        if not provs: st = "dangling"
+        elif missing and all(s == "verified" for s in states): st = "contested"
+        elif all(s == "verified" for s in states): st = "verified"
+        elif any(s == "contradicted" for s in states): st = "contradicted"
+        elif any(s in ("contested",) for s in states): st = "contested"
+        elif any(s == "live_run_pending" for s in states): st = "live_run_pending"
+        else: st = "unverifiable"
+        res[v["id"]] = {"state": st, "derivation": f"providers {provs} → {states}" + (f"; unevaluated providers (dangling need): {missing}" if missing else ""), "claims": []}
+    return res
+
+def bind_values(inv):
+    """D-10: bind each spec's target value to the inventory key holding the frozen literal."""
     frozen = json.load(open(os.path.join(X, "claim_inventory/inventory.json")))
     fvals = {c["id"]: c.get("values", {}) for c in frozen["claims"]}; ivals = {c["id"]: c.get("values", {}) for c in inv["claims"]}
     bindings = {}
@@ -326,34 +348,17 @@ def main():
         spec = dict(spec); spec["value"] = nv
         if "quote" in spec: spec["quote"] = spec["quote"].replace(str(v), str(nv))
         Q[qid] = spec; bindings[qid] = (keys[0], v, nv)
-    rebound = {k: b for k, b in bindings.items() if b[1] != b[2]}
+    return {k: b for k, b in bindings.items() if b[1] != b[2]}
+
+def main():
+    ap = argparse.ArgumentParser(); ap.add_argument("--ledger", default=os.path.join(X, "ledger/claims.jsonl")); ap.add_argument("--out", default=os.path.join(HERE, "query_results.json")); ap.add_argument("--inventory", default=os.path.join(X, "claim_inventory/inventory.json"))
+    a = ap.parse_args()
+    claims = [json.loads(l) for l in open(a.ledger) if l.strip()]
+    inv = json.load(open(a.inventory))
+    rebound = bind_values(inv)
     if rebound: print("value bindings changed by the inventory:", rebound)
     live = json.load(open(os.path.join(HERE, "live_runs.json"))) if os.path.exists(os.path.join(HERE, "live_runs.json")) else {}
-    res = {}
-    for c in inv["claims"]:
-        spec = Q.get(c["id"])
-        r = decide_q(c["id"], spec, claims) if spec else {"state": "unverifiable", "derivation": "no query spec", "claims": []}
-        if r["state"] == "live_run_pending" and c["id"] in live: r = live[c["id"]]
-        res[c["id"]] = r
-    for h in inv["hypotheses"]:
-        fn = HYP.get(h["id"])
-        if fn:
-            st, d, ids = fn(claims); res[h["id"]] = {"state": st, "derivation": d, "claims": ids}
-            if st == "live_run_pending" and h["id"] in live: res[h["id"]] = live[h["id"]]
-        else:
-            res[h["id"]] = {"state": "unverifiable", "derivation": "no hypothesis function (H04: seat inputs not translated as a dimension)", "claims": []}
-    for v in inv["verdict_nodes"]:
-        provs = [p.split(" ")[0].split("/")[0] for p in v["providers"]]
-        states = [res.get(p, {}).get("state") for p in provs if p in res]
-        missing = [p for p in provs if p not in res]  # e.g. residue items (R..) that no query evaluates: a dangling need
-        if not provs: st = "dangling"
-        elif missing and all(s == "verified" for s in states): st = "contested"
-        elif all(s == "verified" for s in states): st = "verified"
-        elif any(s == "contradicted" for s in states): st = "contradicted"
-        elif any(s in ("contested",) for s in states): st = "contested"
-        elif any(s == "live_run_pending" for s in states): st = "live_run_pending"
-        else: st = "unverifiable"
-        res[v["id"]] = {"state": st, "derivation": f"providers {provs} → {states}" + (f"; unevaluated providers (dangling need): {missing}" if missing else ""), "claims": []}
+    res = evaluate(claims, inv, live)
     json.dump(res, open(a.out, "w"), indent=1)
     from collections import Counter
     for grp, ids in (("Q", [c["id"] for c in inv["claims"]]), ("H", [h["id"] for h in inv["hypotheses"]]), ("V", [v["id"] for v in inv["verdict_nodes"]])):

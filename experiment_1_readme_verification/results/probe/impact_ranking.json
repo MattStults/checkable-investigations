@@ -1,0 +1,2260 @@
+[
+ {
+  "metric": "mcc",
+  "value": "+0.278",
+  "carriers": 2,
+  "sources": [
+   "HANDOFF.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [
+   [
+    "Q13",
+    "verified",
+    "contradicted"
+   ],
+   [
+    "V04",
+    "verified",
+    "contradicted"
+   ]
+  ],
+  "n_flips": 2,
+  "example_quote": "+0.278, best compliant config +0.316, judge mean +0.555, and the cross-judge arm (+0.404) bounds"
+ },
+ {
+  "metric": "mcc",
+  "value": "+0.320",
+  "carriers": 2,
+  "sources": [
+   "HANDOFF.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [
+   [
+    "Q12",
+    "verified",
+    "contradicted"
+   ],
+   [
+    "V04",
+    "verified",
+    "contradicted"
+   ]
+  ],
+  "n_flips": 2,
+  "example_quote": "On the true universe: tool @0.18 +0.320, judges +0.555."
+ },
+ {
+  "metric": "declined nodes panel relevant",
+  "value": "0.575",
+  "carriers": 3,
+  "sources": [
+   "ITERATION_NOTES.md",
+   "git_log_first_parent.txt"
+  ],
+  "tiers": [
+   "panel",
+   "stated"
+  ],
+  "stated_only": false,
+  "flips": [
+   [
+    "Q17",
+    "verified",
+    "contradicted"
+   ],
+   [
+    "V09",
+    "verified",
+    "contradicted"
+   ]
+  ],
+  "n_flips": 2,
+  "example_quote": "THE HONEST HEADLINE IS RECALL, NOT PRECISION: 23/40 pooled declined nodes are panel-relevant."
+ },
+ {
+  "metric": "ci trigger",
+  "value": "push: { branches: [main] }  pull_request: {}",
+  "carriers": 1,
+  "sources": [
+   "ci.yml"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [
+   [
+    "Q34",
+    "contradicted",
+    "unverifiable"
+   ]
+  ],
+  "n_flips": 1,
+  "example_quote": "on:\n  push: { branches: [main] }\n  pull_request: {}"
+ },
+ {
+  "metric": "clause inventory",
+  "value": "616",
+  "carriers": 1,
+  "sources": [
+   "MODULE_MAP.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [
+   [
+    "Q08",
+    "verified",
+    "unverifiable"
+   ]
+  ],
+  "n_flips": 1,
+  "example_quote": "**live for swappability** — 616 clauses, same schema, loads today"
+ },
+ {
+  "metric": "asp fragment rule count",
+  "value": "16",
+  "carriers": 1,
+  "sources": [
+   "adversarial_review_1.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [
+   [
+    "Q09",
+    "verified",
+    "contradicted"
+   ]
+  ],
+  "n_flips": 1,
+  "example_quote": "is actually 16 rules** (16 norm IDs / source facts)"
+ },
+ {
+  "metric": "coverage",
+  "value": "1.0",
+  "carriers": 6,
+  "sources": [
+   "GENERALIZATION_PREREG_DRAFT.md",
+   "HANDOFF_CURRENT.md",
+   "ITERATION_NOTES.md",
+   "git_log_first_parent.txt"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "What survives 0041 honestly: blind five-field coverage 39/39 with zero new coinages (form-completeness)"
+ },
+ {
+  "metric": "engaged precision",
+  "value": "0.45",
+  "carriers": 4,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "corrected said 0.45"
+ },
+ {
+  "metric": "passage",
+  "value": "589",
+  "carriers": 4,
+  "sources": [
+   "L1L2_ADVERSARIAL_REVIEW.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "panel-v5 (589 passages × 9 behaviours) as a pre-registered replication tier after a committed join audit."
+ },
+ {
+  "metric": "review findings",
+  "value": "1",
+  "carriers": 4,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "1 sub-claim rejected with the existing mechanism cited (UA_PLAN_REVIEW_DISPOSITION.md)"
+ },
+ {
+  "metric": "passages",
+  "value": "589",
+  "carriers": 4,
+  "sources": [
+   "HANDOFF.md",
+   "L1L2_REVIEW_DISPOSITION.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "(b) 589 passages is thin for LSA, so arm A's null is confounded with power"
+ },
+ {
+  "metric": "node count",
+  "value": "773",
+  "carriers": 4,
+  "sources": [
+   "L1L2_ADVERSARIAL_REVIEW.md",
+   "L1L2_REVIEW_DISPOSITION.md",
+   "PRUNED.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "coverage_translated.json translated_nodes = 183 (of 773)"
+ },
+ {
+  "metric": "criterion standing",
+  "value": "0.94-0.96",
+  "carriers": 4,
+  "sources": [
+   "HANDOFF_CURRENT.md",
+   "ROUND4_PREREG.md",
+   "git_log_first_parent.txt"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "This is what converts 0.94-0.96 in-sample into the certified claim."
+ },
+ {
+  "metric": "review findings",
+  "value": "8",
+  "carriers": 4,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "Clean-context Opus review returned 8 findings"
+ },
+ {
+  "metric": "new coinages",
+  "value": "0",
+  "carriers": 3,
+  "sources": [
+   "HANDOFF_CURRENT.md",
+   "ITERATION_NOTES.md",
+   "RETRANS_REVIEW_DISPOSITION.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "zero new coinages (form-completeness)"
+ },
+ {
+  "metric": "walled nodes ruled relevant",
+  "value": "0.0",
+  "carriers": 3,
+  "sources": [
+   "ITERATION_NOTES.md",
+   "git_log_first_parent.txt"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "zero of the 48 walled nodes were ruled relevant anywhere in the fresh draw"
+ },
+ {
+  "metric": "coverage",
+  "value": "0.67",
+  "carriers": 3,
+  "sources": [
+   "ITERATION_NOTES.md",
+   "L1L2_ADVERSARIAL_REVIEW.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "TP-side coverage FAILS the gate: 0.67 vs >=0.70"
+ },
+ {
+  "metric": "criterion standing",
+  "value": "0.96",
+  "carriers": 2,
+  "sources": [
+   "HANDOFF_CURRENT.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "help 0.960 under match-or-adjudicated-defensible"
+ },
+ {
+  "metric": "annotation packet definitions",
+  "value": "100",
+  "carriers": 2,
+  "sources": [
+   "git_log_first_parent.txt"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "the 100-definition annotation packet"
+ },
+ {
+  "metric": "nodes",
+  "value": "773",
+  "carriers": 2,
+  "sources": [
+   "L1L2_REVIEW_DISPOSITION.md",
+   "git_log_first_parent.txt"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "extrapolate cost/reliability to 773)"
+ },
+ {
+  "metric": "out of corpus behaviour definitions",
+  "value": ">=10",
+  "carriers": 2,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": ">=10 out-of-corpus behaviour definitions"
+ },
+ {
+  "metric": "cells act wins",
+  "value": "1.0",
+  "carriers": 2,
+  "sources": [
+   "HANDOFF.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "| size-matched random subset | **15 / 15 cells** | **+0.091** (sign test p = 3e-5) |"
+ },
+ {
+  "metric": "relevance ledgers",
+  "value": "3",
+  "carriers": 2,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "THREE incompatible relevance ledgers"
+ },
+ {
+  "metric": "join rate recall ceiling measure join py",
+  "value": "0.9838",
+  "carriers": 2,
+  "sources": [
+   "HANDOFF.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "| `measure_join.py` | me | the recall ceiling: 849/863 overall, 110/112 at score ≥5, 313/313 example blocks. **Gates every benchmark number*"
+ },
+ {
+  "metric": "separability",
+  "value": "0.94",
+  "carriers": 2,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "FINAL: separability 94/100 both seats identically"
+ },
+ {
+  "metric": "criterion standing",
+  "value": "0.953",
+  "carriers": 2,
+  "sources": [
+   "HANDOFF_CURRENT.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "harm 0.953"
+ },
+ {
+  "metric": "engaged precision",
+  "value": "0.2623",
+  "carriers": 2,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "THE NUMBER: visible engaged precision is EXACTLY 32/122 = 0.262"
+ },
+ {
+  "metric": "ledger agreement",
+  "value": "0.7",
+  "carriers": 2,
+  "sources": [
+   "ROUND4_PREREG.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "The pilot gate FAILED (T 0.75 / C 0.70 — format hypothesis refuted)"
+ },
+ {
+  "metric": "engaged precision",
+  "value": "0.1566",
+  "carriers": 2,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "visible engaged precision-so-far 13/83 = 0.16"
+ },
+ {
+  "metric": "ledger agreement",
+  "value": "0.75",
+  "carriers": 2,
+  "sources": [
+   "ROUND4_PREREG.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "The pilot gate FAILED (T 0.75 / C 0.70 — format hypothesis refuted)"
+ },
+ {
+  "metric": "coverage",
+  "value": "0.7",
+  "carriers": 2,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "0.67 vs >=0.70"
+ },
+ {
+  "metric": "definitions",
+  "value": "100",
+  "carriers": 2,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "QUERY-CLASS STUDY: 100-def corpus built (exemplary Opus coordinator run)"
+ },
+ {
+  "metric": "fix ledger class",
+  "value": "EXPECTED",
+  "carriers": 2,
+  "sources": [
+   "BLOCK2_TRANSFER_PREDICTIONS.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "Fix-ledger class: EXPECTED."
+ },
+ {
+  "metric": "review finding",
+  "value": "UNSOUND",
+  "carriers": 2,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "my parity-key design was UNSOUND (single Fable seat as key — the exact single-wave noise the memoization rule itself names)"
+ },
+ {
+  "metric": "criterion standing",
+  "value": "0.941",
+  "carriers": 2,
+  "sources": [
+   "HANDOFF_CURRENT.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "CRITERION STANDING (in-sample, all-truth): caution 0.941"
+ },
+ {
+  "metric": "engaged precision",
+  "value": "0.262",
+  "carriers": 2,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "EXACT PRECISION 0.262"
+ },
+ {
+  "metric": "classification audit passes",
+  "value": "~6",
+  "carriers": 2,
+  "sources": [
+   "HANDOFF.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "Model Spec corpus was retrofitted at the cost of ~6 classification/audit"
+ },
+ {
+  "metric": "review finding",
+  "value": "the held-out seal requirement",
+  "carriers": 2,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "the held-out seal requirement (tuning against a fully visible key is Goodhart bait the anti-cheat perimeter already names)"
+ },
+ {
+  "metric": "baseline commit",
+  "value": "5cc216272042942d0ba51966070168fddeb53d25",
+  "carriers": 2,
+  "sources": [
+   "HANDOFF_CURRENT.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "BASELINE COMMIT for review: 5cc216272042942d0ba51966070168fddeb53d25"
+ },
+ {
+  "metric": "seat rulings",
+  "value": "120",
+  "carriers": 2,
+  "sources": [
+   "ROUND4_PREREG.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "The helpfulness canary's 120 seat rulings (raw file round4_helpfulness_rulings_raw.json, preserved) are VOID as a certification measurement"
+ },
+ {
+  "metric": "f1",
+  "value": "0.57",
+  "carriers": 2,
+  "sources": [
+   "HANDOFF.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "helpfulness F1 FIRED at 0.57"
+ },
+ {
+  "metric": "ruled ledger overlaps",
+  "value": "5",
+  "carriers": 2,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "5 ruled-ledger overlaps (fresh rulings anyway)"
+ },
+ {
+  "metric": "round 2 verdict",
+  "value": "caution F1-by-2",
+  "carriers": 1,
+  "sources": [
+   "ROUND4_PREREG.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "round-2 (help PASSED, harm F1, caution F1-by-2, all fixed)"
+ },
+ {
+  "metric": "withdrawn declarations",
+  "value": "3",
+  "carriers": 1,
+  "sources": [
+   "HANDOFF.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "revert withdraws the three"
+ },
+ {
+  "metric": "universe size",
+  "value": "589",
+  "carriers": 1,
+  "sources": [
+   "HANDOFF.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "589-passage universe"
+ },
+ {
+  "metric": "bad spans",
+  "value": "0.0",
+  "carriers": 1,
+  "sources": [
+   "ARTIFACTS.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "773 nodes, zero bad spans of 846"
+ },
+ {
+  "metric": "cells",
+  "value": "15",
+  "carriers": 1,
+  "sources": [
+   "HANDOFF.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "it yields the **identical** prediction set to `any_atom` on the act-only subquery in all 15 cells."
+ },
+ {
+  "metric": "tool panel agreement count among flips",
+  "value": "2",
+  "carriers": 1,
+  "sources": [
+   "git_log_first_parent.txt"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "2 of them tool-panel agreements"
+ },
+ {
+  "metric": "p value",
+  "value": "0.0005",
+  "carriers": 1,
+  "sources": [
+   "HANDOFF.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "beats > bag-of-words by +0.12 (p=0.0005, 9/9 behaviours)"
+ },
+ {
+  "metric": "corpus size definitions",
+  "value": "100",
+  "carriers": 1,
+  "sources": [
+   "git_log_first_parent.txt"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "100-def corpus w/ provenance"
+ },
+ {
+  "metric": "reason criticality essential rate",
+  "value": "0.9667",
+  "carriers": 1,
+  "sources": [
+   "git_log_first_parent.txt"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "quality 29/30 essential"
+ },
+ {
+  "metric": "commits shipped red unverified",
+  "value": "2",
+  "carriers": 1,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "two commits today shipped with a red/unverified state (docs-test red; widget patch unapplied)"
+ },
+ {
+  "metric": "round 2 verdict",
+  "value": "harm F1",
+  "carriers": 1,
+  "sources": [
+   "ROUND4_PREREG.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "round-2 (help PASSED, harm F1, caution F1-by-2, all fixed)"
+ },
+ {
+  "metric": "decline correctness match or defensible headline",
+  "value": "0.975",
+  "carriers": 1,
+  "sources": [
+   "git_log_first_parent.txt"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "0.975 decline"
+ },
+ {
+  "metric": "reasons the first a b was invalid",
+  "value": "2",
+  "carriers": 1,
+  "sources": [
+   "git_log_first_parent.txt"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "was written up as invalid for two\nreasons"
+ },
+ {
+  "metric": "review finding",
+  "value": "the clause-(a)/(c) scoring holes; the moving-boundary correction",
+  "carriers": 1,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "the clause-(a)/(c) scoring holes; the moving-boundary correction."
+ },
+ {
+  "metric": "mcc",
+  "value": "+0.12",
+  "carriers": 1,
+  "sources": [
+   "HANDOFF.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "> **A zero-parameter structural query reaches PARITY with a fitted bag scorer and beats > bag-of-words by +0.12 (p=0.0005, 9/9 behaviours).*"
+ },
+ {
+  "metric": "judge mcc leave one out",
+  "value": "+0.555",
+  "carriers": 1,
+  "sources": [
+   "HANDOFF.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "+0.278, best compliant config +0.316, judge mean +0.555, and the cross-judge arm (+0.404) bounds"
+ },
+ {
+  "metric": "engaged precision",
+  "value": "0",
+  "carriers": 1,
+  "sources": [
+   "GENERALIZATION_PREREG_DRAFT.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "objectivity: 0 engaged"
+ },
+ {
+  "metric": "ledger agreement threshold",
+  "value": "0.8",
+  "carriers": 1,
+  "sources": [
+   "ROUND4_PREREG.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "C-format ledger-agreement >= 0.80"
+ },
+ {
+  "metric": "attempt 1 corrected cells",
+  "value": "0.45/0.80",
+  "carriers": 1,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "attempt-1 corrected = 0.45/0.80"
+ },
+ {
+  "metric": "nodes ruled per wave seat",
+  "value": "40",
+  "carriers": 1,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "WAVE SEAT ECONOMICS: one lineage-brief wave seat rules 40 nodes for ~35-70k raw tokens; cache reads bill 0.10x."
+ },
+ {
+  "metric": "lkif core forks with no commits",
+  "value": "0.8125",
+  "carriers": 1,
+  "sources": [
+   "git_log_first_parent.txt"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "39 of 48 forks have no commits"
+ },
+ {
+  "metric": "actless modules reachable",
+  "value": "0.9337",
+  "carriers": 1,
+  "sources": [
+   "TRANSLATION_CONTRACT_V2.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "169/181 actless Model Spec modules reachable"
+ },
+ {
+  "metric": "separability",
+  "value": "1.00",
+  "carriers": 1,
+  "sources": [
+   "L1L2_ADVERSARIAL_REVIEW.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "Pushing sep→1.00 is the failure mode, not the goal."
+ },
+ {
+  "metric": "locator universe size",
+  "value": "589",
+  "carriers": 1,
+  "sources": [
+   "prediction.json"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "On the TRUE 589-locator universe"
+ },
+ {
+  "metric": "cells scoring exactly 0 000",
+  "value": "0.2222",
+  "carriers": 1,
+  "sources": [
+   "HANDOFF.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "a **fixed 0.5 cut** on a 4–27% base rate (two of nine cells scored exactly +0.000 — the classifier predicted nothing, which is calibration, "
+ },
+ {
+  "metric": "cells act wins",
+  "value": "0.9333",
+  "carriers": 1,
+  "sources": [
+   "HANDOFF.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "| df-matched subset | 14 / 15 cells | +0.066 |"
+ },
+ {
+  "metric": "judge mcc",
+  "value": "0.555",
+  "carriers": 1,
+  "sources": [
+   "HANDOFF.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "| judges (mean) | +0.555 | [+0.516, +0.593] |"
+ },
+ {
+  "metric": "panel internal agreement",
+  "value": "0.85",
+  "carriers": 1,
+  "sources": [
+   "L1L2_ADVERSARIAL_REVIEW.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "If panel-internal agreement is, say, 0.85, a representation at 0.83 is functionally perfect but reads as a fail against any absolute bar."
+ },
+ {
+  "metric": "base rate",
+  "value": "0.74",
+  "carriers": 1,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "CV ceiling 0.76 vs 0.74 base"
+ },
+ {
+  "metric": "cells",
+  "value": "9",
+  "carriers": 1,
+  "sources": [
+   "HANDOFF.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "True 589 universe, 9 cells, 5-fold OOF, threshold chosen on training folds only:"
+ },
+ {
+  "metric": "join re run universe size",
+  "value": "589",
+  "carriers": 1,
+  "sources": [
+   "git_log_first_parent.txt"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "Grounded designs: join re-run over 589 universe,"
+ },
+ {
+  "metric": "engaged precision b",
+  "value": "0.4",
+  "carriers": 1,
+  "sources": [
+   "git_log_first_parent.txt"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "0.40"
+ },
+ {
+  "metric": "inter judge cohen kappa",
+  "value": "0.5",
+  "carriers": 1,
+  "sources": [
+   "git_log_first_parent.txt"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "0.50 across the three behaviours"
+ },
+ {
+  "metric": "blocking reasons for decisive experiments",
+  "value": "one needs spend, one is a one-way door",
+  "carriers": 1,
+  "sources": [
+   "git_log_first_parent.txt"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "one needs spend, one is a one-way door"
+ },
+ {
+  "metric": "definition",
+  "value": "100",
+  "carriers": 1,
+  "sources": [
+   "RETRANS_REVIEW_DISPOSITION.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "both scored behaviours are inside the 100-definition corpus"
+ },
+ {
+  "metric": "upstream commit of the redistributed data",
+  "value": "ef08e676",
+  "carriers": 1,
+  "sources": [
+   "NOTICE"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "commit ef08e676"
+ },
+ {
+  "metric": "coded definitions",
+  "value": "100",
+  "carriers": 1,
+  "sources": [
+   "L1L2_REVIEW_DISPOSITION.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "each fire once across the 100 coded definitions"
+ },
+ {
+  "metric": "join rate recall ceiling measure join py",
+  "value": "98.4%",
+  "carriers": 1,
+  "sources": [
+   "HANDOFF.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "| all | 849 | 863 | 98.4% |"
+ },
+ {
+  "metric": "separability",
+  "value": "12",
+  "carriers": 1,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "all 12 are SEPARABLE in both views"
+ },
+ {
+  "metric": "dev cells",
+  "value": "3",
+  "carriers": 1,
+  "sources": [
+   "HANDOFF.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "a DEV/TEST split (3 frontier Model-Spec\ncells = DEV;"
+ },
+ {
+  "metric": "query class definition corpus size",
+  "value": "100",
+  "carriers": 1,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "100-def corpus built"
+ },
+ {
+  "metric": "separability",
+  "value": "0.3",
+  "carriers": 1,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "(0.20 <= 0.30)"
+ },
+ {
+  "metric": "h006 panel agreement",
+  "value": "0.8333",
+  "carriers": 1,
+  "sources": [
+   "git_log_first_parent.txt"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "agreeing with the panel at\n5/6"
+ },
+ {
+  "metric": "n a",
+  "value": "a REAL brief-local permissiveness bias, not noise",
+  "carriers": 1,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "the divergence is a REAL brief-local permissiveness bias, not noise"
+ },
+ {
+  "metric": "process rules",
+  "value": "4",
+  "carriers": 1,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "the review+CoVe cycle added 4 process rules in one pass — the errata series is NOT converged; manual driving remains correct."
+ },
+ {
+  "metric": "queue items ruled",
+  "value": "9",
+  "carriers": 1,
+  "sources": [
+   "HANDOFF_CURRENT.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "259/268 queue items proven inert, 9 ruled."
+ },
+ {
+  "metric": "closing commit",
+  "value": "091619c",
+  "carriers": 1,
+  "sources": [
+   "HANDOFF.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "**S3 is closed and committed** (`091619c`, revert, predictions 19/20 — the one FAIL is the"
+ },
+ {
+  "metric": "round 2 verdict",
+  "value": "help PASSED",
+  "carriers": 1,
+  "sources": [
+   "ROUND4_PREREG.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "round-2 (help PASSED, harm F1, caution F1-by-2, all fixed)"
+ },
+ {
+  "metric": "misses triaged into standing states",
+  "value": "1.0",
+  "carriers": 1,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "STEP-1 triage of attempt-4 misses: 9/9 into standing states, no new mechanism"
+ },
+ {
+  "metric": "n a",
+  "value": "primary x verb",
+  "carriers": 1,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "the reliable resolution is primary x verb; secondaries are the noise."
+ },
+ {
+  "metric": "review findings",
+  "value": "2",
+  "carriers": 1,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "5 accepted, 2 partial, 1 sub-claim rejected"
+ },
+ {
+  "metric": "coverage",
+  "value": "0.3333",
+  "carriers": 1,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "5/15 UA TPs are relevant via other targets (incl. machinery-class and assistant-output-with-deference-content)"
+ },
+ {
+  "metric": "separability",
+  "value": "0.2",
+  "carriers": 1,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "FP-side separation PASSES (0.20 <= 0.30)."
+ },
+ {
+  "metric": "definition corpus size",
+  "value": "100",
+  "carriers": 1,
+  "sources": [
+   "L1L2_ADVERSARIAL_REVIEW.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "the theory that novel behaviours fall within the space spanned by the 100-definition corpus"
+ },
+ {
+  "metric": "raw seat spend",
+  "value": "~93k raw",
+  "carriers": 1,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "3 panel seats (8 pre-registered rows, ~93k raw)"
+ },
+ {
+  "metric": "passages in the true universe",
+  "value": "589",
+  "carriers": 1,
+  "sources": [
+   "HANDOFF.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "True 589 universe, 9 cells, 5-fold OOF, threshold chosen on training folds only:"
+ },
+ {
+  "metric": "panel agreement bar",
+  "value": "0.556",
+  "carriers": 1,
+  "sources": [
+   "git_log_first_parent.txt"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "the +0.556 \"bar\""
+ },
+ {
+  "metric": "pre registered margin below panel internal agreement",
+  "value": "0.05",
+  "carriers": 1,
+  "sources": [
+   "L1L2_ADVERSARIAL_REVIEW.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "δ pre-registered at ≤ 0.05"
+ },
+ {
+  "metric": "relevance ledger",
+  "value": "3",
+  "carriers": 1,
+  "sources": [
+   "L1L2_ADVERSARIAL_REVIEW.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "(b) unspecified as to which of **three mutually inconsistent relevance ledgers** it means"
+ },
+ {
+  "metric": "n a",
+  "value": "0.005–0.614",
+  "carriers": 1,
+  "sources": [
+   "L1L2_ADVERSARIAL_REVIEW.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "with base rates spanning 0.005–0.614"
+ },
+ {
+  "metric": "session date",
+  "value": "2026-08-24",
+  "carriers": 1,
+  "sources": [
+   "L1L2_ADVERSARIAL_REVIEW.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "- **Session date:** 2026-08-24 (the artifacts under review are dated 2026-08-24/25; notes 0042 and commit `bf0d4978` carry 2026-08-25)."
+ },
+ {
+  "metric": "inter judge cohen kappa",
+  "value": "0.41",
+  "carriers": 1,
+  "sources": [
+   "git_log_first_parent.txt"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "/ 0.41 /"
+ },
+ {
+  "metric": "artifact dates",
+  "value": "2026-08-24/25",
+  "carriers": 1,
+  "sources": [
+   "L1L2_ADVERSARIAL_REVIEW.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "the artifacts under review are dated 2026-08-24/25; notes 0042 and commit `bf0d4978` carry 2026-08-25"
+ },
+ {
+  "metric": "commit coverage window",
+  "value": "2026-08-02..04",
+  "carriers": 1,
+  "sources": [
+   "git_log_first_parent.txt"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "Everything since the initial import, spanning 2026-08-02..04:"
+ },
+ {
+  "metric": "ledger size",
+  "value": "640",
+  "carriers": 1,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "not the 640-node ledger"
+ },
+ {
+  "metric": "transfer verdict",
+  "value": "0.4",
+  "carriers": 1,
+  "sources": [
+   "ITER1_ATTEMPT2_SCORED.json"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "attempt-1's 0.40 transfer verdict is frozen."
+ },
+ {
+  "metric": "reasoning overhead",
+  "value": "39%",
+  "carriers": 1,
+  "sources": [
+   "HANDOFF.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "**`luna` is 27× cheaper than sol, had the LOWEST reasoning overhead of the four (39%),"
+ },
+ {
+  "metric": "join rate",
+  "value": "0.9838",
+  "carriers": 1,
+  "sources": [
+   "HANDOFF.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "the panel join now reaches **849/863 (98.4%)**"
+ },
+ {
+  "metric": "behaviours where the structural query beats bag of words",
+  "value": "1.0",
+  "carriers": 1,
+  "sources": [
+   "HANDOFF.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "(p=0.0005, 9/9 behaviours)"
+ },
+ {
+  "metric": "engaged precision match or defensible headline",
+  "value": "0.725",
+  "carriers": 1,
+  "sources": [
+   "git_log_first_parent.txt"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "match-or-defensible HEADLINE 0.725 engaged (IN BAND)"
+ },
+ {
+  "metric": "reasoning chars",
+  "value": "71964",
+  "carriers": 1,
+  "sources": [
+   "HANDOFF.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "  `gpt-oss-20b` produced 71,964 chars of reasoning and zero content at 16k max_tokens."
+ },
+ {
+  "metric": "open coding packet definitions",
+  "value": "100",
+  "carriers": 1,
+  "sources": [
+   "git_log_first_parent.txt"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "100 definitions"
+ },
+ {
+  "metric": "lkif core feb 2026 commit content",
+  "value": "licence-only",
+  "carriers": 1,
+  "sources": [
+   "git_log_first_parent.txt"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "the Feb 2026 commit was licence-only"
+ },
+ {
+  "metric": "mcc",
+  "value": "+0.555",
+  "carriers": 1,
+  "sources": [
+   "HANDOFF.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "**Dev MCC +0.309** against the +0.555 frontier-judge bar (true\n589-passage universe; also in the repo README's results table)"
+ },
+ {
+  "metric": "v4 new ruled flips",
+  "value": "0",
+  "carriers": 1,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "V4 zero new ruled flips"
+ },
+ {
+  "metric": "inter judge cohen kappa",
+  "value": "0.39",
+  "carriers": 1,
+  "sources": [
+   "git_log_first_parent.txt"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "Inter-judge Cohen kappa is 0.39"
+ },
+ {
+  "metric": "attempt series a1 transfer frozen",
+  "value": "0.4",
+  "carriers": 1,
+  "sources": [
+   "ITER3_ATTEMPT4_SCORED.json"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "\"a1_transfer_frozen\": 0.4"
+ },
+ {
+  "metric": "review findings",
+  "value": "5",
+  "carriers": 1,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "stated"
+  ],
+  "stated_only": true,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "5 accepted, 2 partial, 1 sub-claim rejected with the existing mechanism cited"
+ },
+ {
+  "metric": "engaged precision",
+  "value": "0.4",
+  "carriers": 20,
+  "sources": [
+   "ITER1_ATTEMPT2_SCORED.json",
+   "ITER2_ATTEMPT3_SCORED.json",
+   "ITER2_REMEASURE_SCORED.json",
+   "ITERATION_NOTES.md",
+   "L1L2_ADVERSARIAL_REVIEW.md",
+   "git_log_first_parent.txt"
+  ],
+  "tiers": [
+   "raw",
+   "stated"
+  ],
+  "stated_only": false,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "the attempt-1 transfer claim (0.40, F2) stays frozen."
+ },
+ {
+  "metric": "engaged precision",
+  "value": "0.6",
+  "carriers": 11,
+  "sources": [
+   "GENERALIZATION_PREREG_DRAFT.md",
+   "ITER2_REMEASURE_SCORED.json",
+   "ITERATION_NOTES.md",
+   "TRANSLATION_CONTRACT_V2.md",
+   "git_log_first_parent.txt"
+  ],
+  "tiers": [
+   "adjudicated",
+   "raw",
+   "stated"
+  ],
+  "stated_only": false,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "\"attempt3_engaged\": \"12/20 = 0.60 (was 0.55 panel-tier; n005 was in the attempt-3 engaged draw)\""
+ },
+ {
+  "metric": "separability",
+  "value": "1.0",
+  "carriers": 8,
+  "sources": [
+   "HANDOFF_CURRENT.md",
+   "ITERATION_NOTES.md",
+   "RETRANS_REVIEW_DISPOSITION.md",
+   "git_log_first_parent.txt"
+  ],
+  "tiers": [
+   "cove",
+   "stated"
+  ],
+  "stated_only": false,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "(F1) random 4-bucket partition => sep 1.00 in 299/300 trials"
+ },
+ {
+  "metric": "judge mcc",
+  "value": "+0.555",
+  "carriers": 5,
+  "sources": [
+   "HANDOFF.md",
+   "git_log_first_parent.txt"
+  ],
+  "tiers": [
+   "panel",
+   "stated"
+  ],
+  "stated_only": false,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "On the true universe: tool @0.18 +0.320, judges +0.555."
+ },
+ {
+  "metric": "base rate",
+  "value": "0.59",
+  "carriers": 4,
+  "sources": [
+   "HANDOFF_CURRENT.md",
+   "ITERATION_NOTES.md",
+   "L1L2_REVIEW_DISPOSITION.md",
+   "RETRANS_REVIEW_DISPOSITION.md"
+  ],
+  "tiers": [
+   "cove",
+   "stated"
+  ],
+  "stated_only": false,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "best 0.70 vs 0.59 base"
+ },
+ {
+  "metric": "1 nn relevance prediction",
+  "value": "0.72/0.70",
+  "carriers": 3,
+  "sources": [
+   "ITERATION_NOTES.md",
+   "L1L2_ADVERSARIAL_REVIEW.md"
+  ],
+  "tiers": [
+   "cove",
+   "stated"
+  ],
+  "stated_only": false,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "(F4) 1-NN relevance prediction over mid signatures = 0.72/0.70 vs bases 0.60/0.59"
+ },
+ {
+  "metric": "panel seats",
+  "value": "3",
+  "carriers": 3,
+  "sources": [
+   "ITERATION_NOTES.md",
+   "ROUND4_PREREG.md"
+  ],
+  "tiers": [
+   "panel",
+   "stated"
+  ],
+  "stated_only": false,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "3 panel seats (8 pre-registered rows, ~93k raw)"
+ },
+ {
+  "metric": "separability 1 00 trials",
+  "value": "0.9967",
+  "carriers": 2,
+  "sources": [
+   "HANDOFF_CURRENT.md",
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "cove"
+  ],
+  "stated_only": false,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "in 299/300 trials"
+ },
+ {
+  "metric": "ledger agreement",
+  "value": "1.0",
+  "carriers": 2,
+  "sources": [
+   "ROUND4_PREREG.md"
+  ],
+  "tiers": [
+   "raw"
+  ],
+  "stated_only": false,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "REPLICATION: one wave seat under the recovered instruction scored 20/20 against the ledger on the pilot nodes."
+ },
+ {
+  "metric": "headline verdict",
+  "value": "prec IN BAND; decl above",
+  "carriers": 2,
+  "sources": [
+   "ROUND4_DEV_TABLE.json"
+  ],
+  "tiers": [
+   "adjudicated"
+  ],
+  "stated_only": false,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "\"headline_verdict\": \"prec IN BAND; decl above\""
+ },
+ {
+  "metric": "base rate",
+  "value": "0.60/0.59",
+  "carriers": 2,
+  "sources": [
+   "ITERATION_NOTES.md",
+   "L1L2_ADVERSARIAL_REVIEW.md"
+  ],
+  "tiers": [
+   "cove",
+   "stated"
+  ],
+  "stated_only": false,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "(F4) 1-NN relevance prediction over mid signatures = 0.72/0.70 vs bases 0.60/0.59"
+ },
+ {
+  "metric": "baseline commit",
+  "value": "5cc21627",
+  "carriers": 2,
+  "sources": [
+   "GENERALIZATION_PREREG_DRAFT.md"
+  ],
+  "tiers": [
+   "git",
+   "stated"
+  ],
+  "stated_only": false,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "baseline commit 5cc21627"
+ },
+ {
+  "metric": "matched granularity random partition null",
+  "value": "0.9967",
+  "carriers": 2,
+  "sources": [
+   "ITERATION_NOTES.md",
+   "L1L2_ADVERSARIAL_REVIEW.md"
+  ],
+  "tiers": [
+   "cove",
+   "stated"
+  ],
+  "stated_only": false,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "(F1) random 4-bucket partition => sep 1.00 in 299/300 trials"
+ },
+ {
+  "metric": "trials achieving sep 1 00 reuse 1 00",
+  "value": "0.9967",
+  "carriers": 1,
+  "sources": [
+   "HANDOFF_CURRENT.md"
+  ],
+  "tiers": [
+   "cove"
+  ],
+  "stated_only": false,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "in 299/300 trials"
+ },
+ {
+  "metric": "pre registered panel rows",
+  "value": "8",
+  "carriers": 1,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "panel"
+  ],
+  "stated_only": false,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "3 panel seats (8 pre-registered rows, ~93k raw)"
+ },
+ {
+  "metric": "base rate",
+  "value": "p~0.15",
+  "carriers": 1,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "cove"
+  ],
+  "stated_only": false,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "my CoVe found those numbers are p~0.15 vs baseline, i.e. not even significant"
+ },
+ {
+  "metric": "panel entry node id",
+  "value": "l3877_3953_n012",
+  "carriers": 1,
+  "sources": [
+   "ITER3_ATTEMPT4_SCORED.json"
+  ],
+  "tiers": [
+   "panel"
+  ],
+  "stated_only": false,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "\"node\": \"l3877_3953_n012\""
+ },
+ {
+  "metric": "seeded trials achieving separability 1 00",
+  "value": "0.9967",
+  "carriers": 1,
+  "sources": [
+   "RETRANS_REVIEW_DISPOSITION.md"
+  ],
+  "tiers": [
+   "cove"
+  ],
+  "stated_only": false,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "in 299/300 seeded trials"
+ },
+ {
+  "metric": "weekly bar hard cap",
+  "value": "12",
+  "carriers": 1,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "human"
+  ],
+  "stated_only": false,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "Registered budget: bar hard-caps at 12% (7% baseline + 5 experiment points, Matt 2026-08-24)."
+ },
+ {
+  "metric": "random partition null",
+  "value": "0.9967",
+  "carriers": 1,
+  "sources": [
+   "git_log_first_parent.txt"
+  ],
+  "tiers": [
+   "cove"
+  ],
+  "stated_only": false,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "random-partition null dominates the pass condition 299/300"
+ },
+ {
+  "metric": "wave seat agreement with standing ledger truth",
+  "value": "0.5714",
+  "carriers": 1,
+  "sources": [
+   "ITERATION_NOTES.md"
+  ],
+  "tiers": [
+   "raw"
+  ],
+  "stated_only": false,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "this wave seat agrees 4/7 with standing ledger truth on the draw's known nodes"
+ },
+ {
+  "metric": "base rate",
+  "value": "0.72 vs 0.60",
+  "carriers": 1,
+  "sources": [
+   "HANDOFF_CURRENT.md"
+  ],
+  "tiers": [
+   "cove"
+  ],
+  "stated_only": false,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "1-NN relevance prediction over the representation is\n~base rate (0.72 vs 0.60, 0.70 vs 0.59)"
+ },
+ {
+  "metric": "base rate",
+  "value": "0.70 vs 0.59",
+  "carriers": 1,
+  "sources": [
+   "HANDOFF_CURRENT.md"
+  ],
+  "tiers": [
+   "cove"
+  ],
+  "stated_only": false,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "1-NN relevance prediction over the representation is\n~base rate (0.72 vs 0.60, 0.70 vs 0.59)"
+ },
+ {
+  "metric": "headline verdict",
+  "value": "both in/above",
+  "carriers": 1,
+  "sources": [
+   "ROUND4_DEV_TABLE.json"
+  ],
+  "tiers": [
+   "adjudicated"
+  ],
+  "stated_only": false,
+  "flips": [],
+  "n_flips": 0,
+  "example_quote": "\"headline_verdict\": \"both in/above\""
+ }
+]

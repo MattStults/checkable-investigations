@@ -44,3 +44,39 @@ comparison: 15.4M subagent tokens, 911 agent-minutes (results/COST.md).
 Re-check is far under 10% of build cost by every measure, but the honest
 statement is: under 10% only after a query-engine defect that the probe
 itself exposed was fixed.
+
+## Baseline arm of the number-mutation probe — terminated, and a design flaw
+
+The fresh clean-context review of the mutated README was terminated by a
+session rate limit (HTTP 429, reset 23:30 PDT) after its first minutes. Its
+last message before termination: "the probe README differs from the repo's
+README at the pin (line 28: '94' vs '100'). Noted." That exposes a flaw in
+the number-mutation design as run: the reviewer has the repository, which
+contains the original README, so it detects the mutation by diff, not by
+verification against the record. A fair baseline re-check would need a
+repository whose README is also mutated (a probe checkout), which the
+read-only rule on the target repo forbids here. The number-mutation
+probe's baseline result is therefore recorded as: not obtained, and not
+obtainable under the current blindness rules without a probe checkout.
+
+## Reframed probe (owner, 2026-09-02 late): a possibly fabricated record fact
+
+The owner's intended probe: pick a claim in the RECORD that might have been
+fabricated, chosen because its truth changes README answers, and use both
+approaches to state the impact if it is fabricated vs not. The ledger half
+is mechanical (results/probe/impact.py): remove every claim carrying a fact
+(or every claim from one span), re-run the queries, list the README items
+that change state. Findings from the first pass:
+
+- Single-span fabrication almost never matters: of 206 record spans the
+  queries cite, only 4 flip anything when removed, each flipping one item
+  (Q09, Q34, H15, Q08), because the README's facts are restated across
+  sources. The record is redundant against any single fabricated entry.
+- Fact-level fabrication (all restatements at once) has small fan-out too:
+  the largest is 2 items. The candidates with any fan-out:
+  MCC +0.278 (Q13, V04) and +0.320 (Q12, V04), both carried by two
+  claims from ONE file (HANDOFF.md) at tier `stated` only — no artifact
+  tier behind them in the named sources; and 23/40 declined-relevant
+  0.575 (Q17, V09), carried at panel and stated tiers from two files.
+- Everything else with stated-only single-source support flips nothing,
+  because no README item rests on it alone.
