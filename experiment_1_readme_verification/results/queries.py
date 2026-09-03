@@ -176,7 +176,11 @@ def decide_q(qid, spec, claims):
         anyt = [c for c in matches if c["stance"] in ("current", "unknown")]
         struck = [c for c in matches if c["stance"] in ("struck", "superseded")]
         cont = [c for c in matches if c["stance"] == "contested"]
-        anti = [c for c in matches if c.get("anti_rule")]
+        # a do-not-cite marking is one that speaks of citing/quoting/re-deriving the value; a bare
+        # section flag such as "UNREVIEWED" is noted but does not by itself contest the value
+        CITE = re.compile(r"cit|quot|re-?deriv|never use|do not use|not .*results|struck|withdrawn|stale", re.I)
+        flags = [c for c in matches if c.get("anti_rule") and not CITE.search(str(c["anti_rule"]))]
+        anti = [c for c in matches if c.get("anti_rule") and CITE.search(str(c["anti_rule"]))]
         st = "verified" if good else ("verified" if anyt else ("contested" if (cont or struck) else "unverifiable"))
         d = {"state": st, "claims": [c["id"] for c in matches][:12], "tiers": sorted({c['tier'] for c in anyt}), "tier_ok": bool(good)}
         d["derivation"] = (f"{len(anyt)} matching claim(s) standing" + ("" if good else f"; none at the required dimensions {spec.get('require')} — matched at {d['tiers']}") + (f"; {len(anti)} carry an anti-rule (do-not-cite) marking" if anti else "") + (f"; {len(struck)} struck/superseded, {len(cont)} contested" if (struck or cont) else ""))

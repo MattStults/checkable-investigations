@@ -40,8 +40,8 @@ def main():
     cp = os.path.join(X, "baseline/citations_check.json")
     if os.path.exists(cp):
         cc = json.load(open(cp)); res = cc.get("results", cc if isinstance(cc, list) else [])
-        cit = {"baseline_citations": len(res), "verbatim": sum(1 for r in res if r.get("pass")), "note": "baseline quotes re-verified as verbatim substrings of the cited file at the pin by check.py --citations"}
-    chk = json.load(open(os.path.join(X, "ledger/check_result.json")))
+        cit = {**cc.get("summary", {}), "note": "baseline Quote lines split into segments and re-verified as verbatim (or ellipsis-abridged verbatim) substrings of the cited file at the pin; live-run items have no file quote"}
+    chk = json.load(open(os.path.join(X, "ledger/check_result.json"))); chk = chk.get("summary", chk)
     out = {"groups": groups, "agreement_total": f"{sum(r['agree'] for r in rows)}/{len(rows)}", "disagreements": dis,
            "machine_checkable": {"ledger": {"claims": chk.get("total"), "checker_pass": chk.get("passed"), "note": "every ledger claim carries a verbatim quote, source lines and typed fields; all re-verified by check.py"}, "baseline": cit},
            "rows": rows}

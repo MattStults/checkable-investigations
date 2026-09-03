@@ -2,11 +2,11 @@
  "groups": {
   "Q": {
    "n": 50,
-   "agree": 42,
+   "agree": 43,
    "ledger": {
-    "verified": 38,
+    "verified": 40,
     "contradicted": 5,
-    "contested": 7
+    "contested": 5
    },
    "baseline": {
     "verified": 38,
@@ -46,25 +46,16 @@
    }
   }
  },
- "agreement_total": "59/77",
+ "agreement_total": "60/77",
  "disagreements": [
   {
    "id": "Q04",
-   "ledger": "contested",
+   "ledger": "verified",
    "baseline": "contradicted",
    "agree": false,
-   "ledger_derivation": "441 matching claim(s) standing; 5 carry an anti-rule (do-not-cite) marking; 2 struck/superseded, 2 contested \u2192 contested: the record forbids citing the matched value",
+   "ledger_derivation": "441 matching claim(s) standing; 2 struck/superseded, 2 contested",
    "baseline_reason": "The README says the registered match-or-defensible pass never ran. The record holds exactly one such registration (ROUND4_PREREG.md pre-signature amendment 1) and **it ran to completion on all three dev behaviours**, citing the registration by amendment id and scoring against the registered bands (`\"headline_verdict\": \"prec IN BAND; decl above\"`). Claimed `run_exists: false`; record: run exists, h",
    "direction": "baseline stricter"
-  },
-  {
-   "id": "Q10",
-   "ledger": "contested",
-   "baseline": "verified",
-   "agree": false,
-   "ledger_derivation": "16 matching claim(s) standing; 1 carry an anti-rule (do-not-cite) marking \u2192 contested: the record forbids citing the matched value; NOTE other values for the same metric/scope: [('L1020055', 0.2367), ('L1070050', 2), ('L1070084', 1309), ('L1070085', 1145), ('L1070086', 741)]",
-   "baseline_reason": "589 is the **TRUE** (reconstructed) Model Spec universe \u2014 every passage the judges graded. Universe recorded as required. The *published* file holds only 377/333/153 of those 589 per behaviour (863 rows total), so 589 cannot be read off `data/behaviours.json`; it is the reconstruction the benchmark computes and prints, and the README names it correctly.",
-   "direction": "ledger stricter"
   },
   {
    "id": "Q24",
@@ -213,14 +204,19 @@
  ],
  "machine_checkable": {
   "ledger": {
-   "claims": null,
-   "checker_pass": null,
+   "claims": 14721,
+   "checker_pass": 14721,
    "note": "every ledger claim carries a verbatim quote, source lines and typed fields; all re-verified by check.py"
   },
   "baseline": {
-   "baseline_citations": 109,
-   "verbatim": 83,
-   "note": "baseline quotes re-verified as verbatim substrings of the cited file at the pin by check.py --citations"
+   "items": 77,
+   "file_cited_items": 50,
+   "live_run_items": 27,
+   "quote_segments": 109,
+   "verbatim_or_abridged_verbatim": 83,
+   "abridged_segments": 23,
+   "pre_redaction_hits": 5,
+   "note": "baseline Quote lines split into segments and re-verified as verbatim (or ellipsis-abridged verbatim) substrings of the cited file at the pin; live-run items have no file quote"
   }
  },
  "rows": [
@@ -250,10 +246,10 @@
   },
   {
    "id": "Q04",
-   "ledger": "contested",
+   "ledger": "verified",
    "baseline": "contradicted",
    "agree": false,
-   "ledger_derivation": "441 matching claim(s) standing; 5 carry an anti-rule (do-not-cite) marking; 2 struck/superseded, 2 contested \u2192 contested: the record forbids citing the matched value",
+   "ledger_derivation": "441 matching claim(s) standing; 2 struck/superseded, 2 contested",
    "baseline_reason": "The README says the registered match-or-defensible pass never ran. The record holds exactly one such registration (ROUND4_PREREG.md pre-signature amendment 1) and **it ran to completion on all three dev behaviours**, citing the registration by amendment id and scoring against the registered bands (`\"headline_verdict\": \"prec IN BAND; decl above\"`). Claimed `run_exists: false`; record: run exists, h",
    "direction": "baseline stricter"
   },
@@ -299,12 +295,11 @@
   },
   {
    "id": "Q10",
-   "ledger": "contested",
+   "ledger": "verified",
    "baseline": "verified",
-   "agree": false,
-   "ledger_derivation": "16 matching claim(s) standing; 1 carry an anti-rule (do-not-cite) marking \u2192 contested: the record forbids citing the matched value; NOTE other values for the same metric/scope: [('L1020055', 0.2367), ('L1070050', 2), ('L1070084', 1309), ('L1070085', 1145), ('L1070086', 741)]",
-   "baseline_reason": "589 is the **TRUE** (reconstructed) Model Spec universe \u2014 every passage the judges graded. Universe recorded as required. The *published* file holds only 377/333/153 of those 589 per behaviour (863 rows total), so 589 cannot be read off `data/behaviours.json`; it is the reconstruction the benchmark computes and prints, and the README names it correctly.",
-   "direction": "ledger stricter"
+   "agree": true,
+   "ledger_derivation": "16 matching claim(s) standing; NOTE other values for the same metric/scope: [('L1020055', 0.2367), ('L1070050', 2), ('L1070084', 1309), ('L1070085', 1145), ('L1070086', 741)]",
+   "baseline_reason": "589 is the **TRUE** (reconstructed) Model Spec universe \u2014 every passage the judges graded. Universe recorded as required. The *published* file holds only 377/333/153 of those 589 per behaviour (863 rows total), so 589 cannot be read off `data/behaviours.json`; it is the reconstruction the benchmark computes and prints, and the README names it correctly."
   },
   {
    "id": "Q11",

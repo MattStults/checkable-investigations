@@ -329,3 +329,19 @@ confirm the reviewer is not an adjudication seat. Spans without claims:
 (D-08, untranslated by design) and 18 are batched spans that got no
 claim (15 git-log spans of batch_073, 3 heading-only document spans),
 now retry_leftover.
+
+### Process event — 2026-09-02 21:05 — step 5 complete; final merge
+
+All 107 index batches, three D-09 batches, six G-06 reselection batches
+and the leftover batch are translated and checked: 14,721 claims, 0
+checker failures, 4,080 superseded claims dropped, 29 spans without
+claims (all D-08-excluded pre-redaction duplicates). Final scorecard,
+ledger arm: Q 40 verified / 5 contradicted / 5 contested; H 10 / 3 / 2;
+V 3 verified / 2 contradicted / 6 contested / 1 dangling. Agreement with
+the baseline 60/77. Query-logic change at the end: an anti_rule counts as
+a do-not-cite marking only when its text speaks of citing, quoting,
+re-deriving, striking or staleness; a bare section flag ("UNREVIEWED")
+is noted but does not contest a value (Q10 had flipped on such a flag
+from a pre-redaction span). Cost and machine-checkability recorded in
+results/COST.md and results/arm_comparison.json. Steps 8 and 9 not
+started: waiting on the owner.

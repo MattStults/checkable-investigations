@@ -55,7 +55,7 @@
   "derivation": "58 matching claim(s) standing; 1 struck/superseded, 0 contested"
  },
  "Q04": {
-  "state": "contested",
+  "state": "verified",
   "claims": [
    "L1000010",
    "L1000011",
@@ -81,7 +81,7 @@
    "stated"
   ],
   "tier_ok": true,
-  "derivation": "441 matching claim(s) standing; 5 carry an anti-rule (do-not-cite) marking; 2 struck/superseded, 2 contested \u2192 contested: the record forbids citing the matched value"
+  "derivation": "441 matching claim(s) standing; 2 struck/superseded, 2 contested"
  },
  "Q05": {
   "state": "verified",
@@ -144,7 +144,7 @@
   "derivation": "1 matching claim(s) standing; NOTE other values for the same metric/scope: [('L1030259', 20), ('L720082', 0.8), ('L77700233', 20)]"
  },
  "Q10": {
-  "state": "contested",
+  "state": "verified",
   "claims": [
    "L1040133",
    "L1070069",
@@ -163,7 +163,7 @@
    "stated"
   ],
   "tier_ok": true,
-  "derivation": "16 matching claim(s) standing; 1 carry an anti-rule (do-not-cite) marking \u2192 contested: the record forbids citing the matched value; NOTE other values for the same metric/scope: [('L1020055', 0.2367), ('L1070050', 2), ('L1070084', 1309), ('L1070085', 1145), ('L1070086', 741)]"
+  "derivation": "16 matching claim(s) standing; NOTE other values for the same metric/scope: [('L1020055', 0.2367), ('L1070050', 2), ('L1070084', 1309), ('L1070085', 1145), ('L1070086', 741)]"
  },
  "Q11": {
   "state": "verified",
