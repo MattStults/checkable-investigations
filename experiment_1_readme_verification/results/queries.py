@@ -305,10 +305,10 @@ def H15(claims):
 HYP = {"H01": H01, "H02": H02, "H03": H03, "H04": H04, "H05": H05, "H06": H06, "H07": H07, "H08": H08, "H09": H09, "H10": H10, "H11": H11, "H12": H12, "H13": H13, "H14": H14, "H15": H15}
 
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument("--ledger", default=os.path.join(X, "ledger/claims.jsonl")); ap.add_argument("--out", default=os.path.join(HERE, "query_results.json"))
+    ap = argparse.ArgumentParser(); ap.add_argument("--ledger", default=os.path.join(X, "ledger/claims.jsonl")); ap.add_argument("--out", default=os.path.join(HERE, "query_results.json")); ap.add_argument("--inventory", default=os.path.join(X, "claim_inventory/inventory.json"))
     a = ap.parse_args()
     claims = [json.loads(l) for l in open(a.ledger) if l.strip()]
-    inv = json.load(open(os.path.join(X, "claim_inventory/inventory.json")))
+    inv = json.load(open(a.inventory))
     live = json.load(open(os.path.join(HERE, "live_runs.json"))) if os.path.exists(os.path.join(HERE, "live_runs.json")) else {}
     res = {}
     for c in inv["claims"]:
