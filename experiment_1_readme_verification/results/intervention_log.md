@@ -313,3 +313,19 @@ pre-redaction batches. Merging under the D-09 checker rule exposed 21
 pre-D-09 seat_dispatch events without inputs; 18 of their spans were
 outside the vocabulary selection and are now a third retranslation
 batch (retry_D09c) selected by claim predicate.
+
+### Process event — 2026-09-02 ~20:15 — H04 decided from event.inputs; scope caveat for adjudication
+
+After D-09a/c, 81 seat_dispatch events, 50 with recorded inputs; H04
+reads verified (no input names panel labels, the design document, or
+prior verdicts as received; mentions inside negations such as "never
+shown seat verdicts" count as exclusions). Caveat for the packet: the
+translators apply seat_dispatch to adversarial-review dispatches too,
+and two such events (L1L2 review, current and pre-redaction) list truth
+files among the reviewer's inputs. The inventory scopes H04 to
+adjudication seats, so the query does not count those; the owner should
+confirm the reviewer is not an adjudication seat. Spans without claims:
+49, of which 31 are pre-redaction spans identical to current text
+(D-08, untranslated by design) and 18 are batched spans that got no
+claim (15 git-log spans of batch_073, 3 heading-only document spans),
+now retry_leftover.
