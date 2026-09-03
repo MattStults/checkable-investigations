@@ -1,0 +1,28 @@
+# Blind packets
+
+Same 24 items as results/packets, with the two arms anonymized (A/B, randomized per item) and their reasons removed: only states, cited sources, verbatim quotes and live-run outputs remain. The A/B mapping is sealed in results/rulings_blind_mapping.SEALED.json and must not be read by adjudicators.
+
+- [Q02.md](Q02.md)
+- [Q06.md](Q06.md)
+- [Q24.md](Q24.md)
+- [Q27.md](Q27.md)
+- [Q28.md](Q28.md)
+- [Q29.md](Q29.md)
+- [Q32.md](Q32.md)
+- [Q33.md](Q33.md)
+- [Q34.md](Q34.md)
+- [Q48.md](Q48.md)
+- [H01.md](H01.md)
+- [H02.md](H02.md)
+- [H06.md](H06.md)
+- [H08.md](H08.md)
+- [H10.md](H10.md)
+- [V01.md](V01.md)
+- [V02.md](V02.md)
+- [V03.md](V03.md)
+- [V05.md](V05.md)
+- [V06.md](V06.md)
+- [V07.md](V07.md)
+- [V08.md](V08.md)
+- [V11.md](V11.md)
+- [V12.md](V12.md)

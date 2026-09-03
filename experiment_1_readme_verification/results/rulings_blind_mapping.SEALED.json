@@ -1,0 +1,98 @@
+{
+ "Q02": {
+  "A": "ledger",
+  "B": "baseline"
+ },
+ "Q06": {
+  "A": "baseline",
+  "B": "ledger"
+ },
+ "Q24": {
+  "A": "ledger",
+  "B": "baseline"
+ },
+ "Q27": {
+  "A": "baseline",
+  "B": "ledger"
+ },
+ "Q28": {
+  "A": "baseline",
+  "B": "ledger"
+ },
+ "Q29": {
+  "A": "baseline",
+  "B": "ledger"
+ },
+ "Q32": {
+  "A": "baseline",
+  "B": "ledger"
+ },
+ "Q33": {
+  "A": "baseline",
+  "B": "ledger"
+ },
+ "Q34": {
+  "A": "baseline",
+  "B": "ledger"
+ },
+ "Q48": {
+  "A": "baseline",
+  "B": "ledger"
+ },
+ "H01": {
+  "A": "ledger",
+  "B": "baseline"
+ },
+ "H02": {
+  "A": "baseline",
+  "B": "ledger"
+ },
+ "H06": {
+  "A": "ledger",
+  "B": "baseline"
+ },
+ "H08": {
+  "A": "baseline",
+  "B": "ledger"
+ },
+ "H10": {
+  "A": "ledger",
+  "B": "baseline"
+ },
+ "V01": {
+  "A": "ledger",
+  "B": "baseline"
+ },
+ "V02": {
+  "A": "ledger",
+  "B": "baseline"
+ },
+ "V03": {
+  "A": "ledger",
+  "B": "baseline"
+ },
+ "V05": {
+  "A": "ledger",
+  "B": "baseline"
+ },
+ "V06": {
+  "A": "ledger",
+  "B": "baseline"
+ },
+ "V07": {
+  "A": "ledger",
+  "B": "baseline"
+ },
+ "V08": {
+  "A": "baseline",
+  "B": "ledger"
+ },
+ "V11": {
+  "A": "baseline",
+  "B": "ledger"
+ },
+ "V12": {
+  "A": "baseline",
+  "B": "ledger"
+ }
+}
