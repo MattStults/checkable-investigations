@@ -1,0 +1,752 @@
+[
+{
+"span": "S00055",
+"kind": "number",
+"token": "0003"
+},
+{
+"span": "S00082",
+"kind": "number",
+"token": "0031"
+},
+{
+"span": "S00082",
+"kind": "number",
+"token": "0032"
+},
+{
+"span": "S00082",
+"kind": "number",
+"token": "0033"
+},
+{
+"span": "S00082",
+"kind": "number",
+"token": "0036"
+},
+{
+"span": "S00082",
+"kind": "number",
+"token": "0042"
+},
+{
+"span": "S00085",
+"kind": "number",
+"token": "0031"
+},
+{
+"span": "S00085",
+"kind": "number",
+"token": "0036"
+},
+{
+"span": "S00085",
+"kind": "number",
+"token": "0042"
+},
+{
+"span": "S00321",
+"kind": "number",
+"token": "1.2"
+},
+{
+"span": "S00337",
+"kind": "marker",
+"token": "re-derived"
+},
+{
+"span": "S00349",
+"kind": "number",
+"token": "95%"
+},
+{
+"span": "S00353",
+"kind": "number",
+"token": "95%"
+},
+{
+"span": "S00371",
+"kind": "number",
+"token": "95%"
+},
+{
+"span": "S00456",
+"kind": "number",
+"token": "-0.143"
+},
+{
+"span": "S00456",
+"kind": "number",
+"token": "532"
+},
+{
+"span": "S00536",
+"kind": "marker",
+"token": "re-derived"
+},
+{
+"span": "S00562",
+"kind": "marker",
+"token": "re-derived"
+},
+{
+"span": "S00617",
+"kind": "marker",
+"token": "BINDING"
+},
+{
+"span": "S00631",
+"kind": "marker",
+"token": "BINDING"
+},
+{
+"span": "S00643",
+"kind": "number",
+"token": "264"
+},
+{
+"span": "S00643",
+"kind": "number",
+"token": "692"
+},
+{
+"span": "S00643",
+"kind": "number",
+"token": "428"
+},
+{
+"span": "S00643",
+"kind": "number",
+"token": "425"
+},
+{
+"span": "S00643",
+"kind": "number",
+"token": "109"
+},
+{
+"span": "S00643",
+"kind": "number",
+"token": "692"
+},
+{
+"span": "S00643",
+"kind": "number",
+"token": "693"
+},
+{
+"span": "S00643",
+"kind": "number",
+"token": "144"
+},
+{
+"span": "S00643",
+"kind": "number",
+"token": "139"
+},
+{
+"span": "S00643",
+"kind": "number",
+"token": "1324"
+},
+{
+"span": "S00643",
+"kind": "number",
+"token": "624"
+},
+{
+"span": "S00643",
+"kind": "number",
+"token": "1.2"
+},
+{
+"span": "S00643",
+"kind": "number",
+"token": "171"
+},
+{
+"span": "S00643",
+"kind": "number",
+"token": "1998"
+},
+{
+"span": "S00643",
+"kind": "number",
+"token": "34"
+},
+{
+"span": "S00643",
+"kind": "number",
+"token": "59"
+},
+{
+"span": "S00643",
+"kind": "marker",
+"token": "COUNTERSIGNED"
+},
+{
+"span": "S00643",
+"kind": "marker",
+"token": "re-derived"
+},
+{
+"span": "S00643",
+"kind": "marker",
+"token": "BINDING"
+},
+{
+"span": "S00658",
+"kind": "number",
+"token": "2.0"
+},
+{
+"span": "S00659",
+"kind": "number",
+"token": "2.0"
+},
+{
+"span": "S00659",
+"kind": "number",
+"token": "2.0"
+},
+{
+"span": "S00673",
+"kind": "number",
+"token": "2.0"
+},
+{
+"span": "S00725",
+"kind": "number",
+"token": "103"
+},
+{
+"span": "S00785",
+"kind": "number",
+"token": "0003"
+},
+{
+"span": "S00812",
+"kind": "number",
+"token": "0031"
+},
+{
+"span": "S00812",
+"kind": "number",
+"token": "0032"
+},
+{
+"span": "S00812",
+"kind": "number",
+"token": "0033"
+},
+{
+"span": "S00812",
+"kind": "number",
+"token": "0036"
+},
+{
+"span": "S00812",
+"kind": "number",
+"token": "0042"
+},
+{
+"span": "S00815",
+"kind": "number",
+"token": "0031"
+},
+{
+"span": "S00815",
+"kind": "number",
+"token": "0036"
+},
+{
+"span": "S00815",
+"kind": "number",
+"token": "0042"
+},
+{
+"span": "S00925",
+"kind": "number",
+"token": "1.2"
+},
+{
+"span": "S00941",
+"kind": "marker",
+"token": "re-derived"
+},
+{
+"span": "S00953",
+"kind": "number",
+"token": "95%"
+},
+{
+"span": "S00957",
+"kind": "number",
+"token": "95%"
+},
+{
+"span": "S00975",
+"kind": "number",
+"token": "95%"
+},
+{
+"span": "S01052",
+"kind": "number",
+"token": "2.0"
+},
+{
+"span": "S01052",
+"kind": "number",
+"token": "10"
+},
+{
+"span": "S01053",
+"kind": "number",
+"token": "90%"
+},
+{
+"span": "S01054",
+"kind": "number",
+"token": "1.2"
+},
+{
+"span": "S01054",
+"kind": "number",
+"token": "624"
+},
+{
+"span": "S01054",
+"kind": "number",
+"token": "1.2"
+},
+{
+"span": "S01054",
+"kind": "number",
+"token": "109"
+},
+{
+"span": "S01054",
+"kind": "number",
+"token": "1,324"
+},
+{
+"span": "S01054",
+"kind": "marker",
+"token": "re-derived"
+},
+{
+"span": "S01056",
+"kind": "number",
+"token": "1.2"
+},
+{
+"span": "S01056",
+"kind": "number",
+"token": "264"
+},
+{
+"span": "S01056",
+"kind": "number",
+"token": "1.6"
+},
+{
+"span": "S01056",
+"kind": "number",
+"token": "2.0"
+},
+{
+"span": "S01056",
+"kind": "number",
+"token": "2.0"
+},
+{
+"span": "S01056",
+"kind": "number",
+"token": "1.2"
+},
+{
+"span": "S01056",
+"kind": "number",
+"token": "1.1"
+},
+{
+"span": "S01056",
+"kind": "number",
+"token": "1.2"
+},
+{
+"span": "S01056",
+"kind": "number",
+"token": "2.0"
+},
+{
+"span": "S01056",
+"kind": "number",
+"token": "2.0"
+},
+{
+"span": "S01056",
+"kind": "number",
+"token": "1.2"
+},
+{
+"span": "S01058",
+"kind": "number",
+"token": "0.10"
+},
+{
+"span": "S01062",
+"kind": "number",
+"token": "1.1"
+},
+{
+"span": "S01062",
+"kind": "number",
+"token": "1.2"
+},
+{
+"span": "S01062",
+"kind": "number",
+"token": "2.0"
+},
+{
+"span": "S01062",
+"kind": "number",
+"token": "11"
+},
+{
+"span": "S01095",
+"kind": "number",
+"token": "31%"
+},
+{
+"span": "S01095",
+"kind": "number",
+"token": "690"
+},
+{
+"span": "S01096",
+"kind": "number",
+"token": "0.4"
+},
+{
+"span": "S01099",
+"kind": "marker",
+"token": "re-derived"
+},
+{
+"span": "S01100",
+"kind": "number",
+"token": "0.4"
+},
+{
+"span": "S01108",
+"kind": "number",
+"token": "18"
+},
+{
+"span": "S01114",
+"kind": "marker",
+"token": "RULING"
+},
+{
+"span": "S01124",
+"kind": "marker",
+"token": "re-derived"
+},
+{
+"span": "S01136",
+"kind": "number",
+"token": "16"
+},
+{
+"span": "S01137",
+"kind": "number",
+"token": "5.1"
+},
+{
+"span": "S01141",
+"kind": "number",
+"token": "2.2"
+},
+{
+"span": "S01141",
+"kind": "number",
+"token": "2.2"
+},
+{
+"span": "S01141",
+"kind": "number",
+"token": "11"
+},
+{
+"span": "S01143",
+"kind": "number",
+"token": "10"
+},
+{
+"span": "S01148",
+"kind": "number",
+"token": "4.3"
+},
+{
+"span": "S01151",
+"kind": "number",
+"token": "4.3"
+},
+{
+"span": "S01151",
+"kind": "number",
+"token": "4.1"
+},
+{
+"span": "S01163",
+"kind": "number",
+"token": "0.00"
+},
+{
+"span": "S01163",
+"kind": "number",
+"token": "0.00"
+},
+{
+"span": "S01168",
+"kind": "number",
+"token": "97%"
+},
+{
+"span": "S01170",
+"kind": "number",
+"token": "10"
+},
+{
+"span": "S01173",
+"kind": "number",
+"token": "0.06"
+},
+{
+"span": "S01173",
+"kind": "number",
+"token": "0.00"
+},
+{
+"span": "S01173",
+"kind": "number",
+"token": "2.2%"
+},
+{
+"span": "S01173",
+"kind": "number",
+"token": "0.00"
+},
+{
+"span": "S01174",
+"kind": "number",
+"token": "592"
+},
+{
+"span": "S01257",
+"kind": "number",
+"token": "110"
+},
+{
+"span": "S01260",
+"kind": "number",
+"token": "57"
+},
+{
+"span": "S01267",
+"kind": "number",
+"token": "200"
+},
+{
+"span": "S01267",
+"kind": "number",
+"token": "111"
+},
+{
+"span": "S01267",
+"kind": "number",
+"token": "403"
+},
+{
+"span": "S01268",
+"kind": "number",
+"token": "472"
+},
+{
+"span": "S01280",
+"kind": "number",
+"token": "100%"
+},
+{
+"span": "S01289",
+"kind": "number",
+"token": "18"
+},
+{
+"span": "S01289",
+"kind": "number",
+"token": "19"
+},
+{
+"span": "S01289",
+"kind": "number",
+"token": "20"
+},
+{
+"span": "S01323",
+"kind": "number",
+"token": "78%"
+},
+{
+"span": "S01323",
+"kind": "number",
+"token": "86%"
+},
+{
+"span": "S01410",
+"kind": "number",
+"token": "25"
+},
+{
+"span": "S01492",
+"kind": "number",
+"token": "169"
+},
+{
+"span": "S01492",
+"kind": "number",
+"token": "16"
+},
+{
+"span": "S01574",
+"kind": "number",
+"token": "0001"
+},
+{
+"span": "S01577",
+"kind": "number",
+"token": "0002"
+},
+{
+"span": "S01579",
+"kind": "number",
+"token": "0003"
+},
+{
+"span": "S01617",
+"kind": "number",
+"token": "0014"
+},
+{
+"span": "S01622",
+"kind": "number",
+"token": "0016"
+},
+{
+"span": "S01624",
+"kind": "number",
+"token": "0017"
+},
+{
+"span": "S01626",
+"kind": "number",
+"token": "14"
+},
+{
+"span": "S01626",
+"kind": "number",
+"token": "0018"
+},
+{
+"span": "S01628",
+"kind": "number",
+"token": "0019"
+},
+{
+"span": "S01629",
+"kind": "number",
+"token": "0020"
+},
+{
+"span": "S01630",
+"kind": "number",
+"token": "0021"
+},
+{
+"span": "S01631",
+"kind": "number",
+"token": "0022"
+},
+{
+"span": "S01633",
+"kind": "number",
+"token": "0023"
+},
+{
+"span": "S01637",
+"kind": "number",
+"token": "0024"
+},
+{
+"span": "S01639",
+"kind": "number",
+"token": "0026"
+},
+{
+"span": "S01640",
+"kind": "number",
+"token": "0027"
+},
+{
+"span": "S01641",
+"kind": "number",
+"token": "0028"
+},
+{
+"span": "S01642",
+"kind": "number",
+"token": "0029"
+},
+{
+"span": "S01643",
+"kind": "number",
+"token": "0030"
+},
+{
+"span": "S01646",
+"kind": "number",
+"token": "0031"
+},
+{
+"span": "S01648",
+"kind": "number",
+"token": "0032"
+},
+{
+"span": "S01651",
+"kind": "number",
+"token": "0033"
+},
+{
+"span": "S01661",
+"kind": "number",
+"token": "0037"
+},
+{
+"span": "S01663",
+"kind": "number",
+"token": "100"
+},
+{
+"span": "S01670",
+"kind": "number",
+"token": "0038"
+},
+{
+"span": "S01673",
+"kind": "number",
+"token": "0039"
+}
+]
