@@ -23,7 +23,7 @@ The inventory scoped H08 to arc 1; the README sentence does not say arc 1.
 | **(a) arc-1 engine only** *(recommended)* | H08 stays **unverifiable**, V02 unverifiable. README needs a scope word: "every failure of the arc-1 engine…". Note the sentence still presupposes a failure census that does not exist. |
 | (b) include the walkthrough ASP stage | H08 becomes **contradicted**, V02 contradicted. README sentence is wrong as written and must be tightened or deleted. |
 
-ANSWER:
+ANSWER: Link stage is part of the symbolic engine.
 
 ---
 
@@ -42,7 +42,7 @@ list it introduces as "withdrawn".
 | **(a) bounded ≠ withdrawn** *(recommended)* | Ruling stands: two withdrawn, one bounded. README tightened to "withdrew two headline claims and bounded a third". |
 | (b) bounded counts | Count is still not three-withdrawn (the third was never a headline). Same tightening, plus H06 gains one counterexample. |
 
-ANSWER:
+ANSWER: Agree.
 
 ---
 
@@ -57,7 +57,7 @@ not check those without knowing if you'd count them.
 | **(a) no / don't know** *(recommended)* | No change; ruling stands as D2(a). |
 | (b) yes, it was a headline | Count becomes 3 headline items (2 withdrawn, 1 bounded). Still not "withdrew three". Wording shifts slightly. |
 
-ANSWER:
+ANSWER: Agree.
 
 ---
 
@@ -76,7 +76,7 @@ figure over the 100 definitions — the only 100-denominator number is
 | **(a) the 39 sampled spans** *(recommended)* | Q27 **verified**. README tightened to name the 39. |
 | (b) the 100 definitions | Q27 becomes **unverifiable** — no such measurement exists. README claim would need deleting or re-measuring. |
 
-ANSWER:
+ANSWER: Agree
 
 ---
 
@@ -96,7 +96,7 @@ repo. The only measured panel agreement is arc-1's, at 0.16–0.62 Jaccard /
 | **(a) confirm: blind scoring, no artifact** *(recommended)* | Q02 **contradicted** stands. README comparison clause tightened or deleted. |
 | (b) you meant a different figure | Name it and the ruling is redone against it. |
 
-ANSWER:
+ANSWER: agree
 
 ---
 
@@ -114,7 +114,7 @@ Arc-1 edits also continue to Aug 31, past "early Aug".
 | **(a) late July, outside this repo** *(recommended)* | Ruling stands (contradicted at the git metric). README tightened to "late July–early Aug; imported into this repo 2026-08-02, edited through Aug 31". |
 | (b) give a different start date | Same ruling, your date in the wording. |
 
-ANSWER:
+ANSWER: agree.
 
 ---
 
@@ -138,7 +138,7 @@ drift guard for a project's own record rather than an investigator's tool.
 | approve with changes | Tell me what to change. |
 | hold | Nothing is published; artifacts stay in the repo. |
 
-ANSWER:
+ANSWER: agree
 
 ---
 

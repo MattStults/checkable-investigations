@@ -20,7 +20,7 @@ The inventory (50 quantitative claims, 15 hypotheses, 12 verdict nodes, commitme
 Deviations from the registered design, all logged in `results/intervention_log.md`:
 
 - **Translation tier.** The design said the finished ledger would be entirely lower-tier translated after a frontier-seeded brief. In the run, documents, JSON and cycle records were translated by Opus and only the git log by Sonnet, after a same-batch probe showed Sonnet at content parity on git log (50 of 53 numbers) but at 74% numeric and 84% event-type recall on prose. The ledger is therefore mostly frontier-translated, and the claim "the context works for the models the proposal needs" was not tested at the scale planned.
-- **Adjudication.** The design made adjudication human. Rulings were made by a Fable adjudicator (D-12), then repeated blind with the arms anonymized and reasons removed (D-12b). Seven rulings are provisional on owner knowledge.
+- **Adjudication.** The design made adjudication human. Rulings were made by a Fable adjudicator (D-12), then repeated blind with the arms anonymized and reasons removed (D-12b); the owner then ruled on the seven questions the adjudicators flagged as needing owner knowledge, overriding the model ruling on two of them (`results/DECISIONS.md`, `results/rulings/FINAL_STATES.md`).
 - **Design changes during the run.** Twelve numbered (D-01 to D-12): schema and cutter fixes early; three late ones (D-09 seat inputs, D-10 literal values in query specs, D-11 a declared live run never implemented) share one cause, an inventory declaration that did not make it into the machinery. Seven translator-facing interventions (I-01 to I-07) each produced a brief or glossary amendment or a checker rule; one class recurred once after its fix (signature markers, I-06 then G-06).
 
 ### The artifact
@@ -68,6 +68,15 @@ Blind re-adjudication (D-12b, arms anonymized as A/B per item, reasons removed, 
 
 On substance the arms are close to even; the baseline's overall edge comes from the label items, where the ledger reported unweighed conflict as contested and the record, once weighed, supported one side. A weighing rule over stance and supersession refs was in the design and only partly implemented.
 
+**Owner rulings.** The owner then answered the seven questions the adjudicators had left provisional, and overrode the model ruling on two: asked whether the walkthrough's ASP link stage counts as part of "the symbolic engine", the owner said yes, which makes the Q-22 defect (an unsatisfied `requires` silently false in every enumerated situation, fixed 2026-08-09) an engine wrong answer and turns H08 and V02 from unverifiable to contradicted. Against the final states:
+
+| | all 24 items | 13 substance items |
+|---|---|---|
+| ledger state equals final ruling | 11 | 10 |
+| baseline state equals final ruling | 14 | 7 |
+
+On the substance items the ledger arm ends ahead. Two caveats on that. The ledger reached "contradicted" on H08 and V02 for partly the wrong reason: its 28 engine-failure events include scoring-code and tooling bugs, and the Q-22 case that actually decides the question is not among them — the adjudicator found it. And the owner's boundary ruling is a judgement about the project's own vocabulary, exactly the kind of input neither arm can supply.
+
 Live-run conflicts settled by re-running: the setup check exits 0; pytest gives 2,267 passed and 4 skipped in the README's own venv (2,270 and 1 only with two optional packages installed). Both reproduce the ledger arm's observation.
 
 README dispositions proposed per item (nearly all "tightened", with wording) are in `results/rulings/SUMMARY.md`; the disposition commit to the target repo waits on the seven provisional rulings.
@@ -95,7 +104,7 @@ Interventions did not approach the claim count and no state was dominated by unv
 - **Cost.** Translation used 140 agents, 15.4M harness tokens (9.1M Opus, 6.3M Sonnet), 911 agent-minutes; about 32x the baseline price-weighted, before prompt-cache discounts. Setup reviews added 1.8M. `results/COST.md`.
 - **Mechanical extractability.** About a third of claims had a core a parser could have produced; about half with a labelling step; events, 39% of claims and the inputs to every hypothesis, were 18% mechanical.
 - **Capability probe.** Haiku on the same spans: 80 to 100% precision, 0 to 48% recall. A small model fails by silence, which the checker cannot see; the completeness audit against regex denominators can.
-- **One finding the review did not surface:** 28 translator-labelled engine-failure events, 9 wrong-answer, bearing on the README's "every failure was a refusal"; on inspection most are scoring-code bugs and two or three are the engine deriving wrongly. Ruled unverifiable pending the owner's definition of the engine boundary.
+- **One finding the review did not surface:** 28 translator-labelled engine-failure events, 9 of them wrong-answer, bearing on the README's "every failure was a refusal". On inspection most are scoring-code or tooling bugs rather than engine outputs. The claim is nonetheless contradicted, on a case neither arm's evidence contained: the adjudicator found the Q-22 defect in the walkthrough's ASP link stage, and the owner ruled that stage part of the engine.
 
 ### Fairness of the comparison
 
