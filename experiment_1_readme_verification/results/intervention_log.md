@@ -407,3 +407,19 @@ was hand-written and patched after the orchestrator had read the baseline
 report (Q27, V01, H10), which leaks in the ledger's favor; the ledger's
 declared live runs and named sources were incomplete, which cuts against
 it.
+
+### Owner rulings — 2026-09-04 — D1 to D7 answered
+
+Decision sheet: results/DECISIONS.md. The owner took the recommended option
+on D2-D6 and went against it on D1, ruling that the walkthrough's ASP link
+stage IS part of "the symbolic engine". Q-22 (an unsatisfied `requires`
+silently false in every enumerated situation, fixed 818045f4) therefore
+counts as an engine wrong answer, and H08 and V02 move from unverifiable to
+contradicted — the ledger arm's state, though the ledger's own evidence for
+it was mis-typed scoring bugs and did not include Q-22. Owner rulings are
+recorded as a separate layer (results/rulings/owner_rulings.jsonl) over the
+model rulings; final states in results/rulings/FINAL_STATES.md. D7 approved
+the two blog edits, applied in mattstults.github.io commit 8d5ded0 with the
+frozen design and expectations sections verified byte-identical. The README
+disposition commit to the target repo remains unapproved; that repo has not
+been written to at any point in this experiment.
