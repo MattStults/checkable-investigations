@@ -423,3 +423,16 @@ the two blog edits, applied in mattstults.github.io commit 8d5ded0 with the
 frozen design and expectations sections verified byte-identical. The README
 disposition commit to the target repo remains unapproved; that repo has not
 been written to at any point in this experiment.
+
+### Close-out — 2026-09-09 — artifacts published; README dispositions applied
+
+Artifacts pushed to github.com/MattStults/checkable-investigations (200
+commits, 1,115 files under experiment_1_readme_verification), so the pilot
+post's artifact link resolves. README dispositions applied to the target
+repo in commit eb5253be and pushed to origin/main, public/main and
+origin/d3-worked-example (the three refs that were all at the pin 48e66ce0).
+13 claim sites changed, each traceable to a ruling; the pin remains
+addressable in history, so every claim state in this experiment stays
+checkable against the README as it was verified. This is the first and only
+write to the target repo in the experiment; it happened after the pilot's
+verification was complete and committed.
