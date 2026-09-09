@@ -2,9 +2,16 @@
 
 Items: 24. Blind ruling equals non-blind ruling on 22/24.
 
-Arm whose evidence decided it (unsealed): all items {'both': 5, 'baseline': 9, 'neither': 7, 'ledger': 3}; substance-only items (13) {'both': 5, 'baseline': 4, 'ledger': 2, 'neither': 2}.
+Arm whose evidence decided it (unsealed): all 24 items {'both': 5, 'baseline': 9, 'neither': 7, 'ledger': 3}; the 13 items where the arms differed {'baseline': 8, 'neither': 2, 'ledger': 3}.
 
-Arm's state equals the blind ruling: all items {'ledger': 9, 'baseline': 14}; substance-only {'ledger': 8, 'baseline': 9}.
+Arm's state equals the blind ruling, by set:
+
+| set | n | ledger | baseline |
+|---|---|---|---|
+| all non-verified items | 24 | 9 | 14 |
+| items where the arms differed | 13 | 3 | 8 |
+| ...of those, differing on substance | 5 | 2 | 3 |
+| adjudicator-tagged "substance" (mixed: includes 8 items the arms agreed on) | 13 | 8 | 9 |
 
 | item | ledger | baseline | blind ruling | evidence decided by | non-blind ruling | non-blind arm right | substance/label |
 |---|---|---|---|---|---|---|---|

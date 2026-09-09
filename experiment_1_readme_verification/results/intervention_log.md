@@ -466,3 +466,32 @@ written from memory of a computation rather than from its output.
 Fixed in the post, RESULTS_DRAFT.md, RESULT_fabrication.md and
 capability_probe.md. The lane tables in the artifacts were already correct;
 only the prose summaries overstated.
+
+### D-14 — 2026-09-09 — the substance/label tally was not a comparison of the arms
+
+Follow-on from D-13. The adjudicator brief asked whether "the disagreement was
+substance or label", but adjudicators filled the field on items where the arms
+AGREED too, meaning "the agreement was on substance". Reporting a ledger-vs-
+baseline tally over the substance subset therefore mixed 8 agreements into a
+13-item comparison, and the published sentence "on the substance items the
+ledger arm ends ahead" was an artifact of that mixing. Corrected tallies:
+
+| set | n | ledger | baseline |
+|---|---|---|---|
+| all non-verified items | 24 | 11 | 14 |
+| items where the arms differed | 13 | 5 | 8 |
+| ...of those, differing on substance | 5 | 4 | 1 |
+
+The middle row is the fairest arm-vs-arm number and it favors the baseline;
+the published claim had it the other way. Artifact fix: the tally is now
+generated over three sets by `results/rulings/final_states.py` (previously an
+uncommitted inline script, which is why the grouping was never reviewed) and
+by `results/rulings_blind/fold_blind.py`, both of which carry the caveat in
+code. Also corrected in the post: the Haiku precision claim (lane B wrote 4
+numbers and matched none, so "fails by silence, not by error" holds on the
+three prose lanes and not on git log), and a sentence stating the arms were
+equally accurate on disputed items, which the corrected tally contradicts.
+
+Class: a summary statistic computed over a set that did not mean what its
+name implied, in an uncommitted script, and never re-derived from the
+artifact until a clean-context check.

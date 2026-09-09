@@ -22,11 +22,14 @@ prose event types 84%; git-log numbers 94%, events 83%.
 ## Reading
 
 - Haiku under-extracts on every lane: it writes a quarter to a third of the
-  accepted claim count, and its number recall is 0-48%. What it does write
-  is mostly right where it writes anything (numeric precision 83-91% on the
-  three lanes where it produced numbers, and 0% on lane B where it produced none), and it passes the checker at
-  85-90%. So a small model alone is a recall problem, not a precision
-  problem — the failure mode is silence, which no checker catches.
+  accepted claim count, and its number recall is 0-48%. On the three prose
+  lanes what it does write is mostly right (numeric precision 83%, 80% and
+  91% on C, D and E). Lane B is the exception and cuts against the tidy
+  reading: there it wrote only 4 numbers and none of them matched, so on
+  git-log spans it was both silent and wrong. So on prose a small model is a
+  recall problem more than a precision problem — the failure mode is
+  silence, which no checker catches — but that does not hold on every source
+  class, and the lane where it holds least is the one that looks easiest.
 - That is the case for the harness the owner sketched: let the
   deterministic pass do the FINDING (numbers, fractions, markers, git
   metadata), and use the small model only to LABEL what was found. Haiku's

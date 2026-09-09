@@ -48,7 +48,7 @@ Baseline: one clean-context Opus agent with the README, the repo and a brief; 27
 | ledger arm, verdict nodes (12) | 3 | 2 | 6 | 1 dangling |
 | baseline, all 77 | 54 | 12 | 6 | 5 |
 
-Agreement: 60 of 77. Of the 24 items that ended non-verified in the ledger, the adjudicators classified 11 as turning on the label only (the ledger says contested wherever the record holds unweighed conflict; the baseline weighs) and 13 on substance; 13 of the 24 are items where the arms differed.
+Agreement: 60 of 77. Of the 24 items that ended non-verified in the ledger, the arms differed on 13 and agreed on 11. Where they differed, the split was mostly the ledger reporting contested against a baseline that weighed the conflict and picked a side.
 
 Machine-checkable fraction: every ledger claim re-verifies. Of the baseline's 77 items, 27 rest on live runs with no file quote; of its 109 quoted segments, 83 verify verbatim at the pin, 5 exist only in pre-redaction history, and the rest are command output or the reviewer's summaries.
 
@@ -58,24 +58,24 @@ Non-blind model rulings (D-12) on the 24 items ending non-verified in the ledger
 
 Blind re-adjudication (D-12b, arms anonymized as A/B per item, reasons removed, mapping sealed until fold): rulings agree with the non-blind ones on 22 of 24 (Q28 moved contradicted to verified, read as a single null test; H06 moved verified to contradicted). Whose evidence decided the ruling, unsealed:
 
-| | all 24 items | 13 substance items |
+| | all 24 items | the 13 where the arms differed |
 |---|---|---|
-| both arms | 5 | 5 |
-| baseline's evidence | 9 | 4 |
-| ledger's evidence | 3 | 2 |
+| both arms | 5 | 0 |
+| baseline's evidence | 9 | 8 |
+| ledger's evidence | 3 | 3 |
 | neither (ruling reached from the record directly) | 7 | 2 |
-| arm's own state equals the blind ruling: ledger / baseline | 9 / 14 | 8 / 9 |
 
-On substance the arms are close to even; the baseline's overall edge comes from the label items, where the ledger reported unweighed conflict as contested and the record, once weighed, supported one side. A weighing rule over stance and supersession refs was in the design and only partly implemented.
+Where the arms differed, the baseline's evidence decided the ruling more often than the ledger's. A large part of the ledger's deficit is one convention: it reports contested wherever the record holds unweighed conflict, and the record once weighed usually supported one side. A weighing rule over stance and supersession refs was in the design and only partly implemented.
 
 **Owner rulings.** The owner then answered the seven questions the adjudicators had left provisional, and overrode the model ruling on two: asked whether the walkthrough's ASP link stage counts as part of "the symbolic engine", the owner said yes, which makes the Q-22 defect (an unsatisfied `requires` silently false in every enumerated situation, fixed 2026-08-09) an engine wrong answer and turns H08 and V02 from unverifiable to contradicted. Against the final states:
 
-| | all 24 items | 13 substance items |
-|---|---|---|
-| ledger state equals final ruling | 11 | 10 |
-| baseline state equals final ruling | 14 | 7 |
+| set | n | ledger | baseline |
+|---|---|---|---|
+| all non-verified items | 24 | 11 | 14 |
+| items where the arms differed | 13 | 5 | 8 |
+| ...of those, differing on substance | 5 | 4 | 1 |
 
-On the substance items the ledger arm ends ahead. Two caveats on that. The ledger reached "contradicted" on H08 and V02 for partly the wrong reason: its 27 engine-failure events include scoring-code and tooling bugs, and the Q-22 case that actually decides the question is not among them — the adjudicator found it. And the owner's boundary ruling is a judgement about the project's own vocabulary, exactly the kind of input neither arm can supply.
+The middle row is the fairest arm-versus-arm number and it favors the baseline. The bottom row favors the ledger but rests on five items. I originally reported a fourth grouping, the adjudicators' own "substance" tag, as though it were a comparison of the arms; it is not, because the adjudicators applied that tag to items where the arms agreed as well, so eight of its thirteen items are agreements. Two further caveats. The ledger reached "contradicted" on H08 and V02 for partly the wrong reason: its 27 engine-failure events include scoring-code and tooling bugs, and the Q-22 case that actually decides the question is not among them — the adjudicator found it. And the owner's boundary ruling is a judgement about the project's own vocabulary, exactly the kind of input neither arm can supply.
 
 Live-run conflicts settled by re-running: the setup check exits 0; pytest gives 2,267 passed and 4 skipped in the README's own venv (2,270 and 1 only with two optional packages installed). Both reproduce the ledger arm's observation.
 

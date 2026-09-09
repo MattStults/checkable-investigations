@@ -302,6 +302,11 @@
   "ledger": 2,
   "neither": 2
  },
+ "tally_disagreements": {
+  "baseline": 8,
+  "neither": 2,
+  "ledger": 3
+ },
  "match_all": {
   "ledger": 9,
   "baseline": 14
@@ -309,5 +314,14 @@
  "match_substance": {
   "ledger": 8,
   "baseline": 9
- }
+ },
+ "match_disagreements": {
+  "ledger": 3,
+  "baseline": 8
+ },
+ "match_substance_disagreements": {
+  "ledger": 2,
+  "baseline": 3
+ },
+ "note": "substance_or_label is not a partition of disagreements; it was filled on agreement items too"
 }
