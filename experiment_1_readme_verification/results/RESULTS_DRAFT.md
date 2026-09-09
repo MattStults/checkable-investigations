@@ -48,7 +48,7 @@ Baseline: one clean-context Opus agent with the README, the repo and a brief; 27
 | ledger arm, verdict nodes (12) | 3 | 2 | 6 | 1 dangling |
 | baseline, all 77 | 54 | 12 | 6 | 5 |
 
-Agreement: 60 of 77. Of the 24 items that ended non-verified in the ledger, the adjudicators classified 11 of the arm disagreements as label only (the ledger says contested wherever the record holds unweighed conflict; the baseline weighs) and 13 as substance.
+Agreement: 60 of 77. Of the 24 items that ended non-verified in the ledger, the adjudicators classified 11 as turning on the label only (the ledger says contested wherever the record holds unweighed conflict; the baseline weighs) and 13 on substance; 13 of the 24 are items where the arms differed.
 
 Machine-checkable fraction: every ledger claim re-verifies. Of the baseline's 77 items, 27 rest on live runs with no file quote; of its 109 quoted segments, 83 verify verbatim at the pin, 5 exist only in pre-redaction history, and the rest are command output or the reviewer's summaries.
 
@@ -75,7 +75,7 @@ On substance the arms are close to even; the baseline's overall edge comes from 
 | ledger state equals final ruling | 11 | 10 |
 | baseline state equals final ruling | 14 | 7 |
 
-On the substance items the ledger arm ends ahead. Two caveats on that. The ledger reached "contradicted" on H08 and V02 for partly the wrong reason: its 28 engine-failure events include scoring-code and tooling bugs, and the Q-22 case that actually decides the question is not among them — the adjudicator found it. And the owner's boundary ruling is a judgement about the project's own vocabulary, exactly the kind of input neither arm can supply.
+On the substance items the ledger arm ends ahead. Two caveats on that. The ledger reached "contradicted" on H08 and V02 for partly the wrong reason: its 27 engine-failure events include scoring-code and tooling bugs, and the Q-22 case that actually decides the question is not among them — the adjudicator found it. And the owner's boundary ruling is a judgement about the project's own vocabulary, exactly the kind of input neither arm can supply.
 
 Live-run conflicts settled by re-running: the setup check exits 0; pytest gives 2,267 passed and 4 skipped in the README's own venv (2,270 and 1 only with two optional packages installed). Both reproduce the ledger arm's observation.
 
@@ -100,15 +100,15 @@ Interventions did not approach the claim count and no state was dominated by unv
 
 ### Findings beyond the registered ones
 
-- **The dependency graph is flat.** 41 of 65 inventory items feed no verdict node; no node depends on another; fan-in is at most five. Removing any single record span flips at most one README item (4 of 206 cited spans flip anything); removing a whole fact flips at most two plus a verdict. There is little for a standing artifact to propagate.
+- **The dependency graph is flat.** 41 of 65 inventory items feed no verdict node; no node depends on another; fan-in is at most five. Removing any single record span flips at most one README item (4 of 206 cited spans flip anything); removing a whole fact flips at most two items, one README claim plus one verdict node. There is little for a standing artifact to propagate.
 - **Cost.** Translation used 140 agents, 15.4M harness tokens (9.1M Opus, 6.3M Sonnet), 911 agent-minutes; about 32x the baseline price-weighted, before prompt-cache discounts. Setup reviews added 1.8M. `results/COST.md`.
 - **Mechanical extractability.** About a third of claims had a core a parser could have produced; about half with a labelling step; events, 39% of claims and the inputs to every hypothesis, were 18% mechanical.
-- **Capability probe.** Haiku on the same spans: 80 to 100% precision, 0 to 48% recall. A small model fails by silence, which the checker cannot see; the completeness audit against regex denominators can.
-- **One finding the review did not surface:** 28 translator-labelled engine-failure events, 9 of them wrong-answer, bearing on the README's "every failure was a refusal". On inspection most are scoring-code or tooling bugs rather than engine outputs. The claim is nonetheless contradicted, on a case neither arm's evidence contained: the adjudicator found the Q-22 defect in the walkthrough's ASP link stage, and the owner ruled that stage part of the engine.
+- **Capability probe.** Haiku on the same spans: 0 to 48% numeric recall, and precision from 0 to 91% by lane. A small model fails by silence, which the checker cannot see; the completeness audit against regex denominators can.
+- **One finding the review did not surface:** 27 translator-labelled engine-failure events, 4 of them typed wrong-answer, bearing on the README's "every failure was a refusal". On inspection most are scoring-code or tooling bugs rather than engine outputs. The claim is nonetheless contradicted, on a case neither arm's evidence contained: the adjudicator found the Q-22 defect in the walkthrough's ASP link stage, and the owner ruled that stage part of the engine.
 
 ### Fairness of the comparison
 
-Not clean, in both directions. Against the ledger: its query layer was hand-written and patched seven times during the run; declared live runs and named sources were incomplete; it was scored against a label convention. For the ledger: I tuned three queries after reading the baseline's reasons (Q27, V01, H10); it had tens of times the compute and iterations; the number probe was chosen to favor it. The blind re-adjudication corrects the judging; it does not correct the query-tuning leak. Conclusions that do not depend on the comparison: the cost ratio, the flatness, the machinery leaks, the probe outcomes, the completeness and capability numbers.
+Not clean, in both directions. Against the ledger: its query layer was hand-written and repeatedly patched during the run, including three fixes made after I had read the baseline's reasons; declared live runs and named sources were incomplete; it was scored against a label convention. For the ledger: I tuned three queries after reading the baseline's reasons (Q27, V01, H10); it had tens of times the compute and iterations; the number probe was chosen to favor it. The blind re-adjudication corrects the judging; it does not correct the query-tuning leak. Conclusions that do not depend on the comparison: the cost ratio, the flatness, the machinery leaks, the probe outcomes, the completeness and capability numbers.
 
 ### What I take from it
 

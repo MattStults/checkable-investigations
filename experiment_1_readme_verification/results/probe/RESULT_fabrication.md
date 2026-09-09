@@ -37,7 +37,7 @@ Dependency structure of the frozen inventory as the queries use it:
 
 Consequences seen in the impact analysis: removing any single record span
 flips at most one README item (4 of 206 cited spans flip anything);
-removing a whole fact flips at most two items plus one verdict node. The
+removing a whole fact flips at most two items in total (one README claim plus one verdict node). The
 README's numbers are restated across sources (so single-entry fabrication
 is absorbed) and the README's claims are mostly independent leaves (so
 fabrication fan-out is tiny). The interesting structure in this record is

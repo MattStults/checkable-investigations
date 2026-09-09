@@ -23,7 +23,8 @@ prose event types 84%; git-log numbers 94%, events 83%.
 
 - Haiku under-extracts on every lane: it writes a quarter to a third of the
   accepted claim count, and its number recall is 0-48%. What it does write
-  is mostly right (precision 80-100%), and it passes the checker at
+  is mostly right where it writes anything (numeric precision 83-91% on the
+  three lanes where it produced numbers, and 0% on lane B where it produced none), and it passes the checker at
   85-90%. So a small model alone is a recall problem, not a precision
   problem — the failure mode is silence, which no checker catches.
 - That is the case for the harness the owner sketched: let the

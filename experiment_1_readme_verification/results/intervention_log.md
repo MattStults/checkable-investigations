@@ -436,3 +436,33 @@ addressable in history, so every claim state in this experiment stays
 checkable against the README as it was verified. This is the first and only
 write to the target repo in the experiment; it happened after the pilot's
 verification was complete and committed.
+
+### D-13 — 2026-09-09 — six wrong figures in the published Results section, found by a clean-context fact-check
+
+A clean-context Opus agent re-derived every number in the post from the
+artifacts (89 figures; results/post_factcheck.md). Six did not reconcile:
+
+1. "28 engine-failure events" — the final ledger holds 27.
+2. "9 of them wrong-answer" — the final ledger types 4 wrong_answer
+   (12 refusal, 11 unstated).
+3. "11 of the arm disagreements as label only and 13 as substance" — the
+   11/13 split is over all 24 non-verified items, not over disagreements;
+   only 13 of the 24 are items where the arms differed, and 3 of the 11
+   label items are items where the arms agreed.
+4. "flips at most two plus a verdict" — the maximum is two flips in total,
+   one README claim plus one verdict node.
+5. "Haiku 80 to 100% precision" — lane B numeric precision is 0%; the range
+   across lanes is 0 to 91%.
+6. "query layer patched seven times" — not derivable from any artifact.
+
+Root cause of 1 and 2: both were computed on the interim ledger (11,697
+claims) and carried into the final writeup unchanged; the D-09 and G-06
+retranslations superseded claims and changed both counts. That is the
+record's own failure mode — a superseded value quoted as current — occurring
+in the report about it, and it survived because nothing checked the prose
+against the artifacts until this pass. 3, 4, 5 and 6 are overstatements
+written from memory of a computation rather than from its output.
+
+Fixed in the post, RESULTS_DRAFT.md, RESULT_fabrication.md and
+capability_probe.md. The lane tables in the artifacts were already correct;
+only the prose summaries overstated.
