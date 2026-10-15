@@ -15,4 +15,4 @@ and its [complete record](https://github.com/MattStults/semi-formal-document-ana
 
 | # | Status | What |
 |---|---|---|
-| [1](experiment_1_readme_verification/) | design registered, not yet run | Verify the prior project's public README against its own committed record with a claim ledger, head-to-head against a fresh adversarial review. [Registered design](https://mattstults.github.io/2026/09/01/readme-verification-pilot.html). |
+| [1](experiment_1_readme_verification/) | run complete (2026-09-02 to 03) | Verify the prior project's public README against its own committed record with a claim ledger, head-to-head against a fresh adversarial review. [Registered design and results](https://mattstults.github.io/2026/09/01/readme-verification-pilot.html). |
